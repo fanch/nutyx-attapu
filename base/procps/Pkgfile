@@ -1,0 +1,23 @@
+# Description: Utilitaire pour le système de fichiers /proc
+# URL: http://procps.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: bison
+
+name=procps
+version=3.2.8
+release=1
+source=(http://procps.sourceforge.net/$name-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/lfs/development/procps-$version-watch_unicode-1.patch )
+
+build() {
+cd $name-$version
+patch -Np1 -i ../procps-$version-watch_unicode-1.patch
+make
+make DESTDIR=$PKG \
+	ldconfig=true \
+	man1=$PKG/usr/share/man/man1/ \
+	man5=$PKG/usr/share/man/man5/ \
+	man8=$PKG/usr/share/man/man8/ install
+chmod +w -R $PKG
+}
