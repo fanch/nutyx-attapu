@@ -1,0 +1,27 @@
+# Description: La base de données de Berkeley DB
+# URL: http://www.sleepycat.com/products/db.shtml
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gcc
+
+name=db
+version=4.7.25
+release=1
+source=(http://download.oracle.com/berkeley-db/$name-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/lfs/development/$name-$version-upstream_fixes-1.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../$name-$version-upstream_fixes-1.patch
+	cd build_unix
+	../dist/configure --prefix=/usr \
+		--enable-compat185 \
+		--enable-cxx
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/docs
+	chmod -R +w $PKG
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm $PKG/usr/share/info/dir
+	fi
+}
