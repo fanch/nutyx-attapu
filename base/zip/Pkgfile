@@ -1,0 +1,17 @@
+# Description: Programmes pour compression/décompression de fichiers
+# URL: http://infozip.sourceforge.net/Zip.html
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=zip
+version=2.32
+release=1
+source=( http://fresh.t-systems-sfr.com/unix/src/misc/zip232.tar.gz)
+
+build() {
+	cd $name-$version
+	make -f unix/Makefile prefix=/usr generic_gcc 
+	make prefix=$PKG/usr MANDIR=$PKG/usr/share/man/man1 -f unix/Makefile install 
+        
+}

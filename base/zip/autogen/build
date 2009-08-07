@@ -1,0 +1,25 @@
+# $Id: build,v 1.1 2007/10/15 18:36:04 install Exp root $
+# Description: Simplifie la création/maintenance de programmes contenant une grande quantité de texte répétitif
+# URL: http://autogen.sf.net
+# Maintainer: Linux From Scratch
+# Packager: Thierry Nuttens, thierryn1 at hispeed dot ch
+# Depends on: guile
+
+name=autogen
+version=5.9.5
+release=1
+group=dev
+source=( http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+
+
+build() {
+	# build package
+		cd $name-$version
+                ./configure --prefix=/usr\
+                            --mandir=/usr/share/man\
+                            --infodir=/usr/share/info
+		make
+		make DESTDIR=$PKG install
+                rm  $PKG/usr/share/info/dir
+}
