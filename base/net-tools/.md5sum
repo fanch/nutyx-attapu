@@ -1,0 +1,4 @@
+20697137d49bc0f6b7ba2b35cdb3e27d  net-tools-1.60-gcc34-3.patch
+901a8728f17a8190ef6e441d56b30112  net-tools-1.60-kernel_headers-2.patch
+7de67d26122785defd46bf2ed9b5b82b  net-tools-1.60-mii_ioctl-1.patch
+888774accab40217dde927e21979c165  net-tools-1.60.tar.bz2
