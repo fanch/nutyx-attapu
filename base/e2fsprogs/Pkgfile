@@ -1,0 +1,25 @@
+# Description: Utilitaire pour le système de fichiers Ext2/Ext3/Ext4
+# URL: http://e2fsprogs.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch 
+# Depends on: util-linux-ng
+
+name=e2fsprogs
+version=1.41.8
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz )
+
+build() {
+cd $name-$version
+sed -i -e "s/July/Jul/" version.h
+mkdir build
+cd build
+../configure --prefix=/usr \
+	--with-root-prefix="" \
+	--enable-elf-shlibs  \
+	--disable-libblkid --disable-libuuid
+make
+make DESTDIR=$PKG install install-libs
+rm -rf $PKG/usr/share/info
+chmod +w -R $PKG
+}
