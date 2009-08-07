@@ -1,0 +1,27 @@
+# Description: used to forward RPC requests to RPC daemons
+# URL: http://neil.brown.name/portmap/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: tcp_wrappers
+
+name=portmap
+version=6.0
+release=1
+source=( http://neil.brown.name/$name/$name-$version.tgz\
+           portmap)
+
+
+build() {
+source /etc/blfs-bootscripts
+wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+tar xvf $scripts-$scriptsversion.tar.bz2
+cd ${name}_$version
+install -d $PKG/{sbin,usr/{sbin,share/man/man8}} 
+make
+make BASEDIR=$PKG install
+cd ../$scripts-$scriptsversion
+make DESTDIR=$PKG install-portmap
+make DESTDIR=$PKG install-netfs
+mkdir -p $PKG/etc/rc.d/init.d
+install -m 754 ../portmap   $PKG/etc/rc.d/init.d/
+}
