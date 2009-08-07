@@ -1,0 +1,31 @@
+# Description: Programmes pour manipuler et formater du texte.
+# URL: http://www.gnu.org/software/groff/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gettext
+
+name=groff
+version=1.20.1
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+PAGE=A4 ./configure --prefix=/usr \
+	--without-x --enable-multibyte \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info
+
+mkdir $PKG/usr	
+make datasubdir=/usr/share/groff
+make prefix=$PKG/usr \
+	datasubdir=$PKG/usr/share/groff \
+	mandir=$PKG/usr/share/man \
+	infodir=$PKG/usr/share/info \
+	appresdir=$PKG/etc/X11/app-defaults install
+ln -sf eqn $PKG/usr/bin/geqn
+ln -sf tbl $PKG/usr/bin/gtbl
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
