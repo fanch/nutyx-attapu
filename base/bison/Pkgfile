@@ -1,0 +1,23 @@
+# Description:	Le convertisseur parseur du projet GNU
+# URL:         	http://www.gnu.org/software/bison/
+# Maintainer:	NuTyX core team
+# Packager:	thierryn1 at hispeed dot ch
+# Depends on: m4
+
+name=bison
+version=2.4.1
+release=1
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr\
+	--mandir=/usr/share/man\
+	--infodir=/usr/share/info
+echo '#define YYENABLE_NLS 1' >> config.h
+make
+make DESTDIR=$PKG install
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm  $PKG/usr/share/info/dir
+fi	
+}
