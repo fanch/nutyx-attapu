@@ -1,0 +1,22 @@
+# Description: Le système d'initialisation du système V de Linux
+# URL: ftp://ftp.cistron.nl/pub/people/miquels/sysvinit/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=sysvinit
+version=2.86
+release=2
+source=(ftp://ftp.cistron.nl/pub/people/miquels/sysvinit/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+ 
+sed -i 's@Sending processes@& configured via /etc/inittab@g' \
+	src/init.c    
+sed -i -e 's/utmpdump wall/utmpdump/' \
+       -e 's/mountpoint.1 wall.1/mountpoint.1/' src/Makefile
+make -C src
+mkdir -p $PKG/{sbin,bin,usr/{bin,include,share/man/man{1,5,8}}}
+make -C src ROOT=$PKG install
+}
