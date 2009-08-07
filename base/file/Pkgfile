@@ -1,0 +1,23 @@
+# Description: Utilitaire pour déterminer le type de fichier donné.
+# URL: ftp://ftp.fu-berlin.de/unix/tools/file/  
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: zlib
+
+name=file
+version=5.03
+release=1
+source=(ftp://ftp.gw.com/mirrors/unix/$name/$name-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+sed -i -e '197,+1d' \
+	-e '189,+1d' \
+	-e 's/token$/tokens/' doc/file.man
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info
+make
+make DESTDIR=$PKG install
+}
