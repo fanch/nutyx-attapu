@@ -1,0 +1,45 @@
+# Description: Librairie pour l'émulation du Système V 4.0
+# URL:         http://www.gnu.org/software/ncurses/ncurses.html
+# Maintainer:  NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pkg-config
+
+name=ncurses
+version=5.7
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+--with-shared --without-debug \
+--enable-widec --with-install-prefix=$PKG
+make
+make install
+
+chmod -v 644 $PKG/usr/lib/libncurses++w.a
+mkdir $PKG/lib
+mv -v $PKG/usr/lib/libncursesw.so.5* $PKG/lib
+ln -sfv ../../lib/libncursesw.so.5 $PKG/usr/lib/libncursesw.so
+for lib in curses ncurses form panel menu ; do \
+	rm -vf $PKG/usr/lib/lib${lib}.so ; \
+	echo "INPUT(-l${lib}w)" >$PKG/usr/lib/lib${lib}.so ; \
+	ln -sfv lib${lib}w.a $PKG/usr/lib/lib${lib}.a ; \
+done
+ln -sfv libncurses++w.a $PKG/usr/lib/libncurses++.a
+rm -vf $PKG/usr/lib/libcursesw.so
+echo "INPUT(-lncursesw)" >$PKG/usr/lib/libcursesw.so
+ln -sfv libncurses.so $PKG/usr/lib/libcurses.so
+ln -sfv libncursesw.a $PKG/usr/lib/libcursesw.a
+ln -sfv libncurses.a $PKG/usr/lib/libcurses.a
+
+    
+make distclean
+./configure --prefix=/usr \
+	--with-install-prefix=$PKG \
+        --without-normal --without-debug \
+	--with-shared --without-cxx-binding
+make sources libs
+cp -av lib/lib*.so.5* $PKG/usr/lib
+rm $PKG/usr/lib/terminfo
+}
