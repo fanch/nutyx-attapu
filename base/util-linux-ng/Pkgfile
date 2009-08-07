@@ -1,0 +1,31 @@
+# Description: Divers utilitaires système.
+# URL: http://freshmeat.net/projects/util-linux/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:  ncurses
+
+name=util-linux-ng
+version=2.16
+release=1
+source=(http://www.kernel.org/pub/linux/utils/util-linux-ng/v2.16/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+sed -e 's@etc/adjtime@var/lib/hwclock/adjtime@g' \
+	-i $(grep -rl '/etc/adjtime' .)
+
+mkdir -pv $PKG/var/lib/hwclock
+
+./configure --enable-arch --enable-partx --enable-write
+
+make
+make DESTDIR=$PKG  install
+rm $PKG/usr/bin/wall
+rm $PKG/usr/share/man/man1/wall.1
+rm $PKG/{sbin/fsck,usr/sbin/uuidd}
+rm $PKG/usr/share/man/man8/{fsck.8,uuidd.8}
+mkdir -p $PKG/etc
+if [ -f $PKG/usr/share/info/dir ]; then
+		rm $PKG/usr/share/info/dir
+fi
+}
