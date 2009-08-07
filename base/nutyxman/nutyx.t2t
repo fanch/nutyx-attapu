@@ -1,0 +1,159 @@
+NUTYX
+
+Juin, 2009
+
+%!targer: man
+%!options(html): --mask-email
+
+%!encoding: utf-8
+
+%!postproc(html): <HEAD>      '<HEAD>\n<STYLE TYPE="text/css">\n</STYLE>'
+%!postproc(html): (</STYLE>)  'body { margin:3em               ;} \n\1'
+%!postproc(html): (</STYLE>)  'a    { text-decoration:none     ;} \n\1'
+%!postproc(html): (</STYLE>)  'pre  { background-color:#ffffcc ;} \n\1'
+
+%% LOG
+%%    mai 2009 : creation
+
+= NuTyX =
+
+Cette page de manuel vous permet de prendre connaissance du minimum
+vital pour pouvoir utiliser votre système d'exploitation
+NuTyX GNU/Linux.
+
+
+= Gestion des Packages binaires =
+
+Ces commandes s'utilisent avec votre compte root (su -)
+
+:   **check**
+synchronisation, voir les mises à jour disponibles
+:   **get packageX**
+installe le packageX
+:   **del packageX**
+désinstalle le packageX
+:   **up packageX packageY**
+mise à jour des packageX packageY
+:   **sysup**
+mise à jour de tout le système
+:   **pkgadd /chemin/vers/packageX**
+installation d'un package local
+:   **pkgadd -u /chemin/vers/packageX**
+mise à jour d'un package local
+:   **pkginfo -i**
+liste les packages installés
+:   **pkginfo -l packageX**
+lister les fichiers contenus dans un package
+:   **pkginfo -o NomDuFichier**
+connaître l'appartenance d'un fichier
+
+
+= Gestion des ports =
+
+:   **ports -u**
+mise à jour de l'arbre des ports (/srv/src/*)
+:   **ports -l**
+lister les ports disponibles
+:   **ports -d**
+voir si une mise à jour d'un port est disponible
+:   **prt-get deptree packageX**
+lister les dépendances d'un package et voir si elles sont installées ou pas
+:   **prt-get search -v packageX**
+voir si packageX est disponible
+:   **prt-get search -vv packageX**
+chercher avec la description
+:   **prt-get search --path packageX**
+chercher le chemin du port
+:   **prt-get dsearch le_nom_a_trouver -vv**
+chercher dans la description du package
+:   **prt-get fsearch le_fichier\***
+chercher un fichier dans un package
+:   **prt-get info packageX**
+obtenir des infos sur un port (deps, packager, chemin, ...)
+:   **prt-get dependent packageY**
+lister les dépendances inverses
+:   **cd /srv/src/app/packageX && pkgmk -d -i**
+builder et installer un port
+:   **prt-get install packageX**
+télécharge, builde et installe packageX en une seule commande
+:   **prt-get update packageX**
+mise à jour du port packageX
+:   **prt-get update `prt-get quickdiff`**
+mise à jour de tous les packages qui ont une version de port différente
+
+
+= Services =
+
+Les différents services disponibles (cups, gdm, sshd, ...) se trouvent
+dans le dossier /etc/rc.d/init.d s'ils ont bien été installés
+auparavant.
+
+:   **/etc/rc.d/init.d serviceX start**
+mise en route du serviceX
+:   **/etc/rc.d/init.d serviceX stop**
+arrêt du serviceX
+:   **/etc/rc.d/init.d serviceX restart**
+redémarrage du serviceX
+
+
+= Modules =
+
+Un module est une partie du noyau qui peut être intégrée pendant
+le fonctionnement
+
+:   **lsmod**
+liste les différents modules chargés par le noyau
+:   **modprobe -v moduleX**
+chargement du moduleX
+:   **rmmod -v moduleX**
+déchargement du moduleX
+:   **echo "moduleX" >> /etc/sysconfig/modules**
+fichier où ajouter les modules supplémentaires à charger au boot
+:   **echo "blacklist moduleY" >> /etc/modprobe.conf**
+fichier où blacklister un module, empécher son chargement automatique
+
+
+= Ajout Utilisateur =
+
+nu (Nouvel Utilisateur) est un script permettant d'ajouter un
+nouvel utilisateur sur votre système, il sera automatiquement
+ajouté aux groupes essentiels de NuTyX.
+
+:   **nu**
+lance le script intéractif d'ajout d'utilisateur
+:   **useradd/userdel**
+commandes classiques d'ajout/suppression de comptes utilisateurs
+
+
+= Aide en ligne =
+
+:   **IRC**
+rejoindre le canal //#nutyx// sur le réseau irc.freenode.net (utf-8)
+:   **Jabber / XMPP**
+rejoindre le salon //nutyx-linux// sur le réseau chat.jabberfr.org
+:   **Liste de diffusion : nutyx ~At~ lists.tuxfamily.org**
+inscription: nutyx-request ~AT~ lists.tuxfamily.org | sujet: subscribe
+:   **Forum des utilisateurs**
+http://www.nutyx.org
+
+
+= Auteur =
+
+Ecrit et maintenu par Frederic Galusik
+<fred.galusik ~AT~ linuxpedia.fr>
+
+
+= Voir aussi les pages man de =
+
+prt-get(8), prt-get.conf(5), prt-cache(8), pkgmk(8) pkgadd(8),
+pkg-get(8), pkgrm(8), pkginfo(8), modprobe(8), modprobe.conf(5),
+useradd(8), userdel(8)
+
+
+= COPYRIGHT =
+
+Copyright (C) 2009 Thierry Nuttens, Frederic Galusik
+
+Ceci est un document libre publié sous licence libre WTFPL -
+Do What The Fuck You Want To Public License.
+( http://sam.zoy.org/wtfpl/ )
