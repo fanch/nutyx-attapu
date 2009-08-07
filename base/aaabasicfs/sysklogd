@@ -1,0 +1,64 @@
+#!/bin/sh
+########################################################################
+# Begin $rc_base/init.d/sysklogd
+#
+# Description : Sysklogd loader
+#
+# Authors     : Gerard Beekmans - gerard@linuxfromscratch.org
+#
+# Version     : 00.00
+#
+# Notes       : Move  the log file to old when stopping
+#
+########################################################################
+
+. /etc/sysconfig/rc
+. ${rc_functions}
+
+case "${1}" in
+        start)
+                boot_mesg "Starting system log daemon..."
+                loadproc syslogd -m 0
+
+                boot_mesg "Starting kernel log daemon..."
+                loadproc klogd
+                ;;
+
+        stop)
+                boot_mesg "Stopping kernel log daemon..."
+                killproc klogd
+                mv /var/log/kern.log /var/log/kern.log.old
+                touch /var/log/kern.log
+
+                boot_mesg "Stopping system log daemon..."
+                killproc syslogd
+                mv /var/log/sys.log /var/log/sys.log.old
+                touch /var/log/sys.log
+		mv /var/log/wtmp /var/log/wtmp.old
+		touch /var/log/wtmp
+                ;;
+
+        reload)
+                boot_mesg "Reloading system log daemon config file..."
+                reloadproc syslogd
+                ;;
+
+        restart)
+                ${0} stop
+                sleep 1
+                ${0} start
+                ;;
+
+        status)
+                statusproc syslogd
+                statusproc klogd
+                ;;
+
+        *)
+                echo "Usage: ${0} {start|stop|reload|restart|status}"
+                exit 1
+                ;;
+esac
+
+# End $rc_base/init.d/sysklogd
+

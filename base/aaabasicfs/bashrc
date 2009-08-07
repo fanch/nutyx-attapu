@@ -1,0 +1,28 @@
+# $Id: bashrc,v 1.9 2008/08/02 06:06:56 install Exp install $
+# Begin ~/.bashrc
+# Written for Beyond Linux From Scratch
+# by James Robertson <jameswrobertson@earthlink.net>
+
+# Personal aliases and functions.
+
+# Personal environment variables and startup programs should go in
+# ~/.bash_profile.  System wide environment variables and startup
+# programs are in /etc/profile.  System wide aliases and functions are
+# in /etc/bashrc.
+
+if [ -f "/etc/bashrc" ] ; then
+  source /etc/bashrc
+fi
+alias ll='ls -l'
+alias l='ls -alh'
+alias duh='du -h --max-depth=1'
+alias dfh='df -h'
+alias get='pkg-get depinst'
+alias build='pkgmk -d -i'
+alias check='syn;pkg-get diff'
+alias del='pkgrm'
+alias up='pkg-get update'
+alias sysup='pkg-get sysup'
+alias pkgfind='pkginfo -i | grep -i'
+
+# End ~/.bashrc

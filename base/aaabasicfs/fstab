@@ -1,0 +1,14 @@
+# Begin /etc/fstab
+
+# file system  mount-point  type   options         dump  fsck
+#                                                        order
+
+/dev/sdax     /            reiserfs  defaults        1     1
+#/dev/sda2     swap         swap   pri=1           0     0
+/dev/sr0	/media/cdrom    iso9660   ro,user,noauto,unhide  0 0
+# /dev/sda1	/media/key1	vfat	user,noauto	0	0
+proc           /proc        proc   defaults        0     0
+sysfs          /sys         sysfs  defaults        0     0
+devpts         /dev/pts     devpts gid=4,mode=620  0     0
+shm            /dev/shm     tmpfs  defaults        0     0
+# End /etc/fstab

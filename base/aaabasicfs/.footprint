@@ -1,0 +1,251 @@
+drwxr-xr-x	root/root	bin/
+lrwxrwxrwx	root/root	bin/sh -> bash
+drwxr-xr-x	root/root	boot/
+drwxr-xr-x	root/root	boot/grub/
+-rw-r--r--	root/root	boot/grub/menu.lst
+drwxr-xr-x	root/root	dev/
+crw-------	root/root	dev/console (5, 1)
+crw-rw-rw-	root/root	dev/null (1, 3)
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/X11/
+-rw-r--r--	root/root	etc/X11/xorg.conf
+-rw-r--r--	root/root	etc/bashrc
+-rw-r--r--	root/root	etc/blfs-bootscripts
+drwxr-xr-x	root/root	etc/default/
+-rw-r--r--	root/root	etc/default/useradd
+-rw-r--r--	root/root	etc/fstab
+-rw-r--r--	root/root	etc/group
+-rw-r--r--	root/root	etc/hosts
+-rw-r--r--	root/root	etc/inittab
+-rw-r--r--	root/root	etc/inputrc
+-rw-r--r--	root/root	etc/mtab (EMPTY)
+-rw-r--r--	root/root	etc/nutyx-version
+drwxr-xr-x	root/root	etc/opt/
+-rw-r--r--	root/root	etc/passwd
+-rw-r--r--	root/root	etc/profile
+drwxr-xr-x	root/root	etc/profile.d/
+-rw-r--r--	root/root	etc/profile.d/X.sh
+-rw-r--r--	root/root	etc/profile.d/dircolors.sh
+-rw-r--r--	root/root	etc/profile.d/extrapaths.sh
+-rw-r--r--	root/root	etc/profile.d/i18n.sh
+-rw-r--r--	root/root	etc/profile.d/readline.sh
+-rw-r--r--	root/root	etc/profile.d/unmask.sh
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/checkfs
+-rwxr-xr--	root/root	etc/rc.d/init.d/cleanfs
+-rwxr-xr--	root/root	etc/rc.d/init.d/console
+-rwxr-xr--	root/root	etc/rc.d/init.d/consolelog
+-rw-r--r--	root/root	etc/rc.d/init.d/functions
+-rwxr-xr--	root/root	etc/rc.d/init.d/halt
+-rwxr-xr--	root/root	etc/rc.d/init.d/localnet
+-rwxr-xr--	root/root	etc/rc.d/init.d/modules
+-rwxr-xr--	root/root	etc/rc.d/init.d/mountfs
+-rwxr-xr--	root/root	etc/rc.d/init.d/mountkernfs
+-rwxr-xr--	root/root	etc/rc.d/init.d/network
+-rwxr-xr--	root/root	etc/rc.d/init.d/rc
+-rwxr-xr--	root/root	etc/rc.d/init.d/reboot
+-rwxr-xr--	root/root	etc/rc.d/init.d/sendsignals
+-rwxr-xr--	root/root	etc/rc.d/init.d/setclock
+-rwxr-xr--	root/root	etc/rc.d/init.d/swap
+-rwxr-xr--	root/root	etc/rc.d/init.d/sysctl
+-rwxr-xr--	root/root	etc/rc.d/init.d/sysklogd
+-rwxr-xr--	root/root	etc/rc.d/init.d/template
+-rwxr-xr--	root/root	etc/rc.d/init.d/udev
+-rwxr-xr--	root/root	etc/rc.d/init.d/udev_retry
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K80network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K90sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S60sendsignals -> ../init.d/sendsignals
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S70mountfs -> ../init.d/mountfs
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S80swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S90localnet -> ../init.d/localnet
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S99halt -> ../init.d/halt
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K80network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K90sysklogd -> ../init.d/sysklogd
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K90sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/S20network -> ../init.d/network
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S10sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S20network -> ../init.d/network
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S10sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S20network -> ../init.d/network
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S10sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S20network -> ../init.d/network
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K80network -> ../init.d/network
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K90sysklogd -> ../init.d/sysklogd
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S60sendsignals -> ../init.d/sendsignals
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S70mountfs -> ../init.d/mountfs
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S80swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S90localnet -> ../init.d/localnet
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S99reboot -> ../init.d/reboot
+drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S00mountkernfs -> ../init.d/mountkernfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S02consolelog -> ../init.d/consolelog
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S05modules -> ../init.d/modules
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S10udev -> ../init.d/udev
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S20swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S30checkfs -> ../init.d/checkfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S40mountfs -> ../init.d/mountfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S45cleanfs -> ../init.d/cleanfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S50udev_retry -> ../init.d/udev_retry
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S70console -> ../init.d/console
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S80localnet -> ../init.d/localnet
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S90sysctl -> ../init.d/sysctl
+-rw-r--r--	root/root	etc/shells
+drwxr-xr-x	root/root	etc/skel/
+-rw-r--r--	root/root	etc/skel/.bash_profile
+-rw-r--r--	root/root	etc/skel/.bashrc
+lrwxrwxrwx	root/root	etc/skel/.xinitrc -> /etc/slim.xinitrc
+drwxr-xr-x	root/root	etc/sysconfig/
+-rw-r--r--	root/root	etc/sysconfig/clock
+-rw-r--r--	root/root	etc/sysconfig/console
+-rw-r--r--	root/root	etc/sysconfig/modules
+-rw-r--r--	root/root	etc/sysconfig/network
+drwxr-xr-x	root/root	etc/sysconfig/network-devices/
+-rwxr-xr--	root/root	etc/sysconfig/network-devices/ifdown
+-rwxr-xr--	root/root	etc/sysconfig/network-devices/ifup
+drwxr-xr-x	root/root	etc/sysconfig/network-devices/services/
+-rwxr-xr--	root/root	etc/sysconfig/network-devices/services/ipv4-static
+-rwxr-xr--	root/root	etc/sysconfig/network-devices/services/ipv4-static-route
+-rw-r--r--	root/root	etc/sysconfig/rc
+drwxr-xr-x	root/root	home/
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+drwxr-xr-x	root/root	lib/udev/
+drwxr-xr-x	root/root	lib/udev/devices/
+crw-------	root/root	lib/udev/devices/console (5, 1)
+crw-rw-rw-	root/root	lib/udev/devices/null (1, 3)
+drwxr-xr-x	root/root	lib/udev/devices/pts/
+drwxr-xr-x	root/root	lib/udev/devices/shm/
+crw-rw-rw-	root/root	lib/udev/devices/zero (1, 5)
+drwxr-xr-x	root/root	media/
+drwxr-xr-x	root/root	media/cdrom/
+drwxr-xr-x	root/root	media/dvd/
+drwxr-xr-x	root/root	media/floppy/
+drwxr-xr-x	root/root	media/key/
+drwxr-xr-x	root/root	mnt/
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	proc/
+drwxr-x---	root/root	root/
+-rw-r--r--	root/root	root/.bash_profile
+-rw-r--r--	root/root	root/.bashrc
+lrwxrwxrwx	root/root	root/.xinitrc -> ../etc/skel/.xinitrc
+lrwxrwxrwx	root/root	root/X.sh -> ../etc/profile.d/X.sh
+lrwxrwxrwx	root/root	root/bashrc -> ../etc/bashrc
+drwxr-xr-x	root/root	root/bin/
+-rwxr-xr-x	root/root	root/bin/nu
+lrwxrwxrwx	root/root	root/clock -> ../etc/sysconfig/clock
+lrwxrwxrwx	root/root	root/console -> ../etc/sysconfig/console
+lrwxrwxrwx	root/root	root/dircolors.sh -> ../etc/profile.d/dircolors.sh
+lrwxrwxrwx	root/root	root/extrapaths.sh -> ../etc/profile.d/extrapaths.sh
+lrwxrwxrwx	root/root	root/fstab -> ../etc/fstab
+lrwxrwxrwx	root/root	root/hosts -> ../etc/hosts
+lrwxrwxrwx	root/root	root/hosts.allow -> ../etc/hosts.allow
+lrwxrwxrwx	root/root	root/hosts.deny -> ../etc/hosts.deny
+lrwxrwxrwx	root/root	root/i18n.sh -> ../etc/profile.d/i18n.sh
+lrwxrwxrwx	root/root	root/inittab -> ../etc/inittab
+lrwxrwxrwx	root/root	root/inputrc -> ../etc/inputrc
+lrwxrwxrwx	root/root	root/jdk.sh -> ../etc/profile.d/jdk.sh
+lrwxrwxrwx	root/root	root/menu.lst -> ../boot/grub/menu.lst
+lrwxrwxrwx	root/root	root/modprobe.conf -> ../etc/modprobe.conf
+lrwxrwxrwx	root/root	root/modules -> ../etc/sysconfig/modules
+lrwxrwxrwx	root/root	root/network -> ../etc/sysconfig/network
+lrwxrwxrwx	root/root	root/pkg-get.conf -> ../etc/pkg-get.conf
+lrwxrwxrwx	root/root	root/pkgadd.conf -> ../etc/pkgadd.conf
+lrwxrwxrwx	root/root	root/pkgmk.conf -> ../etc/pkgmk.conf
+lrwxrwxrwx	root/root	root/profile -> ../etc/profile
+lrwxrwxrwx	root/root	root/prt-get.conf -> ../etc/prt-get.conf
+lrwxrwxrwx	root/root	root/readline.sh -> ../etc/profile.d/readline.sh
+lrwxrwxrwx	root/root	root/resolv.conf -> ../etc/resolv.conf
+lrwxrwxrwx	root/root	root/shells -> ../etc/shells
+lrwxrwxrwx	root/root	root/unmask.sh -> ../etc/profile.d/unmask.sh
+lrwxrwxrwx	root/root	root/useradd -> ../etc/default/useradd
+lrwxrwxrwx	root/root	root/xorg.conf -> ../etc/X11/xorg.conf
+drwxr-xr-x	root/root	sbin/
+drwxr-xr-x	root/root	srv/
+drwxr-xr-x	root/root	srv/NuTyX/
+drwxr-xr-x	root/root	srv/NuTyX/locale/
+drwxrwxrwt	root/root	srv/sources/
+drwxr-xr-x	root/root	sys/
+drwxrwxrwt	root/root	tmp/
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/which
+lrwxrwxrwx	root/root	usr/doc -> share/doc
+drwxr-xr-x	root/root	usr/include/
+lrwxrwxrwx	root/root	usr/info -> share/info
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/bin/
+lrwxrwxrwx	root/root	usr/local/doc -> share/doc
+drwxr-xr-x	root/root	usr/local/include/
+lrwxrwxrwx	root/root	usr/local/info -> share/info
+drwxr-xr-x	root/root	usr/local/lib/
+lrwxrwxrwx	root/root	usr/local/man -> share/man
+drwxr-xr-x	root/root	usr/local/sbin/
+drwxr-xr-x	root/root	usr/local/share/
+drwxr-xr-x	root/root	usr/local/share/doc/
+drwxr-xr-x	root/root	usr/local/share/info/
+drwxr-xr-x	root/root	usr/local/share/locale/
+drwxr-xr-x	root/root	usr/local/share/man/
+drwxr-xr-x	root/root	usr/local/share/man/man1/
+drwxr-xr-x	root/root	usr/local/share/man/man2/
+drwxr-xr-x	root/root	usr/local/share/man/man3/
+drwxr-xr-x	root/root	usr/local/share/man/man4/
+drwxr-xr-x	root/root	usr/local/share/man/man5/
+drwxr-xr-x	root/root	usr/local/share/man/man6/
+drwxr-xr-x	root/root	usr/local/share/man/man7/
+drwxr-xr-x	root/root	usr/local/share/man/man8/
+drwxr-xr-x	root/root	usr/local/share/misc/
+drwxr-xr-x	root/root	usr/local/share/terminfo/
+drwxr-xr-x	root/root	usr/local/share/zoneinfo/
+drwxr-xr-x	root/root	usr/local/src/
+lrwxrwxrwx	root/root	usr/man -> share/man
+drwxr-xr-x	root/root	usr/ports/
+drwxr-xr-x	root/root	usr/sbin/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/info/
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+drwxr-xr-x	root/root	usr/share/man/man2/
+drwxr-xr-x	root/root	usr/share/man/man3/
+drwxr-xr-x	root/root	usr/share/man/man4/
+drwxr-xr-x	root/root	usr/share/man/man5/
+drwxr-xr-x	root/root	usr/share/man/man6/
+drwxr-xr-x	root/root	usr/share/man/man7/
+drwxr-xr-x	root/root	usr/share/man/man8/
+drwxr-xr-x	root/root	usr/share/misc/
+drwxr-xr-x	root/root	usr/share/terminfo/
+drwxr-xr-x	root/root	usr/share/zoneinfo/
+drwxr-xr-x	root/root	usr/src/
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/cache/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/locate/
+drwxr-xr-x	root/root	var/lib/misc/
+drwxr-xr-x	root/root	var/local/
+drwxr-xr-x	root/root	var/lock/
+drwxr-xr-x	root/root	var/log/
+-rw-r-----	root/root	var/log/auth.log (EMPTY)
+-rw-------	root/root	var/log/btmp (EMPTY)
+-rw-r-----	root/root	var/log/daemon.log (EMPTY)
+-rw-r-----	root/root	var/log/kern.log (EMPTY)
+-rw-rw-r--	root/utmp	var/log/lastlog (EMPTY)
+-rw-r-----	root/root	var/log/mail.log (EMPTY)
+-rw-r-----	root/root	var/log/sys.log (EMPTY)
+-rw-r-----	root/root	var/log/user.log (EMPTY)
+-rw-r--r--	root/root	var/log/wtmp (EMPTY)
+drwxr-xr-x	root/root	var/mail/
+drwxr-xr-x	root/root	var/opt/
+drwxr-xr-x	root/root	var/run/
+-rw-rw-r--	root/utmp	var/run/utmp (EMPTY)
+drwxr-xr-x	root/root	var/spool/
+drwxrwxrwt	root/root	var/tmp/
