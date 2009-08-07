@@ -1,0 +1,21 @@
+# Description: Fournit un support pour l'encodage de langages
+# URL: http://www.gnu.org/software/libiconv/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libiconv
+version=1.13
+release=1
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/bin/iconv
+	rm $PKG/usr/include/iconv.h
+	rm -r $PKG/usr/share/doc
+	chown -R 0:0 $PKG
+}
