@@ -1,0 +1,39 @@
+# Description: Démon pour la gestion du matériel dans l'espace utilisateur
+# URL: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: texinfo
+
+name=udev
+version=145
+release=1
+_lfs_release=20090523
+source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
+http://www.linuxfromscratch.org/lfs/downloads/development/udev-config-${_lfs_release}.tar.bz2)
+build() {
+
+cd udev-$version
+install -dv $PKG/lib/{firmware,udev/devices/{pts,shm}}
+ln -s /proc/self/fd $PKG/lib/udev/devices/fd
+ln -s /proc/self/fd/0 $PKG/lib/udev/devices/stdin
+ln -s /proc/self/fd/1 $PKG/lib/udev/devices/stdout
+ln -s /proc/self/fd/2 $PKG/lib/udev/devices/stderr
+ln -s /proc/kcore $PKG/lib/udev/devices/core
+./configure --prefix=/usr \
+    --sysconfdir=/etc --sbindir=/sbin \
+    --with-rootlibdir=/lib --libexecdir=/lib/udev \
+    --disable-extras
+make 
+make install DESTDIR=$PKG mandir="/usr/share/man"
+install -m644 -v rules/packages/64-*.rules \
+	$PKG/lib/udev/rules.d/
+install -m644 -v rules/packages/40-pilot-links.rules \
+	$PKG/lib/udev/rules.d/
+install -m644 -v rules/packages/40-isdn.rules \
+	$PKG/lib/udev/rules.d/
+
+cd ../udev-config-${_lfs_release}
+make DESTDIR=$PKG install
+make DESTDIR=$PKG install-doc
+}
+
