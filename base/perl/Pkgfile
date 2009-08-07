@@ -1,0 +1,41 @@
+# Description: Langage de programmation PERL (Practical Extraction and Report Language)
+# URL:         http://www.perl.org/
+# Maintainer:  NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: db, gdbm
+
+name=perl
+version=5.10.0
+release=1
+source=(ftp://ftp.funet.fi/pub/CPAN/src/$name-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/lfs/development/perl-$version-consolidated-1.patch)
+
+build() {
+cd $name-$version
+patch -Np1 -i ../perl-$version-consolidated-1.patch
+sed -i -e "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|"           \
+	-e "s|INCLUDE\s*= ./zlib-src|INCLUDE    = /usr/include|" \
+	-e "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|"         \
+	ext/Compress/Raw/Zlib/config.in
+sh Configure -des  -Dusethreads\
+	-Dprefix=/usr \
+	-Dman1dir=/usr/share/man/man1 \
+	-Dman3dir=/usr/share/man/man3 \
+	-Dpager="/usr/bin/less isR" \
+	-Doptimize="$CFLAGS"
+make
+make DESTDIR=$PKG install
+#    ln -sf perl$version $PKG/usr/bin/perl
+#    ln -sf c2ph $PKG/usr/bin/pstruct
+#    ln -sf s2p $PKG/usr/bin/psed
+#    ln -sf c2ph.1pm $PKG/usr/man/man1/pstruct.1pm
+#    ln -sf s2p.1pm $PKG/usr/man/man1/psed.1pm
+find $PKG -iname 'TODO*' -or \
+	-iname 'Change*' -or \
+	-iname 'README*' -or \
+	-name '*.bs' -or \
+	-name .packlist -or \
+	-name perllocal.pod | xargs rm
+find $PKG -depth -empty -exec rmdir {} \;
+chmod -R +w $PKG
+}
