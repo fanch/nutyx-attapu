@@ -1,0 +1,34 @@
+# Description: Collection d'utilitaire pour le coeur du systeme GNU
+# URL: http://www.gnu.org/software/coreutils/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: e2fsprogs
+
+name=coreutils
+version=7.4
+release=1
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-i18n-1.patch\
+	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-uname-1.patch)
+build() {
+	cd $name-$version
+
+case `uname -m` in
+ i?86 | x86_64) patch -Np1 -i ../coreutils-7.4-uname-1.patch ;;
+esac 
+patch -Np1 -i ../$name-$version-i18n-1.patch
+
+./configure --prefix=/usr --enable-no-install-program=kill,uptime,hostname
+make
+make DESTDIR=$PKG install 
+    
+mkdir $PKG/{bin,usr/sbin}
+mv $PKG/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo} $PKG/bin
+mv $PKG/usr/bin/{false,ln,ls,mkdir,mknod,mv,pwd,readlink,rm} $PKG/bin
+mv $PKG/usr/bin/{rmdir,stty,sync,true,uname} $PKG/bin
+mv -v $PKG/usr/bin/chroot $PKG/usr/sbin
+mv -v $PKG/usr/bin/{head,sleep,nice} $PKG/bin
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
