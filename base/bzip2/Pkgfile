@@ -1,0 +1,35 @@
+# Description: Programmes pour compresser et décompresser des fichiers
+# URL: http://www.bzip.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=bzip2
+version=1.0.5
+release=1
+source=( http://www.bzip.org/$version/$name-$version.tar.gz\
+          http://www.linuxfromscratch.org/patches/lfs/development/bzip2-$version-install_docs-1.patch)
+
+build() {
+cd $name-$version
+patch -Np1 -i ../bzip2-$version-install_docs-1.patch
+sed -i 's@\(ln -s -f \)$(PREFIX)/bin/@\1@' Makefile
+make -f Makefile-libbz2_so
+make clean
+make
+make PREFIX=$PKG/usr install
+mkdir $PKG/{bin,lib}
+rm -rf $PKG/usr/share/doc
+mv $PKG/usr/man $PKG/usr/share/
+rm $PKG/usr/bin/{bzegrep,bzfgrep,bzcmp,bzless} 
+ln -sv bzgrep $PKG/usr/bin/bzegrep
+ln -sv bzgrep $PKG/usr/bin/bzfgrep
+ln -sv bzdiff $PKG/usr/bin/bzcmp
+ln -sv bzmore $PKG/usr/bin/bzless
+cp -v bzip2-shared $PKG/bin/bzip2
+cp -av libbz2.so* $PKG/lib/
+ln -sv ../../lib/libbz2.so.1.0 $PKG/usr/lib/libbz2.so
+rm $PKG/usr/bin/{bunzip2,bzcat,bzip2}
+ln -sv bzip2 $PKG/bin/bunzip2
+ln -sv bzip2 $PKG/bin/bzcat
+}
