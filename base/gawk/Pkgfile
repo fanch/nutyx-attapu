@@ -1,0 +1,30 @@
+# Description: Programme pour manipuler des fichiers texte
+# URL: http://www.gnu.org/software/gawk/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=gawk
+version=3.1.7
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
+        )
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--libexec=/usr/lib \
+        --mandir=/usr/share/man \
+        --infodir=/usr/share/info \
+ac_cv_func_working_mktime=yes
+make
+make DESTDIR=$PKG install
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+rm $PKG/usr/bin/gawk-$version \
+	$PKG/usr/bin/pgawk-$version \
+	$PKG/usr/bin/{p,i}gawk \
+	$PKG/usr/share/man/man1/{p,i}gawk.1
+ln -sf gawk.1.gz $PKG/usr/share/man/man1/awk.1.gz
+}
