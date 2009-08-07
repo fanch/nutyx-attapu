@@ -1,0 +1,23 @@
+# Description: Un outil de lecture pour la documentation formatée du projet GNU
+# URL: http://www.gnu.org/software/texinfo
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: tar
+
+name=texinfo
+version=4.13a
+release=1
+source=(ftp://ftp.gnu.org/gnu/texinfo/texinfo-$version.tar.gz\
+        )
+
+build() {
+cd texinfo-${version/a/}
+./configure --prefix=/usr \
+	--mandir=/usr/share/man
+make
+make install DESTDIR=$PKG
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
+
