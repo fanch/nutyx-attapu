@@ -1,0 +1,109 @@
+# Description: Utilitaire permettant de cacher les fichiers de mot de passe
+# URL: http://shadow.pld.org.pl/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=shadow
+version=4.1.4.2
+release=1
+source=( ftp://pkg-shadow.alioth.debian.org/pub/pkg-shadow/$name-$version.tar.bz2\
+	)
+
+build() {
+cd $name-$version
+# Disable the installation of groups
+sed -i 's/groups$(EXEEXT) //' src/Makefile.in
+find man -name Makefile.in -exec sed -i 's/groups\.1 / /' {} \;
+
+# Disable the installation of the non french manual pages
+# Instead of using the default crypt  method, use the more secure MD5 method of password encryption
+sed -i  's@DICTPATH.*@DICTPATH\t/lib/cracklib/pw_dict@' \
+	etc/login.defs
+
+./configure --sysconfdir=/etc
+make
+make DESTDIR=$PKG install
+for i in de cs fi id hu ja it ko pl ru sv tr pt_BR zh_CN zh_TW
+	do rm -r $PKG/usr/share/man/$i
+done
+# Remove the default as it is part of aaabasicfs
+rm -rf $PKG/etc/default
+mkdir $PKG/usr/lib
+mv -v $PKG/usr/bin/passwd $PKG/bin
+
+
+if (pkginfo -i |grep linux-pam > /dev/null) then
+
+    ln -sfv ../../lib/libshadow.so.0 $PKG/usr/lib/libshadow.so
+    cp $PKG/etc/{login.defs,login.defs.orig}
+for FUNCTION in LASTLOG_ENAB MAIL_CHECK_ENAB \
+                PORTTIME_CHECKS_ENAB CONSOLE \
+                MOTD_FILE NOLOGINS_FILE PASS_MIN_LEN \
+                SU_WHEEL_ONLY MD5_CRYPT_ENAB \
+                CONSOLE_GROUPS ENVIRON_FILE \
+                ULIMIT ENV_TZ ENV_HZ ENV_SUPATH \
+                ENV_PATH QMAIL_DIR MAIL_DIR MAIL_FILE \
+                CHFN_AUTH FAILLOG_ENAB QUOTAS_ENAB FTMP_FILE \
+                OBSCURE_CHECKS_ENAB CRACKLIB_DICTPATH \
+                PASS_CHANGE_TRIES PASS_ALWAYS_WARN ISSUE_FILE
+do
+    sed -i "s/^$FUNCTION/# &/" $PKG/etc/login.defs
+done
+	cat > $PKG/etc/pam.d/login << "EOF"
+# Begin /etc/pam.d/login
+
+auth        requisite      pam_nologin.so
+auth        required       pam_securetty.so
+auth        required       pam_env.so
+auth        required       pam_unix.so
+account     required       pam_access.so
+account     required       pam_unix.so
+session     required       pam_motd.so
+session     required       pam_limits.so
+session     optional       pam_mail.so      dir=/var/mail standard
+session     optional       pam_lastlog.so
+session     required       pam_unix.so
+password    required       pam_unix.so      md5 shadow
+
+# End /etc/pam.d/login
+EOF
+cat > $PKG/etc/pam.d/passwd << "EOF"
+# Begin /etc/pam.d/passwd
+
+password    required       pam_unix.so      md5 shadow
+
+# End /etc/pam.d/passwd
+EOF
+cat > $PKG/etc/pam.d/su << "EOF"
+# Begin /etc/pam.d/su
+
+auth        sufficient      pam_rootok.so
+auth        required        pam_unix.so
+account     required        pam_unix.so
+session     optional        pam_mail.so     dir=/var/mail standard
+session     optional        pam_xauth.so
+session     required        pam_env.so
+session     required        pam_unix.so
+
+# End /etc/pam.d/su
+EOF
+cat > $PKG/etc/pam.d/chage << "EOF"
+# Begin /etc/pam.d/chage
+
+auth        sufficient      pam_rootok.so
+auth        required        pam_unix.so
+account     required        pam_unix.so
+session     required        pam_unix.so
+password    required        pam_permit.so
+
+# End /etc/pam.d/chage
+EOF
+	for PROGRAM in chpasswd chgpasswd groupadd groupdel groupmems \
+               groupmod newusers useradd userdel usermod
+	do
+    		install -v -m644 $PKG/etc/pam.d/chage $PKG/etc/pam.d/$PROGRAM
+    		sed -i "s/chage/$PROGRAM/" $PKG/etc/pam.d/$PROGRAM
+	done
+fi
+}
