@@ -1,0 +1,20 @@
+# Description: Librairie pour la precisision mathématique multiple
+# URL: http://www.mpfr.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gmp
+
+name=mpfr
+version=2.4.1
+release=1
+source=(http://www.mpfr.org/mpfr-current/mpfr-$version.tar.gz \
+	)
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--enable-thread-safe
+	make
+	make DESTDIR=$PKG install
+	# Remove the dir file
+	rm $PKG/usr/share/info/dir
+}
