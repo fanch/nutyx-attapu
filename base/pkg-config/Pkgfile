@@ -1,0 +1,20 @@
+# Description: Outil permettant le traitement des fichiers Includes des librairies
+# URL:  http://pkgconfig.freedesktop.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=pkg-config
+version=0.23
+release=1
+source=( http://pkgconfig.freedesktop.org/releases/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
