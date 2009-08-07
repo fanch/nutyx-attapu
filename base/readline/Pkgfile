@@ -1,0 +1,33 @@
+# Description: Jeux de librairies permetant l'historique des commande en ligne
+# URL: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: grep
+
+name=readline
+version=6.0
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
+	http://www.linuxfromscratch.org/patches/lfs/development/readline-$version-fixes-1.patch)
+build() {
+cd $name-$version
+sed -i '/MV.*old/d' Makefile.in
+sed -i '/{OLDSUFF}/c:' support/shlib-install
+patch -Np1 -i ../readline-$version-fixes-1.patch
+
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+        --infodir=/usr/share/info \
+	--libdir=/lib
+make SHLIBS=-lncurses
+make DESTDIR=$PKG install
+
+mkdir -p $PKG/usr/lib
+mv -v $PKG/lib/lib{readline,history}.a $PKG/usr/lib
+rm -v $PKG/lib/lib{readline,history}.so
+ln -sfv ../../lib/libreadline.so.6 $PKG/usr/lib/libreadline.so
+ln -sfv ../../lib/libhistory.so.6 $PKG/usr/lib/libhistory.so
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
