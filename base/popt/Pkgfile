@@ -1,0 +1,20 @@
+# Description: Librairies permettant à certains programmes de passer des options aux commandes en ligne
+# URL: http://freshmeat.net/projects/popt/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gettext
+
+name=popt
+version=1.15
+release=1
+source=(http://rpm5.org/files/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
