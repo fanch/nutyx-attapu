@@ -1,0 +1,27 @@
+# Description: Librairie de compression/décompression
+# URL: http://www.zlib.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc
+
+name=zlib
+version=1.2.3
+release=1
+source=(http://www.zlib.net/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+	export CFLAGS="${CFLAGS} -fPIC"
+    ./configure --prefix=/usr --shared --libdir=/lib
+    make
+    make prefix=$PKG/usr  libdir=$PKG/lib install
+	rm -v $PKG/lib/libz.so
+	mkdir -p $PKG/usr/lib
+	ln -sfv ../../lib/libz.so.1.2.3 $PKG/usr/lib/libz.so
+    make clean
+    ./configure --prefix=/usr
+    make
+    make prefix=$PKG/usr install
+
+    chmod -v 644 $PKG/usr/lib/libz.a
+}
