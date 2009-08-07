@@ -1,0 +1,11 @@
+--- pkg/etc/sysconfig/network-devices/services/dhcpcd~	2009-02-26 16:46:40.000000000 +0000
++++ pkg/etc/sysconfig/network-devices/services/dhcpcd	2009-02-26 16:46:12.000000000 +0000
+@@ -31,7 +31,7 @@
+ 				exit 2
+ 			fi
+ 		fi
+-		/sbin/dhcpcd $1 $DHCP_START
++		/sbin/dhcpcd $1 $DHCP_START &
+ 		# Save the return value
+ 		RET="$?"
+ 		# Print the assigned settings if requested

@@ -1,0 +1,33 @@
+# Description: Client dhcp pour obtenir une adresse dynamiquement
+# URL: http://roy.marples.name/projects/dhcpcd
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: more 
+
+name=dhcpcd
+version=5.0.6
+release=1
+source=( http://roy.marples.name/downloads/$name/$name-$version.tar.bz2\
+          dhcpcd \
+	)
+
+build() {
+	source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/${scripts}-${scriptsversion}.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2
+	cd $name-$version
+  export PREFIX=/usr 
+  sed -i 's/${PREFIX}\/etc/\/etc/' Makefile
+  sed -i 's/\/db/\/lib\/dhcpcd/' Makefile
+  sed -i 's/\/libexec/\/lib\/dhcpcd/' Makefile
+  sed -i 's/\/libexec/\/lib\/dhcpcd/' dhcpcd-hooks/Makefile
+  sed -i 's/${PREFIX}\/sbin/\/sbin/' Makefile
+
+	make
+	make DESTDIR=$PKG install
+        mkdir -p $PKG/etc/sysconfig/network-devices/ifconfig.eth0
+        mv ../dhcpcd $PKG/etc/sysconfig/network-devices/ifconfig.eth0/
+	cd ../$scripts-$scriptsversion
+	make DESTDIR=$PKG install-service-dhcpcd
+	cd ../..
+}
