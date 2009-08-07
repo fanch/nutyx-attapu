@@ -1,0 +1,57 @@
+# Description: La collection de compilateurs C, C++, obc  GNU
+# URL: http://gcc.gnu.org
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: mpfr
+
+name=gcc
+version=4.4.1
+release=1
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version/$name-$version.tar.bz2\
+ )
+	
+build() {
+cd $name-$version
+
+sed -i 's/install_to_$(INSTALL_DEST) //' libiberty/Makefile.in
+
+case `uname -m` in
+  i?86) sed -i 's/^T_CFLAGS =$/& -fomit-frame-pointer/' \
+        gcc/Makefile.in ;;
+esac
+	
+sed -i 's@\./fixinc\.sh@-c true@' gcc/Makefile.in	
+
+mkdir ../gcc-build
+cd ../gcc-build
+../$name-$version/configure --prefix=/usr \
+	--libexecdir=/usr/lib \
+	--enable-languages=c,c++,objc,fortran \
+	--enable-threads=posix \
+	--enable-__cxa_atexit \
+	--enable-clocale=gnu \
+	--enable-shared \
+        --infodir=/usr/share/info \
+        --mandir=/usr/share/man --with-x=no \
+	--disable-multilib --disable-bootstrap
+
+    	make
+    	make DESTDIR=$PKG install
+    
+    mkdir $PKG/lib
+    ln -sf ../usr/bin/cpp $PKG/lib/cpp
+    ln -sf gcc $PKG/usr/bin/cc
+    ln -sf g++ $PKG/usr/bin/c++
+    mv $PKG/usr/lib/gcc/*/$version/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$version/include/
+    # Remove the dir file
+    if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+    fi
+case `uname -m` in
+  i?86) sed -i "s|-L$SRC[^ ]* ||g" \
+        $PKG/usr/lib/{libstdc++.la,libsupc++.la} ;;
+  x86_64)
+	sed -i "s|-L$SRC[^ ]* ||g" \
+	$PKG/usr/lib64/{libstdc++.la,libsupc++.la} ;;
+esac
+}

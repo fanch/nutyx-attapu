@@ -1,0 +1,51 @@
+# Description: La collection de compilateurs C, C++, obc  GNU sans leur librairies
+# URL:         http://gcc.gnu.org
+# Packager:    Thierry Nuttens thierryn1 at hispeed dot ch
+# Maintainer:  Linux From Scratch
+
+name=gcc
+version=4.3.2
+release=2
+group=test
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version/$name-$version.tar.bz2\
+	$name-$version-nocheck-fixincludes.patch\
+)
+#	$name-$version-fixinc.patch)
+	
+build() {
+   cd $name-$version
+	patch -Np1 -i ../$name-$version-nocheck-fixincludes.patch
+
+	sed -i 's/install_to_$(INSTALL_DEST) //' libiberty/Makefile.in
+	sed -i 's/^XCFLAGS =$/& -fomit-frame-pointer/' gcc/Makefile.in
+	sed -i 's@\./fixinc\.sh@-c true@' gcc/Makefile.in	
+
+
+    mkdir ../gcc-build
+    cd ../gcc-build
+    ../$name-$version/configure --prefix=/usr \
+				--libexecdir=/usr/lib \
+				--enable-languages=c,c++,objc \
+				--enable-threads=posix \
+				--enable-__cxa_atexit \
+				--enable-clocale=gnu \
+				--enable-shared \
+                                --infodir=/usr/share/info \
+                                --mandir=/usr/share/man \
+                                --with-x=no --disable-bootstrap
+    	make -j2
+	make -k check -j2
+    make DESTDIR=$PKG install
+    
+    mkdir $PKG/lib
+    ln -sf ../usr/bin/cpp $PKG/lib/cpp
+    ln -sf gcc $PKG/usr/bin/cc
+    ln -sf g++ $PKG/usr/bin/c++
+    # Remove the librairies and locales which belong to gcc-libs
+    rm -rf $PKG/usr/lib
+    rm -rf $PKG/usr/share/locale
+    # Remove the dir file
+    if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+    fi
+}
