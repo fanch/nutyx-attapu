@@ -1,0 +1,32 @@
+# Description: Programmes de base pour réseau
+# URL: http://www.gnu.org/software/inetutils/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: readline, ncurses
+
+name=inetutils
+version=1.6
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
+        http://www.linuxfromscratch.org/patches/lfs/development/$name-$version-no_server_man_pages-1.patch)
+
+build() {
+	cd $name-$version
+        patch -Np1 -i ../$name-$version-no_server_man_pages-1.patch
+	./configure --prefix=/usr \
+                --libexecdir=/usr/sbin \
+                --localstatedir=/var \
+                --sysconfdir=/etc \
+                --disable-ifconfig \
+                --disable-logger \
+                --disable-syslogd \
+                --disable-whois \
+                --disable-servers \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	if [ -f $PKG/usr/share/info/dir ]; then
+        	rm $PKG/usr/share/info/dir
+	fi
+}
