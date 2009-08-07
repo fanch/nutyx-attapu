@@ -1,0 +1,28 @@
+# Description: Modules utilitaires pour le noyau
+# URL: http://www.kernel.org/pub/linux/kernel/people/rusty/modules
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: man-db
+
+name=module-init-tools
+version=3.9
+release=1
+source=(http://www.kernel.org/pub/linux/utils/kernel/modules/$name-$version.tar.bz2\
+	modprobe.conf)
+
+build() {
+cd $name-$version
+./configure
+make check
+make clean
+
+./configure --prefix=/  --enable-zlib \
+	--mandir=/usr/share/man
+
+make
+install -d $PKG/usr/share/man
+install -d $PKG/etc
+make DESTDIR=$PKG mandir=/usr/share/man install
+rm -f $PKG/sbin/generate-modprobe.conf
+install -m 644 ../modprobe.conf $PKG/etc
+}
