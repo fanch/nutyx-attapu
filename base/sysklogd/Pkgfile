@@ -1,0 +1,19 @@
+# Description: Démons de log pour le système et le noyau
+# URL: http://www.infodrom.org/projects/sysklogd/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=sysklogd
+version=1.5
+release=1
+source=( http://www.infodrom.org/projects/$name/download/$name-$version.tar.gz \
+        syslog.conf)
+build() {
+cd $name-$version
+mkdir -p $PKG/{usr/sbin,etc,usr/share/man/man{5,8}}
+
+make RPM_OPT_FLAGS="$CFLAGS" all
+make BINDIR=$PKG/usr/sbin MANDIR=$PKG/usr/share/man install
+mv ../syslog.conf $PKG/etc/
+}
