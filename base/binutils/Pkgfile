@@ -1,0 +1,33 @@
+# Description: Le paquet GNU Binutils est une collection d'outils 
+# URL: http://sources.redhat.com/binutils/
+# Maintainer:  Linux From Scratch
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: zlib
+
+name=binutils
+version=2.19.1
+release=1
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+
+rm -fv etc/standards.info
+sed -i.bak '/^INFO/s/standards.info //' etc/Makefile.in
+
+sed -i -e 's/getline/get_line/' libiberty/testsuite/test-demangle.c
+
+	
+mkdir ../binutils-build
+cd ../binutils-build
+../$name-$version/configure --prefix=/usr \
+--enable-shared
+
+make tooldir=/usr
+make check
+make tooldir=/usr DESTDIR=$PKG install
+cp ../$name-$version/include/libiberty.h $PKG/usr/include
+rm -rf $PKG/usr/info
+sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/libbfd.la
+
+}
