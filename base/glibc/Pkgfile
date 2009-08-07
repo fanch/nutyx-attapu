@@ -1,0 +1,70 @@
+# Description: La librairie C utilisée dans le système GNU
+# URL: http://www.gnu.org/software/libc/
+# Maintainer: NuTyX core team
+# Packager:thierryn1 at hispeed dot ch
+# Depends on:
+
+name=glibc
+version=2.10.1
+release=1
+kernelversion=2.6.30.1
+source=( http://ftp.gnu.org/gnu/glibc/$name-$version.tar.bz2 \
+	http://ftp.gnu.org/gnu/glibc/glibc-libidn-$version.tar.bz2
+	http://www.kernel.org/pub/linux/kernel/v2.6/linux-${kernelversion}.tar.bz2
+         nsswitch.conf ld.so.conf SUPPORTED) 
+
+
+build() {
+        # install build kernel headers
+        mkdir $PKG/usr/
+        cd linux-$kernelversion
+        sed -i '/scsi/d' include/Kbuild        
+        make mrproper
+        make headers_check
+        make INSTALL_HDR_PATH=$PKG/usr headers_install
+        cd ..
+        # install glibc
+        cd $name-$version
+        DL=$(readelf -l /bin/sh | sed -n 's@.*interpret.*/tools\(.*\)]$@\1@p')
+sed -i "s|libs -o|libs -L/usr/lib -Wl,-dynamic-linker=$DL -o|" \
+        scripts/test-installation.pl
+unset DL
+
+sed -i 's|@BASH@|/bin/bash|' elf/ldd.bash.in
+
+sed -i s/utf8/UTF-8/ libio/tst-fgetwc.c
+sed -i '/tst-fgetws-ENV/ a\
+tst-fgetwc-ENV = LOCPATH=$(common-objpfx)localedata' libio/Makefile
+
+sed -i -e 's/FUTEX_WAIT\( | FUTEX_CLOCK_REALTIME, reg\)/FUTEX_WAIT_BITSET\1/' \
+        nptl/sysdeps/unix/sysv/linux/i386/i486/lowlevellock.S
+
+	mv ../SUPPORTED localedata/
+
+	mkdir -v ../glibc-build
+        cd ../glibc-build
+case `uname -m` in
+  i?86) echo "CFLAGS += -march=i486 -mtune=native -O3 -pipe" > configparms ;;
+esac
+
+        ../$name-$version/configure --prefix=/usr \
+                --with-headers=$PKG/usr/include \
+		--disable-profile \
+                --enable-add-ons \
+                --mandir=/usr/share/man \
+                --infodir=/usr/share/info \
+		--enable-kernel=2.6.18 \
+                --libexecdir=/usr/lib/glibc
+	make
+	make install_root=$PKG install
+        make install_root=$PKG localedata/install-locales
+        cp ../{nsswitch.conf,ld.so.conf} $PKG/etc
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm $PKG/usr/share/info/dir
+	fi
+        for i in drm.h drm_sarea.h i915_drm.h \
+	mga_drm.h r128_drm.h radeon_drm.h savage_drm.h \
+        sis_drm.h via_drm.h drm_mode.h
+                do rm $PKG/usr/include/drm/$i
+        done
+}
