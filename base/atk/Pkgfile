@@ -1,0 +1,21 @@
+# Description: Librairie fournissant un jeu d'interface pour l'accessibilitée
+# URL: http://www.gtk.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib
+
+name=atk
+version=1.26.0
+release=1
+source=( http://ftp.gnome.org/pub/gnome/sources/$name/1.26/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/gtk-doc      
+}
