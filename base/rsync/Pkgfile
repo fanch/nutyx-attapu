@@ -1,0 +1,23 @@
+# Description: Protocol de synchronisation de fichiers très efficace
+# URL: http://samba.anu.edu.au/rsync/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libiconv, popt
+
+name=rsync
+version=3.0.6
+release=1
+source=( http://rsync.samba.org/ftp/$name/$name-$version.tar.gz\
+	rsync.driver)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info 
+	make
+	make DESTDIR=$PKG install
+	install -d $PKG/etc/ports/drivers
+	install -m 755 $SRC/rsync.driver $PKG/etc/ports/drivers/rsync
+}
