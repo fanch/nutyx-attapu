@@ -1,0 +1,21 @@
+# Description: Permet la production de scripts pouvant configurer automatiquement le code source 
+# URL: http://www.gnu.org/software/autoconf/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=autoconf
+version=2.64
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+./configure --prefix=/usr 
+make
+make DESTDIR=$PKG install
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
