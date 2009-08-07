@@ -1,0 +1,38 @@
+# Description: Permet la lecture des pages de manuels
+# URL: http://savannah.nongnu.org/projects/man-db
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: make
+
+name=man-db
+version=2.5.5
+release=1
+
+source=(http://savannah.nongnu.org/download/$name/$name-$version.tar.gz\
+ )
+
+build() {
+cd $name-$version
+sed -i -e '\%\t/usr/man%d' -e '\%\t/usr/local/man%d' src/man_db.conf.in
+./configure --prefix=/usr --libexecdir=/usr/lib \
+	--sysconfdir=/etc --disable-setuid \
+	--enable-mb-groff --with-browser=/usr/bin/lynx \
+	--with-col=/usr/bin/col --with-vgrind=/usr/bin/vgrind \
+	--with-grap=/usr/bin/grap
+make
+make DESTDIR=$PKG install
+cat >> convert-mans << "EOF"
+#!/bin/sh -e
+FROM="$1"
+TO="$2"
+shift ; shift
+while [ $# -gt 0 ]
+do
+        FILE="$1"
+        shift
+        iconv -f "$FROM" -t "$TO" "$FILE" >.tmp.iconv
+        mv .tmp.iconv "$FILE"
+done
+EOF
+install -m755 convert-mans $PKG/usr/bin
+}
