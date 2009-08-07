@@ -1,0 +1,20 @@
+# Description: Editeur de fichier a la volee (Stream)
+# URL: http://www.gnu.org/software/sed//sed.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: db
+
+name=sed
+version=4.2.1
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--bindir=/bin \
+	--htmldir=/usr/share/doc/sed-$version
+    make
+    make DESTDIR=$PKG install
+    rm -r $PKG/usr/share/info/dir
+}
