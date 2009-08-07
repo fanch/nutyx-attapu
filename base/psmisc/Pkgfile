@@ -1,0 +1,21 @@
+# Description: Petits utilitaires qui utilisent le système de fichiers /proc
+# URL: http://psmisc.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ncurses
+
+name=psmisc
+version=22.6
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr \
+                --mandir=/usr/share/man \
+                --exec-prefix=""
+    make -j2
+    make DESTDIR=$PKG install
+    mkdir -p $PKG/usr/bin
+    mv -v $PKG/bin/pstree* $PKG/usr/bin/
+}
