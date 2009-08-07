@@ -1,0 +1,21 @@
+# Description: Visualisation de fichier textes
+# URL: http://www.greenwoodsoftware.com/less/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kbd
+
+name=less
+version=429
+release=1
+source=( http://www.greenwoodsoftware.com/$name/$name-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+        --sysconfdir=$PKG/etc \
+	--infodir=/usr/share/info
+make
+make DESTDIR=$PKG install
+}
