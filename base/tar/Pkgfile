@@ -1,0 +1,22 @@
+# Description: Le programme de sauvegarde de GNU 
+# URL: http://www.gnu.org/software/tar/tar.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=tar
+version=1.22
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--bindir=/bin \
+	--libexecdir=/usr/sbin
+make
+make DESTDIR=$PKG install
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
