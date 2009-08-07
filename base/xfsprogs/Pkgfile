@@ -1,0 +1,23 @@
+# Description: Utilitaires pour le systeme de fichiers xfs
+# URL: http://oss.sgi.com/projects/xfs/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: util-linux-ng 
+
+name=xfsprogs
+version=3.0.1
+release=1
+source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-${version}.tar.gz)
+
+build() {
+	cd $name-$version
+	export DEBUG=-DNDEBUG
+	export OPTIMIZER=$CFLAGS
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--sbindir=/sbin \
+	--libdir=/lib
+	make
+	make DIST_ROOT=$PKG install install-dev
+	rm -r $PKG/usr/share/locale
+}
