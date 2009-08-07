@@ -1,0 +1,21 @@
+# Description: Secure Sockets Layer and Transport Layer Security tools
+# URL: http://www.openssl.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=openssl
+version=0.9.8k
+release=1
+source=(http://www.openssl.org/source/$name-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+./config --prefix=/usr \
+	--openssldir=/etc/ssl \
+	shared
+make
+make INSTALL_PREFIX=$PKG MANDIR=/usr/share/man MANSUFFIX=ssl install
+cp -v -r certs $PKG/etc/ssl
+}
