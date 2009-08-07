@@ -1,0 +1,17 @@
+# Description: Information sur les données par IANA (Internet Assigned Number Authority)
+# URL: http://www.sethwklein.net/projects/iana-etc/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: coreutils
+
+name=iana-etc
+version=2.30
+release=1
+source=( http://www.sethwklein.net/projects/$name/downloads/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	make
+	make DESTDIR=$PKG install
+}
