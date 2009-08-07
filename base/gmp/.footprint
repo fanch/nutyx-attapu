@@ -1,0 +1,26 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/gmp.h
+-rw-r--r--	root/root	usr/include/gmpxx.h
+-rw-r--r--	root/root	usr/include/mp.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libgmp.a
+-rwxr-xr-x	root/root	usr/lib/libgmp.la
+lrwxrwxrwx	root/root	usr/lib/libgmp.so -> libgmp.so.3.5.0
+lrwxrwxrwx	root/root	usr/lib/libgmp.so.3 -> libgmp.so.3.5.0
+-rwxr-xr-x	root/root	usr/lib/libgmp.so.3.5.0
+-rw-r--r--	root/root	usr/lib/libgmpxx.a
+-rwxr-xr-x	root/root	usr/lib/libgmpxx.la
+lrwxrwxrwx	root/root	usr/lib/libgmpxx.so -> libgmpxx.so.4.1.0
+lrwxrwxrwx	root/root	usr/lib/libgmpxx.so.4 -> libgmpxx.so.4.1.0
+-rwxr-xr-x	root/root	usr/lib/libgmpxx.so.4.1.0
+-rw-r--r--	root/root	usr/lib/libmp.a
+-rwxr-xr-x	root/root	usr/lib/libmp.la
+lrwxrwxrwx	root/root	usr/lib/libmp.so -> libmp.so.3.1.14
+lrwxrwxrwx	root/root	usr/lib/libmp.so.3 -> libmp.so.3.1.14
+-rwxr-xr-x	root/root	usr/lib/libmp.so.3.1.14
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/info/
+-rw-r--r--	root/root	usr/share/info/gmp.info-1.gz
+-rw-r--r--	root/root	usr/share/info/gmp.info-2.gz
+-rw-r--r--	root/root	usr/share/info/gmp.info.gz
