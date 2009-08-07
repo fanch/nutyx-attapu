@@ -1,0 +1,22 @@
+# Description: Programmes de base et avancés pour réseau IPV4
+# URL: http://linux-net.osdl.org/index.php/Iproute2
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gzip
+
+name=iproute2
+version=2.6.29.1
+release=1
+source=( http://developer.osdl.org/dev/$name/download/$name-2.6.29-1.tar.bz2\
+         )
+
+
+build() {
+cd $name-*
+sed -i "s|local/lib/iptables|lib/xtables|" include/iptables.h
+make SBINDIR=/sbin MANDIR=/usr/share/man INFODIR=/usr/share/info \
+	DESTDIR=$PKG install
+mkdir -p $PKG/usr/sbin
+mv $PKG/sbin/arpd $PKG/usr/sbin/
+rm -r $PKG/{share,lib,usr/lib}       
+}
