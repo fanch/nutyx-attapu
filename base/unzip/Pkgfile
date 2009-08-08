@@ -1,0 +1,28 @@
+# Description: Utilitaire de décompression de fichiers zip
+# URL: http://infozip.sourceforge.net/UnZip.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=unzip
+version=5.52
+release=1
+source=(http://fresh.t-systems-sfr.com/unix/src/misc/unzip552.tar.gz\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/unzip-5.52-security_fix-1.patch\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/unzip-5.52-security_fix-2.patch )
+
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../unzip-5.52-security_fix-1.patch
+	patch -Np1 -i ../unzip-5.52-security_fix-2.patch
+	case `uname -m` in
+		x86_64)
+			make -f unix/Makefile LOCAL_UNZIP=-D FILE_OFFSET_64BITS=64 \
+			CF="-0 -Wall -I. -DUSE_UNSHRINK" prefix=/usr unzips;;
+		i?86)
+			make -f unix/Makefile \
+			LOCAL_UNZIP=-D_FILE_OFFSET_BITS=64 linux;;
+	esac
+	make -f unix/Makefile prefix=$PKG/usr MANDIR=$PKG/usr/share/man/man1 install
+}
