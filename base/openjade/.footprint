@@ -1,0 +1,25 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/jade -> openjade
+-rwxr-xr-x	root/root	usr/bin/openjade
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libgrove.so -> libogrove.so
+-rw-r--r--	root/root	usr/lib/libogrove.a
+-rwxr-xr-x	root/root	usr/lib/libogrove.la
+lrwxrwxrwx	root/root	usr/lib/libogrove.so -> libogrove.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libogrove.so.0 -> libogrove.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libogrove.so.0.0.1
+-rw-r--r--	root/root	usr/lib/libospgrove.a
+-rwxr-xr-x	root/root	usr/lib/libospgrove.la
+lrwxrwxrwx	root/root	usr/lib/libospgrove.so -> libospgrove.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libospgrove.so.0 -> libospgrove.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libospgrove.so.0.0.1
+-rw-r--r--	root/root	usr/lib/libostyle.a
+-rwxr-xr-x	root/root	usr/lib/libostyle.la
+lrwxrwxrwx	root/root	usr/lib/libostyle.so -> libostyle.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libostyle.so.0 -> libostyle.so.0.0.1
+-rwxr-xr-x	root/root	usr/lib/libostyle.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libspgrove.so -> libospgrove.so
+lrwxrwxrwx	root/root	usr/lib/libstyle.so -> libostyle.so
+drwxr-xr-x	root/root	usr/share/
+-rw-r--r--	root/root	usr/share/builtins.dsl
