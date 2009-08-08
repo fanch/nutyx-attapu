@@ -1,0 +1,24 @@
+# Description: Implémentation de .NET 
+# URL: http://www.mono-project.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=mono
+version=2.4
+release=1
+source=(http://www.go-mono.com/sources/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--with-libgdiplus=installed --with-icu=no \
+              --with-tls=pthread --with-jit=yes --with-preview=yes \
+              --with-sigaltstack=yes,no --enable-nunit-tests
+
+	make -j2
+#	sed -i "/NO_INSTALL = yes/d" mcs/nunit20/nunit-console/Makefile
+	
+	make DESTDIR=$PKG install
+}
