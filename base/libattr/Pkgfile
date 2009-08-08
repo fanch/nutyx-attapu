@@ -1,0 +1,27 @@
+# Description: Extented attributes library
+# URL: http://acl.bestbits.at/
+# Maintainer: Antti Nykanen, aon at iki dot fi
+# Depends on:
+
+name=libattr
+version=2.4.43-1
+release=2
+source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/attr_${version}.tar.gz)
+
+build() {
+	cd attr-${version%-1}
+	./configure --prefix=$PKG/usr \
+	--mandir=$PKG/usr/share/man \
+	--libexecdir=$PKG/usr/lib
+	make
+	make install-lib
+	make install-dev
+
+	rm $PKG/usr/lib/libattr.so
+	ln -s /usr/lib/libattr.so.1 $PKG/usr/lib/libattr.so
+
+	# category 2 manuals are included in core/man-pages
+	rm -rf $PKG/usr/share/man/man2
+
+	sed -i "s:libdir=.*:libdir='/usr/lib':" $PKG/usr/lib/libattr.la
+}
