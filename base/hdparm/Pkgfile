@@ -1,0 +1,20 @@
+# Description: Utilitaire pour les contrôlleurs de disques ATA/IDE
+# URL: http://downloads.sourceforge.net/hdparm/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=hdparm
+version=9.16
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz )
+
+
+
+build() {
+	# build package
+		cd $name-$version
+		make
+		make binprefix=$PKG mandir=$PKG/usr/share/man install
+
+}
