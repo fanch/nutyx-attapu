@@ -1,0 +1,26 @@
+# Description: A set of utilities to manage software packages 
+# URL:         http://www.fukt.bsnet.se/~per/pkgutils/
+# Maintainer:  NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:  libarchive
+
+name=pkgutils
+version=5.34.0
+release=1
+source=(http://crux.nu/files/$name-$version.tar.gz \
+nutyx-2009.1.patch)
+build () {
+cd $name-$version
+mkdir -p $PKG/usr/share
+patch -Np1 -i ../nutyx-2009.1.patch
+make DESTDIR=$PKG install
+case `uname -m` in
+	x86_64)
+		sed -i "s/march=native/mtune=generic/" $PKG/etc/pkgmk.conf;;
+	i?86)
+		sed -i "s/native/i686/" $PKG/etc/pkgmk.conf;;
+esac
+	mv $PKG/usr/man	\
+	$PKG/usr/share/man
+}
+
