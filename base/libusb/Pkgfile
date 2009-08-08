@@ -1,0 +1,23 @@
+# Description: Librairie pour interface USB
+# URL: http://libusb.wiki.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libusb
+version=0.1.12
+release=1
+source=( http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+
+
+build() {
+	# build package
+		cd $name-$version
+                ./configure --prefix=/usr\
+                            --disable-build-docs\
+                            --mandir=/usr/share/man\
+                            --infodir=/usr/share/info
+		make
+		make DESTDIR=$PKG install
+}
