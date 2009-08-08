@@ -1,0 +1,24 @@
+# Description: Un éditeur 8 bits compliant POSIX
+# URL: http://www.gnu.org/software/ed/ed.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=ed
+version=1.0
+release=1
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	sed -i -e 's/ln /ln -s /' Makefile.in
+
+	./configure --prefix=/usr \
+		--exec-prefix=/ \
+		--mandir=/usr/share/man
+		CFLAGS="$CFLAGS"
+	make
+	make DESTDIR=$PKG install install-man
+	rm $PKG/usr/share/info/dir
+	
+}
