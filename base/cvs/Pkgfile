@@ -1,0 +1,17 @@
+# Description: client version system
+# URL: http://savannah.nongnu.org/projects/cvs/
+# Maintainer: NuTyX Core Team
+# Packager: Floreal Cabanettes, cabaflo at wanadoo dot fr
+# Depends on:
+
+name=cvs
+version=1.11.23
+release=1
+source=(http://nongnu.mirror.ironie.org/releases/$name/source/stable/$version/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make -j3
+	make DESTDIR=$PKG install
+}
