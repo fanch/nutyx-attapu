@@ -1,0 +1,23 @@
+# Description: Version control System (Remplacement de cvs)
+# URL: http://subversion.tigris.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: apr, neon, expat
+
+name=subversion
+version=1.6.3
+release=1
+source=(http://subversion.tigris.org/downloads/subversion-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	sed -i 's/@SVN_APR_INCLUDES@/& @CPPFLAGS@/' \
+    subversion/bindings/swig/perl/native/Makefile.PL.in
+	./configure --prefix=/usr \
+		--with-apr=/usr --with-apr-util=/usr\
+		--with-neon=/usr \
+		--disable-neon-version-check
+	make
+	make DESTDIR=$PKG install
+}
