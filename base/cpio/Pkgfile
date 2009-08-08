@@ -1,0 +1,27 @@
+# Description: Contient un outil d'archivage
+# URL: http://www.gnu.org/software/cpio/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=cpio
+version=2.10
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2\
+)
+
+
+build() {
+	cd $name-$version
+	./configure \
+		--prefix=/usr \
+		--bindir=/bin \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/libexec
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm $PKG/usr/share/info/dir
+	fi
+}
