@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/usbutils.pc
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/lsusb
+-rwxr-xr-x	root/root	usr/sbin/update-usbids.sh
+-rwxr-xr-x	root/root	usr/sbin/usb-devices
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/lsusb.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/usb-devices.8.gz
+-rw-r--r--	root/root	usr/share/usb.ids
+-rw-r--r--	root/root	usr/share/usb.ids.gz
