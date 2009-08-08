@@ -1,0 +1,28 @@
+# Description: Langage permettant le calcul arbitraire de précision
+# URL: http://ftp.gnu.org/gnu/bc/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=bc
+version=1.06
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz )
+
+
+
+build() {
+	# build package
+		cd $name-$version
+		sed -i '/PROTO.*readline/d' bc/scan.l
+		sed -i '/flex -I8/s/8//' configure
+		sed -i '/stdlib/a #include <string.h>' lib/number.c
+		sed -i 's/program.*save/static &/' bc/load.c
+                ./configure --prefix=/usr\
+			    --with-readline\
+                            --mandir=/usr/share/man\
+                            --infodir=/usr/share/info
+		make
+		make DESTDIR=$PKG install
+		rm $PKG/usr/share/info/dir
+}
