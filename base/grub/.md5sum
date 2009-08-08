@@ -1,0 +1,17 @@
+5456f021968f2feaeb9acfb825537a93  00-grub-0.97-gfxboot.patch
+d9485c909b462785fa5afb23006456de  02-grub-0.97-debugcdboot.patch
+f44bc6572e7af2e488e46d9b174caa4d  bad-assert-sideeffect
+6ebd162bfe44a8bd5b404ae85a3175e6  chainloader-devicefix
+39e0f9a05b7e04aceb24fc7bc4893e3d  ext4.patch
+2482bef9c1866b4045767a56268ba673  grub-0.97-256byte_inode-1.patch
+40ddcc8caaef7e86b9dcb5c3799e0808  grub-0.97-devicemap.diff
+bf1594e82940e25d089feca74c6f1879  grub-0.97-disk_geometry-1.patch
+12f043616b51ce2ba82e46c9186a528d  grub-0.97-graphics.patch
+a9e2f5a2e49fec19b638c5acdf651ec7  grub-0.97-path-patch
+cd3f3eb54446be6003156158d51f4884  grub-0.97.tar.gz
+bc609feede67ffcf3f4f9d00fa2995df  grub-R
+6547de447a98c12ff245f175f23a01a7  grub-a20.patch
+e48ca6cdec7811a6d4566c0c1b0d7883  grub-gfxmenu-v8.diff
+7973ed80308b25eb95cadac1753a95c2  message
+37558faaba7e32929f767ef64f4248ac  reiser-unpack
+b8b550b08b9e9eafd7031a1849fb7d02  use_ferror.diff
