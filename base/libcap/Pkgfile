@@ -1,0 +1,27 @@
+# Description: Librairie posix 1003.1e version 2
+# URL: http://www.kernel.org/pub/linux/libs/security/linux-privs/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libattr
+
+name=libcap
+version=2.16
+release=1
+source=(http://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-$version.tar.bz2\
+	$name-$version-makefile.patch $name-$version-drop-linux-workarounds.patch)
+
+build() {
+	cd $name-$version
+	patch -p0 -i $SRC/$name-$version-makefile.patch
+	patch -p0 -i $SRC/$name-$version-drop-linux-workarounds.patch
+	make
+	make \
+		INCDIR=$PKG/usr/include \
+		LIBDIR=$PKG/usr/lib \
+		SBINDIR=$PKG/usr/sbin \
+		MANDIR=$PKG/usr/man install
+
+	# man8 is empty, cap{set,get}(2) come from core/man-pages
+	rm -rf $PKG/usr/man/man{2,8}
+
+}

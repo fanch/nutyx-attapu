@@ -1,0 +1,14 @@
+--- libcap/Makefile~	2008-12-04 09:03:12.000000000 +0200
++++ libcap/Makefile	2009-01-12 17:17:07.000000000 +0200
+@@ -27,11 +27,6 @@
+ 
+ all: $(MINLIBNAME) $(STALIBNAME)
+ 
+-ifeq ($(shell gperf --version > /dev/null 2>&1 && echo yes),yes)
+-USE_GPERF_OUTPUT = $(GPERF_OUTPUT)
+-INCLUDE_GPERF_OUTPUT = -include $(GPERF_OUTPUT)
+-endif
+-
+ _makenames: _makenames.c cap_names.list.h
+ 	$(BUILD_CC) $(BUILD_CFLAGS) $< -o $@
+ 
