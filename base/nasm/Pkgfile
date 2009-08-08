@@ -1,0 +1,21 @@
+# Description: Assembleur/déassembleur pour 80x86 concut pour la portabilitée et modularitée
+# URL: http://nasm.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=nasm
+version=2.03.01
+release=1
+source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr\
+		    --mandir=/usr/share/man
+	make
+	mkdir -p $PKG/usr/bin 
+	mkdir -p $PKG/usr/share/man/man1
+	make INSTALLROOT=$PKG  install
+       
+}
