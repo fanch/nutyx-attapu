@@ -1,0 +1,21 @@
+# Description: Langage open-source dynamique qui met l'accent sur la simplicité et la productivité
+# URL: http://www.ruby-lang.org/fr
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gdbm
+
+name=ruby
+version=1.8.7
+_version=1.8.7-p72
+release=1
+source=(ftp://ftp.ruby-lang.org/pub/ruby/1.8/$name-$_version.tar.bz2)
+
+build() {
+	cd $name-$_version
+	./configure --prefix=/usr \
+		--enable-shared \
+                --enable-pthread
+	make -j3
+	make DESTDIR=$PKG install
+	make DESTDIR=$PKG install-doc
+}
