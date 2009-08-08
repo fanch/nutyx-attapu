@@ -1,0 +1,37 @@
+# Description: Jeu de commande en ligne pour la manipulation des disques CD/DVD/BlueRay
+# URL: http://cdrkit.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cmake, libcap
+
+name=cdrkit
+version=1.1.9
+release=1
+source=(http://cdrkit.org/releases/$name-$version.tar.gz\
+	cdrkit-1.1.9-glibc-2.10.patch)
+
+build() {
+	cd $name-$version
+	patch -p1 -i $SRC/$name-$version-glibc-2.10.patch
+	# ./configure --prefix=/usr
+	make
+	make PREFIX=$PKG/usr install
+	cd $PKG/usr/bin
+	mv wodim cdrecord
+	ln -s cdrecord wodim
+	mv genisoimage mkisofs
+	ln -s mkisofs genisoimage
+	ln -s readom readcd
+	ln -s icedax cdda2wav
+	ln -s mkisofs mkhybrid
+	ln -s cdrecord dvdrecord
+	cd ../sbin
+	ln -s netscsid rscsi
+	cd ../share/man/man1
+	ln -s icedax.1 cdda2wav.1
+	ln -s readom.1 readcd.1
+	ln -s wodim.1 cdrecord.1
+	ln -s genisoimage.1 mkisofs.1
+	cd ../man5
+	ln -s genisoimagerc.5 mkisofsrc.5
+}
