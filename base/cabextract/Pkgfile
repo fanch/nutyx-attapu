@@ -1,0 +1,19 @@
+# Description: Un programme pour extraire les fichiers cabs de Microsoft 
+# URL: http://www.cabextract.org.uk/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=cabextract
+version=1.2
+release=1
+source=(http://www.cabextract.org.uk/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
