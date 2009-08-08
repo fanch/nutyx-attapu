@@ -1,0 +1,19 @@
+# Description: Utilitaire pour le système de fichiers basé sur sysfs
+# URL: http://linux-diag.sourceforge.net/Sysfsutils.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=sysfsutils
+version=2.1.0
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/linux-diag/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+            	--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+	
+}
