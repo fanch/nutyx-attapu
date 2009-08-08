@@ -1,0 +1,59 @@
+# Description: Free peer-reviewed portable C++ source libraries
+# URL: http://boost.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=boost
+version=1.39.0
+release=1
+_boostver=1_39_0
+source=(http://downloads.sourceforge.net/$name/boost_${version//./_}.tar.bz2\
+        layout-tagged.patch translate_exception.patch )
+
+build() {
+        cd boost_${version//./_}
+        patch -Np0 -i ../layout-tagged.patch
+        patch -Np1 -i ../translate_exception.patch
+
+  # build bjam
+  cd ${SRC}/${name}_${_boostver}/tools/jam/src
+  ./build.sh cc || return 1
+
+  _bindir="bin.linuxx86"
+  [ "${CARCH}" = "x86_64" ] && _bindir="bin.linuxx86_64"
+
+  install -m755 -d ${PKG}/usr/bin
+  install -m755 ${_bindir}/bjam ${PKG}/usr/bin/bjam || return 1
+
+  # build bcp
+  cd ${SRC}/${name}_${_boostver}/tools/bcp
+  ../jam/src/${_bindir}/bjam || return 1
+  install -m755 ${SRC}/${name}_${_boostver}/dist/bin/bcp \
+                ${PKG}/usr/bin/bcp || return 1
+
+  # build libs
+  cd ${SRC}/${name}_${_boostver}
+  # default "minimal" install: "release link=shared,static
+  #      runtime-link=shared threading=multi"
+  # --layout=tagged will add the "-mt" suffix for multithreaded libraries
+  # and installs includes in /usr/include/boost.
+  # --layout=system no longer adds the -mt suffix for multi-threaded libs.
+  ./tools/jam/src/${_bindir}/bjam \
+            release debug-symbols=off threading=single,multi \
+            runtime-link=shared link=shared,static \
+            cflags=-fno-strict-aliasing \
+            --prefix=${PKG}/usr \
+            -sPYTHON_ROOT=/usr \
+            -sPYTHON_VERSION=2.6 \
+            -sTOOLS=gcc \
+            --layout=tagged \
+            install || return 1
+#            --with-wave install || return 1
+#            -d2 <- debug  cflags=-fno-strict-aliasing \
+
+  # build pyste
+  cd ${SRC}/${name}_${_boostver}/libs/python/pyste/install
+  python setup.py install --root=${PKG} || return 1
+}
+~                      
