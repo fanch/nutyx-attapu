@@ -1,0 +1,22 @@
+# Description: Environnement de développement python
+# URL: http://www.python.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pth, openssl, gdbm, sqlite3
+
+name=python
+version=2.6.2
+release=1
+source=( http://www.python.org/ftp/python/$version/Python-$version.tar.bz2)
+
+build() {
+cd Python-$version
+sed -i "s/ndbm_libs = \[\]/ndbm_libs = ['gdbm', 'gdbm_compat']/" \
+     setup.py
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info \
+        --enable-shared
+make
+make DESTDIR=$PKG install
+}
