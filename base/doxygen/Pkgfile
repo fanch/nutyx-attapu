@@ -1,0 +1,19 @@
+# Description: Système de documentation pour C++, C, Java, Objective C...
+# URL:  http://www.doxygen.org/
+# Maintainer: NuTyX 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: qt4, graphviz
+
+name=doxygen
+version=1.5.8
+release=1
+source=(http://ftp.stack.nl/pub/users/dimitri/$name-$version.src.tar.gz)
+build() {
+	cd $name-$version
+	./configure --prefix /usr \
+                --docdir /usr/share/doc
+	make
+	make INSTALL=$PKG/usr install
+	mkdir -p $PKG/usr/share/
+	mv $PKG/usr/man $PKG/usr/share/
+}
