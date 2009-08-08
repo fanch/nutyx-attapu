@@ -1,0 +1,18 @@
+# Description: Environnement de dev pour 8086
+# URL: http://www.cix.co.uk/~mayday/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc 
+
+name=bin86
+version=0.16.17
+release=2
+source=(http://homepage.ntlworld.com/robert.debath/dev86/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	make CFLAGS="$CFLAGS -D_POSIX_SOURCE" PREFIX=/usr
+	mkdir -p $PKG/usr/bin
+	mkdir -p $PKG/usr/share/man/man1
+	make PREFIX=$PKG/usr MANDIR=$PKG/usr/share/man/man1 install
+}
