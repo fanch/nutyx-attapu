@@ -1,0 +1,33 @@
+#!/bin/bash
+MediaDepot=/media/cdrom/depot
+Depot=/srv/NuTyX
+if [ ! "$EUID" -eq 0 ]; then
+	echo "Seul le compte root peut synchroniser les ports NuTyX"
+	exit 1
+fi
+if [ ! -L /depot ]; then
+	pushd $Depot/locale > /dev/null
+	pkg-repgen
+	popd
+	for i in test stable
+	do
+		if [ -d $Depot/$i ]; then
+			rm -r $Depot/$i
+		fi
+	done
+	pkg-get sync
+	for i in `cat /etc/pkg-get.conf |grep -v ^#|grep http|cut -d "|" -f 1|cut -d" " -f2|cut -d"/" -f4`
+	do
+	if [ -d $MediaDepot/$i ]; then
+		echo "Dépot $i trouvé sur le media"
+		rm -r $Depot/$i > /dev/null 2>&1
+		ln -svf $MediaDepot/$i $Depot/ > /dev/null
+	fi
+	done
+else
+	for i in `cat /etc/pkg-get.conf |grep -v ^#|grep http|cut -d "|" -f 1|cut -d" " -f2|cut -d"/" -f4`
+	do
+		rsync -avuz --delete-before rsync://nutyx.meticul.eu/nutyx/2009/uname-m/$i/ $Depot/$i/
+	done
+fi
+	
