@@ -1,0 +1,19 @@
+# Description: Perl extension interface to James Clark's XML parser
+# URL: http://search.cpan.org/~msergeant/XML-Parser-2.36/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: expat
+
+name=p5-xml-parser
+version=2.36
+release=1
+source=( http://cpan.org/authors/id/M/MS/MSERGEANT/XML-Parser-$version.tar.gz)
+
+
+build() {
+	cd XML-Parser-$version
+        perl Makefile.PL
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+	find $PKG -name .packlist -o -name perllocal.pod -exec rm §'{}' \; 
+}
