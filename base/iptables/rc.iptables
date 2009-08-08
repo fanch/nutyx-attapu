@@ -1,0 +1,81 @@
+#!/bin/sh
+
+# Begin $rc_base/rc.iptables
+
+# Insérer les modules necessaires
+# (pas necessaire si ils sont en dur dans le kernel)
+modprobe ip_tables
+modprobe iptable_filter
+modprobe ip_conntrack
+modprobe ip_conntrack_ftp
+modprobe ipt_state
+modprobe ipt_LOG
+
+# Activer la protection "broadcast echo"
+echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+
+# Déactiver les paquets sources "routés"
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+echo 0 > /proc/sys/net/ipv4/conf/default/accept_source_route
+
+# Activer la protection "TCP SYN Cookie"
+echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+
+# Déactiver la "ICMP Redirect Acceptance"
+echo 0 > /proc/sys/net/ipv4/conf/all/accept_redirects
+
+# Ne pas envoyer les "Redirect Messages"
+echo 0 > /proc/sys/net/ipv4/conf/all/send_redirects
+echo 0 > /proc/sys/net/ipv4/conf/default/send_redirects
+
+
+# Laisser tomber les "Spoofed Packets" venant sur une interface, d'ou les
+# réponses résulteraient à une réponse à une interface différente
+echo 1 > /proc/sys/net/ipv4/conf/all/rp_filter
+echo 1 > /proc/sys/net/ipv4/conf/default/rp_filter
+
+# Archiver les adresse sources impossibles
+echo 1 > /proc/sys/net/ipv4/conf/all/log_martians
+echo 1 > /proc/sys/net/ipv4/conf/default/log_martians
+
+# Soyons + parlant si adresse dynamique, (pas necessaire si adresse statique)
+echo 2 > /proc/sys/net/ipv4/ip_dynaddr
+
+# déactiver "Explicit Congestion Notification", 
+# trop de routeurs sont encore ignorants
+echo 0 > /proc/sys/net/ipv4/tcp_ecn
+
+# Mettre les tables dans un état connu
+iptables -P INPUT   DROP
+iptables -P FORWARD DROP
+iptables -P OUTPUT  DROP
+
+# Ces lignes sont ici dans le cas où des règles étaient déjà en place et 
+# si le script est relancé directement. On souhaite supprimer toutes les
+# règles déjà établies avant d'en implémenter des nouvelles
+iptables -F
+iptables -X
+iptables -Z
+
+iptables -t nat -F
+
+# Permet les connections locales uniquement
+iptables -A INPUT  -i lo -j ACCEPT
+
+# Libére toute sortie sur quelque interface que ce soit pour toutes les ip 
+# et pour tous les services
+# (equivalent à -P ACCEPT)
+iptables -A OUTPUT -j ACCEPT
+
+# Accepte les paquets destinés à ssh
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+# Permet les réponses des connections déjà établies
+# et permet les nouvelles connections liés à ces premières
+# (p.e. port mode ftp)
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# archiver tout le reste. La dernière vulnérabilitée de Microsoft Windows?
+iptables -A INPUT -j LOG --log-prefix "FIREWALL:INPUT "
+
+# End $rc_base/rc.iptables
