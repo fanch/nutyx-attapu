@@ -1,0 +1,21 @@
+# Description: A fast, non-validating, stream-oriented XML parsing library
+# URL: http://expat.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=expat
+version=2.0.1
+release=1
+source=( http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info \
+        --disable-debug
+make
+make DESTDIR=$PKG install
+}
