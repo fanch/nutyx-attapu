@@ -1,0 +1,12 @@
+--- prt-get-5.16.orig/src/prtget.cpp	2008-06-26 18:23:42.000000000 +0200
++++ prt-get-5.16/src/prtget.cpp	2008-12-06 15:13:58.950402225 +0100
+@@ -1238,7 +1238,7 @@
+     assertExactArgCount(1);
+ 
+     initRepo();
+-    string filter = "*";
++    string filter = m_parser->useRegex() ? "." : "*";
+     if ( m_parser->hasFilter() ) {
+         filter = m_parser->filter();
+     }
+
