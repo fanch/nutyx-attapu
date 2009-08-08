@@ -1,0 +1,22 @@
+# Description: Surveillance de modification de fichiers
+# URL:  http://www.gnome.org/~veillard/gamin
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=gamin
+version=0.1.10
+release=1
+source=( http://www.gnome.org/~veillard/gamin/sources/$name-$version.tar.gz\
+	gamin-0.1.9-ucred-headers.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../gamin-0.1.9-ucred-headers.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --libexecdir=/usr/bin
+	make
+	make DESTDIR=$PKG install
+}
