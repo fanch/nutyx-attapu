@@ -1,0 +1,18 @@
+# Description: Permet la construction de paquets sur différentes platformes
+# URL: http://www.cmake.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: libidn
+
+name=cmake
+version=2.6.4
+release=1
+source=(http://www.cmake.org/files/v2.6/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./bootstrap --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/doc
+}
