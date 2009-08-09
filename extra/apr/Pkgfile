@@ -1,0 +1,34 @@
+# Description: Librairie exécutables pour Apache
+# URL: http://apr.apache.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: expat, db, gdbm
+
+name=apr
+version=1.3.7
+release=1
+utilver=1.3.8
+source=(http://mirror.switch.ch/mirror/apache/dist/$name/$name-$version.tar.bz2 \
+	http://mirror.switch.ch/mirror/apache/dist/$name/$name-util-$utilver.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--with-devrandom=/dev/urandom \
+		--infodir=/usr/share/info \
+		--with-installbuilddir=/usr/share/apr-1
+	make
+	make DESTDIR=$PKG install
+	cd $SRC/$name-util-$utilver
+	./configure --prefix=/usr \
+		--with-apr=$SRC/$name-$version \
+		--with-expat=/usr \
+		--with-berkeley-db=/usr \
+		--with-gdbm=/usr
+	make
+	make DESTDIR=$PKG install
+
+	sed -i -r "/^APR_(SOURCE|BUILD)/s|=.*|=|" $PKG/usr/bin/apr-1-config
+	sed -i -r "/^APU_(SOURCE|BUILD)/s|=.*|=|" $PKG/usr/bin/apu-1-config
+	rm -r $PKG/usr/lib/*.exp
+}
