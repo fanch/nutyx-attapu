@@ -1,0 +1,20 @@
+# Description: Permet de générer un fichier d'index
+# URL: http://ctags.sourceforge.net/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc
+
+name=ctags
+version=5.7
+release=1
+source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+	make
+	make prefix=$PKG/usr install
+
+}
