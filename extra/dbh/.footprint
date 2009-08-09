@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/dbh.h
+-rw-r--r--	root/root	usr/include/dbh_config.h
+-rw-r--r--	root/root	usr/include/dbh_functions.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libdbh-4.5.so.4 -> libdbh-4.5.so.4.0.5
+-rwxr-xr-x	root/root	usr/lib/libdbh-4.5.so.4.0.5
+-rwxr-xr-x	root/root	usr/lib/libdbh.la
+lrwxrwxrwx	root/root	usr/lib/libdbh.so -> libdbh-4.5.so.4.0.5
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/dbh.pc
