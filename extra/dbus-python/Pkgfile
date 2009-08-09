@@ -1,0 +1,21 @@
+# Description: Connecteur Python pour D-Bus
+# URL: http://dbus.freedesktop.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: dbus-glib, python
+
+name=dbus-python
+version=0.83.0
+release=1
+source=( http://dbus.freedesktop.org/releases/$name/$name-$version.tar.gz\
+	)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--disable-html-docs \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
