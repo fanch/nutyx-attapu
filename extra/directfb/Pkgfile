@@ -1,0 +1,21 @@
+# Description: Librairie graphique pour le mode Frame buffer
+# URL: http://www.directfb.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=directfb
+version=1.4.1
+release=1
+source=(http://www.directfb.org/downloads/Core/DirectFB-1.4/DirectFB-$version.tar.gz)
+
+# To build with multicore add --enable-multi
+build() {
+	cd DirectFB-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-zlib \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
