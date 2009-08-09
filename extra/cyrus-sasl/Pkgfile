@@ -1,0 +1,21 @@
+# Description: Système d'identification et couche de sécurité 
+# URL: http://asg.web.cmu.edu/cyrus/download/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=cyrus-sasl
+version=2.1.22
+release=1
+source=( http://ftp.andrew.cmu.edu/pub/cyrus-mail/$name-$version.tar.gz\
+	gcc44-1.patch)
+build() {
+	cd $name-$version
+	patch -Np1 -i ../gcc44-1.patch
+	./configure --prefix=/usr --sysconfdir=/etc \
+	--with-dbpath=/var/lib/sasl/sasldb2 \
+	--with-saslauthd=/var/run/saslauthd
+	make
+	make DESTDIR=$PKG install
+	install -v -m700 -d $PKG/var/lib/sasl $PKG/var/run/saslauthd
+}
