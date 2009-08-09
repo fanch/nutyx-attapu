@@ -1,0 +1,19 @@
+# Description: librairie de traduction de pixels
+# URL: http://gegl.org/babl
+# Maintainer: NuTyX Core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+
+name=babl
+version=0.0.22
+release=1
+source=(ftp://ftp.gimp.org/pub/$name/0.0/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
