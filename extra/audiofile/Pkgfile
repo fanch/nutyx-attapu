@@ -1,0 +1,18 @@
+# Description: Fournit une interface API por accéder à de nombreux formats de fichiers audio
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# URL: http://www.68k.org/~michael/audiofile
+# Depends on: glibc
+
+name=audiofile
+version=0.2.6
+release=1
+source=(http://www.68k.org/~michael/$name/$name-$version.tar.gz)
+build () {
+	cd $name-$version
+	./configure --prefix=/usr\
+                    --mandir=/usr/share/man \
+                    --infodir=/usr/share/info
+	make 
+        make DESTDIR=$PKG install
+}
