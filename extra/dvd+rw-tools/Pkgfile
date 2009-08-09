@@ -1,0 +1,29 @@
+# Description: Outils de pour la gravure des DVD+-RW
+# URL: http://fy.chalmers.se/~appro/linux/DVD+RW/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=dvd+rw-tools
+version=7.1
+release=1
+source=( http://fy.chalmers.se/~appro/linux/DVD+RW/tools/dvd+rw-tools-$version.tar.gz \
+	transport.patch)
+
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../transport.patch
+	make
+	mkdir -p $PKG/usr/bin $PKG/usr/share/man/man1
+        for exec in \
+	dvd+rw-booktype \
+	dvd+rw-format \
+	dvd+rw-mediainfo \
+	dvd-ram-control \
+	growisofs
+	do
+		install -m 755 $exec $PKG/usr/bin/
+	done
+	install -m 644 growisofs.1 $PKG/usr/share/man/man1/
+}
