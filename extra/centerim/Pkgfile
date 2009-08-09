@@ -1,0 +1,17 @@
+# Description: Client de messagerie instantannée en mode console
+# URL: http://www.centerim.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: curl
+
+name=centerim
+version=4.22.7
+release=1
+source=(http://www.centerim.org/download/releases/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
