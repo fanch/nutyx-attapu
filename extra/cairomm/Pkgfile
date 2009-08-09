@@ -1,0 +1,17 @@
+# Description: Wrapper C++ pour la librairie graphique cairo
+# URL: http://cairographics.org/cairomm/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cairo, libsigc++
+
+name=cairomm
+version=1.8.2
+release=1
+source=(http://cairographics.org/releases/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
