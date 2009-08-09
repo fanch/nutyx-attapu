@@ -1,0 +1,22 @@
+# Description: Librairie 2D graphique
+# URL: http://www.cairographics.org/ 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, glitz, libpng
+
+name=cairo
+version=1.8.8
+release=1
+source=(http://cairographics.org/releases/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+                --enable-ps \
+                --enable-pdf \
+               --enable-glitz \
+               --disable-gtk-doc                    
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share
+}
