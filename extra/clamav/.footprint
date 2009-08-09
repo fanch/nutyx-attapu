@@ -1,0 +1,52 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/clamd.conf
+-rw-r--r--	root/root	etc/freshclam.conf
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/clamav-config
+-rwxr-xr-x	root/root	usr/bin/clamconf
+-rwxr-xr-x	root/root	usr/bin/clamdscan
+-rwxr-xr-x	root/root	usr/bin/clamdtop
+-rwxr-xr-x	root/root	usr/bin/clamscan
+-rwxr-xr-x	root/root	usr/bin/freshclam
+-rwxr-xr-x	root/root	usr/bin/sigtool
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/clamav.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libclamav.a
+-rwxr-xr-x	root/root	usr/lib/libclamav.la
+lrwxrwxrwx	root/root	usr/lib/libclamav.so -> libclamav.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamav.so.6 -> libclamav.so.6.0.4
+-rwxr-xr-x	root/root	usr/lib/libclamav.so.6.0.4
+-rw-r--r--	root/root	usr/lib/libclamunrar.a
+-rwxr-xr-x	root/root	usr/lib/libclamunrar.la
+lrwxrwxrwx	root/root	usr/lib/libclamunrar.so -> libclamunrar.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamunrar.so.6 -> libclamunrar.so.6.0.4
+-rwxr-xr-x	root/root	usr/lib/libclamunrar.so.6.0.4
+-rw-r--r--	root/root	usr/lib/libclamunrar_iface.a
+-rwxr-xr-x	root/root	usr/lib/libclamunrar_iface.la
+lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so -> libclamunrar_iface.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so.6 -> libclamunrar_iface.so.6.0.4
+-rwxr-xr-x	root/root	usr/lib/libclamunrar_iface.so.6.0.4
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libclamav.pc
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/clamd
+drwxr-xr-x	root/root	usr/share/
+drwxrwxr-x	clamav/clamav	usr/share/clamav/
+-rw-rw-r--	clamav/clamav	usr/share/clamav/daily.cvd
+-rw-rw-r--	clamav/clamav	usr/share/clamav/main.cvd
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/clamconf.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/clamdscan.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/clamdtop.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/clamscan.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/freshclam.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/sigtool.1.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/clamd.conf.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/freshclam.conf.5.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/clamav-milter.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/clamd.8.gz
