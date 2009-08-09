@@ -1,0 +1,16 @@
+# Description: Librairie de cryptologie en C++
+# URL: http://www.cryptopp.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=crypto++
+version=5.5.2
+release=1
+source=(http://www.cryptopp.com/${name/++/pp}${version//\./}.zip)
+
+build() {
+	make CXXFLAGS="$CXXFLAGS"
+	make PREFIX=$PKG/usr install
+	rm -rf $PKG/usr/bin
+}
