@@ -1,0 +1,20 @@
+# Description: Gestionnaire de fenêtres
+# URL:http://www.afterstep.org/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: xorg
+
+name=afterstep
+version=2.2.9
+release=1
+
+source=(http://downloads.sourceforge.net/$name/AfterStep-$version.tar.gz)
+
+build()
+{
+cd AfterStep-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+
+}
