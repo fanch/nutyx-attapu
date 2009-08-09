@@ -1,0 +1,23 @@
+# Description: MSN en logicel libre
+# URL: http://www.amsn-project.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: tk, gnutls, sox
+
+name=amsn
+version=0.98svn
+release=1
+source=(http://princesse-alice.toile-libre.org/frugalware/paquets-sources/amsn-svn-R10819.tar.gz)
+
+build() {
+		cd $name
+                ./configure --prefix=/usr\
+			    --libdir=/usr/lib \
+		            --bindir=/usr/bin \
+                            --mandir=/usr/share/man\
+                            --infodir=/usr/share/info
+		make -j2
+		make DESTDIR=$PKG install
+		rm -rf $PKG/usr/share/amsn/doc
+}
+
