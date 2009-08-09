@@ -1,0 +1,23 @@
+# Description: Permet la gravure de CD en mode disk-at-once
+# URL: http://cdrdao.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=cdrdao
+version=1.2.2
+release=1
+source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
+	 cdrao-1.2.2-glibc.patch gcc4.patch)
+
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../cdrao-1.2.2-glibc.patch
+	patch -Np1 -i ../gcc4.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
