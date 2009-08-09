@@ -1,0 +1,550 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1-strict.dtd ">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Arch Linux Repositories [community] Log of /community/network/checkgmail/checkgmail.desktop</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="http://archlinux.org/media/arch.css" />
+<link rel="stylesheet" href="/static/styles.css" type="text/css" />
+
+<link rel="icon" href="http://archlinux.org/media/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://archlinux.org/media/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+div.searchbar {
+font-size: 13px;
+font-weight: bold;
+position: absolute;
+right: 0.2em;
+top: 152px;
+}
+</style>
+</head>
+<body>
+<div id="head_container">
+<div id="title">
+<div id="logo"><h1 id="archtitle"><a href="/" title="Arch Linux (Home)">Arch Linux</a></h1></div>
+</div>
+<div id="main_nav">
+<ul>
+<li><a href="http://archlinux.org/download/">Get Arch</a></li>
+<li><a href="http://aur.archlinux.org">AUR</a></li>
+<li><a href="http://bugs.archlinux.org">Bugs</a></li>
+<li><a href="http://wiki.archlinux.org">Wiki</a></li>
+<li><a href="http://bbs.archlinux.org">Forums</a></li>
+<li><a href="http://archlinux.org">Home</a></li>
+</ul>
+</div>
+<div id="ads">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3170555743375154";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "0771A6";
+google_color_url = "99AACC";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+</div>
+<div id="content">
+<div class="vc_navheader">
+
+<form method="get" action="/viewvc.cgi/">
+
+<div>
+<strong>
+
+<a href="/viewvc.cgi/?root=community&amp;pathrev=CURRENT">
+
+[community]</a>
+/
+
+<a href="/viewvc.cgi/community/?root=community&amp;pathrev=CURRENT">
+
+community</a>
+/
+
+<a href="/viewvc.cgi/community/network/?root=community&amp;pathrev=CURRENT">
+
+network</a>
+/
+
+<a href="/viewvc.cgi/community/network/checkgmail/?root=community&amp;pathrev=CURRENT">
+
+checkgmail</a>
+/
+
+
+
+checkgmail.desktop
+
+
+</strong>
+
+</div>
+<div class="searchbar">
+
+
+<strong>Repository:</strong>
+<select name="root" onchange="submit()">
+
+
+<option value="*viewroots*">Repository Listing</option>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<optgroup label="CVS Repositories"><option selected="selected">community</option><option>core</option><option>extra</option><option>unstable</option></optgroup>
+
+
+<optgroup label="Subversion Repositories"><option>packages</option></optgroup>
+
+</select>
+<input type="submit" value="Go" />
+
+</div>
+
+</form>
+
+</div>
+<h1>Log of /community/network/checkgmail/checkgmail.desktop</h1>
+
+<p style="margin:0;">
+
+<a href="/viewvc.cgi/community/network/checkgmail/?root=community&amp;pathrev=CURRENT"><img src="/static/images/back_small.png" width="16" height="16" alt="Parent Directory" /> Parent Directory</a>
+
+
+
+
+</p>
+
+<hr />
+<table class="auto">
+
+
+
+<tr>
+<td>Links to HEAD:</td>
+<td>
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=markup&amp;root=community">view</a>)
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=co&amp;root=community">download</a>)
+
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=annotate&amp;root=community">annotate</a>)
+</td>
+</tr>
+
+
+<tr>
+<td>Links to CURRENT:</td>
+<td>
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=markup&amp;root=community&amp;pathrev=CURRENT">view</a>)
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=co&amp;root=community&amp;pathrev=CURRENT">download</a>)
+
+(<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=annotate&amp;root=community&amp;pathrev=CURRENT">annotate</a>)
+</td>
+</tr>
+
+
+<tr>
+<td>Sticky Tag:</td>
+<td><form method="get" action="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="view" value="log" /><input type="hidden" name="root" value="community" />
+
+
+<select name="pathrev" onchange="submit()">
+<option value=""></option>
+
+<optgroup label="Branches">
+
+
+<option>MAIN</option>
+
+
+</optgroup>
+
+<optgroup label="Non-branch tags">
+
+
+<option>HEAD</option>
+
+
+
+<option>CURRENT-64</option>
+
+
+
+<option selected>CURRENT</option>
+
+
+
+</optgroup>
+
+</select>
+
+<input type="submit" value="Set" />
+</div>
+</form>
+
+<form method="get" action="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop" style="display: inline">
+<div style="display: inline">
+<input type="hidden" name="view" value="log" /><input type="hidden" name="root" value="community" />
+
+<input type="submit" value="Clear" />
+
+</div>
+</form>
+
+</td>
+</tr>
+</table>
+ 
+
+
+
+
+
+<hr />
+<table cellspacing="1" cellpadding="2">
+<thead>
+<tr>
+<th class="vc_header">Revision</th>
+<th class="vc_header">Tasks</th>
+
+<th class="vc_header">Diffs</th>
+
+
+<th class="vc_header">Branches/<br />Tags</th>
+
+<th class="vc_header_sort">Age</th>
+<th class="vc_header">Author</th>
+</tr>
+</thead>
+
+
+
+
+
+<tbody>
+<tr style="vertical-align: top;" class="vc_row_even">
+
+<td rowspan="2">
+<strong>1.2</strong>
+<a name="rev1.2"></a>
+</td>
+
+<td>
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=markup&amp;revision=1.2&amp;root=community&amp;pathrev=CURRENT"><strong>View</strong></a><br />
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?revision=1.2&amp;root=community&amp;pathrev=CURRENT"><strong>Download</strong></a><br />
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?annotate=1.2&amp;root=community&amp;pathrev=CURRENT"><strong>Annotate</strong></a><br />
+</td>
+
+<td>
+
+
+
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=log&amp;root=community&amp;r1=1.2&amp;pathrev=CURRENT"><strong>[select&nbsp;for&nbsp;diffs]</strong></a><br />
+
+
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?root=community&amp;r1=1.1&amp;r2=1.2&amp;pathrev=CURRENT"><strong>Diff&nbsp;to&nbsp;previous&nbsp;1.1</strong></a>
+
+<br />
+
+
+</td>
+
+
+<td>
+
+
+
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=log&amp;root=community&amp;pathrev=MAIN"><strong>MAIN</strong></a><br />
+
+
+
+
+
+
+
+<form method=get action="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop" >
+<input type="hidden" name="view" value="log" /><input type="hidden" name="root" value="community" />
+<select name="pathrev" onChange="submit()">
+<option value="" >Show all tags</option>
+
+<option selected>CURRENT</option>
+
+<option >CURRENT-64</option>
+
+<option >HEAD</option>
+
+</select>
+</form>
+
+</td>
+
+
+<td>
+
+13 months, 3 weeks ago<br /><em>Thu Mar 20 14:45:07 2008 UTC</em>
+
+
+
+<br />Changes since <strong>1.1: +2 -2 lines</strong>
+
+
+
+</td>
+
+<td>
+BaSh
+</td>
+</tr>
+<tr class="vc_row_even">
+<td colspan=5>
+
+<strong>Log: </strong><pre class="vc_log">*** empty log message ***
+</pre>
+</td>
+</tr>
+</tbody>
+
+
+
+<tbody>
+<tr style="vertical-align: top;" class="vc_row_odd">
+
+<td rowspan="2">
+<strong>1.1</strong>
+<a name="rev1.1"></a>
+</td>
+
+<td>
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=markup&amp;revision=1.1&amp;root=community&amp;pathrev=CURRENT"><strong>View</strong></a><br />
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?revision=1.1&amp;root=community&amp;pathrev=CURRENT"><strong>Download</strong></a><br />
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?annotate=1.1&amp;root=community&amp;pathrev=CURRENT"><strong>Annotate</strong></a><br />
+</td>
+
+<td>
+
+
+
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=log&amp;root=community&amp;r1=1.1&amp;pathrev=CURRENT"><strong>[select&nbsp;for&nbsp;diffs]</strong></a><br />
+
+
+
+
+</td>
+
+
+<td>
+
+
+
+
+<a href="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop?view=log&amp;root=community&amp;pathrev=MAIN"><strong>MAIN</strong></a><br />
+
+
+
+
+
+
+&nbsp;
+
+</td>
+
+
+<td>
+
+2 years, 1 month ago<br /><em>Thu Mar 22 21:23:36 2007 UTC</em>
+
+
+
+</td>
+
+<td>
+dtw
+</td>
+</tr>
+<tr class="vc_row_odd">
+<td colspan=5>
+
+<strong>Log: </strong><pre class="vc_log">whoops
+</pre>
+</td>
+</tr>
+</tbody>
+
+</table>
+ 
+
+
+
+
+
+ <div class="box">
+<p><a name="diff"></a>
+This form allows you to request diffs between any two revisions of this file.
+For each of the two "sides" of the diff,
+
+select a symbolic revision name using the selection box, or choose
+'Use Text Field' and enter a numeric revision.
+
+</p>
+<form method="get" action="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop" id="diff_select">
+<table cellpadding="2" cellspacing="0" class="auto">
+<tr>
+<td>&nbsp;</td>
+<td>
+<input type="hidden" name="pathrev" value="CURRENT" /><input type="hidden" name="root" value="community" /><input type="hidden" name="view" value="diff" />
+Diffs between
+
+<select name="r1">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.2:MAIN">MAIN</option>
+
+<option value="1.2:HEAD">HEAD</option>
+
+<option value="1.2:CURRENT-64">CURRENT-64</option>
+
+<option value="1.2:CURRENT">CURRENT</option>
+
+</select>
+<input type="text" size="12" name="tr1"
+value="1.2"
+onchange="document.getElementById('diff_select').r1.selectedIndex=0" />
+
+and
+
+<select name="r2">
+<option value="text" selected="selected">Use Text Field</option>
+
+<option value="1.2:MAIN">MAIN</option>
+
+<option value="1.2:HEAD">HEAD</option>
+
+<option value="1.2:CURRENT-64">CURRENT-64</option>
+
+<option value="1.2:CURRENT">CURRENT</option>
+
+</select>
+<input type="text" size="12" name="tr2"
+value="1.1"
+onchange="document.getElementById('diff_select').r2.selectedIndex=0" />
+
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+Type of Diff should be a
+<select name="diff_format" onchange="submit()">
+<option value="h" selected="selected">Colored Diff</option>
+<option value="l" >Long Colored Diff</option>
+<option value="u" >Unidiff</option>
+<option value="c" >Context Diff</option>
+<option value="s" >Side by Side</option>
+</select>
+<input type="submit" value=" Get Diffs " />
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+
+<form method="get" action="/viewvc.cgi/community/network/checkgmail/checkgmail.desktop">
+<div>
+<a name="logsort"></a>
+<input type="hidden" name="view" value="log" /><input type="hidden" name="root" value="community" /><input type="hidden" name="pathrev" value="CURRENT" />
+Sort log by:
+<select name="logsort" onchange="submit()">
+<option value="cvs" >Not sorted</option>
+<option value="date" selected="selected">Commit date</option>
+<option value="rev" >Revision</option>
+</select>
+<input type="submit" value=" Sort " />
+</div>
+</form>
+
+
+<hr />
+<div class="foot">
+Copyright &copy; 2002-2008
+<a href="mailto:jvinet@zeroflux.org" title="contact Judd Vinet">Judd Vinet</a> and
+<a href="mailto:aaron@archlinux.org" title="contact Aaron Griffin">Aaron Griffin</a>.
+<br />
+The Arch Linux name and logo are recognized trademarks. Some rights reserved.
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3589020-1");
+pageTracker._setDomainName("archlinux.org");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+
+
