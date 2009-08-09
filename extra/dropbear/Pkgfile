@@ -1,0 +1,17 @@
+# Description: Alternative à openssh (serveur et client) très léger
+# URL: http://matt.ucc.asn.au/dropbear/dropbear.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=dropbear
+version=0.52
+release=1
+source=(http://matt.ucc.asn.au/dropbear/releases/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
