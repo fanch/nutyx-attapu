@@ -6,8 +6,8 @@
 
 name=kernel-ird
 version=2.6.30.4
-release=1
-_tools=07082009
+release=2
+_tools=09082009
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
 build(){
@@ -33,20 +33,20 @@ make INSTALL_MOD_PATH=$PKG modules_install
 mkdir -p $PKG/boot
 case `uname -m` in 
 	x86_64)
-		cp -v System.map \
+		cp  System.map \
 		$PKG/boot/System_64.map-$version
-		cp -v .config    \
+		cp  .config    \
 		$PKG/boot/config_64-$version
-		cp -v arch/x86_64/boot/bzImage \
+		cp  arch/x86_64/boot/bzImage \
 		$PKG/boot/kernel_64-$version
 		ln -sf kernel_64-$version \
 		$PKG/boot/kernel_64 ;;
 	i?86)
-		cp -v System.map \
+		cp  System.map \
 		$PKG/boot/System.map-$version
-		cp -v .config \
+		cp  .config \
 		$PKG/boot/config-$version
-		cp -v arch/i386/boot/bzImage \
+		cp  arch/i386/boot/bzImage \
 		$PKG/boot/kernel-$version 
 		ln -sf kernel-$version \
 		$PKG/boot/kernel;;
@@ -54,13 +54,13 @@ esac
 case `uname -m` in 
 	i?86)
 	mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/{drivers,fs}
-	cp -va $PKG/lib/modules/$version/kernel/crypto \
+	cp -a $PKG/lib/modules/$version/kernel/crypto \
 	$WDIR/rootfs/lib/modules/$version/kernel/
 	for i in ata block input ide hid message parport \
 	serial misc net pcmcia scsi usb md
 	do
 		if [ -d $PKG/lib/modules/$version/kernel/drivers/$i ]; then
-			cp -va $PKG/lib/modules/$version/kernel/drivers/$i \
+			cp -a $PKG/lib/modules/$version/kernel/drivers/$i \
 			$WDIR/rootfs/lib/modules/$version/kernel/drivers/
 		fi
 	done
@@ -72,11 +72,11 @@ case `uname -m` in
 	for i in fat ntfs smbfs vfat ext4
 	do
 		if [ -d $PKG/lib/modules/$version/kernel/fs/$i ]; then
-			cp -va $PKG/lib/modules/$version/kernel/fs/$i \
+			cp -a $PKG/lib/modules/$version/kernel/fs/$i \
 			$WDIR/rootfs/lib/modules/$version/kernel/fs/
 		fi
 	done
-	depmod -b $WDIR/rootfs $version
+	$WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
 
 	# Compression des modules
 	cd $WDIR/rootfs/lib/modules/$version
@@ -84,8 +84,8 @@ case `uname -m` in
 	sed -i 's/\.ko/.ko.gz/g' modules.dep
 	cd -
 	sed -i "s/#version#/$version/" $WDIR/iso/isolinux/boot.msg
-	cp -v arch/i386/boot/bzImage $WDIR/iso/isolinux/kernel
+	cp  arch/i386/boot/bzImage $WDIR/iso/isolinux/kernel
 	sh $WDIR/script/mkinitrd $WDIR
-	cp -v $WDIR/iso/isolinux/initrd $PKG/boot/nutyx-initrd ;;
+	cp $WDIR/iso/isolinux/initrd $PKG/boot/nutyx-initrd ;;
 esac
 }
