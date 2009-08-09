@@ -1,0 +1,24 @@
+# Description: Groupe de paquets contenant le langage et les interfaces permetant de communique avec le système d-bus
+# URL:  http://www.freedesktop.org/wiki/Software/DBusBindings
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: dbus, pkg-config
+
+name=dbus-glib
+version=0.80
+release=1
+source=( http://dbus.freedesktop.org/releases/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--enable-static=no
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+}
