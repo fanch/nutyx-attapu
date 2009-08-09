@@ -1,0 +1,29 @@
+# Description: Système de messages pour les bus
+# URL: http://freedesktop.org/wiki/Software_2fdbus
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: expat
+
+name=dbus
+version=1.2.16
+release=1
+source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.gz \
+       session-local.conf\
+       dbus)
+
+build() {
+	source /etc/blfs-bootscripts
+	wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+	tar xvf $scripts-$scriptsversion.tar.bz2
+	cd $name-$version
+	./configure --prefix=/usr \
+		--localstatedir=/var \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+        mkdir -p $PKG/etc/dbus-1
+        mv ../session-local.conf $PKG/etc/dbus-1/
+        cd ../$scripts-$scriptsversion
+        make DESTDIR=$PKG install-dbus
+        install -m755 ../dbus $PKG/etc/rc.d/init.d/
+}
