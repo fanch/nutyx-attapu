@@ -1,0 +1,19 @@
+# Description: Emulateur OSS pour ALSA
+# URL: http://www.alsa-project.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: alsa-lib
+
+name=alsa-oss
+version=1.0.17
+release=1
+source=(ftp://ftp.alsa-project.org/pub/oss-lib/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+                    --mandir=/usr/share/man \
+                    --infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
