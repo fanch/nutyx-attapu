@@ -1,0 +1,30 @@
+# Description: Permet de ripper les DVDs
+# URL: http://untrepid.com/acidrip/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: mplayer, lame, libdvdcss, p5-gtk
+
+name=acidrip
+version=0.14
+release=1
+perlVer=5.10.0
+source=(http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
+	acidrip.desktop\
+	 http://untrepid.com/acidrip/acidrip-icon4bit.png)
+
+build() {
+	cd $name-$version
+	perl Makefile.PL \
+      INSTALLARCHLIB=/usr/lib/perl5/$perlV/$archname  \
+      INSTALLSITELIB=/usr/lib/perl5/site_perl/$perlVer \
+      INSTALLSITEARCH=/usr/lib/perl5/site_perl/$perlVer/$archname
+  sed -i "s%^DESTDIR.*%DESTDIR=$PKG%" Makefile
+	make
+	make DESTDIR=$PKG install
+	install -D -m644 ../acidrip-icon4bit.png \
+    $PKG/usr/share/pixmaps/acidrip.png
+	install -D -m644 ../acidrip.desktop \
+    $PKG/usr/share/applications/acidrip.desktop
+	find $PKG -name perllocal.pod -delete
+	find $PKG -name .packlist -delete
+}
