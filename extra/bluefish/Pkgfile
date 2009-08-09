@@ -1,0 +1,24 @@
+# Description: Editeur syntaxique multi-langage
+# URL: http://bluefish.openoffice.nl/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, pcre, desktop-file-utils
+
+name=bluefish
+version=1.0.7
+release=2
+source=(http://www.bennewitz.com/bluefish/stable/source/$name-$version.tar.bz2\
+	bluefish.desktop)
+build() {
+	cd $name-*
+	./configure --prefix=/usr \
+	--with-freedesktop_org-menu=/usr/share/applications \
+	--with-freedesktop_org-mime=/usr/share/mime \
+	--with-icon-path=/usr/share/pixmaps \
+	--disable-update-databases \
+	--without-libgnomeui
+	make
+	make DESTDIR=$PKG install
+	install -D -m 644 ../bluefish.desktop \
+	$PKG/usr/share/ede/programs/Applications/bluefish.desktop
+}
