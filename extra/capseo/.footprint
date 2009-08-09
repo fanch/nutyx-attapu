@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cpsinfo
+-rwxr-xr-x	root/root	usr/bin/cpsplay
+-rwxr-xr-x	root/root	usr/bin/cpsrecode
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/capseo.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libcapseo.a
+-rwxr-xr-x	root/root	usr/lib/libcapseo.la
+lrwxrwxrwx	root/root	usr/lib/libcapseo.so -> libcapseo.so.0.3.0
+lrwxrwxrwx	root/root	usr/lib/libcapseo.so.0 -> libcapseo.so.0.3.0
+-rwxr-xr-x	root/root	usr/lib/libcapseo.so.0.3.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/capseo.pc
