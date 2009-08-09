@@ -1,0 +1,17 @@
+# Description:  Famille de police basés sur Bitstream Vera. Couvre une large palette de police
+# URL: http://dejavu.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-server
+
+name=dejavu-ttf
+version=2.29
+release=1
+source=(http://downloads.sourceforge.net/dejavu/dejavu-fonts-ttf-$version.tar.bz2)
+
+build() {
+	cd dejavu-fonts-ttf-$version/ttf
+	install -v -d -m755 $PKG/usr/share/fonts/TTF
+	install -v -m644 *.ttf $PKG/usr/share/fonts/TTF
+
+}
