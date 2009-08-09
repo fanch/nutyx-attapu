@@ -1,0 +1,20 @@
+# Description: Carnet d'adresses en mode texte 
+# URL: http://abook.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: readline, ncurses
+
+name=abook
+version=0.5.6
+release=1
+source=(http://dl.sourceforge.net/$name/$name-$version.tar.gz \
+http://abook.sourceforge.net/patches/0.5.6-01_editor)
+
+build() {
+cd $name-$version
+patch -p0 < ../0.5.6-01_editor
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man 
+	make
+	make DESTDIR=$PKG install
+}
