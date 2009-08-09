@@ -1,0 +1,21 @@
+# Description: Librairie pour la Cryptographie
+# URL: http://beecrypt.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=beecrypt
+version=4.2.1
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+build () {
+	cd $name-$version
+	./configure --prefix=/usr \
+		    --without-python \
+		    --without-java
+
+	make
+	make prefix=$PKG/usr install
+
+	chown -R root:root $PKG
+}
