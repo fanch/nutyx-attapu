@@ -1,0 +1,41 @@
+# Description: Common UNIX Printing System, le système d'impression pour Linux
+# URL: http://www.cups.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, libpng, libtiff, xpdf
+
+name=cups
+version=1.3.11
+release=1
+source=( http://ftp.easysw.com/pub/$name/$version/$name-$version-source.tar.bz2\
+       cups)
+
+
+build() {
+	source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--with-logdir=/var/log/cups \
+		--with-docdir=/usr/share/doc/cups \
+		--enable-raw-printing \
+		--enable-pdftops \
+		--with-pdftops=pdftops \
+		--mandir=/usr/share/man \
+		--enable-threads \
+		--enable-ssl \
+		--enable-gnutls=no \
+		--infodir=/usr/share/info
+	make -j3
+	make BUILDROOT=$PKG install
+	# Startup Script 
+	cd ../$scripts-$scriptsversion
+	make DESTDIR=$PKG install-$name
+	install -m754 ../cups $PKG/etc/rc.d/init.d/ 
+	sed -i "s/htmlview/firefox/" $PKG/usr/share/applications/cups.desktop
+	chmod 755 $PKG/var/spool
+	chmod 755 $PKG/etc
+}

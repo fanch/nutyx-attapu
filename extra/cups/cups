@@ -1,0 +1,49 @@
+#!/bin/sh
+# Begin $rc_base/init.d/cups
+
+#$LastChangedBy: bdubbs $
+#$Date: 2007/09/26 14:15:13 $
+#$Id: cups,v 1.1 2007/09/26 14:15:13 install Exp $
+# Start or stop the CUPS server based upon the first argument to the script.
+
+. /etc/sysconfig/rc
+. $rc_functions
+newgroup=lp
+newuser=lp
+newid=9
+getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
+getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
+-u $newid -d /dev/null -c "Print Service User" -s /bin/false -u $newid $newuser
+case $1 in
+	start)
+		boot_mesg "Starting CUPS Printserver..."
+		loadproc /usr/sbin/cupsd
+		;;
+
+	stop)
+		boot_mesg "Stopping CUPS Printserver..."
+		killproc /usr/sbin/cupsd
+		;;
+
+	reload)
+		boot_mesg "Reloading CUPS Printserver..."
+		reloadproc /usr/sbin/cupsd
+		;;
+
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+
+	status)
+		statusproc /usr/sbin/cupsd
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|reload|restart|status}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/cups
