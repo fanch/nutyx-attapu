@@ -1,0 +1,19 @@
+# Description: Outil CDDA avec correction de jitter
+# URL: http://xiph.org/paranoia/
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=cdparanoia
+version=10.2
+release=2
+source=(http://downloads.xiph.org/releases/cdparanoia/$name-III-$version.src.tgz\
+	cdparanoia-gcc43.patch)
+
+build() {
+	cd $name-III-$version
+	patch -Np1 -i ../cdparanoia-gcc43.patch
+	./configure --prefix=/usr
+	make
+	make prefix=$PKG/usr install
+}
