@@ -1,0 +1,21 @@
+# Description: Connecteurs db pour qt3
+# URL: http://www.freedesktop.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: qt3
+
+name=dbus-qt3
+version=0.70
+release=2
+source=(http://ftp.osuosl.org/pub/gentoo/distfiles/dbus-qt3-$version.tar.bz2\
+	)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$PKG/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+		--includedir=/usr/include
+	make
+	make prefix=$PKG includedir=$PKG/usr/include install
+}
