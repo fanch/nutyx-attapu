@@ -1,0 +1,20 @@
+# Description: Gestionnaire de fenêtres léger et rapide
+# URL: http://blackboxwm.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, hal, libiconv
+
+name=blackbox
+version=0.70.1
+release=2
+source=(http://downloads.sourceforge.net/blackboxwm/$name-$version.tar.bz2\
+	gcc43.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../gcc43.patch
+	./configure --prefix=/usr\
+	--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
