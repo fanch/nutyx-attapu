@@ -1,0 +1,21 @@
+# Description: Librairie audio pour KDE4
+# URL: http://carewolf.com/akode/ 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=akode
+version=2.0.2
+release=2
+source=(http://www.kde-apps.org/CONTENT/content-files/30375-akode-$version.tar.bz2 \
+        akode-2.0.2-flac14.patch gcc43.patch)
+build() {
+	cd $name-$version
+#	patch -Np0 -i ../akode-2.0.2-flac14.patch
+	patch -Np0 -i ../gcc43.patch
+	./configure --prefix=/usr \
+		--without-flac \
+		--without-ffmpeg
+	make
+	make DESTDIR=$PKG install
+}
