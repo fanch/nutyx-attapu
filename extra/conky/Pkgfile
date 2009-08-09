@@ -1,0 +1,21 @@
+# Description: Permet la supervision du system d'exploitation de facon tres avancee
+# URL: http://conky.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: curl, glib
+
+name=conky
+version=1.7.0
+release=1
+source=(http://freefr.dl.sourceforge.net/sourceforge/conky/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--enable-xft \
+		--enable-mpd \
+		--sysconfdir=/etc \
+		--enable-double-buffer
+	make
+	make DESTDIR=$PKG install
+}
