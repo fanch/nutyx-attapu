@@ -1,0 +1,4 @@
+#!/bin/bash
+if ( pkginfo -i | grep cdrtools > /dev/null ) ; then
+	pkgrm cdrtools
+fi
