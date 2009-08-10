@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- -*- SGML -*- -->
+
+<!-- Don't allow HAL methods on disks that are not
+     removable or hotpluggable -->
+
+<deviceinfo version="0.2">
+<device>
+  <match key="@block.storage_device:storage.hotpluggable" bool="false">
+    <match key="@block.storage_device:storage.removable" bool="false">
+      <merge key="volume.ignore" type="bool">true</merge>
+    </match>
+  </match>
+</device>
+</deviceinfo>

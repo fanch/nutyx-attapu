@@ -1,0 +1,7 @@
+2ce75b2d8e3408137a7fb449a9d892e1  10-keymap.fdi
+46ecc5d2e5bd964fb78099688f01bb6a  hal-0.5.13.tar.gz
+6fc99d15d38945c17a291ea93e664664  hal-info-20080508.tar.gz
+e96ea4d2d6e81d2a53cf63e2e93dc9e4  haldaemon
+47290dc30a6e2e05a9aa7a0d06833350  halusers.conf
+be2df8f5cf8e7decdc1551f8151b6c60  no-fixed-drives.fdi
+49ccb7f5da3c86d228d6c36a624a1509  use_udevadm_not_udevinfo.patch.gz

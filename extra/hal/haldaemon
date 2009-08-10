@@ -1,0 +1,47 @@
+#!/bin/sh
+# Begin $rc_base/init.d/haldaemon
+
+# Based on sysklogd script from LFS-3.1 and earlier.
+# Rewritten by Gerard Beekmans  - gerard@linuxfromscratch.org
+
+#$LastChangedBy: randy $
+#$Date: 2007/09/27 15:12:01 $
+# $Id: haldaemon,v 1.1 2007/09/27 15:12:01 install Exp $
+. /etc/sysconfig/rc
+. $rc_functions
+newid=19
+newuser=haldaemon
+newgroup=haldaemon
+getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
+getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
+-u $newid -s /bin/false -d /dev/null -u $newid -c "HAL Daemon User" $newuser
+getent group halusers > /dev/null || /usr/sbin/groupadd -g 61 halusers
+
+case "$1" in
+	start)
+		boot_mesg "Starting the HAL Daemon..."
+		loadproc /usr/sbin/hald --use-syslog
+		;;
+
+	stop)
+		boot_mesg "Stopping the HAL Daemon..."
+		killproc /usr/sbin/hald
+		;;
+
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+
+	status)
+		statusproc /usr/sbin/hald
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|restart|status}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/haldaemon

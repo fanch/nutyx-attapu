@@ -1,0 +1,49 @@
+# Description: Couche d'abstraction matériel
+# URL: http://freedesktop.org/wiki/Software_2fhal
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: dbus-glib, glib, usbutils, pciutils, libusb, eject, hal-info
+
+name=hal
+version=0.5.13
+release=1
+source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz\
+	http://hal.freedesktop.org/releases/hal-info-20080508.tar.gz\
+        haldaemon halusers.conf no-fixed-drives.fdi 10-keymap.fdi \
+	use_udevadm_not_udevinfo.patch.gz)
+
+build() {
+	source /etc/blfs-bootscripts
+	wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+	tar xvf $scripts-$scriptsversion.tar.bz2
+	cd $name-$version
+#	zcat ../use_udevadm_not_udevinfo.patch.gz | patch -p1 --verbose
+
+	sed -i -e   's%, 1.8.6%&, 1.8.7%' \
+	-e   's% or 1.8.6%/1.8.6 or 1.8.7%' \
+	-e   's%6))%6) ||\
+	(major == 1 \&\& minor == 8 \&\& micro == 7))%' \
+	configure
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--libexecdir=/usr/lib/$name \
+		--sysconfdir=/etc --with-udev-prefix=/etc \
+		--localstatedir=/var \
+		--with-pci-ids=/usr/share/pci.ids.gz \
+		--disable-policy-kit \
+		--disable-console-kit
+	make
+	make DESTDIR=$PKG install
+
+        mkdir -p $PKG/etc/hal/fdi/policy
+        mkdir -p $PKG/etc/dbus-1/system.d
+        mv ../halusers.conf $PKG/etc/dbus-1/system.d/
+        mv ../{no-fixed-drives.fdi,10-keymap.fdi} $PKG/etc/hal/fdi/policy/
+        cd ../$scripts-$scriptsversion
+        make DESTDIR=$PKG install-haldaemon
+        install -m755 ../haldaemon $PKG/etc/rc.d/init.d/
+	rm -rf $PKG/usr/share/gtk-doc
+	ln -sv /usr/share/hal/fdi/policy/10osvendor/10-x11-input.fdi \
+	$PKG/etc/hal/fdi/policy/
+}
+
