@@ -1,0 +1,22 @@
+# Description: Contient le Enlightened Sound Daemon
+# URL: http://www.tux.org/~ricdude/EsounD.html
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: audiofile
+
+name=esound
+version=0.2.40
+release=1
+source=(  ftp://ftp.gnome.org/pub/gnome/sources/$name/0.2/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	sed -i 's@doc/esound@&-0.2.40@' configure
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
