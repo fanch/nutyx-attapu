@@ -1,0 +1,49 @@
+# Description: Utilitaire et démon MIT Kerberos V5 client et serveur.
+# URL: 	http://web.mit.edu/kerberos/
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: thierryn1 at hispeed
+# Depends on: openssl
+
+name=kerberos
+version=1.6.3
+release=1
+source=(http://web.mit.edu/$name/www/dist/krb5/1.6/krb5-$version-signed.tar)
+build()  {
+	tar xf krb5-${version}-signed.tar
+	tar xzf krb5-${version}.tar.gz
+#	gpg - -verify krb5-$version.tar.gz.asc
+	cd krb5-$version/src
+	./configure CPPFLAGS="-I/usr/include/et -I/usr/include/ss" \
+            --prefix=/usr \
+            --sysconfdir=/etc/krb5 \
+            --localstatedir=/var/lib \
+            --with-system-et \
+            --with-system-ss \
+            --enable-dns-for-realm \
+            --mandir=/usr/share/man
+
+	make -j3
+	make DESTDIR=$PKG install
+
+	for file in telnet ftp rcp rlogin rsh uuclient; do
+		mv ${PKG}/usr/bin/$file ${PKG}/usr/bin/k${file}
+	done
+	for file in ftpd telnetd uuserver; do
+		mv ${PKG}/usr/sbin/$file ${PKG}/usr/sbin/k${file}
+	done
+	for file in telnet.1 ftp.1 rcp.1 rsh.1 rlogin.1 telnetd.8 ftpd.8; do
+		mv ${PKG}/usr/share/man/man`echo $file | cut -f2 -d.`/$file \
+		${PKG}/usr/share/man/man`echo $file | cut -f2 -d.`/k${file}
+	done
+
+	mkdir -p $PKG/{lib,bin}
+	mv -v $PKG/usr/bin/ksu $PKG/bin
+	chmod -v 755 $PKG/bin/ksu
+	mv -v $PKG/usr/lib/libkrb5.so.3* $PKG/lib
+	mv -v $PKG/usr/lib/libk5crypto.so.3* $PKG/lib
+	mv -v $PKG/usr/lib/libkrb5support.so.0* $PKG/lib
+	ln -v -sf ../../lib/libkrb5.so.3.3 $PKG/usr/lib/libkrb5.so
+	ln -v -sf ../../lib/libk5crypto.so.3.1 $PKG/usr/lib/libk5crypto.so
+	ln -v -sf ../../lib/libkrb5support.so.0.1 $PKG/usr/lib/libkrb5support.so
+}	
+
