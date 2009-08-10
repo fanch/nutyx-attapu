@@ -1,0 +1,20 @@
+# Description: Générateurs d'effets visuels pour lecteur MP3
+# URL: http://pkgsrc.se/audio/goom
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=goom
+version=2k4
+release=2
+source=(http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version-0-src.tar.gz)
+
+build() {
+	cd $name$version-0
+	./configure --prefix=/usr
+
+	make CFLAGS="$CFLAGS"
+	make DESTDIR=$PKG install
+	make DESTDIR=$PKG install
+	chown -R root:root $PKG
+}
