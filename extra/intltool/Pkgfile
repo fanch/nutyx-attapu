@@ -1,0 +1,18 @@
+# Description: Collection d'outils pour l'internationalisation
+# URL: http://freedesktop.org/wiki/Software/intltool
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: p5-xml-parser
+
+name=intltool
+version=0.40.6
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.40/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	make
+	make DESTDIR=$PKG install
+}
+
