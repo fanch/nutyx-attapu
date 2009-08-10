@@ -1,0 +1,25 @@
+# Description: Encodeur et analyseur de trames MP3
+# URL: http://lame.sourceforge.net/index.php
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=lame
+version=3.98
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-${version/./}.tar.gz)
+
+
+build() {
+	cd $name-${version/./}
+	./configure --prefix=/usr \
+		--disable--analyzer-hooks \
+		--disable-gtktest \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info\
+		--enable-shared\
+		--enable-nasm
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
