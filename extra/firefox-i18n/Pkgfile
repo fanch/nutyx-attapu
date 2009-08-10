@@ -1,0 +1,94 @@
+# Description: Localisation pour firefox
+# Url: http://www.mozilla.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: firefox
+
+name=firefox-i18n
+version=3.5.1
+release=1
+_url=ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/$version/linux-`uname -m`/xpi
+source=($_url/af.xpi \
+        $_url/ar.xpi \
+        $_url/as.xpi \
+        $_url/be.xpi \
+        $_url/bg.xpi
+        $_url/bn-BD.xpi
+        $_url/bn-IN.xpi
+        $_url/ca.xpi
+        $_url/cs.xpi
+        $_url/cy.xpi
+        $_url/da.xpi
+        $_url/de.xpi
+        $_url/el.xpi
+        $_url/en-GB.xpi
+        $_url/eo.xpi
+        $_url/es-AR.xpi
+        $_url/es-CL.xpi
+        $_url/es-ES.xpi
+        $_url/es-MX.xpi
+        $_url/et.xpi
+        $_url/eu.xpi
+        $_url/fa.xpi
+        $_url/fi.xpi
+        $_url/fr.xpi
+        $_url/fy-NL.xpi
+        $_url/ga-IE.xpi
+        $_url/gl.xpi
+        $_url/gu-IN.xpi
+        $_url/he.xpi
+        $_url/hi-IN.xpi
+        $_url/hr.xpi
+        $_url/hu.xpi
+        $_url/id.xpi
+        $_url/is.xpi
+        $_url/it.xpi
+        $_url/ja.xpi
+        $_url/ka.xpi
+        $_url/kk.xpi
+        $_url/kn.xpi
+        $_url/ko.xpi
+        $_url/ku.xpi
+        $_url/lt.xpi
+        $_url/lv.xpi
+        $_url/mk.xpi
+        $_url/ml.xpi
+        $_url/mn.xpi
+        $_url/mr.xpi
+        $_url/nb-NO.xpi
+        $_url/nl.xpi
+        $_url/nn-NO.xpi
+        $_url/oc.xpi
+        $_url/or.xpi
+        $_url/pa-IN.xpi
+        $_url/pl.xpi
+        $_url/pt-BR.xpi
+        $_url/pt-PT.xpi
+        $_url/rm.xpi
+        $_url/ro.xpi
+        $_url/ru.xpi
+        $_url/si.xpi
+        $_url/sk.xpi
+        $_url/sl.xpi
+        $_url/sq.xpi
+        $_url/sr.xpi
+        $_url/sv-SE.xpi
+        $_url/ta-LK.xpi
+        $_url/ta.xpi
+        $_url/te.xpi
+        $_url/th.xpi
+        $_url/tr.xpi
+        $_url/uk.xpi
+        $_url/vi.xpi
+        $_url/zh-CN.xpi
+        $_url/zh-TW.xpi)
+build() {
+  for langfile in *.xpi; do
+    lang=${langfile/.xpi/}
+    bsdtar xf ${langfile}
+#    sed -i "s|jar:chrome/${lang}.jar|jar:${lang}.jar|" chrome.manifest
+    install -D -m 644 chrome/${lang}.jar $PKG/usr/lib/firefox/xulrunner/chrome/${lang}.jar
+    install -D -m 644 chrome.manifest $PKG/usr/lib/firefox/xulrunner/chrome/${lang}.manifest
+  done
+}
+
