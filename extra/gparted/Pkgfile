@@ -1,0 +1,22 @@
+# Description: Gestionnaire de partitions 
+# URL: http://gparted.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, parted, gtkmm, libsigc++, ntfsprogs, ktsuss, gnome-doc-utils
+
+name=gparted
+version=0.4.5
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
+	gparted.desktop)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--disable-scrollkeeper
+	make
+	make DESTDIR=$PKG install
+	sed -i "s@/usr/sbin/gparted@gksu /usr/sbin/gparted@g" $PKG/usr/share/applications/gparted.desktop
+	install -D -m 644 ../gparted.desktop \
+	$PKG/usr/share/ede/programs/Utilities/gparted.desktop
+}
