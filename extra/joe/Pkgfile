@@ -1,0 +1,20 @@
+# Description: Petit editeur de texte sachant emuler WordStar, Pico et Emacs
+# URL: http://sourceforge.net/projects/joe-editor/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=joe
+version=3.7
+release=1
+source=(http://switch.dl.sourceforge.net/sourceforge/$name-editor/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	 --sysconfdir=/etc \
+	--mandir=/usr/share/man \
+	--without-x
+	make
+	make DESTDIR=$PKG install
+}
