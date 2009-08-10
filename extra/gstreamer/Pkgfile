@@ -1,0 +1,22 @@
+# Description: Frameworke multimedia
+# URL: http://gstreamer.freedesktop.org/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glib, libxml2, zlib
+
+name=gstreamer
+version=0.10.23
+release=1
+source=(http://gstreamer.freedesktop.org/src/gstreamer/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-static \
+	--disable-docs-build
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+}
+
