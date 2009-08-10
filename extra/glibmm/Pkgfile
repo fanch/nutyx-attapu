@@ -1,0 +1,18 @@
+# Description: Glib-- (glibmm) est une interface pour glib
+# URL: http://gtkmm.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libsigc++
+
+name=glibmm
+version=2.21.3
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/$name/2.21/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
+}
