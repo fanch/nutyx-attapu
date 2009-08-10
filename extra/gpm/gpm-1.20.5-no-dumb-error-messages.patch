@@ -1,0 +1,13 @@
+diff -pruN gpm-1.20.5.orig/src/lib/liblow.c gpm-1.20.5/src/lib/liblow.c
+--- gpm-1.20.5.orig/src/lib/liblow.c	2008-06-17 09:54:54.811257867 +1000
++++ gpm-1.20.5/src/lib/liblow.c	2008-06-17 10:00:27.489256401 +1000
+@@ -377,7 +377,7 @@ int Gpm_Open(Gpm_Connect *conn, int flag
+   /*....................................... Error: free all memory */
+    err:
+    if (gpm_is_disabled < 2) /* be quiet if no gpmctl socket found */
+-      gpm_report(GPM_PR_ERR,"Oh, oh, it's an error! possibly I die! ");
++      /* gpm_report(GPM_PR_ERR,"Oh, oh, it's an error! possibly I die! "); */
+    while(gpm_stack) {
+       new=gpm_stack->next;
+       free(gpm_stack);
+

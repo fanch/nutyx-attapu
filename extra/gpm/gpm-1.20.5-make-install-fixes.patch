@@ -1,0 +1,54 @@
+diff -pruN gpm-1.20.5.orig/configure gpm-1.20.5/configure
+--- gpm-1.20.5.orig/configure	2008-06-17 09:54:54.858258511 +1000
++++ gpm-1.20.5/configure	2008-06-17 10:16:33.330255126 +1000
+@@ -3378,15 +3378,8 @@ else
+ echo "${ECHO_T}no" >&6; }
+ fi
+ 
+-
+-
+-if test ${ac_cv_path_emacs} = no ; then
+-        EMACS=:
+-        ELISP=
+-else
+-        EMACS=${ac_cv_path_emacs}
+-        ELISP="emacs/t-mouse.el emacs/t-mouse.elc"
+-fi
++EMACS=:
++ELISP=
+ 
+ if test $EMACS != : ; then
+         { echo "$as_me:$LINENO: checking where to install Emacs Lisp files" >&5
+diff -pruN gpm-1.20.5.orig/doc/Makefile.in gpm-1.20.5/doc/Makefile.in
+--- gpm-1.20.5.orig/doc/Makefile.in	2008-06-17 09:54:54.856257925 +1000
++++ gpm-1.20.5/doc/Makefile.in	2008-06-17 10:18:14.557261978 +1000
+@@ -32,7 +32,7 @@ include $(top_builddir)/Makefile.include
+ 
+ MANPAGES = gpm.8 mev.1 gpm-root.1 gpm-types.7 mouse-test.1
+ 
+-all: $(srcdir)/gpm.info gpm.man
++all: gpm.man
+ 
+ # HTML (texi2html)
+ %.html: %.texinfo
+diff -pruN gpm-1.20.5.orig/Makefile.include.in gpm-1.20.5/Makefile.include.in
+--- gpm-1.20.5.orig/Makefile.include.in	2008-06-17 09:54:54.862260471 +1000
++++ gpm-1.20.5/Makefile.include.in	2008-06-17 10:13:14.742262245 +1000
+@@ -44,7 +44,6 @@ INSTALL           = @INSTALL@
+ INSTALL_PROGRAM   = @INSTALL_PROGRAM@
+ INSTALL_DATA      = @INSTALL_DATA@
+ LN_S              = @LN_S@
+-EMACS             = @EMACS@
+ ELISP             = @ELISP@
+ SHLIB             = @SHLIB@
+ SED               = @SED@
+@@ -52,7 +51,7 @@ DIFF              = @DIFF@
+ TEX               = @TEX@
+ TEXINDEX          = @TEXINDEX@
+ DVIPS             = @DVIPS@
+-MAKEINFO          = @MAKEINFO@
++MAKEINFO          = no
+ TEXI2HTML         = texi2html
+ STRIP             = -s
+ 
+

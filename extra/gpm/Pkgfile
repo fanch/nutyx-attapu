@@ -1,0 +1,32 @@
+# Description: Demon pour la souris pour console et X terminal.
+# URL: http://unix.schottelius.org/gpm
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=gpm
+version=1.20.5
+release=1
+source=( http://unix.schottelius.org/$name/archives/$name-$version.tar.bz2\
+	gpm-$version-nodebug.patch \
+	gpm-$version-no-dumb-error-messages.patch \
+	gpm-$version-make-install-fixes.patch )
+
+
+build() {
+	cd $name-$version
+	patch -p 1 -i ../gpm-$version-nodebug.patch
+	patch -p 1 -i ../gpm-$version-no-dumb-error-messages.patch
+	patch -p 1 -i ../gpm-$version-make-install-fixes.patch
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --enable-cxx \
+                --enable-mpbsd
+	LDFLAGS="-lm" make
+	make ROOT=$PKG install
+	ln -sv libgpm.so.1.19.0 $PKG/usr/lib/libgpm.so.1
+#	ln -sv libgpm.so.1.19.0 $PKG/usr/lib/libgpm.so
+	cp -v conf/gpm-root.conf $PKG/etc
+}
