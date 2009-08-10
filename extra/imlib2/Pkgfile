@@ -1,0 +1,19 @@
+# Description: Librairie pour la gestion d'images de facon plus efficace que imlib
+# URL: http://sourceforge.net/projects/enlightenment
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: aalib, libid3tag
+
+name=imlib2
+version=1.4.2
+release=1
+source=( http://downloads.sourceforge.net/enlightenment/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
