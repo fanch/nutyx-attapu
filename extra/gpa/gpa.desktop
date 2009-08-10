@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GNU Privacy Assistant
+Name[fr]=Assistant GnuPG
+Exec=gpa
+Icon=gpa
+Terminal=false
+Encoding=UTF-8
+Type=Application
+Categories=GTK;Application;Security;Utility;

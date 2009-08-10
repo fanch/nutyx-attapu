@@ -1,0 +1,24 @@
+# Description: Interface GTK2 pour GnuPG
+# URL: http://wald.intevation.org/projects/gpa/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, cairo, expat, freetype, fontconfig, glib, glibc, gnupg1, gnupg2, gpgme, gtk, libgpg-error, libpng, pango, pixman, zlib
+
+name=gpa
+version=0.8.0
+release=1
+source=(http://wald.intevation.org/frs/download.php/491/$name-$version.tar.bz2 \
+gpa.desktop)
+
+build() {
+cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+
+# freedesktop compliance
+    install -m 644 ../gpa.desktop $PKG/usr/share/applications/gpa.desktop
+    install -D -m 644 $PKG/usr/share/pixmaps/gpa.png $PKG/usr/share/icons/hicolor/48x48/apps/gpa.png
+    rm -rf $PKG/usr/share/pixmaps
+}
+
