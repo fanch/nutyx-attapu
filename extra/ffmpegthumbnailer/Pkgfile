@@ -1,0 +1,18 @@
+# Description: Cree des vignettes de vos fichiers videos 
+# URL: http://code.google.com/p/ffmpegthumbnailer/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: ffmpeg, libjpeg, libpng
+
+name=ffmpegthumbnailer
+version=1.5.4
+release=1
+source=(http://ffmpegthumbnailer.googlecode.com/files/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
