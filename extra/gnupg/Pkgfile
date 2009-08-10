@@ -1,0 +1,21 @@
+# Description: GNU gardien des données privées
+# URL: 	http://www.gnupg.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgcrypt, libassuan, libksba, pinentry
+
+name=gnupg
+version=2.0.12
+release=1
+source=(ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-$version.tar.bz2\
+	$name.diff)
+
+build() {
+	cd gnupg-$version
+#	patch -Np1 -i $SRC/$name.diff
+	./configure --prefix=/usr \
+	--libexecdir=/usr/lib/gnupg2
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}

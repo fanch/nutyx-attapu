@@ -1,0 +1,13 @@
+diff -aur gnupg-2.0.9.orig/keyserver/gpgkeys_curl.c gnupg-2.0.9/keyserver/gpgkeys_curl.c
+--- gnupg-2.0.9.orig/keyserver/gpgkeys_curl.c	2007-07-04 15:26:13.000000000 +0200
++++ gnupg-2.0.9/keyserver/gpgkeys_curl.c	2008-11-30 13:42:46.062587160 +0100
+@@ -300,7 +300,8 @@
+       curl_easy_setopt(curl,CURLOPT_VERBOSE,1);
+     }
+ 
+-  curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,opt->flags.check_cert);
++  int check_cert = opt->flags.check_cert;
++  curl_easy_setopt(curl,CURLOPT_SSL_VERIFYPEER,check_cert);
+   curl_easy_setopt(curl,CURLOPT_CAINFO,opt->ca_cert_file);
+ 
+   if(proxy)
