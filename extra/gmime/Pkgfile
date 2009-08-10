@@ -1,0 +1,21 @@
+# Description: Jeux d'utilitaire pour créer et filtrer des messages utilisant mime
+# URL:  http://spruce.sourceforge.net/gmime
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: iso-codes
+
+name=gmime
+version=2.4.7
+release=1
+source=(  http://ftp.gnome.org/pub/gnome/sources/$name/2.4/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/gtk-doc
+}
