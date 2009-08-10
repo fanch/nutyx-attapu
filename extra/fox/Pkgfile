@@ -1,0 +1,21 @@
+# Description: Librairie GUI pour développer des interfaces graphiques et autres
+# URL: http://www.fox-toolkit.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libxcursor, xorg-libxft, xorg-libxrandr, mesa3d
+
+name=fox
+version=1.6.36
+release=1
+source=(http://www.fox-toolkit.org/ftp/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	CPPFLAGS="$CPPFLAGS -I/usr/include/freetype2"
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--with-xft=yes \
+	--with-opengl=yes
+	make
+	make DESTDIR=$PKG install
+}
