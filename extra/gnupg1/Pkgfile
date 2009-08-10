@@ -1,0 +1,19 @@
+# Description: GNU gardien des donnees privees
+# URL: 	http://www.gnupg.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=gnupg1
+version=1.4.9
+release=1
+source=(ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-$version.tar.bz2)
+
+build() {
+	cd gnupg-$version
+	./configure --prefix=/usr \
+	--libexecdir=/usr/lib
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
