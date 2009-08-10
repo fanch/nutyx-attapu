@@ -1,0 +1,16 @@
+# Description: Plugin flashplayer pour navigateur
+# URL: http://www.macromedia.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: firefox
+
+name=flashplayer
+version=10.0.22.87
+release=1
+source=(http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_${version%%.*}_linux.tar.gz)
+
+build() {
+  install -D -m 0755 install_flash_player_${version%%.*}_linux/libflashplayer.so \
+    $PKG/usr/lib/firefox/plugins/libflashplayer.so
+}
+
