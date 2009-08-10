@@ -1,0 +1,19 @@
+# Description: Implémentation du codec spécifié par le standard JPEG-2000 Part-1 
+# URL: http://www.ece.uvic.ca/~mdadams/jasper/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, unzip
+
+name=jasper
+version=1.900.1
+release=1
+source=(http://www.ece.uvic.ca/~mdadams/$name/software/$name-$version.zip)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--enable-shared
+	make
+	make DESTDIR=$PKG install
+	
+}
