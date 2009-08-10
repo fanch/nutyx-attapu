@@ -1,0 +1,19 @@
+# Description: Interface espace utilisateur pour système de fichiers
+# URL: http://fuse.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=fuse
+version=2.7.4
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--disable-kernel-module
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/{dev,etc/init.d}
+}
