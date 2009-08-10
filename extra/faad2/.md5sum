@@ -1,0 +1,5 @@
+f4427ece45c87ac63102f891dc9208e1  faad2-2.6.1-abi_has_changed.patch
+6eb87d8c75da12d166ae460997bdbde2  faad2-2.6.1-broken-pipe.patch
+97a34cb3cd468ba868d9393241ef7391  faad2-2.6.1-implicitdeclar.patch
+fa91c19ea617b3ac8e7e198fb0a97b62  faad2-2.6.1-libtool22.patch
+74e92df40c270f216a8305fc87603c8a  faad2-2.6.1.tar.gz

@@ -1,0 +1,33 @@
+# Description: Profiles pour le decoder ACC MPEG4 
+# URL: http://www.audiocoding.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=faad2
+version=2.6.1
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/faac/$name-$version.tar.gz\
+	faad2-2.6.1-libtool22.patch \
+	faad2-2.6.1-broken-pipe.patch \
+	faad2-2.6.1-implicitdeclar.patch
+	faad2-2.6.1-abi_has_changed.patch \
+
+	)
+
+
+build() {
+	cd $name
+#	patch -p1 -i $SRC/$name-2.0-gcc4.patch
+	patch -p1 < ../faad2-2.6.1-libtool22.patch
+	patch -p1 < ../faad2-2.6.1-broken-pipe.patch
+	patch -p1 < ../faad2-2.6.1-implicitdeclar.patch
+	patch -p1 < ../faad2-2.6.1-abi_has_changed.patch
+	autoreconf -vif
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	install -m644 common/mp4ff/mp4ff.h $PKG/usr/include/
+	install -m644 common/mp4ff/.libs/*.a $PKG/usr/lib
+	install -m644 common/mp4ff/mp4ff_int_types.h $PKG/usr/include
+}
