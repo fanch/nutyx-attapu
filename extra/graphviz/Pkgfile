@@ -1,0 +1,19 @@
+# Description: open-source de visualisation graphique
+# URL: http://www.graphviz.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on : expat, libpng, libjpeg, freetype, fontconfig, pango, gtk, libglade, tcl, tk, jdk, python
+
+name=graphviz
+version=2.20.2
+release=1
+source=(http://www.graphviz.org/pub/graphviz/ARCHIVE/$name-$version.tar.gz)
+
+build () {
+cd $name-$version
+export CPPFLAGS="$CPPFLAGS -I$JAVA_HOME/include -I$JAVA_HOME/include/linux"
+./configure --prefix=/usr
+make -j3
+make DESTDIR=$PKG install
+rm -rf $PKG/usr/share/$name/doc
+}
