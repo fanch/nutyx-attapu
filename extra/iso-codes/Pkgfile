@@ -1,0 +1,20 @@
+# Description: Contient une liste de pays, langages et noms de monnaies
+# URL:  http://pkg-isocodes.alioth.debian.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: lzo
+
+name=iso-codes
+version=3.10.1
+release=1
+source=(ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
