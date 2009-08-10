@@ -1,0 +1,20 @@
+# Description: Collection par défault d'icones
+# URL: http://icon-theme.freedesktop.org/wiki/HicolorTheme
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=hicolor-icon-theme
+version=0.10
+release=1
+source=(  http://icon-theme.freedesktop.org/releases/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
