@@ -1,0 +1,16 @@
+# Description: Interface pour gerer le niveau des cartouches d'encres d'imprimantes
+# URL: http://ink.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libinklevel
+
+name=ink
+version=0.5.0
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}
