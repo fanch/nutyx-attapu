@@ -1,0 +1,31 @@
+# Description: Jeu de Casse Brique
+# URL:http://lgames.sourceforge.net
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: sdl_mixer, libpng
+name=lbreakout2
+version=2.6beta_7
+release=2
+source=( http://downloads.sourceforge.net/lgames/$name-${version/_/-}.tar.gz
+        lbreakout2.desktop lbreakout2.png)
+build() {
+
+ cd $name-${version/_/-}
+  ./configure --prefix=/usr \
+              --localstatedir=/var/games/lbreakout2 
+  make
+  make DESTDIR=$PKG/ doc_dir=/usr/share/doc install
+  
+  chmod -R 755 $PKG/usr
+#  chown root:games $PKG/var/games
+  chmod 775 $PKG/var/games
+#  chown root:games $PKG/var/games/lbreakout2
+  chmod 755 $PKG/var/games/lbreakout2
+#  chown root:games $PKG/var/games/lbreakout2/lbreakout2.hscr
+  chmod 775 $PKG/var/games/lbreakout2/lbreakout2.hscr
+
+  install -Dm644 $SRC/lbreakout2.png $PKG/usr/share/pixmaps/lbreakout2.png
+  install -Dm644 $SRC/lbreakout2.desktop $PKG/usr/share/applications/lbreakout2.desktop
+}
+
+
