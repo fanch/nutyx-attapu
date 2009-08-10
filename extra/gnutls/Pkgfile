@@ -1,0 +1,20 @@
+# Description:  Librairie fournissant une couche de securite aux dessus d'une couche de transport
+# URL: http://www.gnu.org/software/gnutls/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgcrypt, lzo
+
+name=gnutls
+version=2.6.2
+release=1
+source=(ftp://ftp.gnutls.org/pub/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--with-zlib \
+	--disable-guile
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
