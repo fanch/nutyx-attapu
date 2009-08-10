@@ -1,0 +1,17 @@
+# Description: Editeur de text trés léger. Adapté pour mini OS.
+# URL: http://tarot.freeshell.org/leafpad/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+
+name=leafpad
+version=0.8.16
+release=1
+source=(http://mirror.lihnidos.org/GNU/savannah/leafpad/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
