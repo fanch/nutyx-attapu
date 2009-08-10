@@ -1,0 +1,20 @@
+# Description: Set de plugins ffmpeg pour l'outil multimedia gstreamer
+# URL: http://gstreamer.freedesktop.org/modules/gst-ffmpeg.html
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: bzip2, ffmpeg, gstreamer, gst-plugins-base 
+
+name=gst-ffmpeg
+version=0.10.7
+release=2
+source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	sed -i "s/-O3/-O2/" gst-libs/ext/ffmpeg/configure
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
