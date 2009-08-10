@@ -1,0 +1,28 @@
+# Description: Manipulateur d'image en ligne de commande
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# URL: http://www.imagemagick.org/
+# Depends on: freetype, ghostscript, lcms, libgsf, giflib, libxml2, openexr
+
+name=imagemagick
+version=6.5.4.6
+release=1
+_version=6.5.4-6
+source=(ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-${_version}.tar.bz2)
+
+build () {
+cd ImageMagick-*
+	./configure --prefix=/usr \
+	--enable-static=no \
+	--enable-shared \
+	--with-perl \
+	--with-x \
+	--with-frozenpaths=no \
+	--without-modules \
+	--disable-openmp
+	make || make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/lib/perl5/5.10.0
+}
+
