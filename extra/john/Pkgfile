@@ -1,0 +1,28 @@
+# Description: utilitaire systeme pour retrouver les mots de passe
+# URL: http://www.openwall.com/john/ 
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: 
+
+name=john
+version=1.7.3
+release=3
+source=(http://www.openwall.com/john/g/$name-$version.tar.gz john)
+
+build() {
+cd $name-$version/src
+	make clean linux-x86-any
+	mkdir -p $PKG/usr/share/$name
+	cp -a ../run/* $PKG/usr/share/$name
+
+	mkdir -p $PKG/usr/bin
+	install -m 755 ../../john $PKG/usr/bin/
+
+	mkdir -p $PKG/usr/share/doc/$name
+	cp -a ../doc/* $PKG/usr/share/doc/$name
+
+	chmod 755 $PKG/usr/share/john/mailer
+	chmod 644 $PKG/usr/share/john/john.conf
+	chown -R root:root $PKG
+}
+

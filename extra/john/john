@@ -1,0 +1,3 @@
+#!/bin/bash
+# John The Ripper launcher
+/usr/share/john/john $@

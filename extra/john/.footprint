@@ -1,0 +1,32 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/john
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/john/
+-rw-------	root/root	usr/share/doc/john/CHANGES
+-rw-------	root/root	usr/share/doc/john/CONFIG
+-rw-------	root/root	usr/share/doc/john/CONTACT
+-rw-------	root/root	usr/share/doc/john/CREDITS
+-rw-------	root/root	usr/share/doc/john/EXAMPLES
+-rw-------	root/root	usr/share/doc/john/EXTERNAL
+-rw-------	root/root	usr/share/doc/john/FAQ
+-rw-------	root/root	usr/share/doc/john/INSTALL
+-rw-------	root/root	usr/share/doc/john/LICENSE
+-rw-------	root/root	usr/share/doc/john/MODES
+-rw-------	root/root	usr/share/doc/john/OPTIONS
+-rw-------	root/root	usr/share/doc/john/README
+-rw-------	root/root	usr/share/doc/john/RULES
+drwxr-xr-x	root/root	usr/share/john/
+-rw-------	root/root	usr/share/john/all.chr
+-rw-------	root/root	usr/share/john/alnum.chr
+-rw-------	root/root	usr/share/john/alpha.chr
+-rw-------	root/root	usr/share/john/digits.chr
+-rwxr-xr-x	root/root	usr/share/john/john
+-rw-r--r--	root/root	usr/share/john/john.conf
+-rw-------	root/root	usr/share/john/lanman.chr
+-rwxr-xr-x	root/root	usr/share/john/mailer
+-rw-------	root/root	usr/share/john/password.lst
+lrwxrwxrwx	root/root	usr/share/john/unafs -> john
+lrwxrwxrwx	root/root	usr/share/john/unique -> john
+lrwxrwxrwx	root/root	usr/share/john/unshadow -> john
