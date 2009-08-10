@@ -1,0 +1,21 @@
+# Description: Visionneuse d'images
+# URL: http://lxde.org/
+# Maintainer:geanbrun
+# Packager: geanbrun
+# Depends on: 
+ 
+name=idesk
+version=0.7.5
+release=1
+ 
+source=(http://ovh.dl.sourceforge.net/sourceforge/idesk/idesk-0.7.5.tar.bz2)
+ 
+ 
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	
+make
+make DESTDIR=$PKG install
+   
+}
