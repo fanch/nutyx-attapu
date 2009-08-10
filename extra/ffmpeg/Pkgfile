@@ -1,0 +1,41 @@
+# Description: solution pour enregister, convertir et generer des flux audio et video
+# URL: http://ffmpeg.mplayerhq.hu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: amrnb, amrwb,liba52, imlib2, lame, sdl, libvorbis, libogg, xvid, faac, faad2, libtheora, x264
+
+
+name=ffmpeg
+version=0.5
+release=1
+source=(http://ffmpeg.org/releases/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--enable-gpl \
+		--enable-libfaac \
+		--enable-libfaad \
+		--enable-libfaadbin \
+		--enable-libmp3lame \
+		--enable-libtheora \
+		--enable-libvorbis \
+		--enable-libx264 \
+		--enable-libxvid \
+		--enable-shared \
+		--enable-pthreads \
+		--enable-postproc \
+		--enable-swscale \
+		--enable-x11grab \
+		--enable-libamr-nb \
+		--enable-libamr-wb \
+		--enable-nonfree \
+		--disable-debug \
+		--disable-static
+
+	make SHARED_PP='yes'
+	make DESTDIR=$PKG install install-man
+}
+
