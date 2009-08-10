@@ -1,0 +1,21 @@
+# Description: Librairie C subroutine pour les transformations de Fourier
+# URL: http://www.fftw.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gcc-fortran
+
+name=fftw
+version=3.2.2
+release=1
+source=(http://www.fftw.org/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure F77=gfortran \
+		--prefix=/usr \
+		--enable-type-prefix \
+                --enable-shared
+	make
+	make DESTDIR=$PKG install
+        rm $PKG/usr/share/info/dir
+}
