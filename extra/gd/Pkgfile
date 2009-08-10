@@ -1,0 +1,17 @@
+# Description: Librairie permettant la création dynamique d'images png, jpeg
+# URL: http://www.libgd.org/Main_Page
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, libpng, fontconfig
+
+name=gd
+version=2.0.35
+release=1
+source=(http://www.libgd.org/releases/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
