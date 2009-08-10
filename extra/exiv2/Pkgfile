@@ -1,0 +1,18 @@
+# Description: Librairie C++ et utilitaires pour manipuler des donnees d'images
+# URL: http://www.exiv2.org/index.html
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: gcc, zlib, expat
+
+name=exiv2
+version=0.18.1
+release=1
+source=(http://www.exiv2.org/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+
