@@ -1,0 +1,11 @@
+[Desktop Entry]
+  Name=The GIMP
+  Name[fr]=Le GIMP
+  Comment=GNU Image Manipulation Program
+  Comment[fr]=Le Programme de Manipulation d'Images GNU
+  TryExec=gimp
+  Exec=gimp
+  Icon=gimp2.png
+  Terminal=0
+  Type=Application
+
