@@ -1,0 +1,24 @@
+# Description: Permet de décoder le codec ATSC (AC3)
+# URL: http://liba52.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=liba52
+version=0.7.4
+release=3
+source=(http://liba52.sourceforge.net/files/a52dec-$version.tar.gz \
+	a52dec-0.7.4-build.patch)
+
+build() {
+	cd a52dec-$version
+	patch -Np1 -i ../a52dec-0.7.4-build.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-shared \
+		--enable-double
+	make -j3
+	make DESTDIR=$PKG install
+        # required for xine-lib
+        install -m644 liba52/a52_internal.h $PKG/usr/include/a52dec/
+}
