@@ -1,0 +1,23 @@
+# Description: Encoder MPEG-4 de AudioCoding.com
+# URL: http://www.audiocoding.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: faad2, libmp4v2 
+
+name=faac
+version=1.26
+release=1
+source=(http://heanet.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name
+	find . -type f -print0 | xargs -0 sed -i 's/\r//g'
+	chmod +x bootstrap
+	sh bootstrap
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--with-mp4v2
+	make
+	make DESTDIR=$PKG install
+}
