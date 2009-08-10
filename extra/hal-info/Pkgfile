@@ -1,0 +1,18 @@
+# Description: Information sur les périphérique pour HAL
+# URL: http://www.freedesktop.org/wiki/Software/hal
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on:
+
+name=hal-info
+version=20090716
+release=1
+source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
