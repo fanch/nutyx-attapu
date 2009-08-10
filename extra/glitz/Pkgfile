@@ -1,0 +1,20 @@
+# Description: An OpenGL image compositing library
+# URL:  http://www.freedesktop.org/Software/glitz
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=glitz
+version=0.5.6
+release=1
+source=(http://cairographics.org/snapshots/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info 
+	make
+	make DESTDIR=$PKG install
+#        sed -i -e "s| -L$SRC/$name-$version/src ||" $PKG/usr/lib/libglitz-glx.la
+}
