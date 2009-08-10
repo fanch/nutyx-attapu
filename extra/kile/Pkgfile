@@ -1,0 +1,19 @@
+# Description:Editeur Latex pour kde
+# URL:http://kile.sourceforge.net/news.php
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdelibs, texlive-core, psutils, perl
+name=kile
+version=2.1b1
+release=1
+source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+        cd $name-$version
+        mkdir build
+        cd build
+        cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make -j2
+        make DESTDIR=$PKG install
+}
+
