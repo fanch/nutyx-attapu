@@ -1,0 +1,25 @@
+# Description: Interface graphique pour l'outil de sauvegarde rsync
+# URL: http://www.opbyte.it/grsync/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, expat, fontconfig, freetype, glib, gtk, ktsuss, libpng, libX11, pango, rsync, zlib
+
+name=grsync
+version=0.6.3
+release=1
+source=(http://www.opbyte.it/release/$name-$version.tar.gz \
+grsync.png \
+grsync.desktop \
+grsync-root.desktop)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+	mkdir -p $PKG/usr/share/{applications,icons/hicolor/48x48/apps/}
+    install -m 644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
+	install -m 644 ../$name.desktop $PKG/usr/share/applications/
+    install -m 644 ../$name-root.desktop $PKG/usr/share/applications/
+}

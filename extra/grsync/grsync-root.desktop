@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Grsync - Backup tool (root)
+Name[fr]=Grsync - Outil de sauvegarde (root)
+Exec=gksu grsync
+Icon=grsync
+Terminal=false
+Type=Application
+Categories=Application;System;FileTools;
+StartupNotify=true
