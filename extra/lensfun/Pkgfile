@@ -1,0 +1,17 @@
+# Description: librairies lensfun
+# URL: http://lensfun.berlios.de
+# Packager: Floreal Cabanettes, floreal.c at orange dot fr
+# Depends on: libpng
+
+name=lensfun
+version=0.2.3
+release=1
+source=(http://dist.momonga-linux.org/pub/momonga/development/SOURCES/$name-$version.tar.bz2)
+
+build() {
+		cd $name-$version
+                ./configure --prefix=/usr
+		make -j2
+		make DESTDIR=$PKG install
+}
+
