@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=efax-gtk
+Comment=Gestionnaire de fax
+Exec=efax-gtk
+Icon=efax-gtk
+Terminal=false
+Type=Application
+Categories=Categories=Application;Office;
+StartupNotify=true

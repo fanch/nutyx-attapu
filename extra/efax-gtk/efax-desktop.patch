@@ -1,0 +1,16 @@
+--- efax-gtk-3.0.18/efax-gtk.desktop.origin	2009-05-18 09:39:17.000000000 +0000
++++ efax-gtk-3.0.18/efax-gtk.desktop	2009-05-18 09:42:00.000000000 +0000
+@@ -5,11 +5,12 @@
+ Name[zh_TW]=傳真
+ Name[he_IL]=תוכנת פקסים efax-gtk
+ Comment=GUI front end for the efax fax program
++Comment[fr]=Gestionnaire de fax
+ Comment[zh_TW]=efax 傳真軟體的 GUI 前端程式
+ Comment[he_IL]=ממשק גרפי עבור תוכנת הפקסים efax
+ TryExec=efax-gtk
+ Exec=efax-gtk
+-Icon=stock_send-fax.png
++Icon=efax-gtk.png
+ Terminal=false
+ Type=Application
+ Categories=Application;Office;GTK;
