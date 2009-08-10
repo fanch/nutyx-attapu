@@ -1,0 +1,24 @@
+# Description: Lecteur de document PostScript et PDF
+# URL: http://www.gnu.org/software/gv/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: xaw3d
+name=gv
+version=3.6.7
+release=2
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz \
+	gv.desktop gv.png gv.install)
+
+build() {
+	cd $name-$version
+	sed -i -e "s:-dGraphicsAlphaBits=2:\0 -dAlignToPixels=0:" src/Makefile.{am,in}
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/share/applications
+	install -D -m 644 ../$name.desktop $PKG/usr/share/applications/$name.desktop
+	mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps/
+	install -D -m 644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/$name.png
+	rm $PKG/usr/share/info/dir
+	gzip $PKG/usr/share/info/*
+}
