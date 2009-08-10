@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=gtk-theme-switch
+Name[fr]=gtk-theme-switch
+GenericName[fr]=gtk-theme-switch
+Comment[fr]=changer et installer des themes gtk
+Categories=GTK;Settings;DesktopSettings;
+Exec=switch2
+Icon=gtk-s-t
+Terminal=false
+StartupNotify=true

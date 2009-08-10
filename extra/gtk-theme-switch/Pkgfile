@@ -1,0 +1,25 @@
+# Description: GTK2 Theme Switcher
+# URL: http://www.muhri.net/nav.php3?node=gts
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+ 
+name=gtk-theme-switch
+version=2.0.5
+release=1
+source=(http://ftp.debian.org/debian/pool/main/g/$name/${name}_${version}.tar.gz\ gtk-s-t.png\ gtk-theme-switch.desktop)
+ 
+build() {
+        cd ${name}-${version}
+ 
+        make
+ 
+        install -D -m 755 switch2 $PKG/usr/bin/switch2
+        install -D switch.1 $PKG/usr/man/man1/switch.1
+
+       mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps
+       cp ../gtk-s-t.png $PKG/usr/share/icons/hicolor/48x48/apps/gtk-s-t.png
+      mkdir -p $PKG/usr/share/applications
+      cp ../$name.desktop $PKG/usr/share/applications                                                                                                                                                                                                                                                                            
+      chown -R root:root $PKG
+}
