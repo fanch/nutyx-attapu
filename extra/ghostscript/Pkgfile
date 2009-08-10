@@ -1,0 +1,26 @@
+# Description: Permet le rendu des documents Postscripts vers différentes cibles
+# URL: http://www.ghostscript.com/awki
+# Maintainer: Linux From Scratch 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cups
+
+name=ghostscript
+version=8.63
+release=1
+source=( http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
+	 ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/ghostscript-fonts-std-8.11.tar.gz\
+	 http://ftp.gnu.org/pub/gnu/ghostscript/gnu-gs-fonts-other-6.0.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i "s/bbox.dev$/x11.dev/" Makefile.in
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+		--without-omni \
+		--enable-threads
+	make
+	make DESTDIR=$PKG install
+	cd ..
+	mv fonts $PKG/usr/share/ghostscript
+}
