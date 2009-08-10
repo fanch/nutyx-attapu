@@ -1,0 +1,11 @@
+#!/bin/bash
+COMMAND="$(echo "${@}" | tr -d "\'\"\\")"
+BIN="$(echo "${1}" | cut -d" " -f1)"
+KTSUSS="/usr/libexec/ktsuss"
+export PATH="${PATH}:/sbin:/usr/sbin"
+[ "$(id -u)" = "0" ] && KTSUSS=""
+[ -x "${BIN}" ] && exec ${KTSUSS} ${COMMAND}
+for path in $(echo ${PATH} | sed -e 's/:/ /g') ; do
+    [ -x "${path}/${BIN}" ] && exec ${KTSUSS} ${path}/${COMMAND}
+done
+

@@ -1,0 +1,23 @@
+# Description: Permet l'execution de programme root en environnement non root
+# URL: http://developer.berlios.de/projects/ktsuss
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, directfb, expat, fontconfig, freetype, glib, gtk, libpng, pango, xorg-libxcb, zlib 
+
+name=ktsuss
+version=1.4
+release=3
+source=(http://download.berlios.de/$name/$name-$version.tar.gz \
+	gksu ktsuss)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	chmod u+s $PKG/usr/bin/ktsuss
+	mv $PKG/usr/bin/ktsuss $PKG/usr/libexec
+	for i in ktsuss gksu
+		do install -m755 ../$i $PKG/usr/bin/
+	done
+}
