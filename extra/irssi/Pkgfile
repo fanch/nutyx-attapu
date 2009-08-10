@@ -1,0 +1,29 @@
+# Description: Client IRC du futur
+# URL: http://irssi.org/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glib, openssl, ncurses, perl
+
+name=irssi
+version=0.8.13
+release=1
+source=(http://irssi.org/files/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--enable-ipv6 \
+	--with-textui \
+	--with-proxy
+	make
+	make DESTDIR=$PKG install
+
+find $PKG \
+	-name .packlist -or \
+	-name perllocal.pod -or \
+	-name '*.bs' -or \
+	-name autosplit.ix  | xargs rm
+
+}
+
