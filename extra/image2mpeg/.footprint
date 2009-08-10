@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/image2mpeg
+-rwxr-xr-x	root/root	usr/bin/image2ppm
+-rwxr-xr-x	root/root	usr/bin/ppminppm
+-rwxr-xr-x	root/root	usr/bin/text2image
+-rwxr-xr-x	root/root	usr/bin/webcam2ppm
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/image2mpeg/
+-rwxr-xr-x	root/root	usr/lib/image2mpeg/commonfuncs.sh
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/image2mpeg.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/image2ppm.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/text2image.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/webcam2ppm.1.gz
