@@ -1,0 +1,21 @@
+# Description: Gestionnaire de fenêtres léger et très configurable
+# URL: http://www.fluxbox.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, imlib2, libiconv
+
+name=fluxbox
+version=1.1.1
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz\
+	fluxbox.desktop)
+
+build()
+{
+install -D -m644 $name.desktop $PKG/etc/X11/sessions/$pkgname.desktop
+cd $name-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+}
+
