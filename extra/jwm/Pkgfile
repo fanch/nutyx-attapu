@@ -1,0 +1,28 @@
+# Description: Gestionnaire de fenêtres léger
+# URL: http://joewing.net/programs/jwm/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: 
+ 
+name=jwm
+version=2.0.1
+release=1
+ 
+source=(http://joewing.net/programs/jwm/releases/jwm-2.0.1.tar.bz2)
+        
+ 
+ 
+build() {
+        cd $name-$version
+ 
+        ./configure --prefix=/usr \
+                    --disable-confirm \
+                    --disable-fribidi \
+                --sysconfdir=/etc \
+                    --with-x
+        make
+        
+        sed -i "s|/usr/bin|$PKG/usr/bin|g" src/Makefile
+        make SYSCONF=$PKG/etc MANDIR=$PKG/usr/share/man install
+	sed -i "s|rxvt|xterm|g" $PKG/etc/system.jwmrc
+}
