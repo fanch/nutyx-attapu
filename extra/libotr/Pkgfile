@@ -1,0 +1,19 @@
+# Description: Librairie off the record
+# URL: http://www.cypherpunks.ca/otr/ 
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libgcrypt
+
+name=libotr
+version=3.2.0
+release=1
+source=(http://www.cypherpunks.ca/otr/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
+
