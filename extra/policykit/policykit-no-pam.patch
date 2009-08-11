@@ -1,0 +1,10 @@
+--- polkit-resolve-exe-helper.c.orig	2008-10-30 22:03:03.321858941 -0500
++++ polkit-resolve-exe-helper.c	2008-10-30 22:03:13.975859197 -0500
+@@ -43,7 +43,6 @@
+ #ifdef HAVE_FREEBSD
+ #include <sys/param.h>
+ #endif
+-#include <security/pam_appl.h>
+ #include <grp.h>
+ #include <pwd.h>
+ #include <syslog.h>
