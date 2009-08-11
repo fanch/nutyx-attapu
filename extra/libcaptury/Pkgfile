@@ -1,0 +1,19 @@
+# Description: librairie de capture video
+# URL: http://gitorious.org/projects/libcaptury/
+# Packager: Floreal Cabanettes, floreal.c at orange dot fr
+# Depends on: capseo
+
+name=libcaptury
+version=280209-svn
+release=1
+source=()
+
+build() {
+git clone git://gitorious.org/libcaptury/mainline.git libcaptury
+cd $name
+./autogen.sh
+./configure --prefix=/usr
+make -j3
+make DESTDIR=$PKG install
+}
+

@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/captury/
+-rw-r--r--	root/root	usr/include/captury/captury.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libcaptury.a
+-rwxr-xr-x	root/root	usr/lib/libcaptury.la
+lrwxrwxrwx	root/root	usr/lib/libcaptury.so -> libcaptury.so.0.3.0
+lrwxrwxrwx	root/root	usr/lib/libcaptury.so.0 -> libcaptury.so.0.3.0
+-rwxr-xr-x	root/root	usr/lib/libcaptury.so.0.3.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libcaptury.pc
