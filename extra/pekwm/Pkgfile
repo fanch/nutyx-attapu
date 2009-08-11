@@ -1,0 +1,30 @@
+
+# Description: Gestionnaire de fenetres leger
+# URL: http://www.pekwm.org
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: imlib2
+ 
+name=pekwm
+version=0.1.9
+release=1
+ 
+source=(http://pekwm.org/projects/3/files/pekwm-0.1.9.tar.bz2\
+ pekwm.desktop)
+ 
+ 
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--enable-xft \
+		--enable-pcre \
+		--enable-imlib2 \
+               --disable-xft \
+		--disable-xinerama
+
+	make
+	make DESTDIR=$PKG install
+}
