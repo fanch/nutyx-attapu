@@ -1,0 +1,27 @@
+# Description: Permet d'ajuster le volume des fichiers WAV
+# URL: http://normalize.nongnu.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: audiofile, libmad
+
+name=normalize
+version=0.7.7
+release=1
+source=( http://download.savannah.gnu.org/releases/$name/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--with-audiofile \
+		--with-mad \
+		--infodir=/usr/share/info
+	make
+	make prefix=$PKG/usr \
+		mandir=$PKG/usr/share/man \
+		infodir=$PKG/usr/share/info \
+		libdir=$PKG/usr/lib \
+		sysconfdir=$PKG/etc install
+       
+}
