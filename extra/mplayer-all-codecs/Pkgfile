@@ -1,0 +1,18 @@
+# Description: Tous les codecs binaires pour xine, mplayer, etc
+# URL: http://www.mplayerhq.hu/DOCS/codecs-status.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+
+name=mplayer-all-codecs
+version=20071007
+release=1
+source=(http://www3.mplayerhq.hu/MPlayer/releases/codecs/all-$version.tar.bz2)
+
+build() {
+	cd all-$version
+	mkdir -p $PKG/usr/lib/codecs/
+	install -m 0644 * $PKG/usr/lib/codecs/
+	rm -f $PKG/usr/lib/codecs/README
+}
+
