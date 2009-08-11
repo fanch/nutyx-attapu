@@ -1,0 +1,21 @@
+# Description: Utilitaire pour le clavier sous X
+# URL:  http://www.freedesktop.org/wiki/Software/LibXklavier
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: hicolor-icon-theme
+
+name=libxklavier
+version=3.8
+release=1
+source=( http://downloads.sourceforge.net/gswitchit/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/gtk-doc
+}
