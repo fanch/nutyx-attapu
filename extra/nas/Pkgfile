@@ -1,0 +1,18 @@
+# Description: Le Network Audio System 
+# URL: http://www.radscan.com/nas.html 
+# Maintainer: NuTyX Core
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-imake, xorg-gccmakedep, xorg-libxp
+
+name=nas
+version=1.9.2
+release=1
+source=( http://downloads.sourceforge.net/$name/$name-$version.src.tar.gz)
+
+
+build() {
+	cd $name-$version
+	xmkmf 
+	make World
+	make DESTDIR=$PKG install
+}
