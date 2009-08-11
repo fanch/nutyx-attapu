@@ -1,0 +1,21 @@
+# Description: Parser perl pour XML
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl
+
+name=p5-xml-writer
+version=0.604
+release=1
+source=(http://www.cpan.org/modules/by-module/XML/XML-Writer-$version.tar.gz)
+
+build() {
+	cd XML-Writer-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+}
