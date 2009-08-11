@@ -1,0 +1,19 @@
+# Description: Librairie de notification du projet Galago
+# URL: http://www.galago-project.org/news/index.php
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, dbus
+
+name=libnotify
+version=0.4.4
+release=1
+source=(http://www.galago-project.org/files/releases/source/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}
