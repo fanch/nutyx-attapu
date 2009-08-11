@@ -1,0 +1,18 @@
+# Description: Diverses outils pour la manipulation des partitions NTFS
+# URL: http://www.linux-ntfs.org/doku.php?id=downloads
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fuse
+
+name=ntfsprogs
+version=2.0.0
+release=2
+source=(http://downloads.sourceforge.net/linux-ntfs/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--disable-gnome-vfs
+	make
+	make DESTDIR=$PKG install
+}

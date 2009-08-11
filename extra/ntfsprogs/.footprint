@@ -1,0 +1,82 @@
+drwxr-xr-x	root/root	sbin/
+lrwxrwxrwx	root/root	sbin/mkfs.ntfs -> /usr/sbin/mkntfs
+lrwxrwxrwx	root/root	sbin/mount.fuse.ntfs -> /usr/bin/ntfsmount
+lrwxrwxrwx	root/root	sbin/mount.ntfs-fuse -> /usr/bin/ntfsmount
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ntfscat
+-rwxr-xr-x	root/root	usr/bin/ntfscluster
+-rwxr-xr-x	root/root	usr/bin/ntfscmp
+-rwxr-xr-x	root/root	usr/bin/ntfsfix
+-rwxr-xr-x	root/root	usr/bin/ntfsinfo
+-rwxr-xr-x	root/root	usr/bin/ntfsls
+-rwxr-xr-x	root/root	usr/bin/ntfsmount
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/ntfs/
+-rw-r--r--	root/root	usr/include/ntfs/attrib.h
+-rw-r--r--	root/root	usr/include/ntfs/attrlist.h
+-rw-r--r--	root/root	usr/include/ntfs/bitmap.h
+-rw-r--r--	root/root	usr/include/ntfs/bootsect.h
+-rw-r--r--	root/root	usr/include/ntfs/collate.h
+-rw-r--r--	root/root	usr/include/ntfs/compat.h
+-rw-r--r--	root/root	usr/include/ntfs/compress.h
+-rw-r--r--	root/root	usr/include/ntfs/crypto.h
+-rw-r--r--	root/root	usr/include/ntfs/debug.h
+-rw-r--r--	root/root	usr/include/ntfs/device.h
+-rw-r--r--	root/root	usr/include/ntfs/device_io.h
+-rw-r--r--	root/root	usr/include/ntfs/dir.h
+-rw-r--r--	root/root	usr/include/ntfs/endians.h
+-rw-r--r--	root/root	usr/include/ntfs/gnome-vfs-method.h
+-rw-r--r--	root/root	usr/include/ntfs/gnome-vfs-module.h
+-rw-r--r--	root/root	usr/include/ntfs/index.h
+-rw-r--r--	root/root	usr/include/ntfs/inode.h
+-rw-r--r--	root/root	usr/include/ntfs/layout.h
+-rw-r--r--	root/root	usr/include/ntfs/lcnalloc.h
+-rw-r--r--	root/root	usr/include/ntfs/list.h
+-rw-r--r--	root/root	usr/include/ntfs/logfile.h
+-rw-r--r--	root/root	usr/include/ntfs/logging.h
+-rw-r--r--	root/root	usr/include/ntfs/mft.h
+-rw-r--r--	root/root	usr/include/ntfs/mst.h
+-rw-r--r--	root/root	usr/include/ntfs/ntfstime.h
+-rw-r--r--	root/root	usr/include/ntfs/runlist.h
+-rw-r--r--	root/root	usr/include/ntfs/security.h
+-rw-r--r--	root/root	usr/include/ntfs/support.h
+-rw-r--r--	root/root	usr/include/ntfs/types.h
+-rw-r--r--	root/root	usr/include/ntfs/unistr.h
+-rw-r--r--	root/root	usr/include/ntfs/version.h
+-rw-r--r--	root/root	usr/include/ntfs/volume.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libntfs.a
+-rwxr-xr-x	root/root	usr/lib/libntfs.la
+lrwxrwxrwx	root/root	usr/lib/libntfs.so -> libntfs.so.10.0.0
+lrwxrwxrwx	root/root	usr/lib/libntfs.so.10 -> libntfs.so.10.0.0
+-rwxr-xr-x	root/root	usr/lib/libntfs.so.10.0.0
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/mkntfs
+-rwxr-xr-x	root/root	usr/sbin/ntfsclone
+-rwxr-xr-x	root/root	usr/sbin/ntfscp
+-rwxr-xr-x	root/root	usr/sbin/ntfslabel
+-rwxr-xr-x	root/root	usr/sbin/ntfsresize
+-rwxr-xr-x	root/root	usr/sbin/ntfsundelete
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/libntfs-gnomevfs.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/libntfs.8.gz
+lrwxrwxrwx	root/root	usr/share/man/man8/mkfs.ntfs.8.gz -> mkntfs.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/mkntfs.8.gz
+lrwxrwxrwx	root/root	usr/share/man/man8/mount.fuse.ntfs.8.gz -> ntfsmount.8.gz
+lrwxrwxrwx	root/root	usr/share/man/man8/mount.ntfs-fuse.8.gz -> ntfsmount.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfscat.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsclone.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfscluster.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfscmp.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfscp.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsfix.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsinfo.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfslabel.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsls.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsmount.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsprogs.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsresize.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ntfsundelete.8.gz
