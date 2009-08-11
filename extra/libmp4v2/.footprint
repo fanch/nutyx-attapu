@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mpeg4ip-config
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libmp4v2/
+-rw-r--r--	root/root	usr/include/libmp4v2/mpeg4ip.h
+-rw-r--r--	root/root	usr/include/libmp4v2/mpeg4ip_config.h
+-rw-r--r--	root/root	usr/include/libmp4v2/mpeg4ip_version.h
+-rw-r--r--	root/root	usr/include/mp4.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libmp4v2.la
+lrwxrwxrwx	root/root	usr/lib/libmp4v2.so -> libmp4v2.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libmp4v2.so.0 -> libmp4v2.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libmp4v2.so.0.0.0
