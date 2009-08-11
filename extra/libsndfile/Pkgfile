@@ -1,0 +1,21 @@
+# Description: Librairie pour la manipulation des fichiers son (nécessaire pour open office)
+# URL: http://www.mega-nerd.com/libsndfile/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: flac, alsa-lib
+
+name=libsndfile
+version=1.0.20
+release=1
+source=( http://www.mega-nerd.com/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-*
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-sqlite
+	make
+	make DESTDIR=$PKG install
+}
