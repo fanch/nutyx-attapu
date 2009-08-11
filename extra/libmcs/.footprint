@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mcs-getconfval
+-rwxr-xr-x	root/root	usr/bin/mcs-info
+-rwxr-xr-x	root/root	usr/bin/mcs-query-backends
+-rwxr-xr-x	root/root	usr/bin/mcs-setconfval
+-rwxr-xr-x	root/root	usr/bin/mcs-walk-config
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libmcs/
+-rw-r--r--	root/root	usr/include/libmcs/mcs.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libmcs.so -> libmcs.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libmcs.so.1 -> libmcs.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libmcs.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/mcs/
+-rwxr-xr-x	root/root	usr/lib/mcs/keyfile.so
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libmcs.pc

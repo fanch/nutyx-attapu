@@ -1,0 +1,17 @@
+# Description: Système de configuration modulaire
+# URL: http://atheme.org/projects/mcs.shtml
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libmowgli
+
+name=libmcs
+version=0.7.1
+release=1
+source=(http://distfiles.atheme.org/$name-$version.tgz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+}
