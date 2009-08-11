@@ -1,0 +1,22 @@
+# Description: Connecteur perl pour tk
+# URL: http://search.cpan.org/~ni-s/Tk-804.027/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl, tk
+
+name=p5-tk
+version=804.028_501
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/S/SR/SREZIC/Tk-$version.tar.gz)
+
+build() {
+	cd Tk-$version
+	perl Makefile.PL 
+	make OPTIMIZE="${CFLAGS}"
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+	chown -R root:root $PKG
+}
