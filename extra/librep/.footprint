@@ -1,0 +1,309 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/rep
+-rwxr-xr-x	root/root	usr/bin/rep-config
+-rwxr-xr-x	root/root	usr/bin/rep-remote
+-rwxr-xr-x	root/root	usr/bin/rep-xgettext
+-rwxr-xr-x	root/root	usr/bin/repdoc
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/rep.h
+-rw-r--r--	root/root	usr/include/rep_gh.h
+-rw-r--r--	root/root	usr/include/rep_lisp.h
+-rw-r--r--	root/root	usr/include/rep_regexp.h
+-rw-r--r--	root/root	usr/include/rep_subrs.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/librep.la
+lrwxrwxrwx	root/root	usr/lib/librep.so -> librep.so.9.4.0
+lrwxrwxrwx	root/root	usr/lib/librep.so.9 -> librep.so.9.4.0
+-rwxr-xr-x	root/root	usr/lib/librep.so.9.4.0
+drwxr-xr-x	root/root	usr/lib/rep/
+drwxr-xr-x	root/root	usr/lib/rep/0.17/
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/doc-strings
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/emulate-gnu-tar
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/gdbm.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/gdbm.so -> rep/io/db/gdbm.so
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/gettext.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/gettext.so -> rep/i18n/gettext.so
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/readline.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/readline.so -> rep/io/readline.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/data/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/data/tables.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/data/tables.so
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/ffi.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/ffi.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/i18n/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/i18n/gettext.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/i18n/gettext.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/db/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/db/gdbm.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/db/gdbm.so
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/db/sdbm.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/db/sdbm.so
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/readline.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/readline.so
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/sockets.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/sockets.so
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/timers.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/io/timers.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/lang/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/lang/record-profile.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/lang/record-profile.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/util/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/util/md5.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/util/md5.so
+drwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/vm/
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/vm/safe-interpreter.la
+-rwxr-xr-x	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/rep/vm/safe-interpreter.so
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/sdbm.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/sdbm.so -> rep/io/db/sdbm.so
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/tables.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/tables.so -> rep/data/tables.so
+-rw-r--r--	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/timers.la
+lrwxrwxrwx	root/root	usr/lib/rep/0.17/i686-pc-linux-gnu/timers.so -> rep/io/timers.so
+drwxr-xr-x	root/root	usr/lib/rep/i686-pc-linux-gnu/
+-rwxr-xr-x	root/root	usr/lib/rep/i686-pc-linux-gnu/install-aliases
+-rwxr-xr-x	root/root	usr/lib/rep/i686-pc-linux-gnu/libtool
+-rw-r--r--	root/root	usr/lib/rep/i686-pc-linux-gnu/rep_config.h
+-rw-r--r--	root/root	usr/lib/rep/i686-pc-linux-gnu/rules.mk
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/aclocal/
+-rw-r--r--	root/root	usr/share/aclocal/rep.m4
+drwxr-xr-x	root/root	usr/share/emacs/
+drwxr-xr-x	root/root	usr/share/emacs/site-lisp/
+-rw-r--r--	root/root	usr/share/emacs/site-lisp/rep-debugger.el
+drwxr-xr-x	root/root	usr/share/info/
+-rw-r--r--	root/root	usr/share/info/librep.info-1.gz
+-rw-r--r--	root/root	usr/share/info/librep.info-2.gz
+-rw-r--r--	root/root	usr/share/info/librep.info.gz
+drwxr-xr-x	root/root	usr/share/rep/
+drwxr-xr-x	root/root	usr/share/rep/0.17/
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/cgi-get.jl -> rep/www/cgi-get.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/cgi-get.jlc -> rep/www/cgi-get.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/compiler.jl -> rep/vm/compiler.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/compiler.jlc -> rep/vm/compiler.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/date.jl -> rep/util/date.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/date.jlc -> rep/util/date.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/disassembler.jl -> rep/vm/disassembler.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/disassembler.jlc -> rep/vm/disassembler.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/gaol.jl -> rep/util/gaol.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/gaol.jlc -> rep/util/gaol.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/lisp-doc.jl -> rep/lang/compat-doc.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/lisp-doc.jlc -> rep/lang/compat-doc.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/mailaddr.jl -> rep/mail/addr.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/mailaddr.jlc -> rep/mail/addr.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/memoize.jl -> rep/util/memoize.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/memoize.jlc -> rep/util/memoize.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/mutex.jl -> rep/threads/mutex.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/mutex.jlc -> rep/threads/mutex.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/queues.jl -> rep/data/queues.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/queues.jlc -> rep/data/queues.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/records.jl -> rep/data/records.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/records.jlc -> rep/data/records.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/remote-ftp.jl -> rep/io/file-handlers/remote/ftp.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/remote-ftp.jlc -> rep/io/file-handlers/remote/ftp.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/remote-rep.jl -> rep/io/file-handlers/remote/rep.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/remote-rep.jlc -> rep/io/file-handlers/remote/rep.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/data/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/objects.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/objects.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/queues.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/queues.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/records.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/records.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/ring.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/ring.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/sort.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/sort.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/string-util.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/string-util.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/symbol-table.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/symbol-table.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/trie.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/data/trie.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/i18n/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/i18n/xgettext.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/i18n/xgettext.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/io/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/ftp.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/ftp.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/rcp.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/rcp.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/rep.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/rep.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/utils.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/remote/utils.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/tar.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/tar.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/tilde.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/file-handlers/tilde.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/files.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/files.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/streams.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/io/streams.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/lang/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/backquote.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/backquote.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/compat-doc.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/compat-doc.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/debugger.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/debugger.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/define.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/define.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/doc.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/doc.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/error-helper.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/error-helper.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/interpreter.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/interpreter.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/math.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/math.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/profiler.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/lang/profiler.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/mail/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/mail/addr.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/mail/addr.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/module-system.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/module-system.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/net/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/net/domain-name.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/net/domain-name.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/net/rpc.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/net/rpc.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/regexp.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/regexp.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/structures.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/structures.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/system/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system/environ.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system/environ.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system/pwd-prompt.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/system/pwd-prompt.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/test/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/test/autoload.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/test/data.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/test/data.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/test/framework.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/test/framework.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/threads/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/condition-variable.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/condition-variable.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/message-port.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/message-port.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/mutex.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/mutex.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/proxy.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/proxy.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/utils.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/threads/utils.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/user.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/user.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/util/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/autoloader.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/autoloader.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/base64.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/base64.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/date.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/date.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/gaol.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/gaol.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/ispell.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/ispell.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/memoize.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/memoize.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/repl.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/repl.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/time.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/util/time.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/vm/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/assembler.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/assembler.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/bytecode-defs.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/bytecode-defs.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/bytecodes.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/bytecodes.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/basic.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/basic.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/bindings.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/bindings.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/inline.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/inline.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/lap.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/lap.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/modules.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/modules.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/no-lang.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/no-lang.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/rep.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/rep.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/scheme.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/scheme.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/src.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/src.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/unscheme.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/unscheme.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/utils.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/compiler/utils.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/disassembler.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/disassembler.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/peephole.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/vm/peephole.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/www/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/cgi-get.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/cgi-get.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/fetch-url.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/fetch-url.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/quote-url.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/www/quote-url.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/rep/xml/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/xml/printer.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/xml/printer.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/xml/reader.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/rep/xml/reader.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/ring.jl -> rep/data/ring.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/ring.jlc -> rep/data/ring.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/scheme/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/data.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/data.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/misc.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/misc.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/syntax-funs.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/syntax-funs.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/syntax.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/syntax.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/utils.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/scheme/utils.jlc
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/symbol-table.jl -> rep/data/symbol-table.jl
+lrwxrwxrwx	root/root	usr/share/rep/0.17/lisp/symbol-table.jlc -> rep/data/symbol-table.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme.jlc
+drwxr-xr-x	root/root	usr/share/rep/0.17/lisp/unscheme/
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/data.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/data.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/misc.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/misc.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/syntax-funs.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/syntax-funs.jlc
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/syntax.jl
+-rw-r--r--	root/root	usr/share/rep/0.17/lisp/unscheme/syntax.jlc
