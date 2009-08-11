@@ -1,0 +1,17 @@
+# Description: Interface de haut niveau pour les appareils IEEE 1394
+# URL: http://sourceforge.net/project/libdc1394
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libraw1394
+
+name=libdc1394
+version=2.0.2
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
