@@ -1,0 +1,22 @@
+# Description: Implémentation Perl de YAML 
+# URL: http://search.cpan.org/dist/YAML/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: perl
+
+name=p5-yaml
+version=0.68
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/I/IN/INGY/YAML-$version.tar.gz)
+
+build() {
+cd YAML-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+}
+
