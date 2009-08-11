@@ -1,0 +1,67 @@
+head	1.2;
+access;
+symbols;
+locks
+	root:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2007.10.05.15.58.40;	author install;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2007.10.01.14.18.56;	author install;	state Exp;
+branches;
+next	;
+
+
+desc
+@Initial version
+@
+
+
+1.2
+log
+@relocated to lib
+@
+text
+@# $Id: build,v 1.1 2007/10/01 14:18:56 install Exp install $
+# Description:  Color AsCii Art Library
+# URL: http://libcaca.zoy.org/
+# Maintainer: Thierry Nuttens, thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libcaca
+version=0.99.beta12
+release=1
+group=lib
+KDE_PREFIX=/opt/kde
+source=(http://libcaca.zoy.org/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--infodir=/usr/share/info \
+                --sysconfdir=/etc/a2ps \
+                --localstatedir=/var \
+                --with-medium=A4
+	make
+	make DESTDIR=$PKG install
+}
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+# $Id:$
+d10 1
+a10 1
+group=multimedia
+@

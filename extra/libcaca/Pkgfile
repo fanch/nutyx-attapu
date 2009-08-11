@@ -1,0 +1,20 @@
+# Description:  Color AsCii Art Library
+# URL: http://libcaca.zoy.org/
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: imlib2
+
+name=libcaca
+version=0.9
+release=1
+source=(http://libcaca.zoy.org/raw-attachment/wiki/libcaca/libcaca-0.9.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--infodir=/usr/share/info \
+                --disable-doc  \
+                --localstatedir=/var
+	make
+	make DESTDIR=$PKG install
+}
