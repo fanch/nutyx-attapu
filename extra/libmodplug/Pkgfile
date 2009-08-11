@@ -1,0 +1,18 @@
+# Description: Librairie MOD 
+# URL: http://modplug-xmms.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: 
+
+name=libmodplug
+version=0.8.7
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/modplug-xmms/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+
