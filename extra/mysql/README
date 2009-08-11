@@ -1,0 +1,42 @@
+Il est très important de procéder comme ci-dessous pour avoir un serveur mysql
+fonctionnel.
+Installer le serveur mysql en procédant comme ceci
+
+/etc/rc.d/init.d/mysql start
+/etc/rc.d/init.d/mysql stop
+
+On commence par installer les tables necessaire au bon fonctionnement de mysql.
+
+mysql_install_db --user=mysql 
+
+On change les attributs des dossiers
+
+chgrp -v mysql /srv/mysql{,/test,/mysql}
+
+Pour pouvoir configurer le serveur il faut le lancer de cette façon:
+
+install -v -m755 -o mysql -g mysql -d /var/run/mysql
+mysqld_safe --user=mysql 2>&1 >/dev/null &
+
+Noter que le & est très important pour avoir la main en console
+
+On spécifie maintenant un mot de passe pour le root 
+
+mysqladmin -u root password <nouveau-mot-de-passe>
+
+La configuration du serveur est terminée. On peut maintenant l'arrêter.
+
+mysqladmin -p shutdown
+
+Le mot de passe sera demandé.
+
+Lancer le serveur de façon définitive
+
+/etc/rc.d/init.d/mysql start
+
+Aucune erreur ne doit apparaître.
+
+Au prochain lancement de la machine, mysql se lancera correctement.
+
+pour plus d'info: http://www.nutyx.org
+

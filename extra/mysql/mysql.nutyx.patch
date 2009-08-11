@@ -1,0 +1,27 @@
+--- blfs-bootscripts-20090302/blfs/init.d/mysql	2005-08-01 19:29:19.000000000 +0000
++++ blfs-bootscripts-20090302/blfs/init.d/mysql.nutyx	2009-06-26 06:55:05.000000000 +0000
+@@ -5,11 +5,23 @@
+ # Rewritten by Gerard Beekmans  - gerard@linuxfromscratch.org
+ 
+ #$LastChangedBy: bdubbs $
+-#$Date: 2005-08-01 19:29:19 +0000 (Mon, 01 Aug 2005) $
++#$Date: 2005-08-01 14:29:19 -0500 (Mon, 01 Aug 2005) $
+ 
+ . /etc/sysconfig/rc
+ . $rc_functions
+ 
++newgroup=mysql
++newuser=mysql
++newid=40
++
++# check for mysql group or add one
++getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
++
++# check for mysql user or add one
++getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
++-u $newid -d /dev/null \
++-s /bin/false -c "MySQL Server" $newuser
++
+ PIDFILE=/srv/mysql/`/bin/hostname`.pid
+ KILLDELAY=20
+ 

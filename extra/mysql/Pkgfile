@@ -1,0 +1,52 @@
+# Description: Serveur de base de données MySQL
+# URL: http://www.mysql.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:  ncurses, zlib, mysqlclient
+
+name=mysql
+version=5.1.36
+release=1
+source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/$name-$version.tar.gz \
+        mysql.nutyx.patch)
+
+build () {
+	source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2
+	patch -Np0 -i mysql.nutyx.patch
+	cd $name-$version
+	./configure --prefix=/usr \
+                --sysconfdir=/etc \
+                --libexecdir=/usr/sbin \
+                --localstatedir=/srv/mysql \
+                --enable-assembler \
+                --enable-thread-safe-client \
+                --enable-local-infile \
+                --with-unix-socket-path=/var/run/mysql/mysql.sock \
+                --with-extra-charsets=all \
+                --with-berkeley-db \
+                --without-debug \
+                --without-readline \
+                --without-docs \
+                --without-bench 
+	make -j2
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/{mysql-test,sql-bench}
+	for i in mysql mysql_upgrade \
+	mysqladmin mysqlbinlog \
+	mysqlcheck mysqldump mysqlimport mysqlshow \
+	mysqlslap mysqltest mysql_config
+	do rm -r $PKG/usr/bin/$i
+	done
+	rm $PKG/usr/share/mysql/charsets/README
+	mkdir -p $PKG/etc
+	install -v -m644 $PKG/usr/share/mysql/my-medium.cnf \
+	$PKG/etc/my.cnf
+	sed -i -e s/^skip-federated/#skip-federated/ \
+	$PKG/etc/my.cnf
+	cd ../$scripts-$scriptsversion
+	make DESTDIR=$PKG install-mysql
+	# Suppression des librairies
+	rm -r $PKG/usr/{include,lib}
+}
