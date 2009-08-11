@@ -1,0 +1,20 @@
+# Description: Secret Rabbit Code
+# URL: http://www.mega-nerd.com/SRC/index.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libsndfile, flac
+
+name=libsamplerate
+version=0.1.4
+release=1
+source=(http://www.mega-nerd.com/SRC/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
