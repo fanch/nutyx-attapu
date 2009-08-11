@@ -1,0 +1,18 @@
+# Description: Librairie libre pour la vidéo développé par Xiph.org
+# URL: http://www.xiph.org
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libogg, libvorbis
+
+name=libtheora
+version=1.0
+release=1
+source=(http://downloads.xiph.org/releases/theora/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --enable-shared
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
+}
