@@ -1,0 +1,20 @@
+# Description: Interface Perl autorisant p5-libwwww à faire des connections https
+# URL: http://search.cpan.org/dist/Crypt-SSLeay/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: perl, p5-uri
+
+name=p5-crypt-ssleay
+version=0.57_01
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/D/DL/DLAND/Crypt-SSLeay-$version.tar.gz)
+
+build() {
+cd Crypt-SSLeay-$version
+	echo "n" | perl Makefile.PL --lib=/usr
+	make
+	make DESTDIR=$PKG install
+	find $PKG -name perllocal.pod|xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+}
+
