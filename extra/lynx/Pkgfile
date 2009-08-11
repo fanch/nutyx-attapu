@@ -1,0 +1,26 @@
+# Description: Un navigateur texte pour le WWW
+# URL: http://lynx.isc.org
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: bzip2, glibc, ncurses, openssl, zlib
+
+name=lynx
+version=2.8.7
+release=1
+source=(http://lynx.isc.org/$name$version/$name$version.tar.gz)
+
+build() {
+cd ${name}2-8-7
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--datadir=/usr/share/doc/$name-$version \
+	--sysconfdir=/etc \
+	--with-ssl \
+	--enable-locale-charset \
+	--enable-nls \
+	--with-zlib \
+	--with-bzlib \
+	--with-screen=ncursesw
+	make
+	make DESTDIR=$PKG install
+}
