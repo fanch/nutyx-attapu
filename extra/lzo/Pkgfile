@@ -1,0 +1,21 @@
+# Description: Librairie de compression de données permettant un bon taux de compression/décompression en temps réel
+# URL: http://www.oberhumer.com/opensource/lzo
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: slib
+
+name=lzo
+version=2.03
+release=1
+source=(  http://www.oberhumer.com/opensource/$name/download/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --enable-shared
+	make
+	make DESTDIR=$PKG install
+}
