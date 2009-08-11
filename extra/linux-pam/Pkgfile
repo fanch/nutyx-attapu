@@ -1,0 +1,41 @@
+# Description: Permet à l'administateur locale de choisir comment les applications identifie les utilisateurs
+# URL: http://www.kernel.org/pub/libs/pam
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=linux-pam
+version=0.99.10.0
+release=1
+source=(http://www.kernel.org/pub/linux/libs/pam/pre/library/Linux-PAM-$version.tar.bz2\
+	pam.conf other)
+
+
+build() {
+	mkdir -p $PKG/etc/pam.d
+	install -m644 other $PKG/etc/pam.d/other
+	install -m644 pam.conf $PKG/etc/pam.conf
+	cd Linux-PAM-$version
+	./configure --sysconfdir=/etc \
+                    --libdir=/usr/lib \
+                    --sbindir=/lib/security \
+                    --enable-securedir=/lib/security \
+                    --docdir=/usr/share/doc/Linux-PAM-$version \
+		    --enable-read-both-confs    \
+		--with-xauth=/usr/X11R6/bin/xauth \
+		    --enable-fakeroot="$PKG"
+	make
+	make DESTDIR=$PKG install
+	chmod -v 4755 $PKG/lib/security/unix_chkpwd
+        mkdir -p $PKG/{sbin,usr/lib}
+	mv -v $PKG/lib/security/pam_tally $PKG/sbin
+#	mv -v $PKG/lib/libpam{,c,_misc}.la $PKG/usr/lib
+	sed -i 's| /lib| /usr/lib|' $PKG/usr/lib/libpam_misc.la
+	if [ -L $PKG/lib/libpam.so ]; then
+   		for LINK in libpam{,c,_misc}.so; do
+       			ln -v -sf ../../lib/$(readlink /lib/${LINK}) \
+		$PKG/usr/lib/${LINK} &&
+			rm -v $PKG/lib/${LINK}
+		done
+	fi
+}
