@@ -1,0 +1,20 @@
+# Description: Format de compression audio prétendant garder une haute qualitée
+# URL: http://www.musepack.net/index.php?pg=home
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: nasm
+
+name=libmpcdec
+version=1.2.6
+release=2
+source=( http://files.musepack.net/source/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
