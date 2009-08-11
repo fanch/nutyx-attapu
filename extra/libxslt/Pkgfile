@@ -1,0 +1,22 @@
+# Description: Librairie pour la transformation XSLT
+# URL: http://xmlsoft.org/XSLT/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libxml2, libgcrypt
+
+name=libxslt
+version=1.1.24
+release=1
+source=( ftp://xmlsoft.org/libxml2/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --without-python
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/doc
+}
