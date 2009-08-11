@@ -1,0 +1,23 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/libesmtp-config
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/auth-client.h
+-rw-r--r--	root/root	usr/include/auth-plugin.h
+-rw-r--r--	root/root	usr/include/libesmtp.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/esmtp-plugins/
+-rw-r--r--	root/root	usr/lib/esmtp-plugins/sasl-cram-md5.a
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-cram-md5.la
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-cram-md5.so
+-rw-r--r--	root/root	usr/lib/esmtp-plugins/sasl-login.a
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-login.la
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-login.so
+-rw-r--r--	root/root	usr/lib/esmtp-plugins/sasl-plain.a
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-plain.la
+-rwxr-xr-x	root/root	usr/lib/esmtp-plugins/sasl-plain.so
+-rw-r--r--	root/root	usr/lib/libesmtp.a
+-rwxr-xr-x	root/root	usr/lib/libesmtp.la
+lrwxrwxrwx	root/root	usr/lib/libesmtp.so -> libesmtp.so.5.1.5
+lrwxrwxrwx	root/root	usr/lib/libesmtp.so.5 -> libesmtp.so.5.1.5
+-rwxr-xr-x	root/root	usr/lib/libesmtp.so.5.1.5
