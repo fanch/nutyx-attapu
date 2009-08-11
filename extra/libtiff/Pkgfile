@@ -1,0 +1,22 @@
+# Description: Librairie pour le support des fichiers Tag Image Format
+# URL: http://www.remotesensing.org/libtiff/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, zlib
+
+name=libtiff
+version=3.8.2
+release=1
+source=( http://libtiff.maptools.org/dl/tiff-$version.tar.gz)
+
+
+build() {
+	cd tiff-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-debug
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/doc
+}
