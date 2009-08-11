@@ -1,0 +1,17 @@
+# Description: Librairie fournissant un accès a différentes types d'archives
+# URL: http://icculus.org/physfs/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=physfs
+version=1.0.1
+release=1
+source=(http://icculus.org/physfs/downloads/physfs-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
