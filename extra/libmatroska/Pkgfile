@@ -1,0 +1,16 @@
+# Description: Librairie Matroska
+# URL: http://dl.matroska.org/downloads/libmatroska/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libebml
+
+name=libmatroska
+version=0.8.1
+release=2
+source=(http://www.bunkus.org/videotools/mkvtoolnix/sources/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version/make/linux
+	make sharedlib
+	make prefix=$PKG/usr install
+}
