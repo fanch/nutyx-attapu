@@ -1,0 +1,67 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ical.h
+drwxr-xr-x	root/root	usr/include/libical/
+-rw-r--r--	root/root	usr/include/libical/ical.h
+-rw-r--r--	root/root	usr/include/libical/icalarray.h
+-rw-r--r--	root/root	usr/include/libical/icalattach.h
+-rw-r--r--	root/root	usr/include/libical/icalcalendar.h
+-rw-r--r--	root/root	usr/include/libical/icalclassify.h
+-rw-r--r--	root/root	usr/include/libical/icalcluster.h
+-rw-r--r--	root/root	usr/include/libical/icalcomponent.h
+-rw-r--r--	root/root	usr/include/libical/icalderivedparameter.h
+-rw-r--r--	root/root	usr/include/libical/icalderivedproperty.h
+-rw-r--r--	root/root	usr/include/libical/icalderivedvalue.h
+-rw-r--r--	root/root	usr/include/libical/icaldirset.h
+-rw-r--r--	root/root	usr/include/libical/icaldirsetimpl.h
+-rw-r--r--	root/root	usr/include/libical/icalduration.h
+-rw-r--r--	root/root	usr/include/libical/icalenums.h
+-rw-r--r--	root/root	usr/include/libical/icalerror.h
+-rw-r--r--	root/root	usr/include/libical/icalfileset.h
+-rw-r--r--	root/root	usr/include/libical/icalfilesetimpl.h
+-rw-r--r--	root/root	usr/include/libical/icalgauge.h
+-rw-r--r--	root/root	usr/include/libical/icalgaugeimpl.h
+-rw-r--r--	root/root	usr/include/libical/icallangbind.h
+-rw-r--r--	root/root	usr/include/libical/icalmemory.h
+-rw-r--r--	root/root	usr/include/libical/icalmessage.h
+-rw-r--r--	root/root	usr/include/libical/icalmime.h
+-rw-r--r--	root/root	usr/include/libical/icalparameter.h
+-rw-r--r--	root/root	usr/include/libical/icalparser.h
+-rw-r--r--	root/root	usr/include/libical/icalperiod.h
+-rw-r--r--	root/root	usr/include/libical/icalproperty.h
+-rw-r--r--	root/root	usr/include/libical/icalrecur.h
+-rw-r--r--	root/root	usr/include/libical/icalrestriction.h
+-rw-r--r--	root/root	usr/include/libical/icalset.h
+-rw-r--r--	root/root	usr/include/libical/icalspanlist.h
+-rw-r--r--	root/root	usr/include/libical/icalss.h
+-rw-r--r--	root/root	usr/include/libical/icalssyacc.h
+-rw-r--r--	root/root	usr/include/libical/icaltime.h
+-rw-r--r--	root/root	usr/include/libical/icaltimezone.h
+-rw-r--r--	root/root	usr/include/libical/icaltypes.h
+-rw-r--r--	root/root	usr/include/libical/icaltz-util.h
+-rw-r--r--	root/root	usr/include/libical/icalvalue.h
+-rw-r--r--	root/root	usr/include/libical/icalvcal.h
+-rw-r--r--	root/root	usr/include/libical/port.h
+-rw-r--r--	root/root	usr/include/libical/pvl.h
+-rw-r--r--	root/root	usr/include/libical/sspm.h
+-rw-r--r--	root/root	usr/include/libical/vcaltmp.h
+-rw-r--r--	root/root	usr/include/libical/vcc.h
+-rw-r--r--	root/root	usr/include/libical/vobject.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libical.a
+-rwxr-xr-x	root/root	usr/lib/libical.la
+lrwxrwxrwx	root/root	usr/lib/libical.so -> libical.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libical.so.0 -> libical.so.0.43.0
+-rwxr-xr-x	root/root	usr/lib/libical.so.0.43.0
+-rw-r--r--	root/root	usr/lib/libicalss.a
+-rwxr-xr-x	root/root	usr/lib/libicalss.la
+lrwxrwxrwx	root/root	usr/lib/libicalss.so -> libicalss.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libicalss.so.0 -> libicalss.so.0.43.0
+-rwxr-xr-x	root/root	usr/lib/libicalss.so.0.43.0
+-rw-r--r--	root/root	usr/lib/libicalvcal.a
+-rwxr-xr-x	root/root	usr/lib/libicalvcal.la
+lrwxrwxrwx	root/root	usr/lib/libicalvcal.so -> libicalvcal.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libicalvcal.so.0 -> libicalvcal.so.0.43.0
+-rwxr-xr-x	root/root	usr/lib/libicalvcal.so.0.43.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libical.pc
