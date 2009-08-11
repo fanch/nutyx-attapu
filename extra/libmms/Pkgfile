@@ -1,0 +1,19 @@
+# Description: Librairie du protocole de streaming MMS
+# URL: https://launchpad.net/libmms
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glib
+
+name=libmms
+version=0.4
+release=1
+source=(http://launchpad.net/$name/trunk/$version/+download/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
