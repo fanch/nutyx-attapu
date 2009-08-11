@@ -1,0 +1,20 @@
+# Description: Architecture Open Fingerprint
+# URL: http://www.musicdns.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fftw
+
+name=libofa
+version=0.9.3
+release=1
+source=(http://www.musicip.com/dns/files/$name-$version.tar.gz\
+	gcc43.patch tnt_math_utils.h)
+
+build() {
+	cd $name-$version
+	patch -Np0 -i ../gcc43.patch
+	mv ../tnt_math_utils.h lib/JAMA/
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
