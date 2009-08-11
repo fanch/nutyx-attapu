@@ -1,0 +1,18 @@
+# Description: Wrapper C++ pour la librairie graphique pango
+# URL: http://cairographics.org/cairomm/
+# Maintainer: NuTyX coret team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pango
+
+name=pangomm
+version=2.24.0
+release=1
+source=(http://ftp.acc.umu.se/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
+}
