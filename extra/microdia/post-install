@@ -1,0 +1,8 @@
+#!/bin/bash
+# MAJ modules
+depmod
+# Ajout du module dans /etc/sysconfig/modules
+if ! grep "sn9c20x" /etc/sysconfig/modules >/dev/null; then
+        sed -i '/End/ i sn9c20x' /etc/sysconfig/modules
+fi
+

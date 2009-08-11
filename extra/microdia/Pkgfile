@@ -1,0 +1,22 @@
+# Description:microdia webcams
+# URL: http://wiki.archlinux.fr/howto:materiel:microdia
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ctags
+
+name=microdia
+version=627b
+release=7
+_kernver=2.6.30.4
+source=()
+
+
+
+build() {
+        git clone http://repo.or.cz/r/microdia.git
+	cd $name
+	make
+	mkdir -p $PKG/lib/modules/${_kernver}/kernel/drivers/media/video/videousb
+	cp sn9c20x.ko \
+	$PKG/lib/modules/${_kernver}/kernel/drivers/media/video/videousb/
+}
