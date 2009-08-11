@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mpc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/mpc/
+-rw-r--r--	root/root	usr/share/doc/mpc/AUTHORS
+-rw-r--r--	root/root	usr/share/doc/mpc/COPYING
+-rw-r--r--	root/root	usr/share/doc/mpc/NEWS
+-rw-r--r--	root/root	usr/share/doc/mpc/README
+-rw-r--r--	root/root	usr/share/doc/mpc/mpc-bashrc
+-rw-r--r--	root/root	usr/share/doc/mpc/mpd-m3u-handler.sh
+-rw-r--r--	root/root	usr/share/doc/mpc/mpd-pls-handler.sh
+-rw-r--r--	root/root	usr/share/doc/mpc/mppledit
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/mpc.1.gz
