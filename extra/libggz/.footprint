@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ggz.h
+-rw-r--r--	root/root	usr/include/ggz_common.h
+-rw-r--r--	root/root	usr/include/ggz_dio.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libggz.a
+-rwxr-xr-x	root/root	usr/lib/libggz.la
+lrwxrwxrwx	root/root	usr/lib/libggz.so -> libggz.so.2.3.0
+lrwxrwxrwx	root/root	usr/lib/libggz.so.2 -> libggz.so.2.3.0
+-rwxr-xr-x	root/root	usr/lib/libggz.so.2.3.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/ggz.h.3.gz

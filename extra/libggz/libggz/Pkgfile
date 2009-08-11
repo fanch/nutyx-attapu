@@ -1,0 +1,12 @@
+name=libggz
+version=0.0.14.1
+release=1
+source=(ftp://ftp.ibiblio.org/pub/mirrors/ggzgamingzone/ggz/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/man
+	make
+	make DESTDIR=$PKG install
+}
