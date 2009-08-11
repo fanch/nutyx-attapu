@@ -1,0 +1,19 @@
+# Description: Permet d'ajuster simplement la résolution d'écran
+# URL: http://lxde.org/about.html
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on:  gtk
+
+name=lxrandr
+version=0.1
+release=1
+source=(http://heanet.dl.sourceforge.net/sourceforge/lxde/lxrandr-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+
+}
+
