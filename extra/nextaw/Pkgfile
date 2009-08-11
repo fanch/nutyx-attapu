@@ -1,0 +1,17 @@
+# Description: librairie pour siag
+# URL: http://siag.nu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=nextaw
+version=0.15.1
+release=1
+source=(http://siag.nu/pub/neXtaw/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
