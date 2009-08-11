@@ -1,0 +1,26 @@
+# Description: Connecteur perl pour gtk
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: p5-cairo
+
+name=p5-gtk2
+version=1.202
+release=1
+source=(http://www.cpan.org/modules/by-module/Gtk2/Gtk2-${version}.tar.gz)
+
+build() {
+	cd Gtk2-$version
+	perl Makefile.PL \
+	--without-gdkimlib \
+	--without-gnome \
+	--without-applets \
+	--without-gnomeprint \
+	--without-glade
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+}
