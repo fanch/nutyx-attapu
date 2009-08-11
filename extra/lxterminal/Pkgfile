@@ -1,0 +1,21 @@
+# Description: Terminal pour lxde
+# URL: http://lxde.org/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: intltool vte
+
+name=lxterminal
+version=0.1.6
+release=1
+
+source=(http://downloads.sourceforge.net/lxde/files/lxterminal-$version.tar.gz)
+
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+
+make
+make DESTDIR=$PKG install
+
+}
