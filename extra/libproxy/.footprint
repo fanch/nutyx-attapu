@@ -1,0 +1,23 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/proxy
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/proxy.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libproxy.a
+-rwxr-xr-x	root/root	usr/lib/libproxy.la
+lrwxrwxrwx	root/root	usr/lib/libproxy.so -> libproxy.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libproxy.so.0 -> libproxy.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libproxy.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/libproxy/
+drwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/
+drwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/
+-rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/envvar.so
+-rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/file.so
+-rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/gnome.so
+-rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/kde.so
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libproxy-1.0.pc
+drwxr-xr-x	root/root	usr/lib/python2.6/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libproxy.py

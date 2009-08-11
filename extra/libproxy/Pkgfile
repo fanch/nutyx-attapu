@@ -1,0 +1,20 @@
+# Description: Librairie permettant de découvrir le proxy 
+# URL: http://code.google.com/p/libproxy
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libproxy
+version=0.2.3
+release=1
+source=(http://libproxy.googlecode.com/files/$name-$version.tar.gz)
+
+
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+
+}
