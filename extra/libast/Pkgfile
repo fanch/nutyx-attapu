@@ -1,0 +1,18 @@
+# Description: Librairie pour eterm
+# URL: http://site.n.ml.org/info/libast/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: imlib2
+
+name=libast
+version=0.7
+release=2
+source=(http://www.eterm.org/download/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--with-x
+	make
+	make DESTDIR=$PKG install
+}
