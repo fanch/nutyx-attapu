@@ -1,0 +1,22 @@
+# Description: Connecteur pour glib
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl
+
+name=p5-glib
+version=1.200
+release=1
+source=(http://www.cpan.org/modules/by-module/Glib/Glib-$version.tar.gz)
+
+build() {
+	cd Glib-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+	-name perllocal.pod \
+	-o -name .packlist | xargs rm 
+	rm $PKG -empty | xargs rmdir -p ||:
+
+}
