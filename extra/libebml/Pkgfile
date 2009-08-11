@@ -1,0 +1,16 @@
+# Description: Librairie Extensible Binary Meta Language
+# URL: http://dl.matroska.org/downloads/libebml/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libebml
+version=0.7.8
+release=1
+source=(http://www.bunkus.org/videotools/mkvtoolnix/sources/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version/make/linux
+	make
+	make prefix=$PKG/usr install
+}
