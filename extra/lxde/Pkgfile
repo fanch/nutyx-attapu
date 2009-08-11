@@ -1,0 +1,17 @@
+# Description: Lightweight X11 Desktop Environment
+# URL:         http://lxde.org
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on:   pcmanfm obconf lxterminal lxtask lxsession-lite lxrandr lxpanel lxshortcut lxnm lxde-common lxappearance lxlauncher menu-cache alsa-utils alsa-oss dbus-glib leafpad shared-mime-info startup-notification gpicview lxde-settings-daemon hicolor-icon-theme lxmenu-data ktsuss firefox gdm
+
+
+name=lxde
+version=0.3.2.1
+release=1
+source=(lxde.desktop)
+
+build() {
+    mkdir -p $PKG/usr
+     install -D -m644 lxde.desktop \
+$PKG/$GNOME_PREFIX/share/xsessions/lxde.desktop
+}
