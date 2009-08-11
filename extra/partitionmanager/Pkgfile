@@ -1,0 +1,19 @@
+# Description: Gestionnaire de partitions pour KDE 
+# URL: http://kde-apps.org/content/show.php/KDE+Partition+Manager?content=89595
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kdelibs, parted
+
+name=partitionmanager
+version=1.0.0-BETA1a
+release=1
+_name=partitionman
+source=(http://downloads.sourceforge.net/sourceforge/${_name}/$name-$version.tar.bz2)
+build() {
+	cd ${name}*
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	make -j2
+	make DESTDIR=$PKG install
+}
