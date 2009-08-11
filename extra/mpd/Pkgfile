@@ -1,0 +1,16 @@
+# Description: Music Player Daemon compile avec les supports mp3, ogg et alsa
+# URL: mpd.wikia.com
+# Maintainer: NuTyX packager team
+# Packager: Skippythekangoo at yahoo dot fr
+# Depends on: glib, libmad, libogg, alsa-lib, libid3tag
+
+name=mpd
+version=0.14.2
+release=1
+source=(http://downloads.sourceforge.net/musicpd/$name-$version.tar.bz2)
+build() {
+cd $name-$version
+	./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
