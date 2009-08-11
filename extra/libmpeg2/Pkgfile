@@ -1,0 +1,20 @@
+# Description: Librairie pour le décodage de flux MPEG-1 et MPEG-2
+# URL: http://libmpeg2.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libmpeg2
+version=0.5.1
+release=1
+source=(http://libmpeg2.sourceforge.net/files/$name-$version.tar.gz )
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		    --enable-shared
+	make
+	make DESTDIR=$PKG install
+}
