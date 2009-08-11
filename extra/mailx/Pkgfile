@@ -1,0 +1,26 @@
+# Description: Client de messagerie electronique
+# URL: http://nail.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: openssl
+
+name=mailx
+version=12.4
+release=1
+source=( http://downloads.sourceforge.net/heirloom/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	make install \
+	PREFIX=/usr \
+	MANDIR=/usr/share/man \
+	SENDMAIL=/usr/sbin/sendmail \
+	MAILSPOOL=/var/spool/mail \
+	UCBINSTALL=/usr/bin/install \
+	DESTDIR=$PKG
+
+	ln -s mailx   $PKG/usr/bin/Mail
+	ln -s mailx   $PKG/usr/bin/mail
+	ln -s mailx.1 $PKG/usr/share/man/man1/mail.1
+}
