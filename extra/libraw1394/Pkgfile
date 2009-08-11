@@ -1,0 +1,18 @@
+# Description: Fournit un accès directe au bus IEEE 1394
+# URL: http://sourceforge.net/projects/libraw1394/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libraw1394
+version=1.2.1
+release=1
+source=(http://www.linux1394.org/dl/libraw1394-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+                    -mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
