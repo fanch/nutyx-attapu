@@ -1,0 +1,19 @@
+# Description: Un programme pour extraire les fichiers cabs de Microsoft 
+# URL: http://tukaani.org/lzma/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=lzma
+version=4.32.7
+release=1
+source=(http://tukaani.org/$name/$name-$version.tar.gz)
+
+build() {
+        cd $name-$version
+        ./configure --prefix=/usr \
+                --sysconfdir=/etc \
+                --mandir=/usr/share/man
+        make
+        make DESTDIR=$PKG install
+}
