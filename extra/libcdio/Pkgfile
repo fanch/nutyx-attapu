@@ -1,0 +1,21 @@
+# Description: Librairie permetant l'acces au CD audio et images de CD audio /VCD
+# URL: http://www.gnu.org/software/libcdio/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libcdio
+version=0.80
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
