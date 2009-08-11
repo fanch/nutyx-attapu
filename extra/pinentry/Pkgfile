@@ -1,0 +1,22 @@
+# Description: Dialogue pour entrer un code pin
+# URL: 	http://www.gnupg.org/
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk
+
+name=pinentry
+version=0.7.5
+release=1
+source=(ftp://ftp.gnupg.org/gcrypt/$name/$name-$version.tar.gz\
+	$name-$version.patch)
+
+build() {
+	cd $name-$version
+	patch -p1 < $SRC/$name-$version.patch
+	./configure --prefix=/usr \
+	--enable-fallback-curses \
+	--libexecdir=/usr/lib 
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
