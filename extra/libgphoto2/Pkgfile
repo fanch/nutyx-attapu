@@ -1,0 +1,17 @@
+# Description: Librairie permettant l'accès aux appareils photos digital
+# URL: http://www.gphoto.org/proj/libgphoto2/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libgphoto2
+version=2.4.4
+release=1
+source=(http://downloads.sourceforge.net/gphoto/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
