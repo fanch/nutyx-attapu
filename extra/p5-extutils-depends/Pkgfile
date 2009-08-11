@@ -1,0 +1,22 @@
+# Description: Module perl
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gdk-pixbuf p5-xml-parser p5-xml-writer p5-gtk-ex-utils
+
+name=p5-extutils-depends
+version=0.301
+release=1
+source=(http://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-Depends-$version.tar.gz)
+
+build() {
+	cd ExtUtils-Depends-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+
+}
