@@ -1,0 +1,19 @@
+# Description: Permet de lire le contenu d'un DVD en ligne de commande
+# URL: http://untrepid.com/acidrip/lsdvd.html
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: libdvdcss
+
+name=lsdvd
+version=0.16
+release=1
+source=(http://downloads.sourceforge.net/lsdvd/$name-$version.tar.gz \
+        stdint_usage.patch)
+build()
+{
+	cd $name-$version
+	patch -Np0 -i ../stdint_usage.patch
+	./configure --prefix=/usr
+	make
+	make prefix=$PKG/usr install
+}

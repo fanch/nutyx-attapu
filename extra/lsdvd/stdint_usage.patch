@@ -1,0 +1,22 @@
+--- lsdvd.c~	2008-12-27 15:48:59.000000000 +0000
++++ lsdvd.c	2008-12-27 15:49:54.000000000 +0000
+@@ -13,6 +13,7 @@
+  *  2003-04-19  Cleanups get_title_name, added dvdtime2msec, added helper macros,
+  *			  output info structures in form of a Perl module, by Henk Vergonet.
+  */
++#include <stdint.h>
+ #include <dvdread/ifo_read.h>
+ #include <string.h>
+ #include <sys/stat.h>
+--- configure~	2008-12-27 16:03:39.000000000 +0000
++++ configure	2008-12-27 16:04:25.000000000 +0000
+@@ -2887,8 +2887,8 @@
+ cat confdefs.h >>conftest.$ac_ext
+ cat >>conftest.$ac_ext <<_ACEOF
+ /* end confdefs.h.  */
+-#include <dvdread/ifo_read.h>
+ 		#include <stdint.h>
++#include <dvdread/ifo_read.h>
+ int
+ main ()
+ {
