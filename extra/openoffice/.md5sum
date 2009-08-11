@@ -1,0 +1,13 @@
+108de6fae70653745d99bd89726eeb23  OOo_3.1.0_src_binfilter.tar.bz2
+5f2b1c456d428fed4fc56dcd8000935c  OOo_3.1.0_src_core.tar.bz2
+76b1537933764eece0872e5267d09902  OOo_3.1.0_src_extensions.tar.bz2
+bba139230b5a6e01019c76a5f77e8748  OOo_3.1.0_src_l10n.tar.bz2
+0c628a5ab5fb1e320a72cd38dbaf7bf1  OOo_3.1.0_src_system.tar.bz2
+bf7119084a2d1e0566b5e34b57dce8eb  buildfix-gcc43.diff
+4fe2810b40358b0e7dc2df3d056bde7a  buildfix-openjdk-6-no-rhino.diff
+a8b96e9d0ce92a8f6690f277b1cfacc9  libxmlsec-findcerts.diff
+8ed31aa04cac6177bd34df7fa7da55d8  ooffice.desktop
+5581f934888aa32e10d6cfe94827b392  ooo_getline.diff
+235050360aa2b5fd2069669ab90b99a7  shell.patch
+1dc7480a04f572ad136d35923a2af66d  soffice-detect-mozilla-certificates.diff
+4addae44d20bb2b247e429d88b66a4c1  system_hsqldb.diff
