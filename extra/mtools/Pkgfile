@@ -1,0 +1,21 @@
+# Description: Collection d'outils pour l'accès au système de fichiers MS-DOS
+# URL: http://mtools.linux.lu/
+# Maintainer: NuTyX
+# Packager:  thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=mtools
+version=4.0.10
+release=1
+source=(ftp://ftp.gnu.org/gnu/mtools/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--infodir=/usr/share/info \
+                --mandir=/usr/share/man \
+		--sysconfdir=/etc 
+	make
+	make DESTDIR=$PKG install
+        rm $PKG/usr/share/info/dir
+}
