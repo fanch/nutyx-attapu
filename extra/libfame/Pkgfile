@@ -1,0 +1,22 @@
+# Description: Librairie pour l'encodage temps réel de MPEG1 ainsi que le MPEG-4
+# URL: http://fame.sourceforge.net/
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libfame
+version=0.9.1
+release=1
+source=( http://downloads.sourceforge.net/fame/$name-$version.tar.gz\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/libfame-0.9.1-gcc34-1.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../libfame-0.9.1-gcc34-1.patch
+	sed -i 's/$CC --version/$CC -dumpversion/' configure
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
