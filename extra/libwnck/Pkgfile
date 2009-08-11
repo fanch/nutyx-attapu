@@ -1,0 +1,18 @@
+# Description: Contient un kit de contruction de navigateur de fenêtres
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, p5-xml-parser
+
+name=libwnck
+version=2.24.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+}
