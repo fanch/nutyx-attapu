@@ -1,0 +1,24 @@
+# Description: Librairie de fonctions de support jpeg
+# URL: http://www.ijg.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libjpeg
+version=7
+release=1
+source=( http://www.ijg.org/files/jpegsrc.v$version.tar.gz)
+
+
+build() {
+	cd jpeg-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --enable-shared \
+                --enable-static
+	make
+        mkdir -p $PKG/usr/include $PKG/usr/lib $PKG/usr/bin
+        mkdir -p $PKG/usr/share/man/man1
+	make prefix=$PKG/usr mandir=$PKG/usr/share/man/man1 infodir=$PKG/usr/share/info install
+}

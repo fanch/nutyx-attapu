@@ -1,0 +1,19 @@
+# Description: contains a library used to make X.509 certificates as well as making the CMS (Cryptographic Message Syntax)
+# URL: http://ftp.gnupg.org/gcrypt/libksba
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgcrypt
+
+name=libksba
+version=1.0.7
+release=1
+source=(ftp://ftp.gnupg.org/gcrypt/$name/$name-$version.tar.bz2 )
+build() {
+cd $name-$version
+./configure --prefix=/usr\
+	--mandir=/usr/share/man\
+	--infodir=/usr/share/info
+make
+make DESTDIR=$PKG install
+rm $PKG/usr/share/info/dir
+}
