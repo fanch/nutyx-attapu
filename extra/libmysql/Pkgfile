@@ -1,0 +1,54 @@
+# Description: Librairie de MySQL
+# URL: http://www.mysql.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc
+
+name=libmysql
+version=5.1.36
+release=1
+source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/mysql-$version.tar.gz )
+
+build () {
+	cd mysql-$version
+	./configure --prefix=/usr \
+                --sysconfdir=/etc \
+                --libexecdir=/usr/sbin \
+                --localstatedir=/srv/mysql \
+                --enable-assembler \
+                --enable-thread-safe-client \
+                --enable-local-infile \
+                --with-unix-socket-path=/var/run/mysql/mysql.sock \
+                --with-extra-charsets=all \
+                --with-berkeley-db \
+                --without-debug \
+                --without-readline \
+                --without-docs \
+                --without-bench 
+	for dir in include strings \
+	mysys dbug storage regex extra vio sql; do
+	pushd $dir
+		make -j2
+	popd
+	done
+	for dir in libmysql libmysql_r libmysqld; do
+	pushd $dir
+		make link_sources
+		make -j2
+		make DESTDIR=$PKG install
+	popd
+	done
+	cd include
+	make DESTDIR=$PKG install
+	install -m644 *.h $PKG/usr/include/mysql
+	cd ../scripts
+	make mysql_config
+	install -D -m755 mysql_config $PKG/usr/bin/mysql_config
+	
+	ln -sf mysql/libmysqlclient.so.16 $PKG/usr/lib/libmysqlclient.so.16
+	ln -sf libmysqlclient.so.16 $PKG/usr/lib/libmysqlclient.so
+	ln -sf libmysqlclient.so.16 $PKG/usr/lib/libmysqlclient.so.1
+	ln -sf mysql/libmysqlclient_r.so.16 $PKG/usr/lib/libmysqlclient_r.so.16
+	ln -sf libmysqlclient_r.so.16 $PKG/usr/lib/libmysqlclient_r.so
+	ln -sf libmysqlclient_r.so.16 $PKG/usr/lib/libmysqlclient_r.so.1
+}
