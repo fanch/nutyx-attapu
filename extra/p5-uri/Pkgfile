@@ -1,0 +1,19 @@
+# Description: Perl Uniform Resource Identifiers Library
+# URL: http://search.cpan.org/~gaas/URI-1.35/URI.pm
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: perl
+
+name=p5-uri
+version=1.35
+release=3
+source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/URI-$version.tar.gz)
+
+build() {
+cd URI-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG -name perllocal.pod | xargs rm
+}
+
