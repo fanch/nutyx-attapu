@@ -1,0 +1,20 @@
+# Description: Permet la lecture et l'encodage de fichiers format audio
+# URL: http://www.vorbis.com/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libogg
+
+name=libvorbis
+version=1.2.0
+release=1
+source=( http://downloads.xiph.org/releases/vorbis/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
+}
