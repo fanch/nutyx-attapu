@@ -1,0 +1,26 @@
+# Description: Utilitaire de compression en ligne dérivé de 7zip
+# URL: http://p7zip.sourceforge.net
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: 
+
+name=p7zip
+version=4.65
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/${name}_${version}_src_all.tar.bz2)
+
+build() {
+	cd ${name}_$version
+	sed -i "s|usr/local|usr|g" makefile
+	sed -i "s|-O1|$CXXFLAGS|g" makefile.machine
+	make all3
+	sed -i "s|DEST_HOME=|DEST_HOME=$PKG/usr # |g" install.sh
+	./install.sh
+	install -m555 bin/7z.so $PKG/usr/lib/p7zip/
+
+	sed -i "s|$PKG/usr|/usr|g" $PKG/usr/bin/7z
+	sed -i "s|$PKG/pkg/usr|/usr|g" $PKG/usr/bin/7za
+	sed -i "s|$PKG/usr|/usr|g" $PKG/usr/bin/7zr
+	mv $PKG/usr/man $PKG/usr/share/
+	rm -rf $PKG/usr/share/doc
+}
