@@ -1,0 +1,18 @@
+# Description: XSettings daemon of LXDE
+# URL:         http://lxde.org/
+# Maintainer:  Bartlomiej Palmowski, maks1k at wp dot pl
+# Depends on:  glib xorg-xproto xorg-libx11
+
+name=lxde-settings-daemon
+version=0.4.1
+release=1
+source=(http://dfn.dl.sourceforge.net/sourceforge/lxde/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr \
+	--sysconfdir=/etc
+    make
+    make DESTDIR=$PKG install
+}
+
