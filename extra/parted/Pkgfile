@@ -1,0 +1,21 @@
+# Description: Librairies pour gparted 
+# URL: http://www.gnu.org/software/parted/index.shtml
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=parted
+version=1.8.8
+release=2
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--disable-debug \
+	--without-readline \
+	--disable-Werror
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
