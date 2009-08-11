@@ -1,0 +1,19 @@
+# Description: Librairie http implementee en C
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib, libxml2, openssl, gnutls, libproxy
+
+name=libsoup
+version=2.27.5
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.27/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+
+}
