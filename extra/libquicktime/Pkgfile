@@ -1,0 +1,22 @@
+# Description: Contient la librairie libquicktime, des plguins et codecs avec des commandes en ligne et graphiques
+# URL: http://libquicktime.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libquicktime
+version=1.1.0
+release=1
+source=(  http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+		--without-doxygen
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
