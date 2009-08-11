@@ -1,0 +1,17 @@
+# Description: Librairie pour la lecture des DVD, 
+# URL: http://www.dtek.chalmers.se/groups/dvd/downloads.shtml
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libdvdcss
+
+name=libdvdread
+version=0.9.7
+release=4
+source=(http://www.dtek.chalmers.se/groups/dvd/dist/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
