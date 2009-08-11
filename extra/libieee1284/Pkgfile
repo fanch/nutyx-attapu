@@ -1,0 +1,17 @@
+# Description: Librairie de gestion des ports paralleles
+# URL:  http://cyberelk.net/tim/software/libieee1284/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: 
+
+name=libieee1284
+version=0.2.11
+release=3
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
