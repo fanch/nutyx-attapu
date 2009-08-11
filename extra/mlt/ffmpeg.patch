@@ -1,0 +1,80 @@
+--- mlt-0.3.4/src/modules/avformat/consumer_avformat.c~	2009-01-31 10:01:39.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/consumer_avformat.c	2009-01-31 10:02:25.000000000 +0000
+@@ -34,11 +34,11 @@
+ #include <unistd.h>
+ 
+ // avformat header files
+-#include <avformat.h>
++#include <libavformat/avformat.h>
+ #ifdef SWSCALE
+ #include <swscale.h>
+ #endif
+-#include <opt.h>
++#include <libavcodec/opt.h>
+ 
+ //
+ // This structure should be extended and made globally available in mlt
+--- mlt-0.3.4/src/modules/avformat/factory.c~	2009-01-31 10:08:49.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/factory.c	2009-01-31 09:52:21.000000000 +0000
+@@ -32,7 +32,7 @@
+ extern mlt_producer producer_avformat_init( mlt_profile profile, char *file );
+ 
+ // ffmpeg Header files
+-#include <avformat.h>
++#include <libavformat/avformat.h>
+ 
+ // A static flag used to determine if avformat has been initialised
+ static int avformat_initialised = 0;
+--- mlt-0.3.4/src/modules/avformat/filter_avcolour_space.c~	2009-01-31 09:49:23.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/filter_avcolour_space.c	2009-01-31 09:50:19.000000000 +0000
+@@ -22,7 +22,7 @@
+ #include <framework/mlt_frame.h>
+ 
+ // ffmpeg Header files
+-#include <avformat.h>
++#include <libavformat/avformat.h>
+ #ifdef SWSCALE
+ #include <swscale.h>
+ #endif
+--- mlt-0.3.4/src/modules/avformat/filter_avdeinterlace.c~	2009-01-31 09:57:29.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/filter_avdeinterlace.c	2009-01-31 09:57:50.000000000 +0000
+@@ -25,7 +25,7 @@
+ #include <stdlib.h>
+ 
+ // ffmpeg Header files
+-#include <avformat.h>
++#include <libavformat/avformat.h>
+ 
+ #ifdef USE_MMX
+ #include "mmx.h"
+--- mlt-0.3.4/src/modules/avformat/filter_avresample.c~	2009-01-31 09:55:11.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/filter_avresample.c	2009-01-31 09:56:47.000000000 +0000
+@@ -20,13 +20,13 @@
+ 
+ #include <framework/mlt_filter.h>
+ #include <framework/mlt_frame.h>
+-
++#include <libavcodec/avcodec.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+ 
+ // ffmpeg Header files
+-#include <avformat.h>
++#include <libavformat/avformat.h>
+ 
+ /** Get the audio.
+ */
+--- mlt-0.3.4/src/modules/avformat/producer_avformat.c~	2009-01-31 09:58:39.000000000 +0000
++++ mlt-0.3.4/src/modules/avformat/producer_avformat.c	2009-01-31 10:00:09.000000000 +0000
+@@ -24,8 +24,8 @@
+ #include <framework/mlt_frame.h>
+ 
+ // ffmpeg Header files
+-#include <avformat.h>
+-#include <opt.h>
++#include <libavformat/avformat.h>
++#include <libavcodec/opt.h>
+ #ifdef SWSCALE
+ #  include <swscale.h>
+ #endif

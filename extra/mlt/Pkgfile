@@ -1,0 +1,25 @@
+# Description: Outil pour la diffusion vidéo
+# URL: http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
+# Packager: NuTyX core team
+# Maintainer: thierryn1 at hispeed dot ch
+# Depends on: sdl
+
+name=mlt
+version=0.4.2
+release=1
+source=(http://internap.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
+	ffmpeg.patch)
+
+build() {
+#	patch -Np0 -i ffmpeg.patch
+        cd $name-$version
+        ./configure --prefix=/usr \
+        --enable-gpl --enable-shared --enable-theora \
+        --enable-vorbis --enable-libogg --enable-mp3lame --enable-pp \
+        --enable-shared-pp --enable-motion-est --disable-gtk --disable-mmx \
+        --mandir=/usr/share/man \
+	--avformat-swscale \
+        --infodir=/usr/share/info
+        make
+        make DESTDIR=$PKG install
+}
