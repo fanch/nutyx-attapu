@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/lxnm
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/lxnm/
+-rwxr-xr-x	root/root	usr/share/lxnm/ethdown.sh
+-rwxr-xr-x	root/root	usr/share/lxnm/ethrepair.sh
+-rwxr-xr-x	root/root	usr/share/lxnm/ethup.sh
+-rw-r--r--	root/root	usr/share/lxnm/lxnm.conf
+-rwxr-xr-x	root/root	usr/share/lxnm/wificonnect.sh
+-rwxr-xr-x	root/root	usr/share/lxnm/wifidown.sh
+-rwxr-xr-x	root/root	usr/share/lxnm/wifirepair.sh
+-rwxr-xr-x	root/root	usr/share/lxnm/wifiup.sh
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/lxnm.1.gz

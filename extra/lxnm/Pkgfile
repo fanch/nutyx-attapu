@@ -1,0 +1,18 @@
+# Description: Gestionnaire de réseaux rapide, légé et simple
+# URL: http://lxde.org/about.html
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+
+name=lxnm
+version=0.2.2
+release=1
+source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG install
+}
+
