@@ -1,0 +1,19 @@
+# Description: Gestionnaire de fichiers très léger
+# URL: http://pcmanfm.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: desktop-file-utils, gtk, hal, shared-mime-info, startup-notification, gamin, xorg-libxcomposite, intltool
+
+name=pcmanfm
+version=0.5
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
+
