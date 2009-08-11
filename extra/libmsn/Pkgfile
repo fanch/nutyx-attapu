@@ -1,0 +1,20 @@
+# Description: Librairie pour le protocole msn
+# URL:http://sourceforge.net/projects/libmsn 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libmsn
+version=4.0-beta4
+release=1
+source=(http://freefr.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+build() {
+		cd $name-$version
+		mkdir build
+		cd build
+		cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
+		make -j3
+		make DESTDIR=$PKG install
+}
+
