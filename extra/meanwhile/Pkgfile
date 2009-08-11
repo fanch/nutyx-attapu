@@ -1,0 +1,18 @@
+# Description: implémentation du protocole LSCC
+# URL: http://meanwhile.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on : doxygen
+
+name=meanwhile
+version=1.0.2
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build () {
+cd $name-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+rm -rf $PKG/usr/share
+}
