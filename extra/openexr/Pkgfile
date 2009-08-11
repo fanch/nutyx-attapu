@@ -1,0 +1,22 @@
+# Description: Librairie pour images EXR
+# URL: http://www.openexr.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ilmbase
+
+name=openexr
+version=1.6.1
+release=1
+source=( http://savannah.nongnu.org/download/$name/$name-$version.tar.gz\
+	openexr-gcc4.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../openexr-gcc4.patch
+	./configure --prefix=/usr \
+		--localstatedir=/var \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
