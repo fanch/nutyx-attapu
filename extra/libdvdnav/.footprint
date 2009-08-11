@@ -1,0 +1,18 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dvdnav-config
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/dvdnav/
+-rw-r--r--	root/root	usr/include/dvdnav/dvd_types.h
+-rw-r--r--	root/root	usr/include/dvdnav/dvdnav.h
+-rw-r--r--	root/root	usr/include/dvdnav/dvdnav_events.h
+drwxr-xr-x	root/root	usr/include/dvdread/
+-rw-r--r--	root/root	usr/include/dvdread/dvd_udf.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libdvdnav.a
+lrwxrwxrwx	root/root	usr/lib/libdvdnav.so -> libdvdnav.so.4
+lrwxrwxrwx	root/root	usr/lib/libdvdnav.so.4 -> libdvdnav.so.4.1.2
+-rwxr-xr-x	root/root	usr/lib/libdvdnav.so.4.1.2
+lrwxrwxrwx	root/root	usr/lib/libdvdnavmini.so -> libdvdnavmini.so.4
+lrwxrwxrwx	root/root	usr/lib/libdvdnavmini.so.4 -> libdvdnavmini.so.4.1.2
+-rwxr-xr-x	root/root	usr/lib/libdvdnavmini.so.4.1.2

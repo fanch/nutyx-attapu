@@ -1,0 +1,21 @@
+# Description: Librairie permettant la navigation des DVDs
+# URL: http://www.mplayerhq.hu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libdvdread, libdvdcss
+
+name=libdvdnav
+version=4.1.2
+release=3
+source=(http://www1.mplayerhq.hu/MPlayer/releases/dvdnav/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure2 --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/lib/libdvdread*
+	cd $PKG/usr/include/dvdread/
+	rm ifo_print.h ifo_types.h nav_read.h \
+	dvd_reader.h ifo_read.h nav_print.h nav_types.h
+}
