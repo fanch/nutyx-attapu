@@ -1,0 +1,21 @@
+# Description: Librairie html pour GTK
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libglade
+
+name=libgtkhtml
+version=2.11.1
+release=1
+source=( http://ftp.gnome.org/pub/gnome/sources/$name/2.11/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-accessibility
+	make
+	make DESTDIR=$PKG install
+}
