@@ -1,0 +1,19 @@
+# Description: Library for the decoding and generation of MPEG TS and DVB PSI tables
+# URL: http://developers.videolan.org/libdvbpsi/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libdvbpsi
+version=0.1.6
+release=1
+source=(http://downloads.videolan.org/pub/videolan/$name/$version/${name}5-$version.tar.bz2)
+
+build() {
+	cd ${name}5-$version
+
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	chown -R root:root $PKG
+}
+
