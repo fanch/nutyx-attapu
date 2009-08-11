@@ -1,0 +1,21 @@
+# Description: Outil de configuration pour openbox
+# URL: http://icculus.org/openbox/index.php/Main_Page
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: openbox  libglade gtk 
+ 
+name=obconf
+version=2.0.3
+release=1
+ 
+source=(http://icculus.org/openbox/obconf/$name-$version.tar.gz)
+ 
+ 
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	
+make
+make DESTDIR=$PKG install
+   
+}
