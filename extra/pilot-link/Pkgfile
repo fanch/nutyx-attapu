@@ -1,0 +1,27 @@
+# Description: outils internet
+# URL: http://www.pilot-link.org/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on :
+
+name=pilot-link
+version=0.12.3
+release=1
+source=(http://downloads.pilot-link.org/$name-$version.tar.bz2)
+
+build () {
+cd $name-$version
+./configure --prefix=/usr \
+	--enable-conduits \
+	--enable-libusb \
+	--with-libiconv \
+	--with-libpng
+make -j3
+make DESTDIR=$PKG install
+# Put udev rules at the right place
+mkdir -p $PKG/etc/udev/rules.d
+mv $PKG/usr/share/pilot-link/udev/60-libpisock.rules \
+	$PKG/etc/udev/rules.d
+rm -rf $PKG/usr/share/pilot-link/udev
+
+}
