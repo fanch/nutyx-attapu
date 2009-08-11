@@ -1,0 +1,17 @@
+# Description: Librairie pour siag
+# URL: http://siag.nu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: neXtaw
+
+name=mowitz
+version=0.3.1
+release=1
+source=(http://siag.nu/pub/mowitz/Mowitz-$version.tar.gz)
+
+build() {
+	cd Mowitz-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
