@@ -1,0 +1,9 @@
+diff -rNaud mplayer-1.0rc2-orig/stream/stream_dvd_common.h mplayer-1.0rc2/stream/stream_dvd_common.h
+--- mplayer-1.0rc2-orig/stream/stream_dvd_common.h	2007-10-07 21:49:26.000000000 +0200
++++ mplayer-1.0rc2/stream/stream_dvd_common.h	2008-05-06 22:59:25.000000000 +0200
+@@ -7,2 +7,3 @@
+ #else
+-#include <libdvdread/ifo_types.h>
++// Adapted to the real include path (<tnuttens@hispeed.ch>)
++#include <dvdread/ifo_types.h>
+ 

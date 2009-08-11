@@ -1,0 +1,57 @@
+# Description: Lecteur/Encodeur Multimedia. 
+# URL: http://www.mplayerhq.hu/DOCS/HTML/fr/index.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: yasm, faad2, x264, libcaca, speex, directfb, libmp4v2, xvid, libmpcdec, libdv, libmad, libpng, lame, faac, giflib,libogg, libcdio, esound, nas, libdvdcss, libdvdnav, libdvdread, libtheora, mplayer-all-codecs, cdparanoia
+
+name=mplayer
+version=20090801
+release=1
+source=( http://www.mplayerhq.hu/MPlayer/releases/mplayer-checkout-snapshot.tar.bz2 \
+   http://www1.mplayerhq.hu/MPlayer/releases/fonts/font-arial-iso-8859-1.tar.bz2 \
+   http://www.mplayerhq.hu/MPlayer/skins/Blue-1.7.tar.bz2\
+   mplayer.conf mplayer.desktop liba52_gcc44.patch)
+
+
+build() {
+   unset CFLAGS CXXFLAGS
+   install -d -m755 $PKG/usr/share/mplayer/skins
+   mv Blue $PKG/usr/share/mplayer/skins/default
+   install -d -m755 $PKG/usr/share/mplayer
+   mv font-arial-iso-8859-1 $PKG/usr/share/mplayer/font
+   mkdir -p $PKG/etc/mplayer
+   mv mplayer.conf $PKG/etc/mplayer/
+   cd $name-*
+   patch -p1 < ../liba52_gcc44.patch
+	   ./configure --prefix=/usr \
+      --confdir=/etc/mplayer \
+      --enable-largefiles \
+      --codecsdir=/usr/lib/codecs \
+      --mandir=/usr/share/man \
+      --disable-jack \
+      --disable-esd \
+      --enable-gui \
+      --disable-gl \
+      --disable-sdl \
+      --disable-ivtv \
+      --disable-arts \
+      --disable-smb \
+      --disable-dvdread-internal \
+      --enable-dvdnav 
+	make
+	make DESTDIR=$PKG install
+
+
+	# Fonts
+	cd $PKG/usr/share/mplayer/font
+	for i in font-arial-14-iso-8859-1/*
+		do
+			ln -s $i
+		done
+
+	chown -R root:root $PKG
+	cd -
+	install -D -m644 ../mplayer.desktop \
+	$PKG/usr/share/ede/programs/Multimedia/mplayer.desktop
+}
+
