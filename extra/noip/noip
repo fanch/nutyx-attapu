@@ -1,0 +1,21 @@
+##################################################
+#! /bin/sh
+# . /etc/rc.d/init.d/functions  # uncomment/modify for your killproc
+case "$1" in
+
+    start)
+
+        echo "Starting noip2."
+       #  /usr/local/bin/noip2 -d -U 2
+        /usr/bin/noip2 -F -c /etc/noip/no-ip2.conf -d  >> /var/log/noip.log 2>&1
+    ;;
+    stop)
+
+        echo "Shutting down noip2."
+        /usr/bin/killall -TERM /usr/bin/noip2
+    ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+exit 0
