@@ -1,0 +1,19 @@
+# Description: librairie
+# URL: http://www.chipx86.com/w/index.php
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: gtk, libxml2
+
+name=libsexy
+version=0.1.11
+release=3
+source=(http://releases.chipx86.com/$name/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+

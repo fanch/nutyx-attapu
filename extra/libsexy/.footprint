@@ -1,0 +1,36 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libsexy/
+-rw-r--r--	root/root	usr/include/libsexy/sexy-enum-types.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy-icon-entry.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy-spell-entry.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy-tooltip.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy-tree-view.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy-url-label.h
+-rw-r--r--	root/root	usr/include/libsexy/sexy.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libsexy.la
+lrwxrwxrwx	root/root	usr/lib/libsexy.so -> libsexy.so.2.0.4
+lrwxrwxrwx	root/root	usr/lib/libsexy.so.2 -> libsexy.so.2.0.4
+-rwxr-xr-x	root/root	usr/lib/libsexy.so.2.0.4
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libsexy.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gtk-doc/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/libsexy/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/SexyIconEntry.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/SexySpellEntry.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/SexyTooltip.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/SexyTreeView.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/SexyUrlLabel.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/libsexy.devhelp
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/libsexy.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libsexy/up.png
