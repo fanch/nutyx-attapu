@@ -1,0 +1,33 @@
+# Description: Client messagerie instantanée
+# URL:  http://www.pidgin.im
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme
+
+name=pidgin
+version=2.5.8
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
+	pidgin.desktop)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-gevolution \
+	--disable-meanwhile \
+	--disable-avahi \
+	--disable-gtkspell \
+	--disable-mono \
+	--disable-nm \
+	--disable-cap \
+	--disable-schemas-install \
+	--disable-perl \
+	--disable-tk \
+	--enable-gnutls=yes \
+	--disable-dbus \
+	 
+	make
+	make DESTDIR=$PKG install
+	install -D ../pidgin.desktop $PKG/usr/share/ede/programs/Internet/pidgin.desktop
+}
