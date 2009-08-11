@@ -1,0 +1,23 @@
+# Description: Librairie très performante pour les graphismes 2D
+# URL: http://www.levien.com/libart/
+# Packager: thierry1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: fontconfig
+
+name=libart_lgpl
+version=2.3.20
+release=1
+source=( http://ftp.gnome.org/pub/gnome/sources/$name/2.3/$name-$version.tar.bz2\
+)
+
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-debug
+	make
+	make DESTDIR=$PKG install
+}
