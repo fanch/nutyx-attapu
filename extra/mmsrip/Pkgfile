@@ -1,0 +1,18 @@
+# Description: Client pour le format multimedia proprietaire MMS 
+# URL: http://nbenoit.tuxfamily.org/projects.php?rq=mmsrip
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: 
+
+name=mmsrip
+version=0.7.0
+release=1
+source=(http://nbenoit.tuxfamily.org/projects/mmsrip/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+
