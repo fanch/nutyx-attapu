@@ -1,0 +1,27 @@
+# Description: contains the libpango libs
+# URL: http://gnome.org
+# Maintainer: NuTyX core teamm
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cairo
+
+name=pango
+version=1.24.5
+release=1
+source=( http://ftp.gnome.org/pub/gnome/sources/$name/1.24/$name-$version.tar.bz2\
+	pango.modules)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/gtk-doc
+	install -m644 ../pango.modules $PKG/etc/pango/
+#       cd ../$scripts-$scriptsversion
+#       make DESTDIR=$PKG install-$name
+       
+}
