@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mysql
+-rwxr-xr-x	root/root	usr/bin/mysql_upgrade
+-rwxr-xr-x	root/root	usr/bin/mysqladmin
+-rwxr-xr-x	root/root	usr/bin/mysqlbinlog
+-rwxr-xr-x	root/root	usr/bin/mysqlcheck
+-rwxr-xr-x	root/root	usr/bin/mysqldump
+-rwxr-xr-x	root/root	usr/bin/mysqlimport
+-rwxr-xr-x	root/root	usr/bin/mysqlshow
+-rwxr-xr-x	root/root	usr/bin/mysqlslap
+-rwxr-xr-x	root/root	usr/bin/mysqltest

@@ -1,0 +1,49 @@
+# Description: Client MySQL
+# URL: http://www.mysql.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libmysql
+
+name=mysqlclient
+version=5.1.36
+release=1
+source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/mysql-$version.tar.gz \
+	mysql-fix-libs.patch)
+
+build () {
+	cd mysql-$version
+	patch -Np1 -i ../mysql-fix-libs.patch
+	./configure --prefix=/usr \
+                --sysconfdir=/etc \
+                --libexecdir=/usr/sbin \
+                --localstatedir=/srv/mysql \
+                --enable-thread-safe-client \
+                --enable-local-infile \
+                --with-extra-charsets=all \
+                --with-berkeley-db \
+                --without-debug \
+                --without-readline \
+                --without-docs \
+                --without-bench \
+		--with-libwrap
+
+	pushd include
+		make -j2
+	popd
+	pushd libmysql
+		make link_sources get_password.lo
+	popd
+	for i in strings regex mysys dbug extra
+	do pushd $i
+		make
+	popd
+	done
+	cd client
+	sed -i -e \
+'s|\$(top_builddir)/libmysql/libmysqlclient.la|/usr/lib/mysql/libmysqlclient.so|g' \
+Makefile
+	make link_sources
+	make 
+	make DESTDIR=$PKG install
+#	rm -r $PKG/usr/lib
+}
