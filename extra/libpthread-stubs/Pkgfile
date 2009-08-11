@@ -1,0 +1,19 @@
+# Description: package provides weak aliases for pthread functions not provided in libc or otherwise available by default 
+# URL: http://xorg.freedesktop.org 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=libpthread-stubs
+version=0.1
+release=1
+source=( http://xcb.freedesktop.org/dist/$name-$version.tar.bz2)
+
+
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	--mandir=/usr/share/man 
+make
+make DESTDIR=$PKG install
+}
