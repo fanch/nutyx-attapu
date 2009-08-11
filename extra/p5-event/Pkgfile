@@ -1,0 +1,21 @@
+# Description: Connecteur perl pour Event
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl
+
+name=p5-event
+version=1.11
+release=1
+source=(http://www.cpan.org/modules/by-module/Event/Event-$version.tar.gz)
+
+build() {
+	cd Event-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG \
+		-name perllocal.pod \
+		-o -name .packlist | xargs rm
+	find $PKG -empty | xargs rmdir -p ||:
+}
