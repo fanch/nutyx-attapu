@@ -1,0 +1,39 @@
+--- libmpeg3-1.8-orig/Makefile	2006-02-15 05:09:31.000000000 +0000
++++ libmpeg3-1.8/Makefile	2007-08-17 15:42:59.000000000 +0000
+@@ -1,5 +1,6 @@
+ CC = gcc
+ NASM = nasm
++VERSION_NAME := $(shell basename $(PWD))
+ USE_MMX = 0
+ USE_CSS = 1
+ A52DIR := $(shell expr a52dec* )
+@@ -149,7 +150,7 @@
+ 
+ LIBS = -lm -lpthread
+ 
+-$(shell if ! test -d $(OBJDIR) \; then mkdir -p $(OBJDIR) \; fi )
++$(shell if ! test -d $(OBJDIR) ; then mkdir -p $(OBJDIR) ; fi )
+ 
+ $(shell echo $(CFLAGS) > $(OBJDIR)/c_flags)
+ $(shell echo $(A52CFLAGS) > $(OBJDIR)/a52_flags)
+@@ -191,9 +192,13 @@
+ 		-ldl
+ 
+ install: 
++	if [ ! -d $(PREFIX)/bin ]; then install -v -m755 -d
+$(PREFIX)/bin; fi
++	if [ ! -d $(PREFIX)/lib ]; then install -v -m755 -d
+$(PREFIX)/lib; fi
++	if [ ! -d $(PREFIX)/include ]; then install -v -m755 -d
+$(PREFIX)/include; fi
+ 	cp $(UTILS) $(PREFIX)/bin
+-#	cp $(OUTPUT) $(PREFIX)/lib
+-#	cp libmpeg3.h mpeg3private.h $(PREFIX)/include
++	cp $(OUTPUT) $(PREFIX)/lib
++	cp libmpeg3.h mpeg3private.h mpeg3protos.h $(PREFIX)/include
++	install -v -m644 -D docs/index.html
+$(PREFIX)/share/doc/$(VERSION_NAME)/index.html
+ 
+ clean:
+ 	rm -rf $(OBJDIR)
+
