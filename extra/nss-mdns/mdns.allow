@@ -1,0 +1,4 @@
+# Begin of /etc/mdns.allow
+.local.
+.local
+# End of /etc/mdns.allow

@@ -1,0 +1,22 @@
+# Description: Plugin pour glibc permettant la resolution de noms via mDNS
+# URL: http://0pointer.de/lennart/projects/nss-mdns/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc 
+
+name=nss-mdns
+version=0.10
+release=1
+source=(http://0pointer.de/lennart/projects/$name/$name-$version.tar.gz\
+	mdns.allow)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/ \
+	--disable-lynx \
+	--enable-avahi
+	make
+	mkdir -p $PKG/etc
+	install -m644 ../mdns.allow $PKG/etc/mdns.allow
+	make DESTDIR=$PKG install
+}
