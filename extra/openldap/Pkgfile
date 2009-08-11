@@ -1,0 +1,84 @@
+# Description: Outil permettant d'accéder au protocol LDAP
+# URL: http://www.openldap.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: db, perl, openssl, cyrus-sasl
+name=openldap
+version=2.4.13
+release=1
+source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/$name-$version.tgz \
+	$name-config.patch slapd)
+
+build() {
+	cd $name-$version
+#	patch -p0 -i $SRC/$name-config.patch
+
+	# Workaround for: (ITS#5464) ucred guarded by __USE_GNU in glibc 2.8
+	# http://www.openldap.org/lists/openldap-bugs/200804/msg00074.html
+	export CPPFLAGS="$CPPFLAGS -D_GNU_SOURCE"
+
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/sbin \
+		--localstatedir=/var/openldap \
+		--disable-nls \
+		--enable-syslog \
+		--with-threads \
+		--with-tls \
+		--with-cyrus-sasl \
+		--enable-spasswd \
+		--enable-dynamic \
+		--enable-ipv6 \
+		--enable-modules \
+		--enable-crypt \
+		--enable-rewrite \
+		--enable-ldbm \
+		--enable-ldbm-api=berkeley \
+		--enable-ldbm-type=btree \
+		--enable-bdb \
+		--enable-hdb \
+		--enable-ldap \
+		--enable-meta \
+		--enable-monitor \
+		--enable-dnssrv \
+		--enable-null \
+		--enable-perl \
+		--with-dyngroup \
+		--with-proxycache \
+		--enable-wrappers \
+		--enable-aci \
+		--enable-shared
+
+	make depend
+	make -j3
+	make DESTDIR=$PKG install   
+
+	sed -i -e "s|-L${PKG}/usr/lib||g" $PKG/usr/lib/*.la
+	/sbin/ldconfig -n $PKG/usr/lib
+
+	# compatiblity links
+	(cd $PKG/usr/lib; 
+	 ln -s liblber.so liblber.so.2;
+	 ln -s libldap.so libldap.so.2;
+	 ln -s libldap_r.so libldap_r.so.2) || exit 1
+
+	mkdir -p $PKG/etc/rc.d/init.d
+	mkdir -p $PKG/etc/rc.d/rc0.d
+	mkdir -p $PKG/etc/rc.d/rc1.d
+	mkdir -p $PKG/etc/rc.d/rc2.d
+	mkdir -p $PKG/etc/rc.d/rc3.d
+	mkdir -p $PKG/etc/rc.d/rc4.d
+	mkdir -p $PKG/etc/rc.d/rc5.d
+	mkdir -p $PKG/etc/rc.d/rc6.d
+	install -m 755 $SRC/slapd $PKG/etc/rc.d/init.d/slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc0.d/K29slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc1.d/K29slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc2.d/S21slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc3.d/S21slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc4.d/S21slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc5.d/S21slapd
+	ln -s ../init.d/slapd $PKG/etc/rc.d/rc6.d/K29slapd
+
+
+	rm -f $PKG/etc/openldap/schema/README
+}
