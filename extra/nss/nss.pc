@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr/bin
+libdir=/usr/lib
+includedir=/usr/include/nss
+
+Name: NSS
+Description: The Network Security Service
+Version: 3.12.1.1
+Libs: -lssl3 -lsmime3 -lnss3 -lnssutil3
+Cflags: -I/usr/include/nss
