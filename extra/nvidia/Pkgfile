@@ -1,0 +1,58 @@
+# Description: Pilotes pour les cartes graphiques NVIDIA
+# URL: http://www.nvidia.com/object/unix.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=nvidia
+version=185.18.29
+release=1
+_kernel=2.6.30.4
+source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version-pkg1.run\
+	)
+
+build() {
+	sh NVIDIA-Linux-x86-$version-pkg1.run --extract-only
+	cd NVIDIA-Linux-x86-$version-pkg1/usr/src/nv
+	ln -s Makefile.kbuild Makefile
+	make SYSSRC=/usr/src/kernel/linux-${_kernel} module
+
+	# install kernel module
+	mkdir -p $PKG/lib/modules/${_kernel}/kernel/drivers/video
+	install -m644 nvidia.ko $PKG/lib/modules/${_kernel}/kernel/drivers/video
+	
+	
+	# make utilities
+	cd ../../
+
+        mkdir -p $PKG/usr/{lib,bin,share/applications,share/pixmaps,share/man/man1}
+        mkdir -p $PKG/usr/lib/X11/modules/{extensions,drivers}
+        mkdir -p $PKG/usr/share/licenses/nvidia
+
+        install lib/{libGLcore.so.$version,libGL.so.$version,libnvidia-cfg.so.$version,tls/libnvidia-tls.so.$version} \
+        $PKG/usr/lib/
+
+        install -m644 share/man/man1/* $PKG/usr/share/man/man1/
+        rm $PKG/usr/share/man/man1/nvidia-installer.1.gz
+
+        install X11R6/lib/libXv* $PKG/usr/lib/
+        install -m644 share/applications/nvidia-settings.desktop $PKG/usr/share/applications/
+
+        # fix nvidia .desktop file
+        sed -e 's:__UTILS_PATH__:/usr/bin:' -e 's:__PIXMAP_PATH__:/usr/share/pixmaps:' -i \
+        $PKG/usr/share/applications/nvidia-settings.desktop
+
+        install -m644 share/pixmaps/nvidia-settings.png $PKG/usr/share/pixmaps/
+        install X11R6/lib/modules/libnvidia-wfb.so.$version $PKG/usr/lib/X11/modules
+        install X11R6/lib/modules/drivers/nvidia_drv.so $PKG/usr/lib/X11/modules/drivers
+        install X11R6/lib/modules/extensions/libglx.so.$version $PKG/usr/lib/X11/modules/extensions
+        install -m755 bin/nvidia-{settings,xconfig,bug-report.sh} $PKG/usr/bin/
+        cd $PKG/usr/lib/
+        ln -s /usr/lib/libGL.so.$version libGL.so
+        ln -s /usr/lib/libGL.so.$version libGL.so.1
+        ln -s /usr/lib/libGLcore.so.$version libGLcore.so.1
+        ln -s /usr/lib/libnvidia-cfg.so.$version libnvidia-cfg.so.1
+        ln -s /usr/lib/libnvidia-tls.so.$version libnvidia-tls.so.1
+        cd $PKG/usr/lib/X11/modules/extensions
+        ln -s /usr/lib/X11/modules/extensions/libglx.so.$version libglx.so
+}
