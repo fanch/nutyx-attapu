@@ -1,0 +1,18 @@
+# Description: Interface de programmation pour le protocol de communication 1394 Trade Association AV/C (Audio/Video Control)
+# URL: http://sourceforge.net/projects/libavc1394/
+# Maintainer:
+# Packager: Eric Fortner, ericmf at gci dot net
+# Depends on: libraw1394
+
+name=libavc1394
+version=0.5.3
+release=1
+source=(http://switch.dl.sourceforge.net/sourceforge/libavc1394/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+                    --mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
