@@ -1,0 +1,26 @@
+# Description: Perl HTML Tagset
+# URL: http://search.cpan.org/~petdance/HTML-Tagset-3.20/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=p5-html-tagset
+version=3.20
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/HTML-Tagset-$version.tar.gz)
+
+
+build() {
+    cd HTML-Tagset-$version
+    perl Makefile.PL
+    make
+    make install DESTDIR=$PKG
+    # Remove perlcrap
+    find $PKG \
+        -name .packlist -or \
+        -name '*.bs' -or \
+        -name autosplit.ix -or \
+        -name perllocal.pod | xargs rm
+    # Remove empty directories
+    find $PKG -depth -empty -exec rm -rf {} \; 
+}
