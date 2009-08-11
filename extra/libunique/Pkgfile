@@ -1,0 +1,21 @@
+# Description: Librairie permettant une seule instance d'une application  
+# URL: http://live.gnome.org/LibUnique
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libtool
+
+name=libunique
+version=1.0.8
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/$name/1.0/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
