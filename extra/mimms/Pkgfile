@@ -1,0 +1,16 @@
+# Description: Télécharge et sauvegarde des flux MMS sur votre système
+# URL: http://savannah.nongnu.org/projects/mimms/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libmms, python
+
+name=mimms
+version=3.2.1
+release=1
+source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	python setup.py build install --root=$PKG
+}
+
