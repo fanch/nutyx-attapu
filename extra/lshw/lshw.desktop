@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LSHW Hardware Lister
+Name[fr]=LSHW Liste votre Materiel
+Exec=gksu gtk-lshw
+Icon=lshw
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true

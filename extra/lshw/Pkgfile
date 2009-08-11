@@ -1,0 +1,32 @@
+# Description: Liste votre materiel et ses specificites
+# URL: http://ezix.org/project/wiki/HardwareLiSter
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, directfb, expat, fontconfig, freetype, gcc, glib, gtk, libpng, pango, zlib 
+
+name=lshw
+version=B.02.13
+release=1
+source=(http://ezix.org/software/files/$name-$version.tar.gz \
+lshw.png \
+lshw.svg \
+abi_stdlib.diff
+lshw.desktop)
+
+build() {
+cd $name-$version
+	patch -Np0 -i ../abi_stdlib.diff
+	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/Makefile
+	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/core/Makefile
+	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/gui/Makefile
+	make MANDIR=/usr/share/man
+	make MANDIR=/usr/share/man gui
+	make DESTDIR=$PKG MANDIR=/usr/share/man install
+	make DESTDIR=$PKG MANDIR=/usr/share/man install-gui
+	mkdir -p $PKG/usr/share/icons/hicolor/{48x48,scalable}/apps
+	install -m644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
+	install -m644 ../$name.svg $PKG/usr/share/icons/hicolor/scalable/apps/
+	mkdir -p $PKG/usr/share/applications
+	install -m644 ../$name.desktop $PKG/usr/share/applications/
+}
+
