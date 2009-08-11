@@ -1,0 +1,24 @@
+# Description: Client Jabber en mode texte 
+# URL: http://www.mcabber.com/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glib, gpgme, libotr, ncurses, openssl
+
+name=mcabber
+version=0.9.9
+release=1
+source=(http://mirror.mcabber.com/files/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--enable-otr \
+	--disable-aspell \
+	--with-ssl \
+	--with-openssl=/usr/lib  
+	make
+	make DESTDIR=$PKG install
+
+	cp -a mcabberrc.example $PKG/usr/share/mcabber/
+	chown -R root:root $PKG
+}
