@@ -1,0 +1,25 @@
+# Description: Emulateur de Windows 3.x et Win32 API. Permet de faire fonctionner des programmes Windows sous Linux
+# URL: http://www.winehq.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=wine
+version=1.1.23
+release=1
+source=( http://easynews.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--sysconfdir=/etc \
+		--with-x \
+		--infodir=/usr/share/info
+	make depend
+	make
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/etc/wine
+	       
+}
