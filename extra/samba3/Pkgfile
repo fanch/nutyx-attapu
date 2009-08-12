@@ -1,0 +1,45 @@
+# Description: Service de partage de fichiers et imprimantes Windows pour Linux
+# URL: http://www.samba.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cups 
+
+name=samba3
+version=3.3.7
+release=1
+localname=samba
+source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz\
+       smb.conf)
+
+
+build() {
+	cd $localname-$version/source
+	./configure --prefix=/usr \
+		--localstatedir=/var \
+		--sysconfdir=/etc \
+                --with-piddir=/var/run \
+                --with-pammodulesdir=/lib/security \
+		--with-fhs \
+                --with-cups \
+                --with-smbmount
+	make -j3
+	make DESTDIR=$PKG install
+        
+        # reorganise files
+
+        chmod -v 644 $PKG/usr/include/libsmbclient.h
+        install -d $PKG/lib
+	install -v -m755 nsswitch/libnss_win{s,bind}.so $PKG/lib
+        ln -v -sf libnss_winbind.so $PKG/lib/libnss_winbind.so.2
+        ln -v -sf libnss_wins.so $PKG/lib/libnss_wins.so.2
+        
+	install -v -m644 ../examples/smb.conf.default $PKG/etc/samba/smb.conf.default
+        chmod -v 4755  \
+              $PKG/usr/sbin/{,u}mount.cifs
+        cp $SRC/smb.conf $PKG/etc/samba/
+	#  cups 
+        cd $PKG/usr/lib/
+        install -d cups/backend
+        ln -v -sf /usr/bin/smbspool $PKG/usr/lib/cups/backend/smb
+      	install -d -m 1777 $PKG/var/spool/samba 
+}
