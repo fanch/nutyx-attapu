@@ -1,0 +1,23 @@
+# Description: Librairie pour le multimedia en mode framebuffer
+# URL: http://www.libsdl.org/
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: alsa-lib, esound, nas, directfb
+
+name=sdl
+version=1.2.13
+release=1
+source=(http://www.libsdl.org/release/SDL-$version.tar.gz)
+
+build() {
+	cd SDL-$version
+	./configure --prefix=/usr \
+		--disable-nasm \
+		--enable-alsa \
+		--enable-esd \
+		--with-x \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
