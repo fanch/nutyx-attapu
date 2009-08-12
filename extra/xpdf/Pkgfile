@@ -1,0 +1,37 @@
+# Description: Permet de visionner des documents PDF 
+# URL: http://www.foolabs.com/xpdf/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: lesstif
+
+name=xpdf
+version=3.02
+release=1
+source=(http://gd.tuwien.ac.at/publishing/$name/$name-$version.tar.gz\
+	ftp://ftp.foolabs.com/pub/$name/$name-${version}pl1.patch \
+	ftp://ftp.foolabs.com/pub/$name/$name-${version}pl2.patch \
+	patch.patch xpdf.desktop )
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../$name-${version}pl1.patch
+	patch -Np1 -i ../$name-${version}pl2.patch
+#	patch -Np1 -i ../patch.patch
+	sed -i 's:/usr/share/fonts/type1/gsfonts:/usr/share/fonts/Type1:' xpdf/GlobalParams.cc
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--mandir=/usr/share/man \
+        --enable-multithreaded --enable-wordlist \
+    --with-freetype2-includes=/usr/include/freetype2           \
+    --with-t1-library=/usr/lib                                 \
+    --with-t1-includes=/usr/include                            \
+    --x-includes=/usr/include                                  \
+    --with-Xm-library=/usr/lib                                 \
+    --with-Xm-includes=/usr/include
+	make
+	make DESTDIR=$PKG install
+	install -Dm644 ../xpdf.desktop \
+	$PKG/usr/share/applications/xpdf.desktop
+	install -Dm644 xpdf/xpdfIcon.xpm \
+	$PKG/usr/share/pixmaps/xpdf.xpm
+}

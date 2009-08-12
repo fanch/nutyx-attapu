@@ -1,0 +1,21 @@
+--- VendorP.h~
++++ VendorP.h
+@@ -76,6 +76,8 @@
+XtPointer extension; /* pointer to extension record
+*/
+} VendorShellClassPart;
+
++struct VendorShellClassRec;
++/*
+typedef struct _VendorShellClassRec {
+CoreClassPart core_class;
+CompositeClassPart composite_class;
+@@ -85,7 +87,7 @@
+} VendorShellClassRec;
+
+externalref VendorShellClassRec vendorShellClassRec;
+-
++*/
+/* New fields for the vendor shell widget. */
+
+typedef struct {
