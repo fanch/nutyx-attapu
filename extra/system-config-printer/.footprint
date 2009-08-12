@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/python2.5/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/
+drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/cupshelpers/
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/cupshelpers/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/cupshelpers/cupshelpers.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/cupshelpers/openprinting.py
+-rw-r--r--	root/root	usr/lib/python2.5/site-packages/cupshelpers/ppds.py
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/system-config-printer/
+-rw-r--r--	root/root	usr/share/system-config-printer/config.py
+-rw-r--r--	root/root	usr/share/system-config-printer/debug.py
+-rw-r--r--	root/root	usr/share/system-config-printer/smburi.py

@@ -1,0 +1,28 @@
+# Description: Configuration de cups via Python
+# URL: http://cyberelk.net/tim/software/system-config-printer/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pycups, pyxml, dbus-python, xmlto
+
+name=system-config-printer
+version=1.1.10
+release=1
+source=(http://cyberelk.net/tim/data/$name/1.1/$name-$version.tar.bz2)
+
+
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr \
+		--sbindir=/usr/bin \
+		--sysconfdir=/etc
+	make
+	install -d $PKG/usr/share/$name
+	install -d $PKG/usr/lib/python2.5/site-packages/cupshelpers
+	install -m644 config.py debug.py smburi.py \
+	$PKG/usr/share/$name/
+	for i in build/lib/cupshelpers/*.py; do
+    		install -Dm644 $i \
+		$PKG/usr/lib/python2.5/site-packages/cupshelpers/$(basename $i)
+	done
+}
