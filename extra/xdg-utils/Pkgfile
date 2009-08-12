@@ -1,0 +1,18 @@
+# Description: outil en ligne de commande permettant l'integration de taches de bureaux varies 
+# URL: http://portland.freedesktop.org/wiki/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: 
+
+name=xdg-utils
+version=1.0.2
+release=1
+source=(http://portland.freedesktop.org/download/$name-$version.tgz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+
