@@ -1,0 +1,27 @@
+# Description: portable library for the Scheme programming language
+# URL: http://groups.csail.mit.edu/
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: aspell, texinfo
+
+name=slib
+version=3a5
+release=1
+source=( http://groups.csail.mit.edu/mac/ftpdir/scm/OLD//$name$version.tar.gz\
+         http://www.linuxfromscratch.org/patches/blfs/svn/slib-3a4-guile_fixes-1.patch\
+         slibcat)
+
+
+build() {
+	cd $name
+        sed -i 's|usr/lib|usr/share|' {RScheme,guile}.init
+        mkdir -p $PKG/usr/share/{man,info,guile}
+        ln -s ../slib $PKG/usr/share/guile
+	make    prefix=$PKG/usr/ \
+                libdir=$PKG/usr/share/ \
+		mandir=$PKG/usr/share/man/ \
+		infodir=$PKG/usr/share/info/ \
+	         install installinfo
+        rm $PKG/usr/share/info/dir
+        mv ../slibcat $PKG/usr/share/guile/
+}
