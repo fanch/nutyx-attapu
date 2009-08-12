@@ -1,0 +1,20 @@
+# Description: Le couteau suisse pour modifier le son de fichiers audio.
+# URL: http://sox.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libvorbis, lame, libmad, libsndfile, libsamplerate
+
+name=sox
+version=14.2.0
+release=1
+source=(http://easynews.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
