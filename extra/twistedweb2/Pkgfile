@@ -1,0 +1,15 @@
+# Description: serveur, fourni aussi le support basique des clients HTTP 
+# URL: http://twistedmatrix.com/trac/wiki/TwistedWeb
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: twisted
+
+name=twistedweb2
+version=8.1.0
+release=1
+source=(http://tmrc.mit.edu/mirror/twisted/Web2/8.1/TwistedWeb2-$version.tar.bz2)
+
+build() {
+	cd TwistedWeb2-$version
+	python setup.py install --prefix=/usr --root=$PKG
+}
