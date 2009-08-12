@@ -1,0 +1,28 @@
+# Description: Paquet pour nécessaire pour certains plugins de Firefox
+# URL: http://xulfr.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libidl, nss, gtk, perl, python, dbus-glib, zip, alsa-lib
+
+name=xulrunner
+version=1.9.1.1
+release=1
+source=(http://releases.mozilla.org/pub/mozilla.org/firefox/releases/3.5.1/source/firefox-3.5.1-source.tar.bz2 \
+	mozconfig $name.diff)
+
+build() {
+	export MOZ_CO_PROJECT="xulrunner"
+	export XCFLAGS="$CFLAGS"
+	cd mozilla-*
+	patch -Np1 -i $SRC/$name.diff
+	sed -e "s/#CFLAGS#/$CFLAGS/g" \
+	    -e "s/#MAKEFLAGS#/$MAKEFLAGS/g" \
+	    $SRC/mozconfig > .mozconfig
+	./configure
+	make -j3
+	make DESTDIR=$PKG install
+
+	install -d $PKG/etc/ld.so.conf.d
+	echo "/usr/lib/$name-$version" > $PKG/etc/ld.so.conf.d/$name.conf
+	chown -R root:root $PKG
+}
