@@ -1,3 +1,3 @@
-host=kiao.no-ip.info:22
-collection=ports/nutyx-2009/kde/
+host=sibelle.dyndns.org
+collection=ports/kde/
 destination=/usr/ports/kde
