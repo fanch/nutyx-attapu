@@ -1,0 +1,26 @@
+# Description: Contient la librairie xine 
+# URL: http://xinehq.de/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libcaca, speex, libmng, esound, libvorbis, flac, libtheora, sdl, ffmpeg, vcdimager, wavpack
+
+name=xine-lib
+version=1.1.16.3
+release=1
+source=(http://downloads.sourceforge.net/xine/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
+	--with-w32-path=/usr/lib/codecs \
+	--without-arts \
+	--disable-gnomevfs \
+	--disable-aalib \
+	--disable-modplug \
+	--with-external-ffmpeg \
+	--enable-static
+	make
+	make DESTDIR=$PKG install
+}
+
