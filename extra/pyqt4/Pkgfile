@@ -1,0 +1,19 @@
+# Description: Connecteur python pour qt4 
+# URL: http://www.riverbankcomputing.co.uk/software/pyqt/intro
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: sip, qscintilla, qt4
+
+name=pyqt4
+version=4.5.4
+release=1
+source=(http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-$version.tar.gz)
+
+build() {
+	cd PyQt-x11-gpl-$version
+	echo yes | python configure.py -b /usr/bin \
+	-d /usr/lib/python2.5/site-packages \
+	-v /usr/share/sip
+	make
+	make DESTDIR=$PKG install
+}
