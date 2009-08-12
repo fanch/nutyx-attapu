@@ -1,0 +1,18 @@
+# Description: Connecteur Python pour GObject
+# URL: http://www.pygtk.org/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python glib
+
+name=pygobject
+version=2.18.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.18/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+}
