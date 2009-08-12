@@ -1,0 +1,23 @@
+# Description: Un lot d'outils postscript 
+# URL: http://www.tardis.ed.ac.uk/~ajcd/psutils/index.html
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glibc, ghostscript
+
+name=psutils
+version=1.17
+release=1
+source=(ftp://ftp.enst.fr/pub/unix/a2ps/$name-$version.tar.gz)
+
+build() {
+cd $name
+	mkdir -p $PKG/usr/{include,share/man,share/licenses/$name}
+	make -f Makefile.unix BINDIR=$PKG/usr/bin \
+	INCLUDEDIR=$PKG/usr/include/psutils \
+	PERL=/usr/bin/perl \
+	MANDIR=$PKG/usr/share/man/man1 \
+	install
+	
+	install -m644 LICENSE $PKG/usr/share/licenses/$name/
+}
+
