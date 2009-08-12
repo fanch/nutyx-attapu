@@ -1,0 +1,33 @@
+# Description: 3 -D Athena widgets
+# URL: http://directory.fsf.org/project/xaw3d/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: 
+name=xaw3d
+version=1.5E
+release=1
+source=(ftp://ftp.visi.com/users/hawkeyd/X/Xaw3d-$version.tar.gz \
+        Xaw3d-1.5E-xorg-imake.patch \
+	Xaw3d-1.5-i18n.patch \
+        Xaw3d-1.5-box.c.patch \
+       	Xaw3d-1.5-debian-fixes.patch \
+        xaw3d.patch \
+	Xaw3d-1.5E-warnings.patch \
+	Xaw3d-ia64.patch)
+
+build() {
+	cd xc/lib/Xaw3d
+	patch -Np0 -i $SRC/Xaw3d-1.5E-xorg-imake.patch
+  	patch -Np4 -i $SRC/xaw3d.patch
+  	patch -Np4 -i $SRC/Xaw3d-ia64.patch
+  	patch -Np4 -i $SRC/Xaw3d-1.5-i18n.patch
+  	patch -Np4 -i $SRC/Xaw3d-1.5-box.c.patch
+  	patch -Np4 -i $SRC/Xaw3d-1.5-debian-fixes.patch
+  	patch -Np4 -i $SRC/Xaw3d-1.5E-warnings.patch
+
+	ln -s .. X11
+	xmkmf
+	make CDEBUGFLAGS="${CFLAGS} -DARROW_SCROLLBAR"
+	make DESTDIR=$PKG SHLIBDIR=/usr/lib INCDIR=/usr/include install
+}
+
