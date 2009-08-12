@@ -1,0 +1,21 @@
+# Description: Permet la création de VCD et SVCD
+# URL: http://www.vcdimager.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libcdio
+
+name=vcdimager
+version=0.7.23
+release=2
+source=(http://ftp.twaren.net/Unix/GNU/gnu/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--with-xml-prefix=/usr \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/share/info/dir
+}
