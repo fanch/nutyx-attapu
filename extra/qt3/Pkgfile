@@ -1,0 +1,44 @@
+# Description: Librairie très complète de chez Trolltech
+# URL: http://trolltech.com/products/qt/qt3
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, libjpeg, libmng
+
+name=qt3
+version=3.3.8b
+release=1
+source=( ftp://ftp.trolltech.com/qt/source/qt-x11-free-$version.tar.gz\
+)
+
+build() {
+	cd qt-x11-free-$version
+        export QTDIR=$PWD
+	sed -i '/QMAKE_RPATH/d' mkspecs/linux*/qmake.conf
+        export PATH=$PWD/bin:$PATH
+        export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:`pwd`/lib"
+
+        ./configure -prefix /opt/qt \
+            -docdir /opt/qt/share/doc/qt \
+            -sysconfdir /etc/qt3 \
+            -qt-gif \
+            -system-zlib \
+            -system-libpng \
+            -system-libjpeg \
+            -system-libmng \
+            -plugin-imgfmt-png \
+            -plugin-imgfmt-jpeg \
+            -plugin-imgfmt-mng \
+            -no-exceptions \
+            -thread \
+            -tablet
+	make src-moc sub-src -j2
+	find . -name Makefile -exec sed -i "s|,/usr/lib|,`pwd`/lib|" {} \;
+	find . -name Makefile -exec sed -i "s|,/opt/qt/lib|,`pwd`/lib|" {} \;
+        make sub-tools -j2
+	make INSTALL_ROOT=$PKG install
+
+        # correct qmake's PRL files (the libraries were placed into /usr/lib*/ and
+        # not in our temporary build directory ./work/src/..)
+        sed -i "s|-L$SRC/qt-x11-free-$version/lib ||g" $PKG/opt/qt/lib/*.prl
+	rm -rf $PKG/opt/qt/share/doc
+}
