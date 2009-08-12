@@ -1,0 +1,21 @@
+# Description: Interface graphique pour gérer le scanner
+# URL: http://www.xsane.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: sane, gtk1, gtk
+
+name=xsane
+version=0.997
+release=1
+
+source=( http://www.xsane.org/download/$name-$version.tar.gz)
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/lib/gimp/2.0/plug-ins
+	ln -svf /usr/bin/xsane $PKG/usr/lib/gimp/2.0/plug-ins/
+}
