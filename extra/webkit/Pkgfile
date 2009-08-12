@@ -1,0 +1,21 @@
+# Description: Moteur de rendu Web libre 
+# URL: http://webkit.org/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: bison, curl, dbus, gconf, gnome-vfs, gperf, gstreamer, gst-plugins-base, gtk, gtk-doc, icu, libpng, openssl, orbit2, pango, enchant, libsoup
+
+name=webkit
+version=r44282
+release=1
+source=(http://builds.nightly.webkit.org/files/trunk/src/WebKit-$version.tar.bz2)
+
+build() {
+cd WebKit-$version
+	./autogen.sh --prefix=/usr \
+	--localstatedir=/var \
+	--sysconfdir=/etc \
+	--enable-video
+	make
+	make DESTDIR=$PKG install
+}
+
