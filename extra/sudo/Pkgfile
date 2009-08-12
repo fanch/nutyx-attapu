@@ -1,0 +1,27 @@
+# Description: Permet de donner des droits administrateurs
+# URL: http://www.gratisoft.us/sudo/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: coreutils, vim 
+
+name=sudo
+version=1.7.2
+release=1
+source=(ftp://ftp.sudo.ws/pub/sudo/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sbindir=/usr/sbin \
+	--mandir=/usr/share/man \
+	--infodir=/usr/share/info \
+	--libexecdir=/usr/lib \
+	--enable-noargs-shell \
+	--without-pam \
+	--with-ignore-dot \
+	--with-all-insults \
+	--enable-shell-sets-home
+	make
+	make DESTDIR=$PKG install
+}
+
