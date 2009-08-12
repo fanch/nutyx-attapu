@@ -1,0 +1,93 @@
+# Description: Lecteur multimedia
+# URL: http://www.videolan.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ffmpeg, flac, freetype, fribidi, goom, lame, libcdio, libdvbpsi, libdvdcss, libdvdread, libdvdnav, libebml, libiconv, libid3tag, libmad, libmatroska, libogg, libpng, speex, libtheora, libvorbis, libxml2, libmpeg2, openslp, portaudio, lame, vcdimager, x264, zlib, aalib, libcaca, libmpeg2, libopendaap, libmp4v2, live, libdca, sdl_image, qt4, libnotify
+
+name=vlc
+version=0.9.8a
+release=2
+group=app
+_ffmpegver=r15976
+source=(http://download.videolan.org/pub/videolan/$name/$version/$name-$version.tar.bz2\
+	http://kiao.no-ip.info/files/ffmpeg-${_ffmpegver}.tar.gz\	
+	ffmpeg-20071204.patch)
+
+build() {
+        cd ffmpeg-${_ffmpegver}
+        ./configure \
+          --enable-gpl \
+          --enable-libmp3lame \
+          --enable-libvorbis \
+          --enable-pp \
+          --enable-libfaac \
+          --enable-libfaad \
+          --enable-liba52 \
+          --enable-libxvid \
+          --enable-libx264 \
+          --enable-libtheora \
+          --disable-libamr-nb \
+          --enable-pp \
+          --enable-shared \
+          --enable-pthreads \
+          --enable-x11grab
+
+     # build
+     make -j3
+	cd ..
+
+	cd $name-$version
+#	patch -Np1 < ../ffmpeg-20071204.patch
+#  sed -i -e 's:#include <vlc\/vlc.h>:#include <vlc/vlc.h> \n #include <locale.h>: ' modules/misc/freetype.c
+sed -i -e 's:/usr/share/fonts/truetype/freefont/FreeSerifBold.ttf:/usr/share/fonts/TTF/DejaVuSans-Bold.ttf:' modules/misc/freetype.c
+export LDFLAGS_ffmpeg="-lfaad -la52 -lxvidcore -lmp3lame -lx264"
+		./configure --prefix=/usr \
+	--enable-dvdread \
+	--enable-dvdnav \
+	--enable-madi \
+	--disable-pulse \
+    	--enable-ffmpeg \
+	--disable-rpath \
+	--enable-wxwidget \
+	--enable-faad \
+	--enable-alsa \
+	--enable-skins2 \
+	--enable-dvb \
+	--enable-dmo \
+	--with-ffmpeg-faac \
+	--with-ffmpeg-vorbis \
+	--with-ffmpeg-dts \
+	--with-ffmpeg-ogg \
+	--with-ffmpeg-theora \
+	--with-ffmpeg-tree=../ffmpeg/ \
+	--with-ffmpeg-config-path=../ffmpeg/ \
+	--enable-livedotcom \
+	--enable-v4l \
+	--enable-theora \
+	--enable-snapshot \
+	--enable-hal \
+	--enable-dbus  \
+	--enable-ogg \
+	--enable-dbus-control \
+	--enable-shared \
+	--enable-nls \
+	--enable-lirc \
+	--enable-shout \
+	--enable-pvr \
+	--enable-release \
+	--program-suffix= \
+	--with-dv-raw1394=/usr/include/libraw1394 \
+	--enable-loader \
+	--enable-live555 \
+	--with-live555-tree=/usr/lib/live
+	make -j3
+	make -j3 DESTDIR=$PKG install
+
+ for res in 16 32 48; do
+    install -D -m644 share/vlc${res}x${res}.png \
+      $PKG/usr/share/icons/hicolor/${res}x${res}/apps/vlc.png || return 1
+  done
+
+  rm -rf $PKG/usr/lib/mozilla
+}
+

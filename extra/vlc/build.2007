@@ -1,0 +1,84 @@
+# Description: Lecteur multimedia
+# URL: http://www.videolan.org/
+# Maintainer: Thierry Nuttens, thierryn1 at hispeed dot ch
+# Depends on: liba52, faac, faad2, ffmpeg, flac, freetype, fribidi, goom, lame, libcdio, libdvbpsi, libdvdcss, libdvdread, libdvdnav, libebml, libiconv, libid3tag, libmad, libmatroska, libogg, libpng, speex, libtheora, libvorbis, libxml2, libmpeg2, openslp, portaudio, lame, vcdimager, wxwidget, x264, zlib, aalib, libcaca, libmpeg2, libdaap, libmp4v2
+
+name=vlc
+version=0.8.6d
+release=2
+group=app
+_ffmpegver=20071204
+source=(http://download.videolan.org/pub/videolan/$name/$version/$name-$version.tar.gz\
+	http://gerolde.archlinux.org/~paul/ffmpeg-$_ffmpegver.tar.gz\	
+	ffmpeg-20071204.patch)
+
+build() {
+	cd ffmpeg
+    	./configure \
+          --enable-gpl \
+          --enable-libmp3lame \
+          --enable-libvorbis \
+          --enable-pp \
+          --enable-libfaac \
+          --enable-libfaad \
+          --enable-liba52 \
+          --enable-libxvid \
+	  --enable-libx264 \
+	  --enable-libtheora \
+	  --disable-libamr-nb \
+          --enable-pp \
+          --enable-shared \
+          --enable-pthreads \
+	  --enable-x11grab
+
+     # build
+     make -j3
+
+	cd ../$name-$version
+ patch -Np1 < ../ffmpeg-20071204.patch 
+  sed -i -e 's:#include <vlc\/vlc.h>:#include <vlc/vlc.h> \n #include <locale.h>: ' src/misc/charset.c
+  sed -i -e 's:/truetype/freefont/FreeSerifBold.ttf:/TTF/VeraBd.ttf:' modules/misc/freetype.c
+
+	# export linker flags for the ffmpeg tree
+  	# this has to be in sync with how ffmpeg was configured above
+	export LDFLAGS_ffmpeg="-lfaad -la52 -lxvidcore -lmp3lame -lx264"
+
+#	patch -p1 < ../$name-$version.patch
+		./configure --prefix=/usr \
+	--enable-dvdread \
+	--enable-dvdnav \
+	--enable-madi \
+    	--enable-ffmpeg \
+	--disable-rpath \
+	--enable-wxwidgets \
+	--enable-faad \
+	--enable-alsa \
+	--enable-livedotcom \
+	--enable-dvb \
+	--enable-theora \
+	--enable-dmo \
+	--with-livedotcom-tree=/usr/lib/live \
+	--with-ffmpeg-faac \
+	--with-ffmpeg-vorbis \
+	--with-ffmpeg-dts \
+	--with-ffmpeg-ogg \
+	--with-ffmpeg-theora \
+	--with-ffmpeg-tree=../ffmpeg/ \
+	--with-ffmpeg-config-path=../ffmpeg/ \
+    	--enable-v4l \
+	--enable-lirc \
+	--enable-loader
+
+#	patch -Np1 -i ../ffmpeg-20071204.patch
+
+	make -j3
+	make DESTDIR=$PKG install
+
+ for res in 16 32 48; do
+    install -D -m644 share/vlc${res}x${res}.png \
+      $PKG/usr/share/icons/hicolor/${res}x${res}/apps/vlc.png || return 1
+  done
+
+  rm -rf $PKG/usr/lib/mozilla
+}
+
