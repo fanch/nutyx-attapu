@@ -1,0 +1,21 @@
+# Description: Outil permettant de facilement créer des connecteurs Python pour C et C++
+# URL: http://www.riverbankcomputing.co.uk/software/sip/intro
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=sip
+version=4.8.2
+release=1
+source=(http://www.riverbankcomputing.com/static/Downloads/sip4/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	python configure.py -b /usr/bin \
+	-d /usr/lib/python2.5/site-packages \
+	-e /usr/include/python2.5 \
+	-v /usr/share/sip
+	make
+	make DESTDIR=$PKG install
+	chmod 644 $PKG/usr/lib/python2.5/site-packages/sipdistutils.py
+}
