@@ -1,0 +1,29 @@
+# Description: Client léger et très simple de messagerie electronique
+# URL: http://sylpheed.sraoss.jp/en/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, openssl, gpgme, gnupg
+
+name=sylpheed
+version=2.7.0
+release=1
+source=(http://sylpheed.sraoss.jp/sylpheed/v2.7/$name-$version.tar.bz2 \
+  sylpheed.desktop)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--enable-static=no \
+	--disable-gtkspell \
+	--disable-gtktest \
+	--disable-compface \
+	--enable-gpgme \
+	--enable-ssl \
+	--enable-ldap
+
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/sylpheed
+	install -D -m644 ../sylpheed.desktop $PKG/usr/share/ede/programs/Internet/sylpheed.desktop
+}

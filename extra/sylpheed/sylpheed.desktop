@@ -1,0 +1,9 @@
+# EFLTK Configuration - Version 2,003000
+
+[Desktop Entry]
+  Name=Email client
+  Name[sk]=Poštový klient
+  Name[fr]=Client messagerie electronique
+  Exec=sylpheed
+  Icon=/usr/share/pixmaps/sylpheed.png
+
