@@ -1,0 +1,28 @@
+# Description: Modules kernel pour virtualbox
+# URL: http://www.virtualbox.org
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=virtualbox-module
+version=3.0.4
+release=1
+_name=VirtualBox
+_kernel=2.6.30.4
+_build=50677
+source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
+
+
+
+build() {
+	sh "VirtualBox-${version}-${_build}-Linux_x86.run" --target "$SRC" --keep --noexec
+	tar xfj VirtualBox.tar.bz2
+	
+	mkdir -p $PKG/lib/modules/${_kernel}/kernel/drivers/misc/
+	cd src
+	make
+	install -D -m 0644 vboxdrv.ko \
+	$PKG/lib/modules/${_kernel}/kernel/drivers/misc/vboxdrv.ko
+	install -D -m 0644 vboxnetflt.ko \
+	$PKG/lib/modules/${_kernel}/kernel/drivers/misc/vboxnetflt.ko
+}
