@@ -1,0 +1,17 @@
+# Description: Connecteur Python pour la librairie cairo
+# URL: http://www.cairographics.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python cairo
+
+name=pycairo
+version=1.6.4
+release=1
+source=(http://cairographics.org/releases/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
