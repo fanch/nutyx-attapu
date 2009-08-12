@@ -1,0 +1,18 @@
+# Description:  Librairie Python XML
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=pyxml
+version=0.8.4
+release=1
+source=(http://downloads.sourceforge.net/$name/PyXML-0.8.4.tar.gz)
+
+build() {
+	cd PyXML-$version
+	python setup.py build
+	python setup.py install --prefix=/usr --root=$PKG
+
+}
+
