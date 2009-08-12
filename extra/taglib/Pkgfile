@@ -1,0 +1,20 @@
+# Description: Permet de lire et de modifier les données de nombreux fichiers audio
+# URL: http://developer.kde.org/~wheeler/taglib.html
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=taglib
+version=1.5
+release=2
+source=( http://ktown.kde.org/~wheeler/files/src/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
