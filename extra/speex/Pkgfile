@@ -1,0 +1,21 @@
+# Description: Format de compression audio spécialement adapté pour la voix
+# URL: http://www.speex.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libogg
+
+name=speex
+version=1.2rc1
+release=1
+source=(  http://downloads.us.xiph.org/releases/$name/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
