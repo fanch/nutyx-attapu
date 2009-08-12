@@ -1,0 +1,60 @@
+# Description: L'initrd avec le système de maintenance
+# URL:  http://www.kernel.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kernel
+
+name=initrd
+version=2.6.30.4
+release=1
+_tools=10082009
+source=()
+build(){
+wget http://kiao.no-ip.info/NuTyX/tools/install_2009.ash
+wget http://kiao.no-ip.info/NuTyX/2009/`uname -m`/release/kernel%23$version-1.pkg.tar.gz
+WDIR=$SRC/installtools
+tar xf kernel*
+mkdir -p $WDIR
+wget http://kiao.no-ip.info/NuTyX/files/installtools-${_tools}.tar.gz
+tar -C $WDIR --use-compress-program=gzip -xf installtools-${_tools}.tar.gz
+
+mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/{drivers,fs}
+cp -a lib/modules/$version/kernel/crypto \
+$WDIR/rootfs/lib/modules/$version/kernel/
+for i in ata block input ide hid message parport \
+serial misc net pcmcia scsi usb md
+do
+	if [ -d lib/modules/$version/kernel/drivers/$i ]; then
+		cp -a lib/modules/$version/kernel/drivers/$i \
+		$WDIR/rootfs/lib/modules/$version/kernel/drivers/
+	fi
+done
+for i in wireless irda wan bonding \
+hamradio appletalk cxgb3 mlx4 sfc
+do 
+	rm -r $WDIR/rootfs/lib/modules/$version/kernel/drivers/net/$i
+done
+for i in fat ntfs smbfs vfat ext4
+do
+	if [ -d lib/modules/$version/kernel/fs/$i ]; then
+		cp -a lib/modules/$version/kernel/fs/$i \
+		$WDIR/rootfs/lib/modules/$version/kernel/fs/
+	fi
+done
+$WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
+	
+cp install_2009.ash $WDIR/rootfs/root/
+sed -i "s/install_2008/install_2009/g" $WDIR/rootfs/usr/bin/setup
+sed -i "s/install_2008/install_2009/g" $WDIR/rootfs/sbin/setup-mirroir
+	
+# Compression des modules
+cd $WDIR/rootfs/lib/modules/$version
+find . -name "*.ko" -exec gzip '{}' \;
+sed -i 's/\.ko/.ko.gz/g' modules.dep
+cd -
+sed -i "s/#version#/$version/" $WDIR/iso/isolinux/boot.msg
+cp  boot/kernel-$version $WDIR/iso/isolinux/kernel
+sh $WDIR/script/mkinitrd $WDIR
+mkdir -p $PKG/boot
+cp $WDIR/iso/isolinux/initrd $PKG/boot/nutyx-initrd
+}
