@@ -1,0 +1,16 @@
+# Description: Connecteur Python pour le serveur cups
+# URL: http://cyberelk.net/tim/software/pycups/
+# Maintainer: NuTyX core team
+# Packager: thierry at hispeed dot ch
+# Depends on: python, cups
+
+name=pycups
+version=1.9.44
+release=1
+source=(http://cyberelk.net/tim/data/pycups/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make
+	make DESTDIR=$PKG install
+}
