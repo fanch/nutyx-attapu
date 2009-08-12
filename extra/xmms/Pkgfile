@@ -1,0 +1,26 @@
+# Description: Lecteur audio pour X
+# URL: http://www.xmms.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libvorbis, libmikmod, gtk1, esound
+
+name=xmms
+version=1.2.11
+release=3
+source=( http://www.xmms.org/files/1.2.x/$name-$version.tar.bz2\
+	 xmms.desktop xmms.desktop.ede xmms.png)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/share/{applications,pixmaps}
+	install -m 644 ../xmms.desktop $PKG/usr/share/applications/
+	install -m 644 ../xmms.png $PKG/usr/share/pixmaps/xmms.png
+	install -D -m644 ../xmms.desktop.ede \
+	$PKG/usr/share/ede/programs/Multimedia/xmms.desktop
+
+}
