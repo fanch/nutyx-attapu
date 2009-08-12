@@ -1,0 +1,97 @@
+# $Id: xinitrc,v 1.4 2008/05/13 17:33:40 install Exp install $
+# the following variable defines the session which is started if the user
+# doesn't explicitely select a session
+DEFAULT_SESSION=jwm
+
+case $1 in
+xfce4)
+	exec startxfce4
+	;;
+openbox)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec openbox
+	;;
+lxde)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec startlxde
+	;;
+e16)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec starte16
+	;;
+fluxbox)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec startfluxbox
+      	;;
+twindy)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec twindy
+	;;
+fvwm)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec fvwm
+       	;;
+jwm)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec jwm
+       	;;
+twm)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec twm
+       	;;
+icewm)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	icewmbg &
+	icewmtray &
+	exec icewm
+	;;
+wmaker)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec wmaker
+	;;
+blackbox)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec blackbox
+	;;
+gnome)
+	exec gnome-session
+	exec dbus-launch --exit-with-session gnome-session
+	;;
+*)
+	exec $DEFAULT_SESSION
+	;;
+esac
+

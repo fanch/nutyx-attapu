@@ -1,0 +1,37 @@
+#!/bin/sh
+# Begin $rc_base/init.d/slim
+
+# $Id: $
+
+. /etc/sysconfig/rc
+. $rc_functions
+lockfile=$(grep lockfile /etc/slim.conf |tr -s " " | cut -d" " -f2)
+pid=$(pidof -o %PPID /usr/X11R6/bin/X)
+
+
+case "$1" in
+	start)
+		boot_mesg "Starting Simple Login Manager"
+      		loadproc /usr/bin/slim -d
+		;;
+	stop)
+		boot_mesg "Stopping Simple Login Manager"
+		if [ -f $lockfile ]; then
+			rm $lockfile
+		fi
+		[ ! -z "$pid" ]  && kill $pid >/dev/null 2>&1
+		if [ $? -gt 0 ]; then
+			killproc /usr/bin/slim
+		fi
+		;;
+	restart)
+		$0 stop
+		sleep 3
+		$0 start
+		;;
+	*)
+		echo "Usage: $0 start|stop|restart"
+		;;
+esac
+
+# End of file
