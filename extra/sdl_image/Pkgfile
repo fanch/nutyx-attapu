@@ -1,0 +1,18 @@
+# Description: Librairie pour charger des images.
+# URL: http://www.libsdl.org/projects/SDL_image
+# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libtiff libpng sdl
+
+name=sdl_image
+version=1.2.6
+release=1
+source=(http://www.libsdl.org/projects/SDL_image/release/SDL_image-$version.tar.gz)
+
+build() {
+	cd SDL_image-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
