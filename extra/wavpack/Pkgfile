@@ -1,0 +1,22 @@
+# Description: Format de compression audio ouvert et sans perte 
+# URL: http://www.wavpack.com/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail.com
+# Depends on: glibc
+
+name=wavpack
+version=4.50.1
+release=2
+source=(http://www.wavpack.com/$name-$version.tar.bz2\
+	gcc44.patch)
+
+build() {
+cd $name-$version
+patch -Np0 -i ../gcc44.patch
+	./configure --prefix=/usr \
+	--enable-mmx \
+	--enable-static=no 
+	make
+	make DESTDIR=$PKG install
+}
+
