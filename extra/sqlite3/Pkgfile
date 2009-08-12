@@ -1,0 +1,22 @@
+# Description: Librairie C qui implémente un moteur de base de données SQL 
+# URL: http://www.sqlite.org/
+# Maintainer: NuTyX core
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: tcl
+
+name=sqlite3
+version=3.6.14.2
+release=1
+source=(http://www.sqlite.org/sqlite-$version.tar.gz\
+	http://www.sqlite.org/cvstrac/attach_get/433/build_fts_as_part_of_libsqlite.patch.txt)
+
+build() {
+	cd sqlite-$version
+	#patch -Np0 -i ../build_fts_as_part_of_libsqlite.patch.txt
+	./configure --prefix=/usr \
+		--enable-threadsafe
+	make
+	make DESTDIR=$PKG install
+	install -d $PKG/usr/share/man/man1
+	install -m 644 sqlite3.1 $PKG/usr/share/man/man1
+}
