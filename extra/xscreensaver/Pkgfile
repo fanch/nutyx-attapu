@@ -1,0 +1,21 @@
+# Description: Gestionnaire sauvegarde d'écrans 
+# URL: http://www.jwz.org/xscreensaver/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: bc, libglade
+
+name=xscreensaver
+version=5.07
+release=1
+source=(http://www.jwz.org/xscreensaver/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--libexecdir=/usr/lib \
+		--without-gnome \
+		--enable-locking
+	make
+	make install_prefix=$PKG install
+	chmod 755 $PKG/usr/bin/xscreensaver
+}
