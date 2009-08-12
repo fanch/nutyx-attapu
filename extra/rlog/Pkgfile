@@ -1,0 +1,20 @@
+# Description: Service de logging flexible pour programmes et librairies C++
+# URL: http://www.arg0.net/rlog
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: gcc
+
+name=rlog
+version=1.4
+release=3
+source=(http://rlog.googlecode.com/files/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure \
+		--prefix=/usr \
+		--program-prefix="" \
+		--program-suffix=""
+		make
+		make DESTDIR=$PKG install 
+}
