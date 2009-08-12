@@ -1,0 +1,16 @@
+# Description: Interface python de la librairie openSSL
+# URL: http://pyopenssl.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python, openssl
+
+name=pyopenssl
+version=0.8
+release=1
+source=(http://downloads.sourceforge.net/$name/pyOpenSSL-$version.tar.gz)
+
+build() {
+	cd pyOpenSSL-$version
+	python setup.py install --root=$PKG
+	chown -R root:root $PKG
+}
