@@ -1,0 +1,20 @@
+# Description: Gestionnaire de fichier très familier
+# URL: http://roland65.free.fr/xfe
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fox
+
+name=xfe
+version=1.19.2
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz\
+	gcc44.patch	)
+
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../gcc44.patch
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

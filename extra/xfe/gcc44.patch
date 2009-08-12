@@ -1,0 +1,11 @@
+--- xfe-1.19.2/src/ViewWindow.cpp	2008-07-17 13:13:18.000000000 +0000
++++ xfe-1.19.2/src/ViewWindow.cpp.new	2009-07-28 20:51:36.000000000 +0000
+@@ -655,7 +655,7 @@
+ {
+     FXString buf=viewer->getText();
+     const char* text=buf.text();
+-    char *p = strstr(&text[pos],str.text());
++    const char *p = strstr(&text[pos],str.text());
+     if(!p)
+         return -1;
+     return (p-text);

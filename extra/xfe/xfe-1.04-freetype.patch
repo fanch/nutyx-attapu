@@ -1,0 +1,39 @@
+Submitted By: Hugo Villeneuve <hugo at hugovil dot com>
+Date: 2007-11-03
+Initial Package Version: xfe-1.04
+Description: Tries to fix autoconf detection of Xft and FreeType-2
+
+--- xfe-1.04-orig/configure.in	2007-08-28 04:45:04.000000000 -0400
++++ xfe-1.04-patched/configure.in	2007-11-03 16:02:20.000000000 -0400
+@@ -27,9 +27,27 @@
+ dnl Internationalisation
+ AM_GNU_GETTEXT
+ 
+-dnl Don't work, because /usr/include/freetype2 not in the include path
+-dnl How to fix this?
+-dnl AC_CHECK_HEADER(X11/Xft/Xft.h,,AC_MSG_ERROR("Xft.h not found"))
++dnl Checks for FreeType-2
++freetype_config=''
++AC_CHECK_PROGS(freetype_config,freetype-config,)dnl
++if test -n "$freetype_config"; then
++  freetype_cflags=`$freetype_config --cflags`
++  freetype_libs=`$freetype_config --libs`
++  LDFLAGS="$LDFLAGS $freetype_libs"
++  CPPFLAGS="$freetype_cflags $CPPFLAGS"
++fi
++AC_CHECK_HEADER(freetype/config/ftheader.h,,AC_MSG_ERROR("ftheader.h not found"))
++
++dnl Checks for Xft
++xft_config=''
++AC_CHECK_PROGS(xft_config,xft-config,)dnl
++if test -n "$xft_config"; then
++  xft_cflags=`$xft_config --cflags`
++  xft_libs=`$xft_config --libs`
++  LDFLAGS="$LDFLAGS $xft_libs"
++  CPPFLAGS="$xft_cflags $CPPFLAGS"
++fi
++AC_CHECK_HEADER(X11/Xft/Xft.h,,AC_MSG_ERROR("Xft.h not found"))
+ 
+ dnl Check for FOX
+ AC_CHECK_LIB(FOX-1.6,fxfindfox,,AC_MSG_ERROR("libFOX-1.6 not found"))
+
