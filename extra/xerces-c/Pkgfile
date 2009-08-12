@@ -1,0 +1,18 @@
+# Description: Xerces-C++
+# URL: http://xerces.apache.org/xerces-c/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=xerces-c
+version=3.0.1
+release=1
+source=(http://apache.mirror.rafal.ca/xerces/c/3/sources/${name}-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --sysconfdir=/etc
+	make -j1
+	make DESTDIR=$PKG install
+	unset XERCESCROOT
+}
