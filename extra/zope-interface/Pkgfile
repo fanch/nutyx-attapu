@@ -1,0 +1,17 @@
+# Description: Addon pour zope
+# URL: http://www.zope.org/Products/ZopeInterface/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=zope-interface
+version=3.3.0
+release=1
+source=(http://www.zope.org/Products/ZopeInterface/$version/zope.interface-$version.tar.gz)
+
+
+build() {
+	cd zope.interface-$version
+	python setup.py install --prefix=/usr --root=$PKG
+	rm $PKG/usr/lib/python*/site-packages/zope/interface/README*.txt
+}
