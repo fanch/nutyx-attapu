@@ -1,0 +1,19 @@
+# Description: Client Bittorent leger et rapide
+# URL: http://www.transmissionbt.com/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, curl, dbus, expat, fontconfig, freetype, glib, glibc, glitz, gtk, intltool, libidn, libnotify, libpng, openssl, pango, libX11, xdg-utils, zlib
+
+name=transmission
+version=1.72
+release=1
+source=(http://mirrors.m0k.org/transmission/files/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--enable-static=no
+	make
+	make DESTDIR=$PKG install
+}
+
