@@ -1,0 +1,15 @@
+# Description: Communication mode asynchrone écrit en Python 
+# URL: http://twistedmatrix.com/trac/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python, pycrypto, zope-interface
+
+name=twisted
+version=8.1.0
+release=1
+source=(http://tmrc.mit.edu/mirror/twisted/Twisted/8.1/Twisted-$version.tar.bz2)
+
+build() {
+        cd Twisted-$version
+        python setup.py install --prefix=/usr --root=$PKG
+}
