@@ -43,6 +43,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/hal-is-caller-locked-out
 -rwxr-xr-x	root/root	usr/bin/hal-lock
 -rwxr-xr-x	root/root	usr/bin/hal-set-property
+-rwxr-xr-x	root/root	usr/bin/hal-setup-keymap
 -rwxr-xr-x	root/root	usr/bin/lshal
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/hal/
@@ -153,6 +154,7 @@ drwxr-xr-x	root/root	usr/share/hal/fdi/policy/10osvendor/
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-dockstation.fdi
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-imac-backlight.fdi
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-input-policy.fdi
+-rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-keymap.fdi
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-laptop-panel-mgmt-policy.fdi
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-leds.fdi
 -rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/10-macbook-backlight.fdi

@@ -30,8 +30,9 @@ build() {
 		--sysconfdir=/etc --with-udev-prefix=/etc \
 		--localstatedir=/var \
 		--with-pci-ids=/usr/share/pci.ids.gz \
+		--disable-console-kit \
 		--disable-policy-kit \
-		--disable-console-kit
+		--disable-gtk-doc
 	make
 	make DESTDIR=$PKG install
 
