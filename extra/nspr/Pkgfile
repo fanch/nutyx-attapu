@@ -11,8 +11,9 @@ source=(ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.8/src/$name-$vers
         $name.pc.in)
 
 build() {
+    _ARCH=`uname -m`
     local NSPR_LIBS NSPR_CFLAGS NSPR_VERSION
-
+    [ "`uname -m`" == "x86_64" ] && confflags="--enable-64bit"
     cd $name-$version
 
     ./mozilla/nsprpub/configure \
@@ -20,7 +21,7 @@ build() {
         --libdir=/usr/lib \
         --includedir=/usr/include/nspr \
         --enable-optimize="$CFLAGS" \
-        --disable-debug
+        --disable-debug ${confflags}
 
     make
     make DESTDIR=$PKG install
