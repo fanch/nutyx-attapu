@@ -12,8 +12,10 @@ source=( http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-        cp makefiles/makefile.linux Makefile
-        mkdir -p $PKG/usr/{include,lib}
+	ln -s makefiles/configure.in .
+	ln -s makefiles/Makefile.am .
+	autoreconf --force --install
+	./configure --prefix=/usr
 	make
-	make prefix=$PKG/usr install
+	make DESTDIR=$PKG install
 }
