@@ -7,16 +7,16 @@
 name=gtk
 version=2.16.5
 release=1
-source=( http://ftp.gnome.org/pub/gnome/sources/gtk+/2.16/gtk+-$version.tar.gz)
-
+source=( http://ftp.gnome.org/pub/gnome/sources/gtk+/2.16/gtk+-$version.tar.gz \
+)
 
 build() {
-	cd gtk+-$version
+cd gtk+-$version
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
                 --sysconfdir=/etc
-	make -j1
+	mak
 	make DESTDIR=$PKG install
         mkdir -p $PKG/etc/gtk-2.0
 	echo 'gtk-fallback-icon-theme = "gnome"' > $PKG/etc/gtk-2.0/gtkrc
