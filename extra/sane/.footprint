@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	etc/sane.d/
 -rw-r--r--	root/root	etc/sane.d/canon.conf
 -rw-r--r--	root/root	etc/sane.d/canon630u.conf
 -rw-r--r--	root/root	etc/sane.d/canon_dr.conf
+-rw-r--r--	root/root	etc/sane.d/canon_pp.conf
 -rw-r--r--	root/root	etc/sane.d/cardscan.conf
 -rw-r--r--	root/root	etc/sane.d/coolscan.conf
 -rw-r--r--	root/root	etc/sane.d/coolscan2.conf
@@ -26,12 +27,12 @@ drwxr-xr-x	root/root	etc/sane.d/dll.d/
 -rw-r--r--	root/root	etc/sane.d/epson2.conf
 -rw-r--r--	root/root	etc/sane.d/fujitsu.conf
 -rw-r--r--	root/root	etc/sane.d/genesys.conf
--rw-r--r--	root/root	etc/sane.d/gphoto2.conf
 -rw-r--r--	root/root	etc/sane.d/gt68xx.conf
 -rw-r--r--	root/root	etc/sane.d/hp.conf
 -rw-r--r--	root/root	etc/sane.d/hp3900.conf
 -rw-r--r--	root/root	etc/sane.d/hp4200.conf
 -rw-r--r--	root/root	etc/sane.d/hp5400.conf
+-rw-r--r--	root/root	etc/sane.d/hpsj5s.conf
 -rw-r--r--	root/root	etc/sane.d/hs2p.conf
 -rw-r--r--	root/root	etc/sane.d/ibm.conf
 -rw-r--r--	root/root	etc/sane.d/leo.conf
@@ -41,6 +42,7 @@ drwxr-xr-x	root/root	etc/sane.d/dll.d/
 -rw-r--r--	root/root	etc/sane.d/microtek.conf
 -rw-r--r--	root/root	etc/sane.d/microtek2.conf
 -rw-r--r--	root/root	etc/sane.d/mustek.conf
+-rw-r--r--	root/root	etc/sane.d/mustek_pp.conf
 -rw-r--r--	root/root	etc/sane.d/mustek_usb.conf
 -rw-r--r--	root/root	etc/sane.d/nec.conf
 -rw-r--r--	root/root	etc/sane.d/net.conf
@@ -133,6 +135,10 @@ lrwxrwxrwx	root/root	usr/lib/sane/libsane-canon630u.so.1 -> libsane-canon630u.so
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-canon_dr.so -> libsane-canon_dr.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-canon_dr.so.1 -> libsane-canon_dr.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-canon_dr.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-canon_pp.la
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-canon_pp.so -> libsane-canon_pp.so.1.0.20
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-canon_pp.so.1 -> libsane-canon_pp.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-canon_pp.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-cardscan.la
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-cardscan.so -> libsane-cardscan.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-cardscan.so.1 -> libsane-cardscan.so.1.0.20
@@ -193,10 +199,6 @@ lrwxrwxrwx	root/root	usr/lib/sane/libsane-fujitsu.so.1 -> libsane-fujitsu.so.1.0
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-genesys.so -> libsane-genesys.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-genesys.so.1 -> libsane-genesys.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-genesys.so.1.0.20
--rwxr-xr-x	root/root	usr/lib/sane/libsane-gphoto2.la
-lrwxrwxrwx	root/root	usr/lib/sane/libsane-gphoto2.so -> libsane-gphoto2.so.1.0.20
-lrwxrwxrwx	root/root	usr/lib/sane/libsane-gphoto2.so.1 -> libsane-gphoto2.so.1.0.20
--rwxr-xr-x	root/root	usr/lib/sane/libsane-gphoto2.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-gt68xx.la
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-gt68xx.so -> libsane-gt68xx.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-gt68xx.so.1 -> libsane-gt68xx.so.1.0.20
@@ -229,6 +231,10 @@ lrwxrwxrwx	root/root	usr/lib/sane/libsane-hp5590.so.1 -> libsane-hp5590.so.1.0.2
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-hpljm1005.so -> libsane-hpljm1005.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-hpljm1005.so.1 -> libsane-hpljm1005.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-hpljm1005.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-hpsj5s.la
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-hpsj5s.so -> libsane-hpsj5s.so.1.0.20
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-hpsj5s.so.1 -> libsane-hpsj5s.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-hpsj5s.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-hs2p.la
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-hs2p.so -> libsane-hs2p.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-hs2p.so.1 -> libsane-hs2p.so.1.0.20
@@ -265,6 +271,10 @@ lrwxrwxrwx	root/root	usr/lib/sane/libsane-microtek2.so.1 -> libsane-microtek2.so
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek.so -> libsane-mustek.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek.so.1 -> libsane-mustek.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-mustek.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-mustek_pp.la
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek_pp.so -> libsane-mustek_pp.so.1.0.20
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek_pp.so.1 -> libsane-mustek_pp.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-mustek_pp.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-mustek_usb.la
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek_usb.so -> libsane-mustek_usb.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-mustek_usb.so.1 -> libsane-mustek_usb.so.1.0.20
@@ -414,6 +424,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/sane-canon.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-canon630u.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-canon_dr.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/sane-canon_pp.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-cardscan.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-coolscan.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-coolscan2.5.gz
@@ -428,7 +439,6 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/sane-epson2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-fujitsu.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-genesys.5.gz
--rw-r--r--	root/root	usr/share/man/man5/sane-gphoto2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-gt68xx.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp3500.5.gz
@@ -437,6 +447,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp5400.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp5590.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hpljm1005.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/sane-hpsj5s.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hs2p.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-ibm.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-leo.5.gz
@@ -446,6 +457,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/sane-microtek.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-microtek2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-mustek.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/sane-mustek_pp.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-mustek_usb.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-mustek_usb2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-nec.5.gz
@@ -487,7 +499,9 @@ drwxr-xr-x	root/root	usr/share/sane/
 drwxr-xr-x	root/root	usr/share/sane/artec_eplus48u/
 drwxr-xr-x	root/root	usr/share/sane/epjitsu/
 drwxr-xr-x	root/root	usr/share/sane/gt68xx/
+-rw-r--r--	root/root	usr/share/sane/sane-logo.png
+-rw-r--r--	root/root	usr/share/sane/sane.png
 drwxr-xr-x	root/root	usr/share/sane/snapscan/
-drwxrwxr-x	root/root	var/
-drwxrwxr-x	root/root	var/lock/
-drwxrwxr-x	root/uucp	var/lock/sane/
+drwxrwxr-x	root/uucp	var/
+drwxrwxr-x	root/uucp	var/lock/
+drwxrwxr-x	root/scanner	var/lock/sane/
