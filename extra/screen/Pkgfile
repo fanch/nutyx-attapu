@@ -1,0 +1,21 @@
+# Description: Permet la manipulation des consoles non-graphiques
+# URL: ftp://ftp.gnu.org/gnu/screen/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=screen
+version=4.0.3
+release=1
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	sed -i "s@/usr/etc@/etc@" config.h
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/info/dir
+	mv $PKG/usr/info \
+	$PKG/usr/share/
+}
