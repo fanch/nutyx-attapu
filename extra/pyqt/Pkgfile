@@ -2,9 +2,9 @@
 # URL: http://www.riverbankcomputing.co.uk/software/pyqt/intro
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: sip, qscintilla, qt4
+# Depends on: sip, qscintilla, qt
 
-name=pyqt4
+name=pyqt
 version=4.5.4
 release=1
 source=(http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-$version.tar.gz)
