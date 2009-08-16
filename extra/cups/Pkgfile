@@ -2,7 +2,7 @@
 # URL: http://www.cups.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg, libpng, libtiff, xpdf
+# Depends on: libjpeg, libpng, libtiff, poppler
 
 name=cups
 version=1.3.11
