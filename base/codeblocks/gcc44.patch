@@ -1,0 +1,20 @@
+--- codeblocks-8.02/src/src/prefix.cpp.origin	2009-08-15 21:40:41.000000000 +0200
++++ codeblocks-8.02/src/src/prefix.cpp	2009-08-15 21:42:12.000000000 +0200
+@@ -393,7 +393,7 @@
+ 
+ 	br_return_val_if_fail (path != (char *) NULL, (char *) NULL);
+ 
+-	end = strrchr (path, '/');
++	end = (char*) strrchr (path, '/');
+ 	if (!end) return strdup (".");
+ 
+ 	while (end > path && *end == '/')
+@@ -429,7 +429,7 @@
+ 	br_return_val_if_fail (path != (char *) NULL, (char *) NULL);
+ 
+ 	if (!*path) return strdup ("/");
+-	end = strrchr (path, '/');
++	end = (char*) strrchr (path, '/');
+ 	if (!end) return strdup (path);
+ 
+ 	tmp = br_strndup ((char *) path, end - path);
