@@ -9,7 +9,7 @@ version=1.0.20
 release=1
 source=(ftp://ftp.alsa-project.org/pub/utils/$name-$version.tar.bz2 \
          40-alsa.rules \
-	http://www.linuxfromscratch.org/patches/blfs/svn/alsa-utils-1.0.18-no_xmlto-1.patch) 
+	http://www.linuxfromscratch.org/patches/blfs/svn/alsa-utils-$version-no_xmlto-1.patch) 
 
 build() {
 	source /etc/blfs-bootscripts
