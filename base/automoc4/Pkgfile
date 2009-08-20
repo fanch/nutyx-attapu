@@ -2,15 +2,14 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: qt
 
 name=automoc4
 version=0.9.88
 release=1
-source=()
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz)
 
 build() {
-	svn co svn://anonsvn.kde.org/home/kde/tags/$name/$version $name-$version
         cd $name-$version
         mkdir build
         cd build
