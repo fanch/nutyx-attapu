@@ -1,0 +1,17 @@
+# Description: Firmware pour la carte wifi IPW3945
+# URL: http://intellinuxwireless.org/?p=iwlwifi
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=iwlwifi-3945-ucode
+version=15.32.2.9
+release=1
+source=(http://intellinuxwireless.org/iwlwifi/downloads/$name-$version.tgz\
+	)
+
+build() {
+	cd $name-$version
+	install -D -m 644 iwlwifi-3945-2.ucode $PKG/lib/firmware/iwlwifi-3945-2.ucode
+	install -D -m 644 LICENSE.iwlwifi-3945-ucode $PKG/usr/share/licenses/$name/LICENSE
+}
