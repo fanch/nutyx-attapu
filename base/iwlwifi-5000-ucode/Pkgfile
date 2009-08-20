@@ -1,0 +1,20 @@
+# Description: Firmware pour la carte wifi IPW4965
+# URL: http://intellinuxwireless.org/?p=iwlwifi
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=iwlwifi-5000-ucode
+version=8.24.2.12
+release=1
+_version1=5.4.A.11
+source=(http://intellinuxwireless.org/iwlwifi/downloads/$name-$version.tgz\
+	http://intellinuxwireless.org/iwlwifi/downloads/$name-${_version1}.tar.gz)
+
+build() {
+	cd $name-${_version1}
+	install -D -m 644 iwlwifi-5000-1.ucode $PKG/lib/firmware/iwlwifi-5000-1.ucode
+	cd ../$name-$version
+	install -D -m 644 iwlwifi-5000-2.ucode $PKG/lib/firmware/iwlwifi-5000-2.ucode
+	install -D -m 644 LICENSE.iwlwifi-5000-ucode $PKG/usr/share/licenses/$name/LICENSE
+}

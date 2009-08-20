@@ -1,0 +1,9 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+-rw-r--r--	root/root	lib/firmware/iwlwifi-5000-1.ucode
+-rw-r--r--	root/root	lib/firmware/iwlwifi-5000-2.ucode
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/iwlwifi-5000-ucode/
+-rw-r--r--	root/root	usr/share/licenses/iwlwifi-5000-ucode/LICENSE
