@@ -1,0 +1,15 @@
+# Description: Pilotes wifi pour ralinktech rt2x00 
+# URL: http://www.ralinktech.com/ralink/Home/Support/Linux.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=rt2x00-rt71w-fw
+version=1.8
+release=1
+source=(http://www.ralinktech.com.tw/data/RT71W_Firmware_V${version}.zip)
+
+build() {
+	cd RT71W_Firmware*
+	install -Dm644 rt73.bin $PKG/lib/firmware/rt73.bin
+}
