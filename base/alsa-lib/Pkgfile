@@ -2,7 +2,7 @@
 # URL: http://www.alsa-project.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: python
 
 name=alsa-lib
 version=1.0.20
