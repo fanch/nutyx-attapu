@@ -1,0 +1,20 @@
+# Description: Pilotes pour IPW2200 Intel Centrino
+# URL: http://ipw2200.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=ipw2200-fw
+version=3.1
+release=1
+source=(http://bughost.org/firmware/$name-$version.tgz)
+
+build() {
+	cd $name-$version
+	for i in ipw*.fw
+	do
+	install -D -m 644 $i $PKG/lib/firmware/$i
+	done
+	# Install firmware licence
+ 	install -D -m 644 LICENSE.ipw2200-fw $PKG/usr/share/licenses/$name/LICENSE
+}
