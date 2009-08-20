@@ -1,0 +1,16 @@
+# Description: Pilotes wifi pour ralinktech rt2x00 
+# URL: http://www.ralinktech.com/ralink/Home/Support/Linux.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=rt2x00-rt61-fw
+version=1.2
+release=1
+source=(http://www.ralinktech.com.tw/data/RT61_Firmware_V${version}.zip)
+
+build() {
+	cd RT61_Firmware*
+	mkdir -p $PKG/lib/firmware/
+	install -m 644 rt2* $PKG/lib/firmware/
+}

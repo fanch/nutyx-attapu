@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/firmware/
+-rw-r--r--	root/root	lib/firmware/rt2561.bin
+-rw-r--r--	root/root	lib/firmware/rt2561s.bin
+-rw-r--r--	root/root	lib/firmware/rt2661.bin
