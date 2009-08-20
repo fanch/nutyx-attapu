@@ -1,0 +1,11 @@
+--- pkg-get-0.4.5/scripts/pkg-repgen.pl.original	2009-08-19 11:44:55.000000000 +0000
++++ pkg-get-0.4.5/scripts/pkg-repgen.pl	2009-08-19 11:47:59.000000000 +0000
+@@ -198,7 +198,7 @@
+         my $path = `prt-get path $package`;
+         $path =~ s/\n//g;
+         my $normal= $package;
+-        $normal =~ s/[^[:alnum:]]/_/g;
++        $normal =~ s/[^[:alnum:]]/-/g;
+         if (-f "$path/pre-install"){
+             print $fh "${normal}_pre_install() {\n";
+             open(my $pre, "$path/pre-install");

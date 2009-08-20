@@ -1,4 +1,5 @@
 5ee169f2f99fc501387219b6b96ca9ef  pkg-get-0.4.5.tar.gz
-8743345d92c1ef62e433b4e76468496e  pkg-get.conf
+653417fe57aef74d16397de9e2a17519  pkg-get.conf
 c3fb4f7ca868903da78d316be77cca16  pkg-get.patch
-cc2b9dcbd4e834b4928839a69d159a9f  syn
+c4cca630bfcc85a3f3b13497aff01310  pkg-repgen.patch
+7f54fb956ff1e04efbeb80ca8e52ebb3  syn

@@ -6,12 +6,13 @@ if [ ! "$EUID" -eq 0 ]; then
 	exit 1
 fi
 if [ ! -L /depot ]; then
+	if [ ! -d $Depot/locale ]; then mkdir -p $Depot/locale; fi
 	pushd $Depot/locale > /dev/null
 	pkg-repgen
 	popd
-	for i in test stable
+	for i in test release
 	do
-		if [ -d $Depot/$i ]; then
+		if [ -a $Depot/$i ]; then
 			rm -r $Depot/$i
 		fi
 	done
@@ -27,7 +28,7 @@ if [ ! -L /depot ]; then
 else
 	for i in `cat /etc/pkg-get.conf |grep -v ^#|grep http|cut -d "|" -f 1|cut -d" " -f2|cut -d"/" -f4`
 	do
-		rsync -avuz --delete-before rsync://nutyx.meticul.eu/nutyx/2009/uname-m/$i/ $Depot/$i/
+		rsync -avuz --delete-before rsync://nutyx.meticul.eu/nutyx/2009/i686/$i/ $Depot/$i/
 	done
 fi
 	
