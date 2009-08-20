@@ -4,10 +4,9 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on:
 
-name=kernel-ird
-version=2.6.30.4
-release=4
-_tools=10082009
+name=kernel
+version=2.6.30.5
+release=1
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
 build(){

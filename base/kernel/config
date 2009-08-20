@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
-# Linux kernel version: 2.6.30.2
-# Thu Jul 23 21:42:07 2009
+# Linux kernel version: 2.6.30.4
+# Mon Aug 10 19:33:26 2009
 #
 # CONFIG_64BIT is not set
 CONFIG_X86_32=y
@@ -92,7 +92,6 @@ CONFIG_LOG_BUF_SHIFT=15
 CONFIG_HAVE_UNSTABLE_SCHED_CLOCK=y
 # CONFIG_GROUP_SCHED is not set
 # CONFIG_CGROUPS is not set
-# CONFIG_SYSFS_DEPRECATED is not set
 # CONFIG_SYSFS_DEPRECATED_V2 is not set
 CONFIG_RELAY=y
 CONFIG_NAMESPACES=y
