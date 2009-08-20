@@ -75,9 +75,9 @@ if [ $UID -ne 0 ]; then
 fi
 
 if [ $# -lt 2 ]; then
-    echo -n "Nom : "
+    echo -n "Nom de l'utilisateur: "
     read name
-    echo -n "Description : "
+    echo -n "Description de l'utilisateur: "
     read description
 else
     description="$1"
@@ -88,11 +88,11 @@ check_args "$description" "$name"
 ret=$?
 while [ $ret -ne 0 ]; do
     if [ $ret -lt 3 ]; then
-	echo -n "Nouveau nom : "
+	echo -n "Nom de l'utilisateur: "
 	read name
     fi
     if [ $ret -eq 3 ]; then
-	echo -n "Nouvelle description : "
+	echo -n "Description de l'utilisateur: "
 	read description
     fi
     if [ "$name" == "!stop!" -o "$description" == "!stop!" ]; then
@@ -110,7 +110,7 @@ while [ -n "${default_groups[i]}" ]; do
 	else
 	    user_groups="$user_groups,${default_groups[i]}"
 	fi
-	echo "groupes : $user_groups"
+#	echo "groupes : $user_groups"
 #    else
 #	echo 1>&2 '  Veuillez installez un gestionnaire de fenetre,
 # redemarrer la machine dans ce gestionnaire,
@@ -124,7 +124,7 @@ done
 echo 1>&2 "
 Création de $name.
 "
-echo "/usr/sbin/useradd -c ${description} $user_groups -m ${name}"
+# echo "/usr/sbin/useradd -c ${description} $user_groups -m ${name}"
 if [ -z "$user_groups" ]; then
     /usr/sbin/useradd -c "${description}" -m "${name}" || exit 1
 else

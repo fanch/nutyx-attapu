@@ -17,7 +17,7 @@ source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsvers
 build() {
        # Creating Directories
        
-	mkdir -pv $PKG/{dev,proc,sys,bin,boot,etc/{profile.d,opt,skel,default},home,lib,mnt,opt,srv/{sources,NuTyX/locale}}
+	mkdir -pv $PKG/{dev,proc,sys,bin,boot,etc/{profile.d,opt,skel,default},home,lib,mnt,opt,srv/sources}
 	chmod 1777 $PKG/srv/sources
 	mkdir -pv $PKG/{media/{floppy,cdrom,key,dvd},sbin,var}
 	install -dv -m 0750 $PKG/root	
