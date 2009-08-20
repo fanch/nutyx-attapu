@@ -1,0 +1,16 @@
+# Description: Firmware pour la carte wifi IPW5150
+# URL: http://intellinuxwireless.org/?p=iwlwifi
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=iwlwifi-5150-ucode
+version=8.24.2.2
+release=1
+source=(http://intellinuxwireless.org/iwlwifi/downloads/$name-$version.tgz)
+
+build() {
+	cd $name-$version
+	install -D -m 644 iwlwifi-5150-2.ucode $PKG/lib/firmware/iwlwifi-5150-2.ucode
+	install -D -m 644 LICENSE.iwlwifi-5150-ucode $PKG/usr/share/licenses/$name/LICENSE
+}
