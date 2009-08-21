@@ -1,0 +1,24 @@
+# Description: Navigateur Internet base sur GTK2 et WebKit
+# URL: http://www.twotoasts.de/index.php?/pages/midori_summary.html
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, cairo, desktop-file-utils, enchant, fontconfig, freetype, glibc, gtk, gnutls, glib, gstreamer, hicolor-icon-theme, intltool, libgcrypt, libgpg-error, libsoup, libunique, libxml2, pango, sqlite3, webkit, xdg-utils, zlib
+
+name=midori
+version=0.1.7
+release=2
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+    ./configure --prefix=/usr \
+    --enable-libidn \
+    --enable-sqlite \
+    --enable-addons \
+    --disable-hildon \
+    --enable-unique \
+    --enable-nls
+    make
+    make DESTDIR=$PKG install
+}
+
