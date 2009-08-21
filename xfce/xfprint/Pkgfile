@@ -1,0 +1,25 @@
+# Description: Gestionnaire d'imprimantes d'Xfce
+# URL: http://www.xfce.org/projects/xfprint/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: a2ps, cups, xfce4-panel
+
+name=xfprint
+version=4.6.1
+release=2
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--with-printcap=/etc/printcap \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--enable-cups \
+	--enable-bsdlpr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
