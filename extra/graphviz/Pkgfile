@@ -2,7 +2,7 @@
 # URL: http://www.graphviz.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on : expat, libpng, libjpeg, freetype, fontconfig, pango, gtk, libglade, tcl, tk, jdk, python
+# Depends on : expat, libpng, libjpeg, freetype, fontconfig, pango, gtk, libglade, tcl, tk, python, librsvg
 
 name=graphviz
 version=2.20.2
