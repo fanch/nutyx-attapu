@@ -2,7 +2,7 @@
 # URL: http://delta.affinix.com/qca/
 # Maintainer: NuTyX core team
 # Packager: floreal.c at orange dot fr
-# Depends on: qt4
+# Depends on: qt
 
 name=qca
 version=2.0.1
