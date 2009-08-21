@@ -1,0 +1,25 @@
+# Description: Gestionnaire de sessions de Xfce
+# URL: http://www.xfce.org/projects/xfce4-session/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: dbus, libxfce4util, libxfcegui4, libwnck, p5-xml-parser, sudo, xorg-iceauth
+
+name=xfce4-session
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static \
+	--disable-gnome \
+	--enable-final \
+	--enable-session-screenshots
+	make
+	make DESTDIR=$PKG install
+}
+
