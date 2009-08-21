@@ -1,0 +1,22 @@
+# Description: Librairie d'acces aux disques optiques
+# URL: http://icculus.org/burn/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com>
+# Depends on: glibc
+
+name=libburn
+version=0.6.6
+release=1
+source=(http://files.libburnia-project.org/releases/$name-$version.pl00.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--libdir=/usr/lib \
+	--mandir=/usr/share/man \
+	--localstatedir=/var \
+	--sysconfdir=/etc \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
