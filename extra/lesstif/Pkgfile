@@ -1,0 +1,25 @@
+# Description: Version libre de OSF/Motif
+# URL: http://www.littlecms.com
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: freetype
+
+name=lesstif
+version=0.95.0
+release=3
+source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
+	c++fix.patch scroll.patch)
+
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../scroll.patch
+	patch -Np1 -i ../c++fix.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+	# Remove this file because belong to perl allready
+       rm $PKG/usr/share/man/man3/Shell.3
+}
