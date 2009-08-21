@@ -61,12 +61,10 @@ drwxr-xr-x	root/root	usr/include/taglib/
 -rw-r--r--	root/root	usr/include/taglib/xingheader.h
 -rw-r--r--	root/root	usr/include/taglib/xiphcomment.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libtag.la
-lrwxrwxrwx	root/root	usr/lib/libtag.so -> libtag.so.1.5.0
+lrwxrwxrwx	root/root	usr/lib/libtag.so -> libtag.so.1
 lrwxrwxrwx	root/root	usr/lib/libtag.so.1 -> libtag.so.1.5.0
 -rwxr-xr-x	root/root	usr/lib/libtag.so.1.5.0
--rwxr-xr-x	root/root	usr/lib/libtag_c.la
-lrwxrwxrwx	root/root	usr/lib/libtag_c.so -> libtag_c.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libtag_c.so -> libtag_c.so.0
 lrwxrwxrwx	root/root	usr/lib/libtag_c.so.0 -> libtag_c.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libtag_c.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
