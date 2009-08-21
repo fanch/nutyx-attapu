@@ -1,0 +1,20 @@
+# Description: Outils pour la gestion de réseaux sans fils
+# URL: http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ipw2100-fw, ipw2200-fw, iwlwifi-3945-ucode, iwlwifi-4965-ucode, iwlwifi-5000-ucode, iwlwifi-5150-ucode, rt2x00-rt61-fw, rt2x00-rt71w-fw
+
+name=wireless_tools
+version=29
+release=1
+source=(  http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/$name.$version.tar.gz)
+
+
+build() {
+	cd $name.$version
+	make
+	mkdir -p $PKG/usr/{sbin,lib,include}
+	mkdir -p $PKG/usr/share/
+	make PREFIX=$PKG/usr install
+	mv $PKG/usr/man $PKG/usr/share
+}
