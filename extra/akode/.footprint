@@ -29,18 +29,16 @@ drwxr-xr-x	root/root	usr/include/akode/
 -rw-r--r--	root/root	usr/include/akode/void_sink.h
 -rw-r--r--	root/root	usr/include/akode/volumefilter.h
 -rw-r--r--	root/root	usr/include/akode/wav_decoder.h
-drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libakode.la
-lrwxrwxrwx	root/root	usr/lib/libakode.so -> libakode.so.2.0.0
-lrwxrwxrwx	root/root	usr/lib/libakode.so.2 -> libakode.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libakode.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libakode_alsa_sink.la
--rwxr-xr-x	root/root	usr/lib/libakode_alsa_sink.so
--rwxr-xr-x	root/root	usr/lib/libakode_mpc_decoder.la
--rwxr-xr-x	root/root	usr/lib/libakode_mpc_decoder.so
--rwxr-xr-x	root/root	usr/lib/libakode_oss_sink.la
--rwxr-xr-x	root/root	usr/lib/libakode_oss_sink.so
--rwxr-xr-x	root/root	usr/lib/libakode_src_resampler.la
--rwxr-xr-x	root/root	usr/lib/libakode_src_resampler.so
--rwxr-xr-x	root/root	usr/lib/libakode_xiph_decoder.la
--rwxr-xr-x	root/root	usr/lib/libakode_xiph_decoder.so
+drwxr-xr-x	root/root	usr/lib64/
+-rwxr-xr-x	root/root	usr/lib64/libakode.la
+lrwxrwxrwx	root/root	usr/lib64/libakode.so -> libakode.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib64/libakode.so.2 -> libakode.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib64/libakode.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib64/libakode_alsa_sink.la
+-rwxr-xr-x	root/root	usr/lib64/libakode_alsa_sink.so
+-rwxr-xr-x	root/root	usr/lib64/libakode_mpc_decoder.la
+-rwxr-xr-x	root/root	usr/lib64/libakode_mpc_decoder.so
+-rwxr-xr-x	root/root	usr/lib64/libakode_oss_sink.la
+-rwxr-xr-x	root/root	usr/lib64/libakode_oss_sink.so
+-rwxr-xr-x	root/root	usr/lib64/libakode_xiph_decoder.la
+-rwxr-xr-x	root/root	usr/lib64/libakode_xiph_decoder.so
