@@ -1,0 +1,24 @@
+# Description: Bureau de Xfce
+# URL: http://www.xfce.org/projects/xfdesktop/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: dbus-glib, exo, libglade, libwnck, libxfce4menu, libxfce4util, libxfcegui4, libxml2, thunar, xfce4-panel, xfconf
+
+name=xfdesktop
+version=4.6.1
+release=2
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2 \
+xfdesktop-handle-unmountable-volumes.patch)
+
+build() {
+cd $name-$version
+patch -p1 < ../xfdesktop-handle-unmountable-volumes.patch
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
