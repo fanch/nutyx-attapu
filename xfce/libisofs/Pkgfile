@@ -1,0 +1,23 @@
+# Description: Librairie pour creer des systemes de fichiers ISO-9660
+# URL: http://libburnia.pykix.org/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libburn
+
+name=libisofs
+version=0.6.20
+release=1
+source=(http://files.libburnia-project.org/releases/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--libdir=/usr/lib \
+	--mandir=/usr/share/man \
+	--localstatedir=/var \
+	--sysconfdir=/etc \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
