@@ -1,0 +1,22 @@
+# Description: Gestionnaire de ressources pour Xfce
+# URL: http://goodies.xfce.org/projects/applications/xfce4-power-manager
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: dbus-glib, hal, libnotify, libxfcegui4, xfce4-panel
+
+name=xfce4-power-manager
+version=0.8.0
+release=1
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
