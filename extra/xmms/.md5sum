@@ -1,4 +1,7 @@
+c59d4906602d99a7468f7334b6fc3b4e  aclocal-fixes.patch
+4eb222111a82a2e1ebe63b5f6109133d  xmms-1.2.10-crossfade-0.3.9.patch
 f3e6dbaf0b3f571a532ab575656be506  xmms-1.2.11.tar.bz2
+b7b6f1811bad8d14e4c4534240e45980  xmms-menu.patch
 a85801bc71c1a9029200b1a7db8ea6bf  xmms.desktop
 0790782dacd3393f2869f18645ec0068  xmms.desktop.ede
 c44991de23103c270a5964e293075af7  xmms.png
