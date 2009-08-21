@@ -21,7 +21,7 @@ build() {
   ./build.sh cc || return 1
 
   _bindir="bin.linuxx86"
-  [ "${CARCH}" = "x86_64" ] && _bindir="bin.linuxx86_64"
+  [ "`uname -m`" = "x86_64" ] && _bindir="bin.linuxx86_64"
 
   install -m755 -d ${PKG}/usr/bin
   install -m755 ${_bindir}/bjam ${PKG}/usr/bin/bjam || return 1
@@ -55,5 +55,4 @@ build() {
   # build pyste
   cd ${SRC}/${name}_${_boostver}/libs/python/pyste/install
   python setup.py install --root=${PKG} || return 1
-}
-~                      
+}                      
