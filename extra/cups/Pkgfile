@@ -2,7 +2,7 @@
 # URL: http://www.cups.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg, libpng, libtiff, poppler
+# Depends on: libjpeg, libpng, libtiff, poppler, xdg-utils, dbus, hicolor-icon-theme, avahi
 
 name=cups
 version=1.3.11
@@ -34,8 +34,9 @@ build() {
 	# Startup Script 
 	cd ../$scripts-$scriptsversion
 	make DESTDIR=$PKG install-$name
+	sed -i 's|^Exec=htmlview http://localhost:631/|Exec=xdg-open http://localhost:631/|g' \
+	$PKG/usr/share/applications/cups.desktop
 	install -m754 ../cups $PKG/etc/rc.d/init.d/ 
-	sed -i "s/htmlview/firefox/" $PKG/usr/share/applications/cups.desktop
 	chmod 755 $PKG/var/spool
 	chmod 755 $PKG/etc
 }
