@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "L'installation s'est bien déroulée, il peut être nécessaire de la compléter, veuillez lancer la commande suivante en tant qu'utilisateur pour générer le cache des vignettes :
+/usr/lib/xfce4/thunar-vfs-update-thumbnailers-cache-1"

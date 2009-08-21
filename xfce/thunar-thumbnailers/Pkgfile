@@ -1,0 +1,22 @@
+# Description: Gere de nombreuses vignettes pour Thunar
+# URL: http://goodies.xfce.org/projects/thunar-plugins/thunar-thumbnailers
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: ffmpegthumbnailer, imagemagick, thunar, ufraw
+
+name=thunar-thumbnailers
+version=0.4.1
+release=7
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--libexecdir=/usr/lib/xfce4 \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--disable-static \
+	--enable-ffmpeg
+	make
+	make DESTDIR=$PKG install
+}
