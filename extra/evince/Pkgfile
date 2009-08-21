@@ -1,0 +1,36 @@
+# Description: Permet de visionner des documents aux différents formats (PS,PDF,...)
+# URL: http://projects.gnome.org/evince/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, cairo, cups, dbus-glib, djvulibre, e2fsprogs, expat, fontconfig, freetype, gcc-libs, gconf, glib, glibc, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, pixman, poppler-glib, shared-mime-info, zlib
+
+name=evince
+version=2.26.2
+release=4
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2 \
+	evince.desktop evince.desktop.ede)
+
+build() {
+cd $name-$version
+	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+	--sysconfdir=/etc/gnome/$GNOME_VERSION \
+	--localstatedir=/var/lib \
+	--mandir=$(pkg-config \
+		--variable=prefix ORBit-2.0)/share/man \
+	--enable-pixbuf \
+	--enable-impress \
+	--enable-djvu \
+	--disable-schemas-install \
+	--with-gconf-source="xml::/etc/gnome/gconf/gconf.xml.defaults" \
+	--disable-scrollkeeper
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/$(pkg-config --variable=prefix ORBit-2.0)/share/gtk-doc
+	install -D -m 644 ../evince.desktop \
+	$PKG/$(pkg-config --variable=prefix ORBit-2.0)/share/applications/evince.desktop
+	install -D -m 644 ../evince.desktop.ede \
+	$PKG/usr/share/ede/programs/Utilities/evince.desktop
+}
+
