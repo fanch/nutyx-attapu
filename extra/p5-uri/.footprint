@@ -2,7 +2,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/
-drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/i686-linux-thread-multi/
+drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/URI.pm
@@ -57,10 +57,10 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/URI/file/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/URI/urn/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/URI/urn/isbn.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/URI/urn/oid.pm
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/i686-linux-thread-multi/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/i686-linux-thread-multi/auto/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/i686-linux-thread-multi/auto/URI/
--rw-r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/i686-linux-thread-multi/auto/URI/.packlist
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi/auto/URI/
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/x86_64-linux-thread-multi/auto/URI/.packlist
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man3/
