@@ -1,0 +1,29 @@
+# Description: Librairie multimedia pour MusicBrainz
+# URL: http://www.musicbrainz.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libmusicbrainz, curl, libofa
+
+name=libtunepimp
+version=0.5.3
+release=1
+source=(ftp://ftp.musicbrainz.org/pub/musicbrainz/$name-$version.tar.gz\
+	gcc43.patch tunepimp-0.5.3-gcc44.patch m4.patch)
+
+build() {
+	cd $name-$version
+	sed -i -e 's,-ltermcap,-lncurses,' configure
+	sed -i -e 's:-lthr:-lpthread:g' lib/threads/posix/Makefile.in
+
+	patch -Np0 -i ../gcc43.patch
+	patch -Np1 -i ../tunepimp-0.5.3-gcc44.patch
+	patch -Np0 -i ../m4.patch
+	
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	cd python
+	python setup.py install --root=$PKG
+	cd $PKG/usr/include
+	ln -s tunepimp-0.5 tunepimp
+}
