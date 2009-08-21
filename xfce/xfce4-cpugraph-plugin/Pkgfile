@@ -1,0 +1,22 @@
+# Description: Moniteur dearge CPU pour Xfce
+# URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-cpugraph-plugin
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: xfce4-panel
+
+name=xfce4-cpugraph-plugin
+version=0.4.0
+release=4
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--libexecdir=/usr/lib/xfce4 \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
