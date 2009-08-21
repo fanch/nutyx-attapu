@@ -5,7 +5,7 @@
 # Depends on: gtk, libart_lgpl, pygtk, curl, libgtkhtml, libexif, openexr, gegl, poppler
 
 name=gimp
-version=2.6.6
+version=2.6.7
 release=1
 source=(ftp://ftp.gimp.org/pub/gimp/v2.6/gimp-$version.tar.bz2 \
 	gimp-splash.png gimp.desktop)
