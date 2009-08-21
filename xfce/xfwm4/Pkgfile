@@ -1,0 +1,24 @@
+# Description: Gestionnaire de fenêtres de Xfce
+# URL: http://www.xfce.org/projects/xfwm4/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libwnck, libxfce4util, libxfcegui4, startup-notification, xfconf
+
+name=xfwm4
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static \
+	--enable-compositor \
+	--enable-xinerama
+	make
+	make DESTDIR=$PKG install
+}
+
