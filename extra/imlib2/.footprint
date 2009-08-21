@@ -33,6 +33,9 @@ drwxr-xr-x	root/root	usr/lib/imlib2/loaders/
 -rw-r--r--	root/root	usr/lib/imlib2/loaders/bz2.a
 -rwxr-xr-x	root/root	usr/lib/imlib2/loaders/bz2.la
 -rwxr-xr-x	root/root	usr/lib/imlib2/loaders/bz2.so
+-rw-r--r--	root/root	usr/lib/imlib2/loaders/gif.a
+-rwxr-xr-x	root/root	usr/lib/imlib2/loaders/gif.la
+-rwxr-xr-x	root/root	usr/lib/imlib2/loaders/gif.so
 -rw-r--r--	root/root	usr/lib/imlib2/loaders/id3.a
 -rwxr-xr-x	root/root	usr/lib/imlib2/loaders/id3.la
 -rwxr-xr-x	root/root	usr/lib/imlib2/loaders/id3.so
