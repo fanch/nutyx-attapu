@@ -1,0 +1,26 @@
+# Description: Utilitaire permettant la négociation WPA pour les réseaux sans fils
+# URL: http://hostap.epitest.fi/wpa_supplicant
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: openssl, libnl
+
+name=wpa_supplicant
+version=0.6.9
+release=1
+madwifi_ver=0.9.4
+source=(http://hostap.epitest.fi/releases/$name-$version.tar.gz \
+	)
+
+build() {
+	cd $name-$version/$name
+	cp defconfig ./.config
+	echo "CONFIG_READLINE=y" >> .config
+	sed -i 's@/usr/local@$(PREFIX)@g' Makefile
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+	install -D -m644 wpa_supplicant.conf $PKG/etc/wpa_supplicant.conf
+	install -d -m755 $PKG/usr/share/man/man{5,8}
+	install -m644 doc/docbook/wpa_supplicant.conf.5 $PKG/usr/share/man/man5
+	install -m644 doc/docbook/{wpa_background,wpa_cli,wpa_passphrase,wpa_supplicant}.8 \
+	$PKG/usr/share/man/man8
+}
