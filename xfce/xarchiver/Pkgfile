@@ -1,0 +1,22 @@
+# Description: Interface graphique pour gérer les archives sous Xfce
+# URL: http://xarchiver.xfce.org
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: gtk, intltool
+
+name=xarchiver
+version=0.5.2
+release=2
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
