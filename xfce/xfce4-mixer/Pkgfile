@@ -1,0 +1,23 @@
+# Description: Controle du volume sous Xfce
+# URL: http://www.xfce.org/projects/xfce4-mixer/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: gst-plugins-base, libxfce4util, libxfcegui4, xfce4-panel
+
+name=xfce4-mixer
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static \
+	--with-sound=alsa
+	make
+	make DESTDIR=$PKG install
+}
+
