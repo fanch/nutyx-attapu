@@ -1,0 +1,24 @@
+# Description: Gestionnaire de fichiers pour Xfce
+# URL: http://thunar.xfce.org
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail.com
+# Depends on: exo, dbus, desktop-file-utils, freetype, gamin, gconf, gtk, hal, libexif, libjpeg, libpng, librsvg, xfce4-panel, libxfce4util, pcre, shared-mime-info, startup-notification, xfconf
+
+name=thunar
+version=1.0.1
+release=2
+source=(http://www.xfce.org/archive/xfce-4.6.1/src/Thunar-$version.tar.bz2 \
+thunar-volman-handle-unmountable-volumes.patch)
+
+build() {
+cd Thunar-$version
+patch -p1 < ../thunar-volman-handle-unmountable-volumes.patch
+	./configure --prefix=/usr\
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-gnome-thumbnailers
+	make
+	make DESTDIR=$PKG install
+}
+

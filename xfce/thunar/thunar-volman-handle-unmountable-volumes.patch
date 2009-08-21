@@ -1,0 +1,223 @@
+diff -rNaud thunar-SVN29407-orig/thunar/thunar-shortcuts-view.c thunar-SVN29407/thunar/thunar-shortcuts-view.c
+--- thunar-SVN29407-orig/thunar/thunar-shortcuts-view.c	2009-01-29 21:28:03.000000000 +0100
++++ thunar-SVN29407/thunar/thunar-shortcuts-view.c	2009-02-01 14:36:40.000000000 +0100
+@@ -812,39 +812,46 @@
+ 
+   /* prepare the popup menu */
+   menu = gtk_menu_new ();
++  
++  /* We don't need these items for non mountable volumes */ 
++  if ((G_UNLIKELY (volume == NULL)) || (thunar_vfs_volume_is_mountable (volume)))
++    {
++	  /* append the "Open" menu action */
++	  item = gtk_image_menu_item_new_with_mnemonic (_("_Open"));
++	  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_open), view);
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_show (item);
+ 
+-  /* append the "Open" menu action */
+-  item = gtk_image_menu_item_new_with_mnemonic (_("_Open"));
+-  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_open), view);
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_show (item);
++	  /* set the stock icon */
++	  image = gtk_image_new_from_stock (GTK_STOCK_OPEN, GTK_ICON_SIZE_MENU);
++	  gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
++	  gtk_widget_show (image);
+ 
+-  /* set the stock icon */
+-  image = gtk_image_new_from_stock (GTK_STOCK_OPEN, GTK_ICON_SIZE_MENU);
+-  gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
+-  gtk_widget_show (image);
++	  /* append the "Open in New Window" menu action */
++	  item = gtk_image_menu_item_new_with_mnemonic (_("Open in New Window"));
++	  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_open_in_new_window), view);
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_show (item);
+ 
+-  /* append the "Open in New Window" menu action */
+-  item = gtk_image_menu_item_new_with_mnemonic (_("Open in New Window"));
+-  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_open_in_new_window), view);
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_show (item);
++	  /* append a menu separator */
++	  item = gtk_separator_menu_item_new ();
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_show (item);
++	}
+ 
+-  /* append a menu separator */
+-  item = gtk_separator_menu_item_new ();
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_show (item);
+ 
+   /* check if we have a volume here */
+   if (G_UNLIKELY (volume != NULL))
+     {
+       /* append the "Mount Volume" menu action */
+-      item = gtk_image_menu_item_new_with_mnemonic (_("_Mount Volume"));
+-      gtk_widget_set_sensitive (item, !thunar_vfs_volume_is_mounted (volume));
+-      g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_mount), view);
+-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-      gtk_widget_show (item);
+-
++	  if (thunar_vfs_volume_is_mountable (volume))
++        {
++		  item = gtk_image_menu_item_new_with_mnemonic (_("_Mount Volume"));
++		  gtk_widget_set_sensitive (item, !thunar_vfs_volume_is_mounted (volume));
++		  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_mount), view);
++		  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++		  gtk_widget_show (item);
++		}
+       /* check if the volume is ejectable */
+       if (thunar_vfs_volume_is_ejectable (volume))
+         {
+@@ -856,12 +863,15 @@
+         }
+       else
+         {
+-          /* append the "Unmount Volume" menu item */
+-          item = gtk_image_menu_item_new_with_mnemonic (_("_Unmount Volume"));
+-          gtk_widget_set_sensitive (item, thunar_vfs_volume_is_mounted (volume));
+-          g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_unmount), view);
+-          gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-          gtk_widget_show (item);
++	  	  if (thunar_vfs_volume_is_mountable (volume))
++			{
++			  /* append the "Unmount Volume" menu item */
++			  item = gtk_image_menu_item_new_with_mnemonic (_("_Unmount Volume"));
++			  gtk_widget_set_sensitive (item, thunar_vfs_volume_is_mounted (volume));
++			  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_shortcuts_view_unmount), view);
++			  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++			  gtk_widget_show (item);
++			}
+         }
+ 
+       /* append a menu separator */
+diff -rNaud thunar-SVN29407-orig/thunar/thunar-tree-view.c thunar-SVN29407/thunar/thunar-tree-view.c
+--- thunar-SVN29407-orig/thunar/thunar-tree-view.c	2009-01-29 21:28:03.000000000 +0100
++++ thunar-SVN29407/thunar/thunar-tree-view.c	2009-02-01 14:36:17.000000000 +0100
+@@ -1058,40 +1058,48 @@
+ 
+   /* prepare the popup menu */
+   menu = gtk_menu_new ();
++  
++  /* We don't need these items for non mountable volumes */ 
++  if ((G_UNLIKELY (volume == NULL)) || (thunar_vfs_volume_is_mountable (volume)))
++    {
+ 
+-  /* append the "Open" menu action */
+-  item = gtk_image_menu_item_new_with_mnemonic (_("_Open"));
+-  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_open), view);
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_set_sensitive (item, (file != NULL || volume != NULL));
+-  gtk_widget_show (item);
+-
+-  /* set the stock icon */
+-  image = gtk_image_new_from_stock (GTK_STOCK_OPEN, GTK_ICON_SIZE_MENU);
+-  gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
+-  gtk_widget_show (image);
++	  /* append the "Open" menu action */
++	  item = gtk_image_menu_item_new_with_mnemonic (_("_Open"));
++	  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_open), view);
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_set_sensitive (item, (file != NULL || volume != NULL));
++	  gtk_widget_show (item);
+ 
+-  /* append the "Open in New Window" menu action */
+-  item = gtk_image_menu_item_new_with_mnemonic (_("Open in New Window"));
+-  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_open_in_new_window), view);
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_set_sensitive (item, (file != NULL || volume != NULL));
+-  gtk_widget_show (item);
++	  /* set the stock icon */
++	  image = gtk_image_new_from_stock (GTK_STOCK_OPEN, GTK_ICON_SIZE_MENU);
++	  gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
++	  gtk_widget_show (image);
+ 
+-  /* append a separator item */
+-  item = gtk_separator_menu_item_new ();
+-  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-  gtk_widget_show (item);
++	  /* append the "Open in New Window" menu action */
++	  item = gtk_image_menu_item_new_with_mnemonic (_("Open in New Window"));
++	  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_open_in_new_window), view);
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_set_sensitive (item, (file != NULL || volume != NULL));
++	  gtk_widget_show (item);
+ 
++	  /* append a separator item */
++	  item = gtk_separator_menu_item_new ();
++	  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++	  gtk_widget_show (item);
++	}
++	
++  /* check if we have a volume here */	
+   if (G_UNLIKELY (volume != NULL))
+     {
+       /* append the "Mount Volume" menu action */
+-      item = gtk_image_menu_item_new_with_mnemonic (_("_Mount Volume"));
+-      gtk_widget_set_sensitive (item, !thunar_vfs_volume_is_mounted (volume));
+-      g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_mount), view);
+-      gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-      gtk_widget_show (item);
+-
++	  if (thunar_vfs_volume_is_mountable (volume))
++        {
++		  item = gtk_image_menu_item_new_with_mnemonic (_("_Mount Volume"));
++		  gtk_widget_set_sensitive (item, !thunar_vfs_volume_is_mounted (volume));
++		  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_mount), view);
++		  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++		  gtk_widget_show (item);
++		}
+       /* check if the volume is ejectable */
+       if (thunar_vfs_volume_is_ejectable (volume))
+         {
+@@ -1102,15 +1110,17 @@
+           gtk_widget_show (item);
+         }
+       else
+-        {
+-          /* append the "Unmount Volume" menu item */
+-          item = gtk_image_menu_item_new_with_mnemonic (_("_Unmount Volume"));
+-          gtk_widget_set_sensitive (item, thunar_vfs_volume_is_mounted (volume));
+-          g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_unmount), view);
+-          gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+-          gtk_widget_show (item);
+-        }
+-
++	    {
++	  	  if (thunar_vfs_volume_is_mountable (volume))
++			{
++			  /* append the "Unmount Volume" menu item */
++			  item = gtk_image_menu_item_new_with_mnemonic (_("_Unmount Volume"));
++			  gtk_widget_set_sensitive (item, thunar_vfs_volume_is_mounted (volume));
++			  g_signal_connect_swapped (G_OBJECT (item), "activate", G_CALLBACK (thunar_tree_view_action_unmount), view);
++			  gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++			  gtk_widget_show (item);
++			}
++		}
+       /* append a menu separator */
+       item = gtk_separator_menu_item_new ();
+       gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
+diff -rNaud thunar-SVN29407-orig/thunar-vfs/thunar-vfs-volume-hal.c thunar-SVN29407/thunar-vfs/thunar-vfs-volume-hal.c
+--- thunar-SVN29407-orig/thunar-vfs/thunar-vfs-volume-hal.c	2009-01-29 21:28:09.000000000 +0100
++++ thunar-SVN29407/thunar-vfs/thunar-vfs-volume-hal.c	2009-02-01 14:37:05.000000000 +0100
+@@ -1014,9 +1014,6 @@
+ 
+   if (G_LIKELY (hv != NULL))
+     {
+-      /* check if we have a mountable file system here */
+-      if (libhal_volume_get_fsusage (hv) == LIBHAL_VOLUME_USAGE_MOUNTABLE_FILESYSTEM)
+-        {
+           /* determine the UDI of the drive to which this volume belongs */
+           drive_udi = libhal_volume_get_storage_device_udi (hv);
+           if (G_LIKELY (drive_udi != NULL))
+@@ -1051,7 +1048,6 @@
+                   libhal_drive_free (hd);
+                 }
+             }
+-        }
+ 
+       /* release the HAL volume */
+       libhal_volume_free (hv);
