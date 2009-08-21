@@ -2,20 +2,27 @@
 # URL: http://www.inf.enst.fr/~demaille/a2ps/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: perl, psutils
+# Depends on: perl, psutils, ghostscript, imagemagick
 
 name=a2ps
-version=4.13b
-release=3
+version=4.14
+release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz \
-ftp://ftp.enst.fr/pub/unix/a2ps/i18n-fonts-0.1.tar.gz)
+ftp://ftp.enst.fr/pub/unix/a2ps/i18n-fonts-0.1.tar.gz \
+a2ps-4.14-check-mempcpy.patch a2ps-4.14-fix-stpcpy-proto.patch \
+a2ps-4.13c-fnmatch-replacement.patch)
 
 build() {
-cd $name-4.13
+	cd $name-$version
+	patch -p1 < ../a2ps-4.13c-fnmatch-replacement.patch
+	patch -p1 < ../a2ps-4.14-check-mempcpy.patch
+	patch -p0 < ../a2ps-4.14-fix-stpcpy-proto.patch
 	sed -i "s|emacs||" contrib/Makefile.in
 	sed -i 's/+0 -1/-k 1,2/' afm/make_fonts_map.sh
 	sed -i "s|/usr/local/share|/usr/share|" configure
-	sed -i "s|char \*malloc ();|/* & */|" lib/path-concat.c
+#	sed -i "s|char \*malloc ();|/* & */|" lib/path-concat.c
+	libtoolize --force --copy
+	autoreconf -I m4
 	./configure --prefix=/usr \
 	--mandir=/usr/share/man \
 	--infodir=/usr/share/info \

@@ -1,2 +1,5 @@
-0c8e0c31b08c14f7a7198ce967eb3281  a2ps-4.13b.tar.gz
+93011b58e9f20a7fafa31287a51884a4  a2ps-4.13c-fnmatch-replacement.patch
+42aa39b74f6da8cf6e94185c4fc3e601  a2ps-4.14-check-mempcpy.patch
+066f9327fee6b6eca3a57d657d1097d1  a2ps-4.14-fix-stpcpy-proto.patch
+781ac3d9b213fa3e1ed0d79f986dc8c7  a2ps-4.14.tar.gz
 fee1456d0e6e94af4fc5b5a1bb9687b7  i18n-fonts-0.1.tar.gz
