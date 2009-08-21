@@ -68,6 +68,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.0/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/difference-of-gaussians.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/difference.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/difference.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/display.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/display.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/divide.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/divide.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/dropshadow.la
@@ -86,6 +88,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.0/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/exclusion.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/exr-load.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/exr-load.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/ff-load.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/ff-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/fractal-explorer.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/fractal-explorer.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/gamma.la
@@ -180,6 +184,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.0/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/subtract.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-huerotate.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-huerotate.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-load.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-luminancetoalpha.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-luminancetoalpha.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/svg-matrix.la
