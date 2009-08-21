@@ -5,9 +5,9 @@
 # Depends on: 
 
 name=libraw1394
-version=1.2.1
+version=2.0.2
 release=1
-source=(http://www.linux1394.org/dl/libraw1394-$version.tar.gz)
+source=(http://downloads.sourceforge.net/linux1394/files/libraw1394-$version.tar.gz)
 
 build() {
 	cd $name-$version
