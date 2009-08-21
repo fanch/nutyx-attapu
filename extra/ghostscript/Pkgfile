@@ -1,24 +1,33 @@
 # Description: Permet le rendu des documents Postscripts vers différentes cibles
 # URL: http://www.ghostscript.com/awki
-# Maintainer: Linux From Scratch 
+# Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups
+# Depends on: cups, fontconfig
 
 name=ghostscript
-version=8.63
+version=8.70
 release=1
 source=( http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
 	 ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/ghostscript-fonts-std-8.11.tar.gz\
-	 http://ftp.gnu.org/pub/gnu/ghostscript/gnu-gs-fonts-other-6.0.tar.gz)
+	 http://ftp.gnu.org/pub/gnu/ghostscript/gnu-gs-fonts-other-6.0.tar.gz ghostscript-fPIC.patch)
 
 build() {
 	cd $name-$version
-	sed -i "s/bbox.dev$/x11.dev/" Makefile.in
-	./configure --prefix=/usr \
-		--mandir=/usr/share/man \
-		--infodir=/usr/share/info \
-		--without-omni \
-		--enable-threads
+
+if [ "`uname -m`" == "x86_64" ]; then
+    patch -Np1 -i ../ghostscript-fPIC.patch
+fi
+	
+	cd ijs
+	./autogen.sh
+	./configure --prefix=/usr --enable-shared --disable-static
+	make
+	make DESTDIR=$PKG install
+
+	cd ..
+	./configure --prefix=/usr --enable-dynamic --enable-threads --with-ijs \
+		--with-jbig2dec --with-omni --with-x --with-drivers=ALL  \
+		--with-fontpath=/usr/share/fonts/Type1:/usr/share/fonts
 	make
 	make DESTDIR=$PKG install
 	cd ..
