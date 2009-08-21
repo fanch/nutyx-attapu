@@ -1,0 +1,22 @@
+# Description: Themes supplementaires pour Xfce
+# URL: http://www.xfce.org
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: xfwm4
+
+name=xfwm4-themes
+version=4.6.0
+release=3
+source=(http://www.xfce.org/archive/xfce-4.6.1/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
