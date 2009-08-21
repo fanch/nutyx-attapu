@@ -1,0 +1,6 @@
+#!/bin/bash
+update-desktop-database
+
+sed -i "s/^id:[3-5]/id:4/" /etc/inittab
+
+sed -i "s/^\(Session=\).*$/\1xfce/g" /etc/skel/.dmrc
