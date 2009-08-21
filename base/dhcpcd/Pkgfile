@@ -2,7 +2,7 @@
 # URL: http://roy.marples.name/projects/dhcpcd
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: more 
+# Depends on:
 
 name=dhcpcd
 version=5.0.6
