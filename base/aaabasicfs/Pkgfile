@@ -155,6 +155,10 @@ EOF
 		sed -i "s|nutyx-initrd|nutyx-initrd_64|" \
 		$PKG/boot/grub/menu.lst
 	fi
+	cat > $PKG/etc/skel/.dmrc << "EOF"
+[Desktop]
+Session=
+EOF
 	mkdir -v $PKG/etc/X11
 	cp -v xorg.conf $PKG/etc/X11/
 	cd $PKG/root/

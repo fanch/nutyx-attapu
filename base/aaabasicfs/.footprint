@@ -101,6 +101,7 @@ lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S90sysctl -> ../init.d/sysctl
 drwxr-xr-x	root/root	etc/skel/
 -rw-r--r--	root/root	etc/skel/.bash_profile
 -rw-r--r--	root/root	etc/skel/.bashrc
+-rw-r--r--	root/root	etc/skel/.dmrc
 lrwxrwxrwx	root/root	etc/skel/.xinitrc -> /etc/slim.xinitrc
 drwxr-xr-x	root/root	etc/sysconfig/
 -rw-r--r--	root/root	etc/sysconfig/clock
