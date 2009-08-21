@@ -1,0 +1,28 @@
+# Description: Librairie d'extension pour Xfce
+# URL: http://www.os-cillation.de/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: hal, fuse, libnotify, libxfce4util, perl, p5-uri, pygtk, python
+
+name=exo
+version=0.3.101
+release=2
+source=(http://www.xfce.org/archive/xfce-4.6.1/src/$name-$version.tar.bz2 \
+exo-alt-eject.patch \
+exo-mount-options.patch)
+
+build() {
+cd $name-$version
+patch -p1 < ../exo-alt-eject.patch
+patch -p1 < ../exo-mount-options.patch
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static \
+	--enable-python \
+	--enable-notifications
+	make
+	make DESTDIR=$PKG install
+}
+

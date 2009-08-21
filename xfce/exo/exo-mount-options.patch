@@ -1,0 +1,41 @@
+diff -Nur -x '*.orig' -x '*~' exo-0.3.4/exo-mount/exo-mount-hal.c exo-0.3.4.new/exo-mount/exo-mount-hal.c
+--- exo-0.3.4/exo-mount/exo-mount-hal.c	2008-03-04 19:25:43.000000000 +0100
++++ exo-0.3.4.new/exo-mount/exo-mount-hal.c	2008-03-04 19:26:14.000000000 +0100
+@@ -676,6 +676,18 @@
+   /* check if we know any valid mount options */
+   if (G_LIKELY (device->fsoptions != NULL))
+     {
++      /* use utf8 on ubuntu by default */
++      if (strcmp (device->fstype, "vfat") == 0
++       || strcmp (device->fstype, "iso9660") == 0)
++        {
++          options[n++] = g_strdup_printf ("utf8");
++        }
++      /* pass the correct locale to ntfs-3g on ubuntu */
++      if (strcmp (device->fstype, "ntfs") == 0)
++        {
++          options[n++] = g_strdup_printf ("locale=%s", setlocale (LC_ALL, ""));
++        }
++
+       /* process all valid mount options */
+       for (m = 0; device->fsoptions[m] != NULL; ++m)
+         {
+@@ -725,8 +737,16 @@
+               ? exo_str_replace (mount_point, G_DIR_SEPARATOR_S, "_") 
+               : g_strdup ("");
+ 
+-  /* let HAL guess the fstype */
+-  fstype = g_strdup ("");
++  if (strcmp (device->fstype, "ntfs") == 0)
++    {
++      /* override ntfs with ntfs-3g on ubuntu */
++      fstype = g_strdup ("ntfs-3g");
++    }
++  else
++    {
++      /* let HAL guess the fstype */
++      fstype = g_strdup ("");
++    }
+ 
+   /* setup the D-Bus error */
+   dbus_error_init (&derror);
