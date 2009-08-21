@@ -1,0 +1,72 @@
+# Description: Librairie tres évolué de chez Trolltech
+# URL: http://trolltech.com/products/qt
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libpng, libjpeg, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base
+
+name=qt
+version=4.5.2
+release=1
+kdeqtver=14082009
+_name=qt-x11-opensource-src-${version}
+source=(ftp://ftp.qtsoftware.com/qt/source/${_name}.tar.bz2 \
+	http://kiao.no-ip.info/NuTyX/files/kde-qt-patches-${kdeqtver}.tar.bz2 \
+	phonon.patch )
+
+build() {
+	unset QMAKESPC
+	export QT4DIR=$SRC/${_name}
+	export PATH=${QT4DIR}/bin:$PATH
+	cd ${_name}
+	for i in ../kde-qt-patches-${kdeqtver}/*; do
+		echo "applying $i"
+		patch -p1 -i $i
+	done
+	# Install service phonon
+	patch -p1 -i ../phonon.patch
+	./configure -confirm-license -opensource \
+		-prefix /usr \
+		-sysconfdir /etc \
+		-plugindir /usr/lib/qt/plugins \
+		-translationdir /usr/share/qt/translations \
+		-datadir /usr/share/qt \
+		-docdir /usr/share/doc/qt \
+		-examplesdir /usr/share/doc/qt/examples \
+		-demosdir /usr/share/doc/qt/demos \
+		-largefile \
+		-plugin-sql-{mysql,sqlite} \
+		-system-sqlite \
+		-xmlpatterns \
+		-phonon \
+		-svg \
+		-webkit \
+		-scripttools \
+		-system-zlib \
+		-system-libtiff \
+		-system-libpng \
+		-system-libmng \
+		-system-libjpeg \
+		-openssl-linked \
+		-nomake demos \
+		-nomake examples \
+		-nomake docs \
+		-no-rpath \
+		-silent \
+		-optimized-qmake \
+		-dbus \
+		-reduce-relocations \
+		-no-separate-debug-info \
+		-gtkstyle \
+		-opengl \
+		-glib
+
+	make -j3
+	make INSTALL_ROOT=$PKG install
+ 	rm -rf $PKG/usr/doc
+		# cleanup and path fixes
+	find $PKG/usr/lib -type f -name '*prl' -print -exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d" {} \;
+	sed -i -e "s|-L$srcdir/${_pkgfqn}/lib||g" $PKG/usr/lib/pkgconfig/*.pc
+	sed -i -e "s|$srcdir/${_pkgfqn}/bin/moc|/usr/bin/moc|g" $PKG/usr/lib/pkgconfig/*.pc
+	sed -i -e "s|$srcdir/${_pkgfqn}/bin/uic|/usr/bin/uic|g" $PKG/usr/lib/pkgconfig/*.pc
+
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+if ( pkginfo -i | grep phonon > /dev/null ) ; then
+        pkgrm phonon
+fi
