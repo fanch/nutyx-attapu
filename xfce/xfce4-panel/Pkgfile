@@ -1,0 +1,22 @@
+# Description: Panel de Xfce
+# URL: http://www.xfce.org/projects/xfce4-panel/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: cairo, dbus-glib, exo, libxfcegui4, libxfce4util, libwnck, startup-notification, xfconf
+
+name=xfce4-panel
+version=4.6.1
+release=2
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
