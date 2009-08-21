@@ -1,0 +1,95 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mysql_client_test_embedded
+-rwxr-xr-x	root/root	usr/bin/mysql_config
+-rwxr-xr-x	root/root	usr/bin/mysqltest_embedded
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/mysql/
+-rw-r--r--	root/root	usr/include/mysql/base64.h
+-rw-r--r--	root/root	usr/include/mysql/config-netware.h
+-rw-r--r--	root/root	usr/include/mysql/config-win.h
+-rw-r--r--	root/root	usr/include/mysql/config.h
+-rw-r--r--	root/root	usr/include/mysql/decimal.h
+-rw-r--r--	root/root	usr/include/mysql/errmsg.h
+-rw-r--r--	root/root	usr/include/mysql/ft_global.h
+-rw-r--r--	root/root	usr/include/mysql/hash.h
+-rw-r--r--	root/root	usr/include/mysql/heap.h
+-rw-r--r--	root/root	usr/include/mysql/help_end.h
+-rw-r--r--	root/root	usr/include/mysql/help_start.h
+-rw-r--r--	root/root	usr/include/mysql/keycache.h
+-rw-r--r--	root/root	usr/include/mysql/m_ctype.h
+-rw-r--r--	root/root	usr/include/mysql/m_string.h
+-rw-r--r--	root/root	usr/include/mysql/my_aes.h
+-rw-r--r--	root/root	usr/include/mysql/my_alarm.h
+-rw-r--r--	root/root	usr/include/mysql/my_alloc.h
+-rw-r--r--	root/root	usr/include/mysql/my_atomic.h
+-rw-r--r--	root/root	usr/include/mysql/my_attribute.h
+-rw-r--r--	root/root	usr/include/mysql/my_base.h
+-rw-r--r--	root/root	usr/include/mysql/my_bit.h
+-rw-r--r--	root/root	usr/include/mysql/my_bitmap.h
+-rw-r--r--	root/root	usr/include/mysql/my_config.h
+-rw-r--r--	root/root	usr/include/mysql/my_dbug.h
+-rw-r--r--	root/root	usr/include/mysql/my_dir.h
+-rw-r--r--	root/root	usr/include/mysql/my_getopt.h
+-rw-r--r--	root/root	usr/include/mysql/my_global.h
+-rw-r--r--	root/root	usr/include/mysql/my_handler.h
+-rw-r--r--	root/root	usr/include/mysql/my_libwrap.h
+-rw-r--r--	root/root	usr/include/mysql/my_list.h
+-rw-r--r--	root/root	usr/include/mysql/my_md5.h
+-rw-r--r--	root/root	usr/include/mysql/my_net.h
+-rw-r--r--	root/root	usr/include/mysql/my_no_pthread.h
+-rw-r--r--	root/root	usr/include/mysql/my_nosys.h
+-rw-r--r--	root/root	usr/include/mysql/my_pthread.h
+-rw-r--r--	root/root	usr/include/mysql/my_stacktrace.h
+-rw-r--r--	root/root	usr/include/mysql/my_sys.h
+-rw-r--r--	root/root	usr/include/mysql/my_time.h
+-rw-r--r--	root/root	usr/include/mysql/my_tree.h
+-rw-r--r--	root/root	usr/include/mysql/my_trie.h
+-rw-r--r--	root/root	usr/include/mysql/my_uctype.h
+-rw-r--r--	root/root	usr/include/mysql/my_user.h
+-rw-r--r--	root/root	usr/include/mysql/my_vle.h
+-rw-r--r--	root/root	usr/include/mysql/my_xml.h
+-rw-r--r--	root/root	usr/include/mysql/myisam.h
+-rw-r--r--	root/root	usr/include/mysql/myisammrg.h
+-rw-r--r--	root/root	usr/include/mysql/myisampack.h
+-rw-r--r--	root/root	usr/include/mysql/mysql.h
+-rw-r--r--	root/root	usr/include/mysql/mysql_com.h
+-rw-r--r--	root/root	usr/include/mysql/mysql_embed.h
+-rw-r--r--	root/root	usr/include/mysql/mysql_time.h
+-rw-r--r--	root/root	usr/include/mysql/mysql_version.h
+-rw-r--r--	root/root	usr/include/mysql/mysqld_ername.h
+-rw-r--r--	root/root	usr/include/mysql/mysqld_error.h
+-rw-r--r--	root/root	usr/include/mysql/mysys_err.h
+-rw-r--r--	root/root	usr/include/mysql/plugin.h
+-rw-r--r--	root/root	usr/include/mysql/queues.h
+-rw-r--r--	root/root	usr/include/mysql/rijndael.h
+-rw-r--r--	root/root	usr/include/mysql/sha1.h
+-rw-r--r--	root/root	usr/include/mysql/sql_common.h
+-rw-r--r--	root/root	usr/include/mysql/sql_state.h
+-rw-r--r--	root/root	usr/include/mysql/sslopt-case.h
+-rw-r--r--	root/root	usr/include/mysql/sslopt-longopts.h
+-rw-r--r--	root/root	usr/include/mysql/sslopt-vars.h
+-rw-r--r--	root/root	usr/include/mysql/t_ctype.h
+-rw-r--r--	root/root	usr/include/mysql/thr_alarm.h
+-rw-r--r--	root/root	usr/include/mysql/thr_lock.h
+-rw-r--r--	root/root	usr/include/mysql/typelib.h
+-rw-r--r--	root/root	usr/include/mysql/violite.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient.so -> libmysqlclient.so.16
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient.so.1 -> libmysqlclient.so.16
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient.so.16 -> mysql/libmysqlclient.so.16
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so -> libmysqlclient_r.so.16
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.1 -> libmysqlclient_r.so.16
+lrwxrwxrwx	root/root	usr/lib/libmysqlclient_r.so.16 -> mysql/libmysqlclient_r.so.16
+drwxr-xr-x	root/root	usr/lib/mysql/
+-rw-r--r--	root/root	usr/lib/mysql/libmysqlclient.a
+-rwxr-xr-x	root/root	usr/lib/mysql/libmysqlclient.la
+lrwxrwxrwx	root/root	usr/lib/mysql/libmysqlclient.so -> libmysqlclient.so.16.0.0
+lrwxrwxrwx	root/root	usr/lib/mysql/libmysqlclient.so.16 -> libmysqlclient.so.16.0.0
+-rwxr-xr-x	root/root	usr/lib/mysql/libmysqlclient.so.16.0.0
+-rw-r--r--	root/root	usr/lib/mysql/libmysqlclient_r.a
+-rwxr-xr-x	root/root	usr/lib/mysql/libmysqlclient_r.la
+lrwxrwxrwx	root/root	usr/lib/mysql/libmysqlclient_r.so -> libmysqlclient_r.so.16.0.0
+lrwxrwxrwx	root/root	usr/lib/mysql/libmysqlclient_r.so.16 -> libmysqlclient_r.so.16.0.0
+-rwxr-xr-x	root/root	usr/lib/mysql/libmysqlclient_r.so.16.0.0
+-rw-r--r--	root/root	usr/lib/mysql/libmysqld.a
