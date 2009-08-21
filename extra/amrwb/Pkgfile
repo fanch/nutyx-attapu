@@ -1,0 +1,26 @@
+# Description: Wrapper library for 3GPP Adaptive Multi-Rate Wideband Floating-point Speech Codec.
+# URL: http://www.penguin.cz/~utx/amr
+# Maintainer: Danny Rawlins, monster dot romster at gmail dot com
+# Packager: Danny Rawlins, monster dot romster at gmail dot com
+# Depends on:
+
+name=amrwb
+version=7.0.0.3
+release=1
+source=(http://ftp.penguin.cz/pub/users/utx/amr/$name-$version.tar.bz2
+	http://www.3gpp.org/ftp/Specs/archive/26_series/26.204/26204-700.zip)
+
+build() {
+	cd $name-$version
+	cp $SRC/26204-700_ANSI-C_source_code.zip .
+	sed -i -e 's|	$(MAKE) $(top_srcdir)/26204-700_ANSI-C_source_code.zip||' Makefile.in
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--disable-static
+
+	make
+	make DESTDIR=$PKG install
+}
+
