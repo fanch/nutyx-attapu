@@ -1,0 +1,22 @@
+# Description:  Raccourcis vers documents, dossiers et medias amovibles
+# URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: thunar, xfce4-panel
+
+name=xfce4-places-plugin
+version=1.1.0
+release=5
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
