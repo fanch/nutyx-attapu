@@ -1,0 +1,22 @@
+# Description: Librairie de base pour Xfce
+# URL: http://ww.xfce.org/projects/libraries/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glib, pygobject
+
+name=libxfce4util
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
