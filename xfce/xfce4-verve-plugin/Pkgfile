@@ -1,0 +1,22 @@
+# Description: Mini command-line Plugin pour Xfce
+# URL: http://xfce-goodies.berlios.de/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail.com
+# Depends on: xfce4-panel, pcre, exo, dbus
+
+name=xfce4-verve-plugin
+version=0.3.6
+release=1
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
