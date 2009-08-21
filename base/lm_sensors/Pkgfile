@@ -1,0 +1,20 @@
+# Description: Collection d'outils pour la supervision du matériel
+# URL: http://dl.lm-sensors.org/lm-sensors/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: sysfsutils
+
+name=lm_sensors
+version=3.1.0
+release=1
+source=(http://dl.lm-sensors.org/lm-sensors/releases/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make
+	make user_install PREFIX=/usr DESTDIR=$PKG
+	mkdir -p $PKG/usr/share/man
+	mv $PKG/usr/man $PKG/usr/share/man
+	rm -rf $PKG/usr/lib/libsensors.a
+	rm -rf $PKG/usr/include/linux
+}
