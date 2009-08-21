@@ -1,0 +1,22 @@
+# Description: Backend de configuration de Xfce
+# URL: http://wiki.xfce.org/releng/4.6/general-info
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: libxfce4util, dbus, dbus-glib, gtk
+
+name=xfconf
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
