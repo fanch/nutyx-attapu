@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Gigolo
+Comment=Acces fichiers distants
+Exec=gigolo
+Icon=gtk-network
+Categories=Application;Network;
+Terminal=false
+Type=Application
+Encoding=UTF-8
