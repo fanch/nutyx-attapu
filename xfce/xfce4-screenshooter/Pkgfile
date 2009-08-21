@@ -1,0 +1,22 @@
+# Description: Permet de faire des captures d'ecrans ou de fenetres
+# URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-screenshooter-plugin
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: xfce4-panel
+
+name=xfce4-screenshooter
+version=1.5.1
+release=1
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
