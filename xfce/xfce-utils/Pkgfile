@@ -1,0 +1,28 @@
+# Description: Utilitaires pour Xfce
+# URL: http://www.xfce.org/projects/xfce-utils/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: dbus, libxfce4util, libxfcegui4, p5-xml-parser
+
+name=xfce-utils
+version=4.6.1
+release=1
+source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+
+# Xinit fix
+	mkdir -p $PKG/etc/X11/xinit
+	cp $PKG/etc/xdg/xfce4/xinitrc $PKG/etc/X11/xinit/xinitrc.xfce
+	chmod 755 $PKG/etc/xdg/xfce4/xinitrc
+	chmod 755 $PKG/etc/X11/xinit/xinitrc.xfce
+}
+
