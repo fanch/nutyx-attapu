@@ -1,0 +1,22 @@
+# Description: Plugin d'édition des tags mp3/ogg pour thunar
+# URL: http://xfce-goodies.berlios.de/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: taglib, thunar
+
+name=thunar-media-tags-plugin
+version=0.1.2
+release=6
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--libexecdir=/usr/lib/xfce4 \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+

@@ -1,0 +1,10 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/thunarx-1/
+-rwxr-xr-x	root/root	usr/lib/thunarx-1/thunar-media-tags-plugin.la
+-rwxr-xr-x	root/root	usr/lib/thunarx-1/thunar-media-tags-plugin.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/thunar-media-tags-plugin.mo
