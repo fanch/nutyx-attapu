@@ -8,7 +8,7 @@ name=virtualbox-module
 version=3.0.4
 release=1
 _name=VirtualBox
-_kernel=2.6.30.4
+_kernel=2.6.30.5
 _build=50677
 source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
 
