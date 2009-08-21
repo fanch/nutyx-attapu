@@ -1,0 +1,33 @@
+# Description: Lecteur multimedia pour Xfce
+# URL: http://spuriousinterrupt.org/projects/xfmedia
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: cairo, intltool, libxfcegui4, pango, taglib, xine-lib, xorg-libxscrnsaver
+
+name=xfmedia
+version=0.9.2
+release=1
+source=(http://spuriousinterrupt.org/files/xfmedia/xfmedia-0.9.2.tar.bz2)
+
+build() {
+# git clone git://git.xfce.org/kelnos/xfmedia
+cd $name*
+#	./autogen.sh --prefix=/usr \
+#	--sysconfdir=/etc \
+#	--libexecdir=/usr/lib \
+#	--localstatedir=/var \
+#	--disable-static \
+#	--with-x \
+#	--disable-debug
+	./configure --prefix=/usr \
+       --sysconfdir=/etc \
+      --libexecdir=/usr/lib \
+      --localstatedir=/var \
+      --disable-static \
+      --with-x \
+      --disable-debug
+
+	make
+	make DESTDIR=$PKG install
+}
+
