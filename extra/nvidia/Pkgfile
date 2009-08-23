@@ -49,7 +49,7 @@ build() {
         install -m644 share/man/man1/* $PKG/usr/share/man/man1/
         rm $PKG/usr/share/man/man1/nvidia-installer.1.gz
 
-        install X11R6/lib/* $PKG/usr/lib/xorg/
+        cp -a X11R6/lib/* $PKG/usr/lib/xorg/
         install -m644 share/applications/nvidia-settings.desktop $PKG/usr/share/applications/
 
         # fix nvidia .desktop file
