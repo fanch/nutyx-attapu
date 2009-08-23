@@ -1,0 +1,33 @@
+# Description: Plugin xine pour phonon
+# URL: http://phonon.kde.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: qt, xine-lib
+name=phonon-xine
+version=4.3.0
+release=1
+_name=phonon
+source=(ftp://ftp.solnet.ch/mirror/KDE/stable/${_name}/$version/${_name}-${version}.tar.bz2)
+build() {
+
+mkdir build
+cd build
+sed -e '/add_subdirectory(phonon)/d' \
+-e '/add_subdirectory(includes)/d' \
+-i ../phonon-${version}/CMakeLists.txt
+cmake ../${_name}-${version} \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DCMAKE_SKIP_RPATH=ON \
+	-DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
+	-DWITH_GStreamer=OFF
+cd xine
+make
+mkdir -p $PKG/usr/lib/qt
+mkdir -p $PKG/usr/share/icons/hicolor
+cd $SRC/build
+        make DESTDIR=$PKG install
+        mv $PKG/$KDE_PREFIX/lib/kde4/plugins $PKG/usr/lib/qt
+        mv $PKG/$KDE_PREFIX/share/icons/oxygen $PKG/usr/share/icons/hicolor
+        rm -f $PKG/usr/lib/pkgconfig/phonon.pc
+}
