@@ -1,0 +1,20 @@
+# Description: Outils graphiques pour KDE 4
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdebase-runtime, shared-mime-info, exiv2, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
+
+name=kdegraphics
+version=4.3.0
+release=1
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DBUILD_doc=OFF
+	make -j3
+	make DESTDIR=$PKG install
+}
+
