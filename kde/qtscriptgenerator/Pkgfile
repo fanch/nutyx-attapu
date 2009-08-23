@@ -1,0 +1,28 @@
+# Description:Outil pour générer Qt binding pour Qt script
+# URL:http://code.google.com/p/qtscriptgenerator/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: qt
+name=qtscriptgenerator
+version=0.1.0
+release=1
+group=travail
+
+source=(http://$name.googlecode.com/files/$name-src-$version.tar.gz \
+        qtscriptgenerator.gcc-4.4.patch)
+
+build() {
+	cd $name-src-$version/generator
+  # prepare plugins
+ 	patch -Np1 -i $SRC/qtscriptgenerator.gcc-4.4.patch
+	qmake
+	make
+ 	./generator --include-paths=/usr/include
+  # build plugins
+	cd ../qtbindings
+	qmake
+	make
+  # move plugins to correct directory
+	mkdir -p $PKG/usr/lib/qt/plugins/script
+	mv $SRC/$name-src-$version/plugins/script/* $PKG/usr/lib/qt/plugins/script/
+}
