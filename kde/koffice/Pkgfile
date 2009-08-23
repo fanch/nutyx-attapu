@@ -1,0 +1,41 @@
+# Description: Suite office intégrée dans KDE
+# URL: http://www.koffice.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kdebase, kdepim
+
+name=koffice
+version=2.0.2
+release=1
+source=(http://download.kde.org/stable/${name}-$version/src/${name}-$version.tar.bz2\
+        http://download.kde.org/stable/${name}-$version/src/${name}-l10n/${name}-l10n-fr-$version.tar.bz2)
+build() {
+        mkdir build
+        cd build
+        cmake ../${name}-l10n-fr-$version \
+                -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make -j3
+        make DESTDIR=$PKG install
+        rm -r *
+        cmake ../${name}-$version -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make -j3
+        make DESTDIR=$PKG install
+        for i in format-justify-center.png format-justify-fill.png \
+        format-justify-left.png \
+        format-justify-right.png \
+        format-text-bold.png \
+        format-text-italic.png \
+        format-text-underline.png \
+        object-group.png \
+        object-order-back.png \
+        object-order-front.png \
+        object-order-lower.png \
+        object-order-raise.png \
+        object-ungroup.png
+        do
+                if [ -f $PKG/$KDE_PREFIX/share/icons/oxygen/16x16/actions/$i ]; then
+                        rm $PKG/$KDE_PREFIX/share/icons/oxygen/16x16/actions/$i
+                fi
+        done
+        rm -r $PKG/$KDE_PREFIX/share/doc/HTML/en
+}
