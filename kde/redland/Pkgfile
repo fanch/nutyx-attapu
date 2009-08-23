@@ -1,0 +1,19 @@
+# Description: Librairies RDF de Redland
+# URL: http://download.librdf.org/source/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: raptor, rasqal
+
+name=redland
+version=1.0.8
+release=1
+source=(http://download.librdf.org/source/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/gtk-doc
+}
