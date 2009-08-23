@@ -27,6 +27,7 @@ drwxr-xr-x	root/root	etc/sane.d/dll.d/
 -rw-r--r--	root/root	etc/sane.d/epson2.conf
 -rw-r--r--	root/root	etc/sane.d/fujitsu.conf
 -rw-r--r--	root/root	etc/sane.d/genesys.conf
+-rw-r--r--	root/root	etc/sane.d/gphoto2.conf
 -rw-r--r--	root/root	etc/sane.d/gt68xx.conf
 -rw-r--r--	root/root	etc/sane.d/hp.conf
 -rw-r--r--	root/root	etc/sane.d/hp3900.conf
@@ -199,6 +200,10 @@ lrwxrwxrwx	root/root	usr/lib/sane/libsane-fujitsu.so.1 -> libsane-fujitsu.so.1.0
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-genesys.so -> libsane-genesys.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-genesys.so.1 -> libsane-genesys.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-genesys.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-gphoto2.la
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-gphoto2.so -> libsane-gphoto2.so.1.0.20
+lrwxrwxrwx	root/root	usr/lib/sane/libsane-gphoto2.so.1 -> libsane-gphoto2.so.1.0.20
+-rwxr-xr-x	root/root	usr/lib/sane/libsane-gphoto2.so.1.0.20
 -rwxr-xr-x	root/root	usr/lib/sane/libsane-gt68xx.la
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-gt68xx.so -> libsane-gt68xx.so.1.0.20
 lrwxrwxrwx	root/root	usr/lib/sane/libsane-gt68xx.so.1 -> libsane-gt68xx.so.1.0.20
@@ -439,6 +444,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/sane-epson2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-fujitsu.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-genesys.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/sane-gphoto2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-gt68xx.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/sane-hp3500.5.gz
