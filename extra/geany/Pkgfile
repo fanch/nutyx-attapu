@@ -1,0 +1,17 @@
+# Description: Editeur syntaxique avec les base d'un environnement de développement intégré
+# URL: http://www.geany.org/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: atk, expat, fontconfig, freetype, glib, glitz, gcc-libs, glibc, gtk, libpng, pango, pixman, zlib 
+
+name=geany
+version=0.18
+release=1
+source=(http://download.$name.org/$name-$version.tar.bz2)
+build() {
+cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
