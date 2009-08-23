@@ -1,0 +1,21 @@
+# Description: Inclus calculatrice, calpin, éditeurs simple KDE4
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdebase-runtime, libarchive, libzip, kdepimlibs, pyqt, pycups
+
+name=kdeutils
+version=4.3.0
+release=1
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../  -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DINSTALL_PRINTER_APPLET=TRUE \
+	-DBUILD_doc=OFF
+	make -j3
+	make DESTDIR=$PKG install
+}
+
