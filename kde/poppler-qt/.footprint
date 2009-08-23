@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/poppler/
+drwxr-xr-x	root/root	usr/include/poppler/qt4/
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-annotation.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-export.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-form.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-link.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-optcontent.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-page-transition-private.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-page-transition.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-qt4.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libpoppler-qt4.la
+lrwxrwxrwx	root/root	usr/lib/libpoppler-qt4.so -> libpoppler-qt4.so.3.1.0
+lrwxrwxrwx	root/root	usr/lib/libpoppler-qt4.so.3 -> libpoppler-qt4.so.3.1.0
+-rwxr-xr-x	root/root	usr/lib/libpoppler-qt4.so.3.1.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/poppler-qt4.pc
