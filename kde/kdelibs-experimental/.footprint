@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/kde/
+drwxr-xr-x	root/root	opt/kde/include/
+drwxr-xr-x	root/root	opt/kde/include/knotificationitem-1/
+-rw-r--r--	root/root	opt/kde/include/knotificationitem-1/knotificationitem.h
+-rw-r--r--	root/root	opt/kde/include/knotificationitem-1/knotificationitem_export.h
+drwxr-xr-x	root/root	opt/kde/lib/
+lrwxrwxrwx	root/root	opt/kde/lib/libknotificationitem-1.so -> libknotificationitem-1.so.1
+lrwxrwxrwx	root/root	opt/kde/lib/libknotificationitem-1.so.1 -> libknotificationitem-1.so.1.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknotificationitem-1.so.1.0.0
+drwxr-xr-x	root/root	opt/kde/share/
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.NotificationItem.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.NotificationItemWatcher.xml
