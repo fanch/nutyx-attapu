@@ -1,0 +1,301 @@
+--- kdeadmin-4.1.96/knetworkconf/backends/network-conf.cmake~	2009-01-14 14:49:49.000000000 +0000
++++ kdeadmin-4.1.96/knetworkconf/backends/network-conf.cmake	2009-01-14 15:11:35.000000000 +0000
+@@ -77,7 +77,7 @@
+               "mandriva-2006.1", "mandriva-2007.0", "mandriva-2007.1", "mandriva-2008.0", "mandriva-2008.1",
+               "vine-3.0", "vine-3.1",
+               "slackware-9.1.0", "slackware-10.0.0", "slackware-10.1.0",
+-              "gentoo", "vlos-1.2", "freebsd-5", "freebsd-6", "ark");
++              "gentoo", "vlos-1.2", "freebsd-5", "freebsd-6", "ark", "nutyx");
+ 
+ $description =<<"end_of_description;";
+        Configures all network parameters and interfaces.
+--- kdeadmin-4.1.96/knetworkconf/backends/platform.pl.cmake~	2009-01-14 14:50:03.000000000 +0000
++++ kdeadmin-4.1.96/knetworkconf/backends/platform.pl.cmake	2009-01-14 15:32:11.000000000 +0000
+@@ -108,6 +108,7 @@
+   "yoper-2.2"       => "Yoper Linux  2.2 (for i686)",  
+   "specifix"        => "Specifix Linux",
+   "ark"             => "Ark Linux",
++  "nutyx"           => "NuTyX 2008",
+ };
+   
+ sub check_lsb
+@@ -367,7 +368,22 @@
+   close ARK;
+   return -1;
+ }
+-
++sub check_nutyx
++{
++   open NUTYX, "$gst_prefix/etc/nutyx-version" or return -1;
++   while (<NUTYX>)
++   {
++     $ver =$_;
++     chomp ($ver);
++     if ($ver=~ /^2008/)
++     {
++        close NUTYX;
++        return "nutyx";
++     }
++   }
++   close NUTYX;
++   return -1;
++}
+ sub check_conectiva
+ {
+   open RELEASE, "$gst_prefix/etc/conectiva-release" or return -1;
+@@ -565,7 +581,7 @@
+     # Red Hat check must run after Vine, Mandrake and Fedora, and Mandrake after BlackPanther
+     "Linux" => [ \&check_lsb,      \&check_debian,   \&check_caldera, \&check_suse, \&check_blackpanther, \&check_vine,
+                  \&check_fedora, \&check_yoper, \&check_mandrake, \&check_mandriva, \&check_conectiva, \&check_linuxppc, \&check_redhat,  \&check_openna,
+-                 \&check_turbolinux, \&check_slackware, \&check_vlos, \&check_gentoo, \&check_pld, \&check_specifix, \&check_archlinux, \&check_ark ],
++                 \&check_turbolinux, \&check_slackware, \&check_vlos, \&check_gentoo, \&check_pld, \&check_specifix, \&check_archlinux, \&check_ark, \&check_nutyx ],
+     "FreeBSD" => [ \&check_freebsd ],
+     "SunOS"    => [ \&check_solaris ]
+                );
+--- kdeadmin-4.1.96/knetworkconf/backends/service.pl.cmake~	2009-01-14 14:49:11.000000000 +0000
++++ kdeadmin-4.1.96/knetworkconf/backends/service.pl.cmake	2009-01-14 14:58:36.000000000 +0000
+@@ -114,6 +114,7 @@
+        "vine-3.0"     => ["$gst_prefix/etc/rc.d", "$gst_prefix/etc/rc.d/init.d", "../init.d"],
+        "vine-3.1"     => ["$gst_prefix/etc/rc.d", "$gst_prefix/etc/rc.d/init.d", "../init.d"],
+        "ark"          => ["$gst_prefix/etc/rc.d", "$gst_prefix/etc/init.d", "../init.d"],
++       "nutyx" => ["$gst_prefix/etc/rc.d", "$gst_prefix/etc/rc.d/init.d", "../init.d"],
+        );
+   my $res;
+ 
+@@ -195,6 +196,7 @@
+        "vine-3.1"       => [3, 5],
+ 
+        "ark"            => [3, 5],
++       "nutyx"          => [3, 5],
+        );
+   my $res;
+ 
+@@ -285,6 +287,7 @@
+      "freebsd-6"      => "freebsd-5",
+ 
+      "ark"            => "redhat-5.2",
++     "nutyx"          => "redhat-5.2",
+     );
+ 
+   %runlevels=
+@@ -1642,6 +1645,7 @@
+        "freebsd-6"    => \&gst_service_rcng_get_status,
+ 
+        "ark"          => \&gst_service_redhat_get_status,
++       "nutyx"        => \&gst_service_redhat_get_status,
+       );
+   my $proc;
+ 
+--- kdeadmin-4.1.96/knetworkconf/knetworkconf/knetworkconfigparser.cpp~	2009-01-14 14:51:33.000000000 +0000
++++ kdeadmin-4.1.96/knetworkconf/knetworkconf/knetworkconfigparser.cpp	2009-01-14 16:58:07.000000000 +0000
+@@ -1135,7 +1135,11 @@
+       QPixmap distroImg(KStandardDirs::locate("data","knetworkconf/pixmaps/ark.png"));
+       widget->klbDistroList->insertItem(distroImg, name);
+     }
+-
++    else if (key.contains("nutyx"))
++    {
++      QPixmap distroImg(KStandardDirs::locate("data","knetworkconf/pixmaps/nutyx.png"));
++      widget->klbDistroList->insertItem(distroImg, name);
++    }
+   }
+ 
+   if (!dialog->exec())
+--- kdeadmin-4.1.96/knetworkconf/backends/network.pl.cmake~	2009-01-14 14:49:28.000000000 +0000
++++ kdeadmin-4.1.96/knetworkconf/backends/network.pl.cmake	2009-01-14 20:57:04.000000000 +0000
+@@ -541,6 +541,7 @@
+        "freebsd-5"    => "debian-2.2",
+        "freebsd-6"    => "debian-2.2",
+        "ark"          => "redhat-6.2",
++       "nutyx"        => "redhat-6.2",
+        );
+ 
+   return $cmd_map{$dist_map{$gst_dist}};
+@@ -1115,7 +1116,23 @@
+ {
+   return @{&gst_network_sysconfig_dir_ifaces_get_existing ("/etc/sysconfig/interfaces")};
+ }
++sub gst_network_nutyx_ifaces_get_existing
++{
++  my (@ret, $i, $name);
++  local *IFACE_DIR;
++  
++  if (opendir IFACE_DIR, "/etc/sysconfig/network-devices")
++  {
++    foreach $i (readdir (IFACE_DIR))
++    {
++      push @ret, $1 if ($i =~ /^ifcfg-(.+)$/);
++    }
++
++    closedir (IFACE_DIR);
++  }
+ 
++  return \@ret;
++}
+ sub gst_network_slackware91_ifaces_get_existing
+ {
+   my $file = "/etc/rc.d/rc.inet1.conf";
+@@ -1773,6 +1790,23 @@
+   return "$dev$i";
+ }
+ 
++sub gst_network_nutyx_get_file
++{
++  my ($iface) = @_;
++  my ($pre, $i, $dev);
++                                                                                
++  $dev = $$iface{"dev"};
++  $pre = "$gst_prefix/etc/sysconfig/network-devices/ifconfig.";
++                                                                                
++  return $dev if ! -e "$pre$dev";
++                                                                                
++  $dev =~ s/[0-9]*$//;
++                                                                                
++  $i = 0;
++  $i ++ while (-e "$pre$dev$i");
++                                                                                
++  return "$dev$i";
++}
+ sub gst_network_get_file
+ {
+   my ($iface) = @_;
+@@ -1839,6 +1873,7 @@
+ 	  "freebsd-5"    => \&gst_network_deb22_get_file,
+ 	  "freebsd-6"    => \&gst_network_deb22_get_file,
+ 	  "ark"          => \&get_network_rh62_get_file,
++          "nutyx"        => \&get_network_nutyx_get_file,
+ 	  );
+ 
+   $proc = $dist_map{$gst_dist};
+@@ -3959,6 +3994,7 @@
+ 	  "freebsd-5"    => "",
+ 	  "freebsd-6"    => "",
+ 	  "ark"          => "lo",
++          "nutyx"        => "lo",
+ 	  );
+ 
+   $dev = $dist_map {$gst_dist};
+@@ -4104,6 +4140,7 @@
+ 	  "freebsd-5"    => "freebsd-5",
+ 	  "freebsd-6"    => "freebsd-5",
+ 	  "ark"          => "ark",
++          "nutyx"        => "nutyx",
+ 	  );
+ 
+   my %dist_tables =
+@@ -4525,6 +4562,34 @@
+ 		    [ "interface",     \&gst_network_interfaces_get ]
+ 		    ]
+ 			 },
++	  "nutyx" =>
++	  {
++	    fn =>
++	    {
++        HOSTNAME_CONF => "/etc/sysconfig/network",
++        RESOLV_CONF  => "/etc/resolv.conf",
++        HOSTS        => "/etc/hosts",
++        SMB_CONF     => "/etc/samba/smb.conf",
++      },
++	    table =>
++		   [
++		    [ "hostname",      \&gst_parse_sh,                HOSTNAME_CONF, HOSTNAME ],
++        [ "userifacectl",  \&gst_parse_trivial,           1 ],
++		    [ "nameserver",    \&gst_parse_split_all_unique_hash_comment, RESOLV_CONF,  "nameserver", "[ \t]+" ],
++		    [ "searchdomain",  \&gst_parse_split_first_array_unique, RESOLV_CONF,  "search", "[ \t]+", "[ \t]+" ],
++		    [ "domain",        \&gst_parse_split_first_str,   RESOLV_CONF,  "domain", "[ \t]+" ],
++		    [ "statichost",    \&gst_parse_split_hash,        HOSTS,        "[ \t]+", "[ \t]+" ],
++		    [ "workgroup",     \&gst_parse_ini,               SMB_CONF,     "global", "workgroup" ],     
++		    [ "smbdesc",       \&gst_network_rh_get_smb_desc, SMB_CONF,   "global", "server string", "%hostname%" ],
++		    [ "winsserver",    \&gst_parse_ini,               SMB_CONF,     "global", "wins server" ],
++		    [ "winsuse",       \&gst_parse_ini_bool,          SMB_CONF,     "global", "wins support" ],
++        [ "smbuse",        \&gst_service_sysv_get_status_any, "smbd", "nmbd" ],
++        [ "smbinstalled",  \&gst_service_sysv_installed,  "smb" ],
++        [ "smartdhcpcd",   \&gst_file_tool_installed,     "dhcpcd" ],
++        [ "dialinstalled", \&gst_file_tool_installed,     "kppp" ],
++		    [ "interface",     \&gst_network_interfaces_get ]
++		    ]
++			 },
+ 
+    );
+   
+@@ -4600,6 +4665,7 @@
+ 	  "freebsd-5"    => "freebsd-5",
+ 	  "freebsd-6"    => "freebsd-5",
+ 	  "ark"          => "ark",
++          "nutyx"        => "nutyx",
+ 	  );
+   
+   my %dist_tables =
+@@ -5418,6 +5484,53 @@
+        [ "persist",            \&gst_network_get_freebsd5_ppp_persist, [ STARTIF, IFACE ]],
+       ]
+     },
++
++    "nutyx" =>
++	  {
++	    ifaces_get => \&gst_network_nutyx_ifaces_get_existing,
++	    fn =>
++	    {
++        IFCFG      => "/etc/sysconfig/network-devices/ifconfig.#iface#",
++        ROUTE_CONF => "/etc/sysconfig/network-devices/ifconfig.#iface#/ipv4",
++        IFACE      => "#iface#"
++      },
++      table =>
++      [
++       [ "dev",                \&gst_network_suse9_get_dev_name,      IFACE ],
++#       [ "enabled",            \&gst_network_interface_active,        "%dev%", \&gst_network_active_interfaces_get ],
++       [ "auto",               \&gst_network_suse90_get_auto,         IFCFG,   STARTMODE      ],
++       [ "bootproto",          \&gst_network_parse_bootproto,         IFCFG,   BOOTPROTO      ],
++       [ "address",            \&gst_parse_sh,                        IFCFG,   IPADDR         ],
++       [ "netmask",            \&gst_parse_sh,                        IFCFG,   NETMASK        ],
++       [ "remote_address",     \&gst_parse_sh,                        IFCFG,   REMOTE_IPADDR  ],
++       [ "essid",              \&gst_parse_sh,                        IFCFG,   WIRELESS_ESSID ],
++       [ "key_type",           \&gst_network_get_wep_key_type,        [ \&gst_parse_sh, IFCFG, WIRELESS_KEY ]],
++       [ "key",                \&gst_network_get_wep_key,             [ \&gst_parse_sh, IFCFG, WIRELESS_KEY ]],
++       [ "gateway",            \&gst_network_suse90_get_gateway,      ROUTE_CONF, "%address%", "%netmask%" ],
++       [ "gateway",            \&gst_network_suse90_get_plip_gateway, ROUTE_CONF, "%remote_address%"       ],
++       # Modem stuff goes here
++       [ "serial_port",        \&gst_parse_sh,                        IFCFG,   MODEM_DEVICE   ],
++       [ "serial_speed",       \&gst_parse_sh,                        IFCFG,   SPEED          ],
++       [ "mtu",                \&gst_parse_sh,                        IFCFG,   MTU            ],
++       [ "mru",                \&gst_parse_sh,                        IFCFG,   MRU            ],
++#       [ "ppp_options",        \&gst_parse_sh,                        IFCFG,   PPPD_OPTIONS   ],
++       [ "dial_command",       \&gst_parse_sh,                        IFCFG,   DIALCOMMAND    ],
++       [ "external_line",      \&gst_parse_sh,                        IFCFG,   DIALPREFIX     ],
++       [ "section",            \&gst_parse_sh,                        IFCFG,   PROVIDER       ],
++       [ "volume",             \&gst_parse_sh_re,                     IFCFG,   INIT8, "AT.*[ml]([0-3])" ],
++       [ "login",              \&gst_network_suse90_parse_provider_file,       "%section%", USERNAME     ],
++       [ "password",           \&gst_network_suse90_parse_provider_file,       "%section%", PASSWORD     ],
++       [ "phone_number",       \&gst_network_suse90_parse_provider_file,       "%section%", PHONE        ],
++       [ "dns1",               \&gst_network_suse90_parse_provider_file,       "%section%", DNS1         ],
++       [ "dns2",               \&gst_network_suse90_parse_provider_file,       "%section%", DNS2         ],
++       [ "update_dns",         \&gst_network_suse90_parse_provider_file_bool,  "%section%", MODIFYDNS    ],
++       [ "persist",            \&gst_network_suse90_parse_provider_file_bool,  "%section%", PERSIST      ],
++       [ "stupid",             \&gst_network_suse90_parse_provider_file_bool,  "%section%", STUPIDMODE   ],
++       [ "set_default_gw",     \&gst_network_suse90_parse_provider_file_bool,  "%section%", DEFAULTROUTE ],
++      ]
++    },
++
++
+ 	  );
+   
+   my $dist = $dist_map{$gst_dist};
+@@ -5905,7 +6018,7 @@
+ 	  "debian-3.0"   => "debian-3.0",
+ 	  "debian-3.1"   => "debian-3.0",
+ 	  "debian-4.0"   => "debian-3.0",
+-      "debian-5.0"   => "debian-3.0",
++          "debian-5.0"   => "debian-3.0",
+ 	  "debian-testing" => "debian-3.0",
+ 	  "ubuntu-5.04"  => "debian-3.0",
+ 	  "ubuntu-5.10"  => "debian-3.0",
+@@ -5937,8 +6050,7 @@
+ 	  "freebsd-5"    => "freebsd-5",
+ 	  "freebsd-6"    => "freebsd-5",
+ 	  );
+-
+-  my %dist_tables =
++     my %dist_tables =
+ 	(
+     "redhat-6.2" =>
+ 	  {

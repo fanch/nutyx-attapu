@@ -1,0 +1,23 @@
+# Description: programmes pour gérer les utilisateurs, initialisation de fichiers, programateur de taches, et connections réseaux pour KDE
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdelibs, kdebase-runtime, kdepimlibs
+
+name=kdeadmin
+version=4.3.0
+release=1
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
+	nutyx-2008.patch)
+build() {
+	cd $name-$version
+	patch -Np1 -i ../nutyx-2008.patch
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-Dscriptsdir=$KDE_PREFIX/share/apps/knetworkconf/backends \
+	-DBUILD_doc=OFF
+	make -j3
+	make DESTDIR=$PKG install
+}
+
