@@ -2,7 +2,7 @@
 # URL: http://untrepid.com/acidrip/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mplayer, lame, libdvdcss, p5-gtk
+# Depends on: mplayer, lame, libdvdcss, p5-gtk, lsdvd
 
 name=acidrip
 version=0.14
