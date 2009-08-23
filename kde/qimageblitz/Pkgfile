@@ -1,0 +1,22 @@
+# Description: Librairie Blitz graphy
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: cmake
+
+name=qimageblitz
+version=0.0.4
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+
+	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ..
+	make
+	make DESTDIR=$PKG install
+
+	chown -R root:root $PKG
+}

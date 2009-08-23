@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/kde/
+drwxr-xr-x	root/root	opt/kde/bin/
+-rwxr-xr-x	root/root	opt/kde/bin/blitztest
+drwxr-xr-x	root/root	opt/kde/include/
+drwxr-xr-x	root/root	opt/kde/include/qimageblitz/
+-rw-r--r--	root/root	opt/kde/include/qimageblitz/blitzcpu.h
+-rw-r--r--	root/root	opt/kde/include/qimageblitz/qimageblitz.h
+-rw-r--r--	root/root	opt/kde/include/qimageblitz/qimageblitz_export.h
+drwxr-xr-x	root/root	opt/kde/lib/
+lrwxrwxrwx	root/root	opt/kde/lib/libqimageblitz.so -> libqimageblitz.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libqimageblitz.so.4 -> libqimageblitz.so.4.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libqimageblitz.so.4.0.0
+drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
+-rw-r--r--	root/root	opt/kde/lib/pkgconfig/qimageblitz.pc
