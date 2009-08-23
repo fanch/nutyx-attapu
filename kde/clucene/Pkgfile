@@ -1,0 +1,17 @@
+# Description: CLucene est un port C++ de Lucene, un moteur de recherche très performant pour kde4
+# URL: http://clucene.sourceforge.net
+# Maintainer: NuTyX packager Team
+# Packager: lesibel at free dot fr
+# Depends on: 
+
+name=clucene
+version=0.9.21b
+release=1
+source=(http://switch.dl.sourceforge.net/sourceforge/$name/$name-core-$version.tar.bz2)
+
+build() {
+	cd $name-core-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
