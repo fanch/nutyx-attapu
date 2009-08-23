@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=XSession
+Exec=/usr/bin/startede
+TryExec=/usr/bin/startede
+Name=EDE
+Name[eo]=Facoj 4
+Name[hi]=एक्सएफसीई4
+Name[sv]=Ede
+Name[te]=ఎక్స్ ఎఫ్ సి ఈ 4
+Comment=Equinox. A very light Desktop Environment

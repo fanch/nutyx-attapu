@@ -1,0 +1,50 @@
+# Description: Programme de base de KDE4
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury
+
+name=kdebase-workspace
+version=4.3.0
+release=1
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
+        kdm lxde.desktop ede.desktop Xsession.kde4 NuTyXlogo.png)
+
+build() {
+        mkdir -v -p $PKG/etc/kde
+        mkdir -v -p $PKG/etc/rc.d/init.d
+        mkdir -v -p $PKG/etc/rc.d/rc{0,1,2,3,4,5,6}.d
+        install -m755 kdm $PKG/etc/rc.d/init.d/kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc3.d/K10kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc2.d/K10kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc5.d/S40kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc4.d/K10kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc0.d/K10kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc1.d/K10kdm
+        ln -svf ../init.d/kdm $PKG/etc/rc.d/rc6.d/K10kdm
+
+        cd $name-$version
+        mkdir build
+        cd build
+        cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DBUILD_doc=OFF
+        make -j3
+        make DESTDIR=$PKG install
+        cd ..
+        install -m644 ../{ede.desktop,lxde.desktop} \
+        $PKG/$KDE_PREFIX/share/apps/kdm/sessions/
+        install -m755 ../Xsession.kde4 \
+        $PKG/$KDE_PREFIX/share/config/kdm/Xsession
+        sed -i "s/AllowRootLogin=false/AllowRootLogin=true/" \
+        $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        sed -i "s@gnome-session@/opt/gnome/bin/gnome-session@" \
+        $PKG/$KDE_PREFIX/share/apps/kdm/sessions/gnome.desktop
+#       sed -i "s@opt/kde/@opt/kde4@" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+#       sed -i "/Theme=\/opt/d" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        sed -i "s/kdelogo.png/NuTyXlogo.png/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        sed -i "s/xdm.pid/kdm.pid/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        sed -i "s/#Language=de_DE/Language=fr_FR/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        mv ../NuTyXlogo.png $PKG/$KDE_PREFIX/share/apps/kdm/pics/
+        mv  $PKG/$KDE_PREFIX/share/config/kdm/kdmrc $PKG/etc/kde/kdmrc
+        ln -sv /etc/kde/kdmrc $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+}

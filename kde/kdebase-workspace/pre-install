@@ -1,0 +1,4 @@
+#!/bin/bash
+if ( pkginfo -i | grep kdebase3 > /dev/null ) ; then
+        pkgrm kdebase3
+fi

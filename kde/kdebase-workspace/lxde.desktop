@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=lxde 
+Name[fr]= lxde
+Comment[fr]=Sélectionner cette session pour utiliser lxde comme environnment graphique
+
+Exec=startlxde
+Icon=
+Type=Application 
+
