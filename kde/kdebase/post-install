@@ -1,0 +1,7 @@
+#!/bin/bash
+sed -i "s/xdm.pid/kdm.pid/" /etc/rc.d/init.d/kdm
+
+sed -i "s/^id:[3-5]/id:5/" /etc/inittab
+
+# Activer kde par défaut
+sed -i "s/^\(Session=\).*$/\1kde/g" /etc/skel/.dmrc
