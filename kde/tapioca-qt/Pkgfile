@@ -1,0 +1,20 @@
+# Description: Jeu de librairies pour la communication tempes reel
+# URL: http://tapioca-voip.sourceforge.net/wiki/index.php/Tapioca
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: telepathy-qt
+
+name=tapioca-qt
+version=0.14.1
+release=1
+source=(http://downloads.sourceforge.net/tapioca-voip/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+        cd build
+        cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ..
+ 
+	make
+	make DESTDIR=$PKG install
+}
