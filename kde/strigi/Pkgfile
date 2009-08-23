@@ -1,0 +1,19 @@
+# Description: Outil de recherche pour bureau kde
+# URL: http://strigi.sourceforge.net
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: cmake, clucene, qt, xerces-c, exiv2
+
+name=strigi
+version=0.6.5
+release=1
+source=(http://www.vandenoever.info/software/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ../
+	make -j3
+	make DESTDIR=$PKG install
+}
