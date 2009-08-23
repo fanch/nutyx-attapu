@@ -1,0 +1,23 @@
+# Description: Port sur Qt4 de Classe C++
+# URL:  http://www.riverbankcomputing.co.uk/qscintilla/index.php
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: qt
+
+name=qscintilla
+version=2.4
+release=1
+source=(http://www.riverbankcomputing.com/static/Downloads/QScintilla2/QScintilla-gpl-$version.tar.gz)
+
+build() {
+	cd QScintilla-gpl-$version/Qt4
+	qmake qscintilla.pro
+	make QT_INSTALL_LIBS=$PKG/$QTDIR/lib
+	make DESTDIR=$PKG INSTALL_ROOT=$PKG install
+	rm -rf $PKG/usr/lib/libqscintilla2.so.2
+	pushd $PKG/usr/lib/
+	ln -s libqscintilla2.so.2.2 libqscintilla2.so.2
+	popd
+	
+
+}
