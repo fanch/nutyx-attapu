@@ -6,7 +6,7 @@
 
 name=nvidia
 version=185.18.31
-release=1
+release=2
 _kernel=2.6.30.5
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
@@ -28,16 +28,28 @@ build() {
 	cd ../../
 
         mkdir -p $PKG/usr/{lib,bin,share/applications,share/pixmaps,share/man/man1}
-        mkdir -p $PKG/usr/lib/X11/modules/{extensions,drivers}
+        mkdir -p $PKG/usr/lib/xorg/modules/{extensions,drivers}
         mkdir -p $PKG/usr/share/licenses/nvidia
 
-        install lib/{libGLcore.so.$version,libGL.so.$version,libnvidia-cfg.so.$version,tls/libnvidia-tls.so.$version} \
-        $PKG/usr/lib/
+	# Install libraries
+	cp -a X11R6/lib/* $PKG/usr/lib/xorg/
+        cp -a lib/* $PKG/usr/lib/
+	sed -i -e 's|__LIBGL_PATH__|/usr/lib|' $PKG/usr/lib/libGL.la
+	ln -sf libGLcore.so.$version $PKG/usr/lib/libGLcore.so
+	ln -sf /usr/lib/libGLcore.so $PKG/usr/lib/xorg/modules/extensions/libGLcore.so
+
+	# additional symlinks required by gl-select
+	ln -s libGL.so.$version $PKG/usr/lib/libGL_so_1_2_nvidia
+	ln -s libglx.so.$version $PKG/usr/lib/xorg/modules/extensions/libglx_so_nvidia
+	
+	# Copy includes
+	mkdir -p $PKG/usr/include/nvidia
+	cp -r include/GL $PKG/usr/include/nvidia/
 
         install -m644 share/man/man1/* $PKG/usr/share/man/man1/
         rm $PKG/usr/share/man/man1/nvidia-installer.1.gz
 
-        install X11R6/lib/libXv* $PKG/usr/lib/
+        install X11R6/lib/* $PKG/usr/lib/xorg/
         install -m644 share/applications/nvidia-settings.desktop $PKG/usr/share/applications/
 
         # fix nvidia .desktop file
@@ -45,16 +57,5 @@ build() {
         $PKG/usr/share/applications/nvidia-settings.desktop
 
         install -m644 share/pixmaps/nvidia-settings.png $PKG/usr/share/pixmaps/
-        install X11R6/lib/modules/libnvidia-wfb.so.$version $PKG/usr/lib/X11/modules
-        install X11R6/lib/modules/drivers/nvidia_drv.so $PKG/usr/lib/X11/modules/drivers
-        install X11R6/lib/modules/extensions/libglx.so.$version $PKG/usr/lib/X11/modules/extensions
         install -m755 bin/nvidia-{settings,xconfig,bug-report.sh} $PKG/usr/bin/
-        cd $PKG/usr/lib/
-        ln -s /usr/lib/libGL.so.$version libGL.so
-        ln -s /usr/lib/libGL.so.$version libGL.so.1
-        ln -s /usr/lib/libGLcore.so.$version libGLcore.so.1
-        ln -s /usr/lib/libnvidia-cfg.so.$version libnvidia-cfg.so.1
-        ln -s /usr/lib/libnvidia-tls.so.$version libnvidia-tls.so.1
-        cd $PKG/usr/lib/X11/modules/extensions
-        ln -s /usr/lib/X11/modules/extensions/libglx.so.$version libglx.so
 }
