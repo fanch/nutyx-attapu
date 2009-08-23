@@ -1,0 +1,20 @@
+# Description: Librairie permettant de synchroniser téléphone avec kdepim
+# URL: http://jasonday.home.att.net
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on:
+
+name=libmal
+version=0.44.1
+release=1
+source=(http://www.jlogday.com/code/${name}/${name}-${version}.tar.gz)
+
+
+
+build() {
+	cd $name-$version
+        ./configure --prefix=$KDEPREFIX
+	make
+	make DESTDIR=$PKG install
+
+}
