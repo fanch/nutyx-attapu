@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/kde/
+drwxr-xr-x	root/root	opt/kde/include/
+drwxr-xr-x	root/root	opt/kde/include/PolicyKit/
+drwxr-xr-x	root/root	opt/kde/include/PolicyKit/polkit-qt/
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/Action
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/ActionButton
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/ActionButtons
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/Auth
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/Context
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/action.h
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/actionbutton.h
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/actionbuttons.h
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/auth.h
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/context.h
+-rw-r--r--	root/root	opt/kde/include/PolicyKit/polkit-qt/export.h
+drwxr-xr-x	root/root	opt/kde/lib/
+lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-core.so -> libpolkit-qt-core.so.0
+lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-core.so.0 -> libpolkit-qt-core.so.0.9.2
+-rwxr-xr-x	root/root	opt/kde/lib/libpolkit-qt-core.so.0.9.2
+lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-gui.so -> libpolkit-qt-gui.so.0
+lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-gui.so.0 -> libpolkit-qt-gui.so.0.9.2
+-rwxr-xr-x	root/root	opt/kde/lib/libpolkit-qt-gui.so.0.9.2
+drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
+-rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-core.pc
+-rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-gui.pc
+-rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt.pc

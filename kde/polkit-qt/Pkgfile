@@ -1,0 +1,20 @@
+# Description: Librairie permettant aux dévelopeurs d'accéder à l'API policyKit via qt
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: policykit, qt
+
+name=polkit-qt
+version=0.9.2
+release=1
+source=(http://download.kde.org/stable/apps/KDE4.x/admin/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+		-DCMAKE_BUILD_TYPE=Release
+	make -j3
+	make DESTDIR=$PKG install
+}
+
