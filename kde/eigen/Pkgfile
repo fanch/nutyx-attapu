@@ -1,0 +1,19 @@
+# Description: Librairie C++ pour le calcul matriciel 
+# URL: http://eigen.tuxfamily.org/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: cmake
+
+name=eigen
+version=1.0.5
+release=1
+source=(http://download.tuxfamily.org/eigen/eigen-$version.tar.gz)
+
+build() {
+	cd $name
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ..
+	make
+	make DESTDIR=$PKG install
+}
