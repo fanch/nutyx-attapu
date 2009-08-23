@@ -1,0 +1,19 @@
+# Description: Permet de démarrer Linux sur une partition autre que Linux
+# URL: http://syslinux.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: mtools
+
+name=syslinux
+version=3.82
+release=1
+source=(http://www.kernel.org/pub/linux/utils/boot/syslinux/$name-$version.tar.bz2\
+	Makefile.patch)
+
+build() {
+	cd $name-$version
+	sed -i "s|win32/syslinux.exe||g" Makefile
+#	patch -p0 -i $SRC/Makefile.patch
+	make
+	make INSTALLROOT=$PKG install
+}
