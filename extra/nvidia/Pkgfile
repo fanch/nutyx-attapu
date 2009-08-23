@@ -5,15 +5,17 @@
 # Depends on:
 
 name=nvidia
-version=185.18.29
+version=185.18.31
 release=1
-_kernel=2.6.30.4
-source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version-pkg1.run\
+_kernel=2.6.30.5
+[ "`uname -m`" == "i686"   ] && _ARCH=x86
+[ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
+source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg1.run\
 	)
 
 build() {
-	sh NVIDIA-Linux-x86-$version-pkg1.run --extract-only
-	cd NVIDIA-Linux-x86-$version-pkg1/usr/src/nv
+	sh NVIDIA-Linux-${_ARCH}-$version-pkg1.run --extract-only
+	cd NVIDIA-Linux-${_ARCH}-$version-pkg1/usr/src/nv
 	ln -s Makefile.kbuild Makefile
 	make SYSSRC=/usr/src/kernel/linux-${_kernel} module
 

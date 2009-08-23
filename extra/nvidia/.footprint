@@ -1,10 +1,10 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/modules/
-drwxr-xr-x	root/root	lib/modules/2.6.30.4/
-drwxr-xr-x	root/root	lib/modules/2.6.30.4/kernel/
-drwxr-xr-x	root/root	lib/modules/2.6.30.4/kernel/drivers/
-drwxr-xr-x	root/root	lib/modules/2.6.30.4/kernel/drivers/video/
--rw-r--r--	root/root	lib/modules/2.6.30.4/kernel/drivers/video/nvidia.ko
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/drivers/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/drivers/video/
+-rw-r--r--	root/root	lib/modules/<kernel-version>/kernel/drivers/video/nvidia.ko
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/nvidia-bug-report.sh
@@ -16,20 +16,20 @@ drwxr-xr-x	root/root	usr/lib/X11/modules/
 drwxr-xr-x	root/root	usr/lib/X11/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/X11/modules/drivers/nvidia_drv.so
 drwxr-xr-x	root/root	usr/lib/X11/modules/extensions/
-lrwxrwxrwx	root/root	usr/lib/X11/modules/extensions/libglx.so -> /usr/lib/X11/modules/extensions/libglx.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/X11/modules/extensions/libglx.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/X11/modules/libnvidia-wfb.so.185.18.29
-lrwxrwxrwx	root/root	usr/lib/libGL.so -> /usr/lib/libGL.so.185.18.29
-lrwxrwxrwx	root/root	usr/lib/libGL.so.1 -> /usr/lib/libGL.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/libGL.so.185.18.29
-lrwxrwxrwx	root/root	usr/lib/libGLcore.so.1 -> /usr/lib/libGLcore.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/libGLcore.so.185.18.29
+lrwxrwxrwx	root/root	usr/lib/X11/modules/extensions/libglx.so -> /usr/lib/X11/modules/extensions/libglx.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/X11/modules/extensions/libglx.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/X11/modules/libnvidia-wfb.so.185.18.31
+lrwxrwxrwx	root/root	usr/lib/libGL.so -> /usr/lib/libGL.so.185.18.31
+lrwxrwxrwx	root/root	usr/lib/libGL.so.1 -> /usr/lib/libGL.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/libGL.so.185.18.31
+lrwxrwxrwx	root/root	usr/lib/libGLcore.so.1 -> /usr/lib/libGLcore.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/libGLcore.so.185.18.31
 -rwxr-xr-x	root/root	usr/lib/libXvMCNVIDIA.a
--rwxr-xr-x	root/root	usr/lib/libXvMCNVIDIA.so.185.18.29
-lrwxrwxrwx	root/root	usr/lib/libnvidia-cfg.so.1 -> /usr/lib/libnvidia-cfg.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.185.18.29
-lrwxrwxrwx	root/root	usr/lib/libnvidia-tls.so.1 -> /usr/lib/libnvidia-tls.so.185.18.29
--rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.185.18.29
+-rwxr-xr-x	root/root	usr/lib/libXvMCNVIDIA.so.185.18.31
+lrwxrwxrwx	root/root	usr/lib/libnvidia-cfg.so.1 -> /usr/lib/libnvidia-cfg.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/libnvidia-cfg.so.185.18.31
+lrwxrwxrwx	root/root	usr/lib/libnvidia-tls.so.1 -> /usr/lib/libnvidia-tls.so.185.18.31
+-rwxr-xr-x	root/root	usr/lib/libnvidia-tls.so.185.18.31
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/nvidia-settings.desktop
