@@ -1,0 +1,165 @@
+* Set up a RUBY_VERSION macro to use to test for whether QtRuby is being
+  built for Ruby 1.9 or not. Add patches from Mr Napalm for building 
+with
+  Ruby 1.9, for the new 'per string' encoding. Also add conditional code
+  for whether to use the new rb_frame_callee() function or the old
+  rb_frame_last_func() one.
+
+CCMAIL: kde-bindings@...
+
+
+ M  +10 -0     CMakeLists.txt  
+ M  +7 -0      qtruby/ChangeLog  
+ M  +4 -0      qtruby/src/CMakeLists.txt  
+ M  +37 -6     qtruby/src/handlers.cpp  
+ M  +0 -1      qtruby/src/marshall_types.cpp  
+ M  +4 -0      qtruby/src/qtruby.cpp  
+
+
+--- trunk/KDE/kdebindings/ruby/CMakeLists.txt #920196:920197
+@@ -46,6 +46,16 @@
+ set(PLASMA_ENABLED "no")
+ 
+ if(RUBY_EXECUTABLE AND RUBY_LIBRARY AND RUBY_INCLUDE_PATH)
++   EXECUTE_PROCESS(COMMAND ${RUBY_EXECUTABLE} -e "print RUBY_VERSION"
++      OUTPUT_VARIABLE RUBY_VERSION)
++
++    STRING(REGEX REPLACE "^([0-9]+)\\.[0-9]+\\.[0-9]+.*" "\\1" 
+RUBY_VERSION_MAJOR "${RUBY_VERSION}")
++    STRING(REGEX REPLACE "^[0-9]+\\.([0-9])+\\.[0-9]+.*" "\\1" 
+RUBY_VERSION_MINOR "${RUBY_VERSION}")
++    STRING(REGEX REPLACE "^[0-9]+\\.[0-9]+\\.([0-9]+).*" "\\1" 
+RUBY_VERSION_PATCH "${RUBY_VERSION}")
++
++    # compute an overall version number which can be compared at once
++    MATH(EXPR RUBY_VERSION_NUMBER "${RUBY_VERSION_MAJOR}*10000 + 
+${RUBY_VERSION_MINOR}*100 + ${RUBY_VERSION_PATCH}")
++
+     if(ENABLE_QTRUBY)
+         add_subdirectory( qtruby )
+         set(QTRUBY_ENABLED "yes")
+--- trunk/KDE/kdebindings/ruby/qtruby/ChangeLog #920196:920197
+@@ -1,3 +1,10 @@
++2009-02-02  Richard Dale  <richard.j.dale@...>
++ * Set up a RUBY_VERSION macro to use to test for whether QtRuby is 
+being
++  built for Ruby 1.9 or not. Add patches from Mr Napalm for building 
+with
++  Ruby 1.9, for the new 'per string' encoding. Also add conditional 
+code
++  for whether to use the new rb_frame_callee() function or the old
++  rb_frame_last_func() one.
++
+ 2009-02-01  Richard Dale  <richard.j.dale@...>
+  * The construct_copy() function was using the full classname of the 
+class
+   to construct which meant that it didn't work with classnames 
+containing
+--- trunk/KDE/kdebindings/ruby/qtruby/src/CMakeLists.txt #920196:920197
+@@ -9,6 +9,10 @@
+     ADD_DEFINITIONS (-DQT_QWT)
+ ENDIF(QWT_FOUND)
+ 
++if(RUBY_VERSION)
++    ADD_DEFINITIONS (-DRUBY_VERSION=0x${RUBY_VERSION_NUMBER})
++ENDIF(RUBY_VERSION)
++
+ include_directories( ${CMAKE_SOURCE_DIR}/smoke ${RUBY_INCLUDE_PATH} )
+ INCLUDE_DIRECTORIES (${QT_INCLUDES})
+ 
+--- trunk/KDE/kdebindings/ruby/qtruby/src/handlers.cpp #920196:920197
+@@ -891,9 +891,11 @@
+  }
+ }
+ 
+-static const char * KCODE = 0;
+ static QTextCodec *codec = 0;
+ 
++#if RUBY_VERSION < 0x10900
++static const char * KCODE = 0;
++
+ static void
+ init_codec() {
+  VALUE temp = rb_gv_get("$KCODE");
+@@ -923,11 +925,6 @@
+  return new QString(QString::fromLocal8Bit(StringValuePtr(rstring), 
+RSTRING_LEN(rstring)));
+ }
+ 
+-QByteArray*
+-qbytearrayFromRString(VALUE rstring) {
+-  return new QByteArray(StringValuePtr(rstring), RSTRING_LEN(rstring));
+-}
+-
+ VALUE
+ rstringFromQString(QString * s) {
+  if (KCODE == 0) {
+@@ -946,6 +943,40 @@
+  return rb_str_new2(s->toLocal8Bit());
+ }
+ 
++#else
++
++QString*
++qstringFromRString(VALUE rstring) {
++ VALUE encoding = rb_funcall(rstring, rb_intern("encoding"), 0);
++ encoding = rb_funcall(encoding, rb_intern("to_s"), 0);
++ const char * enc_s = RSTRING_PTR(encoding);
++
++ if (qstrcmp(enc_s, "UTF8") == 0) {
++ return new QString(QString::fromUtf8(StringValuePtr(rstring), 
+RSTRING_LEN(rstring)));
++ } else if (qstrcmp(enc_s, "EUC-JP") == 0) {
++ codec = QTextCodec::codecForName("eucJP");
++ return new QString(codec->toUnicode(StringValuePtr(rstring)));
++ } else if (qstrcmp(enc_s, "Shift-JIS") == 0) {
++ codec = QTextCodec::codecForName("Shift-JIS");
++ return new QString(codec->toUnicode(StringValuePtr(rstring)));
++ } else if(qstrcmp(enc_s, "ISO-8859-1") == 0 || qstrcmp(enc_s, 
+"US-ASCII") == 0) {
++ return new QString(QString::fromLatin1(StringValuePtr(rstring)));
++ }
++
++ return new QString(QString::fromLocal8Bit(StringValuePtr(rstring), 
+RSTRING_LEN(rstring)));
++}
++
++VALUE
++rstringFromQString(QString * s) {
++ return rb_str_new2(s->toUtf8());
++}
++#endif
++
++QByteArray*
++qbytearrayFromRString(VALUE rstring) {
++  return new QByteArray(StringValuePtr(rstring), RSTRING_LEN(rstring));
++}
++
+ VALUE
+ rstringFromQByteArray(QByteArray * s) {
+   return rb_str_new(s->data(), s->size());
+--- trunk/KDE/kdebindings/ruby/qtruby/src/marshall_types.cpp 
+#920196:920197
+@@ -17,7 +17,6 @@
+  
+***************************************************************************/
+ 
+ #include "marshall_types.h"
+-#include <rubysig.h>
+ #include <smoke/qt_smoke.h>
+ #include <QtDBus>
+ 
+--- trunk/KDE/kdebindings/ruby/qtruby/src/qtruby.cpp #920196:920197
+@@ -1365,7 +1365,11 @@
+  return Qfalse;
+  }
+ 
++#if RUBY_VERSION >= 0x10900
++ QLatin1String signalname(rb_id2name(rb_frame_callee()));
++#else
+  QLatin1String signalname(rb_id2name(rb_frame_last_func()));
++#endif
+  VALUE metaObject_value = rb_funcall(qt_internal_module, 
+rb_intern("getMetaObject"), 2, Qnil, self);
+ 
+  smokeruby_object *ometa = value_obj_info(metaObject_value); 

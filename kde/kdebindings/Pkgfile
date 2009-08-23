@@ -1,0 +1,29 @@
+# Description: Pour écrire des applications KDE dans différents langages
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdebase-runtime, kdebase-workspace, qscintilla, polkit-qt, kdegraphics, kdepimlibs, ruby, pyqt
+
+name=kdebindings
+version=4.3.0
+release=1
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_SKIP_RPATH=ON \
+		-DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
+		-DBUILD_csharp=OFF \
+		-DBUILD_java=OFF \
+		-DBUILD_php=OFF \
+		-DBUILD_ruby=OFF \
+		-DBUILD_falcon=OFF \
+		-DBUILD_smoke=OFF  \
+		-DBUILD_doc=OFF
+	make -j3
+	make DESTDIR=$PKG install
+}
+
