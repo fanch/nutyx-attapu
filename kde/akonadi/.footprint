@@ -1,0 +1,52 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/kde/
+drwxr-xr-x	root/root	opt/kde/bin/
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_control
+-rwxr-xr-x	root/root	opt/kde/bin/akonadictl
+-rwxr-xr-x	root/root	opt/kde/bin/akonadiserver
+drwxr-xr-x	root/root	opt/kde/include/
+drwxr-xr-x	root/root	opt/kde/include/akonadi/
+drwxr-xr-x	root/root	opt/kde/include/akonadi/private/
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/akonadiprotocolinternals_export.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/imapparser_p.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/imapset_p.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/notificationmessage_p.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/protocol_p.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/private/xdgbasedirs_p.h
+drwxr-xr-x	root/root	opt/kde/lib/
+drwxr-xr-x	root/root	opt/kde/lib/cmake/
+drwxr-xr-x	root/root	opt/kde/lib/cmake/Akonadi/
+-rw-r--r--	root/root	opt/kde/lib/cmake/Akonadi/AkonadiConfig.cmake
+-rw-r--r--	root/root	opt/kde/lib/cmake/Akonadi/AkonadiConfigVersion.cmake
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadiprivate.so -> libakonadiprivate.so.1
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadiprivate.so.1 -> libakonadiprivate.so.1.2.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadiprivate.so.1.2.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadiprotocolinternals.so -> libakonadiprotocolinternals.so.1
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadiprotocolinternals.so.1 -> libakonadiprotocolinternals.so.1.2.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadiprotocolinternals.so.1.2.0
+drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
+-rw-r--r--	root/root	opt/kde/lib/pkgconfig/akonadi.pc
+drwxr-xr-x	root/root	opt/kde/share/
+drwxr-xr-x	root/root	opt/kde/share/config/
+drwxr-xr-x	root/root	opt/kde/share/config/akonadi/
+-rw-r--r--	root/root	opt/kde/share/config/akonadi/mysql-global.conf
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Control.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Agent.Status.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.AgentManager.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.ControlManager.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.DebugInterface.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.NotificationManager.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Resource.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Search.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.SearchQuery.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.SearchQueryIterator.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Server.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.Tracer.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.freedesktop.Akonadi.TracerNotification.xml
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/services/
+-rw-r--r--	root/root	opt/kde/share/dbus-1/services/org.freedesktop.Akonadi.Control.service
+drwxr-xr-x	root/root	opt/kde/share/mime/
+drwxr-xr-x	root/root	opt/kde/share/mime/packages/
+-rw-r--r--	root/root	opt/kde/share/mime/packages/akonadi-mime.xml
