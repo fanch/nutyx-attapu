@@ -16,10 +16,10 @@ build() {
         sed -i "s/\-nonet//" doc/man/Makefile.in
         ./configure --prefix=$GNOME_PREFIX\
                     --sysconfdir=/etc \
-            --libexecdir=$(pkg-config \
-                --variable=prefix ORBit-2.0)/lib/PolicyKit \
-            --mandir=$(pkg-config \
-                --variable=prefix ORBit-2.0)/share/man \
+            --libexecdir=$GNOME_PREFIX/lib/PolicyKit \
+	--disable-man-pages \
+	--disable-gtk-doc \
+            --mandir=$GNOME_PREFIX/share/man \
                 --localstatedir=/var \
 	--with-authfw=shadow
 
