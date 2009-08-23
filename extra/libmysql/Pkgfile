@@ -6,10 +6,12 @@
 
 name=libmysql
 version=5.1.36
-release=1
+release=2
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/mysql-$version.tar.gz )
 
 build () {
+	CFLAGS="-fPIC ${CFLAGS} -fno-strict-aliasing"
+	CXXFLAGS="-fPIC ${CXXFLAGS} -fno-strict-aliasing"
 	cd mysql-$version
 	./configure --prefix=/usr \
                 --sysconfdir=/etc \
