@@ -1,0 +1,19 @@
+# Description: Outil permettant d'afficher des boîtes de dialogue
+# URL: http://hightek.org/dialog/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=dialog
+version=1.1-20080316
+release=1
+source=(ftp://dickey.his.com/dialog/$name-$version.tgz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--with-ncursesw \
+	--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
