@@ -6,30 +6,33 @@
 
 name=perl
 version=5.10.0
-release=1
+release=2
 source=(ftp://ftp.funet.fi/pub/CPAN/src/$name-$version.tar.gz \
-	http://www.linuxfromscratch.org/patches/lfs/development/perl-$version-consolidated-1.patch)
+	http://www.linuxfromscratch.org/patches/lfs/development/perl-$version-consolidated-1.patch\
+	perl-5.10.0-debian-23.patch perl-5.8.6-picdl.patch0)
 
 build() {
 cd $name-$version
-patch -Np1 -i ../perl-$version-consolidated-1.patch
+patch -Np1 -i ../perl-5.10.0-debian-23.patch
+if [ "`uname -m`" == "x86_64" ]; then
+	_ARCH="-Dcccdlflags='-fPIC'"
+	patch -Np0 -i ../perl-5.8.6-picdl.patch0
+else
+	_ARCH=""
+fi
+
 sed -i -e "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|"           \
 	-e "s|INCLUDE\s*= ./zlib-src|INCLUDE    = /usr/include|" \
 	-e "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|"         \
 	ext/Compress/Raw/Zlib/config.in
-sh Configure -des  -Dusethreads\
+sh Configure -des  -Dusethreads \
 	-Dprefix=/usr \
 	-Dman1dir=/usr/share/man/man1 \
 	-Dman3dir=/usr/share/man/man3 \
 	-Dpager="/usr/bin/less isR" \
-	-Doptimize="$CFLAGS"
+	-Doptimize="$CFLAGS" ${_ARCH}
 make
 make DESTDIR=$PKG install
-#    ln -sf perl$version $PKG/usr/bin/perl
-#    ln -sf c2ph $PKG/usr/bin/pstruct
-#    ln -sf s2p $PKG/usr/bin/psed
-#    ln -sf c2ph.1pm $PKG/usr/man/man1/pstruct.1pm
-#    ln -sf s2p.1pm $PKG/usr/man/man1/psed.1pm
 find $PKG -iname 'TODO*' -or \
 	-iname 'Change*' -or \
 	-iname 'README*' -or \

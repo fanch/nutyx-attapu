@@ -1346,6 +1346,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Compress/Raw
 -rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Config.pod
 -rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Config_heavy.pl
 -rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Cwd.pm
+-rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/DB_File.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Data/
 -rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Data/Dumper.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/Devel/
@@ -1495,6 +1496,9 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Compres
 -rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Compress/Zlib/autosplit.ix
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Cwd/
 -rwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Cwd/Cwd.so
+drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/DB_File/
+-rwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/DB_File/DB_File.so
+-rw-r--r--	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/DB_File/autosplit.ix
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Data/
 drwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Data/Dumper/
 -rwxr-xr-x	root/root	usr/lib/perl5/5.10.0/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so
@@ -2096,6 +2100,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/DBM_Filter::int32.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/DBM_Filter::null.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/DBM_Filter::utf8.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/DB_File.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Data::Dumper.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Devel::DProf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/Devel::InnerPackage.3.gz
