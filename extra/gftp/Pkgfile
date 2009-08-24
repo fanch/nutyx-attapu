@@ -1,0 +1,17 @@
+# Description: Client FTP pour X
+# URL: http://gftp.seul.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk
+
+name=gftp
+version=2.0.19
+release=1
+source=(http://www.gftp.org/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
