@@ -7,21 +7,27 @@
 name=jdk
 version=6u14
 release=1
-source=(http://www.nutyx.org/files/$name-$version-linux-i586.bin \
+[ "`uname -m`" == "i686"   ] && _ARCH=i586
+[ "`uname -m`" == "x86_64"   ] && _ARCH=amd64
+
+source=(http://download.java.net/dlj/binaries/$name-$version-dlj-linux-${_ARCH}.bin \
         jdk.sh  )
 
 
 build() {
        mkdir -p $PKG/etc/profile.d/
        mv jdk.sh $PKG/etc/profile.d/
-       chmod 755 $name-$version-linux-i586.bin
-       ./jdk-$version-linux-i586.bin
+       chmod 755 $name-$version-dlj-linux-${_ARCH}.bin
+       ./jdk-$version-dlj-linux-${_ARCH}.bin
        cd jdk1.6.0_14
        install -v -m755 -d $PKG/opt/jdk-bin-$version
 	mv -v * $PKG/opt/jdk-bin-$version
-       ln -v -sf xawt/libmawt.so \
-    $PKG/opt/jdk-bin-$version/jre/lib/i386/
+if [ "`uname -m`" == "i686" ]; then 
+	_ARCH=i386
+fi
+	ln -v -sf xawt/libmawt.so \
+    $PKG/opt/jdk-bin-$version/jre/lib/${_ARCH}/
     sed -i 's@XINERAMA@FAKEEXTN@g' \
-    $PKG/opt/jdk-bin-$version/jre/lib/i386/xawt/libmawt.so
+    $PKG/opt/jdk-bin-$version/jre/lib/${_ARCH}/xawt/libmawt.so
     ln -v -nsf jdk-bin-$version $PKG/opt/jdk
 }
