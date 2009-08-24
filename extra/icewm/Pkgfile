@@ -2,7 +2,7 @@
 # Description:  Gestionnaire de fenêtres 
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: xorg7
+# Depends on: xorg
 
 
 name=icewm
