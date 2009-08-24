@@ -1,0 +1,51 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/weechat-curses
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/weechat/
+drwxr-xr-x	root/root	usr/lib/weechat/plugins/
+-rw-r--r--	root/root	usr/lib/weechat/plugins/aspell.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/aspell.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/aspell.so -> aspell.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/aspell.so.0 -> aspell.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/aspell.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/charset.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/charset.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/charset.so -> charset.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/charset.so.0 -> charset.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/charset.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/perl.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so -> perl.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/perl.so.0 -> perl.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/perl.so.0.0.0
+-rw-r--r--	root/root	usr/lib/weechat/plugins/python.a
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.la
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so -> python.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/weechat/plugins/python.so.0 -> python.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/weechat/plugins/python.so.0.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/weechat/
+drwxr-xr-x	root/root	usr/share/doc/weechat/html/
+drwxr-xr-x	root/root	usr/share/doc/weechat/html/de/
+-rw-r--r--	root/root	usr/share/doc/weechat/html/de/weechat-doc.css
+drwxr-xr-x	root/root	usr/share/doc/weechat/html/en/
+-rw-r--r--	root/root	usr/share/doc/weechat/html/en/weechat-doc.css
+drwxr-xr-x	root/root	usr/share/doc/weechat/html/fr/
+-rw-r--r--	root/root	usr/share/doc/weechat/html/fr/weechat-doc.css
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.cs.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.de.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.en.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.fr.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.pl.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.ru.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.sco.txt
+-rw-r--r--	root/root	usr/share/doc/weechat/weechat_quickstart.sv.txt
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/weechat.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/weechat-curses.1.gz
