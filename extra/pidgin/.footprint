@@ -1,7 +1,3 @@
-drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/gconf/
-drwxr-xr-x	root/root	etc/gconf/schemas/
--rw-r--r--	root/root	etc/gconf/schemas/purple.schemas
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/finch
@@ -18,6 +14,7 @@ drwxr-xr-x	root/root	usr/include/finch/
 -rw-r--r--	root/root	usr/include/finch/gntft.h
 -rw-r--r--	root/root	usr/include/finch/gntidle.h
 -rw-r--r--	root/root	usr/include/finch/gntlog.h
+-rw-r--r--	root/root	usr/include/finch/gntmedia.h
 -rw-r--r--	root/root	usr/include/finch/gntnotify.h
 -rw-r--r--	root/root	usr/include/finch/gntplugin.h
 -rw-r--r--	root/root	usr/include/finch/gntpounce.h
@@ -45,6 +42,7 @@ drwxr-xr-x	root/root	usr/include/gnt/
 -rw-r--r--	root/root	usr/include/gnt/gntmenu.h
 -rw-r--r--	root/root	usr/include/gnt/gntmenuitem.h
 -rw-r--r--	root/root	usr/include/gnt/gntmenuitemcheck.h
+-rw-r--r--	root/root	usr/include/gnt/gntprogressbar.h
 -rw-r--r--	root/root	usr/include/gnt/gntslider.h
 -rw-r--r--	root/root	usr/include/gnt/gntstyle.h
 -rw-r--r--	root/root	usr/include/gnt/gnttextview.h
@@ -77,6 +75,10 @@ drwxr-xr-x	root/root	usr/include/libpurple/
 -rw-r--r--	root/root	usr/include/libpurple/idle.h
 -rw-r--r--	root/root	usr/include/libpurple/imgstore.h
 -rw-r--r--	root/root	usr/include/libpurple/log.h
+-rw-r--r--	root/root	usr/include/libpurple/marshallers.h
+-rw-r--r--	root/root	usr/include/libpurple/media-gst.h
+-rw-r--r--	root/root	usr/include/libpurple/media.h
+-rw-r--r--	root/root	usr/include/libpurple/mediamanager.h
 -rw-r--r--	root/root	usr/include/libpurple/mime.h
 -rw-r--r--	root/root	usr/include/libpurple/nat-pmp.h
 -rw-r--r--	root/root	usr/include/libpurple/network.h
@@ -96,13 +98,19 @@ drwxr-xr-x	root/root	usr/include/libpurple/
 -rw-r--r--	root/root	usr/include/libpurple/server.h
 -rw-r--r--	root/root	usr/include/libpurple/signals.h
 -rw-r--r--	root/root	usr/include/libpurple/smiley.h
+-rw-r--r--	root/root	usr/include/libpurple/sound-theme-loader.h
+-rw-r--r--	root/root	usr/include/libpurple/sound-theme.h
 -rw-r--r--	root/root	usr/include/libpurple/sound.h
 -rw-r--r--	root/root	usr/include/libpurple/sslconn.h
 -rw-r--r--	root/root	usr/include/libpurple/status.h
 -rw-r--r--	root/root	usr/include/libpurple/stringref.h
 -rw-r--r--	root/root	usr/include/libpurple/stun.h
+-rw-r--r--	root/root	usr/include/libpurple/theme-loader.h
+-rw-r--r--	root/root	usr/include/libpurple/theme-manager.h
+-rw-r--r--	root/root	usr/include/libpurple/theme.h
 -rw-r--r--	root/root	usr/include/libpurple/upnp.h
 -rw-r--r--	root/root	usr/include/libpurple/util.h
+-rw-r--r--	root/root	usr/include/libpurple/valgrind.h
 -rw-r--r--	root/root	usr/include/libpurple/value.h
 -rw-r--r--	root/root	usr/include/libpurple/version.h
 -rw-r--r--	root/root	usr/include/libpurple/whiteboard.h
@@ -110,6 +118,8 @@ drwxr-xr-x	root/root	usr/include/libpurple/
 drwxr-xr-x	root/root	usr/include/pidgin/
 -rw-r--r--	root/root	usr/include/pidgin/eggtrayicon.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkaccount.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkblist-theme-loader.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkblist-theme.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkblist.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkcelllayout.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkcellrendererexpander.h
@@ -128,10 +138,13 @@ drwxr-xr-x	root/root	usr/include/pidgin/
 -rw-r--r--	root/root	usr/include/pidgin/gtkexpander.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkft.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkgaim-compat.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkicon-theme-loader.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkicon-theme.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkidle.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkimhtml.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkimhtmltoolbar.h
 -rw-r--r--	root/root	usr/include/pidgin/gtklog.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkmedia.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkmenutray.h
 -rw-r--r--	root/root	usr/include/pidgin/gtknickcolors.h
 -rw-r--r--	root/root	usr/include/pidgin/gtknotify.h
@@ -150,6 +163,7 @@ drwxr-xr-x	root/root	usr/include/pidgin/
 -rw-r--r--	root/root	usr/include/pidgin/gtksourceiter.h
 -rw-r--r--	root/root	usr/include/pidgin/gtksourceundomanager.h
 -rw-r--r--	root/root	usr/include/pidgin/gtksourceview-marshal.h
+-rw-r--r--	root/root	usr/include/pidgin/gtkstatus-icon-theme.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkstatusbox.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkthemes.h
 -rw-r--r--	root/root	usr/include/pidgin/gtkutils.h
@@ -169,6 +183,8 @@ drwxr-xr-x	root/root	usr/lib/finch/
 -rwxr-xr-x	root/root	usr/lib/finch/gnthistory.so
 -rwxr-xr-x	root/root	usr/lib/finch/gntlastlog.la
 -rwxr-xr-x	root/root	usr/lib/finch/gntlastlog.so
+-rwxr-xr-x	root/root	usr/lib/finch/gnttinyurl.la
+-rwxr-xr-x	root/root	usr/lib/finch/gnttinyurl.so
 -rwxr-xr-x	root/root	usr/lib/finch/grouping.la
 -rwxr-xr-x	root/root	usr/lib/finch/grouping.so
 drwxr-xr-x	root/root	usr/lib/gnt/
@@ -181,9 +197,9 @@ lrwxrwxrwx	root/root	usr/lib/libgnt.so -> libgnt.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnt.so.0 -> libgnt.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnt.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libpurple.la
-lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.5.8
-lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.5.8
--rwxr-xr-x	root/root	usr/lib/libpurple.so.0.5.8
+lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.6.1
+lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.6.1
+-rwxr-xr-x	root/root	usr/lib/libpurple.so.0.6.1
 drwxr-xr-x	root/root	usr/lib/pidgin/
 -rwxr-xr-x	root/root	usr/lib/pidgin/convcolors.la
 -rwxr-xr-x	root/root	usr/lib/pidgin/convcolors.so
@@ -209,6 +225,8 @@ drwxr-xr-x	root/root	usr/lib/pidgin/
 -rwxr-xr-x	root/root	usr/lib/pidgin/sendbutton.so
 -rwxr-xr-x	root/root	usr/lib/pidgin/spellchk.la
 -rwxr-xr-x	root/root	usr/lib/pidgin/spellchk.so
+-rwxr-xr-x	root/root	usr/lib/pidgin/themeedit.la
+-rwxr-xr-x	root/root	usr/lib/pidgin/themeedit.so
 -rwxr-xr-x	root/root	usr/lib/pidgin/ticker.la
 -rwxr-xr-x	root/root	usr/lib/pidgin/ticker.so
 -rwxr-xr-x	root/root	usr/lib/pidgin/timestamp.la
@@ -217,6 +235,8 @@ drwxr-xr-x	root/root	usr/lib/pidgin/
 -rwxr-xr-x	root/root	usr/lib/pidgin/timestamp_format.so
 -rwxr-xr-x	root/root	usr/lib/pidgin/xmppconsole.la
 -rwxr-xr-x	root/root	usr/lib/pidgin/xmppconsole.so
+-rwxr-xr-x	root/root	usr/lib/pidgin/xmppdisco.la
+-rwxr-xr-x	root/root	usr/lib/pidgin/xmppdisco.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/finch.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnt.pc
@@ -261,6 +281,12 @@ lrwxrwxrwx	root/root	usr/lib/purple-2/liboscar.so.0 -> liboscar.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/libxmpp.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/libyahoo.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/libyahoo.so
+-rwxr-xr-x	root/root	usr/lib/purple-2/libyahoojp.la
+-rwxr-xr-x	root/root	usr/lib/purple-2/libyahoojp.so
+-rwxr-xr-x	root/root	usr/lib/purple-2/libymsg.la
+lrwxrwxrwx	root/root	usr/lib/purple-2/libymsg.so -> libymsg.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/purple-2/libymsg.so.0 -> libymsg.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/purple-2/libymsg.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/libzephyr.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/libzephyr.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/log_reader.la
@@ -305,6 +331,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/pidgin.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/pidgin.svg
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -387,6 +416,14 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/dialogs/64/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/64/mail.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/64/question.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/64/warning.png
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/auth.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/cool.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/dialog.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/error.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/info.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/question.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/dialogs/scalable/warning.svg
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emblems/
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emblems/16/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/16/aol-client.png
@@ -410,6 +447,23 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emblems/16/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/16/unavailable.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/16/video.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/16/voice.png
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emblems/scalable/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/aol-client.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/blocked.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/bot.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/external.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/female.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/free-for-chat.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/game.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/male.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/mobile.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/music.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/not-authorized.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/qq-member.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/secure.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/unavailable.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/video.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/emblems/scalable/voice.svg
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emotes/
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/emotes/default/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/emotes/default/act-up.png
@@ -700,6 +754,22 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/protocols/48/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/simple.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/yahoo.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/zephyr.png
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/protocols/scalable/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/aim.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/bonjour.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/gadu-gadu.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/google-talk.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/icq.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/irc.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/jabber.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/meanwhile.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/msn.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/novell.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/qq.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/silc.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/simple.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/yahoo.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/zephyr.svg
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/status/
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/status/11/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/status/11/available.png
@@ -777,7 +847,10 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/status/48/rtl/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/status/48/rtl/log-in.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/status/48/rtl/log-out.png
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/11/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/11/message-new.png
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/16/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/audio-call.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/change-bgcolor.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/change-fgcolor.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/emote-select.png
@@ -792,8 +865,17 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/16/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/send-file.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/transfer.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/unblock.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/16/video-call.png
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/22/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/22/select-avatar.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/22/video-call.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/22/voice-call.png
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/32/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/32/video-call.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/32/voice-call.png
+drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/toolbar/48/
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/48/video-call.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/toolbar/48/voice-call.png
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/tray/
 drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/tray/16/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/16/available_4bit.ico
@@ -829,6 +911,7 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/tray/32/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-connecting.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-extended-away.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-invisible.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-message.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-new-im.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-offline.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/32/tray-online.png
@@ -838,6 +921,7 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/tray/48/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-connecting.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-extended-away.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-invisible.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-message.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-new-im.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-offline.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/tray/48/tray-online.png
@@ -848,11 +932,16 @@ drwxr-xr-x	root/root	usr/share/purple/ca-certs/
 -rw-r--r--	root/root	usr/share/purple/ca-certs/CAcert_Class3.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/CAcert_Root.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/Equifax_Secure_CA.pem
+-rw-r--r--	root/root	usr/share/purple/ca-certs/Equifax_Secure_Global_eBusiness_CA-1.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/GTE_CyberTrust_Global_Root.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/Microsoft_Internet_Authority.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/Microsoft_Secure_Server_Authority.pem
+-rw-r--r--	root/root	usr/share/purple/ca-certs/StartCom_Certification_Authority.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/StartCom_Free_SSL_CA.pem
+-rw-r--r--	root/root	usr/share/purple/ca-certs/Thawte_Premium_Server_CA.pem
+-rw-r--r--	root/root	usr/share/purple/ca-certs/VeriSign_Class3_Extended_Validation_CA.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.pem
+-rw-r--r--	root/root	usr/share/purple/ca-certs/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5_2.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/VeriSign_International_Server_Class_3_CA.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/Verisign_Class3_Primary_CA.pem
 -rw-r--r--	root/root	usr/share/purple/ca-certs/Verisign_RSA_Secure_Server_CA.pem
