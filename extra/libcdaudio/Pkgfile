@@ -1,0 +1,18 @@
+# Description: Librairie portable de contrôle du CD audio et de gestion des informations de CDDB 
+# URL: http://libcdaudio.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: glibc
+
+name=libcdaudio
+version=0.99.12
+release=1
+source=(http://downloads.sourceforge.net/libcdaudio/$name-${version}p2.tar.gz)
+
+build() {
+cd $name-${version}p2
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+
