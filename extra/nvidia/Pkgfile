@@ -5,57 +5,53 @@
 # Depends on:
 
 name=nvidia
-version=185.18.31
-release=2
-_kernel=2.6.30.5
+version=185.18.36
+release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
-source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg1.run\
-	)
+source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg0.run\
+	$name-makefile.patch)
 
 build() {
-	sh NVIDIA-Linux-${_ARCH}-$version-pkg1.run --extract-only
-	cd NVIDIA-Linux-${_ARCH}-$version-pkg1/usr/src/nv
-	ln -s Makefile.kbuild Makefile
-	make SYSSRC=/usr/src/kernel/linux-${_kernel} module
+	sh NVIDIA-Linux-${_ARCH}-$version-pkg0.run --extract-only
+	cd NVIDIA-Linux-${_ARCH}-$version-pkg0
 
-	# install kernel module
-	mkdir -p $PKG/lib/modules/${_kernel}/kernel/drivers/video
-	install -m644 nvidia.ko $PKG/lib/modules/${_kernel}/kernel/drivers/video
-	
-	
-	# make utilities
-	cd ../../
+	patch -p0 -i $SRC/$name-makefile.patch usr/src/nv/Makefile.kbuild
 
-        mkdir -p $PKG/usr/{lib,bin,share/applications,share/pixmaps,share/man/man1}
-        mkdir -p $PKG/usr/lib/xorg/modules/{extensions,drivers}
-        mkdir -p $PKG/usr/share/licenses/nvidia
 
-	# Install libraries
-	cp -a X11R6/lib/* $PKG/usr/lib/xorg/
-        cp -a lib/* $PKG/usr/lib/
+	mkdir -p $PKG/usr/lib \
+		$PKG/usr/lib/xorg/modules/drivers \
+		$PKG/usr/lib/xorg/modules/extensions \
+		$PKG/usr/bin $PKG/usr/man/man1
+
+	cp -a usr/X11R6/lib/* $PKG/usr/lib/xorg/
+	cp -a usr/lib/* $PKG/usr/lib/
 	sed -i -e 's|__LIBGL_PATH__|/usr/lib|' $PKG/usr/lib/libGL.la
 	ln -sf libGLcore.so.$version $PKG/usr/lib/libGLcore.so
 	ln -sf /usr/lib/libGLcore.so $PKG/usr/lib/xorg/modules/extensions/libGLcore.so
 
-	# additional symlinks required by gl-select
-	ln -s libGL.so.$version $PKG/usr/lib/libGL_so_1_2_nvidia
-	ln -s libglx.so.$version $PKG/usr/lib/xorg/modules/extensions/libglx_so_nvidia
-	
-	# Copy includes
+	# copy includes
 	mkdir -p $PKG/usr/include/nvidia
-	cp -r include/GL $PKG/usr/include/nvidia/
+	cp -r usr/include/GL $PKG/usr/include/nvidia/
 
-        install -m644 share/man/man1/* $PKG/usr/share/man/man1/
-        rm $PKG/usr/share/man/man1/nvidia-installer.1.gz
 
-        cp -a X11R6/lib/* $PKG/usr/lib/xorg/
-        install -m644 share/applications/nvidia-settings.desktop $PKG/usr/share/applications/
+	# install xconfig/settings programs and manpages
+	install -m 0755 usr/bin/nvidia-{xconfig,settings} $PKG/usr/bin/
+	install -m 0644 usr/share/man/man1/nvidia-{xconfig,settings}.1.gz \
+		$PKG/usr/man/man1/
 
-        # fix nvidia .desktop file
-        sed -e 's:__UTILS_PATH__:/usr/bin:' -e 's:__PIXMAP_PATH__:/usr/share/pixmaps:' -i \
-        $PKG/usr/share/applications/nvidia-settings.desktop
+	# install xconfig/settings programs and manpages
+	install -m 0755 usr/bin/nvidia-{xconfig,settings} $PKG/usr/bin/
+	install -m 0644 usr/share/man/man1/nvidia-{xconfig,settings}.1.gz \
+		$PKG/usr/man/man1/
 
-        install -m644 share/pixmaps/nvidia-settings.png $PKG/usr/share/pixmaps/
-        install -m755 bin/nvidia-{settings,xconfig,bug-report.sh} $PKG/usr/bin/
+	# build the module
+	cd usr/src/nv
+	ln -s Makefile{.kbuild,}
+	IGNORE_CC_MISMATCH=1 make module
+
+	# install it
+	install -m 0644 -D nvidia.ko \
+		$PKG/lib/modules/`uname -r`/extra/nvidia.ko
+
 }
