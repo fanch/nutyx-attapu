@@ -2,7 +2,7 @@
 # URL: http://freshmeat.net/projects/popt/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gettext
+# Depends on:
 
 name=popt
 version=1.15
