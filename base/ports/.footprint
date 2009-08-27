@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	etc/ports/
 -rw-r--r--	root/root	etc/ports/base.rsync
 drwxr-xr-x	root/root	etc/ports/drivers/
 -rw-r--r--	root/root	etc/ports/extra.rsync
--rw-r--r--	root/root	etc/ports/gnome.rsync
 -rw-r--r--	root/root	etc/ports/kde.rsync
 -rw-r--r--	root/root	etc/ports/xfce.rsync
 -rw-r--r--	root/root	etc/ports/xorg.rsync
