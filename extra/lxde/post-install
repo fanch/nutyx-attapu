@@ -1,1 +1,1 @@
-sed -i "s/^\(Session=\).*$/\1lxde/g" /etc/skel/.dmrc
+sed -i "s/^\(Session=\).*$/\1LXDE/g" /etc/skel/.dmrc
