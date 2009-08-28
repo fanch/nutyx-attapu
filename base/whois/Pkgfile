@@ -1,0 +1,19 @@
+# Description: Client-side application which queries directory service
+# URL: http://ftp.debian.org/debian/pool/main/w/whois
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=whois
+version=4.7.28
+release=1
+source=( ftp://ftp.debian.org/debian/pool/main/w/$name/$name\_$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	sed -i 's/install:/install-pos:/' po/Makefile
+	make
+	install -D -m 755 whois $PKG/usr/bin/whois
+	install -D -m 644 whois.1 $PKG/usr/share/man/man1/whois.1
+}
