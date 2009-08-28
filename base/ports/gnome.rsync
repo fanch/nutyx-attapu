@@ -1,3 +1,0 @@
-host=kiao.no-ip.info:22
-collection=ports/nutyx-2009/gnome/
-destination=/usr/ports/gnome
