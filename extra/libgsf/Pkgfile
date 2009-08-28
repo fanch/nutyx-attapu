@@ -1,0 +1,23 @@
+# Description: Librairie pour la lecture et l'écriture de fichiers au format structuré
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: p5-xml-parser, gconf
+
+name=libgsf
+version=1.14.8
+release=2
+source=( http://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-gtk-doc \
+		--without-gnome \
+		--with-bz2	
+	make
+	make DESTDIR=$PKG install
+        rm -rf $PKG/usr/share/gtk-doc
+}
