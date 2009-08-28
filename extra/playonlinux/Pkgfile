@@ -1,0 +1,30 @@
+# Description: Permet d'installer des programmes windows sous NuTyX
+# URL: http://www.playonlinux.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: wxpython, cabextract, xterm, gettext, lzma, wine
+
+name=playonlinux
+version=3.2.2
+release=1
+source=(http://www.playonlinux.com/script_files/PlayOnLinux/$version/PlayOnLinux_${version}.tar.gz)
+
+build() {
+    
+		#make directories
+    mkdir -p $PKG/usr/share/playonlinux
+    mkdir -p $PKG/usr/bin
+    
+    #copy files
+    cp -r playonlinux/* $PKG/usr/share/playonlinux
+    
+    #launcher script for playonlinux
+    cat > $PKG/usr/bin/playonlinux<<EndScript
+#! /bin/sh
+/usr/share/playonlinux/playonlinux "\$@"
+exit \$?
+EndScript
+
+    chmod +x $PKG/usr/bin/playonlinux
+
+}
