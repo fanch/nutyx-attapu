@@ -1,0 +1,28 @@
+# Description: Librairie libbonobo pour gnome 
+# URL: http://developer.gnome.org/arch/gnome/componentmodel/bonobo.html
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: orbit2, libxml2, popt, p5-xml-parser
+
+name=libbonobo
+version=2.24.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2\
+	bonobo-activation-config.xml)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+		--sysconfdir=/etc \
+		--libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib/bonobo \
+		--mandir=$(pkg-config \
+--variable=prefix ORBit-2.0)/share/man
+	make
+	make DESTDIR=$PKG install
+	install -m644 ../bonobo-activation-config.xml \
+	$PKG/etc/bonobo-activation/
+	rm -r $PKG/$(pkg-config \
+	--variable=prefix ORBit-2.0)/share/gtk-doc	
+
+}
