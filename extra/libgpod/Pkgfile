@@ -1,0 +1,18 @@
+# Description: Librairie partagée pour accéder au contenu d'un iPod
+# URL: http://www.gtkpod.org/libgpod.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: mutagen
+
+name=libgpod
+version=0.7.2
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/gtkpod/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	sed -i -e 's|glib-2.0|gobject-2.0|' $PKG/usr/lib/pkgconfig/libgpod-1.0.pc
+}
