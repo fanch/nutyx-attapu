@@ -1,0 +1,22 @@
+# Description: Librairie pour ekiga
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=ptlib
+version=2.4.4
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.4/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+		./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+		--sysconfdir=/etc/gnome/$GNOME_VERSION \
+		--localstatedir=/var/lib \
+		--mandir=$(pkg-config \
+		--variable=prefix ORBit-2.0)/share/man \
+		--disable-esd
+	make
+	make DESTDIR=$PKG install
+}
