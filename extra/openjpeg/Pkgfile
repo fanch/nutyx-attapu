@@ -1,0 +1,21 @@
+# Description: Librairie libre codec jpeg 2000
+# URL: http://www.ijg.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=openjpeg
+version=1.3
+release=1
+_version=v1_3
+source=( http://www.openjpeg.org/openjpeg_${_version}.tar.gz \
+	30_fix_build_for_debian.dpatch)
+
+
+build() {
+	cd OpenJPEG_${_version}
+	patch -Np1 -i ../30_fix_build_for_debian.dpatch
+	make
+	make DESTDIR=$PKG install
+	ln -s libopenjpeg.so.2 $PKG/usr/lib/libopenjpeg.so
+}
