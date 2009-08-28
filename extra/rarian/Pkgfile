@@ -1,0 +1,22 @@
+# Description: Librairie pour documentation de donnees meta 
+# URL: http://rarian.freedesktop.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=rarian
+version=0.8.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/rarian/0.8/$name-$version.tar.bz2 \
+	user-segfault.patch)
+
+build() {
+	cd $name-$version
+	patch -p0 -i ../user-segfault.patch
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
