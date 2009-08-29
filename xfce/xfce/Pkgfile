@@ -2,11 +2,11 @@
 # URL: http://www.xfce.org/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: atk, dbh, dbus, dbus-glib, expat, fontconfig, freetype, fuse, gdm, glib, intltool, libgcrypt, libgpg-error, libgsf, libnotify, libpng, librsvg, libwnck, xorg-libx11, libxml2, gtk, cups, hal, gamin, gnutls, pango, pcre, perl, python, startup-notification, zlib, alsa-utils, xdg-utils, hicolor-icon-theme, xfce4-dev-tools, libxfce4util, libxfcegui4, libxfce4menu, exo, xfce4-panel, thunar, libgnome, xfce4-session, xfce4-settings, xfwm4, xfwm4-themes, xfdesktop, xfce-utils, xfprint, gtk-xfce-engine, mousepad, vte, terminal, xarchiver, xfburn, orage, xfce4-appfinder, xfce4-mixer, xfmedia, xfce4-artwork, ristretto, thunar-volman, thunar-archive-plugin, thunar-media-tags-plugin, thunar-thumbnailers, xfce4-cpugraph-plugin, xfce4-places-plugin, xfce4-screenshooter, xfce4-taskmanager, xfce4-verve-plugin, xfce4-power-manager, xfce4-icon-theme, xfce4-notifyd, gigolo, gnupg1, openssh, OxygenRefit2-red, tango-icon-theme, midori, wicd, sylpheed, pidgin, xorg
+# Depends on: atk, dbh, dbus, dbus-glib, expat, fontconfig, freetype, fuse, gdm, glib, intltool, libgcrypt, libgpg-error, libgsf, libnotify, libpng, librsvg, libwnck, xorg-libx11, libxml2, gtk, cups, hal, gamin, gnutls, pango, pcre, perl, python, startup-notification, zlib, alsa-utils, xdg-utils, hicolor-icon-theme, xfce4-dev-tools, libxfce4util, libxfcegui4, libxfce4menu, exo, xfce4-panel, thunar, libgnome, xfce4-session, xfce4-settings, xfwm4, xfwm4-themes, xfdesktop, xfce-utils, xfprint, gtk-xfce-engine, mousepad, vte, terminal, xarchiver, xfburn, orage, xfce4-appfinder, xfce4-mixer, xfmedia, xfce4-artwork, ristretto, thunar-volman, thunar-archive-plugin, thunar-media-tags-plugin, thunar-thumbnailers, xfce4-cpugraph-plugin, xfce4-places-plugin, xfce4-screenshooter, xfce4-taskmanager, xfce4-verve-plugin, xfce4-power-manager, xfce4-icon-theme, xfce4-notifyd, gigolo, gnupg1, openssh, oxygenrefit2-red, tango-icon-theme, midori, wicd, sylpheed, pidgin, xorg
 
 name=xfce
 version=4.6.1
-release=2
+release=3
 source=(http://download.tuxfamily.org/fredgnix/packages.NuTyX/Misc/$name-desktop-$version.tar.bz2)
 
 build() {
