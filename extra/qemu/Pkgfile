@@ -1,0 +1,21 @@
+# Description: Emulateur opensource
+# URL: http://www.bellard.org/qemu/download.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=qemu
+version=0.10.0
+release=1
+source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	sed -i -e 's#-rpath,/usr/lib#-rpath,/usr/lib,-rpath,/lib#g' \
+	config-host.mak
+	make
+	make DESTDIR=$PKG install
+#	install -D -m644 ../70-kqemu.rules \
+#	$PKG/etc/udev/rules.d/70-kqemu.rules
+}
