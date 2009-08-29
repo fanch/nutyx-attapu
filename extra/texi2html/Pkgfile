@@ -1,0 +1,21 @@
+# Description: Permet la conversion des fichiers textes en fichier html
+# URL: http://www.mathematik.uni-kl.de/~obachman/Texi2html/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl
+
+name=texi2html
+version=1.64
+release=1
+source=(http://www.mathematik.uni-kl.de/~obachman/Texi2html/Distrib/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	sed -i "s|mandir = /usr/man|mandir = \${prefix}/share/man|g" Makefile
+	make -j3
+	make prefix=$PKG/usr install
+	mv $PKG/usr/info $PKG/usr/share/info
+	rm -r $PKG/usr/share/info/dir
+	rm -r $PKG/usr/html
+}
