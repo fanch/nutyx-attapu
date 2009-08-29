@@ -2,7 +2,7 @@
 # URL: http://projects.gnome.org/evince/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: atk, cairo, cups, dbus-glib, djvulibre, e2fsprogs, expat, fontconfig, freetype, gcc-libs, gconf, glib, glibc, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, pixman, poppler-glib, shared-mime-info, zlib
+# Depends on: atk, cairo, cups, dbus-glib, djvulibre, e2fsprogs, expat, fontconfig, freetype, gconf, glib, glibc, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, xorg-libpixman, poppler-glib, shared-mime-info, zlib
 
 name=evince
 version=2.26.2
