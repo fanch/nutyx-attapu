@@ -2,6 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/chm2pdf
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/python2.5/
-drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/chm2pdf-0.9-py2.5.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.6/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/chm2pdf-0.9-py2.6.egg-info
