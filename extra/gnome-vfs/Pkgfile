@@ -1,0 +1,22 @@
+# Description: Librairie pour le système de fichiers virtuel de gnome
+# URL: http://library.gnome.org/devel/gnome-vfs-2.0/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gconf, gnome-mime-data
+
+name=gnome-vfs
+version=2.24.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+            --sysconfdir=/etc \
+	--libexecdir=$(pkg-config \
+	--variable=prefix ORBit-2.0)/lib/gnome-vfs-2.0
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$(pkg-config \
+	--variable=prefix ORBit-2.0)/share/gtk-doc
+}
