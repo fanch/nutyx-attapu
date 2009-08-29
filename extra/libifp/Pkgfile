@@ -1,0 +1,19 @@
+# Description: Librairie pour le iRiver
+# URL: http://ifp-driver.sourceforge.net/libifp/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libusb
+
+name=libifp
+version=1.0.0.2
+release=1
+source=(http://prdownloads.sourceforge.net/ifp-driver/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--with-libusb \
+		--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
