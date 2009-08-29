@@ -1,0 +1,24 @@
+# Description: James Clark's DSSSL Engine
+# URL: http://www.jclark.com/jade/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=jade
+version=1.2.1
+release=5
+_debpatch=47
+source=(ftp://ftp.jclark.com/pub/jade/jade-${version}.tar.gz
+        http://ftp.debian.org/debian/pool/main/j/jade/jade_${version}-${_debpatch}.diff.gz)
+
+build() {
+ gzip -d jade_${version}-${_debpatch}.diff.gz
+  cd ${name}-${version}
+  patch -Np1 -i ../jade_${version}-${_debpatch}.diff
+  chmod 755 configure
+  ./configure --prefix=/usr --enable-default-catalog=/usr/share/sgml/catalog
+  make
+  install -d -m755 $PKG/usr/lib
+  make prefix=$PKG/usr install
+  mv $PKG/usr/bin/sx $PKG/usr/bin/sgml2xml
+}

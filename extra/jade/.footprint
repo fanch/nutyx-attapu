@@ -1,0 +1,29 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/jade
+-rwxr-xr-x	root/root	usr/bin/nsgmls
+-rwxr-xr-x	root/root	usr/bin/sgml2xml
+-rwxr-xr-x	root/root	usr/bin/sgmlnorm
+-rwxr-xr-x	root/root	usr/bin/spam
+-rwxr-xr-x	root/root	usr/bin/spent
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libgrove.a
+-rwxr-xr-x	root/root	usr/lib/libgrove.la
+lrwxrwxrwx	root/root	usr/lib/libgrove.so -> libgrove.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libgrove.so.1 -> libgrove.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libgrove.so.1.0.3
+-rw-r--r--	root/root	usr/lib/libsp.a
+-rwxr-xr-x	root/root	usr/lib/libsp.la
+lrwxrwxrwx	root/root	usr/lib/libsp.so -> libsp.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libsp.so.1 -> libsp.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libsp.so.1.0.3
+-rw-r--r--	root/root	usr/lib/libspgrove.a
+-rwxr-xr-x	root/root	usr/lib/libspgrove.la
+lrwxrwxrwx	root/root	usr/lib/libspgrove.so -> libspgrove.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libspgrove.so.1 -> libspgrove.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libspgrove.so.1.0.3
+-rw-r--r--	root/root	usr/lib/libstyle.a
+-rwxr-xr-x	root/root	usr/lib/libstyle.la
+lrwxrwxrwx	root/root	usr/lib/libstyle.so -> libstyle.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libstyle.so.1 -> libstyle.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libstyle.so.1.0.3
