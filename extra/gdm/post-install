@@ -1,0 +1,9 @@
+#!/bin/sh
+
+port=gdm
+
+# desktop database
+update-desktop-database > /dev/null
+
+# End of file
+
