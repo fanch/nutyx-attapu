@@ -1,0 +1,18 @@
+# Description: Gestionnaire de photos pour KDE 4 
+# URL: http://www.digikam.org
+# Packager: lesibel at free dot fr
+# Depends on: qt4, kdebase, kdegraphics, libtiff, libjpeg, libpng, imagemagick, libxslt, libxml2, libexpat, MesaLib, opencv, kdepimlibs
+
+name=kipi-plugins
+version=0.4.0
+release=1
+source=(http://downloads.sourceforge.net/kipi/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	make -j3
+	make DESTDIR=$PKG install
+}
