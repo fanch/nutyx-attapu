@@ -1,0 +1,26 @@
+# Description: Système de configuration de base de données
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: orbit2
+
+name=gconf
+version=2.24.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/GConf/2.24/GConf-$version.tar.bz2\
+	gconf-reload.patch)
+build() {
+	cd GConf-$version
+	patch -Np1 -i ../gconf-reload.patch
+	./configure --prefix=$GNOME_PREFIX\
+	            --sysconfdir=/etc \
+            --libexecdir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/lib/GConf \
+	--with-dbus-service-dir=/usr/share/dbus-1/services \
+            --mandir=$(pkg-config \
+                --variable=prefix ORBit-2.0)/share/man
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$(pkg-config \
+	--variable=prefix ORBit-2.0)/share/gtk-doc
+}
