@@ -1,0 +1,19 @@
+# Description: Gestionnaire de photos pour KDE 4 
+# URL: http://www.digikam.org
+# Maintainer: NuTyX packager Team
+# Packager: lesibel at free dot fr
+# Depends on: libgphoto2, lcms, kdegraphics, kdepimlibs, jasper, lensfun, libjpeg, kipi-plugins
+
+name=digikam
+version=0.10.0
+release=2
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	make -j3
+	make DESTDIR=$PKG install
+}
