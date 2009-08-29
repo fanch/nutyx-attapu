@@ -1,0 +1,18 @@
+# Description: librairie de vision en temps réel
+# URL: http://opencv.willowgarage.com/wiki/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, libtiff, libjasper, libpng, zlib, ffmpeg, libgstreamer, libxine, libdc1394
+
+name=opencv
+version=1.1pre1
+release=1
+source=(http://ovh.dl.sourceforge.net/sourceforge/opencvlibrary/$name-$version.tar.gz)
+
+build() {
+		cd $name-1.1.0
+                ./configure --prefix=/usr
+		make -j3
+		make DESTDIR=$PKG install
+}
+
