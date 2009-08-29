@@ -1,0 +1,20 @@
+# Description: ORB CORBA leger et rapide.
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libidl glib xorg
+
+name=orbit2
+version=2.14.17
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/ORBit2/2.14/ORBit2-$version.tar.bz2)
+
+build() {
+	cd ORBit2-$version
+	./configure --prefix=$GNOME_PREFIX \
+	--sysconfdir=/etc \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc/
+}
