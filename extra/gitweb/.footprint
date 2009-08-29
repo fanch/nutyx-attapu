@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	srv/
+drwxr-xr-x	root/root	srv/www/
+drwxr-xr-x	root/root	srv/www/cgi-bin/
+-rw-r--r--	root/root	srv/www/cgi-bin/git-favicon.png
+-rw-r--r--	root/root	srv/www/cgi-bin/git-logo.png
+-rwxr-xr-x	root/root	srv/www/cgi-bin/gitweb.cgi
+-rw-r--r--	root/root	srv/www/cgi-bin/gitweb.css
+-rwxr-xr-x	root/root	srv/www/cgi-bin/gitweb.perl

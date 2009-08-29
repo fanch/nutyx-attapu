@@ -1,0 +1,21 @@
+# Description: Interface web pour git
+# URL: http://git.or.cz/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: git
+
+name=gitweb
+version=1.6.2.4
+release=1
+source=(http://www.kernel.org/pub/software/scm/git/git-$version.tar.bz2)
+
+
+
+build() {
+	cd git-$version
+	./configure --prefix=/usr
+	make CFLAGS="$CFLAGS" gitweb/gitweb.cgi
+	mkdir -p $PKG/srv/www/cgi-bin
+	cp gitweb/git* $PKG/srv/www/cgi-bin/
+
+}
