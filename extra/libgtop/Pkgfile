@@ -1,0 +1,21 @@
+# Description: Contient la librairie top pour gnome
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libgtop
+version=2.24.4
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+	--infodir=$(pkg-config \
+	--variable=prefix ORBit-2.0)/share/info
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$(pkg-config \
+	--variable=prefix ORBit-2.0)/share/gtk-doc
+}
