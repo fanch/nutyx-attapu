@@ -1,0 +1,19 @@
+# Description: Générateur de code de documentation
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl, docbook-xml, docbook-xsl
+
+name=gtk-doc
+version=1.10
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/1.10/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--localstatedir=/var/lib
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/var
+}
