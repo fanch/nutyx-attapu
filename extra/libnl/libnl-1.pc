@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: libnl
+Description: Convenience library for netlink sockets
+Version: 1.0-pre8
+Libs: -L${libdir} -lnl
+Cflags:
+

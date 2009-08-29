@@ -1,0 +1,22 @@
+# Description: Librairie pour des application utilisants des sockets
+# URL: http://people.suug.ch/~tgr/libnl
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libnl
+version=1.1
+release=1
+source=(http://people.suug.ch/~tgr/$name/files/$name-$version.tar.gz\
+	libnl-1.pc 01-missing_declaration.patch gcc43.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../01-missing_declaration.patch
+	patch -Np1 -i ../gcc43.patch
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	install -D -m0644 ../libnl-1.pc $PKG/usr/lib/pkgconfig/libnl-1.pc
+	
+}
