@@ -1,0 +1,32 @@
+# Description: Contient une librairie pour le rendu des fichiers pdf
+# URL: http://poppler.freedesktop.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, poppler
+
+name=poppler-glib
+version=0.10.7
+release=1
+source=(http://poppler.freedesktop.org/poppler-$version.tar.gz \
+	poppler-0.10-bindings.patch)
+
+build() {
+	cd poppler-$version
+	patch -Np1 -i ../poppler-0.10-bindings.patch
+	libtoolize --force --copy
+	AT_M4DIR="m4" autoreconf -i
+	  ./configure --prefix=/usr --sysconfdir=/etc \
+              --localstatedir=/var --disable-static \
+	      --enable-zlib \
+	      --enable-libjpeg \
+	      --enable-cairo-output \
+	      --enable-poppler-qt4 \
+	      --enable-poppler-glib \
+	      --disable-poppler-qt4 \
+	      --disable-poppler-qt
+	pushd poppler
+	make libpoppler-cairo.la
+	popd 
+	make
+	make prefix=$PKG/usr install
+}
