@@ -1,0 +1,4 @@
+#!/bin/bash
+if ( pkginfo -i | grep kdepim3 > /dev/null ) ; then
+        pkgrm kdepim3
+fi

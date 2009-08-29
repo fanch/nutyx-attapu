@@ -1,0 +1,133 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/kde/
+drwxr-xr-x	root/root	opt/kde/bin/
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi2xml
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_birthdays_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_distlist_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_ical_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_imap_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_kabc_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_kcal_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_knut_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_kolabproxy_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_localbookmarks_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_maildir_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_microblog_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_contact_feeder
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_email_feeder
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuktag_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nntp_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_strigi_feeder
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_vcard_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_vcarddir_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadiconsole
+-rwxr-xr-x	root/root	opt/kde/bin/akonaditray
+-rwxr-xr-x	root/root	opt/kde/bin/kres-migrator
+drwxr-xr-x	root/root	opt/kde/include/
+drwxr-xr-x	root/root	opt/kde/include/akonadi/
+drwxr-xr-x	root/root	opt/kde/include/akonadi/xml/
+-rw-r--r--	root/root	opt/kde/include/akonadi/xml/akonadi-xml_export.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmldocument.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlreader.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlwritejob.h
+-rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlwriter.h
+drwxr-xr-x	root/root	opt/kde/lib/
+drwxr-xr-x	root/root	opt/kde/lib/kde4/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_addressee.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_bookmark.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_contactgroup.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_kcal.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_mail.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_microblog.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_akonadi.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_akonadi.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_akonadi.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_akonadi_resources.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_akonadi_server.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_akonadi.so
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kabccommon.so -> libakonadi-kabccommon.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kabccommon.so.4 -> libakonadi-kabccommon.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi-kabccommon.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal.so -> libakonadi-kcal.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal.so.4 -> libakonadi-kcal.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi-kcal.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-xml.so -> libakonadi-xml.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-xml.so.4 -> libakonadi-xml.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi-xml.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so -> libakonadi_next.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so.4 -> libakonadi_next.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi_next.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdepim-copy.so -> libkdepim-copy.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libkdepim-copy.so.4 -> libkdepim-copy.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdepim-copy.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmaildir.so -> libmaildir.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libmaildir.so.4 -> libmaildir.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmaildir.so.4.3.0
+drwxr-xr-x	root/root	opt/kde/share/
+drwxr-xr-x	root/root	opt/kde/share/akonadi/
+drwxr-xr-x	root/root	opt/kde/share/akonadi/agents/
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/birthdaysresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/distlistresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/icalresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/imapresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/kabcresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/kcalresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/knutresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/kolabproxyresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/localbookmarksresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/maildirresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/microblog.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukcontactfeeder.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukemailfeeder.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomuktagresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nntpresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/notesresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/strigifeeder.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/vcarddirresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/vcardresource.desktop
+drwxr-xr-x	root/root	opt/kde/share/applications/
+drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/akonadiconsole.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/akonaditray.desktop
+drwxr-xr-x	root/root	opt/kde/share/apps/
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/akonadi-xml.xsd
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/firstrun/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/firstrun/defaultaddressbook
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/firstrun/defaultcalendar
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/plugins/
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/plugins/serializer/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_addressee.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_bookmark.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_contactgroup.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_kcal.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_mail.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_microblog.desktop
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi_knut_resource/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadi_knut_resource/knut-template.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadiconsole/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadiconsole/akonadiconsoleui.rc
+drwxr-xr-x	root/root	opt/kde/share/config/
+-rw-r--r--	root/root	opt/kde/share/config/kres-migratorrc
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.Akonadi.Maildir.Settings.xml
+drwxr-xr-x	root/root	opt/kde/share/icons/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kolab.png
+drwxr-xr-x	root/root	opt/kde/share/kde4/
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/
+-rw-r--r--	root/root	opt/kde/share/kde4/services/akonadi.protocol
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_akonadi.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_akonadi_resources.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_akonadi_server.desktop
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kabc/
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/akonadi.desktop
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kcal/
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/akonadi.desktop
+drwxr-xr-x	root/root	opt/kde/share/mime/
+drwxr-xr-x	root/root	opt/kde/share/mime/packages/
+-rw-r--r--	root/root	opt/kde/share/mime/packages/kdepim-mime.xml
