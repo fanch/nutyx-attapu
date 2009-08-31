@@ -1,0 +1,23 @@
+# Description: Outils basés sur Java
+# URL: http://ant.apache.org/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: jdk
+
+name=ant
+version=1.7.1
+release=2
+source=(http://archive.apache.org/dist/ant/binaries/apache-ant-$version-bin.tar.bz2)
+
+
+build() {
+	cd apache-ant-$version
+	mkdir -p $PKG/etc/profile.d
+	install -d $PKG/usr/{bin,lib/ant}
+	cp -rf * $PKG/usr/lib/ant
+	ln -sf /usr/lib/ant/bin/ant $PKG/usr/bin/ant
+	rm -r $PKG/usr/lib/ant/bin/*.bat
+	rm -r $PKG/usr/lib/ant/docs
+	rm -r $PKG/usr/lib/ant/{KEYS,LICENS*,README,NOTICE,WHATSNEW,INSTALL}
+	rm -r $PKG/usr/lib/ant/lib/README
+}
