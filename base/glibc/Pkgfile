@@ -6,7 +6,7 @@
 
 name=glibc
 version=2.10.1
-release=1
+release=2
 kernelversion=2.6.30.1
 source=( http://ftp.gnu.org/gnu/glibc/$name-$version.tar.bz2 \
 	http://ftp.gnu.org/gnu/glibc/glibc-libidn-$version.tar.bz2
@@ -25,6 +25,7 @@ build() {
         cd ..
         # install glibc
         cd $name-$version
+	mv ../glibc-libidn-2.10.1 libidn
         DL=$(readelf -l /bin/sh | sed -n 's@.*interpret.*/tools\(.*\)]$@\1@p')
 sed -i "s|libs -o|libs -L/usr/lib -Wl,-dynamic-linker=$DL -o|" \
         scripts/test-installation.pl
