@@ -5,29 +5,24 @@
 # Depends on:
 
 name=jdk
-version=6u14
+version=6u15
 release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=i586
 [ "`uname -m`" == "x86_64"   ] && _ARCH=amd64
 
 source=(http://download.java.net/dlj/binaries/$name-$version-dlj-linux-${_ARCH}.bin \
-        jdk.sh  )
-
+        jdk.sh https://jdk-distros.dev.java.net/source/browse/*checkout*/jdk-distros/trunk/utils/construct.sh )
 
 build() {
-       mkdir -p $PKG/etc/profile.d/
-       mv jdk.sh $PKG/etc/profile.d/
-       chmod 755 $name-$version-dlj-linux-${_ARCH}.bin
-       ./jdk-$version-dlj-linux-${_ARCH}.bin
-       cd jdk1.6.0_14
-       install -v -m755 -d $PKG/opt/jdk-bin-$version
-	mv -v * $PKG/opt/jdk-bin-$version
-if [ "`uname -m`" == "i686" ]; then 
-	_ARCH=i386
-fi
-	ln -v -sf xawt/libmawt.so \
-    $PKG/opt/jdk-bin-$version/jre/lib/${_ARCH}/
-    sed -i 's@XINERAMA@FAKEEXTN@g' \
-    $PKG/opt/jdk-bin-$version/jre/lib/${_ARCH}/xawt/libmawt.so
-    ln -v -nsf jdk-bin-$version $PKG/opt/jdk
+	mkdir -p $PKG/etc/profile.d/
+	mkdir -p $PKG/opt
+	mv jdk.sh $PKG/etc/profile.d/
+	chmod 755 $name-$version-dlj-linux-${_ARCH}.bin
+	mkdir unbundle-jdk
+	cd unbundle-jdk
+       	sh ../jdk-${version}-dlj-linux-${_ARCH}.bin --accept-license
+	cd ..
+	
+	sh construct.sh unbundle-jdk linux-jdk linux-jre
+	mv linux-jdk $PKG/opt/jdk
 }

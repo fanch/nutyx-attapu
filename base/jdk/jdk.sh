@@ -1,4 +1,5 @@
 # Begin /etc/profile.d/jdk.sh
+export J2SDKDIR=/opt/jdk
 
 # Set JAVA_HOME directory
 JAVA_HOME=/opt/jdk
