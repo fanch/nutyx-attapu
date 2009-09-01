@@ -2,10 +2,10 @@
 # URL: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: texinfo
+# Depends on: 
 
 name=udev
-version=145
+version=146
 release=1
 _lfs_release=20090523
 source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
@@ -22,6 +22,7 @@ ln -s /proc/kcore $PKG/lib/udev/devices/core
 ./configure --prefix=/usr \
     --sysconfdir=/etc --sbindir=/sbin \
     --with-rootlibdir=/lib --libexecdir=/lib/udev \
+    --docdir=/usr/share/doc/udev-146 \
     --disable-extras
 make 
 make install DESTDIR=$PKG mandir="/usr/share/man"
