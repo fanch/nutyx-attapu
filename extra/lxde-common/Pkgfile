@@ -8,7 +8,7 @@ name=lxde-common
 version=0.4.2
 release=2
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.bz2\
-	config WallPaper.jpg)
+	config nutyx2009.png)
 
 build() {
 cd $name-$version
@@ -18,12 +18,12 @@ make
 make DESTDIR=$PKG install
 sed -i "s/gnome-terminal/lxterminal/" \
 $PKG/usr/share/lxpanel/profile/LXDE/panels/panel
-	sed -i "s/lxde_blue.jpg/WallPaper.jpg/" \
+	sed -i "s/lxde_blue.jpg/nutyx2009.png/" \
 $PKG/usr/share/lxde/pcmanfm/main.lxde
 install -D -m644 ../config \
 	$PKG/usr/share/lxde/config
-install -D -m644 ../WallPaper.jpg \
-	$PKG/usr/share/lxde/wallpapers/WallPaper.jpg
+install -D -m644 ../nutyx2009.png \
+	$PKG/usr/share/lxde/wallpapers/nutyx2009.png
 }
 
 

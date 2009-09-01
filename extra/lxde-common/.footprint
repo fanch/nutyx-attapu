@@ -6238,10 +6238,10 @@ drwxr-xr-x	root/root	usr/share/lxde/openbox/
 drwxr-xr-x	root/root	usr/share/lxde/pcmanfm/
 -rw-r--r--	root/root	usr/share/lxde/pcmanfm/main.lxde
 drwxr-xr-x	root/root	usr/share/lxde/wallpapers/
--rw-r--r--	root/root	usr/share/lxde/wallpapers/WallPaper.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_blue.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_green.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_red.jpg
+-rw-r--r--	root/root	usr/share/lxde/wallpapers/nutyx2009.png
 drwxr-xr-x	root/root	usr/share/lxpanel/
 drwxr-xr-x	root/root	usr/share/lxpanel/profile/
 drwxr-xr-x	root/root	usr/share/lxpanel/profile/LXDE/
