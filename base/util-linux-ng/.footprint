@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/ctrlaltdel
 -rwxr-xr-x	root/root	sbin/fdisk
 -rwxr-xr-x	root/root	sbin/findfs
+-rwxr-xr-x	root/root	sbin/fsck
 -rwxr-xr-x	root/root	sbin/fsck.cramfs
 -rwxr-xr-x	root/root	sbin/fsck.minix
 -rwxr-xr-x	root/root	sbin/hwclock
@@ -75,7 +76,6 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/uuidgen
 -rwxr-xr-x	root/root	usr/bin/whereis
 -rwxr-sr-x	root/tty	usr/bin/write
-lrwxrwxrwx	root/root	usr/bin/x86_64 -> setarch
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/blkid/
 -rw-r--r--	root/root	usr/include/blkid/blkid.h
@@ -100,6 +100,7 @@ drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/readprofile
 -rwxr-xr-x	root/root	usr/sbin/rtcwake
 -rwxr-xr-x	root/root	usr/sbin/tunelp
+-rwxr-xr-x	root/root	usr/sbin/uuidd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/getopt/
 -rwxr-xr-x	root/root	usr/share/getopt/getopt-parse.bash
@@ -180,6 +181,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/fdformat.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/fdisk.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/findfs.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/fsck.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/fsck.minix.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/hwclock.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/i386.8.gz
@@ -203,7 +205,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/switch_root.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tunelp.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/umount.8.gz
--rw-r--r--	root/root	usr/share/man/man8/x86_64.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/uuidd.8.gz
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/hwclock/

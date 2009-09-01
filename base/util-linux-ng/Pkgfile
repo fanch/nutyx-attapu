@@ -6,7 +6,7 @@
 
 name=util-linux-ng
 version=2.16
-release=1
+release=2
 source=(http://www.kernel.org/pub/linux/utils/util-linux-ng/v2.16/$name-$version.tar.bz2)
 
 build() {
@@ -22,8 +22,6 @@ make
 make DESTDIR=$PKG  install
 rm $PKG/usr/bin/wall
 rm $PKG/usr/share/man/man1/wall.1
-rm $PKG/{sbin/fsck,usr/sbin/uuidd}
-rm $PKG/usr/share/man/man8/{fsck.8,uuidd.8}
 mkdir -p $PKG/etc
 if [ -f $PKG/usr/share/info/dir ]; then
 		rm $PKG/usr/share/info/dir
