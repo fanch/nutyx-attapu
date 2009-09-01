@@ -1742,10 +1742,12 @@ drwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/crypt.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/datetime.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/dbm.so
+-rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/dl.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/fcntl.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/future_builtins.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/gdbm.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/grp.so
+-rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/imageop.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/itertools.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/linuxaudiodev.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/lib-dynload/math.so
