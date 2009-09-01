@@ -5,7 +5,7 @@
 # Depends on: man-db, zlib
 
 name=module-init-tools
-version=3.9
+version=3.10
 release=1
 source=(http://www.kernel.org/pub/linux/utils/kernel/modules/$name-$version.tar.bz2\
 	modprobe.conf)
@@ -21,8 +21,8 @@ make clean
 
 make
 install -d $PKG/usr/share/man
-install -d $PKG/etc
+install -d $PKG/etc/{modprobe.d,depmod.d}
 make DESTDIR=$PKG mandir=/usr/share/man install
 rm -f $PKG/sbin/generate-modprobe.conf
-install -m 644 ../modprobe.conf $PKG/etc
+install -m 644 ../modprobe.conf $PKG/etc/modprobe.d/modprobe.conf
 }

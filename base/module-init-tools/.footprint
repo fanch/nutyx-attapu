@@ -1,7 +1,9 @@
 drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/lsmod
 drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/modprobe.conf
+drwxr-xr-x	root/root	etc/depmod.d/
+drwxr-xr-x	root/root	etc/modprobe.d/
+-rw-r--r--	root/root	etc/modprobe.d/modprobe.conf
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/depmod
 -rwxr-xr-x	root/root	sbin/insmod
