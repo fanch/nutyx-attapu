@@ -5,15 +5,14 @@
 # Depends on: db, gdbm
 
 name=perl
-version=5.10.0
-release=2
+version=5.10.1
+release=1
 source=(ftp://ftp.funet.fi/pub/CPAN/src/$name-$version.tar.gz \
-	http://www.linuxfromscratch.org/patches/lfs/development/perl-$version-consolidated-1.patch\
 	perl-5.10.0-debian-23.patch perl-5.8.6-picdl.patch0)
 
 build() {
 cd $name-$version
-patch -Np1 -i ../perl-5.10.0-debian-23.patch
+# patch -Np1 -i ../perl-5.10.0-debian-23.patch
 if [ "`uname -m`" == "x86_64" ]; then
 	_ARCH="-Dcccdlflags='-fPIC'"
 	patch -Np0 -i ../perl-5.8.6-picdl.patch0
@@ -24,7 +23,7 @@ fi
 sed -i -e "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|"           \
 	-e "s|INCLUDE\s*= ./zlib-src|INCLUDE    = /usr/include|" \
 	-e "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|"         \
-	ext/Compress/Raw/Zlib/config.in
+	ext/Compress-Raw-Zlib/config.in
 sh Configure -des  -Dusethreads \
 	-Dprefix=/usr \
 	-Dman1dir=/usr/share/man/man1 \
