@@ -14,6 +14,7 @@ drwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/
 drwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/
 -rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/envvar.so
 -rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/file.so
+-rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/gnome.so
 -rwxr-xr-x	root/root	usr/lib/libproxy/0.2.3/plugins/kde.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libproxy-1.0.pc
