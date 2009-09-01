@@ -17,7 +17,6 @@ drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/e2image
 -rwxr-xr-x	root/root	sbin/e2label
 -rwxr-xr-x	root/root	sbin/e2undo
--rwxr-xr-x	root/root	sbin/fsck
 -rwxr-xr-x	root/root	sbin/fsck.ext2
 -rwxr-xr-x	root/root	sbin/fsck.ext3
 -rwxr-xr-x	root/root	sbin/fsck.ext4
@@ -70,9 +69,9 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ext2fs.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ss.pc
 drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/e2freefrag
 -rwxr-xr-x	root/root	usr/sbin/filefrag
 -rwxr-xr-x	root/root	usr/sbin/mklost+found
--rwxr-xr-x	root/root	usr/sbin/uuidd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/et/
 -rw-r--r--	root/root	usr/share/et/et_c.awk
@@ -96,12 +95,12 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/badblocks.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/debugfs.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/dumpe2fs.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/e2freefrag.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/e2fsck.8
 -rw-r--r--	root/root	usr/share/man/man8/e2image.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/e2label.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/e2undo.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/filefrag.8.gz
--rw-r--r--	root/root	usr/share/man/man8/fsck.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/fsck.ext2.8
 -rw-r--r--	root/root	usr/share/man/man8/fsck.ext3.8
 -rw-r--r--	root/root	usr/share/man/man8/fsck.ext4.8
@@ -115,7 +114,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/mklost+found.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/resize2fs.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tune2fs.8.gz
--rw-r--r--	root/root	usr/share/man/man8/uuidd.8.gz
 drwxr-xr-x	root/root	usr/share/ss/
 -rw-r--r--	root/root	usr/share/ss/ct_c.awk
 -rw-r--r--	root/root	usr/share/ss/ct_c.sed
