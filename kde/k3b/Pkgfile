@@ -18,5 +18,4 @@ cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
 	
 make
 make DESTDIR=$PKG install
-# rm -r $PKG/$KDE3_PREFIX/share/doc
 }
