@@ -40,11 +40,6 @@ drwxr-xr-x	root/root	etc/wicd/scripts/predisconnect/
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/autostart/
 -rw-r--r--	root/root	etc/xdg/autostart/wicd-tray.desktop
-drwxr-xr-x	root/root	opt/
-drwxr-xr-x	root/root	opt/kde/
-drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/autostart/
--rw-r--r--	root/root	opt/kde/share/autostart/wicd-tray.desktop
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/wicd-client
@@ -55,7 +50,7 @@ drwxr-xr-x	root/root	usr/lib/pm-utils/sleep.d/
 -rwxr-xr-x	root/root	usr/lib/pm-utils/sleep.d/55wicd
 drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Wicd-1.6.2-py2.6.egg-info
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/Wicd-1.6.2.1-py2.6.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/wicd/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/wicd/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/wicd/__init__.pyc
