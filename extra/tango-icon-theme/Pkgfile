@@ -2,7 +2,7 @@
 # URL: http://tango.freedesktop.org/Tango_Icon_Library
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: icon-naming-utils, libpng, librsvg, openexr
+# Depends on: icon-naming-utils, libpng, librsvg, openexr, imagemagick
 
 name=tango-icon-theme
 version=0.8.90
