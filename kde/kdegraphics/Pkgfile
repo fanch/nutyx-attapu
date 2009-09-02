@@ -5,7 +5,7 @@
 # Depends on: kdebase-runtime, shared-mime-info, exiv2, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
 
 name=kdegraphics
-version=4.3.0
+version=4.3.1
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 build() {
