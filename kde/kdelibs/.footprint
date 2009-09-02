@@ -2849,6 +2849,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/user.entities
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/catalog.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/contributor.entities
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/entities/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/entities/fdl-notice.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pt-BR/entities/gpl-notice.docbook
