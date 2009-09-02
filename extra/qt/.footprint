@@ -2653,7 +2653,7 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/cygwin-g++/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/darwin-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/darwin-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/darwin-g++/qplatformdefs.h
-lrwxrwxrwx	root/root	usr/share/qt/mkspecs/default -> linux-g++-64
+lrwxrwxrwx	root/root	usr/share/qt/mkspecs/default -> linux-g++
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/assistant.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/build_pass.prf

@@ -2,12 +2,12 @@
 # URL: http://trolltech.com/products/qt
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libpng, libjpeg, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base
+# Depends on: libpng, libjpeg, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
 
 name=qt
 version=4.5.2
-release=1
-kdeqtver=14082009
+release=2
+kdeqtver=02092009
 _name=qt-x11-opensource-src-${version}
 source=(ftp://ftp.qtsoftware.com/qt/source/${_name}.tar.bz2 \
 	http://kiao.no-ip.info/NuTyX/files/kde-qt-patches-${kdeqtver}.tar.bz2 \
