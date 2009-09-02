@@ -188,6 +188,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_emoticons.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_krfb.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_kwindesktop.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_lirc.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_memory.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_partition.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcm_pci.mo
@@ -234,7 +235,6 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmkwm.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlaunch.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlilo.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlirc.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlocale.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmnic.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmnotify.mo
@@ -423,6 +423,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kres_scalix.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kres_tvanytime.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kres_xmlrpc.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kresources_shared_akonadi.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kreversi.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/krfb.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kruler.mo
