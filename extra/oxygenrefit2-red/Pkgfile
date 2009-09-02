@@ -5,17 +5,17 @@
 # Depends on: libpng, librsvg
 
 name=oxygenrefit2-red
-version=0.1
+version=0.2
 release=1
-source=(http://download.tuxfamily.org/fredgnix/packages.NuTyX/Misc/$name-version.tar.bz2)
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.bz2)
 
 build() {
-cd $name-version
-	mkdir -p $PKG/usr/share/icons/$name
-	cp -rf * $PKG/usr/share/icons/$name
-	mkdir -p $PKG/usr/share/doc/$name
-	cd $PKG/usr/share/icons/$name
-	mv -t $PKG/usr/share/doc/$name COPYING ChangeLog CREDITS syncsizes.sh
+cd $name-*
+	mkdir -p $PKG/usr/share/icons/OxygenRefit2-red
+	cp -rf * $PKG/usr/share/icons/OxygenRefit2-red
+	mkdir -p $PKG/usr/share/doc/OxygenRefit2-red
+	cd $PKG/usr/share/icons/OxygenRefit2-red
+	mv -t $PKG/usr/share/doc/OxygenRefit2-red COPYING ChangeLog CREDITS syncsizes.sh
 	cd $PKG
 	chown -R root:root .
 	find . -perm 664 -exec chmod 644 {} \;
