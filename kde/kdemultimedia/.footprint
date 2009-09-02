@@ -101,7 +101,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kscd/skin/
 -rw-r--r--	root/root	opt/kde/share/apps/kscd/skin/Steel.svg
 -rw-r--r--	root/root	opt/kde/share/apps/kscd/skin/default.svg
 drwxr-xr-x	root/root	opt/kde/share/apps/profiles/
--rw-r--r--	root/root	opt/kde/share/apps/profiles/kscd.profile.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/solid/
 drwxr-xr-x	root/root	opt/kde/share/apps/solid/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/dragonplayer-opendvd.desktop
