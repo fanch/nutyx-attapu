@@ -1,0 +1,49 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/qt/
+drwxr-xr-x	root/root	usr/lib/qt/plugins/
+drwxr-xr-x	root/root	usr/lib/qt/plugins/script/
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_core.so -> libqtscript_core.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_core.so.1 -> libqtscript_core.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_core.so.1.0 -> libqtscript_core.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_core.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_gui.so -> libqtscript_gui.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_gui.so.1 -> libqtscript_gui.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_gui.so.1.0 -> libqtscript_gui.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_gui.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_network.so -> libqtscript_network.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_network.so.1 -> libqtscript_network.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_network.so.1.0 -> libqtscript_network.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_network.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_opengl.so -> libqtscript_opengl.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_opengl.so.1 -> libqtscript_opengl.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_opengl.so.1.0 -> libqtscript_opengl.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_opengl.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_phonon.so -> libqtscript_phonon.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_phonon.so.1 -> libqtscript_phonon.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_phonon.so.1.0 -> libqtscript_phonon.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_phonon.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_sql.so -> libqtscript_sql.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_sql.so.1 -> libqtscript_sql.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_sql.so.1.0 -> libqtscript_sql.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_sql.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_svg.so -> libqtscript_svg.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_svg.so.1 -> libqtscript_svg.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_svg.so.1.0 -> libqtscript_svg.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_svg.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_uitools.so -> libqtscript_uitools.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_uitools.so.1 -> libqtscript_uitools.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_uitools.so.1.0 -> libqtscript_uitools.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_uitools.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_webkit.so -> libqtscript_webkit.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_webkit.so.1 -> libqtscript_webkit.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_webkit.so.1.0 -> libqtscript_webkit.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_webkit.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xml.so -> libqtscript_xml.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xml.so.1 -> libqtscript_xml.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xml.so.1.0 -> libqtscript_xml.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_xml.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xmlpatterns.so -> libqtscript_xmlpatterns.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xmlpatterns.so.1 -> libqtscript_xmlpatterns.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/qt/plugins/script/libqtscript_xmlpatterns.so.1.0 -> libqtscript_xmlpatterns.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/script/libqtscript_xmlpatterns.so.1.0.0
