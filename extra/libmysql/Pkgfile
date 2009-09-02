@@ -5,8 +5,8 @@
 # Depends on: glibc
 
 name=libmysql
-version=5.1.36
-release=2
+version=5.1.38
+release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/mysql-$version.tar.gz )
 
 build () {
