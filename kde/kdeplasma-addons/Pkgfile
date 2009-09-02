@@ -5,7 +5,7 @@
 # Depends on: kdebase, kdegraphics
 
 name=kdeplasma-addons
-version=4.3.0
+version=4.3.1
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 build() {
