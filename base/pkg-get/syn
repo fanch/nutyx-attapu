@@ -22,7 +22,13 @@ if [ ! -L /depot ]; then
 	if [ -d $MediaDepot/$i ]; then
 		echo "Dépot $i trouvé sur le media"
 		rm -r $Depot/$i > /dev/null 2>&1
-		ln -svf $MediaDepot/$i $Depot/ > /dev/null
+		mkdir -p $Depot/$i
+		for j in $MediaDepot/$i/*.gz 
+		do
+			fj=`basename $j`
+			ln -svf $MediaDepot/$i/$fj $Depot/$i/$fj > /dev/null
+		done
+		cp $MediaDepot/$i/PKG* $Depot/$i/
 	fi
 	done
 else
