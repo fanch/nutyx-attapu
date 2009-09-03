@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ant/
+-rw-r--r--	root/root	etc/ant/ant.conf (EMPTY)
+drwxr-xr-x	root/root	etc/profile.d/
+-rw-r--r--	root/root	etc/profile.d/apache-ant.sh
+drwxr-xr-x	root/root	opt/
+lrwxrwxrwx	root/root	opt/ant -> ant-1.7.1
+drwxr-xr-x	root/root	opt/ant-1.7.1/
+drwxr-xr-x	root/root	opt/ant-1.7.1/bin/
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/ant
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/ant.bat
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/ant.cmd
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/antRun
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/antRun.bat
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/antRun.pl
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/antenv.cmd
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/complete-ant-cmd.pl
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/envset.cmd
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/lcp.bat
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/runant.pl
+-rwxr-xr-x	root/root	opt/ant-1.7.1/bin/runant.py
+-rw-r--r--	root/root	opt/ant-1.7.1/bin/runrc.cmd
+lrwxrwxrwx	root/root	opt/ant-1.7.1/etc -> /etc/ant
+drwxr-xr-x	root/root	opt/ant-1.7.1/lib/
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-jmf.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-junit.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-launcher.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-nodeps.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-swing.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-testutil.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant-trax.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/ant.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/xercesImpl.jar
+-rw-r--r--	root/root	opt/ant-1.7.1/lib/xml-apis.jar

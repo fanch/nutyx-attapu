@@ -2,22 +2,29 @@
 # URL: http://ant.apache.org/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: jdk
+# Depends on: jdk, junit
 
 name=ant
 version=1.7.1
-release=2
-source=(http://archive.apache.org/dist/ant/binaries/apache-ant-$version-bin.tar.bz2)
+release=1
+source=(http://apache.org/dist/ant/source/apache-ant-$version-src.tar.bz2\
+	apache-ant.sh)
 
 
 build() {
+	export CLASSPATH=$CLASSPATH:/usr/share/junit-4.5/junit-4.5.jar:/usr/share/junit-4.5
 	cd apache-ant-$version
-	mkdir -p $PKG/etc/profile.d
-	install -d $PKG/usr/{bin,lib/ant}
-	cp -rf * $PKG/usr/lib/ant
-	ln -sf /usr/lib/ant/bin/ant $PKG/usr/bin/ant
-	rm -r $PKG/usr/lib/ant/bin/*.bat
-	rm -r $PKG/usr/lib/ant/docs
-	rm -r $PKG/usr/lib/ant/{KEYS,LICENS*,README,NOTICE,WHATSNEW,INSTALL}
-	rm -r $PKG/usr/lib/ant/lib/README
+        sed -i 's|/etc/ant.conf|/etc/ant/ant.conf|' src/script/ant
+        mkdir dist
+	./build.sh -Ddist.dir=dist/ dist
+	mkdir $PKG/opt
+	mkdir -p $PKG/etc/{profile.d,ant}
+	touch $PKG/etc/ant/ant.conf
+	export ANT_HOME=$PKG/opt/ant-$version
+#	export JAVA_HOME=/opt/jdk
+	./build.sh install-lite
+	install -m644  ../apache-ant.sh $PKG/etc/profile.d/
+	ln -svf ant-$version $PKG/opt/$name
+	ln -v -sf /etc/$name $PKG/opt/$name-$version/etc
 }
+
