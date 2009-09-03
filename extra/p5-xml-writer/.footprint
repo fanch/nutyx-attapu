@@ -2,9 +2,9 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.0/XML/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.0/XML/Writer.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/XML/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/XML/Writer.pm
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man3/
