@@ -6,11 +6,13 @@
 
 name=xdg-utils
 version=1.0.2
-release=1
-source=(http://portland.freedesktop.org/download/$name-$version.tgz)
+release=2
+source=(http://portland.freedesktop.org/download/$name-$version.tgz\
+	$name-$version-midori-1.patch)
 
 build() {
 cd $name-$version
+	patch -Np1 -i ../$name-$version-midori-1.patch
 	./configure --prefix=/usr 
 	make
 	make DESTDIR=$PKG install
