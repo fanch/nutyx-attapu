@@ -2,11 +2,11 @@
 # URL:         http://www.openoffice.org
 # Packager:    Sibelle at free dot fr
 # Maintainer:  NuTyX packager team
-# Depends on:  curl, python, libxslt, libpthread-stubs, gperf, apache-ant, p5-archive-zip, libsndfile
+# Depends on:  curl, python, libxslt, libpthread-stubs, gperf, ant, p5-archive-zip, libsndfile
 name=openoffice
-version=3.1.0
+version=3.1.1
 release=1
-OOdir=OOO310_m11
+OOdir=OOO310_m19
 #source=()
 source=( ftp://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_core.tar.bz2\
          http://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_system.tar.bz2\
