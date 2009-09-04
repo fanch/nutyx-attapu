@@ -2,7 +2,7 @@
 # URL: http://www.ibiblio.org/mc/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gpm, slang
+# Depends on: gpm, slang, glib1
 
 name=mc
 version=4.6.1
