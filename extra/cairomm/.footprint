@@ -37,7 +37,3 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/cairomm-xlib-1.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/cairomm-xlib-xrender-1.0.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/libcairomm-1.0/
-drwxr-xr-x	root/root	usr/share/doc/libcairomm-1.0/reference/
-drwxr-xr-x	root/root	usr/share/doc/libcairomm-1.0/reference/html/
