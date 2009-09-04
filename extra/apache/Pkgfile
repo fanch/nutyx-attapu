@@ -1,0 +1,38 @@
+# Description: Serveur Apache HTTP version 2.2.x
+# Maintainer:  NuTyX coreteam / Linux from scratch
+# Packager: thierryn1 at hispeed dot ch
+# URL: http://httpd.apache.org/
+# Depends on:  apr, openssl, zlib
+
+name=apache
+version=2.2.13
+release=1
+source=(http://archive.apache.org/dist/httpd/httpd-$version.tar.bz2 \
+	http://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.2.8-config-1.patch
+        apache )
+build(){
+	source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2
+   	cd httpd-$version
+	patch -Np1 -i ../httpd-2.2.8-config-1.patch
+	./configure --enable-layout=FHS --enable-mods-shared=all 
+	make 
+	make DESTDIR=$PKG install
+
+	mkdir -p $PKG/etc/ssl/{keys,certs}
+	# Installation
+	install -D -m 755 $SRC/apache $PKG/etc/rc.d/apache
+	chown -R root:root $PKG
+	sed -i "s/^LoadModule isapi_module/# &/" \
+	$PKG/etc/apache/httpd.conf
+	sed -ri '/^(User|Group)/s/daemon/apache/' $PKG/etc/apache/httpd.conf
+	# sed -i '1s|local/||' $PKG/var/www/cgi-bin/printenv
+	rm -R $PKG/{srv/www/htdocs/*,usr/bin}
+	rm $PKG/srv/www/{error,icons}/README*
+   
+	# Installation of the script
+	cd ../$scripts-$scriptsversion
+	make DESTDIR=$PKG install-apache
+	install -m755 ../apache $PKG/etc/rc.d/init.d/
+}

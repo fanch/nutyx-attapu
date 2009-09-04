@@ -1,0 +1,48 @@
+#!/bin/sh
+# Begin $rc_base/init.d/apache
+
+# Based on sysklogd script from LFS-3.1 and earlier.
+# Rewritten by Gerard Beekmans  - gerard@linuxfromscratch.org
+
+#$LastChangedBy: bdubbs $
+#$Date: 2007/11/10 15:52:03 $
+
+. /etc/sysconfig/rc
+. $rc_functions
+newgroup=apache
+newuser=apache
+newid=25
+getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
+getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
+-u $newid -d /dev/null -s /bin/false -c "Apache Server" $newuser
+
+case "$1" in
+	start)
+		boot_mesg "Starting Apache daemon..."
+		/usr/sbin/apachectl -k start
+		evaluate_retval
+		;;
+
+	stop)
+		boot_mesg "Stopping Apache daemon..."
+		/usr/sbin/apachectl -k stop
+		evaluate_retval
+		;;
+
+	restart)
+		boot_mesg "Restarting Apache daemon..."
+		/usr/sbin/apachectl -k restart
+		evaluate_retval
+		;;
+
+	status)
+		statusproc /usr/sbin/httpd
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|restart|status}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/apache
