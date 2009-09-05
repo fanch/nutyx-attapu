@@ -4,6 +4,7 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/dngconverter
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kipiplugin_acquireimages.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kipiplugin_advancedslideshow.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kipiplugin_batchprocessimages.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kipiplugin_calendar.so
@@ -274,6 +275,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/scalable/apps/rawconverter.svgz
 drwxr-xr-x	root/root	opt/kde/share/kde4/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kipiplugin_acquireimages.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kipiplugin_advancedslideshow.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kipiplugin_batchprocessimages.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kipiplugin_calendar.desktop
