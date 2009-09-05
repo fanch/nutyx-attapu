@@ -5,7 +5,7 @@
 # Depends on: sdl
 
 name=mlt
-version=0.4.2
+version=0.4.4
 release=1
 source=(http://internap.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
 	ffmpeg.patch)
@@ -17,7 +17,7 @@ build() {
         --enable-gpl --enable-shared --enable-theora \
         --enable-vorbis --enable-libogg --enable-mp3lame --enable-pp \
         --enable-shared-pp --enable-motion-est --disable-gtk --disable-mmx \
-        --mandir=/usr/share/man \
+        --mandir=/usr/share/man  --qimage-include=/usr/include/Qt \
 	--avformat-swscale \
         --infodir=/usr/share/info
         make
