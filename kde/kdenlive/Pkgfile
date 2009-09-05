@@ -1,0 +1,20 @@
+# Description: Programme de montage vidéo pour KDE
+# URL: http://www.kdenlive.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kdelibs, mlt, liba52, sdl_image, dvdauthor, dvgrab
+
+name=kdenlive
+version=0.7.5
+release=1
+source=(http://heanet.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+		-DLIB_INSTALL_DIR=/usr/lib
+	make
+	make DESTDIR=$PKG install
+}
