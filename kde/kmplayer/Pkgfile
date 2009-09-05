@@ -1,0 +1,25 @@
+# Description: Plugin video pour konqueror MPlayer/Xine/ffmpeg/ffserver/VDR pour KDE
+# URL: http://kmplayer.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdelibs, gtk, mplayer
+name=kmplayer
+version=0.11.1b
+release=1
+
+source=("http://kmplayer.kde.org/pkgs/$name-$version.tar.bz2")
+
+build() {
+	mkdir build
+	cd build
+	cmake ../$name-$version \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DBUILD_doc=OFF
+	make
+	make DESTDIR=$PKG install
+
+	# icons are included in kdebase-runtime
+	rm -r $PKG/$KDE_PREFIX/share/icons/oxygen/
+}
+
