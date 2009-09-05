@@ -1,0 +1,19 @@
+# Description: Permet de capturer des séquence DV via le port IEEE (FireWire)
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# URL: http://www.kinodv.org/
+# Depends on: libdv, libavc1394, libjpeg, libiec61883
+
+name=dvgrab
+version=3.4
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/kino/$name-$version.tar.gz\
+	dvgrab-3.4-gcc43.patch)
+
+build() {
+  cd $name-$version
+  patch -Np1 -i ../dvgrab-3.4-gcc43.patch
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
