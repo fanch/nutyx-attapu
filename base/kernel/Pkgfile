@@ -6,15 +6,10 @@
 
 name=kernel
 version=2.6.30.5
-release=1
+release=2
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
 build(){
-
-rm -rf /usr/src/kernel
-mkdir /usr/src/kernel
-mv linux-${version} /usr/src/kernel/
-ln -svf /usr/src/kernel/linux-${version} 
 cd linux-$version
 make mrproper
 case `uname -m` in 
@@ -46,4 +41,8 @@ case `uname -m` in
 		ln -sf kernel-$version \
 		$PKG/boot/kernel;;
 esac
+cd $PKG/lib/modules/$version/
+rm {build,source}
+ln -sv /usr/src/linux-$version build
+ln -sv /usr/src/linux-$version source
 }
