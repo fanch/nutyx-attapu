@@ -1,3 +1,9 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/skel/
+-rw-r--r--	root/root	etc/skel/.gtkrc-2.0-kde4
+drwxr-xr-x	root/root	etc/skel/.kde/
+drwxr-xr-x	root/root	etc/skel/.kde/env/
+-rwxr-xr-x	root/root	etc/skel/.kde/env/gtk-qt-engine.rc.sh
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/lib/
