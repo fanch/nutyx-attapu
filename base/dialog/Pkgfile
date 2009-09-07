@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=dialog
-version=1.1-20080316
+version=1.1-20080819
 release=1
 source=(ftp://dickey.his.com/dialog/$name-$version.tgz)
 
