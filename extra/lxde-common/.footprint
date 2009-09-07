@@ -6230,6 +6230,7 @@ drwxrwxrwx	root/root	usr/share/icons/nuoveXT2/extra/
 drwxr-xr-x	root/root	usr/share/lxde/
 -rw-r--r--	root/root	usr/share/lxde/config
 drwxr-xr-x	root/root	usr/share/lxde/images/
+-rw-r--r--	root/root	usr/share/lxde/images/bouton02.png
 -rw-r--r--	root/root	usr/share/lxde/images/logout-banner.png
 -rw-r--r--	root/root	usr/share/lxde/images/lxde-icon.png
 drwxr-xr-x	root/root	usr/share/lxde/openbox/
@@ -6243,6 +6244,8 @@ drwxr-xr-x	root/root	usr/share/lxde/wallpapers/
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_red.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/nutyx2009.png
 drwxr-xr-x	root/root	usr/share/lxpanel/
+drwxr-xr-x	root/root	usr/share/lxpanel/images/
+-rw-r--r--	root/root	usr/share/lxpanel/images/flamesblue.png
 drwxr-xr-x	root/root	usr/share/lxpanel/profile/
 drwxr-xr-x	root/root	usr/share/lxpanel/profile/LXDE/
 -rw-r--r--	root/root	usr/share/lxpanel/profile/LXDE/config

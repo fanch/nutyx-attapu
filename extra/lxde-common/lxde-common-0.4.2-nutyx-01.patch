@@ -1,0 +1,42 @@
+--- lxde-common-0.4.2/lxpanel/panel.in	2008-06-15 20:30:26.000000000 +0000
++++ lxde-common-0.4.2/lxpanel/panel.in.new	2009-09-07 17:39:50.000000000 +0000
+@@ -16,7 +16,7 @@
+     usefontcolor=1
+     fontcolor=#ffffff
+     background=1
+-    backgroundfile=@prefix@/share/lxpanel/images/background.png
++    backgroundfile=/usr/share/lxpanel/images/flamesblue.png
+ }
+ 
+ Plugin {
+@@ -29,7 +29,7 @@
+ Plugin {
+     type = menu
+     Config {
+-        image=@prefix@/share/lxde/images/lxde-icon.png
++        image=/usr/share/lxde/images/bouton02.png
+         system {
+         }
+         separator {
+@@ -118,7 +118,7 @@
+ }
+ 
+ Plugin {
+-    type = tray
++    type = volumealsa
+ }
+ 
+ Plugin {
+@@ -130,12 +130,3 @@
+     }
+ }
+ 
+-Plugin {
+-    type = launchbar
+-    Config {
+-        Button {
+-            id=lxde-logout.desktop
+-        }
+-    }
+-}
+-

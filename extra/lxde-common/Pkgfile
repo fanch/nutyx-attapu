@@ -6,12 +6,14 @@
 
 name=lxde-common
 version=0.4.2
-release=2
+release=3
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.bz2\
-	config nutyx2009.png)
+	config nutyx2009.png flamesblue.png lxde-common-0.4.2-nutyx-01.patch\
+	bouton02.png)
 
 build() {
 cd $name-$version
+patch -Np1 -i ../$name-$version-nutyx-01.patch
 ./configure --prefix=/usr \
 	--sysconfdir=/etc
 make
@@ -24,6 +26,10 @@ install -D -m644 ../config \
 	$PKG/usr/share/lxde/config
 install -D -m644 ../nutyx2009.png \
 	$PKG/usr/share/lxde/wallpapers/nutyx2009.png
+install -D -m644 ../bouton02.png \
+	$PKG/usr/share/lxde/images/bouton02.png
+install -D -m644 ../flamesblue.png \
+	$PKG/usr/share/lxpanel/images/flamesblue.png
 }
 
 
