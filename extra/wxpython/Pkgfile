@@ -1,0 +1,39 @@
+# Description: A wxWidgets GUI toolkit for Python.
+# URL: http://www.wxpython.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: wxgtk, python
+
+name=wxpython
+version=2.8.9.2
+release=1
+source=( http://switch.dl.sourceforge.net/sourceforge/$name/wxPython-src-$version.tar.bz2 \
+	editra-ebmlib.diff)
+
+build() {
+	cd wxPython-src-$version/wxPython
+	patch -Np2 -i $SRC/editra-ebmlib.diff
+	install -d $PKG/usr
+	export \
+	CFLAGS="$CFLAGS -fno-strict-aliasing" \
+	CXXFLAGS="$CXXFLAGS -fno-strict-aliasing"
+
+	python setup.py \
+	WXPORT=gtk2 \
+	UNICODE=1 \
+	BUILD_GLCANVAS=1 \
+	build install --root=$PKG
+	find $PKG -type f \
+	\( \
+		-name 'AUTHORS' \
+		-o -name 'COPYING' \
+		-o -name 'INSTALL' \
+		-o -name 'NEWS' \
+		-o -name 'THANKS' \
+		-o -name 'TODO' \
+		-o -name 'TODO.txt' \
+		-o -name 'README' \
+		-o -name 'README.txt' \
+	\) -delete
+
+}
