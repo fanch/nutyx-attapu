@@ -12,6 +12,6 @@ cd3f3eb54446be6003156158d51f4884  grub-0.97.tar.gz
 bc609feede67ffcf3f4f9d00fa2995df  grub-R
 6547de447a98c12ff245f175f23a01a7  grub-a20.patch
 e48ca6cdec7811a6d4566c0c1b0d7883  grub-gfxmenu-v8.diff
-7973ed80308b25eb95cadac1753a95c2  message
+f2cdde506d446113e04153e5695adb2a  message
 37558faaba7e32929f767ef64f4248ac  reiser-unpack
 b8b550b08b9e9eafd7031a1849fb7d02  use_ferror.diff
