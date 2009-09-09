@@ -7,9 +7,10 @@
 
 name=lxpanel
 version=0.5.2
-release=1
+release=2
 
-source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
+	volume.png)
 
 
 build() {
@@ -17,4 +18,6 @@ cd $name-$version
 ./configure --prefix=/usr
 make
 make DESTDIR=$PKG install
+install -D -m644 ../volume.png \
+        $PKG/usr/share/lxpanel/images/volume.png
 }
