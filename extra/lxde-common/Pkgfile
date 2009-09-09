@@ -1,15 +1,15 @@
 # Description: set of default configuration for LXDE
-# URL:         http://lxde.org/about.html
+# URL: http://lxde.org/about.html
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
 # Depends on: gtk
 
 name=lxde-common
 version=0.4.2
-release=3
+release=4
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.bz2\
-	config nutyx2009.png flamesblue.png lxde-common-0.4.2-nutyx-01.patch\
-	bouton02.png)
+	config nutng.png chrystal_red_root.png lxde-common-0.4.2-nutyx-01.patch\
+	bouton03.png)
 
 build() {
 cd $name-$version
@@ -20,16 +20,16 @@ make
 make DESTDIR=$PKG install
 sed -i "s/gnome-terminal/lxterminal/" \
 $PKG/usr/share/lxpanel/profile/LXDE/panels/panel
-	sed -i "s/lxde_blue.jpg/nutyx2009.png/" \
+	sed -i "s/lxde_blue.jpg/nutng.png/" \
 $PKG/usr/share/lxde/pcmanfm/main.lxde
 install -D -m644 ../config \
 	$PKG/usr/share/lxde/config
-install -D -m644 ../nutyx2009.png \
-	$PKG/usr/share/lxde/wallpapers/nutyx2009.png
-install -D -m644 ../bouton02.png \
-	$PKG/usr/share/lxde/images/bouton02.png
-install -D -m644 ../flamesblue.png \
-	$PKG/usr/share/lxpanel/images/flamesblue.png
+install -D -m644 ../nutng.png \
+	$PKG/usr/share/lxde/wallpapers/nutng.png
+install -D -m644 ../bouton03.png \
+	$PKG/usr/share/lxde/images/bouton03.png
+install -D -m644 ../chrystal_red_root.png \
+	$PKG/usr/share/lxpanel/images/chrystal_red_root.png
 }
 
 

@@ -5,7 +5,7 @@
      fontcolor=#ffffff
      background=1
 -    backgroundfile=@prefix@/share/lxpanel/images/background.png
-+    backgroundfile=/usr/share/lxpanel/images/flamesblue.png
++    backgroundfile=/usr/share/lxpanel/images/chrystal_red_root.png
  }
  
  Plugin {
@@ -14,7 +14,7 @@
      type = menu
      Config {
 -        image=@prefix@/share/lxde/images/lxde-icon.png
-+        image=/usr/share/lxde/images/bouton02.png
++        image=/usr/share/lxde/images/bouton03.png
          system {
          }
          separator {
