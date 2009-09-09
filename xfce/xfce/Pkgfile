@@ -6,8 +6,8 @@
 
 name=xfce
 version=4.6.1
-release=3
-source=(http://download.tuxfamily.org/fredgnix/packages.NuTyX/Misc/$name-desktop-$version.tar.bz2)
+release=4
+source=(http://kiao.no-ip.info/NuTyX/files/$name-desktop-$version-$release.tar.bz2)
 
 build() {
 cd $name-desktop-$version	
