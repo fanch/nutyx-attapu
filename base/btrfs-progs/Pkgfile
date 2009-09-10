@@ -1,0 +1,20 @@
+# Description: Outil de gestion pour le système de fichiers btrfs
+# URL: http://btrfs.wiki.kernel.org/index.php/Main_Page
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=btrfs-progs
+version=0.19
+release=1
+source=(http://www.kernel.org/pub/linux/kernel/people/mason/btrfs/$name-$version.tar.bz2)
+build() {
+cd $name-$version
+sed -i 's/bindir =/bindir ?=/' Makefile
+make
+make prefix=/usr bindir=/sbin mandir=/usr/share/man DESTDIR=$PKG install
+cd $PKG/sbin
+ln -sf btrfsck fsck.btrfs
+
+
+}
