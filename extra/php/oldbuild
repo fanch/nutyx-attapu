@@ -1,0 +1,28 @@
+# $Id: build,v 1.1 2007/10/01 05:14:51 install Exp install $
+# Description:
+# URL: 
+# Maintainer: Linux From Scratch 
+# Packager: Thierry Nuttens, thierryn1 at hispeed dot ch
+# Depends on:
+
+name=php
+version=0.0.0
+release=1
+group=
+scripts=blfs-bootscripts
+scriptsversion=20070822
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
+       http://www.linuxfromscratch.org/downloads/blfs/svn/$scripts-$scriptsversion.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+#       cd ../$scripts-$scriptsversion
+#       make DESTDIR=$PKG install-$name
+       
+}

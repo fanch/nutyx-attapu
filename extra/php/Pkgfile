@@ -1,0 +1,40 @@
+# Description: module PHP5 module pour le serveur  apache 2.0.x HTTP  
+# URL:         http://www.php.net
+# Maintainer:  NuTyX core team
+# Packager: thierryn1 at hispeed dot net
+# Depends on:  mysql, apache, libxml2
+
+name=php
+version=5.2.10
+release=1
+source=(http://www.php.net/distributions/php-$version.tar.bz2) 
+
+build () {
+    cd php-$version
+    sed -i "s/-i -a/-i/" configure
+    ./configure --prefix=/usr \
+    --sysconfdir=/etc \
+    --with-apxs2=/usr/sbin/apxs \
+    --enable-force-cgi-redirect \
+    --enable-discard-path \
+    --with-config-file-path=/etc \
+    --with-zlib \
+    --enable-bcmath \
+    --with-bz2 \
+    --enable-calendar \
+    --enable-exif \
+    --enable-ftp \
+    --with-gettext \
+    --enable-mbstring \
+    --with-ncurses \
+    --with-readline \
+    --with-mysql=/usr \
+    --with-mysql-sock=/var/run/mysql \
+    --with-gd
+     
+    make
+    make INSTALL_ROOT=$PKG install
+    rm -r $PKG/etc/apache
+    sed -i "/^extension_dir/s|\./|/usr/lib/php/extensions|" php.ini-dist
+    install -D -m 644 php.ini-dist $PKG/etc/php.ini
+}
