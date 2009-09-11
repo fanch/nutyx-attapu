@@ -1,0 +1,21 @@
+# Description: Logiciel d'audio/video conférence pour messagerie instantannée
+# URL:  http://farsight.freedesktop.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gstreamer, gst-python, libnice, pygobject, python, 
+
+name=farsight2
+version=0.0.15
+release=1
+source=(http://farsight.freedesktop.org/releases/farsight2/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-static \
+	--disable-debug \
+	--disable-valgrind
+	make
+	make DESTDIR=$PKG install
+}
