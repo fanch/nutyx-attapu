@@ -5,8 +5,8 @@
 # Depends on: 
 
 name=libpng
-version=1.2.38
-release=3
+version=1.2.39
+release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
 	http://www.linuxfromscratch.org/patches/blfs/svn/libpng-$version-apng-1.patch)
 
