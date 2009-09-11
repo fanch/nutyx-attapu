@@ -1,0 +1,20 @@
+# Description: Implémentation du draft IEFTs ICE
+# URL:  http://libnice.freedesktop.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gstreamer
+
+name=libnice
+version=0.0.9
+release=1
+source=(http://nice.freedesktop.org/releases/$name-$version.tar.gz)
+
+build() {
+	export CFLAGS="$CFLAGS -fno-strict-aliasing"
+	cd $name-$version
+	./configure --prefix=/usr \
+	--disable-dependency-tracking
+	make
+	make check
+	make DESTDIR=$PKG install
+}
