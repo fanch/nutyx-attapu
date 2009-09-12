@@ -5,9 +5,9 @@
 # Depends on: virtualbox-module
 
 name=virtualbox-bin
-version=3.0.4
+version=3.0.6
 release=1
-_release=50677
+_release=52128
 source=(http://download.virtualbox.org/virtualbox/$version/VirtualBox-${version}-${_release}-Linux_x86.run)
 
 
@@ -28,7 +28,7 @@ build() {
 	done
 	ln -s /opt/VirtualBox/rdesktop-vrdp $PKG/usr/bin/rdesktop-vrdp
 	mv $PKG/opt/VirtualBox/VBox.png $PKG/usr/share/pixmaps/VBox.png
-	mv $PKG/opt/VirtualBox/VirtualBox.desktop $PKG/usr/share/applications/VirtualBox.desktop
+	mv $PKG/opt/VirtualBox/virtualbox.desktop $PKG/usr/share/applications/virtualbox.desktop
 	chmod +s $PKG/opt/VirtualBox/{VirtualBox,VBoxSDL,VBoxHeadless}
 	echo "KERNEL==\"vboxdrv\", NAME=\"vboxdrv\", OWNER=\"root\", GROUP=\"vboxusers\", MODE=\"0660\"" > \
 	$PKG/etc/udev/rules.d/60-vboxdrv.rules

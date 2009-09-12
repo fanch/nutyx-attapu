@@ -554,6 +554,6 @@ lrwxrwxrwx	root/root	usr/bin/VirtualBox -> /opt/VirtualBox/VBox.sh
 lrwxrwxrwx	root/root	usr/bin/rdesktop-vrdp -> /opt/VirtualBox/rdesktop-vrdp
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/applications/VirtualBox.desktop
+-rw-r--r--	root/root	usr/share/applications/virtualbox.desktop
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/VBox.png
