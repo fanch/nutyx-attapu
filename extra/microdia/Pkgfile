@@ -7,7 +7,7 @@
 name=microdia
 version=627b
 release=1
-_kernver=2.6.30.5
+_kernver=`uname -r`
 source=()
 
 
