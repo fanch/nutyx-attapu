@@ -5,8 +5,8 @@
 # Depends on:
 
 name=kernel
-version=2.6.30.5
-release=2
+version=2.6.31
+release=1
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
 build(){
@@ -18,7 +18,7 @@ case `uname -m` in
 	i?86)
 	mv $SRC/config ./.config;;
 esac
-make
+make -j3
 make INSTALL_MOD_PATH=$PKG modules_install
 mkdir -p $PKG/boot
 case `uname -m` in 
@@ -45,4 +45,16 @@ cd $PKG/lib/modules/$version/
 rm {build,source}
 ln -sv /usr/src/linux-$version build
 ln -sv /usr/src/linux-$version source
+
+mkdir -p $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/.config $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/Makefile $PKG/usr/src/linux-$version/
+mkdir -p $PKG/usr/src/linux-$version/kernel
+mv $SRC/linux-$version/scripts $PKG/usr/src/linux-$version/
+chmod og-w -R $PKG/usr/src/linux-$version/scripts
+mv $SRC/linux-$version/include $PKG/usr/src/linux-$version/
+mkdir $PKG/usr/src/linux-$version/arch
+mv $SRC/linux-$version/arch/x86 $PKG/usr/src/linux-$version/arch
+mv $SRC/linux-$version/vmlinux $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/Module.symvers $PKG/usr/src/linux-$version/
 }
