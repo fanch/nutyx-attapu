@@ -6,9 +6,9 @@
 
 name=xfdesktop
 version=4.6.1
-release=2
+release=3
 source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2 \
-xfdesktop-handle-unmountable-volumes.patch)
+xfdesktop-handle-unmountable-volumes.patch NuTyX2009.png)
 
 build() {
 cd $name-$version
@@ -20,5 +20,9 @@ patch -p1 < ../xfdesktop-handle-unmountable-volumes.patch
 	--disable-static
 	make
 	make DESTDIR=$PKG install
+	cp ../NuTyX2009.png \
+	$PKG/usr/share/pixmaps/NuTyX2009.png
+	sed -i "s/xfce4_xicon1/NuTyX2009/" \
+	$PKG/usr/share/xfce4/panel-plugins/xfce4-menu.desktop
 }
 
