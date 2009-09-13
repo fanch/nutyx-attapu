@@ -5,7 +5,7 @@
 # Depends on: util-linux-ng 
 
 name=xfsprogs
-version=3.0.1
+version=3.0.3
 release=1
 source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-${version}.tar.gz)
 
