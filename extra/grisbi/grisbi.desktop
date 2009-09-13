@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Grisbi
+Comment=Comptabilité personelle
+Exec=grisbi
+Icon=grisbi
+Terminal=false
+Type=Application
+Categories=Categories=Application;Office;
+StartupNotify=true
