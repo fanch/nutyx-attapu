@@ -1,0 +1,22 @@
+# Description: logiciel de messagerie e-mail
+# URL: http://www.mozilla-europe.org/fr/products/thunderbird/
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: alsa-libs, gtk, libidl
+
+name=thunderbird
+version=3.0b3
+release=1
+source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/fr/$name-$version.tar.bz2 \
+thunderbird.desktop \
+thunderbird.png)
+
+build() {
+	mkdir -p $PKG/{usr/bin,opt}
+	mkdir -p $PKG/usr/share/{applications,icons/hicolor/48x48/apps/}
+	mv $name $PKG/opt/$name-$version
+	ln -svf /opt/$name-$version/$name $PKG/usr/bin/thunderbird
+	install -m 644 $name.desktop $PKG/usr/share/applications/
+	install -m 644 $name.png $PKG/usr/share/icons/hicolor/48x48/apps/
+}
+

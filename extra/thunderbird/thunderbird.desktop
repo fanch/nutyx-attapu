@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Thunderbird
+Exec=thunderbird
+Icon=thunderbird
+Categories=Network
+GenericName=Messagerie Mail
+Terminal=false
+Type=Application
+StartupNotify=true
