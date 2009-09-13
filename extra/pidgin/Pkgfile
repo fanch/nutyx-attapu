@@ -2,7 +2,7 @@
 # URL:  http://www.pidgin.im
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme, libidn
+# Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme, libidn, farsight2
 
 name=pidgin
 version=2.6.2
