@@ -1,0 +1,24 @@
+# Description: Editeur de texte en console tout simple
+# URL: http://www.nano-editor.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=nano
+version=2.1.9
+release=1
+source=(http://www.nano-editor.org/dist/v2.1/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--enable-color \
+	--enable-multibuffer \
+	--enable-nanorc \
+	--disable-x
+	make
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/etc/nano
+	install -v -m644 -D doc/nanorc.sample $PKG/etc/nano/nanorc.sample
+	rm $PKG/usr/share/info/dir
+}
