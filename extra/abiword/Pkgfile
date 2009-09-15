@@ -1,0 +1,17 @@
+# Description: traitement de texte léger et puissant
+# URL: http://www.abisource.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: aspell, fribidi, libgnomeprintui, enchant, wv
+
+name=abiword
+version=2.7.4
+release=1
+source=(http://www.abisource.com/downloads/$name/$version/source/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make -j3
+	make DESTDIR=$PKG install	
+}
