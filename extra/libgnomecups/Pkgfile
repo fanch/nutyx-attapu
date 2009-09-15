@@ -1,0 +1,17 @@
+# Description: Librairie interface avec cups pour gnome
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cups, glib, p5-xml-parser
+
+name=libgnomecups
+version=0.2.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.2/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
