@@ -2,15 +2,17 @@
 # URL: http://www.gnu.org/software/parted/index.shtml
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: device-mapper
 
 name=parted
-version=1.8.8
-release=2
-source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+version=1.9.0
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
+	parted-1.9.0-btrfs-02.patch	)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../parted-1.9.0-btrfs-02.patch
 	./configure --prefix=/usr \
 	--disable-debug \
 	--without-readline \

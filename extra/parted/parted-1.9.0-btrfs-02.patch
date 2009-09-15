@@ -1,0 +1,196 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -524,6 +524,7 @@ libparted/Makefile
+ libparted/labels/Makefile
+ libparted/fs/Makefile
+ libparted/fs/amiga/Makefile
++libparted/fs/btrfs/Makefile
+ libparted/fs/ext2/Makefile
+ libparted/fs/fat/Makefile
+ libparted/fs/hfs/Makefile
+diff --git a/libparted/fs/Makefile.am b/libparted/fs/Makefile.am
+index 96a5744..365ba7b 100644
+--- a/libparted/fs/Makefile.am
++++ b/libparted/fs/Makefile.am
+@@ -3,7 +3,7 @@
+ #
+ # This file may be modified and/or distributed without restriction.
+ 
+-SUBDIRS       = amiga ext2 ufs fat ntfs hfs linux_swap xfs jfs reiserfs # bfs
++SUBDIRS       = amiga ext2 ufs fat ntfs hfs linux_swap xfs jfs reiserfs btrfs 
+# bfs
+ 
+ partedincludedir      =        -I$(top_srcdir)/include
+ noinst_LTLIBRARIES    =        libfs.la
+diff --git a/libparted/fs/btrfs/Makefile.am b/libparted/fs/btrfs/Makefile.am
+new file mode 100644
+index 0000000..a9428da
+--- /dev/null
++++ b/libparted/fs/btrfs/Makefile.am
+@@ -0,0 +1,8 @@
++partedincludedir       = -I$(top_srcdir)/include
++
++noinst_LTLIBRARIES     = libbtrfs.la
++libbtrfs_la_SOURCES    = btrfs.c
++
++INCLUDES = $(partedincludedir) $(INTLINCS)
++
++MAINTAINERCLEANFILES = Makefile.in
+diff --git a/libparted/fs/btrfs/btrfs.c b/libparted/fs/btrfs/btrfs.c
+new file mode 100644
+index 0000000..a79d756
+--- /dev/null
++++ b/libparted/fs/btrfs/btrfs.c
+@@ -0,0 +1,106 @@
++/*
++    libparted - a library for manipulating disk partitions
++    Copyright (C) 2009 Free Software Foundation, Inc.
++
++    This program is free software; you can redistribute it and/or modify
++    it under the terms of the GNU General Public License as published by
++    the Free Software Foundation; either version 3 of the License, or
++    (at your option) any later version.
++
++    This program is distributed in the hope that it will be useful,
++    but WITHOUT ANY WARRANTY; without even the implied warranty of
++    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++    GNU General Public License for more details.
++
++    You should have received a copy of the GNU General Public License
++    along with this program.  If not, see <http://www.gnu.org/licenses/>.
++*/
++
++#include <config.h>
++
++#include <parted/parted.h>
++#include <parted/endian.h>
++
++#if ENABLE_NLS
++#  include <libintl.h>
++#  define _(String) dgettext (PACKAGE, String)
++#else
++#  define _(String) (String)
++#endif /* ENABLE_NLS */
++
++#include <unistd.h>
++
++#define BTRFS_BLOCK_SIZES       ((int[2]){1024, 0})
++#define BTRFS_SUPER_INFO_SIZE 4096
++#define BTRFS_SUPER_INFO_OFFSET (64 * 1024)
++
++//Should be definitive, as of v0.18
++#define BTRFS_SIGNATURE        "_BHRfS_M"
++
++static PedGeometry*
++btrfs_probe (PedGeometry* geom)
++{
++       char    buf[BTRFS_SUPER_INFO_SIZE];
++
++       if (!ped_geometry_read (geom, buf, 
++                               (BTRFS_SUPER_INFO_OFFSET / 512), 
++                               (BTRFS_SUPER_INFO_SIZE / 512)))
++               return 0;
++
++       if (strncmp (BTRFS_SIGNATURE, buf + 64, strlen (BTRFS_SIGNATURE)) == 0)
++               return ped_geometry_new (geom->dev, geom->start, geom->length);
++       else
++               return NULL;
++}
++
++#ifndef DISCOVER_ONLY
++static int
++btrfs_clobber (PedGeometry* geom)
++{
++       char    buf[BTRFS_SUPER_INFO_SIZE];
++
++       memset (buf, 0, BTRFS_SUPER_INFO_SIZE);
++       return ped_geometry_write (geom, buf, 
++                                   (BTRFS_SUPER_INFO_OFFSET / 512),
++                                   (BTRFS_SUPER_INFO_SIZE / 512));
++}
++#endif /* !DISCOVER_ONLY */
++
++static PedFileSystemOps btrfs_ops = {
++       probe:          btrfs_probe,
++#ifndef DISCOVER_ONLY
++       clobber:        btrfs_clobber,
++#else
++       clobber:        NULL,
++#endif 
++       open:           NULL,
++       create:         NULL,
++       close:          NULL,
++       check:          NULL,
++       copy:           NULL,
++       resize:         NULL,
++       get_create_constraint:  NULL,
++       get_resize_constraint:  NULL,
++       get_copy_constraint:    NULL
++};
++
++static PedFileSystemType btrfs_type = {
++       next:   NULL,
++       ops:    &btrfs_ops,
++       name:   "btrfs",
++       block_sizes: BTRFS_BLOCK_SIZES
++};
++
++void
++ped_file_system_btrfs_init ()
++{
++       ped_file_system_type_register (&btrfs_type);
++}
++
++void
++ped_file_system_btrfs_done ()
++{
++       ped_file_system_type_unregister (&btrfs_type);
++}
++
++
+--- parted-1.9.0/libparted/libparted.c.old	2009-09-15 22:28:48.588463837 +0200
++++ parted-1.9.0/libparted/libparted.c	2009-09-15 22:30:46.736581923 +0200
+@@ -109,6 +109,7 @@
+ extern void ped_file_system_hfs_init (void);
+ extern void ped_file_system_fat_init (void);
+ extern void ped_file_system_ext2_init (void);
++extern void ped_file_system_btrfs_init (void);
+ 
+ static void
+ init_file_system_types ()
+@@ -123,6 +124,7 @@
+ 	ped_file_system_hfs_init ();
+ 	ped_file_system_fat_init ();
+ 	ped_file_system_ext2_init ();
++	ped_file_system_btrfs_init ();
+ }
+ #endif /* ENABLE_FS */
+ 
+@@ -188,6 +190,7 @@
+ extern void ped_file_system_reiserfs_done (void);
+ extern void ped_file_system_ufs_done (void);
+ extern void ped_file_system_xfs_done (void);
++extern void ped_file_system_btrfs_done (void);
+ extern void ped_file_system_amiga_done (void);
+ 
+ static void
+@@ -202,6 +205,7 @@
+ 	ped_file_system_reiserfs_done ();
+ 	ped_file_system_ufs_done ();
+ 	ped_file_system_xfs_done ();
++	ped_file_system_btrfs_done ();
+ 	ped_file_system_amiga_done ();
+ }
+ #endif /* ENABLE_FS */
+--- parted-1.9.0/libparted/fs/Makefile.am.old	2009-09-15 22:41:23.216463981 +0200
++++ parted-1.9.0/libparted/fs/Makefile.am	2009-09-15 22:41:56.460682352 +0200
+@@ -23,7 +23,8 @@
+ 		    linux_swap/liblinuxswap.la	\
+ 		    xfs/libxfs.la		\
+ 		    jfs/libjfs.la		\
+-		    reiserfs/libreiserfs.la
++		    reiserfs/libreiserfs.la	\
++		    btrfs/libbtrfs.la
+ #		    bfs/libbfs.la
+ 
+ libfs_la_SOURCES   =
