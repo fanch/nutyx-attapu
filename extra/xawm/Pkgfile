@@ -1,0 +1,17 @@
+# Description: Widgets pour siag
+# URL: http://siag.nu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg
+
+name=xawm
+version=1.5u
+release=1
+source=(http://siag.nu/pub/widgets/XawM-$version.tar.gz)
+
+build() {
+	cd XawM-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
