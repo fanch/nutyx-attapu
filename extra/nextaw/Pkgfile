@@ -2,15 +2,15 @@
 # URL: http://siag.nu/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: xorg
 
 name=nextaw
 version=0.15.1
 release=1
-source=(http://siag.nu/pub/neXtaw/$name-$version.tar.gz)
+source=(http://siag.nu/pub/neXtaw/neXtaw-$version.tar.gz)
 
 build() {
-	cd $name-$version
+	cd neXtaw-$version
 	./configure --prefix=/usr 
 	make
 	make DESTDIR=$PKG install
