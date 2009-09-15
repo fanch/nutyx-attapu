@@ -2,7 +2,7 @@
 # URL:http://www.afterstep.org/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: xorg
+# Depends on: xorg, libjpeg, libpng, libtiff, freetype
 
 name=afterstep
 version=2.2.9
