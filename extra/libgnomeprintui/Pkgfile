@@ -1,0 +1,18 @@
+# Description: Contient la librairie libgnomeprintui
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomecanvas, gnome-icon-theme, libgnomeprint
+
+name=libgnomeprintui
+version=2.18.4
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.18/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/gtk-doc
+}
