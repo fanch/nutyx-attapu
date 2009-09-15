@@ -1,0 +1,22 @@
+# Description: Suite office très légère
+# URL: http://siag.nu/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: mowitz, nextaw, xawm
+
+name=siag
+version=3.6.1
+release=1
+source=(http://siag.nu/pub/$name/$name-$version.tar.gz\
+	siag.desktop)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--with-docdir=/usr/share/doc/siag \
+		--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+	install -D -m644 ../siag.desktop \
+$PKG/usr/share/ede/programs/Applications/siag.desktop
+}
