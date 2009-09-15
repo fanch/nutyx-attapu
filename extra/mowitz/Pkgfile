@@ -2,7 +2,7 @@
 # URL: http://siag.nu/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: neXtaw
+# Depends on: nextaw
 
 name=mowitz
 version=0.3.1
