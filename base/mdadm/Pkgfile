@@ -1,0 +1,19 @@
+# Description: Gestionnaire de raid 
+# URL: http://www.cse.unsw.edu.au/~neilb/source/mdadm/
+# Maintainer: NutyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glibc
+
+name=mdadm
+version=3.0
+release=1
+source=(ftp://ftp.kernel.org/pub/linux/utils/raid/$name/$name-$version.tar.bz2)
+
+
+
+build() {
+	cd $name-$version
+	make
+	make INSTALL=/usr/bin/install DESTDIR=$PKG install
+	rm -r $PKG/lib
+}
