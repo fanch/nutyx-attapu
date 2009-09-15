@@ -1,0 +1,25 @@
+# Description:	Logical volume management for Linux
+# URL:		http://sources.redhat.com/dm/
+# Packager:	Mark Rosenstand, mark at borkware dot net
+# Maintainer:   Nathan Pardoe, npardoe at ticklestix dot co dot uk
+
+name=device-mapper
+version=1.02.28
+release=1
+source=(ftp://sources.redhat.com/pub/dm/device-mapper.$version.tgz)
+
+build() {
+	cd device-mapper.$version
+	./configure \
+	        --prefix=/usr \
+        	--libdir=/lib \
+	        --mandir=/usr/man \
+        	--sbindir=/sbin \
+	        --enable-pkgconfig \
+        	--disable-nls \
+	        --with-optimisation="$CFLAGS" \
+		--enable-static_link # Required for dmraid
+	make
+	make DESTDIR=$PKG install
+	find $PKG -type f -exec chmod u+w {} \;
+}
