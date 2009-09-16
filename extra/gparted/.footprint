@@ -24,6 +24,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gparted/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/gparted/es/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gparted/es/figures/gparted_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gparted/es/gparted.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gparted/fr/
+drwxr-xr-x	root/root	usr/share/gnome/help/gparted/fr/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gparted/fr/figures/gparted_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gparted/fr/gparted.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gparted/it/
 drwxr-xr-x	root/root	usr/share/gnome/help/gparted/it/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gparted/it/figures/gparted_window.png
@@ -72,6 +76,7 @@ drwxr-xr-x	root/root	usr/share/omf/gparted/
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-C.omf
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-de.omf
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-es.omf
+-rw-r--r--	root/root	usr/share/omf/gparted/gparted-fr.omf
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-it.omf
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/gparted/gparted-sv.omf
