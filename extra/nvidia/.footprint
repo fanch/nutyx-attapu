@@ -5,8 +5,6 @@ drwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/
 -rw-r--r--	root/root	lib/modules/<kernel-version>/extra/nvidia.ko
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/nvidia-settings
--rwxr-xr-x	root/root	usr/bin/nvidia-xconfig
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/nvidia/
 drwxr-xr-x	root/root	usr/include/nvidia/GL/
@@ -35,9 +33,8 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/nvidia_drv.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libGLcore.so -> /usr/lib/libGLcore.so
+lrwxrwxrwx	root/root	usr/lib/xorg/modules/extensions/libglx.so -> /usr/lib/xorg/modules/extensions/libglx.so.185.18.36
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so.185.18.36
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libnvidia-wfb.so.185.18.36
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/nvidia-settings.1.gz
--rw-r--r--	root/root	usr/man/man1/nvidia-xconfig.1.gz
