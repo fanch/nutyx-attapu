@@ -1,0 +1,20 @@
+# Description: Extracteur de firmware pour la carte réseau sans fils basé sur bc43
+# URL: http://bcm43xx.berlios.de"
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=b43-fwcutter
+version=012
+release=1
+source=(http://bu3sch.de/b43/fwcutter/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	sed -i "s|CFLAGS =.*|CFLAGS = $CFLAGS -fomit-frame-pointer -D_BSD_SOURCE|g" Makefile
+	make
+	mkdir -p $PKG/usr/bin
+	install -m755 b43-fwcutter $PKG/usr/bin/
+        mkdir -p $PKG/usr/share/man/man1
+	install -m644 b43-fwcutter.1 $PKG/usr/share/man/man1/
+}
