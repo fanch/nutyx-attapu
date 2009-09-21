@@ -1,0 +1,43 @@
+# Description: Contrôle de modification de fichiers
+# URL: http://oss.sgi.com/projects/fam/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=fam
+version=2.7.0
+release=1
+source=(ftp://oss.sgi.com/projects/fam/download/stable/$name-$version.tar.gz\
+	fam-2.7.0-dnotify.patch fam-2.7.0-largefiles.patch \
+	fam-2.7.0-limits.patch fam-2.7.0-buildfixes.patch famd)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../fam-2.7.0-dnotify.patch
+	patch -Np1 -i ../fam-2.7.0-largefiles.patch
+	patch -Np0 -i ../fam-2.7.0-limits.patch
+	patch -Np1 -i ../$name-$version-buildfixes.patch
+	
+	chmod 755 configure
+	autoheader
+	aclocal
+	automake
+	autoconf 
+	libtoolize --copy --force
+	
+	./configure --prefix=/usr \
+		--sysconfdir=/etc/fam
+	make
+	make DESTDIR=$PKG install
+	install -D -m755 ../famd $PKG/etc/rc.d/init.d/famd
+	for i in 0 1 2 3 4 5 6
+		do mkdir -p $PKG/etc/rc.d/rc$i.d
+	done
+	for i in 0 1 6
+		do ln -sv ../init.d/famd $PKG/etc/rc.d/rc$i.d/K05famd
+	done
+	for i in 3 4 5
+		do ln -sv ../init.d/famd $PKG/etc/rc.d/rc$i.d/S50famd
+	done
+	rm -rf $PKG/usr/{include,lib}
+}

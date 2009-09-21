@@ -1,0 +1,37 @@
+#!/bin/sh
+# Begin $rc_base/init.d/famd
+
+# Based on sysklogd script from LFS-3.1 and earlier.
+# Rewritten by Gerard Beekmans  - gerard@linuxfromscratch.org
+
+#$Id: famd,v 1.1 2008/03/11 20:33:25 install Exp $
+
+
+. /etc/sysconfig/rc
+. $rc_functions
+
+case "$1" in
+	start)
+		boot_mesg "Starting File Alteration Monitor..."
+		loadproc /usr/sbin/famd -T 0 -c /etc/fam/fam.conf
+		;;
+
+	stop)
+		boot_mesg "Stopping File Atleration Monitor..."
+		killproc /usr/sbin/famd
+		;;
+
+
+	restart)
+		$0 stop
+		sleep 1
+		$0 start
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/famd

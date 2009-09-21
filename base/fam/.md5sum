@@ -1,0 +1,6 @@
+fc0cabc0ac4f819680401eb3090c29c9  fam-2.7.0-buildfixes.patch
+073d1763318344635ea316293390205c  fam-2.7.0-dnotify.patch
+e0d787794caa2ab72be9945e1131b6e3  fam-2.7.0-largefiles.patch
+2638b8ffacb9f03b6e438e08ea7b290a  fam-2.7.0-limits.patch
+1bf3ae6c0c58d3201afc97c6a4834e39  fam-2.7.0.tar.gz
+58e6025cb3a772a1106cd535ab998259  famd
