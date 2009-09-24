@@ -1,0 +1,20 @@
+# Description: Gestionnaire de collection en Qt4
+# URL: http://tellico-project.org/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot ch
+# Depends on: qt, libxml2, libxslt, taglib, python
+
+name=tellico
+version=2.0
+release=1
+source=(http://tellico-project.org/files/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	make -j3
+	make DESTDIR=$PKG install
+}
+
