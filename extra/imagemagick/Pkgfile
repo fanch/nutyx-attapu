@@ -5,9 +5,9 @@
 # Depends on: freetype, ghostscript, lcms, libgsf, giflib, libxml2, openexr
 
 name=imagemagick
-version=6.5.5.6
+version=6.5.6.4
 release=1
-_version=6.5.5-6
+_version=6.5.6-4
 source=(ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-${_version}.tar.bz2)
 
 build () {
@@ -22,7 +22,6 @@ cd ImageMagick-*
 	--disable-openmp
 	make || make
 	make DESTDIR=$PKG install
-
-	rm -rf $PKG/usr/lib/perl5/5.10.1
+	rm $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/perllocal.pod
 }
 
