@@ -5,9 +5,9 @@
 # Depends on: kernel
 
 name=initrd
-version=2.6.30.5
+version=2.6.31.1
 release=1
-_tools=17082009
+_tools=12092009
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install_2009.ash
@@ -15,7 +15,7 @@ wget http://kiao.no-ip.info/NuTyX/2009/`uname -m`/release/kernel%23$version-1.pk
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR
-wget http://kiao.no-ip.info/NuTyX/files/installtools-${_tools}.tar.gz
+wget http://kiao.no-ip.info/NuTyX/tools/installtools-${_tools}.tar.gz
 tar -C $WDIR --use-compress-program=gzip -xf installtools-${_tools}.tar.gz
 
 mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/{drivers,fs}
