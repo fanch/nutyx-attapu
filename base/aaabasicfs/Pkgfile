@@ -5,11 +5,11 @@
 # Depends on:
 
 name=aaabasicfs
-version=2009
-release=1
-scriptsversion=lfs-bootscripts-20090523
+version=2009.1
+release=beta2
+scriptsversion=lfs-bootscripts-20090817
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
- hosts clock console fstab inittab menu.lst inputrc network xorg.conf \
+ hosts clock console fstab inittab message inputrc network xorg.conf \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc \
  blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc sysklogd cleanfs)
 
@@ -45,7 +45,7 @@ build() {
 	# Creating essential Files and Symlinks
 	touch $PKG/etc/mtab
 	ln -sv bash $PKG/bin/sh
-	echo "2009" > $PKG/etc/nutyx-version
+	echo "$version-$release" > $PKG/etc/nutyx-version
 	cat > $PKG/etc/shells << "EOF"
 /bin/sh
 /bin/bash
@@ -147,14 +147,8 @@ EOF
 	cp sysklogd $PKG/etc/rc.d/init.d/
 	cp cleanfs $PKG/etc/rc.d/init.d/
 
-	mkdir -v $PKG/boot/grub
-	cp -v menu.lst $PKG/boot/grub/
-	if [ `uname -m` == "x86_64" ]; then
-		sed -i "s|boot/kernel|boot/kernel_64|" \
-		$PKG/boot/grub/menu.lst
-		sed -i "s|nutyx-initrd|nutyx-initrd_64|" \
-		$PKG/boot/grub/menu.lst
-	fi
+	cp -v message $PKG/boot/
+
 	cat > $PKG/etc/skel/.dmrc << "EOF"
 [Desktop]
 Session=
@@ -192,4 +186,12 @@ EOF
 	ln -s ../etc/pkg-get.conf
 	ln -s ../etc/pkgadd.conf
 	ln -s ../etc/pkgmk.conf
+	for i in rc0.d rc6.d
+		do
+			mv $PKG/etc/rc.d/$i/S{80,70}swap
+			mv $PKG/etc/rc.d/$i/S{70,80}mountfs
+	done
+	mv $PKG/etc/rc.d/rcsysinit.d/S{20,40}swap
+	mv $PKG/etc/rc.d/rcsysinit.d/S{30,20}checkfs
+	mv $PKG/etc/rc.d/rcsysinit.d/S{40,30}mountfs
 }

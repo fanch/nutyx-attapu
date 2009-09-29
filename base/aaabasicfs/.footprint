@@ -1,8 +1,7 @@
 drwxr-xr-x	root/root	bin/
 lrwxrwxrwx	root/root	bin/sh -> bash
 drwxr-xr-x	root/root	boot/
-drwxr-xr-x	root/root	boot/grub/
--rw-r--r--	root/root	boot/grub/menu.lst
+-rw-r--r--	root/root	boot/message
 drwxr-xr-x	root/root	dev/
 crw-------	root/root	dev/console (5, 1)
 crw-rw-rw-	root/root	dev/null (1, 3)
@@ -57,8 +56,8 @@ drwxr-xr-x	root/root	etc/rc.d/rc0.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K80network -> ../init.d/network
 lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K90sysklogd -> ../init.d/sysklogd
 lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S60sendsignals -> ../init.d/sendsignals
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S70mountfs -> ../init.d/mountfs
-lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S80swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S70swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S80mountfs -> ../init.d/mountfs
 lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S90localnet -> ../init.d/localnet
 lrwxrwxrwx	root/root	etc/rc.d/rc0.d/S99halt -> ../init.d/halt
 drwxr-xr-x	root/root	etc/rc.d/rc1.d/
@@ -80,8 +79,8 @@ drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K80network -> ../init.d/network
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K90sysklogd -> ../init.d/sysklogd
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S60sendsignals -> ../init.d/sendsignals
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S70mountfs -> ../init.d/mountfs
-lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S80swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S70swap -> ../init.d/swap
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S80mountfs -> ../init.d/mountfs
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S90localnet -> ../init.d/localnet
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S99reboot -> ../init.d/reboot
 drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
@@ -89,9 +88,9 @@ lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S00mountkernfs -> ../init.d/mountkernf
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S02consolelog -> ../init.d/consolelog
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S05modules -> ../init.d/modules
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S10udev -> ../init.d/udev
-lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S20swap -> ../init.d/swap
-lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S30checkfs -> ../init.d/checkfs
-lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S40mountfs -> ../init.d/mountfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S20checkfs -> ../init.d/checkfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S30mountfs -> ../init.d/mountfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S40swap -> ../init.d/swap
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S45cleanfs -> ../init.d/cleanfs
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S50udev_retry -> ../init.d/udev_retry
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S70console -> ../init.d/console
