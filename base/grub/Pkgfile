@@ -6,7 +6,7 @@
 
 name=grub
 version=0.97
-release=3
+release=4
 source=(ftp://alpha.gnu.org/gnu/$name/$name-$version.tar.gz\
 	http://www.linuxfromscratch.org/patches/lfs/development/grub-0.97-disk_geometry-1.patch \
 	http://www.linuxfromscratch.org/patches/lfs/development/grub-0.97-256byte_inode-1.patch \
@@ -21,10 +21,9 @@ source=(ftp://alpha.gnu.org/gnu/$name/$name-$version.tar.gz\
 	http://www.nutyx.org/files/patchs/grub/grub-gfxmenu-v8.diff \
 	http://www.nutyx.org/files/patchs/grub/grub-a20.patch \
 	http://www.nutyx.org/files/patchs/grub/ext4.patch \
+	http://www.nutyx.org/files/patchs/grub/grub-0.97-btrfs-2.patch \
 	http://aur.archlinux.org/packages/grub-gfxboot/grub-gfxboot/02-grub-$version-debugcdboot.patch\
-	http://aur.archlinux.org/packages/grub-gfx/grub-gfx/grub-0.97-graphics.patch \
-	
-	message )
+	http://aur.archlinux.org/packages/grub-gfx/grub-gfx/grub-0.97-graphics.patch )
 build() {
 	cd $name-$version
 	patch -Np1 -i ../$name-$version-path-patch
@@ -40,19 +39,21 @@ build() {
 	patch -Np1 -i ../$name-$version-256byte_inode-1.patch
 
 	patch -Np1 -i ../ext4.patch
+#	patch -Np1 -i ../grub-0.97-btrfs-2.patch
 	unset CXXFLAGS
 	unset CFLAGS
+	if [ "`uname -m`" == "x86_64" ]; then
+		echo "Ce paquet doit être builder dans i686"
+		echo 'Ajouter CFLAGS="-static" avant ./configure'
+		echo 'CFLAGS="-static" ./configure --prefix=/usr'
+		exit 1
+	fi
 	./configure --prefix=/usr \
                     --mandir=/usr/share/man \
                     --infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
-        install -d $PKG/boot/grub
         install -d $PKG/usr/share
-	cp -v ../message $PKG/boot/
-        cp -v $PKG/usr/lib/grub/i386-pc/stage{1,2} $PKG/boot/grub
-        cp -v $PKG/usr/lib/grub/i386-pc/e2fs_stage1_5 $PKG/boot/grub
-        cp -v $PKG/usr/lib/grub/i386-pc/reiserfs_stage1_5 $PKG/boot/grub
 	if [ -f $PKG/usr/share/info/dir ]; then
         	rm $PKG/usr/share/info/dir
 	fi
