@@ -1,0 +1,15 @@
+# Description: Module python pour GestPkg
+# URL: http://www.nutyx.org
+# Maintainer: NuTyX core team
+# Packager: ferarduansednan at laposte dot net
+# Depends on: python
+name=gestpkg-module
+version=1.0
+release=1
+group=extra
+source=(http://saintux.free.fr/test/pkg/sources/$name-$version-src.tar.gz)
+
+build() {
+cd ./$name-$version-src
+    python setup.py install --root=$PKG
+}
