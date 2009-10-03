@@ -88,6 +88,7 @@ lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S00mountkernfs -> ../init.d/mountkernf
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S02consolelog -> ../init.d/consolelog
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S05modules -> ../init.d/modules
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S10udev -> ../init.d/udev
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S15setclock -> ../init.d/setclock
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S20checkfs -> ../init.d/checkfs
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S30mountfs -> ../init.d/mountfs
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S40swap -> ../init.d/swap

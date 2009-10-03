@@ -10,7 +10,7 @@ release=beta2
 scriptsversion=lfs-bootscripts-20090817
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
  hosts clock console fstab inittab message inputrc network xorg.conf \
- profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc \
+ profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
  blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc sysklogd cleanfs)
 
 
@@ -122,6 +122,7 @@ EOF
 	chmod -v 664 $PKG/var/run/utmp $PKG/var/log/lastlog
 	# Bootscripts
 	cd $scriptsversion
+	patch -Np1 -i ../lfs-bootscripts-01.patch
 	make DESTDIR=$PKG install
 	# We want to start the network when init 2
 	mv $PKG/etc/rc.d/rc2.d/{K80,S20}network
@@ -191,6 +192,7 @@ EOF
 			mv $PKG/etc/rc.d/$i/S{80,70}swap
 			mv $PKG/etc/rc.d/$i/S{70,80}mountfs
 	done
+	ln -s ../init.d/setclock $PKG/etc/rc.d/rcsysinit.d/S15setclock
 	mv $PKG/etc/rc.d/rcsysinit.d/S{20,40}swap
 	mv $PKG/etc/rc.d/rcsysinit.d/S{30,20}checkfs
 	mv $PKG/etc/rc.d/rcsysinit.d/S{40,30}mountfs

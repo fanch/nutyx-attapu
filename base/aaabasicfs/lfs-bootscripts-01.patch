@@ -1,0 +1,21 @@
+--- lfs-bootscripts-20090817/lfs/init.d/checkfs.orig	2009-10-02 21:54:45.000000000 +0000
++++ lfs-bootscripts-20090817/lfs/init.d/checkfs	2009-10-02 21:56:21.000000000 +0000
+@@ -58,15 +58,15 @@
+ 			boot_mesg -n "/forcefsck found, forcing file" ${INFO}
+ 			boot_mesg " system checks as requested."
+ 			echo_ok
+-			options="-f"
++			options="-A -C -T"
+ 		else
+-			options=""
++			options="-a -A -C -T"
+ 		fi
+ 
+ 		boot_mesg "Checking file systems..."
+ 		# Note: -a option used to be -p; but this fails e.g.
+ 		# on fsck.minix
+-		fsck ${options} -a -A -C -T
++		fsck ${options}
+ 		error_value=${?}
+ 
+ 		if [ "${error_value}" = 0 ]; then
