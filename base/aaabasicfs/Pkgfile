@@ -6,12 +6,12 @@
 
 name=aaabasicfs
 version=2009.1
-release=beta2
+release=beta3
 scriptsversion=lfs-bootscripts-20090817
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
  hosts clock console fstab inittab message inputrc network xorg.conf \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
- blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc sysklogd cleanfs)
+ blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc )
 
 
 build() {
@@ -145,9 +145,7 @@ EOF
 	cp -v nu $PKG/root/bin
        # Customise startup scripts
 	cp blfs-bootscripts $PKG/etc/
-	cp sysklogd $PKG/etc/rc.d/init.d/
-	cp cleanfs $PKG/etc/rc.d/init.d/
-
+	
 	cp -v message $PKG/boot/
 
 	cat > $PKG/etc/skel/.dmrc << "EOF"

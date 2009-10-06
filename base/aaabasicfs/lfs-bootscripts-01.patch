@@ -19,3 +19,26 @@
  		error_value=${?}
  
  		if [ "${error_value}" = 0 ]; then
+--- lfs-bootscripts-20090817/lfs/init.d/cleanfs.orig	2009-10-04 07:55:51.000000000 +0000
++++ lfs-bootscripts-20090817/lfs/init.d/cleanfs	2009-10-04 08:03:50.000000000 +0000
+@@ -74,6 +74,7 @@
+ 		boot_mesg -n "Cleaning file systems:" ${INFO}
+ 
+ 		boot_mesg -n " /tmp" ${NORMAL}
++		chmod 177 /tmp
+ 		cd /tmp &&
+ 		find . -xdev -mindepth 1 ! -name lost+found \
+ 			-delete || failed=1
+--- lfs-bootscripts-20090817/lfs/init.d/sysklogd.orig	2009-10-04 08:06:12.000000000 +0000
++++ lfs-bootscripts-20090817/lfs/init.d/sysklogd	2009-10-04 08:07:04.000000000 +0000
+@@ -30,6 +30,10 @@
+ 
+ 		boot_mesg "Stopping system log daemon..."
+ 		killproc syslogd
++		mv /var/log/sys.log /var/log/sys.log.old
++		touch /var/log/sys.log
++		mv /var/log/wtmp /var/log/wtmp.old
++		touch /var/log/wtmp
+ 		;;
+ 
+ 	reload)
