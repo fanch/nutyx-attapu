@@ -76,7 +76,6 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/nepomuk.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/phonon.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/plasma.so
--rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/polkitqt.so
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyKDE4/pykdeconfig.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyKDE4/pykdeconfig.pyc
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/solid.so
