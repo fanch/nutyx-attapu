@@ -2366,8 +2366,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ktouch/
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/german2.ktouch.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/german3.ktouch.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/he.keyboard.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ktouch/hu.keyboard.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ktouch/hungarian.expert.ktouch.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/hungarian.ktouch.xml
--rw-r--r--	root/root	opt/kde/share/apps/ktouch/hungarian_expert.ktouch.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/it.keyboard.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/italian.ktouch.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ktouch/ktouchui.rc
