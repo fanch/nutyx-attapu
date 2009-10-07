@@ -2492,6 +2492,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/underBSDLicense.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/underFDL.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/underGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/underLGPL.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/underX11License.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/entities/update-doc.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/es/lang.entities
