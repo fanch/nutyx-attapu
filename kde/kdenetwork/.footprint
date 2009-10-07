@@ -9,8 +9,8 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/krdc
 -rwxr-xr-x	root/root	opt/kde/bin/krfb
 -rwxr-xr-x	root/root	opt/kde/bin/skype-action-handler
--rwxr-xr-x	root/root	opt/kde/bin/winpopup-install.sh
--rwxr-xr-x	root/root	opt/kde/bin/winpopup-send.sh
+-rwxr-xr-x	root/root	opt/kde/bin/winpopup-install
+-rwxr-xr-x	root/root	opt/kde/bin/winpopup-send
 drwxr-xr-x	root/root	opt/kde/include/
 drwxr-xr-x	root/root	opt/kde/include/kopete/
 -rw-r--r--	root/root	opt/kde/include/kopete/kabcpersistence.h
