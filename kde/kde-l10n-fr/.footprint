@@ -256,7 +256,6 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kde-menu.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdeasciiquarium.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdebugdialog.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kded_phononserver.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdelibs4.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdelibs_colors4.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdelirc.mo
@@ -557,6 +556,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/phonon-xine.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/phonon_gstreamer.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/phonon_kde.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/phononserver.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma-desktop.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma-overlay.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma-shells-common.mo
@@ -620,9 +620,9 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_appletscriptengine_dashboard.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_appletscriptengine_googlegadget.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_appletscriptengine_qedjescripts.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_applicationjobs.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_kalzium.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_keystate.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_kuiserver.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_metadata.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_network.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/plasma_engine_notifications.mo
