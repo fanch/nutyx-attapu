@@ -5,14 +5,15 @@
 # Depends on: cmake
 
 name=taglib
-version=1.5
-release=3
+version=1.6
+release=1
 source=( http://ktown.kde.org/~wheeler/files/src/$name-$version.tar.gz)
 
 
 build() {
 	cd $name-$version
-	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release	
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release \
+	-DWITH_MP4=ON  -DWITH_ASF=ON	
 	make
 	make DESTDIR=$PKG install
 }
