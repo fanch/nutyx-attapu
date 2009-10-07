@@ -5,7 +5,7 @@
 # Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury
 
 name=kdebase-workspace
-version=4.3.1
+version=4.3.2
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
         kdm lxde.desktop ede.desktop Xsession.kde4 NuTyXlogo.png)
