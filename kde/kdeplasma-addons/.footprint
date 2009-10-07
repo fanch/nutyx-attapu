@@ -97,6 +97,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_flickrprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_oseiprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_wcpotdprovider.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_marble.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_pattern.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_virus.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_weather.so
@@ -214,7 +215,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/default/widgets/
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/luna.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/microblog.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/notes.svgz
--rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/picture-frame-default.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/previewer-16.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/previewer-22.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/widgets/timer.svgz
@@ -283,6 +283,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/slim-glow/lancelot/
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/slim-glow/lancelot/theme.config
 drwxr-xr-x	root/root	opt/kde/share/apps/lancelot/
 -rw-r--r--	root/root	opt/kde/share/apps/lancelot/lancelot.notifyrc
+drwxr-xr-x	root/root	opt/kde/share/apps/plasma-applet-frame/
+-rw-r--r--	root/root	opt/kde/share/apps/plasma-applet-frame/picture-frame-default.jpg
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma-applet-opendesktop/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma-applet-opendesktop/user.css
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma/
@@ -358,12 +360,9 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/previewer.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/accessories-dictionary.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/bball.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/fifteenpuzzle.svgz
-drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/
-drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/
-drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/apps/
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/scalable/apps/accessories-dictionary.svgz
 drwxr-xr-x	root/root	opt/kde/share/kde4/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
@@ -426,6 +425,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-converter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-spellchecker.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-spellchecker_config.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-marble.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-pattern.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-virus.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-weather.desktop
