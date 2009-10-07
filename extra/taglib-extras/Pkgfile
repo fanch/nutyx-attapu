@@ -5,10 +5,10 @@
 # Depends on: taglib
 
 name=taglib-extras
-version=0.1.3
+version=1.0.1
 release=1
 
-source=(ftp://ftp.archlinux.org/other/${name}/${name}-${version}.tar.bz2)
+source=(http://www.kollide.net/~jefferai/$name-$version.tar.gz)
 
 build() {
   cd $name-$version

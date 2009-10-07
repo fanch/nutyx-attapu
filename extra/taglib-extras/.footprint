@@ -3,33 +3,17 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/taglib-extras-config
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/taglib-extras/
--rw-r--r--	root/root	usr/include/taglib-extras/asfattribute.h
--rw-r--r--	root/root	usr/include/taglib-extras/asffile.h
--rw-r--r--	root/root	usr/include/taglib-extras/asffiletyperesolver.h
--rw-r--r--	root/root	usr/include/taglib-extras/asfproperties.h
--rw-r--r--	root/root	usr/include/taglib-extras/asftag.h
 -rw-r--r--	root/root	usr/include/taglib-extras/audiblefile.h
 -rw-r--r--	root/root	usr/include/taglib-extras/audiblefiletyperesolver.h
 -rw-r--r--	root/root	usr/include/taglib-extras/audibleproperties.h
 -rw-r--r--	root/root	usr/include/taglib-extras/audibletag.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4atom.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4file.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4filetyperesolver.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4item.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4properties.h
--rw-r--r--	root/root	usr/include/taglib-extras/mp4tag.h
 -rw-r--r--	root/root	usr/include/taglib-extras/realmediafile.h
 -rw-r--r--	root/root	usr/include/taglib-extras/realmediafiletyperesolver.h
 -rw-r--r--	root/root	usr/include/taglib-extras/taglib-extras_export.h
--rw-r--r--	root/root	usr/include/taglib-extras/tdebug.h
 -rw-r--r--	root/root	usr/include/taglib-extras/tfile_helper.h
--rw-r--r--	root/root	usr/include/taglib-extras/tplugins.h
--rw-r--r--	root/root	usr/include/taglib-extras/wavfile.h
--rw-r--r--	root/root	usr/include/taglib-extras/wavfiletyperesolver.h
--rw-r--r--	root/root	usr/include/taglib-extras/wavproperties.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libtag-extras.so -> libtag-extras.so.0
-lrwxrwxrwx	root/root	usr/lib/libtag-extras.so.0 -> libtag-extras.so.0.1.0
--rwxr-xr-x	root/root	usr/lib/libtag-extras.so.0.1.0
+lrwxrwxrwx	root/root	usr/lib/libtag-extras.so -> libtag-extras.so.1
+lrwxrwxrwx	root/root	usr/lib/libtag-extras.so.1 -> libtag-extras.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libtag-extras.so.1.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/taglib-extras.pc
