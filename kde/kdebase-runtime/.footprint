@@ -716,8 +716,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/searchprovider.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/thumbcreator.desktop
 drwxr-xr-x	root/root	opt/kde/share/locale/
-drwxr-xr-x	root/root	opt/kde/share/locale/en_US/
--rw-r--r--	root/root	opt/kde/share/locale/en_US/entry.desktop
 drwxr-xr-x	root/root	opt/kde/share/locale/l10n/
 drwxr-xr-x	root/root	opt/kde/share/mime/
 drwxr-xr-x	root/root	opt/kde/share/mime/packages/
