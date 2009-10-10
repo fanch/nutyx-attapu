@@ -87,6 +87,7 @@ drwxr-xr-x	root/root	opt/VirtualBox/nls/
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_eu.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_fi.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_fr.qm
+-rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_gl_ES.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_hu.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_id.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_it.qm
@@ -113,6 +114,7 @@ drwxr-xr-x	root/root	opt/VirtualBox/nls/
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_eu.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_fi.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_fr.qm
+-rw-r--r--	root/root	opt/VirtualBox/nls/qt_gl_ES.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_hu.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_id.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_it.qm
