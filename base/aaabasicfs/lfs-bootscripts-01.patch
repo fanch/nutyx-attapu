@@ -25,7 +25,7 @@
  		boot_mesg -n "Cleaning file systems:" ${INFO}
  
  		boot_mesg -n " /tmp" ${NORMAL}
-+		chmod 177 /tmp
++		chmod 1777 /tmp
  		cd /tmp &&
  		find . -xdev -mindepth 1 ! -name lost+found \
  			-delete || failed=1
