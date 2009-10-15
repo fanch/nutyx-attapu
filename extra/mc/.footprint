@@ -4,9 +4,9 @@ drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/mcedit -> mc
 -rwxr-xr-x	root/root	usr/bin/mcmfmt
 lrwxrwxrwx	root/root	usr/bin/mcview -> mc
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/mc/
--rwxr-xr-t	root/root	usr/lib/mc/cons.saver
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/mc/
+-rwxr-xr-x	root/root	usr/libexec/mc/cons.saver
 drwxr-xr-x	root/root	usr/sbin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/locale/
@@ -67,6 +67,8 @@ drwxr-xr-x	root/root	usr/share/mc/extfs/
 -rwxr-xr-x	root/root	usr/share/mc/extfs/rpms
 -rw-r--r--	root/root	usr/share/mc/extfs/sfs.ini
 -rwxr-xr-x	root/root	usr/share/mc/extfs/trpm
+-rwxr-xr-x	root/root	usr/share/mc/extfs/u7z
+-rwxr-xr-x	root/root	usr/share/mc/extfs/ualz
 -rwxr-xr-x	root/root	usr/share/mc/extfs/uar
 -rwxr-xr-x	root/root	usr/share/mc/extfs/uarj
 -rwxr-xr-x	root/root	usr/share/mc/extfs/uha
@@ -104,6 +106,13 @@ drwxr-xr-x	root/root	usr/share/mc/syntax/
 -rw-r--r--	root/root	usr/share/mc/syntax/c.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/changelog.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/cs.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/css.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/cxx.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/d.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/debian-changelog.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/debian-control.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/debian-description.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/debian-sources-list.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/diff.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/dos.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/eiffel.syntax
