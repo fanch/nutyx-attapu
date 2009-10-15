@@ -1,0 +1,70 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/dhcpd.conf
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc0.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc0.d/K30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc1.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc1.d/K30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc2.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc2.d/K30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc3.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc3.d/S30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc4.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc4.d/S30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc5.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rc6.d/
+lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K30dhcp -> ../init.d/dhcp
+drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
+drwxr-xr-x	root/root	etc/sysconfig/
+drwxr-xr-x	root/root	sbin/
+-rwxr-xr-x	root/root	sbin/dhclient
+-rwx------	root/root	sbin/dhclient-script
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/omshell
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/dhcpctl.h
+drwxr-xr-x	root/root	usr/include/isc-dhcp/
+-rw-r--r--	root/root	usr/include/isc-dhcp/boolean.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/dst.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/int.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/lang.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/list.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/result.h
+-rw-r--r--	root/root	usr/include/isc-dhcp/types.h
+drwxr-xr-x	root/root	usr/include/omapip/
+-rw-r--r--	root/root	usr/include/omapip/alloc.h
+-rw-r--r--	root/root	usr/include/omapip/buffer.h
+-rw-r--r--	root/root	usr/include/omapip/omapip.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libdhcpctl.a
+-rw-r--r--	root/root	usr/lib/libomapi.a
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/dhcpd
+-rwxr-xr-x	root/root	usr/sbin/dhcrelay
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rwxr-xr-x	root/root	usr/share/man/man1/omshell.1.gz
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rwxr-xr-x	root/root	usr/share/man/man3/dhcpctl.3.gz
+-rwxr-xr-x	root/root	usr/share/man/man3/omapi.3.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rwxr-xr-x	root/root	usr/share/man/man5/dhclient.conf.5.gz
+-rwxr-xr-x	root/root	usr/share/man/man5/dhclient.leases.5.gz
+-rwxr-xr-x	root/root	usr/share/man/man5/dhcp-eval.5.gz
+-rwxr-xr-x	root/root	usr/share/man/man5/dhcp-options.5.gz
+-rwxr-xr-x	root/root	usr/share/man/man5/dhcpd.conf.5.gz
+-rwxr-xr-x	root/root	usr/share/man/man5/dhcpd.leases.5.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rwxr-xr-x	root/root	usr/share/man/man8/dhclient-script.8.gz
+-rwxr-xr-x	root/root	usr/share/man/man8/dhclient.8.gz
+-rwxr-xr-x	root/root	usr/share/man/man8/dhcpd.8.gz
+-rwxr-xr-x	root/root	usr/share/man/man8/dhcrelay.8.gz
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/state/
+drwxr-xr-x	root/root	var/state/dhcp/
+-rw-rw-r--	root/root	var/state/dhcp/dhcpd.leases (EMPTY)
