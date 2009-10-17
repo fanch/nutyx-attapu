@@ -6,15 +6,15 @@
 
 name=opera
 version=10.00
-release=4
-source=( http://snapshot.opera.com/unix/snapshot-4394/intel-linux/opera-10.00-4394.gcc4-qt4.i386.tar.gz \
+release=5
+source=( http://mirror.ndnet.ch/opera/linux/1000/final/en/`uname -m`/opera-10.00.gcc4-qt4.`uname -m`.tar.gz \
 	opera.desktop \
 	opera.png ) 
 	
 
 
 build() {
-	cd $name-$version-4394.gcc4-qt4.i386
+	cd $name-*
 #	sed 's|/usr/X11R6/lib/mozilla/plugins=1|/opt/mozilla/lib/plugins=1|' -i ini/pluginpath.ini
 	./install.sh DESTDIR=$PKG
 	mkdir -p $PKG/usr/share/{applications,licences/opera,icons/hicolor/48x48/apps}
