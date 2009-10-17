@@ -7,12 +7,15 @@
 name=opera
 version=10.00
 release=5
-source=( http://mirror.ndnet.ch/opera/linux/1000/final/en/`uname -m`/opera-10.00.gcc4-qt4.`uname -m`.tar.gz \
-	opera.desktop \
-	opera.png ) 
+if [ "`uname -m`" == "i686" ]; then
+        _ARCH=i386
+else
+        _ARCH=x86_64
+fi
+source=( http://mirror.ndnet.ch/opera/linux/1000/final/en/${_ARCH}/opera-10.00.gcc4-qt4.${_ARCH}.tar.gz \
+        opera.desktop \
+        opera.png )
 	
-
-
 build() {
 	cd $name-*
 #	sed 's|/usr/X11R6/lib/mozilla/plugins=1|/opt/mozilla/lib/plugins=1|' -i ini/pluginpath.ini
