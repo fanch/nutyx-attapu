@@ -1,0 +1,276 @@
+--- pkg-get-0.4.5/scripts/pkg-get.pl	2009-10-17 20:20:51.000000000 +0000
++++ /usr/ports/base/pkg-get/pkg-get	2009-10-17 16:42:23.000000000 +0000
+@@ -1,7 +1,9 @@
+ #!/usr/bin/env perl
++# -*- coding: utf-8 -*-
+ #
+ # pkg-get - A binary package management utility for CRUX Linux
+ # Copyright (C) 2004-06 Simone Rota <sip@varlock.com>
++# Modified by Arnaud Fernandés <ferarduansednan@laposte.net> 2009-10
+ #
+ # This program is free software; you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -48,6 +50,8 @@
+ }
+ readconfig();
+ 
++my $exitcode = 0;		# 2009-10
++
+ SWITCH: {
+ 	if ($command eq "version") { version(); last SWITCH; }
+ 	if ($command eq "sync") { sync(); last SWITCH; }
+@@ -74,10 +78,11 @@
+ 	if ($command eq "update") { update(@ARGV); last SWITCH; }
+ 	if ($command eq "sysup") { sysup(); last SWITCH; }
+ 	if ($command eq "dependent") { dependent(); last SWITCH; }
+-	if ($command eq "depinst") { depinst(); last SWITCH; }
++	if ($command eq "depinst") { $exitcode = depinst(); last SWITCH; }	# 2009-10
+ 	if ($command eq "current") { current(); last SWITCH; }
+ }
+ 
++exit($exitcode);	# 2009-10
+ 
+ ############################################################################
+ # Support functions
+@@ -104,7 +109,7 @@
+ 	if (not $givencmd){$givencmd = ""};
+ 	my @allowed = ("depinst:", "install:", "sysup", "diff", "update:", "depends:", "info:", "sync",
+ 					"version", "help", "quickdep:", "dependent:", "list", "listinst", "isinst:",
+-					"search:", "dsearch:", "lock:", "unlock:", "listlocked", "quickdiff", "printf:", 
++					"search:", "dsearch:", "lock:", "unlock:", "listlocked", "quickdiff", "printf:",
+ 					"remove:", "readme:", "dup", "path:", "current:");
+ 
+ 	foreach my $valid(@allowed) {
+@@ -126,7 +131,7 @@
+ 
+ # Parses the configuration file
+ sub readconfig {
+-	open(CFG, $CFGFILE) 
++	open(CFG, $CFGFILE)
+ 		or exiterr("could not open $CFGFILE");
+ 	while (<CFG>) {
+ 		chomp;
+@@ -160,7 +165,7 @@
+ 	my $release = $p[0];
+ 	$release =~ s/^.*-//;
+ 	$release =~ s/\.pkg\.tar\.gz//;
+-	if (not $_[2]) {$_[2] = $_[1]}; 
++	if (not $_[2]) {$_[2] = $_[1]};
+ 	$pkg{'name'} = $name;
+ 	$pkg{'version'} = $version;
+ 	$pkg{'release'} = $release;
+@@ -214,7 +219,7 @@
+ sub getdirectdeps {
+ 	my $pkgname = $_[0];
+ 	my $dir = $_[1];
+-	open(DEPS, "$dir/PKGDEPS") 
++	open(DEPS, "$dir/PKGDEPS")
+ 		or exiterr("could not open $dir/PKGDEPS");
+ 	while (<DEPS>) {
+ 		chomp;
+@@ -236,7 +241,7 @@
+ 	my $pkgname = $pkg{'name'};
+ 	my $found = 0;
+ 	my $finished = 0;
+-	open(READ, "$dir/PKGREAD") 
++	open(READ, "$dir/PKGREAD")
+ 		or exiterr("could not open $dir/PKGREAD");
+ 	while (<READ>) {
+ 		if ($finished eq 1) {return;};
+@@ -312,12 +317,12 @@
+ # Get the list of installed packages
+ sub getinstalled {
+ 	if (%installed) {
+-		return; 
++		return;
+ 	}
+ 	my $name;
+ 	my $version;
+ 	my $sec = 0;
+-	open(DB, $PKGDB) 
++	open(DB, $PKGDB)
+ 		or exiterr("could not open ".$PKGDB);
+ 	while (<DB>) {
+ 		chomp;
+@@ -447,7 +452,7 @@
+ 	return %res;
+ }
+ 
+-# Get short status for package, ie [i] 
++# Get short status for package, ie [i]
+ sub getshortstatus {
+ 	my %pkg = @_;
+ 	if ($pkg{'instversion'}) {
+@@ -503,9 +508,9 @@
+ 		$md5 =~ s/\s+.*$//;
+ 		$md5 =~ chop($md5);
+ 		if ($md5 ne $pkg{'md5sum'} and not $ignore_md5sum) {
+-			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n"; 
+-			print STDERR "required : $pkg{'md5sum'}\n"; 
+-			print STDERR "found	: $md5\n"; 
++			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n";
++			print STDERR "required : $pkg{'md5sum'}\n";
++			print STDERR "found	: $md5\n";
+ 			return 0;
+ 		}
+ 		return 1;
+@@ -518,9 +523,9 @@
+ 		$md5 =~ s/\s+.*$//;
+ 		$md5 =~ chop($md5);
+ 		if ($md5 ne $pkg{'md5sum'} and not $ignore_md5sum) {
+-			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n"; 
+-			print STDERR "required : $pkg{'md5sum'}\n"; 
+-			print STDERR "found	: $md5\n"; 
++			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n";
++			print STDERR "required : $pkg{'md5sum'}\n";
++			print STDERR "found	: $md5\n";
+ 			return 0;
+ 		}
+ 	}
+@@ -537,11 +542,11 @@
+ 	if ($download_only) {return 1};
+ 	if ($force){$aa = $aa."-f "};
+ 	if ($root) {$aa = $aa."-r ".$root." "};
+-	if ($pkg{'pre_install'} eq "yes" and ($install_scripts or $pre_install)) {dopre(%pkg)};	
++	if ($pkg{'pre_install'} eq "yes" and ($install_scripts or $pre_install)) {dopre(%pkg)};
+ 	my $fullpath = $pkg{'path'}."/".$pkg{'name'}."#".$pkg{'version'}."-".$pkg{'release'}.".pkg.tar.gz";
+ 	print "pkg-get: /usr/bin/pkgadd $upgrade$aa$fullpath\n";
+ 	system ("/usr/bin/pkgadd $upgrade$aa$fullpath") == 0 or return 0;
+-	if ($pkg{'post_install'} eq "yes" and ($install_scripts or $post_install)) {dopost(%pkg)};	
++	if ($pkg{'post_install'} eq "yes" and ($install_scripts or $post_install)) {dopost(%pkg)};
+ 	return 1;
+ }
+ 
+@@ -675,7 +680,7 @@
+ 	}
+ 	foreach my $key (sort keys %found) {
+ 		print "$key\n";
+-	} 
++	}
+ 	if (not %found) {print "No matching packages found\n"};
+ }
+ 
+@@ -691,7 +696,7 @@
+ 		while (<REPO>) {
+ 			chomp;
+ 			my %pkg = parsepackage($_, $dir, $url, 0);
+-			if ((index($pkg{'name'}, $arg) > -1 or index($pkg{'description'}, $arg) > -1) 
++			if ((index($pkg{'name'}, $arg) > -1 or index($pkg{'description'}, $arg) > -1)
+ 					and not $found{$pkg{'name'}}) {
+ 				$found{$pkg{'name'}} = 1;
+ 			}
+@@ -700,7 +705,7 @@
+ 	}
+ 	foreach my $key (sort keys %found) {
+ 		print "$key\n";
+-	} 
++	}
+ 	if (not %found) {print "No matching packages found\n";};
+ }
+ 
+@@ -722,7 +727,7 @@
+ 	}
+ 	foreach my $key (sort keys %found) {
+ 		print "$key\n";
+-	} 
++	}
+ }
+ 
+ # Show path for a package ##################################################
+@@ -800,7 +805,7 @@
+ 	getinstalled();
+ 	foreach my $key (sort keys %installed) {
+ 		print "$key\n";
+-	} 
++	}
+ }
+ 
+ # Print if package is installed  ###########################################
+@@ -877,7 +882,7 @@
+ 
+ # List locked packages #####################################################
+ sub listlocked {
+-	open(LCK, $LOCKFILE) 
++	open(LCK, $LOCKFILE)
+ 		or exit;
+ 	while (<LCK>) {
+ 		chomp;
+@@ -1021,7 +1026,7 @@
+ 				print "  $dup\n";
+ 			}
+ 		}
+-	} 
++	}
+ }
+ 
+ # Show list of dependencies for package ####################################
+@@ -1057,7 +1062,7 @@
+ 		my @r = split(/\|/, $repo);
+ 		my $dir = $r[0];
+ 		my $url = $r[1];
+-		open(DEPS, "$dir/PKGDEPS") 
++		open(DEPS, "$dir/PKGDEPS")
+ 			or exiterr("could not open $dir/PKGDEPS");
+ 		while (<DEPS>) {
+ 			chomp;
+@@ -1089,7 +1094,7 @@
+ 	getinstalled();
+ 	foreach my $pkgname(@args) {
+ 		my %pkg = getpackage($pkgname, 1);
+-		if (not %pkg) {
++		if (not %pkg ) {
+ 			push(@failtasks, "not found,$pkgname");
+ 		} elsif (getshortstatus(%pkg) ne "[ ]") {
+ 			push(@prevtasks, "$pkgname");
+@@ -1152,25 +1157,50 @@
+ 	}
+ }
+ 
++# 2009-10
+ sub depinst {
+ 	my @toinst; my %seen;
+ 	$curraction = "installed";
+ 	my @args = @ARGV; shift(@args);
+ 	getinstalled();
++
++	#~ Pour chaque paquet dans les arguments
+ 	foreach my $pkgname(@args) {
++
++		#~ Si déjà installé retourne la valeur 55
++		if($installed{$pkgname}){
++			print "pkg-get : Le paquet $pkgname est déjà installé.\n";
++			return 55;
++		}
++		#~ Si n'est pas dans les dépots, retourne la valeur 56
++		if(not getpackage($pkgname, 1)){
++			print "pkg-get : Le paquet $pkgname n'est pas disponible en binaire.\n";
++			return 56;
++		}
++
++		#~ Recherche des dépendances (tableau associatif @dependencies)
+ 		getdependencies($pkgname, 0, "");
+-	  	foreach my $dep(@dependencies) {
++
++		#~ Pour chaque dépendances
++	  foreach my $dep(@dependencies) {
++
++			#~ Si on ne l'a pas déjà traitée
+ 			if (not $seen{$dep}) {
++
++				#~ Prends le paquet des dépots
+ 				my %pkg = getpackage($dep, 1);
+ 				if (%pkg) {
++					#~ L'ajoute à la liste des paquets à installer
+ 					if (getshortstatus(%pkg) eq "[ ]"){
+ 						push(@toinst, $pkg{'name'});
+ 					}
+ 				}
++				#~ Marque la dépendance comme déjà traitée
+ 				$seen{$dep} = 1;
+ 			}
+ 		}
+ 	}
++	#~ Si des paquets sont marqués comme étant à installer, on lance l'installation
+ 	if (@toinst) {
+ 		unshift(@toinst, "dummy"); # is shifted later in install sub;
+ 		install(@toinst);

@@ -1,0 +1,1208 @@
+#!/usr/bin/env perl
+# -*- coding: utf-8 -*-
+#
+# pkg-get - A binary package management utility for CRUX Linux
+# Copyright (C) 2004-06 Simone Rota <sip@varlock.com>
+# Modified by Arnaud Fernandés <ferarduansednan@laposte.net> 2009-10
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+
+use warnings;
+use strict;
+use Getopt::Long;
+
+my $VERSION = "0.4.5";
+my $CFGFILE = "/etc/pkg-get.conf";
+my $LOCKFILE = "/var/lib/pkg/pkg-get.locker";
+my $PKGDB    = "/var/lib/pkg/db" ;
+
+$SIG{HUP} = \&trap; $SIG{INT} = \&trap; $SIG{QUIT} = \&trap; $SIG{TERM} = \&trap;
+
+# Global vars
+my @repos = (); # package repositories
+my @donetasks; my @failtasks; my @prevtasks; my %pptasks; my %readmetasks;
+my $curraction = ""; my %installed; my %deps; my @dependencies; my %missingdeps;
+
+# CL Options
+my $download_only; my $pre_install; my $post_install;
+my $install_scripts; my $filter = ""; my $all; my $unused;
+my $aargs=""; my $ignore_md5sum; my $force; my $root;
+GetOptions("do"=>\$download_only,
+			"pre-install"=>\$pre_install, "post-install"=>\$post_install,
+			"install-scripts"=>\$install_scripts, "all"=>\$all,
+			"filter=s"=>\$filter, "config=s"=>\$CFGFILE, "aargs=s"=>\$aargs,
+			"f"=>\$force, "im"=>\$ignore_md5sum, "margs=s"=>\$unused,
+			"rargs=s"=>\$unused, "r=s"=>\$root);
+
+if ($root) {
+	$LOCKFILE = $root.$LOCKFILE ;
+	$PKGDB = $root.$PKGDB;
+}
+
+# Get command, verify it's valid
+my $command = getcommand(@ARGV);
+if (index($command,"Error: ") eq 0 ) {
+	$command =~ s/Error\: //;
+	exiterr($command);
+}
+readconfig();
+
+my $exitcode = 0;		# 2009-10
+
+SWITCH: {
+	if ($command eq "version") { version(); last SWITCH; }
+	if ($command eq "sync") { sync(); last SWITCH; }
+	if ($command eq "info") { info(); last SWITCH; }
+	if ($command eq "help") { help(); last SWITCH; }
+	if ($command eq "readme") { readme(); last SWITCH; }
+	if ($command eq "search") { search(); last SWITCH; }
+	if ($command eq "dsearch") { dsearch(); last SWITCH; }
+	if ($command eq "list") { list(); last SWITCH; }
+	if ($command eq "path") { path(); last SWITCH; }
+	if ($command eq "remove") { remove(); last SWITCH; }
+	if ($command eq "listinst") { listinst(); last SWITCH; }
+	if ($command eq "lock") { dolock(); last SWITCH; }
+	if ($command eq "unlock") { unlock(); last SWITCH; }
+	if ($command eq "listlocked") { listlocked(); last SWITCH; }
+	if ($command eq "printf") { doprintf(); last SWITCH; }
+	if ($command eq "isinst") { isinst(); last SWITCH; }
+	if ($command eq "diff") { diff(); last SWITCH; }
+	if ($command eq "quickdiff") { quickdiff(); last SWITCH; }
+	if ($command eq "dup") { dup(); last SWITCH; }
+	if ($command eq "depends") { depends(); last SWITCH; }
+	if ($command eq "quickdep") { quickdep(); last SWITCH; }
+	if ($command eq "install") { install(@ARGV); last SWITCH; }
+	if ($command eq "update") { update(@ARGV); last SWITCH; }
+	if ($command eq "sysup") { sysup(); last SWITCH; }
+	if ($command eq "dependent") { dependent(); last SWITCH; }
+	if ($command eq "depinst") { $exitcode = depinst(); last SWITCH; }	# 2009-10
+	if ($command eq "current") { current(); last SWITCH; }
+}
+
+exit($exitcode);	# 2009-10
+
+############################################################################
+# Support functions
+############################################################################
+
+# Exit with error
+sub exiterr {
+  my ($msg) = @_;
+  print "pkg-get: $msg\n";
+  exit 1;
+}
+
+sub trap {
+	printresults(1);
+	die("\npkg-get: interrupted\n");
+}
+
+# Get command, return an error if not in the list of allowed commands
+sub getcommand {
+	my @args = @_;
+	my $givencmd = $args[0];
+	my $givenarg = $args[1];
+	if (not $givenarg){$givenarg = ""};
+	if (not $givencmd){$givencmd = ""};
+	my @allowed = ("depinst:", "install:", "sysup", "diff", "update:", "depends:", "info:", "sync",
+					"version", "help", "quickdep:", "dependent:", "list", "listinst", "isinst:",
+					"search:", "dsearch:", "lock:", "unlock:", "listlocked", "quickdiff", "printf:",
+					"remove:", "readme:", "dup", "path:", "current:");
+
+	foreach my $valid(@allowed) {
+		if ($givencmd eq ""){
+			return "Error: no command given. try pkg-get help for more information";
+		}
+		if ($givencmd eq $valid) {
+			return $givencmd;
+		} elsif ($givencmd.":" eq $valid) {
+			if ($givenarg ne "") {
+				return $givencmd;
+			} else {
+				return "Error: '$givencmd' requires an argument";
+			}
+		}
+	}
+	return "Error: unknown command '$givencmd'. try pkg-get help for more information";
+}
+
+# Parses the configuration file
+sub readconfig {
+	open(CFG, $CFGFILE)
+		or exiterr("could not open $CFGFILE");
+	while (<CFG>) {
+		chomp;
+		if ( /^pkgdir\s+/ ) {
+			my $repo = $_;
+			$repo =~ s/^pkgdir\s+//;
+			$repo =~ s/#(.*)$//;
+			$repo =~ s/\s+$//;
+			push @repos, $repo;
+		} elsif (/^runscripts\s+/) {
+			my $rs = $_;
+			$rs =~ s/^runscripts\s+//;
+			$rs =~ s/#(.*)$//;
+			$rs =~ s/\s+$//;
+			if ($rs eq "yes") {$install_scripts = 1};
+		}
+	}
+	close(CFG);
+}
+
+# Parse a line describing a package
+sub parsepackage {
+	my @p = split(/\:/, $_[0]);
+	if ($#p != 6) {exiterr("$_[1]/PKGREPO appears to be in wrong format!\nAborting.")};
+	my %pkg;
+	my $name = $p[0];
+	$name =~ s/\#.*$//;
+	my $version = $p[0];
+	$version =~ s/^.*\#//;
+	$version =~ s/-\w*\.pkg\.tar\.gz//;
+	my $release = $p[0];
+	$release =~ s/^.*-//;
+	$release =~ s/\.pkg\.tar\.gz//;
+	if (not $_[2]) {$_[2] = $_[1]};
+	$pkg{'name'} = $name;
+	$pkg{'version'} = $version;
+	$pkg{'release'} = $release;
+	$pkg{'path'} = $_[1];
+	$pkg{'url'} = $_[2] . "/$p[0]";
+	$pkg{'size'} = $p[1];
+	$pkg{'md5sum'} = $p[2];
+	$pkg{'description'} = $p[3];
+	$pkg{'pre_install'} = $p[4];
+	$pkg{'post_install'} = $p[5];
+	$pkg{'readme'} = $p[6];
+	if ($_[3] == 1) {
+		getinstalled();
+		$pkg{'instversion'} = $installed{$name};
+	}
+	return %pkg;
+}
+
+# Parse a line describing a package (just the name)
+sub parsepackagelight {
+	my @p = split(/\:/, $_[0]);
+	if ($#p != 6) {exiterr("$_[1]/PKGREPO appears to be in wrong format!\nAborting.")};
+	my %pkg;
+	my $name = $p[0];
+	$name =~ s/\#.*$//;
+	$pkg{'name'} = $name;
+	return %pkg;
+}
+
+# Print info about the given package
+sub printinfo {
+	my %pkg = @_;
+	print "Name        : " . $pkg{'name'} . "\n";
+	print "Version     : " . $pkg{'version'} . "\n";
+	print "Release     : " . $pkg{'release'} . "\n";
+	print "Description : " . $pkg{'description'} . "\n";
+	print "URL         : " . $pkg{'url'} . "\n";
+	print "Md5sum      : " . $pkg{'md5sum'} . "\n";
+	print "Size        : " . $pkg{'size'} . "\n";
+	my $deps = getdirectdeps($pkg{'name'}, $pkg{'path'});
+	if ($deps ne "") { print "Depends on  : $deps\n";};
+	my $files = "";
+	if ($pkg{'readme'} eq "yes") {$files .= "README,"};
+	if ($pkg{'pre_install'} eq "yes") {$files .= "pre-install,"};
+	if ($pkg{'post_install'} eq "yes") {$files .= "post-install,"};
+	$files =~ s/\,$//;
+	if ($files ne "") { print "Files       : $files\n";};
+}
+
+# Get direct dependencies for package
+sub getdirectdeps {
+	my $pkgname = $_[0];
+	my $dir = $_[1];
+	open(DEPS, "$dir/PKGDEPS")
+		or exiterr("could not open $dir/PKGDEPS");
+	while (<DEPS>) {
+		chomp;
+		if ( /^\Q$pkgname\E\s+/ ) {
+			my $dep = $_;
+			$dep =~ s/^.*\: //;
+		   	close(DEPS);
+			return $dep;
+		}
+	}
+	close(DEPS);
+	return "";
+}
+
+# Prints the README file to stdout
+sub printreadme {
+	my %pkg = @_;
+	my $dir = $pkg{'path'};
+	my $pkgname = $pkg{'name'};
+	my $found = 0;
+	my $finished = 0;
+	open(READ, "$dir/PKGREAD")
+		or exiterr("could not open $dir/PKGREAD");
+	while (<READ>) {
+		if ($finished eq 1) {return;};
+		chomp;
+		if ($found eq 1) {
+			if ( /PKGREADME\:/ ) {
+			   	$finished = 1;
+				close(READ);
+				return;
+			} else {
+				print "$_\n";
+			}
+		}
+		if ($finished eq 0) {
+			if ( /PKGREADME: $pkgname$/ ) {
+			   	$found = 1;
+			}
+		}
+	}
+	close(READ);
+}
+
+# Print results for multiple package operations
+sub printresults {
+	my $okaction = $curraction;
+	my $curr = "";
+	my $action;
+	my $pkg;
+	my @t;
+	my @readme;
+	my $goterror = 0;
+	if (@donetasks) {
+		print "\n-- Packages $okaction\n";
+		foreach my $task(@donetasks) {
+			if ($readmetasks{$task}) {push(@readme, $task)}
+			print "$task" . $pptasks{$task}."\n";
+		}
+	}
+	if (@prevtasks) {
+		if ($okaction eq "installed") {
+			print "\n-- Packages installed before this run (ignored)\n";
+		} else {
+			print "\n-- Packages not previously installed (ignored)\n";
+		}
+		foreach my $task(@prevtasks) {
+			print "$task\n";
+		}
+	}
+	if (@failtasks) {
+		@failtasks = sort(@failtasks);
+		foreach my $task(@failtasks) {
+			@t = split(/,/,$task);
+			$action = $t[0];
+			$pkg =  $t[1];
+			if ($curr ne $action) {
+				print "\n-- Packages $action\n";
+				$curr = $action;
+			}
+			print "$pkg\n";
+		}
+	}
+	if (@readme) {
+		print "\n-- $okaction packgages with README file\n";
+		foreach my $task(@readme) {
+			print "$task" . $pptasks{$task}."\n";
+		}
+	}
+    if(@donetasks and not @failtasks and not $_[0]) {
+		print "\npkg-get: $okaction successfully\n"
+	}
+}
+
+# Get the list of installed packages
+sub getinstalled {
+	if (%installed) {
+		return;
+	}
+	my $name;
+	my $version;
+	my $sec = 0;
+	open(DB, $PKGDB)
+		or exiterr("could not open ".$PKGDB);
+	while (<DB>) {
+		chomp;
+		if ($_ ne "") {
+			if ($sec == 0) {
+				$name = $_;
+				$sec = 1;
+			} elsif ($sec == 1) {
+				$version = $_;
+				$sec = 3;
+			}
+		}
+		if ($sec == 3) {
+			if ($_ eq "") {
+				$sec = 0;
+				$installed{$name} = $version;
+			}
+		}
+	}
+	close(DB);
+}
+
+# Lock the given pkgname
+sub lockadd {
+	my $pkg = $_[0];
+	my @locked = ();
+	if (not -e $LOCKFILE) {
+		open(LCK, "+>> $LOCKFILE") or exiterr("could not write to lock file");
+		close(LCK);
+	}
+	open(LCK, $LOCKFILE);
+	while (<LCK>) {
+		chomp;
+		if ($_ eq $pkg) {
+			print "Already locked: $pkg\n";
+			close(LCK);
+			return;
+		} else {
+			push (@locked, $_);
+		}
+	}
+	close(LCK);
+	push(@locked, $pkg);
+	@locked = sort(@locked);
+	open(LCK, "> $LOCKFILE") or exiterr("could not write to lock file");
+	foreach my $lock(@locked) {
+		print LCK "$lock\n";
+	}
+	close(LCK);
+}
+
+# Rrint formatted info for given package
+sub formattedprint {
+	my %pkg = @_;
+	my $fmt = $ARGV[1];
+	$fmt =~ s|%n|$pkg{'name'}|;
+	$fmt =~ s|%p|$pkg{'path'}|;
+	$fmt =~ s|%v|$pkg{'version'}|;
+	$fmt =~ s|%r|$pkg{'release'}|;
+	$fmt =~ s|%d|$pkg{'description'}|;
+	$fmt =~ s|%u|$pkg{'url'}|;
+	$fmt =~ s|%R|$pkg{'readme'}|;
+	$fmt =~ s|%E|$pkg{'pre_install'}|;
+	$fmt =~ s|%O|$pkg{'post_install'}|;
+	$fmt =~ s|%M|Nobody|; # for prt-get compatibility
+	$fmt =~ s|%P|Nobody|; # for prt-get compatibility
+	$fmt =~ s|\\n|\n|;
+	$fmt =~ s|\\t|\t|;
+	if (index($fmt,"%e") >=0) {
+		my $deps = getdirectdeps($pkg{'name'}, $pkg{'path'});
+		$fmt =~ s|%e|$deps|;
+	}
+	if (index($fmt,"%l") >=0) {
+		my $locked = islocked($pkg{'name'});
+		$fmt =~ s|%l|$locked|;
+	}
+	if (index($fmt,"%i") >=0) {
+		my $inst = "no";
+		if ($pkg{'instversion'}) {
+			if ($pkg{'instversion'} eq $pkg{'version'}."-".$pkg{'release'}) {
+				$inst = "yes";
+			} else {
+				$inst = "diff";
+			}
+		}
+		$fmt =~ s|%i|$inst|;
+	}
+	print "$fmt";
+}
+
+# See if package is currently locked
+sub islocked {
+	my $pkg = $_[0];
+	open(LCK, $LOCKFILE) or return "no";
+	while (<LCK>) {
+		chomp;
+		if ($_ eq $pkg) {
+			close(LCK);
+			return "yes";
+		}
+	}
+	close(LCK);
+	return "no";
+}
+
+# Get package from the repo(s)
+sub getpackage {
+	my $pkgname = $_[0];
+	my $checkver = $_[1];
+	my %found;
+	my %res;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, $checkver);
+			if ($pkg{'name'} eq $pkgname) {
+				close (REPO);
+				return %pkg;
+			}
+		}
+		close (REPO);
+	}
+	return %res;
+}
+
+# Get short status for package, ie [i]
+sub getshortstatus {
+	my %pkg = @_;
+	if ($pkg{'instversion'}) {
+		if ($pkg{'instversion'} eq $pkg{'version'}."-".$pkg{'release'}) {
+			return "[i]";
+		} else {
+			return "[u]";
+		}
+	}
+	return "[ ]";
+}
+
+# Get (recursive) dependencies for pkgname
+sub getdependencies {
+	my $pkgname = $_[0];
+	my $checkver = $_[1];
+	my $pkgparent = $_[2];
+	my $depstring = "";
+	if ($pkgparent eq "") {
+		#%deps = ();
+	};
+	if (not $deps{$pkgname}) {
+		my %pkg = getpackage($pkgname, 1);
+		if (%pkg) {
+		my $ddeps = getdirectdeps($pkg{'name'}, $pkg{'path'});
+		my @d = split(/,/, $ddeps);
+			foreach my $dep(@d) {
+				getdependencies($dep, $checkver, $pkgname);
+			}
+			if ($checkver) {
+				$depstring = getshortstatus(%pkg) . " $pkgname";
+			} else {
+				$depstring = $pkgname;
+			}
+			$deps{$pkgname} = $depstring;
+			push(@dependencies, $depstring);
+		} else {
+			if ($pkgparent eq "") {
+				return 0;
+			} else {
+				$missingdeps{$pkgname} = $pkgparent;
+			}
+		}
+	}
+}
+
+# Download given package (if needed), check md5sum
+sub downloadpkg {
+	my %pkg = @_;
+	my $fullpath = $pkg{'path'}."/".$pkg{'name'}."#".$pkg{'version'}."-".$pkg{'release'}.".pkg.tar.gz";
+	if (-f $fullpath) {
+		my $md5 = `md5sum $fullpath`; chomp;
+		$md5 =~ s/\s+.*$//;
+		$md5 =~ chop($md5);
+		if ($md5 ne $pkg{'md5sum'} and not $ignore_md5sum) {
+			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n";
+			print STDERR "required : $pkg{'md5sum'}\n";
+			print STDERR "found	: $md5\n";
+			return 0;
+		}
+		return 1;
+	} else {
+		if ($pkg{'url'} eq "") {return 1}; # repo is local and pkg does not exist.
+		my $url = $pkg{'url'};
+		$url =~ s/\#/\%23/;
+		system ("wget --no-directories --tries=3 --waitretry=3 --directory-prefix=$pkg{'path'} $url") == 0 or return 0;
+		my $md5 = `md5sum $fullpath`; chomp;
+		$md5 =~ s/\s+.*$//;
+		$md5 =~ chop($md5);
+		if ($md5 ne $pkg{'md5sum'} and not $ignore_md5sum) {
+			print STDERR "=======> ERROR: md5sum mismatch for $pkg{'name'}:\n";
+			print STDERR "required : $pkg{'md5sum'}\n";
+			print STDERR "found	: $md5\n";
+			return 0;
+		}
+	}
+	return 1;
+}
+
+# Install given package
+sub installpkg {
+	my $upgrade = shift(@_);
+	my %pkg = @_;
+	my $aa = $aargs." ";
+	if ($pkg{'readme'} eq "yes") {$readmetasks{$pkg{'name'}} = 1};
+	$pptasks{$pkg{'name'}} = "";
+	if ($download_only) {return 1};
+	if ($force){$aa = $aa."-f "};
+	if ($root) {$aa = $aa."-r ".$root." "};
+	if ($pkg{'pre_install'} eq "yes" and ($install_scripts or $pre_install)) {dopre(%pkg)};
+	my $fullpath = $pkg{'path'}."/".$pkg{'name'}."#".$pkg{'version'}."-".$pkg{'release'}.".pkg.tar.gz";
+	print "pkg-get: /usr/bin/pkgadd $upgrade$aa$fullpath\n";
+	system ("/usr/bin/pkgadd $upgrade$aa$fullpath") == 0 or return 0;
+	if ($pkg{'post_install'} eq "yes" and ($install_scripts or $post_install)) {dopost(%pkg)};
+	return 1;
+}
+
+# Execute pre-install script
+sub dopre {
+	my %pkg = @_;
+	my $cmd = "/bin/bash $pkg{'path'}/PKGINST $pkg{name}_pre_install";
+	if (system($cmd) == 0){
+		$pptasks{$pkg{'name'}} .= " [pre: ok]";
+	} else {
+		$pptasks{$pkg{'name'}} .= " [pre: failed]";
+	}
+}
+
+# Execute post-install script
+sub dopost {
+	my %pkg = @_;
+	my $cmd = "/bin/bash $pkg{'path'}/PKGINST $pkg{name}_post_install";
+	if (system($cmd) == 0){
+		$pptasks{$pkg{'name'}} .= " [post: ok]";
+	} else {
+		$pptasks{$pkg{'name'}} .= " [post: failed]";
+	}
+}
+
+############################################################################
+# Main functions (commands)
+############################################################################
+
+# No pun intended ##########################################################
+sub version {
+	print "pkg-get $VERSION ";
+	print "by Simone Rota <sip\@varlock.com>\n";
+}
+
+# Show brief help ##########################################################
+sub help {
+	print "Usage: pkg-get command <package1> [package2 ... packageN] [options]
+
+Some command:
+  sync      synchronize with the repository
+  depinst   install package and its dependencies;
+  info      info about package
+  sysup     updates all outdated packages
+  diff      list all outdated packages
+
+Some option:
+  -do   download only
+  --install-scripts   use install scripts
+  -r <root>  use <root> for pkgadd
+
+Example:
+  pkg-get install sqlite pysqlite
+
+For other commands and samples, see the pkg-get(8) man page\n";
+}
+
+# Sync with the remote server(s) ###########################################
+sub sync {
+	my @r;
+	my $dir;
+	my $url;
+	my $dlerror = 0;
+	foreach my $repo(@repos) {
+		@r = split(/\|/, $repo);
+		$dir = $r[0];
+		$url = $r[1];
+		if (not $url){$url = ""};
+		print "Updating collection $dir\n";
+		if (not -d $dir) {
+			mkdir($dir) or exiterr("cannot create $dir");
+		}
+		if ($url ne "") {
+			for my $f ("PKGREPO", "PKGDEPS", "PKGREAD", "PKGINST") {
+				if (-f "$dir/$f") {rename("$dir/$f", "$dir/$f.old") or exiterr("cannot write to $dir")};
+				if (system("wget -q -P $dir $url/$f") != 0) {
+					print " cannot retrieve $f\n";
+					$dlerror=1;
+				}
+			}
+			if ($dlerror) { # restore backup repo
+				for my $f ("PKGREPO", "PKGDEPS", "PKGREAD", "PKGINST") {
+					if (-f "$dir/$f.old") {rename("$dir/$f.old", "$dir/$f") or exiterr("cannot write to $dir")};};
+			} else { # remove backup repo
+				for my $f ("PKGREPO", "PKGDEPS", "PKGREAD", "PKGINST") {
+					if (-f "$dir/$f.old") {unlink("$dir/$f.old") or exiterr("cannot write to $dir")};};
+			}
+		}
+	}
+}
+
+# Show info about the package ##############################################
+sub info {
+	my $arg = $ARGV[1];
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, 0);
+			if ($pkg{'name'} eq $arg) {
+				printinfo(%pkg);
+			   	close(REPO);
+				return;
+			}
+		}
+		close(REPO);
+	}
+	print "Package '$arg' not found\n";
+}
+
+# List packages containing given string in their name ######################
+sub search {
+	my $arg = $ARGV[1];
+	my %found;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, 0);
+			if (index($pkg{'name'}, $arg) > -1 and not $found{$pkg{'name'}}) {
+				$found{$pkg{'name'}} = 1;
+			}
+		}
+		close(REPO);
+	}
+	foreach my $key (sort keys %found) {
+		print "$key\n";
+	}
+	if (not %found) {print "No matching packages found\n"};
+}
+
+# List packages containing given string (name / description) ###############
+sub dsearch {
+	my $arg = $ARGV[1];
+	my %found;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, 0);
+			if ((index($pkg{'name'}, $arg) > -1 or index($pkg{'description'}, $arg) > -1)
+					and not $found{$pkg{'name'}}) {
+				$found{$pkg{'name'}} = 1;
+			}
+		}
+		close(REPO);
+	}
+	foreach my $key (sort keys %found) {
+		print "$key\n";
+	}
+	if (not %found) {print "No matching packages found\n";};
+}
+
+# List all available packages ##############################################
+sub list {
+	my $arg = $ARGV[1];
+	my %found;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+  			my %pkg = parsepackage($_, $dir, $url, 0);
+		   	$found{$pkg{'name'}} = 1;
+ 		}
+		close(REPO);
+	}
+	foreach my $key (sort keys %found) {
+		print "$key\n";
+	}
+}
+
+# Show path for a package ##################################################
+sub path {
+	my $arg = $ARGV[1];
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, 0);
+			if ($pkg{'name'} eq $arg) {
+				print $pkg{'path'} . "\n";
+			   	close(REPO);
+				return;
+			}
+		}
+		close(REPO);
+	}
+	print "Package '$arg' not found\n";
+}
+
+# Show current installed version of a package ##############################
+sub current {
+	my $pkgname = $ARGV[1];
+	getinstalled();
+	if ($installed{$pkgname}) {
+		print "$installed{$pkgname}\n";
+	} else {
+		print "Package $pkgname not installed\n";
+	}
+}
+
+# Print the README file for a package ######################################
+sub readme {
+	my $arg = $ARGV[1];
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg = parsepackage($_, $dir, $url, 0);
+			if ($pkg{'name'} eq $arg) {
+				printreadme(%pkg);
+			   	close(REPO);
+				return;
+			}
+		}
+		close(REPO);
+	}
+	print "Package '$arg' not found\n";
+}
+
+# Remove given packages ####################################################
+sub remove {
+	$curraction = "removed";
+	shift(@ARGV);
+	foreach my $pkg(@ARGV) {
+		$pptasks{$pkg} = "";
+		if (system("/usr/bin/pkgrm $pkg") ==0) {
+			push(@donetasks, $pkg);
+		} else {
+			push(@failtasks, "where removal failed,$pkg");
+		}
+	}
+	printresults();
+}
+
+# List installed packages ##################################################
+sub listinst {
+	getinstalled();
+	foreach my $key (sort keys %installed) {
+		print "$key\n";
+	}
+}
+
+# Print if package is installed  ###########################################
+sub isinst {
+	getinstalled();
+	shift(@ARGV);
+	foreach my $pkg(@ARGV) {
+		if ($installed{$pkg}) {
+			print "package $pkg is installed\n";
+		} else {
+			print "package $pkg is not installed\n";
+		}
+	}
+}
+
+
+# Lock given packages ######################################################
+sub dolock {
+	shift(@ARGV);
+	foreach my $arg(@ARGV) {
+		my $found = 0;
+		foreach my $repo(@repos) {
+			if ($found == 0) {
+			my @r = split(/\|/, $repo);
+			my $dir = $r[0];
+			my $url = $r[1];
+			open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+			while (<REPO>) {
+				chomp;
+				my %pkg = parsepackagelight($_);
+				if ($pkg{'name'} eq $arg) {
+					$found = 1;
+					lockadd($arg);
+				}
+			}
+			close(REPO);
+			}
+		}
+		if  ($found == 0) {print "Package '$arg' not found\n"};
+	}
+}
+
+# Unlock given packages ####################################################
+sub unlock {
+	shift(@ARGV);
+	my @locked;
+	my $found;
+	foreach my $arg(@ARGV) {
+		$found = 0;
+		@locked = ();
+		open(LCK, $LOCKFILE) or exiterr("could not open lock file");
+		while (<LCK>) {
+			chomp;
+			if ($_ eq $arg) {
+				push (@locked, "-");
+				$found = 1;
+			} else {
+				push (@locked, $_);
+			}
+		}
+		close(LCK);
+		if ($found == 1) {
+			@locked = sort(@locked);
+			open(LCK, ">$LOCKFILE") or exiterr("could not write to lock file");
+			foreach my $lock(@locked) {
+				if ($lock ne "-") {print LCK "$lock\n"};
+			}
+			close(LCK);
+		} else {
+			print "Not locked previously: $arg\n";
+		}
+	}
+}
+
+# List locked packages #####################################################
+sub listlocked {
+	open(LCK, $LOCKFILE)
+		or exit;
+	while (<LCK>) {
+		chomp;
+		print "$_\n";
+	}
+	close(LCK);
+}
+
+# Print formatted info #####################################################
+sub doprintf {
+	my %found;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg;
+			if (index($ARGV[1], "%i") >=0 ) {
+				%pkg = parsepackage($_, $dir, $url, 1);
+			} else {
+				%pkg = parsepackage($_, $dir, $url, 0);
+			}
+			if (not $found{$pkg{'name'}}) {
+			if ($filter ne "") {
+				my $match = $pkg{'name'};
+				my $cfilter = $filter;
+				$cfilter =~ s/\*/\.\*/;
+				if ($match =~ /^$cfilter$/) {
+					formattedprint(%pkg);
+					$found{$pkg{'name'}} = 1;
+				}
+			} else {
+				formattedprint(%pkg);
+				$found{$pkg{'name'}} = 1;
+			}
+		}
+		}
+	close(REPO);
+	}
+}
+
+# Show differences between installed and available packages ################
+sub diff {
+	my %found;
+	my $gotdiff = 0;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg;
+			%pkg = parsepackage($_, $dir, $url, 1);
+			if (not $found{$pkg{'name'}}) {
+			if ($pkg{'instversion'}) {
+				if ($pkg{'instversion'} ne $pkg{'version'}."-".$pkg{'release'}) {
+				if (islocked($pkg{'name'}) eq "no") {
+					if ($gotdiff == 0){
+						print "Differences between installed packages and packages repo:\n\n";
+						printf("%-19s %-19s %-19s\n\n","Package","Installed","Available in the repositories");
+						$gotdiff = 1;
+					}
+					printf("%-19s %-19s %-19s\n", $pkg{'name'},  $pkg{'instversion'}, $pkg{'version'}."-".$pkg{'release'});
+				} elsif ($all) { # yeah, it blows, at least avoid to read the locked state twice.
+					if ($gotdiff == 0){
+						print "Differences between installed packages and packages repo:\n\n";
+						printf("%-19s %-19s %-19s\n\n","Package","Installed","Available in the repositories");
+						$gotdiff = 1;
+					}
+					printf("%-19s %-19s %-19s %-19s\n", $pkg{'name'},  $pkg{'instversion'}, $pkg{'version'}."-".$pkg{'release'}, "locked");
+				}
+				}
+			}
+			$found{$pkg{'name'}} = 1;
+			}
+		}
+		close(REPO);
+	}
+	if ($gotdiff ==0) {print "No differences found\n"};
+}
+
+# Show differences between installed and available packages ################
+sub quickdiff {
+	my %found;
+	my $gotdiff = 0;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg;
+			%pkg = parsepackage($_, $dir, $url, 1);
+			if (not $found{$pkg{'name'}}) {
+			if ($pkg{'instversion'}) {
+				if ($pkg{'instversion'} ne $pkg{'version'}."-".$pkg{'release'} and islocked($pkg{'name'}) eq "no") {
+					if ($gotdiff == 0){
+						print $pkg{'name'};
+						$gotdiff = 1;
+					} else {
+						print " " . $pkg{'name'};
+					}
+				}
+			}
+			$found{$pkg{'name'}} = 1;
+			}
+		}
+		close(REPO);
+	}
+	if ($gotdiff != 0) {print "\n"};
+}
+
+# Display duplicate packages (found in more than one repo) #################
+sub dup {
+	my %found;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg;
+			%pkg = parsepackage($_, $dir, $url, 0);
+			$found{$pkg{'name'}} .= "###" . $pkg{'path'}."/". $pkg{'name'}.$pkg{'version'}."-".$pkg{'release'};
+		}
+		close(REPO);
+	}
+	my $curr = "";
+	foreach my $key (sort keys %found) {
+		my $value = $found{$key};
+		$value =~ s/^\#\#\#//;
+		if (rindex($value, "###") >=0){
+			print "* $key\n";
+			my @d = split(/\#\#\#/, $value);
+			foreach my $dup(@d){
+				print "  $dup\n";
+			}
+		}
+	}
+}
+
+# Show list of dependencies for package ####################################
+sub depends {
+	getdependencies($ARGV[1], 1, "") or exiterr("package '$ARGV[1]' not found");
+	if (@dependencies) {print "-- dependencies ([i] = installed, [u] = updatable)\n"}
+	foreach my $dep(@dependencies) {
+		print "$dep\n";
+	}
+	if (%missingdeps) {
+		print "\n-- missing packages\n";
+		foreach my $dep(sort keys %missingdeps) {
+			print "$dep from $missingdeps{$dep}\n";
+		}
+	}
+}
+
+# Show compact list of dependencies for package ############################
+sub quickdep {
+	getdependencies($ARGV[1], 0, "") or exiterr("package '$ARGV[1]' not found");
+	foreach my $dep(@dependencies) {
+		print "$dep ";
+	}
+	print "\n";
+}
+
+# Show packages directly depending from given package ######################
+sub dependent {
+	my $arg = $ARGV[1];
+	my %dp;
+	if (not $all) { getinstalled(); }
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(DEPS, "$dir/PKGDEPS")
+			or exiterr("could not open $dir/PKGDEPS");
+		while (<DEPS>) {
+			chomp;
+			my $dep = $_;
+			$dep =~ s/\s+\:.*$//;
+			s/^.*\: /\,/;
+			s/$/\,\$/;
+			if ( /\,\Q$arg\E\,/ ) {
+				if (not $all) {
+		   			if ($installed{$dep}) {
+						$dp{$dep} = 1;
+					}
+				} else {
+					$dp{$dep} = 1;
+				}
+			}
+		}
+		close(DEPS);
+	}
+	foreach my $res(keys %dp) {
+		print "$res\n";
+	}
+}
+
+# Install given package ####################################################
+sub install {
+	$curraction = "installed";
+	my @args = @_; shift(@args);
+	getinstalled();
+	foreach my $pkgname(@args) {
+		my %pkg = getpackage($pkgname, 1);
+		if (not %pkg ) {
+			push(@failtasks, "not found,$pkgname");
+		} elsif (getshortstatus(%pkg) ne "[ ]") {
+			push(@prevtasks, "$pkgname");
+		} elsif (downloadpkg(%pkg) and installpkg("", %pkg)) {
+			push(@donetasks, $pkgname);
+		} else {
+			push(@failtasks, "where install failed,$pkgname");
+		}
+	}
+	printresults();
+}
+
+# Update given package #####################################################
+sub update {
+	$curraction = "updated";
+	my @args = @_; shift(@args);
+	getinstalled();
+	foreach my $pkgname(@args) {
+		my %pkg = getpackage($pkgname, 1);
+		if (not %pkg) {
+			push(@failtasks, "not found,$pkgname");
+		} elsif (getshortstatus(%pkg) eq "[ ]") {
+			push(@prevtasks, "$pkgname");
+		} elsif (downloadpkg(%pkg) and installpkg("-u ", %pkg)) {
+			push(@donetasks, $pkgname);
+		} else {
+			push(@failtasks, "where update failed,$pkgname");
+		}
+	}
+	printresults();
+}
+
+# Update out of date packages ##############################################
+sub sysup {
+	my %found;
+	my @diff;
+	foreach my $repo(@repos) {
+		my @r = split(/\|/, $repo);
+		my $dir = $r[0];
+		my $url = $r[1];
+		open(REPO, "$dir/PKGREPO") or exiterr("could not open $dir/PKGREPO");
+		while (<REPO>) {
+			chomp;
+			my %pkg;
+			%pkg = parsepackage($_, $dir, $url, 1);
+			if (not $found{$pkg{'name'}}) {
+			if ($pkg{'instversion'}) {
+				if ($pkg{'instversion'} ne $pkg{'version'}."-".$pkg{'release'} and islocked($pkg{'name'}) eq "no") {
+				   	push(@diff, $pkg{'name'});
+				}
+			}
+			$found{$pkg{'name'}} = 1;
+			}
+		}
+		close(REPO);
+	}
+	if (@diff) {
+		unshift(@diff, "dummy"); # is shifted later in update sub;
+		update(@diff);
+	}
+}
+
+# 2009-10
+sub depinst {
+	my @toinst; my %seen;
+	$curraction = "installed";
+	my @args = @ARGV; shift(@args);
+	getinstalled();
+
+	#~ Pour chaque paquet dans les arguments
+	foreach my $pkgname(@args) {
+
+		#~ Si déjà installé retourne la valeur 55
+		if($installed{$pkgname}){
+			print "pkg-get : Le paquet $pkgname est déjà installé.\n";
+			return 55;
+		}
+		#~ Si n'est pas dans les dépots, retourne la valeur 56
+		if(not getpackage($pkgname, 1)){
+			print "pkg-get : Le paquet $pkgname n'est pas disponible en binaire.\n";
+			return 56;
+		}
+
+		#~ Recherche des dépendances (tableau associatif @dependencies)
+		getdependencies($pkgname, 0, "");
+
+		#~ Pour chaque dépendances
+	  foreach my $dep(@dependencies) {
+
+			#~ Si on ne l'a pas déjà traitée
+			if (not $seen{$dep}) {
+
+				#~ Prends le paquet des dépots
+				my %pkg = getpackage($dep, 1);
+				if (%pkg) {
+					#~ L'ajoute à la liste des paquets à installer
+					if (getshortstatus(%pkg) eq "[ ]"){
+						push(@toinst, $pkg{'name'});
+					}
+				}
+				#~ Marque la dépendance comme déjà traitée
+				$seen{$dep} = 1;
+			}
+		}
+	}
+	#~ Si des paquets sont marqués comme étant à installer, on lance l'installation
+	if (@toinst) {
+		unshift(@toinst, "dummy"); # is shifted later in install sub;
+		install(@toinst);
+	}
+}
