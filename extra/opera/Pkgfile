@@ -1,0 +1,24 @@
+# Description: Navigateur web
+# URL: http://www.opera.com
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: qt, jdk
+
+name=opera
+version=10.00
+release=4
+source=( http://snapshot.opera.com/unix/snapshot-4394/intel-linux/opera-10.00-4394.gcc4-qt4.i386.tar.gz \
+	opera.desktop \
+	opera.png ) 
+	
+
+
+build() {
+	cd $name-$version-4394.gcc4-qt4.i386
+#	sed 's|/usr/X11R6/lib/mozilla/plugins=1|/opt/mozilla/lib/plugins=1|' -i ini/pluginpath.ini
+	./install.sh DESTDIR=$PKG
+	mkdir -p $PKG/usr/share/{applications,licences/opera,icons/hicolor/48x48/apps}
+	install -D -m 644 ../opera.desktop $PKG/usr/share/applications/
+	install -D -m 644 LICENSE $PKG/usr/share/licences/opera/licence.txt
+        cp ../opera.png $PKG/usr/share/icons/hicolor/48x48/apps/opera.png
+}
