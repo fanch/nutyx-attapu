@@ -4,9 +4,8 @@
 # Packager: ferarduansednan at laposte dot net
 # Depends on: python
 name=gestpkg-module
-version=1.0
+version=1.1
 release=1
-group=extra
 source=(http://saintux.free.fr/test/pkg/sources/$name-$version-src.tar.gz)
 
 build() {
