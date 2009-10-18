@@ -6,12 +6,13 @@
 
 name=kdeadmin
 version=4.3.2
-release=1
+release=2
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
 	nutyx-2008.patch)
 build() {
 	cd $name-$version
 	patch -Np1 -i ../nutyx-2008.patch
+	sed -i "/kpackage/d" CMakeLists.txt
 	mkdir build
 	cd build
 	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
