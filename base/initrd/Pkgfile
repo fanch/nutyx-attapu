@@ -11,7 +11,7 @@ _tools=10102009
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install-2009.1.ash
-wget http://kiao.no-ip.info/NuTyX/2009.1/`uname -m`/test/kernel%23$version-1.pkg.tar.gz
+wget http://kiao.no-ip.info/NuTyX/2009.1/`uname -m`/release/kernel%23$version-1.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR
@@ -43,9 +43,9 @@ do
 done
 $WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
 	
-cp install_2009.ash $WDIR/rootfs/root/
-sed -i "s/install_2008/install_2009/g" $WDIR/rootfs/usr/bin/setup
-sed -i "s/install_2008/install_2009/g" $WDIR/rootfs/sbin/setup-mirroir
+cp install-2009.1.ash $WDIR/rootfs/root/
+sed -i "s/install_2009/install-2009.1/g" $WDIR/rootfs/usr/bin/setup
+sed -i "s/install_2009/install-2009.1/g" $WDIR/rootfs/sbin/setup-mirroir
 	
 # Compression des modules
 cd $WDIR/rootfs/lib/modules/$version
