@@ -5,12 +5,13 @@
 # Depends on: kernel
 
 name=initrd
-version=2.6.31.3
+version=2.6.31.4
 release=1
 _tools=10102009
+_script="install-2009.1-rc1"
 source=()
 build(){
-wget http://kiao.no-ip.info/NuTyX/tools/install-2009.1.ash
+wget http://kiao.no-ip.info/NuTyX/tools/${_script}.ash
 wget http://kiao.no-ip.info/NuTyX/2009.1/`uname -m`/release/kernel%23$version-1.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
@@ -43,9 +44,9 @@ do
 done
 $WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
 	
-cp install-2009.1.ash $WDIR/rootfs/root/
-sed -i "s/install_2009/install-2009.1/g" $WDIR/rootfs/usr/bin/setup
-sed -i "s/install_2009/install-2009.1/g" $WDIR/rootfs/sbin/setup-mirroir
+cp ${_script}.ash $WDIR/rootfs/root/
+sed -i "s/install_2009/${_script}/g" $WDIR/rootfs/usr/bin/setup
+sed -i "s/install_2009/${_script}/g" $WDIR/rootfs/sbin/setup-mirroir
 	
 # Compression des modules
 cd $WDIR/rootfs/lib/modules/$version
