@@ -1,0 +1,39 @@
+#!/bin/sh
+########################################################################
+# Begin $rc_base/init.d/lvmnodes
+#
+# Description : mknodes lvm
+#
+# Authors     : guy_
+#
+# Version     : 00.00
+#
+# Notes       :
+#########################################################################
+
+. /etc/sysconfig/rc
+. ${rc_functions}
+
+boot_mesg "Mapping lvm drives..."
+case "${1}" in
+	start)
+		if [ -f /sbin/lvm ]; then
+			/sbin/lvm vgscan --ignorelockingfailure --mknodes
+			evaluate_retval
+			error_value=${?}
+			if [ "${error_value}" = 0 ]; then
+				echo_ok
+				exit 0
+			else
+				echo_failure
+				exit ${error_value}
+			fi
+		fi
+		;;
+	*)
+		echo "Usage: ${0} {start}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/lvmnodes
