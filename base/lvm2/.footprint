@@ -7,7 +7,7 @@ drwxr-xr-x	root/root	etc/rc.d/
 drwx------	root/root	etc/rc.d/init.d/
 -rwxr-xr-x	root/root	etc/rc.d/init.d/lvmnodes
 drwx------	root/root	etc/rc.d/rcsysinit.d/
-lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S29lvmnodes -> ../init.d/lvmnodes
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S19lvmnodes -> ../init.d/lvmnodes
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/libdevmapper.so -> libdevmapper.so.1.02
 -r-xr-xr-x	root/root	lib/libdevmapper.so.1.02
