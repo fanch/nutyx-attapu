@@ -12,8 +12,10 @@ source=( ftp://ftp.debian.org/debian/pool/main/w/$name/$name\_$version.tar.gz)
 
 build() {
 	cd $name-$version
-	sed -i 's/install:/install-pos:/' po/Makefile
-	make
-	install -D -m 755 whois $PKG/usr/bin/whois
-	install -D -m 644 whois.1 $PKG/usr/share/man/man1/whois.1
+	if [ "`uname -m`" == "x86_64" ]; then
+		sed -i "/_GNU_SOURCE/d" whois.c
+	fi
+	make prefix=/usr
+	make prefix=/usr BASEDIR=$PKG install-whois
+
 }
