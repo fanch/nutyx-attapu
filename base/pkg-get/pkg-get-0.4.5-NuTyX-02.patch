@@ -274,3 +274,14 @@
  	if (@toinst) {
  		unshift(@toinst, "dummy"); # is shifted later in install sub;
  		install(@toinst);
+--- pkg-get-0.4.5/scripts/pkg-get.pl.orig    2009-10-17 20:20:51.000000000 +0000
++++ pkg-get-0.4.5/scripts/pkg-get.pl     2009-10-17 16:42:23.000000000 +0000
+@@ -948,7 +948,7 @@
+ 						printf("%-19s %-19s %-19s\n\n","Package","Installed","Available in the repositories");
+ 						$gotdiff = 1;
+ 					}
+-					printf("%-19s %-19s %-19s %-19s\n", $pkg{'name'},  $pkg{'instversion'}, $pkg{'version'}."-".$pkg{'release'});
++					printf("%-19s %-19s %-19s\n", $pkg{'name'},  $pkg{'instversion'}, $pkg{'version'}."-".$pkg{'release'});
+ 				} elsif ($all) { # yeah, it blows, at least avoid to read the locked state twice.
+ 					if ($gotdiff == 0){
+ 						print "Differences between installed packages and packages repo:\n\n";
