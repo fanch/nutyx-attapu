@@ -2,7 +2,7 @@
 # URL: http://0pointer.de/lennart/projects/libcanberra
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: libvorbis
 
 name=libcanberra
 version=0.11
