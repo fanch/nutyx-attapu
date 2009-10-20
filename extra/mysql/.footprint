@@ -59,7 +59,6 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/comp_err.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/innochecksum.1.gz
--rw-r--r--	root/root	usr/share/man/man1/make_win_bin_dist.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/msql2mysql.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/my_print_defaults.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/myisam_ftdump.1.gz
