@@ -107,6 +107,7 @@ drwxr-xr-x	root/root	usr/share/alsa/cards/
 -rw-r--r--	root/root	usr/share/alsa/cards/PS3.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/RME9636.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/RME9652.conf
+-rw-r--r--	root/root	usr/share/alsa/cards/SB-XFi.conf
 -rw-r--r--	root/root	usr/share/alsa/cards/SI7018.conf
 drwxr-xr-x	root/root	usr/share/alsa/cards/SI7018/
 -rw-r--r--	root/root	usr/share/alsa/cards/SI7018/sndoc-mixer.alisp
