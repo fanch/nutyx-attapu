@@ -11,11 +11,10 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2
 
 build() {
 	cd $name-$version
-	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
-	--infodir=$(pkg-config \
-	--variable=prefix ORBit-2.0)/share/info
+	./configure --prefix=/usr \
+	--infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/$(pkg-config \
-	--variable=prefix ORBit-2.0)/share/gtk-doc
+	rm -r $PKG/usr/share/gtk-doc
+	rm $PKG/usr/share/info/dir
 }
