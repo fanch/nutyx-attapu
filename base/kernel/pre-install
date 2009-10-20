@@ -1,3 +1,0 @@
-if ( pkginfo -i | grep kernel-sources > /dev/null ) ; then
-        pkgrm kernel-sources
-fi
