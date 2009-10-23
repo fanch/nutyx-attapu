@@ -2,7 +2,7 @@
 # URL: http://code.google.com/p/libproxy
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: gconf
 
 name=libproxy
 version=0.2.3
