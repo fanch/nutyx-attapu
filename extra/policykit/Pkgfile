@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/PolicyKit/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat
+# Depends on: dbus, expat, dbus-glib
 
 name=policykit
 version=0.9
@@ -14,12 +14,11 @@ build() {
 	patch -i $SRC/$name-no-pam.patch \
 	src/polkit-dbus/polkit-resolve-exe-helper.c
         sed -i "s/\-nonet//" doc/man/Makefile.in
-        ./configure --prefix=$GNOME_PREFIX\
+        ./configure --prefix=/usr \
                     --sysconfdir=/etc \
-            --libexecdir=$GNOME_PREFIX/lib/PolicyKit \
+            --libexecdir=/usr/lib/PolicyKit \
 	--disable-man-pages \
 	--disable-gtk-doc \
-            --mandir=$GNOME_PREFIX/share/man \
                 --localstatedir=/var \
 	--with-authfw=shadow
 
