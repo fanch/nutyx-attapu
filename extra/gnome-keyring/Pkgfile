@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gconf, libtasn1
+# Depends on: gconf, libtasn1, gtk
 
 name=gnome-keyring
 version=2.26.3
