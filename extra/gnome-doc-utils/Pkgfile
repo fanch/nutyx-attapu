@@ -5,9 +5,9 @@
 # Depends on: libxslt, p5-xml-parser, rarian
 
 name=gnome-doc-utils
-version=0.14.2
+version=0.16.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.14/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.16/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
