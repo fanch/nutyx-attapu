@@ -2,7 +2,7 @@
 # URL: http://gstreamer.freedesktop.org/modules/gst-plugins-base.html
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: cdparanoia, dbus, gstreamer, libogg, liboil, libtheora, libvisual, libvorbis, libxml2 
+# Depends on: cdparanoia, dbus, gstreamer, libogg, liboil, libtheora, libvisual, libvorbis, libxml2, gnome-vfs
 
 name=gst-plugins-base
 version=0.10.23
