@@ -1,2 +1,2 @@
-4971d96f5ba94fe4a69396267bd5afe8  GConf-2.24.0.tar.bz2
-2475a03e5ad358537b4a6ce99681ebd2  gconf-reload.patch
+8670a7156807c867e153617db91b6e5d  GConf-2.26.2-sysconfdir-1.patch
+8b55d58dab13e821e048627aa4f92b8b  GConf-2.26.2.tar.bz2
