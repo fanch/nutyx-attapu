@@ -1,10 +1,10 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/gconf/
+drwxr-xr-x	root/root	etc/gconf/schemas/
+-rw-r--r--	root/root	etc/gconf/schemas/libcanberra.schemas
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/canberra-gtk-play
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/gconf/
-drwxr-xr-x	root/root	usr/etc/gconf/schemas/
--rw-r--r--	root/root	usr/etc/gconf/schemas/libcanberra.schemas
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/canberra-gtk.h
 -rw-r--r--	root/root	usr/include/canberra.h
@@ -16,6 +16,8 @@ drwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/
 drwxr-xr-x	root/root	usr/lib/libcanberra-0.11/
 -rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-alsa.la
 -rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-alsa.so
+-rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-gstreamer.la
+-rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-gstreamer.so
 -rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-multi.la
 -rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-multi.so
 -rwxr-xr-x	root/root	usr/lib/libcanberra-0.11/libcanberra-null.la
