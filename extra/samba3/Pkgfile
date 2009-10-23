@@ -2,7 +2,7 @@
 # URL: http://www.samba.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups 
+# Depends on: cups, gamin
 
 name=samba3
 version=3.3.7
