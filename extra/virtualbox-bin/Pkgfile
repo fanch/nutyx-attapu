@@ -2,7 +2,7 @@
 # URL: http://www.virtualbox.org
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: virtualbox-module
+# Depends on: virtualbox-module, sdl
 
 name=virtualbox-bin
 version=3.0.8
