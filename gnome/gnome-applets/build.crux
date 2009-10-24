@@ -1,0 +1,28 @@
+# Description: Applets for use with the GNOME panel
+# URL: http://freshmeat.net/projects/gnome-applets/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gnome-vfs, gail, gnome-doc-utils, libxklavier, libgtop, gst-plugins-base, gnome-panel
+# Group: gnome/desktop
+
+name=gnome-applets
+version=2.22.0
+release=1
+group=gnome
+source=(http://download.gnome.org/desktop/2.22/2.22.0/sources/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	rm po/*.po
+	sed -i -e 's/USE_NLS=yes/USE_NLS=no/' \
+		-e 's/ENABLE_NLS 1/ENABLE_NLS 0/' configure
+	./configure --prefix=/opt/gnome \
+		--libexecdir=/opt/gnome/lib/$name \
+		--disable-schemas-install \
+		--disable-scrollkeeper \
+		--enable-flags=yes \
+		--enable-gstreamer=yes \
+		--enable-ipv6=yes
+	make
+	make DESTDIR=$PKG install
+}
+
