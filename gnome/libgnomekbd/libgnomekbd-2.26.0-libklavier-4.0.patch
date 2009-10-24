@@ -1,0 +1,11 @@
+--- libgnomekbd-2.26.0/libgnomekbd/gkbd-indicator.c.orig	2009-10-21 08:38:10.000000000 +0000
++++ libgnomekbd-2.26.0/libgnomekbd/gkbd-indicator.c	2009-10-21 08:39:24.000000000 +0000
+@@ -717,7 +717,7 @@
+ 	globals.registry =
+ 	    xkl_config_registry_get_instance (globals.engine);
+ 
+-	xkl_config_registry_load (globals.registry);
++	xkl_config_registry_load (globals.registry,FALSE);
+ 
+ 	gconf_client = gconf_client_get_default ();
+ 

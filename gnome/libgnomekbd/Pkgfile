@@ -1,0 +1,20 @@
+# Description: connecteur xkb utiliser par le bureau de gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libxklavier, libgnomeui
+
+name=libgnomekbd
+version=2.26.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2\
+ libgnomekbd-2.26.0-libklavier-4.0.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../libgnomekbd-2.26.0-libklavier-4.0.patch
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
