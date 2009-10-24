@@ -6,7 +6,7 @@
 
 name=prt-get
 version=5.16
-release=2
+release=3
 source=(http://jw.smts.ch/files/crux/prt-get-$version.tar.gz
 	prt-get-$version-printf_regex.diff
 	prt-get.conf prt-get.aliases)
