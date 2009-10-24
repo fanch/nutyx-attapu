@@ -1,0 +1,19 @@
+# Description: Fournit le support d'accès à GTK+ et à la librairie libgnomecanvas
+# URL: http://www.gnome.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomecanvas
+
+name=gail
+version=1.22.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/1.22/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+
+}

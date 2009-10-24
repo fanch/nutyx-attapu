@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/gail-1.0/
+drwxr-xr-x	root/root	usr/include/gail-1.0/gail/
+-rw-r--r--	root/root	usr/include/gail-1.0/gail/gailwidget.h
+drwxr-xr-x	root/root	usr/include/gail-1.0/libgail-util/
+-rw-r--r--	root/root	usr/include/gail-1.0/libgail-util/gail-util.h
+-rw-r--r--	root/root	usr/include/gail-1.0/libgail-util/gailmisc.h
+-rw-r--r--	root/root	usr/include/gail-1.0/libgail-util/gailtextutil.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gtk-2.0/
+drwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/
+-rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libferret.la
+-rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libferret.so
+-rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libgail.la
+-rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libgail.so
+-rwxr-xr-x	root/root	usr/lib/libgailutil.la
+lrwxrwxrwx	root/root	usr/lib/libgailutil.so -> libgailutil.so.18.0.1
+lrwxrwxrwx	root/root	usr/lib/libgailutil.so.18 -> libgailutil.so.18.0.1
+-rwxr-xr-x	root/root	usr/lib/libgailutil.so.18.0.1
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/gail.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/gail.mo
