@@ -2,7 +2,7 @@
 # URL: http://code.google.com/p/libproxy
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gconf
+# Depends on: gconf, xulrunner
 
 name=libproxy
 version=0.2.3
@@ -13,7 +13,8 @@ source=(http://libproxy.googlecode.com/files/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-        ./configure --prefix=/usr
+     mozjs_CFLAGS="-DXP_UNIX -DJS_THREADSAFE \
+	-I/usr/include/xulrunner-1.9.1.3/unstable/" ./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 
