@@ -1,0 +1,14 @@
+# Description: Interface graphique tres riche et tres complete, installe tous les paquets et dependances
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: orbit2, libbonobo, gconf, shared-mime-info, gnome-mime-data, hicolor-icon-theme, desktop-file-utils, gnome-vfs-monikers, libgnomecanvas, libgnomeui, gvfs, gtk-engines, gnome-themes, gnome-doc-utils, gnome-backgrounds, gnome-menus, libgweather, gnome-panel, vte, libgtop, libgnomekbd, nautilus, gnome-settings-daemon, gnome-control-center, gnome-icon-theme, gnome-applets, gnome-session, gnome-terminal, yelp, gnome-doc-utils, gdm, gnome-mount, firefox
+name=gnome
+version=2.26.0
+release=1
+group=gnome
+source=()
+
+build() {
+	mkdir -p $PKG/$GNOME_PREFIX
+}
