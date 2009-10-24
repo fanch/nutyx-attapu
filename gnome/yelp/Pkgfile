@@ -1,0 +1,18 @@
+# Description: Programme de base pour la documentation de gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomeui, startup-notification, gnome-doc-utils, xulrunner
+
+name=yelp
+version=2.26.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
