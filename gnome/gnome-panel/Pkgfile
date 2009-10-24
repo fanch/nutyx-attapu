@@ -1,0 +1,24 @@
+# Description: Contient le sous-menu système de gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gnome-desktop, libwnck, gnome-menus, libgweather, librsvg, libsoup
+
+name=gnome-panel
+version=2.26.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--localstatedir=/var/lib \
+		--libexecdir=$GNOME_PREFIX/lib/gnome-panel \
+		--mandir=$GNOME_PREFIX/share/man
+		
+	make -j2
+	make DESTDIR=$PKG install
+	rm -rf $PKG/var
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+}
