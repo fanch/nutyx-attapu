@@ -1,0 +1,25 @@
+# Description: Gestionnaire de fichiers pour gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgsf, libgnomeui, esound, libexif, librsvg, startup-notification, gnome-vfs, libunique, gvfs
+
+name=nautilus
+version=2.26.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2\
+	browser.patch)
+
+build() {
+	cd $name-$version
+#	patch -Np1 -i ../browser.patch
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--disable-update-mimedb \
+		--disable-schemas-install \
+		--disable-scrollkeeper
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+
+}

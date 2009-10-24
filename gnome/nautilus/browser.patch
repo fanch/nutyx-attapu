@@ -1,0 +1,29 @@
+--- nautilus-2.24.2/libnautilus-private/apps_nautilus_preferences.schemas.in.original	2009-05-08 11:05:11.000000000 +0000
++++ nautilus-2.24.2/libnautilus-private/apps_nautilus_preferences.schemas.in	2009-05-08 11:08:46.000000000 +0000
+@@ -43,7 +43,7 @@
+       <applyto>/apps/nautilus/preferences/always_use_browser</applyto>
+       <owner>nautilus</owner>
+       <type>bool</type>
+-      <default>false</default>
++      <default>true</default>
+       <locale name="C">
+          <short>Enables the classic Nautilus behavior, where all windows are browsers</short>
+          <long>
+@@ -440,7 +440,7 @@
+       <applyto>/apps/nautilus/preferences/desktop_font</applyto>
+       <owner>nautilus</owner>
+       <type>string</type>
+-      <default>Sans 10</default>
++      <default>DejaVu Sans 13</default>
+       <locale name="C">
+          <default><!-- Translators: please note this can choose the size. e.g.
+ "Sans 15". Please do not change "Sans", only change the size if you need to. In
+@@ -1025,7 +1025,7 @@
+       <applyto>/apps/nautilus/desktop/network_icon_visible</applyto>
+       <owner>nautilus</owner>
+       <type>bool</type>
+-      <default>false</default>
++      <default>true</default>
+       <locale name="C">
+       	<short>Network Servers icon visible on the desktop</short>
+ 	<long>
