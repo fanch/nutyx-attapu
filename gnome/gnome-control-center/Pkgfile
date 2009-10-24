@@ -1,0 +1,33 @@
+# Description: Contient le gestionnaire de reglages de gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gst-plugins-base, libcanberra, libgnomekbd, gnome-panel, metacity, nautilus, hal, gnome-settings-daemon
+
+name=gnome-control-center
+version=2.26.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2\
+	gnome-control-center-2.26.0-libxklavier-4.0-1.patch)
+
+build() {
+	cd $name-$version
+	patch -Np1 -i ../gnome-control-center-2.26.0-libxklavier-4.0-1.patch
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--localstatedir=/var/lib \
+		--libexecdir=$GNOME_PREFIX/lib/gnome-control-center
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/var
+	cd $PKG/$GNOME_PREFIX/share/mime/
+	for i in application packages
+		do mv $i ../
+	done
+	
+	rm *
+	for i in application packages
+		do mv ../$i .
+	done
+	rm $PKG/usr/share/applications/mimeinfo.cache
+}
