@@ -1,0 +1,20 @@
+# Description: Gestionnaire de montage de periphÃ©riques
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomeui, dbus, hal, eject
+
+name=gnome-volume-manager
+version=2.24.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--disable-multiuser
+	make
+	make DESTDIR=$PKG install
+}
+
