@@ -1,0 +1,22 @@
+# Description: Plugin Météo pour Xfce
+# URL: http://goodies.xfce.org/projects/panel-plugins/xfce4-weather-plugin
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: xfce4-panel
+
+name=xfce4-weather-plugin
+version=0.7.3
+release=1
+source=(http://archive.xfce.org/src/panel-plugins/xfce4-weather-plugin/0.7/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
