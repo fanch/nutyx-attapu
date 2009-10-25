@@ -1,0 +1,2 @@
+#!/bin/sh
+chmod 755 /etc/gconf/gconf.xml.system
