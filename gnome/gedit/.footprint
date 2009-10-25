@@ -1,0 +1,383 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/gconf/
+drwxr-xr-x	root/root	etc/gconf/schemas/
+-rw-r--r--	root/root	etc/gconf/schemas/gedit-file-browser.schemas
+-rw-r--r--	root/root	etc/gconf/schemas/gedit.schemas
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gedit
+lrwxrwxrwx	root/root	usr/bin/gnome-text-editor -> gedit
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/gedit-2.20/
+drwxr-xr-x	root/root	usr/include/gedit-2.20/gedit/
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-app.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-commands.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-convert.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-debug.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-document.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-encodings-option-menu.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-encodings.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-file-chooser-dialog.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-help.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-area.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-bus.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-type.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-metadata-manager.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-notebook.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-panel.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-plugin-loader.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-plugin.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-prefs-manager-app.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-prefs-manager.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-progress-message-area.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-status-combo-box.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-statusbar.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-tab.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-utils.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-view.h
+-rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-window.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/gedit-2/
+drwxr-xr-x	root/root	usr/lib/gedit-2/plugin-loaders/
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugin-loaders/libcloader.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugin-loaders/libcloader.so
+drwxr-xr-x	root/root	usr/lib/gedit-2/plugins/
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/changecase.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/docinfo.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/filebrowser.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/indent.gedit-plugin
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libchangecase.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libchangecase.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libdocinfo.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libdocinfo.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libfilebrowser.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libfilebrowser.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libindent.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libindent.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libmodelines.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libmodelines.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libsort.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libsort.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libtaglist.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libtaglist.so
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libtime.la
+-rwxr-xr-x	root/root	usr/lib/gedit-2/plugins/libtime.so
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/modelines.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/sort.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/taglist.gedit-plugin
+-rw-r--r--	root/root	usr/lib/gedit-2/plugins/time.gedit-plugin
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/gedit-2.20.pc
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/gedit-2/
+-rwxr-xr-x	root/root	usr/libexec/gedit-2/gedit-bugreport.sh
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/gedit.desktop
+drwxr-xr-x	root/root	usr/share/gedit-2/
+drwxr-xr-x	root/root	usr/share/gedit-2/icons/
+-rw-r--r--	root/root	usr/share/gedit-2/icons/gedit-plugin.png
+drwxr-xr-x	root/root	usr/share/gedit-2/logo/
+-rw-r--r--	root/root	usr/share/gedit-2/logo/gedit-logo.png
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/changecase/
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/docinfo/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/docinfo/docinfo.ui
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/filebrowser/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/filebrowser/gedit-file-browser-widget-ui.xml
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/indent/
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/modelines/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/modelines/language-mappings
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/sort/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/sort/sort.ui
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/taglist/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/taglist/HTML.tags.gz
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/taglist/Latex.tags.gz
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/taglist/XSLT.tags.gz
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/taglist/XUL.tags.gz
+drwxr-xr-x	root/root	usr/share/gedit-2/plugins/time/
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/time/gedit-time-dialog.ui
+-rw-r--r--	root/root	usr/share/gedit-2/plugins/time/gedit-time-setup-dialog.ui
+drwxr-xr-x	root/root	usr/share/gedit-2/ui/
+-rw-r--r--	root/root	usr/share/gedit-2/ui/gedit-encodings-dialog.ui
+-rw-r--r--	root/root	usr/share/gedit-2/ui/gedit-preferences-dialog.ui
+-rw-r--r--	root/root	usr/share/gedit-2/ui/gedit-print-preferences.ui
+-rw-r--r--	root/root	usr/share/gedit-2/ui/gedit-search-dialog.ui
+-rw-r--r--	root/root	usr/share/gedit-2/ui/gedit-ui.xml
+drwxr-xr-x	root/root	usr/share/gnome/
+drwxr-xr-x	root/root	usr/share/gnome/help/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/C/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/C/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_format_bold.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_format_italic.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_format_strikethrough.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_format_underline.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ar/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ar/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ar/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ar/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ar/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/bg/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/bg/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/bg/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/bg/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/bg/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ca/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ca/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ca/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ca/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ca/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/cs/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/cs/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/cs/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/cs/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/cs/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/da/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/da/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/da/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/da/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/de/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/de/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/de/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/de/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/de/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/de/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/de/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/de/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/de/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/de/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/el/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/el/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/el/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/el/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/el/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/el/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/el/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/el/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/el/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/el/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/es/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/es/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/es/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/es/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/es/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/es/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/es/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/es/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/es/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/es/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/fi/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/fi/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fi/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fi/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fi/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/fr/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/fr/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fr/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fr/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/fr/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/hu/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/hu/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/hu/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/hu/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/hu/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/it/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/it/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/it/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/it/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/it/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/it/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/it/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/it/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/it/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/it/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ja/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ja/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ja/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ja/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ja/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ko/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ko/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ko/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ko/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ko/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/oc/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/oc/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/oc/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/oc/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/oc/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/pt_BR/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/pt_BR/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/pt_BR/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/pt_BR/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/pt_BR/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ru/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/ru/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/ru/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ru/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/ru/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/sv/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/sv/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/sv/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/sv/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/sv/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/th/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/th/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/th/figures/gedit_window.png -> ../../C/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/th/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/th/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/uk/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/uk/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/uk/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/uk/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/uk/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_CN/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_CN/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_CN/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_HK/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_HK/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_HK/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_HK/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_TW/
+drwxr-xr-x	root/root	usr/share/gnome/help/gedit/zh_TW/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_format_bold.png -> ../../C/figures/gedit_format_bold.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_format_italic.png -> ../../C/figures/gedit_format_italic.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_format_strikethrough.png -> ../../C/figures/gedit_format_strikethrough.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_format_underline.png -> ../../C/figures/gedit_format_underline.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_recent_files_menu_icon.png -> ../../C/figures/gedit_recent_files_menu_icon.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_TW/figures/gedit_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_TW/gedit.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gedit/zh_TW/legal.xml
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/gedit.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/gedit.1.gz
+drwxr-xr-x	root/root	usr/share/omf/
+drwxr-xr-x	root/root	usr/share/omf/gedit/
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-C.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-ar.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-bg.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-ca.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-cs.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-da.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-de.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-el.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-es.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-fi.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-fr.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-hu.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-it.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-ja.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-ko.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-oc.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-pt_BR.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-ru.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-sv.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-th.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-uk.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/gedit/gedit-zh_TW.omf
