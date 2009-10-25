@@ -1,2 +1,5 @@
 #!/bin/sh
+if [ ! -d /etc/gconf/gconf.xml.system ]; then
+	mkdir -p /etc/gconf/gconf.xml.system
+fi 
 chmod 755 /etc/gconf/gconf.xml.system
