@@ -1,0 +1,21 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/sounds/
+-r--r--r--	root/root	usr/share/sounds/card_shuffle.wav
+-r--r--r--	root/root	usr/share/sounds/email.wav
+-r--r--r--	root/root	usr/share/sounds/error.wav
+-r--r--r--	root/root	usr/share/sounds/generic.wav
+drwxr-xr-x	root/root	usr/share/sounds/gtk-events/
+-r--r--r--	root/root	usr/share/sounds/gtk-events/activate.wav
+-r--r--r--	root/root	usr/share/sounds/gtk-events/clicked.wav
+-r--r--r--	root/root	usr/share/sounds/gtk-events/toggled.wav
+-r--r--r--	root/root	usr/share/sounds/info.wav
+lrwxrwxrwx	root/root	usr/share/sounds/login.wav -> startup3.wav
+lrwxrwxrwx	root/root	usr/share/sounds/logout.wav -> shutdown1.wav
+drwxr-xr-x	root/root	usr/share/sounds/panel/
+-r--r--r--	root/root	usr/share/sounds/panel/slide.wav
+-r--r--r--	root/root	usr/share/sounds/phone.wav
+-r--r--r--	root/root	usr/share/sounds/question.wav
+-r--r--r--	root/root	usr/share/sounds/shutdown1.wav
+-r--r--r--	root/root	usr/share/sounds/startup3.wav
+-r--r--r--	root/root	usr/share/sounds/warning.wav

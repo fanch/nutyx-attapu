@@ -1,0 +1,19 @@
+# Description: Applications multimedias pour gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: rarian, esound, libgnomeui, gst-plugins-base, gst-plugins-good, nautilus-cd-burner
+
+name=gnome-audio
+version=2.22.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.22/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make prefix=$GNOME_PREFIX
+	make DESTDIR=$PKG install
+	rm -rf $PKG/var
+}
+
+
