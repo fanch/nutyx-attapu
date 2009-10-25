@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	etc/xdg/menus/
 -rw-r--r--	root/root	etc/xdg/menus/gnomecc.menu
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gnome-about-me
 -rwxr-xr-x	root/root	usr/bin/gnome-appearance-properties
 -rwxr-xr-x	root/root	usr/bin/gnome-at-mobility
 -rwxr-xr-x	root/root	usr/bin/gnome-at-properties
@@ -46,6 +47,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/at-properties.desktop
 -rw-r--r--	root/root	usr/share/applications/default-applications.desktop
 -rw-r--r--	root/root	usr/share/applications/display-properties.desktop
+-rw-r--r--	root/root	usr/share/applications/gnome-about-me.desktop
 -rw-r--r--	root/root	usr/share/applications/gnome-appearance-properties.desktop
 -rw-r--r--	root/root	usr/share/applications/gnome-font-viewer.desktop
 -rw-r--r--	root/root	usr/share/applications/gnome-network-properties.desktop
@@ -64,6 +66,8 @@ drwxr-xr-x	root/root	usr/share/gnome-control-center/glade/
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/appearance.glade
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/at-enable-dialog.glade
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/display-capplet.glade
+-rw-r--r--	root/root	usr/share/gnome-control-center/glade/gnome-about-me-fingerprint.glade
+-rw-r--r--	root/root	usr/share/gnome-control-center/glade/gnome-about-me.glade
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/gnome-default-applications-properties.glade
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/gnome-keybinding-properties.glade
 -rw-r--r--	root/root	usr/share/gnome-control-center/glade/gnome-keyboard-properties.glade
@@ -83,6 +87,8 @@ drwxr-xr-x	root/root	usr/share/gnome-control-center/pixmaps/
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/double-click-maybe.png
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/double-click-off.png
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/double-click-on.png
+-rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/gnome-about-me-lock-open.png
+-rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/gnome-about-me-lock.png
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/gtk-theme-thumbnailing.png
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/icon-theme-thumbnailing.png
 -rw-r--r--	root/root	usr/share/gnome-control-center/pixmaps/mouse-cursor-normal-large.png
