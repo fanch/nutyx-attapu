@@ -1,0 +1,22 @@
+# Description: Permet la supervision des connections reseaux
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gnome-panel 
+
+name=gnome-nettool
+version=2.28.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--localstatedir=/var/lib \
+		--libexecdir=$GNOME_PREFIX/lib/gnome-nettool
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/var
+}
+
