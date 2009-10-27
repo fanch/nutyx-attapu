@@ -1,0 +1,23 @@
+# Description: X Window System server
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-xf86driproto, xorg-dri2proto, xorg-libxkbui, xorg-xcmiscproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman, xorg-libpciaccess, xorg-libxscrnsaver
+
+name=xorg-server
+version=1.6.1
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --enable-dri \
+		--disable-config-hal \
+	            --localstatedir=/var --mandir=/usr/man \
+	            --with-xkb-output=/var/lib/xkb
+
+	make
+	make DESTDIR=$PKG install
+
+	rmdir $PKG/var/log
+}
