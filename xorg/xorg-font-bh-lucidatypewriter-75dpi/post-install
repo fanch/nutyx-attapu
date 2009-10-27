@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkfontdir /usr/lib/X11/fonts/75dpi
+mkfontscale /usr/lib/X11/fonts/75dpi
