@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/X11/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/100dpi/
+-rw-r--r--	root/root	usr/lib/X11/fonts/100dpi/fonts.alias
+drwxr-xr-x	root/root	usr/lib/X11/fonts/75dpi/
+-rw-r--r--	root/root	usr/lib/X11/fonts/75dpi/fonts.alias
+drwxr-xr-x	root/root	usr/lib/X11/fonts/cyrillic/
+-rw-r--r--	root/root	usr/lib/X11/fonts/cyrillic/fonts.alias
+drwxr-xr-x	root/root	usr/lib/X11/fonts/misc/
+-rw-r--r--	root/root	usr/lib/X11/fonts/misc/fonts.alias
