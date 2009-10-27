@@ -2,10 +2,10 @@
 # URL: http://0pointer.de/lennart/projects/libcanberra
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libvorbis, gtk
+# Depends on: libvorbis, gtk, alsa-lib, gstreamer
 
 name=libcanberra
-version=0.11
+version=0.18
 release=1
 source=(http://0pointer.de/lennart/projects/$name/$name-$version.tar.gz)
 
