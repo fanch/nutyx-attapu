@@ -1,0 +1,17 @@
+# Description: xorg proto resourceproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+
+name=xorg-resourceproto
+version=1.0.2
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/resourceproto-$version.tar.bz2)
+
+build() {
+	cd resourceproto-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
