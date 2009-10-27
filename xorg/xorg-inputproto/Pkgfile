@@ -1,0 +1,17 @@
+# Description: xorg proto inputproto
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+
+name=xorg-inputproto
+version=1.5.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/proto/inputproto-$version.tar.bz2)
+
+build() {
+	cd inputproto-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
