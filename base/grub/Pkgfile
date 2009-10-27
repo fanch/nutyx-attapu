@@ -6,24 +6,20 @@
 
 name=grub
 version=0.97
-release=4
+release=5
 source=(ftp://alpha.gnu.org/gnu/$name/$name-$version.tar.gz\
 	http://www.linuxfromscratch.org/patches/lfs/development/grub-0.97-disk_geometry-1.patch \
 	http://www.linuxfromscratch.org/patches/lfs/development/grub-0.97-256byte_inode-1.patch \
-        http://aur.archlinux.org/packages/grub-gfxboot/grub-gfxboot/00-grub-0.97-gfxboot.patch \
-	http://www.nutyx.org/files/patchs/grub/use_ferror.diff \
-	http://www.nutyx.org/files/patchs/grub/$name-$version-path-patch
-	http://www.nutyx.org/files/patchs/grub/grub-R \
-	http://www.nutyx.org/files/patchs/grub/bad-assert-sideeffect \
-	http://www.nutyx.org/files/patchs/grub/chainloader-devicefix \
-	http://www.nutyx.org/files/patchs/grub/$name-$version-devicemap.diff \
-	http://www.nutyx.org/files/patchs/grub/reiser-unpack \
-	http://www.nutyx.org/files/patchs/grub/grub-gfxmenu-v8.diff \
-	http://www.nutyx.org/files/patchs/grub/grub-a20.patch \
-	http://www.nutyx.org/files/patchs/grub/ext4.patch \
-	http://www.nutyx.org/files/patchs/grub/grub-0.97-btrfs-2.patch \
-	http://aur.archlinux.org/packages/grub-gfxboot/grub-gfxboot/02-grub-$version-debugcdboot.patch\
-	http://aur.archlinux.org/packages/grub-gfx/grub-gfx/grub-0.97-graphics.patch )
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/use_ferror.diff \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/$name-$version-path-patch
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/grub-R \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/bad-assert-sideeffect \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/chainloader-devicefix \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/$name-$version-devicemap.diff \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/reiser-unpack \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/grub-gfxmenu-v8.diff \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/grub-a20.patch \
+	http://kiao.no-ip.info/NuTyX/files/patchs/grub/ext4.patch )
 build() {
 	cd $name-$version
 	patch -Np1 -i ../$name-$version-path-patch
@@ -32,14 +28,11 @@ build() {
 	patch -Np1 -i ../bad-assert-sideeffect
 	patch -Np0 -i ../grub-gfxmenu-v8.diff
 	patch -Np1 -i ../reiser-unpack
-	
 	patch -Np1 -i ../grub-a20.patch
-	patch -Np1 -i ../02-grub-$version-debugcdboot.patch
 	patch -Np1 -i ../$name-$version-disk_geometry-1.patch
 	patch -Np1 -i ../$name-$version-256byte_inode-1.patch
 
 	patch -Np1 -i ../ext4.patch
-#	patch -Np1 -i ../grub-0.97-btrfs-2.patch
 	unset CXXFLAGS
 	unset CFLAGS
 	if [ "`uname -m`" == "x86_64" ]; then
