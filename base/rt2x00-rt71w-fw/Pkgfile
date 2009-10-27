@@ -7,7 +7,7 @@
 name=rt2x00-rt71w-fw
 version=1.8
 release=1
-source=(http://www.ralinktech.com.tw/data/RT71W_Firmware_V${version}.zip)
+source=(http://kiao.no-ip.info/sources/RT71W_Firmware_V${version}.zip)
 
 build() {
 	cd RT71W_Firmware*
