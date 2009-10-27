@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkfontdir /usr/lib/X11/fonts/cyrillic
+mkfontscale /usr/lib/X11/fonts/cyrillic
