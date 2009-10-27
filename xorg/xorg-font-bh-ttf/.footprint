@@ -1,0 +1,17 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/X11/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/TTF/
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luximb.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luximbi.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luximr.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luximri.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxirb.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxirbi.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxirr.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxirri.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxisb.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxisbi.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxisr.ttf
+-rw-r--r--	root/root	usr/lib/X11/fonts/TTF/luxisri.ttf
