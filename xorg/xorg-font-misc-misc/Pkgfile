@@ -1,0 +1,20 @@
+# Description: xorg font font-misc-misc
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-font-util, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale
+
+name=xorg-font-misc-misc
+version=1.0.0
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/font/font-misc-misc-$version.tar.bz2)
+
+build() {
+	cd font-misc-misc-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -f $PKG/usr/lib/X11/fonts/misc/fonts.{dir,scale}
+}
