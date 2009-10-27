@@ -1,0 +1,21 @@
+# Description: X display manager
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-server, xorg-xrdb
+
+name=xorg-xdm
+version=1.1.8
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/app/xdm-$version.tar.bz2 \
+        xdm)
+
+build() {
+	cd xdm-$version
+
+	./configure --prefix=/usr --mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+
+	install -D -m 755 $SRC/xdm $PKG/etc/rc.d/xdm
+}
