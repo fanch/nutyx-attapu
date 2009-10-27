@@ -1,0 +1,21 @@
+# Description: Application X
+# URL: http://xorg.freedesktop.org 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-server
+
+name=xorg-xclock
+version=1.0.3
+release=1
+XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
+    --mandir=$XORG_PREFIX/share/man --localstatedir=/var"
+source=(http://xorg.freedesktop.org/releases/individual/app/xclock-$version.tar.bz2)
+
+
+
+build() {
+	cd xclock-$version	
+	./configure $XORG_CONFIG
+	make
+	make DESTDIR=$PKG install
+}
