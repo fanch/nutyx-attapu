@@ -1,0 +1,20 @@
+# Description: xorg font font-mutt-misc
+# URL: http://xorg.freedesktop.org
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-mkfontdir, xorg-mkfontscale
+
+name=xorg-font-mutt-misc
+version=1.0.0
+release=2
+source=(http://xorg.freedesktop.org/releases/individual/font/font-mutt-misc-$version.tar.bz2)
+
+build() {
+	cd font-mutt-misc-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -f $PKG/usr/lib/X11/fonts/misc/fonts.{dir,scale}
+}
