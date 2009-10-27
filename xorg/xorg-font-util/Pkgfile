@@ -1,0 +1,21 @@
+# Description: Police de caractères pour X
+# URL: http://xorg.freedesktop.org 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=xorg-font-util
+version=1.0.1
+release=1
+XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
+    --mandir=$XORG_PREFIX/share/man --localstatedir=/var"
+source=(http://xorg.freedesktop.org/releases/individual/font/font-util-$version.tar.bz2)
+build() {
+	cd font-util-$version	
+	./configure $XORG_CONFIG
+	make
+	make DESTDIR=$PKG install
+	install -v -d -m755 $PKG/usr/share/fonts
+	ln -svn $XORG_PREFIX/lib/X11/fonts/OTF $PKG/usr/share/fonts/X11-OTF
+	ln -svn $XORG_PREFIX/lib/X11/fonts/TTF $PKG/usr/share/fonts/X11-TTF
+}
