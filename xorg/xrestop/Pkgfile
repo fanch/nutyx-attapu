@@ -1,0 +1,18 @@
+# Description: top like tool for monitoring X client/server resource usage
+# URL: http://freedesktop.org/wiki/Software/xrestop
+# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Depends on: xorg-libxres
+
+name=xrestop
+version=0.4
+release=1
+source=(http://projects.o-hand.com/sources/$name/$name-$version.tar.gz)
+
+build() {
+	cd xrestop-$version
+
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=$PKG install
+}
