@@ -1,0 +1,33 @@
+# Description: Emulateur de terminal X
+# URL: http://invisible-island.net/xterm/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-server
+
+name=xorg-xterm
+version=242
+release=1
+XORG_PREFIX=/usr
+XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
+    --mandir=$XORG_PREFIX/share/man --localstatedir=/var"
+source=(ftp://invisible-island.net/xterm/xterm-$version.tgz)
+
+build() {
+	cd xterm-$version
+	sed -i '/v0/,+1s/new:/new:kb=^?:/' termcap
+	echo -e '\tkbs=\\177,' >>terminfo 
+	TERMINFO=/usr/lib/terminfo ./configure $XORG_CONFIG \
+	--enable-luit \
+	--enable-wide-chars \
+	--with-app-defaults=$XORG_PREFIX/share/X11/app-defaults
+	make
+	make DESTDIR=$PKG install
+	make DESTDIR=$PKG install-ti
+cat >> $PKG/$XORG_PREFIX/share/X11/app-defaults/XTerm << "EOF"
+*VT100*locale: true
+*VT100*faceName: Monospace
+*VT100*faceSize: 10
+*backarrowKeyIsErase: true
+*ptyInitialErase: true
+EOF
+}
