@@ -1166,6 +1166,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/icons/
 -rw-r--r--	root/root	usr/lib/firefox/icons/mozicon50.xpm
 drwxr-xr-x	root/root	usr/lib/firefox/modules/
 -rw-r--r--	root/root	usr/lib/firefox/modules/distribution.js
+-rw-r--r--	root/root	usr/lib/firefox/modules/openLocationLastURL.jsm
 -rwxr-xr-x	root/root	usr/lib/firefox/nsinstall
 -rw-r--r--	root/root	usr/lib/firefox/old-homepage-default.properties
 -rwxr-xr-x	root/root	usr/lib/firefox/run-mozilla.sh
