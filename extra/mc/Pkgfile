@@ -2,25 +2,27 @@
 # URL: http://www.ibiblio.org/mc/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gpm, slang, glib
+# Depends on: gpm, slang
 
 name=mc
 version=4.6.2
-release=1
-source=(http://www.midnight-commander.org/downloads/$name-$version.tar.gz \
-	http://www.linuxfromscratch.org/patches/blfs/svn/mc-4.6.1-bash32-1.patch)
+release=2
+source=(http://www.ibiblio.org/pub/Linux/utils/file/managers/$name/$name-$version.tar.gz \
+	http://www.linuxfromscratch.org/patches/blfs/6.3/$name-$version-bash32-1.patch \
+        http://www.linuxfromscratch.org/patches/blfs/6.3/$name-$version-debian_fixes-1.patch \
+)
 
 build() {
 	cd $name-$version
-	aclocal
-	automake -a
-#	patch -Np1 -i ../mc-4.6.1-bash32-1.patch
+	patch -Np1 -i ../mc-4.6.1-bash32-1.patch
+	patch -Np1 -i ../mc-4.6.1-debian_fixes-1.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
+		--with-glib12 \
 		--without-x \
 		--sysconfdir=/etc
 	make
 	make DESTDIR=$PKG install	
-       
+	chmod 1755 $PKG/usr/lib/mc/cons.saver
 }
