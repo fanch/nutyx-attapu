@@ -5,7 +5,7 @@
 # Depends on:
 
 name=grub2
-version=1.97~beta3
+version=1.97
 release=4
 source=(ftp://alpha.gnu.org/gnu/grub/grub-$version.tar.gz\
 	grub.cfg)
