@@ -5,8 +5,8 @@
 # Depends on: qt, jdk
 
 name=opera
-version=10.00
-release=5
+version=10.01
+release=1
 if [ "`uname -m`" == "i686" ]; then
         _ARCH=i386
 else
