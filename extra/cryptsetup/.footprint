@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/libcryptsetup.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cryptsetup/
+-rwxr-xr-x	root/root	usr/lib/libcryptsetup.la
+lrwxrwxrwx	root/root	usr/lib/libcryptsetup.so -> libcryptsetup.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libcryptsetup.so.0 -> libcryptsetup.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libcryptsetup.so.0.0.0
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/cryptsetup
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/cryptsetup.8.gz
