@@ -1,18 +1,16 @@
-# Description:
-# URL: 
+# Description: Modules kernel pour les cartes wifi à base de Atheros
+# URL: http://madwifi.org
 # Maintainer: NuTyX core team
-# Packager: 
-# Depends on:
+# Packager: guy 
+# Depends on: kernel
 
 name=madwifi
 version=0.9.4.4096
 release=1
-# source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 source=(ftp://ftp.archlinux.org/other/$name/$name-$version.tar.bz2)
 
 build() {
     cd $name
-#    patch -i kernel-2.6.30.patch
-    make
-    make DESTDIR=$PKG install
+    make 
+    make DESTDIR=$PKG BINDIR=/usr/bin MANDIR=/usr/share/man install
 }
