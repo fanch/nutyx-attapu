@@ -1,0 +1,19 @@
+# Description: 
+# URL: http://www.qemu.org/
+# Maintainer: NuTyX coreteam
+# Packager: 
+# Depends on: 
+
+name=kqemu
+version=1.4.0pre1
+release=1
+source=(http://www.qemu.org/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure
+	make
+#	make DESTDIR=$PKG install	
+    mkdir -p $PKG/lib/modules/`uname -r`/misc
+    cp kqemu.ko $PKG/lib/modules/`uname -r`/misc
+}
