@@ -12,7 +12,9 @@ source=(http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-Simple-$version.t
 build() {
 	cd XML-Simple-$version
 	perl Makefile.PL
+        mkdir -p $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/
 	make
 	make DESTDIR=$PKG install
-	find $PKG -name perllocal.pod | xargs rm
+#	rm $PKG/usr/lib/perl5/5.10.0/i686-linux/perllocal.pod
+        rm -rf $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/perllocal.pod
 }
