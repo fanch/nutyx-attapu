@@ -1,0 +1,17 @@
+# Description:  contient les infos relatives au menus spécifiques de gnome
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgsf, libglade, pango, pcre
+
+name=goffice
+version=0.7.15
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.7/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
