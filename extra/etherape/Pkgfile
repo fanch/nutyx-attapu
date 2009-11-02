@@ -1,0 +1,19 @@
+# Description: graphical network monitor for various OSI layers and protocols
+# URL: http://etherape.sourceforge.net/ 
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: libpcap, libgnomeui
+
+name=etherape
+version=0.9.8
+release=1
+source=(http://downloads.sourceforge.net/project/etherape/etherape/0.9.8/etherape-0.9.8.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
