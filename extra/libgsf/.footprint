@@ -25,6 +25,7 @@ drwxr-xr-x	root/root	usr/include/libgsf-1/gsf/
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile-msole.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile-msvba.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile-stdio.h
+-rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile-tar.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile-zip.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-infile.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-input-bzip.h
@@ -58,6 +59,7 @@ drwxr-xr-x	root/root	usr/include/libgsf-1/gsf/
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-output-memory.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-output-stdio.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-output.h
+-rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-shared-memory.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-structured-blob.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-timestamp.h
 -rw-r--r--	root/root	usr/include/libgsf-1/gsf/gsf-utils.h
@@ -65,14 +67,14 @@ drwxr-xr-x	root/root	usr/include/libgsf-1/gsf/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgsf-1.a
 -rwxr-xr-x	root/root	usr/lib/libgsf-1.la
-lrwxrwxrwx	root/root	usr/lib/libgsf-1.so -> libgsf-1.so.114.0.9
-lrwxrwxrwx	root/root	usr/lib/libgsf-1.so.114 -> libgsf-1.so.114.0.9
--rwxr-xr-x	root/root	usr/lib/libgsf-1.so.114.0.9
+lrwxrwxrwx	root/root	usr/lib/libgsf-1.so -> libgsf-1.so.114.0.16
+lrwxrwxrwx	root/root	usr/lib/libgsf-1.so.114 -> libgsf-1.so.114.0.16
+-rwxr-xr-x	root/root	usr/lib/libgsf-1.so.114.0.16
 -rw-r--r--	root/root	usr/lib/libgsf-gnome-1.a
 -rwxr-xr-x	root/root	usr/lib/libgsf-gnome-1.la
-lrwxrwxrwx	root/root	usr/lib/libgsf-gnome-1.so -> libgsf-gnome-1.so.114.0.9
-lrwxrwxrwx	root/root	usr/lib/libgsf-gnome-1.so.114 -> libgsf-gnome-1.so.114.0.9
--rwxr-xr-x	root/root	usr/lib/libgsf-gnome-1.so.114.0.9
+lrwxrwxrwx	root/root	usr/lib/libgsf-gnome-1.so -> libgsf-gnome-1.so.114.0.16
+lrwxrwxrwx	root/root	usr/lib/libgsf-gnome-1.so.114 -> libgsf-gnome-1.so.114.0.16
+-rwxr-xr-x	root/root	usr/lib/libgsf-gnome-1.so.114.0.16
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgsf-1.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgsf-gnome-1.pc
@@ -90,6 +92,9 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gsf/
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gsf/gnomemodule.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/libgsf.mo
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gsf-office-thumbnailer.1.gz
