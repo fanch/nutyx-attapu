@@ -1,0 +1,24 @@
+# Description: Librairie perl pour accéder WWW
+# URL: http://search.cpan.org/~rse/lcwa-1.0.0/lib/lwp/lib/LWP.pm
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: p5-crypt-ssleay
+
+name=p5-libwww
+version=5.831
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-$version.tar.gz)
+build() {
+    cd libwww-*
+    perl Makefile.PL -n
+    make
+    make install DESTDIR=$PKG
+    # Remove perlcrap
+    find $PKG \
+        -name .packlist -or \
+        -name '*.bs' -or \
+        -name autosplit.ix -or \
+        -name perllocal.pod -delete
+    # Remove empty directories
+    find $PKG -depth -empty -delete 
+}
