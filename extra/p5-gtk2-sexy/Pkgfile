@@ -2,7 +2,7 @@
 # URL: http://search.cpan.org/dist/Gtk2-sexy/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: gtk2, libsexy
+# Depends on: gtk2, libsexy, p5-gtk2
 
 name=p5-gtk2-sexy
 version=0.05
