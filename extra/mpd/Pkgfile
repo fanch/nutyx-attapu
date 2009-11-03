@@ -5,7 +5,7 @@
 # Depends on: glib, libmad, libogg, alsa-lib, libid3tag
 
 name=mpd
-version=0.14.2
+version=0.15.5
 release=1
 source=(http://downloads.sourceforge.net/musicpd/$name-$version.tar.bz2)
 build() {

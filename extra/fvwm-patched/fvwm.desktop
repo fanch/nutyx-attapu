@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+# The names/descriptions should really be better
+Name=fvwm-patched Session
+Name[fr]=Session fvwm-patché
+Comment[fr]=Sélectionner cette session pour utiliser fvwm pattché comme environnment graphique
+Exec=fvwm
+Icon=
+Type=Application

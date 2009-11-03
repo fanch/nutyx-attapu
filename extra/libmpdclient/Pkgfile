@@ -1,12 +1,12 @@
-# Description: Client en ligne de commande pour Mpd
+# Description: Librairie pour Mpd
 # URL: http://mpd.wikia.com/wiki/Client:Mpc
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: libmpdclient2
-name=mpc
-version=0.18
+# Depends on:
+name=libmpdclient
+version=2.0
 release=1
-source=(http://downloads.sourceforge.net/musicpd/$name-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/musicpd/$name/$version/$name-$version.tar.bz2)
 build() {
 cd $name-$version
         ./configure --prefix=/usr

@@ -1,0 +1,36 @@
+#!/bin/sh
+# Begin $rc_base/init.d/mpd
+
+. /etc/sysconfig/rc
+. $rc_functions
+
+pidfile=/var/run/mpd.pid
+
+case "$1" in
+	start)
+		boot_mesg " Lancement de MPD..."
+		loadproc mpd
+		;;
+
+	stop)
+		boot_mesg "Arret de MPD..."
+		if [ -f $pidfile ]; then
+		loadkill mpd
+		fi
+		;;
+
+	restart)
+		boot_mesg "Relancement de MPD..."
+		if [ -f $pidfile ]; then
+			loadproc mpd stop
+			loadproc mpd
+		fi
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/mpd

@@ -4,13 +4,15 @@
 # Packager: Skippythekangoo at yahoo dot fr
 # Depends on: ncurses, aspell
 name=weechat
-version=0.2.6.2
+version=0.3.0
 release=1
-source=(http://weechat.flashtux.org/download/$name-$version.tar.gz)
+source=(http://weechat.org/files/src/$name-$version.tar.gz)
 build() {
 cd $name-$version
-        ./configure --prefix=/usr
-        make
-        make DESTDIR=$PKG install
+	mkdir build
+	cd build
+	cmake .. -DPREFIX=/usr
+	make
+	make DESTDIR=$PKG install
 }
 
