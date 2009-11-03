@@ -1,0 +1,19 @@
+# Description: Module perl pour GTK
+# URL: http://www.gtkperl.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: perl, p5-extutils-depends, p5-extutils-pkgconfig, p5-gtk2
+
+name=p5-gtk2-trayicon
+version=0.06
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/gtk2-perl/Gtk2-TrayIcon-$version.tar.gz)
+
+build() {
+	cd Gtk2-TrayIcon-$version
+	perl Makefile.PL
+	make
+	make DESTDIR=$PKG install
+	find $PKG -name '*.pod' -delete
+	find $PKG -name '.packlist' -delete
+}

@@ -1,0 +1,19 @@
+# Description:  contient un tableur très évolué
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomeprintui, goffice
+
+name=gnumeric
+version=1.9.15
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/1.9/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--localstatedir=/var/lib
+	make
+	make DESTDIR=$PKG install
+}

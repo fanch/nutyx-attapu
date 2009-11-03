@@ -12,9 +12,9 @@ source=(http://search.cpan.org/CPAN/authors/id/D/DL/DLAND/Crypt-SSLeay-$version.
 build() {
 cd Crypt-SSLeay-$version
 	echo "n" | perl Makefile.PL --lib=/usr
+	mkdir -p $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/
 	make
 	make DESTDIR=$PKG install
-	find $PKG -name perllocal.pod|xargs rm
-	find $PKG -empty | xargs rmdir -p ||:
+	rm -rf $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/perllocal.pod
 }
 

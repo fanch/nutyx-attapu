@@ -1,0 +1,18 @@
+# Description: "Produces a OGG encapsulated Theora/Vorbis recording of your desktop"
+# URL: http://recordmydesktop.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: alsa-lib, zlib, libvorbis, libxdamage, libxext, libtheora, libsm
+name=recordmydesktop
+version=0.3.8.1
+release=1
+source=(http://downloads.sourceforge.net/project/recordmydesktop/recordmydesktop/0.3.8.1/recordmydesktop-0.3.8.1.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+

@@ -1,0 +1,21 @@
+# Description: Interface Perl autorisant p5-gtk2-sexy
+# URL: http://search.cpan.org/dist/Gtk2-sexy/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: gtk2, libsexy, p5-gtk2
+
+name=p5-gtk2-sexy
+version=0.05
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Gtk2-Sexy-$version.tar.gz)
+
+build() {
+	cd Gtk2-Sexy-$version
+#	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+	perl Makefile.PL
+  	make
+  	make DESTDIR=$PKG install
+	find $PKG -name '*.pod' -delete
+        find $PKG -name '.packlist' -delete
+}
+
