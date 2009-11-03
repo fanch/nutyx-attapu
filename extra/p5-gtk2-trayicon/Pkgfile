@@ -2,7 +2,7 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
+# Depends on: perl, p5-extutils-depends, p5-extutils-pkgconfig, p5-gtk2
 
 name=p5-gtk2-trayicon
 version=0.06

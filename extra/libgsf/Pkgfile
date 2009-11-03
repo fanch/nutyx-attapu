@@ -5,8 +5,8 @@
 # Depends on: p5-xml-parser, gconf
 
 name=libgsf
-version=1.14.8
-release=2
+version=1.14.16
+release=1
 source=( http://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/$name-$version.tar.gz)
 
 
