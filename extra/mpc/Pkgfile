@@ -2,9 +2,9 @@
 # URL: http://mpd.wikia.com/wiki/Client:Mpc
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: libmpdclient2
+# Depends on: 
 name=mpc
-version=0.18
+version=0.15
 release=1
 source=(http://downloads.sourceforge.net/musicpd/$name-$version.tar.bz2)
 build() {
