@@ -1,0 +1,19 @@
+# Description: Gestionnaire de collections
+# URL:http://www.gcstar.org/index.fr.php
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: p5-gtk2, p5-libwww, p5-xml-simple, p5-html-parser, p5-html-tagset, p5-archive-zip 
+name=gcstar
+version=1.5.0.beta1
+release=1
+
+source=(http://download.gna.org/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name
+        ./install --prefix=$PKG/usr
+	install -D -m644 share/gcstar/icons/gcstar_32x32.png \
+		$PKG/usr/share/pixmaps/gcstar.png &&  \
+		cp -R share/applications $PKG/usr/share
+}
+
