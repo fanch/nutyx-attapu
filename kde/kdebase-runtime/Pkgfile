@@ -5,7 +5,7 @@
 # Depends on: kdelibs-experimental, soprano, polkit-qt, shared-mime-info, kdelibs, hal, libvorbis, libogg, audiofile, alsa-utils, xine-lib, samba3, rarian
 
 name=kdebase-runtime
-version=4.3.2
+version=4.3.3
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 
