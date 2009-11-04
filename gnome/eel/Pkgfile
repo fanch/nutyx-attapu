@@ -1,18 +1,21 @@
-# Description: Librairie Eazel Extension Librairie, collection de widgets pour gnome
-# URL: http://www.gnome.org
-# Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-desktop, gnome-menus
+# Description: Eazel Extensions Library
+# URL: http://www.gnome.org/projects/nautilus/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gnome-vfs, libgnomeui, pango, librsvg, gnome-desktop, gnome-menus
+# Group: gnome/desktop
 
 name=eel
-version=2.26.0
+version=2.24.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2)
+gnomever=2.24.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=$GNOME_PREFIX
+	rm po/*.po
+	sed -i -e 's/USE_NLS=yes/USE_NLS=no/' \
+		-e 's/ENABLE_NLS 1/ENABLE_NLS 0/' configure
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
-
