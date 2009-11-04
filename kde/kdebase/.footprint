@@ -53,7 +53,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_solidproc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_usb.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_useraccount.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_view1394.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_favicons.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_konqy_preloader.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/khtmlkttsdplugin.so
@@ -371,8 +370,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kcmcss/
 -rw-r--r--	root/root	opt/kde/share/apps/kcmcss/template.css
 drwxr-xr-x	root/root	opt/kde/share/apps/kcmusb/
 -rw-r--r--	root/root	opt/kde/share/apps/kcmusb/usb.ids
-drwxr-xr-x	root/root	opt/kde/share/apps/kcmview1394/
--rw-r--r--	root/root	opt/kde/share/apps/kcmview1394/oui.db
 drwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/favicons.upd
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/kfmclient_3_2.upd
@@ -789,7 +786,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmperformance.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmsolidproc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmusb.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kcmview1394.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/favicons.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/konqy_preloader.desktop
