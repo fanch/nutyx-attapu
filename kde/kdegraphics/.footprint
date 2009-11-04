@@ -168,6 +168,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kgamma/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kgamma/pics/rgbscale.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kipi/
 drwxr-xr-x	root/root	opt/kde/share/apps/kipi/data/
+-rw-r--r--	root/root	opt/kde/share/apps/kipi/data/kipi-icon.svg
+-rw-r--r--	root/root	opt/kde/share/apps/kipi/data/kipi-logo.svg
 -rw-r--r--	root/root	opt/kde/share/apps/kipi/data/kipi-plugins_logo.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kolourpaint/
 drwxr-xr-x	root/root	opt/kde/share/apps/kolourpaint/icons/
