@@ -524,6 +524,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/libplasma.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/libplasmaclock.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/libplasmaweather.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/librtm.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/libtaskmanager.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/lokalize.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/lskat.mo
