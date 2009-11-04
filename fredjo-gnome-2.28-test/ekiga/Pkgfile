@@ -1,7 +1,7 @@
 # Description: An open source VoIP and video conferencing application for GNOME
 # URL: http://www.ekiga.org/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: esound, sdl, gnome-doc-utils, ptlib, opal, gtk, libgnomeui, libsigc++, dbus-glib, avahi, evolution-data-server, libnotify, opal
+# Depends on: esound, sdl, gnome-doc-utils, ptlib, opal, gtk, libgnomeui, libsigc++, dbus-glib, avahi, evolution-data-server, libnotify
 # Group: gnome/desktop
 
 name=ekiga
