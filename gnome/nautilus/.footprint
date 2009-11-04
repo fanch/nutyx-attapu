@@ -29,6 +29,8 @@ lrwxrwxrwx	root/root	usr/lib/libnautilus-extension.so.1 -> libnautilus-extension
 -rwxr-xr-x	root/root	usr/lib/libnautilus-extension.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libnautilus-extension.pc
+drwxr-xr-x	root/root	usr/libexec/
+-rwxr-xr-x	root/root	usr/libexec/nautilus-convert-metadata
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/nautilus-autorun-software.desktop
@@ -39,6 +41,31 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/nautilus-home.desktop
 -rw-r--r--	root/root	usr/share/applications/nautilus.desktop
 -rw-r--r--	root/root	usr/share/applications/network-scheme.desktop
+drwxr-xr-x	root/root	usr/share/gtk-doc/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/
+drwxr-xr-x	root/root	usr/share/gtk-doc/html/libnautilus-extension/
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/NautilusColumn.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/NautilusMenuItem.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/NautilusPropertyPage.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/ch01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/home.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/index.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/index.sgml
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/ix01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/left.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-column-provider.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-extension-types.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-file-info.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-info-provider.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-location-widget-provider.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-menu-provider.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension-nautilus-property-page-provider.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension.devhelp
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/libnautilus-extension.devhelp2
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/pt01.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/right.png
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/style.css
+-rw-r--r--	root/root	usr/share/gtk-doc/html/libnautilus-extension/up.png
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -66,8 +93,21 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/nautilus-file-management-properties.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nautilus.1.gz
 drwxr-xr-x	root/root	usr/share/mime/
+-rw-r--r--	root/root	usr/share/mime/XMLnamespaces (EMPTY)
+-rw-r--r--	root/root	usr/share/mime/aliases (EMPTY)
+drwxr-xr-x	root/root	usr/share/mime/application/
+-rw-r--r--	root/root	usr/share/mime/application/x-gnome-saved-search.xml
+-rw-r--r--	root/root	usr/share/mime/generic-icons (EMPTY)
+-rw-r--r--	root/root	usr/share/mime/globs
+-rw-r--r--	root/root	usr/share/mime/globs2
+-rw-r--r--	root/root	usr/share/mime/icons (EMPTY)
+-rw-r--r--	root/root	usr/share/mime/magic
+-rw-r--r--	root/root	usr/share/mime/mime.cache
 drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/nautilus.xml
+-rw-r--r--	root/root	usr/share/mime/subclasses
+-rw-r--r--	root/root	usr/share/mime/treemagic
+-rw-r--r--	root/root	usr/share/mime/types
 drwxr-xr-x	root/root	usr/share/nautilus/
 -rw-r--r--	root/root	usr/share/nautilus/browser.xml
 drwxr-xr-x	root/root	usr/share/nautilus/icons/
