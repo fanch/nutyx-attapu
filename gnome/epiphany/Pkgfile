@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-desktop, startup-notification,iso-codes, xulrunner
+# Depends on: gnome-desktop, startup-notification,iso-codes, avahi, xulrunner, libcanberra, libnotify
 
 name=epiphany
 version=2.26.3

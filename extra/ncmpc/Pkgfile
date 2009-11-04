@@ -4,7 +4,7 @@
 # Packager: Skippythekangoo at yahoo dot fr
 # Depends on: ncurses
 name=ncmpc
-version=0.14
+version=0.15
 release=1
 source=(http://downloads.sourceforge.net/musicpd/$name-$version.tar.bz2)
 build() {
