@@ -1,8 +1,0 @@
-#!/bin/sh
-
-port=orca
-
-# desktop database
-update-desktop-database > /dev/null
-
-# End of file
