@@ -7,9 +7,9 @@
 name=devicekit
 version=003
 release=1
-source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz)
+source=(http://hal.freedesktop.org/releases/DeviceKit-$version.tar.gz)
 build() {
-        cd $name-$version
+        cd DeviceKit-$version
         ./configure --prefix=$GNOME_PREFIX\
                     --sysconfdir=/etc \
             --libexecdir=$GNOME_PREFIX/lib/devicekit \

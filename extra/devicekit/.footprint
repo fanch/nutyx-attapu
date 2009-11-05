@@ -16,8 +16,8 @@ drwxr-xr-x	root/root	usr/include/DeviceKit/devkit-gobject/
 -rw-r--r--	root/root	usr/include/DeviceKit/devkit-gobject/devkit-gobject.h
 -rw-r--r--	root/root	usr/include/DeviceKit/devkit-gobject/devkit-types.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/DeviceKit/
--rwxr-xr-x	root/root	usr/lib/DeviceKit/devkit-daemon
+drwxr-xr-x	root/root	usr/lib/devicekit/
+-rwxr-xr-x	root/root	usr/lib/devicekit/devkit-daemon
 -rw-r--r--	root/root	usr/lib/libdevkit-gobject.a
 -rwxr-xr-x	root/root	usr/lib/libdevkit-gobject.la
 lrwxrwxrwx	root/root	usr/lib/libdevkit-gobject.so -> libdevkit-gobject.so.0.0.0
