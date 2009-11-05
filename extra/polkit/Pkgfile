@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/polkit
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat, eggdbus
+# Depends on: dbus-glib, expat, eggdbus
 
 name=polkit
 version=0.92
