@@ -1,7 +1,7 @@
 # Description: The official movie player of the GNOME desktop environment
 # URL: http://www.gnome.org/projects/totem/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: iso-codes, eel, gst-plugins-good, nautilus, gst-plugins-bad, gst-plugins-ugly, gst-ffmpeg, totem-pl-parser
+# Depends on: iso-codes, eel, gst-plugins-good, nautilus, gst-plugins-bad, gst-plugins-ugly, gst-ffmpeg
 # Group: gnome/desktop
 
 name=totem-pl-parser
