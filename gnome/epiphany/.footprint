@@ -372,3 +372,7 @@ drwxr-xr-x	root/root	usr/share/omf/epiphany/
 -rw-r--r--	root/root	usr/share/omf/epiphany/epiphany-ru.omf
 -rw-r--r--	root/root	usr/share/omf/epiphany/epiphany-sv.omf
 -rw-r--r--	root/root	usr/share/omf/epiphany/epiphany-uk.omf
+drwxr-xr-x	root/root	usr/share/pygtk/
+drwxr-xr-x	root/root	usr/share/pygtk/2.0/
+drwxr-xr-x	root/root	usr/share/pygtk/2.0/defs/
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/epiphany.defs
