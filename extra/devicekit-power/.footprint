@@ -31,8 +31,8 @@ drwxr-xr-x	root/root	usr/include/DeviceKit-power/devkit-power-gobject/
 -rw-r--r--	root/root	usr/include/DeviceKit-power/devkit-power-gobject/dkp-wakeups-obj.h
 -rw-r--r--	root/root	usr/include/DeviceKit-power/devkit-power-gobject/dkp-wakeups.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/DeviceKit-power/
--rwxr-xr-x	root/root	usr/lib/DeviceKit-power/devkit-power-daemon
+drwxr-xr-x	root/root	usr/lib/devicekit-power/
+-rwxr-xr-x	root/root	usr/lib/devicekit-power/devkit-power-daemon
 -rw-r--r--	root/root	usr/lib/libdevkit-power-gobject.a
 -rwxr-xr-x	root/root	usr/lib/libdevkit-power-gobject.la
 lrwxrwxrwx	root/root	usr/lib/libdevkit-power-gobject.so -> libdevkit-power-gobject.so.1.0.0
