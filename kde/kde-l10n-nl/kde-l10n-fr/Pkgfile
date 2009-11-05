@@ -1,0 +1,20 @@
+# Description: Traduction franaise de KDE4
+# URL: http://www.kde.org
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot ch
+# Depends on: kdebase
+
+name=kde-l10n-fr
+version=4.3.3
+release=1
+source=(http://mirrors.dotsrc.org/kde/stable/$version/src/kde-l10n/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
+	-DBUILD_docs=OFF
+	make -j3
+	make DESTDIR=$PKG install
+}
+
