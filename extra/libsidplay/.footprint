@@ -1,0 +1,19 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/sidplay/
+-rw-r--r--	root/root	usr/include/sidplay/compconf.h
+-rw-r--r--	root/root	usr/include/sidplay/emucfg.h
+-rw-r--r--	root/root	usr/include/sidplay/fformat.h
+-rw-r--r--	root/root	usr/include/sidplay/fixpoint.h
+-rw-r--r--	root/root	usr/include/sidplay/libcfg.h
+-rw-r--r--	root/root	usr/include/sidplay/myendian.h
+-rw-r--r--	root/root	usr/include/sidplay/mytypes.h
+-rw-r--r--	root/root	usr/include/sidplay/player.h
+-rw-r--r--	root/root	usr/include/sidplay/sidtune.h
+-rw-r--r--	root/root	usr/include/sidplay/version.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libsidplay.a
+-rwxr-xr-x	root/root	usr/lib/libsidplay.la
+lrwxrwxrwx	root/root	usr/lib/libsidplay.so -> libsidplay.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libsidplay.so.1 -> libsidplay.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libsidplay.so.1.0.3
