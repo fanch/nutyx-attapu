@@ -3,7 +3,7 @@
 port=cheese
 
 # gconf schemas
-SCHEMAS="`pkginfo -l $port | grep usr/etc/gconf/schemas/.*\.schemas$`"
+SCHEMAS="`pkginfo -l $port | grep etc/gconf/schemas/.*\.schemas$`"
 
 for SCHEMA in $SCHEMAS
 do
