@@ -13,6 +13,7 @@ source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name
 build() {
 	cd $name-$version
 	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
 		--mandir=/usr/man \
 		--with-a11y=yes \
 		--with-gnome=yes \
