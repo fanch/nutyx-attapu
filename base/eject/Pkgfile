@@ -7,7 +7,7 @@
 name=eject
 version=2.1.5
 release=2
-source=(http://ca.geocities.com/jefftranter@rogers.com/$name-$version.tar.gz)
+source=(http://kiao.no-ip.info/sources/$name-$version.tar.gz)
 
 
 build() {
