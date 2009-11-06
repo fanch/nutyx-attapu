@@ -1,7 +1,7 @@
 # Description:outil de gravage GNOME
 # URL: http://www.realistanew.com/projects/alacarte
 # Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: intltool, pygtk, gnome-menus
+# Depends on: intltool, pygtk, gnome-menus, nautilus
 # Group: gnome/desktop
 
 name=brasero
