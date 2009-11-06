@@ -1,0 +1,23 @@
+# Description: GNOME VNC Client
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gtk, libglade, gconf, gtk-vnc, gnome-panel
+# Group: gnome/desktop
+
+name=vinagre
+version=2.26.2
+release=1
+gnomever=2.26.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--mandir=/usr/man \
+		--libexecdir=/usr/lib/$name \
+		--disable-scrollkeeper \
+		--disable-schemas-install
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share/doc
+}
