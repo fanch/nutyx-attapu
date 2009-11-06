@@ -108,6 +108,9 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamdates.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamsearch.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamtags.so
+drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/
+drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/ExternalDraw.so
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so -> libdigikamcore.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so.1 -> libdigikamcore.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libdigikamcore.so.1.0.0
