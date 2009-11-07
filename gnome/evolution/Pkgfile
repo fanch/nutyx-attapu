@@ -22,7 +22,5 @@ build() {
 		
 	make
 	make DESTDIR=$PKG install
-	ln -v -s evolution-2.26 \
-    $GNOME_PREFIX/bin/evolution
 
 }
