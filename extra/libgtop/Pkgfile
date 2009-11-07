@@ -18,5 +18,6 @@ build() {
 	make DESTDIR=$PKG install
 	install -v -m755 -d $GNOME_PREFIX/lib/libgtop/examples
 	install -v -m755 examples/.libs/* $GNOME_PREFIX/lib/libgtop/examples
+	rm $PKG/usr/share/info/dir
 	
 }
