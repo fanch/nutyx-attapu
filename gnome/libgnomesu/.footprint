@@ -1,0 +1,26 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gnomesu
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libgnomesu-1.0/
+drwxr-xr-x	root/root	usr/include/libgnomesu-1.0/libgnomesu/
+-rw-r--r--	root/root	usr/include/libgnomesu-1.0/libgnomesu/gnomesu-auth-dialog.h
+-rw-r--r--	root/root	usr/include/libgnomesu-1.0/libgnomesu/libgnomesu.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libgnomesu.la
+lrwxrwxrwx	root/root	usr/lib/libgnomesu.so -> libgnomesu.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libgnomesu.so.0 -> libgnomesu.so.0.2.0
+-rwxr-xr-x	root/root	usr/lib/libgnomesu.so.0.2.0
+drwxr-xr-x	root/root	usr/lib/libgnomesu/
+---s--s--x	root/root	usr/lib/libgnomesu/gnomesu-backend
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libgnomesu-1.0.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/application-registry/
+-rw-r--r--	root/root	usr/share/application-registry/gnomesu-nautilus.applications
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/libgnomesu-1.0.mo
+drwxr-xr-x	root/root	usr/share/mime-info/
+-rw-r--r--	root/root	usr/share/mime-info/gnomesu-nautilus.keys

@@ -1,17 +1,18 @@
-# Description: Contient les librairies permettant de mettre en évidence la syntaxe dans les functions de gtk
-# URL: http://www.gnome.org
-# Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-vfs, libgnomeprintui, libgnomeprint, p5-xml-parser, gtk
+# Description: Syntax highlighting for the GtkTextView widget
+# URL: http://mail.gnome.org/mailman/listinfo/gnome-devtools
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gtk, libxml2, libgnomeprint, gnome-vfs
+# Group: gnome/desktop
 
 name=gtksourceview
-version=2.4.2
+version=2.6.2
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.4/$name-$version.tar.bz2)
+gnomever=2.26.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {
-	cd $name-$version
-	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0)
+	cd $name-$version  
+	./configure --prefix=$GNOME_PREFIX 
 	make
 	make DESTDIR=$PKG install
 }

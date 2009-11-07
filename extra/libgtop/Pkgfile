@@ -1,20 +1,23 @@
-# Description: Contient la librairie top pour gnome
-# URL: http://www.gnome.org
-# Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: glib
+# Description: library that fetches information about the running system
+# URL: http://www.gnu.org/directory/libs/LibGTop.html
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: glib, popt, xorg 
+# Group: gnome/desktop
 
 name=libgtop
-version=2.24.4
+version=2.26.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
+gnomever=2.26.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
-	--infodir=/usr/share/info
+	./configure --prefix=$GNOME_PREFIX \
+			--infodir=$GNOME_PREFIX/share/info
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/usr/share/gtk-doc
+	install -v -m755 -d $GNOME_PREFIX/lib/libgtop/examples
+	install -v -m755 examples/.libs/* $GNOME_PREFIX/lib/libgtop/examples
 	rm $PKG/usr/share/info/dir
+	
 }

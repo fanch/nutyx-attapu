@@ -1,0 +1,16 @@
+# Description: A VNC viewer widget for GTK
+# URL: http://gtk-vnc.sourceforge.net/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gtk, pygtk
+
+name=gtk-vnc
+version=0.3.8
+release=1
+source=(http://downloads.sourceforge.net/project/gtk-vnc/$name/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX
+	make
+	make DESTDIR=$PKG install
+}

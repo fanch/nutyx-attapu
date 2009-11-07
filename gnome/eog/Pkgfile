@@ -1,21 +1,25 @@
-# Description: Application pour visualiser des images pour gnome
-# URL: http://www.gnome.org/
-# Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-desktop, gnome-icon-theme
+# Description: image viewing and cataloging program
+# URL: http://www.gnome.org/gnome-office/eog.shtml
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: libgnomeui, libgnomeprint, gnome-desktop
+# Group: gnome/desktop
 
 name=eog
-version=2.28.1
+version=2.24.3.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
+gnomever=2.24.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=$GNOME_PREFIX \
+	./configure --prefix=/usr \
+		--libexecdir=/usr/lib/$name \
 		--sysconfdir=/etc \
-		--localstatedir=/var/lib
+		--disable-scrollkeeper \
+		--disable-schemas-install \
+		--enable-doc=no \
+		--enable-gtk-doc=no
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc/
+	rm -rf $PKG/usr/share/gtk-doc
 }
-
