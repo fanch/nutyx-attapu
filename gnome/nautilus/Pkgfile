@@ -16,7 +16,14 @@ build() {
             --sysconfdir=/etc
 	make
 	make DESTDIR=$PKG install
-	install -v -m755 -d $GNOME_PREFIX/share/doc/nautilus-2.26.3
-	install -v -m644 docs/*.{txt,dia,pdf,sxw,faq,html} $GNOME_PREFIX/share/doc/nautilus-2.26.3
+	install -v -m755 -d \
+	$PKG/$GNOME_PREFIX/share/doc/nautilus-2.26.3
+	install -v -m644 docs/*.{txt,dia,pdf,sxw,faq,html} \
+	$PKG/$GNOME_PREFIX/share/doc/nautilus-2.26.3
 
+	for i in XMLnamespaces aliases \
+	generic-icons globs globs2 icons \
+	magic mime.cache subclasses treemagic types
+	do rm $PKG/usr/share/mime/$i
+	done
 }

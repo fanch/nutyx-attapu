@@ -41,6 +41,20 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/nautilus-home.desktop
 -rw-r--r--	root/root	usr/share/applications/nautilus.desktop
 -rw-r--r--	root/root	usr/share/applications/network-scheme.desktop
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/nautilus-2.26.3/
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/architecture.txt
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/dnd.txt
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/key_mouse_navigation.txt
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/load-states.dia
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/nautilus-internals.pdf
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/nautilus-internals.sxw
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/nautilus-io.txt
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/nautilus.faq
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/recommended-books.html
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/smoketests.html
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/state-machines.txt
+-rw-r--r--	root/root	usr/share/doc/nautilus-2.26.3/style-guide.html
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/libnautilus-extension/
@@ -93,21 +107,10 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/nautilus-file-management-properties.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nautilus.1.gz
 drwxr-xr-x	root/root	usr/share/mime/
--rw-r--r--	root/root	usr/share/mime/XMLnamespaces (EMPTY)
--rw-r--r--	root/root	usr/share/mime/aliases (EMPTY)
 drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-gnome-saved-search.xml
--rw-r--r--	root/root	usr/share/mime/generic-icons (EMPTY)
--rw-r--r--	root/root	usr/share/mime/globs
--rw-r--r--	root/root	usr/share/mime/globs2
--rw-r--r--	root/root	usr/share/mime/icons (EMPTY)
--rw-r--r--	root/root	usr/share/mime/magic
--rw-r--r--	root/root	usr/share/mime/mime.cache
 drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/nautilus.xml
--rw-r--r--	root/root	usr/share/mime/subclasses
--rw-r--r--	root/root	usr/share/mime/treemagic
--rw-r--r--	root/root	usr/share/mime/types
 drwxr-xr-x	root/root	usr/share/nautilus/
 -rw-r--r--	root/root	usr/share/nautilus/browser.xml
 drwxr-xr-x	root/root	usr/share/nautilus/icons/
