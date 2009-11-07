@@ -3,6 +3,7 @@
 # Maintainer: NuTyX core team
 # Packager: guy_
 # Depends on: qt, qemu
+ 
 name=aqemu
 version=0.7.3
 release=1
@@ -13,26 +14,5 @@ build() {
 	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++
 	./configure.sh --disable-embedded-display
 	make
-#	make DESTDIR=$PKG install
 	./install_script.sh $PKG
 }
-
-
-# pkgname=aqemu
-# pkgver=0.7.3
-# pkgrel=1
-# pkgdesc="QEMU GUI written in Qt4"
-# arch=('i686' 'x86_64')
-# url="http://sourceforge.net/projects/aqemu/"
-# license=('GPL2')
-# depends=('qt' 'libvncserver' 'qemu')
-# source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.bz2)
-# md5sums=('0ee32e54ee70ec4451c5e30137f572fd')
-
-# build() {
-#	cd $srcdir/$pkgname-$pkgver
-#	sed 's/\$PREFIX\/\$DESTDIR/\$DESTDIR\/\$PREFIX/' -i install_script.sh || return 1
-#	./configure.sh || return 1
-#	make || return 1
-#	./install_script.sh "$pkgdir" || return 1
-# }
