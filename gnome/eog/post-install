@@ -7,8 +7,8 @@ SCHEMAS="`pkginfo -l $port | grep etc/gconf/schemas/.*\.schemas$`"
 
 for SCHEMA in $SCHEMAS
 do
-	export GCONF_CONFIG_SOURCE=`$GNOME_PREFIX/bin/gconftool-2 --get-default-source`
-	$GNOME_PREFIX/bin/gconftool-2 --makefile-install-rule /$SCHEMA > /dev/null
+	export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
+	gconftool-2 --makefile-install-rule /$SCHEMA > /dev/null
 done
 
 # reload gconf caches
@@ -22,11 +22,10 @@ SCROLLS="`pkginfo -l $port | grep usr/share/omf/.*\.omf$`"
 
 for SCROLL in $SCROLLS
 do
-	/usr/bin/scrollkeeper-install -q -p /var/lib/scrollkeeper /$SCROLL > /dev/null
+	scrollkeeper-install -q -p /var/lib/scrollkeeper /$SCROLL > /dev/null
 done
 
 # desktop database
 update-desktop-database > /dev/null
 
 # End of file
-

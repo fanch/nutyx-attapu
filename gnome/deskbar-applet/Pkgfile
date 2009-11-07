@@ -1,0 +1,21 @@
+# Description: An omnipresent versatile search interface
+# URL: http://raphael.slinckx.net/deskbar/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: gtk, pygtk, gnome-python-desktop, gnome-desktop
+# Group: gnome/desktop
+
+name=deskbar-applet
+version=2.26.2
+release=1
+gnomever=2.26.3
+source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-schemas-install \
+		--disable-scrollkeeper
+	make
+	make DESTDIR=$PKG install
+}

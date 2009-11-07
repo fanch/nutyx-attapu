@@ -40,13 +40,13 @@ drwxr-xr-x	root/root	usr/include/PolicyKit/polkit/
 -rw-r--r--	root/root	usr/include/PolicyKit/polkit/polkit.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/PolicyKit/
--rwxr-sr-x	root/polkituser	usr/lib/PolicyKit/polkit-explicit-grant-helper
--rwxr-sr-x	root/polkituser	usr/lib/PolicyKit/polkit-grant-helper
--rwsr-x---	root/polkituser	usr/lib/PolicyKit/polkit-grant-helper-shadow
--rwxr-sr-x	root/polkituser	usr/lib/PolicyKit/polkit-read-auth-helper
+-rwxr-sr-x	root/root	usr/lib/PolicyKit/polkit-explicit-grant-helper
+-rwxr-sr-x	root/root	usr/lib/PolicyKit/polkit-grant-helper
+-rwsr-x---	root/root	usr/lib/PolicyKit/polkit-grant-helper-shadow
+-rwxr-sr-x	root/root	usr/lib/PolicyKit/polkit-read-auth-helper
 -rwsr-xr-x	root/root	usr/lib/PolicyKit/polkit-resolve-exe-helper
--rwxr-sr-x	root/polkituser	usr/lib/PolicyKit/polkit-revoke-helper
--rwsr-xr-x	polkituser/root	usr/lib/PolicyKit/polkit-set-default-helper
+-rwxr-sr-x	root/root	usr/lib/PolicyKit/polkit-revoke-helper
+-rwsr-xr-x	root/root	usr/lib/PolicyKit/polkit-set-default-helper
 -rwxr-xr-x	root/root	usr/lib/PolicyKit/polkitd
 -rw-r--r--	root/root	usr/lib/libpolkit-dbus.a
 -rwxr-xr-x	root/root	usr/lib/libpolkit-dbus.la
@@ -84,9 +84,9 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 drwxr-xr-x	root/root	usr/share/man/man8/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
-drwxr-xr-x	polkituser/root	var/lib/PolicyKit-public/
-drwxrwx---	root/polkituser	var/lib/PolicyKit/
+drwxr-xr-x	root/root	var/lib/PolicyKit-public/
+drwxrwx---	root/root	var/lib/PolicyKit/
 drwxr-xr-x	root/root	var/lib/misc/
--rw-rw-r--	polkituser/polkituser	var/lib/misc/PolicyKit.reload (EMPTY)
+-rw-rw-r--	root/root	var/lib/misc/PolicyKit.reload (EMPTY)
 drwxr-xr-x	root/root	var/run/
-drwxrwx---	root/polkituser	var/run/PolicyKit/
+drwxrwx---	root/root	var/run/PolicyKit/
