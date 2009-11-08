@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: rarian, esound, libgnomeui, gst-plugins-base, gst-plugins-good, nautilus-cd-burner
+# Depends on: rarian, esound, libgnomeui, gst-plugins-base, gst-plugins-good, nautilus-cd-burner, alsa-utils
 
 name=gnome-media
 version=2.28.1
