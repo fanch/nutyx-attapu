@@ -1,4 +1,4 @@
-759d93e031a2f1ddb4a94268ebd4a73e  X.sh
+d5dda9fafee54d7caa37493ca42f384c  X.sh
 61ba4859757a54bf1f514de5213802e0  bash_profile
 427f04bb0e7ba3394054a1215fdca87c  bashrc
 427f04bb0e7ba3394054a1215fdca87c  bashrc
@@ -8,13 +8,13 @@
 94e5b6c4017e28684a683d39cbe4c72a  console
 248d4faa838949085a51003b2c0c3f00  dircolors.sh
 ad457024fe7ad91b8e9e0b4aad87df1f  extrapaths.sh
-b37cf9bf000a04d5cc2e69550732a2e3  fstab
+0286a09ca5d7515c29ad5ff8f88fb9f3  fstab
 57ddbea584220ac4e74d0504a03721f4  hosts
 7af11664c8a127c2d1e71ee3237ab543  i18n.sh
 255dba011debefe08813959042bb56b4  inittab
 2ca09cd10bcc4f6adb0c5b1521bfdb7e  inputrc
 5d7c952bd09d718298dd60d3b976c349  lfs-bootscripts-01.patch
-cdff9f9a8b8f11c92e5d2e1616bb4a38  lfs-bootscripts-20090817.tar.bz2
+a29ed1fdc3cc2847451f8e5c1896eed6  lfs-bootscripts-20090817.tar.bz2
 f2cdde506d446113e04153e5695adb2a  message
 c90e6466720260c377c89f5aa0c47eca  network
 5478e2141b3d5504cd201b23dcc70531  nu

@@ -1,7 +1,7 @@
-# Begin /etc/fstab
-
 # file system  mount-point  type   options         dump  fsck
 #                                                        order
+# Exemple de montage nfs
+# 192.168.254.254:/home/install	/home/install	nfs	rw,_netdev,rsize=8192,wsize=8192 0 0
 
 /dev/sr0	/media/cdrom    iso9660   ro,user,noauto,unhide  0 0
 proc           /proc        proc   defaults        0     0

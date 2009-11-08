@@ -11,9 +11,9 @@ export PATH=$PATH:$GNOME_PREFIX/bin:$KDE_PREFIX/bin:$KDE3_PREFIX/bin
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$GNOME_PREFIX/lib/pkgconfig:\
 $GNOME_PREFIX/share/pkgconfig:$KDE3_PREFIX/lib/pkgconfig:/opt/qt/lib/pkgconfig
 export INFOPATH=/usr/share/info:$GNOME_PREFIX/share/info:$KDE_PREFIX/share/info:$KDE3_PREFIX/share/info
-export PYTHONPATH=/usr/lib/python2.5/site-packages:\
-$GNOME_PREFIX/lib/python2.5/site-packages:\
-$GNOME_PREFIX/lib/python2.5/site-packages/GMenuSimpleEditor
+export PYTHONPATH=/usr/lib/python2.6/site-packages:\
+$GNOME_PREFIX/lib/python2.6/site-packages:\
+$GNOME_PREFIX/lib/python2.6/site-packages/GMenuSimpleEditor
 if [ -x /usr/X11R6/bin/X ]; then
  pathappend /usr/X11R6/bin
  XDG_DATA_DIRS=/usr/share:$GNOME_PREFIX/share:$KDE_PREFIX/share:$KDE3_PREFIX/share:/usr/local/share
