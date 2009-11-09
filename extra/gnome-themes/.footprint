@@ -1136,6 +1136,10 @@ lrwxrwxrwx	root/root	usr/share/icons/HighContrast-SVG/scalable/status/messagebox
 -rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/network-offline.svg
 -rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/network-online.svg
 lrwxrwxrwx	root/root	usr/share/icons/HighContrast-SVG/scalable/status/nm-no-connection.svg -> network-offline.svg
+-rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/nm-signal-100.svg
+-rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/nm-signal-25.svg
+-rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/nm-signal-50.svg
+-rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/nm-signal-75.svg
 -rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/printer-printing.svg
 -rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/software-update-available.svg
 -rw-r--r--	root/root	usr/share/icons/HighContrast-SVG/scalable/status/software-update-urgent.svg
@@ -1229,7 +1233,7 @@ lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/accessibi
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/advanced-directory.png
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/applets-screenshooter.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/arts.png -> multimedia-volume-control.png
-lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/ax-applet.png -> accessibility-directory.png
+lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/ax-applet.png -> preferences-desktop-accessibility.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/background.png -> preferences-desktop-wallpaper.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/calc.png -> accessories-calculator.png
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrint/48x48/apps/charpick.png
@@ -1676,7 +1680,7 @@ lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/ac
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/advanced-directory.png
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/applets-screenshooter.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/arts.png -> multimedia-volume-control.png
-lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/ax-applet.png -> accessibility-directory.png
+lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/ax-applet.png -> preferences-desktop-accessibility.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/background.png -> preferences-desktop-wallpaper.png
 lrwxrwxrwx	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/calc.png -> accessories-calculator.png
 -rw-r--r--	root/root	usr/share/icons/HighContrastLargePrintInverse/48x48/apps/charpick.png
