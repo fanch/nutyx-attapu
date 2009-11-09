@@ -16,9 +16,9 @@ drwxr-xr-x	root/root	usr/include/gnome-desktop-2.0/libgnomeui/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgnome-desktop-2.a
 -rwxr-xr-x	root/root	usr/lib/libgnome-desktop-2.la
-lrwxrwxrwx	root/root	usr/lib/libgnome-desktop-2.so -> libgnome-desktop-2.so.11.2.6
-lrwxrwxrwx	root/root	usr/lib/libgnome-desktop-2.so.11 -> libgnome-desktop-2.so.11.2.6
--rwxr-xr-x	root/root	usr/lib/libgnome-desktop-2.so.11.2.6
+lrwxrwxrwx	root/root	usr/lib/libgnome-desktop-2.so -> libgnome-desktop-2.so.11.4.2
+lrwxrwxrwx	root/root	usr/lib/libgnome-desktop-2.so.11 -> libgnome-desktop-2.so.11.4.2
+-rwxr-xr-x	root/root	usr/lib/libgnome-desktop-2.so.11.4.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnome-desktop-2.0.pc
 drwxr-xr-x	root/root	usr/share/
@@ -64,6 +64,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/fdl/ko/
 -rw-r--r--	root/root	usr/share/gnome/help/fdl/ko/fdl.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/fdl/oc/
 -rw-r--r--	root/root	usr/share/gnome/help/fdl/oc/fdl.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/fdl/pl/
+-rw-r--r--	root/root	usr/share/gnome/help/fdl/pl/fdl.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/fdl/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/fdl/sv/fdl.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/fdl/uk/
@@ -140,6 +142,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/lgpl/vi/
 -rw-r--r--	root/root	usr/share/gnome/help/lgpl/vi/lgpl.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/lgpl/zh_CN/
 -rw-r--r--	root/root	usr/share/gnome/help/lgpl/zh_CN/lgpl.xml
+drwxr-xr-x	root/root	usr/share/libgnome-desktop/
+-rw-r--r--	root/root	usr/share/libgnome-desktop/pnp.ids
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -160,6 +164,7 @@ drwxr-xr-x	root/root	usr/share/omf/fdl/
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-hu.omf
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-ko.omf
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-oc.omf
+-rw-r--r--	root/root	usr/share/omf/fdl/fdl-pl.omf
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-sv.omf
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-uk.omf
 -rw-r--r--	root/root	usr/share/omf/fdl/fdl-vi.omf
