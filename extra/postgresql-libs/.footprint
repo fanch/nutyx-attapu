@@ -1,0 +1,64 @@
+drwxr-xr-x	root/root	srv/
+drwxr-xr-x	root/root	srv/pgsql/
+drwxr-xr-x	root/root	srv/pgsql/data/
+-rw-r--r--	root/root	srv/pgsql/data/pg_service.conf.sample
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/ecpg
+-rwxr-xr-x	root/root	usr/bin/pg_config
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ecpg_config.h
+-rw-r--r--	root/root	usr/include/ecpg_informix.h
+-rw-r--r--	root/root	usr/include/ecpgerrno.h
+-rw-r--r--	root/root	usr/include/ecpglib.h
+-rw-r--r--	root/root	usr/include/ecpgtype.h
+-rw-r--r--	root/root	usr/include/libpq-events.h
+-rw-r--r--	root/root	usr/include/libpq-fe.h
+drwxr-xr-x	root/root	usr/include/libpq/
+-rw-r--r--	root/root	usr/include/libpq/libpq-fs.h
+-rw-r--r--	root/root	usr/include/pg_config.h
+-rw-r--r--	root/root	usr/include/pg_config_manual.h
+-rw-r--r--	root/root	usr/include/pg_config_os.h
+-rw-r--r--	root/root	usr/include/pgtypes_date.h
+-rw-r--r--	root/root	usr/include/pgtypes_error.h
+-rw-r--r--	root/root	usr/include/pgtypes_interval.h
+-rw-r--r--	root/root	usr/include/pgtypes_numeric.h
+-rw-r--r--	root/root	usr/include/pgtypes_timestamp.h
+-rw-r--r--	root/root	usr/include/postgres_ext.h
+drwxr-xr-x	root/root	usr/include/postgresql/
+drwxr-xr-x	root/root	usr/include/postgresql/informix/
+drwxr-xr-x	root/root	usr/include/postgresql/informix/esql/
+-rw-r--r--	root/root	usr/include/postgresql/informix/esql/datetime.h
+-rw-r--r--	root/root	usr/include/postgresql/informix/esql/decimal.h
+-rw-r--r--	root/root	usr/include/postgresql/informix/esql/sqlda.h
+-rw-r--r--	root/root	usr/include/postgresql/informix/esql/sqltypes.h
+drwxr-xr-x	root/root	usr/include/postgresql/internal/
+-rw-r--r--	root/root	usr/include/postgresql/internal/c.h
+-rw-r--r--	root/root	usr/include/postgresql/internal/libpq-int.h
+drwxr-xr-x	root/root	usr/include/postgresql/internal/libpq/
+-rw-r--r--	root/root	usr/include/postgresql/internal/libpq/pqcomm.h
+-rw-r--r--	root/root	usr/include/postgresql/internal/port.h
+-rw-r--r--	root/root	usr/include/postgresql/internal/postgres_fe.h
+-rw-r--r--	root/root	usr/include/postgresql/internal/pqexpbuffer.h
+-rw-r--r--	root/root	usr/include/sql3types.h
+-rw-r--r--	root/root	usr/include/sqlca.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libecpg.a
+lrwxrwxrwx	root/root	usr/lib/libecpg.so -> libecpg.so.6.1
+lrwxrwxrwx	root/root	usr/lib/libecpg.so.6 -> libecpg.so.6.1
+-rwxr-xr-x	root/root	usr/lib/libecpg.so.6.1
+-rw-r--r--	root/root	usr/lib/libecpg_compat.a
+lrwxrwxrwx	root/root	usr/lib/libecpg_compat.so -> libecpg_compat.so.3.1
+lrwxrwxrwx	root/root	usr/lib/libecpg_compat.so.3 -> libecpg_compat.so.3.1
+-rwxr-xr-x	root/root	usr/lib/libecpg_compat.so.3.1
+-rw-r--r--	root/root	usr/lib/libpgtypes.a
+lrwxrwxrwx	root/root	usr/lib/libpgtypes.so -> libpgtypes.so.3.1
+lrwxrwxrwx	root/root	usr/lib/libpgtypes.so.3 -> libpgtypes.so.3.1
+-rwxr-xr-x	root/root	usr/lib/libpgtypes.so.3.1
+-rw-r--r--	root/root	usr/lib/libpq.a
+lrwxrwxrwx	root/root	usr/lib/libpq.so -> libpq.so.5.2
+lrwxrwxrwx	root/root	usr/lib/libpq.so.5 -> libpq.so.5.2
+-rwxr-xr-x	root/root	usr/lib/libpq.so.5.2
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+-rw-r--r--	root/root	usr/share/licenses/LICENSE

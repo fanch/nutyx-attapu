@@ -1,0 +1,50 @@
+# Description: Librairires pour postgresql
+# URL: http://www.postgresql.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: linux-pam
+
+name=postgresql-libs
+version=8.4.1
+release=1
+source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2)
+
+build() {
+  cd postgresql-$version
+
+  # configure
+  ./configure --prefix=/usr --with-openssl --datadir=/srv/pgsql/data \
+  --with-pam
+
+  # make and install
+  for dir in src/interfaces src/bin/pg_config; do
+    pushd ${dir}
+    make
+    make DESTDIR=$PKG install
+    popd
+  done
+
+  cd src/include
+  make
+
+  set -e
+  mkdir -p $PKG/usr/include/postgresql/{internal,internal/libpq}
+  mkdir -p $PKG/usr/include/libpq
+
+  # These headers are needed by the public headers of the interfaces.
+  install -m644 pg_config.h $PKG/usr/include/
+  install -m644 pg_config_os.h $PKG/usr/include/
+  install -m644 postgres_ext.h $PKG/usr/include/
+  install -m644 libpq/libpq-fs.h $PKG/usr/include/libpq/
+  install -m644 pg_config_manual.h $PKG/usr/include/
+
+  # These headers are needed by the not-so-public headers of the interfaces.
+  install -m644 c.h $PKG/usr/include/postgresql/internal/
+  install -m644 port.h $PKG/usr/include/postgresql/internal/
+  install -m644 postgres_fe.h $PKG/usr/include/postgresql/internal/
+  install -m644 libpq/pqcomm.h $PKG/usr/include/postgresql/internal/libpq/
+
+  install -D -m644 ../../COPYRIGHT $PKG/usr/share/licenses/$pkgname/LICENSE
+
+  set +e
+}
