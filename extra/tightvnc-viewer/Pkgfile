@@ -1,0 +1,22 @@
+# Description: A free remote control software package derived from VNC (client)
+# URL: http://www.tightvnc.com/
+# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Depends on: xorg, xorg-imake, xorg-gccmakedep
+
+name=tightvnc-viewer
+version=1.3.9
+release=1
+source=(http://dl.sourceforge.net/sourceforge/vnc-tight/tightvnc-${version}_unixsrc.tar.bz2)
+
+build() {
+	cd vnc_unixsrc
+	xmkmf -a
+	make Makefiles
+	find . -name "Makefile" -exec \
+		sed -i -e 's/-lXp$//g' '{}' \;
+	make depend
+	make all
+	mkdir -p $PKG/usr/{bin,man/man1}
+	./vncinstall $PKG/usr/bin $PKG/usr/man
+	rm -f $PKG/usr/bin/vncserver $PKG/usr/man/man1/{Xvnc,vncserver}*
+}
