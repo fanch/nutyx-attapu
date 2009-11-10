@@ -1,0 +1,28 @@
+# Description: Reads, writes, and manipulates GPS waypoints in a variety of formats 
+# URL: http://www.gpsbabel.org
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libusb, expat
+
+name=gpsbabel
+version=1.3.6
+release=1
+source=(http://www.gpsbabel.org/plan9.php?dl=gpsbabel-$version.tar.gz \
+  exeext.patch)
+
+build() {
+  cd gpsbabel-$version
+  mkdir -p $PKG/usr/bin
+  ./configure --prefix=/usr
+  patch -Np0 -i ../exeext.patch
+  #sed -i 's|/usr/local|/usr|g' Makefile
+  #sed -i 's|$(INSTALL_TARGETDIR)/bin|$(DESTDIR)$(INSTALL_TARGETDIR)/bin|g' Makefile
+
+  make
+  make DESTDIR=$PKG install
+
+  # Header install
+  mkdir -p $PKG/usr/include/gpsbabel
+  cp {defs.h,queue.h,gbtypes.h,filterdefs.h,cet.h,cet_util.h,garmin_tables.h} \
+     $PKG/usr/include/gpsbabel
+}
