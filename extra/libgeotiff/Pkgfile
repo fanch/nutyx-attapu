@@ -1,0 +1,21 @@
+# Description: A TIFF based interchange format for georeferenced raster imagery
+# URL: http://www.remotesensing.org/geotiff
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libtiff, proj, libjpeg
+
+
+name=libgeotiff
+version=1.2.5
+release=1
+source=(ftp://ftp.remotesensing.org/pub/geotiff/libgeotiff/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+
+  install -D -m644 LICENSE $PKG/usr/share/licenses/libgeotiff/LICENSE
+}
+
