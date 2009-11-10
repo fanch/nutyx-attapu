@@ -1,0 +1,58 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/nc-config
+-rwxr-xr-x	root/root	usr/bin/ncdump
+-rwxr-xr-x	root/root	usr/bin/ncgen
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/ncvalues.h
+-rw-r--r--	root/root	usr/include/netcdf.h
+-rw-r--r--	root/root	usr/include/netcdf.hh
+-rw-r--r--	root/root	usr/include/netcdf.inc
+-rw-r--r--	root/root	usr/include/netcdf.mod
+-rw-r--r--	root/root	usr/include/netcdfcpp.h
+-rw-r--r--	root/root	usr/include/typesizes.mod
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libnetcdf.a
+-rwxr-xr-x	root/root	usr/lib/libnetcdf.la
+lrwxrwxrwx	root/root	usr/lib/libnetcdf.so -> libnetcdf.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libnetcdf.so.4 -> libnetcdf.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libnetcdf.so.4.0.0
+-rw-r--r--	root/root	usr/lib/libnetcdf_c++.a
+-rwxr-xr-x	root/root	usr/lib/libnetcdf_c++.la
+lrwxrwxrwx	root/root	usr/lib/libnetcdf_c++.so -> libnetcdf_c++.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libnetcdf_c++.so.4 -> libnetcdf_c++.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libnetcdf_c++.so.4.0.0
+-rw-r--r--	root/root	usr/lib/libnetcdff.a
+-rwxr-xr-x	root/root	usr/lib/libnetcdff.la
+lrwxrwxrwx	root/root	usr/lib/libnetcdff.so -> libnetcdff.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libnetcdff.so.4 -> libnetcdff.so.4.0.0
+-rwxr-xr-x	root/root	usr/lib/libnetcdff.so.4.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/netcdf.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/netcdf/
+drwxr-xr-x	root/root	usr/share/info/
+-rw-r--r--	root/root	usr/share/info/netcdf-c.info-1.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-c.info-2.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-c.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-cxx.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-cxx4.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-f77.info-1.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-f77.info-2.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-f77.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-f90.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-install.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf-tutorial.info.gz
+-rw-r--r--	root/root	usr/share/info/netcdf.info.gz
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/netcdf/
+-rw-r--r--	root/root	usr/share/licenses/netcdf/COPYRIGHT
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ncdump.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/ncgen.1.gz
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/netcdf.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/netcdf_f77.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/netcdf_f90.3.gz

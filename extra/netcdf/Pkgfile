@@ -1,0 +1,24 @@
+# Description: network Common Data Form interface for array-oriented data access and corresponding library
+# URL: http://www.unidata.ucar.edu/downloads/netcdf/index.jsp
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on gcc-libs
+
+name=netcdf
+version=4.0.1
+release=1
+source=(http://www.unidata.ucar.edu/downloads/netcdf/ftp/$name-$version.tar.gz)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr --enable-shared
+  make
+  make check
+  install -m755 -d $PKG/usr/lib
+  install -m755 -d $PKG/usr/share/man
+  make DESTDIR=$PKG install
+
+  install -Dm644 $SRC/$name-$version/COPYRIGHT \
+	$PKG/usr/share/licenses/$name/COPYRIGHT
+  rm $PKG/usr/share/info/dir
+}
