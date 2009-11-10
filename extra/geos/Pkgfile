@@ -1,0 +1,22 @@
+# Description: A C++ port of the Java Topology Suite
+# URL: http://geos.refractions.net
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on:
+
+name=geos
+version=3.1.1
+release=1
+source=(http://download.osgeo.org/$name/$name-$version.tar.bz2 \
+	gcc4.3.patch )
+
+build() {
+  cd $name-$version
+
+  ./configure --prefix=/usr
+#  patch -Np1 < ../gcc4.3.patch
+  make
+  make DESTDIR=$PKG install
+
+  ln -s /usr/lib/libgeos.so $PKG/usr/lib/libgeos.so.2
+}
