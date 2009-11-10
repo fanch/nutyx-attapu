@@ -2,12 +2,12 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: icon-naming-utils, gtk-engines
+# Depends on: atk, pango, icon-naming-utils, gtk-engines
 
 name=gnome-themes
-version=2.26.3
+version=2.28.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

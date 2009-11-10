@@ -5,19 +5,17 @@
 # Depends on: libbonobo, gnome-vfs, esound
 
 name=libgnome
-version=2.26.0
+version=2.28.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-		./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+		./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
 		--localstatedir=/var/lib \
-		--mandir=$(pkg-config \
-		--variable=prefix ORBit-2.0)/share/man
+		--mandir=$GNOME_PREFIX/share/man
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/$(pkg-config \
-	--variable=prefix ORBit-2.0)/share/gtk-doc
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
 }

@@ -5,9 +5,9 @@
 # Depends on: gtk, p5-xml-parser
 
 name=vte
-version=0.20.5
+version=0.23.1
 release=1
-source=( http://ftp.gnome.org/pub/gnome/sources/$name/0.20/$name-$version.tar.bz2 )
+source=( http://ftp.gnome.org/pub/gnome/sources/$name/0.23/$name-$version.tar.bz2 )
 
 
 

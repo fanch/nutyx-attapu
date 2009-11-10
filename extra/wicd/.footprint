@@ -50,7 +50,7 @@ drwxr-xr-x	root/root	usr/lib/pm-utils/sleep.d/
 -rwxr-xr-x	root/root	usr/lib/pm-utils/sleep.d/55wicd
 drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Wicd-1.6.2.1-py2.6.egg-info
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/Wicd-1.6.2.2-py2.6.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/wicd/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/wicd/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/wicd/__init__.pyc

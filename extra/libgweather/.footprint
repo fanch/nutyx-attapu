@@ -16,9 +16,9 @@ drwxr-xr-x	root/root	usr/include/libgweather/
 -rw-r--r--	root/root	usr/include/libgweather/weather.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libgweather.la
-lrwxrwxrwx	root/root	usr/lib/libgweather.so -> libgweather.so.1.4.6
-lrwxrwxrwx	root/root	usr/lib/libgweather.so.1 -> libgweather.so.1.4.6
--rwxr-xr-x	root/root	usr/lib/libgweather.so.1.4.6
+lrwxrwxrwx	root/root	usr/lib/libgweather.so -> libgweather.so.1.5.2
+lrwxrwxrwx	root/root	usr/lib/libgweather.so.1 -> libgweather.so.1.5.2
+-rwxr-xr-x	root/root	usr/lib/libgweather.so.1.5.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gweather.pc
 drwxr-xr-x	root/root	usr/share/
@@ -34,6 +34,7 @@ drwxr-xr-x	root/root	usr/share/libgweather/
 -rw-r--r--	root/root	usr/share/libgweather/Locations.bn_IN.xml
 -rw-r--r--	root/root	usr/share/libgweather/Locations.bs.xml
 -rw-r--r--	root/root	usr/share/libgweather/Locations.ca.xml
+-rw-r--r--	root/root	usr/share/libgweather/Locations.ca@valencia.xml
 -rw-r--r--	root/root	usr/share/libgweather/Locations.cs.xml
 -rw-r--r--	root/root	usr/share/libgweather/Locations.cy.xml
 -rw-r--r--	root/root	usr/share/libgweather/Locations.da.xml
