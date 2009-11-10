@@ -1,0 +1,18 @@
+# Description: Moteur gtk
+# URL: http://www.cimitan.com/murrine/engine
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+
+name=murrine
+version=0.90.3
+release=1
+source=(http://ftp.acc.umu.se/pub/GNOME/sources/murrine/0.90/murrine-0.90.3.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--enable-animation 
+	make
+	make DESTDIR=$PKG install
+}
