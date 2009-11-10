@@ -2,22 +2,23 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: orbit2, policykit, glib, gtk
+# Depends on: orbit2, polkit, glib, gtk
 
 name=gconf
-version=2.26.2
+version=2.28.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/GConf/2.26/GConf-$version.tar.bz2\
-	GConf-$version-sysconfdir-1.patch)
+source=(http://ftp.gnome.org/pub/gnome/sources/GConf/${version%.*}/GConf-$version.tar.bz2\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/GConf-2.26.2-sysconfdir-1.patch)
 build() {
 	cd GConf-$version
-	patch -Np1 -i ../GConf-$version-sysconfdir-1.patch
+	patch -Np1 -i ../GConf-2.26.2-sysconfdir-1.patch
 	./configure --prefix=$GNOME_PREFIX\
 	            --sysconfdir=/etc \
             --libexecdir=$GNOME_PREFIX/lib/GConf \
-	--with-dbus-service-dir=/usr/share/dbus-1/services \
             --mandir=$GNOME_PREFIX/share/man
 	make
 	make DESTDIR=$PKG install
 	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+	install -v -m755 -d $PKG/etc/gconf/gconf.xml.system
+
 }
