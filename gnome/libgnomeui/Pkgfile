@@ -5,10 +5,9 @@
 # Depends on: libbonoboui, gnome-keyring
 
 name=libgnomeui
-version=2.24.1
+version=2.24.2
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
-
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
