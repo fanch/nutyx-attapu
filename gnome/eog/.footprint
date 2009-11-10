@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/include/eog-2.20/eog/
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-application.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-debug.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-dialog.h
+-rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-enums.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-error-message-area.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-exif-details.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-exif-util.h
@@ -49,9 +50,9 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/eog.desktop
 drwxr-xr-x	root/root	usr/share/eog/
--rw-r--r--	root/root	usr/share/eog/eog-image-properties-dialog.glade
--rw-r--r--	root/root	usr/share/eog/eog-multiple-save-as-dialog.glade
--rw-r--r--	root/root	usr/share/eog/eog-preferences-dialog.glade
+-rw-r--r--	root/root	usr/share/eog/eog-image-properties-dialog.ui
+-rw-r--r--	root/root	usr/share/eog/eog-multiple-save-as-dialog.ui
+-rw-r--r--	root/root	usr/share/eog/eog-preferences-dialog.ui
 -rw-r--r--	root/root	usr/share/eog/eog-toolbar.xml
 -rw-r--r--	root/root	usr/share/eog/eog-ui.xml
 -rw-r--r--	root/root	usr/share/eog/gtkrc
@@ -108,6 +109,12 @@ drwxr-xr-x	root/root	usr/share/gnome/help/eog/ca/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/eog/ca/figures/eog_save_as_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/eog/ca/figures/eog_start_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/eog/ca/figures/eog_toolbar_editor_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/cs/
+-rw-r--r--	root/root	usr/share/gnome/help/eog/cs/eog.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/eog/cs/figures/eog_save_as_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/cs/figures/eog_start_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/cs/figures/eog_toolbar_editor_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/da/
 -rw-r--r--	root/root	usr/share/gnome/help/eog/da/eog.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/da/figures/
@@ -120,6 +127,12 @@ drwxr-xr-x	root/root	usr/share/gnome/help/eog/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/eog/de/figures/eog_save_as_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/eog/de/figures/eog_start_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/eog/de/figures/eog_toolbar_editor_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/el/
+-rw-r--r--	root/root	usr/share/gnome/help/eog/el/eog.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/el/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/eog/el/figures/eog_save_as_window.png -> ../../C/figures/eog_save_as_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/el/figures/eog_start_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/el/figures/eog_toolbar_editor_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/en_GB/
 -rw-r--r--	root/root	usr/share/gnome/help/eog/en_GB/eog.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/en_GB/figures/
@@ -174,6 +187,12 @@ drwxr-xr-x	root/root	usr/share/gnome/help/eog/pa/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/eog/pa/figures/eog_save_as_window.png -> ../../C/figures/eog_save_as_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/eog/pa/figures/eog_start_window.png -> ../../C/figures/eog_start_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/eog/pa/figures/eog_toolbar_editor_window.png -> ../../C/figures/eog_toolbar_editor_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/pl/
+-rw-r--r--	root/root	usr/share/gnome/help/eog/pl/eog.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/eog/pl/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/eog/pl/figures/eog_save_as_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/pl/figures/eog_start_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/eog/pl/figures/eog_toolbar_editor_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/pt_BR/
 -rw-r--r--	root/root	usr/share/gnome/help/eog/pt_BR/eog.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/eog/pt_BR/figures/
@@ -242,8 +261,10 @@ drwxr-xr-x	root/root	usr/share/omf/eog/
 -rw-r--r--	root/root	usr/share/omf/eog/eog-C.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-ar.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-ca.omf
+-rw-r--r--	root/root	usr/share/omf/eog/eog-cs.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-da.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-de.omf
+-rw-r--r--	root/root	usr/share/omf/eog/eog-el.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-es.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-eu.omf
@@ -253,6 +274,7 @@ drwxr-xr-x	root/root	usr/share/omf/eog/
 -rw-r--r--	root/root	usr/share/omf/eog/eog-ko.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-oc.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-pa.omf
+-rw-r--r--	root/root	usr/share/omf/eog/eog-pl.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-ru.omf
 -rw-r--r--	root/root	usr/share/omf/eog/eog-sv.omf
