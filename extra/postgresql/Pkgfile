@@ -1,0 +1,61 @@
+# Description: A sophisticated object-relational DBMS 
+# URL: http://www.postgresql.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: postgresql-libs, libxml2, readline
+
+name=postgresql
+version=8.4.1
+release=1
+source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2 \
+        postgresql postgresql.confd build.patch postgresql.pam)
+
+build() {
+  cd $name-$version
+
+  # patch to remove regress/test make target (won't build with it present)
+  patch -Np1 -i ../build.patch 
+
+  # configure
+  ./configure --prefix=/usr --mandir=/usr/share/man \
+  --with-docdir=/usr/share/doc --with-openssl \
+  --datadir=/srv/pgsql/data --with-pam --with-libxml
+
+  sed -i -e '/interfaces/d' src/Makefile 
+
+  # build
+  make 
+
+  # install
+  make DESTDIR=$PKG install 
+
+  (
+  cd contrib/adminpack;
+  make 
+  make DESTDIR=$PKG install
+  );
+
+
+  # clean up unneeded installed items
+#  rm -rf $PKG/usr/include/postgresql/internal 
+#  rm -rf $PKG/usr/include/libpq 
+  # the below line is expected to produce an error; fix this one day
+#  rm -rf $PKG/usr/include/*
+#  rm -f $PKG/usr/bin/pg_config 
+  
+  # Maintaining the lib below because of qt
+  #rm -f $startdir/pkg/usr/lib/libpgport.a || return 1
+
+  # install launch script
+  install -D -m755 ../postgresql $PKG/etc/rc.d/postgresql
+
+  # install license
+  install -D -m644 COPYRIGHT $PKG/usr/share/licenses/$name/LICENSE 
+
+  # install conf file
+  install -D -m644 $SRC/postgresql.confd $PKG/etc/conf.d/postgresql 
+
+  install -D -m644 $SRC/postgresql.pam  $PKG/etc/pam.d/postgresql
+
+#  chown root:root $PKG/usr/share/doc/postgresql/html/*
+}
