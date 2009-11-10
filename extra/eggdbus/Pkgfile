@@ -2,10 +2,10 @@
 # URL: http://hal.freedesktop.org/docs/eggdbus
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat
+# Depends on: dbus, expat, docbook-xsl
 
 name=eggdbus
-version=0.4
+version=0.5
 release=1
 source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz)
 build() {
