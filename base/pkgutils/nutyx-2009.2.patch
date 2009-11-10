@@ -4,19 +4,10 @@
  #  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
  #  USA.
  #
-+#  Adjusted for NuTyX 2009 by thierryn1 at hispeed dot ch
++#  Adjusted for NuTyX 2009.1 by thierryn1 at hispeed dot ch
  
  info() {
  	echo "=======> $1"
-@@ -94,7 +95,7 @@
- 	LOCAL_FILENAME_PARTIAL="$LOCAL_FILENAME.partial"
- 	DOWNLOAD_OPTS="--passive-ftp --no-directories --tries=3 --waitretry=3 \
- 		--directory-prefix=$PKGMK_SOURCE_DIR \
--		--output-document=$LOCAL_FILENAME_PARTIAL --no-check-certificate"
-+		--output-document=$LOCAL_FILENAME_PARTIAL"
- 
- 	if [ -f "$LOCAL_FILENAME_PARTIAL" ]; then
- 		info "Partial download found, trying to resume"
 @@ -162,8 +163,13 @@
  	for FILE in ${source[@]}; do
  		LOCAL_FILENAME=`get_filename $FILE`
@@ -38,14 +29,14 @@
  	cd $PKG
  	
 -	find . -type f -path "*/man/man*/*" | while read FILE; do
-+	find . -type f -path "*/man*/*" | while read FILE; do
++	find . -type f -path "*/share/man/*" | while read FILE; do
  		if [ "$FILE" = "${FILE%%.gz}" ]; then
  			gzip -9 "$FILE"
  		fi
  	done
  	
 -	find . -type l -path "*/man/man*/*" | while read FILE; do
-+	find . -type l -path "*/man*/*" | while read FILE; do
++	find . -type l -path "*/share/man/*" | while read FILE; do
 +		TARGET=`readlink -n "$FILE"`
 +		TARGET="${TARGET##*/}"
 +		TARGET="${TARGET%%.gz}.gz"
@@ -186,7 +177,7 @@
 -# PKGMK_PACKAGE_DIR="$PWD"
 -# PKGMK_WORK_DIR="$PWD/work"
 +PKGMK_SOURCE_DIR="/srv/sources"
-+PKGMK_PACKAGE_DIR="/srv/NuTyX"
++PKGMK_PACKAGE_DIR="/srv/NuTyX/locale"
 +PKGMK_WORK_DIR="/tmp/work"
  # PKGMK_DOWNLOAD="no"
  # PKGMK_IGNORE_FOOTPRINT="no"
