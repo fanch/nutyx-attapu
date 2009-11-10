@@ -1,14 +1,13 @@
 # Description: A lightweight HTML rendering/printing/editing engine
 # URL: http://cvs.gnome.org/viewcvs/gtkhtml/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: libgnomeui, libgnomeprintui, libsoup, enchant
-# Group: gnome/desktop
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libgnomeui, gail, gnome-icon-theme, libgnomeprintui, libsoup, enchant
 
 name=gtkhtml
-version=3.26.3
+version=3.28.1
 release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build () {
 	cd $name-$version
