@@ -10,15 +10,11 @@ drwxr-xr-x	root/root	usr/lib/gtk-2.0/
 drwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/
 -rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libgnomebreakpad.la
 -rwxr-xr-x	root/root	usr/lib/gtk-2.0/modules/libgnomebreakpad.so
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/bug-buddy.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/bug-buddy.desktop
 drwxr-xr-x	root/root	usr/share/bug-buddy/
 -rw-r--r--	root/root	usr/share/bug-buddy/bug-buddy.gtkbuilder
--rw-r--r--	root/root	usr/share/bug-buddy/bug-buddy.menu
 -rw-r--r--	root/root	usr/share/bug-buddy/gdb-cmd
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/HighContrastLargePrint/
@@ -48,3 +44,6 @@ drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/bug-buddy.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/bug-buddy.1.gz

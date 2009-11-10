@@ -1,19 +1,17 @@
-# Description: GNOME bug reporting utility
+# Description: Utilitaire de rapport de bogue pour gnome
 # URL: http://www.bug-buddy.org/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: libgnomeui, libglade, gnome-desktop, gnome-menus, gnome-doc-utils, evolution-data-server, libsoup, libgtop, libelf
-# Group: gnome/desktop
 
 name=bug-buddy
-version=2.26.0
+version=2.28.0
 release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
-		--mandir=/usr/man \
+	./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
 		--disable-google-breakpad \
 		--disable-scrollkeeper
