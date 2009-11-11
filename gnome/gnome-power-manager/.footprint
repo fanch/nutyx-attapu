@@ -8,7 +8,6 @@ drwxr-xr-x	root/root	etc/xdg/autostart/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnome-power-bugreport.sh
--rwxr-xr-x	root/root	usr/bin/gnome-power-cmd.sh
 -rwxr-xr-x	root/root	usr/bin/gnome-power-manager
 -rwxr-xr-x	root/root	usr/bin/gnome-power-preferences
 -rwxr-xr-x	root/root	usr/bin/gnome-power-statistics
@@ -20,8 +19,6 @@ drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 drwxr-xr-x	root/root	usr/lib/gnome-power-manager/
 -rwxr-xr-x	root/root	usr/lib/gnome-power-manager/gnome-brightness-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-power-manager/gnome-inhibit-applet
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-power-preferences.desktop
@@ -34,10 +31,9 @@ drwxr-xr-x	root/root	usr/share/gnome-2.0/ui/
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_BrightnessApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_InhibitApplet.xml
 drwxr-xr-x	root/root	usr/share/gnome-power-manager/
--rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-feedback-widget.glade
--rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-inhibit-test.glade
--rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-prefs.glade
--rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-statistics.glade
+-rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-feedback-widget.ui
+-rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-prefs.ui
+-rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-statistics.ui
 drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/
 drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/
@@ -59,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-battery-100-charging.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-battery-100.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-battery-charged.png
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-battery-empty.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-battery-missing.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-brightness-kbd-disabled.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/16x16/status/gpm-brightness-kbd-invalid.png
@@ -118,6 +115,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-battery-100-charging.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-battery-100.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-battery-charged.png
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-battery-empty.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-battery-missing.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-brightness-kbd-disabled.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/22x22/status/gpm-brightness-kbd-invalid.png
@@ -177,6 +175,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-battery-100-charging.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-battery-100.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-battery-charged.png
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-battery-empty.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-battery-missing.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-brightness-kbd-disabled.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/24x24/status/gpm-brightness-kbd-invalid.png
@@ -236,6 +235,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-battery-100-charging.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-battery-100.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-battery-charged.png
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-battery-empty.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-battery-missing.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-brightness-kbd-disabled.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/32x32/status/gpm-brightness-kbd-invalid.png
@@ -295,6 +295,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-battery-100-charging.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-battery-100.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-battery-charged.png
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-battery-empty.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-battery-missing.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-brightness-kbd-disabled.png
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/48x48/status/gpm-brightness-kbd-invalid.png
@@ -355,6 +356,7 @@ drwxr-xr-x	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-battery-100-charging.svg
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-battery-100.svg
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-battery-charged.svg
+-rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-battery-empty.svg
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-battery-missing.svg
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-brightness-kbd-disabled.svg
 -rw-r--r--	root/root	usr/share/gnome-power-manager/icons/hicolor/scalable/status/gpm-brightness-kbd-invalid.svg
@@ -428,16 +430,16 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/applet-brightness.png -> ../../C/figures/applet-brightness.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/applet-inhibit.png -> ../../C/figures/applet-inhibit.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-cell-capacity.png -> ../../C/figures/gpm-cell-capacity.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-charged.png -> ../../C/figures/gpm-charged.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-charged.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-critical.png -> ../../C/figures/gpm-critical.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-low.png -> ../../C/figures/gpm-low.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-ac.png -> ../../C/figures/gpm-prefs-ac.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-battery.png -> ../../C/figures/gpm-prefs-battery.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-general.png -> ../../C/figures/gpm-prefs-general.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-ac.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-battery.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-prefs-general.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-stats-graph.png -> ../../C/figures/gpm-stats-graph.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-suspend-problem.png -> ../../C/figures/gpm-suspend-problem.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-unplugged.png -> ../../C/figures/gpm-unplugged.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gs-prefs.png -> ../../C/figures/gs-prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-unplugged.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gs-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/gnome-power-manager.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/el/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/el/figures/
@@ -673,6 +675,8 @@ drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/gnome-power-manager.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
 drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/gnome-power-manager/
 -rw-r--r--	root/root	usr/share/omf/gnome-power-manager/gnome-power-manager-C.omf
