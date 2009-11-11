@@ -1,0 +1,21 @@
+# Description: Set de plugins essentiels pour l'outil multimedia gstreamer
+# URL: http://gstreamer.freedesktop.org/modules/gst-plugins-base.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gstreamer, gst-plugins-base, faad2
+
+name=gst-plugins-bad
+version=0.10.16
+release=1
+source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+	--localstatedir=/var \
+	--sysconfdir=/etc \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+

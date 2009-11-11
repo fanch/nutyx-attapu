@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/include/libsoup-2.4/libsoup/
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-method.h
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-misc.h
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-multipart.h
+-rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-password-manager.h
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-portability.h
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-proxy-resolver.h
 -rw-r--r--	root/root	usr/include/libsoup-2.4/libsoup/soup-proxy-uri-resolver.h
@@ -45,14 +46,14 @@ drwxr-xr-x	root/root	usr/include/libsoup-gnome-2.4/libsoup/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libsoup-2.4.a
 -rwxr-xr-x	root/root	usr/lib/libsoup-2.4.la
-lrwxrwxrwx	root/root	usr/lib/libsoup-2.4.so -> libsoup-2.4.so.1.2.0
-lrwxrwxrwx	root/root	usr/lib/libsoup-2.4.so.1 -> libsoup-2.4.so.1.2.0
--rwxr-xr-x	root/root	usr/lib/libsoup-2.4.so.1.2.0
+lrwxrwxrwx	root/root	usr/lib/libsoup-2.4.so -> libsoup-2.4.so.1.3.0
+lrwxrwxrwx	root/root	usr/lib/libsoup-2.4.so.1 -> libsoup-2.4.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libsoup-2.4.so.1.3.0
 -rw-r--r--	root/root	usr/lib/libsoup-gnome-2.4.a
 -rwxr-xr-x	root/root	usr/lib/libsoup-gnome-2.4.la
-lrwxrwxrwx	root/root	usr/lib/libsoup-gnome-2.4.so -> libsoup-gnome-2.4.so.1.2.0
-lrwxrwxrwx	root/root	usr/lib/libsoup-gnome-2.4.so.1 -> libsoup-gnome-2.4.so.1.2.0
--rwxr-xr-x	root/root	usr/lib/libsoup-gnome-2.4.so.1.2.0
+lrwxrwxrwx	root/root	usr/lib/libsoup-gnome-2.4.so -> libsoup-gnome-2.4.so.1.3.0
+lrwxrwxrwx	root/root	usr/lib/libsoup-gnome-2.4.so.1 -> libsoup-gnome-2.4.so.1.3.0
+-rwxr-xr-x	root/root	usr/lib/libsoup-gnome-2.4.so.1.3.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsoup-2.4.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libsoup-gnome-2.4.pc

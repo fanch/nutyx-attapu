@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/gpsbabel
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/gpsbabel/
+-rw-r--r--	root/root	usr/include/gpsbabel/cet.h
+-rw-r--r--	root/root	usr/include/gpsbabel/cet_util.h
+-rw-r--r--	root/root	usr/include/gpsbabel/defs.h
+-rw-r--r--	root/root	usr/include/gpsbabel/filterdefs.h
+-rw-r--r--	root/root	usr/include/gpsbabel/garmin_tables.h
+-rw-r--r--	root/root	usr/include/gpsbabel/gbtypes.h
+-rw-r--r--	root/root	usr/include/gpsbabel/queue.h

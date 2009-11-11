@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	etc/gconf/2/
 -rw-r--r--	root/root	etc/gconf/2/path
 drwxr-xr-x	root/root	etc/gconf/gconf.xml.defaults/
 drwxr-xr-x	root/root	etc/gconf/gconf.xml.mandatory/
+drwxr-xr-x	root/root	etc/gconf/gconf.xml.system/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gconf-merge-tree
@@ -44,9 +45,6 @@ lrwxrwxrwx	root/root	usr/lib/libgconf-2.so.4 -> libgconf-2.so.4.1.5
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gconf-2.0.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/PolicyKit/
-drwxr-xr-x	root/root	usr/share/PolicyKit/policy/
--rw-r--r--	root/root	usr/share/PolicyKit/policy/org.gnome.gconf.defaults.policy
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gconf-2.m4
 drwxr-xr-x	root/root	usr/share/dbus-1/
@@ -61,6 +59,9 @@ drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gconftool-2.1.gz
+drwxr-xr-x	root/root	usr/share/polkit-1/
+drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.gnome.gconf.defaults.policy
 drwxr-xr-x	root/root	usr/share/sgml/
 drwxr-xr-x	root/root	usr/share/sgml/gconf/
 -rw-r--r--	root/root	usr/share/sgml/gconf/gconf-1.0.dtd

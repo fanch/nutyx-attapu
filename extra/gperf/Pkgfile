@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/gperf/gperf.html
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on:
+# Depends on: 
 
 name=gperf
 version=3.0.4
@@ -11,9 +11,7 @@ source=(ftp://ftp.sunet.se/pub/gnu/$name/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
-    ./configure --prefix=/usr \
-                --mandir=/usr/man
+    ./configure --prefix=/usr
     make 
     make DESTDIR=$PKG install
-    rm -rf $PKG/usr/share
 }

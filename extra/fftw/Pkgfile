@@ -1,21 +1,41 @@
-# Description: Librairie C subroutine pour les transformations de Fourier
+# Description: A library for computing the discrete Fourier transform (DFT)
 # URL: http://www.fftw.org/
 # Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
-# Depends on: gcc-fortran
+# Packager: lesibel at free dot fr
+# Depends on: glibc, bash
 
 name=fftw
 version=3.2.2
 release=1
 source=(http://www.fftw.org/$name-$version.tar.gz)
+install=fftw.install
+
+# notes:
+# http://www.fftw.org/fftw2_doc/fftw_6.html#SEC69
+# http://www.fftw.org/faq/section2.html#singleprec
+# http://www.fftw.org/fftw3_doc/Precision.html#Precision
 
 build() {
-	cd $name-$version
-	./configure F77=gfortran \
-		--prefix=/usr \
-		--enable-type-prefix \
-                --enable-shared
-	make
-	make DESTDIR=$PKG install
-        rm $PKG/usr/share/info/dir
+  cd $name-$version
+  
+ # build & install double precision
+  ./configure F77=gfortran --prefix=/usr \
+              --enable-shared
+  make
+  make DESTDIR=$PKG install
+  make clean 
+
+  # build & install long double precission
+  ./configure F77=gfortran --prefix=/usr \
+   --enable-long-double  --enable-shared
+  make 
+  make DESTDIR=$PKG install
+  make clean
+
+  # build + install single precision
+  ./configure F77=gfortran --prefix=/usr \
+              --enable-float --enable-shared 
+  make 
+  make DESTDIR=$PKG install
+  rm $PKG/usr/share/info/dir
 }

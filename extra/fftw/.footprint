@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/fftw-wisdom
 -rwxr-xr-x	root/root	usr/bin/fftw-wisdom-to-conf
+-rwxr-xr-x	root/root	usr/bin/fftwf-wisdom
+-rwxr-xr-x	root/root	usr/bin/fftwl-wisdom
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/fftw3.f
 -rw-r--r--	root/root	usr/include/fftw3.h
@@ -11,8 +13,20 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libfftw3.so -> libfftw3.so.3.2.4
 lrwxrwxrwx	root/root	usr/lib/libfftw3.so.3 -> libfftw3.so.3.2.4
 -rwxr-xr-x	root/root	usr/lib/libfftw3.so.3.2.4
+-rw-r--r--	root/root	usr/lib/libfftw3f.a
+-rwxr-xr-x	root/root	usr/lib/libfftw3f.la
+lrwxrwxrwx	root/root	usr/lib/libfftw3f.so -> libfftw3f.so.3.2.4
+lrwxrwxrwx	root/root	usr/lib/libfftw3f.so.3 -> libfftw3f.so.3.2.4
+-rwxr-xr-x	root/root	usr/lib/libfftw3f.so.3.2.4
+-rw-r--r--	root/root	usr/lib/libfftw3l.a
+-rwxr-xr-x	root/root	usr/lib/libfftw3l.la
+lrwxrwxrwx	root/root	usr/lib/libfftw3l.so -> libfftw3l.so.3.2.4
+lrwxrwxrwx	root/root	usr/lib/libfftw3l.so.3 -> libfftw3l.so.3.2.4
+-rwxr-xr-x	root/root	usr/lib/libfftw3l.so.3.2.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/fftw3.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/fftw3f.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/fftw3l.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/fftw3.info.gz
@@ -20,3 +34,5 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/fftw-wisdom-to-conf.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fftw-wisdom.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fftwf-wisdom.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fftwl-wisdom.1.gz

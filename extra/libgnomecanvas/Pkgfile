@@ -2,19 +2,17 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libgnome, libart_lgpl
+# Depends on: libglade, libgnome, libart_lgpl
 
 name=libgnomecanvas
-version=2.20.1.1
+version=2.26.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.20/$name-$version.tar.bz2)
-
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
-	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0)
+	./configure --prefix=$GNOME_PREFIX
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/$(pkg-config \
-	--variable=prefix ORBit-2.0)/share/gtk-doc
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
 
 }

@@ -1,0 +1,19 @@
+# Description: "Produces a OGG encapsulated Theora/Vorbis recording of your desktop"
+# URL: http://recordmydesktop.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: pygtk, recordmydesktop
+name=gtk-recordmydesktop
+version=0.3.8
+release=1
+source=(http://downloads.sourceforge.net/project/recordmydesktop/gtk-recordMyDesktop/0.3.8/gtk-recordmydesktop-0.3.8.tar.gz)
+
+build() 
+{
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+

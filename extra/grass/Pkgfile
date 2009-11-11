@@ -1,0 +1,40 @@
+# Description: Geographic Information System (GIS) used for geospatial data management and analysis
+#              image processing, graphics/maps production, spatial modeling, and visualization"
+#
+# URL:http://grass.itc.it/index.php
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: proj, gdal, fftw, swig, libpng, libtiff, sqlite3, python, tk
+
+name=grass
+version=6.3.0
+release=1
+source=(http://grass.itc.it/grass63/source/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+		./configure --prefix=$PKG/opt --exec-prefix=$PKG/opt \
+    		--with-proj \
+    		--with-gdal \
+		--with-fftw \
+	 	--with-dwg \
+    		--with-sqlite \
+	 	--with-python \
+	 	--with-postgres=no \
+	 	--with-nls=no
+	 	
+ 	make
+ 	mkdir -p $PKG/opt
+	make DESTDIR=$PKG install
+	
+	cd $PKG/opt/bin/
+	sed -i "s|$PKG||g" grass63
+	mkdir -p $PKG/usr/lib
+	cd $PKG/usr/lib ; ln -s ../../opt/$name-$version/lib/*.so .
+	rm -rf $PKG/opt/grass-6.3.0/AUTHORS
+	rm -rf $PKG/opt/grass-6.3.0/COPYING
+	rm -rf $PKG/opt/grass-6.3.0/bwidget/README.grass
+	rm -rf $PKG/opt/grass-6.3.0/etc/gem/skeleton/README
+	rm -rf $PKG/opt/grass-6.3.0/etc/wxpython/README
+}
+

@@ -1,0 +1,17 @@
+# Description: Est utilisé pour décrire l'API et les collecte d'une façon uniforme en format lisible par la machine
+# URL: http://www.gnome.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib, libffi
+
+name=gobject-introspection
+version=0.6.5
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+		./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

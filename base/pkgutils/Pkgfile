@@ -6,13 +6,13 @@
 
 name=pkgutils
 version=5.34.0
-release=1
+release=2
 source=(http://crux.nu/files/$name-$version.tar.gz \
-nutyx-2009.1.patch)
+nutyx-2009.2.patch)
 build () {
 cd $name-$version
 mkdir -p $PKG/usr/share
-patch -Np1 -i ../nutyx-2009.1.patch
+patch -Np1 -i ../nutyx-2009.2.patch
 make DESTDIR=$PKG install
 case `uname -m` in
 	x86_64)

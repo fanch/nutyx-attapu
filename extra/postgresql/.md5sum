@@ -1,0 +1,5 @@
+4d74f4227dc5e12bf95b3490758d86c9  build.patch
+7d8ea2abb6a8cdacf35604bda659a34a  postgresql
+f2015af17bacbbfe140daf0d1067f9c9  postgresql-8.4.1.tar.bz2
+df6ddf9e2ab4700a3415f17c0f4f4172  postgresql.confd
+96f82c38f3f540b53f3e5144900acf17  postgresql.pam

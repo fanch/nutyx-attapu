@@ -1,0 +1,18 @@
+# Description: Une interface graphique pour Qemu
+# URL: http://sourceforge.net/projects/aqemu/
+# Maintainer: NuTyX core team
+# Packager: guy_
+# Depends on: qt, qemu
+ 
+name=aqemu
+version=0.7.3
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	sed 's/\$PREFIX\/\$DESTDIR/\$DESTDIR\/\$PREFIX/' -i install_script.sh
+	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++
+	./configure.sh --disable-embedded-display
+	make
+	./install_script.sh $PKG
+}

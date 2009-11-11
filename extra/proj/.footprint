@@ -1,0 +1,44 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/cs2cs
+-rwxr-xr-x	root/root	usr/bin/geod
+lrwxrwxrwx	root/root	usr/bin/invgeod -> geod
+lrwxrwxrwx	root/root	usr/bin/invproj -> proj
+-rwxr-xr-x	root/root	usr/bin/nad2bin
+-rwxr-xr-x	root/root	usr/bin/nad2nad
+-rwxr-xr-x	root/root	usr/bin/proj
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/nad_list.h
+-rw-r--r--	root/root	usr/include/org_proj4_Projections.h
+-rw-r--r--	root/root	usr/include/proj_api.h
+-rw-r--r--	root/root	usr/include/projects.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libproj.a
+-rwxr-xr-x	root/root	usr/lib/libproj.la
+lrwxrwxrwx	root/root	usr/lib/libproj.so -> libproj.so.0.6.6
+lrwxrwxrwx	root/root	usr/lib/libproj.so.0 -> libproj.so.0.6.6
+-rwxr-xr-x	root/root	usr/lib/libproj.so.0.6.6
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/proj/
+-rwxr-xr-x	root/root	usr/share/licenses/proj/LICENSE
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/cs2cs.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/geod.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/nad2nad.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/proj.1.gz
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/pj_init.3.gz
+drwxr-xr-x	root/root	usr/share/proj/
+-rw-r--r--	root/root	usr/share/proj/GL27
+-rw-r--r--	root/root	usr/share/proj/IGNF
+-rw-r--r--	root/root	usr/share/proj/epsg
+-rw-r--r--	root/root	usr/share/proj/esri
+-rw-r--r--	root/root	usr/share/proj/esri.extra
+-rw-r--r--	root/root	usr/share/proj/nad.lst
+-rw-r--r--	root/root	usr/share/proj/nad27
+-rw-r--r--	root/root	usr/share/proj/nad83
+-rw-r--r--	root/root	usr/share/proj/other.extra
+-rw-r--r--	root/root	usr/share/proj/proj_def.dat
+-rw-r--r--	root/root	usr/share/proj/world

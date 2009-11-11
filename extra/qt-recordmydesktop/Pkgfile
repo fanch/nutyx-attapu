@@ -1,0 +1,19 @@
+# Description: "Qt4 frontend for recordMyDesktop"
+# URL: http://recordmydesktop.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: recordmydesktop, pyqt
+name=qt-recordmydesktop
+version=0.3.8
+release=1
+source=(http://downloads.sourceforge.net/project/recordmydesktop/qt-recordMyDesktop/0.3.8/qt-recordmydesktop-0.3.8.tar.gz)
+
+build() 
+{
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
