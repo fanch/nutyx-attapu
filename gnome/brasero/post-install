@@ -1,6 +1,6 @@
 #!/bin/sh
 
-port=sound-juicer
+port=brasero
 
 # gconf schemas
 SCHEMAS="`pkginfo -l $port | grep etc/gconf/schemas/.*\.schemas$`"

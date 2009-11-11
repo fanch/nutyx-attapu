@@ -7,12 +7,35 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/brasero
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/brasero/
+-rw-r--r--	root/root	usr/include/brasero/brasero-blank-dialog.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-burn-dialog.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-burn-lib.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-burn-options.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-burn.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-drive-selection.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-drive.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-enums.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-error.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-media.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-medium-monitor.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-medium-selection.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-medium.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-session-cfg.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-session-span.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-session.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-status.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-sum-dialog.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-tags.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-tool-dialog.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-data-cfg.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-data.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-disc.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-image-cfg.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-image.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-stream-cfg.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-stream.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track-type.h
+-rw-r--r--	root/root	usr/include/brasero/brasero-track.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-units.h
 -rw-r--r--	root/root	usr/include/brasero/brasero-volume.h
 drwxr-xr-x	root/root	usr/lib/
@@ -58,23 +81,29 @@ drwxr-xr-x	root/root	usr/lib/brasero/plugins/
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-vob.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-wodim.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-wodim.so
+-rwxr-xr-x	root/root	usr/lib/libbrasero-burn.la
+lrwxrwxrwx	root/root	usr/lib/libbrasero-burn.so -> libbrasero-burn.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libbrasero-burn.so.0 -> libbrasero-burn.so.0.2.0
+-rwxr-xr-x	root/root	usr/lib/libbrasero-burn.so.0.2.0
 -rwxr-xr-x	root/root	usr/lib/libbrasero-media.la
-lrwxrwxrwx	root/root	usr/lib/libbrasero-media.so -> libbrasero-media.so.0.1.1
-lrwxrwxrwx	root/root	usr/lib/libbrasero-media.so.0 -> libbrasero-media.so.0.1.1
--rwxr-xr-x	root/root	usr/lib/libbrasero-media.so.0.1.1
+lrwxrwxrwx	root/root	usr/lib/libbrasero-media.so -> libbrasero-media.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libbrasero-media.so.0 -> libbrasero-media.so.0.2.0
+-rwxr-xr-x	root/root	usr/lib/libbrasero-media.so.0.2.0
+-rwxr-xr-x	root/root	usr/lib/libbrasero-utils.la
+lrwxrwxrwx	root/root	usr/lib/libbrasero-utils.so -> libbrasero-utils.so.0.2.0
+lrwxrwxrwx	root/root	usr/lib/libbrasero-utils.so.0 -> libbrasero-utils.so.0.2.0
+-rwxr-xr-x	root/root	usr/lib/libbrasero-utils.so.0.2.0
 drwxr-xr-x	root/root	usr/lib/nautilus/
 drwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/
 -rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libnautilus-brasero-extension.la
 -rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libnautilus-brasero-extension.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libbrasero-burn.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libbrasero-media.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/brasero-copy-medium.desktop
 -rw-r--r--	root/root	usr/share/applications/brasero-nautilus.desktop
--rw-r--r--	root/root	usr/share/applications/brasero-open-image.desktop
--rw-r--r--	root/root	usr/share/applications/brasero-open-playlist.desktop
--rw-r--r--	root/root	usr/share/applications/brasero-open-project.desktop
 -rw-r--r--	root/root	usr/share/applications/brasero.desktop
 drwxr-xr-x	root/root	usr/share/brasero/
 drwxr-xr-x	root/root	usr/share/brasero/icons/
@@ -263,6 +292,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/brasero/ca/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/ca/brasero.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/ca/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/brasero/ca/figures/brasero_main.png -> ../../C/figures/brasero_main.png
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/cs/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/cs/brasero.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/cs/figures/brasero_main.png
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/de/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/de/brasero.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/de/figures/
@@ -299,27 +332,18 @@ drwxr-xr-x	root/root	usr/share/gnome/help/brasero/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/sv/brasero.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/sv/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/sv/figures/brasero_main.png
-drwxr-xr-x	root/root	usr/share/gtk-doc/
-drwxr-xr-x	root/root	usr/share/gtk-doc/html/
-drwxr-xr-x	root/root	usr/share/gtk-doc/html/brasero/
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroDrive.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroDriveSelection.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroMedium.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroMediumMonitor.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroMediumSelection.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/BraseroVolume.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/brasero-brasero-media.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/brasero-brasero-units.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/brasero.devhelp
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/brasero.devhelp2
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/ch01.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/home.png
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/index.html
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/index.sgml
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/left.png
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/right.png
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/style.css
--rw-r--r--	root/root	usr/share/gtk-doc/html/brasero/up.png
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_CN/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/zh_CN/brasero.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/brasero/zh_CN/figures/brasero_main.png -> ../../C/figures/brasero_main.png
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_HK/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/zh_HK/brasero.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/brasero/zh_HK/figures/brasero_main.png -> ../../C/figures/brasero_main.png
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_TW/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/zh_TW/brasero.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/zh_TW/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/zh_TW/figures/brasero_main.png
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -354,6 +378,7 @@ drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/brasero/
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-C.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-ca.omf
+-rw-r--r--	root/root	usr/share/omf/brasero/brasero-cs.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-de.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-el.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-en_GB.omf
@@ -363,3 +388,6 @@ drwxr-xr-x	root/root	usr/share/omf/brasero/
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-pl.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-ru.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-sv.omf
+-rw-r--r--	root/root	usr/share/omf/brasero/brasero-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/brasero/brasero-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/brasero/brasero-zh_TW.omf
