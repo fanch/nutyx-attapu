@@ -1,0 +1,20 @@
+# Description: Moteur gtk
+# URL: http://www.gnome-look.org/content/show.php?content=39179
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+
+name=rezlooks
+version=0.6
+release=1
+source=(http://www.gnome-look.org/CONTENT/content-files/39179-rezlooks-0.6.tar.gz 
+        )
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+		--enable-animation 
+  make 
+  make DESTDIR=$PKG install
+  
+}
