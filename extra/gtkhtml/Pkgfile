@@ -1,8 +1,8 @@
-# Description: A lightweight HTML rendering/printing/editing engine
+# Description: Moteur légé de rendu HTML pour l'édition et l'impression
 # URL: http://cvs.gnome.org/viewcvs/gtkhtml/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libgnomeui, gail, gnome-icon-theme, libgnomeprintui, libsoup, enchant
+# Depends on: libgnomeui, gnome-icon-theme, libgnomeprintui, libsoup, enchant
 
 name=gtkhtml
 version=3.28.1
