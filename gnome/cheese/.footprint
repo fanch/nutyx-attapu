@@ -34,21 +34,33 @@ drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/16x16/actions/browse-webcam-effects.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/16x16/actions/cheese-take-burst.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/16x16/actions/cheese-take-photo.png
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/22x22/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/22x22/actions/browse-webcam-effects.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/22x22/actions/cheese-take-burst.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/22x22/actions/cheese-take-photo.png
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/24x24/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/24x24/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/24x24/actions/browse-webcam-effects.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/24x24/actions/cheese-take-burst.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/24x24/actions/cheese-take-photo.png
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/32x32/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/32x32/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/32x32/actions/browse-webcam-effects.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/32x32/actions/cheese-take-burst.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/32x32/actions/cheese-take-photo.png
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/48x48/actions/browse-webcam-effects.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/48x48/actions/cheese-take-burst.png
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/48x48/actions/cheese-take-photo.png
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/scalable/
 drwxr-xr-x	root/root	usr/share/cheese/icons/hicolor/scalable/actions/
 -rw-r--r--	root/root	usr/share/cheese/icons/hicolor/scalable/actions/browse-webcam-effects.svg
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/scalable/actions/cheese-take-burst.svg
+-rw-r--r--	root/root	usr/share/cheese/icons/hicolor/scalable/actions/cheese-take-photo.svg
 drwxr-xr-x	root/root	usr/share/cheese/pixmaps/
 -rw-r--r--	root/root	usr/share/cheese/pixmaps/camera-icon.svg
 -rw-r--r--	root/root	usr/share/cheese/pixmaps/cheese-1.svg
@@ -70,69 +82,139 @@ drwxr-xr-x	root/root	usr/share/gnome/help/cheese/
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/C/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/C/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/C/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-screenshot.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-effects.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-fullscreen.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-main.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-preferences.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-share.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/C/figures/cheese-wide.jpg
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/ca/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/ca/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/de/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/de/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/de/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-screenshot.jpg -> ../../C/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/de/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/de/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/de/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/el/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/el/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/el/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-screenshot.jpg -> ../../C/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/el/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/en_GB/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/en_GB/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/en_GB/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-screenshot.jpg -> ../../C/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/es/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/es/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/es/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/fr/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/fr/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-screenshot.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-effects.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-fullscreen.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-main.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-preferences.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-share.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/figures/cheese-wide.jpg
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/it/
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/it/cheese.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/it/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/it/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/nl/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/nl/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/nl/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/nl/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/oc/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/oc/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/oc/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-screenshot.jpg -> ../../C/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/oc/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/pt_BR/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/pt_BR/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/pt_BR/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/pt_BR/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/ru/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/ru/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/ru/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-effects-screenshot.jpg -> ../../C/figures/cheese-effects-screenshot.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-screenshot.jpg -> ../../C/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ru/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/sv/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/sv/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/sv/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/th/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/th/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/th/figures/
--rw-r--r--	root/root	usr/share/gnome/help/cheese/th/figures/cheese-effects-screenshot.jpg
--rw-r--r--	root/root	usr/share/gnome/help/cheese/th/figures/cheese-screenshot.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/th/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/zh_CN/
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/zh_CN/cheese.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/zh_CN/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -144,6 +226,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/24x24/apps/cheese.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/cheese.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/cheese.png
@@ -166,9 +251,11 @@ drwxr-xr-x	root/root	usr/share/omf/cheese/
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-es.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-fr.omf
+-rw-r--r--	root/root	usr/share/omf/cheese/cheese-it.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-nl.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-oc.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-ru.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-sv.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-th.omf
+-rw-r--r--	root/root	usr/share/omf/cheese/cheese-zh_CN.omf
