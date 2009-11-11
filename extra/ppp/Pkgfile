@@ -1,0 +1,21 @@
+# Description: Service (Démon) permettant la gestion des ligne téléphonique pour la communication internet
+# URL: http://samba.org/ppp
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libpcap
+
+name=ppp
+version=2.4.4
+release=1
+source=(http://samba.org/ftp/$name/$name-$version.tar.gz
+	pppd)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make INSTROOT=$PKG install-etcppp
+	make INSTROOT=$PKG install
+	mkdir -p $PKG/etc/rc.d/init.d/
+	install -m755 ../pppd $PKG/etc/rc.d/init.d/
+}
