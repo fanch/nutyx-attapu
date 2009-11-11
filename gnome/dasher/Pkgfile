@@ -1,20 +1,17 @@
-# Description: Zooming predictive text entry system
+# Description: Système de zoom prédictable pour gnome
 # URL: http://www.inference.phy.cam.ac.uk/dasher
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: libbonoboui, libgnomeui, at-spi, gnome-speech, libwnck, gnome-keyring
-# Group: gnome/desktop
 
 name=dasher
 version=4.10.1
-release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
-
+release=2
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 	./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
-		--mandir=/usr/man \
 		--with-a11y=yes \
 		--with-gnome=yes \
 		--with-speech=yes \
