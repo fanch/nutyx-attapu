@@ -1,0 +1,40 @@
+# Description: Moteur gtk
+# URL: http://candido.berlios.de/pages/engine.php
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: gtk
+
+name=candido-engine
+version=0.9.1
+release=1
+source=(http://download.berlios.de/candido/candido-engine-0.9.1.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-Graphite.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-Candy.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-Hybrid.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-NeoGraphite.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-Calm.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-DarkOrange.tar.bz2 \
+http://download.berlios.de/candido/Candido-Engine-Metacity.tar.bz2 \
+http://candido.berlios.de/media/download_gallery/Candido-Selected.tar.bz2 \
+http://download.berlios.de/candido/Candido-Engine-Xfwm4.tar.bz2 \
+http://www.gnome-look.org/CONTENT/content-files/41800-Candido-gPerfect.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/42184-Candido-drear.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/42904-Candido-Graphite2.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/42954-Candido-Carbon.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/42940-Candido-puebla.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/43066-Candido-DarkLime.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/52629-Candido-Mist.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/45426-candido_luna.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/45289-Candido-Clearlooks.tar.gz \
+http://www.gnome-look.org/CONTENT/content-files/42998-Candido-DarkRed.tar.gz)
+
+build() {
+  cd candido-engine-0.9.1
+  ./configure --prefix=/usr \
+		--enable-animation 
+  make 
+  make DESTDIR=$PKG install
+  tar xjf ../Aurora.tar.bz2 -C $startdir/usr/share/themes
+  
+}
