@@ -1,14 +1,13 @@
 # Description: GNOME python desktop about screen
 # URL: http://www.gnome.org/about/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: gtksourceview, gnome-python, libgnomeui, startup-notification, gnome-doc-utils, totem, nautilus-cd-burner
-# Group: gnome/desktop
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtksourceview, gnome-python, libgnomeui, startup-notification, gnome-doc-utils, totem, nautilus-cd-burner, brasero
 
 name=gnome-python-desktop
-version=2.26.0
+version=2.28.0
 release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

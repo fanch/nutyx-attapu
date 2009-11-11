@@ -5,6 +5,10 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/braseroburn.la
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/braseroburn.so
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/braseromedia.la
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/braseromedia.so
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/bugbuddy.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/bugbuddy.pyc
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/bugbuddy.pyo
@@ -88,6 +92,8 @@ drwxr-xr-x	root/root	usr/share/pygtk/2.0/defs/
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/_gnomedesktop.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/applet.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/art.defs
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/brasero_burn.defs
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/brasero_media.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/ebook.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/evince.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gnomekeyring.defs
