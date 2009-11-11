@@ -11,7 +11,8 @@ source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$versio
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
+	./configure --prefix=$GNOME_PREFIX \
+		--libexecdir=$GNOME_PREFIX/lib/gnome-keyring
 		--sysconfdir=/etc
 	make
 	make DESTDIR=$PKG install
