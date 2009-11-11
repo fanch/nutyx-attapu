@@ -1,21 +1,17 @@
 # Description: Eazel Extensions Library
 # URL: http://www.gnome.org/projects/nautilus/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gnome-vfs, libgnomeui, pango, librsvg, gnome-desktop, gnome-menus
-# Group: gnome/desktop
 
 name=eel
-version=2.24.1
+version=2.26.0
 release=1
-gnomever=2.24.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	rm po/*.po
-	sed -i -e 's/USE_NLS=yes/USE_NLS=no/' \
-		-e 's/ENABLE_NLS 1/ENABLE_NLS 0/' configure
-	./configure --prefix=/usr
+	./configure --prefix=$GNOME_PREFIX
 	make
 	make DESTDIR=$PKG install
 }

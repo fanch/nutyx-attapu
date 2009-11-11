@@ -29,9 +29,7 @@ drwxr-xr-x	root/root	usr/include/eel-2/eel/
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-image-table.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-labeled-image.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-marshal.h
--rw-r--r--	root/root	usr/include/eel-2/eel/eel-mount-operation.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-pango-extensions.h
--rw-r--r--	root/root	usr/include/eel-2/eel/eel-preferences-glade.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-preferences.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-self-checks.h
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel-stock-dialogs.h
@@ -44,8 +42,13 @@ drwxr-xr-x	root/root	usr/include/eel-2/eel/
 -rw-r--r--	root/root	usr/include/eel-2/eel/eel.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libeel-2.la
-lrwxrwxrwx	root/root	usr/lib/libeel-2.so -> libeel-2.so.2.24.1
-lrwxrwxrwx	root/root	usr/lib/libeel-2.so.2 -> libeel-2.so.2.24.1
--rwxr-xr-x	root/root	usr/lib/libeel-2.so.2.24.1
+lrwxrwxrwx	root/root	usr/lib/libeel-2.so -> libeel-2.so.2.26.0
+lrwxrwxrwx	root/root	usr/lib/libeel-2.so.2 -> libeel-2.so.2.26.0
+-rwxr-xr-x	root/root	usr/lib/libeel-2.so.2.26.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/eel-2.0.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/eel-2.0.mo
