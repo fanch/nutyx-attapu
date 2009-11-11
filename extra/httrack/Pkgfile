@@ -1,0 +1,19 @@
+# Description: HTTrack Website Copier - Aspirateur de Sites Web
+# URL: http://www.httrack.com/ 
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: bash, zlib
+
+name=httrack
+version=3.43.7
+release=1
+source=(http://www.httrack.com/httrack-3.43-7.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
