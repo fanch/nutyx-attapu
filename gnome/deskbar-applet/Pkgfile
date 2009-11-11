@@ -1,18 +1,16 @@
-# Description: An omnipresent versatile search interface
+# Description: Une interface de recherche très conviviale pour gnome
 # URL: http://raphael.slinckx.net/deskbar/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk, pygtk, gnome-python-desktop, gnome-desktop
-# Group: gnome/desktop
 
 name=deskbar-applet
-version=2.26.2
+version=2.28.0
 release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
-
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
+	./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
 		--disable-schemas-install \
 		--disable-scrollkeeper
