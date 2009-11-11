@@ -1,14 +1,13 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/gnome/
-drwxr-xr-x	root/root	etc/gnome/gconf/
-drwxr-xr-x	root/root	etc/gnome/gconf/schemas/
--rw-r--r--	root/root	etc/gnome/gconf/schemas/evince-thumbnailer-comics.schemas
--rw-r--r--	root/root	etc/gnome/gconf/schemas/evince-thumbnailer-djvu.schemas
--rw-r--r--	root/root	etc/gnome/gconf/schemas/evince-thumbnailer.schemas
--rw-r--r--	root/root	etc/gnome/gconf/schemas/evince.schemas
+drwxr-xr-x	root/root	etc/gconf/
+drwxr-xr-x	root/root	etc/gconf/schemas/
+-rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-comics.schemas
+-rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-djvu.schemas
+-rw-r--r--	root/root	etc/gconf/schemas/evince.schemas
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/evince
+-rwxr-xr-x	root/root	usr/bin/evince-previewer
 -rwxr-xr-x	root/root	usr/bin/evince-thumbnailer
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/evince/
@@ -16,9 +15,11 @@ drwxr-xr-x	root/root	usr/include/evince/2.25/
 -rw-r--r--	root/root	usr/include/evince/2.25/evince-document.h
 -rw-r--r--	root/root	usr/include/evince/2.25/evince-view.h
 drwxr-xr-x	root/root	usr/include/evince/2.25/libdocument/
+-rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-annotation.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-async-renderer.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-attachment.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-backends-manager.h
+-rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-annotations.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-factory.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-find.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-fonts.h
@@ -28,6 +29,7 @@ drwxr-xr-x	root/root	usr/include/evince/2.25/libdocument/
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-layers.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-links.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-misc.h
+-rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-print.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-security.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-thumbnails.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-document-transition.h
@@ -42,6 +44,7 @@ drwxr-xr-x	root/root	usr/include/evince/2.25/libdocument/
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-link-action.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-link-dest.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-link.h
+-rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-mapping.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-page.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-render-context.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libdocument/ev-selection.h
@@ -51,6 +54,7 @@ drwxr-xr-x	root/root	usr/include/evince/2.25/libview/
 -rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-job-scheduler.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-jobs.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-page-cache.h
+-rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-stock-icons.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-view-type-builtins.h
 -rw-r--r--	root/root	usr/include/evince/2.25/libview/ev-view.h
 drwxr-xr-x	root/root	usr/lib/
@@ -69,16 +73,12 @@ drwxr-xr-x	root/root	usr/lib/evince/1/backends/
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libimpressdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libimpressdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libimpressdocument.so
--rw-r--r--	root/root	usr/lib/evince/1/backends/libpdfdocument.a
--rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpdfdocument.la
--rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpdfdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libpixbufdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libtiffdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.so
--rw-r--r--	root/root	usr/lib/evince/1/backends/pdfdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/pixbufdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/tiffdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/libevdocument.a
@@ -91,6 +91,11 @@ lrwxrwxrwx	root/root	usr/lib/libevdocument.so.1 -> libevdocument.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libevview.so -> libevview.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libevview.so.1 -> libevview.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libevview.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/nautilus/
+drwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/
+-rw-r--r--	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.a
+-rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.la
+-rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/evince-document-2.25.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/evince-view-2.25.pc
@@ -102,6 +107,7 @@ drwxr-xr-x	root/root	usr/share/ede/programs/
 drwxr-xr-x	root/root	usr/share/ede/programs/Utilities/
 -rw-r--r--	root/root	usr/share/ede/programs/Utilities/evince.desktop
 drwxr-xr-x	root/root	usr/share/evince/
+-rw-r--r--	root/root	usr/share/evince/evince-previewer-ui.xml
 -rw-r--r--	root/root	usr/share/evince/evince-toolbar.xml
 -rw-r--r--	root/root	usr/share/evince/evince-ui.xml
 -rw-r--r--	root/root	usr/share/evince/hand-open.png
@@ -135,6 +141,9 @@ drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/32x32/actions/
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/32x32/actions/view-page-facing.png
 drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/48x48/actions/
+-rw-r--r--	root/root	usr/share/evince/icons/hicolor/48x48/actions/close.png
+-rw-r--r--	root/root	usr/share/evince/icons/hicolor/48x48/actions/resize-se.png
+-rw-r--r--	root/root	usr/share/evince/icons/hicolor/48x48/actions/resize-sw.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/48x48/actions/view-page-continuous.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/48x48/actions/view-page-facing.png
 drwxr-xr-x	root/root	usr/share/gnome/
@@ -156,7 +165,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/evince/ca/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/cs/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/cs/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/cs/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/cs/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/cs/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/de/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/de/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/de/figures/
@@ -168,7 +177,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/evince/el/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/en_GB/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/en_GB/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/en_GB/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/en_GB/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/en_GB/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/es/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/es/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/es/figures/
@@ -200,19 +209,19 @@ drwxr-xr-x	root/root	usr/share/gnome/help/evince/nl/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/oc/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/oc/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/oc/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/oc/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/pt_BR/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/pt_BR/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/pt_BR/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/pt_BR/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/pt_BR/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/ru/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/ru/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/ru/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/ru/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/sr/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/sr/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/sr/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/sr/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/sr/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/sv/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/sv/figures/
@@ -221,10 +230,14 @@ drwxr-xr-x	root/root	usr/share/gnome/help/evince/uk/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/uk/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/uk/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/uk/figures/evince_start_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/evince/vi/
+-rw-r--r--	root/root	usr/share/gnome/help/evince/vi/evince.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/evince/vi/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/vi/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/zh_CN/
 -rw-r--r--	root/root	usr/share/gnome/help/evince/zh_CN/evince.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/evince/zh_CN/figures/
--rw-r--r--	root/root	usr/share/gnome/help/evince/zh_CN/figures/evince_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/evince/zh_CN/figures/evince_start_window.png -> ../../C/figures/evince_start_window.png
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -271,4 +284,5 @@ drwxr-xr-x	root/root	usr/share/omf/evince/
 -rw-r--r--	root/root	usr/share/omf/evince/evince-sr.omf
 -rw-r--r--	root/root	usr/share/omf/evince/evince-sv.omf
 -rw-r--r--	root/root	usr/share/omf/evince/evince-uk.omf
+-rw-r--r--	root/root	usr/share/omf/evince/evince-vi.omf
 -rw-r--r--	root/root	usr/share/omf/evince/evince-zh_CN.omf

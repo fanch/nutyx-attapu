@@ -2,26 +2,24 @@
 # URL: http://projects.gnome.org/evince/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: atk, cairo, cups, dbus-glib, djvulibre, e2fsprogs, expat, fontconfig, freetype, gconf, glib, glibc, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, xorg-libpixman, poppler-glib, shared-mime-info, zlib
+# Depends on: atk, cairo, cups, dbus-glib, djvulibre, expat, fontconfig, freetype, gconf, glib, glibc, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, xorg-libpixman, poppler-glib, shared-mime-info, zlib
 
 name=evince
-version=2.26.2
-release=4
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.26/$name-$version.tar.bz2 \
+version=2.28.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
 	evince.desktop evince.desktop.ede)
 
 build() {
 cd $name-$version
-	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
-	--sysconfdir=/etc/gnome/$GNOME_VERSION \
+	./configure --prefix=$GNOME_PREFIX \
+	--sysconfdir=/etc \
 	--localstatedir=/var/lib \
-	--mandir=$(pkg-config \
-		--variable=prefix ORBit-2.0)/share/man \
+	--mandir=$GNOME_PREFIX/share/man \
 	--enable-pixbuf \
 	--enable-impress \
 	--enable-djvu \
 	--disable-schemas-install \
-	--with-gconf-source="xml::/etc/gnome/gconf/gconf.xml.defaults" \
 	--disable-scrollkeeper
 
 	make
