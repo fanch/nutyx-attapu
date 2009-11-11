@@ -1,0 +1,21 @@
+# Description: Permet la gestion des réseaux sans fils
+# URL: http://www.gnome.org/projects/NetworkManager/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: dbus-glib, hal, glib, libnl, policykit, nss, wireless_tools, ppp
+
+name=networkmanager
+version=0.7.1
+release=1
+_name=NetworkManager
+source=(http://ftp.gnome.org/pub/gnome/sources/${_name}/${version%.*}/${_name}-$version.tar.bz2)
+
+build() {
+	cd ${_name}-$version
+	./configure --prefix=/usr \
+	--with-distro=redhat \
+	--without-gnome \
+	--without-dhcdbd
+	make
+	make DESTDIR=$PKG install
+}
