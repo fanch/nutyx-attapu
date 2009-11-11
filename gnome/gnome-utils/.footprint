@@ -38,9 +38,9 @@ drwxr-xr-x	root/root	usr/lib/gnome-utils/
 -rwxr-xr-x	root/root	usr/lib/gnome-utils/gnome-dictionary-applet
 -rw-r--r--	root/root	usr/lib/libgdict-1.0.a
 -rwxr-xr-x	root/root	usr/lib/libgdict-1.0.la
-lrwxrwxrwx	root/root	usr/lib/libgdict-1.0.so -> libgdict-1.0.so.6.0.5
-lrwxrwxrwx	root/root	usr/lib/libgdict-1.0.so.6 -> libgdict-1.0.so.6.0.5
--rwxr-xr-x	root/root	usr/lib/libgdict-1.0.so.6.0.5
+lrwxrwxrwx	root/root	usr/lib/libgdict-1.0.so -> libgdict-1.0.so.6.0.6
+lrwxrwxrwx	root/root	usr/lib/libgdict-1.0.so.6 -> libgdict-1.0.so.6.0.6
+-rwxr-xr-x	root/root	usr/lib/libgdict-1.0.so.6.0.6
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gdict-1.0.pc
 drwxr-xr-x	root/root	usr/share/
@@ -51,8 +51,9 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-search-tool.desktop
 -rw-r--r--	root/root	usr/share/applications/gnome-system-log.desktop
 drwxr-xr-x	root/root	usr/share/baobab/
+-rw-r--r--	root/root	usr/share/baobab/baobab-dialog-scan-props.ui
+-rw-r--r--	root/root	usr/share/baobab/baobab-main-window.ui
 drwxr-xr-x	root/root	usr/share/baobab/pixmaps/
--rw-r--r--	root/root	usr/share/baobab/pixmaps/baobab.glade
 -rw-r--r--	root/root	usr/share/baobab/pixmaps/shot.png
 drwxr-xr-x	root/root	usr/share/gdict-1.0/
 drwxr-xr-x	root/root	usr/share/gdict-1.0/sources/
@@ -63,11 +64,13 @@ drwxr-xr-x	root/root	usr/share/gnome-2.0/
 drwxr-xr-x	root/root	usr/share/gnome-2.0/ui/
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_DictionaryApplet.xml
 drwxr-xr-x	root/root	usr/share/gnome-dictionary/
--rw-r--r--	root/root	usr/share/gnome-dictionary/gnome-dictionary-preferences.glade
+-rw-r--r--	root/root	usr/share/gnome-dictionary/gnome-dictionary-preferences.ui
+-rw-r--r--	root/root	usr/share/gnome-dictionary/gnome-dictionary-source.ui
 -rw-r--r--	root/root	usr/share/gnome-dictionary/gnome-dictionary-ui.xml
 drwxr-xr-x	root/root	usr/share/gnome-screenshot/
 -rw-r--r--	root/root	usr/share/gnome-screenshot/gnome-screenshot.ui
 drwxr-xr-x	root/root	usr/share/gnome-utils/
+-rw-r--r--	root/root	usr/share/gnome-utils/logview-filter.ui
 -rw-r--r--	root/root	usr/share/gnome-utils/logview-toolbar.xml
 drwxr-xr-x	root/root	usr/share/gnome/
 drwxr-xr-x	root/root	usr/share/gnome/help/
@@ -86,60 +89,70 @@ drwxr-xr-x	root/root	usr/share/gnome/help/baobab/C/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/ca/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ca/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/cs/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/cs/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/cs/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/da/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/da/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/da/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/da/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/da/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/de/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/de/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/de/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/de/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/de/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/de/figures/baobab_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/baobab/el/
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/el/baobab.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/baobab/el/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/el/figures/baobab_fullscan.png
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/el/figures/baobab_prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/el/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/el/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/el/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/el/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/el/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/en_GB/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/en_GB/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/en_GB/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/es/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/es/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/es/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_ringschart2.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/es/figures/baobab_window.png
@@ -149,8 +162,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/baobab/eu/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/eu/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/fi/
@@ -159,8 +172,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/baobab/fi/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fi/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/fr/
@@ -169,49 +182,49 @@ drwxr-xr-x	root/root	usr/share/gnome/help/baobab/fr/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_ringschart2.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/fr/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/it/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/it/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/it/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/it/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/it/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/oc/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/oc/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/pl/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/pl/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/pl/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/ru/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/ru/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/ru/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/baobab.xml
@@ -219,40 +232,50 @@ drwxr-xr-x	root/root	usr/share/gnome/help/baobab/sv/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_fullscan.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/sv/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/uk/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/uk/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/uk/figures/baobab_window.png -> ../../C/figures/baobab_window.png
+drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_CN/
+-rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_CN/baobab.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_CN/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_HK/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_HK/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_HK/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_TW/
 -rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/baobab.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/baobab/zh_TW/figures/
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_fullscan.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_remote.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_ringschart1.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_ringschart2.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_treemaps.png
--rw-r--r--	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_fullscan.png -> ../../C/figures/baobab_fullscan.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_prefs.png -> ../../C/figures/baobab_prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_remote.png -> ../../C/figures/baobab_remote.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_ringschart1.png -> ../../C/figures/baobab_ringschart1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_ringschart2.png -> ../../C/figures/baobab_ringschart2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_treemaps.png -> ../../C/figures/baobab_treemaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/baobab/zh_TW/figures/baobab_window.png -> ../../C/figures/baobab_window.png
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/C/figures/
@@ -268,20 +291,31 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-applet.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-application.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-find.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-lookup.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-preferences-print.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-preferences-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-application.png -> ../../C/figures/gnome-dictionary-application.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-preferences-print.png -> ../../C/figures/gnome-dictionary-preferences-print.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ca/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ca/gnome-dictionary.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/cs/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-add-source.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-applet-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-application.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-find.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-lookup.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-preferences-print.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/figures/gnome-dictionary-preferences-source.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/cs/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-add-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-application.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-find.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/gnome-dictionary-lookup.png
@@ -290,31 +324,31 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/de/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/el/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-application.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-find.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-lookup.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-preferences-print.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-preferences-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/el/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/el/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-applet.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-application.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-find.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-lookup.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-preferences-print.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-preferences-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-application.png -> ../../C/figures/gnome-dictionary-application.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-preferences-print.png -> ../../C/figures/gnome-dictionary-preferences-print.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/en_GB/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-add-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-application.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-find.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/es/figures/gnome-dictionary-lookup.png
@@ -357,8 +391,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/fr/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/it/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-application.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-find.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/gnome-dictionary-lookup.png
@@ -367,34 +401,34 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/it/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/it/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/oc/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-applet.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-application.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-find.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-lookup.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-preferences-print.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-preferences-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-application.png -> ../../C/figures/gnome-dictionary-application.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-preferences-print.png -> ../../C/figures/gnome-dictionary-preferences-print.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/oc/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/oc/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/ru/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-applet.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-application.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-find.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-lookup.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-preferences-print.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-preferences-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-application.png -> ../../C/figures/gnome-dictionary-application.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-preferences-print.png -> ../../C/figures/gnome-dictionary-preferences-print.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/ru/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/ru/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/sv/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-add-source.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-applet-window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-application.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-find.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-preferences-print.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/sv/gnome-dictionary.xml
@@ -417,15 +451,23 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/ca/figures/gnome-search-tool_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-search-tool/ca/figures/gnome-search-tool_window.png -> ../../C/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/ca/gnome-search-tool.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/cs/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/cs/figures/gnome-search-tool_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/cs/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/de/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/de/gnome-search-tool.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/el/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/el/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/el/figures/gnome-search-tool_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/el/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/en_GB/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/en_GB/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/en_GB/figures/gnome-search-tool_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-search-tool/en_GB/figures/gnome-search-tool_window.png -> ../../C/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/en_GB/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/es/figures/
@@ -453,11 +495,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/ko/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/ko/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/oc/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/oc/figures/gnome-search-tool_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-search-tool/oc/figures/gnome-search-tool_window.png -> ../../C/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/oc/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/ru/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/ru/figures/gnome-search-tool_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-search-tool/ru/figures/gnome-search-tool_window.png -> ../../C/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/ru/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/sv/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/sv/figures/
@@ -475,7 +517,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/ca/figures/syslog_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/ca/figures/syslog_window.png -> ../../C/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/ca/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/de/figures/
@@ -483,11 +525,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/de/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/el/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/el/figures/syslog_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/el/figures/syslog_window.png -> ../../C/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/el/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/en_GB/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/en_GB/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/en_GB/figures/syslog_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/en_GB/figures/syslog_window.png -> ../../C/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/en_GB/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/es/figures/
@@ -515,11 +557,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/ko/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/ko/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/oc/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/oc/figures/syslog_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/oc/figures/syslog_window.png -> ../../C/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/oc/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/ru/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/ru/figures/syslog_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/ru/figures/syslog_window.png -> ../../C/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/ru/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/sv/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/sv/figures/
@@ -581,6 +623,7 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/baobab.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gnome-dictionary.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gnome-screenshot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gnome-search-tool.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gnome-system-log.1.gz
 drwxr-xr-x	root/root	usr/share/omf/
@@ -590,6 +633,7 @@ drwxr-xr-x	root/root	usr/share/omf/baobab/
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-cs.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-da.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-de.omf
+-rw-r--r--	root/root	usr/share/omf/baobab/baobab-el.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-es.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-eu.omf
@@ -601,11 +645,13 @@ drwxr-xr-x	root/root	usr/share/omf/baobab/
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-ru.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-sv.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-uk.omf
+-rw-r--r--	root/root	usr/share/omf/baobab/baobab-zh_CN.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-zh_HK.omf
 -rw-r--r--	root/root	usr/share/omf/baobab/baobab-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/omf/gnome-dictionary/
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-C.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-ca.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-cs.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-de.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-el.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-en_GB.omf
@@ -621,7 +667,9 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-dictionary/
 drwxr-xr-x	root/root	usr/share/omf/gnome-search-tool/
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-C.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-ca.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-cs.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-de.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-el.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-es.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-eu.omf
