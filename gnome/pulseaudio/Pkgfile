@@ -1,0 +1,27 @@
+# Description: serveur de sons pour GNOME
+# URL: http://www.pulseaudio.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: alsa-lib, dbus, gconf, gdbm, glib, hal, libcap, liboil, policykit, libsamplerate, libsndfile, speex
+
+name=pulseaudio
+version=0.9.20
+release=1
+source=(http://0pointer.de/lennart/projects/$name/$name-$version.tar.gz)
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--libexecdir=/usr/lib \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--disable-static \
+	--disable-avahi \
+	--disable-jack \
+	--disable-asyncns \
+	--disable-tcpwrap \
+	--disable-lirc \
+	--disable-bluez \
+	--disable-ltdl-install
+	make
+	make DESTDIR=$PKG install
+}
