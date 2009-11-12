@@ -1,15 +1,12 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/gconf/
+drwxr-xr-x	root/root	etc/gconf/schemas/
+-rw-r--r--	root/root	etc/gconf/schemas/ekiga.schemas
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ekiga
 -rwxr-xr-x	root/root	usr/bin/ekiga-config-tool
 -rwxr-xr-x	root/root	usr/bin/ekiga-helper
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/gconf/
-drwxr-xr-x	root/root	usr/etc/gconf/schemas/
--rw-r--r--	root/root	usr/etc/gconf/schemas/ekiga.schemas
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/ekiga.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/ekiga.desktop
@@ -53,7 +50,24 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/bg/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/bg/figures/config_d6.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/bg/figures/config_d7.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/bg/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/bg/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/bg/figures/lumi.png -> ../../C/figures/lumi.png
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/ca/
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/ca/ekiga.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/ca/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/accounts_d1.png -> ../../C/figures/accounts_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/accounts_h323.png -> ../../C/figures/accounts_h323.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/accounts_sip.png -> ../../C/figures/accounts_sip.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/audio_codecs.png -> ../../C/figures/audio_codecs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/call_d1.png -> ../../C/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d1.png -> ../../C/figures/config_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d2.png -> ../../C/figures/config_d2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d3.png -> ../../C/figures/config_d3.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d4.png -> ../../C/figures/config_d4.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d5.png -> ../../C/figures/config_d5.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d6.png -> ../../C/figures/config_d6.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d7.png -> ../../C/figures/config_d7.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/config_d8.png -> ../../C/figures/config_d8.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ca/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/de/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/de/figures/
@@ -61,7 +75,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/accounts_h323.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/accounts_sip.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/audio_codecs.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/de/figures/call_d1.png -> ../../C/figures/call_d1.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d1.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d2.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d3.png
@@ -70,24 +84,41 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d6.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d7.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/de/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/de/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/el/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_h323.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_sip.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/audio_codecs.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/call_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d2.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d3.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d4.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d5.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d6.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d7.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/el/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_d1.png -> ../../C/figures/accounts_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_h323.png -> ../../C/figures/accounts_h323.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/accounts_sip.png -> ../../C/figures/accounts_sip.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/audio_codecs.png -> ../../C/figures/audio_codecs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/call_d1.png -> ../../C/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d1.png -> ../../C/figures/config_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d2.png -> ../../C/figures/config_d2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d3.png -> ../../C/figures/config_d3.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d4.png -> ../../C/figures/config_d4.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d5.png -> ../../C/figures/config_d5.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d6.png -> ../../C/figures/config_d6.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d7.png -> ../../C/figures/config_d7.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/config_d8.png -> ../../C/figures/config_d8.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/el/figures/lumi.png -> ../../C/figures/lumi.png
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/en_GB/
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/en_GB/ekiga.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/en_GB/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/accounts_d1.png -> ../../C/figures/accounts_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/accounts_h323.png -> ../../C/figures/accounts_h323.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/accounts_sip.png -> ../../C/figures/accounts_sip.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/audio_codecs.png -> ../../C/figures/audio_codecs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/call_d1.png -> ../../C/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d1.png -> ../../C/figures/config_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d2.png -> ../../C/figures/config_d2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d3.png -> ../../C/figures/config_d3.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d4.png -> ../../C/figures/config_d4.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d5.png -> ../../C/figures/config_d5.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d6.png -> ../../C/figures/config_d6.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d7.png -> ../../C/figures/config_d7.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/config_d8.png -> ../../C/figures/config_d8.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/en_GB/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/es/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/es/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/es/figures/
@@ -105,6 +136,23 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/es/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/es/figures/config_d7.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/es/figures/config_d8.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/es/figures/lumi.png
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/eu/
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/ekiga.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/eu/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/accounts_d1.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/accounts_h323.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/accounts_sip.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/audio_codecs.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/call_d1.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d1.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d2.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d3.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d4.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d5.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d6.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d7.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/config_d8.png
+-rw-r--r--	root/root	usr/share/gnome/help/ekiga/eu/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/fi/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/fi/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/fi/figures/
@@ -142,20 +190,20 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/fr/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/oc/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_h323.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_sip.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/audio_codecs.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/call_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d2.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d3.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d4.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d5.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d6.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d7.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/oc/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_d1.png -> ../../C/figures/accounts_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_h323.png -> ../../C/figures/accounts_h323.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/accounts_sip.png -> ../../C/figures/accounts_sip.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/audio_codecs.png -> ../../C/figures/audio_codecs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/call_d1.png -> ../../C/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d1.png -> ../../C/figures/config_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d2.png -> ../../C/figures/config_d2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d3.png -> ../../C/figures/config_d3.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d4.png -> ../../C/figures/config_d4.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d5.png -> ../../C/figures/config_d5.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d6.png -> ../../C/figures/config_d6.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d7.png -> ../../C/figures/config_d7.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/config_d8.png -> ../../C/figures/config_d8.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/oc/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/pt_BR/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/pt_BR/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/pt_BR/figures/
@@ -176,20 +224,20 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/pt_BR/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/ru/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_h323.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_sip.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/audio_codecs.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/call_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d1.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d2.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d3.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d4.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d5.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d6.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d7.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/ru/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_d1.png -> ../../C/figures/accounts_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_h323.png -> ../../C/figures/accounts_h323.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/accounts_sip.png -> ../../C/figures/accounts_sip.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/audio_codecs.png -> ../../C/figures/audio_codecs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/call_d1.png -> ../../C/figures/call_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d1.png -> ../../C/figures/config_d1.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d2.png -> ../../C/figures/config_d2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d3.png -> ../../C/figures/config_d3.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d4.png -> ../../C/figures/config_d4.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d5.png -> ../../C/figures/config_d5.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d6.png -> ../../C/figures/config_d6.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d7.png -> ../../C/figures/config_d7.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/config_d8.png -> ../../C/figures/config_d8.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/ru/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/sv/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/sv/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/sv/figures/
@@ -206,7 +254,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/sv/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/sv/figures/config_d6.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/sv/figures/config_d7.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/sv/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/sv/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/sv/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/uk/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/uk/ekiga.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/uk/figures/
@@ -223,7 +271,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/ekiga/uk/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/uk/figures/config_d6.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/uk/figures/config_d7.png
 -rw-r--r--	root/root	usr/share/gnome/help/ekiga/uk/figures/config_d8.png
--rw-r--r--	root/root	usr/share/gnome/help/ekiga/uk/figures/lumi.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/ekiga/uk/figures/lumi.png -> ../../C/figures/lumi.png
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/
@@ -247,13 +295,23 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/72x72/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/72x72/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/72x72/apps/ekiga.png
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/ekiga.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ekiga.1.gz
 drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/ekiga/
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-C.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-bg.omf
+-rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-ca.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-de.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-el.omf
+-rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-es.omf
+-rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-eu.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-fi.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-fr.omf
 -rw-r--r--	root/root	usr/share/omf/ekiga/ekiga-oc.omf
