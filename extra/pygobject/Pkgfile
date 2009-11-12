@@ -2,12 +2,12 @@
 # URL: http://www.pygtk.org/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python glib
+# Depends on: python, glib
 
 name=pygobject
-version=2.18.0
+version=2.20.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.18/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
