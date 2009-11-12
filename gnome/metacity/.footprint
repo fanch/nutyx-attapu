@@ -24,8 +24,6 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libmetacity-private.so -> libmetacity-private.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libmetacity-private.so.0 -> libmetacity-private.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libmetacity-private.so.0.0.0
-drwxr-xr-x	root/root	usr/lib/metacity/
--rwxr-xr-x	root/root	usr/lib/metacity/metacity-dialog
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libmetacity-private.pc
 drwxr-xr-x	root/root	usr/share/
