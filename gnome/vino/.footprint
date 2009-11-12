@@ -15,11 +15,14 @@ drwxr-xr-x	root/root	usr/lib/vino/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/vino-preferences.desktop
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.Vino.service
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/vino.mo
 drwxr-xr-x	root/root	usr/share/vino/
--rw-r--r--	root/root	usr/share/vino/vino-preferences.glade
--rw-r--r--	root/root	usr/share/vino/vino-prompt.glade
+-rw-r--r--	root/root	usr/share/vino/vino-preferences.ui
+-rw-r--r--	root/root	usr/share/vino/vino-prompt.ui
 -rw-r--r--	root/root	usr/share/vino/webservices
