@@ -1,0 +1,23 @@
+# Description: Jeu pour le bureau gnome
+# URL: http://www.gnome.org/softwaremap/projects/gnome-games/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pango, cairo, gtk, gobject-introspection
+
+name=clutter
+version=1.1.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--localstatedir=/var \
+		--disable-schemas-install \
+		--disable-setgid \
+		--disable-tests \
+		--sysconfdir=/etc \
+		--disable-scrollkeeper
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+}
