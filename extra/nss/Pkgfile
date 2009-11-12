@@ -6,7 +6,7 @@
 
 name=nss
 version=3.12.3
-release=1
+release=2
 source=(ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_12_3_RTM/src/$name-$version.tar.bz2
 \
         nss-config.in)
@@ -45,4 +45,18 @@ build() {
     # we have to provide our own nss-config, because xulrunner needs it
     install -m 0755 $SRC/nss-config.in $PKG/usr/bin/nss-config
     sed -i "s/@VERSION@/$version/" $PKG/usr/bin/nss-config
+mkdir -p $PKG/usr/lib/pkgconfig
+cat > $PKG/usr/lib/pkgconfig/nss.pc << "EOF"
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include/nss
+
+Name: NSS
+Description: Mozilla Network Security Services
+Version: $version
+Requires: nspr >= 4.7.4
+Libs: -L/usr/lib -lnss3 -lnssutil3 -lsmime3 -lssl3 -lsoftokn3
+Cflags: -I/usr/include/nss
+EOF
 }
