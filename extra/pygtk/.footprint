@@ -149,6 +149,7 @@ drwxr-xr-x	root/root	usr/share/pygtk/2.0/defs/
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-2.10.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-2.12.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-2.14.defs
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-2.16.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-base-types.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-base.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gdk-types.defs
@@ -159,6 +160,8 @@ drwxr-xr-x	root/root	usr/share/pygtk/2.0/defs/
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-2.12.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-2.14-types.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-2.14.defs
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-2.16-types.defs
+-rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-2.16.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-base-types.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-base.defs
 -rw-r--r--	root/root	usr/share/pygtk/2.0/defs/gtk-extrafuncs.defs
