@@ -35,6 +35,34 @@ drwxr-xr-x	root/root	usr/share/gnome/help/zenity/bg/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/bg/figures/zenity-text-screenshot.png
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/bg/figures/zenity-warning-screenshot.png
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/bg/zenity.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/cs/
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-calendar-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-entry-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-error-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-fileselection-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-information-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-list-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-notification-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-progress-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-question-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-text-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/figures/zenity-warning-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/cs/zenity.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/da/
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-calendar-screenshot.png -> ../../C/figures/zenity-calendar-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-entry-screenshot.png -> ../../C/figures/zenity-entry-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-error-screenshot.png -> ../../C/figures/zenity-error-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-fileselection-screenshot.png -> ../../C/figures/zenity-fileselection-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-information-screenshot.png -> ../../C/figures/zenity-information-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-list-screenshot.png -> ../../C/figures/zenity-list-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-notification-screenshot.png -> ../../C/figures/zenity-notification-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-progress-screenshot.png -> ../../C/figures/zenity-progress-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-question-screenshot.png -> ../../C/figures/zenity-question-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-text-screenshot.png -> ../../C/figures/zenity-text-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/da/figures/zenity-warning-screenshot.png -> ../../C/figures/zenity-warning-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/da/zenity.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/de/figures/zenity-calendar-screenshot.png
@@ -49,6 +77,20 @@ drwxr-xr-x	root/root	usr/share/gnome/help/zenity/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/de/figures/zenity-text-screenshot.png
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/de/figures/zenity-warning-screenshot.png
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/de/zenity.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/el/
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/el/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-calendar-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-entry-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-error-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-fileselection-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-information-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-list-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-notification-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-progress-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-question-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-text-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/figures/zenity-warning-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/el/zenity.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/en_GB/
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/en_GB/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/en_GB/figures/zenity-calendar-screenshot.png -> ../../C/figures/zenity-calendar-screenshot.png
@@ -133,6 +175,20 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/oc/figures/zenity-question-scre
 lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/oc/figures/zenity-text-screenshot.png -> ../../C/figures/zenity-text-screenshot.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/oc/figures/zenity-warning-screenshot.png -> ../../C/figures/zenity-warning-screenshot.png
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/oc/zenity.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/pt_BR/
+drwxr-xr-x	root/root	usr/share/gnome/help/zenity/pt_BR/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-calendar-screenshot.png -> ../../C/figures/zenity-calendar-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-entry-screenshot.png -> ../../C/figures/zenity-entry-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-error-screenshot.png -> ../../C/figures/zenity-error-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-fileselection-screenshot.png -> ../../C/figures/zenity-fileselection-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-information-screenshot.png -> ../../C/figures/zenity-information-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-list-screenshot.png -> ../../C/figures/zenity-list-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-notification-screenshot.png -> ../../C/figures/zenity-notification-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-progress-screenshot.png -> ../../C/figures/zenity-progress-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-question-screenshot.png -> ../../C/figures/zenity-question-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-text-screenshot.png -> ../../C/figures/zenity-text-screenshot.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/zenity/pt_BR/figures/zenity-warning-screenshot.png -> ../../C/figures/zenity-warning-screenshot.png
+-rw-r--r--	root/root	usr/share/gnome/help/zenity/pt_BR/zenity.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/ru/
 drwxr-xr-x	root/root	usr/share/gnome/help/zenity/ru/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/zenity/ru/figures/zenity-calendar-screenshot.png
@@ -186,13 +242,17 @@ drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/zenity/
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-C.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-bg.omf
+-rw-r--r--	root/root	usr/share/omf/zenity/zenity-cs.omf
+-rw-r--r--	root/root	usr/share/omf/zenity/zenity-da.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-de.omf
+-rw-r--r--	root/root	usr/share/omf/zenity/zenity-el.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-es.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-eu.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-fi.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-fr.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-oc.omf
+-rw-r--r--	root/root	usr/share/omf/zenity/zenity-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-ru.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-sv.omf
 -rw-r--r--	root/root	usr/share/omf/zenity/zenity-uk.omf
@@ -211,5 +271,5 @@ drwxr-xr-x	root/root	usr/share/zenity/clothes/
 -rw-r--r--	root/root	usr/share/zenity/zenity-progress.png
 -rw-r--r--	root/root	usr/share/zenity/zenity-scale.png
 -rw-r--r--	root/root	usr/share/zenity/zenity-text.png
--rw-r--r--	root/root	usr/share/zenity/zenity.glade
 -rw-r--r--	root/root	usr/share/zenity/zenity.png
+-rw-r--r--	root/root	usr/share/zenity/zenity.ui
