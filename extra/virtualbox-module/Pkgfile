@@ -6,7 +6,7 @@
 
 name=virtualbox-module
 version=3.0.10
-release=1
+release=2
 _name=VirtualBox
 _kernel=`uname -r`
 _build=54097
