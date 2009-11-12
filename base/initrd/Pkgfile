@@ -5,8 +5,8 @@
 # Depends on: kernel
 
 name=initrd
-version=2.6.31.5
-release=2
+version=2.6.31.6
+release=1
 _tools=08112009
 SCRIPT_VERSION="2009.1"
 source=()
