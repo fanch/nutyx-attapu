@@ -2,12 +2,12 @@
 # URL: http://gtkmm.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libsigc++
+# Depends on: libsigc++, glib
 
 name=glibmm
-version=2.21.3
+version=2.22.1
 release=1
-source=(http://ftp.gnome.org/pub/GNOME/sources/$name/2.21/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
