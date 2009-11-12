@@ -11,14 +11,14 @@ drwxr-xr-x	root/root	usr/include/totem-pl-parser/1/plparser/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libtotem-plparser-mini.a
 -rwxr-xr-x	root/root	usr/lib/libtotem-plparser-mini.la
-lrwxrwxrwx	root/root	usr/lib/libtotem-plparser-mini.so -> libtotem-plparser-mini.so.12.2.5
-lrwxrwxrwx	root/root	usr/lib/libtotem-plparser-mini.so.12 -> libtotem-plparser-mini.so.12.2.5
--rwxr-xr-x	root/root	usr/lib/libtotem-plparser-mini.so.12.2.5
+lrwxrwxrwx	root/root	usr/lib/libtotem-plparser-mini.so -> libtotem-plparser-mini.so.12.4.4
+lrwxrwxrwx	root/root	usr/lib/libtotem-plparser-mini.so.12 -> libtotem-plparser-mini.so.12.4.4
+-rwxr-xr-x	root/root	usr/lib/libtotem-plparser-mini.so.12.4.4
 -rw-r--r--	root/root	usr/lib/libtotem-plparser.a
 -rwxr-xr-x	root/root	usr/lib/libtotem-plparser.la
-lrwxrwxrwx	root/root	usr/lib/libtotem-plparser.so -> libtotem-plparser.so.12.2.5
-lrwxrwxrwx	root/root	usr/lib/libtotem-plparser.so.12 -> libtotem-plparser.so.12.2.5
--rwxr-xr-x	root/root	usr/lib/libtotem-plparser.so.12.2.5
+lrwxrwxrwx	root/root	usr/lib/libtotem-plparser.so -> libtotem-plparser.so.12.4.4
+lrwxrwxrwx	root/root	usr/lib/libtotem-plparser.so.12 -> libtotem-plparser.so.12.4.4
+-rwxr-xr-x	root/root	usr/lib/libtotem-plparser.so.12.4.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/totem-plparser-mini.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/totem-plparser.pc

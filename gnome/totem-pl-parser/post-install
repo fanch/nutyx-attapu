@@ -1,6 +1,6 @@
 #!/bin/sh
 
-port=totem
+port=totem-pl-parser
 
 # gconf schemas
 SCHEMAS="`pkginfo -l $port | grep etc/gconf/schemas/.*\.schemas$`"
