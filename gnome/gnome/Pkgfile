@@ -1,7 +1,15 @@
-# Description: The GNOME desktop environment (meta-port)
+# Description: Le bureau GNOME, ce port installe tous les paquets gnome dans le bon ordre
 # URL: http://www.gnome.org/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: glib, gtk, orbit2, libbonobo, gconf, alacarte, iso-codes, libunique, devicekit, devicekit-power, bug-buddy, gnome-control-center, dasher, deskbar-applet, eel, eog, epiphany, evince, evolution, evolution-data-server, evolution-exchange, evolution-webcal, file-roller, gcalctool, gconf-editor, gdm, gedit, gnome-applets, gnome-backgrounds, gnome-desktop, gnome-doc-utils, gnome-games, gnome-icon-theme, gnome-keyring, gnome-keyring-manager, gnome-mag, gnome-media, gnome-audio, gnome-menus, gnome-netstatus, gnome-panel, gnome-power-manager, gnome-python-desktop, gnome-screensaver, gnome-session, gnome-speech, gnome-system-monitor, gnome-terminal, gnome-themes, gnome-user-docs, gnome-utils, gnome-volume-manager, gok, gst-plugins-base, gst-plugins-good, gstreamer, gtk-engines, gtkhtml, gtksourceview, gucharmap, libgail-gnome, libgnomeprint, libgnomeprintui, libgtop, librsvg, libsoup, libwnck, zenity, metacity, nautilus, nautilus-cd-burner, brasero, orca, rarian, sound-juicer, startup-notification, totem, vino, vte, yelp, vinagre, cheese
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib, gtk, orbit2, libbonobo, gconf, alacarte, iso-codes, libunique, devicekit,
+# devicekit-power, bug-buddy, gnome-control-center, dasher, deskbar-applet, eel, eog, epiphany, evince,
+# evolution, evolution-data-server, evolution-exchange, evolution-webcal, file-roller, gcalctool,
+# gconf-editor, gdm, gedit, gnome-applets, gnome-backgrounds, gnome-desktop, gnome-doc-utils, gnome-games,
+# gnome-icon-theme, gnome-keyring, gnome-keyring-manager, gnome-mag, gnome-media, gnome-audio,
+# gnome-menus, gnome-netstatus, gnome-panel, gnome-power-manager, gnome-python-desktop, gnome-screensaver,
+# gnome-session, gnome-speech, gnome-system-monitor, gnome-terminal, gnome-themes, gnome-user-docs,
+# gnome-utils, gnome-volume-manager, gok, gst-plugins-base, gst-plugins-good, ekiga, gstreamer, gtk-engines, gtkhtml, gtksourceview, gucharmap, libgail-gnome, libgnomeprint, libgnomeprintui, libgtop, librsvg, libsoup, libwnck, zenity, metacity, nautilus, nautilus-cd-burner, brasero, orca, rarian, sound-juicer, startup-notification, totem, vino, vte, yelp, vinagre, cheese
 
 name=gnome
 version=2.28.1
