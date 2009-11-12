@@ -1,21 +1,19 @@
-# Description: The official movie player of the GNOME desktop environment
+# Description: Le lecteur multimédia de GNOME
 # URL: http://www.gnome.org/projects/totem/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: iso-codes, eel, gst-plugins-good, nautilus, gst-plugins-bad, gst-plugins-ugly, gst-ffmpeg, totem-pl-parser
-# Group: gnome/desktop
 
 name=totem
-version=2.26.3
+version=2.28.2
 release=1
-gnomever=2.26.3
-source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr \
+	./configure --prefix=$GNOME_PREFIX \
 		--sysconfdir=/etc \
-		--mandir=/usr/man \
-		--libexecdir=/usr/lib/$name \
+		--libexecdir=$GNOME_PREFIX/lib/$name \
 		--disable-schemas-install \
 		--enable-gstreamer=yes \
 		--enable-browser-plugins \
