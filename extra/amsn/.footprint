@@ -162,6 +162,7 @@ drwxr-xr-x	root/root	usr/share/amsn/lang/
 -rw-r--r--	root/root	usr/share/amsn/lang/langid
 -rw-r--r--	root/root	usr/share/amsn/lang/langis
 -rw-r--r--	root/root	usr/share/amsn/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/lang/langko
 -rw-r--r--	root/root	usr/share/amsn/lang/langku
 -rw-r--r--	root/root	usr/share/amsn/lang/langlt
@@ -180,6 +181,7 @@ drwxr-xr-x	root/root	usr/share/amsn/lang/
 -rw-r--r--	root/root	usr/share/amsn/lang/langsr
 -rw-r--r--	root/root	usr/share/amsn/lang/langsv
 -rw-r--r--	root/root	usr/share/amsn/lang/langtr
+-rw-r--r--	root/root	usr/share/amsn/lang/langvn
 -rw-r--r--	root/root	usr/share/amsn/lang/langzh-CN
 -rw-r--r--	root/root	usr/share/amsn/lang/langzh-TW
 -rwxr-xr-x	root/root	usr/share/amsn/lang/missing.py
@@ -198,14 +200,18 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/
 drwxr-xr-x	root/root	usr/share/amsn/plugins/ColoredNicks/
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/colorednicks.tcl
 drwxr-xr-x	root/root	usr/share/amsn/plugins/ColoredNicks/lang/
+-rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langde
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langen
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langes
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langhu
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langno
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langpt_BR
+-rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/lang/langtr
 -rw-r--r--	root/root	usr/share/amsn/plugins/ColoredNicks/plugininfo.xml
 drwxr-xr-x	root/root	usr/share/amsn/plugins/MSNGameTTT/
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/GameTTT.tcl
@@ -215,8 +221,12 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langes
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langhu
+-rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langno
+-rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langpt_BR
+-rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/lang/langtr
 drwxr-xr-x	root/root	usr/share/amsn/plugins/MSNGameTTT/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/pixmaps/background.png
 -rw-r--r--	root/root	usr/share/amsn/plugins/MSNGameTTT/pixmaps/empty_normal.png
@@ -242,29 +252,31 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/Nudge/lang/
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langhu
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langnl
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langno
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langpt_BR
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langsv
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langtr
+-rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langzh-CN
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/lang/langzh-TW
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/nudge.wav
 -rw-r--r--	root/root	usr/share/amsn/plugins/Nudge/plugininfo.xml
-drwxr-xr-x	root/root	usr/share/amsn/plugins/PowerTool/
--rw-r--r--	root/root	usr/share/amsn/plugins/PowerTool/plugininfo.xml
--rw-r--r--	root/root	usr/share/amsn/plugins/PowerTool/powertool.tcl
-drwxr-xr-x	root/root	usr/share/amsn/plugins/Restore/
--rw-r--r--	root/root	usr/share/amsn/plugins/Restore/plugininfo.xml
--rw-r--r--	root/root	usr/share/amsn/plugins/Restore/restore.tcl
 drwxr-xr-x	root/root	usr/share/amsn/plugins/SearchContact/
 drwxr-xr-x	root/root	usr/share/amsn/plugins/SearchContact/lang/
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langde
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langen
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langes
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langhu
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langno
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langpt
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langpt_BR
+-rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/lang/langtr
 drwxr-xr-x	root/root	usr/share/amsn/plugins/SearchContact/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/pixmaps/clear.png
 -rw-r--r--	root/root	usr/share/amsn/plugins/SearchContact/pixmaps/license.txt
@@ -274,14 +286,17 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/SearchContact/pixmaps/
 drwxr-xr-x	root/root	usr/share/amsn/plugins/WebcamShooter/
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/camshoot.tcl
 drwxr-xr-x	root/root	usr/share/amsn/plugins/WebcamShooter/lang/
+-rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langde
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langen
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langes
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langfi
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langhu
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langno
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langpt_BR
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langsv
 -rw-r--r--	root/root	usr/share/amsn/plugins/WebcamShooter/lang/langtr
@@ -310,6 +325,47 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/inkdraw/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/plugins/inkdraw/pixmaps/ink_normal.png
 -rw-r--r--	root/root	usr/share/amsn/plugins/inkdraw/pixmaps/ink_tiny.png
 -rw-r--r--	root/root	usr/share/amsn/plugins/inkdraw/plugininfo.xml
+drwxr-xr-x	root/root	usr/share/amsn/plugins/music/
+drwxr-xr-x	root/root	usr/share/amsn/plugins/music/MusicWin/
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/MusicWin/MusicWin.cpp
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/MusicWin/MusicWin.dsp
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/MusicWin/MusicWin.dsw
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/MusicWin/MusicWin.h
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/MusicWin/wa_ipc.h
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/display_and_send.scpt
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infoamarok
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infoamarok2
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infoaudacious
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infobanshee
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/infocog.scpt
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infoexaile
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infogmusicbrowser
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infojuk
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infojuk2
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infolastfm
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infolisten
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infompris
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/inforhythmbox
+-rwxr-xr-x	root/root	usr/share/amsn/plugins/music/infosongbird
+drwxr-xr-x	root/root	usr/share/amsn/plugins/music/lang/
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langda
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langee
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langen
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langes
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langfi
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langfr
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langfr_CA
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langhu
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langlt
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langpt_BR
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/lang/langsv
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/music.tcl
+drwxr-xr-x	root/root	usr/share/amsn/plugins/music/pixmaps/
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/pixmaps/notesdispic.gif
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/pixmaps/notespic.gif
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/plugininfo.xml
+-rw-r--r--	root/root	usr/share/amsn/plugins/music/readme.txt
 drwxr-xr-x	root/root	usr/share/amsn/plugins/remind/
 drwxr-xr-x	root/root	usr/share/amsn/plugins/remind/lang/
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langca
@@ -323,8 +379,10 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/remind/lang/
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langfr_CA
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langhu
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langno
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langpt_BR
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langsv
 -rw-r--r--	root/root	usr/share/amsn/plugins/remind/lang/langtr
@@ -340,8 +398,10 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/winks/lang/
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langfr
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langhu
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langit
+-rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langja
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langlt
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langnl
+-rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langno
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langpt_BR
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langsv
 -rw-r--r--	root/root	usr/share/amsn/plugins/winks/lang/langtr
@@ -365,6 +425,449 @@ drwxr-xr-x	root/root	usr/share/amsn/plugins/winks/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/sip.tcl
 -rw-r--r--	root/root	usr/share/amsn/skins.tcl
 drwxr-xr-x	root/root	usr/share/amsn/skins/
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/desc.txt
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/displaypic/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/displaypic/amsnicon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/license
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/bindings.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/entries.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/makecommands.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/menushell.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/pixmapmenu.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapmenu/pkgIndex.tcl
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/alarm.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/amsn.xbm
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/amsnicon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/amsnmask.xbm
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/amsnplusbutton.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/amsnplusbutton_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/arrow.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/arrow.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/away.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/back.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/baway.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/bbusy.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/bell.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/belloff.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/blocked.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/blocked_offline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/boffline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/bonline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_body.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_down.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_downleft.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_downright.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_left.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_right.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_up.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_upleft.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/box_upright.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/busy.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butblock.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butblock_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butcall.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butcall_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butcallvideo.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butcallvideo_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butdraw.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butdraw_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butfont.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butfont_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butgridoff.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butgridoff_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butgridon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butgridon_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/buthangup.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/buthangup_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butinvite.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butinvite_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butsend.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butsend_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butsmile.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butsmile_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/buttext.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/buttext_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butvoice.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butvoice_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butwebcam.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butwebcam_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butwipe.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/butwipe_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/cam_in_chatwin.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/camempty.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/camicon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkSpelling.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkSpelling_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkbox.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkbox_on.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkmark.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/checkmark.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/colorbar.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/confbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/confbuth.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/contract.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/contract_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/cwtopback.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/daway.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dbrb.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dbusy.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dhidden.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dinactive.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dlunch.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/doffline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/donline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/download.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/dphone.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/expand.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/expand_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/fticon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/ftreject.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/globe.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/gnotify_empty.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/gnotify_error.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/gnotify_new.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/greyline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/idle.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/imghide.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/imghide_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/imgshow.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/imgshow_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/lesstabs.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/loganim.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/loginbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/loginbut_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/logolinmsn.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/logomacmsn.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_arrow_down.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_arrow_right.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_background1.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_background2.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_select.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/menu_separator.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/messenger.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/miniinfo.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/minijoins.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/minileaves.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/miniwarn.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/mobile.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/moretabs.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/msnbot.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/mystatus_bg.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/newline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/no-emblem.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/note.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notesdispic.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notespic.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifclose.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifico.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifyemail.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifymsg.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifyoffline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifyonline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifyplugins.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notifystate.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/notinlist.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/nudge.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/nudgebutton.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/nudgebutton_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/nudgeoff.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/offline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/online.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/pause.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/pausebut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/pausebuth.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/playbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/playbuth.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/pop3_mailpic.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefalerts.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefaway.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefemotic.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/preffont.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefhist.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefhist2.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/preflook.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefmobile.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefmsg.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefnat.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefpers.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefphone.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefprofile.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefproxy.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/prefstatus.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/radiobox.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/radiomark.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/recordbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/recordbuth.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/select_bg.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/select_border.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/sendbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/sendbut_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/smile.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/space_noupdate.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/space_update.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/star.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/stopbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/stopbuth.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab_close.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab_close_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab_current.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab_flicker.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tab_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tex.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/tex_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/typing.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/unread.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/unread_tray.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/voice.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/warning.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/webcam.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/webmsn.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/winksbut.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/winksbut_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmaps/yes-emblem.png
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow1.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow1_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow1_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow1_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow2.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow2_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow2_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/arrow2_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbody.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbody_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbody_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbody_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbottom.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbottom_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbottom_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/sliderbottom_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidergrip.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidergrip_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidergrip_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidergrip_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidertop.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidertop_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidertop_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/slidertop_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/horizontal/trough.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/pixmapscroll.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/pkgIndex.tcl
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/test.tcl
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow1.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow1_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow1_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow1_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow2.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow2_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow2_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/arrow2_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbody.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbody_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbody_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbody_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbottom.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbottom_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbottom_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/sliderbottom_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidergrip.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidergrip_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidergrip_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidergrip_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidertop.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidertop_disabled.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidertop_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/slidertop_pressed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/pixmapscroll/vertical/trough.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/settings.xml
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Airplane.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Airplane.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Angel.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Angel_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Angry_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Angry_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Ashamed_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Asl.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Auto.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Auto.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Baring_teeth_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Baring_teeth_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Bat.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Be_Right_Back.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Be_Right_Back_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Beer.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Beer.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Birthday_cake.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Birthday_cake.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Black_sheep.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Bowl.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Bowl.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Boy.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Boy.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Broken_heart.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Broken_heart.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Camera.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Camera.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Cat.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Cat_face.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Cigarette.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Cigarette.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Clapping_hands.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Clock.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Clock.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Coffee_cup.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Coffee_cup.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Computer.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Computer.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Confused_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Confused_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Crying_face.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Crying_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Devil.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Devil.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Disappointed_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dog.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dog_face.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dont_know_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dont_tell_anyone.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dont_tell_anyone_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dry_martini.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Dry_martini.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Email.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Email.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Embarrassed_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Eye_rolling_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Eye_rolling_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Filmstrip.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Filmstrip.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Fingerscrossed.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Fingerscrossed.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Gift.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Gift_with_a_bow.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Girl.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Girl.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Goat.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Handcuffs.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Handcuffs.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Happy_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Heart.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Hi_five.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Hot_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Hot_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/IM.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Island.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Island_with_a_palm_tree.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Kiss.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Left_hug.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Left_hug.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Light.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Light_bulb.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Lightning.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Messenger.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Messenger.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Mobile_phone.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Mobile_phone.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Money.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Money.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Moon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Nerd_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Nerd_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Note.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Note.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Oh_my_God_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Open_mouthed_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Party_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Pizza.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Pizza.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Plate.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Plate.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Rain.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Rainbow.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Rainbow.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Red_heart.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Red_lips.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Red_rose.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Right_hug.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Right_hug.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Rose.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sad_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sad_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sarcastic_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sarcastic_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Secret_telling_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Secret_telling_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sheep.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Shocked_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sick_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sick_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sleeping_half-moon.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sleepy_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sleepy_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Smiley_with_tonque_out.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Snail.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Snail.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Soccer_ball.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Soccer_ball.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Star.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Star.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Storm.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sun.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Sun.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Surprised_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Telephone_receiver.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Telephone_receiver.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thinking_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thinking_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thumbs_down.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thumbs_down.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thumbs_up.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Thumbs_up.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Tonque_out_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Turtle.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Turtle.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Umbrella.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Umbrella.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Vampire_bat.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Very_happy_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/What_The_Fuck.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Wilted_rose.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Wilted_rose.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Winking_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Winking_smiley.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Xbox.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/Xbox.png
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/i_dont_know.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/null
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/party_smiley.gif
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/smileys/rain.gif
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/alarm.wav
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/newemail.wav
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/nudge.wav
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/offline.wav
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/online.wav
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/sounds/type.wav
+drwxr-xr-x	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/away.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/bossmode.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/brb.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/busy.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/hidden.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/inactive.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/lunch.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/msn.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/offline.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/online.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/phone.ico
+-rw-r--r--	root/root	usr/share/amsn/skins/Dark Matter 4.0/winicons/unread.ico
 drwxr-xr-x	root/root	usr/share/amsn/skins/default/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/desc.txt
 drwxr-xr-x	root/root	usr/share/amsn/skins/default/displaypic/
@@ -399,6 +902,8 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/displaypic/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/license
 drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/alarm.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/ampli.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/ampli_pressed.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/amsnicon.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/arrow.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/arrowmac.png
@@ -407,6 +912,7 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/assistant_webcam.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/away.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/away_emblem.png
+-rwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/away_emblem_detailedview.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/back.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/baway.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/bbusy.png
@@ -429,10 +935,13 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/box_upright.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/busy.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/busy_emblem.png
+-rwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/busy_emblem_detailedview.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butblock.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butblock_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butcall.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butcall_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butcallvideo.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butcallvideo_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butdraw.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butdraw_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butfont.png
@@ -443,6 +952,9 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butgridon_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/buthangup.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/buthangup_hover.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/buthangup_mini.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/buthangupvideo.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/buthangupvideo_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butinvite.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butinvite_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/butsend.png
@@ -485,6 +997,7 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/checkbox_on.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/checkmark.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/colorbar.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/colorskin.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/confbut.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/confbuth.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/contract.png
@@ -509,6 +1022,8 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/gnotify_error.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/gnotify_new.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/greyline.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/grouptopback_dark.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/grouptopback_light.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/idle.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/imghide.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/imghide_hover.png
@@ -530,6 +1045,8 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/menu_select.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/menu_separator.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/messenger.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/mic.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/mic_muted.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/miniinfo.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/minijoins.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/minileaves.png
@@ -555,6 +1072,7 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/notifystate.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/notinlist.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/notinlist_emblem.png
+-rwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/notinlist_emblem_detailedview.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/nudgebutton.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/nudgebutton_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/null
@@ -564,6 +1082,7 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/pausebut.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/pausebuth.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/plain_emblem.png
+-rwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/plain_emblem_detailedview.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/playbut.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/playbuth.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/pop3_mailpic.png
@@ -589,11 +1108,14 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/pixmaps/
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/sendbut.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/sendbut_hover.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/sipicon.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/smallanim.gif
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/smile.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/space_noupdate.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/space_update.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/spaces_dock.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/spaces_undock.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/speaker.png
+-rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/speaker_muted.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/star.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/stopbut.png
 -rw-r--r--	root/root	usr/share/amsn/skins/default/pixmaps/stopbuth.png
@@ -728,96 +1250,101 @@ drwxr-xr-x	root/root	usr/share/amsn/skins/default/winicons/
 -rw-r--r--	root/root	usr/share/amsn/sxml.tcl
 -rw-r--r--	root/root	usr/share/amsn/trayicon.tcl
 drwxr-xr-x	root/root	usr/share/amsn/utils/
+drwxr-xr-x	root/root	usr/share/amsn/utils/BWidget-1.9.0/
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/LICENSE.txt
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/arrow.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/bitmap.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/button.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/buttonbox.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/color.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/combobox.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/dialog.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/dragsite.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/dropsite.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/dynhelp.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/entry.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/font.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/bold.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/copy.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/cut.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/dragfile.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/dragicon.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/error.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/file.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/folder.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/hourglass.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/info.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/italic.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/minus.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/new.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/opcopy.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/open.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/openfold.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/oplink.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/opmove.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/overstrike.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/palette.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/passwd.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/paste.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/plus.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/print.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/question.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/redo.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/save.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/target.xbm
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/underline.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/undo.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/images/warning.gif
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/init.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/label.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/labelentry.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/labelframe.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/da.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/de.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/en.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/es.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/fr.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/hu.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/nl.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/lang/no.rc
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/listbox.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/mainframe.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/messagedlg.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/notebook.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/pagesmgr.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/panedw.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/panelframe.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/passwddlg.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/pkgIndex.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/progressbar.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/progressdlg.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/scrollframe.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/scrollview.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/scrollw.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/separator.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/spinbox.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/statusbar.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/titleframe.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/tree.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/utils.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/widget.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/wizard.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/BWidget-1.9.0/xpm2image.tcl
 drwxr-xr-x	root/root	usr/share/amsn/utils/TkCximage/
 -rwxr-xr-x	root/root	usr/share/amsn/utils/TkCximage/TkCximage.so
 -rw-r--r--	root/root	usr/share/amsn/utils/TkCximage/pkgIndex.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/asyncresolver/
+-rw-r--r--	root/root	usr/share/amsn/utils/asyncresolver/asyncresolver.tcl
+-rwxr-xr-x	root/root	usr/share/amsn/utils/asyncresolver/libasyncresolver.so
+-rw-r--r--	root/root	usr/share/amsn/utils/asyncresolver/pkgIndex.tcl
 drwxr-xr-x	root/root	usr/share/amsn/utils/base64/
 -rw-r--r--	root/root	usr/share/amsn/utils/base64/base64.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/base64/license.terms
 -rw-r--r--	root/root	usr/share/amsn/utils/base64/pkgIndex.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/base64/uuencode.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/base64/yencode.tcl
-drwxr-xr-x	root/root	usr/share/amsn/utils/bwidget1.8.0/
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/LICENSE.txt
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/arrow.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/bitmap.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/button.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/buttonbox.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/color.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/combobox.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/dialog.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/dragsite.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/dropsite.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/dynhelp.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/entry.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/font.tcl
-drwxr-xr-x	root/root	usr/share/amsn/utils/bwidget1.8.0/images/
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/bold.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/copy.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/cut.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/dragfile.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/dragicon.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/error.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/file.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/folder.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/hourglass.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/info.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/italic.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/minus.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/new.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/opcopy.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/open.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/openfold.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/oplink.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/opmove.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/overstrike.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/palette.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/passwd.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/paste.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/plus.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/print.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/question.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/redo.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/save.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/target.xbm
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/underline.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/undo.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/images/warning.gif
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/init.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/label.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/labelentry.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/labelframe.tcl
-drwxr-xr-x	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/da.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/de.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/en.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/es.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/fr.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/hu.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/lang/nl.rc
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/listbox.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/mainframe.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/messagedlg.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/notebook.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/pagesmgr.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/panedw.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/panelframe.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/passwddlg.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/pkgIndex.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/progressbar.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/progressdlg.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/scrollframe.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/scrollview.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/scrollw.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/separator.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/spinbox.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/statusbar.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/titleframe.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/tree.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/utils.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/widget.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/wizard.tcl
--rw-r--r--	root/root	usr/share/amsn/utils/bwidget1.8.0/xpm2image.tcl
 drwxr-xr-x	root/root	usr/share/amsn/utils/combobox/
 -rw-r--r--	root/root	usr/share/amsn/utils/combobox/combobox.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/combobox/pkgIndex.tcl
@@ -836,6 +1363,9 @@ drwxr-xr-x	root/root	usr/share/amsn/utils/drawboard/
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/drawboard.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/grid.png
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/pkgIndex.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/farsight/
+-rw-r--r--	root/root	usr/share/amsn/utils/farsight/pkgIndex.tcl
+-rwxr-xr-x	root/root	usr/share/amsn/utils/farsight/tcl_farsight.so
 drwxr-xr-x	root/root	usr/share/amsn/utils/framec/
 -rw-r--r--	root/root	usr/share/amsn/utils/framec/framec.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/framec/pkgIndex.tcl
@@ -963,6 +1493,10 @@ drwxr-xr-x	root/root	usr/share/amsn/utils/uri/
 -rw-r--r--	root/root	usr/share/amsn/utils/uri/pkgIndex.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/uri/uri.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/uri/urn-scheme.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/voipcontrols/
+-rw-r--r--	root/root	usr/share/amsn/utils/voipcontrols/pkgIndex.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/voipcontrols/test.tcl
+-rw-r--r--	root/root	usr/share/amsn/utils/voipcontrols/voipcontrols.tcl
 drwxr-xr-x	root/root	usr/share/amsn/utils/webcamsn/
 -rw-r--r--	root/root	usr/share/amsn/utils/webcamsn/pkgIndex.tcl
 -rwxr-xr-x	root/root	usr/share/amsn/utils/webcamsn/webcamsn.so

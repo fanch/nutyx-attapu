@@ -2,15 +2,15 @@
 # URL: http://www.amsn-project.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: tk, gnutls, sox
+# Depends on: tk, gnutls, sox, farsight2
 
 name=amsn
-version=0.98svn
+version=0.98.1
 release=1
-source=(http://princesse-alice.toile-libre.org/frugalware/paquets-sources/amsn-svn-R10819.tar.gz)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
-		cd $name
+		cd $name-$version
                 ./configure --prefix=/usr\
 			    --libdir=/usr/lib \
 		            --bindir=/usr/bin \
