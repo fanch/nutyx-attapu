@@ -28,6 +28,12 @@ drwxr-xr-x	root/root	usr/lib/sox/
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_alsa.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_alsa.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_alsa.so
+-rw-r--r--	root/root	usr/lib/sox/libsox_fmt_amr_nb.a
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_nb.la
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_nb.so
+-rw-r--r--	root/root	usr/lib/sox/libsox_fmt_amr_wb.a
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_wb.la
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_wb.so
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_au.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_au.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_au.so
@@ -58,6 +64,9 @@ drwxr-xr-x	root/root	usr/lib/sox/
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_fap.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_fap.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_fap.so
+-rw-r--r--	root/root	usr/lib/sox/libsox_fmt_ffmpeg.a
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_ffmpeg.la
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_ffmpeg.so
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_flac.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_flac.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_flac.so
@@ -181,6 +190,9 @@ drwxr-xr-x	root/root	usr/lib/sox/
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_wav.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wav.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wav.so
+-rw-r--r--	root/root	usr/lib/sox/libsox_fmt_wavpack.a
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wavpack.la
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wavpack.so
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_wve.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wve.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_wve.so
