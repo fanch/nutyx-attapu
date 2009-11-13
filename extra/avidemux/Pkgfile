@@ -1,0 +1,24 @@
+# Description: Editeur Video
+# URL: http://fixounet.free.fr/avidemux/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: faac, lame, libsdl, libvorbis, libxvid, libxv, libxml2, sdl
+
+name=avidemux
+version=2.5.1
+release=1
+source=(http://download.berlios.de/avidemux/avidemux_$version.tar.gz avidemux-2.5-i18n.patch)
+
+build()
+{
+  cd ${name}_${version}
+  patch -p1 < ../avidemux-2.5-i18n.patch
+  mkdir build
+  cd build
+  cmake -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release -D NO_GTK=0 -D NO_QT4=0 ..
+  make
+  make DESTDIR=$PKG install
+}
+
+
+

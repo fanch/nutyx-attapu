@@ -1,0 +1,59 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/avidemux2_cli
+-rwxr-xr-x	root/root	usr/bin/avidemux2_gtk
+-rwxr-xr-x	root/root	usr/bin/avidemux2_qt4
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libADM5avcodec.so.52
+-rw-r--r--	root/root	usr/lib/libADM5avformat.so.52
+-rw-r--r--	root/root	usr/lib/libADM5avutil.so.50
+-rw-r--r--	root/root	usr/lib/libADM5postproc.so.51
+-rw-r--r--	root/root	usr/lib/libADM5swscale.so.0
+-rwxr-xr-x	root/root	usr/lib/libADM_UICli.so
+-rwxr-xr-x	root/root	usr/lib/libADM_UIGtk.so
+-rwxr-xr-x	root/root	usr/lib/libADM_UIQT4.so
+-rwxr-xr-x	root/root	usr/lib/libADM_core.so
+-rwxr-xr-x	root/root	usr/lib/libADM_coreAudio.so
+-rwxr-xr-x	root/root	usr/lib/libADM_coreImage.so
+-rwxr-xr-x	root/root	usr/lib/libADM_coreUI.so
+-rwxr-xr-x	root/root	usr/lib/libADM_render_cli.so
+-rwxr-xr-x	root/root	usr/lib/libADM_render_gtk.so
+-rwxr-xr-x	root/root	usr/lib/libADM_render_qt4.so
+-rwxr-xr-x	root/root	usr/lib/libADM_smjs.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/ADM_scripts/
+drwxr-xr-x	root/root	usr/share/ADM_scripts/auto/
+drwxr-xr-x	root/root	usr/share/ADM_scripts/auto/Apple/
+-rw-r--r--	root/root	usr/share/ADM_scripts/auto/Apple/Apple iPhone.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/auto/Apple/Apple iPod 5.5G.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/auto/Apple/Apple iPod.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/auto/Microsoft Zune.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/auto/Sony PlayStation Portable.js
+drwxr-xr-x	root/root	usr/share/ADM_scripts/video/
+-rw-r--r--	root/root	usr/share/ADM_scripts/video/autoWizard.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/video/filter.js
+-rw-r--r--	root/root	usr/share/ADM_scripts/video/functions.js
+drwxr-xr-x	root/root	usr/share/avidemux/
+drwxr-xr-x	root/root	usr/share/avidemux/i18n/
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_ca.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_cs.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_de.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_el.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_es.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_fr.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_it.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_ja.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_pt_BR.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_ru.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_sr.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_sr@latin.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_tr.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_zh_TW.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/qt_cs.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/qt_fr.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/qt_it.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/qt_zh_TW.qm
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/avidemux.mo
