@@ -6,7 +6,7 @@
 
 name=avidemux
 version=2.5.1
-release=1
+release=2
 source=(http://download.berlios.de/avidemux/avidemux_$version.tar.gz avidemux-2.5-i18n.patch)
 
 build()
@@ -18,7 +18,24 @@ build()
   cmake -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release -D NO_GTK=0 -D NO_QT4=0 ..
   make
   make DESTDIR=$PKG install
+
+  mkdir -p lib
+  cd lib
+  find ../avidemux -name '*.so*' | xargs ln -sft .  || return 1
+  cd ../../plugins                 
+  mkdir build
+  cd build
+  cmake -D CMAKE_INSTALL_PREFIX=/usr -D AVIDEMUX_SOURCE_DIR=$SRC/avidemux_$version \
+    -D AVIDEMUX_CORECONFIG_DIR=$SRC/avidemux_$version/build/config \
+    -D AVIDEMUX_INSTALL_PREFIX=$SRC/avidemux_$version/build -D CMAKE_BUILD_TYPE=Release .. 
+  make 
+  make DESTDIR=$PKG install
+ 
+  ln -s /usr/lib/ADM_plugins/videoEncoder/libADM_vidEnc_xvid.so $PKG/usr/lib/libADM_vidEnc_xvid.so
+  ln -s /usr/lib/ADM_plugins/videoEncoder/libADM_vidEnc_x264.so $PKG/usr/lib/libADM_vidEnc_x264.so
+
+  install -D -m644 ../../avidemux_icon.png $PKG/usr/share/pixmaps/avidemux.png
+  install -D -m644 ../../avidemux2.desktop $PKG/usr/share/applications/avidemux.desktop
+#  install -D -m644 ../../man/avidemux.1 $PKG/usr/share/man/man1/avidemux.1
+
 }
-
-
-
