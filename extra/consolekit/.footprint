@@ -46,6 +46,9 @@ drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Session.xml
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.freedesktop.ConsoleKit.service
+drwxr-xr-x	root/root	usr/share/polkit-1/
+drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.freedesktop.consolekit.policy
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	root/root	var/log/ConsoleKit/
