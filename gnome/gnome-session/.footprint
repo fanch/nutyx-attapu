@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	etc/gconf/schemas/
 -rw-r--r--	root/root	etc/gconf/schemas/gnome-session.schemas
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/autostart/
--rw-r--r--	root/root	etc/xdg/autostart/at-spi-registryd-wrapper.desktop
 -rw-r--r--	root/root	etc/xdg/autostart/gnome-settings-daemon-helper.desktop
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -15,18 +14,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gnome-session/
 drwxr-xr-x	root/root	usr/lib/gnome-session/helpers/
--rwxr-xr-x	root/root	usr/lib/gnome-session/helpers/at-spi-registryd-wrapper
--rwxr-xr-x	root/root	usr/lib/gnome-session/helpers/gnome-session-splash
 -rwxr-xr-x	root/root	usr/lib/gnome-session/helpers/gnome-settings-daemon-helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/session-properties.desktop
 drwxr-xr-x	root/root	usr/share/gnome-session/
--rw-r--r--	root/root	usr/share/gnome-session/gsm-inhibit-dialog.glade
--rw-r--r--	root/root	usr/share/gnome-session/session-properties.glade
-drwxr-xr-x	root/root	usr/share/gnome/
-drwxr-xr-x	root/root	usr/share/gnome/autostart/
--rw-r--r--	root/root	usr/share/gnome/autostart/gnome-session-splash.desktop
+-rw-r--r--	root/root	usr/share/gnome-session/gsm-inhibit-dialog.ui
+-rw-r--r--	root/root	usr/share/gnome-session/session-properties.ui
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -57,8 +51,5 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gnome-session-save.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gnome-session.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gnome-wm.1.gz
-drwxr-xr-x	root/root	usr/share/pixmaps/
-drwxr-xr-x	root/root	usr/share/pixmaps/splash/
--rw-r--r--	root/root	usr/share/pixmaps/splash/gnome-splash.png
 drwxr-xr-x	root/root	usr/share/xsessions/
 -rw-r--r--	root/root	usr/share/xsessions/gnome.desktop

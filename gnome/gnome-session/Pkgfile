@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-desktop, libnotify, gtk, dbus-glib, libglade, gconf
+# Depends on: gnome-desktop, libnotify, gtk, dbus-glib, libglade, gconf, polkit-gnome
 
 name=gnome-session
 version=2.28.0
