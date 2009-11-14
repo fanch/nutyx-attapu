@@ -2,10 +2,10 @@
 # URL: http://hal.freedesktop.org/docs/polkit-gnome
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat
+# Depends on: polkit, gtk
 
 name=polkit-gnome
-version=0.92
+version=0.94
 release=1
 source=(http://hal.freedesktop.org/releases/$name-$version.tar.bz2)
 build() {
