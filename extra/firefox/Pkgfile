@@ -5,7 +5,7 @@
 # Depends on: xulrunner, curl
 
 name=firefox
-version=3.5.4
+version=3.5.5
 release=1
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2
         mozconfig firefox.desktop)
