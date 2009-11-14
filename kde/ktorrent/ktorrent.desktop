@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=le ktorrent
+Comment=KDE Client bitorrent
+Exec=ktorrent
+Icon=ktorrent
+Terminal=false
+Type=Application
+Categories=Application;Internet;
+StartupNotify=true
+
