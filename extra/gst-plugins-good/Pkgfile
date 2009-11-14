@@ -5,7 +5,7 @@
 # Depends on: aalib, cairo, gconf, cdparanoia, dbus, esound, flac, gstreamer, gst-plugins-base, gtk, hal, libcaca, libavc1394, libcdio, libdv, libjpeg, libogg, libpng, liboil, libshout, libtheora, libvisual, libvorbis, libxml2, taglib, speex, wavpack
 
 name=gst-plugins-good
-version=0.10.15
+version=0.10.16
 release=1
 source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
 
