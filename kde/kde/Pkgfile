@@ -2,7 +2,7 @@
 # URL: http://www.kde.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: xorg, kdelibs, kdepimlibs, kdeadmin, kdegraphics, kdeartwork, kdemultimedia, kdeutils, kdegames, kdenetwork, kde-l10n-fr, kdebase, kdepim, kdeplasma-addons, kdetoys, kdebindings, phonon-xine, k3b, kdesdk, amarok, desktop-file-utils, xorg, shared-mime-info, nas, atk, xine-lib, taglib, qimageblitz, pilot-link, gnokii, libical, akonadi, gpgme, boost, lcms, oxygen-icons, soprano, strigi, eigen, eigen2, wicd, gtk-qt-engine, partitionmanager
+# Depends on: xorg, kdelibs, kdepimlibs, kdeadmin, kdegraphics, kdeartwork, kdemultimedia, kdeutils, kdegames, kdenetwork, kde-l10n-fr, kdebase, kdepim, kdeplasma-addons, kdetoys, kdebindings, phonon-xine, k3b, kdesdk, amarok, desktop-file-utils, xorg, shared-mime-info, nas, atk, xine-lib, taglib, qimageblitz, pilot-link, gnokii, libical, akonadi, gpgme, boost, lcms, oxygen-icons, soprano, strigi, eigen, eigen2, gtk-qt-engine
 
 name=kde
 version=4.3.3
