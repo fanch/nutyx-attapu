@@ -1,21 +1,8 @@
-Il est très important de procéder comme ci-dessous pour avoir un serveur mysql
-fonctionnel.
+Il est très important de procéder comme ci-dessous pour avoir un serveur mysql sécurisé.
 Installer le serveur mysql en procédant comme ceci
 
-/etc/rc.d/init.d/mysql start
 /etc/rc.d/init.d/mysql stop
 
-On commence par installer les tables necessaire au bon fonctionnement de mysql.
-
-mysql_install_db --user=mysql 
-
-On change les attributs des dossiers
-
-chgrp -v mysql /srv/mysql{,/test,/mysql}
-
-Pour pouvoir configurer le serveur il faut le lancer de cette façon:
-
-install -v -m755 -o mysql -g mysql -d /var/run/mysql
 mysqld_safe --user=mysql 2>&1 >/dev/null &
 
 Noter que le & est très important pour avoir la main en console
