@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/tla/
+drwxr-xr-x	root/root	usr/share/tla/bin/
+-rwxr-xr-x	root/root	usr/share/tla/bin/tla
