@@ -1,6 +1,6 @@
 #!/bin/sh
 
-port=gnome-python-games
+port=gnome-games
 
 # gconf schemas
 SCHEMAS="`pkginfo -l $port | grep etc/gconf/schemas/.*\.schemas$`"
