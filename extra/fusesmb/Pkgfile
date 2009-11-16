@@ -1,0 +1,19 @@
+# Description: Permet l'accès aux systèmes de fichiers SAMBA via le réseau et \
+# FUSE (système de fichier virtuel)
+# URL: http://www.ricardis.tudelft.nl/~vincent/fusesmb/
+# Packager: Juergen Daubert <juergen dot daubert at t-online dot de>
+# Maintainer: Blankoworld <blankoworld at wanadoo dot fr>
+# Depends on: fuse, samba3
+
+name=fusesmb
+version=0.8.7
+release=1
+source=( http://www.ricardis.tudelft.nl/~vincent/$name/download/$name-$version.tar.gz )
+
+build () {
+  cd $name-$version
+  ./configure --prefix=/usr --mandir=/usr/man
+  make
+  make DESTDIR=$PKG install
+}
+

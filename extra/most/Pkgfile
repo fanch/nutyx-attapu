@@ -1,0 +1,21 @@
+# Description: Afficheur de texte comme more ou less
+# URL: http://www.jedsoft.org/most
+# Maintainer: Blankoworld
+# Packager: blankoworld at wanadoo dot fr
+# Depends on: slang
+
+name=most
+version=5.0.0a
+release=1
+source=( ftp://space.mit.edu/pub/davis/$name/$name-$version.tar.gz )
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr
+
+  make
+  make DESTDIR=$PKG install
+  mv $PKG/usr/share/man $PKG/usr
+  rm -r $PKG/usr/share
+}
+

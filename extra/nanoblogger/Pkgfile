@@ -1,0 +1,26 @@
+# Description: Nanoblogger est un moteur de blog écrit en BASH. Il s'utilise en ligne de commande
+# URL: http://sourceforge.net/projects/nanoblogger/
+# Maintainer: Blankoworld
+# Packager: blankoworld at wanadoo dot fr
+# Depends on: bash
+
+name=nanoblogger
+version=3.4
+release=1
+group=app
+source=( http://nanoblogger.sourceforge.net/downloads/$name-$version.tar.gz \
+http://nanoblogger.sourceforge.net/downloads/$name-extra-$version.tar.gz \
+nb.conf \
+nb)
+
+build() {
+        cd $name-$version
+        cp -r $SRC/$name-extra-$version/* $SRC/$name-$version/
+        install -d $PKG/usr/share/$name/
+        cp -Rp $SRC/$name-$version/* $PKG/usr/share/$name/
+        cp -p ../nb.conf $PKG/usr/share/$name/nb.conf
+        install -d $PKG/usr/bin/
+        cp -p ../nb $PKG/usr/bin/nb
+        chown -R root:root $PKG
+}
+
