@@ -1,0 +1,28 @@
+# Description: Client Bittorrent sur KDE4
+# URL: http://ktorrent.org/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdelibs, qca, gmp, libxft, kdebase-runtime, taglib, hicolor-icon-theme
+name=ktorrent
+version=3.3
+release=2
+group=app
+source=(http://ktorrent.org/downloads/$version/$name-$version.tar.bz2 \
+	$name.png  $name.desktop httpserver.patch)
+build() {
+	cd $name-$version
+	patch -Np0 -i $SRC/httpserver.patch	
+	cmake . -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_INSTALL_PREFIX=/usr \
+                -DCMAKE_SKIP_RPATH=ON \
+                -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
+                -DENABLE_MEDIAPLAYER_PLUGIN=false
+        make
+        make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/share/applications
+	install -m 644 ../$name.desktop $PKG/usr/share/applications/
+	mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps/
+	install -m 644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
+}
+
+
