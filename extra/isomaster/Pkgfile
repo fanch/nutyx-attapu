@@ -1,0 +1,21 @@
+# Description: éditeur d'image iso écrit en GTK2
+# URL:http://littlesvr.ca/isomaster 
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:gtk2, desktop-file-utils 
+
+name=isomaster
+version=1.3.5
+release=1
+source=(http://littlesvr.ca/isomaster/releases/$name-$version.tar.bz2 \
+	$name.desktop)
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	install -D -m 644 ../$name.desktop \
+	$PKG/usr/share/applications/$name.desktop
+}
+
+
