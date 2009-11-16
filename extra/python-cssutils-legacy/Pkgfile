@@ -1,0 +1,13 @@
+# Description: A CSS Cascading Style Sheets library for Python
+# URL:http://code.google.com/p/cssutils/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:python
+name=python-cssutils-legacy
+version=0.9.6
+release=1
+source=(http://cssutils.googlecode.com/files/cssutils-0.9.6.zip)
+build() {
+cd cssutils-$version
+	python setup.py build install --root=$PKG       
+}
