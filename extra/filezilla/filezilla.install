@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+       <title>
+            Arch Linux Repositories
+               - community
+               - Journal
+                  - R&eacute;vision 1
+               - /filezilla/repos/community-i686/filezilla.install
+        </title>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="generator" content="WebSVN 2.2.1" /> <!-- leave this for stats -->
+        <link rel="stylesheet" href="http://www.archlinux.org/media/arch.css" />
+        <link rel="stylesheet" href="/templates/arch/styles.css" />
+        <link rel="icon" href="http://www.archlinux.org/media/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="http://www.archlinux.org/media/favicon.ico" type="image/x-icon" />
+        <!--[if gte IE 5.5000]>
+        <script type="text/javascript" src="/templates/arch/png.js"></script>
+        <style type="text/css" media="screen">
+        tbody tr td { padding:1px 0 }
+        #wrap h2 { padding:10px 5px 0 5px; margin-bottom:-8px }
+        </style>
+        <![endif]-->
+    <script type="text/javascript">
+    //<![CDATA[
+         function getPath()
+         {
+                return '';
+         }
+
+         function checkCB(chBox)
+         {
+            count = 0
+            first = null
+            f = chBox.form
+            for (i = 0 ; i < f.elements.length ; i++)
+            if (f.elements[i].type == 'checkbox' && f.elements[i].checked)
+            {
+               if (first == null && f.elements[i] != chBox)
+                  first = f.elements[i]
+               count += 1
+            }
+
+            if (count > 2)
+            {
+               first.checked = false
+               count -= 1
+            }
+         }
+    //]]>
+    </script>
+    <script type="text/javascript" src="/templates/arch/collapse.js"></script>
+        
+    </head>
+    <body>
+        <div id="head_container">
+            <div id="title">
+              <div id="logo"><h1 id="archtitle"><a href="http://www.archlinux.org" title="Arch Linux (Home)">Arch Linux</a></h1></div>
+            </div>
+            <div id="main_nav">
+
+                <ul>
+                    <li><a href="/download/">Download</a></li>
+                    <li class="selected"><a href="/">Repositories</a></li>
+                    <li><a href="http://aur.archlinux.org">AUR</a></li>
+                    <li><a href="http://bugs.archlinux.org">Bugs</a></li>
+                    <li><a href="http://wiki.archlinux.org">Wiki</a></li>
+                    <li><a href="http://bbs.archlinux.org">Forums</a></li>
+                    <li><a href="http://www.archlinux.org">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+<div id="select"><form action="/wsvn?" method="post" id="projectform"><div><input type="hidden" name="selectproj" value="1" /><input type="hidden" name="op" value="form" /><select name="repname" onchange="javascript:this.form.submit();"><option value="packages">packages</option><option value="community" selected="selected">community</option></select><span class="submit"><input type="submit" value="Go" /></span></div></form></div>
+<h1><a href="/wsvn/?" title="D&eacute;p&ocirc;ts&nbsp;Subversion">D&eacute;p&ocirc;ts&nbsp;Subversion</a> <span><a href="/wsvn/community?">community</a></span></h1>
+<h2 class="path" style="margin:0 2% 15px 2%;">[<a href="/wsvn/community/?rev=0">/</a>] [<a href="/wsvn/community/filezilla/?rev=0">filezilla/</a>] [<a href="/wsvn/community/filezilla/repos/?rev=0">repos/</a>] [<a href="/wsvn/community/filezilla/repos/community-i686/?rev=0">community-i686/</a>] [<b>filezilla.install</b>] - R&eacute;vision 1</h2>
+<div id="input"><form action="/wsvn/community" method="get" id="revisionform"><div>R&eacute;vision <input type="hidden" name="op" value="revision" /><input type="text" size="5" name="rev" value="HEAD" /><span class="submit"><input type="submit" value="Go" /></span></div></form></div>
+<p>
+<span class="detail"><a href="/wsvn/community/filezilla/repos/community-i686/filezilla.install?rev=1&amp;isdir=0">D&eacute;tails</a></span> &#124;
+<span class="diff"><a href="/wsvn/community/filezilla/repos/community-i686/filezilla.install?op=diff&amp;rev=1">Diff&eacute;rence avec la pr&eacute;c&eacute;dente</a></span> &#124;
+<span class="blame"><a href="/wsvn/community/filezilla/repos/community-i686/filezilla.install?op=blame&amp;rev=0">Responsabilit&eacute;</a></span>
+</p>
+
+<div id="info">
+<h2>Options de recherche</h2>
+
+<form action="/wsvn/community/filezilla/repos/community-i686/filezilla.install?op=log&amp;" method="post">
+
+<table>
+  <tbody>
+    <tr>
+    	<th scope="col"><label>De la r&eacute;v.</label></th>
+    	<th scope="col"><label>A la r&eacute;v.</label></th>
+    	<th scope="col"><label>Max r&eacute;vs.</label></th>
+    </tr>
+    <tr>
+    	<td class="revcomp"><input name="sr" size="5" value="1" /></td>
+    	<td class="revcomp"><input name="er" size="5" value="1" /></td>
+    	<td class="revcomp"><input name="max" size="5" value="30" /></td>
+    </tr>
+    <tr><th scope="col" colspan="3"><label>Rechercher dans le journal</label></th></tr>
+    <tr><td colspan="3"><input name="search" value="" /></td></tr>
+    <tr><th scope="col" colspan="3"><label>Tout montrer</label></th></tr>
+    <tr><td colspan="3" class="all"><input type="checkbox" name="all" value="1" /></td></tr>
+  </tbody>
+</table>
+<p class="submit"><input type="submit" value="Go" /><input type="hidden" name="logsearch" value="1" /><input type="hidden" name="op" value="log" /><input type="hidden" name="rev" value="1" /><input type="hidden" name="isdir" value="0" />
+</p>
+
+</form>
+
+</div>
+
+<div id="wrap">
+
+   <form action="/wsvn/community/?op=comp&amp;" method="get">
+      <table width="100%">
+         <thead>
+         <tr>
+            <th class="HdrClmn">R&eacute;vision</th>
+            <th class="HdrClmn">Message du journal</th>
+            <th class="HdrClmn">Auteur</th>
+            <th class="HdrClmn">Anciennet&eacute;</th>
+            <th class="HdrClmnEnd">Chemin</th>
+         </tr>
+         </thead>
+      
+         <tr class="row0">
+            <td><input type="checkbox" name="compare[]" value="/filezilla/repos/community-i686/filezilla.install@1" onclick="checkCB(this)" /><a href="/wsvn/community/filezilla/repos/community-i686/?op=revision&amp;rev=1">1</a></td>
+            <td valign="middle" class="logmsg">Initial commit of community repo into svn</td>
+            <td>aaron</td>
+              <td title="2009-07-16 00:12:59">123j&nbsp;05h</td>
+            <td><a href="/wsvn/community/filezilla/repos/community-i686/filezilla.install?rev=1">/filezilla/repos/community-i686/filezilla.install</a></td>
+         </tr>
+      </table>
+      <p class="submit">
+      <input name="comparesubmit" type="submit" value="Comparer les r&eacute;visions" /><input type="hidden" name="op" value="comp" />
+      </p>  
+   </form>
+
+      
+<p></p>
+<p></p>
+<p></p>
+
+</div>
+        </div>
+        <div class="foot">
+          Copyright &copy; 2002-2009 <a href="mailto:jvinet@zeroflux.org" title="contact Judd Vinet">Judd Vinet</a> and <a href="mailto:aaron@archlinux.org" title="contact Aaron Griffin">Aaron Griffin</a>.<br />
+          The Arch Linux name and logo are recognized trademarks. Some rights
+          reserved.<br />
+
+          The registered trademark Linux® is used pursuant to a sublicense from LMI, the exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+        </div>
+    </body>
+</html>
