@@ -1,0 +1,16 @@
+# Description: Pigment Python library and bindings
+# URL:http://www.moovida.com
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:python, pigment, pygobject
+name=python-pigment
+version=0.3.12
+release=1
+source=(http://www.moovida.com/static/download/pigment/pigment-python-0.3.12.tar.bz2)
+build() {
+	cd pigment-python-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
