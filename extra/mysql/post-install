@@ -2,5 +2,5 @@
 
 
 mysql_install_db --user=mysql
-chgrp -v mysql /srv/mysql{,/test,/mysql}
+chgrp mysql /srv/mysql{,/test,/mysql}
 install -m755 -o mysql -g mysql -d /var/run/mysql
