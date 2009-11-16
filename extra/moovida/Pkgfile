@@ -1,0 +1,21 @@
+# Description: solution media center - Multimedia
+# URL:http://www.moovida.com  
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: twisted_web2, pygtk, python-pigment, gst-python, python-cssutils-legacy, pil, pyopenssl, setuptools, zope-interface
+name=moovida
+version=1.0.8
+release=1
+source=(http://www.moovida.com/media/public/moovida-1.0.8.tar.gz \
+	http://www.moovida.com/media/public/moovida-plugins-good-1.0.8.tar.gz \
+	http://www.moovida.com/media/public/moovida-plugins-bad-1.0.8.tar.gz \
+	http://www.moovida.com/media/public/moovida-plugins-ugly-1.0.8.tar.gz)
+build() {
+for i in elisa-1.0.8 elisa-plugins-good-1.0.8 elisa-plugins-bad-1.0.8 elisa-plugins-ugly-1.0.8
+	do cd $i
+	python setup.py build install --root=$PKG
+	cd -
+	done
+}
+
+

@@ -1,0 +1,24 @@
+# Description: Un analyseur de protocole réseau
+# URL: 	http://www.wireshark.org/ 
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: bash, gnutls, gtk, libcap, libpcap, pcre
+
+name=wireshark
+version=1.2.3
+release=1
+source=(http://media-2.cacetech.com/wireshark/src/wireshark-1.2.3.tar.bz2 \
+	$name.desktop)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+	install -d $PKG/usr/share/$name/pixmaps
+	install -m 644 image/{hi,lo}{16,32,48}-app-$name.png \
+	$PKG/usr/share/$name/pixmaps
+	install -D -m 644 ../$name.desktop \
+	$PKG/usr/share/applications/$name.desktop
+	
+}
