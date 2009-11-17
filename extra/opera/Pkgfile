@@ -12,7 +12,7 @@ if [ "`uname -m`" == "i686" ]; then
 else
         _ARCH=x86_64
 fi
-source=( http://mirror.ndnet.ch/opera/linux/1000/final/en/${_ARCH}/opera-$version.gcc4-qt4.${_ARCH}.tar.gz \
+source=( http://mirror.switch.ch/ftp/mirror/opera/linux/1001/final/en/${_ARCH}/opera-$version.gcc4-qt4.${_ARCH}.tar.gz \
         opera.desktop opera.png )
 	
 build() {
