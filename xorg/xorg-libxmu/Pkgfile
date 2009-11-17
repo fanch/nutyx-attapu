@@ -4,7 +4,7 @@
 # Depends on: xorg-libxt, xorg-xextproto, xorg-libxext, xorg-libx11
 
 name=xorg-libxmu
-version=1.0.4
+version=1.0.5
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXmu-$version.tar.bz2)
 
