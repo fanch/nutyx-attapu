@@ -1,4 +1,4 @@
-# Description: Navigateur web
+# Description: Navigateur web basé sur la librairie qt
 # URL: http://www.opera.com
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
@@ -12,13 +12,11 @@ if [ "`uname -m`" == "i686" ]; then
 else
         _ARCH=x86_64
 fi
-source=( http://mirror.ndnet.ch/opera/linux/1000/final/en/${_ARCH}/opera-10.00.gcc4-qt4.${_ARCH}.tar.gz \
-        opera.desktop \
-        opera.png )
+source=( http://mirror.switch.ch/ftp/mirror/opera/linux/1001/final/en/${_ARCH}/opera-$version.gcc4-qt4.${_ARCH}.tar.gz \
+        opera.desktop opera.png )
 	
 build() {
 	cd $name-*
-#	sed 's|/usr/X11R6/lib/mozilla/plugins=1|/opt/mozilla/lib/plugins=1|' -i ini/pluginpath.ini
 	./install.sh DESTDIR=$PKG
 	mkdir -p $PKG/usr/share/{applications,licences/opera,icons/hicolor/48x48/apps}
 	install -D -m 644 ../opera.desktop $PKG/usr/share/applications/
