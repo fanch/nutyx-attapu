@@ -1,0 +1,17 @@
+# Description: Spécifications du répertoire de base de XDG
+# URL: http://n.ethz.ch/student/nevillm/download/libxdg-basedir
+# Packager: Bartlomiej Palmowski <rotwang at crux dot org dot pl>
+# Maintainer: Blankoworld <blankoworld at wanadoo dot fr>
+
+name=libxdg-basedir
+version=1.0.2
+release=1
+source=( http://n.ethz.ch/~nevillm/download/$name/$name-$version.tar.gz )
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr --disable-static
+  make
+  make DESTDIR=$PKG install
+}
+
