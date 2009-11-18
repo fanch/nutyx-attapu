@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libev/
+-rw-r--r--	root/root	usr/include/libev/ev++.h
+-rw-r--r--	root/root	usr/include/libev/ev.h
+-rw-r--r--	root/root	usr/include/libev/event.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libev.la
+lrwxrwxrwx	root/root	usr/lib/libev.so -> libev.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libev.so.3 -> libev.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libev.so.3.0.0
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man3/
+-rw-r--r--	root/root	usr/man/man3/ev.3.gz

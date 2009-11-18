@@ -1,0 +1,22 @@
+# Description: Modèle d'évènement à haute performance, etc.
+# URL: http://software.schmorp.de/pkg/libev
+# Packager: Bartlomiej Palmowski <rotwang at crux dot org dot pl>
+# Maintainer: Younes Hafri <ycrux@club-internet.fr>
+
+name=libev
+version=3.7
+release=1
+source=( http://dist.schmorp.de/$name/Attic/$name-$version.tar.gz )
+
+build () {
+  cd $name-$version
+  ./configure  --prefix=/usr \
+    --includedir=$PKG/usr/include/libev \
+    --mandir=$PKG/usr/man \
+    --disable-nls \
+    --disable-static
+  # libev headers are installed to non standard dir 
+  # due to libevent conflict
+  make
+  make prefix=$PKG/usr install
+}
