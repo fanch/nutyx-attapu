@@ -1,6 +1,7 @@
 # Description: Common X extensions client library
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxau
 
 name=xorg-libxext
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/lib/libXext-$version.tar
 build() {
 	cd libXext-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
