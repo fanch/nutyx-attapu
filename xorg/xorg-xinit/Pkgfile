@@ -1,6 +1,6 @@
 # Description: X Window System initializer
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
 # Depends on: xorg-server
 
 name=xorg-xinit
@@ -11,7 +11,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xinit-$version.tar.b
 build() {
 	cd xinit-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
