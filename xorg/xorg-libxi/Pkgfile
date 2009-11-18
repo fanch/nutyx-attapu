@@ -1,6 +1,7 @@
 # Description: X Input client library
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxext, xorg-inputproto
 
 name=xorg-libxi
@@ -11,8 +12,9 @@ source=(http://xorg.freedesktop.org/releases/individual/lib/libXi-$version.tar.b
 build() {
 	cd libXi-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share
 }
