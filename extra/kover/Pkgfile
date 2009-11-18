@@ -1,0 +1,31 @@
+# Description: Outil d'impression de jaquettes de CD facile à utiliser en \
+# WYSIWYG avec support CDDB
+# URL: http://lisas.de/kover/
+# Packager: Blankoworld <blankoworld at wanadoo dot fr>
+# Depends on: cmake kdelibs pkg-config automoc4 perl libcdio libcddb
+
+name=kover
+version=4
+release=1
+source=( http://lisas.de/$name/$name-$version.tar.bz2 \
+inexact_dialog.patch \
+directory.patch \
+$name.desktop )
+
+build() {
+  cd $SRC/$name-$version/
+
+  # Patch nécessaires de quelques fichiers
+  patch -i ../inexact_dialog.patch src/inexact_dialog.cc
+  patch -i ../directory.patch src/directory.cc
+
+  # Compilation
+  cmake ./ -Wno-dev
+  make
+  make DESTDIR=$PKG install
+
+  # Ajout d'un raccourci dans le menu
+  mkdir -p $PKG/usr/share/applications
+  install -m 644 ../$name.desktop $PKG/usr/share/applications/
+}
+
