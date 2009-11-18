@@ -5,7 +5,7 @@
 # Depends on: xorg-server
 
 name=xorg-xterm
-version=242
+version=251
 release=1
 XORG_PREFIX=/usr
 XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
