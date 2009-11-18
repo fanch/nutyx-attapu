@@ -3,7 +3,7 @@
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-fixesproto
-version=4.0
+version=4.1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/fixesproto-$version.tar.bz2)
 
