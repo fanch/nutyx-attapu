@@ -4,7 +4,7 @@
 # Depends on: xorg-xkbcomp, intltool
 
 name=xkeyboard-config
-version=1.6
+version=1.7
 release=1
 source=(http://xlibs.freedesktop.org/xkbdesc/$name-$version.tar.bz2)
 

@@ -4,7 +4,7 @@
 # Depends on: xorg-xproto, xorg-libx11, xorg-libxext, xorg-xf86miscproto
 
 name=xorg-libxxf86misc
-version=1.0.1
+version=1.0.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-$version.tar.bz2)
 
@@ -15,4 +15,5 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
+	rm $PKG/usr/share/man/man3/XF86Misc*
 }
