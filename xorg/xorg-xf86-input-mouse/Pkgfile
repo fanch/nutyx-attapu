@@ -1,6 +1,7 @@
 # Description: xorg driver xf86-input-mouse
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server
 
 name=xorg-xf86-input-mouse
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-mouse-
 build() {
 	cd xf86-input-mouse-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
