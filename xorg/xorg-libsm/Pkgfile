@@ -4,7 +4,7 @@
 # Depends on: xorg-libice, xorg-xproto, xorg-xtrans
 
 name=xorg-libsm
-version=1.1.0
+version=1.1.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libSM-$version.tar.bz2)
 
