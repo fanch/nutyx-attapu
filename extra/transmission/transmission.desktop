@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=transmission
+Comment=Client bittorent simple
+Exec=/usr/bin/transmission
+Icon=transmission
+Terminal=false
+Type=Application
+Categories=Network
+StartupNotify=true
+

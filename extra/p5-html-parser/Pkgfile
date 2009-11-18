@@ -1,17 +1,17 @@
 # Description: Perl extension parse and extract info from html
-# URL: http://search.cpan.org/~gaas/HTML-Parser-3.56/
+# URL: http://search.cpan.org/~gaas/HTML-Parser-3.64/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: 
 
 name=p5-html-parser
-version=3.59
+version=3.64
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-$version.tar.gz)
 
 
 build() {
-          cd HTML-Parser-$version
+    cd HTML-Parser-$version
     perl Makefile.PL
     make
     make install DESTDIR=$PKG
