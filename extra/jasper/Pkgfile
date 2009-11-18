@@ -12,6 +12,7 @@ source=(http://www.ece.uvic.ca/~mdadams/$name/software/$name-$version.zip)
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
 	--enable-shared
 	make
 	make DESTDIR=$PKG install
