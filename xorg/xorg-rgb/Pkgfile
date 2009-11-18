@@ -1,6 +1,7 @@
 # Description: X Window System RGB database
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-xproto
 
 name=xorg-rgb
@@ -10,9 +11,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/rgb-$version.tar.bz2
 
 build() {
 	cd rgb-$version
-
-	./configure --prefix=/usr --mandir=/usr/man
-
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 }
