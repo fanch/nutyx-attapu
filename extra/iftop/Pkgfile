@@ -1,0 +1,19 @@
+# Description: surveillance du trafic réseau
+# URL:http://www.ex-parrot.com/~pdw/iftop/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: libpcap, ncurses
+
+name=iftop
+version=0.17pre3
+release=1
+source=(http://www.ex-parrot.com/~pdw/iftop/download/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
