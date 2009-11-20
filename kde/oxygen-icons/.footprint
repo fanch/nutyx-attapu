@@ -565,7 +565,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/128x128/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/places/user-home.png
@@ -1615,7 +1615,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/16x16/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/places/user-home.png
@@ -2750,7 +2750,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/22x22/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/places/user-home.png
@@ -2962,6 +2962,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/mimetypes/unknown.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/mimetypes/video-x-generic.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/places/
+-rwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/favorites.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/folder-documents.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/folder-favorites.png
@@ -2970,7 +2971,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/folder-video.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/256x256/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/places/user-home.png
@@ -3970,7 +3971,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/32x32/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/places/user-home.png
@@ -5015,7 +5016,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/48x48/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/places/user-home.png
@@ -5654,7 +5655,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/places/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/network-workgroup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/repository.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/server-database.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/start-here-kde.png
+lrwxrwxrwx	root/root	opt/kde/share/icons/oxygen/64x64/places/start-here-kde.png -> ../../256x256/places/NuTyXlogo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/start-here.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/user-desktop.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/places/user-home.png
