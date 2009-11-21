@@ -1,0 +1,30 @@
+# Description: Common UNIX Printing System, le système d'impression pour Linux
+# URL: http://cip.physik.uni-wuerzburg.de/~vrbehr/cups-pdf
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: cups, ghostscript
+
+name=cups-pdf
+version=2.5.0
+release=1
+
+install=cups-pdf.install
+
+source=(http://cip.physik.uni-wuerzburg.de/~vrbehr/cups-pdf/src/cups-pdf_$version.tar.gz)
+
+
+build() {
+ # Build and install
+  cd $name-$version/src
+  [ -z "$CC" ] && CC=gcc
+  $CC $CFLAGS -Wall -o cups-pdf cups-pdf.c
+  install -D -m700 cups-pdf $PKG/usr/lib/cups/backend/cups-pdf
+
+  # Install Postscript Color printer
+  cd ../extra
+  install -D -m644 CUPS-PDF.ppd $PKG/usr/share/cups/model/CUPS-PDF.ppd
+
+  # Install config file
+  install -D -m644 cups-pdf.conf $PKG/etc/cups/cups-pdf.conf
+
+}
