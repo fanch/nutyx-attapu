@@ -1,17 +1,18 @@
 # Description: xorg driver xf86-input-citron
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
 # Depends on: xorg-server
 
 name=xorg-xf86-input-citron
 version=2.2.2
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-citron-$version.tar.bz2)
 
 build() {
 	cd xf86-input-citron-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
