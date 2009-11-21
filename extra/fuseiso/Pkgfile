@@ -1,0 +1,19 @@
+# Description: module FUSE pour monter les images iso 
+# URL: http://fuse.sourceforge.net/wiki/index.php/FuseIso
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: fuse, glib, zlib
+
+name=fuseiso
+version=20070708
+release=1
+source=(http://ubiz.ru/dm/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
