@@ -7,11 +7,11 @@
 name=gnome-python-extras
 version=2.25.3
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/gnome-python-extras/2.25/gnome-python-extras-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-        ./configure --prefix=/usr
+        ./configure --prefix=$GNOME_PREFIX
         make
         make DESTDIR=$PKG install
 }
