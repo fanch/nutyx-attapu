@@ -1,0 +1,19 @@
+# Description: Connecteur ODBC pour MySQL
+# URL: http://www.mysql.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: unixodbc, mysqlclient
+
+name=myodbc
+version=5.1.6
+release=1
+source=(http://mirror.switch.ch/mirror/mysql/Downloads/Connector-ODBC/5.1/mysql-connector-odbc-$version.tar.gz )
+
+build () {
+	cd mysql-connector-odbc-$version
+	[ $NOEXTRACT -eq 1 ] || ./configure --prefix=/usr --sysconfdir=/etc --with-unixODBC=/usr \
+	--with-mysql-path=/usr --without-x --disable-gui --enable-shared \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
