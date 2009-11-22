@@ -1,0 +1,17 @@
+# Description:
+# URL:
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=unixodbc
+version=2.2.14
+release=1
+source=(http://www.unixodbc.org/unixODBC-$version.tar.gz)
+build() { 
+cd unixODBC-$version
+./configure --prefix=/usr --sysconfdir=/etc \
+--enable-gui=no
+make
+make DESTDIR=$PKG install
+}
