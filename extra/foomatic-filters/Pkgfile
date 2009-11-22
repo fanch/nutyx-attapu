@@ -1,0 +1,17 @@
+# Description: Permet d'utiliser des pilotes libres avec la plupart des systemes d'impression
+# URL: http://www.linuxprinting.org/foomatic.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libxml2, perl, ghostscript
+
+name=foomatic-filters
+version=4.0.3
+release=1
+source=(http://www.linuxprinting.org/download/foomatic/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

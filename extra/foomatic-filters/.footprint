@@ -1,0 +1,23 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/foomatic-rip
+drwxr-xr-x	root/root	usr/etc/
+drwxr-xr-x	root/root	usr/etc/foomatic/
+drwxr-xr-x	root/root	usr/etc/foomatic/direct/
+-rw-r--r--	root/root	usr/etc/foomatic/filter.conf
+-rw-r--r--	root/root	usr/etc/foomatic/filter.conf.sample
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/cups/
+drwxr-xr-x	root/root	usr/lib/cups/backend/
+-rwxr-xr-x	root/root	usr/lib/cups/backend/beh
+drwxr-xr-x	root/root	usr/lib/cups/filter/
+lrwxrwxrwx	root/root	usr/lib/cups/filter/foomatic-rip -> /usr/bin/foomatic-rip
+drwxr-xr-x	root/root	usr/lib/ppr/
+drwxr-xr-x	root/root	usr/lib/ppr/interfaces/
+lrwxrwxrwx	root/root	usr/lib/ppr/interfaces/foomatic-rip -> /usr/bin/foomatic-rip
+drwxr-xr-x	root/root	usr/lib/ppr/lib/
+lrwxrwxrwx	root/root	usr/lib/ppr/lib/foomatic-rip -> /usr/bin/foomatic-rip
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-r--r--r--	root/root	usr/share/man/man1/foomatic-rip.1.gz
