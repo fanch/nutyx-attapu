@@ -1,0 +1,19 @@
+# Description: Interface Python pour les librairies ne faisant pas partie de la platfome de base
+# URL: http://ftp.gnome.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: gnome-python
+
+name=gnome-python-extras
+version=2.25.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/gnome-python-extras/2.25/gnome-python-extras-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
