@@ -1,0 +1,17 @@
+# Description:traitement d'images par lots
+# URL: http://photobatch.stani.be
+# Maintainer: Nutyx core team
+# Packager: fanch
+# Depends on:python,wxpython,pil,findutils
+
+name=phatch
+version=0.1.6
+release=1
+source=(http://photobatch.stani.be/download/package/phatch-0.1.6.tar.gz)
+
+build() {
+	cd $name-$version
+        python setup.py build install --root=$PKG  
+}
+
+
