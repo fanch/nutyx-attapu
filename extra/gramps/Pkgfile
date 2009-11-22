@@ -1,0 +1,19 @@
+# Description: Un programme de généalogie sous linux
+# URL: http://gramps-project.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:gnome-python-extras,gtkspell,gconf
+
+name=gramps
+version=3.1.2
+release=1
+source=(http://downloads.sourceforge.net/gramps/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
