@@ -1,0 +1,20 @@
+# Description: Utilitaire pour convertir des fichiers rpm, dpkg, slp et tgz 
+# URL: http://www.kitenet.net/programs/alien/
+# Packager:
+# Depends on: perl
+
+name=alien
+version=8.78
+release=1
+source=(http://ftp.debian.org/debian/pool/main/a/$name/${name}_${version}.tar.gz)
+
+build () {
+   cd $name
+   perl Makefile.PL
+   make DESTDIR=${PKG} \
+         PREFIX=${PKG}/usr \
+         VARPREFIX=${PKG} \
+         install
+   find ${PKG} -name perllocal.pod -exec rm {} \;
+   chown -R root:root $PKG
+}
