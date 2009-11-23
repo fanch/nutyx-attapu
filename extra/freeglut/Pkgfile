@@ -1,0 +1,21 @@
+# Description: Fournit des fonctionalités a de petit programmes en OpenGL
+# URL: http://freeglut.sourceforge.net/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: ibxxf86vm, mesa
+
+name=freeglut
+version=2.4.0
+release=1
+source=(http://downloads.sourceforge.net/freeglut//$name-$version.tar.gz \
+        glut-cursor-inherit.patch)
+build() {
+        cd $name-$version
+	patch -Np1 -i ../glut-cursor-inherit.patch
+	sed -i 's/-Werror//' configure
+	 ./configure --prefix=/usr
+	make all
+	make DESTDIR=$PKG install
+	install -m755 -d $PKG/usr/share/licenses/$name
+	install -m644 COPYING $PKG/usr/share/licenses/$name/  
+}
