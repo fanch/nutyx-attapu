@@ -87,6 +87,7 @@ drwxr-xr-x	root/root	usr/include/ImageMagick/magick/
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/module.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/monitor.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/montage.h
+-rw-r--r--	root/root	usr/include/ImageMagick/magick/morphology.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/option.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/paint.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/pixel.h
