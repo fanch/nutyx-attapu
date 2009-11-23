@@ -13,9 +13,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/liblcms.a
 -rwxr-xr-x	root/root	usr/lib/liblcms.la
-lrwxrwxrwx	root/root	usr/lib/liblcms.so -> liblcms.so.1.0.18
-lrwxrwxrwx	root/root	usr/lib/liblcms.so.1 -> liblcms.so.1.0.18
--rwxr-xr-x	root/root	usr/lib/liblcms.so.1.0.18
+lrwxrwxrwx	root/root	usr/lib/liblcms.so -> liblcms.so.1.0.19
+lrwxrwxrwx	root/root	usr/lib/liblcms.so.1 -> liblcms.so.1.0.19
+-rwxr-xr-x	root/root	usr/lib/liblcms.so.1.0.19
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/lcms.pc
 drwxr-xr-x	root/root	usr/share/
