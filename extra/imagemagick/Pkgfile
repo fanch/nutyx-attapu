@@ -1,13 +1,13 @@
 # Description: Manipulateur d'image en ligne de commande
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: lesibel at free dot fr
 # URL: http://www.imagemagick.org/
 # Depends on: freetype, ghostscript, lcms, libgsf, giflib, libxml2, openexr
 
 name=imagemagick
-version=6.5.7.8
+version=6.5.7.10
 release=1
-_version=6.5.7-8
+_version=6.5.7-10
 source=(ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-${_version}.tar.bz2)
 
 build () {
