@@ -6,14 +6,15 @@
 
 name=xorg-libxp
 version=1.0.0
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXp-$version.tar.bz2)
 
 
 build() {
 	# build package
 		cd libXp-$version
-		./configure --prefix=/usr
+		./configure --prefix=/usr \
+		--mandir=/usr/share/man
 		make
 		make DESTDIR=$PKG install
 }
