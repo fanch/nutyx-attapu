@@ -6,14 +6,15 @@
 
 name=cdparanoia
 version=10.2
-release=2
+release=3
 source=(http://downloads.xiph.org/releases/cdparanoia/$name-III-$version.src.tgz\
 	cdparanoia-gcc43.patch)
 
 build() {
 	cd $name-III-$version
 	patch -Np1 -i ../cdparanoia-gcc43.patch
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
 	make
-	make prefix=$PKG/usr install
+	make prefix=$PKG/usr MANDIR=$PKG/usr/share/man install
 }
