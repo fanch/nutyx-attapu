@@ -6,7 +6,7 @@
 
 name=enchant
 version=1.4.2
-release=1
+release=2
 source=(http://www.abisource.com/downloads/enchant/$version/enchant-$version.tar.gz)
 
 build() {
@@ -14,7 +14,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
+		--mandir=/usr/share/man \
 		--disable-static \
 		--disable-dependency-tracking
 
