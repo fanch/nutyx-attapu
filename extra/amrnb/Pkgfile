@@ -2,7 +2,7 @@
 # URL: http://www.penguin.cz/~utx/amr
 # Maintainer: Danny Rawlins, monster dot romster at gmail dot com
 # Packager: Danny Rawlins, monster dot romster at gmail dot com
-# Depends on:
+# Depends on: unzip
 
 name=amrnb
 version=7.0.0.2
