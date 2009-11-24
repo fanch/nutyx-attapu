@@ -6,12 +6,13 @@
 
 name=libcaca
 version=0.9
-release=1
+release=2
 source=(http://libcaca.zoy.org/raw-attachment/wiki/libcaca/libcaca-0.9.tar.gz)
 
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
                 --disable-doc  \
                 --localstatedir=/var

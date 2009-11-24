@@ -12,11 +12,6 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libcaca.a
 -rw-r--r--	root/root	usr/lib/libcaca_pic.a
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/caca-config.1.gz
--rw-r--r--	root/root	usr/man/man1/cacademo.1.gz
--rw-r--r--	root/root	usr/man/man1/cacaview.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/libcaca-dev/
@@ -29,3 +24,8 @@ drwxr-xr-x	root/root	usr/share/doc/libcaca-dev/
 -rw-r--r--	root/root	usr/share/doc/libcaca-dev/TODO
 drwxr-xr-x	root/root	usr/share/libcaca/
 -rw-r--r--	root/root	usr/share/libcaca/caca.txt
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/caca-config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacademo.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/cacaview.1.gz
