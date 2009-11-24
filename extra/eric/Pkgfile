@@ -1,0 +1,39 @@
+# Description: Environnement de developpement Python 
+# URL: http://eric-ide.python-projects.org/index.html
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: pyqt, python-qscintilla
+
+name=eric
+version=4.3.9
+release=1
+source=(http://downloads.sourceforge.net/eric-ide/eric4-$version.tar.gz \
+        eric.desktop)
+
+build() {
+	cd eric4-$version
+        python install.py -c -b /usr/bin -d /usr/lib/python2.6/site-packages -i $PKG
+
+	install -D -m644 $SRC/eric.desktop $PKG/usr/share/applications/eric.desktop
+  	install -D -m644 eric/icons/default/eric.png $PKG/usr/share/pixmaps/eric.png
+
+	# Creating version independant symlinks
+ 	ln -s /usr/bin/eric4 $PKG/usr/bin/eric
+	ln -s /usr/bin/eric4-api $PKG/usr/bin/eric-api
+	ln -s /usr/bin/eric4-compare $PKG/usr/bin/eric-compare
+	ln -s /usr/bin/eric4-configure $PKG/usr/bin/eric-configure
+	ln -s /usr/bin/eric4-diff $PKG/usr/bin/eric-diff
+	ln -s /usr/bin/eric4-doc $PKG/usr/bin/eric-doc
+	ln -s /usr/bin/eric4-editor $PKG/usr/bin/eric-editor
+	ln -s /usr/bin/eric4-helpviewer $PKG/usr/bin/eric-helpviewer
+	ln -s /usr/bin/eric4-plugininstall $PKG/usr/bin/eric-plugininstall
+	ln -s /usr/bin/eric4-pluginrepository $PKG/usr/bin/eric-pluginrepository
+	ln -s /usr/bin/eric4-pluginuninstall $PKG/usr/bin/eric-pluginuninstall
+	ln -s /usr/bin/eric4-qregexp $PKG/usr/bin/eric-qregexp
+	ln -s /usr/bin/eric4-re $PKG/usr/bin/eric-re
+	ln -s /usr/bin/eric4-tray $PKG/usr/bin/eric-tray
+	ln -s /usr/bin/eric4-trpreviewer $PKG/usr/bin/eric-trpreviewer
+	ln -s /usr/bin/eric4-uipreviewer $PKG/usr/bin/eric-uipreviewer
+	ln -s /usr/bin/eric4-unittest $PKG/usr/bin/eric-unittest
+}
+
