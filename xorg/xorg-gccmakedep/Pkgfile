@@ -1,16 +1,19 @@
-# Description: creates dependencies in Makefiles
+# Description: Créé les dependences dans les Makefiles
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=xorg-gccmakedep
 version=1.0.2
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/util/gccmakedep-$version.tar.bz2)
 
 build() {
 	cd gccmakedep-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
