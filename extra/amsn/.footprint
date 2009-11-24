@@ -1363,6 +1363,9 @@ drwxr-xr-x	root/root	usr/share/amsn/utils/drawboard/
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/drawboard.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/grid.png
 -rw-r--r--	root/root	usr/share/amsn/utils/drawboard/pkgIndex.tcl
+drwxr-xr-x	root/root	usr/share/amsn/utils/farsight/
+-rw-r--r--	root/root	usr/share/amsn/utils/farsight/pkgIndex.tcl
+-rwxr-xr-x	root/root	usr/share/amsn/utils/farsight/tcl_farsight.so
 drwxr-xr-x	root/root	usr/share/amsn/utils/framec/
 -rw-r--r--	root/root	usr/share/amsn/utils/framec/framec.tcl
 -rw-r--r--	root/root	usr/share/amsn/utils/framec/pkgIndex.tcl
