@@ -1,0 +1,15 @@
+# Description: Visualisateur de diff
+# URL: http://meld.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, gnome-python
+
+name=meld
+version=1.3.1
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	make prefix=$GNOME_PREFIX
+	make prefix=$GNOME_PREFIX DESTDIR=$PKG install
+}
