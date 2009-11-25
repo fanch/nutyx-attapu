@@ -1,0 +1,19 @@
+# Description: Thème de sons pour gnome
+# URL: http://freedesktop.org/wiki/Specifications/sound-theme-spec
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, gnome-python
+
+name=sound-theme-freedesktop
+version=0.2
+release=1
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--infodir=/usr/share/info \
+	--mandir=/usr/share/man \
+	--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
