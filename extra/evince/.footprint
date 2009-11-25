@@ -91,11 +91,6 @@ lrwxrwxrwx	root/root	usr/lib/libevdocument.so.1 -> libevdocument.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libevview.so -> libevview.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libevview.so.1 -> libevview.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libevview.so.1.0.0
-drwxr-xr-x	root/root	usr/lib/nautilus/
-drwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/
--rw-r--r--	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.a
--rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.la
--rwxr-xr-x	root/root	usr/lib/nautilus/extensions-2.0/libevince-properties-page.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/evince-document-2.25.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/evince-view-2.25.pc
