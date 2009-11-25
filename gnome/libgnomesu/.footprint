@@ -13,6 +13,7 @@ lrwxrwxrwx	root/root	usr/lib/libgnomesu.so.0 -> libgnomesu.so.0.2.0
 -rwxr-xr-x	root/root	usr/lib/libgnomesu.so.0.2.0
 drwxr-xr-x	root/root	usr/lib/libgnomesu/
 ---s--s--x	root/root	usr/lib/libgnomesu/gnomesu-backend
+---s--s--x	root/root	usr/lib/libgnomesu/gnomesu-pam-backend
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgnomesu-1.0.pc
 drwxr-xr-x	root/root	usr/share/
