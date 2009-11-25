@@ -2,12 +2,12 @@
 # URL: http://live.gnome.org/LibUnique
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: libtool, gtk
+# Depends on: libtool, gtk, gir-repository
 
 name=libunique
-version=1.1.2
+version=1.1.6
 release=1
-source=(http://ftp.gnome.org/pub/GNOME/sources/$name/1.1/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
