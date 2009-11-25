@@ -5,13 +5,13 @@
 
 name=gob
 version=2.0.16
-release=1
+release=2
 source=(http://ftp.5z.com/pub/$name/gob2-$version.tar.gz)
 
 build() {
 	cd gob2-$version
 	./configure --prefix=/usr \
-		--mandir=/usr/man
+		--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
 }
