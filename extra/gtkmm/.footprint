@@ -1,6 +1,4 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/gtkmm-demo
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/atkmm-1.6/
 -rw-r--r--	root/root	usr/include/atkmm-1.6/atkmm.h
@@ -114,6 +112,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/accelmap.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/action.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/actiongroup.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/activatable.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/adjustment.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/alignment.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/arrow.h
@@ -177,6 +176,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/iconview.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/image.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/imagemenuitem.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/infobar.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/inputdialog.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/invisible.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/item.h
@@ -197,6 +197,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/notebook.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/object.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/optionmenu.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/orientable.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/pagesetup.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/pagesetupunixdialog.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/paned.h
@@ -215,6 +216,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/accellabel_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/action_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/actiongroup_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/activatable_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/adjustment_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/alignment_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/arrow_p.h
@@ -274,6 +276,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/iconview_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/image_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/imagemenuitem_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/infobar_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/inputdialog_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/invisible_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/item_p.h
@@ -292,6 +295,7 @@ drwxr-xr-x	root/root	usr/include/gtkmm-2.4/gtkmm/private/
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/notebook_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/object_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/optionmenu_p.h
+-rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/orientable_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/pagesetup_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/pagesetupunixdialog_p.h
 -rw-r--r--	root/root	usr/include/gtkmm-2.4/gtkmm/private/paned_p.h
@@ -459,26 +463,18 @@ drwxr-xr-x	root/root	usr/lib/gdkmm-2.4/include/
 drwxr-xr-x	root/root	usr/lib/gtkmm-2.4/
 drwxr-xr-x	root/root	usr/lib/gtkmm-2.4/include/
 -rw-r--r--	root/root	usr/lib/gtkmm-2.4/include/gtkmmconfig.h
-drwxr-xr-x	root/root	usr/lib/gtkmm-2.4/proc/
-drwxr-xr-x	root/root	usr/lib/gtkmm-2.4/proc/m4/
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert.m4
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert_atk.m4
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert_gdk.m4
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert_gtk.m4
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert_gtkmm.m4
--rw-r--r--	root/root	usr/lib/gtkmm-2.4/proc/m4/convert_pango.m4
 -rwxr-xr-x	root/root	usr/lib/libatkmm-1.6.la
-lrwxrwxrwx	root/root	usr/lib/libatkmm-1.6.so -> libatkmm-1.6.so.1.0.30
-lrwxrwxrwx	root/root	usr/lib/libatkmm-1.6.so.1 -> libatkmm-1.6.so.1.0.30
--rwxr-xr-x	root/root	usr/lib/libatkmm-1.6.so.1.0.30
+lrwxrwxrwx	root/root	usr/lib/libatkmm-1.6.so -> libatkmm-1.6.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libatkmm-1.6.so.1 -> libatkmm-1.6.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libatkmm-1.6.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib/libgdkmm-2.4.la
-lrwxrwxrwx	root/root	usr/lib/libgdkmm-2.4.so -> libgdkmm-2.4.so.1.0.30
-lrwxrwxrwx	root/root	usr/lib/libgdkmm-2.4.so.1 -> libgdkmm-2.4.so.1.0.30
--rwxr-xr-x	root/root	usr/lib/libgdkmm-2.4.so.1.0.30
+lrwxrwxrwx	root/root	usr/lib/libgdkmm-2.4.so -> libgdkmm-2.4.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libgdkmm-2.4.so.1 -> libgdkmm-2.4.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libgdkmm-2.4.so.1.1.0
 -rwxr-xr-x	root/root	usr/lib/libgtkmm-2.4.la
-lrwxrwxrwx	root/root	usr/lib/libgtkmm-2.4.so -> libgtkmm-2.4.so.1.0.30
-lrwxrwxrwx	root/root	usr/lib/libgtkmm-2.4.so.1 -> libgtkmm-2.4.so.1.0.30
--rwxr-xr-x	root/root	usr/lib/libgtkmm-2.4.so.1.0.30
+lrwxrwxrwx	root/root	usr/lib/libgtkmm-2.4.so -> libgtkmm-2.4.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libgtkmm-2.4.so.1 -> libgtkmm-2.4.so.1.1.0
+-rwxr-xr-x	root/root	usr/lib/libgtkmm-2.4.so.1.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/atkmm-1.6.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gdkmm-2.4.pc
@@ -487,12 +483,17 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/devhelp/
 drwxr-xr-x	root/root	usr/share/devhelp/books/
 drwxr-xr-x	root/root	usr/share/devhelp/books/gtkmm-2.4/
--rw-r--r--	root/root	usr/share/devhelp/books/gtkmm-2.4/gtkmm-2.4.devhelp
+-rw-r--r--	root/root	usr/share/devhelp/books/gtkmm-2.4/gtkmm-2.4.devhelp2
 drwxr-xr-x	root/root	usr/share/gtkmm-2.4/
 drwxr-xr-x	root/root	usr/share/gtkmm-2.4/demo/
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/alphatest.png
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/apple-red.png
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/background.jpg
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/demo-common.cc
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/demo-common.h
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/demos.h
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/demowindow.cc
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/demowindow.h
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/example_appwindow.cc
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/example_buttonbox.cc
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/example_change_display.cc
@@ -522,3 +523,6 @@ drwxr-xr-x	root/root	usr/share/gtkmm-2.4/demo/
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/gnome-gsame.png
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/gnu-keys.png
 -rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/gtk-logo-rgb.gif
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/main.cc
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/textwidget.cc
+-rw-r--r--	root/root	usr/share/gtkmm-2.4/demo/textwidget.h
