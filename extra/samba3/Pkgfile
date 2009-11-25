@@ -6,7 +6,7 @@
 
 name=samba3
 version=3.3.7
-release=1
+release=2
 localname=samba
 source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz\
        smb.conf)
