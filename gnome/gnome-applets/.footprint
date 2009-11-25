@@ -84,9 +84,6 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/invest/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/widgets.pyc
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/widgets.pyo
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/PolicyKit/
-drwxr-xr-x	root/root	usr/share/PolicyKit/policy/
--rw-r--r--	root/root	usr/share/PolicyKit/policy/org.gnome.cpufreqselector.policy
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.gnome.CPUFreqSelector.service
@@ -421,6 +418,22 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/bg/figures/battstat-applet.pn
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/bg/figures/battstat-credits-hal.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/bg/figures/battstat-preferences.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/bg/figures/context-menu.png
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/ca/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/battstat.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/ca/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/figures/battstat-applet-expanded.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/figures/battstat-applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/figures/battstat-credits-hal.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/figures/battstat-preferences.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/ca/figures/context-menu.png
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/cs/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/battstat.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-applet-expanded.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-credits-hal.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-preferences.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/context-menu.png
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/de/
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/de/battstat.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/de/figures/
@@ -525,6 +538,14 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/uk/figures/battstat-applet-ex
 lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/uk/figures/battstat-credits-hal.png -> ../../C/figures/battstat-credits-hal.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/uk/figures/battstat-preferences.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/uk/figures/context-menu.png -> ../../C/figures/context-menu.png
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/zh_CN/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/zh_CN/battstat.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/zh_CN/figures/battstat-applet-expanded.png -> ../../C/figures/battstat-applet-expanded.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/zh_CN/figures/battstat-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/zh_CN/figures/battstat-credits-hal.png -> ../../C/figures/battstat-credits-hal.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/zh_CN/figures/battstat-preferences.png -> ../../C/figures/battstat-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/zh_CN/figures/context-menu.png -> ../../C/figures/context-menu.png
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/C/
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/C/char-palette.xml
@@ -586,17 +607,17 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/es/figures/charpick_chara
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/eu/
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/eu/char-palette.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/eu/figures/
--rw-r--r--	root/root	usr/share/gnome/help/char-palette/eu/figures/charpalette_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/eu/figures/charpalette_applet.png -> ../../C/figures/charpalette_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/eu/figures/charpalette_chargroup.png
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/eu/figures/charpick-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/char-palette/eu/figures/charpick_characters.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/eu/figures/charpick_characters.png -> ../../C/figures/charpick_characters.png
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/fi/
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/fi/char-palette.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/fi/figures/
--rw-r--r--	root/root	usr/share/gnome/help/char-palette/fi/figures/charpalette_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/fi/figures/charpalette_applet.png -> ../../C/figures/charpalette_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/fi/figures/charpalette_chargroup.png
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/fi/figures/charpick-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/char-palette/fi/figures/charpick_characters.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/fi/figures/charpick_characters.png -> ../../C/figures/charpick_characters.png
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/fr/
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/fr/char-palette.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/fr/figures/
@@ -713,7 +734,7 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-25.p
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences.png -> ../../C/figures/cpufreq-applet-preferences.png
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
@@ -760,10 +781,10 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-100.
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-25.png -> ../../C/figures/cpufreq-25.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
--rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-preferences-smp.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-selector-both.png
--rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-selector.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/eu/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
 drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/fi/
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fi/cpufreq-applet.xml
@@ -774,8 +795,8 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-50.p
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-preferences-smp.png
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-selector-both.png
--rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-selector.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fi/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
 drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/fr/
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fr/cpufreq-applet.xml
@@ -789,6 +810,18 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fr/figures/cpufreq-75.p
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/fr/figures/cpufreq-applet-selector-both.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fr/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/fr/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/hu/
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/hu/cpufreq-applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-100.png -> ../../C/figures/cpufreq-100.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-25.png -> ../../C/figures/cpufreq-25.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-applet-preferences.png -> ../../C/figures/cpufreq-applet-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/hu/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
 drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/nl/
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/nl/cpufreq-applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/nl/figures/
@@ -873,6 +906,30 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_CN/figures/cpufreq-a
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_CN/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_CN/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_CN/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/cpufreq-applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-100.png -> ../../C/figures/cpufreq-100.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-25.png -> ../../C/figures/cpufreq-25.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-applet-preferences.png -> ../../C/figures/cpufreq-applet-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_HK/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/cpufreq-applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-100.png -> ../../C/figures/cpufreq-100.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-25.png -> ../../C/figures/cpufreq-25.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-applet-preferences.png -> ../../C/figures/cpufreq-applet-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/zh_TW/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/C/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/C/drivemount.xml
@@ -883,6 +940,14 @@ drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/C/figures/drivemount-applet_open.png
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/C/figures/drivemount-applet_status.png
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/ca/
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/drivemount.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/ca/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/figures/drivemount-applet_eject.png
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/figures/drivemount-applet_example.png
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/figures/drivemount-applet_mount.png
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/figures/drivemount-applet_open.png
+-rw-r--r--	root/root	usr/share/gnome/help/drivemount/ca/figures/drivemount-applet_status.png
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/cs/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/cs/drivemount.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/cs/figures/
@@ -902,11 +967,11 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/de/figures/drivemount-apple
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/el/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/drivemount.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_eject.png
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_example.png
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_mount.png
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_open.png
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_status.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_eject.png -> ../../C/figures/drivemount-applet_eject.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_example.png -> ../../C/figures/drivemount-applet_example.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_mount.png -> ../../C/figures/drivemount-applet_mount.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_open.png -> ../../C/figures/drivemount-applet_open.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/el/figures/drivemount-applet_status.png -> ../../C/figures/drivemount-applet_status.png
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/en_GB/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/en_GB/drivemount.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/en_GB/figures/
@@ -935,7 +1000,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/fi/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/drivemount.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/drivemount/fi/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_eject.png
--rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_example.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_example.png -> ../../C/figures/drivemount-applet_example.png
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_mount.png
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_open.png
 -rw-r--r--	root/root	usr/share/gnome/help/drivemount/fi/figures/drivemount-applet_status.png
@@ -1055,7 +1120,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/geyes/eu/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/eu/geyes.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/fi/
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/fi/figures/
--rw-r--r--	root/root	usr/share/gnome/help/geyes/fi/figures/geyes_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/geyes/fi/figures/geyes_applet.png -> ../../C/figures/geyes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/fi/geyes.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/fr/
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/fr/figures/
@@ -1140,6 +1205,23 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gweather/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/C/figures/stock_weather-sunny.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/C/gweather.xml
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gweather/ar/
+drwxr-xr-x	root/root	usr/share/gnome/help/gweather/ar/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/gweather-details.png -> ../../C/figures/gweather-details.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/gweather-menu-prefs.png -> ../../C/figures/gweather-menu-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/gweather-prefs-general.png -> ../../C/figures/gweather-prefs-general.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/gweather-prefs-locations.png -> ../../C/figures/gweather-prefs-locations.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/gweather_applet.png -> ../../C/figures/gweather_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-cloudy.png -> ../../C/figures/stock_weather-cloudy.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-few-clouds.png -> ../../C/figures/stock_weather-few-clouds.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-fog.png -> ../../C/figures/stock_weather-fog.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-night-clear.png -> ../../C/figures/stock_weather-night-clear.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-night-few-clouds.png -> ../../C/figures/stock_weather-night-few-clouds.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-showers.png -> ../../C/figures/stock_weather-showers.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-snow.png -> ../../C/figures/stock_weather-snow.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-storm.png -> ../../C/figures/stock_weather-storm.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/ar/figures/stock_weather-sunny.png -> ../../C/figures/stock_weather-sunny.png
+-rw-r--r--	root/root	usr/share/gnome/help/gweather/ar/gweather.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gweather/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/gweather/ca/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/ca/figures/gweather-details.png
@@ -1248,7 +1330,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gweather/eu/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/eu/figures/gweather-menu-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/eu/figures/gweather-prefs-general.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/eu/figures/gweather-prefs-locations.png
--rw-r--r--	root/root	usr/share/gnome/help/gweather/eu/figures/gweather_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/eu/figures/gweather_applet.png -> ../../C/figures/gweather_applet.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/eu/figures/stock_weather-cloudy.png -> ../../C/figures/stock_weather-cloudy.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/eu/figures/stock_weather-few-clouds.png -> ../../C/figures/stock_weather-few-clouds.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/eu/figures/stock_weather-fog.png -> ../../C/figures/stock_weather-fog.png
@@ -1265,7 +1347,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gweather/fi/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/fi/figures/gweather-menu-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/fi/figures/gweather-prefs-general.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/fi/figures/gweather-prefs-locations.png
--rw-r--r--	root/root	usr/share/gnome/help/gweather/fi/figures/gweather_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/fi/figures/gweather_applet.png -> ../../C/figures/gweather_applet.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/fi/figures/stock_weather-cloudy.png -> ../../C/figures/stock_weather-cloudy.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/fi/figures/stock_weather-few-clouds.png -> ../../C/figures/stock_weather-few-clouds.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/fi/figures/stock_weather-fog.png -> ../../C/figures/stock_weather-fog.png
@@ -1450,6 +1532,8 @@ drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/
 drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/C/
 -rw-r--r--	root/root	usr/share/gnome/help/invest-applet/C/invest-applet.xml
 -rw-r--r--	root/root	usr/share/gnome/help/invest-applet/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/ca/
+-rw-r--r--	root/root	usr/share/gnome/help/invest-applet/ca/invest-applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/de/
 -rw-r--r--	root/root	usr/share/gnome/help/invest-applet/de/invest-applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/el/
@@ -1494,15 +1578,15 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/en_GB/figures/volumecont
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/en_GB/mixer_applet2.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/es/figures/
--rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/es/figures/volumecontrol_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/es/figures/volumecontrol_applet.png -> ../../C/figures/volumecontrol_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/es/mixer_applet2.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/eu/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/eu/figures/
--rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/eu/figures/volumecontrol_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/eu/figures/volumecontrol_applet.png -> ../../C/figures/volumecontrol_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/eu/mixer_applet2.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/fi/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/fi/figures/
--rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/fi/figures/volumecontrol_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/fi/figures/volumecontrol_applet.png -> ../../C/figures/volumecontrol_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/fi/mixer_applet2.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/fr/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/fr/figures/
@@ -1562,6 +1646,12 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/ca/figures/multiload-prefere
 lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/ca/figures/system-monitor-applet_window.png -> ../../C/figures/system-monitor-applet_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/ca/figures/system_monitor.png -> ../../C/figures/system_monitor.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/ca/multiload.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/multiload/cs/
+drwxr-xr-x	root/root	usr/share/gnome/help/multiload/cs/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/multiload/cs/figures/multiload-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/cs/figures/system-monitor-applet_window.png -> ../../C/figures/system-monitor-applet_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/cs/figures/system_monitor.png -> ../../C/figures/system_monitor.png
+-rw-r--r--	root/root	usr/share/gnome/help/multiload/cs/multiload.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/de/figures/multiload-preferences.png
@@ -1583,19 +1673,19 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/en_GB/figures/system_monitor
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/es/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/es/figures/multiload-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/multiload/es/figures/system-monitor-applet_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/es/figures/system-monitor-applet_window.png -> ../../C/figures/system-monitor-applet_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/es/figures/system_monitor.png -> ../../C/figures/system_monitor.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/es/multiload.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/eu/
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/eu/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/eu/figures/multiload-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/multiload/eu/figures/system-monitor-applet_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/eu/figures/system-monitor-applet_window.png -> ../../C/figures/system-monitor-applet_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/eu/figures/system_monitor.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/eu/multiload.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/fi/
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/fi/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/fi/figures/multiload-preferences.png
--rw-r--r--	root/root	usr/share/gnome/help/multiload/fi/figures/system-monitor-applet_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/multiload/fi/figures/system-monitor-applet_window.png -> ../../C/figures/system-monitor-applet_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/fi/figures/system_monitor.png
 -rw-r--r--	root/root	usr/share/gnome/help/multiload/fi/multiload.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/multiload/fr/
@@ -1688,11 +1778,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/de/stickynotes_applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/el/
 drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-lock.png
--rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-new.png
--rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-note-prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-prefs.png
--rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes_applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-lock.png -> ../../C/figures/stickynote-right-menu-lock.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynote-right-menu-new.png -> ../../C/figures/stickynote-right-menu-new.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-note-prefs.png -> ../../C/figures/stickynotes-note-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes-prefs.png -> ../../C/figures/stickynotes-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/el/figures/stickynotes_applet.png -> ../../C/figures/stickynotes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/el/stickynotes_applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/en_GB/
 drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/en_GB/figures/
@@ -1790,6 +1880,14 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/uk/figures/stickyno
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/uk/figures/stickynotes-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/uk/figures/stickynotes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/uk/stickynotes_applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynote-right-menu-lock.png -> ../../C/figures/stickynote-right-menu-lock.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynote-right-menu-new.png -> ../../C/figures/stickynote-right-menu-new.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynotes-note-prefs.png -> ../../C/figures/stickynotes-note-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynotes-prefs.png -> ../../C/figures/stickynotes-prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynotes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/stickynotes_applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/C/figures/
@@ -1876,6 +1974,14 @@ drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_CN/
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_CN/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/trashapplet/zh_CN/figures/trash-applet.png -> ../../C/figures/trash-applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/trashapplet/zh_CN/trashapplet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_HK/
+drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/trashapplet/zh_HK/figures/trash-applet.png -> ../../C/figures/trash-applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/trashapplet/zh_HK/trashapplet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_TW/
+drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/zh_TW/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/trashapplet/zh_TW/figures/trash-applet.png -> ../../C/figures/trash-applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/trashapplet/zh_TW/trashapplet.xml
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -1937,6 +2043,8 @@ drwxr-xr-x	root/root	usr/share/omf/accessx-status/
 drwxr-xr-x	root/root	usr/share/omf/battstat/
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-C.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-bg.omf
+-rw-r--r--	root/root	usr/share/omf/battstat/battstat-ca.omf
+-rw-r--r--	root/root	usr/share/omf/battstat/battstat-cs.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-de.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-el.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-en_GB.omf
@@ -1950,6 +2058,7 @@ drwxr-xr-x	root/root	usr/share/omf/battstat/
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-sv.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-uk.omf
+-rw-r--r--	root/root	usr/share/omf/battstat/battstat-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/char-palette/
 -rw-r--r--	root/root	usr/share/omf/char-palette/char-palette-C.omf
 -rw-r--r--	root/root	usr/share/omf/char-palette/char-palette-bg.omf
@@ -1982,6 +2091,7 @@ drwxr-xr-x	root/root	usr/share/omf/cpufreq-applet/
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-eu.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-fi.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-fr.omf
+-rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-hu.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-nl.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-oc.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-pt_BR.omf
@@ -1989,8 +2099,11 @@ drwxr-xr-x	root/root	usr/share/omf/cpufreq-applet/
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-sv.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-uk.omf
 -rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/cpufreq-applet/cpufreq-applet-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/omf/drivemount/
 -rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-C.omf
+-rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-ca.omf
 -rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-cs.omf
 -rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-de.omf
 -rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-el.omf
@@ -2045,6 +2158,7 @@ drwxr-xr-x	root/root	usr/share/omf/gswitchit/
 -rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/gweather/
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-C.omf
+-rw-r--r--	root/root	usr/share/omf/gweather/gweather-ar.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-ca.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-cs.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-de.omf
@@ -2065,6 +2179,7 @@ drwxr-xr-x	root/root	usr/share/omf/gweather/
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/invest-applet/
 -rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-C.omf
+-rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-ca.omf
 -rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-de.omf
 -rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-el.omf
 -rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-en_GB.omf
@@ -2097,6 +2212,7 @@ drwxr-xr-x	root/root	usr/share/omf/mixer_applet2/
 drwxr-xr-x	root/root	usr/share/omf/multiload/
 -rw-r--r--	root/root	usr/share/omf/multiload/multiload-C.omf
 -rw-r--r--	root/root	usr/share/omf/multiload/multiload-ca.omf
+-rw-r--r--	root/root	usr/share/omf/multiload/multiload-cs.omf
 -rw-r--r--	root/root	usr/share/omf/multiload/multiload-de.omf
 -rw-r--r--	root/root	usr/share/omf/multiload/multiload-el.omf
 -rw-r--r--	root/root	usr/share/omf/multiload/multiload-en_GB.omf
@@ -2130,6 +2246,7 @@ drwxr-xr-x	root/root	usr/share/omf/stickynotes_applet/
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-ru.omf
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-sv.omf
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-uk.omf
+-rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/trashapplet/
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-C.omf
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-ca.omf
@@ -2152,6 +2269,8 @@ drwxr-xr-x	root/root	usr/share/omf/trashapplet/
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-sv.omf
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-uk.omf
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/pixmaps/
 drwxr-xr-x	root/root	usr/share/pixmaps/accessx-status-applet/
 -rw-r--r--	root/root	usr/share/pixmaps/accessx-status-applet/ax-applet.png
@@ -2202,6 +2321,9 @@ drwxr-xr-x	root/root	usr/share/pixmaps/stickynotes/
 -rw-r--r--	root/root	usr/share/pixmaps/stickynotes/resize_se.png
 -rw-r--r--	root/root	usr/share/pixmaps/stickynotes/resize_sw.png
 -rw-r--r--	root/root	usr/share/pixmaps/stickynotes/unlocked.png
+drwxr-xr-x	root/root	usr/share/polkit-1/
+drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.gnome.cpufreqselector.policy
 drwxr-xr-x	root/root	usr/share/xmodmap/
 -rw-r--r--	root/root	usr/share/xmodmap/base.xml
 -rw-r--r--	root/root	usr/share/xmodmap/xmodmap.am
