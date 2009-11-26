@@ -2,35 +2,47 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/karbon
+-rwxr-xr-x	root/root	opt/kde/bin/kformula
 -rwxr-xr-x	root/root	opt/kde/bin/koconverter
 -rwxr-xr-x	root/root	opt/kde/bin/kplato
+-rwxr-xr-x	root/root	opt/kde/bin/kplatowork
 -rwxr-xr-x	root/root	opt/kde/bin/kpresenter
 -rwxr-xr-x	root/root	opt/kde/bin/krita
 -rwxr-xr-x	root/root	opt/kde/bin/kspread
 -rwxr-xr-x	root/root	opt/kde/bin/kthesaurus
 -rwxr-xr-x	root/root	opt/kde/bin/kword
 drwxr-xr-x	root/root	opt/kde/include/
+-rw-r--r--	root/root	opt/kde/include/ActionJob_p.h
 -rw-r--r--	root/root	opt/kde/include/DebugPigment.h
+-rw-r--r--	root/root	opt/kde/include/FlakeColor.h
 -rw-r--r--	root/root	opt/kde/include/KoAbstractGradient.h
 -rw-r--r--	root/root	opt/kde/include/KoAction.h
 -rw-r--r--	root/root	opt/kde/include/KoApplication.h
 -rw-r--r--	root/root	opt/kde/include/KoApplicationAdaptor.h
 -rw-r--r--	root/root	opt/kde/include/KoBasicHistogramProducers.h
+-rw-r--r--	root/root	opt/kde/include/KoBookmark.h
+-rw-r--r--	root/root	opt/kde/include/KoBookmarkManager.h
+-rw-r--r--	root/root	opt/kde/include/KoBorder.h
 -rw-r--r--	root/root	opt/kde/include/KoCanvasBase.h
+-rw-r--r--	root/root	opt/kde/include/KoCanvasController.h
 -rw-r--r--	root/root	opt/kde/include/KoCanvasObserver.h
+-rw-r--r--	root/root	opt/kde/include/KoCanvasObserverProvider.h
 -rw-r--r--	root/root	opt/kde/include/KoCanvasResourceProvider.h
 -rw-r--r--	root/root	opt/kde/include/KoChannelInfo.h
--rw-r--r--	root/root	opt/kde/include/KoCharSelectDia.h
 -rw-r--r--	root/root	opt/kde/include/KoChartInterface.h
 -rw-r--r--	root/root	opt/kde/include/KoChartModel.h
--rw-r--r--	root/root	opt/kde/include/KoChild.h
+-rw-r--r--	root/root	opt/kde/include/KoChildrenData.h
 -rw-r--r--	root/root	opt/kde/include/KoColor.h
 -rw-r--r--	root/root	opt/kde/include/KoColorConversionTransformation.h
 -rw-r--r--	root/root	opt/kde/include/KoColorConversionTransformationAbstractFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoColorConversionTransformationFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoColorModelStandardIds.h
+-rw-r--r--	root/root	opt/kde/include/KoColorPatch.h
+-rw-r--r--	root/root	opt/kde/include/KoColorPopupAction.h
 -rw-r--r--	root/root	opt/kde/include/KoColorProfile.h
 -rw-r--r--	root/root	opt/kde/include/KoColorSet.h
+-rw-r--r--	root/root	opt/kde/include/KoColorSetWidget.h
+-rw-r--r--	root/root	opt/kde/include/KoColorSlider.h
 -rw-r--r--	root/root	opt/kde/include/KoColorSpace.h
 -rw-r--r--	root/root	opt/kde/include/KoColorSpaceAbstract.h
 -rw-r--r--	root/root	opt/kde/include/KoColorSpaceConstants.h
@@ -42,110 +54,188 @@ drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/KoColorTransformationFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoColorTransformationFactoryRegistry.h
 -rw-r--r--	root/root	opt/kde/include/KoCompositeOp.h
--rw-r--r--	root/root	opt/kde/include/KoContainerHandler.h
--rw-r--r--	root/root	opt/kde/include/KoContextHelp.h
+-rw-r--r--	root/root	opt/kde/include/KoCopyController.h
+-rw-r--r--	root/root	opt/kde/include/KoCutController.h
 -rw-r--r--	root/root	opt/kde/include/KoDataCenter.h
 -rw-r--r--	root/root	opt/kde/include/KoDockFactory.h
+-rw-r--r--	root/root	opt/kde/include/KoDockRegistry.h
 -rw-r--r--	root/root	opt/kde/include/KoDocument.h
--rw-r--r--	root/root	opt/kde/include/KoDocumentChild.h
+-rw-r--r--	root/root	opt/kde/include/KoDocumentEntry.h
 -rw-r--r--	root/root	opt/kde/include/KoDocumentInfo.h
 -rw-r--r--	root/root	opt/kde/include/KoDocumentInfoDlg.h
--rw-r--r--	root/root	opt/kde/include/KoDocumentSectionModel.h
--rw-r--r--	root/root	opt/kde/include/KoDocumentSectionView.h
 -rw-r--r--	root/root	opt/kde/include/KoDom.h
+-rw-r--r--	root/root	opt/kde/include/KoDpi.h
+-rw-r--r--	root/root	opt/kde/include/KoDrag.h
+-rw-r--r--	root/root	opt/kde/include/KoDragOdfSaveHelper.h
+-rw-r--r--	root/root	opt/kde/include/KoDualColorButton.h
+-rw-r--r--	root/root	opt/kde/include/KoEditColorSetDialog.h
+-rw-r--r--	root/root	opt/kde/include/KoEmbeddedDocumentSaver.h
+-rw-r--r--	root/root	opt/kde/include/KoEmbeddingFilter.h
+-rw-r--r--	root/root	opt/kde/include/KoEventActionAddCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoEventActionRemoveCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoExecutePolicy.h
+-rw-r--r--	root/root	opt/kde/include/KoExecutePolicy_p.h
 -rw-r--r--	root/root	opt/kde/include/KoFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoFallBackColorTransformation.h
 -rw-r--r--	root/root	opt/kde/include/KoFilter.h
 -rw-r--r--	root/root	opt/kde/include/KoFilterChain.h
+-rw-r--r--	root/root	opt/kde/include/KoFilterChainLinkList.h
+-rw-r--r--	root/root	opt/kde/include/KoFilterEntry.h
 -rw-r--r--	root/root	opt/kde/include/KoFilterManager.h
 -rw-r--r--	root/root	opt/kde/include/KoFlake.h
--rw-r--r--	root/root	opt/kde/include/KoFrame.h
 -rw-r--r--	root/root	opt/kde/include/KoFrameShape.h
+-rw-r--r--	root/root	opt/kde/include/KoGenChange.h
+-rw-r--r--	root/root	opt/kde/include/KoGenChanges.h
 -rw-r--r--	root/root	opt/kde/include/KoGenStyle.h
 -rw-r--r--	root/root	opt/kde/include/KoGenStyles.h
--rw-r--r--	root/root	opt/kde/include/KoGeneralPropertyUi.h
 -rw-r--r--	root/root	opt/kde/include/KoGenericRegistry.h
 -rw-r--r--	root/root	opt/kde/include/KoGenericRegistryModel.h
 -rw-r--r--	root/root	opt/kde/include/KoGlobal.h
 -rw-r--r--	root/root	opt/kde/include/KoGridData.h
--rw-r--r--	root/root	opt/kde/include/KoGuideLineDia.h
--rw-r--r--	root/root	opt/kde/include/KoGuides.h
 -rw-r--r--	root/root	opt/kde/include/KoGuidesData.h
 -rw-r--r--	root/root	opt/kde/include/KoHistogramProducer.h
 -rw-r--r--	root/root	opt/kde/include/KoID.h
 -rw-r--r--	root/root	opt/kde/include/KoImageCollection.h
 -rw-r--r--	root/root	opt/kde/include/KoImageData.h
--rw-r--r--	root/root	opt/kde/include/KoImageResource.h
+-rw-r--r--	root/root	opt/kde/include/KoImageSelectionWidget.h
+-rw-r--r--	root/root	opt/kde/include/KoInlineObject.h
+-rw-r--r--	root/root	opt/kde/include/KoInlineTextObjectManager.h
 -rw-r--r--	root/root	opt/kde/include/KoInputDevice.h
 -rw-r--r--	root/root	opt/kde/include/KoInsets.h
 -rw-r--r--	root/root	opt/kde/include/KoIntegerMaths.h
--rw-r--r--	root/root	opt/kde/include/KoItemToolTip.h
+-rw-r--r--	root/root	opt/kde/include/KoInteractionTool.h
 -rw-r--r--	root/root	opt/kde/include/KoJobsListPolicy.h
 -rw-r--r--	root/root	opt/kde/include/KoLabDarkenColorTransformation.h
+-rw-r--r--	root/root	opt/kde/include/KoList.h
 -rw-r--r--	root/root	opt/kde/include/KoLoadingShapeUpdater.h
 -rw-r--r--	root/root	opt/kde/include/KoMainWindow.h
 -rw-r--r--	root/root	opt/kde/include/KoMixColorsOpImpl.h
 -rw-r--r--	root/root	opt/kde/include/KoOasisSettings.h
 -rw-r--r--	root/root	opt/kde/include/KoOdf.h
+-rw-r--r--	root/root	opt/kde/include/KoOdfDocument.h
+-rw-r--r--	root/root	opt/kde/include/KoOdfExporter.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfGraphicStyles.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfLoadingContext.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfNumberStyles.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfPaste.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfReadStore.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfStylesReader.h
--rw-r--r--	root/root	opt/kde/include/KoOdfWorkaround.h
 -rw-r--r--	root/root	opt/kde/include/KoOdfWriteStore.h
+-rw-r--r--	root/root	opt/kde/include/KoPACanvas.h
+-rw-r--r--	root/root	opt/kde/include/KoPADocument.h
+-rw-r--r--	root/root	opt/kde/include/KoPALoadingContext.h
+-rw-r--r--	root/root	opt/kde/include/KoPAPageBase.h
+-rw-r--r--	root/root	opt/kde/include/KoPAPageContainerModel.h
+-rw-r--r--	root/root	opt/kde/include/KoPAUtil.h
+-rw-r--r--	root/root	opt/kde/include/KoPAView.h
+-rw-r--r--	root/root	opt/kde/include/KoPageApp.h
 -rw-r--r--	root/root	opt/kde/include/KoPageFormat.h
 -rw-r--r--	root/root	opt/kde/include/KoPageLayout.h
+-rw-r--r--	root/root	opt/kde/include/KoPageLayoutDialog.h
+-rw-r--r--	root/root	opt/kde/include/KoPageLayoutWidget.h
+-rw-r--r--	root/root	opt/kde/include/KoPagePreviewWidget.h
+-rw-r--r--	root/root	opt/kde/include/KoParameterToPathCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathCombineCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathControlPointMoveCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathFillRuleCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathPointInsertCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathPointMergeCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathPointMoveCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathPointRemoveCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathPointTypeCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathReverseCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoPathSegment.h
+-rw-r--r--	root/root	opt/kde/include/KoPathSegmentTypeCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoPathSeparateCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoPattern.h
--rw-r--r--	root/root	opt/kde/include/KoPicture.h
--rw-r--r--	root/root	opt/kde/include/KoPictureCollection.h
--rw-r--r--	root/root	opt/kde/include/KoPictureKey.h
 -rw-r--r--	root/root	opt/kde/include/KoPointerEvent.h
+-rw-r--r--	root/root	opt/kde/include/KoProgressBar.h
 -rw-r--r--	root/root	opt/kde/include/KoProgressUpdater.h
 -rw-r--r--	root/root	opt/kde/include/KoProperties.h
--rw-r--r--	root/root	opt/kde/include/KoQueryTrader.h
--rw-r--r--	root/root	opt/kde/include/KoRTree.h
 -rw-r--r--	root/root	opt/kde/include/KoResource.h
+-rw-r--r--	root/root	opt/kde/include/KoResourceItemChooser.h
+-rw-r--r--	root/root	opt/kde/include/KoResourceSelector.h
 -rw-r--r--	root/root	opt/kde/include/KoResourceServer.h
 -rw-r--r--	root/root	opt/kde/include/KoResourceServerObserver.h
 -rw-r--r--	root/root	opt/kde/include/KoResourceServerProvider.h
--rw-r--r--	root/root	opt/kde/include/KoRuler.h
 -rw-r--r--	root/root	opt/kde/include/KoSegmentGradient.h
 -rw-r--r--	root/root	opt/kde/include/KoSelection.h
+-rw-r--r--	root/root	opt/kde/include/KoShadowConfigWidget.h
 -rw-r--r--	root/root	opt/kde/include/KoShape.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeAlignCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeBackgroundCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeBorderCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeBorderModel.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeConfigWidgetBase.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeContainer.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeContainerModel.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeController.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeControllerBase.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeCreateCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeDeleteCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeDistributeCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeFactory.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeGroup.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeGroupCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeKeepAspectRatioCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeLayer.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeLoadingContext.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeLockCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeManager.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeMoveCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeOdfSaveHelper.h
 -rw-r--r--	root/root	opt/kde/include/KoShapePainter.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeRegistry.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeRenameCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeReorderCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeSavingContext.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeShadowCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeShearCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeSizeCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeTransformCommand.h
+-rw-r--r--	root/root	opt/kde/include/KoShapeUngroupCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoShapeUserData.h
 -rw-r--r--	root/root	opt/kde/include/KoSnapData.h
 -rw-r--r--	root/root	opt/kde/include/KoStopGradient.h
 -rw-r--r--	root/root	opt/kde/include/KoStore.h
 -rw-r--r--	root/root	opt/kde/include/KoStoreDevice.h
 -rw-r--r--	root/root	opt/kde/include/KoStyleStack.h
--rw-r--r--	root/root	opt/kde/include/KoTabBar.h
+-rw-r--r--	root/root	opt/kde/include/KoSubpathRemoveCommand.h
 -rw-r--r--	root/root	opt/kde/include/KoTableInterface.h
--rw-r--r--	root/root	opt/kde/include/KoTemplateCreateDia.h
+-rw-r--r--	root/root	opt/kde/include/KoText.h
+-rw-r--r--	root/root	opt/kde/include/KoTextAnchor.h
+-rw-r--r--	root/root	opt/kde/include/KoTextBlockBorderData.h
+-rw-r--r--	root/root	opt/kde/include/KoTextBlockData.h
+-rw-r--r--	root/root	opt/kde/include/KoTextDocument.h
+-rw-r--r--	root/root	opt/kde/include/KoTextEditingFactory.h
+-rw-r--r--	root/root	opt/kde/include/KoTextEditingPlugin.h
+-rw-r--r--	root/root	opt/kde/include/KoTextEditingRegistry.h
+-rw-r--r--	root/root	opt/kde/include/KoTextEditor.h
+-rw-r--r--	root/root	opt/kde/include/KoTextLocator.h
+-rw-r--r--	root/root	opt/kde/include/KoTextPage.h
+-rw-r--r--	root/root	opt/kde/include/KoTextPaste.h
+-rw-r--r--	root/root	opt/kde/include/KoTextShapeData.h
 -rw-r--r--	root/root	opt/kde/include/KoTool.h
--rw-r--r--	root/root	opt/kde/include/KoToolBoxFactory.h
--rw-r--r--	root/root	opt/kde/include/KoToolDocker.h
--rw-r--r--	root/root	opt/kde/include/KoToolDockerFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoToolFactory.h
 -rw-r--r--	root/root	opt/kde/include/KoToolManager.h
+-rw-r--r--	root/root	opt/kde/include/KoToolProxy.h
 -rw-r--r--	root/root	opt/kde/include/KoToolRegistry.h
+-rw-r--r--	root/root	opt/kde/include/KoToolSelection.h
+-rw-r--r--	root/root	opt/kde/include/KoTriangleColorSelector.h
+-rw-r--r--	root/root	opt/kde/include/KoUndoStack.h
+-rw-r--r--	root/root	opt/kde/include/KoUniColorChooser.h
+-rw-r--r--	root/root	opt/kde/include/KoUniColorDialog.h
 -rw-r--r--	root/root	opt/kde/include/KoUnit.h
--rw-r--r--	root/root	opt/kde/include/KoUnitDoubleSpinBox.h
+-rw-r--r--	root/root	opt/kde/include/KoUpdater.h
+-rw-r--r--	root/root	opt/kde/include/KoVariable.h
+-rw-r--r--	root/root	opt/kde/include/KoVariableFactory.h
+-rw-r--r--	root/root	opt/kde/include/KoVariableManager.h
+-rw-r--r--	root/root	opt/kde/include/KoVariableRegistry.h
 -rw-r--r--	root/root	opt/kde/include/KoVersionDialog.h
 -rw-r--r--	root/root	opt/kde/include/KoView.h
 -rw-r--r--	root/root	opt/kde/include/KoViewAdaptor.h
--rw-r--r--	root/root	opt/kde/include/KoViewChild.h
 -rw-r--r--	root/root	opt/kde/include/KoViewConverter.h
+-rw-r--r--	root/root	opt/kde/include/KoXYColorSelector.h
 -rw-r--r--	root/root	opt/kde/include/KoXmlNS.h
 -rw-r--r--	root/root	opt/kde/include/KoXmlReader.h
 -rw-r--r--	root/root	opt/kde/include/KoXmlReaderForward.h
@@ -153,7 +243,12 @@ drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/KoZoomAction.h
 -rw-r--r--	root/root	opt/kde/include/KoZoomController.h
 -rw-r--r--	root/root	opt/kde/include/KoZoomHandler.h
+-rw-r--r--	root/root	opt/kde/include/KoZoomInput.h
 -rw-r--r--	root/root	opt/kde/include/KoZoomMode.h
+drwxr-xr-x	root/root	opt/kde/include/changetracker/
+-rw-r--r--	root/root	opt/kde/include/changetracker/KoChangeTracker.h
+-rw-r--r--	root/root	opt/kde/include/changetracker/KoChangeTrackerElement.h
+-rw-r--r--	root/root	opt/kde/include/changetracker/KoDeleteChangeMarker.h
 -rw-r--r--	root/root	opt/kde/include/config-openexr.h
 -rw-r--r--	root/root	opt/kde/include/flake_export.h
 -rw-r--r--	root/root	opt/kde/include/kis_base_node.h
@@ -194,16 +289,32 @@ drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/kis_transform_worker.h
 -rw-r--r--	root/root	opt/kde/include/kis_types.h
 -rw-r--r--	root/root	opt/kde/include/kis_view2.h
--rw-r--r--	root/root	opt/kde/include/kkbdaccessextensions.h
 -rw-r--r--	root/root	opt/kde/include/koChart.h
+-rw-r--r--	root/root	opt/kde/include/koaction_export.h
+-rw-r--r--	root/root	opt/kde/include/kobase_export.h
 -rw-r--r--	root/root	opt/kde/include/kofficeversion.h
--rw-r--r--	root/root	opt/kde/include/koguiutils_export.h
 -rw-r--r--	root/root	opt/kde/include/komain_export.h
 -rw-r--r--	root/root	opt/kde/include/koodf_export.h
+-rw-r--r--	root/root	opt/kde/include/kopageapp_export.h
+-rw-r--r--	root/root	opt/kde/include/koplugin_export.h
 -rw-r--r--	root/root	opt/kde/include/koresource_export.h
 -rw-r--r--	root/root	opt/kde/include/kostore_export.h
+-rw-r--r--	root/root	opt/kde/include/kotext_export.h
+-rw-r--r--	root/root	opt/kde/include/kowidgets_export.h
 -rw-r--r--	root/root	opt/kde/include/krita_export.h
 -rw-r--r--	root/root	opt/kde/include/pigment_export.h
+drwxr-xr-x	root/root	opt/kde/include/styles/
+-rw-r--r--	root/root	opt/kde/include/styles/KoCharacterStyle.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoListLevelProperties.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoListStyle.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoParagraphStyle.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoStyleManager.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableCellStyle.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableColumnFormat.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableColumnStyle.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableFormat.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableRowFormat.h
+-rw-r--r--	root/root	opt/kde/include/styles/KoTableRowStyle.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/artistictextshape.so
@@ -213,18 +324,19 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/clipartthumbnail.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/defaulttools.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/divineproportionshape.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/formulashape.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbon_flattenpathplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbon_refinepathplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbon_roundcornersplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbon_whirlpinchplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbondockersplugin.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/karbonfiltereffects.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/karbontools.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kodocinfopropspage.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/koffice_graya_u16_plugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kofficedockers.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kofficegrayau8plugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kofficescan.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kofficesimpletextedit.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kofficethumbnail.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kopabackgroundtool.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kpr_pageeffect_barwipe.so
@@ -240,6 +352,8 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krita_colorspaces_extensions.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krita_gray_u16_plugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krita_xyz_u16_plugin.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritabackgrounds.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritabigbrother.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritablurfilter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritabracketing2hdr.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritabumpmap.so
@@ -252,10 +366,13 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritacomplexbrush.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaconvolutionfilters.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritacubismfilter.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritacurvepaintop.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadefaultdockers.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadefaultpaintops.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadefaulttools.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadeformpaintop.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadropshadow.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadynamicbrushpaintop.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritadynapaintop.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaembossfilter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaexample.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaextensioncolorsfilters.so
@@ -263,7 +380,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritafilterop.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritagrayplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritahistogram.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kritahistogramdocker.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaimageenhancement.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaimagesize.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritalayercompose.so
@@ -279,18 +395,19 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritarotateimage.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaroundcornersfilter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritarulerassistanttool.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kritarulerassistantview.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaselectiontools.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaseparatechannels.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritashape.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritashearimage.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritasmallcolorselector.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritasmalltilesfilter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritasobelfilter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaspecificcolorselector.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritaspraypaintop.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritasumipaintop.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatogether.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatonemapping.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatoolcrop.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatooldyna.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatoolgrid.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatoolperspectivegrid.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kritatoolpolygon.so
@@ -338,15 +455,19 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libhancomwordimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libhtmlexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libhtmlimport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libicalendarexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbon1ximport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpdfimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpngexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonsvgexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonsvgimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkchartgenericimageexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkchartsvgexport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libkformulapart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkounavailpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkplatopart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libkplatoworkpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkpresenterpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkrita_raw_import.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkritabmpexport.so
@@ -373,6 +494,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libopencalcimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libpalmdocexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libpalmdocimport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libpowerpointimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libqproimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/librtfexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/librtfimport.so
@@ -383,6 +505,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libxsltexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libxsltimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/musicshape.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/paragraphtool.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/pathshapes.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/pictureshape.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/spellcheck.so
@@ -390,134 +513,150 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/textshape.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/textvariables.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/thesaurustool.so
-lrwxrwxrwx	root/root	opt/kde/lib/libKritaRulerAssistantCommon.so -> libKritaRulerAssistantCommon.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libKritaRulerAssistantCommon.so.5 -> libKritaRulerAssistantCommon.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libKritaRulerAssistantCommon.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libchartshapelib.so -> libchartshapelib.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libchartshapelib.so.5 -> libchartshapelib.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libchartshapelib.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libflake.so -> libflake.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libflake.so.5 -> libflake.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libflake.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkarboncommon.so -> libkarboncommon.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkarboncommon.so.5 -> libkarboncommon.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkarboncommon.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkarbonui.so -> libkarbonui.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkarbonui.so.5 -> libkarbonui.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkarbonui.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkchartcommon.so -> libkchartcommon.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkchartcommon.so.5 -> libkchartcommon.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkchartcommon.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkdchart.so -> libkdchart.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkdchart.so.5 -> libkdchart.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdchart.so.5.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libchartshapelib.so -> libchartshapelib.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libchartshapelib.so.6 -> libchartshapelib.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libchartshapelib.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libflake.so -> libflake.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libflake.so.6 -> libflake.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libflake.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkarboncommon.so -> libkarboncommon.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkarboncommon.so.6 -> libkarboncommon.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkarboncommon.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkarbonui.so -> libkarbonui.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkarbonui.so.6 -> libkarbonui.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkarbonui.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkchartcommon.so -> libkchartcommon.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkchartcommon.so.6 -> libkchartcommon.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkchartcommon.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdchart.so -> libkdchart.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkdchart.so.6 -> libkdchart.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdchart.so.6.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_karbon.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kplato.so
+-rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kplatowork.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kpresenter.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_krita.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kspread.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kthesaurus.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kword.so
-lrwxrwxrwx	root/root	opt/kde/lib/libkochart.so -> libkochart.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkochart.so.5 -> libkochart.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkochart.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkoffice_graya_u16.so -> libkoffice_graya_u16.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkoffice_graya_u16.so.5 -> libkoffice_graya_u16.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkoffice_graya_u16.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkofficegrayau8colorspace.so -> libkofficegrayau8colorspace.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkofficegrayau8colorspace.so.5 -> libkofficegrayau8colorspace.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkofficegrayau8colorspace.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkoguiutils.so -> libkoguiutils.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkoguiutils.so.5 -> libkoguiutils.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkoguiutils.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkokross.so -> libkokross.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkokross.so.5 -> libkokross.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkokross.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkomain.so -> libkomain.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkomain.so.5 -> libkomain.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkomain.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkoodf.so -> libkoodf.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkoodf.so.5 -> libkoodf.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkoodf.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkopageapp.so -> libkopageapp.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkopageapp.so.5 -> libkopageapp.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkopageapp.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkoresources.so -> libkoresources.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkoresources.so.5 -> libkoresources.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkoresources.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkostore.so -> libkostore.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkostore.so.5 -> libkostore.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkostore.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkotext.so -> libkotext.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkotext.so.5 -> libkotext.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkotext.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkowmf.so -> libkowmf.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkowmf.so.5 -> libkowmf.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkowmf.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatokernel.so -> libkplatokernel.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatokernel.so.5 -> libkplatokernel.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkplatokernel.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatomodels.so -> libkplatomodels.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatomodels.so.5 -> libkplatomodels.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkplatomodels.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatoprivate.so -> libkplatoprivate.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatoprivate.so.5 -> libkplatoprivate.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkplatoprivate.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatoui.so -> libkplatoui.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkplatoui.so.5 -> libkplatoui.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkplatoui.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkpresenterprivate.so -> libkpresenterprivate.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkpresenterprivate.so.5 -> libkpresenterprivate.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkpresenterprivate.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkrita_xyz_u16.so -> libkrita_xyz_u16.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkrita_xyz_u16.so.5 -> libkrita_xyz_u16.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkrita_xyz_u16.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritabasicdynamiccoloringprogram.so -> libkritabasicdynamiccoloringprogram.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritabasicdynamiccoloringprogram.so.5 -> libkritabasicdynamiccoloringprogram.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritabasicdynamiccoloringprogram.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritabasicdynamicshapeprogram.so -> libkritabasicdynamicshapeprogram.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritabasicdynamicshapeprogram.so.5 -> libkritabasicdynamicshapeprogram.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritabasicdynamicshapeprogram.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritadynamicbrush.so -> libkritadynamicbrush.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritadynamicbrush.so.5 -> libkritadynamicbrush.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritadynamicbrush.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritagrayscale.so -> libkritagrayscale.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritagrayscale.so.5 -> libkritagrayscale.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritagrayscale.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritaimage.so -> libkritaimage.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritaimage.so.5 -> libkritaimage.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritaimage.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritalibbrush.so -> libkritalibbrush.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritalibbrush.so.5 -> libkritalibbrush.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritalibbrush.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritalibpaintop.so -> libkritalibpaintop.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritalibpaintop.so.5 -> libkritalibpaintop.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritalibpaintop.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkritaui.so -> libkritaui.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkritaui.so.5 -> libkritaui.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkritaui.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkspreadcommon.so -> libkspreadcommon.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkspreadcommon.so.5 -> libkspreadcommon.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkspreadcommon.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkwmf.so -> libkwmf.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkwmf.so.5 -> libkwmf.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkwmf.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkwordexportfilters.so -> libkwordexportfilters.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkwordexportfilters.so.5 -> libkwordexportfilters.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkwordexportfilters.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkwordprivate.so -> libkwordprivate.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkwordprivate.so.5 -> libkwordprivate.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libkwordprivate.so.5.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libpigmentcms.so -> libpigmentcms.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libpigmentcms.so.5 -> libpigmentcms.so.5.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libpigmentcms.so.5.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdeinit_kformula.so
+lrwxrwxrwx	root/root	opt/kde/lib/libkformulalib.so -> libkformulalib.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkformulalib.so.6 -> libkformulalib.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkformulalib.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkformulaprivate.so -> libkformulaprivate.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkformulaprivate.so.6 -> libkformulaprivate.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkformulaprivate.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkoaction.so -> libkoaction.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkoaction.so.6 -> libkoaction.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkoaction.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkobase.so -> libkobase.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkobase.so.6 -> libkobase.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkobase.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkochart.so -> libkochart.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkochart.so.6 -> libkochart.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkochart.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkocolorwidgets.so -> libkocolorwidgets.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkocolorwidgets.so.6 -> libkocolorwidgets.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkocolorwidgets.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkoffice_graya_u16.so -> libkoffice_graya_u16.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkoffice_graya_u16.so.6 -> libkoffice_graya_u16.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkoffice_graya_u16.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkofficegrayau8colorspace.so -> libkofficegrayau8colorspace.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkofficegrayau8colorspace.so.6 -> libkofficegrayau8colorspace.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkofficegrayau8colorspace.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkokross.so -> libkokross.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkokross.so.6 -> libkokross.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkokross.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkomain.so -> libkomain.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkomain.so.6 -> libkomain.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkomain.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkoodf.so -> libkoodf.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkoodf.so.6 -> libkoodf.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkoodf.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkopageapp.so -> libkopageapp.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkopageapp.so.6 -> libkopageapp.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkopageapp.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkoplugin.so -> libkoplugin.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkoplugin.so.6 -> libkoplugin.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkoplugin.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkoresources.so -> libkoresources.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkoresources.so.6 -> libkoresources.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkoresources.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkostore.so -> libkostore.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkostore.so.6 -> libkostore.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkostore.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkotext.so -> libkotext.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkotext.so.6 -> libkotext.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkotext.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkowidgets.so -> libkowidgets.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkowidgets.so.6 -> libkowidgets.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkowidgets.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkowmf.so -> libkowmf.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkowmf.so.6 -> libkowmf.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkowmf.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatokernel.so -> libkplatokernel.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatokernel.so.6 -> libkplatokernel.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatokernel.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatomodels.so -> libkplatomodels.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatomodels.so.6 -> libkplatomodels.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatomodels.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoprivate.so -> libkplatoprivate.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoprivate.so.6 -> libkplatoprivate.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatoprivate.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoui.so -> libkplatoui.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoui.so.6 -> libkplatoui.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatoui.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoworkapp.so -> libkplatoworkapp.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoworkapp.so.6 -> libkplatoworkapp.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatoworkapp.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoworkfactory.so -> libkplatoworkfactory.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkplatoworkfactory.so.6 -> libkplatoworkfactory.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkplatoworkfactory.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkpresenterprivate.so -> libkpresenterprivate.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkpresenterprivate.so.6 -> libkpresenterprivate.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkpresenterprivate.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkrita_xyz_u16.so -> libkrita_xyz_u16.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkrita_xyz_u16.so.6 -> libkrita_xyz_u16.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkrita_xyz_u16.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkritagrayscale.so -> libkritagrayscale.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkritagrayscale.so.6 -> libkritagrayscale.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkritagrayscale.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkritaimage.so -> libkritaimage.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkritaimage.so.6 -> libkritaimage.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkritaimage.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkritalibbrush.so -> libkritalibbrush.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkritalibbrush.so.6 -> libkritalibbrush.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkritalibbrush.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkritalibpaintop.so -> libkritalibpaintop.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkritalibpaintop.so.6 -> libkritalibpaintop.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkritalibpaintop.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkritaui.so -> libkritaui.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkritaui.so.6 -> libkritaui.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkritaui.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkspreadcommon.so -> libkspreadcommon.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkspreadcommon.so.6 -> libkspreadcommon.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkspreadcommon.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkwmf.so -> libkwmf.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkwmf.so.6 -> libkwmf.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkwmf.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkwordexportfilters.so -> libkwordexportfilters.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkwordexportfilters.so.6 -> libkwordexportfilters.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkwordexportfilters.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkwordprivate.so -> libkwordprivate.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libkwordprivate.so.6 -> libkwordprivate.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkwordprivate.so.6.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libpigmentcms.so -> libpigmentcms.so.6
+lrwxrwxrwx	root/root	opt/kde/lib/libpigmentcms.so.6 -> libpigmentcms.so.6.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libpigmentcms.so.6.0.0
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KThesaurus.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/karbon.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/kformula.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/koffice.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kplato.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/kplatowork.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kpresenter.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/krita.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/krita_bmp.desktop
@@ -533,15 +672,18 @@ drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/cmake/
 drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKOfficeLibs.cmake
+drwxr-xr-x	root/root	opt/kde/share/apps/formulashape/
+drwxr-xr-x	root/root	opt/kde/share/apps/formulashape/fonts/
+-rw-r--r--	root/root	opt/kde/share/apps/formulashape/fonts/Arev.ttf
+-rw-r--r--	root/root	opt/kde/share/apps/formulashape/fonts/ArevBI.ttf
+-rw-r--r--	root/root	opt/kde/share/apps/formulashape/fonts/ArevBd.ttf
+-rw-r--r--	root/root	opt/kde/share/apps/formulashape/fonts/ArevIt.ttf
+-rw-r--r--	root/root	opt/kde/share/apps/formulashape/fonts/cmex10.ttf
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/gradients/
 -rw-r--r--	root/root	opt/kde/share/apps/karbon/gradients/allcolors.kgr
 -rw-r--r--	root/root	opt/kde/share/apps/karbon/gradients/simple.kgr
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/karbon/icons/crystalsvg/scalable/actions/template_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/16x16/actions/
@@ -605,6 +747,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/48x48/actions/
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/apps/karbon/icons/hicolor/48x48/apps/karbon.png
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/karbon/icons/hicolor/scalable/actions/template_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	opt/kde/share/apps/karbon/icons/hicolor/scalable/apps/karbon.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/karbon/icons/oxygen/
@@ -627,23 +771,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/karbon/templates/Basic/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/karbon/templates/Basic/empty.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_area.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_area_3d.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_bar.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_bar_3d.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_boxwhisker.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_hilo.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_line.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_line_3d.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_pie.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_pie_3d.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_polar.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/chart_ring.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/template_barchart.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/crystalsvg/scalable/actions/template_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/16x16/actions/
@@ -713,6 +840,22 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/48x48/actions/options.png
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/48x48/actions/template_barchart.png
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/48x48/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_area.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_area_3d.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_bar.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_bar_3d.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_boxwhisker.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_hilo.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_line.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_line_3d.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_pie.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_pie_3d.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_polar.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/chart_ring.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/template_barchart.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kchart/icons/hicolor/scalable/actions/template_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kchart/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/pics/chart_area_normal.png
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/pics/chart_area_percent.png
@@ -746,24 +889,22 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kchart/templates/chart/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/templates/chart/.source/Empty.chrt
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/templates/chart/BarChart.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kchart/templates/chart/Empty.desktop
+drwxr-xr-x	root/root	opt/kde/share/apps/kformula/
+-rw-r--r--	root/root	opt/kde/share/apps/kformula/kformula.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kformula/kformula_readonly.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kformula/tips
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/autocorrect/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/autocorrect/autocorrect.xml
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/autocorrect/en_US.xml
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/autocorrect/fr.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/bring_forward.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/format-line-spacing-double.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/format-line-spacing-normal.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/format-line-spacing-triple.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/crystalsvg/scalable/actions/send_backward.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/abs.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/borderoutline.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/brackets.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/bring_forward.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/cap_butt.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/cap_round.png
@@ -779,28 +920,45 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/format-line-spacing-triple.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/format_decreaseindent.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/format_increaseindent.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frac.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_edit.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_formula.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_image.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_query.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_spreadsheet.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/frame_text.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/gsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/gsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/inline_image.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/inline_table.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/insert_table_col.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/insert_table_row.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/int.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/join_bevel.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/join_miter.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/join_round.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/kdb_form.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/kdb_table.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/linewidth.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/lsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/lsup.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/matrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/multiline.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/onetwomatrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/over.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/paren.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/prod.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/rsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/rsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/send_backward.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/sqrt.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/sum.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/tab_first.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/tab_last.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/tab_left.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/tab_right.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/textcolor.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/under.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/view-sort-ascending.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/view-sort-descending.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/actions/view_orientation.png
@@ -811,6 +969,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/16x16/apps/style.png
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/abs.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/aobottom.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/aocenterh.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/aocenterv.png
@@ -832,6 +991,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/borderoutline.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/borderright.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/bordertop.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/brackets.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/bring_forward.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/calligraphy.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/cancel.png
@@ -851,6 +1011,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/format-line-spacing-triple.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/format_decreaseindent.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/format_increaseindent.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/formulashape.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/frac.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/frame_chart.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/frame_edit.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/frame_formula.png
@@ -860,13 +1022,23 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/frame_text.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/gradient.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/group.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/gsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/gsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/inline_image.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/inline_table.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/inscol.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/insert_table_col.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/insert_table_row.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/insrow.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/int.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/kotext-character.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/kotext-paragraph.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/kritashape.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/lower.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/lsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/lsup.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/matrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/multiline.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/music-cross.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/music-dottednote.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/music-doublecross.png
@@ -894,9 +1066,17 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/music-tiednote.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/neonpen.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/ok.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/onetwomatrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/over.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/page.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/paren.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/pattern.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/prod.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/raise.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/remcol.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/remrow.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/rsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/rsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/select.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/send_backward.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/shadow.png
@@ -911,15 +1091,21 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/slide-new.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/slide.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/spreadsheetshape.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/sqrt.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/sum.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/toggle_docbrowser.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/under.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/ungroup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/view-sort-ascending.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/view-sort-descending.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/zoom-page.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/zoom-pixels.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/zoom-two-pages.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/22x22/actions/zoom-width.png
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/abs.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/brackets.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/bring_forward.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/delete_table_col.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/delete_table_row.png
@@ -928,11 +1114,29 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/format-line-spacing-double.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/format-line-spacing-normal.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/format-line-spacing-triple.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/frac.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/grid.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/gsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/gsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/insert_table_col.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/insert_table_row.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/int.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/kritashape.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/lsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/lsup.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/matrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/multiline.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/onetwomatrix.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/over.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/paren.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/prod.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/rsub.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/rsup.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/send_backward.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/spreadsheetshape.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/sqrt.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/sum.png
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/under.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/actions/view-sort-ascending.png
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/32x32/apps/go.png
@@ -947,6 +1151,13 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/48x48/actions/send_backward.png
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/48x48/apps/key_bindings.png
+drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/bring_forward.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/format-line-spacing-double.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/format-line-spacing-normal.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/format-line-spacing-triple.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/hicolor/scalable/actions/send_backward.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/16x16/actions/
@@ -992,30 +1203,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/22x22/actions/smiley-shape.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/22x22/actions/spiral-shape.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/22x22/actions/star-shape.png
-drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_bold_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_bold_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_italic_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_italic_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_left_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_left_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_middle_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_middle_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_right_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_right_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sans_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sans_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_script_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_script_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_serif_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_serif_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sizedown_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sizedown_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sizeup_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_sizeup_inactive.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_underline_active.svgz
--rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/koffice_simple_format_underline_inactive.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/rotate.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/shear.png
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/icons/zoom_in_cursor.png
@@ -1024,29 +1211,54 @@ drwxr-xr-x	root/root	opt/kde/share/apps/koffice/icons/oxygen/scalable/actions/
 drwxr-xr-x	root/root	opt/kde/share/apps/koffice/thesaurus/
 -rw-r--r--	root/root	opt/kde/share/apps/koffice/thesaurus/thesaurus.txt
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/about/
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/intro.html
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/kplato.css
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/main.html
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/tips.html
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/top-left-kplato.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/about/tutorial.html
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/crystalsvg/scalable/actions/template_timechart.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/accounts.png
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/add_milestone.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/add_sub_task.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/add_task.png
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/gantt_chart.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/indent_task.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/move_task_down.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/move_task_up.png
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/pert_chart.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/project_calculate.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/resource-calendar-child-insert.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/resource-calendar-insert.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/resource-group-new.png
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/resources.png
--rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/unindent_task.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-milestone-add.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-task-add.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-task-child-add.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-task-child.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-baselined-add.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-baselined-remove.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-baselined.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-calculus.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-child-insert.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-edit.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/22x22/actions/view-time-schedule-insert.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/32x32/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/32x32/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/32x32/actions/view-task.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/48x48/actions/template_timechart.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/hicolor/scalable/actions/template_timechart.svgz
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/oxygen/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/resource-calendar-child-insert.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/view-time-schedule-baselined-add.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/view-time-schedule-baselined-remove.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/view-time-schedule-baselined.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/view-time-schedule-calculus.png
+-rw-r--r--	root/root	opt/kde/share/apps/kplato/icons/oxygen/22x22/actions/view-time-schedule-insert.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kplato/kpartplugins/
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/kpartplugins/scripting.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/kplato.rc
@@ -1069,19 +1281,41 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kplato/templates/Simple/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/templates/Simple/.source/Plain.kplatot
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/templates/Simple/8HourDay-40HourWeek.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kplato/templates/Simple/Plain.desktop
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/128x128/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/128x128/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/128x128/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/16x16/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/16x16/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/16x16/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/22x22/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/22x22/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/22x22/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/32x32/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/32x32/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/32x32/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/48x48/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/48x48/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/48x48/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/64x64/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/64x64/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/64x64/actions/template_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/icons/hicolor/scalable/actions/template_empty.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/kplatowork.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/kplatowork_mainwindow.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/kplatowork_readonly.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/templates/
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/templates/Simple/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/templates/Simple/.directory
+drwxr-xr-x	root/root	opt/kde/share/apps/kplatowork/templates/Simple/.source/
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/templates/Simple/.source/Empty.kplatoworkt
+-rw-r--r--	root/root	opt/kde/share/apps/kplatowork/templates/Simple/Empty.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_emptylandscape.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_emptyportrait.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_onecolumnlandscape.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_onecolumnportrait.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_titlelandscape.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_titleportrait.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_twocolumnlandscape.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/crystalsvg/scalable/actions/template_twocolumnportrait.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/actions/
@@ -1093,6 +1327,16 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/actions/template_titleportrait.png
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/actions/template_twocolumnlandscape.png
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/48x48/actions/template_twocolumnportrait.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_emptylandscape.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_emptyportrait.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_onecolumnlandscape.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_onecolumnportrait.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_titlelandscape.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_titleportrait.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_twocolumnlandscape.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kpresenter/icons/hicolor/scalable/actions/template_twocolumnportrait.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/kpartplugins/
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/kpartplugins/scan-kpresenter.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/kpresenter.rc
@@ -1128,6 +1372,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kpresenter/templates/Screen/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/templates/Screen/emptyLandscape.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kpresenter/templates/Screen/emptyLandscapeWide.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/
+drwxr-xr-x	root/root	opt/kde/share/apps/krita/backgrounds/
+-rw-r--r--	root/root	opt/kde/share/apps/krita/backgrounds/old_paper.png
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/brushes/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/brushes/10x10square.gbr
 -rw-r--r--	root/root	opt/kde/share/apps/krita/brushes/10x10squareBlur.gbr
@@ -1193,6 +1439,17 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/brushes/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/brushes/pepper.gbr
 -rw-r--r--	root/root	opt/kde/share/apps/krita/brushes/pixel.gbr
 -rw-r--r--	root/root	opt/kde/share/apps/krita/brushes/vine.gih
+drwxr-xr-x	root/root	opt/kde/share/apps/krita/brushmodels/
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/3d-deform-brush.mtl
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/3d-deform-brush.obj
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/3d-pencil.mtl
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/3d-pencil.obj
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/airbrush.mtl
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/airbrush.obj
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/smudge-finger.mtl
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/smudge-finger.obj
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/stylus.mtl
+-rw-r--r--	root/root	opt/kde/share/apps/krita/brushmodels/stylus.obj
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/dtd/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/dtd/krita.dtd
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/gradients/
@@ -1275,29 +1532,31 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/gradients/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/gradients/Yellow_Contrast.ggr
 -rw-r--r--	root/root	opt/kde/share/apps/krita/gradients/Yellow_Orange.ggr
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/krita/icons/crystalsvg/scalable/actions/template_cmyk_empty.svgz
--rw-r--r--	root/root	opt/kde/share/apps/krita/icons/crystalsvg/scalable/actions/template_gray_empty.svgz
--rw-r--r--	root/root	opt/kde/share/apps/krita/icons/crystalsvg/scalable/actions/template_rgb_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/48x48/actions/template_cmyk_empty.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/48x48/actions/template_gray_empty.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/48x48/actions/template_rgb_empty.png
+drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/krita/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/scalable/actions/template_cmyk_empty.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/scalable/actions/template_gray_empty.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/krita/icons/hicolor/scalable/actions/template_rgb_empty.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/images/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-airbrush.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-chalk.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-curve.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-deform.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-duplicate.png
--rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-dynamic.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-dyna.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-eraser.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-filterop.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-mixing.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-paintbrush.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-pencil.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-smudgebrush.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-spray.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/krita-sumi.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/images/previewfilter.png
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/kpartplugins/
@@ -1377,11 +1636,20 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/patterns/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/patterns/wood4.pat
 -rw-r--r--	root/root	opt/kde/share/apps/krita/patterns/wood5.pat
 drwxr-xr-x	root/root	opt/kde/share/apps/krita/pics/
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_east.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_north.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_north_east.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_north_west.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_south.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_south_east.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_south_west.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/arrow_west.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/closedhand_cursor.xpm
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/deletelayer.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_draw_path.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_color_fill.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_color_picker.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_dyna.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_ellipse.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_freehand.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_gradient.png
@@ -1392,6 +1660,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_pan.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_rectangle.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_ruler_assistant.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/krita_tool_transform.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/linked.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/locked.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/lowerlayer.png
@@ -1419,6 +1688,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_line_cursor.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_outline_selection.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_outline_selection_cursor.png
+-rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_path_selection.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_perspectivegrid.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_polygon.png
 -rw-r--r--	root/root	opt/kde/share/apps/krita/pics/tool_polygon_cursor.png
@@ -1476,15 +1746,15 @@ drwxr-xr-x	root/root	opt/kde/share/apps/krita/templates/rgb/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/krita/templates/rgb/white_1600x1200.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/krita/templates/rgb/white_640x480.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kritaplugins/
+-rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/backgrounds.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/bigbrother.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/bracketing2hdr.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/colorrange.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/colorspaceconversion.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/dropshadow.rc
--rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/dynamicbrush.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/histogram.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/imageseparate.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/imagesize.rc
--rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/kritahistogramdocker.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/layercompose.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/metadataeditor.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kritaplugins/metadataeditor/
@@ -1494,9 +1764,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kritaplugins/metadataeditor/
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/metadataeditor/exif.ui
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/modify_selection.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/rotateimage.rc
--rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/rulerassistantview.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/shearimage.rc
--rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/together.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/tonemapping.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kritaplugins/trianglecolorselector.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/
@@ -1517,20 +1785,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kspread/functions/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/functions/text.xml
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/functions/trig.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_balancesheet.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_bmi.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_creditcardtracker.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_expensereport.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_invoice.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_menuplan.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_packingslip.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_pricequotation.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_studentidcard.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_vacationchecklist.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/crystalsvg/scalable/actions/template_worksheet.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/16x16/actions/
@@ -1650,6 +1904,19 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/48x48/actions/template_studentidcard.png
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/48x48/actions/template_vacationchecklist.png
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/48x48/actions/template_worksheet.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_balancesheet.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_bmi.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_creditcardtracker.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_expensereport.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_invoice.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_menuplan.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_packingslip.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_pricequotation.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_studentidcard.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_vacationchecklist.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_worksheet.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/kpartplugins/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kpartplugins/scripting.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kspread.notifyrc
@@ -1721,19 +1988,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kspread/templates/HomeFamily/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/templates/HomeFamily/VacationChecklist.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/crystalsvg/
-drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/
-drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_a4.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_businesscards10.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_envelopec6.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_envelopedl.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_fax.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_labelsl16.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_letter.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_memo.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_plaintext.svgz
--rw-r--r--	root/root	opt/kde/share/apps/kword/icons/crystalsvg/scalable/actions/template_twocolumns.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/128x128/
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/128x128/actions/
@@ -1745,11 +1999,24 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_colorful.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_envelopec6.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_envelopedl.png
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_fax.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_labelsl16.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_letter.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_memo.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_plaintext.png
 -rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/48x48/actions/template_twocolumns.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_a4.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_businesscards10.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_envelopec6.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_envelopedl.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_fax.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_labelsl16.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_letter.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_memo.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_plaintext.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/kword/icons/hicolor/scalable/actions/template_twocolumns.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kword/kpartplugins/
 -rw-r--r--	root/root	opt/kde/share/apps/kword/kpartplugins/scan-kword.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kword/kpartplugins/scripting.rc
@@ -1793,6 +2060,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kword/templates/Normal/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/A4.odt
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/ColorfulA4.odt
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/ColorfulLetter.odt
+-rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/FaxA4.odt
+-rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/FaxLetter.odt
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/Letter.kwt
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/Memo.kwt
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/.source/PlainText.kwt
@@ -1803,6 +2072,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kword/templates/Normal/.source/
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/A4.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/ColorfulA4.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/ColorfulLetter.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/FaxA4.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/FaxLetter.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/Letter.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/Memo.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kword/templates/Normal/ProfessionalA4.desktop
@@ -1840,17 +2111,24 @@ drwxr-xr-x	root/root	opt/kde/share/color/icc/krita/
 -rw-r--r--	root/root	opt/kde/share/color/icc/krita/ycc709.icm
 drwxr-xr-x	root/root	opt/kde/share/color/icc/pigment/
 -rw-r--r--	root/root	opt/kde/share/color/icc/pigment/CMY.icm
--rw-r--r--	root/root	opt/kde/share/color/icc/pigment/cmyk.icm
+-rw-r--r--	root/root	opt/kde/share/color/icc/pigment/fogra27l.icm
 drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
+-rw-r--r--	root/root	opt/kde/share/config.kcfg/kplatosettings.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kspread.kcfg
 drwxr-xr-x	root/root	opt/kde/share/config/
 -rw-r--r--	root/root	opt/kde/share/config/karbonrc
 -rw-r--r--	root/root	opt/kde/share/config/kplatorc
+-rw-r--r--	root/root	opt/kde/share/config/kplatoworkrc
+-rw-r--r--	root/root	opt/kde/share/config/kpresenterrc
 -rw-r--r--	root/root	opt/kde/share/config/kritarc
 -rw-r--r--	root/root	opt/kde/share/config/kwordrc
 drwxr-xr-x	root/root	opt/kde/share/doc/
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/
+drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/karbon/
+lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/karbon/common -> /opt/kde/share/doc/HTML/fr//common
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/karbon/index.cache.bz2
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/karbon/index.docbook
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/kchart/
 lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/kchart/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kchart/file-toolbar.png
@@ -1885,6 +2163,36 @@ lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/kchart/common -> /opt/kde/share/d
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kchart/kchart-wizard4.png
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kchart/shortcut.png
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kchart/toolbars.png
+drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/kformula/
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/ambiguous-string.png
+lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/kformula/common -> /opt/kde/share/doc/HTML/fr//common
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/file-toolbar.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/file-toolbar2.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/green1.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/green2.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/index.cache.bz2
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/index.docbook
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/kfontinst1.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/kfontinst2.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/kfontinst3.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/kfontinst4.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/kfontinst5.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/rk-edit0.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/rk-edit1.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/rk-edit2.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/scilab-edit.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/scilab.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/shortcut0.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/shortcut1.png
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kformula/toolbars.png
+drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/kivio/
+lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/kivio/common -> /opt/kde/share/doc/HTML/fr//common
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/credits.docbook
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/index.cache.bz2
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/index.docbook
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/introduction.docbook
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/usage.docbook
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/kivio/working.docbook
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/fr/koffice/
 lrwxrwxrwx	root/root	opt/kde/share/doc/HTML/fr/koffice/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/fr/koffice/index.cache.bz2
@@ -2118,59 +2426,84 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/krita.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/actions/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/black.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/highlight.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/pen.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kchart.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kformula.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kpresenter.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/krita.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kspread.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kword.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kformula.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kpresenter.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/krita.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kspread.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kword.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kchart.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kformula.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kpresenter.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/krita.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kspread.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kword.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/mimetypes/application-x-vnd.kde.kplato.work.png
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/45x45/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/45x45/mimetypes/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/45x45/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kchart.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kformula.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kpresenter.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/krita.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kspread.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kword.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kplatowork.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/krita.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/mimetypes/application-x-vnd.kde.kplato.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/mimetypes/application-x-vnd.kde.kplato.work.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/kplato.svgz
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/kplatowork.svgz
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/mimetypes/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/mimetypes/application-x-vnd.kde.kplato.svgz
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/mimetypes/application-x-vnd.kde.kplato.work.svgz
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/actions/
@@ -2213,6 +2546,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/karbon_konqi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/kchart_konqi.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/kformula_konqi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/kivio_konqi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/kpresenter_konqi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/krita_konqi.desktop
@@ -2225,8 +2559,10 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/clipartthumbnail.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/defaulttools.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/divineproportionshape.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/formulashape.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/generic_filter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_1x_import.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_pdf_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_png_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_svg_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_svg_import.desktop
@@ -2234,6 +2570,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_wmf_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_wmf_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbondockersplugin.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/karbonfiltereffects.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbonpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbontools.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kchart_bmp_export.desktop
@@ -2244,15 +2581,17 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kchart_xbm_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kchart_xpm_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kchartpart.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kformulapart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kodocinfopropspage.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/koffice_graya_u16_plugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kofficedockers.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kofficegrayaplugin.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kofficesimpletextedit.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kofficethumbnail.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kopabackgroundtool.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kounavail.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kplato_icalendar_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kplatopart.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kplatoworkpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_pageeffect_barwipe.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_pageeffect_clockwipe.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_pageeffect_edgewipe.desktop
@@ -2260,6 +2599,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_pageeffect_matrixwipe.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_pageeffect_slidewipe.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpr_shapeanimation_example.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kpresenter_powerpoint_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpresentereventactions.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpresenterpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kpresentertoolanimation.desktop
@@ -2280,6 +2620,8 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/krita_tiff_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/krita_tiff_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/krita_xyz_u16_plugin.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritabackgrounds.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritabigbrother.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritablurfilter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritabracketing2hdr.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritabumpmapfilter.desktop
@@ -2292,10 +2634,13 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritacomplexbrush.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaconvolutionfilters.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritacubismfilter.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritacurvepaintop.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritadefaultdockers.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritadefaultpaintops.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritadefaulttools.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritadeformpaintop.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritadropshadow.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kritadynamicbrush.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritadynapaintop.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaembossfilter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaexample.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaextensioncolorsfilters.desktop
@@ -2303,7 +2648,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritafilterop.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritagrayplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritahistogram.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kritahistogramdocker.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaimageenhancement.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaimagesize.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritalayercompose.desktop
@@ -2320,16 +2664,17 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritarotateimage.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaroundcornersfilter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritarulerassistanttool.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kritarulerassistantview.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaselectiontools.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritaseparatechannels.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritashape.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritashearimage.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritasmalltilesfilter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritasobelfilter.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritaspraypaintop.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritasumipaintop.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kritatogether.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritatonemapping.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritatoolcrop.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kritatooldyna.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritatoolgrid.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritatoolperspectivegrid.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kritatoolpolygon.desktop
@@ -2393,6 +2738,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_wml_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kwordpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/musicshape.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/paragraphtool.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/pathshapes.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/pictureshape.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/spellcheck.desktop
@@ -2403,6 +2749,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/xslt_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/xslt_import.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
+-rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/filtereffect.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/flake.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/flakedevice.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/flakeshape.desktop
@@ -2415,6 +2762,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kofilter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kofilterwrapper.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/koplugin.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kplato_schedulerplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kpr_pageeffect.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kpr_shapeanimation.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/krita_brush.desktop
@@ -2440,6 +2788,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ChangecasePlugin.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ChartShape.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/DivineProportion.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/FormulaShape.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/KarbonDockersPlugin.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/KarbonTools.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/MusicShape.mo
@@ -2452,6 +2801,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/desktop_koffice.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/karbon.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kchart.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kformula.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kocolorspaces.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/koconverter.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/koffice-defaulttools.mo
@@ -2461,9 +2811,7 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kofficefilters.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kounavail.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplato.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplatokernel.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplatomodels.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplatoui.mo
+-rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplatolibs.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kplatowork.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kpresenter.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/krita.mo
