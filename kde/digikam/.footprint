@@ -36,6 +36,7 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationsettings.h
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/histogrambox.h
+-rw-r--r--	root/root	opt/kde/include/digikam/histogrampainter.h
 -rw-r--r--	root/root	opt/kde/include/digikam/histogramwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/hslmodifier.h
 -rw-r--r--	root/root	opt/kde/include/digikam/iccpreviewwidget.h
@@ -108,9 +109,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamdates.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamsearch.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamtags.so
-drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/
-drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/
--rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/ExternalDraw.so
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so -> libdigikamcore.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so.1 -> libdigikamcore.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libdigikamcore.so.1.0.0
@@ -125,19 +123,9 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/about/
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-middle.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-middle-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-middle-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-middle.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/infopage.css
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/infopage_rtl.css
+-rw-r--r--	root/root	opt/kde/share/apps/digikam/about/digikam.css
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/about/main.html
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/about/top-left-digikam.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/top-middle.png
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/cameraui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/data/
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/data/assistant-collection.png
