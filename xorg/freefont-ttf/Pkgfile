@@ -1,0 +1,18 @@
+# Description:  Famille de police libre
+# URL: http://www.nongnu.org/freefont/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-server
+
+name=freefont-ttf
+version=20090104
+release=1
+source=(http://ftp.gnu.org/gnu/freefont/$name-$version.tar.gz)
+
+build() {
+        cd freefont-$version
+        install -v -d -m755 $PKG/usr/share/fonts/TTF
+        install -v -m644 *.ttf $PKG/usr/share/fonts/TTF
+
+}
+
