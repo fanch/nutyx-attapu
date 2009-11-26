@@ -5,10 +5,11 @@
 # Depends on: kdebase, kdepim
 
 name=koffice
-version=2.0.2
+version=2.1.0
 release=1
-source=(http://download.kde.org/stable/${name}-$version/src/${name}-$version.tar.bz2\
-        http://download.kde.org/stable/${name}-$version/src/${name}-l10n/${name}-l10n-fr-$version.tar.bz2)
+source=(ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-$version.tar.bz2 \
+        ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-l10n/$name-l10n-fr-$version.tar.bz2)
+
 build() {
         mkdir build
         cd build
