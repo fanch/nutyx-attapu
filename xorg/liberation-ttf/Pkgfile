@@ -1,0 +1,30 @@
+# Description: Polices de caractères
+# URL: https://fedorahosted.org/liberation-fonts
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=liberation-ttf
+version=1.04
+release=1
+source=(http://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-$version.tar.gz)
+
+build() {
+        cd liberation-fonts-$version
+        chown -R root:root .
+        find . -perm 666 -exec chmod 644 {} \;
+        find . -perm 664 -exec chmod 644 {} \;
+        find . -perm 600 -exec chmod 644 {} \;
+        find . -perm 444 -exec chmod 644 {} \;
+        find . -perm 400 -exec chmod 644 {} \;
+        find . -perm 440 -exec chmod 644 {} \;
+        find . -perm 777 -exec chmod 755 {} \;
+        find . -perm 775 -exec chmod 755 {} \;
+        find . -perm 511 -exec chmod 755 {} \;
+        find . -perm 711 -exec chmod 755 {} \;
+        find . -perm 555 -exec chmod 755 {} \;
+
+        mkdir -p $PKG/usr/share/fonts/TTF/
+        cp -a *.ttf $PKG/usr/share/fonts/TTF/
+}
+
