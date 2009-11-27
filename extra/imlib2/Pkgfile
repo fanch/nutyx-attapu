@@ -2,7 +2,7 @@
 # URL: http://sourceforge.net/projects/enlightenment
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: aalib, libid3tag, giflib, xorg-libxext
+# Depends on: aalib, libid3tag, giflib, xorg-libxext, libtiff
 
 name=imlib2
 version=1.4.2
