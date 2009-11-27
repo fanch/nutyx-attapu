@@ -1,0 +1,15 @@
+# Description: convertisseur de mesures en ligne de commande
+# URL: http://units.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+name=units
+version=1.87
+release=1
+source=(http://ftp.de.debian.org/debian/pool/main/u/$name/$name.$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
