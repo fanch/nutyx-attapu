@@ -1,0 +1,17 @@
+# Description: a BitTorrent client for ncurses 
+# URL: http://libtorrent.rakshasa.no/downloads/
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on: libtorrent, curl
+name=rtorrent
+version=0.8.5
+release=1
+source=(http://libtorrent.rakshasa.no/downloads/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./autogen.sh
+        ./configure --prefix=/usr --enable-ipv6
+        make
+        make DESTDIR=$PKG install
+}

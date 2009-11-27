@@ -1,0 +1,16 @@
+# Description: shows acpi information from your proc filesystem in an ncurses interface.
+# URL: http://www.ngolde.de/yacpi.html
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on: ncurses, libacpi
+name=yacpi
+version=3.0.1
+release=1
+source=(http://www.ngolde.de/download/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        make
+        install -d $PKG
+	install -D -m 755 $name $PKG
+}
