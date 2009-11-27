@@ -1,0 +1,16 @@
+# Description: Music On Console - console audio player 
+# URL: http://moc.daper.net/
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on: ncurses 
+name=moc
+version=2.4.4
+release=1
+source=(ftp://ftp.daper.net/pub/soft/$name/stable/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
