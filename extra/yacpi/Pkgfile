@@ -1,4 +1,4 @@
-# Description: shows acpi information from your proc filesystem in an ncurses interface.
+# Description: affiche les informations ACPI depuis le système de fichiers proc avec une interface ncurses
 # URL: http://www.ngolde.de/yacpi.html
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
