@@ -1,4 +1,4 @@
-# Description: a BitTorrent client for ncurses 
+# Description: client BitTorrent en console utilisant ncurses 
 # URL: http://libtorrent.rakshasa.no/downloads/
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
