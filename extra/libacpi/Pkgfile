@@ -1,4 +1,4 @@
-# Description: shared library for programs gathering ACPI data on Linux 
+# Description: librairie partagée pour programmes réunissant les informations ACPI sur Linux 
 # URL: http://www.ngolde.de/libacpi.html
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
