@@ -201,9 +201,9 @@ lrwxrwxrwx	root/root	usr/lib/libgnt.so -> libgnt.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgnt.so.0 -> libgnt.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgnt.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libpurple.la
-lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.6.3
-lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.6.3
--rwxr-xr-x	root/root	usr/lib/libpurple.so.0.6.3
+lrwxrwxrwx	root/root	usr/lib/libpurple.so -> libpurple.so.0.6.4
+lrwxrwxrwx	root/root	usr/lib/libpurple.so.0 -> libpurple.so.0.6.4
+-rwxr-xr-x	root/root	usr/lib/libpurple.so.0.6.4
 drwxr-xr-x	root/root	usr/lib/pidgin/
 -rwxr-xr-x	root/root	usr/lib/pidgin/convcolors.la
 -rwxr-xr-x	root/root	usr/lib/pidgin/convcolors.so
@@ -271,6 +271,8 @@ lrwxrwxrwx	root/root	usr/lib/purple-2/libjabber.so.0 -> libjabber.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/libjabber.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/libmsn.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/libmsn.so
+-rwxr-xr-x	root/root	usr/lib/purple-2/libmxit.la
+-rwxr-xr-x	root/root	usr/lib/purple-2/libmxit.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/libmyspace.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/libmyspace.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/libnovell.la
@@ -305,6 +307,8 @@ lrwxrwxrwx	root/root	usr/lib/purple-2/libymsg.so.0 -> libymsg.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/purple-2/psychic.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl-gnutls.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl-gnutls.so
+-rwxr-xr-x	root/root	usr/lib/purple-2/ssl-nss.la
+-rwxr-xr-x	root/root	usr/lib/purple-2/ssl-nss.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl.la
 -rwxr-xr-x	root/root	usr/lib/purple-2/ssl.so
 -rwxr-xr-x	root/root	usr/lib/purple-2/statenotify.la
@@ -720,6 +724,7 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/protocols/16/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/jabber.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/meanwhile.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/msn.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/mxit.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/myspace.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/novell.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/16/qq.png
@@ -753,6 +758,7 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/protocols/48/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/jabber.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/meanwhile.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/msn.png
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/mxit.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/myspace.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/novell.png
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/48/qq.png
@@ -770,6 +776,7 @@ drwxr-xr-x	root/root	usr/share/pixmaps/pidgin/protocols/scalable/
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/jabber.svg
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/meanwhile.svg
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/msn.svg
+-rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/mxit.svg
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/novell.svg
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/qq.svg
 -rw-r--r--	root/root	usr/share/pixmaps/pidgin/protocols/scalable/silc.svg
