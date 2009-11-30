@@ -5,11 +5,11 @@
 # Depends on: 
 
 name=virtualbox-module
-version=3.0.12
-release=2
+version=3.1.0
+release=1
 _name=VirtualBox
 _kernel=`uname -r`
-_build=54655
+_build=55467
 source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
 
 
