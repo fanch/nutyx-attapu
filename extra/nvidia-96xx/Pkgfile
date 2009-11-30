@@ -1,0 +1,49 @@
+# Description:  Pilote propriétaire pour les cartes graphiques NVIDIA
+# URL: http://www.nvidia.com/object/unix.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
+
+name=nvidia-96xx
+version=96.43.14
+release=1
+kernel=`uname -r`
+source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version-pkg1.run\
+        )
+
+build() {
+        mkdir -p $PKG/lib/modules/$kernel/kernel/drivers/video
+        sh NVIDIA-Linux-x86-$version-pkg1.run --extract-only
+        cd NVIDIA-Linux-x86-$version-pkg1/usr/src/nv
+        ln -s Makefile.kbuild Makefile
+        make SYSSRC=/usr/src/linux-$kernel module
+        install -m644 nvidia.ko $PKG/lib/modules/$kernel/kernel/drivers/video
+        cd ../../
+        mkdir -p $PKG/usr/{lib,lib/xorg/modules/{extensions,drivers},bin,share/applications,share/pixmaps}
+        mkdir -p $PKG/usr/share/{man/man1,doc,licences/nvidia-71xx/}
+        install lib/{libGLcore.so.$version,libGL.so.$version,tls/libnvidia-tls.so.$version} \
+       $PKG/usr/lib/
+        install X11R6/lib/libXv* $PKG/usr/lib/
+        install -m644 share/man/man1/* $PKG/usr/share/man/man1/
+        rm $PKG/usr/share/man/man1/nvidia-installer.1.gz
+        # fix nvidia .desktop file
+        sed -e 's:__UTILS_PATH__:/usr/bin:' -e 's:__PIXMAP_PATH__:/usr/share/pixmaps:' -i \
+        share/applications/nvidia-settings.desktop
+        install -m644 share/applications/nvidia-settings.desktop $PKG/usr/share/applications/
+        install -m644 share/pixmaps/nvidia-settings.png $PKG/usr/share/pixmaps/
+        install X11R6/lib/modules/drivers/nvidia_drv.so $PKG/usr/lib/xorg/modules/drivers
+        install X11R6/lib/modules/extensions/libglx.so.$version $PKG/usr/lib/xorg/modules/extensions
+        install -m755 bin/nvidia-{settings,bug-report.sh} $PKG/usr/bin/
+        cd $PKG/usr/lib/
+        ln -s /usr/lib/libGL.so.$version libGL.so
+        ln -s /usr/lib/libGL.so.$version libGL.so.1
+        ln -s /usr/lib/libGLcore.so.$version libGLcore.so.1
+        ln -s /usr/lib/libnvidia-tls.so.$version libnvidia-tls.so.1
+        cd $PKG/usr/lib/xorg/modules/extensions
+        ln -s /usr/lib/xorg/modules/extensions/libglx.so.$version libglx.so
+        install -m644 $PKGMK_WORK_DIR/src/NVIDIA-Linux-x86-$version-pkg1/LICENSE \
+        $PKG/usr/share/licences/nvidia-71xx/
+        install -D -m644 $PKGMK_WORK_DIR/src/NVIDIA-Linux-x86-$version-pkg1/usr/share/doc/README.txt $PKG/usr/share/doc/nvidia/README
+        find $PKG/usr -type d -exec chmod 755 {} \;
+}
+
