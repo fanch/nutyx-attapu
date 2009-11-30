@@ -2,16 +2,15 @@
 # URL: http://k3b.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kdebase-runtime, kdemultimedia, libsamplerate, dvd+rw-tools, vcdimager, libmad, ffmpeg, taglib, libmpcdec, libdvdread, polkit-qt, automoc4, cmake, cdrkit, cdrdao
+# Depends on: kdelibs, kdemultimedia, libsamplerate, dvd+rw-tools, vcdimager, libmad, ffmpeg, taglib, libmpcdec, libdvdread, polkit-qt, automoc4, cmake, cdrkit, cdrdao
 
 name=k3b
-version=1.66.0alpha2
+version=1.69.0alpha4
 release=1
-source=(http://switch.dl.sourceforge.net/sourceforge/k3b/k3b-$version.tar.bz2 \
-	)
+source=(http://switch.dl.sourceforge.net/sourceforge/k3b/k3b-$version.tar.bz2)
 
 build() {
-cd k3b-1.66.0
+cd k3b-*
 cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_SKIP_RPATH=ON -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
  -DBUILD_doc=OFF
