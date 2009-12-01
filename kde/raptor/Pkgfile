@@ -2,10 +2,10 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on:
+# Depends on: libxslt, libxml2, curl, openssl
 
 name=raptor
-version=1.4.18
+version=1.4.19
 release=1
 source=(http://download.librdf.org/source/$name-$version.tar.gz)
 
