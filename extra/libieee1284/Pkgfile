@@ -6,12 +6,13 @@
 
 name=libieee1284
 version=0.2.11
-release=3
+release=4
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
 }
