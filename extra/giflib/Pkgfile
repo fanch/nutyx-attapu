@@ -2,7 +2,7 @@
 # URL:  http://giflib.sourceforge.net/doc/
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: xorg-libx11
 
 name=giflib
 version=4.1.6
