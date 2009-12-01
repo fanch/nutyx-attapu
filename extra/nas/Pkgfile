@@ -2,7 +2,7 @@
 # URL: http://www.radscan.com/nas.html 
 # Maintainer: NuTyX Core
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-imake, xorg-gccmakedep, xorg-libxp
+# Depends on: xorg-imake, xorg-gccmakedep, xorg-libxp, xorg-libxaw
 
 name=nas
 version=1.9.2
