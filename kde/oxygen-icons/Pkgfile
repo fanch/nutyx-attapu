@@ -5,8 +5,8 @@
 # Depends on: kdebase-runtime
 
 name=oxygen-icons
-version=4.3.3
-release=2
+version=4.3.4
+release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
 	NuTyXlogo.png)
 
