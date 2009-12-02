@@ -70,6 +70,7 @@ drwxr-xr-x	root/root	opt/kde/include/Soprano/Server/
 -rw-r--r--	root/root	opt/kde/include/Soprano/StorageModel
 drwxr-xr-x	root/root	opt/kde/include/Soprano/Util/
 -rw-r--r--	root/root	opt/kde/include/Soprano/Util/AsyncModel
+-rw-r--r--	root/root	opt/kde/include/Soprano/Util/AsyncQuery
 -rw-r--r--	root/root	opt/kde/include/Soprano/Util/AsyncResult
 -rw-r--r--	root/root	opt/kde/include/Soprano/Util/DummyModel
 -rw-r--r--	root/root	opt/kde/include/Soprano/Util/MutexModel
@@ -89,6 +90,7 @@ drwxr-xr-x	root/root	opt/kde/include/Soprano/Vocabulary/
 -rw-r--r--	root/root	opt/kde/include/Soprano/Vocabulary/Xesam
 drwxr-xr-x	root/root	opt/kde/include/soprano/
 -rw-r--r--	root/root	opt/kde/include/soprano/asyncmodel.h
+-rw-r--r--	root/root	opt/kde/include/soprano/asyncquery.h
 -rw-r--r--	root/root	opt/kde/include/soprano/asyncresult.h
 -rw-r--r--	root/root	opt/kde/include/soprano/backend.h
 -rw-r--r--	root/root	opt/kde/include/soprano/bindingset.h
@@ -160,14 +162,14 @@ lrwxrwxrwx	root/root	opt/kde/lib/libsoprano.so -> libsoprano.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libsoprano.so.4 -> libsoprano.so.4.2.0
 -rwxr-xr-x	root/root	opt/kde/lib/libsoprano.so.4.2.0
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoclient.so -> libsopranoclient.so.1
-lrwxrwxrwx	root/root	opt/kde/lib/libsopranoclient.so.1 -> libsopranoclient.so.1.1.0
--rwxr-xr-x	root/root	opt/kde/lib/libsopranoclient.so.1.1.0
+lrwxrwxrwx	root/root	opt/kde/lib/libsopranoclient.so.1 -> libsopranoclient.so.1.2.0
+-rwxr-xr-x	root/root	opt/kde/lib/libsopranoclient.so.1.2.0
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoindex.so -> libsopranoindex.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoindex.so.1 -> libsopranoindex.so.1.1.0
 -rwxr-xr-x	root/root	opt/kde/lib/libsopranoindex.so.1.1.0
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoserver.so -> libsopranoserver.so.1
-lrwxrwxrwx	root/root	opt/kde/lib/libsopranoserver.so.1 -> libsopranoserver.so.1.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsopranoserver.so.1.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libsopranoserver.so.1 -> libsopranoserver.so.1.2.0
+-rwxr-xr-x	root/root	opt/kde/lib/libsopranoserver.so.1.2.0
 drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
 -rw-r--r--	root/root	opt/kde/lib/pkgconfig/soprano.pc
 drwxr-xr-x	root/root	opt/kde/lib/soprano/
@@ -177,10 +179,6 @@ drwxr-xr-x	root/root	opt/kde/lib/soprano/
 -rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_raptorserializer.so
 -rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_redlandbackend.so
 drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/apps/
-drwxr-xr-x	root/root	opt/kde/share/apps/cmake/
-drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
--rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/SopranoAddOntology.cmake
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.soprano.Model.xml
@@ -189,6 +187,8 @@ drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.soprano.Server.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.soprano.StatementIterator.xml
 drwxr-xr-x	root/root	opt/kde/share/soprano/
+drwxr-xr-x	root/root	opt/kde/share/soprano/cmake/
+-rw-r--r--	root/root	opt/kde/share/soprano/cmake/SopranoAddOntology.cmake
 drwxr-xr-x	root/root	opt/kde/share/soprano/plugins/
 -rw-r--r--	root/root	opt/kde/share/soprano/plugins/nquadparser.desktop
 -rw-r--r--	root/root	opt/kde/share/soprano/plugins/nquadserializer.desktop
