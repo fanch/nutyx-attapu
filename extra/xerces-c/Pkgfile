@@ -2,7 +2,7 @@
 # URL: http://xerces.apache.org/xerces-c/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: icu
+# Depends on: icu, curl
 
 name=xerces-c
 version=3.0.1
