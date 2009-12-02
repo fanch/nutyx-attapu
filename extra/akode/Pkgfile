@@ -2,7 +2,7 @@
 # URL: http://carewolf.com/akode/ 
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: alsa-lib
 
 name=akode
 version=2.0.2
