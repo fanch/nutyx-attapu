@@ -15,6 +15,7 @@ drwxr-xr-x	root/root	etc/security/namespace.d/
 -rw-r--r--	root/root	etc/security/time.conf
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/security/
+-rwxr-xr-x	root/root	lib/security/mkhomedir_helper
 -rwxr-xr-x	root/root	lib/security/pam_access.la
 -rwxr-xr-x	root/root	lib/security/pam_access.so
 -rwxr-xr-x	root/root	lib/security/pam_debug.la
@@ -63,6 +64,8 @@ drwxr-xr-x	root/root	lib/security/pam_filter/
 -rwxr-xr-x	root/root	lib/security/pam_nologin.so
 -rwxr-xr-x	root/root	lib/security/pam_permit.la
 -rwxr-xr-x	root/root	lib/security/pam_permit.so
+-rwxr-xr-x	root/root	lib/security/pam_pwhistory.la
+-rwxr-xr-x	root/root	lib/security/pam_pwhistory.so
 -rwxr-xr-x	root/root	lib/security/pam_rhosts.la
 -rwxr-xr-x	root/root	lib/security/pam_rhosts.so
 -rwxr-xr-x	root/root	lib/security/pam_rootok.la
@@ -77,8 +80,14 @@ drwxr-xr-x	root/root	lib/security/pam_filter/
 -rwxr-xr-x	root/root	lib/security/pam_succeed_if.so
 -rwxr-xr-x	root/root	lib/security/pam_tally.la
 -rwxr-xr-x	root/root	lib/security/pam_tally.so
+-rwxr-xr-x	root/root	lib/security/pam_tally2
+-rwxr-xr-x	root/root	lib/security/pam_tally2.la
+-rwxr-xr-x	root/root	lib/security/pam_tally2.so
 -rwxr-xr-x	root/root	lib/security/pam_time.la
 -rwxr-xr-x	root/root	lib/security/pam_time.so
+-rwxr-xr-x	root/root	lib/security/pam_timestamp.la
+-rwxr-xr-x	root/root	lib/security/pam_timestamp.so
+-rwxr-xr-x	root/root	lib/security/pam_timestamp_check
 -rwxr-xr-x	root/root	lib/security/pam_umask.la
 -rwxr-xr-x	root/root	lib/security/pam_umask.so
 -rwxr-xr-x	root/root	lib/security/pam_unix.la
@@ -110,23 +119,23 @@ drwxr-xr-x	root/root	usr/include/security/
 -rw-r--r--	root/root	usr/include/security/pam_modutil.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libpam.la
-lrwxrwxrwx	root/root	usr/lib/libpam.so -> libpam.so.0.81.10
-lrwxrwxrwx	root/root	usr/lib/libpam.so.0 -> libpam.so.0.81.10
--rwxr-xr-x	root/root	usr/lib/libpam.so.0.81.10
+lrwxrwxrwx	root/root	usr/lib/libpam.so -> libpam.so.0.82.1
+lrwxrwxrwx	root/root	usr/lib/libpam.so.0 -> libpam.so.0.82.1
+-rwxr-xr-x	root/root	usr/lib/libpam.so.0.82.1
 -rwxr-xr-x	root/root	usr/lib/libpam_misc.la
-lrwxrwxrwx	root/root	usr/lib/libpam_misc.so -> libpam_misc.so.0.81.3
-lrwxrwxrwx	root/root	usr/lib/libpam_misc.so.0 -> libpam_misc.so.0.81.3
--rwxr-xr-x	root/root	usr/lib/libpam_misc.so.0.81.3
+lrwxrwxrwx	root/root	usr/lib/libpam_misc.so -> libpam_misc.so.0.82.0
+lrwxrwxrwx	root/root	usr/lib/libpam_misc.so.0 -> libpam_misc.so.0.82.0
+-rwxr-xr-x	root/root	usr/lib/libpam_misc.so.0.82.0
 -rwxr-xr-x	root/root	usr/lib/libpamc.la
-lrwxrwxrwx	root/root	usr/lib/libpamc.so -> libpamc.so.0.81.0
-lrwxrwxrwx	root/root	usr/lib/libpamc.so.0 -> libpamc.so.0.81.0
--rwxr-xr-x	root/root	usr/lib/libpamc.so.0.81.0
+lrwxrwxrwx	root/root	usr/lib/libpamc.so -> libpamc.so.0.82.1
+lrwxrwxrwx	root/root	usr/lib/libpamc.so.0 -> libpamc.so.0.82.1
+-rwxr-xr-x	root/root	usr/lib/libpamc.so.0.82.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/Linux-PAM-0.99.10.0/
--rw-r--r--	root/root	usr/share/doc/Linux-PAM-0.99.10.0/draft-morgan-pam-current.txt
--rw-r--r--	root/root	usr/share/doc/Linux-PAM-0.99.10.0/index.html
--rw-r--r--	root/root	usr/share/doc/Linux-PAM-0.99.10.0/rfc86.0.txt
+drwxr-xr-x	root/root	usr/share/doc/Linux-PAM-1.1.0/
+-rw-r--r--	root/root	usr/share/doc/Linux-PAM-1.1.0/draft-morgan-pam-current.txt
+-rw-r--r--	root/root	usr/share/doc/Linux-PAM-1.1.0/index.html
+-rw-r--r--	root/root	usr/share/doc/Linux-PAM-1.1.0/rfc86.0.txt
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -143,6 +152,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/pam_end.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pam_error.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pam_fail_delay.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/pam_get_authtok.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pam_get_data.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pam_get_item.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pam_get_user.3.gz
@@ -183,6 +193,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/time.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/PAM.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/mkhomedir_helper.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_access.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_cracklib.8.gz
@@ -208,13 +219,17 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/pam_namespace.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_nologin.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_permit.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_pwhistory.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_rhosts.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_rootok.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_securetty.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_shells.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_succeed_if.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_tally.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_tally2.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_time.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_timestamp.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_timestamp_check.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_tty_audit.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_umask.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_unix.8.gz

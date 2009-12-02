@@ -5,19 +5,13 @@
 # Depends on:
 
 name=gpm
-version=1.20.5
+version=1.20.6
 release=1
-source=( http://unix.schottelius.org/$name/archives/$name-$version.tar.bz2\
-	gpm-$version-nodebug.patch \
-	gpm-$version-no-dumb-error-messages.patch \
-	gpm-$version-make-install-fixes.patch )
+source=( http://unix.schottelius.org/$name/archives/$name-$version.tar.bz2)
 
 
 build() {
 	cd $name-$version
-	patch -p 1 -i ../gpm-$version-nodebug.patch
-	patch -p 1 -i ../gpm-$version-no-dumb-error-messages.patch
-	patch -p 1 -i ../gpm-$version-make-install-fixes.patch
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--mandir=/usr/share/man \
@@ -26,7 +20,7 @@ build() {
                 --enable-mpbsd
 	LDFLAGS="-lm" make
 	make ROOT=$PKG install
-	ln -sv libgpm.so.1.19.0 $PKG/usr/lib/libgpm.so.1
-#	ln -sv libgpm.so.1.19.0 $PKG/usr/lib/libgpm.so
+	ln -sv libgpm.so.2.1.0 $PKG/usr/lib/libgpm.so.1
+	ln -sv libgpm.so.2.1.0 $PKG/usr/lib/libgpm.so
 	cp -v conf/gpm-root.conf $PKG/etc
 }

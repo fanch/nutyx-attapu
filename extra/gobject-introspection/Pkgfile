@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, libffi
+# Depends on: glib, libffi, python
 
 name=gobject-introspection
 version=0.6.5
