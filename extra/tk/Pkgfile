@@ -2,7 +2,7 @@
 # URL: http://www.tcl.tk
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: tcl
+# Depends on: tcl, xorg-libx11
 
 name=tk
 version=8.5.7
