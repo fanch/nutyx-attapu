@@ -2,13 +2,13 @@
 # URL: http://www.ruby-lang.org/fr
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gdbm
+# Depends on: gdbm, tk
 
 name=ruby
-version=1.8.7
-_version=1.8.7-p72
+version=1.9.1
+_version=1.9.1-p243
 release=1
-source=(ftp://ftp.ruby-lang.org/pub/ruby/1.8/$name-$_version.tar.bz2)
+source=(ftp://ftp.ruby-lang.org/pub/ruby/1.9/$name-$_version.tar.gz)
 
 build() {
 	cd $name-$_version
