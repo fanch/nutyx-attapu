@@ -18,6 +18,7 @@ cd $name-$version
 	--mandir=$GNOME_PREFIX/share/man \
 	--enable-pixbuf \
 	--enable-impress \
+	--disable-nautilus \
 	--enable-djvu \
 	--disable-schemas-install \
 	--disable-scrollkeeper

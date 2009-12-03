@@ -13,7 +13,8 @@ source=(http://portland.freedesktop.org/download/$name-$version.tgz\
 build() {
 cd $name-$version
 	patch -Np1 -i ../$name-$version-midori-1.patch
-	./configure --prefix=/usr 
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
 }

@@ -36,6 +36,7 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationsettings.h
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/histogrambox.h
+-rw-r--r--	root/root	opt/kde/include/digikam/histogrampainter.h
 -rw-r--r--	root/root	opt/kde/include/digikam/histogramwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/hslmodifier.h
 -rw-r--r--	root/root	opt/kde/include/digikam/iccpreviewwidget.h
@@ -54,12 +55,14 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/imageregionwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imagewidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/iptcwidget.h
+-rw-r--r--	root/root	opt/kde/include/digikam/knotificationwrapper.h
 -rw-r--r--	root/root	opt/kde/include/digikam/libsinfodlg.h
 -rw-r--r--	root/root	opt/kde/include/digikam/makernotewidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/mdkeylistviewitem.h
 -rw-r--r--	root/root	opt/kde/include/digikam/metadatalistview.h
 -rw-r--r--	root/root	opt/kde/include/digikam/metadatalistviewitem.h
 -rw-r--r--	root/root	opt/kde/include/digikam/metadatawidget.h
+-rw-r--r--	root/root	opt/kde/include/digikam/noisereductionsettings.h
 -rw-r--r--	root/root	opt/kde/include/digikam/paniconwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/photoinfocontainer.h
 -rw-r--r--	root/root	opt/kde/include/digikam/previewwidget.h
@@ -71,6 +74,7 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/statusprogressbar.h
 -rw-r--r--	root/root	opt/kde/include/digikam/statuszoombar.h
 -rw-r--r--	root/root	opt/kde/include/digikam/template.h
+-rw-r--r--	root/root	opt/kde/include/digikam/waveletsnr.h
 -rw-r--r--	root/root	opt/kde/include/digikam/xmpwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam_export.h
 drwxr-xr-x	root/root	opt/kde/lib/
@@ -94,7 +98,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_inserttext.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_lenscorrection.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_localcontrast.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_noisereduction.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_oilpaint.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_perspective.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/digikamimageplugin_raindrop.so
@@ -108,9 +111,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamdates.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamsearch.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_digikamtags.so
-drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/
-drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/
--rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/ExternalDraw.so
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so -> libdigikamcore.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libdigikamcore.so.1 -> libdigikamcore.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libdigikamcore.so.1.0.0
@@ -125,19 +125,9 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/about/
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-middle.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-bottom-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-middle-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-middle-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-left.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-middle.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/box-top-right.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/infopage.css
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/infopage_rtl.css
+-rw-r--r--	root/root	opt/kde/share/apps/digikam/about/digikam.css
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/about/main.html
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/about/top-left-digikam.png
--rw-r--r--	root/root	opt/kde/share/apps/digikam/about/top-middle.png
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/cameraui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/digikam/data/
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/data/assistant-collection.png
@@ -205,6 +195,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/digikam/data/
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/data/wall-pattern.png
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/data/wall-texture.png
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/data/wood-pattern.png
+-rw-r--r--	root/root	opt/kde/share/apps/digikam/digikam.notifyrc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_adjustcurves_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_adjustlevels_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_blurfx_ui.rc
@@ -224,7 +215,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/digikam/data/
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_inserttext_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_lenscorrection_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_localcontrast_ui.rc
--rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_noisereduction_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_oilpaint_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_perspective_ui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/digikam/digikamimageplugin_raindrop_ui.rc
@@ -725,7 +715,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_inserttext.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_lenscorrection.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_localcontrast.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_noisereduction.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_oilpaint.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_perspective.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/digikamimageplugin_raindrop.desktop

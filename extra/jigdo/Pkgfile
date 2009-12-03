@@ -1,0 +1,19 @@
+# Description: Jigsaw Download, un outil pour simplifier la distribution de gros fichiers sur internet, par exemple des images de CD ou de DVD.
+# URL: http://atterer.net/jigdo
+# Maintainer: NuTyX core team
+# Packager: guy_
+# Depends on: gtk2
+name=jigdo
+version=0.7.3
+release=1
+source=(http://atterer.net/$name/$name-$version.tar.bz2 \
+	http://sources.gentoo.org/viewcvs.py/*checkout*/gentoo-x86/net-misc/jigdo/files/jigdo-0.7.3-gcc43.patch \
+	)
+build() {
+	cd $name-$version
+        patch -p1 < ../jigdo-0.7.3-gcc43.patch 
+	sed '/--force-direct/s/\(" -- "\)$@"/\1`echo \$@ | sed s-#-%23-`"/' -i scripts/jigdo-lite
+	./configure -prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

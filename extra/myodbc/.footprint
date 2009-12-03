@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/myodbc-installer
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libmyodbc5-5.1.6.so
+-rwxr-xr-x	root/root	usr/lib/libmyodbc5.la
+lrwxrwxrwx	root/root	usr/lib/libmyodbc5.so -> libmyodbc5-5.1.6.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/mysql-connector-odbc/
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/ChangeLog
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/INSTALL
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/LICENSE.exceptions
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/LICENSE.gpl
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/README
+-rw-r--r--	root/root	usr/share/mysql-connector-odbc/README.debug

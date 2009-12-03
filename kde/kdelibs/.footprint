@@ -2843,6 +2843,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/underBSDLicense.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/underFDL.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/underGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/underLGPL.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/underX11License.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/entities/update-doc.docbook
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/pl/lang.entities
@@ -3473,11 +3474,11 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/lib/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/lib/lib.xsl
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/lib/lib.xweb
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/
--rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/docbook.xsl.gz
--rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/lists.xsl.gz
--rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/sect23.xsl.gz
--rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/synop.xsl.gz
--rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/xref.xsl.gz
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/docbook.xsl
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/lists.xsl
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/sect23.xsl
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/synop.xsl
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/manpages/xref.xsl
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/params/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/params/admon.graphics.extension.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/params/admon.graphics.path.xml

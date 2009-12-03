@@ -1,0 +1,19 @@
+# Description: Extracteur et visualisateur de fichiers RAR
+# URL: http://www.rarlab.com/
+# Maintainer: NuTyX core team
+# Packager: sibel at free dot fr
+# Depends on: gcc
+
+name=unrar
+version=3.9.2
+release=1
+
+source=(http://www.rarlab.com/rar/unrarsrc-$version.tar.gz)
+
+build() {
+	cd $name
+	make -f makefile.unix
+	mkdir -p $PKG/usr/{bin,share/doc/$name-$version}
+	install -m 755 unrar $PKG/usr/bin/
+	install -m 644 {license.txt,readme.txt} $PKG/usr/share/doc/$name-$version
+}

@@ -7,18 +7,22 @@ lrwxrwxrwx	root/root	usr/bin/circo -> dot
 -rwxr-xr-x	root/root	usr/bin/diffimg
 -rwxr-xr-x	root/root	usr/bin/dijkstra
 -rwxr-xr-x	root/root	usr/bin/dot
-lrwxrwxrwx	root/root	usr/bin/dot2gxl -> gxl2dot
+lrwxrwxrwx	root/root	usr/bin/dot2gxl -> gxl2gv
 -rwxr-xr-x	root/root	usr/bin/dotty
 lrwxrwxrwx	root/root	usr/bin/fdp -> dot
 -rwxr-xr-x	root/root	usr/bin/gc
+lrwxrwxrwx	root/root	usr/bin/gv2gxl -> gxl2gv
 -rwxr-xr-x	root/root	usr/bin/gvcolor
+-rwxr-xr-x	root/root	usr/bin/gvgen
 -rwxr-xr-x	root/root	usr/bin/gvpack
 -rwxr-xr-x	root/root	usr/bin/gvpr
--rwxr-xr-x	root/root	usr/bin/gxl2dot
--rwxr-xr-x	root/root	usr/bin/lefty
+lrwxrwxrwx	root/root	usr/bin/gxl2dot -> gxl2gv
+-rwxr-xr-x	root/root	usr/bin/gxl2gv
 -rwxr-xr-x	root/root	usr/bin/lneato
+-rwxr-xr-x	root/root	usr/bin/mm2gv
 lrwxrwxrwx	root/root	usr/bin/neato -> dot
 -rwxr-xr-x	root/root	usr/bin/nop
+lrwxrwxrwx	root/root	usr/bin/osage -> dot
 -rwxr-xr-x	root/root	usr/bin/prune
 -rwxr-xr-x	root/root	usr/bin/sccmap
 -rwxr-xr-x	root/root	usr/bin/tred
@@ -26,28 +30,26 @@ lrwxrwxrwx	root/root	usr/bin/twopi -> dot
 -rwxr-xr-x	root/root	usr/bin/unflatten
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/graphviz/
--rw-r--r--	root/root	usr/include/graphviz/agraph.h
 -rw-r--r--	root/root	usr/include/graphviz/arith.h
 -rw-r--r--	root/root	usr/include/graphviz/cdt.h
 -rw-r--r--	root/root	usr/include/graphviz/cgraph.h
 -rw-r--r--	root/root	usr/include/graphviz/color.h
--rw-r--r--	root/root	usr/include/graphviz/demand_loading.c
--rw-r--r--	root/root	usr/include/graphviz/dot_builtins.c
 -rw-r--r--	root/root	usr/include/graphviz/geom.h
 -rw-r--r--	root/root	usr/include/graphviz/graph.h
+-rw-r--r--	root/root	usr/include/graphviz/graphviz_version.h
 -rw-r--r--	root/root	usr/include/graphviz/gv.cpp
 -rw-r--r--	root/root	usr/include/graphviz/gv.i
 -rw-r--r--	root/root	usr/include/graphviz/gvc.h
 -rw-r--r--	root/root	usr/include/graphviz/gvcext.h
 -rw-r--r--	root/root	usr/include/graphviz/gvcjob.h
 -rw-r--r--	root/root	usr/include/graphviz/gvcommon.h
+-rw-r--r--	root/root	usr/include/graphviz/gvconfig.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin_device.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin_layout.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin_loadimage.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin_render.h
 -rw-r--r--	root/root	usr/include/graphviz/gvplugin_textlayout.h
--rw-r--r--	root/root	usr/include/graphviz/no_demand_loading.c
 -rw-r--r--	root/root	usr/include/graphviz/pack.h
 -rw-r--r--	root/root	usr/include/graphviz/pathgeom.h
 -rw-r--r--	root/root	usr/include/graphviz/pathplan.h
@@ -61,41 +63,37 @@ drwxr-xr-x	root/root	usr/lib/graphviz/guile/
 drwxr-xr-x	root/root	usr/lib/graphviz/io/
 drwxr-xr-x	root/root	usr/lib/graphviz/java/
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_core.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_core.so -> libgvplugin_core.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_core.so.5 -> libgvplugin_core.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_core.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_core.so -> libgvplugin_core.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_core.so.6 -> libgvplugin_core.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_core.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_dot_layout.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so -> libgvplugin_dot_layout.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so.5 -> libgvplugin_dot_layout.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so -> libgvplugin_dot_layout.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so.6 -> libgvplugin_dot_layout.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_dot_layout.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gd.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gd.so -> libgvplugin_gd.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gd.so.5 -> libgvplugin_gd.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gd.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gd.so -> libgvplugin_gd.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gd.so.6 -> libgvplugin_gd.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gd.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so -> libgvplugin_gdk_pixbuf.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so.5 -> libgvplugin_gdk_pixbuf.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so -> libgvplugin_gdk_pixbuf.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so.6 -> libgvplugin_gdk_pixbuf.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gdk_pixbuf.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so -> libgvplugin_gtk.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so.5 -> libgvplugin_gtk.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so -> libgvplugin_gtk.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6 -> libgvplugin_gtk.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_neato_layout.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so -> libgvplugin_neato_layout.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so.5 -> libgvplugin_neato_layout.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so -> libgvplugin_neato_layout.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so.6 -> libgvplugin_neato_layout.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_pango.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_pango.so -> libgvplugin_pango.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_pango.so.5 -> libgvplugin_pango.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_pango.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_pango.so -> libgvplugin_pango.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_pango.so.6 -> libgvplugin_pango.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_pango.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_rsvg.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so -> libgvplugin_rsvg.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.5 -> libgvplugin_rsvg.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_xlib.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_xlib.so -> libgvplugin_xlib.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_xlib.so.5 -> libgvplugin_xlib.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_xlib.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so -> libgvplugin_rsvg.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.6 -> libgvplugin_rsvg.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.6.0.0
 drwxr-xr-x	root/root	usr/lib/graphviz/lua/
 drwxr-xr-x	root/root	usr/lib/graphviz/ocaml/
 drwxr-xr-x	root/root	usr/lib/graphviz/perl/
@@ -104,6 +102,7 @@ drwxr-xr-x	root/root	usr/lib/graphviz/python/
 drwxr-xr-x	root/root	usr/lib/graphviz/python23/
 drwxr-xr-x	root/root	usr/lib/graphviz/python24/
 drwxr-xr-x	root/root	usr/lib/graphviz/python25/
+drwxr-xr-x	root/root	usr/lib/graphviz/python26/
 drwxr-xr-x	root/root	usr/lib/graphviz/ruby/
 drwxr-xr-x	root/root	usr/lib/graphviz/sharp/
 drwxr-xr-x	root/root	usr/lib/graphviz/tcl/
@@ -128,10 +127,6 @@ lrwxrwxrwx	root/root	usr/lib/graphviz/tcl/libtkspline.so -> libtkspline.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/tcl/libtkspline.so.0 -> libtkspline.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/tcl/libtkspline.so.0.0.0
 -rw-r--r--	root/root	usr/lib/graphviz/tcl/pkgIndex.tcl
--rwxr-xr-x	root/root	usr/lib/libagraph.la
-lrwxrwxrwx	root/root	usr/lib/libagraph.so -> libagraph.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libagraph.so.4 -> libagraph.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libagraph.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libcdt.la
 lrwxrwxrwx	root/root	usr/lib/libcdt.so -> libcdt.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libcdt.so.4 -> libcdt.so.4.0.0
@@ -145,15 +140,14 @@ lrwxrwxrwx	root/root	usr/lib/libgraph.so -> libgraph.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libgraph.so.4 -> libgraph.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgraph.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libgvc.la
-lrwxrwxrwx	root/root	usr/lib/libgvc.so -> libgvc.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libgvc.so.4 -> libgvc.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgvc.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgvc.so -> libgvc.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libgvc.so.5 -> libgvc.so.5.0.0
+-rwxr-xr-x	root/root	usr/lib/libgvc.so.5.0.0
 -rwxr-xr-x	root/root	usr/lib/libpathplan.la
 lrwxrwxrwx	root/root	usr/lib/libpathplan.so -> libpathplan.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libpathplan.so.4 -> libpathplan.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libpathplan.so.4.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/libagraph.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcdt.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcgraph.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgraph.pc
@@ -163,92 +157,68 @@ drwxr-xr-x	root/root	usr/lib/tcl8.5/
 lrwxrwxrwx	root/root	usr/lib/tcl8.5/graphviz -> /usr/lib/graphviz/tcl
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/graphviz/
-drwxr-xr-x	root/root	usr/share/graphviz/demo/
--rwxr-xr-x	root/root	usr/share/graphviz/demo/doted.tcl
--rw-r--r--	root/root	usr/share/graphviz/demo/doted.tcl.README
--rwxr-xr-x	root/root	usr/share/graphviz/demo/entities.tcl
--rw-r--r--	root/root	usr/share/graphviz/demo/entities.tcl.README
--rw-r--r--	root/root	usr/share/graphviz/demo/entities.tcl.html
--rwxr-xr-x	root/root	usr/share/graphviz/demo/gcat.tcl
--rw-r--r--	root/root	usr/share/graphviz/demo/gcat.tcl.README
--rwxr-xr-x	root/root	usr/share/graphviz/demo/modgraph.tcl
--rwxr-xr-x	root/root	usr/share/graphviz/demo/pathplan.tcl
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan.tcl.README
-drwxr-xr-x	root/root	usr/share/graphviz/demo/pathplan_data/
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/boxes.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/dpd.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/funny.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/maze.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/nested.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/northo.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/obs.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/other.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/paths.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/rotor.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/u.dat
--rw-r--r--	root/root	usr/share/graphviz/demo/pathplan_data/unknown.dat
--rwxr-xr-x	root/root	usr/share/graphviz/demo/spline.tcl
--rw-r--r--	root/root	usr/share/graphviz/demo/spline.tcl.README
 drwxr-xr-x	root/root	usr/share/graphviz/examples/
 drwxr-xr-x	root/root	usr/share/graphviz/graphs/
 drwxr-xr-x	root/root	usr/share/graphviz/graphs/directed/
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/KW91.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/Latin1.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/NaN.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/abstract.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/alf.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/arrows.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/awilliams.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust1.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust2.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust3.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust4.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust5.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/crazy.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/ctext.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/dfa.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/fig6.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/fsm.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/grammar.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/hashtable.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/honda-tokoro.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/jcctree.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/jsort.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/ldbxtried.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/longflat.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/mike.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/nhg.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/oldarrows.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pgram.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pm2way.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pmpipe.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/polypoly.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/proc3d.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/record2.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/records.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/rowe.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/sdh.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/shells.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/states.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/structs.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/switch.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/table.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/train11.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/trapeziumlr.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/tree.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/triedds.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/try.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/unix.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/unix2.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/viewfile.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/directed/world.dot
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/KW91.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/Latin1.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/NaN.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/abstract.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/alf.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/arrows.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/awilliams.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust1.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust2.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust3.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust4.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/clust5.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/crazy.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/ctext.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/dfa.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/fig6.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/fsm.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/grammar.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/hashtable.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/honda-tokoro.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/jcctree.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/jsort.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/ldbxtried.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/longflat.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/mike.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/nhg.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/oldarrows.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pgram.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pm2way.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/pmpipe.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/polypoly.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/proc3d.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/psfonttest.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/record2.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/records.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/rowe.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/russian.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/sdh.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/shells.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/states.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/structs.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/switch.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/table.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/train11.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/trapeziumlr.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/tree.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/triedds.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/try.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/unix.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/unix2.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/viewfile.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/directed/world.gv
 drwxr-xr-x	root/root	usr/share/graphviz/graphs/undirected/
--rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/ER.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/Heawood.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/Petersen.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/ngk10_4.dot
--rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/process.dot
+-rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/ER.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/Heawood.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/Petersen.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/ngk10_4.gv
+-rw-r--r--	root/root	usr/share/graphviz/graphs/undirected/process.gv
 drwxr-xr-x	root/root	usr/share/graphviz/lefty/
 -rw-r--r--	root/root	usr/share/graphviz/lefty/box.lefty
 -rw-r--r--	root/root	usr/share/graphviz/lefty/def.lefty
@@ -271,33 +241,33 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 lrwxrwxrwx	root/root	usr/share/man/man1/circo.1.gz -> dot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dijkstra.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dot.1.gz
-lrwxrwxrwx	root/root	usr/share/man/man1/dot2gxl.1.gz -> gxl2dot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dotty.1.gz
 lrwxrwxrwx	root/root	usr/share/man/man1/fdp.1.gz -> dot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gc.1.gz
+lrwxrwxrwx	root/root	usr/share/man/man1/gv2gxl.1.gz -> gxl2gv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gvcolor.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gvgen.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gvpack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gvpr.1.gz
--rw-r--r--	root/root	usr/share/man/man1/gxl2dot.1.gz
--rw-r--r--	root/root	usr/share/man/man1/lefty.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gxl2gv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/lneato.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/mm2gv.1.gz
 lrwxrwxrwx	root/root	usr/share/man/man1/neato.1.gz -> dot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nop.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/osage.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/prune.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/sccmap.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tred.1.gz
 lrwxrwxrwx	root/root	usr/share/man/man1/twopi.1.gz -> dot.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/unflatten.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
--rw-r--r--	root/root	usr/share/man/man3/agraph.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/cdt.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/cgraph.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/gdtclft.3tcl.gz
 -rw-r--r--	root/root	usr/share/man/man3/graph.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/gvc.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/pathplan.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/tcldot.3tcl.gz
+-rw-r--r--	root/root	usr/share/man/man3/tkspline.3tk.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/graphviz.7.gz
-drwxr-xr-x	root/root	usr/share/man/mann/
--rw-r--r--	root/root	usr/share/man/mann/gdtclft.n.gz
--rw-r--r--	root/root	usr/share/man/mann/tcldot.n.gz
--rw-r--r--	root/root	usr/share/man/mann/tkspline.n.gz

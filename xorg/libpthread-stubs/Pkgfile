@@ -1,9 +1,10 @@
 # Description: pthread dummy implementation
 # URL: http://xcb.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 
 name=libpthread-stubs
-version=0.1
+version=0.3
 release=1
 source=(http://xcb.freedesktop.org/dist/$name-$version.tar.bz2)
 

@@ -57,7 +57,6 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/plasmaengineexplorer
 -rwxr-xr-x	root/root	opt/kde/bin/plasmawallpaperviewer
 -rwxr-xr-x	root/root	opt/kde/bin/plasmoidviewer
--rwxr-xr-x	root/root	opt/kde/bin/polkit-kde-authorization
 -rwxr-xr-x	root/root	opt/kde/bin/safestartkde
 -rwxr-xr-x	root/root	opt/kde/bin/setscheduler
 -rwxr-xr-x	root/root	opt/kde/bin/solid-action-desktop-gen
@@ -191,11 +190,11 @@ drwxr-xr-x	root/root	opt/kde/include/taskmanager/
 -rw-r--r--	root/root	opt/kde/include/taskmanager/taskmanager_export.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/cmake/
-drwxr-xr-x	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.3/
--rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.3/KDE4WorkspaceConfig.cmake
--rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.3/KDE4WorkspaceConfigVersion.cmake
--rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.3/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
--rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.3/KDE4WorkspaceLibraryTargets.cmake
+drwxr-xr-x	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.4/
+-rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.4/KDE4WorkspaceConfig.cmake
+-rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.4/KDE4WorkspaceConfigVersion.cmake
+-rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.4/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
+-rw-r--r--	root/root	opt/kde/lib/cmake/KDE4Workspace-4.3.4/KDE4WorkspaceLibraryTargets.cmake
 drwxr-xr-x	root/root	opt/kde/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	opt/kde/lib/kconf_update_bin/krdb_clearlibrarypath
 -rwxr-xr-x	root/root	opt/kde/lib/kconf_update_bin/kwin_update_default_rules
@@ -235,7 +234,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kwinrules.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kwinscreenedges.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_launch.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_pkk_authorization.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_powerdevilconfig.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_randr.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_screensaver.so
@@ -296,7 +294,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kio_fonts_helper
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/krootimage
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kscreenlocker
--rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/polkit-kde-manager
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/test_kcm_xinerama
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma-geolocation-ip.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_animator_default.so
@@ -423,9 +420,6 @@ lrwxrwxrwx	root/root	opt/kde/lib/libplasma_applet-system-monitor.so.4 -> libplas
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmaclock.so -> libplasmaclock.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmaclock.so.4 -> libplasmaclock.so.4.3.0
 -rwxr-xr-x	root/root	opt/kde/lib/libplasmaclock.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkitkdeprivate.so -> libpolkitkdeprivate.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkitkdeprivate.so.4 -> libpolkitkdeprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libpolkitkdeprivate.so.4.3.0
 lrwxrwxrwx	root/root	opt/kde/lib/libprocesscore.so -> libprocesscore.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libprocesscore.so.4 -> libprocesscore.so.4.3.0
 -rwxr-xr-x	root/root	opt/kde/lib/libprocesscore.so.4.3.0
@@ -648,6 +642,22 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kdm/sessions/
 -rw-r--r--	root/root	opt/kde/share/apps/kdm/sessions/xfce.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kdm/sessions/xfce4.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kdm/themes/
+drwxr-xr-x	root/root	opt/kde/share/apps/kdm/themes/carbon/
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/1280x800.jpg
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/KdmGreeterTheme.desktop
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/caps.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/carbon.xml
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/icon-kde.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/pw-entry-li.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/pw-entry.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/screenshot.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/session_button-li.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/session_button.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/system_button-li.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/system_button.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/user-entry-li.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/user-entry.png
+-rwxr-xr-x	1000/root	opt/kde/share/apps/kdm/themes/carbon/win-login.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kdm/themes/circles/
 -rw-r--r--	root/root	opt/kde/share/apps/kdm/themes/circles/KdmGreeterTheme.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kdm/themes/circles/background.svg
@@ -863,13 +873,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/plasma/services/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/notifications.operations
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/nowplaying.operations
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/tasks.operations
-drwxr-xr-x	root/root	opt/kde/share/apps/plasma_scriptengine_python/
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/plasma_importer.py
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/plasma_importer.pyc
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/pyappletscript.py
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/pyappletscript.pyc
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/pydataengine.py
--rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_python/pydataengine.pyc
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma_scriptengine_ruby/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_ruby/applet.rb
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_scriptengine_ruby/data_engine.rb
@@ -946,8 +949,6 @@ drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.krunner.App.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.screensaver.xml
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/services/
--rw-r--r--	root/root	opt/kde/share/dbus-1/services/kde-org.freedesktop.PolicyKit.AuthenticationAgent.service
--rw-r--r--	root/root	opt/kde/share/dbus-1/services/org.kde.PolicyKit.service
 -rw-r--r--	root/root	opt/kde/share/dbus-1/services/org.kde.krunner.service
 drwxr-xr-x	root/root	opt/kde/share/icons/
 drwxr-xr-x	root/root	opt/kde/share/icons/Oxygen_Black/
@@ -1817,7 +1818,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/joystick.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kaccess.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_keyboard.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_pkk_authorization.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_solid.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmaccess.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmlaunch.desktop
@@ -1971,9 +1971,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kwin/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-shell.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-webshortcuts.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-applet-dashboard.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-applet-python.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-applet-web.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-dataengine-python.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-ruby-applet.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-scriptengine-ruby-dataengine.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-tasks-default.desktop
@@ -2203,10 +2201,3 @@ drwxr-xr-x	root/root	opt/kde/share/wallpapers/There_is_Rain_on_the_Table/content
 -rw-r--r--	root/root	opt/kde/share/wallpapers/There_is_Rain_on_the_Table/metadata.desktop
 -rw-r--r--	root/root	opt/kde/share/wallpapers/default_blue.jpg
 -rw-r--r--	root/root	opt/kde/share/wallpapers/default_blue.jpg.desktop
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/python2.6/
-drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
-drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyKDE4/plasmascript.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyKDE4/plasmascript.pyc

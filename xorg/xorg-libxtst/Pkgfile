@@ -1,18 +1,20 @@
 # Description: xorg lib libXtst
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-libx11, xorg-libxext, xorg-recordproto, xorg-inputproto
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11, xorg-libxext, xorg-recordproto, xorg-inputproto, xorg-libxi
 
 name=xorg-libxtst
-version=1.0.3
+version=1.1.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXtst-$version.tar.bz2)
 
 build() {
 	cd libXtst-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share
 }

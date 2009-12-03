@@ -1,0 +1,24 @@
+# Description: Bibliothèque TrueType pour libsdl.
+# URL: http://www.libsdl.org/projects/SDL_ttf/
+# Maintainer: Danny Rawlins <monster dot romster at gmail dot com>
+# Packager: Simone Rota <sip at crux dot nu>
+# Depends on: freetype libsdl
+
+name=sdl_ttf
+version=2.0.8
+release=1
+source=( http://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-$version.tar.gz \
+sdl_ttf-noftinternals.patch )
+
+build() {
+	cd SDL_ttf-$version
+
+  # Application de patchs
+	patch  -i $SRC/sdl_ttf-noftinternals.patch
+
+  # compilation
+	./configure	--prefix=/usr
+	make 
+	make DESTDIR=$PKG install
+}
+

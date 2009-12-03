@@ -54,6 +54,7 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/geometry/sgi_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/sony
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/sun
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/thinkpad
+-rw-r--r--	root/root	usr/share/X11/xkb/geometry/typematrix
 -rw-r--r--	root/root	usr/share/X11/xkb/geometry/winbook
 -rw-r--r--	root/root	usr/share/X11/xkb/keycodes.dir
 drwxr-xr-x	root/root	usr/share/X11/xkb/keycodes/
@@ -127,9 +128,11 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/keymap/sun_vndr/
 drwxr-xr-x	root/root	usr/share/X11/xkb/rules/
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/README
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base
+-rw-r--r--	root/root	usr/share/X11/xkb/rules/base.extras.xml
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base.lst
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/base.xml
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev
+-rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev.extras.xml
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev.lst
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/evdev.xml
 -rw-r--r--	root/root	usr/share/X11/xkb/rules/xfree98
@@ -180,6 +183,10 @@ drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/digital_vndr/
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/es
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/et
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/eurosign
+drwxr-xr-x	root/root	usr/share/X11/xkb/symbols/extras/
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/extras/apl
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/extras/rs
+-rw-r--r--	root/root	usr/share/X11/xkb/symbols/extras/us
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/fi
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/fo
 -rw-r--r--	root/root	usr/share/X11/xkb/symbols/fr

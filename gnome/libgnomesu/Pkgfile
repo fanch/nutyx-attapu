@@ -1,6 +1,7 @@
 # Description: A library which allows running programs as root or another user
 # URL: http://members.chello.nl/~h.lai/libgnomesu/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk, pango, libgnomeui
 
 name=libgnomesu

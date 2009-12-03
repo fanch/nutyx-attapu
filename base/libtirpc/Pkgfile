@@ -1,0 +1,23 @@
+# Description: Librairie pour le transport Independant RPC
+# URL: http://people.freebsd.org/~kientzle/libarchive
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
+
+name=libtirpc
+version=0.2.0
+release=1
+source=( http://people.freebsd.org/~kientzle/$name/src/$name-$version.tar.bz2\
+	libtirpc-0.2.0-no-gss.patch)
+
+
+
+build() {
+cd $name-$version
+patch -Np0 -i ../libtirpc-0.2.0-no-gss.patch
+./configure --prefix=/usr\
+	--mandir=/usr/share/man\
+        --infodir=/usr/share/info
+make
+make DESTDIR=$PKG install
+}

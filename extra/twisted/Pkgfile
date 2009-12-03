@@ -5,9 +5,9 @@
 # Depends on: python, pycrypto, zope-interface
 
 name=twisted
-version=8.1.0
+version=8.2.0
 release=1
-source=(http://tmrc.mit.edu/mirror/twisted/Twisted/8.1/Twisted-$version.tar.bz2)
+source=(http://tmrc.mit.edu/mirror/twisted/Twisted/8.2/Twisted-$version.tar.bz2)
 
 build() {
         cd Twisted-$version

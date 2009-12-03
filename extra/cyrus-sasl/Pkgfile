@@ -2,17 +2,19 @@
 # URL: http://asg.web.cmu.edu/cyrus/download/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: kerberos
 
 name=cyrus-sasl
 version=2.1.22
-release=1
+release=3
 source=( http://ftp.andrew.cmu.edu/pub/cyrus-mail/$name-$version.tar.gz\
 	gcc44-1.patch)
 build() {
 	cd $name-$version
 	patch -Np1 -i ../gcc44-1.patch
+	
 	./configure --prefix=/usr --sysconfdir=/etc \
+	--mandir=/usr/share/man \
 	--with-dbpath=/var/lib/sasl/sasldb2 \
 	--with-saslauthd=/var/run/saslauthd
 	make

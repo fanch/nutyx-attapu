@@ -1,0 +1,30 @@
+# Description: Un jeu de dessin/puzzle dans le style de Crayon Physics
+# URL: https://garage.maemo.org/projects/numptyphysics/
+# Packager: Blankoworld <blankoworld at wanadoo dot fr>
+# Depends on: svn cyrus-sasl sdl_ttf automake
+
+name=numptyphysics-svn
+version=115
+release=1
+realname=numptyphysics
+source=( $realname.desktop )
+
+build() {
+  cd $SRC
+
+  # Récupération du dépôt SVN
+  svn checkout https://garage.maemo.org/svn/numptyphysics/trunk/ --config-dir=$PKGMK_ROOT/svn_config/ -r $version $name
+
+  cd $name
+
+  # Compilation
+  aclocal
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+
+  # Ajout d'un raccourci dans le menu
+  mkdir -p $PKG/usr/share/applications
+  install -m 644 ../$realname.desktop $PKG/usr/share/applications/
+}

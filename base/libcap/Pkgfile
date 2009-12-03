@@ -19,9 +19,9 @@ build() {
 		INCDIR=$PKG/usr/include \
 		LIBDIR=$PKG/usr/lib \
 		SBINDIR=$PKG/usr/sbin \
-		MANDIR=$PKG/usr/man install
+		MANDIR=$PKG/usr/share/man install
 
 	# man8 is empty, cap{set,get}(2) come from core/man-pages
-	rm -rf $PKG/usr/man/man{2,8}
+	rm -rf $PKG/usr/share/man/man{2,8}
 
 }

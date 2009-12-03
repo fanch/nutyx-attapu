@@ -10,17 +10,14 @@ drwxr-xr-x	root/root	usr/lib/bonobo/
 drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_Magnifier.server
 -rwxr-xr-x	root/root	usr/lib/libgnome-mag.la
-lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so -> libgnome-mag.so.2.3.4
-lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so.2 -> libgnome-mag.so.2.3.4
--rwxr-xr-x	root/root	usr/lib/libgnome-mag.so.2.3.4
+lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so -> libgnome-mag.so.2.3.9
+lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so.2 -> libgnome-mag.so.2.3.9
+-rwxr-xr-x	root/root	usr/lib/libgnome-mag.so.2.3.9
 drwxr-xr-x	root/root	usr/lib/orbit-2.0/
 -rwxr-xr-x	root/root	usr/lib/orbit-2.0/GNOME_Magnifier_module.la
 -rwxr-xr-x	root/root	usr/lib/orbit-2.0/GNOME_Magnifier_module.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnome-mag-1.0.pc
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/magnifier.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gnome-mag/
 drwxr-xr-x	root/root	usr/share/gnome-mag/1_32/
@@ -47,3 +44,10 @@ drwxr-xr-x	root/root	usr/share/gnome-mag/1_32/
 drwxr-xr-x	root/root	usr/share/idl/
 drwxr-xr-x	root/root	usr/share/idl/gnome-mag-1.0/
 -rw-r--r--	root/root	usr/share/idl/gnome-mag-1.0/GNOME_Magnifier.idl
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/gnome-mag.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/magnifier.1.gz

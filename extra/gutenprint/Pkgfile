@@ -1,0 +1,24 @@
+# Description: Pilotes d'imprimantes pour système POSIX
+# URL: http://gimp-print.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gimp, gtk, cups, foomatic-db-engine, ghostscript
+
+name=gutenprint
+version=5.2.4
+release=1
+source=(http://downloads.sourceforge.net/gimp-print/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr --disable-samples --with-cups --with-gimp2 \
+        --disable-translated-cups-ppds --with-gimp2-as-gutenprint \
+        --disable-libgutenprintui  --enable-libgutenprintui2 --disable-gtktest \
+        --enable-cups-ppds --enable-cups-ppds-at-top-level \
+        --with-foomatic --with-foomatic3 --with-ghostscript \
+        --disable-static --disable-static-genppd --with-ijs \
+        --disable-globalized-cups-ppds \
+	--infodir=/usr/share/info --mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}

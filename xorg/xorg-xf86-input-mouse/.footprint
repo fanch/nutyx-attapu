@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/
 drwxr-xr-x	root/root	usr/lib/xorg/modules/input/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/input/mouse_drv.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/input/mouse_drv.so
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man4/
--rw-r--r--	root/root	usr/man/man4/mousedrv.4.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man4/
+-rw-r--r--	root/root	usr/share/man/man4/mousedrv.4.gz

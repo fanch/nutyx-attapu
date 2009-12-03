@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	usr/include/gedit-2.20/gedit/
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-encodings.h
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-file-chooser-dialog.h
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-help.h
--rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-area.h
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-bus.h
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message-type.h
 -rw-r--r--	root/root	usr/include/gedit-2.20/gedit/gedit-message.h

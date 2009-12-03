@@ -1,0 +1,17 @@
+# Description: librairie BitTorrent
+# URL: http://libtorrent.rakshasa.no/downloads/
+# Maintainer: NuTyX coreteam
+# Packager: skingrapher at legtux dot org
+# Depends on: libsigc++, curl
+name=libtorrent
+version=0.12.5
+release=1
+source=(http://libtorrent.rakshasa.no/downloads/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./autogen.sh
+        ./configure --prefix=/usr --enable-ipv6
+        make
+        make DESTDIR=$PKG install
+}

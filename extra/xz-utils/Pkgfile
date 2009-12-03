@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=xz-utils
-version=4.999.8beta
+version=4.999.9beta
 release=1
 source=(http://tukaani.org/xz/xz-$version.tar.gz)
 

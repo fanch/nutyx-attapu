@@ -1,0 +1,16 @@
+# Description: Dépot de fichiers d'interface GIR
+# URL: http://
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck
+
+name=gir-repository
+version=0.6.5
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX
+	make
+	make DESTDIR=$PKG install
+}

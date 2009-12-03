@@ -2,12 +2,12 @@
 # URL: http://www.cups.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg, libpng, libtiff, poppler, xdg-utils, dbus, hicolor-icon-theme, avahi
+# Depends on: libjpeg, libpng, libtiff, poppler, xdg-utils, dbus, hicolor-icon-theme, avahi, linux-pam
 
 name=cups
 version=1.3.11
-release=1
-source=( http://ftp.easysw.com/pub/$name/$version/$name-$version-source.tar.gz\
+release=2
+source=( http://ftp.easysw.com/pub/$name/$version/$name-$version-source.tar.bz2\
        cups)
 
 

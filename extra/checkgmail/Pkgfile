@@ -2,17 +2,18 @@
 # URL: http://checkgmail.sourceforge.net/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-gtk, p5-gtk2-trayicon, p5-crypt-ssleay, p5-libwww, p5-xml-simple
+# Depends on: p5-gtk, p5-gtk2-trayicon, p5-crypt-ssleay, p5-libwww, p5-xml-simple, p5-html-parser
 
 name=checkgmail
-version=1.13
+version=20091127
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
-	checkgmail.desktop checkgmail.png svn-33.patch)
+#source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
+source=(checkgmail.desktop checkgmail.png svn-33.patch)
 
 build() {
-	cd $name-$version
-        patch -Np1 -i ../svn-33.patch
+	svn co https://checkgmail.svn.sourceforge.net/svnroot/checkgmail checkgmail
+	cd $name
+#        patch -Np1 -i ../svn-33.patch
 	install -D -m 755 $name $PKG/usr/bin/$name
 	install -D -m 644 man/$name.1.gz $PKG/usr/share/man/man1/$name.1.gz
 	install -D -m 644 ../$name.desktop $PKG/usr/share/applications/$name.desktop

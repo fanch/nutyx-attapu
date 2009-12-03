@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
+-rw-r--r--	root/root	etc/dbus-1/system.d/org.gnome.ClockApplet.Mechanism.conf
 drwxr-xr-x	root/root	etc/gconf/
 drwxr-xr-x	root/root	etc/gconf/schemas/
 -rw-r--r--	root/root	etc/gconf/schemas/clock.schemas
@@ -34,6 +35,7 @@ drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 drwxr-xr-x	root/root	usr/lib/gnome-panel/
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/clock-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/fish-applet-2
+-rwxr-xr-x	root/root	usr/lib/gnome-panel/gnome-clock-applet-mechanism
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/gnome-panel-add
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/notification-area-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/wnck-applet
@@ -49,6 +51,7 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-panel.desktop
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
+-rw-r--r--	root/root	usr/share/dbus-1/system-services/org.gnome.ClockApplet.Mechanism.service
 drwxr-xr-x	root/root	usr/share/gnome-2.0/
 drwxr-xr-x	root/root	usr/share/gnome-2.0/ui/
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_ClockApplet.xml
@@ -436,3 +439,4 @@ drwxr-xr-x	root/root	usr/share/omf/fish/
 -rw-r--r--	root/root	usr/share/omf/fish/fish-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.gnome.clockapplet.mechanism.policy

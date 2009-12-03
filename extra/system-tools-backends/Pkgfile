@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-xml-parser, dbus-glib
+# Depends on: p5-xml-parser, dbus-glib, polkit
 
 name=system-tools-backends
 version=2.8.2

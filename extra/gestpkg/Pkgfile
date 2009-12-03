@@ -6,7 +6,7 @@
 name=gestpkg
 version=1.1
 release=1
-source=(http://saintux.free.fr/depot/logiciels/sources/$name-$version-src.tar.gz)
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version-src.tar.gz)
 
 
 build() {

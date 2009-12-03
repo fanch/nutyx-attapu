@@ -2,7 +2,7 @@
 # URL: http://www.directfb.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: libjpeg , xorg-libx11, mesa3d, libvncserver
 
 name=directfb
 version=1.4.1

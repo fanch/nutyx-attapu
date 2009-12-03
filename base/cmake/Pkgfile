@@ -6,12 +6,13 @@
 
 name=cmake
 version=2.6.4
-release=1
+release=2
 source=(http://www.cmake.org/files/v2.6/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./bootstrap --prefix=/usr 
+	./bootstrap --prefix=/usr \
+		--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
 	rm -rf $PKG/usr/doc

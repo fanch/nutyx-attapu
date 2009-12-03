@@ -1,0 +1,15 @@
+# Description: interface en ligne de commande offrant une variété de moteurs de recherche populaires et autres puissants artefacts.
+# URL: http://surfraw.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+name=surfraw
+version=2.2.6
+release=1
+source=(http://surfraw.alioth/debian.org/dist/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr 
+        make
+        make DESTDIR=$PKG install
+}

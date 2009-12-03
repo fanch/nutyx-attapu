@@ -1,0 +1,15 @@
+# Description: shell pour un usage interactif et langage puissant de script. 
+# URL: www.zsh.org 
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+name=zsh
+version=4.3.10
+release=1
+source=(http://freefr.dl.sourceforge.net/project/$name/$name-dev/$version/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}

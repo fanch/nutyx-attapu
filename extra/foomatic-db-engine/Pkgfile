@@ -1,0 +1,18 @@
+# Description: Moteur de base de donnees de foomatic
+# URL: http://www.linuxprinting.org/foomatic.html
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+# Depends on: foomatic-filters
+
+name=foomatic-db-engine
+version=4.0
+release=1
+source=(http://www.linuxprinting.org/download/foomatic/$name-$version-current.tar.gz)
+
+build() {
+cd $name-4.0-20091122
+	./configure --prefix=/usr
+	sed 's|$(MAKE) PREFIX=$(DESTDIR)$(PERLPREFIX)|$(MAKE) PREFIX=$(PERLPREFIX)|' -i Makefile
+	make
+	make DESTDIR=$PKG install
+}

@@ -1,17 +1,18 @@
 # Description: X authority file utility
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server
 
 name=xorg-xauth
-version=1.0.3
+version=1.0.4
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/app/xauth-$version.tar.bz2)
 
 build() {
 	cd xauth-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install

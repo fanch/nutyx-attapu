@@ -11,6 +11,8 @@ drwx------	root/lp	etc/cups/ssl/
 drwxr-xr-x	root/root	etc/dbus-1/
 drwxr-xr-x	root/root	etc/dbus-1/system.d/
 -rw-r--r--	root/root	etc/dbus-1/system.d/cups.conf
+drwxr-xr-x	root/root	etc/pam.d/
+-rw-r--r--	root/root	etc/pam.d/cups
 drwxr-xr-x	root/root	etc/rc.d/
 drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/cups

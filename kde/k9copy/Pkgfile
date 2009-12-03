@@ -1,0 +1,22 @@
+# Description: un petit utilitaire pour copier les DVD sous linux
+# URL: http://k9copy.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: kdebase-runtime, libmpeg2, xine-lib
+
+name=k9copy
+version=2.3.3
+release=1
+source=(http://downloads.sourceforge.net/k9copy/k9copy-2.3.3-Source.tar.gz)
+
+build() {
+	cd $name-$version-Source
+	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_SKIP_RPATH=ON -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
+	-DBUILD_doc=OFF
+        
+	make
+	make DESTDIR=$PKG install
+}
+
+

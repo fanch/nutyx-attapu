@@ -1,10 +1,11 @@
 # Description: xorg driver xf86-video-tga
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NutyX core team
+# Packager : lesibel at free dot fr
 # Depends on: xorg-server
 
 name=xorg-xf86-video-tga
-version=1.2.0
+version=1.2.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-tga-$version.tar.bz2)
 

@@ -1,17 +1,18 @@
 # Description: xorg driver xf86-video-vmware
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NutyX core team
+# Packager : lesibel at free dot fr
 # Depends on: xorg-server
 
 name=xorg-xf86-video-vmware
-version=10.16.7
+version=10.16.8
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-video-vmware-$version.tar.bz2)
 
 build() {
 	cd xf86-video-vmware-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install

@@ -1,0 +1,18 @@
+# Description: A GLib/GObject library designed to easily create rich UIs embedding several media types
+# URL:http://www.moovida.com
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:libgl, gstreamer0.10-base, gtk2
+name=pigment
+version=0.3.17
+release=1
+source=(http://www.moovida.com/static/download/pigment/pigment-0.3.17.tar.bz2)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+

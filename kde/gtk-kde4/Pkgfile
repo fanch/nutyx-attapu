@@ -1,0 +1,18 @@
+# Description: Permet changement apparence des applis gkt sous kda4
+# URL: http://kde-look.org/content/show.php?content=74689
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: kdebase-workspace, gtk-engines
+
+name=gtk-kde4
+version=0.9.3
+release=1
+source=(http://kde-apps.org/CONTENT/content-files/74689-$name\(src\)$version.tar.gz \
+        fix-permission.patch )
+build() {
+        cd $name
+	patch -p1 -i ../fix-permission.patch
+	cmake -DCMAKE_INSTALL_PREFIX=/usr
+	make
+	make DESTDIR=$PKG install
+}

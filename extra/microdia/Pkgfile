@@ -5,7 +5,7 @@
 # Depends on: ctags
 
 name=microdia
-version=627b
+version=20091122
 release=1
 _kernver=`uname -r`
 source=()
@@ -15,7 +15,8 @@ source=()
 build() {
         git clone http://repo.or.cz/r/microdia.git
 	cd $name
-	make
+	sed -i -e "s/KERNEL_VERSION = .*/KERNEL_VERSION = ${_kernver}/" Makefile
+	make KVER=${_kernver}
 	mkdir -p $PKG/lib/modules/${_kernver}/kernel/drivers/media/video/videousb
 	cp sn9c20x.ko \
 	$PKG/lib/modules/${_kernver}/kernel/drivers/media/video/videousb/

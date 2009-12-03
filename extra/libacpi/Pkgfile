@@ -1,0 +1,15 @@
+# Description: librairie partagée pour programmes réunissant les informations ACPI sur Linux 
+# URL: http://www.ngolde.de/libacpi.html
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on: 
+name=libacpi
+version=0.2
+release=1
+source=(http://www.ngolde.de/download/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        make
+        make DESTDIR=$PKG install
+}

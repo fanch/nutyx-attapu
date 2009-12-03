@@ -800,6 +800,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/libkholidays/
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_jm
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_jp
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_lt
+-rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_luFrench
+-rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_luLuxembourgish
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_mx
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_nl
 -rw-r--r--	root/root	opt/kde/share/apps/libkholidays/holiday_no

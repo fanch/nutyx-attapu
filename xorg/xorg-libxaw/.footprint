@@ -90,6 +90,7 @@ lrwxrwxrwx	root/root	usr/lib/libXaw7.so.7 -> libXaw7.so.7.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xaw6.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xaw7.pc
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man3/
--rw-r--r--	root/root	usr/man/man3/Xaw.3.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/Xaw.3.gz

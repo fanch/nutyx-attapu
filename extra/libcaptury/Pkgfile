@@ -1,15 +1,15 @@
 # Description: librairie de capture video
 # URL: http://gitorious.org/projects/libcaptury/
-# Packager: Floreal Cabanettes, floreal.c at orange dot fr
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: capseo
 
 name=libcaptury
-version=280209-svn
+version=158
 release=1
-source=()
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.bz2)
 
 build() {
-git clone git://gitorious.org/libcaptury/mainline.git libcaptury
 cd $name
 ./autogen.sh
 ./configure --prefix=/usr

@@ -5,9 +5,9 @@
 # Depends on: qt, strigi, soprano, qca, akode, eigen, gmm, dbus, jasper, openexr, giflib, kerberos, avahi, enchant
 
 name=kdelibs-experimental
-version=4.3.3
+version=4.3.4
 release=1
-source=(ftp://ftp.rediris.es/mirror/kde/ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
+source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

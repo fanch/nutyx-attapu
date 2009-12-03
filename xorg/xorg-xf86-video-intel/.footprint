@@ -23,6 +23,7 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/sil164.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/tfp410.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/drivers/tfp410.so
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man4/
--rw-r--r--	root/root	usr/man/man4/intel.4.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man4/
+-rw-r--r--	root/root	usr/share/man/man4/intel.4.gz

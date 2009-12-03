@@ -15,10 +15,12 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gtk-doc.m4
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/gtk-doc/
--rw-r--r--	root/root	usr/share/doc/gtk-doc/fdl-appendix.xml
--rw-r--r--	root/root	usr/share/doc/gtk-doc/gtk-doc-manual.xml
+drwxr-xr-x	root/root	usr/share/gnome/
+drwxr-xr-x	root/root	usr/share/gnome/help/
+drwxr-xr-x	root/root	usr/share/gnome/help/gtk-doc-manual/
+drwxr-xr-x	root/root	usr/share/gnome/help/gtk-doc-manual/C/
+-rw-r--r--	root/root	usr/share/gnome/help/gtk-doc-manual/C/fdl-appendix.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gtk-doc-manual/C/gtk-doc-manual.xml
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/data/
 -rw-r--r--	root/root	usr/share/gtk-doc/data/devhelp.xsl
@@ -36,8 +38,8 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/data/
 -rw-r--r--	root/root	usr/share/gtk-doc/data/up.png
 -rw-r--r--	root/root	usr/share/gtk-doc/data/version-greater-or-equal.xsl
 drwxr-xr-x	root/root	usr/share/omf/
-drwxr-xr-x	root/root	usr/share/omf/gtk-doc/
--rw-r--r--	root/root	usr/share/omf/gtk-doc/gtk-doc-manual-C.omf
+drwxr-xr-x	root/root	usr/share/omf/gtk-doc-manual/
+-rw-r--r--	root/root	usr/share/omf/gtk-doc-manual/gtk-doc-manual-C.omf
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/gtk-doc.pc
 drwxr-xr-x	root/root	usr/share/sgml/

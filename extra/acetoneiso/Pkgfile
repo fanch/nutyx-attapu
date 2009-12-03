@@ -1,0 +1,19 @@
+# Description: Un tout en un pour les iso
+# URL: http://www.acetoneteam.org 
+# Maintainer:NuTyX core team
+# Packager:fanch
+# Depends on: qt,fuseiso,cdrdao,cdrkit,gnupg,pinentry,mplayer
+
+name=acetoneiso
+version=2.1.1
+release=1
+source=(http://mesh.dl.sourceforge.net/project/acetoneiso/AcetoneISO/AcetoneISO%202.2.1/acetoneiso_2.2.1.tar.gz)
+
+build() {
+	cd acetoneiso_2.2.1/acetoneiso
+       	
+	qmake
+	make
+        make INSTALL_ROOT=$PKG install
+}
+

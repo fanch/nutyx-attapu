@@ -1,0 +1,24 @@
+# Description: Pilotes pour les imprimantes canon
+# URL: http://support-asia.canon-asia.com/contents/ASIA/EN/0100093003.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: rpm2targz
+
+name=canon-ufr2
+version=1.90
+release=1
+source=(http://gdlp01.c-wss.com/gds/0/0100000930/06/UFR_II_Printer_Driver_for_Linux_Driver_V190_uk_EN.tar.gz)
+build () {
+cd UFR_II_Printer_Driver_for_Linux_Driver_V190_uk_EN/32-bit_Driver/RPM
+rpm2targz cndrvcups-common-1.90-1.i386.rpm
+rpm2targz cndrvcups-ufr2-uk-1.90-1.i386.rpm
+cd $PKG
+tar xvf $SRC/UFR_II_Printer_Driver_for_Linux_Driver_V190_uk_EN/32-bit_Driver/RPM/\
+cndrvcups-common-1.90-1.i386.tar.gz
+tar xvf $SRC/UFR_II_Printer_Driver_for_Linux_Driver_V190_uk_EN/32-bit_Driver/RPM/\
+cndrvcups-ufr2-uk-1.90-1.i386.tar.gz
+mkdir -p usr/share/locale
+mv usr/{local/bin/*,bin/}
+mv usr/{local/share/locale/*,share/locale/}
+rm -r usr/local
+}

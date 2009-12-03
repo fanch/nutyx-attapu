@@ -17,6 +17,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gvfs-rename
 -rwxr-xr-x	root/root	usr/bin/gvfs-rm
 -rwxr-xr-x	root/root	usr/bin/gvfs-save
+-rwxr-xr-x	root/root	usr/bin/gvfs-set-attribute
 -rwxr-xr-x	root/root	usr/bin/gvfs-trash
 -rwxr-xr-x	root/root	usr/bin/gvfs-tree
 drwxr-xr-x	root/root	usr/include/
@@ -55,6 +56,7 @@ drwxr-xr-x	root/root	usr/libexec/
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-gphoto2
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-http
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-localtest
+-rwxr-xr-x	root/root	usr/libexec/gvfsd-metadata
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-network
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-sftp
 -rwxr-xr-x	root/root	usr/libexec/gvfsd-smb
@@ -64,6 +66,7 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/gvfs-daemon.service
+-rw-r--r--	root/root	usr/share/dbus-1/services/gvfs-metadata.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.gtk.Private.GPhoto2VolumeMonitor.service
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.gtk.Private.HalVolumeMonitor.service
 drwxr-xr-x	root/root	usr/share/gvfs/

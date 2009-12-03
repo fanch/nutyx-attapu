@@ -422,6 +422,9 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/videodvd.protocol
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/k3bplugin.desktop
+drwxr-xr-x	root/root	opt/kde/share/mime/
+drwxr-xr-x	root/root	opt/kde/share/mime/packages/
+-rw-r--r--	root/root	opt/kde/share/mime/packages/x-k3b.xml
 drwxr-xr-x	root/root	opt/kde/share/sounds/
 -rw-r--r--	root/root	opt/kde/share/sounds/k3b_error1.wav
 -rw-r--r--	root/root	opt/kde/share/sounds/k3b_success1.wav

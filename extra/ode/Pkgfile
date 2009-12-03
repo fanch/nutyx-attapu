@@ -1,0 +1,19 @@
+# Description: The Open Dynamics Engine physics SDK.
+# URL: http://www.ode.org/
+# Maintainer: Jose V Beneyto, sepen at crux dot nu
+# Packager: Aaron Marks, nymacro at  gmail dot com
+# Depends on: mesa3d
+
+name=ode
+version=0.11.1
+release=1
+source=(http://dl.sourceforge.net/sourceforge/opende/$name-$version.tar.bz2)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr \
+              --disable-static \
+              --disable-debug
+  make
+  make DESTDIR=$PKG install
+}

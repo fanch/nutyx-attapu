@@ -1,0 +1,18 @@
+# Description: Bibliothèques GD
+# Packager: Antti Nykanen <aon at iki dot fi>
+# Maintainer: Blankoworld <blankoworld at wanadoo dot fr>
+# URL: http://www.libgd.org
+# Depends on: xorg-libxpm, libpng, libjpeg, freetype
+
+name=libgd
+version=2.0.35
+release=1
+source=( http://www.libgd.org/releases/gd-$version.tar.gz )
+
+build () {
+  cd gd-$version
+  ./configure --prefix=/usr
+  make
+  make DESTDIR=$PKG install
+}
+

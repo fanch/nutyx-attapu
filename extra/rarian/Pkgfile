@@ -2,7 +2,7 @@
 # URL: http://rarian.freedesktop.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: libxslt
 
 name=rarian
 version=0.8.1

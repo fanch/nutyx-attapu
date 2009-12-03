@@ -49,11 +49,11 @@ drwxr-xr-x	root/root	usr/share/librarian/Templates/
 drwxr-xr-x	root/root	usr/share/librarian/Templates/C/
 -rw-r--r--	root/root	usr/share/librarian/Templates/C/scrollkeeper_cl.xml
 drwxr-xr-x	root/root	usr/share/librarian/manual/
--rw-r--r--	root/root	usr/share/librarian/manual/help-spec-0.2.xml.gz
--rw-r--r--	root/root	usr/share/librarian/manual/index.xhtml.gz
--rw-r--r--	root/root	usr/share/librarian/manual/rar-lib.xhtml.gz
--rw-r--r--	root/root	usr/share/librarian/manual/rar-mdf.xhtml.gz
--rw-r--r--	root/root	usr/share/librarian/manual/rar-skcompat.xhtml.gz
+-rw-r--r--	root/root	usr/share/librarian/manual/help-spec-0.2.xml
+-rw-r--r--	root/root	usr/share/librarian/manual/index.xhtml
+-rw-r--r--	root/root	usr/share/librarian/manual/rar-lib.xhtml
+-rw-r--r--	root/root	usr/share/librarian/manual/rar-mdf.xhtml
+-rw-r--r--	root/root	usr/share/librarian/manual/rar-skcompat.xhtml
 -rw-r--r--	root/root	usr/share/librarian/rarian-sk-cl.xml
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/

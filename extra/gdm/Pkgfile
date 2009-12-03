@@ -2,11 +2,11 @@
 # URL: http://www.5z.com/jirka/gdm.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: librsvg, libgnomecanvas, gnome-doc-utils, intltool, desktop-file-utils
+# Depends on: librsvg, libgnomecanvas, gnome-doc-utils, intltool, desktop-file-utils, linux-pam
 
 name=gdm
 version=2.20.10
-release=5
+release=6
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.20/$name-$version.tar.bz2 \
        http://kiao.no-ip.info/NuTyX/files/nutyx09.tar.gz \
 	defaults.conf NuTyXlogo.png)
@@ -46,26 +46,24 @@ build() {
         install -v -m755 -d $PKG/var/log/gdm
         sed -i.orig "/\[daemon\]/ a LogDir=/var/log/gdm" \
         $PKG/etc/gdm/custom.conf
-# cat > $PKG/etc/pam.d/gdm << "EOF"
-# auth        required    pam_unix.so
-# auth        requisite   pam_nologin.so
-# account     required    pam_unix.so
-# password    required    pam_unix.so
-# session     required    pam_unix.so
+cat > $PKG/etc/pam.d/gdm << "EOF"
+auth        required    pam_unix.so
+auth        requisite   pam_nologin.so
+account     required    pam_unix.so
+password    required    pam_unix.so
+session     required    pam_unix.so
 
-# EOF
-# cat > $PKG/etc/pam.d/gdm-autologin << "EOF"
-# auth        required    pam_env.so
-# auth        requisite   pam_nologin.so
-# auth        required    pam_permit.so
-# account     required    pam_unix.so
-# password    required    pam_unix.so
-# session     required    pam_unix.so
+EOF
+cat > $PKG/etc/pam.d/gdm-autologin << "EOF"
+auth        required    pam_env.so
+auth        requisite   pam_nologin.so
+auth        required    pam_permit.so
+account     required    pam_unix.so
+password    required    pam_unix.so
+session     required    pam_unix.so
 
-# EOF
-# rm -r $PKG/usr/share/xsessions
+EOF
 	install -D -m644 ../NuTyXlogo.png $PKG/usr/share/pixmaps/gdm-foot-logo.png
-	#rm -r $PKG/usr/share/gdm/themes/nutyx
 	install -D -m444 ../defaults.conf $PKG/usr/share/gdm/defaults.conf
 	cp -a $SRC/nutyx09 $PKG/usr/share/gdm/themes/
 	rm $PKG/usr/share/xsessions/gnome.desktop
