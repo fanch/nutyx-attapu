@@ -5,25 +5,19 @@
 # Depends on: libpng, libjpeg, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
 
 name=qt
-version=4.5.2
-release=2
-kdeqtver=02092009
-_name=qt-x11-opensource-src-${version}
-source=(ftp://ftp.qtsoftware.com/qt/source/${_name}.tar.bz2 \
-	http://kiao.no-ip.info/NuTyX/files/kde-qt-patches-${kdeqtver}.tar.bz2 \
-	phonon.patch )
+version=4.6.0
+release=1
+kdeqtver=02122009
+_name=qt-everywhere-opensource-src-${version}
+
+source=(http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-$version.tar.gz)
 
 build() {
 	unset QMAKESPC
 	export QT4DIR=$SRC/${_name}
 	export PATH=${QT4DIR}/bin:$PATH
 	cd ${_name}
-	for i in ../kde-qt-patches-${kdeqtver}/*; do
-		echo "applying $i"
-		patch -p1 -i $i
-	done
 	# Install service phonon
-	patch -p1 -i ../phonon.patch
 	./configure -confirm-license -opensource \
 		-prefix /usr \
 		-sysconfdir /etc \
