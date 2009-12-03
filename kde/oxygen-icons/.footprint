@@ -98,6 +98,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/basket.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/bovo.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/device-notifier.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/digikam.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/esd.png
@@ -1046,9 +1047,11 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/user-group-new.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/user-group-properties.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/user-properties.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-agenda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-birthday.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-day.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-holiday.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-journal.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-list.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-month.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-special-occasion.png
@@ -1059,6 +1062,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-upcoming-events.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-wedding-anniversary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-week.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-calendar.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-choose.png
@@ -1086,6 +1090,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-pim-news.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-pim-notes.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-pim-summary.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-pim-tasks-pending.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-pim-tasks.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-presentation.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/view-preview.png
@@ -2142,9 +2147,11 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/user-group-new.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/user-group-properties.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/user-properties.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-agenda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-birthday.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-day.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-holiday.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-journal.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-list.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-month.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-special-occasion.png
@@ -2155,6 +2162,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-upcoming-events.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-wedding-anniversary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-week.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-calendar.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-choose.png
@@ -2182,6 +2190,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-pim-news.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-pim-notes.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-pim-summary.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-pim-tasks-pending.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-pim-tasks.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-presentation.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/view-preview.png
@@ -2422,6 +2431,12 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/multimedia-player-apple-ipod.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/multimedia-player.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wired.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-connected-00.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-connected-100.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-connected-25.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-connected-50.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-connected-75.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless-disconnected.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/network-wireless.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/pda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/phone-openmoko-freerunner.png
@@ -2839,7 +2854,10 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/status/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/MameExecutor.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/accessories-calculator.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/accessories-dictionary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/akonadi.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/k3b.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/karbon.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/kbruch.png
@@ -2859,6 +2877,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/kspread.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/kword.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/lokalize.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/multimedia-volume-control.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/oxygen.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/partitionmanager.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/preferences-desktop-locale.png
@@ -2866,6 +2885,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/qelectrotech.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/quassel.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/strigi.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/system-diagnosis.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/yakuake.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/categories/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/applications-engineering.png
@@ -2875,7 +2895,9 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/categories/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/applications-office.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/applications-other.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/applications-science.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/applications-system.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/preferences-desktop.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/preferences-other.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/preferences-system-network.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/categories/preferences-system.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/devices/
@@ -2890,11 +2912,14 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-floppy.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-audio.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-blu-ray.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-data.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-dvd-data.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-dvd-video.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-dvd.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-recordable.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical-video.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/media-optical.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/network-wired.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/network-wireless-connected-00.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/network-wireless-connected-100.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/devices/network-wireless-connected-25.png
@@ -3400,9 +3425,11 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/user-group-new.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/user-group-properties.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/user-properties.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-agenda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-birthday.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-day.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-holiday.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-journal.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-list.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-month.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-special-occasion.png
@@ -3413,6 +3440,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-upcoming-events.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-wedding-anniversary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-week.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-calendar.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-choose.png
@@ -3440,6 +3468,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-pim-news.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-pim-notes.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-pim-summary.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-pim-tasks-pending.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-pim-tasks.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-presentation.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/actions/view-preview.png
@@ -3684,6 +3713,12 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/multimedia-player-apple-ipod.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/multimedia-player.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wired.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-connected-00.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-connected-100.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-connected-25.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-connected-50.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-connected-75.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless-disconnected.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/network-wireless.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/pda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/phone-openmoko-freerunner.png
@@ -4442,9 +4477,11 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/user-group-new.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/user-group-properties.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/user-properties.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-agenda.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-birthday.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-day.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-holiday.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-journal.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-list.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-month.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-special-occasion.png
@@ -4455,6 +4492,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-upcoming-events.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-wedding-anniversary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-week.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-calendar.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-choose.png
@@ -4479,6 +4517,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-pim-news.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-pim-notes.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-pim-summary.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-pim-tasks-pending.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-pim-tasks.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-presentation.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/actions/view-preview.png
@@ -5709,4 +5748,10 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/8x8/emblems/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/emblem-link.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/emblem-mounted.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/emblem-unmounted.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-added.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-conflicting.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-locally-modified.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-normal.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-removed.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/emblems/vcs-update-required.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/index.theme
