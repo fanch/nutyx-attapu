@@ -2,7 +2,7 @@
 # URL: http://k3b.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kdelibs, kdemultimedia, libsamplerate, dvd+rw-tools, vcdimager, libmad, ffmpeg, taglib, libmpcdec, libdvdread, polkit-qt, automoc4, cmake, cdrkit, cdrdao
+# Depends on: kdelibs, kdemultimedia, oxygen-icons, libsamplerate, dvd+rw-tools, vcdimager, libmad, ffmpeg, taglib, libmpcdec, libdvdread, polkit-qt, automoc4, cmake, cdrkit, cdrdao
 
 name=k3b
 version=1.69.0alpha4
