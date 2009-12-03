@@ -19,10 +19,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qmake
 -rwxr-xr-x	root/root	usr/bin/qt3to4
 -rwxr-xr-x	root/root	usr/bin/qtconfig
+-rwxr-xr-x	root/root	usr/bin/qttracereplay
 -rwxr-xr-x	root/root	usr/bin/rcc
 -rwxr-xr-x	root/root	usr/bin/uic
 -rwxr-xr-x	root/root	usr/bin/uic3
 -rwxr-xr-x	root/root	usr/bin/xmlpatterns
+-rwxr-xr-x	root/root	usr/bin/xmlpatternsvalidator
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/Qt3Support
@@ -30,6 +32,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/QtDBus
 -rw-r--r--	root/root	usr/include/Qt/QtGui
 -rw-r--r--	root/root	usr/include/Qt/QtHelp
+-rw-r--r--	root/root	usr/include/Qt/QtMultimedia
 -rw-r--r--	root/root	usr/include/Qt/QtNetwork
 -rw-r--r--	root/root	usr/include/Qt/QtOpenGL
 -rw-r--r--	root/root	usr/include/Qt/QtScript
@@ -40,7 +43,6 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/QtWebKit
 -rw-r--r--	root/root	usr/include/Qt/QtXml
 -rw-r--r--	root/root	usr/include/Qt/QtXmlPatterns
--rw-r--r--	root/root	usr/include/Qt/glgc_shader_source.h
 -rw-r--r--	root/root	usr/include/Qt/q3accel.h
 -rw-r--r--	root/root	usr/include/Qt/q3action.h
 -rw-r--r--	root/root	usr/include/Qt/q3asciicache.h
@@ -148,9 +150,11 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/q3whatsthis.h
 -rw-r--r--	root/root	usr/include/Qt/q3widgetstack.h
 -rw-r--r--	root/root	usr/include/Qt/q3wizard.h
+-rw-r--r--	root/root	usr/include/Qt/qabstractanimation.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractbutton.h
 -rw-r--r--	root/root	usr/include/Qt/qabstracteventdispatcher.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractfileengine.h
+-rw-r--r--	root/root	usr/include/Qt/qabstractfontengine_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractitemdelegate.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractitemmodel.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractitemview.h
@@ -163,8 +167,12 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qabstractslider.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractsocket.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractspinbox.h
+-rw-r--r--	root/root	usr/include/Qt/qabstractstate.h
 -rw-r--r--	root/root	usr/include/Qt/qabstracttextdocumentlayout.h
+-rw-r--r--	root/root	usr/include/Qt/qabstracttransition.h
 -rw-r--r--	root/root	usr/include/Qt/qabstracturiresolver.h
+-rw-r--r--	root/root	usr/include/Qt/qabstractvideobuffer.h
+-rw-r--r--	root/root	usr/include/Qt/qabstractvideosurface.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractxmlnodemodel.h
 -rw-r--r--	root/root	usr/include/Qt/qabstractxmlreceiver.h
 -rw-r--r--	root/root	usr/include/Qt/qaccessible.h
@@ -176,6 +184,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qaction.h
 -rw-r--r--	root/root	usr/include/Qt/qactiongroup.h
 -rw-r--r--	root/root	usr/include/Qt/qalgorithms.h
+-rw-r--r--	root/root	usr/include/Qt/qanimationgroup.h
 -rw-r--r--	root/root	usr/include/Qt/qapplication.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_alpha.h
@@ -188,6 +197,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qatomic_generic.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_i386.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_ia64.h
+-rw-r--r--	root/root	usr/include/Qt/qatomic_macosx.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_mips.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_parisc.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_powerpc.h
@@ -195,7 +205,18 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qatomic_sh.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_sh4a.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_sparc.h
+-rw-r--r--	root/root	usr/include/Qt/qatomic_symbian.h
+-rw-r--r--	root/root	usr/include/Qt/qatomic_vxworks.h
+-rw-r--r--	root/root	usr/include/Qt/qatomic_windows.h
+-rw-r--r--	root/root	usr/include/Qt/qatomic_windowsce.h
 -rw-r--r--	root/root	usr/include/Qt/qatomic_x86_64.h
+-rw-r--r--	root/root	usr/include/Qt/qaudio.h
+-rw-r--r--	root/root	usr/include/Qt/qaudiodeviceinfo.h
+-rw-r--r--	root/root	usr/include/Qt/qaudioengine.h
+-rw-r--r--	root/root	usr/include/Qt/qaudioengineplugin.h
+-rw-r--r--	root/root	usr/include/Qt/qaudioformat.h
+-rw-r--r--	root/root	usr/include/Qt/qaudioinput.h
+-rw-r--r--	root/root	usr/include/Qt/qaudiooutput.h
 -rw-r--r--	root/root	usr/include/Qt/qauthenticator.h
 -rw-r--r--	root/root	usr/include/Qt/qbasicatomic.h
 -rw-r--r--	root/root	usr/include/Qt/qbasictimer.h
@@ -230,6 +251,8 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qconfig-small.h
 -rw-r--r--	root/root	usr/include/Qt/qconfig.h
 -rw-r--r--	root/root	usr/include/Qt/qcontainerfwd.h
+-rw-r--r--	root/root	usr/include/Qt/qcontiguouscache.h
+-rw-r--r--	root/root	usr/include/Qt/qcopchannel_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qcoreapplication.h
 -rw-r--r--	root/root	usr/include/Qt/qcoreevent.h
 -rw-r--r--	root/root	usr/include/Qt/qcryptographichash.h
@@ -254,23 +277,33 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qdbuspendingreply.h
 -rw-r--r--	root/root	usr/include/Qt/qdbusreply.h
 -rw-r--r--	root/root	usr/include/Qt/qdbusserver.h
+-rw-r--r--	root/root	usr/include/Qt/qdbusservicewatcher.h
 -rw-r--r--	root/root	usr/include/Qt/qdebug.h
+-rw-r--r--	root/root	usr/include/Qt/qdecoration_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qdecorationdefault_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qdecorationfactory_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qdecorationplugin_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qdecorationstyled_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qdecorationwindows_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qdesktopservices.h
 -rw-r--r--	root/root	usr/include/Qt/qdesktopwidget.h
 -rw-r--r--	root/root	usr/include/Qt/qdial.h
 -rw-r--r--	root/root	usr/include/Qt/qdialog.h
 -rw-r--r--	root/root	usr/include/Qt/qdialogbuttonbox.h
 -rw-r--r--	root/root	usr/include/Qt/qdir.h
+-rw-r--r--	root/root	usr/include/Qt/qdirectpainter_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qdiriterator.h
 -rw-r--r--	root/root	usr/include/Qt/qdirmodel.h
 -rw-r--r--	root/root	usr/include/Qt/qdockwidget.h
 -rw-r--r--	root/root	usr/include/Qt/qdom.h
 -rw-r--r--	root/root	usr/include/Qt/qdrag.h
 -rw-r--r--	root/root	usr/include/Qt/qdrawutil.h
+-rw-r--r--	root/root	usr/include/Qt/qeasingcurve.h
 -rw-r--r--	root/root	usr/include/Qt/qendian.h
 -rw-r--r--	root/root	usr/include/Qt/qerrormessage.h
 -rw-r--r--	root/root	usr/include/Qt/qevent.h
 -rw-r--r--	root/root	usr/include/Qt/qeventloop.h
+-rw-r--r--	root/root	usr/include/Qt/qeventtransition.h
 -rw-r--r--	root/root	usr/include/Qt/qfactoryinterface.h
 -rw-r--r--	root/root	usr/include/Qt/qfeatures.h
 -rw-r--r--	root/root	usr/include/Qt/qfile.h
@@ -279,6 +312,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qfileinfo.h
 -rw-r--r--	root/root	usr/include/Qt/qfilesystemmodel.h
 -rw-r--r--	root/root	usr/include/Qt/qfilesystemwatcher.h
+-rw-r--r--	root/root	usr/include/Qt/qfinalstate.h
 -rw-r--r--	root/root	usr/include/Qt/qfocusframe.h
 -rw-r--r--	root/root	usr/include/Qt/qfont.h
 -rw-r--r--	root/root	usr/include/Qt/qfontcombobox.h
@@ -290,15 +324,24 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qframe.h
 -rw-r--r--	root/root	usr/include/Qt/qfsfileengine.h
 -rw-r--r--	root/root	usr/include/Qt/qftp.h
+-rw-r--r--	root/root	usr/include/Qt/qfunctions_vxworks.h
+-rw-r--r--	root/root	usr/include/Qt/qfunctions_wince.h
 -rw-r--r--	root/root	usr/include/Qt/qfuture.h
 -rw-r--r--	root/root	usr/include/Qt/qfutureinterface.h
 -rw-r--r--	root/root	usr/include/Qt/qfuturesynchronizer.h
 -rw-r--r--	root/root	usr/include/Qt/qfuturewatcher.h
+-rw-r--r--	root/root	usr/include/Qt/qgenericmatrix.h
+-rw-r--r--	root/root	usr/include/Qt/qgesture.h
+-rw-r--r--	root/root	usr/include/Qt/qgesturerecognizer.h
 -rw-r--r--	root/root	usr/include/Qt/qgl.h
 -rw-r--r--	root/root	usr/include/Qt/qglcolormap.h
 -rw-r--r--	root/root	usr/include/Qt/qglframebufferobject.h
 -rw-r--r--	root/root	usr/include/Qt/qglobal.h
 -rw-r--r--	root/root	usr/include/Qt/qglpixelbuffer.h
+-rw-r--r--	root/root	usr/include/Qt/qglscreen_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qglshaderprogram.h
+-rw-r--r--	root/root	usr/include/Qt/qgraphicsanchorlayout.h
+-rw-r--r--	root/root	usr/include/Qt/qgraphicseffect.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicsgridlayout.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicsitem.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicsitemanimation.h
@@ -309,11 +352,14 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qgraphicsscene.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicssceneevent.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicssvgitem.h
+-rw-r--r--	root/root	usr/include/Qt/qgraphicstransform.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicsview.h
+-rw-r--r--	root/root	usr/include/Qt/qgraphicswebview.h
 -rw-r--r--	root/root	usr/include/Qt/qgraphicswidget.h
 -rw-r--r--	root/root	usr/include/Qt/qgridlayout.h
 -rw-r--r--	root/root	usr/include/Qt/qgroupbox.h
 -rw-r--r--	root/root	usr/include/Qt/qgtkstyle.h
+-rw-r--r--	root/root	usr/include/Qt/qguifunctions_wince.h
 -rw-r--r--	root/root	usr/include/Qt/qhash.h
 -rw-r--r--	root/root	usr/include/Qt/qheaderview.h
 -rw-r--r--	root/root	usr/include/Qt/qhelp_global.h
@@ -324,6 +370,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qhelpsearchengine.h
 -rw-r--r--	root/root	usr/include/Qt/qhelpsearchquerywidget.h
 -rw-r--r--	root/root	usr/include/Qt/qhelpsearchresultwidget.h
+-rw-r--r--	root/root	usr/include/Qt/qhistorystate.h
 -rw-r--r--	root/root	usr/include/Qt/qhostaddress.h
 -rw-r--r--	root/root	usr/include/Qt/qhostinfo.h
 -rw-r--r--	root/root	usr/include/Qt/qhttp.h
@@ -344,6 +391,15 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qitemeditorfactory.h
 -rw-r--r--	root/root	usr/include/Qt/qitemselectionmodel.h
 -rw-r--r--	root/root	usr/include/Qt/qiterator.h
+-rw-r--r--	root/root	usr/include/Qt/qkbd_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbddriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbddriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbdlinuxinput_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbdqnx_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbdtty_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbdum_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkbdvfb_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qkeyeventtransition.h
 -rw-r--r--	root/root	usr/include/Qt/qkeysequence.h
 -rw-r--r--	root/root	usr/include/Qt/qlabel.h
 -rw-r--r--	root/root	usr/include/Qt/qlayout.h
@@ -360,10 +416,16 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qlocale.h
 -rw-r--r--	root/root	usr/include/Qt/qlocalserver.h
 -rw-r--r--	root/root	usr/include/Qt/qlocalsocket.h
+-rw-r--r--	root/root	usr/include/Qt/qmaccocoaviewcontainer_mac.h
+-rw-r--r--	root/root	usr/include/Qt/qmacdefines_mac.h
+-rw-r--r--	root/root	usr/include/Qt/qmacnativewidget_mac.h
+-rw-r--r--	root/root	usr/include/Qt/qmacstyle_mac.h
 -rw-r--r--	root/root	usr/include/Qt/qmainwindow.h
 -rw-r--r--	root/root	usr/include/Qt/qmap.h
+-rw-r--r--	root/root	usr/include/Qt/qmargins.h
 -rw-r--r--	root/root	usr/include/Qt/qmath.h
 -rw-r--r--	root/root	usr/include/Qt/qmatrix.h
+-rw-r--r--	root/root	usr/include/Qt/qmatrix4x4.h
 -rw-r--r--	root/root	usr/include/Qt/qmdiarea.h
 -rw-r--r--	root/root	usr/include/Qt/qmdisubwindow.h
 -rw-r--r--	root/root	usr/include/Qt/qmenu.h
@@ -375,11 +437,22 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qmime.h
 -rw-r--r--	root/root	usr/include/Qt/qmimedata.h
 -rw-r--r--	root/root	usr/include/Qt/qmotifstyle.h
+-rw-r--r--	root/root	usr/include/Qt/qmouse_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmousedriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmousedriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmouseeventtransition.h
+-rw-r--r--	root/root	usr/include/Qt/qmouselinuxinput_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmouselinuxtp_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmousepc_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmouseqnx_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmousetslib_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qmousevfb_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qmovie.h
 -rw-r--r--	root/root	usr/include/Qt/qmutex.h
 -rw-r--r--	root/root	usr/include/Qt/qnamespace.h
 -rw-r--r--	root/root	usr/include/Qt/qnetworkaccessmanager.h
 -rw-r--r--	root/root	usr/include/Qt/qnetworkcookie.h
+-rw-r--r--	root/root	usr/include/Qt/qnetworkcookiejar.h
 -rw-r--r--	root/root	usr/include/Qt/qnetworkdiskcache.h
 -rw-r--r--	root/root	usr/include/Qt/qnetworkinterface.h
 -rw-r--r--	root/root	usr/include/Qt/qnetworkproxy.h
@@ -396,6 +469,8 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qpainterpath.h
 -rw-r--r--	root/root	usr/include/Qt/qpair.h
 -rw-r--r--	root/root	usr/include/Qt/qpalette.h
+-rw-r--r--	root/root	usr/include/Qt/qparallelanimationgroup.h
+-rw-r--r--	root/root	usr/include/Qt/qpauseanimation.h
 -rw-r--r--	root/root	usr/include/Qt/qpen.h
 -rw-r--r--	root/root	usr/include/Qt/qpicture.h
 -rw-r--r--	root/root	usr/include/Qt/qpictureformatplugin.h
@@ -417,8 +492,11 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qprocess.h
 -rw-r--r--	root/root	usr/include/Qt/qprogressbar.h
 -rw-r--r--	root/root	usr/include/Qt/qprogressdialog.h
+-rw-r--r--	root/root	usr/include/Qt/qpropertyanimation.h
 -rw-r--r--	root/root	usr/include/Qt/qproxymodel.h
+-rw-r--r--	root/root	usr/include/Qt/qproxystyle.h
 -rw-r--r--	root/root	usr/include/Qt/qpushbutton.h
+-rw-r--r--	root/root	usr/include/Qt/qquaternion.h
 -rw-r--r--	root/root	usr/include/Qt/qqueue.h
 -rw-r--r--	root/root	usr/include/Qt/qradiobutton.h
 -rw-r--r--	root/root	usr/include/Qt/qreadwritelock.h
@@ -429,6 +507,19 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qrgb.h
 -rw-r--r--	root/root	usr/include/Qt/qrubberband.h
 -rw-r--r--	root/root	usr/include/Qt/qrunnable.h
+-rw-r--r--	root/root	usr/include/Qt/qs60mainapplication.h
+-rw-r--r--	root/root	usr/include/Qt/qs60mainappui.h
+-rw-r--r--	root/root	usr/include/Qt/qs60maindocument.h
+-rw-r--r--	root/root	usr/include/Qt/qs60style.h
+-rw-r--r--	root/root	usr/include/Qt/qscopedpointer.h
+-rw-r--r--	root/root	usr/include/Qt/qscreen_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreendriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreendriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreenlinuxfb_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreenproxy_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreenqnx_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreentransformed_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qscreenvfb_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptable.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptclass.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptclasspropertyiterator.h
@@ -439,12 +530,14 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qscriptenginedebugger.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptextensioninterface.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptextensionplugin.h
+-rw-r--r--	root/root	usr/include/Qt/qscriptprogram.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptstring.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptvalue.h
 -rw-r--r--	root/root	usr/include/Qt/qscriptvalueiterator.h
 -rw-r--r--	root/root	usr/include/Qt/qscrollarea.h
 -rw-r--r--	root/root	usr/include/Qt/qscrollbar.h
 -rw-r--r--	root/root	usr/include/Qt/qsemaphore.h
+-rw-r--r--	root/root	usr/include/Qt/qsequentialanimationgroup.h
 -rw-r--r--	root/root	usr/include/Qt/qsessionmanager.h
 -rw-r--r--	root/root	usr/include/Qt/qset.h
 -rw-r--r--	root/root	usr/include/Qt/qsettings.h
@@ -455,6 +548,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qshortcut.h
 -rw-r--r--	root/root	usr/include/Qt/qsignalmapper.h
 -rw-r--r--	root/root	usr/include/Qt/qsignalspy.h
+-rw-r--r--	root/root	usr/include/Qt/qsignaltransition.h
 -rw-r--r--	root/root	usr/include/Qt/qsimplexmlnodemodel.h
 -rw-r--r--	root/root	usr/include/Qt/qsize.h
 -rw-r--r--	root/root	usr/include/Qt/qsizegrip.h
@@ -463,6 +557,7 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qsocketnotifier.h
 -rw-r--r--	root/root	usr/include/Qt/qsortfilterproxymodel.h
 -rw-r--r--	root/root	usr/include/Qt/qsound.h
+-rw-r--r--	root/root	usr/include/Qt/qsoundqss_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qsourcelocation.h
 -rw-r--r--	root/root	usr/include/Qt/qspinbox.h
 -rw-r--r--	root/root	usr/include/Qt/qsplashscreen.h
@@ -501,8 +596,11 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qstackedlayout.h
 -rw-r--r--	root/root	usr/include/Qt/qstackedwidget.h
 -rw-r--r--	root/root	usr/include/Qt/qstandarditemmodel.h
+-rw-r--r--	root/root	usr/include/Qt/qstate.h
+-rw-r--r--	root/root	usr/include/Qt/qstatemachine.h
 -rw-r--r--	root/root	usr/include/Qt/qstatusbar.h
 -rw-r--r--	root/root	usr/include/Qt/qstring.h
+-rw-r--r--	root/root	usr/include/Qt/qstringbuilder.h
 -rw-r--r--	root/root	usr/include/Qt/qstringlist.h
 -rw-r--r--	root/root	usr/include/Qt/qstringlistmodel.h
 -rw-r--r--	root/root	usr/include/Qt/qstringmatcher.h
@@ -515,9 +613,11 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qsvggenerator.h
 -rw-r--r--	root/root	usr/include/Qt/qsvgrenderer.h
 -rw-r--r--	root/root	usr/include/Qt/qsvgwidget.h
+-rw-r--r--	root/root	usr/include/Qt/qsymbianevent.h
 -rw-r--r--	root/root	usr/include/Qt/qsyntaxhighlighter.h
 -rw-r--r--	root/root	usr/include/Qt/qsystemsemaphore.h
 -rw-r--r--	root/root	usr/include/Qt/qsystemtrayicon.h
+-rw-r--r--	root/root	usr/include/Qt/qt_windows.h
 -rw-r--r--	root/root	usr/include/Qt/qtabbar.h
 -rw-r--r--	root/root	usr/include/Qt/qtableview.h
 -rw-r--r--	root/root	usr/include/Qt/qtablewidget.h
@@ -545,14 +645,24 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qtest_gui.h
 -rw-r--r--	root/root	usr/include/Qt/qtestaccessible.h
 -rw-r--r--	root/root	usr/include/Qt/qtestassert.h
+-rw-r--r--	root/root	usr/include/Qt/qtestbasicstreamer.h
 -rw-r--r--	root/root	usr/include/Qt/qtestcase.h
+-rw-r--r--	root/root	usr/include/Qt/qtestcoreelement.h
+-rw-r--r--	root/root	usr/include/Qt/qtestcorelist.h
 -rw-r--r--	root/root	usr/include/Qt/qtestdata.h
+-rw-r--r--	root/root	usr/include/Qt/qtestelement.h
+-rw-r--r--	root/root	usr/include/Qt/qtestelementattribute.h
 -rw-r--r--	root/root	usr/include/Qt/qtestevent.h
 -rw-r--r--	root/root	usr/include/Qt/qtesteventloop.h
+-rw-r--r--	root/root	usr/include/Qt/qtestfilelogger.h
 -rw-r--r--	root/root	usr/include/Qt/qtestkeyboard.h
+-rw-r--r--	root/root	usr/include/Qt/qtestlightxmlstreamer.h
 -rw-r--r--	root/root	usr/include/Qt/qtestmouse.h
 -rw-r--r--	root/root	usr/include/Qt/qtestspontaneevent.h
 -rw-r--r--	root/root	usr/include/Qt/qtestsystem.h
+-rw-r--r--	root/root	usr/include/Qt/qtesttouch.h
+-rw-r--r--	root/root	usr/include/Qt/qtestxmlstreamer.h
+-rw-r--r--	root/root	usr/include/Qt/qtestxunitstreamer.h
 -rw-r--r--	root/root	usr/include/Qt/qtextboundaryfinder.h
 -rw-r--r--	root/root	usr/include/Qt/qtextbrowser.h
 -rw-r--r--	root/root	usr/include/Qt/qtextcodec.h
@@ -580,6 +690,8 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qtooltip.h
 -rw-r--r--	root/root	usr/include/Qt/qtransform.h
 -rw-r--r--	root/root	usr/include/Qt/qtranslator.h
+-rw-r--r--	root/root	usr/include/Qt/qtransportauth_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qtransportauthdefs_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qtreeview.h
 -rw-r--r--	root/root	usr/include/Qt/qtreewidget.h
 -rw-r--r--	root/root	usr/include/Qt/qtreewidgetitemiterator.h
@@ -592,14 +704,24 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/quuid.h
 -rw-r--r--	root/root	usr/include/Qt/qvalidator.h
 -rw-r--r--	root/root	usr/include/Qt/qvariant.h
+-rw-r--r--	root/root	usr/include/Qt/qvariantanimation.h
 -rw-r--r--	root/root	usr/include/Qt/qvarlengtharray.h
 -rw-r--r--	root/root	usr/include/Qt/qvector.h
+-rw-r--r--	root/root	usr/include/Qt/qvector2d.h
+-rw-r--r--	root/root	usr/include/Qt/qvector3d.h
+-rw-r--r--	root/root	usr/include/Qt/qvector4d.h
+-rw-r--r--	root/root	usr/include/Qt/qvfbhdr.h
+-rw-r--r--	root/root	usr/include/Qt/qvideoframe.h
+-rw-r--r--	root/root	usr/include/Qt/qvideosurfaceformat.h
 -rw-r--r--	root/root	usr/include/Qt/qwaitcondition.h
 -rw-r--r--	root/root	usr/include/Qt/qwebdatabase.h
+-rw-r--r--	root/root	usr/include/Qt/qwebelement.h
 -rw-r--r--	root/root	usr/include/Qt/qwebframe.h
 -rw-r--r--	root/root	usr/include/Qt/qwebhistory.h
 -rw-r--r--	root/root	usr/include/Qt/qwebhistoryinterface.h
+-rw-r--r--	root/root	usr/include/Qt/qwebinspector.h
 -rw-r--r--	root/root	usr/include/Qt/qwebkitglobal.h
+-rw-r--r--	root/root	usr/include/Qt/qwebkitversion.h
 -rw-r--r--	root/root	usr/include/Qt/qwebpage.h
 -rw-r--r--	root/root	usr/include/Qt/qwebpluginfactory.h
 -rw-r--r--	root/root	usr/include/Qt/qwebsecurityorigin.h
@@ -609,14 +731,25 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qwidget.h
 -rw-r--r--	root/root	usr/include/Qt/qwidgetaction.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowdefs.h
+-rw-r--r--	root/root	usr/include/Qt/qwindowdefs_win.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowscestyle.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowsmobilestyle.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowsstyle.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowsvistastyle.h
 -rw-r--r--	root/root	usr/include/Qt/qwindowsxpstyle.h
+-rw-r--r--	root/root	usr/include/Qt/qwindowsystem_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qwizard.h
 -rw-r--r--	root/root	usr/include/Qt/qwmatrix.h
 -rw-r--r--	root/root	usr/include/Qt/qworkspace.h
+-rw-r--r--	root/root	usr/include/Qt/qwscursor_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsdisplay_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsembedwidget.h
+-rw-r--r--	root/root	usr/include/Qt/qwsevent_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsmanager_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsproperty_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsprotocolitem_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwssocket_qws.h
+-rw-r--r--	root/root	usr/include/Qt/qwsutils_qws.h
 -rw-r--r--	root/root	usr/include/Qt/qx11embed_x11.h
 -rw-r--r--	root/root	usr/include/Qt/qx11info_x11.h
 -rw-r--r--	root/root	usr/include/Qt/qxml.h
@@ -625,6 +758,8 @@ drwxr-xr-x	root/root	usr/include/Qt/
 -rw-r--r--	root/root	usr/include/Qt/qxmlnamepool.h
 -rw-r--r--	root/root	usr/include/Qt/qxmlquery.h
 -rw-r--r--	root/root	usr/include/Qt/qxmlresultitems.h
+-rw-r--r--	root/root	usr/include/Qt/qxmlschema.h
+-rw-r--r--	root/root	usr/include/Qt/qxmlschemavalidator.h
 -rw-r--r--	root/root	usr/include/Qt/qxmlserializer.h
 -rw-r--r--	root/root	usr/include/Qt/qxmlstream.h
 drwxr-xr-x	root/root	usr/include/Qt3Support/
@@ -928,13 +1063,18 @@ drwxr-xr-x	root/root	usr/include/QtAssistant/
 -rw-r--r--	root/root	usr/include/QtAssistant/qassistantclient.h
 -rw-r--r--	root/root	usr/include/QtAssistant/qassistantclient_global.h
 drwxr-xr-x	root/root	usr/include/QtCore/
+-rw-r--r--	root/root	usr/include/QtCore/QAbstractAnimation
+-rw-r--r--	root/root	usr/include/QtCore/QAbstractConcatenable
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractEventDispatcher
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractFileEngine
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractFileEngineHandler
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractFileEngineIterator
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractItemModel
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractListModel
+-rw-r--r--	root/root	usr/include/QtCore/QAbstractState
 -rw-r--r--	root/root	usr/include/QtCore/QAbstractTableModel
+-rw-r--r--	root/root	usr/include/QtCore/QAbstractTransition
+-rw-r--r--	root/root	usr/include/QtCore/QAnimationGroup
 -rw-r--r--	root/root	usr/include/QtCore/QArgument
 -rw-r--r--	root/root	usr/include/QtCore/QAtomicInt
 -rw-r--r--	root/root	usr/include/QtCore/QAtomicPointer
@@ -953,7 +1093,11 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QChar
 -rw-r--r--	root/root	usr/include/QtCore/QCharRef
 -rw-r--r--	root/root	usr/include/QtCore/QChildEvent
+-rw-r--r--	root/root	usr/include/QtCore/QConcatenable
 -rw-r--r--	root/root	usr/include/QtCore/QConstString
+-rw-r--r--	root/root	usr/include/QtCore/QContiguousCache
+-rw-r--r--	root/root	usr/include/QtCore/QContiguousCacheData
+-rw-r--r--	root/root	usr/include/QtCore/QContiguousCacheTypedData
 -rw-r--r--	root/root	usr/include/QtCore/QCoreApplication
 -rw-r--r--	root/root	usr/include/QtCore/QCryptographicHash
 -rw-r--r--	root/root	usr/include/QtCore/QCustomEvent
@@ -964,8 +1108,10 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QDir
 -rw-r--r--	root/root	usr/include/QtCore/QDirIterator
 -rw-r--r--	root/root	usr/include/QtCore/QDynamicPropertyChangeEvent
+-rw-r--r--	root/root	usr/include/QtCore/QEasingCurve
 -rw-r--r--	root/root	usr/include/QtCore/QEvent
 -rw-r--r--	root/root	usr/include/QtCore/QEventLoop
+-rw-r--r--	root/root	usr/include/QtCore/QEventTransition
 -rw-r--r--	root/root	usr/include/QtCore/QExplicitlySharedDataPointer
 -rw-r--r--	root/root	usr/include/QtCore/QFSFileEngine
 -rw-r--r--	root/root	usr/include/QtCore/QFactoryInterface
@@ -974,6 +1120,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QFileInfoList
 -rw-r--r--	root/root	usr/include/QtCore/QFileInfoListIterator
 -rw-r--r--	root/root	usr/include/QtCore/QFileSystemWatcher
+-rw-r--r--	root/root	usr/include/QtCore/QFinalState
 -rw-r--r--	root/root	usr/include/QtCore/QFlag
 -rw-r--r--	root/root	usr/include/QtCore/QFlags
 -rw-r--r--	root/root	usr/include/QtCore/QForeachContainer
@@ -995,12 +1142,13 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QHashDummyValue
 -rw-r--r--	root/root	usr/include/QtCore/QHashIterator
 -rw-r--r--	root/root	usr/include/QtCore/QHashNode
+-rw-r--r--	root/root	usr/include/QtCore/QHistoryState
 -rw-r--r--	root/root	usr/include/QtCore/QIODevice
 -rw-r--r--	root/root	usr/include/QtCore/QIncompatibleFlag
--rw-r--r--	root/root	usr/include/QtCore/QIntForSize
--rw-r--r--	root/root	usr/include/QtCore/QIntForType
+-rw-r--r--	root/root	usr/include/QtCore/QIntegerForSize
 -rw-r--r--	root/root	usr/include/QtCore/QInternal
 -rw-r--r--	root/root	usr/include/QtCore/QLatin1Char
+-rw-r--r--	root/root	usr/include/QtCore/QLatin1Literal
 -rw-r--r--	root/root	usr/include/QtCore/QLatin1String
 -rw-r--r--	root/root	usr/include/QtCore/QLibrary
 -rw-r--r--	root/root	usr/include/QtCore/QLibraryInfo
@@ -1019,10 +1167,12 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QMapIterator
 -rw-r--r--	root/root	usr/include/QtCore/QMapNode
 -rw-r--r--	root/root	usr/include/QtCore/QMapPayloadNode
+-rw-r--r--	root/root	usr/include/QtCore/QMargins
 -rw-r--r--	root/root	usr/include/QtCore/QMetaClassInfo
 -rw-r--r--	root/root	usr/include/QtCore/QMetaEnum
 -rw-r--r--	root/root	usr/include/QtCore/QMetaMethod
 -rw-r--r--	root/root	usr/include/QtCore/QMetaObject
+-rw-r--r--	root/root	usr/include/QtCore/QMetaObjectAccessor
 -rw-r--r--	root/root	usr/include/QtCore/QMetaObjectExtraData
 -rw-r--r--	root/root	usr/include/QtCore/QMetaProperty
 -rw-r--r--	root/root	usr/include/QtCore/QMetaType
@@ -1051,12 +1201,16 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QObjectList
 -rw-r--r--	root/root	usr/include/QtCore/QObjectUserData
 -rw-r--r--	root/root	usr/include/QtCore/QPair
+-rw-r--r--	root/root	usr/include/QtCore/QParallelAnimationGroup
+-rw-r--r--	root/root	usr/include/QtCore/QPauseAnimation
 -rw-r--r--	root/root	usr/include/QtCore/QPersistentModelIndex
 -rw-r--r--	root/root	usr/include/QtCore/QPluginLoader
 -rw-r--r--	root/root	usr/include/QtCore/QPoint
 -rw-r--r--	root/root	usr/include/QtCore/QPointF
 -rw-r--r--	root/root	usr/include/QtCore/QPointer
 -rw-r--r--	root/root	usr/include/QtCore/QProcess
+-rw-r--r--	root/root	usr/include/QtCore/QProcessEnvironment
+-rw-r--r--	root/root	usr/include/QtCore/QPropertyAnimation
 -rw-r--r--	root/root	usr/include/QtCore/QQueue
 -rw-r--r--	root/root	usr/include/QtCore/QReadLocker
 -rw-r--r--	root/root	usr/include/QtCore/QReadWriteLock
@@ -1066,7 +1220,13 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QResource
 -rw-r--r--	root/root	usr/include/QtCore/QReturnArgument
 -rw-r--r--	root/root	usr/include/QtCore/QRunnable
+-rw-r--r--	root/root	usr/include/QtCore/QScopedArrayPointer
+-rw-r--r--	root/root	usr/include/QtCore/QScopedPointer
+-rw-r--r--	root/root	usr/include/QtCore/QScopedPointerArrayDeleter
+-rw-r--r--	root/root	usr/include/QtCore/QScopedPointerDeleter
+-rw-r--r--	root/root	usr/include/QtCore/QScopedPointerPodDeleter
 -rw-r--r--	root/root	usr/include/QtCore/QSemaphore
+-rw-r--r--	root/root	usr/include/QtCore/QSequentialAnimationGroup
 -rw-r--r--	root/root	usr/include/QtCore/QSet
 -rw-r--r--	root/root	usr/include/QtCore/QSetIterator
 -rw-r--r--	root/root	usr/include/QtCore/QSettings
@@ -1075,12 +1235,16 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QSharedMemory
 -rw-r--r--	root/root	usr/include/QtCore/QSharedPointer
 -rw-r--r--	root/root	usr/include/QtCore/QSignalMapper
+-rw-r--r--	root/root	usr/include/QtCore/QSignalTransition
 -rw-r--r--	root/root	usr/include/QtCore/QSize
 -rw-r--r--	root/root	usr/include/QtCore/QSizeF
 -rw-r--r--	root/root	usr/include/QtCore/QSocketNotifier
 -rw-r--r--	root/root	usr/include/QtCore/QStack
+-rw-r--r--	root/root	usr/include/QtCore/QState
+-rw-r--r--	root/root	usr/include/QtCore/QStateMachine
 -rw-r--r--	root/root	usr/include/QtCore/QStdWString
 -rw-r--r--	root/root	usr/include/QtCore/QString
+-rw-r--r--	root/root	usr/include/QtCore/QStringBuilder
 -rw-r--r--	root/root	usr/include/QtCore/QStringList
 -rw-r--r--	root/root	usr/include/QtCore/QStringListIterator
 -rw-r--r--	root/root	usr/include/QtCore/QStringMatcher
@@ -1111,12 +1275,11 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QTimerEvent
 -rw-r--r--	root/root	usr/include/QtCore/QTranslator
 -rw-r--r--	root/root	usr/include/QtCore/QTypeInfo
--rw-r--r--	root/root	usr/include/QtCore/QUintForSize
--rw-r--r--	root/root	usr/include/QtCore/QUintForType
 -rw-r--r--	root/root	usr/include/QtCore/QUrl
 -rw-r--r--	root/root	usr/include/QtCore/QUuid
 -rw-r--r--	root/root	usr/include/QtCore/QVarLengthArray
 -rw-r--r--	root/root	usr/include/QtCore/QVariant
+-rw-r--r--	root/root	usr/include/QtCore/QVariantAnimation
 -rw-r--r--	root/root	usr/include/QtCore/QVariantComparisonHelper
 -rw-r--r--	root/root	usr/include/QtCore/QVariantHash
 -rw-r--r--	root/root	usr/include/QtCore/QVariantList
@@ -1167,10 +1330,14 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/QtMsgHandler
 -rw-r--r--	root/root	usr/include/QtCore/QtPlugin
 -rw-r--r--	root/root	usr/include/QtCore/QtPluginInstanceFunction
+-rw-r--r--	root/root	usr/include/QtCore/qabstractanimation.h
 -rw-r--r--	root/root	usr/include/QtCore/qabstracteventdispatcher.h
 -rw-r--r--	root/root	usr/include/QtCore/qabstractfileengine.h
 -rw-r--r--	root/root	usr/include/QtCore/qabstractitemmodel.h
+-rw-r--r--	root/root	usr/include/QtCore/qabstractstate.h
+-rw-r--r--	root/root	usr/include/QtCore/qabstracttransition.h
 -rw-r--r--	root/root	usr/include/QtCore/qalgorithms.h
+-rw-r--r--	root/root	usr/include/QtCore/qanimationgroup.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_alpha.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_arch.h
@@ -1182,6 +1349,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_generic.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_i386.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_ia64.h
+-rw-r--r--	root/root	usr/include/QtCore/qatomic_macosx.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_mips.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_parisc.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_powerpc.h
@@ -1189,6 +1357,10 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_sh.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_sh4a.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_sparc.h
+-rw-r--r--	root/root	usr/include/QtCore/qatomic_symbian.h
+-rw-r--r--	root/root	usr/include/QtCore/qatomic_vxworks.h
+-rw-r--r--	root/root	usr/include/QtCore/qatomic_windows.h
+-rw-r--r--	root/root	usr/include/QtCore/qatomic_windowsce.h
 -rw-r--r--	root/root	usr/include/QtCore/qatomic_x86_64.h
 -rw-r--r--	root/root	usr/include/QtCore/qbasicatomic.h
 -rw-r--r--	root/root	usr/include/QtCore/qbasictimer.h
@@ -1205,6 +1377,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qconfig-small.h
 -rw-r--r--	root/root	usr/include/QtCore/qconfig.h
 -rw-r--r--	root/root	usr/include/QtCore/qcontainerfwd.h
+-rw-r--r--	root/root	usr/include/QtCore/qcontiguouscache.h
 -rw-r--r--	root/root	usr/include/QtCore/qcoreapplication.h
 -rw-r--r--	root/root	usr/include/QtCore/qcoreevent.h
 -rw-r--r--	root/root	usr/include/QtCore/qcryptographichash.h
@@ -1213,20 +1386,26 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qdebug.h
 -rw-r--r--	root/root	usr/include/QtCore/qdir.h
 -rw-r--r--	root/root	usr/include/QtCore/qdiriterator.h
+-rw-r--r--	root/root	usr/include/QtCore/qeasingcurve.h
 -rw-r--r--	root/root	usr/include/QtCore/qendian.h
 -rw-r--r--	root/root	usr/include/QtCore/qeventloop.h
+-rw-r--r--	root/root	usr/include/QtCore/qeventtransition.h
 -rw-r--r--	root/root	usr/include/QtCore/qfactoryinterface.h
 -rw-r--r--	root/root	usr/include/QtCore/qfeatures.h
 -rw-r--r--	root/root	usr/include/QtCore/qfile.h
 -rw-r--r--	root/root	usr/include/QtCore/qfileinfo.h
 -rw-r--r--	root/root	usr/include/QtCore/qfilesystemwatcher.h
+-rw-r--r--	root/root	usr/include/QtCore/qfinalstate.h
 -rw-r--r--	root/root	usr/include/QtCore/qfsfileengine.h
+-rw-r--r--	root/root	usr/include/QtCore/qfunctions_vxworks.h
+-rw-r--r--	root/root	usr/include/QtCore/qfunctions_wince.h
 -rw-r--r--	root/root	usr/include/QtCore/qfuture.h
 -rw-r--r--	root/root	usr/include/QtCore/qfutureinterface.h
 -rw-r--r--	root/root	usr/include/QtCore/qfuturesynchronizer.h
 -rw-r--r--	root/root	usr/include/QtCore/qfuturewatcher.h
 -rw-r--r--	root/root	usr/include/QtCore/qglobal.h
 -rw-r--r--	root/root	usr/include/QtCore/qhash.h
+-rw-r--r--	root/root	usr/include/QtCore/qhistorystate.h
 -rw-r--r--	root/root	usr/include/QtCore/qiodevice.h
 -rw-r--r--	root/root	usr/include/QtCore/qiterator.h
 -rw-r--r--	root/root	usr/include/QtCore/qlibrary.h
@@ -1236,6 +1415,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qlist.h
 -rw-r--r--	root/root	usr/include/QtCore/qlocale.h
 -rw-r--r--	root/root	usr/include/QtCore/qmap.h
+-rw-r--r--	root/root	usr/include/QtCore/qmargins.h
 -rw-r--r--	root/root	usr/include/QtCore/qmath.h
 -rw-r--r--	root/root	usr/include/QtCore/qmetaobject.h
 -rw-r--r--	root/root	usr/include/QtCore/qmetatype.h
@@ -1247,18 +1427,23 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qobjectcleanuphandler.h
 -rw-r--r--	root/root	usr/include/QtCore/qobjectdefs.h
 -rw-r--r--	root/root	usr/include/QtCore/qpair.h
+-rw-r--r--	root/root	usr/include/QtCore/qparallelanimationgroup.h
+-rw-r--r--	root/root	usr/include/QtCore/qpauseanimation.h
 -rw-r--r--	root/root	usr/include/QtCore/qplugin.h
 -rw-r--r--	root/root	usr/include/QtCore/qpluginloader.h
 -rw-r--r--	root/root	usr/include/QtCore/qpoint.h
 -rw-r--r--	root/root	usr/include/QtCore/qpointer.h
 -rw-r--r--	root/root	usr/include/QtCore/qprocess.h
+-rw-r--r--	root/root	usr/include/QtCore/qpropertyanimation.h
 -rw-r--r--	root/root	usr/include/QtCore/qqueue.h
 -rw-r--r--	root/root	usr/include/QtCore/qreadwritelock.h
 -rw-r--r--	root/root	usr/include/QtCore/qrect.h
 -rw-r--r--	root/root	usr/include/QtCore/qregexp.h
 -rw-r--r--	root/root	usr/include/QtCore/qresource.h
 -rw-r--r--	root/root	usr/include/QtCore/qrunnable.h
+-rw-r--r--	root/root	usr/include/QtCore/qscopedpointer.h
 -rw-r--r--	root/root	usr/include/QtCore/qsemaphore.h
+-rw-r--r--	root/root	usr/include/QtCore/qsequentialanimationgroup.h
 -rw-r--r--	root/root	usr/include/QtCore/qset.h
 -rw-r--r--	root/root	usr/include/QtCore/qsettings.h
 -rw-r--r--	root/root	usr/include/QtCore/qshareddata.h
@@ -1266,13 +1451,18 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qsharedpointer.h
 -rw-r--r--	root/root	usr/include/QtCore/qsharedpointer_impl.h
 -rw-r--r--	root/root	usr/include/QtCore/qsignalmapper.h
+-rw-r--r--	root/root	usr/include/QtCore/qsignaltransition.h
 -rw-r--r--	root/root	usr/include/QtCore/qsize.h
 -rw-r--r--	root/root	usr/include/QtCore/qsocketnotifier.h
 -rw-r--r--	root/root	usr/include/QtCore/qstack.h
+-rw-r--r--	root/root	usr/include/QtCore/qstate.h
+-rw-r--r--	root/root	usr/include/QtCore/qstatemachine.h
 -rw-r--r--	root/root	usr/include/QtCore/qstring.h
+-rw-r--r--	root/root	usr/include/QtCore/qstringbuilder.h
 -rw-r--r--	root/root	usr/include/QtCore/qstringlist.h
 -rw-r--r--	root/root	usr/include/QtCore/qstringmatcher.h
 -rw-r--r--	root/root	usr/include/QtCore/qsystemsemaphore.h
+-rw-r--r--	root/root	usr/include/QtCore/qt_windows.h
 -rw-r--r--	root/root	usr/include/QtCore/qtconcurrentcompilertest.h
 -rw-r--r--	root/root	usr/include/QtCore/qtconcurrentexception.h
 -rw-r--r--	root/root	usr/include/QtCore/qtconcurrentfilter.h
@@ -1302,6 +1492,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 -rw-r--r--	root/root	usr/include/QtCore/qurl.h
 -rw-r--r--	root/root	usr/include/QtCore/quuid.h
 -rw-r--r--	root/root	usr/include/QtCore/qvariant.h
+-rw-r--r--	root/root	usr/include/QtCore/qvariantanimation.h
 -rw-r--r--	root/root	usr/include/QtCore/qvarlengtharray.h
 -rw-r--r--	root/root	usr/include/QtCore/qvector.h
 -rw-r--r--	root/root	usr/include/QtCore/qwaitcondition.h
@@ -1309,6 +1500,7 @@ drwxr-xr-x	root/root	usr/include/QtCore/
 drwxr-xr-x	root/root	usr/include/QtDBus/
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusAbstractAdaptor
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusAbstractInterface
+-rw-r--r--	root/root	usr/include/QtDBus/QDBusAbstractInterfaceBase
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusArgument
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusConnection
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusConnectionInterface
@@ -1324,6 +1516,7 @@ drwxr-xr-x	root/root	usr/include/QtDBus/
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusPendingReplyData
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusReply
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusServer
+-rw-r--r--	root/root	usr/include/QtDBus/QDBusServiceWatcher
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusSignature
 -rw-r--r--	root/root	usr/include/QtDBus/QDBusVariant
 -rw-r--r--	root/root	usr/include/QtDBus/QtDBus
@@ -1343,6 +1536,7 @@ drwxr-xr-x	root/root	usr/include/QtDBus/
 -rw-r--r--	root/root	usr/include/QtDBus/qdbuspendingreply.h
 -rw-r--r--	root/root	usr/include/QtDBus/qdbusreply.h
 -rw-r--r--	root/root	usr/include/QtDBus/qdbusserver.h
+-rw-r--r--	root/root	usr/include/QtDBus/qdbusservicewatcher.h
 drwxr-xr-x	root/root	usr/include/QtDesigner/
 -rw-r--r--	root/root	usr/include/QtDesigner/QAbstractExtensionFactory
 -rw-r--r--	root/root	usr/include/QtDesigner/QAbstractExtensionManager
@@ -1425,6 +1619,7 @@ drwxr-xr-x	root/root	usr/include/QtDesigner/
 -rw-r--r--	root/root	usr/include/QtDesigner/uilib_global.h
 drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QAbstractButton
+-rw-r--r--	root/root	usr/include/QtGui/QAbstractFontEngine
 -rw-r--r--	root/root	usr/include/QtGui/QAbstractGraphicsShapeItem
 -rw-r--r--	root/root	usr/include/QtGui/QAbstractItemDelegate
 -rw-r--r--	root/root	usr/include/QtGui/QAbstractItemView
@@ -1438,6 +1633,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QAbstractUndoItem
 -rw-r--r--	root/root	usr/include/QtGui/QAccessible
 -rw-r--r--	root/root	usr/include/QtGui/QAccessible2Interface
+-rw-r--r--	root/root	usr/include/QtGui/QAccessibleActionInterface
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleApplication
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleBridge
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleBridgeFactoryInterface
@@ -1445,6 +1641,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleEditableTextInterface
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleEvent
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QAccessibleImageInterface
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleInterface
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleInterfaceEx
 -rw-r--r--	root/root	usr/include/QtGui/QAccessibleObject
@@ -1460,6 +1657,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QActionEvent
 -rw-r--r--	root/root	usr/include/QtGui/QActionGroup
 -rw-r--r--	root/root	usr/include/QtGui/QApplication
+-rw-r--r--	root/root	usr/include/QtGui/QAuthDevice
 -rw-r--r--	root/root	usr/include/QtGui/QBitmap
 -rw-r--r--	root/root	usr/include/QtGui/QBoxLayout
 -rw-r--r--	root/root	usr/include/QtGui/QBrush
@@ -1483,17 +1681,27 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QCompleter
 -rw-r--r--	root/root	usr/include/QtGui/QConicalGradient
 -rw-r--r--	root/root	usr/include/QtGui/QContextMenuEvent
+-rw-r--r--	root/root	usr/include/QtGui/QCopChannel
 -rw-r--r--	root/root	usr/include/QtGui/QCursor
 -rw-r--r--	root/root	usr/include/QtGui/QCursorShape
 -rw-r--r--	root/root	usr/include/QtGui/QDataWidgetMapper
 -rw-r--r--	root/root	usr/include/QtGui/QDateEdit
 -rw-r--r--	root/root	usr/include/QtGui/QDateTimeEdit
+-rw-r--r--	root/root	usr/include/QtGui/QDecoration
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationAction
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationDefault
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationFactory
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationPlugin
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationStyled
+-rw-r--r--	root/root	usr/include/QtGui/QDecorationWindows
 -rw-r--r--	root/root	usr/include/QtGui/QDesktopServices
 -rw-r--r--	root/root	usr/include/QtGui/QDesktopWidget
 -rw-r--r--	root/root	usr/include/QtGui/QDial
 -rw-r--r--	root/root	usr/include/QtGui/QDialog
 -rw-r--r--	root/root	usr/include/QtGui/QDialogButtonBox
 -rw-r--r--	root/root	usr/include/QtGui/QDirModel
+-rw-r--r--	root/root	usr/include/QtGui/QDirectPainter
 -rw-r--r--	root/root	usr/include/QtGui/QDockWidget
 -rw-r--r--	root/root	usr/include/QtGui/QDoubleSpinBox
 -rw-r--r--	root/root	usr/include/QtGui/QDoubleValidator
@@ -1514,14 +1722,27 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QFontComboBox
 -rw-r--r--	root/root	usr/include/QtGui/QFontDatabase
 -rw-r--r--	root/root	usr/include/QtGui/QFontDialog
+-rw-r--r--	root/root	usr/include/QtGui/QFontEngineFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QFontEngineInfo
+-rw-r--r--	root/root	usr/include/QtGui/QFontEnginePlugin
 -rw-r--r--	root/root	usr/include/QtGui/QFontInfo
 -rw-r--r--	root/root	usr/include/QtGui/QFontMetrics
 -rw-r--r--	root/root	usr/include/QtGui/QFontMetricsF
 -rw-r--r--	root/root	usr/include/QtGui/QFormLayout
 -rw-r--r--	root/root	usr/include/QtGui/QFrame
+-rw-r--r--	root/root	usr/include/QtGui/QGenericMatrix
+-rw-r--r--	root/root	usr/include/QtGui/QGesture
+-rw-r--r--	root/root	usr/include/QtGui/QGestureEvent
+-rw-r--r--	root/root	usr/include/QtGui/QGestureRecognizer
 -rw-r--r--	root/root	usr/include/QtGui/QGradient
 -rw-r--r--	root/root	usr/include/QtGui/QGradientStop
 -rw-r--r--	root/root	usr/include/QtGui/QGradientStops
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsAnchor
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsAnchorLayout
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsBlurEffect
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsColorizeEffect
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsDropShadowEffect
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsEffect
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsEllipseItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsGridLayout
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsItem
@@ -1531,11 +1752,15 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsLayoutItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsLineItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsLinearLayout
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsObject
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsOpacityEffect
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsPathItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsPixmapItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsPolygonItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsProxyWidget
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsRectItem
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsRotation
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsScale
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsScene
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsSceneContextMenuEvent
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsSceneDragDropEvent
@@ -1548,6 +1773,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsSceneWheelEvent
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsSimpleTextItem
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsTextItem
+-rw-r--r--	root/root	usr/include/QtGui/QGraphicsTransform
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsView
 -rw-r--r--	root/root	usr/include/QtGui/QGraphicsWidget
 -rw-r--r--	root/root	usr/include/QtGui/QGridLayout
@@ -1589,7 +1815,10 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QItemSelection
 -rw-r--r--	root/root	usr/include/QtGui/QItemSelectionModel
 -rw-r--r--	root/root	usr/include/QtGui/QItemSelectionRange
+-rw-r--r--	root/root	usr/include/QtGui/QKbdDriverFactory
+-rw-r--r--	root/root	usr/include/QtGui/QKbdDriverPlugin
 -rw-r--r--	root/root	usr/include/QtGui/QKeyEvent
+-rw-r--r--	root/root	usr/include/QtGui/QKeyEventTransition
 -rw-r--r--	root/root	usr/include/QtGui/QKeySequence
 -rw-r--r--	root/root	usr/include/QtGui/QLCDNumber
 -rw-r--r--	root/root	usr/include/QtGui/QLabel
@@ -1598,13 +1827,27 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QLayoutIterator
 -rw-r--r--	root/root	usr/include/QtGui/QLineEdit
 -rw-r--r--	root/root	usr/include/QtGui/QLinearGradient
+-rw-r--r--	root/root	usr/include/QtGui/QLinuxFbScreen
+-rw-r--r--	root/root	usr/include/QtGui/QLinuxFb_Shared
 -rw-r--r--	root/root	usr/include/QtGui/QListView
 -rw-r--r--	root/root	usr/include/QtGui/QListWidget
 -rw-r--r--	root/root	usr/include/QtGui/QListWidgetItem
+-rw-r--r--	root/root	usr/include/QtGui/QMacCocoaViewContainer
 -rw-r--r--	root/root	usr/include/QtGui/QMacMime
+-rw-r--r--	root/root	usr/include/QtGui/QMacNativeWidget
 -rw-r--r--	root/root	usr/include/QtGui/QMacPasteboardMime
+-rw-r--r--	root/root	usr/include/QtGui/QMacStyle
 -rw-r--r--	root/root	usr/include/QtGui/QMainWindow
 -rw-r--r--	root/root	usr/include/QtGui/QMatrix
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix2x2
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix2x3
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix2x4
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix3x2
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix3x3
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix3x4
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix4x2
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix4x3
+-rw-r--r--	root/root	usr/include/QtGui/QMatrix4x4
 -rw-r--r--	root/root	usr/include/QtGui/QMdiArea
 -rw-r--r--	root/root	usr/include/QtGui/QMdiSubWindow
 -rw-r--r--	root/root	usr/include/QtGui/QMenu
@@ -1614,7 +1857,10 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QMessageBox
 -rw-r--r--	root/root	usr/include/QtGui/QMimeSource
 -rw-r--r--	root/root	usr/include/QtGui/QMotifStyle
+-rw-r--r--	root/root	usr/include/QtGui/QMouseDriverFactory
+-rw-r--r--	root/root	usr/include/QtGui/QMouseDriverPlugin
 -rw-r--r--	root/root	usr/include/QtGui/QMouseEvent
+-rw-r--r--	root/root	usr/include/QtGui/QMouseEventTransition
 -rw-r--r--	root/root	usr/include/QtGui/QMoveEvent
 -rw-r--r--	root/root	usr/include/QtGui/QMovie
 -rw-r--r--	root/root	usr/include/QtGui/QPageSetupDialog
@@ -1627,11 +1873,13 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QPainterPathPrivate
 -rw-r--r--	root/root	usr/include/QtGui/QPainterPathStroker
 -rw-r--r--	root/root	usr/include/QtGui/QPalette
+-rw-r--r--	root/root	usr/include/QtGui/QPanGesture
 -rw-r--r--	root/root	usr/include/QtGui/QPen
 -rw-r--r--	root/root	usr/include/QtGui/QPicture
 -rw-r--r--	root/root	usr/include/QtGui/QPictureFormatInterface
 -rw-r--r--	root/root	usr/include/QtGui/QPictureFormatPlugin
 -rw-r--r--	root/root	usr/include/QtGui/QPictureIO
+-rw-r--r--	root/root	usr/include/QtGui/QPinchGesture
 -rw-r--r--	root/root	usr/include/QtGui/QPixmap
 -rw-r--r--	root/root	usr/include/QtGui/QPixmapCache
 -rw-r--r--	root/root	usr/include/QtGui/QPlainTextDocumentLayout
@@ -1639,6 +1887,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QPlastiqueStyle
 -rw-r--r--	root/root	usr/include/QtGui/QPolygon
 -rw-r--r--	root/root	usr/include/QtGui/QPolygonF
+-rw-r--r--	root/root	usr/include/QtGui/QPoolEntry
 -rw-r--r--	root/root	usr/include/QtGui/QPrintDialog
 -rw-r--r--	root/root	usr/include/QtGui/QPrintEngine
 -rw-r--r--	root/root	usr/include/QtGui/QPrintPreviewDialog
@@ -1648,7 +1897,13 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QProgressBar
 -rw-r--r--	root/root	usr/include/QtGui/QProgressDialog
 -rw-r--r--	root/root	usr/include/QtGui/QProxyModel
+-rw-r--r--	root/root	usr/include/QtGui/QProxyScreen
+-rw-r--r--	root/root	usr/include/QtGui/QProxyScreenCursor
+-rw-r--r--	root/root	usr/include/QtGui/QProxyStyle
 -rw-r--r--	root/root	usr/include/QtGui/QPushButton
+-rw-r--r--	root/root	usr/include/QtGui/QQnxMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QQnxScreen
+-rw-r--r--	root/root	usr/include/QtGui/QQuaternion
 -rw-r--r--	root/root	usr/include/QtGui/QRadialGradient
 -rw-r--r--	root/root	usr/include/QtGui/QRadioButton
 -rw-r--r--	root/root	usr/include/QtGui/QRegExpValidator
@@ -1656,6 +1911,15 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QResizeEvent
 -rw-r--r--	root/root	usr/include/QtGui/QRgb
 -rw-r--r--	root/root	usr/include/QtGui/QRubberBand
+-rw-r--r--	root/root	usr/include/QtGui/QS60MainAppUi
+-rw-r--r--	root/root	usr/include/QtGui/QS60MainApplication
+-rw-r--r--	root/root	usr/include/QtGui/QS60MainDocument
+-rw-r--r--	root/root	usr/include/QtGui/QS60Style
+-rw-r--r--	root/root	usr/include/QtGui/QScreen
+-rw-r--r--	root/root	usr/include/QtGui/QScreenCursor
+-rw-r--r--	root/root	usr/include/QtGui/QScreenDriverFactory
+-rw-r--r--	root/root	usr/include/QtGui/QScreenDriverFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QScreenDriverPlugin
 -rw-r--r--	root/root	usr/include/QtGui/QScrollArea
 -rw-r--r--	root/root	usr/include/QtGui/QScrollBar
 -rw-r--r--	root/root	usr/include/QtGui/QSessionManager
@@ -1715,6 +1979,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionTabV2
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionTabV3
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionTabWidgetFrame
+-rw-r--r--	root/root	usr/include/QtGui/QStyleOptionTabWidgetFrameV2
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionTitleBar
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionToolBar
 -rw-r--r--	root/root	usr/include/QtGui/QStyleOptionToolBox
@@ -1727,6 +1992,8 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QStylePainter
 -rw-r--r--	root/root	usr/include/QtGui/QStylePlugin
 -rw-r--r--	root/root	usr/include/QtGui/QStyledItemDelegate
+-rw-r--r--	root/root	usr/include/QtGui/QSwipeGesture
+-rw-r--r--	root/root	usr/include/QtGui/QSymbianEvent
 -rw-r--r--	root/root	usr/include/QtGui/QSyntaxHighlighter
 -rw-r--r--	root/root	usr/include/QtGui/QSystemTrayIcon
 -rw-r--r--	root/root	usr/include/QtGui/QTabBar
@@ -1736,6 +2003,8 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QTableWidgetItem
 -rw-r--r--	root/root	usr/include/QtGui/QTableWidgetSelectionRange
 -rw-r--r--	root/root	usr/include/QtGui/QTabletEvent
+-rw-r--r--	root/root	usr/include/QtGui/QTapAndHoldGesture
+-rw-r--r--	root/root	usr/include/QtGui/QTapGesture
 -rw-r--r--	root/root	usr/include/QtGui/QTextBlock
 -rw-r--r--	root/root	usr/include/QtGui/QTextBlockFormat
 -rw-r--r--	root/root	usr/include/QtGui/QTextBlockGroup
@@ -1767,13 +2036,17 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QTextTableCell
 -rw-r--r--	root/root	usr/include/QtGui/QTextTableCellFormat
 -rw-r--r--	root/root	usr/include/QtGui/QTextTableFormat
+-rw-r--r--	root/root	usr/include/QtGui/QTileRules
 -rw-r--r--	root/root	usr/include/QtGui/QTimeEdit
 -rw-r--r--	root/root	usr/include/QtGui/QToolBar
 -rw-r--r--	root/root	usr/include/QtGui/QToolBarChangeEvent
 -rw-r--r--	root/root	usr/include/QtGui/QToolBox
 -rw-r--r--	root/root	usr/include/QtGui/QToolButton
 -rw-r--r--	root/root	usr/include/QtGui/QToolTip
+-rw-r--r--	root/root	usr/include/QtGui/QTouchEvent
 -rw-r--r--	root/root	usr/include/QtGui/QTransform
+-rw-r--r--	root/root	usr/include/QtGui/QTransformedScreen
+-rw-r--r--	root/root	usr/include/QtGui/QTransportAuth
 -rw-r--r--	root/root	usr/include/QtGui/QTreeView
 -rw-r--r--	root/root	usr/include/QtGui/QTreeWidget
 -rw-r--r--	root/root	usr/include/QtGui/QTreeWidgetItem
@@ -1785,8 +2058,50 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QUnixPrintWidget
 -rw-r--r--	root/root	usr/include/QtGui/QUpdateLaterEvent
 -rw-r--r--	root/root	usr/include/QtGui/QVBoxLayout
+-rw-r--r--	root/root	usr/include/QtGui/QVFbHeader
+-rw-r--r--	root/root	usr/include/QtGui/QVFbKeyData
+-rw-r--r--	root/root	usr/include/QtGui/QVFbKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QVFbMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QVFbScreen
 -rw-r--r--	root/root	usr/include/QtGui/QValidator
+-rw-r--r--	root/root	usr/include/QtGui/QVector2D
+-rw-r--r--	root/root	usr/include/QtGui/QVector3D
+-rw-r--r--	root/root	usr/include/QtGui/QVector4D
 -rw-r--r--	root/root	usr/include/QtGui/QWMatrix
+-rw-r--r--	root/root	usr/include/QtGui/QWSCalibratedMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSClient
+-rw-r--r--	root/root	usr/include/QtGui/QWSCursor
+-rw-r--r--	root/root	usr/include/QtGui/QWSCursorMap
+-rw-r--r--	root/root	usr/include/QtGui/QWSDisplay
+-rw-r--r--	root/root	usr/include/QtGui/QWSEmbedWidget
+-rw-r--r--	root/root	usr/include/QtGui/QWSEvent
+-rw-r--r--	root/root	usr/include/QtGui/QWSInputMethod
+-rw-r--r--	root/root	usr/include/QtGui/QWSInternalWindowInfo
+-rw-r--r--	root/root	usr/include/QtGui/QWSKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSKeyboardHandlerFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QWSLinuxInputKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSLinuxInputMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSLinuxTPMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSManager
+-rw-r--r--	root/root	usr/include/QtGui/QWSMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSMouseHandlerFactoryInterface
+-rw-r--r--	root/root	usr/include/QtGui/QWSPcMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSPointerCalibrationData
+-rw-r--r--	root/root	usr/include/QtGui/QWSPropertyManager
+-rw-r--r--	root/root	usr/include/QtGui/QWSProtocolItem
+-rw-r--r--	root/root	usr/include/QtGui/QWSQnxKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSScreenSaver
+-rw-r--r--	root/root	usr/include/QtGui/QWSServer
+-rw-r--r--	root/root	usr/include/QtGui/QWSServerSocket
+-rw-r--r--	root/root	usr/include/QtGui/QWSSocket
+-rw-r--r--	root/root	usr/include/QtGui/QWSSoundClient
+-rw-r--r--	root/root	usr/include/QtGui/QWSSoundServer
+-rw-r--r--	root/root	usr/include/QtGui/QWSSoundServerSocket
+-rw-r--r--	root/root	usr/include/QtGui/QWSTslibMouseHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSTtyKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSUmKeyboardHandler
+-rw-r--r--	root/root	usr/include/QtGui/QWSWindow
+-rw-r--r--	root/root	usr/include/QtGui/QWSWindowInfo
 -rw-r--r--	root/root	usr/include/QtGui/QWhatsThis
 -rw-r--r--	root/root	usr/include/QtGui/QWhatsThisClickedEvent
 -rw-r--r--	root/root	usr/include/QtGui/QWheelEvent
@@ -1814,6 +2129,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/QtEvents
 -rw-r--r--	root/root	usr/include/QtGui/QtGui
 -rw-r--r--	root/root	usr/include/QtGui/qabstractbutton.h
+-rw-r--r--	root/root	usr/include/QtGui/qabstractfontengine_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qabstractitemdelegate.h
 -rw-r--r--	root/root	usr/include/QtGui/qabstractitemview.h
 -rw-r--r--	root/root	usr/include/QtGui/qabstractpagesetupdialog.h
@@ -1849,14 +2165,22 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qcommandlinkbutton.h
 -rw-r--r--	root/root	usr/include/QtGui/qcommonstyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qcompleter.h
+-rw-r--r--	root/root	usr/include/QtGui/qcopchannel_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qcursor.h
 -rw-r--r--	root/root	usr/include/QtGui/qdatawidgetmapper.h
 -rw-r--r--	root/root	usr/include/QtGui/qdatetimeedit.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecoration_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecorationdefault_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecorationfactory_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecorationplugin_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecorationstyled_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qdecorationwindows_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qdesktopservices.h
 -rw-r--r--	root/root	usr/include/QtGui/qdesktopwidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qdial.h
 -rw-r--r--	root/root	usr/include/QtGui/qdialog.h
 -rw-r--r--	root/root	usr/include/QtGui/qdialogbuttonbox.h
+-rw-r--r--	root/root	usr/include/QtGui/qdirectpainter_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qdirmodel.h
 -rw-r--r--	root/root	usr/include/QtGui/qdockwidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qdrag.h
@@ -1875,6 +2199,11 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qfontmetrics.h
 -rw-r--r--	root/root	usr/include/QtGui/qformlayout.h
 -rw-r--r--	root/root	usr/include/QtGui/qframe.h
+-rw-r--r--	root/root	usr/include/QtGui/qgenericmatrix.h
+-rw-r--r--	root/root	usr/include/QtGui/qgesture.h
+-rw-r--r--	root/root	usr/include/QtGui/qgesturerecognizer.h
+-rw-r--r--	root/root	usr/include/QtGui/qgraphicsanchorlayout.h
+-rw-r--r--	root/root	usr/include/QtGui/qgraphicseffect.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsgridlayout.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsitem.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsitemanimation.h
@@ -1884,11 +2213,13 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsproxywidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsscene.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicssceneevent.h
+-rw-r--r--	root/root	usr/include/QtGui/qgraphicstransform.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicsview.h
 -rw-r--r--	root/root	usr/include/QtGui/qgraphicswidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qgridlayout.h
 -rw-r--r--	root/root	usr/include/QtGui/qgroupbox.h
 -rw-r--r--	root/root	usr/include/QtGui/qgtkstyle.h
+-rw-r--r--	root/root	usr/include/QtGui/qguifunctions_wince.h
 -rw-r--r--	root/root	usr/include/QtGui/qheaderview.h
 -rw-r--r--	root/root	usr/include/QtGui/qicon.h
 -rw-r--r--	root/root	usr/include/QtGui/qiconengine.h
@@ -1904,6 +2235,15 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qitemdelegate.h
 -rw-r--r--	root/root	usr/include/QtGui/qitemeditorfactory.h
 -rw-r--r--	root/root	usr/include/QtGui/qitemselectionmodel.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbd_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbddriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbddriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbdlinuxinput_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbdqnx_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbdtty_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbdum_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkbdvfb_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qkeyeventtransition.h
 -rw-r--r--	root/root	usr/include/QtGui/qkeysequence.h
 -rw-r--r--	root/root	usr/include/QtGui/qlabel.h
 -rw-r--r--	root/root	usr/include/QtGui/qlayout.h
@@ -1912,8 +2252,13 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qlineedit.h
 -rw-r--r--	root/root	usr/include/QtGui/qlistview.h
 -rw-r--r--	root/root	usr/include/QtGui/qlistwidget.h
+-rw-r--r--	root/root	usr/include/QtGui/qmaccocoaviewcontainer_mac.h
+-rw-r--r--	root/root	usr/include/QtGui/qmacdefines_mac.h
+-rw-r--r--	root/root	usr/include/QtGui/qmacnativewidget_mac.h
+-rw-r--r--	root/root	usr/include/QtGui/qmacstyle_mac.h
 -rw-r--r--	root/root	usr/include/QtGui/qmainwindow.h
 -rw-r--r--	root/root	usr/include/QtGui/qmatrix.h
+-rw-r--r--	root/root	usr/include/QtGui/qmatrix4x4.h
 -rw-r--r--	root/root	usr/include/QtGui/qmdiarea.h
 -rw-r--r--	root/root	usr/include/QtGui/qmdisubwindow.h
 -rw-r--r--	root/root	usr/include/QtGui/qmenu.h
@@ -1922,6 +2267,16 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qmessagebox.h
 -rw-r--r--	root/root	usr/include/QtGui/qmime.h
 -rw-r--r--	root/root	usr/include/QtGui/qmotifstyle.h
+-rw-r--r--	root/root	usr/include/QtGui/qmouse_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmousedriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmousedriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmouseeventtransition.h
+-rw-r--r--	root/root	usr/include/QtGui/qmouselinuxinput_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmouselinuxtp_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmousepc_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmouseqnx_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmousetslib_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qmousevfb_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qmovie.h
 -rw-r--r--	root/root	usr/include/QtGui/qpagesetupdialog.h
 -rw-r--r--	root/root	usr/include/QtGui/qpaintdevice.h
@@ -1946,11 +2301,25 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qprogressbar.h
 -rw-r--r--	root/root	usr/include/QtGui/qprogressdialog.h
 -rw-r--r--	root/root	usr/include/QtGui/qproxymodel.h
+-rw-r--r--	root/root	usr/include/QtGui/qproxystyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qpushbutton.h
+-rw-r--r--	root/root	usr/include/QtGui/qquaternion.h
 -rw-r--r--	root/root	usr/include/QtGui/qradiobutton.h
 -rw-r--r--	root/root	usr/include/QtGui/qregion.h
 -rw-r--r--	root/root	usr/include/QtGui/qrgb.h
 -rw-r--r--	root/root	usr/include/QtGui/qrubberband.h
+-rw-r--r--	root/root	usr/include/QtGui/qs60mainapplication.h
+-rw-r--r--	root/root	usr/include/QtGui/qs60mainappui.h
+-rw-r--r--	root/root	usr/include/QtGui/qs60maindocument.h
+-rw-r--r--	root/root	usr/include/QtGui/qs60style.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreen_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreendriverfactory_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreendriverplugin_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreenlinuxfb_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreenproxy_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreenqnx_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreentransformed_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qscreenvfb_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qscrollarea.h
 -rw-r--r--	root/root	usr/include/QtGui/qscrollbar.h
 -rw-r--r--	root/root	usr/include/QtGui/qsessionmanager.h
@@ -1960,6 +2329,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qslider.h
 -rw-r--r--	root/root	usr/include/QtGui/qsortfilterproxymodel.h
 -rw-r--r--	root/root	usr/include/QtGui/qsound.h
+-rw-r--r--	root/root	usr/include/QtGui/qsoundqss_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qspinbox.h
 -rw-r--r--	root/root	usr/include/QtGui/qsplashscreen.h
 -rw-r--r--	root/root	usr/include/QtGui/qsplitter.h
@@ -1974,6 +2344,7 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qstyleoption.h
 -rw-r--r--	root/root	usr/include/QtGui/qstylepainter.h
 -rw-r--r--	root/root	usr/include/QtGui/qstyleplugin.h
+-rw-r--r--	root/root	usr/include/QtGui/qsymbianevent.h
 -rw-r--r--	root/root	usr/include/QtGui/qsyntaxhighlighter.h
 -rw-r--r--	root/root	usr/include/QtGui/qsystemtrayicon.h
 -rw-r--r--	root/root	usr/include/QtGui/qtabbar.h
@@ -1997,6 +2368,8 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qtoolbutton.h
 -rw-r--r--	root/root	usr/include/QtGui/qtooltip.h
 -rw-r--r--	root/root	usr/include/QtGui/qtransform.h
+-rw-r--r--	root/root	usr/include/QtGui/qtransportauth_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qtransportauthdefs_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qtreeview.h
 -rw-r--r--	root/root	usr/include/QtGui/qtreewidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qtreewidgetitemiterator.h
@@ -2004,18 +2377,33 @@ drwxr-xr-x	root/root	usr/include/QtGui/
 -rw-r--r--	root/root	usr/include/QtGui/qundostack.h
 -rw-r--r--	root/root	usr/include/QtGui/qundoview.h
 -rw-r--r--	root/root	usr/include/QtGui/qvalidator.h
+-rw-r--r--	root/root	usr/include/QtGui/qvector2d.h
+-rw-r--r--	root/root	usr/include/QtGui/qvector3d.h
+-rw-r--r--	root/root	usr/include/QtGui/qvector4d.h
+-rw-r--r--	root/root	usr/include/QtGui/qvfbhdr.h
 -rw-r--r--	root/root	usr/include/QtGui/qwhatsthis.h
 -rw-r--r--	root/root	usr/include/QtGui/qwidget.h
 -rw-r--r--	root/root	usr/include/QtGui/qwidgetaction.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowdefs.h
+-rw-r--r--	root/root	usr/include/QtGui/qwindowdefs_win.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowscestyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowsmobilestyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowsstyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowsvistastyle.h
 -rw-r--r--	root/root	usr/include/QtGui/qwindowsxpstyle.h
+-rw-r--r--	root/root	usr/include/QtGui/qwindowsystem_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qwizard.h
 -rw-r--r--	root/root	usr/include/QtGui/qwmatrix.h
 -rw-r--r--	root/root	usr/include/QtGui/qworkspace.h
+-rw-r--r--	root/root	usr/include/QtGui/qwscursor_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsdisplay_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsembedwidget.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsevent_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsmanager_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsproperty_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsprotocolitem_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwssocket_qws.h
+-rw-r--r--	root/root	usr/include/QtGui/qwsutils_qws.h
 -rw-r--r--	root/root	usr/include/QtGui/qx11embed_x11.h
 -rw-r--r--	root/root	usr/include/QtGui/qx11info_x11.h
 drwxr-xr-x	root/root	usr/include/QtHelp/
@@ -2040,6 +2428,32 @@ drwxr-xr-x	root/root	usr/include/QtHelp/
 -rw-r--r--	root/root	usr/include/QtHelp/qhelpsearchengine.h
 -rw-r--r--	root/root	usr/include/QtHelp/qhelpsearchquerywidget.h
 -rw-r--r--	root/root	usr/include/QtHelp/qhelpsearchresultwidget.h
+drwxr-xr-x	root/root	usr/include/QtMultimedia/
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAbstractAudioDeviceInfo
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAbstractAudioInput
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAbstractAudioOutput
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAbstractVideoBuffer
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAbstractVideoSurface
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioDeviceInfo
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioEngineFactoryInterface
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioEnginePlugin
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioFormat
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioInput
+-rw-r--r--	root/root	usr/include/QtMultimedia/QAudioOutput
+-rw-r--r--	root/root	usr/include/QtMultimedia/QVideoFrame
+-rw-r--r--	root/root	usr/include/QtMultimedia/QVideoSurfaceFormat
+-rw-r--r--	root/root	usr/include/QtMultimedia/QtMultimedia
+-rw-r--r--	root/root	usr/include/QtMultimedia/qabstractvideobuffer.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qabstractvideosurface.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudio.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudiodeviceinfo.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudioengine.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudioengineplugin.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudioformat.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudioinput.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qaudiooutput.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qvideoframe.h
+-rw-r--r--	root/root	usr/include/QtMultimedia/qvideosurfaceformat.h
 drwxr-xr-x	root/root	usr/include/QtNetwork/
 -rw-r--r--	root/root	usr/include/QtNetwork/QAbstractNetworkCache
 -rw-r--r--	root/root	usr/include/QtNetwork/QAbstractSocket
@@ -2090,6 +2504,7 @@ drwxr-xr-x	root/root	usr/include/QtNetwork/
 -rw-r--r--	root/root	usr/include/QtNetwork/qlocalsocket.h
 -rw-r--r--	root/root	usr/include/QtNetwork/qnetworkaccessmanager.h
 -rw-r--r--	root/root	usr/include/QtNetwork/qnetworkcookie.h
+-rw-r--r--	root/root	usr/include/QtNetwork/qnetworkcookiejar.h
 -rw-r--r--	root/root	usr/include/QtNetwork/qnetworkdiskcache.h
 -rw-r--r--	root/root	usr/include/QtNetwork/qnetworkinterface.h
 -rw-r--r--	root/root	usr/include/QtNetwork/qnetworkproxy.h
@@ -2111,18 +2526,24 @@ drwxr-xr-x	root/root	usr/include/QtOpenGL/
 -rw-r--r--	root/root	usr/include/QtOpenGL/QGLContext
 -rw-r--r--	root/root	usr/include/QtOpenGL/QGLFormat
 -rw-r--r--	root/root	usr/include/QtOpenGL/QGLFramebufferObject
+-rw-r--r--	root/root	usr/include/QtOpenGL/QGLFramebufferObjectFormat
 -rw-r--r--	root/root	usr/include/QtOpenGL/QGLPixelBuffer
+-rw-r--r--	root/root	usr/include/QtOpenGL/QGLScreen
+-rw-r--r--	root/root	usr/include/QtOpenGL/QGLScreenSurfaceFunctions
+-rw-r--r--	root/root	usr/include/QtOpenGL/QGLShader
+-rw-r--r--	root/root	usr/include/QtOpenGL/QGLShaderProgram
 -rw-r--r--	root/root	usr/include/QtOpenGL/QGLWidget
 -rw-r--r--	root/root	usr/include/QtOpenGL/QMacCompatGLenum
 -rw-r--r--	root/root	usr/include/QtOpenGL/QMacCompatGLint
 -rw-r--r--	root/root	usr/include/QtOpenGL/QMacCompatGLuint
 -rw-r--r--	root/root	usr/include/QtOpenGL/QMacGLCompatTypes
 -rw-r--r--	root/root	usr/include/QtOpenGL/QtOpenGL
--rw-r--r--	root/root	usr/include/QtOpenGL/glgc_shader_source.h
 -rw-r--r--	root/root	usr/include/QtOpenGL/qgl.h
 -rw-r--r--	root/root	usr/include/QtOpenGL/qglcolormap.h
 -rw-r--r--	root/root	usr/include/QtOpenGL/qglframebufferobject.h
 -rw-r--r--	root/root	usr/include/QtOpenGL/qglpixelbuffer.h
+-rw-r--r--	root/root	usr/include/QtOpenGL/qglscreen_qws.h
+-rw-r--r--	root/root	usr/include/QtOpenGL/qglshaderprogram.h
 drwxr-xr-x	root/root	usr/include/QtScript/
 -rw-r--r--	root/root	usr/include/QtScript/QScriptClass
 -rw-r--r--	root/root	usr/include/QtScript/QScriptClassPropertyIterator
@@ -2133,6 +2554,7 @@ drwxr-xr-x	root/root	usr/include/QtScript/
 -rw-r--r--	root/root	usr/include/QtScript/QScriptEngineAgent
 -rw-r--r--	root/root	usr/include/QtScript/QScriptExtensionInterface
 -rw-r--r--	root/root	usr/include/QtScript/QScriptExtensionPlugin
+-rw-r--r--	root/root	usr/include/QtScript/QScriptProgram
 -rw-r--r--	root/root	usr/include/QtScript/QScriptString
 -rw-r--r--	root/root	usr/include/QtScript/QScriptSyntaxCheckResult
 -rw-r--r--	root/root	usr/include/QtScript/QScriptValue
@@ -2149,6 +2571,7 @@ drwxr-xr-x	root/root	usr/include/QtScript/
 -rw-r--r--	root/root	usr/include/QtScript/qscriptengineagent.h
 -rw-r--r--	root/root	usr/include/QtScript/qscriptextensioninterface.h
 -rw-r--r--	root/root	usr/include/QtScript/qscriptextensionplugin.h
+-rw-r--r--	root/root	usr/include/QtScript/qscriptprogram.h
 -rw-r--r--	root/root	usr/include/QtScript/qscriptstring.h
 -rw-r--r--	root/root	usr/include/QtScript/qscriptvalue.h
 -rw-r--r--	root/root	usr/include/QtScript/qscriptvalueiterator.h
@@ -2233,15 +2656,25 @@ drwxr-xr-x	root/root	usr/include/QtTest/
 -rw-r--r--	root/root	usr/include/QtTest/QTest
 -rw-r--r--	root/root	usr/include/QtTest/QTestAccessibility
 -rw-r--r--	root/root	usr/include/QtTest/QTestAccessibilityEvent
+-rw-r--r--	root/root	usr/include/QtTest/QTestBasicStreamer
+-rw-r--r--	root/root	usr/include/QtTest/QTestCoreElement
+-rw-r--r--	root/root	usr/include/QtTest/QTestCoreList
 -rw-r--r--	root/root	usr/include/QtTest/QTestData
 -rw-r--r--	root/root	usr/include/QtTest/QTestDelayEvent
+-rw-r--r--	root/root	usr/include/QtTest/QTestElement
+-rw-r--r--	root/root	usr/include/QtTest/QTestElementAttribute
 -rw-r--r--	root/root	usr/include/QtTest/QTestEvent
 -rw-r--r--	root/root	usr/include/QtTest/QTestEventList
 -rw-r--r--	root/root	usr/include/QtTest/QTestEventLoop
+-rw-r--r--	root/root	usr/include/QtTest/QTestFileLogger
 -rw-r--r--	root/root	usr/include/QtTest/QTestKeyClicksEvent
 -rw-r--r--	root/root	usr/include/QtTest/QTestKeyEvent
+-rw-r--r--	root/root	usr/include/QtTest/QTestLightXmlStreamer
 -rw-r--r--	root/root	usr/include/QtTest/QTestMouseEvent
+-rw-r--r--	root/root	usr/include/QtTest/QTestXmlStreamer
+-rw-r--r--	root/root	usr/include/QtTest/QTestXunitStreamer
 -rw-r--r--	root/root	usr/include/QtTest/QtTest
+-rw-r--r--	root/root	usr/include/QtTest/QtTestGui
 -rw-r--r--	root/root	usr/include/QtTest/qbenchmark.h
 -rw-r--r--	root/root	usr/include/QtTest/qsignalspy.h
 -rw-r--r--	root/root	usr/include/QtTest/qtest.h
@@ -2249,36 +2682,54 @@ drwxr-xr-x	root/root	usr/include/QtTest/
 -rw-r--r--	root/root	usr/include/QtTest/qtest_gui.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestaccessible.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestassert.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestbasicstreamer.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestcase.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestcoreelement.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestcorelist.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestdata.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestelement.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestelementattribute.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestevent.h
 -rw-r--r--	root/root	usr/include/QtTest/qtesteventloop.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestfilelogger.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestkeyboard.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestlightxmlstreamer.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestmouse.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestspontaneevent.h
 -rw-r--r--	root/root	usr/include/QtTest/qtestsystem.h
+-rw-r--r--	root/root	usr/include/QtTest/qtesttouch.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestxmlstreamer.h
+-rw-r--r--	root/root	usr/include/QtTest/qtestxunitstreamer.h
 drwxr-xr-x	root/root	usr/include/QtUiTools/
 -rw-r--r--	root/root	usr/include/QtUiTools/QUiLoader
 -rw-r--r--	root/root	usr/include/QtUiTools/QtUiTools
 -rw-r--r--	root/root	usr/include/QtUiTools/quiloader.h
 drwxr-xr-x	root/root	usr/include/QtWebKit/
+-rw-r--r--	root/root	usr/include/QtWebKit/QGraphicsWebView
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebDatabase
+-rw-r--r--	root/root	usr/include/QtWebKit/QWebElement
+-rw-r--r--	root/root	usr/include/QtWebKit/QWebElementCollection
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebFrame
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebHistory
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebHistoryInterface
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebHistoryItem
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebHitTestResult
+-rw-r--r--	root/root	usr/include/QtWebKit/QWebInspector
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebPage
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebPluginFactory
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebSecurityOrigin
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebSettings
 -rw-r--r--	root/root	usr/include/QtWebKit/QWebView
 -rw-r--r--	root/root	usr/include/QtWebKit/QtWebKit
+-rw-r--r--	root/root	usr/include/QtWebKit/qgraphicswebview.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebdatabase.h
+-rw-r--r--	root/root	usr/include/QtWebKit/qwebelement.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebframe.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebhistory.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebhistoryinterface.h
+-rw-r--r--	root/root	usr/include/QtWebKit/qwebinspector.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebkitglobal.h
+-rw-r--r--	root/root	usr/include/QtWebKit/qwebkitversion.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebpage.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebpluginfactory.h
 -rw-r--r--	root/root	usr/include/QtWebKit/qwebsecurityorigin.h
@@ -2346,6 +2797,8 @@ drwxr-xr-x	root/root	usr/include/QtXmlPatterns/
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlNodeModelIndex
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlQuery
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlResultItems
+-rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlSchema
+-rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlSchemaValidator
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/QXmlSerializer
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/QtXmlPatterns
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qabstractmessagehandler.h
@@ -2359,6 +2812,8 @@ drwxr-xr-x	root/root	usr/include/QtXmlPatterns/
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlnamepool.h
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlquery.h
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlresultitems.h
+-rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlschema.h
+-rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlschemavalidator.h
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlserializer.h
 drwxr-xr-x	root/root	usr/include/phonon/
 drwxr-xr-x	root/root	usr/include/phonon/Phonon/
@@ -2442,117 +2897,123 @@ drwxr-xr-x	root/root	usr/include/phonon/Phonon/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libQt3Support.la
 -rw-r--r--	root/root	usr/lib/libQt3Support.prl
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.5 -> libQt3Support.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.6 -> libQt3Support.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtAssistantClient.prl
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.5 -> libQtAssistantClient.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.6 -> libQtAssistantClient.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtCLucene.la
 -rw-r--r--	root/root	usr/lib/libQtCLucene.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.5 -> libQtCLucene.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.6 -> libQtCLucene.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtCore.la
 -rw-r--r--	root/root	usr/lib/libQtCore.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.5 -> libQtCore.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.6 -> libQtCore.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtDBus.la
 -rw-r--r--	root/root	usr/lib/libQtDBus.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.5 -> libQtDBus.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.6 -> libQtDBus.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtDesigner.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.5 -> libQtDesigner.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.6 -> libQtDesigner.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtDesignerComponents.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.5 -> libQtDesignerComponents.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.6 -> libQtDesignerComponents.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtGui.la
 -rw-r--r--	root/root	usr/lib/libQtGui.prl
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.5 -> libQtGui.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.6 -> libQtGui.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtHelp.la
 -rw-r--r--	root/root	usr/lib/libQtHelp.prl
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.5 -> libQtHelp.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.6 -> libQtHelp.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.6.0
+-rw-r--r--	root/root	usr/lib/libQtMultimedia.la
+-rw-r--r--	root/root	usr/lib/libQtMultimedia.prl
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so -> libQtMultimedia.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4 -> libQtMultimedia.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4.6 -> libQtMultimedia.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtMultimedia.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtNetwork.la
 -rw-r--r--	root/root	usr/lib/libQtNetwork.prl
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.5 -> libQtNetwork.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.6 -> libQtNetwork.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.la
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.prl
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.5 -> libQtOpenGL.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.6 -> libQtOpenGL.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtScript.la
 -rw-r--r--	root/root	usr/lib/libQtScript.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.5 -> libQtScript.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.6 -> libQtScript.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.la
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.5 -> libQtScriptTools.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.6 -> libQtScriptTools.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtSql.la
 -rw-r--r--	root/root	usr/lib/libQtSql.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.5 -> libQtSql.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.6 -> libQtSql.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtSvg.la
 -rw-r--r--	root/root	usr/lib/libQtSvg.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.5 -> libQtSvg.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.6 -> libQtSvg.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtTest.la
 -rw-r--r--	root/root	usr/lib/libQtTest.prl
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.5 -> libQtTest.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.6 -> libQtTest.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtUiTools.a
 -rw-r--r--	root/root	usr/lib/libQtUiTools.prl
 -rw-r--r--	root/root	usr/lib/libQtWebKit.la
 -rw-r--r--	root/root	usr/lib/libQtWebKit.prl
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.5 -> libQtWebKit.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.6 -> libQtWebKit.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtXml.la
 -rw-r--r--	root/root	usr/lib/libQtXml.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.5 -> libQtXml.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.6 -> libQtXml.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.la
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.5.2
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.5 -> libQtXmlPatterns.so.4.5.2
--rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.5.2
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.6 -> libQtXmlPatterns.so.4.6.0
+-rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.6.0
 -rw-r--r--	root/root	usr/lib/libphonon.la
 -rw-r--r--	root/root	usr/lib/libphonon.prl
 lrwxrwxrwx	root/root	usr/lib/libphonon.so -> libphonon.so.4.3.1
@@ -2569,6 +3030,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtDesignerComponents.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtGui.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtHelp.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/QtMultimedia.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtNetwork.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtOpenGL.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/QtScript.pc
@@ -2597,6 +3059,7 @@ drwxr-xr-x	root/root	usr/lib/qt/plugins/designer/
 -rwxr-xr-x	root/root	usr/lib/qt/plugins/designer/libqwebview.so
 drwxr-xr-x	root/root	usr/lib/qt/plugins/graphicssystems/
 -rwxr-xr-x	root/root	usr/lib/qt/plugins/graphicssystems/libqglgraphicssystem.so
+-rwxr-xr-x	root/root	usr/lib/qt/plugins/graphicssystems/libqtracegraphicssystem.so
 drwxr-xr-x	root/root	usr/lib/qt/plugins/iconengines/
 -rwxr-xr-x	root/root	usr/lib/qt/plugins/iconengines/libqsvgicon.so
 drwxr-xr-x	root/root	usr/lib/qt/plugins/imageformats/
@@ -2616,13 +3079,6 @@ drwxr-xr-x	root/root	usr/lib/qt/plugins/sqldrivers/
 -rwxr-xr-x	root/root	usr/lib/qt/plugins/sqldrivers/libqsqlite.so
 -rwxr-xr-x	root/root	usr/lib/qt/plugins/sqldrivers/libqsqlmysql.so
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/dbus-1/
-drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.Phonon.AudioOutput.xml
-drwxr-xr-x	root/root	usr/share/kde4/
-drwxr-xr-x	root/root	usr/share/kde4/services/
-drwxr-xr-x	root/root	usr/share/kde4/services/phononbackends/
--rw-r--r--	root/root	usr/share/kde4/services/phononbackends/gstreamer.desktop
 drwxr-xr-x	root/root	usr/share/qt/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/aix-g++-64/
@@ -2645,8 +3101,15 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/common/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/common/mac-llvm.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/common/mac.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/common/qws.conf
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/common/symbian/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/common/symbian/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/common/symbian/stl-off/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/common/symbian/stl-off/new
+-rw-r--r--	root/root	usr/share/qt/mkspecs/common/symbian/symbian.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/common/unix.conf
--rw-r--r--	root/root	usr/share/qt/mkspecs/common/wince.conf
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/common/wince/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/common/wince/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/common/wince/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/cygwin-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/cygwin-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/cygwin-g++/qplatformdefs.h
@@ -2665,6 +3128,7 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/default_pre.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/designer.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/dll.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/egl.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/exclusive_builds.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/help.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/include_source_dir.prf
@@ -2699,6 +3163,18 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/mac/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/static.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/static_and_shared.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/staticlib.prf
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/symbian/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/application_icon.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/armcc_warnings.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/data_caging_paths.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/default_post.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/default_pre.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/epocallowdlldata.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/moc.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/platform_paths.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/qt.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/stl.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/stl_off.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/uic.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/uitools.prf
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/unix/
@@ -2707,6 +3183,7 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/unix/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/hide_symbols.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/largefile.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/opengl.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/openvg.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/separate_debug_info.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/thread.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/x11.prf
@@ -2714,6 +3191,7 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/unix/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/x11lib.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/unix/x11sm.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/use_c_linker.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/vxworks.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/warn_off.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/warn_on.prf
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/win32/
@@ -2727,6 +3205,7 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/win32/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/exceptions_off.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/ltcg.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/opengl.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/openvg.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/qaxcontainer.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/qaxserver.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/win32/qt_dll.prf
@@ -2801,6 +3280,12 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-32/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-64/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-64/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-64/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-maemo/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-maemo/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-maemo/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++/qplatformdefs.h
@@ -2833,6 +3318,11 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/macx-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++/Info.plist.lib
 -rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/macx-g++40/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++40/Info.plist.app
+-rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++40/Info.plist.lib
+-rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++40/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++40/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/macx-g++42/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++42/Info.plist.app
 -rw-r--r--	root/root	usr/share/qt/mkspecs/macx-g++42/Info.plist.lib
@@ -2902,9 +3392,9 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/qws/linux-lsb-g++/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/qws/linux-mips-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-mips-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-mips-g++/qplatformdefs.h
-drwxr-xr-x	root/root	usr/share/qt/mkspecs/qws/linux-ppc-g++/
--rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-ppc-g++/qmake.conf
--rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-ppc-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/qws/linux-powerpc-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-powerpc-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-powerpc-g++/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/qws/linux-sh-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-sh-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/qws/linux-sh-g++/qplatformdefs.h
@@ -2947,6 +3437,17 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-g++-64/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/symbian-abld/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-abld/qmake.conf
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/symbian-sbsv2/
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/qmake_emulator_deployment.flm
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/qmake_extra_pre_targetdep.flm
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/qmake_post_link.flm
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/qmake_store_build.flm
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/flm/qt/qt.xml
+-rw-r--r--	root/root	usr/share/qt/mkspecs/symbian-sbsv2/qmake.conf
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/tru64-cxx/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/tru64-cxx/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/tru64-cxx/qplatformdefs.h
@@ -2959,6 +3460,35 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/unixware-cc/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/unixware-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unixware-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unixware-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/qnx-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qnx-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qnx-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/qws/
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-generic-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-generic-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-generic-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-i386-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-i386-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-i386-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-ppc-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-ppc-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/qws/qnx-ppc-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-dcc/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-dcc/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-dcc/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-ppc-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-dcc/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-dcc/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-dcc/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/vxworks-simpentium-g++/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/win32-borland/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/win32-borland/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/win32-borland/qplatformdefs.h
@@ -3028,6 +3558,9 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/wince50standard-x86-msvc2008/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/wince60standard-armv4i-msvc2005/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wince60standard-armv4i-msvc2005/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wince60standard-armv4i-msvc2005/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/wince60standard-x86-msvc2005/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wince60standard-x86-msvc2005/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wince60standard-x86-msvc2005/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/wincewm50pocket-msvc2005/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm50pocket-msvc2005/default_post.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm50pocket-msvc2005/qmake.conf
@@ -3060,6 +3593,14 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/wincewm60standard-msvc2008/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm60standard-msvc2008/default_post.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm60standard-msvc2008/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm60standard-msvc2008/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2005/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2005/default_post.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2005/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2005/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2008/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2008/default_post.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2008/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/wincewm65professional-msvc2008/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/phrasebooks/
 -rw-r--r--	root/root	usr/share/qt/phrasebooks/danish.qph
 -rw-r--r--	root/root	usr/share/qt/phrasebooks/dutch.qph
@@ -3078,36 +3619,43 @@ drwxr-xr-x	root/root	usr/share/qt/translations/
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_de.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_ja.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_adp_zh_TW.qm
+-rw-r--r--	root/root	usr/share/qt/translations/assistant_da.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_de.qm
+-rw-r--r--	root/root	usr/share/qt/translations/assistant_fr.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_ja.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/assistant_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/assistant_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/assistant_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/designer_de.qm
+-rw-r--r--	root/root	usr/share/qt/translations/designer_fr.qm
 -rw-r--r--	root/root	usr/share/qt/translations/designer_ja.qm
 -rw-r--r--	root/root	usr/share/qt/translations/designer_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/designer_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/designer_ru.qm
+-rw-r--r--	root/root	usr/share/qt/translations/designer_sl.qm
 -rw-r--r--	root/root	usr/share/qt/translations/designer_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/designer_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_de.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_fr.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_ja.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/linguist_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/linguist_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/linguist_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_ar.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qt_da.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_de.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_es.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_fr.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qt_help_da.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_help_de.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qt_help_fr.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_help_ja.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_help_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/qt_help_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qt_help_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_help_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_help_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_iw.qm
@@ -3116,16 +3664,16 @@ drwxr-xr-x	root/root	usr/share/qt/translations/
 -rw-r--r--	root/root	usr/share/qt/translations/qt_pt.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_sk.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qt_sl.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_sv.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_uk.qm
--rw-r--r--	root/root	usr/share/qt/translations/qt_untranslated.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qt_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qtconfig_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/qtconfig_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qtconfig_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qtconfig_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qtconfig_zh_TW.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qvfb_pl.qm
--rw-r--r--	root/root	usr/share/qt/translations/qvfb_untranslated.qm
+-rw-r--r--	root/root	usr/share/qt/translations/qvfb_ru.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qvfb_zh_CN.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qvfb_zh_TW.qm
