@@ -6,12 +6,13 @@
 
 name=screen
 version=4.0.3
-release=1
+release=2
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
 	sed -i "s@/usr/etc@/etc@" config.h
 	make
 	make DESTDIR=$PKG install

@@ -1,0 +1,20 @@
+# Description: Librairie gnome pour la configuration du système
+# URL: http://library.gnome.org/devel/liboobs/stable/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: samba3, libgnome, dbus-glib, system-tools-backends
+
+name=liboobs
+version=2.22.2
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+		./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc \
+		--localstatedir=/var/lib \
+		--mandir=$GNOME_PREFIX/share/man
+	make
+	make DESTDIR=$PKG install
+}

@@ -2,7 +2,7 @@
 # URL: http://www.gnokii.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: p5-xml-parser
+# Depends on: p5-xml-parser, gtk, glib
 
 name=gnokii
 version=0.6.28.1

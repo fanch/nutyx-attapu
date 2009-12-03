@@ -7,9 +7,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libraptor.a
 -rwxr-xr-x	root/root	usr/lib/libraptor.la
-lrwxrwxrwx	root/root	usr/lib/libraptor.so -> libraptor.so.1.1.0
-lrwxrwxrwx	root/root	usr/lib/libraptor.so.1 -> libraptor.so.1.1.0
--rwxr-xr-x	root/root	usr/lib/libraptor.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/libraptor.so -> libraptor.so.1.2.0
+lrwxrwxrwx	root/root	usr/lib/libraptor.so.1 -> libraptor.so.1.2.0
+-rwxr-xr-x	root/root	usr/lib/libraptor.so.1.2.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/raptor.pc
 drwxr-xr-x	root/root	usr/share/

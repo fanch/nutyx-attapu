@@ -2,16 +2,15 @@
 # URL: http://gitorious.org/projects/capseo/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: git
+# Depends on: mesa3d
 
 name=capseo
-version=280209-svn
+version=0.3
 release=1
-source=()
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz)
 
 build() {
-git clone git://gitorious.org/capseo/mainline.git capseo
-cd $name
+
 ./autogen.sh
 ./configure --prefix=/usr
 make -j3

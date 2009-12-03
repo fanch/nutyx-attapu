@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: cmake
+# Depends on: cmake, qt
 
 name=qimageblitz
 version=0.0.4

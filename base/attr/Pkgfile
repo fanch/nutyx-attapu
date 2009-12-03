@@ -7,7 +7,7 @@
 name=attr
 version=2.4.44
 release=1
-source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/attr-$version.src.tar.gz)
+source=(http://kiao.no-ip.info/NuTyX/files/attr-$version.src.tar.gz)
 
 build() {
 cd attr-$version

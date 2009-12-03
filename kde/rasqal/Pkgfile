@@ -2,7 +2,7 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on:
+# Depends on: raptor
 
 name=rasqal
 version=0.9.16

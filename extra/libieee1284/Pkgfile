@@ -2,7 +2,7 @@
 # URL:  http://cyberelk.net/tim/software/libieee1284/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: 
+# Depends on: python
 
 name=libieee1284
 version=0.2.11
