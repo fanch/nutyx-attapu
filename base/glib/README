@@ -1,0 +1,2 @@
+Toujours mettre glib à jour depuis la base sinon, des fichiers seront
+créés et provoqueront une erreur de footprint

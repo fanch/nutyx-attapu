@@ -169,8 +169,6 @@ drwxr-xr-x	root/root	usr/include/glib-2.0/gobject/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gio/
 drwxr-xr-x	root/root	usr/lib/gio/modules/
--rwxr-xr-x	root/root	usr/lib/gio/modules/libgiofam.la
--rwxr-xr-x	root/root	usr/lib/gio/modules/libgiofam.so
 drwxr-xr-x	root/root	usr/lib/glib-2.0/
 drwxr-xr-x	root/root	usr/lib/glib-2.0/include/
 -rw-r--r--	root/root	usr/lib/glib-2.0/include/glibconfig.h
