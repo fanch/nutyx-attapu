@@ -1,0 +1,22 @@
+# Description: perl_X11_protocol#
+# URL:http://cpan.org/modules/by-module/X11/
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on:perl,xorg
+name=p5-x11-protocol
+_name=X11-Protocol
+version=0.56
+release=1
+source=(http://cpan.org/modules/by-module/X11/$_name-$version.tar.gz)
+build() {
+cd $_name-$version
+        perl Makefile.PL
+        make
+        make DESTDIR=$PKG install
+        find $PKG \
+        -name perllocal.pod \
+        -o -name .packlist | xargs rm
+        find $PKG -empty | xargs rmdir -p ||:
+
+}
+
