@@ -2,7 +2,7 @@
 # URL: http://www.fvwm.org/
 # Maintainer: NuTyX packager team
 # Packager: Skippythekango at yahoo dot fr
-# Depends on:librsgv, perl, xorg, ,p5-tk, p5-X11-Protocol
+# Depends on:librsgv, perl, xorg, p5-tk, p5-x11-protocol
 
 name=fvwm
 version=2.5.28
