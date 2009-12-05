@@ -5,7 +5,7 @@
 # Depends on: xorg-server, xorg-xf86-input-mouse, xorg-xf86-input-keyboard, xorg-xf86-input-evdev, xorg-xf86-video-vesa, dejavu-ttf, xorg-xinit, xorg-xauth, xorg-rgb, xkeyboard-config, xorg-twm, xorg-xclock, xorg-xterm
 
 name=xorg
-version=7.5.2
+version=7.5.3
 release=1
 source=()
 
