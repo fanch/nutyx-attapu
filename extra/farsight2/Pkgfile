@@ -5,7 +5,7 @@
 # Depends on: gstreamer, gst-python, libnice, pygobject, python, 
 
 name=farsight2
-version=0.0.15
+version=0.0.16
 release=1
 source=(http://farsight.freedesktop.org/releases/farsight2/$name-$version.tar.gz)
 
