@@ -13,7 +13,7 @@ build() {
 	./configure \
 	        --prefix=/usr \
         	--libdir=/lib \
-	        --mandir=/usr/man \
+	        --mandir=/usr/share/man \
         	--sbindir=/sbin \
 	        --enable-pkgconfig \
         	--disable-nls \
