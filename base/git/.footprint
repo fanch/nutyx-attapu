@@ -114,7 +114,9 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-reflog
 -rwxr-xr-x	root/root	usr/lib/git-core/git-relink
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote
+-rwxr-xr-x	root/root	usr/lib/git-core/git-remote-curl
 -rwxr-xr-x	root/root	usr/lib/git-core/git-repack
+-rwxr-xr-x	root/root	usr/lib/git-core/git-replace
 -rwxr-xr-x	root/root	usr/lib/git-core/git-repo-config
 -rwxr-xr-x	root/root	usr/lib/git-core/git-request-pull
 -rwxr-xr-x	root/root	usr/lib/git-core/git-rerere
@@ -328,8 +330,10 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-receive-pack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-reflog.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-relink.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-remote-helpers.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-remote.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-repack.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-replace.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-repo-config.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-request-pull.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-rerere.1.gz
