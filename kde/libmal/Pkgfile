@@ -13,7 +13,7 @@ source=(http://www.jlogday.com/code/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd $name-$version
-        ./configure --prefix=$KDEPREFIX
+        ./configure --prefix=$KDE_PREFIX
 	make
 	make DESTDIR=$PKG install
 
