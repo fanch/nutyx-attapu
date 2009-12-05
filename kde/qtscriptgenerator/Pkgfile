@@ -6,7 +6,6 @@
 name=qtscriptgenerator
 version=0.1.0
 release=1
-group=travail
 
 source=(http://$name.googlecode.com/files/$name-src-$version.tar.gz \
         qtscriptgenerator.gcc-4.4.patch)
