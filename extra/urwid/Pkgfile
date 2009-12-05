@@ -1,0 +1,14 @@
+# Description: Librairie d'interface d'utilisateur console
+# URL: http://excess.org/urwid
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on: python
+name=urwid
+version=0.9.8.4
+release=1
+source=(http://excess.org/$name/$name-$version.tar.gz)
+build() {
+cd $name-$version
+	python setup.py build install --root=$PKG
+}
+

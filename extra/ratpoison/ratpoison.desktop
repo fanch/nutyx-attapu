@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+# The names/descriptions should really be better
+Name=Ratpoison
+Name[fr]=Ratpoison
+Comment[fr]=Sélectionner cette session pour utiliser RatPoison comme environement graphique
+Exec=ratpoison
+Icon=
+Type=Application

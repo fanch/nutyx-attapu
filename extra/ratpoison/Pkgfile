@@ -1,0 +1,19 @@
+# Description: Gestionaire de fenètres en mode cadres
+# URL: http://www.nongnu.org/ratpoison
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on: urxvt
+name=ratpoison
+version=1.4.5
+release=1
+source=(http://download.savannah.nongnu.org/releases/ratpoison/$name-$version.tar.gz \
+	ratpoison.desktop)
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --with-xterm=urxvt
+        make CFLAGS="$CFLAGS -DHAVE_GETLINE"
+        make DESTDIR=$PKG install
+
+	install -D -m644 $SRC/ratpoison.desktop $PKG/usr/share/xsessions/ratpoison.desktop
+}
+
