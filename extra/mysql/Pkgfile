@@ -5,7 +5,7 @@
 # Depends on:  ncurses, zlib, mysqlclient
 
 name=mysql
-version=5.1.39
+version=5.1.41
 release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/$name-$version.tar.gz \
         mysql.nutyx.patch)
