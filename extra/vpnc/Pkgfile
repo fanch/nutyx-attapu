@@ -1,0 +1,17 @@
+# Description: Client vpn pour reseau cisco
+# URL:http://www.unix-ag.uni-kl.de/~massar/vpnc
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on: libgcrypt, libopenssl
+name=vpnc
+version=0.5.3
+release=1
+source=(http://www.unix-ag.uni-kl.de/~massar/vpnc/$name-$version.tar.gz)
+build() {
+cd $name-$version
+        ls
+        sed -i "s/^PREFIX=\/usr\/local/PREFIX=\/usr/" Makefile
+        make
+        make DESTDIR=$PKG install
+}
+
