@@ -47,6 +47,7 @@ drwxr-xr-x	root/root	usr/share/autoconf/autotest/
 -rw-r--r--	root/root	usr/share/autoconf/autotest/autotest.m4
 -rw-r--r--	root/root	usr/share/autoconf/autotest/autotest.m4f
 -rw-r--r--	root/root	usr/share/autoconf/autotest/general.m4
+-rw-r--r--	root/root	usr/share/autoconf/autotest/specific.m4
 drwxr-xr-x	root/root	usr/share/autoconf/m4sugar/
 -rw-r--r--	root/root	usr/share/autoconf/m4sugar/foreach.m4
 -rw-r--r--	root/root	usr/share/autoconf/m4sugar/m4sh.m4
