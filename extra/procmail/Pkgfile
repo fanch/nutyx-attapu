@@ -1,0 +1,17 @@
+# Description: MDA - agent de livraison de mail - possibilité d'y configurer des filtres 
+# URL: http://www.procmail.org/$name-$version.tar.gz)
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on:
+name=procmail
+version=3.22
+release=1
+source=(http://www.procmail.org/$name-$version.tar.gz \
+	$name-getline.patch)
+
+build() {
+cd $name-$version
+	sed -i 's/getline/get_line/' src/{fields.c,formail.c,formisc.{c,h}}
+	make LOCKINGTEST=/tmp install all
+	make BASENAME=$PKG/usr MANDIR=$PKG/usr/share/man install-suid
+}
