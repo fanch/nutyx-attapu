@@ -5,7 +5,7 @@
 # Depends on: gmp
 
 name=mpfr
-version=2.4.1
+version=2.4.2
 release=1
 source=(http://www.mpfr.org/mpfr-current/mpfr-$version.tar.gz \
 	)
@@ -17,4 +17,5 @@ build() {
 	make DESTDIR=$PKG install
 	# Remove the dir file
 	rm $PKG/usr/share/info/dir
+	rm -r $PKG/usr/share/doc
 }
