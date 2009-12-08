@@ -6,8 +6,7 @@
 name=procmail
 version=3.22
 release=1
-source=(http://www.procmail.org/$name-$version.tar.gz \
-	$name-getline.patch)
+source=(http://www.procmail.org/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
