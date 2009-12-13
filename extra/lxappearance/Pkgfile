@@ -1,14 +1,14 @@
-# Description: Rglage de l'apparence pour lxde
+# Description: Réglage de l'apparence pour lxde
 # URL: http://lxde.org/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
 # Depends on: gtk
 
 name=lxappearance
-version=0.2
+version=0.3.0
 release=1
 
-source=(http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/l/lx/lxde/lxappearance-0.2.tar.gz)
+source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz)
 
 
 build() {
