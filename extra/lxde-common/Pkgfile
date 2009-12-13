@@ -2,13 +2,13 @@
 # URL: http://lxde.org/about.html
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: gtk
+# Depends on: gtk, lxde-icon-theme
 
 name=lxde-common
-version=0.4.2
-release=4
-source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.bz2\
-	config nutng.png chrystal_red_root.png lxde-common-0.4.2-nutyx-01.patch\
+version=0.5.0
+release=1
+source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
+	config nutng.png chrystal_red_root.png lxde-common-$version-nutyx-01.patch\
 	bouton03.png)
 
 build() {
