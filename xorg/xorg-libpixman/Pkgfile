@@ -1,9 +1,10 @@
-# Description: Pixel manipulation library
+# Description: Librairie pour la manipulation des pixels
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 
 name=xorg-libpixman
-version=0.16.2
+version=0.17.2
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/pixman-$version.tar.bz2)
 
@@ -13,7 +14,7 @@ build() {
 	# don't build test programs
 	sed -i -e 's/^SUBDIRS = pixman test/SUBDIRS = pixman/' Makefile.in
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
