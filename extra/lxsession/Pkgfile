@@ -4,8 +4,8 @@
 # Packager: geantbrun at gmail dot com
 # Depends on: gtk
 
-name=lxsession-lite
-version=0.3.6
+name=lxsession
+version=0.4.1
 release=1
 
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz)
