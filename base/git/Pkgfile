@@ -6,7 +6,7 @@
 # Nice to have: tk
 
 name=git
-version=1.6.5.4
+version=1.6.5.6
 release=1
 source=(http://www.kernel.org/pub/software/scm/$name/$name-{,manpages-}$version.tar.bz2)
 
