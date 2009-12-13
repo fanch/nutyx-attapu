@@ -1,13 +1,13 @@
 # Description: Logiciel Xfce de gravure de CDs/DVDs/BDs
 # URL: http://www.xfce.org/projects/xfburn/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: atk, cairo, dbus, dbus-glib, e2fsprogs, exo, libburn, libisofs, freetype, glib, glibc, glitz, gstreamer, gst-plugins-base, gtk, hal, libiconv, libpng, libxfcegui4, libxfce4util, libxml2, pango, xorg-libpixman, startup-notification, thunar, zlib
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, cairo, dbus, dbus-glib, e2fsprogs, exo, libburn, libisofs, freetype, glib, glibc, glitz, gstreamer, gst-plugins-base, gtk, hal, libiconv, libpng, libxfcegui4, libxfce4util, libxml2, pango, xorg-libpixman, startup-notification, zlib
 
 name=xfburn
-version=0.4.1
-release=6
-source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+version=0.4.2
+release=1
+source=(http://archive.xfce.org/src/apps/$name/0.4/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
