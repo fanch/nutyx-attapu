@@ -2,7 +2,7 @@
 # URL: http://gegl.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: babl,gtk
+# Depends on: babl,gtk, librsvg
 
 name=gegl
 version=0.0.22
