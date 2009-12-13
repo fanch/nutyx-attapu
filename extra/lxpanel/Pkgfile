@@ -6,8 +6,8 @@
 # Depends on: gtk, menu-cache
 
 name=lxpanel
-version=0.5.2
-release=2
+version=0.5.4.1
+release=1
 
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
 	volume.png)

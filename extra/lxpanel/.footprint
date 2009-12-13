@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/lib/lxpanel/
 drwxr-xr-x	root/root	usr/lib/lxpanel/plugins/
 -rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/batt.so
 -rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/cpu.so
+-rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/cpufreq.so
 -rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/deskno.so
 -rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/kbled.so
 -rwxr-xr-x	root/root	usr/lib/lxpanel/plugins/netstatus.so
@@ -28,6 +29,7 @@ drwxr-xr-x	root/root	usr/share/lxpanel/images/
 -rw-r--r--	root/root	usr/share/lxpanel/images/background.png
 -rw-r--r--	root/root	usr/share/lxpanel/images/capslock-off.png
 -rw-r--r--	root/root	usr/share/lxpanel/images/capslock-on.png
+-rw-r--r--	root/root	usr/share/lxpanel/images/clock.png
 -rw-r--r--	root/root	usr/share/lxpanel/images/file-manager.png
 -rw-r--r--	root/root	usr/share/lxpanel/images/gnome-logout.png
 -rw-r--r--	root/root	usr/share/lxpanel/images/gnome-netstatus-0-24.png
