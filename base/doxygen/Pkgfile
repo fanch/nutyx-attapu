@@ -2,7 +2,7 @@
 # URL:  http://www.doxygen.org/
 # Maintainer: NuTyX 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: qt, graphviz
+# Depends on:
 
 name=doxygen
 version=1.5.8
