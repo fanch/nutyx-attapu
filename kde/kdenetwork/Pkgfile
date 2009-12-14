@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, qca, tapioca-qt, libotr, libmsn, libvncserver, ortp, meanwhile, rdesktop
+# Depends on: kdebase-runtime, qca, libotr, libmsn, libvncserver, ortp, meanwhile, rdesktop
 
 name=kdenetwork
 version=4.3.4
