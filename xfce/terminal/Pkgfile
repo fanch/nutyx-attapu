@@ -1,13 +1,13 @@
 # Description: Emulateur de terminal de Xfce
 # URL: http://www.os-cillation.com/index.php?id=42&L=5
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: dbus-glib, exo, hicolor-icon-theme, startup-notification, vte
 
 name=terminal
-version=0.2.12
-release=2
-source=(http://www.xfce.org/archive/xfce-4.6.1/src/Terminal-$version.tar.bz2 )
+version=0.4.3
+release=1
+source=(http://archive.xfce.org/src/apps/$name/${version%.*}/Terminal-$version.tar.bz2 )
 
 build() {
 cd Terminal-$version
