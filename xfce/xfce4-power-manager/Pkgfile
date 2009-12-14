@@ -5,9 +5,9 @@
 # Depends on: dbus-glib, hal, libnotify, libxfcegui4, xfce4-panel
 
 name=xfce4-power-manager
-version=0.8.0
+version=0.8.4.2
 release=1
-source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+source=(http://archive.xfce.org/src/apps//${name}/0.8/${name}-${version}.tar.bz2)
 
 build() {
 cd $name-$version
