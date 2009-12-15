@@ -1,0 +1,16 @@
+# Description: Suite d'outils pour tester la sécurité des reseau san-fil
+# URL:http://www.aircrack-ng.org
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on: sqlite3, openssl, wireless_tools, autoconf, libtool
+name=aircrack-ng
+version=1.0
+release=1
+source=(http://download.aircrack-ng.org/$name-$version.tar.gz)
+build() {
+cd $name-$version
+        #./configure --prefix=/usr
+        make sqlite=truS
+        make prefix=/usr sqlite=true DESTDIR=$PKG install
+}
+
