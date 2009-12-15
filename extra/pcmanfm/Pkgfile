@@ -5,12 +5,14 @@
 # Depends on: desktop-file-utils, gtk, hal, shared-mime-info, startup-notification, gamin, xorg-libxcomposite, intltool
 
 name=pcmanfm
-version=0.5
+version=0.5.2
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
+	sed -i "/MimeType/d" data/pcmanfm-find.desktop.in
+	echo "fr" > po/LINGUAS
 	./configure --prefix=/usr \
 		--sysconfdir=/etc
 	make

@@ -5,8 +5,8 @@
 # Depends on: startup-notification, pango, hal
  
 name=openbox
-version=3.4.7.2
-release=2
+version=3.4.8
+release=1
 source=(http://icculus.org/openbox/releases/$name-$version.tar.gz)
 build()
 {
@@ -17,6 +17,5 @@ cd $name-$version
         --sysconfdir=/etc
 make
 make DESTDIR=$PKG install
-ln -f -sv libobrender.so.16.0.4 $PKG/usr/lib/libobrender.so.21
 
 } 

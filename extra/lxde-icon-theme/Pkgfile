@@ -1,14 +1,14 @@
-# Description: Gestionnaire de session pour lxde
+# Description: Icones pour lxde
 # URL: http://lxde.org/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
 # Depends on: gtk
 
-name=lxsession-lite
-version=0.3.6
+name=lxde-icon-theme
+version=0.0.1
 release=1
 
-source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.bz2)
 
 
 build() {

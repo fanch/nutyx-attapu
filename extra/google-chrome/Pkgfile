@@ -1,0 +1,42 @@
+# Description: Navigateur de chez Google
+# URL: http://www.google.com
+# Maintainer: NuTyX core team
+# Packager: geantbrun
+# Depends on: xz-utils
+
+name=google-chrome
+version=4.0.249.30
+release=1
+if [ "`uname -m`" = 'x86_64' ]; then
+	ARCH='amd64'
+	else
+	ARCH='i386'
+fi
+source=(http://dl.google.com/dl/linux/direct/google-chrome-beta_current_${ARCH}.deb )
+
+build() {
+	ar -x google-chrome-beta_current_$ARCH.deb 
+	unlzma data.tar.lzma
+	tar xf data.tar
+	mkdir -p $PKG/opt $PKG/usr/bin $PKG/usr/share/applications $PKG/usr/lib
+	
+	mv opt/google $PKG/opt
+	cd $PKG/opt/google/chrome
+
+	cd $PKG/usr/bin/
+	ln -s ../../opt/google/chrome/google-chrome
+
+	cd $PKG/opt/google/chrome
+	ln -s ../../../usr/lib/firefox/plugins
+
+	cd $PKG/usr/share/applications
+	ln -s ../../../opt/google/chrome/google-chrome.desktop
+	cd $PKG/usr/lib
+	ln -s libnss3.so libnss3.so.1d
+        ln -s libnssutil3.so libnssutil3.so.1d
+        ln -s libsmime3.so libsmime3.so.1d
+        ln -s libssl3.so libssl3.so.1d
+        ln -s libplds4.so libplds4.so.0d
+        ln -s libplc4.so libplc4.so.0d
+        ln -s libnspr4.so libnspr4.so.0d
+}

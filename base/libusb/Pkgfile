@@ -7,7 +7,7 @@
 name=libusb
 version=0.1.12
 release=1
-source=( http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+source=( http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 
 

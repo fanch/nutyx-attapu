@@ -37,6 +37,7 @@ build() {
         $PKG/$KDE_PREFIX/share/apps/kdm/sessions/
         install -m755 ../Xsession.kde4 \
         $PKG/$KDE_PREFIX/share/config/kdm/Xsession
+	chown -R 0:0 ../carbon
 	cp -a ../carbon \
 	$PKG/$KDE_PREFIX/share/apps/kdm/themes/
         sed -i "s/AllowRootLogin=false/AllowRootLogin=true/" \

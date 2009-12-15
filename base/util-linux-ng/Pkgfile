@@ -5,8 +5,8 @@
 # Depends on:  ncurses
 
 name=util-linux-ng
-version=2.16
-release=2
+version=2.16.2
+release=1
 source=(http://www.kernel.org/pub/linux/utils/util-linux-ng/v2.16/$name-$version.tar.bz2)
 
 build() {

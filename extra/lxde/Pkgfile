@@ -2,11 +2,11 @@
 # URL:         http://lxde.org
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on:   gestpkg, pcmanfm obconf lxterminal lxtask lxsession-lite lxrandr lxpanel lxshortcut lxnm lxde-common lxappearance lxlauncher menu-cache alsa-utils alsa-oss dbus-glib leafpad shared-mime-info startup-notification gpicview lxde-settings-daemon hicolor-icon-theme lxmenu-data ktsuss firefox gdm
+# Depends on:   gestpkg, pcmanfm obconf lxterminal lxtask lxsession lxrandr lxpanel lxshortcut lxnm lxde-common lxappearance lxlauncher menu-cache alsa-utils alsa-oss dbus-glib leafpad shared-mime-info startup-notification gpicview hicolor-icon-theme lxmenu-data ktsuss firefox gdm
 
 
 name=lxde
-version=0.3.2.1
+version=0.5.0
 release=1
 source=(lxde.desktop)
 

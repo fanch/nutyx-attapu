@@ -1,5 +1,5 @@
---- lxde-common-0.4.2/lxpanel/panel.in	2008-06-15 20:30:26.000000000 +0000
-+++ lxde-common-0.4.2/lxpanel/panel.in.new	2009-09-07 17:39:50.000000000 +0000
+--- lxde-common-0.5.0/lxpanel/panel.in	2008-06-15 20:30:26.000000000 +0000
++++ lxde-common-0.5.0/lxpanel/panel.in.new	2009-09-07 17:39:50.000000000 +0000
 @@ -16,7 +16,7 @@
      usefontcolor=1
      fontcolor=#ffffff

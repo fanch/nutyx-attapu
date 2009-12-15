@@ -5,9 +5,9 @@
 # Depends on: libusb
 
 name=usbutils
-version=0.84
+version=0.86
 release=1
-source=( http://switch.dl.sourceforge.net/sourceforge/linux-usb/$name-$version.tar.gz)
+source=( http://downloads.sourceforge.net/linux-usb/$name-$version.tar.gz)
 
 
 

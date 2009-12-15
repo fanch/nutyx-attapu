@@ -15,6 +15,7 @@ cd $name-$version
 	--mandir=/usr/share/man \
 	--with-w32-path=/usr/lib/codecs \
 	--without-arts \
+	--without-imagemagick \
 	--disable-gnomevfs \
 	--disable-aalib \
 	--disable-modplug \
