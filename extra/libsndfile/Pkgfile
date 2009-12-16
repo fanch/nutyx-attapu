@@ -5,9 +5,9 @@
 # Depends on: flac, alsa-lib
 
 name=libsndfile
-version=1.0.20
+version=1.0.21
 release=1
-source=( http://www.mega-nerd.com/$name/$name-$version.tar.gz)
+source=( http://www.mega-nerd.com/$name/files/$name-$version.tar.gz)
 
 
 build() {
