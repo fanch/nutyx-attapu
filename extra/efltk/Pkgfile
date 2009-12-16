@@ -1,0 +1,27 @@
+# Description: Librarie pour EDE
+# URL: http://equinox-project.org
+# Maintainer:  NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fltk
+
+name=efltk
+version=2.0.8
+release=1
+source=(http://kent.dl.sourceforge.net/sourceforge/ede/$name-$version.tar.gz\
+	efltk-2.0.8-filename-0.1.patch)
+build()
+{
+         cd $name
+#         sed -i "s/Fl_Text_Buffer:://" efltk/Fl_Text_Buffer.h
+#         sed -i "s/Fl_Combo_Box:://" efltk/Fl_Combo_Box.h
+#         sed -i "s/\$(EFLTK_BINDIR/LD_LIBRARY_PATH=\$(EFLTK_LIBDIR)\ \$(EFLTK_BINDIR/" test/Makefile
+         ./configure --prefix=/usr \
+         --disable-mysql --enable-plugins\
+         --disable-unixODBC --enable-opengl \
+         --enable-xft
+        patch -Np1 -i ../efltk-2.0.8-filename-0.1.patch
+         ./emake
+         install -d $PKG/usr/lib
+         make prefix=$PKG/usr install
+}
+
