@@ -5,10 +5,9 @@
 # Depends on: tcl
 
 name=sqlite3
-version=3.6.14.2
+version=3.6.21
 release=1
-source=(http://www.sqlite.org/sqlite-$version.tar.gz\
-	http://www.sqlite.org/cvstrac/attach_get/433/build_fts_as_part_of_libsqlite.patch.txt)
+source=(http://www.sqlite.org/sqlite-$version.tar.gz)
 
 build() {
 	cd sqlite-$version
