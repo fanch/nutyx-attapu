@@ -1,0 +1,16 @@
+# Description: Reseau prive virtuel
+# URL:http://openvpn.net/
+# Maintainer: NuTyX core team
+# Packager: Skippythekangoo AT yahoo DOT fr
+# Depends on:openssl, lzo, libpthread-stubs
+name=openvpn
+version=2.1.1
+release=1
+source=(http://openvpn.net/release/$name-$version.tar.gz)
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
