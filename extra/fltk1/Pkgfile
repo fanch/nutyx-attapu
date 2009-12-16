@@ -1,0 +1,24 @@
+# Description: Boîte à outils multiplatforme C++ fltk version 1
+# URL: http://www.fltk.org/
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg libpng xorg-libxft xorg-libxi xorg-libxinerama
+
+name=fltk1
+version=r6960
+release=1
+source=(http://ftp.easysw.com/pub/fltk/snapshots/fltk-1.3.x-$version.tar.bz2)
+build() {
+        cd fltk-*
+#	patch -Np0 -i ../scandir_posix.patch
+        ./configure --prefix=/usr \
+                    --mandir=/usr/share/man \
+                    --infodir=/usr/share/info \
+                --enable-threads \
+                --enable-shared \
+                --enable-xft
+        sed -i "s/glut\ test/glut/" Makefile
+        make
+	make -e prefix=$PKG/usr mandir=$PKG/usr/share/man install
+        rm -rf $PKG/usr/share/doc
+}
