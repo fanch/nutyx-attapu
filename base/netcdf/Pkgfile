@@ -2,7 +2,7 @@
 # URL: http://www.unidata.ucar.edu/downloads/netcdf/index.jsp
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on gcc-libs
+# Depends on:
 
 name=netcdf
 version=4.0.1
