@@ -1,0 +1,19 @@
+# Description: lecteur de fichier .doc en ligne de commande 
+# URL: http://www.winfield.demon.nl
+# Maintainer: NuTyX core team
+# Packager: skingrapher at legtux dot org
+# Depends on:
+
+name=antiword
+version=0.37
+release=1
+source=(http://www.winfield.demon.nl/linux/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	make GLOBAL_INSTALL_DIR=/usr/bin OPT="$CFLAGS"
+	install -d -m 0755 $PKG/usr/bin $PKG/usr/share/$name $PKG/usr/share/man/man1
+        make DESTDIR=$PKG GLOBAL_INSTALL_DIR=/usr/bin global_install
+	install -D --mode=666 Docs/antiword.1 $PKG/usr/share/man/man1/antiword.1
+}

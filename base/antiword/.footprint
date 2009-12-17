@@ -1,8 +1,7 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/local/
-drwxr-xr-x	root/root	usr/local/bin/
--rwxr-xr-x	root/root	usr/local/bin/antiword
--rwxr-xr-x	root/root	usr/local/bin/kantiword
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/antiword
+-rwxr-xr-x	root/root	usr/bin/kantiword
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/antiword/
 -rw-r--r--	root/root	usr/share/antiword/8859-1.txt
@@ -37,5 +36,5 @@ drwxr-xr-x	root/root	usr/share/antiword/
 -rw-r--r--	root/root	usr/share/antiword/koi8-u.txt
 -rw-r--r--	root/root	usr/share/antiword/roman.txt
 drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man.1/
--rw-rw-rw-	root/root	usr/share/man/man.1/antiword.1.gz
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-rw-rw-	root/root	usr/share/man/man1/antiword.1.gz
