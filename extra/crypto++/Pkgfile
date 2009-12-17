@@ -2,10 +2,10 @@
 # URL: http://www.cryptopp.com/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: unzip
 
 name=crypto++
-version=5.5.2
+version=5.6.0
 release=1
 source=(http://www.cryptopp.com/${name/++/pp}${version//\./}.zip)
 

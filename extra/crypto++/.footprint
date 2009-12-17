@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	usr/include/cryptopp/
 -rw-r--r--	root/root	usr/include/cryptopp/arc4.h
 -rw-r--r--	root/root	usr/include/cryptopp/argnames.h
 -rw-r--r--	root/root	usr/include/cryptopp/asn.h
+-rw-r--r--	root/root	usr/include/cryptopp/authenc.h
 -rw-r--r--	root/root	usr/include/cryptopp/base32.h
 -rw-r--r--	root/root	usr/include/cryptopp/base64.h
 -rw-r--r--	root/root	usr/include/cryptopp/basecode.h
@@ -18,7 +19,9 @@ drwxr-xr-x	root/root	usr/include/cryptopp/
 -rw-r--r--	root/root	usr/include/cryptopp/camellia.h
 -rw-r--r--	root/root	usr/include/cryptopp/cast.h
 -rw-r--r--	root/root	usr/include/cryptopp/cbcmac.h
+-rw-r--r--	root/root	usr/include/cryptopp/ccm.h
 -rw-r--r--	root/root	usr/include/cryptopp/channels.h
+-rw-r--r--	root/root	usr/include/cryptopp/cmac.h
 -rw-r--r--	root/root	usr/include/cryptopp/config.h
 -rw-r--r--	root/root	usr/include/cryptopp/cpu.h
 -rw-r--r--	root/root	usr/include/cryptopp/crc.h
@@ -30,6 +33,7 @@ drwxr-xr-x	root/root	usr/include/cryptopp/
 -rw-r--r--	root/root	usr/include/cryptopp/dll.h
 -rw-r--r--	root/root	usr/include/cryptopp/dmac.h
 -rw-r--r--	root/root	usr/include/cryptopp/dsa.h
+-rw-r--r--	root/root	usr/include/cryptopp/eax.h
 -rw-r--r--	root/root	usr/include/cryptopp/ec2n.h
 -rw-r--r--	root/root	usr/include/cryptopp/eccrypto.h
 -rw-r--r--	root/root	usr/include/cryptopp/ecp.h
@@ -42,6 +46,7 @@ drwxr-xr-x	root/root	usr/include/cryptopp/
 -rw-r--r--	root/root	usr/include/cryptopp/filters.h
 -rw-r--r--	root/root	usr/include/cryptopp/fips140.h
 -rw-r--r--	root/root	usr/include/cryptopp/fltrimpl.h
+-rw-r--r--	root/root	usr/include/cryptopp/gcm.h
 -rw-r--r--	root/root	usr/include/cryptopp/gf256.h
 -rw-r--r--	root/root	usr/include/cryptopp/gf2_32.h
 -rw-r--r--	root/root	usr/include/cryptopp/gf2n.h
@@ -98,6 +103,7 @@ drwxr-xr-x	root/root	usr/include/cryptopp/
 -rw-r--r--	root/root	usr/include/cryptopp/seal.h
 -rw-r--r--	root/root	usr/include/cryptopp/secblock.h
 -rw-r--r--	root/root	usr/include/cryptopp/seckey.h
+-rw-r--r--	root/root	usr/include/cryptopp/seed.h
 -rw-r--r--	root/root	usr/include/cryptopp/serpent.h
 -rw-r--r--	root/root	usr/include/cryptopp/serpentp.h
 -rw-r--r--	root/root	usr/include/cryptopp/sha.h
