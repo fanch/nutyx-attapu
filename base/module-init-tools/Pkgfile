@@ -2,7 +2,7 @@
 # URL: http://www.kernel.org/pub/linux/kernel/people/rusty/modules
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: man-db, zlib
+# Depends on:
 
 name=module-init-tools
 version=3.10
