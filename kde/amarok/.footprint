@@ -94,6 +94,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/favorite-genres-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-album-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-artist-amarok.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-bpm-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-comment-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-composer-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/16x16/actions/filename-dash-amarok.png
@@ -167,6 +168,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/edit-redo-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/edit-undo-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/emblem-favorite-amarok.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/filename-bpm-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/internet-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/love-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/22x22/actions/media-album-cover-manager-amarok.png
@@ -218,6 +220,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/edit-redo-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/edit-undo-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/emblem-favorite-amarok.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/filename-bpm-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/love-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/media-album-cover-manager-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/32x32/actions/media-album-cover.png
@@ -271,6 +274,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/emblem-favorite-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-album-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-artist-amarok.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-bpm-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-comment-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-composer-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-dash-amarok.png
@@ -284,6 +288,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-ignore-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-initial-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-last-played.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-moodbar.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-sample-rate.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-slash-amarok.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/icons/hicolor/48x48/actions/filename-space-amarok.png
