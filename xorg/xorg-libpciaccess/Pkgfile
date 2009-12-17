@@ -1,9 +1,11 @@
-# Description: Generic PCI access library
+# Description: Librairie pour l'accès générique PCI
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=xorg-libpciaccess
-version=0.10.9
+version=0.11.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libpciaccess-$version.tar.bz2)
 
