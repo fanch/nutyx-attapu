@@ -1,0 +1,42 @@
+# Description: Explorateur de fichier très léger
+# URL: http://roscidus.com/desktop/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: libxml2, gtk, shared-mime-info, xorg-libsm, libglade
+name=rox
+version=2.10
+release=1
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-filer-$version.tar.bz2 \
+        $name.desktop $name.svg)
+
+build() {
+  cd $SRC/$name-filer-$version/Choices
+  mkdir -p $PKG/usr/share/Choices
+  cp -rp MIME-types $PKG/usr/share/Choices/
+ # manually copy the manpages first
+  cd ../
+  install -Dm 0644 rox.1 $PKG/usr/share/man/man1/rox.1
+  cd $PKG/usr/share/man/man1
+  ln -sf rox.1 ROX-Filer.1
+ # this compiles and installs rox
+ cd $SRC/$name-filer-$version/ROX-Filer
+  ./AppRun --compile
+  cd ..
+  cp -rp ROX-Filer $PKG/usr/share/
+  rm -fr $PKG/usr/share/ROX-Filer/{src,build}
+ # create a shellscript which is known in the PATH
+  mkdir -p $PKG/usr/bin
+  echo "#!/bin/sh" > "$PKG/usr/bin/rox"
+  echo "exec /usr/share/ROX-Filer/AppRun \"\$@\"" >> "$PKG/usr/bin/rox"
+  chmod a+x $PKG/usr/bin/rox
+ # install some freedesktop.org compatibility
+  install -D -m644 $SRC/$name.desktop \
+    $PKG/usr/share/applications/$name.desktop
+  install -D -m644 $SRC/$name.svg \
+    $PKG/usr/share/pixmaps/$name.svg
+   # finally we render a png as fallback for not svg aware menu applications
+   # Attention: always make sure you check the dimensions of the source-svg,
+   # you can read the dimensions via inkscapes export funktion
+   mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps/
+   install -m 644 ../$name.svg $PKG/usr/share/icons/hicolor/48x48/apps/
+}
