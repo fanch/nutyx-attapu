@@ -1,8 +1,8 @@
 # Description: Service de logging flexible pour programmes et librairies C++
 # URL: http://www.arg0.net/rlog
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: gcc
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=rlog
 version=1.4
