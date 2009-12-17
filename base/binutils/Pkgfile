@@ -1,8 +1,8 @@
 # Description: Le paquet GNU Binutils est une collection d'outils 
 # URL: http://sources.redhat.com/binutils/
-# Maintainer:  Linux From Scratch
+# Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: zlib
+# Depends on: 
 
 name=binutils
 version=2.19.1
