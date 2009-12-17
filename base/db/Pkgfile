@@ -2,7 +2,7 @@
 # URL: http://www.sleepycat.com/products/db.shtml
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gcc
+# Depends on:
 
 name=db
 version=4.7.25
