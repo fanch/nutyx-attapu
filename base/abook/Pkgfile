@@ -1,8 +1,8 @@
 # Description: Carnet d'adresses en mode texte 
 # URL: http://abook.sourceforge.net/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: readline, ncurses
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=abook
 version=0.5.6
