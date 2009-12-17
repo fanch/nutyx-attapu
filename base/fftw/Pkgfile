@@ -2,18 +2,13 @@
 # URL: http://www.fftw.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: glibc, bash
+# Depends on:
 
 name=fftw
 version=3.2.2
 release=1
 source=(http://www.fftw.org/$name-$version.tar.gz)
-install=fftw.install
 
-# notes:
-# http://www.fftw.org/fftw2_doc/fftw_6.html#SEC69
-# http://www.fftw.org/faq/section2.html#singleprec
-# http://www.fftw.org/fftw3_doc/Precision.html#Precision
 
 build() {
   cd $name-$version
