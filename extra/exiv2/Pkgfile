@@ -2,7 +2,7 @@
 # URL: http://www.exiv2.org/index.html
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: gcc, zlib, expat
+# Depends on: expat
 
 name=exiv2
 version=0.18.1
