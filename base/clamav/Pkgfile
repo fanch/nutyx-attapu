@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=clamav
-version=0.95.2
+version=0.95.3
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 

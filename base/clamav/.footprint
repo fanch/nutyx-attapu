@@ -15,19 +15,19 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libclamav.a
 -rwxr-xr-x	root/root	usr/lib/libclamav.la
-lrwxrwxrwx	root/root	usr/lib/libclamav.so -> libclamav.so.6.0.4
-lrwxrwxrwx	root/root	usr/lib/libclamav.so.6 -> libclamav.so.6.0.4
--rwxr-xr-x	root/root	usr/lib/libclamav.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamav.so -> libclamav.so.6.0.5
+lrwxrwxrwx	root/root	usr/lib/libclamav.so.6 -> libclamav.so.6.0.5
+-rwxr-xr-x	root/root	usr/lib/libclamav.so.6.0.5
 -rw-r--r--	root/root	usr/lib/libclamunrar.a
 -rwxr-xr-x	root/root	usr/lib/libclamunrar.la
-lrwxrwxrwx	root/root	usr/lib/libclamunrar.so -> libclamunrar.so.6.0.4
-lrwxrwxrwx	root/root	usr/lib/libclamunrar.so.6 -> libclamunrar.so.6.0.4
--rwxr-xr-x	root/root	usr/lib/libclamunrar.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamunrar.so -> libclamunrar.so.6.0.5
+lrwxrwxrwx	root/root	usr/lib/libclamunrar.so.6 -> libclamunrar.so.6.0.5
+-rwxr-xr-x	root/root	usr/lib/libclamunrar.so.6.0.5
 -rw-r--r--	root/root	usr/lib/libclamunrar_iface.a
 -rwxr-xr-x	root/root	usr/lib/libclamunrar_iface.la
-lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so -> libclamunrar_iface.so.6.0.4
-lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so.6 -> libclamunrar_iface.so.6.0.4
--rwxr-xr-x	root/root	usr/lib/libclamunrar_iface.so.6.0.4
+lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so -> libclamunrar_iface.so.6.0.5
+lrwxrwxrwx	root/root	usr/lib/libclamunrar_iface.so.6 -> libclamunrar_iface.so.6.0.5
+-rwxr-xr-x	root/root	usr/lib/libclamunrar_iface.so.6.0.5
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libclamav.pc
 drwxr-xr-x	root/root	usr/sbin/
