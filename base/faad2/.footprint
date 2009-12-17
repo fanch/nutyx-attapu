@@ -5,11 +5,16 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/faad.h
 -rw-r--r--	root/root	usr/include/mp4ff.h
 -rw-r--r--	root/root	usr/include/mp4ff_int_types.h
+-rw-r--r--	root/root	usr/include/mp4ffint.h
 -rw-r--r--	root/root	usr/include/neaacdec.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libfaad.a
 -rwxr-xr-x	root/root	usr/lib/libfaad.la
-lrwxrwxrwx	root/root	usr/lib/libfaad.so -> libfaad.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libfaad.so.1 -> libfaad.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libfaad.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaad.so -> libfaad.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libfaad.so.2 -> libfaad.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/libfaad.so.2.0.0
 -rw-r--r--	root/root	usr/lib/libmp4ff.a
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/manm/
+-rw-r--r--	root/root	usr/share/man/manm/faad.man.gz
