@@ -5,7 +5,7 @@
 # Depends on: xz-utils
 
 name=google-chrome
-version=4.0.249.30
+version=4.0.249.43
 release=1
 if [ "`uname -m`" = 'x86_64' ]; then
 	ARCH='amd64'
