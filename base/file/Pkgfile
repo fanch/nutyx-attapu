@@ -2,7 +2,7 @@
 # URL: ftp://ftp.fu-berlin.de/unix/tools/file/  
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: zlib
+# Depends on:
 
 name=file
 version=5.03
