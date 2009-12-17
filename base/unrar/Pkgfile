@@ -2,7 +2,7 @@
 # URL: http://www.rarlab.com/
 # Maintainer: NuTyX core team
 # Packager: sibel at free dot fr
-# Depends on: gcc
+# Depends on: 
 
 name=unrar
 version=3.9.2
