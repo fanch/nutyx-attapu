@@ -2,7 +2,7 @@
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
 # URL: http://www.68k.org/~michael/audiofile
-# Depends on: glibc
+# Depends on:
 
 name=audiofile
 version=0.2.6
