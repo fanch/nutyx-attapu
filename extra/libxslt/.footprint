@@ -27,19 +27,20 @@ drwxr-xr-x	root/root	usr/include/libxslt/
 -rw-r--r--	root/root	usr/include/libxslt/xsltInternals.h
 -rw-r--r--	root/root	usr/include/libxslt/xsltconfig.h
 -rw-r--r--	root/root	usr/include/libxslt/xsltexports.h
+-rw-r--r--	root/root	usr/include/libxslt/xsltlocale.h
 -rw-r--r--	root/root	usr/include/libxslt/xsltutils.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libexslt.a
 -rwxr-xr-x	root/root	usr/lib/libexslt.la
-lrwxrwxrwx	root/root	usr/lib/libexslt.so -> libexslt.so.0.8.13
-lrwxrwxrwx	root/root	usr/lib/libexslt.so.0 -> libexslt.so.0.8.13
--rwxr-xr-x	root/root	usr/lib/libexslt.so.0.8.13
+lrwxrwxrwx	root/root	usr/lib/libexslt.so -> libexslt.so.0.8.15
+lrwxrwxrwx	root/root	usr/lib/libexslt.so.0 -> libexslt.so.0.8.15
+-rwxr-xr-x	root/root	usr/lib/libexslt.so.0.8.15
 drwxr-xr-x	root/root	usr/lib/libxslt-plugins/
 -rw-r--r--	root/root	usr/lib/libxslt.a
 -rwxr-xr-x	root/root	usr/lib/libxslt.la
-lrwxrwxrwx	root/root	usr/lib/libxslt.so -> libxslt.so.1.1.24
-lrwxrwxrwx	root/root	usr/lib/libxslt.so.1 -> libxslt.so.1.1.24
--rwxr-xr-x	root/root	usr/lib/libxslt.so.1.1.24
+lrwxrwxrwx	root/root	usr/lib/libxslt.so -> libxslt.so.1.1.26
+lrwxrwxrwx	root/root	usr/lib/libxslt.so.1 -> libxslt.so.1.1.26
+-rwxr-xr-x	root/root	usr/lib/libxslt.so.1.1.26
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libexslt.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libxslt.pc
