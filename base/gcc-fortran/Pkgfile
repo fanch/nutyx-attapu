@@ -2,7 +2,7 @@
 # URL: http://gcc.gnu.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mpfr
+# Depends on: 
 
 name=gcc-fortran
 version=4.4.1
