@@ -2,7 +2,7 @@
 # URL: http://www.geany.org/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: atk, expat, fontconfig, freetype, glib, glitz, gcc-libs, glibc, gtk, libpng, pango, pixman, zlib 
+# Depends on: atk, expat, fontconfig, freetype, glib, glitz, gtk, libpng, pango, xorg-libpixman 
 
 name=geany
 version=0.18
