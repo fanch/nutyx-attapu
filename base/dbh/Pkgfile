@@ -1,8 +1,8 @@
-# Description: Librairie pourla creation de Disk Based Hashtables on POSIX systems 
+# Description: Librairie pour la création de Disk Based Hashtables sur les systèmes POSIX
 # URL: http://dbh.sourceforge.net
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: glibc
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
 
 name=dbh
 version=4.5.0
