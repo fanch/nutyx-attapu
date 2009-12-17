@@ -2,14 +2,13 @@
 # URL: http://www.netlib.org/blas
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: gcc-libs
+# Depends on:
 
 name=blas
 version=20070405
 release=1
-source=(http://www.netlib.org/blas/blas.tgz
-	make.inc
-	license.txt)
+source=(http://www.netlib.org/blas/blas.tgz \
+	make.inc license.txt)
 
 build() {
   cd BLAS
