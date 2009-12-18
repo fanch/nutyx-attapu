@@ -2,7 +2,7 @@
 # URL:         http://www.perl.org/
 # Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: db, gdbm
+# Depends on:
 
 name=perl
 version=5.10.1
