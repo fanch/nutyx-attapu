@@ -1,9 +1,10 @@
 # Description: Utilitaire pour convertir des fichiers rpm, dpkg, slp et tgz 
 # URL: http://www.kitenet.net/programs/alien/
-# Packager:
-# Depends on: perl
+# Packager: 
+# Maintainer: NuTyX core team
+# Depends on:
 
-name=alien
+name=p5-alien
 version=8.78
 release=1
 source=(http://ftp.debian.org/debian/pool/main/a/$name/${name}_${version}.tar.gz)
