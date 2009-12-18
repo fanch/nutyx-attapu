@@ -2,7 +2,7 @@
 # URL: http://savannah.nongnu.org/projects/man-db
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: make
+# Depends on: 
 
 name=man-db
 version=2.5.5
