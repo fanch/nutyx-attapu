@@ -2,7 +2,7 @@
 # URL: http://www.ntp.org/ 
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: openssl, libcap
+# Depends on: libcap
 
 name=ntp
 version=4.2.4p7
