@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/groff/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gettext
+# Depends on:
 
 name=groff
 version=1.20.1
