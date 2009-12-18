@@ -2,7 +2,7 @@
 # URL: http://www.greenwoodsoftware.com/less/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kbd
+# Depends on:
 
 name=less
 version=436
