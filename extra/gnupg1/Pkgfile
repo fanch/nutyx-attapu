@@ -2,7 +2,7 @@
 # URL: 	http://www.gnupg.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: bzip2,libusb, curl
+# Depends on: libusb, curl
 
 name=gnupg1
 version=1.4.9
