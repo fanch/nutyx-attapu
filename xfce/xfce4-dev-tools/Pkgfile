@@ -2,7 +2,7 @@
 # URL: http://www.foo-projects.org/~benny/projects/xfce4-dev-tools/index.html
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: autoconf, automake, gettext, intltool, libtool
+# Depends on: intltool
 
 name=xfce4-dev-tools
 version=4.6.0
