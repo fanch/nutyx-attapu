@@ -2,7 +2,7 @@
 # URL: http://www.amk.ca/python/code/crypto.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python, gmp
+# Depends on: python
 
 name=pycrypto
 version=2.0.1
