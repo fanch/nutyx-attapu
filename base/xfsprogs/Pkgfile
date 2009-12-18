@@ -2,7 +2,7 @@
 # URL: http://oss.sgi.com/projects/xfs/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: util-linux-ng 
+# Depends on: 
 
 name=xfsprogs
 version=3.0.3
