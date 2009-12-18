@@ -1,7 +1,8 @@
 # Description: demon GPSes
 # URL: http://gpsd.berlios.de
-# Packager: Floreal Cabanettes, floreal.c at orange dot fr
-# Depends on: ncurses, dbus, libpthread-stubs, lesstif, python
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: dbus, libpthread-stubs, lesstif, python
 
 name=gpsd
 version=2.38
