@@ -2,7 +2,7 @@
 # Maintainer:  NuTyX coreteam / Linux from scratch
 # Packager: thierryn1 at hispeed dot ch
 # URL: http://httpd.apache.org/
-# Depends on:  apr, openssl, zlib, sqlite3
+# Depends on:  apr, sqlite3
 
 name=apache
 version=2.2.13
