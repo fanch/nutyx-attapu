@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/gdbm/gdbm.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gawk
+# Depends on:
 
 name=gdbm
 version=1.8.3
