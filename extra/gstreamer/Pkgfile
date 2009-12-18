@@ -2,7 +2,7 @@
 # URL: http://gstreamer.freedesktop.org/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: glib, libxml2, zlib, gir-repository
+# Depends on: glib, libxml2, gir-repository
 
 name=gstreamer
 version=0.10.25
