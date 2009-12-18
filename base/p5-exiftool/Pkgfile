@@ -1,11 +1,11 @@
 # Description: Lire, ecrire, editer les meta-informations des photos 
 # URL: http://www.sno.phy.queensu.ca/~phil/exiftool/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: perl
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
 
 name=p5-exiftool
-version=7.71
+version=8.02
 release=1
 source=(http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-$version.tar.gz)
 
