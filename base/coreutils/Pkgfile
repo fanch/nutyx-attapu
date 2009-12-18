@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/coreutils/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: e2fsprogs
+# Depends on:
 
 name=coreutils
 version=7.5
