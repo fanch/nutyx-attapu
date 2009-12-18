@@ -2,7 +2,7 @@
 # URL: http://freshmeat.net/projects/util-linux/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:  ncurses
+# Depends on:
 
 name=util-linux-ng
 version=2.16.2
