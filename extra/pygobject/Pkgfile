@@ -2,7 +2,7 @@
 # URL: http://www.pygtk.org/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python, glib
+# Depends on: python, glib, gobject-introspection
 
 name=pygobject
 version=2.20.0
