@@ -2,7 +2,7 @@
 # URL: http://sourceforge.net/projects/nanoblogger/
 # Maintainer: Blankoworld
 # Packager: blankoworld at wanadoo dot fr
-# Depends on: bash
+# Depends on:
 
 name=nanoblogger
 version=3.4
