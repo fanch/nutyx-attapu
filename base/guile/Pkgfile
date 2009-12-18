@@ -2,10 +2,10 @@
 # URL: http://www.gnu.org/software/guile/guile.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gmp
+# Depends on:
 
 name=guile
-version=1.8.6
+version=1.8.7
 release=1
 source=( http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
 
