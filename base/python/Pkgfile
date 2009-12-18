@@ -2,7 +2,7 @@
 # URL: http://www.python.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: pth, openssl, gdbm, sqlite3
+# Depends on: pth, sqlite3
 
 name=python
 version=2.6.2
