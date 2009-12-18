@@ -2,7 +2,7 @@
 # URL:http://www.gnu.org/software/automake/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends: autoconf
+# Depends: 
 
 name=automake
 version=1.11
