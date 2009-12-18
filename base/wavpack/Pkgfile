@@ -2,7 +2,7 @@
 # URL: http://www.wavpack.com/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail.com
-# Depends on: glibc
+# Depends on:
 
 name=wavpack
 version=4.50.1
