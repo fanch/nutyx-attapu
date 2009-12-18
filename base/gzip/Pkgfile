@@ -2,7 +2,7 @@
 # URL: http://www.gzip.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: groff
+# Depends on: 
 
 name=gzip
 version=1.3.12
