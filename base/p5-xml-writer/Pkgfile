@@ -2,10 +2,10 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
+# Depends on: 
 
 name=p5-xml-writer
-version=0.604
+version=0.606
 release=1
 source=(http://www.cpan.org/modules/by-module/XML/XML-Writer-$version.tar.gz)
 
