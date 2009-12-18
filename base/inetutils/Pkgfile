@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/inetutils/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: readline, ncurses
+# Depends on: 
 
 name=inetutils
 version=1.6
