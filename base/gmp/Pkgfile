@@ -2,7 +2,7 @@
 # URL: ftp://ftp.gnu.org/gnu/gmp/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: binutils
+# Depends on:
 
 name=gmp
 version=4.3.1
