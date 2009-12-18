@@ -1,11 +1,11 @@
-# Description: Permet de donner des droits administrateurs
+# Description: Permet de donner des droits administrateurs aux utilisateurs normaux
 # URL: http://www.gratisoft.us/sudo/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: coreutils, vim 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: 
 
 name=sudo
-version=1.7.2
+version=1.7.2p2
 release=1
 source=(ftp://ftp.sudo.ws/pub/sudo/$name-$version.tar.gz)
 
