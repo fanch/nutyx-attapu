@@ -2,7 +2,7 @@
 # URL: ftp://devel.altlinux.org/legion/kbd/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: iproute2
+# Depends on:
 
 name=kbd
 version=1.15
