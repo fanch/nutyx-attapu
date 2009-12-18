@@ -2,7 +2,7 @@
 # URL: http://www.postgresql.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: postgresql-libs, libxml2, readline
+# Depends on: postgresql-libs, libxml2, linux-pam
 
 name=postgresql
 version=8.4.1
