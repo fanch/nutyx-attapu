@@ -2,7 +2,7 @@
 # URL: http://flex.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: findutils
+# Depends on:
 
 name=flex
 version=2.5.35
