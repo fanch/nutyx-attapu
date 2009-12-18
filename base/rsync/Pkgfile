@@ -2,7 +2,7 @@
 # URL: http://samba.anu.edu.au/rsync/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libiconv, popt
+# Depends on: 
 
 name=rsync
 version=3.0.6
