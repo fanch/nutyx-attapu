@@ -2,7 +2,7 @@
 # URL: 	http://www.wireshark.org/ 
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: bash, gnutls, gtk, libcap, libpcap, pcre
+# Depends on: gnutls, gtk, libcap, libpcap, pcre
 
 name=wireshark
 version=1.2.3
