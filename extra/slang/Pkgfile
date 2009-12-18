@@ -2,7 +2,7 @@
 # URL:  http://gd.tuwien.ac.at/editors/davis/slang
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: popt, libpng, pcre
+# Depends on: libpng, pcre
 
 name=slang
 version=2.1.4
