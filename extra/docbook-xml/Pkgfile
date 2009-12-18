@@ -2,7 +2,7 @@
 # URL:  http://www.docbook.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxml2
+# Depends on: unzip, libxml2
 
 name=docbook-xml
 version=4.5
