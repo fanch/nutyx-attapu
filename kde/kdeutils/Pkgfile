@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, libarchive, libzip, kdepimlibs, pyqt, pycups
+# Depends on: kdebase-runtime, libzip, kdepimlibs, pyqt, pycups
 
 name=kdeutils
 version=4.3.4
