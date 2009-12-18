@@ -1,11 +1,11 @@
-# Description: Librairie d'acces aux disques optiques
+# Description: Librairie d'accès aux disques optiques
 # URL: http://icculus.org/burn/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com>
-# Depends on: glibc
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=libburn
-version=0.6.6
+version=0.7.4
 release=1
 source=(http://files.libburnia-project.org/releases/$name-$version.pl00.tar.gz)
 
