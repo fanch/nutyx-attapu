@@ -2,7 +2,7 @@
 # URL: http://gcc.gnu.org
 # Packager: thierryn1 at hispeed dot ch
 # Maintainer: NuTyX core team
-# Depends on: mpfr
+# Depends on:
 
 name=gcc
 version=4.4.1
