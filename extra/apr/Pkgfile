@@ -2,7 +2,7 @@
 # URL: http://apr.apache.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: expat, db, gdbm
+# Depends on: expat
 
 name=apr
 version=1.3.8
