@@ -2,7 +2,7 @@
 # URL: http://procps.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: bison
+# Depends on:
 
 name=procps
 version=3.2.8
