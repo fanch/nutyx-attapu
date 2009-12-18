@@ -2,7 +2,7 @@
 # URL: http://txt2tags.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: gettext, python
+# Depends on: python
 
 name=txt2tags
 version=2.5
