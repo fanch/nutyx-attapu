@@ -2,7 +2,7 @@
 # URL: http://www.mpfr.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gmp
+# Depends on:
 
 name=mpfr
 version=2.4.2
