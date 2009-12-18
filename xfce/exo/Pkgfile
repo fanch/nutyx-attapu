@@ -2,7 +2,7 @@
 # URL: http://www.os-cillation.de/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: hal, fuse, libnotify, libxfce4util, perl, p5-uri, pygtk, python
+# Depends on: hal, fuse, libnotify, libxfce4util, p5-uri, pygtk, python
 
 name=exo
 version=0.3.101
