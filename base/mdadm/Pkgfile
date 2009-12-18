@@ -2,7 +2,7 @@
 # URL: http://www.cse.unsw.edu.au/~neilb/source/mdadm/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glibc
+# Depends on:
 
 name=mdadm
 version=3.0
