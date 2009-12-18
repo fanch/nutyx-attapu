@@ -2,7 +2,7 @@
 # URL: http://search.cpan.org/dist/YAML/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: perl
+# Depends on: 
 
 name=p5-yaml
 version=0.68
