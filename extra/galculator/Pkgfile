@@ -1,8 +1,8 @@
 # Description: Calculatrice GTK2
 # URL: http://galculator.sourceforge.net/
 # Maintainer: NuTyX core team 
-# Packager: fred.galusik at gmail dot com
-# Depends on: atk, expat, fontconfig, freetype, glib, gtk, libglade, libpng, libxml2, pango, libX11, zlib
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, expat, fontconfig, freetype, glib, gtk, libglade, libpng, libxml2, pango, xorg-libx11
 
 name=galculator
 version=1.3.4
@@ -16,6 +16,6 @@ cd $name-$version
 	make DESTDIR=$PKG install
 
 	mkdir -p $PKG/usr/share/icons/hicolor/{48x48,scalable}/apps
-	cp $PKG/usr/share/pixmaps/$name.svg $PKG/usr/share/icons/hicolor/scalable/apps/$name.svg
-	cp $PKG/usr/share/pixmaps/$name.png $PKG/usr/share/icons/hicolor/48x48/apps/$name.png
+	ln -s /usr/share/pixmaps/$name.svg $PKG/usr/share/icons/hicolor/scalable/apps/$name.svg
+	ln -s /usr/share/pixmaps/$name.png $PKG/usr/share/icons/hicolor/48x48/apps/$name.png
 }
