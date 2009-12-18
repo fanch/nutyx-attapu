@@ -2,7 +2,7 @@
 # URL: http://htop.sourceforge.net/index.php?page=main
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: ncurses
+# Depends on:
 name=htop
 version=0.8.1
 release=1
