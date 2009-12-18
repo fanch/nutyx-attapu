@@ -2,7 +2,7 @@
 # URL: http://www.ngolde.de/yacpi.html
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: ncurses, libacpi
+# Depends on: libacpi
 name=yacpi
 version=3.0.1
 release=1
