@@ -3,7 +3,7 @@
 # Packager: Blankoworld <blankoworld at wanadoo dot fr>
 # Depends on: svn cyrus-sasl sdl_ttf 
 
-name=numptyphysics-svn
+name=numptyphysics
 version=115
 release=1
 realname=numptyphysics
@@ -13,9 +13,9 @@ build() {
   cd $SRC
 
   # Récupération du dépôt SVN
-  svn checkout https://garage.maemo.org/svn/numptyphysics/trunk/ --config-dir=$PKGMK_ROOT/svn_config/ -r $version $name
+  svn checkout https://garage.maemo.org/svn/numptyphysics/trunk/ --config-dir=$PKGMK_ROOT/svn_config/ -r $version $name-svn
 
-  cd $name
+  cd $name-svn
 
   # Compilation
   aclocal
