@@ -2,7 +2,7 @@
 # URL:http://kile.sourceforge.net/news.php
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, texlive-core, psutils, perl
+# Depends on: kdelibs, texlive-core, psutils
 name=kile
 version=2.1b1
 release=1
