@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/findutils/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gdbm
+# Depends on: 
 
 name=findutils
 version=4.4.2
