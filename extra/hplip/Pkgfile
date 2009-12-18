@@ -2,7 +2,7 @@
 # URL: http://hplip.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups, foomatic-db, foomatic-db-engine, ghostscript, libusb, portmap
+# Depends on: cups, foomatic-db, foomatic-db-engine, ghostscript, libusb
 
 name=hplip
 version=3.9.10
