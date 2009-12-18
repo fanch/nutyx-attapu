@@ -1,8 +1,8 @@
 # Description: Interface GTK2 pour GnuPG
 # URL: http://wald.intevation.org/projects/gpa/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: atk, cairo, expat, freetype, fontconfig, glib, glibc, gnupg1, gnupg2, gpgme, gtk, libgpg-error, libpng, pango, pixman, zlib
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, cairo, expat, freetype, fontconfig, glib, gnupg1, gnupg2, gpgme, gtk, libgpg-error, libpng, pango, xorg-libpixman
 
 name=gpa
 version=0.8.0
