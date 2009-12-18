@@ -1,8 +1,7 @@
 # Description: library that fetches information about the running system
 # URL: http://www.gnu.org/directory/libs/LibGTop.html
 # Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: glib, popt, xorg 
-# Group: gnome/desktop
+# Depends on: glib, xorg 
 
 name=libgtop
 version=2.28.0
