@@ -2,11 +2,11 @@
 # URL: http://ufraw.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: gimp, exiv2, lcms, libexif, libjpeg, libpng, libtiff, zlib
+# Depends on: gimp, exiv2, lcms, libexif, libjpeg, libpng, libtiff
 
 name=ufraw
-version=0.15
-release=2
+version=0.16
+release=1
 source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
 	ufraw-0.15-glibc-2.10.patch)
 build() {
