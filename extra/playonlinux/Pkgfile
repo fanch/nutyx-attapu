@@ -2,7 +2,7 @@
 # URL: http://www.playonlinux.com/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: wxpython, cabextract, xterm, gettext, lzma, wine
+# Depends on: wxpython, cabextract, xterm, lzma, wine
 
 name=playonlinux
 version=3.2.2
