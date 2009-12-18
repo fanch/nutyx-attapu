@@ -2,7 +2,7 @@
 # URL:http://www.ex-parrot.com/~pdw/iftop/
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: libpcap, ncurses
+# Depends on: libpcap
 
 name=iftop
 version=0.17pre3
