@@ -2,7 +2,7 @@
 # URL: http://0pointer.de/lennart/projects/nss-mdns/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glibc 
+# Depends on: 
 
 name=nss-mdns
 version=0.10
