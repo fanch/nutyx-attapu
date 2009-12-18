@@ -2,7 +2,7 @@
 # URL: http://www.gnu.org/software/gettext/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: flex
+# Depends on: 
 
 name=gettext
 version=0.17
