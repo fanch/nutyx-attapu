@@ -2,7 +2,7 @@
 # URL: http://localhost.nl/~synap/libvisual/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: glibc
+# Depends on: 
 
 name=libvisual
 version=0.4.0
