@@ -2,7 +2,7 @@
 # URL: http://www.ruby-lang.org/fr
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gdbm, tk
+# Depends on: tk
 
 name=ruby
 version=1.9.1
