@@ -2,7 +2,7 @@
 # URL: http://www.httrack.com/ 
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: bash, zlib
+# Depends on:
 
 name=httrack
 version=3.43.7
