@@ -2,7 +2,7 @@
 # URL: http://www.openldap.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: db, perl, openssl, cyrus-sasl
+# Depends on: cyrus-sasl
 name=openldap
 version=2.4.13
 release=1
