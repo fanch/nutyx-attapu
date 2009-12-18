@@ -2,7 +2,7 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
+# Depends on: gtk
 
 name=p5-gtk2-ex-formfactory
 version=0.65
