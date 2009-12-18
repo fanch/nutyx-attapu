@@ -2,7 +2,7 @@
 # URL: http://www.tardis.ed.ac.uk/~ajcd/psutils/index.html
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: glibc, ghostscript
+# Depends on: ghostscript
 
 name=psutils
 version=1.17
