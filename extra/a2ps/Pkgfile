@@ -2,7 +2,7 @@
 # URL: http://www.inf.enst.fr/~demaille/a2ps/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: perl, psutils, ghostscript, imagemagick
+# Depends on: psutils, ghostscript, imagemagick
 
 name=a2ps
 version=4.14
