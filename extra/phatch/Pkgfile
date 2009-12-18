@@ -2,7 +2,7 @@
 # URL: http://photobatch.stani.be
 # Maintainer: Nutyx core team
 # Packager: fanch
-# Depends on:python,wxpython,pil,findutils
+# Depends on: python, wxpython, pil
 
 name=phatch
 version=0.1.6
