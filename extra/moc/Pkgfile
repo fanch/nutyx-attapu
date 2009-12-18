@@ -2,7 +2,8 @@
 # URL: http://moc.daper.net/
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: ncurses 
+# Depends on: flac, libmpeg3, musepack, libsndfile, speex, libvorbis
+
 name=moc
 version=2.4.4
 release=1
