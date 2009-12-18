@@ -2,7 +2,7 @@
 # URL: http://search.cpan.org/~grantm/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
+# Depends on: 
 
 name=p5-xml-simple
 version=2.18
