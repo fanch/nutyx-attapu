@@ -2,7 +2,8 @@
 # URL: http://weechat.flashtux.org/
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: ncurses, aspell
+# Depends on: aspell
+
 name=weechat
 version=0.3.0
 release=1
