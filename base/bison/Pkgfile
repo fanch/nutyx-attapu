@@ -2,7 +2,7 @@
 # URL:         	http://www.gnu.org/software/bison/
 # Maintainer:	NuTyX core team
 # Packager:	thierryn1 at hispeed dot ch
-# Depends on: m4
+# Depends on:
 
 name=bison
 version=2.4.1
