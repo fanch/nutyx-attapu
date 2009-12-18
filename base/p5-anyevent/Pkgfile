@@ -2,10 +2,10 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
+# Depends on:
 
 name=p5-anyevent
-version=4.32
+version=5.22
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/AnyEvent-$version.tar.gz)
 
