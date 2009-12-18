@@ -2,7 +2,7 @@
 # URL: http://fuse.sourceforge.net/wiki/index.php/FuseIso
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: fuse, glib, zlib
+# Depends on: fuse, glib
 
 name=fuseiso
 version=20070708
