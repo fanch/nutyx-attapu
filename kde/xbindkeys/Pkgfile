@@ -1,9 +1,8 @@
 # Description: configurateur de touches (multimédia et autres)
-
 # URL: http://hocwp.free.fr/xbindkeys/xbindkeys.html
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: libtool
+# Depends on: xorg-libx11, guile
 
 name=xbindkeys
 version=1.8.2
