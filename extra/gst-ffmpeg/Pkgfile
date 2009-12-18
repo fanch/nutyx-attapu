@@ -2,7 +2,7 @@
 # URL: http://gstreamer.freedesktop.org/modules/gst-ffmpeg.html
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: bzip2, ffmpeg, gstreamer, gst-plugins-base 
+# Depends on: ffmpeg, gstreamer, gst-plugins-base 
 
 name=gst-ffmpeg
 version=0.10.7
