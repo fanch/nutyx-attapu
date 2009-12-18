@@ -2,7 +2,7 @@
 # URL:         http://www.fukt.bsnet.se/~per/pkgutils/
 # Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:  libarchive
+# Depends on: 
 
 name=pkgutils
 version=5.34.0
