@@ -2,7 +2,7 @@
 # URL: http://xdialog.free.fr/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: gettext, gtk
+# Depends on: gtk
 
 name=xdialog
 version=2.3.1
