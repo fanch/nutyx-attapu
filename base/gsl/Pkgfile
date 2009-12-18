@@ -2,13 +2,12 @@
 # URL: http://www.gnu.org/software/gsl/gsl.html
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: glibc, bash
+# Depends on:
 
 name=gsl
 version=1.13
 release=1
 source=(http://ftp.belnet.be/mirror/ftp.gnu.org/gnu/gsl/$name-$version.tar.gz)
-install=gsl.install
 
 build() {
     cd $name-$version
