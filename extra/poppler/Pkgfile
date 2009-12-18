@@ -2,7 +2,7 @@
 # URL: http://poppler.freedesktop.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: pkg-config, fontconfig, libjpeg, cairo, libxml2, openjpeg
+# Depends on: fontconfig, libjpeg, cairo, libxml2, openjpeg
 
 name=poppler
 version=0.10.7
