@@ -2,7 +2,7 @@
 # URL: http://www.videolan.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: ffmpeg, flac, freetype, fribidi, goom, lame, libcdio, libdvbpsi, libdvdcss, libdvdread, libdvdnav, libebml, libiconv, libid3tag, libmad, libmatroska, libogg, libpng, speex, libtheora, libvorbis, libxml2, libmpeg2, openslp, portaudio, lame, vcdimager, x264, zlib, aalib, libcaca, libmpeg2, libopendaap, libmp4v2, live, libdca, sdl_image, qt, libnotify
+# Depends on: ffmpeg, flac, freetype, fribidi, goom, lame, libcdio, libdvbpsi, libdvdcss, libdvdread, libdvdnav, libebml, libiconv, libid3tag, libmad, libmatroska, libogg, libpng, speex, libtheora, libvorbis, libxml2, libmpeg2, openslp, portaudio, lame, vcdimager, x264, aalib, libcaca, libmpeg2, libopendaap, libmp4v2, live, libdca, sdl_image, qt, libnotify
 
 name=vlc-plugin
 version=1.0.1
