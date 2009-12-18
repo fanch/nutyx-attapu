@@ -2,7 +2,7 @@
 # URL: http://libcdaudio.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: glibc
+# Depends on: 
 
 name=libcdaudio
 version=0.99.12
