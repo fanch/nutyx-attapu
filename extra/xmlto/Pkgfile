@@ -2,7 +2,7 @@
 # URL: http://cyberelk.net/tim/software/xmlto/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxslt, docbook-xsl
+# Depends on: libxslt, docbook-xsl, docbook-xml
 
 name=xmlto
 version=0.0.21
