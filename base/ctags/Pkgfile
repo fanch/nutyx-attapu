@@ -2,19 +2,20 @@
 # URL: http://ctags.sourceforge.net/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glibc
+# Depends on:
 
 name=ctags
 version=5.7
-release=1
+release=2
 source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 
 
 build() {
 	cd $name-$version
-        ./configure --prefix=/usr
+        ./configure --prefix=/usr \
+	--mandir=/usr/share/man
 	make
-	make prefix=$PKG/usr install
+	make prefix=$PKG/usr mandir=$PKG/usr/share/man install
 
 }
