@@ -16,28 +16,36 @@ drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
 drwxr-xr-x	root/root	etc/sysconfig/
 drwxr-xr-x	root/root	lib/
+-rwxr-xr-x	root/root	lib/libip4tc.la
+lrwxrwxrwx	root/root	lib/libip4tc.so -> libip4tc.so.0.0.0
+lrwxrwxrwx	root/root	lib/libip4tc.so.0 -> libip4tc.so.0.0.0
+-rwxr-xr-x	root/root	lib/libip4tc.so.0.0.0
+-rwxr-xr-x	root/root	lib/libip6tc.la
+lrwxrwxrwx	root/root	lib/libip6tc.so -> libip6tc.so.0.0.0
+lrwxrwxrwx	root/root	lib/libip6tc.so.0 -> libip6tc.so.0.0.0
+-rwxr-xr-x	root/root	lib/libip6tc.so.0.0.0
 -rw-r--r--	root/root	lib/libipq.a
 -rwxr-xr-x	root/root	lib/libiptc.la
 lrwxrwxrwx	root/root	lib/libiptc.so -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	lib/libiptc.so.0 -> libiptc.so.0.0.0
 -rwxr-xr-x	root/root	lib/libiptc.so.0.0.0
 -rwxr-xr-x	root/root	lib/libxtables.la
-lrwxrwxrwx	root/root	lib/libxtables.so -> libxtables.so.2.0.0
-lrwxrwxrwx	root/root	lib/libxtables.so.2 -> libxtables.so.2.0.0
--rwxr-xr-x	root/root	lib/libxtables.so.2.0.0
+lrwxrwxrwx	root/root	lib/libxtables.so -> libxtables.so.4.0.0
+lrwxrwxrwx	root/root	lib/libxtables.so.4 -> libxtables.so.4.0.0
+-rwxr-xr-x	root/root	lib/libxtables.so.4.0.0
 drwxr-xr-x	root/root	lib/pkgconfig/
 -rw-r--r--	root/root	lib/pkgconfig/libiptc.pc
 -rw-r--r--	root/root	lib/pkgconfig/xtables.pc
 drwxr-xr-x	root/root	sbin/
--rwxr-xr-x	root/root	sbin/ip6tables
+lrwxrwxrwx	root/root	sbin/ip6tables -> ip6tables-multi
 -rwxr-xr-x	root/root	sbin/ip6tables-multi
--rwxr-xr-x	root/root	sbin/ip6tables-restore
--rwxr-xr-x	root/root	sbin/ip6tables-save
--rwxr-xr-x	root/root	sbin/iptables
+lrwxrwxrwx	root/root	sbin/ip6tables-restore -> ip6tables-multi
+lrwxrwxrwx	root/root	sbin/ip6tables-save -> ip6tables-multi
+lrwxrwxrwx	root/root	sbin/iptables -> iptables-multi
 -rwxr-xr-x	root/root	sbin/iptables-multi
--rwxr-xr-x	root/root	sbin/iptables-restore
--rwxr-xr-x	root/root	sbin/iptables-save
--rwxr-xr-x	root/root	sbin/iptables-xml
+lrwxrwxrwx	root/root	sbin/iptables-restore -> iptables-multi
+lrwxrwxrwx	root/root	sbin/iptables-save -> iptables-multi
+lrwxrwxrwx	root/root	sbin/iptables-xml -> /sbin/iptables-multi
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/libipq.h
@@ -116,6 +124,7 @@ drwxr-xr-x	root/root	usr/lib/xtables/
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_mac.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_mark.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_multiport.so
+-rwxr-xr-x	root/root	usr/lib/xtables/libxt_osf.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_owner.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_physdev.so
 -rwxr-xr-x	root/root	usr/lib/xtables/libxt_pkttype.so
