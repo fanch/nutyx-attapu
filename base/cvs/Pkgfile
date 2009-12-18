@@ -12,7 +12,7 @@ source=(http://nongnu.mirror.ironie.org/releases/$name/source/stable/$version/$n
 build() {
 	cd $name-$version
 	./configure --prefix=/usr
-	make -j3
+	make
 	make DESTDIR=$PKG install
 	rm -r $PKG/usr/share/info/dir
 }
