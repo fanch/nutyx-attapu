@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ConsoleKit/
+drwxr-xr-x	root/root	etc/ConsoleKit/run-seat.d/
 drwxr-xr-x	root/root	etc/ConsoleKit/run-session.d/
 drwxr-xr-x	root/root	etc/ConsoleKit/seats.d/
 -rw-r--r--	root/root	etc/ConsoleKit/seats.d/00-primary.seat
@@ -17,6 +18,7 @@ drwxr-xr-x	root/root	usr/include/ConsoleKit/ck-connector/
 -rw-r--r--	root/root	usr/include/ConsoleKit/ck-connector/ck-connector.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/ConsoleKit/
+drwxr-xr-x	root/root	usr/lib/ConsoleKit/run-seat.d/
 drwxr-xr-x	root/root	usr/lib/ConsoleKit/run-session.d/
 drwxr-xr-x	root/root	usr/lib/ConsoleKit/scripts/
 -rwxr-xr-x	root/root	usr/lib/ConsoleKit/scripts/ck-system-restart
