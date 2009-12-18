@@ -2,7 +2,7 @@
 # URL: http://search.cpan.org/~msergeant/XML-Parser-2.36/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl, expat
+# Depends on: expat
 
 name=p5-xml-parser
 version=2.36
