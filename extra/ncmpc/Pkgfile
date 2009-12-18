@@ -2,7 +2,7 @@
 # URL: http://mpd.wikia.com/wiki/Client:Ncmpc
 # Maintainer: NuTyX packager team 
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: ncurses
+# Depends on: glib
 name=ncmpc
 version=0.15
 release=1
