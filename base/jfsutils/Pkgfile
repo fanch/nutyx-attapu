@@ -1,11 +1,11 @@
 # Description: Diverses outils pour la manipulation des partitions JFS
-# URL: http://www.linux-ntfs.org/doku.php?id=downloads
+# URL: http://jfs.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: e2fsprogs
+# Depends on:
 
 name=jfsutils
-version=1.1.13
+version=1.1.14
 release=1
 source=(http://jfs.sourceforge.net/project/pub/$name-$version.tar.gz)
 
