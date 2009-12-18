@@ -2,7 +2,7 @@
 # URL:http://www.aircrack-ng.org
 # Maintainer: NuTyX core team
 # Packager: Skippythekangoo AT yahoo DOT fr
-# Depends on: sqlite3, openssl, wireless_tools, autoconf, libtool
+# Depends on: sqlite3, wireless_tools
 name=aircrack-ng
 version=1.0
 release=1
