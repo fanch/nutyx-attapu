@@ -2,7 +2,7 @@
 # URL: http://www.zlib.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glibc
+# Depends on:
 
 name=zlib
 version=1.2.3
