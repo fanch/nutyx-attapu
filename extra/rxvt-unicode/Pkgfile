@@ -2,7 +2,7 @@
 # URL:http://software.schmorp.de/pkg/rxvt-unicode.html
 # Maintainer:  NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: xorg-libxft, ncurses, perl
+# Depends on: xorg-libxft
 
 name=rxvt-unicode
 version=9.06
