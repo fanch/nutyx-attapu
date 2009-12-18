@@ -17,6 +17,7 @@ lrwxrwxrwx	root/root	bin/delgroup -> busybox
 lrwxrwxrwx	root/root	bin/deluser -> busybox
 lrwxrwxrwx	root/root	bin/df -> busybox
 lrwxrwxrwx	root/root	bin/dmesg -> busybox
+lrwxrwxrwx	root/root	bin/dnsdomainname -> busybox
 lrwxrwxrwx	root/root	bin/dumpkmap -> busybox
 lrwxrwxrwx	root/root	bin/echo -> busybox
 lrwxrwxrwx	root/root	bin/ed -> busybox
