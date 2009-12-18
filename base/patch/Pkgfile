@@ -1,8 +1,8 @@
 # Description: GNU patch
 # URL: http://www.gnu.org/software/patch/patch.html
-# Maintainer: Linux From Scratch
+# Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: module-init-tools
+# Depends on: 
 
 name=patch
 version=2.6
