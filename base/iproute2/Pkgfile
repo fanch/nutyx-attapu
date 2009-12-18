@@ -2,7 +2,7 @@
 # URL: http://linux-net.osdl.org/index.php/Iproute2
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gzip
+# Depends on: 
 
 name=iproute2
 version=2.6.29.1
