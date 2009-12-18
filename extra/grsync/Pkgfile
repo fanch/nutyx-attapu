@@ -2,7 +2,7 @@
 # URL: http://www.opbyte.it/grsync/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: atk, expat, fontconfig, freetype, glib, gtk, ktsuss, libpng, libX11, pango, rsync, zlib
+# Depends on: atk, expat, fontconfig, freetype, glib, gtk, ktsuss, libpng, libX11, pango
 
 name=grsync
 version=0.6.3
