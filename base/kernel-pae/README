@@ -1,0 +1,27 @@
+La technique d'Extension d'adresse physique (Physical Address Extension ou PAE):
+
+EXPLICATION:
+************
+
+Cette technique se réfère à une fonctionnalité des processeurs x86 qui permettent 
+d'accepter jusqu'à 64 gibioctets (souvent abrégés en Gio) de mémoire physique 
+sur des systèmes 32 bits (limités à 2 ^ 32 = 4 gibioctets sans PAE), 
+pourvu que le système d'exploitation le supporte. 
+Elle est fournie par les processeurs Intel Pentium Pro et suivants 
+(incluant tous les processeurs de la série Pentium 
+à l'exception des Pentium M disposant d'un bus 400Mhz), 
+ainsi que par des processeurs compatibles tels que ceux de AMD. 
+
+COMMENT SAVOIR:
+***************
+
+La commande:
+cat /proc/cpuinfo donne toute sorte d'informations sur le processeur de la machine.
+
+Le drapeau PAE du champ d'identification du CPU CPUID permet aux systèmes d'exploitation 
+de déterminer si le processeur supporte cette fonctionnalité
+
+PRECAUTION:
+***********
+
+le paquet "kernel" doit être déinstallé avant de pouvoir installer "kernel-pae".

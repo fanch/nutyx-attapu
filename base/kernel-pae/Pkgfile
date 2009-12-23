@@ -1,0 +1,59 @@
+# Description: Le kernel avec support d'adressage physique étendue permettant de reconnaitre jusqu'a 64 gigaoctets de mémoire RAM sur un système 32 bits normalement limité à 4 gigaoctets. Ne fonctionne que sur les processeurs qui le supporte. 
+# URL:  http://www.kernel.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=kernel-pae
+version=2.6.32.2
+release=1
+source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
+	config_64 config)
+build(){
+cd linux-$version
+make mrproper
+case `uname -m` in 
+	x86_64)
+	mv $SRC/config_64 ./.config;;
+	i?86)
+	mv $SRC/config ./.config;;
+esac
+make -j3
+make INSTALL_MOD_PATH=$PKG modules_install
+mkdir -p $PKG/boot
+case `uname -m` in 
+	x86_64)
+		cp  System.map \
+		$PKG/boot/System_64.map-$version
+		cp  .config    \
+		$PKG/boot/config_64-$version
+		cp  arch/x86_64/boot/bzImage \
+		$PKG/boot/kernel_64-$version
+		ln -sf kernel_64-$version \
+		$PKG/boot/kernel_64 ;;
+	i?86)
+		cp  System.map \
+		$PKG/boot/System.map-$version
+		cp  .config \
+		$PKG/boot/config-$version
+		cp  arch/i386/boot/bzImage \
+		$PKG/boot/kernel-$version 
+		ln -sf kernel-$version \
+		$PKG/boot/kernel;;
+esac
+cd $PKG/lib/modules/$version/
+rm {build,source}
+ln -sv /usr/src/linux-$version build
+ln -sv /usr/src/linux-$version source
+
+mkdir -p $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/.config $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/Makefile $PKG/usr/src/linux-$version/
+mkdir -p $PKG/usr/src/linux-$version/kernel
+mv $SRC/linux-$version/scripts $PKG/usr/src/linux-$version/
+chmod og-w -R $PKG/usr/src/linux-$version/scripts
+mv $SRC/linux-$version/include $PKG/usr/src/linux-$version/
+mkdir $PKG/usr/src/linux-$version/arch
+mv $SRC/linux-$version/arch/x86 $PKG/usr/src/linux-$version/arch
+mv $SRC/linux-$version/vmlinux $PKG/usr/src/linux-$version/
+mv $SRC/linux-$version/Module.symvers $PKG/usr/src/linux-$version/
+}
