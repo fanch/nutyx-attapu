@@ -1,0 +1,19 @@
+# Description: librairie pour le rendu des documents postscript
+# URL: http://libspectre.freedesktop.org/wiki/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ghostscript
+
+name=libspectre
+version=0.2.3
+release=1
+source=(http://libspectre.freedesktop.org/releases/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
+
