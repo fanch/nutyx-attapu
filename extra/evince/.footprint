@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	etc/gconf/
 drwxr-xr-x	root/root	etc/gconf/schemas/
 -rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-comics.schemas
 -rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-djvu.schemas
+-rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-ps.schemas
 -rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer.schemas
 -rw-r--r--	root/root	etc/gconf/schemas/evince.schemas
 drwxr-xr-x	root/root	usr/
@@ -80,11 +81,15 @@ drwxr-xr-x	root/root	usr/lib/evince/1/backends/
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libpixbufdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.so
+-rw-r--r--	root/root	usr/lib/evince/1/backends/libpsdocument.a
+-rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpsdocument.la
+-rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpsdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libtiffdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/pdfdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/pixbufdocument.evince-backend
+-rw-r--r--	root/root	usr/lib/evince/1/backends/psdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/tiffdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/libevdocument.a
 -rwxr-xr-x	root/root	usr/lib/libevdocument.la
@@ -102,10 +107,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/evince.desktop
-drwxr-xr-x	root/root	usr/share/ede/
-drwxr-xr-x	root/root	usr/share/ede/programs/
-drwxr-xr-x	root/root	usr/share/ede/programs/Utilities/
--rw-r--r--	root/root	usr/share/ede/programs/Utilities/evince.desktop
 drwxr-xr-x	root/root	usr/share/evince/
 -rw-r--r--	root/root	usr/share/evince/evince-previewer-ui.xml
 -rw-r--r--	root/root	usr/share/evince/evince-toolbar.xml
