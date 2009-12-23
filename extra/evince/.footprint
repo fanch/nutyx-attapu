@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	etc/gconf/
 drwxr-xr-x	root/root	etc/gconf/schemas/
 -rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-comics.schemas
 -rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer-djvu.schemas
+-rw-r--r--	root/root	etc/gconf/schemas/evince-thumbnailer.schemas
 -rw-r--r--	root/root	etc/gconf/schemas/evince.schemas
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -73,12 +74,16 @@ drwxr-xr-x	root/root	usr/lib/evince/1/backends/
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libimpressdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libimpressdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libimpressdocument.so
+-rw-r--r--	root/root	usr/lib/evince/1/backends/libpdfdocument.a
+-rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpdfdocument.la
+-rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpdfdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libpixbufdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libpixbufdocument.so
 -rw-r--r--	root/root	usr/lib/evince/1/backends/libtiffdocument.a
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.la
 -rwxr-xr-x	root/root	usr/lib/evince/1/backends/libtiffdocument.so
+-rw-r--r--	root/root	usr/lib/evince/1/backends/pdfdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/pixbufdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/evince/1/backends/tiffdocument.evince-backend
 -rw-r--r--	root/root	usr/lib/libevdocument.a
