@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/kill
 -rwxr-xr-x	root/root	bin/ps
-drwxr-xr-x	root/root	lib64/
--rwxr-xr-x	root/root	lib64/libproc-3.2.8.so
+drwxr-xr-x	root/root	lib/
+-rwxr-xr-x	root/root	lib/libproc-3.2.8.so
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/sysctl
 drwxr-xr-x	root/root	usr/
