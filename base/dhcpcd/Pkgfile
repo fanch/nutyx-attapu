@@ -5,7 +5,7 @@
 # Depends on:
 
 name=dhcpcd
-version=5.0.6
+version=5.1.3
 release=1
 source=( http://roy.marples.name/downloads/$name/$name-$version.tar.bz2\
           dhcpcd \
@@ -16,13 +16,12 @@ build() {
         wget http://www.linuxfromscratch.org/blfs/downloads/svn/${scripts}-${scriptsversion}.tar.bz2
         tar xvf $scripts-$scriptsversion.tar.bz2
 	cd $name-$version
-  export PREFIX=/usr 
-  sed -i 's/${PREFIX}\/etc/\/etc/' Makefile
-  sed -i 's/\/db/\/lib\/dhcpcd/' Makefile
-  sed -i 's/\/libexec/\/lib\/dhcpcd/' Makefile
-  sed -i 's/\/libexec/\/lib\/dhcpcd/' dhcpcd-hooks/Makefile
-  sed -i 's/${PREFIX}\/sbin/\/sbin/' Makefile
-
+	    ./configure --prefix= \
+                --libexecdir=/usr/lib/dhcpcd \
+                --dbdir=/var/lib/dhcpcd \
+                --sysconfdir=/etc \
+                --os=linux \
+                --with-hooks=none
 	make
 	make DESTDIR=$PKG install
         mkdir -p $PKG/etc/sysconfig/network-devices/ifconfig.eth0
@@ -30,4 +29,5 @@ build() {
 	cd ../$scripts-$scriptsversion
 	make DESTDIR=$PKG install-service-dhcpcd
 	cd ../..
+
 }
