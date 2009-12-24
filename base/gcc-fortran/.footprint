@@ -2,27 +2,13 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/f90 -> gfortran
 lrwxrwxrwx	root/root	usr/bin/f95 -> gfortran
--rwxr-xr-x	root/root	usr/bin/gfortran
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gcc/
 drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/
 drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/
--rwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/f951
-drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/finclude/
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/finclude/omp_lib.f90
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/finclude/omp_lib.h
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/finclude/omp_lib.mod
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/finclude/omp_lib_kinds.mod
 drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/
 -rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/limits.h
 -rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/syslimits.h
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/libgfortranbegin.a
--rwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/libgfortranbegin.la
--rw-r--r--	root/root	usr/lib/libgfortran.a
--rwxr-xr-x	root/root	usr/lib/libgfortran.la
-lrwxrwxrwx	root/root	usr/lib/libgfortran.so -> libgfortran.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libgfortran.so.3 -> libgfortran.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libgfortran.so.3.0.0
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/gfortran.1.gz
+-rw-r--r--	root/root	usr/man/man1/gfortran.1
