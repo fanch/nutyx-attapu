@@ -2,15 +2,17 @@
 # URL: http://cdrkit.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libcap2
+# Depends on: cmake, libcap
 
 name=cdrkit
 version=1.1.9
 release=1
-source=(http://cdrkit.org/releases/$name-$version.tar.gz)
+source=(http://cdrkit.org/releases/$name-$version.tar.gz\
+	cdrkit-1.1.9-glibc-2.10.patch)
 
 build() {
 	cd $name-$version
+	patch -p1 -i $SRC/$name-$version-glibc-2.10.patch
 	# ./configure --prefix=/usr
 	make
 	make PREFIX=$PKG/usr install
