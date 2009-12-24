@@ -2,7 +2,7 @@
 # URL: http://amarok.kde.org/fr
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, qtscriptgenerator, taglib-extras
+# Depends on: kdelibs, kdemultimedia, qtscriptgenerator, taglib-extras
 
 name=amarok
 version=2.2.1.90
