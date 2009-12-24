@@ -7,7 +7,7 @@
 name=file
 version=5.03
 release=1
-source=(ftp://ftp.gw.com/mirrors/unix/$name/$name-$version.tar.gz)
+source=(ftp://ftp.fu-berlin.de/unix/tools/file/$name-$version.tar.gz)
 
 
 build() {
