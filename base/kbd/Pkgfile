@@ -5,16 +5,15 @@
 # Depends on:
 
 name=kbd
-version=1.15
+version=1.15.1
 release=1
 source=(http://ftp.altlinux.com/pub/people/legion/kbd/kbd-$version.tar.gz \
 http://www.linuxfromscratch.org/patches/lfs/development/kbd-$version-backspace-1.patch \
 	)
 build() {
 cd $name-$version
+autoreconf
 patch -Np1 -i ../kbd-$version-backspace-1.patch
-sed -i -e '1i KEYCODES_PROGS = @KEYCODES_PROGS@' \
-	-e '1i RESIZECONS_PROGS = @RESIZECONS_PROGS@' src/Makefile.in
 ./configure --prefix=/usr \
 	--mandir=/usr/share/man \
 	--datadir=/lib/kbd

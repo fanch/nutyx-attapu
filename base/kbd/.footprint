@@ -313,6 +313,7 @@ drwxr-xr-x	root/root	lib/kbd/keymaps/i386/azerty/
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/azerty/wangbe2.map.gz
 drwxr-xr-x	root/root	lib/kbd/keymaps/i386/dvorak/
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/dvorak/ANSI-dvorak.map.gz
+-rw-r--r--	root/root	lib/kbd/keymaps/i386/dvorak/dvorak-fr.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/dvorak/dvorak-l.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/dvorak/dvorak-r.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/dvorak/dvorak.map.gz
@@ -390,6 +391,7 @@ drwxr-xr-x	root/root	lib/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/it2.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/jp106.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/kazakh.map.gz
+-rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/ky_alt_sh-UTF-8.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/kyrgyz.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/la-latin1.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/lt.baltic.map.gz
@@ -444,6 +446,7 @@ drwxr-xr-x	root/root	lib/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/sk-qwerty.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/sr-cy.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/sv-latin1.map.gz
+-rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/tj_alt-UTF8.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/tr_q-latin5.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/tralt.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwerty/trf.map.gz
@@ -468,6 +471,7 @@ drwxr-xr-x	root/root	lib/kbd/keymaps/i386/qwertz/
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/de-latin1.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/de.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/de_CH-latin1.map.gz
+-rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/de_alt_UTF-8.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/fr_CH-latin1.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/fr_CH.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/i386/qwertz/hu.map.gz
@@ -529,6 +533,7 @@ drwxr-xr-x	root/root	lib/kbd/keymaps/sun/
 -rw-r--r--	root/root	lib/kbd/keymaps/sun/sunt5-ru.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/sun/sunt5-uk.map.gz
 -rw-r--r--	root/root	lib/kbd/keymaps/sun/sunt5-us-cz.map.gz
+-rw-r--r--	root/root	lib/kbd/keymaps/sun/sunt6-uk.map.gz
 drwxr-xr-x	root/root	lib/kbd/unimaps/
 -rw-r--r--	root/root	lib/kbd/unimaps/8859-1.a0-ff.uni
 -rw-r--r--	root/root	lib/kbd/unimaps/8859-10.a0-ff.uni
@@ -609,6 +614,7 @@ lrwxrwxrwx	root/root	usr/bin/psfaddtable -> psfxtable
 lrwxrwxrwx	root/root	usr/bin/psfgettable -> psfxtable
 lrwxrwxrwx	root/root	usr/bin/psfstriptable -> psfxtable
 -rwxr-xr-x	root/root	usr/bin/psfxtable
+-rwxr-xr-x	root/root	usr/bin/resizecons
 -rwxr-xr-x	root/root	usr/bin/setkeycodes
 -rwxr-xr-x	root/root	usr/bin/setleds
 -rwxr-xr-x	root/root	usr/bin/setmetamode
