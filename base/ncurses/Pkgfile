@@ -6,12 +6,13 @@
 
 name=ncurses
 version=5.7
-release=1
+release=2
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
 ./configure --prefix=/usr \
+--mandir=/usr/share/man \
 --with-shared --without-debug \
 --enable-widec --with-install-prefix=$PKG
 make
