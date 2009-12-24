@@ -35,10 +35,7 @@ drwxr-xr-x	root/root	usr/share/nano/
 -rw-r--r--	root/root	usr/share/nano/groff.nanorc
 -rw-r--r--	root/root	usr/share/nano/html.nanorc
 -rw-r--r--	root/root	usr/share/nano/java.nanorc
-drwxr-xr-x	root/root	usr/share/nano/man-html/
--rw-r--r--	root/root	usr/share/nano/man-html/nano.1.html.gz
--rw-r--r--	root/root	usr/share/nano/man-html/nanorc.5.html.gz
--rw-r--r--	root/root	usr/share/nano/man-html/rnano.1.html.gz
+-rw-r--r--	root/root	usr/share/nano/makefile.nanorc
 -rw-r--r--	root/root	usr/share/nano/man.nanorc
 -rw-r--r--	root/root	usr/share/nano/mutt.nanorc
 -rw-r--r--	root/root	usr/share/nano/nanorc.nanorc
