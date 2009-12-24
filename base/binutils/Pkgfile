@@ -6,7 +6,7 @@
 
 name=binutils
 version=2.19.1
-release=1
+release=2
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 
 build() {
@@ -21,8 +21,11 @@ sed -i -e 's/getline/get_line/' libiberty/testsuite/test-demangle.c
 mkdir ../binutils-build
 cd ../binutils-build
 ../$name-$version/configure --prefix=/usr \
+--mandir=/usr/share/man \
+--infodir=/usr/share/info \
 --enable-shared
-
+sed -i -e "s:mandir \= \/usr\/share:mandir \= ${pkgdir}\/usr\/share:" Makefile
+sed -i -e "s:infodir \= \/usr\/share:infodir \= ${pkgdir}\/usr\/share:" Makefile 
 make tooldir=/usr
 make check
 make tooldir=/usr DESTDIR=$PKG install
