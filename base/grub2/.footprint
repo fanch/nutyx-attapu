@@ -12,7 +12,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/grub-editenv
 -rwxr-xr-x	root/root	usr/bin/grub-mkelfimage
--rwxr-xr-x	root/root	usr/bin/grub-mkfont
 -rwxr-xr-x	root/root	usr/bin/grub-mkimage
 -rwxr-xr-x	root/root	usr/bin/grub-mkrescue
 drwxr-xr-x	root/root	usr/lib/
