@@ -5,9 +5,9 @@
 # Depends on: 
 
 name=udev
-version=146
+version=149
 release=1
-_lfs_release=20090523
+_lfs_release=20090925
 source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
 http://www.linuxfromscratch.org/lfs/downloads/development/udev-config-${_lfs_release}.tar.bz2)
 build() {
@@ -22,8 +22,8 @@ ln -s /proc/kcore $PKG/lib/udev/devices/core
 ./configure --prefix=/usr \
     --sysconfdir=/etc --sbindir=/sbin \
     --with-rootlibdir=/lib --libexecdir=/lib/udev \
-    --docdir=/usr/share/doc/udev-146 \
-    --disable-extras
+    --docdir=/usr/share/doc/udev-$version \
+    --disable-extras --disable-introspection
 make 
 make install DESTDIR=$PKG mandir="/usr/share/man"
 install -m644 -v rules/packages/64-*.rules \
@@ -37,4 +37,3 @@ cd ../udev-config-${_lfs_release}
 make DESTDIR=$PKG install
 make DESTDIR=$PKG install-doc
 }
-
