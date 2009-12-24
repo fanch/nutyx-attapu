@@ -23,11 +23,6 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/alien/
 drwxr-xr-x	root/root	usr/share/alien/patches/
--rw-r--r--	root/root	usr/share/alien/patches/j2sdk_1.4.2_05-1.diff.gz
--rw-r--r--	root/root	usr/share/alien/patches/jdk_1.5.0-1.diff.gz
--rw-r--r--	root/root	usr/share/alien/patches/lgtoclnt_7.1.2-2.diff.gz
--rw-r--r--	root/root	usr/share/alien/patches/motif-devel_2.1.10-7.diff.gz
--rw-r--r--	root/root	usr/share/alien/patches/motif_2.1.10-7.diff.gz
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -r--r--r--	root/root	usr/share/man/man1/alien.1.gz

@@ -5,12 +5,12 @@
 # Depends on:
 
 name=p5-alien
-version=8.78
+version=8.79
 release=1
-source=(http://ftp.debian.org/debian/pool/main/a/$name/${name}_${version}.tar.gz)
+source=(http://ftp.debian.org/debian/pool/main/a/alien/alien_${version}.tar.gz)
 
 build () {
-   cd $name
+   cd alien
    perl Makefile.PL
    make DESTDIR=${PKG} \
          PREFIX=${PKG}/usr \
