@@ -2,11 +2,10 @@
 # URL: http://jw.smts.ch/files/crux/prt-get_quickstart.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: pkgutils
 
 name=prt-get
 version=5.16
-release=3
+release=4
 source=(http://jw.smts.ch/files/crux/prt-get-$version.tar.gz
 	prt-get-$version-printf_regex.diff
 	prt-get.conf prt-get.aliases)
@@ -17,7 +16,7 @@ build() {
 
     ./configure \
         --prefix=/usr \
-        --mandir=/usr/man
+        --mandir=/usr/share/man
     make
     make DESTDIR=$PKG install
 
