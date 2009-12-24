@@ -1,0 +1,17 @@
+# Description: un navigateur web léger basé sur webkit
+# URL: http://code.google.com/p/arora/ 
+# Maintainer: NuTyX core team
+# Packager: guy_
+# Depends on: webkit
+
+name=arora
+version=0.10.2
+release=1
+source=(http://arora.googlecode.com/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	qmake
+	make
+	make INSTALL_ROOT=$PKG install
+}
