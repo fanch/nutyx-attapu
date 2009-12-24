@@ -1,2 +1,5 @@
-dfe0d2a27439454fbafdeeef65fefade  db-4.7.25-upstream_fixes-1.patch
 ec2b87e833779681a0c3a814aa71359e  db-4.7.25.tar.gz
+5fdf101259e5164dea1c8c86214fde38  patch.4.7.25.1
+bd410a11c71fee52fddb6aa2d8d4f80c  patch.4.7.25.2
+6fcd69f64f5b34bfe8f0a63cc2e402c1  patch.4.7.25.3
+c71830a1303cd34595ca655257196eec  patch.4.7.25.4

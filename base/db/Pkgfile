@@ -2,17 +2,16 @@
 # URL: http://www.sleepycat.com/products/db.shtml
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=db
 version=4.7.25
-release=1
+release=2
 source=(http://download.oracle.com/berkeley-db/$name-$version.tar.gz \
-	http://www.linuxfromscratch.org/patches/lfs/development/$name-$version-upstream_fixes-1.patch)
+	http://www.oracle.com/technology/products/berkeley-db/db/update/$version/patch.$version.{1,2,3,4})
 
 build() {
 	cd $name-$version
-	patch -Np1 -i ../$name-$version-upstream_fixes-1.patch
+	cat $SRC/patch.$version.{1,2,3,4} | patch -p0
 	cd build_unix
 	../dist/configure --prefix=/usr \
 		--enable-compat185 \
