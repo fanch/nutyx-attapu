@@ -2,7 +2,7 @@
 # URL: http://syslinux.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mtools
+# Depends on: mtools, nasm
 
 name=syslinux
 version=3.82
