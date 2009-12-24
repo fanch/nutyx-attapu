@@ -6,12 +6,12 @@
 
 name=bash
 version=4.0
-release=1
+release=2
 source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz \
-http://www.linuxfromscratch.org/patches/lfs/development/bash-$version-fixes-2.patch)
+http://www.linuxfromscratch.org/patches/lfs/development/bash-$version-fixes-5.patch)
 build() {
 cd $name-$version
-patch -Np1 -i ../bash-$version-fixes-2.patch
+patch -Np1 -i ../bash-$version-fixes-5.patch
 ./configure --prefix=/usr \
 	--bindir=/bin \
 	--htmldir=/usr/share/doc/bash-4.0 \
