@@ -2,21 +2,21 @@
 # URL: http://www.alsa-project.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib
+# Depends on: alsa-lib, dialog
 
 name=alsa-utils
-version=1.0.21
+version=1.0.22
 release=1
 source=(ftp://ftp.alsa-project.org/pub/utils/$name-$version.tar.bz2 \
          40-alsa.rules \
-	http://www.linuxfromscratch.org/patches/blfs/svn/alsa-utils-$version-no_xmlto-1.patch) 
+	http://www.linuxfromscratch.org/patches/blfs/svn/alsa-utils-1.0.21-no_xmlto-1.patch) 
 
 build() {
 	source /etc/blfs-bootscripts
         wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
         tar xvf $scripts-$scriptsversion.tar.bz2
 	cd $name-$version
-	patch -Np1 -i ../$name-$version-no_xmlto-1.patch
+	patch -Np1 -i ../$name-1.0.21-no_xmlto-1.patch
 	./configure --prefix=/usr \
                     --mandir=/usr/share/man \
                     --infodir=/usr/share/info
