@@ -5,7 +5,7 @@
 # Depends on:
 
 name=coreutils
-version=7.5
+version=8.2
 release=1
 source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz \
 	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-i18n-1.patch\
