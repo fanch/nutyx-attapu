@@ -5,12 +5,12 @@
 # Depends on: attr
 
 name=acl
-version=2.2.48
+version=2.2.47.1
 release=1
-source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/acl-$version.src.tar.gz)
+source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/acl_2.2.47-1.tar.gz)
 
 build() {
-cd acl-$version
+cd acl-*
 ./configure --prefix=/usr
 make
 make prefix=$PKG/usr install install-lib install-dev
