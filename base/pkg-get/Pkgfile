@@ -6,7 +6,7 @@
 
 name=pkg-get
 version=0.4.5
-release=10
+release=11
 source=(http://www.varlock.com/files/$name-$version.tar.gz \
 	pkg-get-0.4.5-NuTyX-02.patch pkg-get.conf pkg-repgen.patch syn)
 
