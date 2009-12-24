@@ -5,7 +5,7 @@
 # Depends on:
 
 name=aaabasicfs
-version=2009.1
+version=2009.2
 release=1
 scriptsversion=lfs-bootscripts-20090817
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
