@@ -14,6 +14,9 @@ build () {
 cd $name-$version
 make
 make DESTDIR=$PKG install
+mkdir -p $PKG/usr/share/
+mv $PKG/usr/man \
+$PKG/usr/share
 for i in base extra xorg xfce kde gnome
 do
 	install -m 0644 ../$i.rsync $PKG/etc/ports/$i.rsync
