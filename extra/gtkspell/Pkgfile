@@ -1,11 +1,11 @@
-# $Id: build,v 1.5 2008/08/30 19:47:51 linda Exp root $
 # Description: Highlighting and replacement of misspelled words
 # URL: http://gtkspell.sourceforge.net/
-# Packager: Floreal Cabares, cabaflo at wanadoo dot fr
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
 # Depends on: gtk, aspell, enchant
 
 name=gtkspell
-version=2.0.14
+version=2.0.16
 release=1
 source=(http://gtkspell.sourceforge.net/download/$name-$version.tar.gz)
 
