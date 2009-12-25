@@ -13,7 +13,7 @@ build() {
 	make
 
 	install -d $PKG/usr/bin
-	install -d $PKG/usr/man/man1
+	install -d $PKG/usr/share/man/man1
 
-	make BINDIR=$PKG/usr/bin MANDIR=$PKG/usr/man/man1 install
+	make BINDIR=$PKG/usr/bin MANDIR=$PKG/usr/share/man/man1 install
 }
