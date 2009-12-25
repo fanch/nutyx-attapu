@@ -1,8 +1,8 @@
 # Description: Bibliothèque TrueType pour libsdl.
 # URL: http://www.libsdl.org/projects/SDL_ttf/
-# Maintainer: Danny Rawlins <monster dot romster at gmail dot com>
-# Packager: Simone Rota <sip at crux dot nu>
-# Depends on: freetype libsdl
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: freetype, sdl
 
 name=sdl_ttf
 version=2.0.8
