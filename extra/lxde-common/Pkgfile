@@ -8,12 +8,12 @@ name=lxde-common
 version=0.5.0
 release=2
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
-	config chrystal_red_root.png nutyx2009_2.jpg lxde-common-$version-nutyx-01.patch\
-	bouton03.png)
+	config chrystal_red_root.png nutyx2009_2.jpg lxde-common-$version-nutyx-02.patch\
+	nutyx2009_2.png)
 
 build() {
 cd $name-$version
-patch -Np1 -i ../$name-$version-nutyx-01.patch
+patch -Np1 -i ../$name-$version-nutyx-02.patch
 ./configure --prefix=/usr \
 	--sysconfdir=/etc
 make
@@ -26,8 +26,8 @@ install -D -m644 ../config \
 	$PKG/usr/share/lxde/config
 install -D -m644 ../nutyx2009_2.jpg \
 	$PKG/usr/share/lxde/wallpapers/nutyx2009_2.jpg
-install -D -m644 ../bouton03.png \
-	$PKG/usr/share/lxde/images/bouton03.png
+install -D -m644 ../nutyx2009_2.png \
+	$PKG/usr/share/lxde/images/nutyx2009_2.png
 install -D -m644 ../chrystal_red_root.png \
 	$PKG/usr/share/lxpanel/images/chrystal_red_root.png
 }

@@ -14,7 +14,7 @@
      type = menu
      Config {
 -        image=@prefix@/share/lxde/images/lxde-icon.png
-+        image=/usr/share/lxde/images/bouton03.png
++        image=/usr/share/lxde/images/nutyx2009_2.png
          system {
          }
          separator {

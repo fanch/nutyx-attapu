@@ -13,9 +13,9 @@ drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/lxde/
 -rw-r--r--	root/root	usr/share/lxde/config
 drwxr-xr-x	root/root	usr/share/lxde/images/
--rw-r--r--	root/root	usr/share/lxde/images/bouton03.png
 -rw-r--r--	root/root	usr/share/lxde/images/logout-banner.png
 -rw-r--r--	root/root	usr/share/lxde/images/lxde-icon.png
+-rw-r--r--	root/root	usr/share/lxde/images/nutyx2009_2.png
 drwxr-xr-x	root/root	usr/share/lxde/openbox/
 -rw-r--r--	root/root	usr/share/lxde/openbox/menu.xml
 -rw-r--r--	root/root	usr/share/lxde/openbox/rc.xml
@@ -25,7 +25,7 @@ drwxr-xr-x	root/root	usr/share/lxde/wallpapers/
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_blue.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_green.jpg
 -rw-r--r--	root/root	usr/share/lxde/wallpapers/lxde_red.jpg
--rw-r--r--	root/root	usr/share/lxde/wallpapers/nutng.png
+-rw-r--r--	root/root	usr/share/lxde/wallpapers/nutyx2009_2.jpg
 drwxr-xr-x	root/root	usr/share/lxpanel/
 drwxr-xr-x	root/root	usr/share/lxpanel/images/
 -rw-r--r--	root/root	usr/share/lxpanel/images/chrystal_red_root.png
