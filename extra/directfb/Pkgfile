@@ -7,11 +7,11 @@
 name=directfb
 version=1.4.1
 release=1
-source=(http://www.directfb.org/downloads/Core/DirectFB-1.4/DirectFB-$version.tar.gz)
+source=(ftp://ftp.debian.org/debian/pool/main/d/directfb/directfb_1.4.1.orig.tar.gz)
 
 # To build with multicore add --enable-multi
 build() {
-	cd DirectFB-$version
+	cd $name-$version
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--enable-zlib \
