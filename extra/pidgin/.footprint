@@ -320,10 +320,6 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/purple.m4
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/pidgin.desktop
-drwxr-xr-x	root/root	usr/share/ede/
-drwxr-xr-x	root/root	usr/share/ede/programs/
-drwxr-xr-x	root/root	usr/share/ede/programs/Internet/
--rwxr-xr-x	root/root	usr/share/ede/programs/Internet/pidgin.desktop
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/

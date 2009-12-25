@@ -2,13 +2,12 @@
 # URL:  http://www.pidgin.im
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme, libidn, farsight2
+# Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, nss, nspr, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme, libidn, farsight2
 
 name=pidgin
 version=2.6.4
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
-	pidgin.desktop)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
@@ -29,5 +28,4 @@ build() {
 	 
 	make
 	make DESTDIR=$PKG install
-	install -D ../pidgin.desktop $PKG/usr/share/ede/programs/Internet/pidgin.desktop
 }
