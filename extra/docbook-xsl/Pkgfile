@@ -2,7 +2,7 @@
 # URL:  http://scrollkeeper.sourceforge.net/docbook.shtml
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: libxml2
 
 name=docbook-xsl
 version=1.75.2
