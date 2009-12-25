@@ -6,9 +6,9 @@
 
 name=libgnome
 version=2.28.0
-release=2
+release=3
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
-	nutyx2009_1.jpg)
+	nutyx2009_2.jpg)
 
 build() {
 	cd $name-$version
@@ -18,7 +18,7 @@ build() {
 		--mandir=$GNOME_PREFIX/share/man
 	make
 	make DESTDIR=$PKG install
-	cp ../nutyx2009_1.jpg \
+	cp ../nutyx2009_2.jpg \
 	$PKG/$GNOME_PREFIX/share/pixmaps/backgrounds/gnome/background-default.jpg
 	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
 }
