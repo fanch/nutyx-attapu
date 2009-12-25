@@ -60,7 +60,7 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/xfdesktop.1.gz
 drwxr-xr-x	root/root	usr/share/pixmaps/
--rw-r--r--	root/root	usr/share/pixmaps/NuTyX2009.png
+-rw-r--r--	root/root	usr/share/pixmaps/nutyx2009_2.png
 drwxr-xr-x	root/root	usr/share/pixmaps/xfce4/
 drwxr-xr-x	root/root	usr/share/pixmaps/xfce4/xfdesktop/
 -rw-r--r--	root/root	usr/share/pixmaps/xfce4/xfdesktop/text-selection-frame.png

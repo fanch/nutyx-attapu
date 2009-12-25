@@ -1,14 +1,14 @@
 # Description: Bureau de Xfce
 # URL: http://www.xfce.org/projects/xfdesktop/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: thierryn1 at hispeed do ch
 # Depends on: dbus-glib, exo, libglade, libwnck, libxfce4menu, libxfce4util, libxfcegui4, libxml2, thunar, xfce4-panel, xfconf
 
 name=xfdesktop
 version=4.6.1
-release=3
+release=4
 source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2 \
-xfdesktop-handle-unmountable-volumes.patch NuTyX2009.png)
+xfdesktop-handle-unmountable-volumes.patch nutyx2009_2.png)
 
 build() {
 cd $name-$version
@@ -20,9 +20,9 @@ patch -p1 < ../xfdesktop-handle-unmountable-volumes.patch
 	--disable-static
 	make
 	make DESTDIR=$PKG install
-	cp ../NuTyX2009.png \
-	$PKG/usr/share/pixmaps/NuTyX2009.png
-	sed -i "s/xfce4_xicon1/NuTyX2009/" \
+	cp ../nutyx2009_2.png \
+	$PKG/usr/share/pixmaps/nutyx2009_2.png
+	sed -i "s/xfce4_xicon1/nutyx2009_2/" \
 	$PKG/usr/share/xfce4/panel-plugins/xfce4-menu.desktop
 }
 
