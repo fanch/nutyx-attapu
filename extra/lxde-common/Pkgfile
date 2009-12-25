@@ -6,9 +6,9 @@
 
 name=lxde-common
 version=0.5.0
-release=1
+release=2
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
-	config nutng.png chrystal_red_root.png lxde-common-$version-nutyx-01.patch\
+	config chrystal_red_root.png nutyx2009_2.jpg lxde-common-$version-nutyx-01.patch\
 	bouton03.png)
 
 build() {
@@ -20,12 +20,12 @@ make
 make DESTDIR=$PKG install
 sed -i "s/gnome-terminal/lxterminal/" \
 $PKG/usr/share/lxpanel/profile/LXDE/panels/panel
-	sed -i "s/lxde_blue.jpg/nutng.png/" \
+	sed -i "s/lxde_blue.jpg/nutyx2009_2.jpg/" \
 $PKG/usr/share/lxde/pcmanfm/main.lxde
 install -D -m644 ../config \
 	$PKG/usr/share/lxde/config
-install -D -m644 ../nutng.png \
-	$PKG/usr/share/lxde/wallpapers/nutng.png
+install -D -m644 ../nutyx2009_2.jpg \
+	$PKG/usr/share/lxde/wallpapers/nutyx2009_2.jpg
 install -D -m644 ../bouton03.png \
 	$PKG/usr/share/lxde/images/bouton03.png
 install -D -m644 ../chrystal_red_root.png \

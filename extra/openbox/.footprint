@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gdm-control
 -rwxr-xr-x	root/root	usr/bin/gnome-panel-control
+-rwxr-xr-x	root/root	usr/bin/obprop
 -rwxr-xr-x	root/root	usr/bin/openbox
 -rwxr-xr-x	root/root	usr/bin/openbox-gnome-session
 -rwxr-xr-x	root/root	usr/bin/openbox-kde-session
@@ -30,20 +31,22 @@ drwxr-xr-x	root/root	usr/include/openbox/3.4/openbox/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libobparser.a
 -rwxr-xr-x	root/root	usr/lib/libobparser.la
-lrwxrwxrwx	root/root	usr/lib/libobparser.so -> libobparser.so.21.0.4
-lrwxrwxrwx	root/root	usr/lib/libobparser.so.21 -> libobparser.so.21.0.4
--rwxr-xr-x	root/root	usr/lib/libobparser.so.21.0.4
+lrwxrwxrwx	root/root	usr/lib/libobparser.so -> libobparser.so.21.0.5
+lrwxrwxrwx	root/root	usr/lib/libobparser.so.21 -> libobparser.so.21.0.5
+-rwxr-xr-x	root/root	usr/lib/libobparser.so.21.0.5
 -rw-r--r--	root/root	usr/lib/libobrender.a
 -rwxr-xr-x	root/root	usr/lib/libobrender.la
-lrwxrwxrwx	root/root	usr/lib/libobrender.so -> libobrender.so.21.0.4
-lrwxrwxrwx	root/root	usr/lib/libobrender.so.21 -> libobrender.so.21.0.4
--rwxr-xr-x	root/root	usr/lib/libobrender.so.21.0.4
+lrwxrwxrwx	root/root	usr/lib/libobrender.so -> libobrender.so.21.0.5
+lrwxrwxrwx	root/root	usr/lib/libobrender.so.21 -> libobrender.so.21.0.5
+-rwxr-xr-x	root/root	usr/lib/libobrender.so.21.0.5
 drwxr-xr-x	root/root	usr/lib/openbox/
 -rwxr-xr-x	root/root	usr/lib/openbox/xdg-autostart
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/obparser-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/obrender-3.0.pc
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/openbox.desktop
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/openbox/
 -rw-r--r--	root/root	usr/share/doc/openbox/AUTHORS

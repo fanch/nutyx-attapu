@@ -5,7 +5,7 @@
 # Depends on: startup-notification, pango, hal
  
 name=openbox
-version=3.4.8
+version=3.4.9
 release=1
 source=(http://icculus.org/openbox/releases/$name-$version.tar.gz)
 build()
