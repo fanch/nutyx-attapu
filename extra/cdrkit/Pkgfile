@@ -5,14 +5,12 @@
 # Depends on: cmake, libcap
 
 name=cdrkit
-version=1.1.9
+version=1.1.10
 release=1
-source=(http://cdrkit.org/releases/$name-$version.tar.gz\
-	cdrkit-1.1.9-glibc-2.10.patch)
+source=(ftp://ftp.debian.org/debian/pool/main/c/cdrkit/cdrkit_1.1.10.orig.tar.gz)
 
 build() {
 	cd $name-$version
-	patch -p1 -i $SRC/$name-$version-glibc-2.10.patch
 	# ./configure --prefix=/usr
 	make
 	make PREFIX=$PKG/usr install
