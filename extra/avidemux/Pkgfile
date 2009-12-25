@@ -2,7 +2,7 @@
 # URL: http://fixounet.free.fr/avidemux/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: faac, lame, libsdl, libvorbis, libxvid, libxv, libxml2, sdl
+# Depends on: faac, lame, libvorbis, libxvid, libxv, libxml2, sdl
 
 name=avidemux
 version=2.5.1
