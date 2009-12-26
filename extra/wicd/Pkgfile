@@ -2,7 +2,7 @@
 # URL: http://wicd.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: pygtk, wpa_supplicant, ethtool, dhcpcd, dbus-python, wireless_tools
+# Depends on: pygtk, wpa_supplicant, ethtool, dbus-python, wireless_tools
 
 name=wicd
 version=1.6.2.2
