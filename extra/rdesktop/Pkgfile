@@ -2,7 +2,7 @@
 # URL: http://www.rdesktop.org/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libx11, openssl, libao, libsamplerate
+# Depends on: xorg-libx11, libao, libsamplerate
 
 name=rdesktop
 version=1.6.0
