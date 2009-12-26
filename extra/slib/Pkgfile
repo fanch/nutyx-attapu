@@ -2,7 +2,7 @@
 # URL: http://groups.csail.mit.edu/
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: aspell, texinfo
+# Depends on: aspell
 
 name=slib
 version=3a5
