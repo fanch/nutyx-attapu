@@ -2,7 +2,7 @@
 # URL: http://www.xfce.org/projects/xfburn/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: atk, cairo, dbus, dbus-glib, exo, libburn, libisofs, freetype, glib, glitz, gstreamer, gst-plugins-base, gtk, hal, libiconv, libpng, libxfcegui4, libxfce4util, libxml2, pango, xorg-libpixman, startup-notification
+# Depends on: atk, cairo, dbus, dbus-glib, exo, libburn, libisofs, freetype, glib, glitz, gstreamer, gst-plugins-base, gtk, hal, libpng, libxfcegui4, libxfce4util, libxml2, pango, xorg-libpixman, startup-notification
 
 name=xfburn
 version=0.4.2
