@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, libxml2, openssl, gnutls, libproxy
+# Depends on: glib, libxml2, gnutls, libproxy
 
 name=libsoup
 version=2.28.1
