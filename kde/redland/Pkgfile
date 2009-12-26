@@ -2,17 +2,20 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: raptor, rasqal
+# Depends on: raptor, rasqal, sqlite3
 
 name=redland
-version=1.0.8
+version=1.0.9
 release=1
 source=(http://download.librdf.org/source/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
+	sed -i -e 's/SQLITE_API/REDLAND_SQLITE_API/g' configure src/rdf_config.h.in src/rdf_storage_sqlite.c
 	./configure --prefix=/usr \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--with-mysql=no \
+		--with-sqlite=3
 	make
 	make DESTDIR=$PKG install
 	rm -rf $PKG/usr/share/gtk-doc
