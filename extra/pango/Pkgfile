@@ -21,6 +21,6 @@ build() {
 	make DESTDIR=$PKG install
         rm -rf $PKG/usr/share/gtk-doc
 	install -m644 ../pango.modules $PKG/etc/pango/
-	rm -r $PKG/usr/lib/girepository-1.0
-	rm -r $PKG/usr/share/gir-1.0/
+	rm -rf $PKG/usr/lib/girepository-1.0
+	rm -rf $PKG/usr/share/gir-1.0/
 }
