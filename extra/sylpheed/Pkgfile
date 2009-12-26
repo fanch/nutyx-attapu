@@ -2,7 +2,7 @@
 # URL: http://sylpheed.sraoss.jp/en/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, openssl, gpgme, gnupg, gnupg1
+# Depends on: gtk, gpgme, gnupg, gnupg1
 
 name=sylpheed
 version=2.7.1
