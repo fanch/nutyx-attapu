@@ -1,8 +1,7 @@
-# Description: Perl Uniform Resource Identifiers Library
+# Description: Librairie pour les identificateurs de ressources uniforme de Perl
 # URL: http://search.cpan.org/~gaas/URI-1.35/URI.pm
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: perl
+# Packager: thierryn1 at hispeed dot ch
 
 name=p5-uri
 version=1.40
