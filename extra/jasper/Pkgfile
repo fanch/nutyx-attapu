@@ -2,7 +2,7 @@
 # URL: http://www.ece.uvic.ca/~mdadams/jasper/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg, unzip
+# Depends on: libjpeg
 
 name=jasper
 version=1.900.1
