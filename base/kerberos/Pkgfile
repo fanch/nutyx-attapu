@@ -2,7 +2,7 @@
 # URL: 	http://web.mit.edu/kerberos/
 # Packager: thierryn1 at hispeed dot ch
 # Maintainer: thierryn1 at hispeed
-# Depends on: openssl
+# Depends on:
 
 name=kerberos
 version=1.6.3
