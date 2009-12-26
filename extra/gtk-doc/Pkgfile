@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl, docbook-xml, docbook-xsl, gnome-doc-utils
+# Depends on: docbook-xml, docbook-xsl, gnome-doc-utils
 
 name=gtk-doc
 version=1.11
