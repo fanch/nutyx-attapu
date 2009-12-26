@@ -2,7 +2,7 @@
 # URL: http://hostap.epitest.fi/wpa_supplicant
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: openssl, libnl
+# Depends on: libnl
 
 name=wpa_supplicant
 version=0.6.9
