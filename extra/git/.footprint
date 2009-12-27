@@ -50,7 +50,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fast-export
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fast-import
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fetch
--rwxr-xr-x	root/root	usr/lib/git-core/git-fetch--tool
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fetch-pack
 -rwxr-xr-x	root/root	usr/lib/git-core/git-filter-branch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fmt-merge-msg
@@ -65,6 +64,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-gui--askpass
 -rwxr-xr-x	root/root	usr/lib/git-core/git-hash-object
 -rwxr-xr-x	root/root	usr/lib/git-core/git-help
+-rwxr-xr-x	root/root	usr/lib/git-core/git-http-backend
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-fetch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-push
 -rwxr-xr-x	root/root	usr/lib/git-core/git-imap-send
@@ -96,6 +96,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-mktree
 -rwxr-xr-x	root/root	usr/lib/git-core/git-mv
 -rwxr-xr-x	root/root	usr/lib/git-core/git-name-rev
+-rwxr-xr-x	root/root	usr/lib/git-core/git-notes
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-objects
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-redundant
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-refs
@@ -213,6 +214,7 @@ drwxr-xr-x	root/root	usr/share/git-gui/lib/
 -rw-r--r--	root/root	usr/share/git-gui/lib/mergetool.tcl
 drwxr-xr-x	root/root	usr/share/git-gui/lib/msgs/
 -rw-r--r--	root/root	usr/share/git-gui/lib/msgs/de.msg
+-rw-r--r--	root/root	usr/share/git-gui/lib/msgs/el.msg
 -rw-r--r--	root/root	usr/share/git-gui/lib/msgs/fr.msg
 -rw-r--r--	root/root	usr/share/git-gui/lib/msgs/hu.msg
 -rw-r--r--	root/root	usr/share/git-gui/lib/msgs/it.msg
@@ -288,6 +290,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-gui.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-hash-object.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-help.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-http-backend.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-http-fetch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-http-push.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-imap-send.1.gz
@@ -314,6 +317,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-mktree.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-mv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-name-rev.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-notes.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-objects.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-redundant.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-refs.1.gz
