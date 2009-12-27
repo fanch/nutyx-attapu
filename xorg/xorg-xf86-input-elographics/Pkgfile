@@ -7,11 +7,12 @@
 name=xorg-xf86-input-elographics
 version=1.2.3
 release=2
-source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-elographics-$version.tar.bz2)
-
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-elographics-$version.tar.bz2\
+	git-c97c9f47.patch elographics-1.2.3-abi.patch)
 build() {
 	cd xf86-input-elographics-$version
-
+	patch -Np1 -i ../git-c97c9f47.patch
+	patch -Np1 -i ../elographics-1.2.3-abi.patch
 	./configure --prefix=/usr
 
 	make
