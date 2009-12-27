@@ -6,7 +6,7 @@
 
 name=oxygen-icons
 version=4.3.4
-release=1
+release=2
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
 	NuTyXlogo.png)
 
