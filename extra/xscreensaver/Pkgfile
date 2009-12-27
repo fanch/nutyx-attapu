@@ -2,7 +2,7 @@
 # URL: http://www.jwz.org/xscreensaver/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: bc, libglade
+# Depends on: bc, libglade, kerberos
 
 name=xscreensaver
 version=5.10
