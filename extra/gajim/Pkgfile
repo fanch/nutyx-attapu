@@ -1,20 +1,17 @@
-# Description: Client messagerie instantanée jabber
+# Description: Client de messagerie instantanée Jabber
 # URL: http://www.gajim.org/
-# Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
+# Maintainer: L'équipe de Gajim
+# Packager: Lukc (xmpp:lukc@jabber.org)
 # Depends on: libglade, pygtk, pysqlite, gtkspell, desktop-file-utils, pyopenssl, dbus-python
 
 name=gajim
-version=0.12.1
+version=0.13.1
 release=1
-source=(http://www.gajim.org/downloads/$name-$version.tar.bz2\
-	gajim.desktop)
+source=(http://www.gajim.org/downloads/0.13/$name-$version.tar.bz2)
 
-build() {
+build(){
 	cd $name-$version
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
-	install -D -m644 ../gajim.desktop \
-        $PKG/usr/share/ede/programs/Internet/gajim.desktop
 }
