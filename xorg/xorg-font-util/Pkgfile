@@ -5,17 +5,15 @@
 # Depends on:
 
 name=xorg-font-util
-version=1.0.1
+version=1.0.2
 release=1
-XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
-    --mandir=$XORG_PREFIX/share/man --localstatedir=/var"
 source=(http://xorg.freedesktop.org/releases/individual/font/font-util-$version.tar.bz2)
 build() {
 	cd font-util-$version	
-	./configure $XORG_CONFIG
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
 	install -v -d -m755 $PKG/usr/share/fonts
-	ln -svn $XORG_PREFIX/lib/X11/fonts/OTF $PKG/usr/share/fonts/X11-OTF
-	ln -svn $XORG_PREFIX/lib/X11/fonts/TTF $PKG/usr/share/fonts/X11-TTF
+	ln -svn /usr/lib/X11/fonts/OTF $PKG/usr/share/fonts/X11-OTF
+	ln -svn /usr/lib/X11/fonts/TTF $PKG/usr/share/fonts/X11-TTF
 }
