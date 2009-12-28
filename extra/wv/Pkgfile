@@ -5,12 +5,13 @@
 
 name=wv
 version=1.2.4
-release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+release=2
+source=(ftp://ftp.debian.org/debian/pool/main/w/wv/${name}_${version}.orig.tar.gz)
 
 build() {
 		cd $name-$version
-                ./configure --prefix=/usr --without-docs
+                ./configure --prefix=/usr --without-docs \
+		--mandir=/usr/share/man
 		make
 		make DESTDIR=$PKG install
 }
