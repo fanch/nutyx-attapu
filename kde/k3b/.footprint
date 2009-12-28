@@ -2,11 +2,6 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/k3b
--rwxr-xr-x	root/root	opt/kde/bin/k3bsetup
-drwxr-xr-x	root/root	opt/kde/etc/
-drwxr-xr-x	root/root	opt/kde/etc/dbus-1/
-drwxr-xr-x	root/root	opt/kde/etc/dbus-1/system.d/
--rw-r--r--	root/root	opt/kde/etc/dbus-1/system.d/org.k3b.setup.conf
 drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/k3b_export.h
 -rw-r--r--	root/root	opt/kde/include/k3bactivepipe.h
@@ -143,10 +138,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_k3bexternalencoder.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_k3blameencoder.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_k3boggvorbisencoder.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_k3bsetup.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_videodvd.so
-drwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/
--rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/k3bsetup_worker
 lrwxrwxrwx	root/root	opt/kde/lib/libk3b.so -> libk3b.so.6
 lrwxrwxrwx	root/root	opt/kde/lib/libk3b.so.6 -> libk3b.so.6.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libk3b.so.6.0.0
@@ -154,9 +146,6 @@ lrwxrwxrwx	root/root	opt/kde/lib/libk3bdevice.so -> libk3bdevice.so.6
 lrwxrwxrwx	root/root	opt/kde/lib/libk3bdevice.so.6 -> libk3bdevice.so.6.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libk3bdevice.so.6.0.0
 drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/PolicyKit/
-drwxr-xr-x	root/root	opt/kde/share/PolicyKit/policy/
--rw-r--r--	root/root	opt/kde/share/PolicyKit/policy/org.k3b.setup.policy
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/k3b.desktop
@@ -369,11 +358,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/solid/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/k3b_create_audio_cd_from_blank_medium.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/k3b_create_data_project_from_blank_medium.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/k3b_videodvd_rip.desktop
-drwxr-xr-x	root/root	opt/kde/share/dbus-1/
-drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
--rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.k3b.setup.xml
-drwxr-xr-x	root/root	opt/kde/share/dbus-1/system-services/
--rw-r--r--	root/root	opt/kde/share/dbus-1/system-services/org.k3b.setup.service
 drwxr-xr-x	root/root	opt/kde/share/icons/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/
@@ -413,7 +397,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/k3bmpcdecoder.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/k3boggvorbisdecoder.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/k3boggvorbisencoder.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/k3bsetup.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/k3bsoxencoder.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/k3bwavedecoder.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_k3bexternalencoder.desktop
