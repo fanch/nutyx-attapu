@@ -6,8 +6,9 @@
 
 name=amarok
 version=2.2.1.90
-release=1
-source=(http://download.kde.org/download.php?url=unstable/$name/$version/src/$name-$version.tar.bz2)
+release=2
+source=(http://download.kde.org/download.php?url=unstable/$name/$version/src/$name-$version.tar.bz2\
+	splash_screen.jpg)
 
 build() {
 	cd $name-$version
@@ -18,4 +19,5 @@ build() {
 	-DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed'
 	make -j3
 	make DESTDIR=$PKG install
+	cp $SRC/splash_screen.jpg $PKG/$KDE_PREFIX/share/apps/amarok/images/splash_screen.jpg
 }
