@@ -5,13 +5,11 @@
 # Depends on: sdl
 
 name=mlt
-version=0.4.4
+version=0.4.10
 release=1
-source=(http://internap.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
-	ffmpeg.patch)
+source=(http://internap.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 build() {
-#	patch -Np0 -i ffmpeg.patch
         cd $name-$version
         ./configure --prefix=/usr \
         --enable-gpl --enable-shared --enable-theora \
