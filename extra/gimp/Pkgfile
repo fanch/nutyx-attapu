@@ -6,9 +6,9 @@
 
 name=gimp
 version=2.6.8
-release=2
+release=3
 source=(ftp://ftp.gimp.org/pub/gimp/v2.6/gimp-$version.tar.bz2 \
-	gimp-splash.png gimp.desktop)
+	gimp-splash-2009-2.png gimp.desktop)
 
 
 build() {
@@ -22,6 +22,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	rm -f $PKG/usr/share/gimp/2.0/images/gimp-splash.png
-	cp ../gimp-splash.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
+	cp ../gimp-splash-2009-2.png $PKG/usr/share/gimp/2.0/images/gimp-splash.png
 }
 
