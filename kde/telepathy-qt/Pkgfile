@@ -2,7 +2,7 @@
 # URL: http://telepathy.freedesktop.org/wiki/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: qt
+# Depends on: qt, cmake
 
 name=telepathy-qt
 version=0.14.1
