@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/projects/NetworkManager/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus-glib, hal, glib, libnl, policykit, nss, wireless_tools, ppp
+# Depends on: dbus-glib, hal, glib, libnl, policykit, nss, wireless_tools, ppp, nss
 
 name=networkmanager
 version=0.7.1
