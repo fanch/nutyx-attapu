@@ -2,10 +2,10 @@
 # URL: http://www.alsa-project.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, libsamplerate
+# Depends on: alsa-lib, libsamplerate, speex, liba52, jack-audio-connection-kit, ffmpeg
 
 name=alsa-plugins
-version=1.0.21
+version=1.0.22
 release=1
 source=(ftp://ftp.alsa-project.org/pub/plugins/$name-$version.tar.bz2)
 
