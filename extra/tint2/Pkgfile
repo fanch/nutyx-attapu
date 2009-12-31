@@ -1,0 +1,20 @@
+# Description: task barre pour wm léger
+# URL: http://code.google.com/p/tint2/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: glib xorg-libxrandr xorg-libxinerama pango imlib2 cairo 
+ 
+name=tint2
+version=0.8
+release=1
+source=(http://tint2.googlecode.com/files/$name-$version.tar.gz)
+ 
+build() {
+cd $name-$version
+./configure --prefix=/usr --sysconfdir=/etc
+       
+make
+make DESTDIR=$PKG install
+rm -r $PKG/usr/share/doc  
+}
+
