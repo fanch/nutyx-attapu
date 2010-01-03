@@ -1,0 +1,17 @@
+# Description: Filtre antispam très puissant qui fonctionne à merveille notamment avec Sylpheed
+# URL:
+# Packager: bleizh_du
+# Maintainer: NuTyX core team
+# Depends on:
+
+name=bogofilter
+version=1.2.0
+release=1
+source=(http://ovh.dl.sourceforge.net/sourceforge/bogofilter/$name-$version.tar.gz)
+build() {
+cd $name-$version
+         ./configure --prefix=/usr
+         make
+         make DESTDIR=$PKG install
+ }
+
