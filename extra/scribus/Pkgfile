@@ -2,7 +2,7 @@
 # URL: http://www.scribus.net
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups, qt, gnutls, python
+# Depends on: cups, qt, gnutls, python, kerberos, boost, ghostscript
 
 name=scribus
 version=1.3.5.1
