@@ -2,16 +2,18 @@
 # URL: http://recordmydesktop.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: alsa-lib, libvorbis, libxdamage, libxext, libtheora, libsm
+# Depends on: alsa-lib, libvorbis, xorg-libxdamage, xorg-libxext, libtheora, xorg-libsm
 
 name=recordmydesktop
 version=0.3.8.1
-release=1
+release=2
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
         ./configure --prefix=/usr
+	sed -i "s/shmstr.h/shmproto.h/" src/rmd_getzpixmap.c
+	sed -i "s/shmstr.h/shmproto.h/"	src/rmd_update_image.c
         make
         make DESTDIR=$PKG install
 }
