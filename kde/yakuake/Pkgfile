@@ -1,0 +1,20 @@
+# Description: Emulateur de terminal pour KDE
+# URL: http://yakuake.uv.ro/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kdebase
+
+name=yakuake
+version=2.9.6
+release=1
+source=(http://download.berlios.de/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake .. -DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	make
+	make DESTDIR=$PKG install
+}
