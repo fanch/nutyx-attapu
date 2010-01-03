@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kdelibs, kdebase-runtime
+# Depends on: kdelibs, kdebase-runtime, kdepimlibs
 
 name=konversation
 version=1.2.1
