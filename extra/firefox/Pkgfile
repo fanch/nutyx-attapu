@@ -2,12 +2,13 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xulrunner, curl
+# Depends on: alsa-lib, gtk, libidl, pango, python, curl
 
 name=firefox
-version=3.5.6
+version=3.5.7
 release=1
-source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2
+source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2\
+	http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/xpi/fr.xpi\
         mozconfig firefox.desktop)
     
 build() {
@@ -38,4 +39,13 @@ install -m644 browser/branding/unofficial/default48.png \
  $PKG/usr/share/pixmaps/firefox.png
 install -m644 ../firefox.desktop \
  $PKG/usr/share/applications/
+
+  # Localisation 
+  cd ..
+  bsdtar xf fr.xpi
+  cp chrome/fr.jar $PKG/usr/lib/firefox/chrome
+  sed "s|chrome/||" chrome.manifest > $PKG/usr/lib/firefox/chrome/fr.manifest
+  cp install.rdf $PKG/usr/lib/firefox
+  rm $PKG/usr/lib/firefox/chrome/en-US.*
+
 }
