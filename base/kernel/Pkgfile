@@ -2,10 +2,9 @@
 # URL:  http://www.kernel.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=kernel
-version=2.6.32.2
+version=2.6.32.3
 release=1
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
@@ -18,7 +17,7 @@ case `uname -m` in
 	i?86)
 	mv $SRC/config ./.config;;
 esac
-make -j3
+make
 make INSTALL_MOD_PATH=$PKG modules_install
 mkdir -p $PKG/boot
 case `uname -m` in 
