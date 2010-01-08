@@ -37,7 +37,8 @@ build() {
 	do
 		ln -s ../init.d/slim $PKG/etc/rc.d/$i/K10slim
 	done
-	
+	mv $PKG/usr/man \
+	$PKG/usr/share
 	sed -i 's@/var/run/slim.lock@/var/lock/slim.lock@' $PKG/etc/slim.conf
 
 }
