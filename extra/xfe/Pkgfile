@@ -2,16 +2,18 @@
 # URL: http://roland65.free.fr/xfe
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: fox
+# Depends on: fox, libpng, libjpeg, libtiff
 
 name=xfe
 version=1.32.1
-release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+release=2
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz\
+	$name-$version-pos-01.patch)
 
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../$name-$version-pos-01.patch
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install

@@ -1,0 +1,20 @@
+--- xfe-1.32.1/xferc.in.original	2010-01-08 22:04:48.000000000 +0000
++++ xfe-1.32.1/xferc.in	2010-01-08 22:05:30.000000000 +0000
+@@ -4,13 +4,16 @@
+ #
+ # These settings are overridden in ~/.xfe/xferc
+ #
++[OPTIONS]
++xpos=50
++ypos=50
+ 
+ [SETTINGS]
+ #
+ # Where to search for icons
+ #
+ iconpath = @prefix@/share/xfe/icons/gnomeblue-theme
+-
++save_win_pos=1
+ 
+ [KEYBINDINGS]
+ #
