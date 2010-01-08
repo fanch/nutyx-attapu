@@ -5,15 +5,13 @@
 # Depends on: fox
 
 name=xfe
-version=1.19.2
+version=1.32.1
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz\
-	gcc44.patch	)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 
 build() {
 	cd $name-$version
-	patch -Np1 -i ../gcc44.patch
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install

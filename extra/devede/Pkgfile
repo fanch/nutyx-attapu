@@ -1,0 +1,20 @@
+# Description: Un programme pour créer des vidéos sur CD et DVD
+# URL: http://www.rastersoft.com/programas/devede.html
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: mplayer,dvdauthor,vcdimager,cdrkit,pygtk,dejavu-ttf
+
+name=devede
+version=3.15.2
+release=1
+source=(http://www.rastersoft.com/descargas/devede-3.15.2.tar.bz2)
+
+build() {
+	cd $name-$version
+        ./install.sh --DESTDIR=$PKG \
+        --prefix=/usr \
+	--unistall=no \
+	--targeted=yes
+	install -D -m644 $name.desktop \
+	$PKG/usr/share/applications/$name.desktop
+}

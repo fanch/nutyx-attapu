@@ -3,15 +3,15 @@
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 
-name=initrd
-version=2.6.32.3
+name=initrd-lts
+version=2.6.30.10
 release=1
 _tools=29122009
 SCRIPT_VERSION="2009.2"
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install-${SCRIPT_VERSION}.ash
-wget http://kiao.no-ip.info/NuTyX/2009.1/`uname -m`/test/kernel%23$version-1.pkg.tar.gz
+wget http://kiao.no-ip.info/NuTyX/2009.2/`uname -m`/test/kernel-lts%23$version-1.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR

@@ -6,6 +6,12 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/xfv
 -rwxr-xr-x	root/root	usr/bin/xfw
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/xfe.desktop
+-rw-r--r--	root/root	usr/share/applications/xfi.desktop
+-rw-r--r--	root/root	usr/share/applications/xfp.desktop
+-rw-r--r--	root/root	usr/share/applications/xfv.desktop
+-rw-r--r--	root/root	usr/share/applications/xfw.desktop
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -19,10 +25,15 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/xfw.1.gz
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/xfe.png
+-rw-r--r--	root/root	usr/share/pixmaps/xfe.xpm
 -rw-r--r--	root/root	usr/share/pixmaps/xfi.png
+-rw-r--r--	root/root	usr/share/pixmaps/xfi.xpm
 -rw-r--r--	root/root	usr/share/pixmaps/xfp.png
+-rw-r--r--	root/root	usr/share/pixmaps/xfp.xpm
 -rw-r--r--	root/root	usr/share/pixmaps/xfv.png
+-rw-r--r--	root/root	usr/share/pixmaps/xfv.xpm
 -rw-r--r--	root/root	usr/share/pixmaps/xfw.png
+-rw-r--r--	root/root	usr/share/pixmaps/xfw.xpm
 drwxr-xr-x	root/root	usr/share/xfe/
 drwxr-xr-x	root/root	usr/share/xfe/icons/
 drwxr-xr-x	root/root	usr/share/xfe/icons/blue-theme/
@@ -32,6 +43,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/ace_16x16.png -> ../gnome-th
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/ace_32x32.png -> ../gnome-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/archadd.png -> ../gnome-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/archext.png -> ../gnome-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/arj_16x16.png -> ../gnome-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/arj_32x32.png -> ../gnome-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/attrib.png -> ../gnome-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/bak_16x16.png -> ../gnome-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/bak_32x32.png -> ../gnome-theme/bak_32x32.png
@@ -111,6 +124,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/filedelete.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/filedelete_perm.png -> ../gnome-theme/filedelete_perm.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/filedialog.png -> ../gnome-theme/filedialog.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/fileopen.png -> ../gnome-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/filerestore.png -> ../gnome-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/filter.png -> ../gnome-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/find_again.png -> ../gnome-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/fliplr.png -> ../gnome-theme/fliplr.png
@@ -121,6 +135,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gif_16x16.png -> ../gnome-th
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gif_32x32.png -> ../gnome-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gotobig.png -> ../gnome-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gotoline.png -> ../gnome-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/graybutton.png -> ../gnome-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/greenbutton.png -> ../gnome-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gz_16x16.png -> ../gnome-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/gz_32x32.png -> ../gnome-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/h_16x16.png -> ../gnome-theme/h_16x16.png
@@ -143,6 +159,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/java_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/java_32x32.png -> ../gnome-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/jpeg_16x16.png -> ../gnome-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/jpeg_32x32.png -> ../gnome-theme/jpeg_32x32.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/keybindings.png -> ../gnome-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/link_big.png -> ../gnome-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/location.png -> ../gnome-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/lowercase.png -> ../gnome-theme/lowercase.png
@@ -166,6 +183,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/miniexec.png -> ../gnome-the
 -rw-r--r--	root/root	usr/share/xfe/icons/blue-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/blue-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/blue-theme/minifolderup.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/minikeybindings.png -> ../gnome-theme/minikeybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/minilink.png -> ../gnome-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/minipipe.png -> ../gnome-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/minishell.png -> ../gnome-theme/minishell.png
@@ -219,6 +237,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/redo.png -> ../gnome-theme/r
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/reload.png -> ../gnome-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/renameit.png -> ../gnome-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/replace.png -> ../gnome-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/restore_big.png -> ../gnome-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/revert.png -> ../gnome-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/rotateleft.png -> ../gnome-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/blue-theme/rotateright.png -> ../gnome-theme/rotateright.png
@@ -327,6 +346,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/ace_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/ace_32x32.png -> ../gnome-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/archadd.png -> ../gnome-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/archext.png -> ../gnome-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/arj_16x16.png -> ../gnome-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/arj_32x32.png -> ../gnome-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/attrib.png -> ../gnome-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/bak_16x16.png -> ../gnome-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/bak_32x32.png -> ../gnome-theme/bak_32x32.png
@@ -406,6 +427,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/filedelete.png -> ../gnome-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/filedelete_perm.png -> ../gnome-theme/filedelete_perm.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/filedialog.png -> ../gnome-theme/filedialog.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/fileopen.png -> ../gnome-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/filerestore.png -> ../gnome-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/filter.png -> ../gnome-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/find_again.png -> ../gnome-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/fliplr.png -> ../gnome-theme/fliplr.png
@@ -416,6 +438,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gif_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gif_32x32.png -> ../gnome-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gotobig.png -> ../gnome-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gotoline.png -> ../gnome-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/graybutton.png -> ../gnome-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/greenbutton.png -> ../gnome-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gz_16x16.png -> ../gnome-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/gz_32x32.png -> ../gnome-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/h_16x16.png -> ../gnome-theme/h_16x16.png
@@ -438,6 +462,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/java_16x16.png -> ../gnome-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/java_32x32.png -> ../gnome-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/jpeg_16x16.png -> ../gnome-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/jpeg_32x32.png -> ../gnome-theme/jpeg_32x32.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/keybindings.png -> ../gnome-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/link_big.png -> ../gnome-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/location.png -> ../gnome-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/lowercase.png -> ../gnome-theme/lowercase.png
@@ -461,6 +486,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/miniexec.png -> ../gnome-th
 -rw-r--r--	root/root	usr/share/xfe/icons/brown-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/brown-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/brown-theme/minifolderup.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/minikeybindings.png -> ../gnome-theme/minikeybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/minilink.png -> ../gnome-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/minipipe.png -> ../gnome-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/minishell.png -> ../gnome-theme/minishell.png
@@ -514,6 +540,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/redo.png -> ../gnome-theme/
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/reload.png -> ../gnome-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/renameit.png -> ../gnome-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/replace.png -> ../gnome-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/restore_big.png -> ../gnome-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/revert.png -> ../gnome-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/rotateleft.png -> ../gnome-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/brown-theme/rotateright.png -> ../gnome-theme/rotateright.png
@@ -622,6 +649,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/ace_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/archadd.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/archext.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/arj_16x16.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/arj_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/attrib.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/bak_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/bak_32x32.png
@@ -701,6 +730,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/filedelete_perm.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/filedialog.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/fileopen.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/filerestore.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/filter.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/find_again.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/fliplr.png
@@ -711,6 +741,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/gif_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/gotobig.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/gotoline.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/graybutton.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/greenbutton.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/gz_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/gz_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/h_16x16.png
@@ -733,6 +765,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/java_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/jpeg_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/jpeg_32x32.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/keybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/link_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/location.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/lowercase.png
@@ -756,6 +789,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minifolderup.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minikeybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minilink.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minipipe.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/minishell.png
@@ -809,6 +843,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/reload.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/renameit.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/replace.png
+-rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/restore_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/revert.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/rotateleft.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnome-theme/rotateright.png
@@ -917,6 +952,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/ace_16x16.png -> ../gno
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/ace_32x32.png -> ../gnome-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/archadd.png -> ../gnome-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/archext.png -> ../gnome-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/arj_16x16.png -> ../gnome-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/arj_32x32.png -> ../gnome-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/attrib.png -> ../gnome-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/bak_16x16.png -> ../gnome-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/bak_32x32.png -> ../gnome-theme/bak_32x32.png
@@ -996,6 +1033,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/filedelete.png -> ../gn
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/filedelete_perm.png -> ../gnome-theme/filedelete_perm.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/filedialog.png -> ../gnome-theme/filedialog.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/fileopen.png -> ../gnome-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/filerestore.png -> ../gnome-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/filter.png -> ../gnome-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/find_again.png -> ../gnome-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/fliplr.png -> ../gnome-theme/fliplr.png
@@ -1006,6 +1044,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gif_16x16.png -> ../gno
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gif_32x32.png -> ../gnome-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gotobig.png -> ../gnome-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gotoline.png -> ../gnome-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/graybutton.png -> ../gnome-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/greenbutton.png -> ../gnome-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gz_16x16.png -> ../gnome-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/gz_32x32.png -> ../gnome-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/h_16x16.png -> ../gnome-theme/h_16x16.png
@@ -1028,6 +1068,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/java_16x16.png -> ../gn
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/java_32x32.png -> ../gnome-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/jpeg_16x16.png -> ../gnome-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/jpeg_32x32.png -> ../gnome-theme/jpeg_32x32.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/keybindings.png -> ../gnome-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/link_big.png -> ../gnome-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/location.png -> ../gnome-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/lowercase.png -> ../gnome-theme/lowercase.png
@@ -1051,6 +1092,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/miniexec.png -> ../gnom
 -rw-r--r--	root/root	usr/share/xfe/icons/gnomeblue-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnomeblue-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/gnomeblue-theme/minifolderup.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/minikeybindings.png -> ../gnome-theme/minikeybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/minilink.png -> ../gnome-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/minipipe.png -> ../gnome-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/minishell.png -> ../gnome-theme/minishell.png
@@ -1104,6 +1146,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/redo.png -> ../gnome-th
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/reload.png -> ../gnome-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/renameit.png -> ../gnome-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/replace.png -> ../gnome-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/restore_big.png -> ../gnome-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/revert.png -> ../gnome-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/rotateleft.png -> ../gnome-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/gnomeblue-theme/rotateright.png -> ../gnome-theme/rotateright.png
@@ -1212,6 +1255,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/ace_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/archadd.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/archext.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/arj_16x16.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/arj_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/attrib.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/bak_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/bak_32x32.png
@@ -1291,6 +1336,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/filedelete_perm.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/filedialog.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/fileopen.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/filerestore.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/filter.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/find_again.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/fliplr.png
@@ -1301,6 +1347,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/gif_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/gotobig.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/gotoline.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/graybutton.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/greenbutton.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/gz_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/gz_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/h_16x16.png
@@ -1323,6 +1371,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/java_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/jpeg_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/jpeg_32x32.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/keybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/link_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/location.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/lowercase.png
@@ -1346,6 +1395,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minifolderup.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minikeybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minilink.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minipipe.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/minishell.png
@@ -1399,6 +1449,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/kde-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/reload.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/renameit.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/replace.png
+-rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/restore_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/revert.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/rotateleft.png
 -rw-r--r--	root/root	usr/share/xfe/icons/kde-theme/rotateright.png
@@ -1507,6 +1558,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/ace_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/ace_32x32.png -> ../gnome-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/archadd.png -> ../gnome-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/archext.png -> ../gnome-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/arj_16x16.png -> ../gnome-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/arj_32x32.png -> ../gnome-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/attrib.png -> ../gnome-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/bak_16x16.png -> ../gnome-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/bak_32x32.png -> ../gnome-theme/bak_32x32.png
@@ -1586,6 +1639,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/filedelete.png -> ../gnome-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/filedelete_perm.png -> ../gnome-theme/filedelete_perm.png
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/filedialog.png
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/filerestore.png -> ../gnome-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/filter.png -> ../gnome-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/find_again.png -> ../gnome-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/fliplr.png -> ../gnome-theme/fliplr.png
@@ -1596,6 +1650,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gif_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gif_32x32.png -> ../gnome-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gotobig.png -> ../gnome-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gotoline.png -> ../gnome-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/graybutton.png -> ../gnome-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/greenbutton.png -> ../gnome-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gz_16x16.png -> ../gnome-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/gz_32x32.png -> ../gnome-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/h_16x16.png -> ../gnome-theme/h_16x16.png
@@ -1618,6 +1674,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/java_16x16.png -> ../gnome-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/java_32x32.png -> ../gnome-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/jpeg_16x16.png -> ../gnome-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/jpeg_32x32.png -> ../gnome-theme/jpeg_32x32.png
+-rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/link_big.png -> ../gnome-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/location.png -> ../gnome-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/lowercase.png -> ../gnome-theme/lowercase.png
@@ -1641,6 +1698,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/miniexec.png -> ../gnome-th
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/minifolderup.png
+-rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/minikeybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/minipipe.png -> ../gnome-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/minishell.png -> ../gnome-theme/minishell.png
@@ -1694,6 +1752,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/redo.png -> ../gnome-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/tango-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/renameit.png -> ../gnome-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/replace.png -> ../gnome-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/restore_big.png -> ../gnome-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/revert.png -> ../gnome-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/rotateleft.png -> ../gnome-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/tango-theme/rotateright.png -> ../gnome-theme/rotateright.png
@@ -1802,6 +1861,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/ace_16x16.png -> ../xfe-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/ace_32x32.png -> ../xfe-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/archadd.png -> ../xfe-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/archext.png -> ../xfe-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/arj_16x16.png -> ../xfe-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/arj_32x32.png -> ../xfe-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/attrib.png -> ../xfe-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/bak_16x16.png -> ../xfe-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/bak_32x32.png -> ../xfe-theme/bak_32x32.png
@@ -1881,6 +1942,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/filedelete.png -> ../xfe-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/filedelete_perm.png -> ../xfe-theme/filedelete_perm.png
 -rw-r--r--	root/root	usr/share/xfe/icons/windows-theme/filedialog.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/fileopen.png -> ../xfe-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/filerestore.png -> ../xfe-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/filter.png -> ../xfe-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/find_again.png -> ../xfe-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/fliplr.png -> ../xfe-theme/fliplr.png
@@ -1891,6 +1953,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gif_16x16.png -> ../xfe-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gif_32x32.png -> ../xfe-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gotobig.png -> ../xfe-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gotoline.png -> ../xfe-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/graybutton.png -> ../xfe-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/greenbutton.png -> ../xfe-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gz_16x16.png -> ../xfe-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/gz_32x32.png -> ../xfe-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/h_16x16.png -> ../xfe-theme/h_16x16.png
@@ -1913,6 +1977,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/java_16x16.png -> ../xfe-
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/java_32x32.png -> ../xfe-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/jpeg_16x16.png -> ../xfe-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/jpeg_32x32.png -> ../xfe-theme/jpeg_32x32.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/keybindings.png -> ../xfe-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/link_big.png -> ../xfe-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/location.png -> ../xfe-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/lowercase.png -> ../xfe-theme/lowercase.png
@@ -1936,6 +2001,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/miniexec.png -> ../xfe-th
 -rw-r--r--	root/root	usr/share/xfe/icons/windows-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/windows-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/windows-theme/minifolderup.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/minikeybindings.png -> ../xfe-theme/minikeybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/minilink.png -> ../xfe-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/minipipe.png -> ../xfe-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/minishell.png -> ../xfe-theme/minishell.png
@@ -1989,6 +2055,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/redo.png -> ../xfe-theme/
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/reload.png -> ../xfe-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/renameit.png -> ../xfe-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/replace.png -> ../xfe-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/restore_big.png -> ../xfe-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/revert.png -> ../xfe-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/rotateleft.png -> ../xfe-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/windows-theme/rotateright.png -> ../xfe-theme/rotateright.png
@@ -2097,6 +2164,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/ace_16x16.png -> ../gnome-th
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/ace_32x32.png -> ../gnome-theme/ace_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/archadd.png -> ../gnome-theme/archadd.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/archext.png -> ../gnome-theme/archext.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/arj_16x16.png -> ../gnome-theme/arj_16x16.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/arj_32x32.png -> ../gnome-theme/arj_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/attrib.png -> ../gnome-theme/attrib.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/bak_16x16.png -> ../gnome-theme/bak_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/bak_32x32.png -> ../gnome-theme/bak_32x32.png
@@ -2176,6 +2245,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/filedelete.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/filedelete_perm.png -> ../gnome-theme/filedelete_perm.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/filedialog.png -> ../gnome-theme/filedialog.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/fileopen.png -> ../gnome-theme/fileopen.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/filerestore.png -> ../gnome-theme/filerestore.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/filter.png -> ../gnome-theme/filter.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/find_again.png -> ../gnome-theme/find_again.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/fliplr.png -> ../gnome-theme/fliplr.png
@@ -2186,6 +2256,8 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gif_16x16.png -> ../gnome-th
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gif_32x32.png -> ../gnome-theme/gif_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gotobig.png -> ../gnome-theme/gotobig.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gotoline.png -> ../gnome-theme/gotoline.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/graybutton.png -> ../gnome-theme/graybutton.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/greenbutton.png -> ../gnome-theme/greenbutton.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gz_16x16.png -> ../gnome-theme/gz_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/gz_32x32.png -> ../gnome-theme/gz_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/h_16x16.png -> ../gnome-theme/h_16x16.png
@@ -2208,6 +2280,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/java_16x16.png -> ../gnome-t
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/java_32x32.png -> ../gnome-theme/java_32x32.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/jpeg_16x16.png -> ../gnome-theme/jpeg_16x16.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/jpeg_32x32.png -> ../gnome-theme/jpeg_32x32.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/keybindings.png -> ../gnome-theme/keybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/link_big.png -> ../gnome-theme/link_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/location.png -> ../gnome-theme/location.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/lowercase.png -> ../gnome-theme/lowercase.png
@@ -2231,6 +2304,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/miniexec.png -> ../gnome-the
 -rw-r--r--	root/root	usr/share/xfe/icons/xfce-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfce-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfce-theme/minifolderup.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/minikeybindings.png -> ../gnome-theme/minikeybindings.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/minilink.png -> ../gnome-theme/minilink.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/minipipe.png -> ../gnome-theme/minipipe.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/minishell.png -> ../gnome-theme/minishell.png
@@ -2284,6 +2358,7 @@ lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/redo.png -> ../gnome-theme/r
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/reload.png -> ../gnome-theme/reload.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/renameit.png -> ../gnome-theme/renameit.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/replace.png -> ../gnome-theme/replace.png
+lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/restore_big.png -> ../gnome-theme/restore_big.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/revert.png -> ../gnome-theme/revert.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/rotateleft.png -> ../gnome-theme/rotateleft.png
 lrwxrwxrwx	root/root	usr/share/xfe/icons/xfce-theme/rotateright.png -> ../gnome-theme/rotateright.png
@@ -2392,6 +2467,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/ace_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/archadd.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/archext.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/arj_16x16.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/arj_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/attrib.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/bak_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/bak_32x32.png
@@ -2471,6 +2548,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/filedelete_perm.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/filedialog.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/fileopen.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/filerestore.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/filter.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/find_again.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/fliplr.png
@@ -2481,6 +2559,8 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/gif_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/gotobig.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/gotoline.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/graybutton.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/greenbutton.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/gz_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/gz_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/h_16x16.png
@@ -2503,6 +2583,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/java_32x32.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/jpeg_16x16.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/jpeg_32x32.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/keybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/link_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/location.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/lowercase.png
@@ -2526,6 +2607,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minifolderlocked.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minifolderopen.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minifolderup.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minikeybindings.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minilink.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minipipe.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/minishell.png
@@ -2579,6 +2661,7 @@ drwxr-xr-x	root/root	usr/share/xfe/icons/xfe-theme/
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/reload.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/renameit.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/replace.png
+-rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/restore_big.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/revert.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/rotateleft.png
 -rw-r--r--	root/root	usr/share/xfe/icons/xfe-theme/rotateright.png

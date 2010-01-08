@@ -3,8 +3,8 @@
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 
-name=kernel
-version=2.6.32.3
+name=kernel-lts
+version=2.6.30.10
 release=1
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
