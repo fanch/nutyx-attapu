@@ -5,7 +5,7 @@
 
 name=kernel-lts
 version=2.6.30.10
-release=1
+release=2
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${version}.tar.bz2\
 	config_64 config)
 build(){
