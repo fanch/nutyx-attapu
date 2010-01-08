@@ -2,7 +2,7 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, gtk, libidl, pango, python, curl
+# Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss
 
 name=firefox
 version=3.5.7
