@@ -2,7 +2,7 @@
 # URL: http://equinox-project.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: edelib
+# Depends on: edelib, dbus
 
 name=ede
 version=2.0-beta
