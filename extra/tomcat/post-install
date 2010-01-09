@@ -1,4 +1,3 @@
-post_install() {
   if [ ! `grep tomcat /etc/group` ]; then
     groupadd -g 66 tomcat &>/dev/null;
   fi
@@ -15,23 +14,3 @@ post_install() {
     echo ">>> Also, you should add it to your MODULES array in rc.conf, so"
     echo ">>> it will be activated automatically at boot-up."
   fi
-}
-
-post_upgrade() {
-  post_install $1
-}
-
-pre_remove() {
-  userdel tomcat &> /dev/null
-  groupdel tomcat &> /dev/null
-}
-
-post_remove() {
-  /bin/true
-}
-
-op=$1
-shift
-
-$op $*
-# vim: ts=2 sw=2 et ft=sh
