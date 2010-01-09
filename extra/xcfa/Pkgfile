@@ -1,0 +1,19 @@
+# Description: convertisseur de fichier audio
+# URL: http://download.tuxfamily.org/xcfaudio
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: gtk2,taglib,curl,dvd+rw-tools
+
+name=xcfa
+version=3.7.1
+release=1
+source=(http://download.tuxfamily.org/xcfaudio/xcfa_download/src/xcfa-3.7.1.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
+
