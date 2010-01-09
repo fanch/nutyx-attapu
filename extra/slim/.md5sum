@@ -1,9 +1,7 @@
-7b7b1a5b55eed7ca84000f732a1ffd26  background.jpg
 87a3a022fa1d6dfe460c2989de1da5db  gcc44.patch
-2dd28bf9ad148cde22b22916501b26f3  panel.png
 f7e9ef62e3d4c8e3e85865c0a169fc5f  slim
 727d0acb24c0fbf0751134c37a9c895f  slim-1.3.1.tar.gz
-c68a7b0f547f6d8a416dbccfd40ba690  slim.conf
-9086dc769e942bc27d363d9784533600  slim.theme
+d0c5fd4f91c385cc23c35f981ac2c695  slim.conf
+fdfe21bf4e734d7bdcdcd827b7e13585  slimnutyx-2009.2.tar.gz
 9143a67ce78ca11a7e811138859ad54f  stdlib.patch
-868863affb13c10868fe839be5f5698b  xinitrc
+ef027552f7aba90c012513030a3e4805  xinitrc

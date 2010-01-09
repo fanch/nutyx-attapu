@@ -1,12 +1,20 @@
 # $Id: xinitrc,v 1.4 2008/05/13 17:33:40 install Exp install $
 # the following variable defines the session which is started if the user
 # doesn't explicitely select a session
-DEFAULT_SESSION=jwm
+DEFAULT_SESSION=startede
 
 case $1 in
 xfce4)
 	exec startxfce4
 	;;
+ede)
+        if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+                eval `dbus-launch --sh-syntax --exit-with-session`
+                export DBUS_SESSION_BUS_ADDRESS
+        fi
+	exec startede
+	;;
+
 openbox)
         if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
                 eval `dbus-launch --sh-syntax --exit-with-session`
@@ -89,6 +97,9 @@ blackbox)
 gnome)
 	exec gnome-session
 	exec dbus-launch --exit-with-session gnome-session
+	;;
+mwm)
+	exec mwm
 	;;
 *)
 	exec $DEFAULT_SESSION
