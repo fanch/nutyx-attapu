@@ -26,8 +26,10 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/mac-binhex40.xml
 -rw-r--r--	root/root	usr/share/mime/application/mathematica.xml
 -rw-r--r--	root/root	usr/share/mime/application/mbox.xml
+-rw-r--r--	root/root	usr/share/mime/application/metalink+xml.xml
 -rw-r--r--	root/root	usr/share/mime/application/msword-template.xml
 -rw-r--r--	root/root	usr/share/mime/application/msword.xml
+-rw-r--r--	root/root	usr/share/mime/application/mxf.xml
 -rw-r--r--	root/root	usr/share/mime/application/octet-stream.xml
 -rw-r--r--	root/root	usr/share/mime/application/oda.xml
 -rw-r--r--	root/root	usr/share/mime/application/ogg.xml
@@ -50,6 +52,8 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/smil.xml
 -rw-r--r--	root/root	usr/share/mime/application/vnd.corel-draw.xml
 -rw-r--r--	root/root	usr/share/mime/application/vnd.emusic-emusic_package.xml
+-rw-r--r--	root/root	usr/share/mime/application/vnd.google-earth.kml+xml.xml
+-rw-r--r--	root/root	usr/share/mime/application/vnd.google-earth.kmz.xml
 -rw-r--r--	root/root	usr/share/mime/application/vnd.hp-hpgl.xml
 -rw-r--r--	root/root	usr/share/mime/application/vnd.hp-pcl.xml
 -rw-r--r--	root/root	usr/share/mime/application/vnd.lotus-1-2-3.xml
@@ -125,6 +129,7 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-bzpostscript.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-cb7.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-cbr.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-cbt.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-cbz.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-cd-image.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-cdrdao-toc.xml
@@ -200,6 +205,10 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-jbuilder-project.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-karbon.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-kchart.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-kexi-connectiondata.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-kexiproject-shortcut.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-kexiproject-sqlite2.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-kexiproject-sqlite3.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-kformula.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-killustrator.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-kivio.xml
@@ -217,6 +226,7 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-lhz.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-linguist.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-lyx.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-lzip.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-lzma-compressed-tar.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-lzma.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-lzop.xml
@@ -275,6 +285,8 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-smaf.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-sms-rom.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-snes-rom.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-spss-por.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-spss-sav.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-sqlite2.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-sqlite3.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-stuffit.xml
@@ -296,10 +308,13 @@ drwxr-xr-x	root/root	usr/share/mime/application/
 -rw-r--r--	root/root	usr/share/mime/application/x-ufraw.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-ustar.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-wais-source.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-windows-themepack.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-wpg.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-x509-ca-cert.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-xbel.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-xliff.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-xz-compressed-tar.xml
+-rw-r--r--	root/root	usr/share/mime/application/x-xz.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-zerosize.xml
 -rw-r--r--	root/root	usr/share/mime/application/x-zoo.xml
 -rw-r--r--	root/root	usr/share/mime/application/xhtml+xml.xml
@@ -373,6 +388,7 @@ drwxr-xr-x	root/root	usr/share/mime/image/
 -rw-r--r--	root/root	usr/share/mime/image/ief.xml
 -rw-r--r--	root/root	usr/share/mime/image/jp2.xml
 -rw-r--r--	root/root	usr/share/mime/image/jpeg.xml
+-rw-r--r--	root/root	usr/share/mime/image/openraster.xml
 -rw-r--r--	root/root	usr/share/mime/image/png.xml
 -rw-r--r--	root/root	usr/share/mime/image/rle.xml
 -rw-r--r--	root/root	usr/share/mime/image/svg+xml-compressed.xml
@@ -607,11 +623,13 @@ drwxr-xr-x	root/root	usr/share/mime/x-content/
 -rw-r--r--	root/root	usr/share/mime/x-content/image-dcf.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/image-picturecd.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/software.xml
+-rw-r--r--	root/root	usr/share/mime/x-content/unix-software.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/video-bluray.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/video-dvd.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/video-hddvd.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/video-svcd.xml
 -rw-r--r--	root/root	usr/share/mime/x-content/video-vcd.xml
+-rw-r--r--	root/root	usr/share/mime/x-content/win32-software.xml
 drwxr-xr-x	root/root	usr/share/mime/x-epoc/
 -rw-r--r--	root/root	usr/share/mime/x-epoc/x-sisx-app.xml
 drwxr-xr-x	root/root	usr/share/pkgconfig/
