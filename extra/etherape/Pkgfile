@@ -5,9 +5,9 @@
 # Depends on: libpcap, libgnomeui
 
 name=etherape
-version=0.9.8
+version=0.9.9
 release=1
-source=(http://downloads.sourceforge.net/project/etherape/etherape/0.9.8/etherape-0.9.8.tar.gz)
+source=(http://downloads.sourceforge.net/project/etherape/etherape/0.9.9/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
