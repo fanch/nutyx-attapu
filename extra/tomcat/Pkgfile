@@ -1,0 +1,45 @@
+# Description: Servlet container for Java Servlet and JavaServer Pages
+# URL: http://tomcat.apache.org/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: java-environement
+name=tomcat
+version=5.5.28
+release=1
+
+source=(http://archive.apache.org/dist/tomcat/tomcat-5/v$version/bin/apache-$name-$version.tar.gz \
+        tomcat tomcat.conf.d tomcat.install)
+
+build() {
+  cd apache-tomcat-$version/bin
+  tar xzf jsvc.tar.gz
+  cd jsvc-src
+  sh configure --with-java=/opt/jdk/
+  make
+  cp jsvc ..
+  
+  cd  $SRC/apache-tomcat-$version
+  rm -f LICENSE NOTICE RELEASE-NOTES RUNNING.txt
+  rm -fr bin/*.exe bin/*.bat bin/*.tar.gz bin/jsvc-src
+  
+  # install everything
+  mkdir -p $PKG/opt/tomcat
+  cp -R * $PKG/opt/tomcat
+
+mkdir -v -p $PKG/etc/rc.d/init.d
+        mkdir -v -p $PKG/etc/rc.d/rc{0,1,2,3,4,5,6}.d
+        install -m755 $SRC/tomcat $PKG/etc/rc.d/init.d/tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc3.d/S90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc2.d/K90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc5.d/S90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc4.d/S90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc0.d/K90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc1.d/K90tomcat
+        ln -svf ../init.d/tomcat $PKG/etc/rc.d/rc6.d/K90tomcat
+
+  install -D -m755 ../tomcat.conf.d $PKG/etc/sysconfig/tomcat
+  chgrp -R 66 $PKG/opt/tomcat/conf $PKG/opt/tomcat/work
+  chmod 0660 $PKG/opt/tomcat/conf/{*.xml,*.policy,*.properties,/Catalina/localhost/*.xml}
+  chmod 775 $PKG/opt/tomcat/conf $PKG/opt/tomcat/work
+}
+

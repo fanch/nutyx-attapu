@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Startup script for the Tomcat server
+#
+# chkconfig: - 83 53
+# description: Starts and stops the Tomcat daemon.
+# processname: tomcat
+ 
+# See how we were called.
+case $1 in
+        start)
+ 
+                export JAVA_HOME=/opt/jdk
+                export CLASSPATH=/opt/tomcat/common/lib/servlet-api.jar
+                export CLASSPATH=/opt/tomcat/common/lib/jsp-api.jar
+                sh /opt/tomcat/bin/startup.sh
+        ;;
+        stop)
+                sh /opt/tomcat/bin/shutdown.sh
+        ;;
+        restart)
+                sh /opt/tomcat/bin/shutdown.sh
+                sh /opt/tomcat/bin/startup.sh
+        ;;
+        *)
+                echo "Usage: /etc/init.d/tomcat start|stop|restart"
+        ;;
+esac
+ 
+exit 0 
