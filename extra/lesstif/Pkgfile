@@ -5,21 +5,26 @@
 # Depends on: freetype
 
 name=lesstif
-version=0.95.0
-release=3
-source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
-	c++fix.patch scroll.patch)
+version=0.95.2
+release=1
+source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
 
 build() {
 	cd $name-$version
-	patch -Np1 -i ../scroll.patch
-	patch -Np1 -i ../c++fix.patch
 	./configure --prefix=/usr \
+		--sysconfdir=/etc/X11 \
 		--mandir=/usr/share/man \
+		--disable-debug \
+		--enable-production \
+		--with-xdnd \
 		--infodir=/usr/share/info
-	make
-	make DESTDIR=$PKG install
+	sed -i "s@libdir)/X11/mwm@sysconfdir)/mwm@" clients/Motif-2.1/mwm/Makefile
+	make rootdir=/usr/share/doc/$name-$version
+	make rootdir=/usr/share/doc/$name-$version DESTDIR=$PKG install
 	# Remove this file because belong to perl allready
        rm $PKG/usr/share/man/man3/Shell.3
+	ln -v -sf /etc/X11/mwm $PKG/usr/lib/X11
+	rm -r $PKG/usr/share/doc
+
 }
