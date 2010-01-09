@@ -5,9 +5,9 @@
 # Depends on: gnutls, gtk, libcap, libpcap, pcre
 
 name=wireshark
-version=1.2.3
+version=1.2.5
 release=1
-source=(http://media-2.cacetech.com/wireshark/src/wireshark-1.2.3.tar.bz2 \
+source=(http://media-2.cacetech.com/wireshark/src/wireshark-$version.tar.bz2 \
 	$name.desktop)
 
 build() {
