@@ -5,13 +5,13 @@
 
 name=xorg-xrdb
 version=1.0.5
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/app/xrdb-$version.tar.bz2)
 
 build() {
 	cd xrdb-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
