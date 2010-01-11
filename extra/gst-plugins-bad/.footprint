@@ -22,8 +22,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-0.10/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstaacparse.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstadpcmdec.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstadpcmdec.so
--rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstaiffparse.la
--rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstaiffparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstaiff.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstaiff.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstalsaspdif.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstalsaspdif.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstamrparse.la
@@ -44,6 +44,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-0.10/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstcamerabin.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstcdxaparse.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstcdxaparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstdc1394.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstdc1394.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstdccp.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstdccp.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstdebugutilsbad.la
@@ -92,6 +94,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-0.10/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmpegtsmux.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmpegvideoparse.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmpegvideoparse.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmusepack.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmusepack.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmve.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmve.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmxf.la

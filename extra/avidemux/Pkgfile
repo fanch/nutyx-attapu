@@ -5,7 +5,7 @@
 # Depends on: faac, lame, libvorbis, libxvid, libxv, libxml2, sdl
 
 name=avidemux
-version=2.5.1
+version=2.5.2
 release=2
 source=(http://download.berlios.de/avidemux/avidemux_$version.tar.gz avidemux-2.5-i18n.patch)
 
