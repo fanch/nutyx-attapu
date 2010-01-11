@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=libquicktime
-version=1.1.0
+version=1.1.4
 release=1
 source=(  http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
