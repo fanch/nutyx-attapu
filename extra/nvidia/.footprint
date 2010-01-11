@@ -1,8 +1,10 @@
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/modules/
 drwxr-xr-x	root/root	lib/modules/<kernel-version>/
-drwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/
--rw-r--r--	root/root	lib/modules/<kernel-version>/extra/nvidia.ko
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/video/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/kernel/video/nvidia/
+-rw-r--r--	root/root	lib/modules/<kernel-version>/kernel/video/nvidia/nvidia.ko
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
