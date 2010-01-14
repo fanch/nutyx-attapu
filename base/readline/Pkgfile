@@ -2,18 +2,15 @@
 # URL: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=readline
-version=6.0
+version=6.1
 release=1
-source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz\
-	http://www.linuxfromscratch.org/patches/lfs/development/readline-$version-fixes-1.patch)
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 build() {
 cd $name-$version
 sed -i '/MV.*old/d' Makefile.in
 sed -i '/{OLDSUFF}/c:' support/shlib-install
-patch -Np1 -i ../readline-$version-fixes-1.patch
 
 ./configure --prefix=/usr \
 	--mandir=/usr/share/man \

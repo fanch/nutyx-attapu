@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libhistory.so.6 -> libhistory.so.6.0
--r-xr-xr-x	root/root	lib/libhistory.so.6.0
-lrwxrwxrwx	root/root	lib/libreadline.so.6 -> libreadline.so.6.0
--r-xr-xr-x	root/root	lib/libreadline.so.6.0
+lrwxrwxrwx	root/root	lib/libhistory.so.6 -> libhistory.so.6.1
+-r-xr-xr-x	root/root	lib/libhistory.so.6.1
+lrwxrwxrwx	root/root	lib/libreadline.so.6 -> libreadline.so.6.1
+-r-xr-xr-x	root/root	lib/libreadline.so.6.1
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/readline/
