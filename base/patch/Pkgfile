@@ -2,10 +2,9 @@
 # URL: http://www.gnu.org/software/patch/patch.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=patch
-version=2.6
+version=2.6.1
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 build() {
