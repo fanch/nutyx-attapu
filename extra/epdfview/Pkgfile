@@ -2,11 +2,12 @@
 # URL: http://trac.emma-soft.com/epdfview
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: poppler >= 0.5.0, gtk >= 2.6.0
+# Depends on: poppler, gtk
+
 name=epdfview
 version=0.1.7
 release=1
-source=(http://trac.emma-soft.com/$name/site/releases/$name-$version.tar.bz2)
+source=(http://trac.emma-soft.com/$name/chrome/site/releases/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
