@@ -5,9 +5,9 @@
 # Depends on: kdelibs, kdemultimedia, qtscriptgenerator, taglib-extras
 
 name=amarok
-version=2.2.1.90
-release=2
-source=(http://download.kde.org/download.php?url=unstable/$name/$version/src/$name-$version.tar.bz2\
+version=2.2.2
+release=1
+source=(http://download.kde.org/download.php?url=stable/$name/$version/src/$name-$version.tar.bz2\
 	splash_screen.jpg)
 
 build() {
