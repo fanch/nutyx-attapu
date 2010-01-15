@@ -2,18 +2,23 @@
 # URL: http://inkscape.org
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: pangomm, cairomm, gtkmm, boost, boehm-gc, imagemagick
+# Depends on: pangomm, cairomm, gtkmm, boost, boehm-gc, imagemagick, gsl, gnome-vfs
 name=inkscape
-version=0.46
+version=0.47
 release=1
-source=(http://inkscape.modevia.com/svn-snap/$name-current.tar.bz2)
+source=(http://downloads.sourceforge.net/$name/files/$name-$version.tar.bz2)
 
 build() {
 cd $name-*
         CFLAGS="${CFLAGS} -I/usr/include/ImageMagick" \
 	CXXFLAGS="${CXXFLAGS} -I/usr/include/ImageMagick" \
-	./configure --prefix=/usr --enable-lcms --with-xft --with-python --with-perl --with-gnome-vfs
+	./configure --prefix=/usr \
+	--enable-lcms \
+	--with-xft \
+	--with-python \
+	--with-perl \
+	--with-gnome-vfs
         
-	make
+	make -j3
         make DESTDIR=$PKG install
 }
