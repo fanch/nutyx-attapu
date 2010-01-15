@@ -2,10 +2,9 @@
 # URL: http://psmisc.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=psmisc
-version=22.9
+version=22.10
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
@@ -17,5 +16,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	mkdir -p $PKG/usr/bin
-	ln -sv killall $PKG/bin/pidof
+#	ln -sv killall $PKG/bin/pidof
 }

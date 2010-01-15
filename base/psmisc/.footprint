@@ -2,7 +2,6 @@ drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/fuser
 -rwxr-xr-x	root/root	bin/killall
 -rwxr-xr-x	root/root	bin/peekfd
-lrwxrwxrwx	root/root	bin/pidof -> killall
 -rwxr-xr-x	root/root	bin/prtstat
 -rwxr-xr-x	root/root	bin/pstree
 lrwxrwxrwx	root/root	bin/pstree.x11 -> pstree
