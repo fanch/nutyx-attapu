@@ -1,0 +1,33 @@
+--- ede-2.0-beta/Jamconfig	2010-01-16 20:57:34.000000000 +0100
++++ ede-2.0-beta/Jamconfig.new	2010-01-16 20:58:46.000000000 +0100
+@@ -48,8 +48,8 @@
+ PREFIX                ?= "$(prefix)" ;
+ EDE_BIN_DIR           ?= "$(bindir)" ;
+ EDE_DATA_DIR          ?= "$(datadir)" ;
+-EDE_CONFIG_DIR        ?= "/etc/xdg/$(EDE_PREFIX_SUBDIR)" ;
+-EDE_MENU_DIR          ?= "/etc/xdg/menus" ; # use XDG default for menu dir
++EDE_CONFIG_DIR        ?= "$(sysconfdir)/xdg/$(EDE_PREFIX_SUBDIR)" ;
++EDE_MENU_DIR          ?= "$(sysconfdir)/xdg/menus" ; # use XDG default for menu dir
+ EDE_ICON_DIR          ?= "$(EDE_DATA_DIR)/icons" ;
+ EDE_MIME_DIR          ?= "$(EDE_DATA_DIR)/mime" ; # use XDG mime path
+ EDE_DOC_DIR           ?= "$(docdir)/ede-$(EDE_VERSION)" ;
+@@ -134,7 +134,7 @@
+ 	PTHREAD_LIBS   ?=  ;
+ }
+ 
+-DBUS_SERVICE_DIR ?= /usr/share/dbus-1/services ;
++DBUS_SERVICE_DIR ?= $(prefix)/usr/share/dbus-1/services ;
+ 
+ # do not touch this
+ JAMCONFIG_READ = "yes" ;
+--- ede-2.0-beta/data/Jamfile	2009-10-08 15:44:25.000000000 +0200
++++ ede-2.0-beta/data/Jamfile.new	2010-01-16 20:58:55.000000000 +0100
+@@ -16,7 +16,7 @@
+ InstallEdeConfigFiles  $(CONFS) ;
+ 
+ # install entry for login/desktop managers
+-InstallData /usr/share/xsessions : ede.desktop ;
++InstallData $(prefix)/usr/share/xsessions : ede.desktop ;
+ Clean distclean : ede.desktop ;
+ 
+ SubInclude TOP data mime-types ;

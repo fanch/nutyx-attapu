@@ -1,3 +1,12 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/xdg/
+drwxr-xr-x	root/root	etc/xdg/ede/
+-rw-r--r--	root/root	etc/xdg/ede/ede-conf.conf
+-rw-r--r--	root/root	etc/xdg/ede/ede-settings.conf
+-rw-r--r--	root/root	etc/xdg/ede/ede-startup.conf
+-rw-r--r--	root/root	etc/xdg/ede/wmanager.conf
+drwxr-xr-x	root/root	etc/xdg/menus/
+-rw-r--r--	root/root	etc/xdg/menus/ede-applications.menu
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ede-about
@@ -1242,3 +1251,14 @@ drwxr-xr-x	root/root	usr/share/icons/edeneu/64x64/status/
 -rw-r--r--	root/root	usr/share/icons/edeneu/64x64/status/printer-error.png
 -rw-r--r--	root/root	usr/share/icons/edeneu/64x64/status/user-trash-full.png
 -rw-r--r--	root/root	usr/share/icons/edeneu/index.theme
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/x-fluid.xml
+drwxr-xr-x	root/root	usr/usr/
+drwxr-xr-x	root/root	usr/usr/share/
+drwxr-xr-x	root/root	usr/usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/usr/share/dbus-1/services/org.equinoxproject.Launch.service
+-rw-r--r--	root/root	usr/usr/share/dbus-1/services/org.equinoxproject.StartupNotify.service
+drwxr-xr-x	root/root	usr/usr/share/xsessions/
+-rw-r--r--	root/root	usr/usr/share/xsessions/ede.desktop
