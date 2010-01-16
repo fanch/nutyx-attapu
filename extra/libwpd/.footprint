@@ -1,0 +1,31 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/wpd2html
+-rwxr-xr-x	root/root	usr/bin/wpd2raw
+-rwxr-xr-x	root/root	usr/bin/wpd2text
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libwpd-0.8/
+drwxr-xr-x	root/root	usr/include/libwpd-0.8/libwpd/
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/GSFStream.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPDocument.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXHLListenerImpl.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXProperty.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXPropertyList.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXPropertyListVector.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXStream.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXStreamImplementation.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/WPXString.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/libwpd.h
+-rw-r--r--	root/root	usr/include/libwpd-0.8/libwpd/libwpd_types.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libwpd-0.8.la
+lrwxrwxrwx	root/root	usr/lib/libwpd-0.8.so -> libwpd-0.8.so.8.0.14
+lrwxrwxrwx	root/root	usr/lib/libwpd-0.8.so.8 -> libwpd-0.8.so.8.0.14
+-rwxr-xr-x	root/root	usr/lib/libwpd-0.8.so.8.0.14
+-rwxr-xr-x	root/root	usr/lib/libwpd-stream-0.8.la
+lrwxrwxrwx	root/root	usr/lib/libwpd-stream-0.8.so -> libwpd-stream-0.8.so.8.0.14
+lrwxrwxrwx	root/root	usr/lib/libwpd-stream-0.8.so.8 -> libwpd-stream-0.8.so.8.0.14
+-rwxr-xr-x	root/root	usr/lib/libwpd-stream-0.8.so.8.0.14
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libwpd-0.8.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libwpd-stream-0.8.pc
