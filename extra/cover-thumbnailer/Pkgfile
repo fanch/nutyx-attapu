@@ -1,0 +1,33 @@
+# Description:afficher les pochettes des albums de musique dans nautilus
+# URL: http://blog.sckyzo.com/2010/01/15/cover-thumbnailer-de-meilleures-miniatures-dans-nautilus/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: pil,python,pygtk,gconf
+
+name=cover-thumbnailer
+version=0.6
+release=1
+source=(http://download.flogisoft.com/files/Software/Cover_thumbnailer/cover-thumbnailer_0.6_all.tar.gz)
+
+build() {
+        cd cover-thumbnailer_0.6_all
+        mkdir -p $PKG/usr/share/{locale/fr/LC_MESSAGES,cover-thumbnailer,man/man1}
+        mkdir -p $PKG/usr/bin
+
+        cp -a share/* $PKG/usr/share/cover-thumbnailer/
+        chmod -Rv 644 $PKG/usr/share/cover-thumbnailer/
+        chmod -v 755 $PKG/usr/share/cover-thumbnailer
+        cp -a man/*.1 $PKG/usr/share/man/man1/
+        chmod -v 644 $PKG/usr/share/man/man1/*
+        cp  locale/fr/LC_MESSAGES/cover-thumbnailer-gui.mo \
+        $PKG/usr/share/locale/fr/LC_MESSAGES/
+        chmod -v 644 $PKG/usr/share/locale/fr/LC_MESSAGES/cover-thumbnailer-gui.mo
+
+        for i in cover-thumbnailer.py cover-thumbnailer-gui.py
+        do
+                cp $i $PKG/usr/bin/
+                chmod -v 755 $PKG/usr/bin/$i
+        done
+        chown -R root:root $PKG
+}
+
