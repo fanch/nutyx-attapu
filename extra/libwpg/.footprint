@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/wpg2raw
+-rwxr-xr-x	root/root	usr/bin/wpg2svg
+-rwxr-xr-x	root/root	usr/bin/wpg2svgbatch.pl
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libwpg-0.1/
+drwxr-xr-x	root/root	usr/include/libwpg-0.1/libwpg/
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGBinaryData.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGBitmap.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGBrush.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGColor.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGGradient.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGPaintInterface.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGPath.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGPen.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGPoint.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGRect.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGStreamImplementation.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGString.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/WPGraphics.h
+-rw-r--r--	root/root	usr/include/libwpg-0.1/libwpg/libwpg.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libwpg-0.1.la
+lrwxrwxrwx	root/root	usr/lib/libwpg-0.1.so -> libwpg-0.1.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libwpg-0.1.so.1 -> libwpg-0.1.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libwpg-0.1.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libwpg-stream-0.1.la
+lrwxrwxrwx	root/root	usr/lib/libwpg-stream-0.1.so -> libwpg-stream-0.1.so.1.0.3
+lrwxrwxrwx	root/root	usr/lib/libwpg-stream-0.1.so.1 -> libwpg-stream-0.1.so.1.0.3
+-rwxr-xr-x	root/root	usr/lib/libwpg-stream-0.1.so.1.0.3
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libwpg-0.1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libwpg-stream-0.1.pc

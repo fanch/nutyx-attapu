@@ -1,8 +1,7 @@
-# $Id: build,v 1.2 2008/08/30 18:56:09 linda Exp $
-# Description: gestionaire de connection wi-fi pour kde3
-# URL:
-# Packager: Floreal Cabares, cabaflo at wanadoo dot fr
-# Depends on:
+# Description: Librairie C++ pour parser les graphismes wpg (WordPerfect Graphics)
+# URL: http://libwpg.sourceforge.net/libwpg.htm
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libwpd
 
 name=libwpg
 version=0.1.3
