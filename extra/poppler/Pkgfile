@@ -5,7 +5,7 @@
 # Depends on: fontconfig, libjpeg, cairo, libxml2, openjpeg
 
 name=poppler
-version=0.12.2
+version=0.12.3
 release=1
 source=(http://poppler.freedesktop.org/$name-$version.tar.gz \
 	http://poppler.freedesktop.org/poppler-data-0.1.tar.gz)
