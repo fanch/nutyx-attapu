@@ -5,7 +5,7 @@
 # Depends on: gtk, poppler
 
 name=poppler-glib
-version=0.12.2
+version=0.12.3
 release=1
 source=(http://poppler.freedesktop.org/poppler-$version.tar.gz \
 	poppler-0.10-bindings.patch)
