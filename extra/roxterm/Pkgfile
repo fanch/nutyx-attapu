@@ -1,0 +1,22 @@
+# Description: Emulateur de terminal basé sur GTK
+# URL: http://roxterm.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk, libglade, vte, dbus-glib
+
+name=roxterm
+version=1.17.1
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+	mv $PKG/usr/share/doc/roxterm/imgs/roxterm_logo.png .
+	rm -r $PKG/usr/share/{doc,man}
+	mkdir -p $PKG/usr/share/doc/roxterm/imgs/
+	mv roxterm_logo.png $PKG/usr/share/doc/roxterm/imgs/
+}
