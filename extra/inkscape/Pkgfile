@@ -2,16 +2,19 @@
 # URL: http://inkscape.org
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: pangomm, cairomm, gtkmm, boost, boehm-gc, imagemagick, gsl, gnome-vfs
+# Depends on: pangomm, cairomm, gtkmm, boost, boehm-gc, imagemagick, gsl, gnome-vfs, libwpg, poppler-glib, librsvg
 name=inkscape
 version=0.47
 release=1
-source=(http://downloads.sourceforge.net/$name/files/$name-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/$name/files/$name-$version.tar.bz2\
+	http://launchpadlibrarian.net/36057611/inkscape-poppler-0.12.2.patch)
 
 build() {
-cd $name-*
+	sed -i "s|(Gf\x\*)this| NULL|g" inkscape-poppler-0.12.2.patch
+	cd $name-*
         CFLAGS="${CFLAGS} -I/usr/include/ImageMagick" \
 	CXXFLAGS="${CXXFLAGS} -I/usr/include/ImageMagick" \
+	patch -Np1 -i ../inkscape-poppler-0.12.2.patch
 	./configure --prefix=/usr \
 	--enable-lcms \
 	--with-xft \
@@ -19,6 +22,6 @@ cd $name-*
 	--with-perl \
 	--with-gnome-vfs
         
-	make -j3
+	make
         make DESTDIR=$PKG install
 }
