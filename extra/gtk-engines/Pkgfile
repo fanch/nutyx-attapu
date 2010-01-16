@@ -5,7 +5,7 @@
 # Depends on: gtk, p5-xml-parser
 
 name=gtk-engines
-version=2.18.1
+version=2.18.5
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.18/$name-$version.tar.bz2)
 

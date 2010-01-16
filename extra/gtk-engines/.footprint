@@ -31,6 +31,10 @@ drwxr-xr-x	root/root	usr/share/gtk-engines/
 -rw-r--r--	root/root	usr/share/gtk-engines/mist.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/redmond95.xml
 -rw-r--r--	root/root	usr/share/gtk-engines/thinice.xml
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/gtk-engines.mo
 drwxr-xr-x	root/root	usr/share/themes/
 drwxr-xr-x	root/root	usr/share/themes/Clearlooks/
 drwxr-xr-x	root/root	usr/share/themes/Clearlooks/gtk-2.0/
