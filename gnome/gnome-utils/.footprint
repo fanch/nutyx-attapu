@@ -443,6 +443,17 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/uk/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/uk/figures/gnome-dictionary-preferences-print.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/uk/figures/gnome-dictionary-preferences-source.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/uk/gnome-dictionary.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-add-source.png -> ../../C/figures/gnome-dictionary-add-source.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-applet-window.png -> ../../C/figures/gnome-dictionary-applet-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-applet.png -> ../../C/figures/gnome-dictionary-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-application.png -> ../../C/figures/gnome-dictionary-application.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-find.png -> ../../C/figures/gnome-dictionary-find.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-lookup.png -> ../../C/figures/gnome-dictionary-lookup.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-preferences-print.png -> ../../C/figures/gnome-dictionary-preferences-print.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/figures/gnome-dictionary-preferences-source.png -> ../../C/figures/gnome-dictionary-preferences-source.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-dictionary/zh_CN/gnome-dictionary.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/C/figures/
@@ -509,6 +520,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/uk/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/uk/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/uk/figures/gnome-search-tool_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/uk/gnome-search-tool.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-search-tool/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-search-tool/zh_CN/figures/gnome-search-tool_window.png -> ../../C/figures/gnome-search-tool_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-search-tool/zh_CN/gnome-search-tool.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/C/figures/
@@ -571,6 +586,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/uk/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/uk/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/uk/figures/syslog_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/uk/gnome-system-log.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-log/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-log/zh_CN/figures/syslog_window.png -> ../../C/figures/syslog_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-system-log/zh_CN/gnome-system-log.xml
 drwxr-xr-x	root/root	usr/share/gtk-doc/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/
 drwxr-xr-x	root/root	usr/share/gtk-doc/html/gdict/
@@ -664,6 +683,7 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-dictionary/
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-ru.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-sv.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-uk.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-dictionary/gnome-dictionary-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/gnome-search-tool/
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-C.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-ca.omf
@@ -681,6 +701,7 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-search-tool/
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-ru.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-sv.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-uk.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-search-tool/gnome-search-tool-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/gnome-system-log/
 -rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-C.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-ca.omf
@@ -697,6 +718,7 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-system-log/
 -rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-ru.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-sv.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-uk.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-system-log/gnome-system-log-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/pixmaps/
 drwxr-xr-x	root/root	usr/share/pixmaps/gsearchtool/
 -rw-r--r--	root/root	usr/share/pixmaps/gsearchtool/thumbnail_frame.png
