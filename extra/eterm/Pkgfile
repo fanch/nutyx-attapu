@@ -1,0 +1,18 @@
+# Description: Terminal pour fluxbox
+# URL: http://www.eterm.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libast
+
+name=eterm
+version=0.9.5
+release=3
+source=(http://www.eterm.org/download/Eterm-$version.tar.gz)
+
+build() {
+	cd Eterm-$version
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}

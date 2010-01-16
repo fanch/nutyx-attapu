@@ -1,0 +1,62 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/Esetroot
+-rwxr-xr-x	root/root	usr/bin/Etbg
+-rwxr-xr-x	root/root	usr/bin/Etbg_update_list
+-rwxr-xr-x	root/root	usr/bin/Etcolors
+-rwxr-xr-x	root/root	usr/bin/Eterm
+-rwxr-xr-x	root/root	usr/bin/Etsearch
+-rwxr-xr-x	root/root	usr/bin/Ettable
+-rwxr-xr-x	root/root	usr/bin/kEsetroot
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libEterm-0.9.5.so
+-rw-r--r--	root/root	usr/lib/libEterm.a
+-rwxr-xr-x	root/root	usr/lib/libEterm.la
+lrwxrwxrwx	root/root	usr/lib/libEterm.so -> libEterm-0.9.5.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/Eterm/
+drwxr-xr-x	root/root	usr/share/Eterm/pix/
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_horizontal_1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_horizontal_2.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_horizontal_3.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_vertical_1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_vertical_2.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/bar_vertical_3.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_down_1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_down_2.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_down_3.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_up_1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_up_2.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/button_arrow_up_3.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/exit.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/help.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/menu1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/menu2.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/menu3.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/pixmaps.list
+drwxr-xr-x	root/root	usr/share/Eterm/pix/scale/
+-rw-r--r--	root/root	usr/share/Eterm/pix/scale/Neopolis-horizon.jpg
+-rw-r--r--	root/root	usr/share/Eterm/pix/thumb_1.png
+-rw-r--r--	root/root	usr/share/Eterm/pix/thumb_2.png
+drwxr-xr-x	root/root	usr/share/Eterm/pix/tile/
+-rw-r--r--	root/root	usr/share/Eterm/pix/tile/circuit.jpg
+drwxr-xr-x	root/root	usr/share/Eterm/themes/
+drwxr-xr-x	root/root	usr/share/Eterm/themes/Escreen/
+-rw-r--r--	root/root	usr/share/Eterm/themes/Escreen/menus.cfg
+lrwxrwxrwx	root/root	usr/share/Eterm/themes/Escreen/pixmaps.list -> ../../pix/pixmaps.list
+-rw-r--r--	root/root	usr/share/Eterm/themes/Escreen/theme.cfg
+drwxr-xr-x	root/root	usr/share/Eterm/themes/Eterm/
+-rw-r--r--	root/root	usr/share/Eterm/themes/Eterm/menus.cfg
+lrwxrwxrwx	root/root	usr/share/Eterm/themes/Eterm/pixmaps.list -> ../../pix/pixmaps.list
+-rw-r--r--	root/root	usr/share/Eterm/themes/Eterm/theme.cfg
+drwxr-xr-x	root/root	usr/share/Eterm/themes/auto/
+-rw-r--r--	root/root	usr/share/Eterm/themes/auto/menus.cfg
+lrwxrwxrwx	root/root	usr/share/Eterm/themes/auto/pixmaps.list -> ../../pix/pixmaps.list
+-rw-r--r--	root/root	usr/share/Eterm/themes/auto/theme.cfg
+drwxr-xr-x	root/root	usr/share/Eterm/themes/trans/
+-rw-r--r--	root/root	usr/share/Eterm/themes/trans/menus.cfg
+lrwxrwxrwx	root/root	usr/share/Eterm/themes/trans/pixmaps.list -> ../../pix/pixmaps.list
+-rw-r--r--	root/root	usr/share/Eterm/themes/trans/theme.cfg
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/Eterm.1.gz
