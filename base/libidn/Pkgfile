@@ -1,12 +1,11 @@
-# Description: Concu pour l'internationalisation des chaînes de caractères
+# Description: Conçu pour l'internationalisation des chaînes de caractères
 # URL: http://www.gnu.org/software/libidn/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gmime
 
 name=libidn
 version=1.15
-release=1
+release=2
 source=(ftp://alpha.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
 build() {
 cd $name-$version
@@ -15,5 +14,5 @@ cd $name-$version
 	--infodir=/usr/share/info
 make
 make DESTDIR=$PKG install
-rm $PKG/usr/share/info/dir       
+rm $PKG/usr/share/info/{dir,libidn-components.png}
 }
