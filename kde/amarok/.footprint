@@ -4,12 +4,15 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/amarok
 -rwxr-xr-x	root/root	opt/kde/bin/amarok_afttagger
 -rwxr-xr-x	root/root	opt/kde/bin/amarokcollectionscanner
+-rwxr-xr-x	root/root	opt/kde/bin/amarokmp3tunesharmonydaemon
 -rwxr-xr-x	root/root	opt/kde/bin/amarokpkg
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_appletscript_simple_javascript.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-audiocdcollection.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-daapcollection.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-ipodcollection.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-mtpcollection.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-mysqlecollection.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-mysqlservercollection.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_collection-umscollection.so
@@ -31,10 +34,14 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_runnerscript_javascript.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_ampache.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_jamendo.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_lastfm.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_magnatunestore.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_mp3tunes.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/amarok_service_opmldirectory.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_ampache.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_lastfm.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_magnatunestore.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_mp3tunes.so
 lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so -> libamaroklib.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so.1 -> libamaroklib.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libamaroklib.so.1.0.0
@@ -396,6 +403,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/amarok/images/
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_files.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_internet.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_jamendo.png
+-rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_lastfm.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_magnatune.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_playlists.png
 -rw-r--r--	root/root	opt/kde/share/apps/amarok/images/hover_info_podcasts.png
@@ -524,6 +532,8 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok.protocol
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-audiocdcollection.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-daapcollection.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-ipodcollection.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-mtpcollection.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-mysqlecollection.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-mysqlservercollection.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_collection-umscollection.desktop
@@ -531,9 +541,14 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_ampache.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_ampache_config.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_jamendo.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_lastfm.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_lastfm_config.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_magnatunestore.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_magnatunestore_config.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_mp3tunes.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_mp3tunes_config.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_opmldirectory.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amaroklastfm.protocol
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/amarok_codecinstall.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/amarok_context_applet.desktop

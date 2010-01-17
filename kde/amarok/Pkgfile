@@ -2,11 +2,11 @@
 # URL: http://amarok.kde.org/fr
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, kdemultimedia, qtscriptgenerator, taglib-extras
+# Depends on: kdelibs, kdemultimedia, qtscriptgenerator, taglib-extras, libgpod, libmtp, liblastfm, loudmouth
 
 name=amarok
 version=2.2.2
-release=1
+release=2
 source=(http://download.kde.org/download.php?url=stable/$name/$version/src/$name-$version.tar.bz2\
 	splash_screen.jpg)
 
