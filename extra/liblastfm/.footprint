@@ -1,0 +1,39 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/include/
+-rw-r--r--	root/root	usr/local/include/lastfm.h
+drwxr-xr-x	root/root	usr/local/include/lastfm/
+-rw-r--r--	root/root	usr/local/include/lastfm/Album
+-rw-r--r--	root/root	usr/local/include/lastfm/Artist
+-rw-r--r--	root/root	usr/local/include/lastfm/Audioscrobbler
+-rw-r--r--	root/root	usr/local/include/lastfm/AuthenticatedUser
+-rw-r--r--	root/root	usr/local/include/lastfm/Fingerprint
+-rw-r--r--	root/root	usr/local/include/lastfm/FingerprintId
+-rw-r--r--	root/root	usr/local/include/lastfm/FingerprintableSource
+-rw-r--r--	root/root	usr/local/include/lastfm/InternetConnectionMonitor
+-rw-r--r--	root/root	usr/local/include/lastfm/Mbid
+-rw-r--r--	root/root	usr/local/include/lastfm/MutableTrack
+-rw-r--r--	root/root	usr/local/include/lastfm/NetworkAccessManager
+-rw-r--r--	root/root	usr/local/include/lastfm/Playlist
+-rw-r--r--	root/root	usr/local/include/lastfm/RadioStation
+-rw-r--r--	root/root	usr/local/include/lastfm/RadioTuner
+-rw-r--r--	root/root	usr/local/include/lastfm/Scrobble
+-rw-r--r--	root/root	usr/local/include/lastfm/ScrobblePoint
+-rw-r--r--	root/root	usr/local/include/lastfm/Tag
+-rw-r--r--	root/root	usr/local/include/lastfm/Track
+-rw-r--r--	root/root	usr/local/include/lastfm/UrlBuilder
+-rw-r--r--	root/root	usr/local/include/lastfm/User
+-rw-r--r--	root/root	usr/local/include/lastfm/XmlQuery
+-rw-r--r--	root/root	usr/local/include/lastfm/Xspf
+-rw-r--r--	root/root	usr/local/include/lastfm/global.h
+-rw-r--r--	root/root	usr/local/include/lastfm/misc.h
+-rw-r--r--	root/root	usr/local/include/lastfm/ws.h
+drwxr-xr-x	root/root	usr/local/lib/
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm.so -> liblastfm.so.0.3.0
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm.so.0 -> liblastfm.so.0.3.0
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm.so.0.3 -> liblastfm.so.0.3.0
+-rwxr-xr-x	root/root	usr/local/lib/liblastfm.so.0.3.0
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm_fingerprint.so -> liblastfm_fingerprint.so.0.1.0
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm_fingerprint.so.0 -> liblastfm_fingerprint.so.0.1.0
+lrwxrwxrwx	root/root	usr/local/lib/liblastfm_fingerprint.so.0.1 -> liblastfm_fingerprint.so.0.1.0
+-rwxr-xr-x	root/root	usr/local/lib/liblastfm_fingerprint.so.0.1.0

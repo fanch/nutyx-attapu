@@ -1,0 +1,20 @@
+# Description: Collection de librairies pour intégrer les services Last.fm dans votre bureau favori
+# URL: http://www.audiocoding.com
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fftw, qt, libsamplerate
+
+name=liblastfm
+version=0.3.0
+release=1
+source=(http://cdn.last.fm/src/$name-$version.tar.bz2)
+
+
+build() {
+	cd $name-$version
+	sed -i "s/require 'ftools'//g" admin/*
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man
+	make
+	make DESTDIR=$PKG install
+}
