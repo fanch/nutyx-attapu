@@ -1,0 +1,19 @@
+# Description: Permet la convertion des fichiers postscript et pdg en d'autres formats vectorielles
+# URL: http://www.pstoedit.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ghoscript
+
+name=pstoedit
+version=3.50
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i 's/-pedantic//' configure
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
