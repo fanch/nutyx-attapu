@@ -1,0 +1,20 @@
+# Description: Librairie lérère pour client jabber
+# URL: http://developer.imendio.com/wiki/Loudmouth
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
+# Depends on: libidn
+
+name=loudmouth
+version=1.4.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
+	loudmouth-gnutls28.patch)
+build() {
+    cd $name-$version
+	patch -Np0 -i ../loudmouth-gnutls28.patch
+    ./configure --prefix=/usr \
+	--with-ssl=openssl
+    make
+    make DESTDIR=$PKG install
+}
+
