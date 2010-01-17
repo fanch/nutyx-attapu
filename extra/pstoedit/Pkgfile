@@ -2,7 +2,7 @@
 # URL: http://www.pstoedit.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: ghoscript
+# Depends on: ghoscript, imagemagick, librsvg, plotutils
 
 name=pstoedit
 version=3.50
