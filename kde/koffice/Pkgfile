@@ -2,10 +2,10 @@
 # URL: http://www.koffice.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kdebase, kdepim
+# Depends on: kdebase, kdepim, libwpg, wv2, glew, gsl, pstoedit, graphicsmagick, kipi-plugins
 
 name=koffice
-version=2.1.0
+version=2.1.1
 release=1
 source=(ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-$version.tar.bz2 \
         ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-l10n/$name-l10n-fr-$version.tar.bz2)

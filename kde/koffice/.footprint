@@ -2,7 +2,6 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/karbon
--rwxr-xr-x	root/root	opt/kde/bin/kformula
 -rwxr-xr-x	root/root	opt/kde/bin/koconverter
 -rwxr-xr-x	root/root	opt/kde/bin/kplato
 -rwxr-xr-x	root/root	opt/kde/bin/kplatowork
@@ -457,6 +456,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libhtmlimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libicalendarexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbon1ximport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonepsimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpdfimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkarbonpngexport.so
@@ -484,8 +484,10 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkspreadhtmlexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkspreadlatexexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkspreadpart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libkspreadsolver.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkwordkword1dot3import.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkwordpart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libmswordodf_import.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libmswriteexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libmswriteimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/liboowriterexport.so
@@ -502,6 +504,9 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libwmfimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libwmlexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libwmlimport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libwpexport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libwpgimport.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libwpimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libxsltexport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libxsltimport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/musicshape.so
@@ -539,7 +544,6 @@ lrwxrwxrwx	root/root	opt/kde/lib/libkdchart.so.6 -> libkdchart.so.6.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kspread.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kthesaurus.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kword.so
--rwxr-xr-x	root/root	opt/kde/lib/libkdeinit_kformula.so
 lrwxrwxrwx	root/root	opt/kde/lib/libkformulalib.so -> libkformulalib.so.6
 lrwxrwxrwx	root/root	opt/kde/lib/libkformulalib.so.6 -> libkformulalib.so.6.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkformulalib.so.6.0.0
@@ -1919,6 +1923,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/icons/hicolor/scalable/actions/template_worksheet.svgz
 drwxr-xr-x	root/root	opt/kde/share/apps/kspread/kpartplugins/
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kpartplugins/scripting.rc
+-rw-r--r--	root/root	opt/kde/share/apps/kspread/kpartplugins/solver.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kspread.notifyrc
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kspread.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kspread/kspread_readonly.rc
@@ -2562,6 +2567,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/formulashape.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/generic_filter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_1x_import.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_eps_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_pdf_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_png_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_svg_export.desktop
@@ -2569,6 +2575,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_svgz_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_wmf_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_wmf_import.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/karbon_wpg_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbondockersplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbonfiltereffects.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/karbonpart.desktop
@@ -2726,6 +2733,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_hancomword_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_html_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_html_import.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kword_msword-odf_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_mswrite_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_mswrite_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_oowriter_export.desktop
@@ -2736,6 +2744,8 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_rtf_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_wml_export.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kword_wml_import.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kword_wp_export.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kword_wp_import.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kwordpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/musicshape.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/paragraphtool.desktop
