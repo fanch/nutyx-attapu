@@ -1,0 +1,22 @@
+# Description: Utilitaires et librairies pour le dessin (plotting)
+# URL: http://directory.fsf.org/graphics/plotutils.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libpng
+
+name=plotutils
+version=2.6
+release=1
+source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--with-gnu-ld \
+	--with-x \
+	--enable-libplotter
+	make
+	make DESTDIR=$PKG install
+	rm  $PKG/usr/share/info/dir
+}
+
