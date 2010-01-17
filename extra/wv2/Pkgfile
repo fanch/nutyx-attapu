@@ -1,0 +1,20 @@
+# Description: Librairie permetant l'accès aux documents word de Microsoft
+# URL: http://wvware.sourceforge.net/
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, libgsf
+
+name=wv2
+version=0.4.2
+release=1
+source=(http://downloads.sourceforge.net/project/wvware/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake .. -DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_SKIP_RPATH=ON \
+	-DCMAKE_INSTALL_PREFIX=/usr
+	make
+	make DESTDIR=$PKG install
+}
