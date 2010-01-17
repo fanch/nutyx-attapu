@@ -5,7 +5,7 @@
 # Depends on: libdrm, xorg-makedepend, xorg-glproto, xorg-xextproto, xorg-dri2proto, xorg-libx11, xorg-xf86vidmodeproto, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage
 
 name=mesa3d
-version=7.6
+version=7.7
 release=1
 source=(ftp://ftp.freedesktop.org/pub/mesa/$version/Mesa{Lib,Demos}-$version.tar.bz2)
 
@@ -19,7 +19,10 @@ build() {
 	make
 
 	make DESTDIR=$PKG install
-
+	for i in glew.h glxew.h wglew.h
+	do
+		rm $PKG/usr/include/GL/$i
+	done
 	install -d $PKG/usr/bin
 	install -m 755 progs/xdemos/glx{gears,info} $PKG/usr/bin
 }
