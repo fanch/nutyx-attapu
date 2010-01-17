@@ -1,22 +1,16 @@
 # Description: OpenGL Extension Wrangler Library 
 # Maintainer: Diederick de Vries <diederick at diederickdevries dot net>
+# Packager: thierryn1 at hispeed dot ch
 # URL: http://glew.sourceforge.net/
 # depends:
 
 name=glew
-version=1.5.1
+version=1.5.2
 release=1
-source=(http://dl.sourceforge.net/sourceforge/glew/$name-$version-src.tgz\
-	config.diff )
+source=(http://downloads.sourceforge.net/project/glew/glew/$version/$name-$version.tgz)
 
 build() {
-	#Application du patch	
-	cd $name/config	
-	mv $SRC/config.diff .
-	patch < config.diff	
-	chmod +x config.guess
-	
-	cd $SRC/$name
+	cd $name-$version
 	make 
 	make GLEW_DEST=$PKG/usr install
 }
