@@ -1,0 +1,16 @@
+# Description: Lecteur de données Meta audio implémenté en pure python
+# URL: http://
+# Maintainer: thierryn1 at hispeed dot ch
+# Depends on: python
+
+name=mutagen
+version=1.15
+release=1
+source=(http://www.sacredchao.net/~piman/software/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	python setup.py install --root=$PKG
+	mkdir -p $PKG/usr/bin
+	install -m755 tools/* $PKG/usr/bin
+}
