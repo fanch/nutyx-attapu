@@ -52,3 +52,6 @@ lrwxrwxrwx	root/root	usr/share/man/man8/tc-pfifo.8.gz -> tc-bfifo.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-sfq.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-tbf.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc.8.gz
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/lib/
+drwxr-xr-x	root/root	var/lib/arpd/
