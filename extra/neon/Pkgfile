@@ -2,7 +2,7 @@
 # URL: http://www.webdav.org/neon/
 # Maintainer: NuTyX
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
+# Depends on: expat
 
 name=neon
 version=0.26.3
