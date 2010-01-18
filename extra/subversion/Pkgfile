@@ -2,10 +2,10 @@
 # URL: http://subversion.tigris.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: apr, neon, expat
+# Depends on: apr, neon, expat, sqlite3
 
 name=subversion
-version=1.6.3
+version=1.6.6
 release=1
 source=(http://subversion.tigris.org/downloads/subversion-$version.tar.bz2)
 
