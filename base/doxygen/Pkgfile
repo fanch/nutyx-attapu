@@ -2,10 +2,9 @@
 # URL:  http://www.doxygen.org/
 # Maintainer: NuTyX 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=doxygen
-version=1.5.8
+version=1.6.2
 release=1
 source=(http://ftp.stack.nl/pub/users/dimitri/$name-$version.src.tar.gz)
 build() {
