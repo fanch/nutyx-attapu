@@ -2,12 +2,11 @@
 # URL: http://www.ntfs-3g.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=ntfs-3g
-version=2009.4.4
+version=2010.1.16
 release=1
-source=(http://www.ntfs-3g.org/$name-$version.tgz)
+source=(http://tuxera.com/opensource/$name-$version.tgz)
 
 build() {
 	cd $name-$version
