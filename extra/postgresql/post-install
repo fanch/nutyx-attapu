@@ -1,0 +1,12 @@
+getent group $newgroup > /dev/null || groupadd -g 41 postgres
+getent passwd $newuser > /dev/null || useradd -c "PostgreSQL Server" \
+-g postgres -d /srv/pgsql/data \
+        -u 41 postgres
+install -v -m700 -d /srv/pgsql/data
+chown -v postgres /srv/pgsql/data
+chmod 700 /srv/pgsql/data
+su - postgres -c '/usr/bin/initdb -D /srv/pgsql/data'
+
+su - postgres -c '/usr/bin/postmaster -D /srv/pgsql/data > \
+    /srv/pgsql/data/logfile 2>&1 &'
+
