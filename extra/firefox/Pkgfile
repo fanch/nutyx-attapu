@@ -5,7 +5,7 @@
 # Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss, dbus-glib
 
 name=firefox
-version=3.5.7
+version=3.6
 release=1
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2\
 	http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/xpi/fr.xpi\
@@ -17,9 +17,9 @@ build() {
     export MOZILLA_OFFICIAL=1
     export MOZILLA_FIVE_HOME=/usr/lib/firefox
 
-    cd mozilla-1.9.1
+    cd mozilla-1.9.2
     sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
-    ./configure
+    ./configure --disable-necko-wifi
     make
 
     install -d \
