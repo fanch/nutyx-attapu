@@ -5,8 +5,9 @@
 # Depends on: python
 
 name=nmap
-version=4.85BETA9
-release=2
+version=5.20
+#4.85BETA9
+release=1
 source=(http://nmap.org/dist/$name-$version.tar.bz2)
 
 
