@@ -1,0 +1,18 @@
+# Description: Gestionnaire accelerateur de telechargement
+# URL: http://dfast.sourceforge.net/index.html
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: wxgtk
+
+name=wxdfast
+version=0.6.0
+release=1
+source=(http://ignum.dl.sourceforge.net/project/dfast/wxDownload%20Fast/0.6.0/wxdfast_0.6.0.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	
+	make
+	make DESTDIR=$PKG install
+}
