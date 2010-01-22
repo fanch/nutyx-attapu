@@ -1,12 +1,12 @@
-# Description: Mozilla Web Browser Component
+# Description: Navigateur internet de Mozilla
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss, dbus-glib
+# Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss, libnotify, sqlite3
 
 name=firefox
 version=3.6
-release=1
+release=2
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2\
 	http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/xpi/fr.xpi\
         mozconfig firefox.desktop)
@@ -19,7 +19,7 @@ build() {
 
     cd mozilla-1.9.2
     sed -e "s/#CFLAGS#/$CFLAGS/" $SRC/mozconfig > .mozconfig
-    ./configure --disable-necko-wifi
+    ./configure
     make
 
     install -d \
@@ -48,4 +48,7 @@ install -m644 ../firefox.desktop \
   cp install.rdf $PKG/usr/lib/firefox
   rm $PKG/usr/lib/firefox/chrome/en-US.*
 
+  # Suppression des fichiers headers et des dossiers vides
+  find $PKG/usr/include/firefox -name "*.h" -delete
+  find $PKG/usr/include/firefox -type d -empty -delete
 }

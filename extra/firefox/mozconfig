@@ -7,33 +7,41 @@ mk_add_options MOZ_MAKE_FLAGS=-j2
 # grab the defaults from the firefox tarball
 . $topsrcdir/browser/config/mozconfig
 
-# crux options
 
 ac_add_options --prefix=/usr
 ac_add_options --with-system-nss
 ac_add_options --with-system-nspr
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-zlib
+ac_add_options --with-system-png
 ac_add_options --with-system-mg
 ac_add_options --with-pthreads
-# ac_add_options --with-libxul-sdk=/usr/lib/xulrunner-devel-1.9.1.6
+
 ac_add_options --enable-system-cairo
+ac_add_options --enable-system-sqlite
+ac_add_options --enable-system-lcms
+
 ac_add_options --enable-optimize="#CFLAGS#"
 ac_add_options --enable-official-branding
 ac_add_options --enable-extensions=default,-gnomevfs
 ac_add_options --enable-shared
+
+ac_add_options --disable-accessibility
+ac_add_options --disable-dbus
+ac_add_options --disable-debug
+ac_add_options --disable-crashreporter
+ac_add_options --disable-gnomevfs
+ac_add_options --disable-gnomeui
+ac_add_options --disable-javaxpcom
 ac_add_options --disable-static
 ac_add_options --disable-tests
 ac_add_options --disable-mochitest
-ac_add_options --disable-debug
 ac_add_options --disable-installer
 ac_add_options --disable-updater
 ac_add_options --disable-profilesharing
-ac_add_options --disable-gnomevfs
-ac_add_options --disable-gnomeui
 ac_add_options --disable-mailnews
-ac_add_options --disable-crashreporter
 ac_add_options --disable-necko-wifi
+
 ac_add_options --enable-svg
 ac_add_options --enable-canvas
 ac_add_options --enable-crypto
@@ -45,3 +53,4 @@ ac_add_options --enable-image-encoder=all
 ac_add_options --enable-xft
 ac_add_options --enable-safe-browsing
 ac_add_options --enable-strip
+

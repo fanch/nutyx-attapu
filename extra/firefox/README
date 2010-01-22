@@ -1,0 +1,12 @@
+AVERTISSEMENT:
+**************
+
+le paquet firefox est constitué des locales francophones dont la version
+(donc le nom) ne change pas. Seul le lien change. Il faut donc être
+prudent si on le compile depuis les sources et s'assurer que le md5sum
+soit identique. En effet si vous avez une ancienne version de firefox
+compilée, il y a de fortes chance que vous aurez une ancienne version de
+fr.xpi . 
+
+Si vous souhaitez compilez une autre langue, il faut remplacer fr.xpi
+par celle que vous souhaitez.
