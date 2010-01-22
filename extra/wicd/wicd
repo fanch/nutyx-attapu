@@ -10,12 +10,12 @@
 case "$1" in
 	start)
 		boot_mesg "Starting the wicd Daemon..."
-		loadproc /usr/lib/wicd/wicd-daemon.py
+		loadproc /usr/share/wicd/daemon/wicd-daemon.py
 		;;
 
 	stop)
 		boot_mesg "Stopping the wicd Daemon..."
-		killproc /usr/lib/wicd/wicd-daemon.py
+		killproc /usr/share/wicd/daemon/wicd-daemon.py
 		;;
 
 	restart)
@@ -25,7 +25,7 @@ case "$1" in
 		;;
 
 	status)
-		statusproc /usr/lib/wicd/wicd-daemon.py
+		statusproc /usr/share/wicd/daemon/wicd-daemon.py
 		;;
 
 	*)

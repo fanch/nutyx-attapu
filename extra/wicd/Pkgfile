@@ -6,7 +6,7 @@
 
 name=wicd
 version=1.7.0
-release=1
+release=3
 source=(http://downloads.sourceforge.net/$name/wicd-$version.tar.gz \
 	wicd wicd_in_usr.patch wicd-locale.patch wicd.desktop )
 
@@ -24,7 +24,7 @@ build() {
 		install -D -m755 $i $PKG/usr/lib/wicd/$i
 	done
 	rm -rf  $PKG/usr/share/autostart
-
+	chmod 755 $PKG/usr/share/wicd/daemon/wicd-daemon.py
 	#Install the daemon service
 
 	mkdir -v -p $PKG/etc/rc.d/init.d
