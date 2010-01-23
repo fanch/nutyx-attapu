@@ -1,0 +1,26 @@
+# Description: Un parefeu très simple
+# URL: https://launchpad.net/ufw
+# Maintainer: NuTyX core team
+# Packager: Tux03
+# Depends on: python, iptables
+
+name=ufw
+version=0.29.1
+release=1
+source=(http://launchpad.net/ufw/0.29/0.29.1/+download/ufw-0.29.1.tar.gz\
+	ufwd)
+
+build() {
+        cd $name-$version
+        python ./setup.py install --root=$PKG
+	mkdir -p $PKG/usr/bin
+	mv $PKG/usr/{sbin,bin}/$name
+	rm -r $PKG/usr/sbin
+	chmod 644 $PKG/etc/ufw/*.rules $PKG/lib/ufw/*.rules
+	mkdir -p $PKG/etc/rc.d/{init.d,rc{1,2,3,4,5}.d}
+	install -m755 ../ufwd $PKG/etc/rc.d/init.d/ufwd
+	for i in 2 3 4 5 
+	do ln -s ../init.d/ufwd $PKG/etc/rc.d/rc$i.d/S19ufwd
+	done
+
+}
