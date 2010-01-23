@@ -5,7 +5,7 @@
 # Depends on: aspell
 
 name=weechat
-version=0.3.0
+version=0.3.1
 release=1
 source=(http://weechat.org/files/src/$name-$version.tar.gz)
 build() {
