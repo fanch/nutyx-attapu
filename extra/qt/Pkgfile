@@ -1,13 +1,12 @@
-# Description: Librairie tres évolué de chez Trolltech
-# URL: http://trolltech.com/products/qt
+# Description: Librairie très évolué de chez Nokia
+# URL: http://qt.nokia.com/products/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libpng, libjpeg, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
+# Depends on: libpng, libjpeg, libmng, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
 
 name=qt
-version=4.6.0
+version=4.6.1
 release=1
-kdeqtver=02122009
 _name=qt-everywhere-opensource-src-${version}
 
 source=(http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-$version.tar.gz)

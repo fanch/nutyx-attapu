@@ -14,6 +14,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qdbuscpp2xml
 -rwxr-xr-x	root/root	usr/bin/qdbusviewer
 -rwxr-xr-x	root/root	usr/bin/qdbusxml2cpp
+-rwxr-xr-x	root/root	usr/bin/qdoc3
 -rwxr-xr-x	root/root	usr/bin/qhelpconverter
 -rwxr-xr-x	root/root	usr/bin/qhelpgenerator
 -rwxr-xr-x	root/root	usr/bin/qmake
@@ -2816,51 +2817,50 @@ drwxr-xr-x	root/root	usr/include/QtXmlPatterns/
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlschemavalidator.h
 -rw-r--r--	root/root	usr/include/QtXmlPatterns/qxmlserializer.h
 drwxr-xr-x	root/root	usr/include/phonon/
-drwxr-xr-x	root/root	usr/include/phonon/Phonon/
--rw-r--r--	root/root	usr/include/phonon/Phonon/AbstractAudioOutput
--rw-r--r--	root/root	usr/include/phonon/Phonon/AbstractMediaStream
--rw-r--r--	root/root	usr/include/phonon/Phonon/AbstractVideoOutput
--rw-r--r--	root/root	usr/include/phonon/Phonon/AddonInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioCaptureDevice
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioCaptureDeviceModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioChannelDescription
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioChannelDescriptionModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutput
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutputDevice
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutputDeviceModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutputInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutputInterface40
--rw-r--r--	root/root	usr/include/phonon/Phonon/AudioOutputInterface42
--rw-r--r--	root/root	usr/include/phonon/Phonon/BackendCapabilities
--rw-r--r--	root/root	usr/include/phonon/Phonon/BackendInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/Effect
--rw-r--r--	root/root	usr/include/phonon/Phonon/EffectDescription
--rw-r--r--	root/root	usr/include/phonon/Phonon/EffectDescriptionModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/EffectInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/EffectParameter
--rw-r--r--	root/root	usr/include/phonon/Phonon/EffectWidget
--rw-r--r--	root/root	usr/include/phonon/Phonon/Global
--rw-r--r--	root/root	usr/include/phonon/Phonon/MediaController
--rw-r--r--	root/root	usr/include/phonon/Phonon/MediaNode
--rw-r--r--	root/root	usr/include/phonon/Phonon/MediaObject
--rw-r--r--	root/root	usr/include/phonon/Phonon/MediaObjectInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/MediaSource
--rw-r--r--	root/root	usr/include/phonon/Phonon/ObjectDescription
--rw-r--r--	root/root	usr/include/phonon/Phonon/ObjectDescriptionData
--rw-r--r--	root/root	usr/include/phonon/Phonon/ObjectDescriptionModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/ObjectDescriptionModelData
--rw-r--r--	root/root	usr/include/phonon/Phonon/Path
--rw-r--r--	root/root	usr/include/phonon/Phonon/PlatformPlugin
--rw-r--r--	root/root	usr/include/phonon/Phonon/SeekSlider
--rw-r--r--	root/root	usr/include/phonon/Phonon/StreamInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/SubtitleDescription
--rw-r--r--	root/root	usr/include/phonon/Phonon/SubtitleDescriptionModel
--rw-r--r--	root/root	usr/include/phonon/Phonon/VideoPlayer
--rw-r--r--	root/root	usr/include/phonon/Phonon/VideoWidget
--rw-r--r--	root/root	usr/include/phonon/Phonon/VideoWidgetInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/VolumeFaderEffect
--rw-r--r--	root/root	usr/include/phonon/Phonon/VolumeFaderInterface
--rw-r--r--	root/root	usr/include/phonon/Phonon/VolumeSlider
+-rw-r--r--	root/root	usr/include/phonon/AbstractAudioOutput
+-rw-r--r--	root/root	usr/include/phonon/AbstractMediaStream
+-rw-r--r--	root/root	usr/include/phonon/AbstractVideoOutput
+-rw-r--r--	root/root	usr/include/phonon/AddonInterface
+-rw-r--r--	root/root	usr/include/phonon/AudioCaptureDevice
+-rw-r--r--	root/root	usr/include/phonon/AudioCaptureDeviceModel
+-rw-r--r--	root/root	usr/include/phonon/AudioChannelDescription
+-rw-r--r--	root/root	usr/include/phonon/AudioChannelDescriptionModel
+-rw-r--r--	root/root	usr/include/phonon/AudioOutput
+-rw-r--r--	root/root	usr/include/phonon/AudioOutputDevice
+-rw-r--r--	root/root	usr/include/phonon/AudioOutputDeviceModel
+-rw-r--r--	root/root	usr/include/phonon/AudioOutputInterface
+-rw-r--r--	root/root	usr/include/phonon/AudioOutputInterface40
+-rw-r--r--	root/root	usr/include/phonon/AudioOutputInterface42
+-rw-r--r--	root/root	usr/include/phonon/BackendCapabilities
+-rw-r--r--	root/root	usr/include/phonon/BackendInterface
+-rw-r--r--	root/root	usr/include/phonon/Effect
+-rw-r--r--	root/root	usr/include/phonon/EffectDescription
+-rw-r--r--	root/root	usr/include/phonon/EffectDescriptionModel
+-rw-r--r--	root/root	usr/include/phonon/EffectInterface
+-rw-r--r--	root/root	usr/include/phonon/EffectParameter
+-rw-r--r--	root/root	usr/include/phonon/EffectWidget
+-rw-r--r--	root/root	usr/include/phonon/Global
+-rw-r--r--	root/root	usr/include/phonon/MediaController
+-rw-r--r--	root/root	usr/include/phonon/MediaNode
+-rw-r--r--	root/root	usr/include/phonon/MediaObject
+-rw-r--r--	root/root	usr/include/phonon/MediaObjectInterface
+-rw-r--r--	root/root	usr/include/phonon/MediaSource
+-rw-r--r--	root/root	usr/include/phonon/ObjectDescription
+-rw-r--r--	root/root	usr/include/phonon/ObjectDescriptionData
+-rw-r--r--	root/root	usr/include/phonon/ObjectDescriptionModel
+-rw-r--r--	root/root	usr/include/phonon/ObjectDescriptionModelData
+-rw-r--r--	root/root	usr/include/phonon/Path
+-rw-r--r--	root/root	usr/include/phonon/PlatformPlugin
+-rw-r--r--	root/root	usr/include/phonon/SeekSlider
+-rw-r--r--	root/root	usr/include/phonon/StreamInterface
+-rw-r--r--	root/root	usr/include/phonon/SubtitleDescription
+-rw-r--r--	root/root	usr/include/phonon/SubtitleDescriptionModel
+-rw-r--r--	root/root	usr/include/phonon/VideoPlayer
+-rw-r--r--	root/root	usr/include/phonon/VideoWidget
+-rw-r--r--	root/root	usr/include/phonon/VideoWidgetInterface
+-rw-r--r--	root/root	usr/include/phonon/VolumeFaderEffect
+-rw-r--r--	root/root	usr/include/phonon/VolumeFaderInterface
+-rw-r--r--	root/root	usr/include/phonon/VolumeSlider
 -rw-r--r--	root/root	usr/include/phonon/abstractaudiooutput.h
 -rw-r--r--	root/root	usr/include/phonon/abstractmediastream.h
 -rw-r--r--	root/root	usr/include/phonon/abstractvideooutput.h
@@ -2897,123 +2897,123 @@ drwxr-xr-x	root/root	usr/include/phonon/Phonon/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libQt3Support.la
 -rw-r--r--	root/root	usr/lib/libQt3Support.prl
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.6 -> libQt3Support.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.6 -> libQt3Support.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtAssistantClient.prl
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.6 -> libQtAssistantClient.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.6 -> libQtAssistantClient.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtCLucene.la
 -rw-r--r--	root/root	usr/lib/libQtCLucene.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.6 -> libQtCLucene.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.6 -> libQtCLucene.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtCore.la
 -rw-r--r--	root/root	usr/lib/libQtCore.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.6 -> libQtCore.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.6 -> libQtCore.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtDBus.la
 -rw-r--r--	root/root	usr/lib/libQtDBus.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.6 -> libQtDBus.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.6 -> libQtDBus.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtDesigner.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.6 -> libQtDesigner.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.6 -> libQtDesigner.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtDesignerComponents.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.6 -> libQtDesignerComponents.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.6 -> libQtDesignerComponents.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtGui.la
 -rw-r--r--	root/root	usr/lib/libQtGui.prl
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.6 -> libQtGui.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.6 -> libQtGui.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtHelp.la
 -rw-r--r--	root/root	usr/lib/libQtHelp.prl
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.6 -> libQtHelp.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.6 -> libQtHelp.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtMultimedia.la
 -rw-r--r--	root/root	usr/lib/libQtMultimedia.prl
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so -> libQtMultimedia.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4 -> libQtMultimedia.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4.6 -> libQtMultimedia.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtMultimedia.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so -> libQtMultimedia.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4 -> libQtMultimedia.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4.6 -> libQtMultimedia.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtMultimedia.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtNetwork.la
 -rw-r--r--	root/root	usr/lib/libQtNetwork.prl
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.6 -> libQtNetwork.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.6 -> libQtNetwork.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.la
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.prl
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.6 -> libQtOpenGL.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.6 -> libQtOpenGL.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtScript.la
 -rw-r--r--	root/root	usr/lib/libQtScript.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.6 -> libQtScript.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.6 -> libQtScript.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.la
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.6 -> libQtScriptTools.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.6 -> libQtScriptTools.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtSql.la
 -rw-r--r--	root/root	usr/lib/libQtSql.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.6 -> libQtSql.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.6 -> libQtSql.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtSvg.la
 -rw-r--r--	root/root	usr/lib/libQtSvg.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.6 -> libQtSvg.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.6 -> libQtSvg.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtTest.la
 -rw-r--r--	root/root	usr/lib/libQtTest.prl
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.6 -> libQtTest.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.6 -> libQtTest.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtUiTools.a
 -rw-r--r--	root/root	usr/lib/libQtUiTools.prl
 -rw-r--r--	root/root	usr/lib/libQtWebKit.la
 -rw-r--r--	root/root	usr/lib/libQtWebKit.prl
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.6 -> libQtWebKit.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.6 -> libQtWebKit.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtXml.la
 -rw-r--r--	root/root	usr/lib/libQtXml.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.6 -> libQtXml.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.6 -> libQtXml.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.la
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.6.0
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.6 -> libQtXmlPatterns.so.4.6.0
--rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.6.0
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.6 -> libQtXmlPatterns.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libphonon.la
 -rw-r--r--	root/root	usr/lib/libphonon.prl
 lrwxrwxrwx	root/root	usr/lib/libphonon.so -> libphonon.so.4.3.1
@@ -3280,9 +3280,6 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-32/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-64/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-64/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-64/qplatformdefs.h
-drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/
--rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/qmake.conf
--rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-gles2-experimental/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/linux-g++-maemo/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-maemo/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/linux-g++-maemo/qplatformdefs.h
@@ -3425,9 +3422,15 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/sco-cc/
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/sco-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/sco-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/sco-g++/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-cc-64-stlport/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-64-stlport/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-64-stlport/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-cc-64/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-64/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-64/qplatformdefs.h
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-cc-stlport/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-stlport/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc-stlport/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/solaris-cc/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/solaris-cc/qplatformdefs.h
@@ -3461,6 +3464,9 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/unixware-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unixware-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unixware-g++/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/
+drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/linux-host-g++/
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-host-g++/qmake.conf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-host-g++/qplatformdefs.h
 drwxr-xr-x	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/qmake.conf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/unsupported/linux-scratchbox2-g++/qplatformdefs.h
