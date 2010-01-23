@@ -43,6 +43,7 @@ drwxr-xr-x	root/root	usr/share/transmission/
 drwxr-xr-x	root/root	usr/share/transmission/web/
 drwxr-xr-x	root/root	usr/share/transmission/web/images/
 drwxr-xr-x	root/root	usr/share/transmission/web/images/buttons/
+-rw-r--r--	root/root	usr/share/transmission/web/images/buttons/cancel.png
 -rw-r--r--	root/root	usr/share/transmission/web/images/buttons/file_priority_buttons.png
 -rw-r--r--	root/root	usr/share/transmission/web/images/buttons/file_wanted_buttons.png
 -rw-r--r--	root/root	usr/share/transmission/web/images/buttons/info_activity.png
