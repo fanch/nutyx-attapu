@@ -1,0 +1,18 @@
+# Description: Un client vpn protocole point-a-point
+# URL: http://pptpclient.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: guy_
+# Depends on: ppp
+
+name=pptp
+version=1.7.2
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/pptpclient/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i 's|/usr||' Makefile
+	sed -i 's|/bin/ip|/sbin/ip|g' routing.c
+	make
+	make DESTDIR=$PKG install
+}
