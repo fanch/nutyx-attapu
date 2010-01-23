@@ -5,7 +5,7 @@
 # Depends on:
 
 name=file
-version=5.03
+version=5.04
 release=1
 source=(ftp://ftp.fu-berlin.de/unix/tools/file/$name-$version.tar.gz)
 
