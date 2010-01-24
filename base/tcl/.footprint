@@ -244,13 +244,13 @@ drwxr-xr-x	root/root	usr/lib/tcl8.5/opt0.4/
 drwxr-xr-x	root/root	usr/lib/tcl8/
 drwxr-xr-x	root/root	usr/lib/tcl8/8.3/
 drwxr-xr-x	root/root	usr/lib/tcl8/8.4/
--rw-r--r--	root/root	usr/lib/tcl8/8.4/http-2.7.3.tm
--rw-r--r--	root/root	usr/lib/tcl8/8.4/platform-1.0.4.tm
+-rw-r--r--	root/root	usr/lib/tcl8/8.4/http-2.7.5.tm
+-rw-r--r--	root/root	usr/lib/tcl8/8.4/platform-1.0.5.tm
 drwxr-xr-x	root/root	usr/lib/tcl8/8.4/platform/
 -rw-r--r--	root/root	usr/lib/tcl8/8.4/platform/shell-1.1.4.tm
 drwxr-xr-x	root/root	usr/lib/tcl8/8.5/
 -rw-r--r--	root/root	usr/lib/tcl8/8.5/msgcat-1.4.2.tm
--rw-r--r--	root/root	usr/lib/tcl8/8.5/tcltest-2.3.1.tm
+-rw-r--r--	root/root	usr/lib/tcl8/8.5/tcltest-2.3.2.tm
 -rw-r--r--	root/root	usr/lib/tclConfig.sh
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
