@@ -2,26 +2,23 @@
 # URL: http://www.gnu.org/software/bash/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=bash
-version=4.0
-release=2
-source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz \
-http://www.linuxfromscratch.org/patches/lfs/development/bash-$version-fixes-5.patch)
+version=4.1
+release=1
+source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
 build() {
 cd $name-$version
-patch -Np1 -i ../bash-$version-fixes-5.patch
-./configure --prefix=/usr \
-	--bindir=/bin \
-	--htmldir=/usr/share/doc/bash-4.0 \
+./configure --prefix=/usr --bindir=/bin \
+	--htmldir=/usr/share/doc/$name-$version \
 	--infodir=/usr/share/info \
 	--mandir=/usr/share/man \
-	--without-bash-malloc \
-        --with-installed-readline
+	--without-bash-malloc --with-installed-readline
 make
 make DESTDIR=$PKG install
 if [ -f $PKG/usr/share/info/dir ]; then
 	rm $PKG/usr/share/info/dir
 fi
+	rm -rf $PKG/usr/share/doc
 }
