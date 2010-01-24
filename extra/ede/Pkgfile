@@ -5,19 +5,15 @@
 # Depends on: edelib, dbus
 
 name=ede
-version=2.0-beta
-release=2
-source=(http://downloads.sourceforge.net/project/ede/$name/2.0-beta/$name-$version.tar.gz\
-	ede-2.0-beta.c++.patch \
-	ede-2.0-beta.edelibinclude.patch \
-	ede-2.0-beta.jamconfig.patch )
+version=2.0-beta-2
+release=1
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz\
+	http://kiao.no-ip.info/NuTyX/files/edeneu.tar.gz)
 build() {
+mv $SRC/usr $PKG/
 cd $name-*
-patch -Np1 -i ../ede-2.0-beta.c++.patch
-patch -Np1 -i ../ede-2.0-beta.edelibinclude.patch
 ./autogen.sh
 ./configure --prefix=/usr
-patch -Np1 -i ../ede-2.0-beta.jamconfig.patch
 jam
 prefix=$PKG/usr sysconfdir=$PKG/etc InstallData=$PKG jam install
 mv $PKG/usr/share/mime/packages .
