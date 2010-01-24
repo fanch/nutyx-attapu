@@ -5,13 +5,11 @@
 # Depends on: xorg, jam, fltk1, efltk,doxygen
 
 name=edelib
-version=2.0-beta
+version=2.0-beta-2
 release=1
-source=(http://downloads.sourceforge.net/project/ede/$name/2.0-beta/$name-$version.tar.gz\
-  edelib-2.0-beta.c++.patch)
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz)
 build() {
 cd $name-*
-patch -Np1 -i ../edelib-2.0-beta.c++.patch
 ./autogen.sh
 ./configure --prefix=/usr
 jam
