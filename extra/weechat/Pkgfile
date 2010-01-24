@@ -2,11 +2,11 @@
 # URL: http://weechat.flashtux.org/
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: aspell
+# Depends on: aspell, ruby
 
 name=weechat
 version=0.3.1
-release=2
+release=1
 source=(http://weechat.org/files/src/$name-$version.tar.gz)
 build() {
 cd $name-$version
