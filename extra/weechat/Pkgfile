@@ -5,8 +5,8 @@
 # Depends on: aspell
 
 name=weechat
-version=0.3.0
-release=1
+version=0.3.1
+release=2
 source=(http://weechat.org/files/src/$name-$version.tar.gz)
 build() {
 cd $name-$version
@@ -15,5 +15,6 @@ cd $name-$version
 	cmake .. -DPREFIX=/usr
 	make
 	make DESTDIR=$PKG install
+	chown -R root:root $PKG
 }
 
