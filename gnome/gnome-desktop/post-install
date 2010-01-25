@@ -10,7 +10,4 @@ do
 	/usr/bin/scrollkeeper-install -q -p /var/lib/scrollkeeper /$SCROLL > /dev/null
 done
 
-# desktop database
-update-desktop-database > /dev/null
-
 # End of file
