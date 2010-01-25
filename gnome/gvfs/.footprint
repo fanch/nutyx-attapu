@@ -34,6 +34,27 @@ drwxr-xr-x	root/root	usr/lib/gio/modules/
 -rwxr-xr-x	root/root	usr/lib/gio/modules/libgioremote-volume-monitor.so
 -rwxr-xr-x	root/root	usr/lib/gio/modules/libgvfsdbus.la
 -rwxr-xr-x	root/root	usr/lib/gio/modules/libgvfsdbus.so
+drwxr-xr-x	root/root	usr/lib/gvfs/
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfs-fuse-daemon
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfs-hal-volume-monitor
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-archive
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-burn
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-cdda
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-computer
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-dav
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-dnssd
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-ftp
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-gphoto2
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-http
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-localtest
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-metadata
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-network
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-sftp
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-smb
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-smb-browse
+-rwxr-xr-x	root/root	usr/lib/gvfs/gvfsd-trash
 -rwxr-xr-x	root/root	usr/lib/libgvfscommon-dnssd.la
 lrwxrwxrwx	root/root	usr/lib/libgvfscommon-dnssd.so -> libgvfscommon-dnssd.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgvfscommon-dnssd.so.0 -> libgvfscommon-dnssd.so.0.0.0
@@ -42,26 +63,6 @@ lrwxrwxrwx	root/root	usr/lib/libgvfscommon-dnssd.so.0 -> libgvfscommon-dnssd.so.
 lrwxrwxrwx	root/root	usr/lib/libgvfscommon.so -> libgvfscommon.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgvfscommon.so.0 -> libgvfscommon.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgvfscommon.so.0.0.0
-drwxr-xr-x	root/root	usr/libexec/
--rwxr-xr-x	root/root	usr/libexec/gvfs-fuse-daemon
--rwxr-xr-x	root/root	usr/libexec/gvfs-gphoto2-volume-monitor
--rwxr-xr-x	root/root	usr/libexec/gvfs-hal-volume-monitor
--rwxr-xr-x	root/root	usr/libexec/gvfsd
--rwxr-xr-x	root/root	usr/libexec/gvfsd-archive
--rwxr-xr-x	root/root	usr/libexec/gvfsd-burn
--rwxr-xr-x	root/root	usr/libexec/gvfsd-computer
--rwxr-xr-x	root/root	usr/libexec/gvfsd-dav
--rwxr-xr-x	root/root	usr/libexec/gvfsd-dnssd
--rwxr-xr-x	root/root	usr/libexec/gvfsd-ftp
--rwxr-xr-x	root/root	usr/libexec/gvfsd-gphoto2
--rwxr-xr-x	root/root	usr/libexec/gvfsd-http
--rwxr-xr-x	root/root	usr/libexec/gvfsd-localtest
--rwxr-xr-x	root/root	usr/libexec/gvfsd-metadata
--rwxr-xr-x	root/root	usr/libexec/gvfsd-network
--rwxr-xr-x	root/root	usr/libexec/gvfsd-sftp
--rwxr-xr-x	root/root	usr/libexec/gvfsd-smb
--rwxr-xr-x	root/root	usr/libexec/gvfsd-smb-browse
--rwxr-xr-x	root/root	usr/libexec/gvfsd-trash
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
@@ -73,6 +74,7 @@ drwxr-xr-x	root/root	usr/share/gvfs/
 drwxr-xr-x	root/root	usr/share/gvfs/mounts/
 -rw-r--r--	root/root	usr/share/gvfs/mounts/archive.mount
 -rw-r--r--	root/root	usr/share/gvfs/mounts/burn.mount
+-rw-r--r--	root/root	usr/share/gvfs/mounts/cdda.mount
 -rw-r--r--	root/root	usr/share/gvfs/mounts/computer.mount
 -rw-r--r--	root/root	usr/share/gvfs/mounts/dav+sd.mount
 -rw-r--r--	root/root	usr/share/gvfs/mounts/dav.mount
