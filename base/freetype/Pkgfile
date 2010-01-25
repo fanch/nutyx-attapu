@@ -1,11 +1,10 @@
-# Description: A free and portable TrueType font rendering engine
+# Description: Moteur libre et portable permettant aux applications le rendu des polices TrueType
 # URL: http://www.freetype.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=freetype
-version=2.3.9
+version=2.3.11
 release=1
 source=( http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
 
