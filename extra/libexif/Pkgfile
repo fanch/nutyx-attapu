@@ -2,10 +2,10 @@
 # URL: http://libexif.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libart_lgpl
+# Depends on:
 
 name=libexif
-version=0.6.17
+version=0.6.19
 release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
