@@ -2,7 +2,7 @@
 # URL: http://www.avahi.org/
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libdaemon, dbus, dbus-python, pygtk, nss-mdns, libglade, libcap
+# Depends on: libdaemon, dbus, dbus-python, nss-mdns, libglade, libcap
 
 name=avahi
 version=0.6.24
