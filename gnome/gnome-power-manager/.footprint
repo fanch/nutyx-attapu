@@ -633,6 +633,22 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/sv/figures/gpm-sus
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/sv/figures/gpm-unplugged.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/sv/figures/gs-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/sv/gnome-power-manager.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/applet-brightness.png -> ../../C/figures/applet-brightness.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/applet-inhibit.png -> ../../C/figures/applet-inhibit.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-cell-capacity.png -> ../../C/figures/gpm-cell-capacity.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-charged.png -> ../../C/figures/gpm-charged.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-critical.png -> ../../C/figures/gpm-critical.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-low.png -> ../../C/figures/gpm-low.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-prefs-ac.png -> ../../C/figures/gpm-prefs-ac.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-prefs-battery.png -> ../../C/figures/gpm-prefs-battery.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-prefs-general.png -> ../../C/figures/gpm-prefs-general.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-stats-graph.png -> ../../C/figures/gpm-stats-graph.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-suspend-problem.png -> ../../C/figures/gpm-suspend-problem.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gpm-unplugged.png -> ../../C/figures/gpm-unplugged.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/figures/gs-prefs.png -> ../../C/figures/gs-prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/zh_CN/gnome-power-manager.xml
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -694,3 +710,4 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-power-manager/
 -rw-r--r--	root/root	usr/share/omf/gnome-power-manager/gnome-power-manager-pa.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-power-manager/gnome-power-manager-ru.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-power-manager/gnome-power-manager-sv.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-power-manager/gnome-power-manager-zh_CN.omf
