@@ -5,18 +5,15 @@
 # Depends on: gconf, gnome-mime-data
 
 name=gnome-vfs
-version=2.24.1
+version=2.24.2
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.24/$name-$version.tar.bz2)
-
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
-	./configure --prefix=$(pkg-config --variable=prefix ORBit-2.0) \
+	./configure --prefix=$GNOME_PREFIX \
             --sysconfdir=/etc \
-	--libexecdir=$(pkg-config \
-	--variable=prefix ORBit-2.0)/lib/gnome-vfs-2.0
+	--libexecdir=$GNOME_PREFIX/lib/gnome-vfs-2.0
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/$(pkg-config \
-	--variable=prefix ORBit-2.0)/share/gtk-doc
+	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
 }
