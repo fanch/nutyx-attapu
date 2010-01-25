@@ -2,10 +2,9 @@
 # URL: http://icon-theme.freedesktop.org/wiki/HicolorTheme
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=hicolor-icon-theme
-version=0.10
+version=0.11
 release=1
 source=(  http://icon-theme.freedesktop.org/releases/$name-$version.tar.gz)
 
