@@ -89,7 +89,7 @@ drwxr-xr-x	root/root	usr/lib/tk8.5/demos/images/
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/sayings.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/search.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/spin.tcl
--rwxr-xr-x	root/root	usr/lib/tk8.5/demos/square
+-rw-r--r--	root/root	usr/lib/tk8.5/demos/square
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/states.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/style.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/demos/tclIndex
@@ -182,6 +182,7 @@ drwxr-xr-x	root/root	usr/lib/tk8.5/ttk/
 -rw-r--r--	root/root	usr/lib/tk8.5/ttk/treeview.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/ttk/ttk.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/ttk/utils.tcl
+-rw-r--r--	root/root	usr/lib/tk8.5/ttk/vistaTheme.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/ttk/winTheme.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/ttk/xpTheme.tcl
 -rw-r--r--	root/root	usr/lib/tk8.5/unsupported.tcl
@@ -559,6 +560,7 @@ drwxr-xr-x	root/root	usr/share/man/mann/
 -r--r--r--	root/root	usr/share/man/mann/ttk_sizegrip.n.gz
 -r--r--r--	root/root	usr/share/man/mann/ttk_style.n.gz
 -r--r--r--	root/root	usr/share/man/mann/ttk_treeview.n.gz
+-r--r--r--	root/root	usr/share/man/mann/ttk_vsapi.n.gz
 -r--r--r--	root/root	usr/share/man/mann/ttk_widget.n.gz
 -r--r--r--	root/root	usr/share/man/mann/winfo.n.gz
 -r--r--r--	root/root	usr/share/man/mann/wm.n.gz

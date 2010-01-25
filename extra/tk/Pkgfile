@@ -5,7 +5,7 @@
 # Depends on: tcl, xorg-libx11
 
 name=tk
-version=8.5.7
+version=8.5.8
 release=1
 source=( http://downloads.sourceforge.net/tcl/${name}$version-src.tar.gz )
 
