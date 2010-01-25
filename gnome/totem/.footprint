@@ -304,10 +304,10 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_next_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_pause_button.png -> ../../C/figures/totem_pause_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_play_button.png -> ../../C/figures/totem_play_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_previous_button.png -> ../../C/figures/totem_previous_button.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_show_playlist_button.png -> ../../C/figures/totem_show_playlist_button.png
+-rw-r--r--	root/root	usr/share/gnome/help/totem/pl/figures/totem_show_playlist_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/pl/figures/totem_start_window.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pl/figures/totem_volume_mute_button.png -> ../../C/figures/totem_volume_mute_button.png
+-rw-r--r--	root/root	usr/share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png
+-rw-r--r--	root/root	usr/share/gnome/help/totem/pl/figures/totem_volume_mute_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/pl/totem.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/pt_BR/
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/pt_BR/figures/
