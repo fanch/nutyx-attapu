@@ -5,7 +5,7 @@
 # Depends on: libgnomeui, gnome-panel, libcanberra, libgtop
 
 name=gnome-utils
-version=2.28.2
+version=2.28.3
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
