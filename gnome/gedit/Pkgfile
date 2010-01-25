@@ -5,7 +5,7 @@
 # Depends on: libgnomeui, libgnomeprintui, gnome-doc-utils, gtksourceview, pygtk
 
 name=gedit
-version=2.28.0
+version=2.28.2
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
 
