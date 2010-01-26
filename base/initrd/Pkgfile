@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=initrd
-version=2.6.32.5
+version=2.6.32.6
 release=1
 _tools=29122009
 SCRIPT_VERSION="2009.2"
