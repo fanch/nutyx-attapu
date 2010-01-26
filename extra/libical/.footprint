@@ -50,18 +50,18 @@ drwxr-xr-x	root/root	usr/include/libical/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libical.a
 -rwxr-xr-x	root/root	usr/lib/libical.la
-lrwxrwxrwx	root/root	usr/lib/libical.so -> libical.so.0.43.0
-lrwxrwxrwx	root/root	usr/lib/libical.so.0 -> libical.so.0.43.0
--rwxr-xr-x	root/root	usr/lib/libical.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libical.so -> libical.so.0.44.0
+lrwxrwxrwx	root/root	usr/lib/libical.so.0 -> libical.so.0.44.0
+-rwxr-xr-x	root/root	usr/lib/libical.so.0.44.0
 -rw-r--r--	root/root	usr/lib/libicalss.a
 -rwxr-xr-x	root/root	usr/lib/libicalss.la
-lrwxrwxrwx	root/root	usr/lib/libicalss.so -> libicalss.so.0.43.0
-lrwxrwxrwx	root/root	usr/lib/libicalss.so.0 -> libicalss.so.0.43.0
--rwxr-xr-x	root/root	usr/lib/libicalss.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libicalss.so -> libicalss.so.0.44.0
+lrwxrwxrwx	root/root	usr/lib/libicalss.so.0 -> libicalss.so.0.44.0
+-rwxr-xr-x	root/root	usr/lib/libicalss.so.0.44.0
 -rw-r--r--	root/root	usr/lib/libicalvcal.a
 -rwxr-xr-x	root/root	usr/lib/libicalvcal.la
-lrwxrwxrwx	root/root	usr/lib/libicalvcal.so -> libicalvcal.so.0.43.0
-lrwxrwxrwx	root/root	usr/lib/libicalvcal.so.0 -> libicalvcal.so.0.43.0
--rwxr-xr-x	root/root	usr/lib/libicalvcal.so.0.43.0
+lrwxrwxrwx	root/root	usr/lib/libicalvcal.so -> libicalvcal.so.0.44.0
+lrwxrwxrwx	root/root	usr/lib/libicalvcal.so.0 -> libicalvcal.so.0.44.0
+-rwxr-xr-x	root/root	usr/lib/libicalvcal.so.0.44.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libical.pc
