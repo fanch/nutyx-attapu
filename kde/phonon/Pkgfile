@@ -1,0 +1,20 @@
+# Description: phonon Plugin audio pour KDE
+# URL: http://phonon.kde.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: qt, xine-lib
+name=phonon
+version=4.3.95
+release=1
+_name=phonon
+source=(http://kiao.no-ip.info/NuTyX/files/${name}-$version.tar.gz)
+build() {
+
+mkdir build
+cd build
+cmake ../${_name}-${version} \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+make
+make DESTDIR=$PKG install
+}
