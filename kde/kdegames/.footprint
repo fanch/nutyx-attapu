@@ -1292,6 +1292,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/lskat/grafix/
 -rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/default.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/default.rc
 -rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/default.svg
+-rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/egyptian.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/egyptian.rc
+-rw-r--r--	root/root	opt/kde/share/apps/lskat/grafix/egyptian.svg
 -rw-r--r--	root/root	opt/kde/share/apps/lskat/lskatui.rc
 drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/bomber.kcfg
