@@ -240,6 +240,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KAccelGen/
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkAction
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkActionInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkActionMenu
+-rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkDialog
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkDomBuilder
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkExporterBase
 -rw-r--r--	root/root	opt/kde/include/KDE/KBookmarkGroup
