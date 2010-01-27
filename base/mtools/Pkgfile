@@ -2,20 +2,24 @@
 # URL: http://mtools.linux.lu/
 # Maintainer: NuTyX
 # Packager:  thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=mtools
-version=4.0.10
+version=4.0.12
 release=1
 source=(ftp://ftp.gnu.org/gnu/mtools/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
-		--infodir=/usr/share/info \
-                --mandir=/usr/share/man \
+		--datarootdir=$PKG/usr \
 		--sysconfdir=/etc 
 	make
-	make DESTDIR=$PKG install
-        rm $PKG/usr/share/info/dir
+	make -j1 prefix=$PKG/usr install
+	mkdir -p $PKG/usr/share
+	mv $PKG/usr/man $PKG/usr/share/man
+	mv $PKG/usr/info $PKG/usr/share/info
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm $PKG/usr/share/info/dir
+	fi
+	mkdir -p $PKG/usr/share
 }
