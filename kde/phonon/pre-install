@@ -1,0 +1,4 @@
+if ( pkginfo -i | grep phono-xine > /dev/null ) ; then
+        pkgrm phonon-xine
+fi
+
