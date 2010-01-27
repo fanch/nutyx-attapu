@@ -2,7 +2,7 @@
 # URL: http://oss.sgi.com/projects/xfs/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: attr
+# Depends on: libattr
 
 name=acl
 version=2.2.47.1
@@ -22,4 +22,5 @@ mv -v usr/lib/libacl.so* lib/
 ln -sv ../../lib/libacl.so.1 usr/lib/libacl.so
 mv -v usr/libexec/libacl.{a,la} usr/lib/
 rm -r usr/libexec
+mv $PKG/usr/man $PKG/usr/share
 }
