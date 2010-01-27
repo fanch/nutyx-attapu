@@ -1,8 +1,8 @@
-# Description: Applications contenant Jukebox, un mélangeur pour carte de son, une lecteur karaoke et midi, et un enrégistreur utilisant le aRts pour KDE4
+# Description: Applications contenant Jukebox, un mélangeur pour carte de son, une lecteur karaoke et midi, et un enrégistreur pour KDE4
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs-experimental, taglib, libmusicbrainz, cdparanoia, phonon-xine
+# Depends on: kdelibs-experimental, taglib, libmusicbrainz, cdparanoia, phonon
 
 name=kdemultimedia
 version=4.3.5
