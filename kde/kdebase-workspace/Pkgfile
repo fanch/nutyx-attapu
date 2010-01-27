@@ -62,4 +62,5 @@ build() {
 	$PKG/$KDE_PREFIX/share/apps/ksplash/Themes/
 	ln -sv Absolute-NuTyX \
 	$PKG/$KDE_PREFIX/share/apps/ksplash/Themes/Default
+	chown -R root:root $PKG
 }
