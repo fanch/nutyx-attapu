@@ -29,6 +29,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kerfuffle_libgz.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kerfuffle_libxz.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libarkpart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libextracthere.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkbytearrayedit.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/oktetapart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_package_superkaramba.so
@@ -316,6 +317,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/encryptfolder.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/floppy_format.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/viewdecrypted.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/ark_dndextract.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ark_part.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kbytearrayedit.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_lirc.desktop
