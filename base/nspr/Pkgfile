@@ -1,13 +1,12 @@
 # Description: Netscape Portable Runtime library
 # URL: http://www.mozilla.org/projects/nspr/
-# Maintainer:  Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: Fredrik Rinnestam, fredrik at rinnestam dot se
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=nspr
-version=4.8
+version=4.8.2
 release=1
-source=(ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.8/src/$name-$version.tar.gz
+source=(ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v4.8.2/src/$name-$version.tar.gz
         $name.pc.in)
 
 build() {
