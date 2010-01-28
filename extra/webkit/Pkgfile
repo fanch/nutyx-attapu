@@ -1,11 +1,11 @@
-# Description: Moteur de rendu Web libre 
-# URL: http://webkit.org/
+# Description: Moteur de rendu Web libre pour les navigateurs web
+# URL: http://webkitgtk.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: curl, dbus, gconf, gnome-vfs, gperf, gstreamer, gst-plugins-base, gtk, gtk-doc, icu, libpng, orbit2, pango, enchant, libsoup
 
 name=webkit
-version=1.1.16
+version=1.1.19
 release=1
 source=(http://webkitgtk.org/$name-$version.tar.gz)
 
