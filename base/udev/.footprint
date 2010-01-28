@@ -6,8 +6,8 @@ drwxr-xr-x	root/root	etc/udev/rules.d/
 -rw-r--r--	root/root	etc/udev/udev.conf
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
-lrwxrwxrwx	root/root	lib/libudev.so.0 -> libudev.so.0.6.0
--rwxr-xr-x	root/root	lib/libudev.so.0.6.0
+lrwxrwxrwx	root/root	lib/libudev.so.0 -> libudev.so.0.6.1
+-rwxr-xr-x	root/root	lib/libudev.so.0.6.1
 drwxr-xr-x	root/root	lib/udev/
 -rwxr-xr-x	root/root	lib/udev/ata_id
 -rwxr-xr-x	root/root	lib/udev/cdrom_id
@@ -62,14 +62,12 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/libudev.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libudev.la
-lrwxrwxrwx	root/root	usr/lib/libudev.so -> ../../lib/libudev.so.0.6.0
+lrwxrwxrwx	root/root	usr/lib/libudev.so -> ../../lib/libudev.so.0.6.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libudev.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/udev-150/
-drwxr-xr-x	root/root	usr/share/doc/udev-150/writing_udev_rules/
--rw-r--r--	root/root	usr/share/doc/udev-150/writing_udev_rules/index.html
+drwxr-xr-x	root/root	usr/share/doc/udev-151/
 drwxr-xr-x	root/root	usr/share/doc/udev-config/
 -rw-r--r--	root/root	usr/share/doc/udev-config/55-lfs.txt
 -rw-r--r--	root/root	usr/share/doc/udev-config/61-cdrom.txt

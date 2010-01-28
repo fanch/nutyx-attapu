@@ -81,7 +81,7 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/radialnet/util/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/radialnet/util/integration.pyc
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/radialnet/util/misc.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/radialnet/util/misc.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/zenmap-5.20-py2.6.egg-info
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/zenmap-5.21-py2.6.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/zenmapCore/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/zenmapCore/BasePaths.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/zenmapCore/BasePaths.pyc
@@ -296,9 +296,11 @@ drwxr-xr-x	root/root	usr/share/nmap/nselib/data/
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/oracle-sids
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/passwords.lst
 drwxr-xr-x	root/root	usr/share/nmap/nselib/data/psexec/
+-rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/README
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/backdoor.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/default.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/drives.lua
+-rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/encoder.c
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/examples.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/experimental.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/data/psexec/network.lua

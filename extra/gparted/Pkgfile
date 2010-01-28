@@ -5,7 +5,7 @@
 # Depends on: gtk, parted, gtkmm, libsigc++, ntfsprogs, ktsuss, gnome-doc-utils
 
 name=gparted
-version=0.5.0
+version=0.5.1
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
 	gparted.desktop)
