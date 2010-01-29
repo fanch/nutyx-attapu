@@ -2,29 +2,35 @@
 # URL: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=udev
 version=151
-release=1
-_lfs_release=20090925
+release=2
+_lfs_release=20100126
 source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
 http://www.linuxfromscratch.org/lfs/downloads/development/udev-config-${_lfs_release}.tar.bz2)
 build() {
 
 cd udev-$version
+
 install -dv $PKG/lib/{firmware,udev/devices/{pts,shm}}
 ln -s /proc/self/fd $PKG/lib/udev/devices/fd
 ln -s /proc/self/fd/0 $PKG/lib/udev/devices/stdin
 ln -s /proc/self/fd/1 $PKG/lib/udev/devices/stdout
 ln -s /proc/self/fd/2 $PKG/lib/udev/devices/stderr
 ln -s /proc/kcore $PKG/lib/udev/devices/core
+
+sed -e 's/0640/0660/' extras/floppy/60-floppy.rules
+
+
 ./configure --prefix=/usr \
     --sysconfdir=/etc --sbindir=/sbin \
     --with-rootlibdir=/lib --libexecdir=/lib/udev \
     --docdir=/usr/share/doc/udev-$version \
     --disable-extras --disable-introspection
+
 make 
+
 make install DESTDIR=$PKG mandir="/usr/share/man"
 install -m644 -v rules/packages/64-*.rules \
 	$PKG/lib/udev/rules.d/
