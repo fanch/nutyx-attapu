@@ -4,8 +4,6 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/partitionmanager
 -rwxr-xr-x	root/root	opt/kde/bin/partitionmanager-bin
 drwxr-xr-x	root/root	opt/kde/lib/
-drwxr-xr-x	root/root	opt/kde/lib/kde4/
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_partitionmanager.so
 -rwxr-xr-x	root/root	opt/kde/lib/libpartitionmanagerprivate.so
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/applications/
@@ -34,9 +32,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/partitionmanager.png
-drwxr-xr-x	root/root	opt/kde/share/kde4/
-drwxr-xr-x	root/root	opt/kde/share/kde4/services/
--rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_partitionmanager.desktop
 drwxr-xr-x	root/root	opt/kde/share/locale/
 drwxr-xr-x	root/root	opt/kde/share/locale/fr/
 drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
