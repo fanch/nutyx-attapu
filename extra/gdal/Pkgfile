@@ -4,7 +4,7 @@
 # Packager: lesibel at free dot fr
 
 name=gdal
-version=1.6.2
+version=1.7.0
 release=1
 source=(http://download.osgeo.org/$name/$name-$version.tar.gz)
 
