@@ -2,10 +2,11 @@
 # URL: http://qgis.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: jasper, curl, qt, gsl, grass, python, pyqt, giflib, xerces-c
+# Depends on: jasper, curl, qt, gsl, grass, python, pyqt, giflib, xerces-c, geos, python-numpy, gpsbabel, libgeotiff, netcdf, postgresql
+ 
 
 name=qgis
-version=1.3.0
+version=1.4.0
 release=1
 
 source=(http://download.osgeo.org/qgis/src/qgis_$version.tar.gz
@@ -13,10 +14,10 @@ source=(http://download.osgeo.org/qgis/src/qgis_$version.tar.gz
 
 build() {
 	cd $name-$version
-	patch -Np1 -i $SRC/fix-compilation.patch
+#	patch -Np1 -i $SRC/fix-compilation.patch
 
 	# Fix insecure RPATH is weird, but just works ;)
-        echo "os.system(\"sed -i '/^LFLAGS/s|-Wl,-rpath,.\+ ||g' gui/Makefile core/Makefile\")" >> python/configure.py.in
+#        echo "os.system(\"sed -i '/^LFLAGS/s|-Wl,-rpath,.\+ ||g' gui/Makefile core/Makefile\")" >> python/configure.py.in
 
 	cd $SRC
 	mkdir build

@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gdal_translate
 -rwxr-xr-x	root/root	usr/bin/gdaladdo
 -rwxr-xr-x	root/root	usr/bin/gdalbuildvrt
+-rwxr-xr-x	root/root	usr/bin/gdaldem
 -rwxr-xr-x	root/root	usr/bin/gdalenhance
 -rwxr-xr-x	root/root	usr/bin/gdalinfo
 -rwxr-xr-x	root/root	usr/bin/gdalmanage
@@ -19,7 +20,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ogrtindex
 -rwxr-xr-x	root/root	usr/bin/testepsg
 drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/cpl_atomic_ops.h
 -rw-r--r--	root/root	usr/include/cpl_config.h
+-rw-r--r--	root/root	usr/include/cpl_config_extras.h
 -rw-r--r--	root/root	usr/include/cpl_conv.h
 -rw-r--r--	root/root	usr/include/cpl_csv.h
 -rw-r--r--	root/root	usr/include/cpl_error.h
@@ -34,6 +37,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/cpl_port.h
 -rw-r--r--	root/root	usr/include/cpl_quad_tree.h
 -rw-r--r--	root/root	usr/include/cpl_string.h
+-rw-r--r--	root/root	usr/include/cpl_time.h
 -rw-r--r--	root/root	usr/include/cpl_vsi.h
 -rw-r--r--	root/root	usr/include/cpl_vsi_virtual.h
 -rw-r--r--	root/root	usr/include/cpl_win32ce_api.h
@@ -69,9 +73,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgdal.a
 -rwxr-xr-x	root/root	usr/lib/libgdal.la
-lrwxrwxrwx	root/root	usr/lib/libgdal.so -> libgdal.so.1.13.2
-lrwxrwxrwx	root/root	usr/lib/libgdal.so.1 -> libgdal.so.1.13.2
--rwxr-xr-x	root/root	usr/lib/libgdal.so.1.13.2
+lrwxrwxrwx	root/root	usr/lib/libgdal.so -> libgdal.so.1.14.0
+lrwxrwxrwx	root/root	usr/lib/libgdal.so.1 -> libgdal.so.1.14.0
+-rwxr-xr-x	root/root	usr/lib/libgdal.so.1.14.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gdal/
 -rw-r--r--	root/root	usr/share/gdal/GDALLogoBW.svg
@@ -90,6 +94,7 @@ drwxr-xr-x	root/root	usr/share/gdal/
 -rw-r--r--	root/root	usr/share/gdal/gdalicon.png
 -rw-r--r--	root/root	usr/share/gdal/gt_datum.csv
 -rw-r--r--	root/root	usr/share/gdal/gt_ellips.csv
+-rw-r--r--	root/root	usr/share/gdal/header.dxf
 -rw-r--r--	root/root	usr/share/gdal/pcs.csv
 -rw-r--r--	root/root	usr/share/gdal/pcs.override.csv
 -rw-r--r--	root/root	usr/share/gdal/prime_meridian.csv
@@ -105,4 +110,5 @@ drwxr-xr-x	root/root	usr/share/gdal/
 -rw-r--r--	root/root	usr/share/gdal/seed_2d.dgn
 -rw-r--r--	root/root	usr/share/gdal/seed_3d.dgn
 -rw-r--r--	root/root	usr/share/gdal/stateplane.csv
+-rw-r--r--	root/root	usr/share/gdal/trailer.dxf
 -rw-r--r--	root/root	usr/share/gdal/unit_of_measure.csv

@@ -5,7 +5,7 @@
 # Depends on:
 
 name=geos
-version=3.1.1
+version=3.2.0
 release=1
 source=(http://download.osgeo.org/$name/$name-$version.tar.bz2 \
 	gcc4.3.patch )
