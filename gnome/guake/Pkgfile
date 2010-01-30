@@ -1,0 +1,17 @@
+# Description: Terminale déroulant pour GNOME
+# URL: http://guake-terminal.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python-notify, vte, gconf, gnome-python, dbus-python, notification-daemon
+
+name=guake
+version=0.4.0
+release=1
+source=(ftp://ftp.debian.org/debian/pool/main/g/$name/${name}_${version}.orig.tar.gz)
+build() {
+	cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+		--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+}
