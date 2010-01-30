@@ -1,0 +1,19 @@
+# Description: Gestionnaire de fond d'ecran
+# URL: http://wallpapoz.akbarhome.com
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: pyGTK, python glade, pil, xorg-xwininfo, xorg-xprop, 
+
+
+name=wallpapoz
+version=0.4.1
+release=1
+source=(http://wallpapoz.akbarhome.com/files/wallpapoz-0.4.1.tar.bz2)
+
+build() {
+	cd $name-$version
+        mkdir -p $PKG/usr
+	python setup.py --installdir=$PKG/usr install 	
+	
+	
+}
