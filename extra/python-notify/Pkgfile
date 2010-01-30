@@ -1,0 +1,17 @@
+# Description: Connecteur python pour libnotify
+# URL: http://www.galago-project.org/
+# Maintainer: NuTyX packager team
+# Packager: thierryn1 at hispeed at ch
+# Depends on: libnotify, pygtk
+
+name=python-notify
+version=0.1.1
+release=1
+source=(http://www.galago-project.org/files/releases/source/notify-python/notify-python-$version.tar.gz)
+build() {
+	cd notify-python-$version
+	./configure --prefix=/usr
+	make clean
+	make
+	make DESTDIR=$PKG install
+}
