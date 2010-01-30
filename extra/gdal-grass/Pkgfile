@@ -1,0 +1,21 @@
+# Description: Standalone drivers for GRASS raster and vector files 
+# URL: http://www.gdal.org/dl/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: gdal, grass
+
+name=gdal-grass
+version=1.4.3
+release=1
+source=(http://download.osgeo.org/gdal/$name-$version.tar.gz \
+	gdal-grass-destdir.patch)
+
+build() {
+  cd $name-$version
+  ./configure --prefix=/usr  --with-gdal=/usr/bin/gdal-config --with-grass=/usr/bin/grass
+  patch -Np 0 -i $SRC/gdal-grass-destdir.patch
+  make
+  install -d $PKG/usr/share/gdal/grass/etc
+  install -d $PKG/usr/share/gdal/grass/driver/db
+  make DESTDIR=$PKG install
+}
