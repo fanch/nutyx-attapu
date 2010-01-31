@@ -2,7 +2,7 @@
 # URL: http://wallpapoz.akbarhome.com
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: pyGTK, python glade, pil, xorg-xwininfo, xorg-xprop, 
+# Depends on: pygtk, python, libglade, pil, xorg-xwininfo, xorg-xprop 
 
 
 name=wallpapoz
