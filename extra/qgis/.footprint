@@ -166,10 +166,12 @@ drwxr-xr-x	root/root	usr/lib/qgis/
 -rwxr-xr-x	root/root	usr/lib/qgis/libogrprovider.so
 -rwxr-xr-x	root/root	usr/lib/qgis/liboracleplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libosmprovider.so
+-rwxr-xr-x	root/root	usr/lib/qgis/libpostgresprovider.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libquickprintplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/librasterterrainplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libscalebarplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libspatialiteprovider.so
+-rwxr-xr-x	root/root	usr/lib/qgis/libspitplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libwfsplugin.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libwfsprovider.so
 -rwxr-xr-x	root/root	usr/lib/qgis/libwmsprovider.so
