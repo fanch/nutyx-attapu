@@ -5,7 +5,7 @@
 # Depends on: qt
 
 name=skype_static
-version=2.1.0.47
+version=2.1.0.81
 release=1
 source=( http://download.skype.com/linux/$name-$version.tar.bz2 \
 skype)

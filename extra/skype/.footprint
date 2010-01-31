@@ -111,6 +111,8 @@ drwxr-xr-x	root/root	usr/share/skype_static/lang/
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_th.ts
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_tr.qm
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_tr.ts
+-rw-r--r--	root/root	usr/share/skype_static/lang/skype_uk.qm
+-rw-r--r--	root/root	usr/share/skype_static/lang/skype_uk.ts
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_s.qm
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_s.ts
 -rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_t.qm
