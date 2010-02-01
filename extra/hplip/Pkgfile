@@ -5,7 +5,7 @@
 # Depends on: cups, foomatic-db, foomatic-db-engine, ghostscript, libusb
 
 name=hplip
-version=3.9.10
+version=3.9.12
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
@@ -13,19 +13,19 @@ build() {
 cd $name-$version
 	./configure --prefix=/usr \
 	--sysconfdir=/etc \
-	--enable-hpijs-only-build \
-	--disable-gui-build \
-	--disable-xml-install \
-	--disable-doc-build \
-	--enable-foomatic-ppd-install \
-	--with-hpppddir=/usr/share/cups/model/HP \
-	--enable-foomatic-drv-install \
-	--with-drvdir=/usr/share/cups/drv/hp \
-	--enable-foomatic-rip-hplip-install \
 	--mandir=/usr/share/man \
-	--infodir=/usr/share/info
+	--infodir=/usr/share/info \
+	--disable-fax-build \
+	--disable-network-build \
+	--disable-gui-build \
+	--disable-doc-build \
+	--disable-qt4 \
+	--disable-foomatic-ppd-install \
+	--disable-foomatic-drv-install \
+	--enable-cups-ppd-install \
+	--with-hpppddir=/usr/share/cups/model/HP \
+	--with-drvdir=/usr/share/cups/dvr/hp
 	make
 	make DESTDIR=$PKG install
-	rmdir $PKG/usr/share/hplip
 	rm -r $PKG/usr/share/doc
 }
