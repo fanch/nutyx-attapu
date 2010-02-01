@@ -1,12 +1,12 @@
 # Description: logiciel de discussion par VoIP
 # URL: http://skype.com/
-# Maintainer: Blankoworld
-# Packager: blankoworld at wanadoo dot fr
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: qt
 
-name=skype_static
+name=skype
 version=2.1.0.81
-release=1
+release=2
 source=( http://download.skype.com/linux/$name-$version.tar.bz2 \
 skype)
 
