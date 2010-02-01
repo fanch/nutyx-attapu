@@ -2,7 +2,7 @@
 # URL: http://www.gphoto.org/proj/libgphoto2/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: hal, libjpeg, libexif, libtool, libusb
+# Depends on: hal, libjpeg, libexif, libusb
 
 name=libgphoto2
 version=2.4.8
