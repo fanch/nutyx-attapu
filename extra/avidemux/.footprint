@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDecoder/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDecoder/libADM_ad_Mad.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDecoder/libADM_ad_a52.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDecoder/libADM_ad_faad.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDecoder/libADM_ad_vorbis.so
 drwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDevices/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDevices/libADM_av_alsa.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/audioDevices/libADM_av_esd.so
@@ -26,17 +27,7 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/
 drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/avcodec/
 -rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/avcodec/Mpeg1Param.xsd
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/libADM_vidEnc_avcodec.so
--rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/libADM_vidEnc_x264.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/libADM_vidEnc_xvid.so
-drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/x264/
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/Apple iPhone.xml
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/Apple iPod 5.5G.xml
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/Apple iPod.xml
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/Microsoft Zune.xml
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/Sony PlayStation Portable.xml
--rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/x264/libADM_vidEnc_x264_Gtk.so
--rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/x264/libADM_vidEnc_x264_Qt.so
--rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/x264/x264Param.xsd
 drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/xvid/
 -rw-r--r--	root/root	usr/lib/ADM_plugins/videoEncoder/xvid/XvidParam.xsd
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoEncoder/xvid/libADM_vidEnc_Xvid_Gtk.so
@@ -47,14 +38,17 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Delta.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Denoise.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_FluxSmooth.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Hue_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Mosaic.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Pulldown.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Stabilize.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Tisophote.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_Whirl.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_addborders.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_asharp_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_asharp_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_asharp_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_avisynthResize_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_avisynthResize_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_avisynthResize_qt4.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_blackenBorders.so
@@ -62,19 +56,27 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_blendRemoval.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_chromaShift_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_chromaShift_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_chromashift_cli.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_cnr2_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_cnr2_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_cnr2_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_colorYUV_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_colorYUV_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_colorYUV_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_contrast_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_contrast_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_contrast_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_crop_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_crop_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_curveEditor_qt4.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_decimate.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_denoise3d.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_denoise3dhq.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_dropOut.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_eq2_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_eq2_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_eq2_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_equalizer_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_equalizer_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_equalizer_qt4.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_fade.so
@@ -96,8 +98,10 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mSmooth.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mcdeint.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mergeField.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mpdelogo_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mpdelogo_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mpdelogo_qt4.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mplayerResize_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mplayerResize_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_mplayerResize_qt4.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_palShift.so
@@ -110,6 +114,7 @@ drwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_soften.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_ssa.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_stackField.so
+-rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_sub_cli.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_sub_gtk.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_sub_qt4.so
 -rwxr-xr-x	root/root	usr/lib/ADM_plugins/videoFilter/libADM_vf_swapField.so
@@ -165,6 +170,7 @@ drwxr-xr-x	root/root	usr/share/avidemux/i18n/
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_fr.qm
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_it.qm
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_ja.qm
+-rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_pl.qm
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_pt_BR.qm
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_ru.qm
 -rw-r--r--	root/root	usr/share/avidemux/i18n/avidemux_sr.qm
