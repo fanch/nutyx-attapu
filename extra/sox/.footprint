@@ -34,6 +34,9 @@ drwxr-xr-x	root/root	usr/lib/sox/
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_amr_wb.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_wb.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_amr_wb.so
+-rw-r--r--	root/root	usr/lib/sox/libsox_fmt_ao.a
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_ao.la
+-rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_ao.so
 -rw-r--r--	root/root	usr/lib/sox/libsox_fmt_au.a
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_au.la
 -rwxr-xr-x	root/root	usr/lib/sox/libsox_fmt_au.so

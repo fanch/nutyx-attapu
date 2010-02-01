@@ -2,11 +2,11 @@
 # URL: http://sox.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libvorbis, lame, libmad, libsndfile, libsamplerate, amrnb, amrwb, ffmpeg, wavpack 
+# Depends on: libvorbis, lame, libmad, libsndfile, libsamplerate, amrnb, amrwb, ffmpeg, wavpack, libao 
 
 name=sox
 version=14.2.0
-release=1
+release=2
 source=(http://easynews.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
 
