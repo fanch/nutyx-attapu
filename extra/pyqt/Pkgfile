@@ -5,7 +5,7 @@
 # Depends on: sip, qscintilla, qt
 
 name=pyqt
-version=4.6.2
+version=4.7
 release=1
 source=(http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-$version.tar.gz)
 
