@@ -1,8 +1,8 @@
 # Description: Set de plugins essentiels pour l'outil multimedia gstreamer
 # URL: http://gstreamer.freedesktop.org/modules/gst-plugins-ugly.html
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: gst-plugins-base, lame, liba52, libdvdnav, libdvdread, libmad, libmpeg2, libsidplay, libcdio
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gst-plugins-base, lame, liba52, libdvdnav, libdvdread, libmad, libmpeg2, libsidplay, libcdio, x264
 
 name=gst-plugins-ugly
 version=0.10.13
