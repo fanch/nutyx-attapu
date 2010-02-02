@@ -1,12 +1,13 @@
 # Description: Lecteur de données Méta audio implémenté en pure python
-# URL: http://
-# Maintainer: thierryn1 at hispeed dot ch
+# URL: http://code.google.com/p/mutagen/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: python
 
 name=mutagen
-version=1.15
+version=1.18
 release=1
-source=(http://www.sacredchao.net/~piman/software/$name-$version.tar.gz)
+source=(http://mutagen.googlecode.com/files/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
