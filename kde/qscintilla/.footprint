@@ -32,9 +32,11 @@ drwxr-xr-x	root/root	usr/include/Qsci/
 -rw-r--r--	root/root	usr/include/Qsci/qscilexerproperties.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexerpython.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexerruby.h
+-rw-r--r--	root/root	usr/include/Qsci/qscilexerspice.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexersql.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexertcl.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexertex.h
+-rw-r--r--	root/root	usr/include/Qsci/qscilexerverilog.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexervhdl.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexerxml.h
 -rw-r--r--	root/root	usr/include/Qsci/qscilexeryaml.h
@@ -45,11 +47,11 @@ drwxr-xr-x	root/root	usr/include/Qsci/
 -rw-r--r--	root/root	usr/include/Qsci/qscistyle.h
 -rw-r--r--	root/root	usr/include/Qsci/qscistyledtext.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so -> libqscintilla2.so.5.1.0
+lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so -> libqscintilla2.so.5.2.0
 lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so.2 -> libqscintilla2.so.2.2
-lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so.5 -> libqscintilla2.so.5.1.0
-lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so.5.1 -> libqscintilla2.so.5.1.0
--rwxr-xr-x	root/root	usr/lib/libqscintilla2.so.5.1.0
+lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so.5 -> libqscintilla2.so.5.2.0
+lrwxrwxrwx	root/root	usr/lib/libqscintilla2.so.5.2 -> libqscintilla2.so.5.2.0
+-rwxr-xr-x	root/root	usr/lib/libqscintilla2.so.5.2.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/qt/
 drwxr-xr-x	root/root	usr/share/qt/qsci/
@@ -58,6 +60,7 @@ drwxr-xr-x	root/root	usr/share/qt/qsci/api/python/
 -rw-r--r--	root/root	usr/share/qt/qsci/api/python/Python-2.4.api
 -rw-r--r--	root/root	usr/share/qt/qsci/api/python/Python-2.5.api
 -rw-r--r--	root/root	usr/share/qt/qsci/api/python/Python-2.6.api
+-rw-r--r--	root/root	usr/share/qt/qsci/api/python/Python-3.1.api
 drwxr-xr-x	root/root	usr/share/qt/translations/
 -rw-r--r--	root/root	usr/share/qt/translations/qscintilla_cs.qm
 -rw-r--r--	root/root	usr/share/qt/translations/qscintilla_de.qm
