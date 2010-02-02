@@ -2,18 +2,15 @@
 # URL: http://www.underbit.com/products/mad/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libmad
 version=0.15.1b
 release=2
 source=(ftp://ftp.mars.org/pub/mpeg/$name-$version.tar.gz\
-	mad.pc libmad.patch)
+	libmad.patch)
 
 
 build() {
-	mkdir -p $PKG/usr/lib/pkgconfig/
-#        sed "s/#version#/$version/" mad.pc > $PKG/usr/lib/pkgconfig/mad.pc
 	cd $name-$version
 	patch -Np1 -i ../libmad.patch
 	./configure --prefix=/usr \
@@ -21,6 +18,7 @@ build() {
 		--infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
+	mkdir -p $PKG/usr/lib/pkgconfig
 cat > $PKG/usr/lib/pkgconfig/mad.pc << "EOF"
 prefix=/usr
 exec_prefix=${prefix}
@@ -30,8 +28,9 @@ includedir=${prefix}/include
 Name: mad
 Description: MPEG audio decoder
 Requires:
-Version: 0.15.1b
+Version: #version#
 Libs: -L${libdir} -lmad
 Cflags: -I${includedir}
 EOF
+sed -i "s/#version#/$version/" $PKG/usr/lib/pkgconfig/mad.pc
 }
