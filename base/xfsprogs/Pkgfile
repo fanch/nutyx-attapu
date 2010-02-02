@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=xfsprogs
-version=3.1.0
+version=3.1.1
 release=1
 source=(ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-${version}.tar.gz)
 
