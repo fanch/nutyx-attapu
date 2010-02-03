@@ -5,9 +5,9 @@
 # Depends on: proj, gdal, fftw, swig, libpng, libtiff, sqlite3, python, tk
 
 name=grass
-version=6.3.0RC6
+version=6.4.0RC5
 release=1
-source=(http://grass.itc.it/grass63/source/$name-$version.tar.gz)
+source=(http://grass.osgeo.org/grass64/source/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
@@ -26,7 +26,7 @@ build() {
 	make DESTDIR=$PKG install
 	
 	cd $PKG/opt/bin/
-	sed -i "s|$PKG||g" grass63
+	sed -i "s|$PKG||g" grass64
 	mkdir -p $PKG/usr/lib
 	cd $PKG/usr/lib ; ln -s ../../opt/$name-$version/lib/*.so .
 	rm -rf $PKG/opt/$version/AUTHORS
