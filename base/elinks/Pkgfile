@@ -1,7 +1,7 @@
 # Description: Enhanced version of the links textmode WWW browser with frame/table support 
-# URL:         http://elinks.or.cz/
-# Maintainer:  Juergen Daubert, juergen dot daubert at t-online dot de
-# Depends on:  
+# URL: http://elinks.or.cz/
+# Maintainer: Juergen Daubert, juergen dot daubert at t-online dot de
+# Packager: juergen dot daubert at t-online dot de
 
 name=elinks
 version=0.11.7
