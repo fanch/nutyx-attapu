@@ -1,6 +1,7 @@
 # Description: Assistive Technology Service Provider Interface
 # URL: http://developer.gnome.org/projects/gap/
-# Maintainer: Matt Housh, jaeger at morpheus dot net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gtk, libbonobo, orbit2, gconf
 # Group: gnome/platform
 
