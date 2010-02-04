@@ -36,6 +36,7 @@ drwxr-xr-x	root/root	usr/include/ImageMagick/magick/
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/ImageMagick.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/MagickCore.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/PreRvIcccm.h
+-rw-r--r--	root/root	usr/include/ImageMagick/magick/accelerate.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/animate.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/annotate.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/api.h
@@ -64,6 +65,7 @@ drwxr-xr-x	root/root	usr/include/ImageMagick/magick/
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/effect.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/enhance.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/exception.h
+-rw-r--r--	root/root	usr/include/ImageMagick/magick/feature.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/fourier.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/fx.h
 -rw-r--r--	root/root	usr/include/ImageMagick/magick/gem.h
@@ -151,6 +153,7 @@ drwxr-xr-x	root/root	usr/lib/ImageMagick-6.5.9/config/
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/francais.xml
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/locale.xml
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/policy.xml
+-rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/type-dejavu.xml
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/type-ghostscript.xml
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/type-windows.xml
 -rw-r--r--	root/root	usr/lib/ImageMagick-6.5.9/config/type.xml
@@ -1030,6 +1033,7 @@ drwxr-xr-x	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/MagickWand/
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/effect.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/enhance.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/exception.html
+-rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/feature.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/fx.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/histogram.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/image.html
@@ -1044,6 +1048,7 @@ drwxr-xr-x	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/MagickWand/
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/module.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/monitor.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/montage.html
+-rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/morphology.html (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/paint.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/pixel-iterator.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/pixel-view.html
@@ -1057,6 +1062,7 @@ drwxr-xr-x	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/MagickWand/
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/segment.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/shear.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/signature.html
+-rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/statistic.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/stream.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/transform.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/version.html
