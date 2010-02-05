@@ -31,6 +31,7 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/dmetadata.h
 -rw-r--r--	root/root	opt/kde/include/digikam/dpopupmenu.h
 -rw-r--r--	root/root	opt/kde/include/digikam/dprogressdlg.h
+-rw-r--r--	root/root	opt/kde/include/digikam/dzoombar.h
 -rw-r--r--	root/root	opt/kde/include/digikam/exifwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationiface.h
 -rw-r--r--	root/root	opt/kde/include/digikam/greycstorationsettings.h
@@ -45,15 +46,10 @@ drwxr-xr-x	root/root	opt/kde/include/digikam/
 -rw-r--r--	root/root	opt/kde/include/digikam/icctransform.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imagecurves.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imagedialog.h
--rw-r--r--	root/root	opt/kde/include/digikam/imageguidewidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imagehistogram.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imageiface.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imagelevels.h
--rw-r--r--	root/root	opt/kde/include/digikam/imagepanelwidget.h
--rw-r--r--	root/root	opt/kde/include/digikam/imagepaniconwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/imageplugin.h
--rw-r--r--	root/root	opt/kde/include/digikam/imageregionwidget.h
--rw-r--r--	root/root	opt/kde/include/digikam/imagewidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/iptcwidget.h
 -rw-r--r--	root/root	opt/kde/include/digikam/knotificationwrapper.h
 -rw-r--r--	root/root	opt/kde/include/digikam/libsinfodlg.h
