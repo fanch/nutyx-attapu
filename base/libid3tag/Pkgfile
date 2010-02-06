@@ -2,7 +2,6 @@
 # URL: http://www.mars.org/home/rob/proj/mpeg/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:  
 
 name=libid3tag
 version=0.15.1b
