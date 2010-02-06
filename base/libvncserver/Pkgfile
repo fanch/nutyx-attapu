@@ -2,7 +2,6 @@
 # URL: http://libvncserver.sourceforge.net/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libvncserver
 version=0.9.7
