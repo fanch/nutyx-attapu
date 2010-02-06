@@ -2,7 +2,6 @@
 # URL: http://www.atheme.org/projects/mowgli.shtml
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libmowgli
 version=0.7.0
