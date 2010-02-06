@@ -2,7 +2,6 @@
 # URL: http://libmpeg2.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libmpeg2
 version=0.5.1
