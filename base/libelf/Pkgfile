@@ -2,7 +2,6 @@
 # URL: http://xiph.org/ao/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libelf
 version=0.8.10
