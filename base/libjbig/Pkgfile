@@ -2,8 +2,6 @@
 # URL: http://www.cl.cam.ac.uk/~mgk25/jbigkit
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
-
 
 name=libjbig
 version=2.0
