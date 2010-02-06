@@ -1,0 +1,29 @@
+# Description: Un lecteur multimedia pour gnome
+# URL: http://www.rhythmbox.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:libgpod,libsoup,gnome-media,totem-pl-parser,libmusicbrainz,libmtp,libnotify,lirc-utils,desktop-file-utils,gst-python,gst-plugins-base,gst-plugins-good,pygtk,gvfs,hicolor-icon-theme
+
+name=rhythmbox
+version=0.12.6
+release=1
+source=(http://ftp.gnome.org/pub/GNOME/sources/$name/0.12/$name-$version.tar.bz2)
+
+build() {
+	  cd $SRC/$name-$version
+  ./configure --prefix=/usr --sysconfdir=/etc \
+              --libexecdir=/usr/lib/rhythmbox \
+              --localstatedir=/var --disable-static \
+              --enable-daap --enable-python \
+              --with-mdns=avahi --disable-scrollkeeper 
+
+  make 
+  make GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR=$PKG install 
+
+  install -m755 -d $PKG/usr/share/gconf/schemas
+  
+}
+
+
+
+
