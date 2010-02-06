@@ -2,7 +2,6 @@
 # URL: http://ww.no-ip.com/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:  
 
 name=noip
 version=2.1.9
