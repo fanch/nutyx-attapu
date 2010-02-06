@@ -2,7 +2,7 @@
 # URL: http://xulfr.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libidl, nss, gtk, python, dbus-glib, zip, alsa-lib, libnotify
+# Depends on: libidl, nss, gtk, python, dbus-glib, alsa-lib, libnotify
 
 name=xulrunner
 version=1.9.2
