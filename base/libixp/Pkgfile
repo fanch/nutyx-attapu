@@ -2,7 +2,7 @@
 # URL:http://www.suckless.org/libs/libixp.html
 # Maintainer:  NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: dep1, dep2, dep3
+
 name=libixp
 version=0.5
 release=1
