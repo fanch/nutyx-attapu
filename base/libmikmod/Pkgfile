@@ -1,9 +1,7 @@
-# $Id: build,v 1.3 2008/06/07 02:18:51 install Exp root $
 # Description: Capable de lire des modules MOD, S3M, XM, IT, MED, MTM et 669
 # URL: http://mikmod.raphnet.net/
 # Maintainer: NuTyX
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libmikmod
 version=3.1.11
