@@ -1,11 +1,11 @@
-# Description: contains a general purpose crypto library based on the code used in GnuPG
+# Description: Librairie de crypto basé sur le code utilisé dans GnuPG pour usage générale
 # URL:  http://ftp.gnupg.org/gcrypt/libgcrypt/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: libgpg-error
 
 name=libgcrypt
-version=1.4.2
+version=1.4.5
 release=1
 source=(ftp://ftp.gnupg.org/gcrypt/$name/$name-$version.tar.bz2 )
 build() {

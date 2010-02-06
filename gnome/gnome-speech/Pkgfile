@@ -1,6 +1,7 @@
 # Description: general API for producing text-to-speech output
 # URL: http://mail.gnome.org/mailman/listinfo/gnome-accessibility-devel
 # Maintainer: Matt Housh, jaeger at morpheus dot net
+# Packager: jaeger at morpheus dot net
 # Depends on: libbonobo
 # Group: gnome/desktop
 

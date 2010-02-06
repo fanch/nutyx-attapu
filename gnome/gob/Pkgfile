@@ -1,6 +1,7 @@
 # Description: The GObject Builder
 # URL: http://www.5z.com/jirka/gob.html
 # Maintainer: Matt Housh, jaeger at morpheus dot net
+# Packager: jaeger at morpheus dot net
 # Depends on: glib, gtk
 
 name=gob

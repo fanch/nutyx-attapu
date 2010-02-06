@@ -1,6 +1,7 @@
 # Description: Games for your GNOME desktop
 # URL: http://www.gnome.org/softwaremap/projects/gnome-games/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
+# Packager: jaeger at morpheus dot net
 # Depends on: libgnomeui, librsvg, rarian, gob, avahi, gnome-python-desktop, guile, libggz, ggz-client-libs
 # Group: gnome/desktop
 

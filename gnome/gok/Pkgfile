@@ -1,6 +1,7 @@
 # Description: GNOME On-Screen Keyboard
 # URL: http://www.gok.ca/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
+# Packager: jaeger at morpheus dot net
 # Depends on: at-spi, libgnomeui, libwnck
 # Group: gnome/desktop
 
