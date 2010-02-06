@@ -10,7 +10,8 @@ release=1
 source=(http://craz.net/programs/itunes/files/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
-	./configure --prefix=/usr 
+	./configure --prefix=/usr \
+	--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
 	chown -R root:root $PKG
