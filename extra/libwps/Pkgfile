@@ -1,8 +1,7 @@
-# $Id: build,v 1.2 2008/08/30 18:56:09 linda Exp $
 # Description: gestionaire de connection wi-fi pour kde3
 # URL:
 # Packager: Floreal Cabares, cabaflo at wanadoo dot fr
-# Depends on:
+# Depends on: libwpd
 
 name=libwps
 version=0.1.2
