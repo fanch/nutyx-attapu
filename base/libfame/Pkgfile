@@ -2,7 +2,6 @@
 # URL: http://fame.sourceforge.net/
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libfame
 version=0.9.1
