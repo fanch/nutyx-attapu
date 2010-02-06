@@ -2,7 +2,6 @@
 # URL: http://www.nih.at/libzip/index.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libzip
 version=0.9
