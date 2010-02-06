@@ -2,7 +2,6 @@
 # URL: http://toxygen.net/libgadu
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libgadu
 version=1.8.2
