@@ -2,7 +2,6 @@
 # URL: http://libsigsegv.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libsigsegv
 version=2.4
