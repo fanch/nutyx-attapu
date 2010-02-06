@@ -2,7 +2,6 @@
 # URL: http://www.tcpdump.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libpcap
 version=1.0.0
