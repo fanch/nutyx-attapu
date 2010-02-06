@@ -2,7 +2,6 @@
 # URL: http://0pointer.de/lennart/projects/libdaemon/ 
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libdaemon
 version=0.13
