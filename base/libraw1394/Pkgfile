@@ -2,7 +2,6 @@
 # URL: http://sourceforge.net/projects/libraw1394/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libraw1394
 version=2.0.4
