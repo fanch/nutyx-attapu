@@ -2,7 +2,8 @@
 # URL: http://mpd.wikia.com/wiki/Client:Mpc
 # Maintainer: NuTyX packager team
 # Packager: Skippythekangoo at yahoo dot fr
-# Depends on: libmpdclient2
+# Depends on: libmpdclient
+
 name=mpc
 version=0.18
 release=1
