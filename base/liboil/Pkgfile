@@ -2,7 +2,6 @@
 # URL: http://liboil.freedesktop.org/wiki/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=liboil
 version=0.3.15
