@@ -7,21 +7,19 @@
 name=rhythmbox
 version=0.12.6
 release=1
-source=(http://ftp.gnome.org/pub/GNOME/sources/$name/0.12/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	  cd $SRC/$name-$version
-  ./configure --prefix=/usr --sysconfdir=/etc \
+  ./configure --prefix=$GNOME_PREFIX --sysconfdir=/etc \
               --libexecdir=/usr/lib/rhythmbox \
               --localstatedir=/var --disable-static \
               --enable-daap --enable-python \
               --with-mdns=avahi --disable-scrollkeeper 
 
-  make 
-  make GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR=$PKG install 
-
-  install -m755 -d $PKG/usr/share/gconf/schemas
-  
+  make  -j3
+  make DESTDIR=$PKG install
+  rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
 }
 
 
