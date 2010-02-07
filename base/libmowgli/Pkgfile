@@ -1,0 +1,16 @@
+# Description: Platforme de développement C de haute performance
+# URL: http://www.atheme.org/projects/mowgli.shtml
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libmowgli
+version=0.7.0
+release=1
+source=(http://distfiles.atheme.org/$name-$version.tgz)
+
+build() {
+cd $name-$version
+./configure --prefix=/usr
+make
+make DESTDIR=$PKG install
+}

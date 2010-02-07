@@ -1,0 +1,27 @@
+# Description:A standalone client/server 9p library
+# URL:http://www.suckless.org/libs/libixp.html
+# Maintainer:  NuTyX packager team
+# Packager: lesibel at free dot fr
+
+name=libixp
+version=0.5
+release=1
+source=(http://code.suckless.org/dl/libs/$name-$version.tar.gz)
+build() {
+	cd $name-$version
+	sed -i \
+        -e "/^PREFIX/s|=.*|= $PKG/pkg/usr|" \
+        -e "/^  ETC/s|=.*|= $PKG}/pkg/etc|" \
+        -e "/^CFLAGS/s|=|+=|" \
+        -e "/^LDFLAGS/s|=|+=|" \
+        config.mk || return 1
+
+  make || return 1
+  make DESTDIR=$PKG install || return 1
+
+  install -m644 -D ./libixp/LICENSE \
+                   $PKG/usr/share/licenses/libixp/LICENSE
+
+}
+
+

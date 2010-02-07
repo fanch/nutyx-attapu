@@ -1,0 +1,33 @@
+# Description: noip Dynamic Update client
+# URL: http://ww.no-ip.com/
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+
+name=noip
+version=2.1.9
+release=1
+source=("http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz"\
+	noip)
+
+build()
+{
+    cd $name-$version-$release
+    sed -i 's/PREFIX=\//PREFIX=/' Makefile
+    make
+     install -d $PKG/usr/bin
+     install -d $PKG/etc/noip
+     touch $PKG/etc/noip/no-ip2.conf
+     cp noip2 $PKG/usr/bin/
+	install -D -m755 ../noip $PKG/etc/rc.d/init.d/noip
+	for i in 0 1 2 3 4 5 6
+		do mkdir -p $PKG/etc/rc.d/rc$i.d
+	done
+	for i in 0 1 6
+		do ln -sv ../init.d/noip $PKG/etc/rc.d/rc$i.d/K05noip
+	done
+	for i in 3 4 5
+		do ln -sv ../init.d/noip $PKG/etc/rc.d/rc$i.d/S50noip
+	done
+	
+#    make  DESTDIR=$PKG install
+}

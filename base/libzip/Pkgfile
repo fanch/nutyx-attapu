@@ -1,0 +1,16 @@
+# Description: Librairie pour la compression de fichiers
+# URL: http://www.nih.at/libzip/index.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libzip
+version=0.9
+release=1
+source=(http://www.nih.at/$name/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

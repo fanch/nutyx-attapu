@@ -1,0 +1,18 @@
+# Description: Librairie légère pour faciliter l'écriture de démon UNIX
+# URL: http://0pointer.de/lennart/projects/libdaemon/ 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libdaemon
+version=0.13
+release=1
+source=(http://0pointer.de/lennart/projects/libdaemon/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--disable-doxygen \
+		--disable-lynx
+	make
+	make DESTDIR=$PKG install
+}

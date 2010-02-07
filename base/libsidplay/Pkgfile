@@ -1,0 +1,19 @@
+# Description: Librairie pour lire des fichiers SID
+# URL: http://critical.ch/distfiles
+# Maintainer: NuTyX core team
+# Packager: fred.galusik at gmail dot com
+
+name=libsidplay
+version=1.36.59
+release=1
+source=(http://critical.ch/distfiles/$name-$version.tgz \
+libsidplay-1.36.59-gcc43.patch)
+
+build() {
+cd $name-$version
+	patch -p1 < ../libsidplay-1.36.59-gcc43.patch
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+}
+

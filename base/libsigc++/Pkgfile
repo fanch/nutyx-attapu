@@ -1,0 +1,17 @@
+# Description: Implémente un système complèt de retour d'appel pour les librairies de widget version 2
+# URL: http://libsigc.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libsigc++
+version=2.2.3
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr 
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
+}

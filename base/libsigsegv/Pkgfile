@@ -1,0 +1,17 @@
+# Description: Librairie de détection de faute de page
+# URL: http://libsigsegv.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libsigsegv
+version=2.4
+release=1
+source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--enable-shared
+	make
+	make DESTDIR=$PKG install
+}

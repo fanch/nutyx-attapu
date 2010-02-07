@@ -1,0 +1,18 @@
+# Description:	Librairie pour le protocol de messagerie instantanée Gadu-gadu
+# URL: http://toxygen.net/libgadu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libgadu
+version=1.8.2
+release=1
+source=(http://toxygen.net/$name/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure \
+		--prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
+

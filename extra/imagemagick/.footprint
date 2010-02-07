@@ -1084,6 +1084,7 @@ drwxr-xr-x	root/root	usr/share/doc/ImageMagick-6.5.9/www/api/MagickWand/
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/escape.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/examples.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/exception.html
+-rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/favicon.ico
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/formats.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/fx.html
 -rw-r--r--	root/root	usr/share/doc/ImageMagick-6.5.9/www/high-dynamic-range.html
