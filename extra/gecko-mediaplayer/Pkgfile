@@ -1,0 +1,19 @@
+# Description: Plugin lecteur video pour firefox basé sur mplayer
+# URL: http://code.google.com/p/gecko-mediaplayer/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gnome-mplayer, xulrunner, gconf
+name=gecko-mediaplayer
+version=0.9.9
+release=1
+source=(http://gecko-mediaplayer.googlecode.com/files/${name}-${version}.tar.gz)
+build() {
+cd $name-$version
+
+./configure --prefix=/usr --sysconfdir=/etc \
+--disable-schemas-install --with-plugin-dir=/usr/lib/firefox/plugins \
+GECKO_LIBS="-L/usr/lib/xulrunner-devel-1.9.2/lib -lxpcomglue_s -lxul -lxpcom -lplds4 -lplc4 -lnspr4 -lpthread -ldl" \
+GECKO_IDLDIR="/usr/share/idl/xulrunner-1.9.1"
+make
+make DESTDIR=$PKG install
+}
