@@ -1,7 +1,7 @@
 # Description: client mail
 # URL: http://www.claws-mail.org
 # Packager: skingrapher at legtux dot org
-# Depends on: bogofilter, enchant, aspell, libetpan, gnupg, gpgme, gnutls, dbus, gtk
+# Depends on: bogofilter, enchant, aspell, libetpan, gnupg, gpgme, gnutls, dbus, gtk, libtasn1
 name=claws-mail
 version=3.7.5cvs7
 release=1
