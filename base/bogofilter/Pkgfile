@@ -1,11 +1,10 @@
-# Description: Filtre antispam très puissant qui fonctionne à merveille notamment avec Sylpheed
-# URL:
-# Packager: bleizh_du
+# Description: Filtre bayésien de mail et antispam
+# URL: http://www.bogofilter.org
+# Packager: skingrapher at legtux dot org
 # Maintainer: NuTyX core team
-# Depends on:
 
 name=bogofilter
-version=1.2.0
+version=1.2.1
 release=1
 source=(http://ovh.dl.sourceforge.net/sourceforge/bogofilter/$name-$version.tar.gz)
 build() {
