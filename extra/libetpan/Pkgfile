@@ -1,0 +1,16 @@
+# Description: librairie pour le traitement du courriel
+# URL: http://libetpan.sourceforge.net
+# Packager: skingrapher at legtux dot org
+# Depends on: gnutls
+name=libetpan
+version=0.58
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --mandir=/usr/share/man \
+	--enable-ipv6 --without-openssl --with-gnutls=/usr/include/gnutls
+        make
+        make DESTDIR=$PKG install
+}
