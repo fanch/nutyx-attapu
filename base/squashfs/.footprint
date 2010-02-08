@@ -1,5 +1,3 @@
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/local/
-drwxr-xr-x	root/root	usr/local/bin/
--rwxr-xr-x	root/root	usr/local/bin/mksquashfs
--rwxr-xr-x	root/root	usr/local/bin/unsquashfs
+drwxr-xr-x	root/root	bin/
+-rwxr-xr-x	root/root	bin/mksquashfs
+-rwxr-xr-x	root/root	bin/unsquashfs
