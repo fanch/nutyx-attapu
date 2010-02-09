@@ -6,7 +6,7 @@
 
 name=kompozer
 version=0.8b1
-release=1
+release=2
 source=(http://freefr.dl.sourceforge.net/project/kompozer/current/0.8b1/$name-$version-src.tar.bz2\
 	mozconfig $name.desktop)
 
@@ -17,7 +17,7 @@ build() {
 	make -f client.mk build
   	cd $SRC/obj-kompozer
   	make DESTDIR=$PKG install
-  	
+	rm $PKG/usr/share/aclocal/nspr.m4  	
 	# put links & shortcut
   	install -m755 -dD $PKG/usr/share/applications
   	install -m644  $SRC/$name.desktop $PKG/usr/share/applications/
