@@ -7,8 +7,7 @@
 name=opensp
 version=1.5.2
 release=1
-source=(http://dl.sourceforge.net/sourceforge/openjade/OpenSP-$version.tar.gz)
-
+source=(http://downloads.sourceforge.net/project/openjade/opensp/$version/OpenSP-$version.tar.gz)
 build() {
 	cd OpenSP-$version
 	./configure --prefix=/usr \
