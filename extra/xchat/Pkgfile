@@ -2,7 +2,7 @@
 # URL: http://www.xchat.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: openssl, gtk, perl, libsexy
+# Depends on: gtk, libsexy
 
 name=xchat
 version=2.8.6

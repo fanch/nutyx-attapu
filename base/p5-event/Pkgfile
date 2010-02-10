@@ -2,7 +2,6 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl
 
 name=p5-event
 version=1.11

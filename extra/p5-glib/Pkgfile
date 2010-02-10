@@ -2,7 +2,7 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl, p5-extutils-depends
+# Depends on: p5-extutils-depends
 
 name=p5-glib
 version=1.200

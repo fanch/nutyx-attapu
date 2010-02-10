@@ -4,9 +4,10 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=initrd
-version=2.6.32.7
+version=2.6.32.8
 release=1
 _tools=29122009
+_baseversion=2.6.32
 SCRIPT_VERSION="2009.2"
 source=()
 build(){
@@ -18,37 +19,37 @@ mkdir -p $WDIR
 wget http://kiao.no-ip.info/NuTyX/tools/installtools-${_tools}.tar.gz
 tar -C $WDIR --use-compress-program=gzip -xf installtools-${_tools}.tar.gz
 
-mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/{drivers,fs}
-cp -a lib/modules/$version/kernel/crypto \
-$WDIR/rootfs/lib/modules/$version/kernel/
+mkdir -p $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/{drivers,fs}
+cp -a lib/modules/${_baseversion}-NuTyX/kernel/crypto \
+$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/
 for i in ata block input ide hid message parport \
 serial misc net pcmcia scsi usb md
 do
-	if [ -d lib/modules/$version/kernel/drivers/$i ]; then
-		cp -a lib/modules/$version/kernel/drivers/$i \
-		$WDIR/rootfs/lib/modules/$version/kernel/drivers/
+	if [ -d lib/modules/${_baseversion}-NuTyX/kernel/drivers/$i ]; then
+		cp -a lib/modules/${_baseversion}-NuTyX/kernel/drivers/$i \
+		$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/drivers/
 	fi
 done
 for i in wireless irda wan bonding \
 hamradio appletalk cxgb3 mlx4 sfc
 do 
-	rm -r $WDIR/rootfs/lib/modules/$version/kernel/drivers/net/$i
+	rm -r $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/drivers/net/$i
 done
 for i in fat ntfs smbfs vfat ext4
 do
-	if [ -d lib/modules/$version/kernel/fs/$i ]; then
-		cp -a lib/modules/$version/kernel/fs/$i \
-		$WDIR/rootfs/lib/modules/$version/kernel/fs/
+	if [ -d lib/modules/${_baseversion}-NuTyX/kernel/fs/$i ]; then
+		cp -a lib/modules/${_baseversion}-NuTyX/kernel/fs/$i \
+		$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/fs/
 	fi
 done
-$WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
+$WDIR/rootfs/sbin/depmod -b $WDIR/rootfs ${_baseversion}-NuTyX
 	
 cp install-${SCRIPT_VERSION}.ash $WDIR/rootfs/root/
 sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-install
 sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-mirroir
 	
 # Compression des modules
-cd $WDIR/rootfs/lib/modules/$version
+cd $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX
 find . -name "*.ko" -exec gzip '{}' \;
 sed -i 's/\.ko/.ko.gz/g' modules.dep
 cd -

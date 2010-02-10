@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=kompozer
+Icon=/usr/lib/kompozer/icons/mozicon50.xpm
+Type=Application
+Terminal=false
+Name=Kompozer
+Name[fr]=Créateur de web
+Comment=WYSIWYG Web Editor
+Comment[fr]=Createur de site WEB en quelques clics WYSIWYG
+Categories=Development;Graphics
+
+
