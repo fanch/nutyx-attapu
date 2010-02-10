@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/claws-mail/
+drwxr-xr-x	root/root	usr/lib/claws-mail/plugins/
+-rw-r--r--	root/root	usr/lib/claws-mail/plugins/att_remover.a
+-rwxr-xr-x	root/root	usr/lib/claws-mail/plugins/att_remover.la
+-rwxr-xr-x	root/root	usr/lib/claws-mail/plugins/att_remover.so

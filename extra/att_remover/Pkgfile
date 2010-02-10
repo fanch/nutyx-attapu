@@ -1,0 +1,15 @@
+# Description: extra plugin de claws-mail pour retirer les pièces jointes d'un message 
+# URL: http://www.claws-mail.org/plugin.php?section=downloads
+# Packager: skingrapher at legtux dot org
+# Depends on: claws-mail
+name=att_remover
+version=1.0.11
+release=1
+source=(http://www.claws-mail.org/downloads/plugins/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --mandir=/usr/share/man 
+        make
+        make DESTDIR=$PKG install
+}
