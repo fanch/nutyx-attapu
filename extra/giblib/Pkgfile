@@ -1,0 +1,18 @@
+# Description: wrapper de librairie pour imlib2
+# URL: http://www.linuxbrit.co.uk/giblib
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: imlib2, freetype
+
+name=giblib
+version=1.2.4
+release=1
+source=(http://linuxbrit.co.uk/downloads/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/doc/
+}
