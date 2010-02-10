@@ -6,7 +6,7 @@
 name=libical
 version=0.44
 release=1
-source=(http://downloads.sourceforge.net/project/freeassociation/libical/libical-0.44/libical-0.44.tar.gz)
+source=(http://downloads.sourceforge.net/project/freeassociation/$name/$name-$version/$name-$version.tar.gz)
  
 
 build() {
