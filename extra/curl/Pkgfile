@@ -4,7 +4,7 @@
 # Depends on: libidn
 
 name=curl
-version=7.19.5
+version=7.20.0
 release=1
 source=(http://curl.haxx.se/download/$name-$version.tar.bz2 )
 
