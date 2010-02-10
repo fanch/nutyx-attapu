@@ -2,10 +2,10 @@
 # URL: http://www.bellard.org/qemu/download.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: alsa-lib, curl, gnutls, esound
 
 name=qemu
-version=0.11.0
+version=0.12.2
 release=1
 source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.gz)
 
