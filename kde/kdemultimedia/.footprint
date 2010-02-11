@@ -32,14 +32,14 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libaudiocd_encoder_wav.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/videopreview.so
 lrwxrwxrwx	root/root	opt/kde/lib/libaudiocdplugins.so -> libaudiocdplugins.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libaudiocdplugins.so.4 -> libaudiocdplugins.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libaudiocdplugins.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libaudiocdplugins.so.4 -> libaudiocdplugins.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libaudiocdplugins.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcddb.so -> libkcddb.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcddb.so.4 -> libkcddb.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcddb.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcddb.so.4 -> libkcddb.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcddb.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcompactdisc.so -> libkcompactdisc.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcompactdisc.so.4 -> libkcompactdisc.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcompactdisc.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcompactdisc.so.4 -> libkcompactdisc.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcompactdisc.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kmix.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kmixctrl.so
 drwxr-xr-x	root/root	opt/kde/share/
@@ -71,7 +71,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kmix/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/kmixdocked.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/kmixdocked_error.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/kmixdocked_mute.png
--rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/mix_record.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/mixer-ac97.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/mixer-capture.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmix/pics/mixer-cd.png
@@ -105,6 +104,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/solid/
 drwxr-xr-x	root/root	opt/kde/share/apps/solid/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/dragonplayer-opendvd.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/solid/actions/kscd-play-audiocd.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/solid/actions/solid_audiocd.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/videothumbnail/
 -rw-r--r--	root/root	opt/kde/share/apps/videothumbnail/sprocket-large.png
 -rw-r--r--	root/root	opt/kde/share/apps/videothumbnail/sprocket-medium.png
