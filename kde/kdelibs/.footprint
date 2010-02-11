@@ -21,6 +21,10 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/nepomuk-rcgen
 -rwxr-xr-x	root/root	opt/kde/bin/preparetips
 drwxr-xr-x	root/root	opt/kde/etc/
+drwxr-xr-x	root/root	opt/kde/etc/dbus-1/
+drwxr-xr-x	root/root	opt/kde/etc/dbus-1/system.d/
+-rw-r--r--	root/root	opt/kde/etc/dbus-1/system.d/org.kde.auth.conf
+-rw-r--r--	root/root	opt/kde/etc/dbus-1/system.d/org.kde.kcontrol.kcmremotewidgets.conf
 drwxr-xr-x	root/root	opt/kde/etc/xdg/
 drwxr-xr-x	root/root	opt/kde/etc/xdg/menus/
 -rw-r--r--	root/root	opt/kde/etc/xdg/menus/applications.menu
@@ -232,6 +236,11 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KAccelGen/
 -rw-r--r--	root/root	opt/kde/include/KDE/KArchiveFile
 -rw-r--r--	root/root	opt/kde/include/KDE/KArrowButton
 -rw-r--r--	root/root	opt/kde/include/KDE/KAssistantDialog
+drwxr-xr-x	root/root	opt/kde/include/KDE/KAuth/
+-rw-r--r--	root/root	opt/kde/include/KDE/KAuth/Action
+-rw-r--r--	root/root	opt/kde/include/KDE/KAuth/ActionReply
+-rw-r--r--	root/root	opt/kde/include/KDE/KAuth/ActionWatcher
+-rw-r--r--	root/root	opt/kde/include/KDE/KAuth/HelperSupport
 -rw-r--r--	root/root	opt/kde/include/KDE/KAuthorized
 -rw-r--r--	root/root	opt/kde/include/KDE/KAutoMount
 -rw-r--r--	root/root	opt/kde/include/KDE/KAutoUnmount
@@ -318,6 +327,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KAccelGen/
 -rw-r--r--	root/root	opt/kde/include/KDE/KDialogButtonBox
 -rw-r--r--	root/root	opt/kde/include/KDE/KDirLister
 -rw-r--r--	root/root	opt/kde/include/KDE/KDirModel
+-rw-r--r--	root/root	opt/kde/include/KDE/KDirNotify
 -rw-r--r--	root/root	opt/kde/include/KDE/KDirOperator
 -rw-r--r--	root/root	opt/kde/include/KDE/KDirSelectDialog
 -rw-r--r--	root/root	opt/kde/include/KDE/KDirSortFilterProxyModel
@@ -325,7 +335,6 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KAccelGen/
 -rw-r--r--	root/root	opt/kde/include/KDE/KDiskFreeSpace
 -rw-r--r--	root/root	opt/kde/include/KDE/KDiskFreeSpaceInfo
 -rw-r--r--	root/root	opt/kde/include/KDE/KDoubleNumInput
--rw-r--r--	root/root	opt/kde/include/KDE/KDoubleSpinBox
 -rw-r--r--	root/root	opt/kde/include/KDE/KDoubleValidator
 -rw-r--r--	root/root	opt/kde/include/KDE/KEMailSettings
 -rw-r--r--	root/root	opt/kde/include/KDE/KEditListBox
@@ -374,6 +383,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KAccelGen/
 -rw-r--r--	root/root	opt/kde/include/KDE/KGlobalAccel
 -rw-r--r--	root/root	opt/kde/include/KDE/KGlobalSettings
 -rw-r--r--	root/root	opt/kde/include/KDE/KGradientSelector
+-rw-r--r--	root/root	opt/kde/include/KDE/KGraphicsWebView
 -rw-r--r--	root/root	opt/kde/include/KDE/KGuiItem
 -rw-r--r--	root/root	opt/kde/include/KDE/KHBox
 drwxr-xr-x	root/root	opt/kde/include/KDE/KHE/
@@ -400,7 +410,6 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KIO/
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/CopyJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/DavJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/DeleteJob
--rw-r--r--	root/root	opt/kde/include/KDE/KIO/DirectCopyJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/FileCopyJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/FileJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/ForwardingSlaveBase
@@ -410,7 +419,6 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KIO/
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/MetaData
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/MetaInfoJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/MimetypeJob
--rw-r--r--	root/root	opt/kde/include/KDE/KIO/MkdirJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/MultiGetJob
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/NetAccess
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/NetRC
@@ -431,7 +439,6 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KIO/
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/TCPSlaveBase
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/Task
 -rw-r--r--	root/root	opt/kde/include/KDE/KIO/TransferJob
--rw-r--r--	root/root	opt/kde/include/KDE/KIO/UDSField
 -rw-r--r--	root/root	opt/kde/include/KDE/KIcon
 -rw-r--r--	root/root	opt/kde/include/KDE/KIconButton
 -rw-r--r--	root/root	opt/kde/include/KDE/KIconCanvas
@@ -491,6 +498,11 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KNS/
 -rw-r--r--	root/root	opt/kde/include/KDE/KNS/Entry
 -rw-r--r--	root/root	opt/kde/include/KDE/KNS/Installation
 -rw-r--r--	root/root	opt/kde/include/KDE/KNS/KTranslatable
+drwxr-xr-x	root/root	opt/kde/include/KDE/KNS3/
+-rw-r--r--	root/root	opt/kde/include/KDE/KNS3/DownloadDialog
+-rw-r--r--	root/root	opt/kde/include/KDE/KNS3/Entry
+-rw-r--r--	root/root	opt/kde/include/KDE/KNS3/KNewStuffAction
+-rw-r--r--	root/root	opt/kde/include/KDE/KNS3/KNewStuffButton
 -rw-r--r--	root/root	opt/kde/include/KDE/KNSBookmarkExporter
 -rw-r--r--	root/root	opt/kde/include/KDE/KNSBookmarkExporterImpl
 -rw-r--r--	root/root	opt/kde/include/KDE/KNSBookmarkImporter
@@ -548,7 +560,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KParts/
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/HistoryProvider
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/LiveConnectExtension
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/MainWindow
--rw-r--r--	root/root	opt/kde/include/KDE/KParts/OpenURLEvent
+-rw-r--r--	root/root	opt/kde/include/KDE/KParts/OpenUrlEvent
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/Part
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/PartActivateEvent
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/PartBase
@@ -558,7 +570,6 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KParts/
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/ReadOnlyPart
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/ReadWritePart
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/StatusBarExtension
--rw-r--r--	root/root	opt/kde/include/KDE/KParts/URLArgs
 -rw-r--r--	root/root	opt/kde/include/KDE/KParts/WindowArgs
 -rw-r--r--	root/root	opt/kde/include/KDE/KPassivePopup
 -rw-r--r--	root/root	opt/kde/include/KDE/KPassivePopupMessageHandler
@@ -568,6 +579,8 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KParts/
 -rw-r--r--	root/root	opt/kde/include/KDE/KPixmapProvider
 -rw-r--r--	root/root	opt/kde/include/KDE/KPixmapRegionSelectorDialog
 -rw-r--r--	root/root	opt/kde/include/KDE/KPixmapRegionSelectorWidget
+-rw-r--r--	root/root	opt/kde/include/KDE/KPixmapSequence
+-rw-r--r--	root/root	opt/kde/include/KDE/KPixmapSequenceOverlayPainter
 -rw-r--r--	root/root	opt/kde/include/KDE/KPlotAxis
 -rw-r--r--	root/root	opt/kde/include/KDE/KPlotObject
 -rw-r--r--	root/root	opt/kde/include/KDE/KPlotPoint
@@ -640,6 +653,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KSettings/
 -rw-r--r--	root/root	opt/kde/include/KDE/KStartupInfoData
 -rw-r--r--	root/root	opt/kde/include/KDE/KStartupInfoId
 -rw-r--r--	root/root	opt/kde/include/KDE/KStatusBar
+-rw-r--r--	root/root	opt/kde/include/KDE/KStatusNotifierItem
 -rw-r--r--	root/root	opt/kde/include/KDE/KStringHandler
 -rw-r--r--	root/root	opt/kde/include/KDE/KStringListValidator
 -rw-r--r--	root/root	opt/kde/include/KDE/KStyle
@@ -674,8 +688,10 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KTextEditor/
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/Editor
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/EditorChooser
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/Factory
+-rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/HighlightInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/MarkInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/ModificationInterface
+-rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/ParameterizedSessionConfigInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/Plugin
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/Range
 -rw-r--r--	root/root	opt/kde/include/KDE/KTextEditor/SearchInterface
@@ -716,6 +732,11 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KTextEditor/
 -rw-r--r--	root/root	opt/kde/include/KDE/KTzfileTimeZoneSource
 -rw-r--r--	root/root	opt/kde/include/KDE/KUndoStack
 -rw-r--r--	root/root	opt/kde/include/KDE/KUniqueApplication
+drwxr-xr-x	root/root	opt/kde/include/KDE/KUnitConversion/
+-rw-r--r--	root/root	opt/kde/include/KDE/KUnitConversion/Converter
+-rw-r--r--	root/root	opt/kde/include/KDE/KUnitConversion/Unit
+-rw-r--r--	root/root	opt/kde/include/KDE/KUnitConversion/UnitCategory
+-rw-r--r--	root/root	opt/kde/include/KDE/KUnitConversion/Value
 drwxr-xr-x	root/root	opt/kde/include/KDE/KUnitTest/
 -rw-r--r--	root/root	opt/kde/include/KDE/KUnitTest/Runner
 -rw-r--r--	root/root	opt/kde/include/KDE/KUnitTest/SlotTester
@@ -738,6 +759,9 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KUnitTest/
 -rw-r--r--	root/root	opt/kde/include/KDE/KVBox
 drwxr-xr-x	root/root	opt/kde/include/KDE/KWallet/
 -rw-r--r--	root/root	opt/kde/include/KDE/KWallet/Wallet
+-rw-r--r--	root/root	opt/kde/include/KDE/KWebPage
+-rw-r--r--	root/root	opt/kde/include/KDE/KWebPluginFactory
+-rw-r--r--	root/root	opt/kde/include/KDE/KWebView
 -rw-r--r--	root/root	opt/kde/include/KDE/KWidgetItemDelegate
 -rw-r--r--	root/root	opt/kde/include/KDE/KWindowInfo
 -rw-r--r--	root/root	opt/kde/include/KDE/KWindowSystem
@@ -756,18 +780,55 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/KWallet/
 -rw-r--r--	root/root	opt/kde/include/KDE/KZoneAllocator
 -rw-r--r--	root/root	opt/kde/include/KDE/KonqBookmarkMenu
 -rw-r--r--	root/root	opt/kde/include/KDE/KonqBookmarkOwner
+drwxr-xr-x	root/root	opt/kde/include/KDE/Kross/
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/Action
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ActionCollection
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ActionCollectionEditor
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ActionCollectionModel
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ActionCollectionProxyModel
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ActionCollectionView
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ChildrenInterface
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ErrorInterface
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/Interpreter
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/InterpreterInfo
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/Manager
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaFunction
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaType
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaTypeHandler
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaTypeImpl
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaTypeVariant
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/MetaTypeVoidStar
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/Object
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/Script
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/ScriptingPlugin
+-rw-r--r--	root/root	opt/kde/include/KDE/Kross/WrapperInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/NET
 -rw-r--r--	root/root	opt/kde/include/KDE/NETRootInfo
 -rw-r--r--	root/root	opt/kde/include/KDE/NETWinInfo
 drwxr-xr-x	root/root	opt/kde/include/KDE/Nepomuk/
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/KRatingPainter
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/KRatingWidget
+drwxr-xr-x	root/root	opt/kde/include/KDE/Nepomuk/Query/
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/AndTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/ComparisonTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/FileQuery
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/GroupTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/LiteralTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/NegationTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/OrTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/Query
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/QueryParser
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/QueryServiceClient
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/ResourceTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/ResourceTypeTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/Result
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/SimpleTerm
+-rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Query/Term
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Resource
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/ResourceManager
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Service
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Tag
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Thing
--rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Tools
 drwxr-xr-x	root/root	opt/kde/include/KDE/Nepomuk/Types/
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Types/Class
 -rw-r--r--	root/root	opt/kde/include/KDE/Nepomuk/Types/Literal
@@ -777,18 +838,30 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/Nepomuk/Types/
 -rw-r--r--	root/root	opt/kde/include/KDE/OrgKdeKDirNotifyInterface
 -rw-r--r--	root/root	opt/kde/include/KDE/OrgKdeKLauncherInterface
 drwxr-xr-x	root/root	opt/kde/include/KDE/Plasma/
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AbstractAnimation
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AbstractRunner
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AbstractToolBox
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AccessAppletJob
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AccessManager
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Animation
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AnimationDriver
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AnimationGroup
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Animator
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Applet
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AppletScript
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AuthorizationInterface
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AuthorizationManager
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/AuthorizationRule
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/BusyWidget
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/CheckBox
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ClientPinRequest
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ComboBox
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ConfigLoader
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Containment
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ContainmentActions
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Context
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Corona
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Credentials
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/DataContainer
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/DataEngine
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/DataEngineManager
@@ -804,6 +877,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/Plasma/
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/GLApplet
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/GroupBox
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/IconWidget
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ItemBackground
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Label
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/LineEdit
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Meter
@@ -822,6 +896,7 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/Plasma/
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ScriptEngine
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ScrollBar
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ScrollWidget
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Separator
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Service
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/ServiceJob
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/SignalPlotter
@@ -841,7 +916,9 @@ drwxr-xr-x	root/root	opt/kde/include/KDE/Plasma/
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/VideoWidget
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/View
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/Wallpaper
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/WallpaperScript
 -rw-r--r--	root/root	opt/kde/include/KDE/Plasma/WebView
+-rw-r--r--	root/root	opt/kde/include/KDE/Plasma/WindowEffects
 -rw-r--r--	root/root	opt/kde/include/KDE/PtyProcess
 drwxr-xr-x	root/root	opt/kde/include/KDE/Solid/
 -rw-r--r--	root/root	opt/kde/include/KDE/Solid/AcAdapter
@@ -1013,6 +1090,11 @@ drwxr-xr-x	root/root	opt/kde/include/dom/
 -rw-r--r--	root/root	opt/kde/include/karrowbutton.h
 -rw-r--r--	root/root	opt/kde/include/kascii.h
 -rw-r--r--	root/root	opt/kde/include/kassistantdialog.h
+-rw-r--r--	root/root	opt/kde/include/kauth.h
+-rw-r--r--	root/root	opt/kde/include/kauthaction.h
+-rw-r--r--	root/root	opt/kde/include/kauthactionreply.h
+-rw-r--r--	root/root	opt/kde/include/kauthactionwatcher.h
+-rw-r--r--	root/root	opt/kde/include/kauthhelpersupport.h
 -rw-r--r--	root/root	opt/kde/include/kauthorized.h
 -rw-r--r--	root/root	opt/kde/include/kautomount.h
 -rw-r--r--	root/root	opt/kde/include/kautosavefile.h
@@ -1070,6 +1152,7 @@ drwxr-xr-x	root/root	opt/kde/include/dom/
 -rw-r--r--	root/root	opt/kde/include/kconfigskeleton.h
 -rw-r--r--	root/root	opt/kde/include/kcoreconfigskeleton.h
 -rw-r--r--	root/root	opt/kde/include/kcrash.h
+-rw-r--r--	root/root	opt/kde/include/kcurrencycode.h
 -rw-r--r--	root/root	opt/kde/include/kcursor.h
 -rw-r--r--	root/root	opt/kde/include/kdatatool.h
 -rw-r--r--	root/root	opt/kde/include/kdatepicker.h
@@ -1101,6 +1184,7 @@ drwxr-xr-x	root/root	opt/kde/include/kdesu/
 -rw-r--r--	root/root	opt/kde/include/kdeui_export.h
 -rw-r--r--	root/root	opt/kde/include/kdeversion.h
 -rw-r--r--	root/root	opt/kde/include/kdevicelistmodel.h
+-rw-r--r--	root/root	opt/kde/include/kdewebkit_export.h
 -rw-r--r--	root/root	opt/kde/include/kdialog.h
 -rw-r--r--	root/root	opt/kde/include/kdialogbuttonbox.h
 -rw-r--r--	root/root	opt/kde/include/kdialogjobuidelegate.h
@@ -1164,6 +1248,7 @@ drwxr-xr-x	root/root	opt/kde/include/kdesu/
 -rw-r--r--	root/root	opt/kde/include/kglobalsettings.h
 -rw-r--r--	root/root	opt/kde/include/kglobalshortcutinfo.h
 -rw-r--r--	root/root	opt/kde/include/kglobalshortcutinfo_p.h
+-rw-r--r--	root/root	opt/kde/include/kgraphicswebview.h
 -rw-r--r--	root/root	opt/kde/include/kguiitem.h
 -rw-r--r--	root/root	opt/kde/include/khbox.h
 -rw-r--r--	root/root	opt/kde/include/khelpmenu.h
@@ -1187,6 +1272,7 @@ drwxr-xr-x	root/root	opt/kde/include/khexedit/
 -rw-r--r--	root/root	opt/kde/include/kiconeffect.h
 -rw-r--r--	root/root	opt/kde/include/kiconloader.h
 -rw-r--r--	root/root	opt/kde/include/kicontheme.h
+-rw-r--r--	root/root	opt/kde/include/kidletime.h
 -rw-r--r--	root/root	opt/kde/include/kimagefilepreview.h
 -rw-r--r--	root/root	opt/kde/include/kimageio.h
 -rw-r--r--	root/root	opt/kde/include/kimproxy.h
@@ -1290,6 +1376,14 @@ drwxr-xr-x	root/root	opt/kde/include/knewstuff2/core/
 -rw-r--r--	root/root	opt/kde/include/knewstuff2/knewstuff_export.h
 drwxr-xr-x	root/root	opt/kde/include/knewstuff2/ui/
 -rw-r--r--	root/root	opt/kde/include/knewstuff2/ui/knewstuffaction.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff2/ui/knewstuffbutton.h
+drwxr-xr-x	root/root	opt/kde/include/knewstuff3/
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/downloaddialog.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/entry.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/knewstuff_export.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/knewstuffaction.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/knewstuffbutton.h
+-rw-r--r--	root/root	opt/kde/include/knewstuff3/uploaddialog.h
 -rw-r--r--	root/root	opt/kde/include/knfsshare.h
 -rw-r--r--	root/root	opt/kde/include/knotification.h
 -rw-r--r--	root/root	opt/kde/include/knotificationrestrictions.h
@@ -1307,6 +1401,7 @@ drwxr-xr-x	root/root	opt/kde/include/knewstuff2/ui/
 drwxr-xr-x	root/root	opt/kde/include/kparts/
 -rw-r--r--	root/root	opt/kde/include/kparts/browserextension.h
 -rw-r--r--	root/root	opt/kde/include/kparts/browserinterface.h
+-rw-r--r--	root/root	opt/kde/include/kparts/browseropenorsavequestion.h
 -rw-r--r--	root/root	opt/kde/include/kparts/browserrun.h
 -rw-r--r--	root/root	opt/kde/include/kparts/componentfactory.h
 -rw-r--r--	root/root	opt/kde/include/kparts/event.h
@@ -1327,6 +1422,9 @@ drwxr-xr-x	root/root	opt/kde/include/kparts/
 -rw-r--r--	root/root	opt/kde/include/kpixmapprovider.h
 -rw-r--r--	root/root	opt/kde/include/kpixmapregionselectordialog.h
 -rw-r--r--	root/root	opt/kde/include/kpixmapregionselectorwidget.h
+-rw-r--r--	root/root	opt/kde/include/kpixmapsequence.h
+-rw-r--r--	root/root	opt/kde/include/kpixmapsequenceoverlaypainter.h
+-rw-r--r--	root/root	opt/kde/include/kpixmapsequencewidget.h
 -rw-r--r--	root/root	opt/kde/include/kplotaxis.h
 -rw-r--r--	root/root	opt/kde/include/kplotobject.h
 -rw-r--r--	root/root	opt/kde/include/kplotpoint.h
@@ -1385,6 +1483,7 @@ drwxr-xr-x	root/root	opt/kde/include/kross/ui/
 -rw-r--r--	root/root	opt/kde/include/ksavefile.h
 -rw-r--r--	root/root	opt/kde/include/kscan.h
 -rw-r--r--	root/root	opt/kde/include/kselectaction.h
+-rw-r--r--	root/root	opt/kde/include/kselectionproxymodel.h
 -rw-r--r--	root/root	opt/kde/include/kselector.h
 -rw-r--r--	root/root	opt/kde/include/kseparator.h
 -rw-r--r--	root/root	opt/kde/include/kservice.h
@@ -1421,6 +1520,7 @@ drwxr-xr-x	root/root	opt/kde/include/ksettings/
 -rw-r--r--	root/root	opt/kde/include/kstatusbar.h
 -rw-r--r--	root/root	opt/kde/include/kstatusbarjobtracker.h
 -rw-r--r--	root/root	opt/kde/include/kstatusbarofflineindicator.h
+-rw-r--r--	root/root	opt/kde/include/kstatusnotifieritem.h
 -rw-r--r--	root/root	opt/kde/include/kstdaccel.h
 -rw-r--r--	root/root	opt/kde/include/kstdaction.h
 -rw-r--r--	root/root	opt/kde/include/kstdguiitem.h
@@ -1457,6 +1557,7 @@ drwxr-xr-x	root/root	opt/kde/include/ktexteditor/
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/editor.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/editorchooser.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/factory.h
+-rw-r--r--	root/root	opt/kde/include/ktexteditor/highlightinterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/ktexteditor_export.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/loadsavefiltercheckplugin.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/markinterface.h
@@ -1467,8 +1568,12 @@ drwxr-xr-x	root/root	opt/kde/include/ktexteditor/
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/searchinterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/sessionconfiginterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/smartcursor.h
+-rw-r--r--	root/root	opt/kde/include/ktexteditor/smartcursornotifier.h
+-rw-r--r--	root/root	opt/kde/include/ktexteditor/smartcursorwatcher.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/smartinterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/smartrange.h
+-rw-r--r--	root/root	opt/kde/include/ktexteditor/smartrangenotifier.h
+-rw-r--r--	root/root	opt/kde/include/ktexteditor/smartrangewatcher.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/templateinterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/texthintinterface.h
 -rw-r--r--	root/root	opt/kde/include/ktexteditor/variableinterface.h
@@ -1488,10 +1593,17 @@ drwxr-xr-x	root/root	opt/kde/include/ktexteditor/
 -rw-r--r--	root/root	opt/kde/include/ktrader.h
 -rw-r--r--	root/root	opt/kde/include/ktreewidgetsearchline.h
 -rw-r--r--	root/root	opt/kde/include/ktypelist.h
+-rw-r--r--	root/root	opt/kde/include/ktypelistutils.h
 -rw-r--r--	root/root	opt/kde/include/ktzfiletimezone.h
 -rw-r--r--	root/root	opt/kde/include/kuiserverjobtracker.h
 -rw-r--r--	root/root	opt/kde/include/kundostack.h
 -rw-r--r--	root/root	opt/kde/include/kuniqueapplication.h
+drwxr-xr-x	root/root	opt/kde/include/kunitconversion/
+-rw-r--r--	root/root	opt/kde/include/kunitconversion/converter.h
+-rw-r--r--	root/root	opt/kde/include/kunitconversion/kunitconversion_export.h
+-rw-r--r--	root/root	opt/kde/include/kunitconversion/unit.h
+-rw-r--r--	root/root	opt/kde/include/kunitconversion/unitcategory.h
+-rw-r--r--	root/root	opt/kde/include/kunitconversion/value.h
 drwxr-xr-x	root/root	opt/kde/include/kunittest/
 -rw-r--r--	root/root	opt/kde/include/kunittest/kunittest_export.h
 -rw-r--r--	root/root	opt/kde/include/kunittest/module.h
@@ -1511,6 +1623,10 @@ drwxr-xr-x	root/root	opt/kde/include/kunittest/
 -rw-r--r--	root/root	opt/kde/include/kutils_export.h
 -rw-r--r--	root/root	opt/kde/include/kvbox.h
 -rw-r--r--	root/root	opt/kde/include/kwallet.h
+-rw-r--r--	root/root	opt/kde/include/kwebpage.h
+-rw-r--r--	root/root	opt/kde/include/kwebpluginfactory.h
+-rw-r--r--	root/root	opt/kde/include/kwebview.h
+-rw-r--r--	root/root	opt/kde/include/kwebwallet.h
 -rw-r--r--	root/root	opt/kde/include/kwidgetitemdelegate.h
 -rw-r--r--	root/root	opt/kde/include/kwidgetjobtracker.h
 -rw-r--r--	root/root	opt/kde/include/kwindowinfo.h
@@ -1526,11 +1642,15 @@ drwxr-xr-x	root/root	opt/kde/include/kunittest/
 -rw-r--r--	root/root	opt/kde/include/kxyselector.h
 -rw-r--r--	root/root	opt/kde/include/kzip.h
 drwxr-xr-x	root/root	opt/kde/include/nepomuk/
+-rw-r--r--	root/root	opt/kde/include/nepomuk/andterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/class.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/comparisonterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/desktopontologyloader.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/entity.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/fileontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/filequery.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/global.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/groupterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/kmetadatatagcloud.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/kmetadatatagwidget.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/kratingpainter.h
@@ -1538,16 +1658,28 @@ drwxr-xr-x	root/root	opt/kde/include/nepomuk/
 -rw-r--r--	root/root	opt/kde/include/nepomuk/ktagcloudwidget.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/ktagdisplaywidget.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/literal.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/literalterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/negationterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/nepomuk_export.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukquery_export.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukservice.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/ontology.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/ontologyloader.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/ontologymanager.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/orterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/property.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/query.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/queryparser.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/queryserviceclient.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/resource.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/resourcemanager.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resourceterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resourcetypeterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/result.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/simpleterm.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/tag.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/term.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/thing.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/tools.h
 -rw-r--r--	root/root	opt/kde/include/nepomuk/variant.h
@@ -1556,13 +1688,26 @@ drwxr-xr-x	root/root	opt/kde/include/nepomuk/
 -rw-r--r--	root/root	opt/kde/include/passdlg.h
 drwxr-xr-x	root/root	opt/kde/include/plasma/
 -rw-r--r--	root/root	opt/kde/include/plasma/abstractrunner.h
+-rw-r--r--	root/root	opt/kde/include/plasma/abstracttoolbox.h
+-rw-r--r--	root/root	opt/kde/include/plasma/accessappletjob.h
+-rw-r--r--	root/root	opt/kde/include/plasma/accessmanager.h
+-rw-r--r--	root/root	opt/kde/include/plasma/animation.h
 -rw-r--r--	root/root	opt/kde/include/plasma/animationdriver.h
+drwxr-xr-x	root/root	opt/kde/include/plasma/animations/
+-rw-r--r--	root/root	opt/kde/include/plasma/animations/animation.h
 -rw-r--r--	root/root	opt/kde/include/plasma/animator.h
 -rw-r--r--	root/root	opt/kde/include/plasma/applet.h
+-rw-r--r--	root/root	opt/kde/include/plasma/authorizationinterface.h
+-rw-r--r--	root/root	opt/kde/include/plasma/authorizationmanager.h
+-rw-r--r--	root/root	opt/kde/include/plasma/authorizationrule.h
+-rw-r--r--	root/root	opt/kde/include/plasma/clientpinrequest.h
 -rw-r--r--	root/root	opt/kde/include/plasma/configloader.h
 -rw-r--r--	root/root	opt/kde/include/plasma/containment.h
+-rw-r--r--	root/root	opt/kde/include/plasma/containmentactions.h
+-rw-r--r--	root/root	opt/kde/include/plasma/containmentactionspluginsconfig.h
 -rw-r--r--	root/root	opt/kde/include/plasma/context.h
 -rw-r--r--	root/root	opt/kde/include/plasma/corona.h
+-rw-r--r--	root/root	opt/kde/include/plasma/credentials.h
 -rw-r--r--	root/root	opt/kde/include/plasma/datacontainer.h
 -rw-r--r--	root/root	opt/kde/include/plasma/dataengine.h
 -rw-r--r--	root/root	opt/kde/include/plasma/dataenginemanager.h
@@ -1589,7 +1734,9 @@ drwxr-xr-x	root/root	opt/kde/include/plasma/scripting/
 -rw-r--r--	root/root	opt/kde/include/plasma/scripting/dataenginescript.h
 -rw-r--r--	root/root	opt/kde/include/plasma/scripting/runnerscript.h
 -rw-r--r--	root/root	opt/kde/include/plasma/scripting/scriptengine.h
+-rw-r--r--	root/root	opt/kde/include/plasma/scripting/wallpaperscript.h
 -rw-r--r--	root/root	opt/kde/include/plasma/service.h
+-rw-r--r--	root/root	opt/kde/include/plasma/serviceaccessjob.h
 -rw-r--r--	root/root	opt/kde/include/plasma/servicejob.h
 -rw-r--r--	root/root	opt/kde/include/plasma/svg.h
 -rw-r--r--	root/root	opt/kde/include/plasma/theme.h
@@ -1606,6 +1753,7 @@ drwxr-xr-x	root/root	opt/kde/include/plasma/widgets/
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/frame.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/groupbox.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/iconwidget.h
+-rw-r--r--	root/root	opt/kde/include/plasma/widgets/itembackground.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/label.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/lineedit.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/meter.h
@@ -1613,6 +1761,7 @@ drwxr-xr-x	root/root	opt/kde/include/plasma/widgets/
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/radiobutton.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/scrollbar.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/scrollwidget.h
+-rw-r--r--	root/root	opt/kde/include/plasma/widgets/separator.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/signalplotter.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/slider.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/spinbox.h
@@ -1624,6 +1773,7 @@ drwxr-xr-x	root/root	opt/kde/include/plasma/widgets/
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/treeview.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/videowidget.h
 -rw-r--r--	root/root	opt/kde/include/plasma/widgets/webview.h
+-rw-r--r--	root/root	opt/kde/include/plasma/windoweffects.h
 -rw-r--r--	root/root	opt/kde/include/predicateproperties.h
 -rw-r--r--	root/root	opt/kde/include/qtest_kde.h
 -rw-r--r--	root/root	opt/kde/include/skipdlg.h
@@ -1689,6 +1839,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_kssld.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_proxyscout.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kfileaudiopreview.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kfilemodule.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/khtmladaptorpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/khtmlimagepart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_file.so
@@ -1704,13 +1855,17 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krossqts.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kspell_aspell.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kspell_enchant.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditor_autobrace.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditor_exporter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditor_insertfile.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditor_kdatatool.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditor_python-encoding.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktranscript.so
 drwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/
 lrwxrwxrwx	root/root	opt/kde/lib/kde4/libexec/filesharelist -> /opt/kde/lib/kde4/libexec/fileshareset
--rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/fileshareset
+-rwsr-xr-x	root/root	opt/kde/lib/kde4/libexec/fileshareset
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kauth-policy-gen
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kcmremotewidgetshelper
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kconf_update
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kdesu_stub
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/kdontchangethehostname
@@ -1722,7 +1877,8 @@ lrwxrwxrwx	root/root	opt/kde/lib/kde4/libexec/filesharelist -> /opt/kde/lib/kde4
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/ksendbugmail
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/ktelnetservice
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/lnusertemp
--rwxr-xr-x	root/root	opt/kde/lib/kde4/libkfilemodule.so
+-rwsr-xr-x	root/root	opt/kde/lib/kde4/libexec/start_kdeinit
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/libexec/start_kdeinit_wrapper
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkhtmlpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkmultipart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/notepadpart.so
@@ -1743,98 +1899,110 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/imageformats/kimg_xview.so
 drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/script/
 lrwxrwxrwx	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so -> libkrossqtsplugin.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so.4 -> libkrossqtsplugin.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so.4 -> libkrossqtsplugin.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/script/libkrossqtsplugin.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/spellcheckplugin.so
 lrwxrwxrwx	root/root	opt/kde/lib/libkde3support.so -> libkde3support.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkde3support.so.4 -> libkde3support.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkde3support.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkde3support.so.4 -> libkde3support.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkde3support.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdecore.so -> libkdecore.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkdecore.so.5 -> libkdecore.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdecore.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdecore.so.5 -> libkdecore.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdecore.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdefakes.so -> libkdefakes.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkdefakes.so.5 -> libkdefakes.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdefakes.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdefakes.so.5 -> libkdefakes.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdefakes.so.5.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kbuildsycoca4.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kconf_update.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kded4.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kio_http_cache_cleaner.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_klauncher.so
 lrwxrwxrwx	root/root	opt/kde/lib/libkdesu.so -> libkdesu.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkdesu.so.5 -> libkdesu.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdesu.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdesu.so.5 -> libkdesu.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdesu.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdeui.so -> libkdeui.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkdeui.so.5 -> libkdeui.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdeui.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdeui.so.5 -> libkdeui.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdeui.so.5.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdewebkit.so -> libkdewebkit.so.5
+lrwxrwxrwx	root/root	opt/kde/lib/libkdewebkit.so.5 -> libkdewebkit.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdewebkit.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdnssd.so -> libkdnssd.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkdnssd.so.4 -> libkdnssd.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdnssd.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdnssd.so.4 -> libkdnssd.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdnssd.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkfile.so -> libkfile.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkfile.so.4 -> libkfile.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkfile.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkfile.so.4 -> libkfile.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkfile.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkhtml.so -> libkhtml.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkhtml.so.5 -> libkhtml.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkhtml.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkhtml.so.5 -> libkhtml.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkhtml.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkimproxy.so -> libkimproxy.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkimproxy.so.4 -> libkimproxy.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkimproxy.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkimproxy.so.4 -> libkimproxy.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkimproxy.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkio.so -> libkio.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkio.so.5 -> libkio.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkio.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkio.so.5 -> libkio.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkio.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkjs.so -> libkjs.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkjs.so.4 -> libkjs.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkjs.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkjs.so.4 -> libkjs.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkjs.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkjsapi.so -> libkjsapi.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkjsapi.so.4 -> libkjsapi.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkjsapi.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkjsapi.so.4 -> libkjsapi.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkjsapi.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkjsembed.so -> libkjsembed.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkjsembed.so.4 -> libkjsembed.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkjsembed.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkjsembed.so.4 -> libkjsembed.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkjsembed.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkmediaplayer.so -> libkmediaplayer.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkmediaplayer.so.4 -> libkmediaplayer.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkmediaplayer.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkmediaplayer.so.4 -> libkmediaplayer.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkmediaplayer.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libknewstuff2.so -> libknewstuff2.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknewstuff2.so.4 -> libknewstuff2.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknewstuff2.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libknewstuff2.so.4 -> libknewstuff2.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknewstuff2.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libknewstuff3.so -> libknewstuff3.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libknewstuff3.so.4 -> libknewstuff3.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknewstuff3.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libknotifyconfig.so -> libknotifyconfig.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknotifyconfig.so.4 -> libknotifyconfig.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknotifyconfig.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libknotifyconfig.so.4 -> libknotifyconfig.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknotifyconfig.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkntlm.so -> libkntlm.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkntlm.so.4 -> libkntlm.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkntlm.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkntlm.so.4 -> libkntlm.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkntlm.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkparts.so -> libkparts.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkparts.so.4 -> libkparts.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkparts.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkparts.so.4 -> libkparts.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkparts.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkpty.so -> libkpty.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkpty.so.4 -> libkpty.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkpty.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkpty.so.4 -> libkpty.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkpty.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkrosscore.so -> libkrosscore.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkrosscore.so.4 -> libkrosscore.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkrosscore.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkrosscore.so.4 -> libkrosscore.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkrosscore.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkrossui.so -> libkrossui.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkrossui.so.4 -> libkrossui.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkrossui.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkrossui.so.4 -> libkrossui.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkrossui.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libktexteditor.so -> libktexteditor.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libktexteditor.so.4 -> libktexteditor.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libktexteditor.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libktexteditor.so.4 -> libktexteditor.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libktexteditor.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkunitconversion.so -> libkunitconversion.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libkunitconversion.so.4 -> libkunitconversion.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkunitconversion.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkunittest.so -> libkunittest.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkunittest.so.4 -> libkunittest.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkunittest.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkunittest.so.4 -> libkunittest.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkunittest.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkutils.so -> libkutils.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkutils.so.4 -> libkutils.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkutils.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkutils.so.4 -> libkutils.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkutils.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libnepomuk.so -> libnepomuk.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libnepomuk.so.4 -> libnepomuk.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libnepomuk.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomuk.so.4 -> libnepomuk.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libnepomuk.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomukquery.so -> libnepomukquery.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomukquery.so.4 -> libnepomukquery.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libnepomukquery.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libplasma.so -> libplasma.so.3
 lrwxrwxrwx	root/root	opt/kde/lib/libplasma.so.3 -> libplasma.so.3.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libplasma.so.3.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libsolid.so -> libsolid.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libsolid.so.4 -> libsolid.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libsolid.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libsolid.so.4 -> libsolid.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libsolid.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libthreadweaver.so -> libthreadweaver.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libthreadweaver.so.4 -> libthreadweaver.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libthreadweaver.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libthreadweaver.so.4 -> libthreadweaver.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libthreadweaver.so.4.4.0
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/LICENSES/
@@ -1884,24 +2052,25 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindGStreamer.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindGettext.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindGphoto2.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindHUNSPELL.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindIOKit.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDE4Internal.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDE4Workspace.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDEWIN32.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDEWIN_Packager.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDEWin.cmake
--rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKNepomuk.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKDevPlatform.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKdcraw.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKdeMultimedia.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKdepim.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKdepimLibs.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKexiv2.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKipi.cmake
--rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKonto.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKopete.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindKorundum.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLCMS.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLibArt.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLibAttica.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLibKonq.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLibLZMA.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindLibPython.py
@@ -1939,6 +2108,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSamba.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSane.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSasl2.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSharedDesktopOntologies.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSharedMimeInfo.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSoprano.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindSqlite.cmake
@@ -1958,13 +2128,13 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/KDELibs4ToolsTargets.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/KDELibsDependencies.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroAddCompileFlags.cmake
--rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroAddFileDependencies.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroAddLinkFlags.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroAdditionalCleanFiles.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroAppendIf.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroBoolTo01.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroEnsureOutOfSourceBuild.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroEnsureVersion.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroKAuth.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroLibrary.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroLogFeature.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroOptionalAddSubdirectory.cmake
@@ -1972,9 +2142,12 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroOptionalFindPackage.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroPushRequiredVars.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/MacroWriteBasicCMakeVersionFile.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/NepomukAddOntologyClasses.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/NepomukMacros.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/PythonCompile.py
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/PythonMacros.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/Qt4ConfigDependentSettings.cmake
+-rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/Qt4Macros.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/SIPMacros.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/Win32Macros.cmake
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/check_installed_exports_file.cmake
@@ -1988,6 +2161,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/kde4init_win32lib_dummy.cpp.in
 -rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/kde4uic.cmake
 drwxr-xr-x	root/root	opt/kde/share/apps/katepart/
+drwxr-xr-x	root/root	opt/kde/share/apps/katepart/api/
+-rw-r--r--	root/root	opt/kde/share/apps/katepart/api/05_cursor.js
+-rw-r--r--	root/root	opt/kde/share/apps/katepart/api/10_range.js
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/katepartsimpleui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/katepartui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/katepart/script/
@@ -1998,7 +2174,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/katepart/script/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/script/lisp.js
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/script/python.js
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/script/ruby.js
--rw-r--r--	root/root	opt/kde/share/apps/katepart/script/sort.js
+-rw-r--r--	root/root	opt/kde/share/apps/katepart/script/utils.js
 drwxr-xr-x	root/root	opt/kde/share/apps/katepart/syntax/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/abap.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/abc.xml
@@ -2006,6 +2182,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/katepart/syntax/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/ada.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/ahdl.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/alert.xml
+-rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/alert_indent.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/ansic89.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/ansys.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/apache.xml
@@ -2059,6 +2236,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/katepart/syntax/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/gettext.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/glsl.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/gnuassembler.xml
+-rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/grammar.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/haskell.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/haxe.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/html-php.xml
@@ -2163,6 +2341,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/katepart/syntax/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/yacc.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/yaml.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/zonnon.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/kauth/
+-rw-r--r--	root/root	opt/kde/share/apps/kauth/dbus_policy.stub
+-rw-r--r--	root/root	opt/kde/share/apps/kauth/dbus_service.stub
 drwxr-xr-x	root/root	opt/kde/share/apps/kcharselect/
 -rw-r--r--	root/root	opt/kde/share/apps/kcharselect/kcharselect-data
 drwxr-xr-x	root/root	opt/kde/share/apps/kcm_componentchooser/
@@ -2190,7 +2371,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kdeui/about/
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/bar-top-left.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/bar-top-middle.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/bar-top-right.png
--rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/body-background.jpg
+-rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/body-background.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/box-bottom-left.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/box-bottom-middle.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdeui/about/box-bottom-right.png
@@ -2227,7 +2408,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kdewidgets/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kdatewidget.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kdialog.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kdoublenuminput.png
--rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kdoublespinbox.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kdualcolorbutton.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/keditlistbox.png
 -rw-r--r--	root/root	opt/kde/share/apps/kdewidgets/pics/kfontcombo.png
@@ -2988,6 +3168,46 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr/entities/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr/lang.entities
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr/strings.entities
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr/user.entities
+drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/catalog.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/fdl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/gpl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/help-menu.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/install-compile.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/install-intro.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/lgpl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/report-bugs.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underArtisticLicense.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underBSDLicense.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underFDL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underLGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/underX11License.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/entities/update-doc.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/lang.entities
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/strings.entities
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavian/user.entities
+drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/catalog.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/fdl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/gpl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/help-menu.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/install-compile.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/install-intro.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/lgpl-notice.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/report-bugs.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underArtisticLicense.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underBSDLicense.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underFDL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underLGPL.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/underX11License.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/entities/update-doc.docbook
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/lang.entities
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/strings.entities
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@ijekavianlatin/user.entities
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@latin/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@latin/catalog.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/sr@latin/entities/
@@ -3155,6 +3375,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sk.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sl.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sr.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sr@ijekavian.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sr@ijekavianlatin.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sr@latin.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/sv.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/customization/xsl/zh_tw.xml
@@ -3338,6 +3560,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sk.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sl.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sr.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sr_ijekavian.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sr_ijekavianlatin.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sr_latin.xml
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/subtitles.xsl
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/common/sv.xml
@@ -3885,6 +4109,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/params/
 -rw-r--r--	root/root	opt/kde/share/apps/ksgmltools2/docbook/xsl/params/xref.with.number.and.title.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/kssl/
 -rw-r--r--	root/root	opt/kde/share/apps/kssl/ca-bundle.crt
+drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_exporter/
+-rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_exporter/ktexteditor_exporterui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_insertfile/
 -rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_insertfile/ktexteditor_insertfileui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_kdatatool/
@@ -3892,6 +4118,10 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_kdatatool/
 drwxr-xr-x	root/root	opt/kde/share/apps/nepomuk/
 drwxr-xr-x	root/root	opt/kde/share/apps/nepomuk/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/nepomuk/pics/rating.png
+drwxr-xr-x	root/root	opt/kde/share/apps/plasma/
+drwxr-xr-x	root/root	opt/kde/share/apps/plasma/services/
+-rw-r--r--	root/root	opt/kde/share/apps/plasma/services/dataengineservice.operations
+-rw-r--r--	root/root	opt/kde/share/apps/plasma/services/plasmoidservice.operations
 drwxr-xr-x	root/root	opt/kde/share/apps/proxyscout/
 -rw-r--r--	root/root	opt/kde/share/apps/proxyscout/proxyscout.notifyrc
 drwxr-xr-x	root/root	opt/kde/share/config/
@@ -3917,6 +4147,7 @@ drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.JobViewServer.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KCookieServer.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KDirNotify.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KGlobalAccel.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KHTMLPart.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KIMIface.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KLauncher.xml
@@ -3925,8 +4156,13 @@ drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KSpeech.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KWallet.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.Solid.Networking.Client.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.StatusNotifierItem.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.StatusNotifierWatcher.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.kded.xml
+-rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.kglobalaccel.Component.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.kio.FileUndoManager.xml
+drwxr-xr-x	root/root	opt/kde/share/dbus-1/system-services/
+-rw-r--r--	root/root	opt/kde/share/dbus-1/system-services/org.kde.kcontrol.kcmremotewidgets.service
 drwxr-xr-x	root/root	opt/kde/share/doc/
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/
 drwxr-xr-x	root/root	opt/kde/share/doc/HTML/en/
@@ -3959,6 +4195,7 @@ drwxr-xr-x	root/root	opt/kde/share/doc/HTML/en/common/
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/gpl-license.html
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/header.html
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/kde-default.css
+-rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/kde-docs.css
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/kde_logo_bg.png
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/lgpl-license
 -rw-r--r--	root/root	opt/kde/share/doc/HTML/en/common/lgpl-license.html
@@ -4035,6 +4272,9 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/presence_away.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/presence_offline.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/presence_online.png
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/ktexteditorautobrace.svgz
 drwxr-xr-x	root/root	opt/kde/share/kde4/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/data.protocol
@@ -4054,6 +4294,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/kcookiejar.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/kssld.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/proxyscout.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kfilemodule.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/khtml.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/khtmladaptorpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/khtmlimage.desktop
@@ -4062,6 +4303,8 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kmultipart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kspell_aspell.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kspell_enchant.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/ktexteditor_autobrace.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/ktexteditor_exporter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktexteditor_insertfile.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktexteditor_kdatatool.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktexteditor_python-encoding.desktop
@@ -4118,6 +4361,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kemoticonsTheme.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kfileplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kfilewrite.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kiofilemodule.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kmediaplayer.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kmediaplayerengine.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kpart.desktop
@@ -4135,6 +4379,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-applet-popupapplet.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-applet.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-containment.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-containmentactions.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-dataengine.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-packagestructure.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma-runner.desktop
@@ -4166,3 +4411,6 @@ drwxr-xr-x	root/root	opt/kde/share/man/man8/
 drwxr-xr-x	root/root	opt/kde/share/mime/
 drwxr-xr-x	root/root	opt/kde/share/mime/packages/
 -rw-r--r--	root/root	opt/kde/share/mime/packages/kde.xml
+drwxr-xr-x	root/root	opt/kde/share/polkit-1/
+drwxr-xr-x	root/root	opt/kde/share/polkit-1/actions/
+-rw-r--r--	root/root	opt/kde/share/polkit-1/actions/org.kde.kcontrol.kcmremotewidgets.policy

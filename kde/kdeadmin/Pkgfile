@@ -2,16 +2,16 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, kdebase-runtime, kdepimlibs
+# Depends on: kdelibs, kdebase-runtime, kdepimlibs, pycups, pyqt
 
 name=kdeadmin
-version=4.3.5
+version=4.4.0
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2\
 	nutyx-2008.patch)
 build() {
 	cd $name-$version
-	patch -Np1 -i ../nutyx-2008.patch
+#	patch -Np1 -i ../nutyx-2008.patch
 	sed -i "/kpackage/d" CMakeLists.txt
 	mkdir build
 	cd build

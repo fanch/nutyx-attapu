@@ -3,7 +3,7 @@ drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi2xml
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_birthdays_resource
--rwxr-xr-x	root/root	opt/kde/bin/akonadi_distlist_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_contacts_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_ical_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_imap_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_kabc_resource
@@ -12,25 +12,22 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_kolabproxy_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_localbookmarks_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_maildir_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_maildispatcher_agent
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_mailtransport_dummy_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_mbox_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_microblog_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_calendar_feeder
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_contact_feeder
--rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_email_feeder
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuktag_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_nntp_resource
--rwxr-xr-x	root/root	opt/kde/bin/akonadi_strigi_feeder
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_notes_resource
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_pop3_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_vcard_resource
 -rwxr-xr-x	root/root	opt/kde/bin/akonadi_vcarddir_resource
--rwxr-xr-x	root/root	opt/kde/bin/akonadiconsole
 -rwxr-xr-x	root/root	opt/kde/bin/akonaditray
+-rwxr-xr-x	root/root	opt/kde/bin/kaddressbookmigrator
+-rwxr-xr-x	root/root	opt/kde/bin/kmail-migrator
 -rwxr-xr-x	root/root	opt/kde/bin/kres-migrator
-drwxr-xr-x	root/root	opt/kde/include/
-drwxr-xr-x	root/root	opt/kde/include/akonadi/
-drwxr-xr-x	root/root	opt/kde/include/akonadi/xml/
--rw-r--r--	root/root	opt/kde/include/akonadi/xml/akonadi-xml_export.h
--rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmldocument.h
--rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlreader.h
--rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlwritejob.h
--rw-r--r--	root/root	opt/kde/include/akonadi/xml/xmlwriter.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/akonadi_serializer_addressee.so
@@ -45,29 +42,23 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_akonadi_resources.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_akonadi_server.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_akonadi.so
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kabccommon.so -> libakonadi-kabccommon.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kabccommon.so.4 -> libakonadi-kabccommon.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakonadi-kabccommon.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal.so -> libakonadi-kcal.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal.so.4 -> libakonadi-kcal.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakonadi-kcal.so.4.3.0
 lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-xml.so -> libakonadi-xml.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-xml.so.4 -> libakonadi-xml.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakonadi-xml.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so -> libakonadi_next.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so.4 -> libakonadi_next.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakonadi_next.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-xml.so.4 -> libakonadi-xml.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi-xml.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdepim-copy.so -> libkdepim-copy.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkdepim-copy.so.4 -> libkdepim-copy.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdepim-copy.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdepim-copy.so.4 -> libkdepim-copy.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdepim-copy.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libmaildir.so -> libmaildir.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libmaildir.so.4 -> libmaildir.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libmaildir.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmaildir.so.4 -> libmaildir.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmaildir.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmbox.so -> libmbox.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libmbox.so.4 -> libmbox.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmbox.so.4.4.0
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/akonadi/
 drwxr-xr-x	root/root	opt/kde/share/akonadi/agents/
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/birthdaysresource.desktop
--rw-r--r--	root/root	opt/kde/share/akonadi/agents/distlistresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/contactsresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/icalresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/imapresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/kabcresource.desktop
@@ -76,18 +67,20 @@ drwxr-xr-x	root/root	opt/kde/share/akonadi/agents/
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/kolabproxyresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/localbookmarksresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/maildirresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/maildispatcheragent.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/mboxresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/microblog.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/mtdummyresource.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukcalendarfeeder.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukcontactfeeder.desktop
--rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukemailfeeder.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomuktagresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/nntpresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/notesresource.desktop
--rw-r--r--	root/root	opt/kde/share/akonadi/agents/strigifeeder.desktop
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/pop3resource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/vcarddirresource.desktop
 -rw-r--r--	root/root	opt/kde/share/akonadi/agents/vcardresource.desktop
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
--rw-r--r--	root/root	opt/kde/share/applications/kde4/akonadiconsole.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/akonaditray.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/
@@ -105,9 +98,10 @@ drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/plugins/serializer/
 -rw-r--r--	root/root	opt/kde/share/apps/akonadi/plugins/serializer/akonadi_serializer_microblog.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/akonadi_knut_resource/
 -rw-r--r--	root/root	opt/kde/share/apps/akonadi_knut_resource/knut-template.xml
-drwxr-xr-x	root/root	opt/kde/share/apps/akonadiconsole/
--rw-r--r--	root/root	opt/kde/share/apps/akonadiconsole/akonadiconsoleui.rc
+drwxr-xr-x	root/root	opt/kde/share/autostart/
+-rw-r--r--	root/root	opt/kde/share/autostart/kaddressbookmigrator.desktop
 drwxr-xr-x	root/root	opt/kde/share/config/
+-rw-r--r--	root/root	opt/kde/share/config/kmail-migratorrc
 -rw-r--r--	root/root	opt/kde/share/config/kres-migratorrc
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/

@@ -3,12 +3,6 @@ drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/lancelot
 drwxr-xr-x	root/root	opt/kde/include/
-drwxr-xr-x	root/root	opt/kde/include/conversion/
--rw-r--r--	root/root	opt/kde/include/conversion/converter.h
--rw-r--r--	root/root	opt/kde/include/conversion/plasmaconversion_export.h
--rw-r--r--	root/root	opt/kde/include/conversion/unit.h
--rw-r--r--	root/root	opt/kde/include/conversion/unitcategory.h
--rw-r--r--	root/root	opt/kde/include/conversion/value.h
 drwxr-xr-x	root/root	opt/kde/include/lancelot/
 -rw-r--r--	root/root	opt/kde/include/lancelot/Global.h
 -rw-r--r--	root/root	opt/kde/include/lancelot/lancelot.h
@@ -37,17 +31,22 @@ drwxr-xr-x	root/root	opt/kde/include/lancelot/widgets/
 -rw-r--r--	root/root	opt/kde/include/lancelot/widgets/Widget.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_krunner_audioplayercontrol.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_krunner_spellcheck.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_audioplayercontrol.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_browserhistory.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_contacts.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_converter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_katesessions.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_konquerorsessions.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_konsolesessions.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_kopete.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_mediawiki.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/krunner_spellcheckrunner.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma-applet_systemloadviewer.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_bball.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_binaryclock.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_blackboard.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_bubblemon.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_calculator.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_charselect.so
@@ -59,6 +58,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_frame.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_fuzzy_clock.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_incomingmsg.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_knowledgebase.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_kolourpicker.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_konqprofiles.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_konsoleprofiles.so
@@ -74,21 +74,26 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_notes.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_nowplaying.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_opendesktop.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_opendesktop_activities.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_paste.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_pastebin.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_plasmaboard.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_previewer.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_rssnow.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_rtm.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_showdashboard.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_showdesktop.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_spellcheck.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_timer.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_unitconverter.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_weather.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_weatherstation.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_webslice.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_comic_krossprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_comic.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_microblog.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_ocs.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_pastebin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_potd.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_engine_rtm.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_packagestructure_comic.so
@@ -97,18 +102,13 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_flickrprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_oseiprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_wcpotdprovider.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_marble.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_pattern.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_virus.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_weather.so
-lrwxrwxrwx	root/root	opt/kde/lib/libconversion.so -> libconversion.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libconversion.so.4 -> libconversion.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libconversion.so.4.3.0
 lrwxrwxrwx	root/root	opt/kde/lib/liblancelot.so -> liblancelot.so.0
-lrwxrwxrwx	root/root	opt/kde/lib/liblancelot.so.0 -> liblancelot.so.0.7.0
--rwxr-xr-x	root/root	opt/kde/lib/liblancelot.so.0.7.0
-lrwxrwxrwx	root/root	opt/kde/lib/libocsclient.so -> libocsclient.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libocsclient.so.4 -> libocsclient.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libocsclient.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/liblancelot.so.0 -> liblancelot.so.1.7.0
+-rwxr-xr-x	root/root	opt/kde/lib/liblancelot.so.1.7.0
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmacomicprovidercore.so -> libplasmacomicprovidercore.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmacomicprovidercore.so.1 -> libplasmacomicprovidercore.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libplasmacomicprovidercore.so.1.0.0
@@ -116,20 +116,17 @@ lrwxrwxrwx	root/root	opt/kde/lib/libplasmapotdprovidercore.so -> libplasmapotdpr
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmapotdprovidercore.so.1 -> libplasmapotdprovidercore.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libplasmapotdprovidercore.so.1.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libplasmaweather.so -> libplasmaweather.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libplasmaweather.so.4 -> libplasmaweather.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libplasmaweather.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libplasmaweather.so.4 -> libplasmaweather.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libplasmaweather.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/librtm.so -> librtm.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/librtm.so.4 -> librtm.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/librtm.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/librtm.so.4 -> librtm.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/librtm.so.4.4.0
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/bball/
 -rw-r--r--	root/root	opt/kde/share/apps/bball/bball.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/bball/bounce.ogg
 -rw-r--r--	root/root	opt/kde/share/apps/bball/football.svgz
-drwxr-xr-x	root/root	opt/kde/share/apps/cmake/
-drwxr-xr-x	root/root	opt/kde/share/apps/cmake/modules/
--rw-r--r--	root/root	opt/kde/share/apps/cmake/modules/FindConversion.cmake
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/Aya/
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/Aya/lancelot/
@@ -179,16 +176,16 @@ drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/default/
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/default/bubblemon/
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/bubblemon/bubble.svg
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/default/fifteenPuzzle/
--rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/fifteenPuzzle/greensquare.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/fifteenPuzzle/blanksquare.svg
 drwxr-xr-x	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-categories-extender.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-categories.svgz
+-rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-drop-indicator.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-headers.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-items-extender.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/action-list-view-items.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/extender-button-icon.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/inner-background.svgz
--rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/main-background.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/passageway-view-buttons-extender.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/passageway-view-buttons.svgz
 -rw-r--r--	root/root	opt/kde/share/apps/desktoptheme/default/lancelot/passageway-view-inactivebuttons.svgz
@@ -284,10 +281,14 @@ drwxr-xr-x	root/root	opt/kde/share/apps/lancelot/
 -rw-r--r--	root/root	opt/kde/share/apps/lancelot/lancelot.notifyrc
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma-applet-frame/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma-applet-frame/picture-frame-default.jpg
+drwxr-xr-x	root/root	opt/kde/share/apps/plasma-applet-opendesktop-activities/
+-rw-r--r--	root/root	opt/kde/share/apps/plasma-applet-opendesktop-activities/plasma-applet-opendesktop-activities.notifyrc
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma-applet-opendesktop/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma-applet-opendesktop/user.css
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma/
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma/services/
+-rw-r--r--	root/root	opt/kde/share/apps/plasma/services/ocsPerson.operations
+-rw-r--r--	root/root	opt/kde/share/apps/plasma/services/pastebin.operations
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/rtmauth.operations
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/rtmtask.operations
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/rtmtasks.operations
@@ -296,16 +297,32 @@ drwxr-xr-x	root/root	opt/kde/share/apps/plasma_pastebin/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_pastebin/plasma_pastebin.notifyrc
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/bees.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/bees.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/celtic.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/celtic.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/eastern_blues.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/eastern_blues.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/fish.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/fish.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/flowers.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/flowers.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/french.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/french.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/ivory_coast.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/ivory_coast.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/lineage.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/lineage.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/night-rock.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/night-rock.jpg
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/pavement.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/pavement.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/persism.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/persism.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/rattan.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/rattan.png
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/stars.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/stars.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/stonewall2.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/stonewall2.png
 -rw-r--r--	root/root	opt/kde/share/apps/plasma_wallpaper_pattern/patterns/triangles.desktop
@@ -316,6 +333,7 @@ drwxr-xr-x	root/root	opt/kde/share/apps/rssnow/
 -rw-r--r--	root/root	opt/kde/share/apps/rssnow/feeds
 drwxr-xr-x	root/root	opt/kde/share/config/
 -rw-r--r--	root/root	opt/kde/share/config/comic.knsrc
+-rw-r--r--	root/root	opt/kde/share/config/plasmaweather.knsrc
 -rw-r--r--	root/root	opt/kde/share/config/virus_wallpaper.knsrc
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/services/
@@ -376,12 +394,14 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/oseiprovider.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-bball.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-binaryclock.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-blackboard.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-bubblemon.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-calculator.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-charselect.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-eyes.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-fifteenPuzzle.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-incomingmsg.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-knowledgebase.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-konqprofiles.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-konsoleprofiles.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-lancelot-launcher.desktop
@@ -394,6 +414,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-microblog.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-news.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-nowplaying.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-opendesktop-activities.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-opendesktop.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-paste.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-pastebin.desktop
@@ -402,11 +423,13 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-rssnow.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-showdashboard.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-showdesktop.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-spellcheck.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-systemloadviewer.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-timer.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-unitconverter.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-weather.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-weatherstation.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-webslice.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-clock-fuzzy.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-comic-default.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-dataengine-comic.desktop
@@ -414,19 +437,28 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-dataengine-ocs.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-dataengine-potd.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-dict-default.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-engine-pastebin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-engine-rtm.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-fileWatcher-default.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-frame-default.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-kolourpicker-default.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-notes-default.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-packagestructure-comic.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-audioplayercontrol.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-audioplayercontrol_config.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-contacts.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-converter.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-kopete.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-spellchecker.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-spellchecker_config.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-techbase.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-wikipedia.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-wikitravel.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-marble.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-pattern.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-virus.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-weather.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/plasma_applet_plasmaboard.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/wcpotdprovider.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/plasma_comicprovider.desktop

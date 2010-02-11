@@ -1,15 +1,16 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
+-rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_email_feeder
+-rwxr-xr-x	root/root	opt/kde/bin/akonadiconsole
 -rwxr-xr-x	root/root	opt/kde/bin/akregator
 -rwxr-xr-x	root/root	opt/kde/bin/akregatorstorageexporter
--rwxr-xr-x	root/root	opt/kde/bin/egroupwarewizard
+-rwxr-xr-x	root/root	opt/kde/bin/blogilo
 -rwxr-xr-x	root/root	opt/kde/bin/groupwarewizard
 -rwxr-xr-x	root/root	opt/kde/bin/groupwisewizard
 -rwxr-xr-x	root/root	opt/kde/bin/ical2vcal
 -rwxr-xr-x	root/root	opt/kde/bin/kabc2mutt
 -rwxr-xr-x	root/root	opt/kde/bin/kabcclient
--rwxr-xr-x	root/root	opt/kde/bin/kabcdistlistupdater
 -rwxr-xr-x	root/root	opt/kde/bin/kaddressbook
 -rwxr-xr-x	root/root	opt/kde/bin/kalarm
 -rwxr-xr-x	root/root	opt/kde/bin/kalarmautostart
@@ -30,119 +31,10 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/kontact
 -rwxr-xr-x	root/root	opt/kde/bin/korgac
 -rwxr-xr-x	root/root	opt/kde/bin/korganizer
--rwxr-xr-x	root/root	opt/kde/bin/kpilot
--rwxr-xr-x	root/root	opt/kde/bin/kpilotDaemon
 -rwxr-xr-x	root/root	opt/kde/bin/ksendemail
 -rwxr-xr-x	root/root	opt/kde/bin/ktimetracker
 -rwxr-xr-x	root/root	opt/kde/bin/kwatchgnupg
--rwxr-xr-x	root/root	opt/kde/bin/scalixadmin
--rwxr-xr-x	root/root	opt/kde/bin/scalixwizard
 -rwxr-xr-x	root/root	opt/kde/bin/sloxwizard
-drwxr-xr-x	root/root	opt/kde/include/
-drwxr-xr-x	root/root	opt/kde/include/akregator/
--rw-r--r--	root/root	opt/kde/include/akregator/akregator_export.h
--rw-r--r--	root/root	opt/kde/include/akregator/article.h
--rw-r--r--	root/root	opt/kde/include/akregator/command.h
--rw-r--r--	root/root	opt/kde/include/akregator/feedlistmanagementinterface.h
--rw-r--r--	root/root	opt/kde/include/akregator/feedstorage.h
--rw-r--r--	root/root	opt/kde/include/akregator/plugin.h
--rw-r--r--	root/root	opt/kde/include/akregator/storage.h
--rw-r--r--	root/root	opt/kde/include/akregator/storagefactory.h
--rw-r--r--	root/root	opt/kde/include/akregator/storagefactoryregistry.h
--rw-r--r--	root/root	opt/kde/include/akregator/types.h
-drwxr-xr-x	root/root	opt/kde/include/kaddressbook/
--rw-r--r--	root/root	opt/kde/include/kaddressbook/kaddressbook_export.h
-drwxr-xr-x	root/root	opt/kde/include/kleo/
--rw-r--r--	root/root	opt/kde/include/kleo/adduseridjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/changeexpiryjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/changeownertrustjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptobackend.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptobackendfactory.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptoconfig.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptplug.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptplugfactory.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptplugwrapper.h
--rw-r--r--	root/root	opt/kde/include/kleo/cryptplugwrapperlist.h
--rw-r--r--	root/root	opt/kde/include/kleo/decryptjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/decryptverifyjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/deletejob.h
--rw-r--r--	root/root	opt/kde/include/kleo/dn.h
--rw-r--r--	root/root	opt/kde/include/kleo/downloadjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/encryptjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/enum.h
--rw-r--r--	root/root	opt/kde/include/kleo/exportjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/hierarchicalkeylistjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/importjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/job.h
--rw-r--r--	root/root	opt/kde/include/kleo/keyfilter.h
--rw-r--r--	root/root	opt/kde/include/kleo/keyfiltermanager.h
--rw-r--r--	root/root	opt/kde/include/kleo/keygenerationjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/keylistjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/kleo_export.h
--rw-r--r--	root/root	opt/kde/include/kleo/multideletejob.h
--rw-r--r--	root/root	opt/kde/include/kleo/oidmap.h
--rw-r--r--	root/root	opt/kde/include/kleo/refreshkeysjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/signencryptjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/signjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/signkeyjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/specialjob.h
-drwxr-xr-x	root/root	opt/kde/include/kleo/ui/
--rw-r--r--	root/root	opt/kde/include/kleo/ui/backendconfigwidget.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/cryptoconfigdialog.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/cryptoconfigmodule.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/directoryserviceswidget.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/dnattributeorderconfigwidget.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/kdhorizontalline.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/keyapprovaldialog.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/keylistview.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/keyrequester.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/keyselectiondialog.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/messagebox.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/progressbar.h
--rw-r--r--	root/root	opt/kde/include/kleo/ui/progressdialog.h
--rw-r--r--	root/root	opt/kde/include/kleo/verifydetachedjob.h
--rw-r--r--	root/root	opt/kde/include/kleo/verifyopaquejob.h
-drwxr-xr-x	root/root	opt/kde/include/kmail/
-drwxr-xr-x	root/root	opt/kde/include/kmail/interfaces/
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/bodypart.h
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/bodypartformatter.h
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/bodyparturlhandler.h
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/htmlwriter.h
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/observable.h
--rw-r--r--	root/root	opt/kde/include/kmail/interfaces/observer.h
-drwxr-xr-x	root/root	opt/kde/include/kpgp/
--rw-r--r--	root/root	opt/kde/include/kpgp/kpgp.h
--rw-r--r--	root/root	opt/kde/include/kpgp/kpgpbase.h
--rw-r--r--	root/root	opt/kde/include/kpgp/kpgpblock.h
--rw-r--r--	root/root	opt/kde/include/kpgp/kpgpkey.h
--rw-r--r--	root/root	opt/kde/include/kpgp/kpgpui.h
--rw-r--r--	root/root	opt/kde/include/kpgp/libkpgp_export.h
-drwxr-xr-x	root/root	opt/kde/include/kpilot/
--rw-r--r--	root/root	opt/kde/include/kpilot/kpilot_export.h
--rw-r--r--	root/root	opt/kde/include/kpilot/kpilotdevicelink.h
--rw-r--r--	root/root	opt/kde/include/kpilot/kpilotlink.h
--rw-r--r--	root/root	opt/kde/include/kpilot/kpilotlocallink.h
--rw-r--r--	root/root	opt/kde/include/kpilot/options.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilot.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilotDatabase.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilotLinkVersion.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilotLocalDatabase.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilotRecord.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pilotSerialDatabase.h
--rw-r--r--	root/root	opt/kde/include/kpilot/plugin.h
--rw-r--r--	root/root	opt/kde/include/kpilot/pluginfactory.h
--rw-r--r--	root/root	opt/kde/include/kpilot/syncAction.h
-drwxr-xr-x	root/root	opt/kde/include/ksieve/
--rw-r--r--	root/root	opt/kde/include/ksieve/libksieve_export.h
-drwxr-xr-x	root/root	opt/kde/include/libkleopatraclient/
-drwxr-xr-x	root/root	opt/kde/include/libkleopatraclient/core/
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/core/command.h
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/core/initialization.h
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/core/selectcertificatecommand.h
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/core/signencryptfilescommand.h
-drwxr-xr-x	root/root	opt/kde/include/libkleopatraclient/gui/
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/gui/certificaterequester.h
--rw-r--r--	root/root	opt/kde/include/libkleopatraclient/kleopatraclient_export.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/akregator_config_advanced.so
@@ -155,25 +47,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_groupdav.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_groupwise.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_kolab.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_scalix.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_slox.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kabc_xmlrpc.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_bookmark_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_cardview.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_cryptosettings.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_csv_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_distributionlistng.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_eudora_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_gmx_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_gnokii_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_iconview.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_kde2_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_ldif_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_opera_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_pab_xxport.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_resourceselection.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_tableview.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddrbk_vcard_xxport.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kaddressbookpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kalarm_local.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kalarm_localdir.so
@@ -184,13 +58,8 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_kabc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_kolab.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_remote.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_scalix.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_slox.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_xmlrpc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_apptsummary.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kabconfig.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kabcustomfields.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kabldapconfig.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kjots.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kleopatra.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kmail.so
@@ -200,13 +69,12 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kontact.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kontactsummary.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_korganizer.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kpilot.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_ktimetracker.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_ldap.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_planner.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_sdsummary.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_todosummary.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_groupwise.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_scalix.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kjotspart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kmail_bodypartformatter_application_octetstream.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kmail_bodypartformatter_text_calendar.so
@@ -216,8 +84,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/knodepart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/knotes_kolab.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/knotes_local.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/knotes_scalix.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/knotes_xmlrpc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kontact_akregatorplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kontact_journalplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kontact_kaddressbookplugin.so
@@ -239,173 +105,163 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/korg_yearprint.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/korganizerpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kpartsdesignerplugin.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpilot_conduit_calendar.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpilot_conduit_contacts.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpilot_conduit_memofile.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpilot_conduit_time.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpilot_conduit_todo.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktexteditorkabcbridge.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/ktimetrackerpart.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/ldifvcardthumbnail.so
 drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/designer/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/designer/kdepimwidgets.so
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal_next.so -> libakonadi-kcal_next.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi-kcal_next.so.4 -> libakonadi-kcal_next.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi-kcal_next.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so -> libakonadi_next.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libakonadi_next.so.4 -> libakonadi_next.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakonadi_next.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libakregatorinterfaces.so -> libakregatorinterfaces.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libakregatorinterfaces.so.4 -> libakregatorinterfaces.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakregatorinterfaces.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libakregatorprivate.so.4 -> libakregatorprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libakregatorprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakregatorinterfaces.so.4 -> libakregatorinterfaces.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakregatorinterfaces.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libakregatorprivate.so.4 -> libakregatorprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libakregatorprivate.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libgwsoap.so -> libgwsoap.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libgwsoap.so.4 -> libgwsoap.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libgwsoap.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libgwsoap.so.4 -> libgwsoap.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libgwsoap.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkabc_groupdav.so -> libkabc_groupdav.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabc_groupdav.so.4 -> libkabc_groupdav.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabc_groupdav.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkabc_groupdav.so.4 -> libkabc_groupdav.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkabc_groupdav.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkabc_slox.so -> libkabc_slox.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabc_slox.so.4 -> libkabc_slox.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabc_slox.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkabc_xmlrpc.so -> libkabc_xmlrpc.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabc_xmlrpc.so.4 -> libkabc_xmlrpc.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabc_xmlrpc.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkabc_slox.so.4 -> libkabc_slox.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkabc_slox.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkabcgroupwise.so -> libkabcgroupwise.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabcgroupwise.so.4 -> libkabcgroupwise.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabcgroupwise.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkabcgroupwise.so.4 -> libkabcgroupwise.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkabcgroupwise.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkabckolab.so -> libkabckolab.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabckolab.so.4 -> libkabckolab.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabckolab.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkabcommon.so -> libkabcommon.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabcommon.so.4 -> libkabcommon.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabcommon.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkabcscalix.so -> libkabcscalix.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabcscalix.so.4 -> libkabcscalix.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabcscalix.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkabinterfaces.so -> libkabinterfaces.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkabinterfaces.so.4 -> libkabinterfaces.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkabinterfaces.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkaddressbookprivate.so.4 -> libkaddressbookprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkaddressbookprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkabckolab.so.4 -> libkabckolab.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkabckolab.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkaddressbookprivate.so.4 -> libkaddressbookprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkaddressbookprivate.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkalarm_calendar.so -> libkalarm_calendar.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libkalarm_calendar.so.4 -> libkalarm_calendar.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkalarm_calendar.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkalarm_resources.so -> libkalarm_resources.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkalarm_resources.so.4 -> libkalarm_resources.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkalarm_resources.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkalarm_resources.so.4 -> libkalarm_resources.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkalarm_resources.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcal_groupdav.so -> libkcal_groupdav.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_groupdav.so.4 -> libkcal_groupdav.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcal_groupdav.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcal_groupdav.so.4 -> libkcal_groupdav.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcal_groupdav.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceblog.so -> libkcal_resourceblog.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceblog.so.4 -> libkcal_resourceblog.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcal_resourceblog.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceblog.so.4 -> libkcal_resourceblog.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcal_resourceblog.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceremote.so -> libkcal_resourceremote.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceremote.so.4 -> libkcal_resourceremote.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcal_resourceremote.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcal_resourceremote.so.4 -> libkcal_resourceremote.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcal_resourceremote.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcal_slox.so -> libkcal_slox.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_slox.so.4 -> libkcal_slox.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcal_slox.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_xmlrpc.so -> libkcal_xmlrpc.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcal_xmlrpc.so.4 -> libkcal_xmlrpc.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcal_xmlrpc.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcal_slox.so.4 -> libkcal_slox.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcal_slox.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcalgroupwise.so -> libkcalgroupwise.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcalgroupwise.so.4 -> libkcalgroupwise.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcalgroupwise.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcalgroupwise.so.4 -> libkcalgroupwise.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcalgroupwise.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkcalkolab.so -> libkcalkolab.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcalkolab.so.4 -> libkcalkolab.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcalkolab.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkcalscalix.so -> libkcalscalix.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkcalscalix.so.4 -> libkcalscalix.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkcalscalix.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkcalkolab.so.4 -> libkcalkolab.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkcalkolab.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkdepim.so -> libkdepim.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkdepim.so.4 -> libkdepim.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdepim.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdepim.so.4 -> libkdepim.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdepim.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwarebase.so -> libkgroupwarebase.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwarebase.so.4 -> libkgroupwarebase.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkgroupwarebase.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwarebase.so.4 -> libkgroupwarebase.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkgroupwarebase.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwaredav.so -> libkgroupwaredav.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwaredav.so.4 -> libkgroupwaredav.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkgroupwaredav.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkgroupwaredav.so.4 -> libkgroupwaredav.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkgroupwaredav.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkleo.so -> libkleo.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkleo.so.4 -> libkleo.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkleo.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkleo.so.4 -> libkleo.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkleo.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkleopatraclientcore.so -> libkleopatraclientcore.so.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkleopatraclientcore.so.0 -> libkleopatraclientcore.so.0.2.1
 -rwxr-xr-x	root/root	opt/kde/lib/libkleopatraclientcore.so.0.2.1
 lrwxrwxrwx	root/root	opt/kde/lib/libkleopatraclientgui.so -> libkleopatraclientgui.so.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkleopatraclientgui.so.0 -> libkleopatraclientgui.so.0.2.1
 -rwxr-xr-x	root/root	opt/kde/lib/libkleopatraclientgui.so.0.2.1
-lrwxrwxrwx	root/root	opt/kde/lib/libkmailprivate.so.4 -> libkmailprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkmailprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkmailprivate.so.4 -> libkmailprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkmailprivate.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libknodecommon.so -> libknodecommon.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknodecommon.so.4 -> libknodecommon.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknodecommon.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libknotes_xmlrpc.so -> libknotes_xmlrpc.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknotes_xmlrpc.so.4 -> libknotes_xmlrpc.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknotes_xmlrpc.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libknodecommon.so.4 -> libknodecommon.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknodecommon.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libknoteskolab.so -> libknoteskolab.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknoteskolab.so.4 -> libknoteskolab.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknoteskolab.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libknotesscalix.so -> libknotesscalix.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libknotesscalix.so.4 -> libknotesscalix.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libknotesscalix.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkontactinterfaces.so -> libkontactinterfaces.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkontactinterfaces.so.4 -> libkontactinterfaces.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkontactinterfaces.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkontactprivate.so.4 -> libkontactprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkontactprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libknoteskolab.so.4 -> libknoteskolab.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libknoteskolab.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkontactprivate.so.4 -> libkontactprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkontactprivate.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkorg_stdprinting.so -> libkorg_stdprinting.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkorg_stdprinting.so.4 -> libkorg_stdprinting.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorg_stdprinting.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorg_stdprinting.so.4 -> libkorg_stdprinting.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorg_stdprinting.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_calendar.so -> libkorganizer_calendar.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_calendar.so.4 -> libkorganizer_calendar.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_calendar.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_calendar.so.4 -> libkorganizer_calendar.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_calendar.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_core.so -> libkorganizer_core.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_core.so.4 -> libkorganizer_core.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_core.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_core.so.4 -> libkorganizer_core.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_core.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_eventviewer.so -> libkorganizer_eventviewer.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_eventviewer.so.4 -> libkorganizer_eventviewer.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_eventviewer.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_eventviewer.so.4 -> libkorganizer_eventviewer.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_eventviewer.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_interfaces.so -> libkorganizer_interfaces.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_interfaces.so.4 -> libkorganizer_interfaces.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_interfaces.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkorganizerprivate.so.4 -> libkorganizerprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkorganizerprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorganizer_interfaces.so.4 -> libkorganizer_interfaces.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorganizer_interfaces.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkorganizerprivate.so.4 -> libkorganizerprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkorganizerprivate.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkpgp.so -> libkpgp.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkpgp.so.4 -> libkpgp.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkpgp.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkpilot.so -> libkpilot.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkpilot.so.4 -> libkpilot.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkpilot.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkpilot_akonadibase.so
--rwxr-xr-x	root/root	opt/kde/lib/libkpilot_conduit_base.so
+lrwxrwxrwx	root/root	opt/kde/lib/libkpgp.so.4 -> libkpgp.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkpgp.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libksieve.so -> libksieve.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libksieve.so.4 -> libksieve.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libksieve.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libksieve.so.4 -> libksieve.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libksieve.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkslox.so -> libkslox.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkslox.so.4 -> libkslox.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkslox.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkslox.so.4 -> libkslox.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkslox.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmessagecore.so -> libmessagecore.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libmessagecore.so.4 -> libmessagecore.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmessagecore.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmessagelist.so -> libmessagelist.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libmessagelist.so.4 -> libmessagelist.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmessagelist.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmessageviewer.so -> libmessageviewer.so.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmessageviewer.so.0 -> libmessageviewer.so.0.1.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmessageviewer.so.0.1.0
 lrwxrwxrwx	root/root	opt/kde/lib/libmimelib.so -> libmimelib.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libmimelib.so.4 -> libmimelib.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libmimelib.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libmimelib.so.4 -> libmimelib.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libmimelib.so.4.4.0
 drwxr-xr-x	root/root	opt/kde/lib/strigi/
 -rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_ics.so
 -rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_vcf.so
 drwxr-xr-x	root/root	opt/kde/share/
+drwxr-xr-x	root/root	opt/kde/share/akonadi/
+drwxr-xr-x	root/root	opt/kde/share/akonadi/agents/
+-rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukemailfeeder.desktop
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KMail.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KNode.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/Kjots.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/Kontact.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/akonadiconsole.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/akregator.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/blogilo.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/groupwarewizard.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kaddressbook.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kalarm.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/kleopatra.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kleopatra_import.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kmail_view.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/knotes.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/konsolekalendar.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/korganizer-import.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/korganizer.desktop
--rw-r--r--	root/root	opt/kde/share/applications/kde4/kpilot.desktop
--rw-r--r--	root/root	opt/kde/share/applications/kde4/kpilotdaemon.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/ktimetracker.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/editorpageplugins/
+-rwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/editorpageplugins/cryptopageplugin.so
+drwxr-xr-x	root/root	opt/kde/share/apps/akonadiconsole/
+-rw-r--r--	root/root	opt/kde/share/apps/akonadiconsole/akonadiconsoleui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/akregator/
 drwxr-xr-x	root/root	opt/kde/share/apps/akregator/about/
 -rw-r--r--	root/root	opt/kde/share/apps/akregator/about/akregator.css
@@ -419,57 +275,30 @@ drwxr-xr-x	root/root	opt/kde/share/apps/akregator/about/
 drwxr-xr-x	root/root	opt/kde/share/apps/akregator/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/akregator/pics/kmmsgnew.png
 -rw-r--r--	root/root	opt/kde/share/apps/akregator/pics/kmmsgunseen.png
+drwxr-xr-x	root/root	opt/kde/share/apps/blogilo/
+-rw-r--r--	root/root	opt/kde/share/apps/blogilo/blogiloui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/bookmark_xxportui.rc
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/csv-templates/
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/csv-templates/kaddressbook.desktop
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/csv-templates/outlook2000.desktop
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/csv-templates/yahoo.desktop
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/csv_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/eudora_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/gmx_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/gnokii_xxportui.rc
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/icons/
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/aim_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/gadu_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/groupwise_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/icq_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/irc_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/jabber_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/meanwhile_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/msn_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/skype_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/sms_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/icons/oxygen/16x16/apps/yahoo_protocol.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/kaddressbook_part.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/kaddressbookui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/kde2_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/ldif_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/opera_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/pab_xxportui.rc
-drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/pics/
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/pics/world.jpg
 drwxr-xr-x	root/root	opt/kde/share/apps/kaddressbook/printing/
 -rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/printing/detailed-style.png
 -rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/printing/mike-style.png
 -rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/printing/ringbinder-style.png
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/vcard_xxportui.rc
--rw-r--r--	root/root	opt/kde/share/apps/kaddressbook/zone.tab
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/16x16/
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/16x16/actions/document-new-from-template.png
+-rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/16x16/actions/new-audio-alarm.png
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/16x16/actions/new-command-alarm.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/
 drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/actions/document-new-from-template.png
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/actions/kalarm.png
+-rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/actions/new-audio-alarm.png
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/actions/new-command-alarm.png
+drwxr-xr-x	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/emblems/
+-rw-r--r--	root/root	opt/kde/share/apps/kalarm/icons/oxygen/22x22/emblems/partdisabled.png
 -rw-r--r--	root/root	opt/kde/share/apps/kalarm/kalarmui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/kalarm-1.2.1-general.pl
@@ -500,7 +329,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/korganizer.upd
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/kpgp-3.1-upgrade-address-data.pl
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/kpgp.upd
--rw-r--r--	root/root	opt/kde/share/apps/kconf_update/kpilot.upd
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/upgrade-resourcetype.pl
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/upgrade-signature.pl
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/upgrade-transport.pl
@@ -533,8 +361,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kmail/about/
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/kmmainwin.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/kmreadermainwin.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kmail/pics/
--rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/attachmentQuicklistClosed.png
--rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/attachmentQuicklistOpened.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/enterprise_bottom.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/enterprise_bottom_left.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/enterprise_bottom_right.png
@@ -556,14 +382,16 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kmail/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/key_unknown.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/kmwizard.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-deleted.png
--rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-download-later.png
--rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-download-now.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-encrypted-full.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-encrypted-part.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-encrypted.png
+-rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-horizontal-space.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-thread-ignored.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-thread-watch.png
+-rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/mail-vertical-separator-line.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/pgp-keys.png
+-rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/quicklistClosed.png
+-rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/quicklistOpened.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/quotecollapse.png
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/pics/quoteexpand.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kmail/plugins/
@@ -572,11 +400,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kmail/plugins/bodypartformatter/
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/plugins/bodypartformatter/text_calendar.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/plugins/bodypartformatter/text_vcard.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/plugins/bodypartformatter/text_xdiff.desktop
--rw-r--r--	root/root	opt/kde/share/apps/kmail/profile-default-rc
--rw-r--r--	root/root	opt/kde/share/apps/kmail/profile-high-contrast-rc
--rw-r--r--	root/root	opt/kde/share/apps/kmail/profile-html-rc
--rw-r--r--	root/root	opt/kde/share/apps/kmail/profile-purist-rc
--rw-r--r--	root/root	opt/kde/share/apps/kmail/profile-secure-rc
 -rw-r--r--	root/root	opt/kde/share/apps/kmail/tips
 drwxr-xr-x	root/root	opt/kde/share/apps/kmailcvt/
 drwxr-xr-x	root/root	opt/kde/share/apps/kmailcvt/pics/
@@ -598,12 +421,10 @@ drwxr-xr-x	root/root	opt/kde/share/apps/knode/filters/
 -rw-r--r--	root/root	opt/kde/share/apps/knode/knreaderui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/knode/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/article.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/ctlart.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/eyes.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/greyball.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/greyballchk.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/group.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/group_big.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/ignore.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/key.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/key_bad.png
@@ -611,13 +432,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/knode/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/key_unknown.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/mail.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/newsubs.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/pgp-keys.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/posting.png
 -rw-r--r--	root/root	opt/kde/share/apps/knode/pics/snderr.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/stat_cncl.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/stat_edit.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/stat_saved.png
--rw-r--r--	root/root	opt/kde/share/apps/knode/pics/stat_sent.png
 drwxr-xr-x	root/root	opt/kde/share/apps/knotes/
 drwxr-xr-x	root/root	opt/kde/share/apps/knotes/icons/
 drwxr-xr-x	root/root	opt/kde/share/apps/knotes/icons/oxygen/
@@ -673,8 +489,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/korganizer/sounds/
 -rw-r--r--	root/root	opt/kde/share/apps/korganizer/sounds/onscreen.wav
 -rw-r--r--	root/root	opt/kde/share/apps/korganizer/sounds/spinout.wav
 -rw-r--r--	root/root	opt/kde/share/apps/korganizer/tips
-drwxr-xr-x	root/root	opt/kde/share/apps/kpilot/
--rw-r--r--	root/root	opt/kde/share/apps/kpilot/kpilotui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/ktimetracker/
 drwxr-xr-x	root/root	opt/kde/share/apps/ktimetracker/icons/
 drwxr-xr-x	root/root	opt/kde/share/apps/ktimetracker/icons/oxygen/
@@ -766,17 +580,15 @@ drwxr-xr-x	root/root	opt/kde/share/apps/libkleopatra/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/libkleopatra/pics/key_bad.png
 -rw-r--r--	root/root	opt/kde/share/apps/libkleopatra/pics/key_ok.png
 -rw-r--r--	root/root	opt/kde/share/apps/libkleopatra/pics/key_unknown.png
+-rw-r--r--	root/root	opt/kde/share/apps/libkleopatra/pics/smartcard.xpm
 drwxr-xr-x	root/root	opt/kde/share/autostart/
--rw-r--r--	root/root	opt/kde/share/autostart/kabcdistlistupdater.desktop
 -rw-r--r--	root/root	opt/kde/share/autostart/kalarm.autostart.desktop
 -rw-r--r--	root/root	opt/kde/share/autostart/korgac.desktop
 drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/akregator.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/calendarsettings.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/contactssettings.kcfg
+-rw-r--r--	root/root	opt/kde/share/config.kcfg/blogilo.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/custommimeheader.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/customtemplates_kfg.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/egroupware.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/groupwise.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kalarmconfig.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kjots.kcfg
@@ -786,15 +598,8 @@ drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kolab.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kontact.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/korganizer.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/kpilot.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/kpilotlib.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/memofileconduit.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/replyphrases.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/scalix.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/slox.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/templatesconfiguration_kfg.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/timeconduit.kcfg
--rw-r--r--	root/root	opt/kde/share/config.kcfg/todosettings.kcfg
 drwxr-xr-x	root/root	opt/kde/share/config/
 -rw-r--r--	root/root	opt/kde/share/config/kmail.antispamrc
 -rw-r--r--	root/root	opt/kde/share/config/kmail.antivirusrc
@@ -802,7 +607,6 @@ drwxr-xr-x	root/root	opt/kde/share/config/
 -rw-r--r--	root/root	opt/kde/share/config/libkleopatrarc
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
--rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KAddressbook.Core.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.KNotes.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.Korganizer.Calendar.xml
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.addressbook.service.xml
@@ -820,9 +624,11 @@ drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 drwxr-xr-x	root/root	opt/kde/share/icons/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/
+drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/actions/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/akregator.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kaddressbook.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kjots.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kmail.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/knode.png
@@ -833,17 +639,15 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/ktimetracker.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/actions/
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_backup.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_busysync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_fullsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_hhtopc.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_hotsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_nosync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_reset.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/kpilot_restore.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/format-text-blockquote.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/format-text-code.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/insert-more-mark.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/remove-link.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/akregator_empty.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kaddressbook.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kalarm.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kjots.png
@@ -853,38 +657,30 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/knotes.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kontact.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/korganizer.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kpilot.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kpilotdaemon.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/ktimetracker.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/actions/
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_backup.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_busysync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_fullsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_hhtopc.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_hotsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_nosync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_reset.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/kpilot_restore.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/format-text-blockquote.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/format-text-code.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/insert-more-mark.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/remove-link.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/akregator.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kaddressbook.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kjots.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kmail.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/knotes.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kontact.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/korganizer.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kpilot.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kpilotdaemon.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/ktimetracker.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/actions/
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/actions/kpilot_fullsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/actions/kpilot_hhtopc.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/actions/kpilot_hotsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/actions/kpilot_reset.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/akregator.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kaddressbook.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kalarm.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kjots.png
@@ -894,17 +690,13 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/knotes.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kontact.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/korganizer.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kpilot.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kpilotdaemon.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/ktimetracker.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/actions/
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/kpilot_fullsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/kpilot_hhtopc.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/kpilot_hotsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/kpilot_reset.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/akregator.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kaddressbook.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kalarm.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kjots.png
@@ -914,21 +706,13 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/knotes.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kontact.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/korganizer.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kpilot.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kpilotdaemon.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/ktimetracker.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/actions/
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_address.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_bhotsync.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_calendar.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_db.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_fileinstaller.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_knotes.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/kpilot_todo.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/actions/upload-media.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/akregator.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kaddressbook.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/blogilo.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kjots.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kmail.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/knode.png
@@ -940,7 +724,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/akregator.svgz
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/kaddressbook.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/kjots.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/kmail.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/korganizer.svgz
@@ -952,7 +735,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/apps/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/edit-delete-page.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/ldap_lookup.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/smallclock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/actions/upindicator.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/apps/
@@ -1014,41 +796,11 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/feed.protocol
 -rw-r--r--	root/root	opt/kde/share/kde4/services/groupwise.protocol
 -rw-r--r--	root/root	opt/kde/share/kde4/services/groupwises.protocol
--rw-r--r--	root/root	opt/kde/share/kde4/services/kabconfig.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kabcustomfields.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kabldapconfig.desktop
-drwxr-xr-x	root/root	opt/kde/share/kde4/services/kaddressbook/
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/aimprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/bookmark_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/cardview.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/cryptosettings.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/csv_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/distributionlistng.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/eudora_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/gaduprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/gmx_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/gnokii_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/groupwiseprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/iconview.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/icqprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/ircprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/jabberprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/kde2_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/ldif_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/meanwhileprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/msnprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/opera_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/pab_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/resourceselection.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/skypeprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/smsprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/tableview.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/vcard_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbook/yahooprotocol.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kaddressbookpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmapptsummary.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmkmailsummary.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmkontactsummary.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kcmldap.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmplanner.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmsdsummary.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmtodosummary.desktop
@@ -1113,10 +865,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/korganizer/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/korganizer_configtime.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/korganizer_configviews.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/korganizer_part.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kpilot-conduit-calendar.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kpilot-conduit-contacts.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kpilot-conduit-todo.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kpilot_config.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/alarms/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/alarms/local.desktop
@@ -1128,9 +876,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kabc/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/kabc_opengroupware.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/kabc_ox.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/kabc_slox.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/kabc_xmlrpc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/kolab.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kabc/scalix.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kalarm_manager.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kcal/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/blog.desktop
@@ -1140,40 +886,23 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kcal/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/kcal_opengroupware.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/kcal_ox.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/kcal_slox.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/kcal_xmlrpc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/kolab.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/remote.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/scalix.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/knotes/
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/knotes/knotes_xmlrpc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/knotes/kolabresource.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/knotes/local.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/knotes/scalix.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/knotes_manager.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktimetracker_config_behavior.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktimetracker_config_display.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktimetracker_config_storage.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ktimetrackerpart.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/ldifvcardthumbnail.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/memofile-conduit.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/scalix.protocol
--rw-r--r--	root/root	opt/kde/share/kde4/services/scalixs.protocol
--rw-r--r--	root/root	opt/kde/share/kde4/services/time_conduit.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/webcal.protocol
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/akregator_plugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/calendardecoration.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/calendarplugin.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/dbusaddressbook.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/dbuscalendar.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/dbusimap.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/dbusmail.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kaddressbook_contacteditorwidget.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kaddressbook_extension.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kaddressbook_view.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kaddressbook_xxport.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kaddressbookimprotocol.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kontactplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/korganizerpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/korgprintplugin.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/kpilotconduit.desktop
