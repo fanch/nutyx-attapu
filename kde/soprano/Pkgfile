@@ -2,10 +2,10 @@
 # URL: http://soprano.sourceforge.net/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: cmake, qt, redland, clucene
+# Depends on: cmake, qt, redland, clucene, virtuoso
 
 name=soprano
-version=2.3.70
+version=2.3.73
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
@@ -13,7 +13,9 @@ build() {
 	cd $name-$version
 	mkdir build
 	cd build
-	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ..
+	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX .. \
+	      -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_SKIP_RPATH=OFF 
 	make -j3
 	make DESTDIR=$PKG install
 }
