@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/gwenview
+-rwxr-xr-x	root/root	opt/kde/bin/gwenview_importer
 -rwxr-xr-x	root/root	opt/kde/bin/kbackgroundsnapshot
 -rwxr-xr-x	root/root	opt/kde/bin/kcolorchooser
 -rwxr-xr-x	root/root	opt/kde/bin/kolourpaint
@@ -18,14 +19,23 @@ drwxr-xr-x	root/root	opt/kde/include/libkdcraw/
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/rawdecodingsettings.h
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/rawfiles.h
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/rcombobox.h
+-rw-r--r--	root/root	opt/kde/include/libkdcraw/rexpanderbox.h
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/rnuminput.h
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/squeezedcombobox.h
 -rw-r--r--	root/root	opt/kde/include/libkdcraw/version.h
 drwxr-xr-x	root/root	opt/kde/include/libkexiv2/
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/altlangstredit.h
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/countryselector.h
 -rw-r--r--	root/root	opt/kde/include/libkexiv2/kexiv2.h
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/kexiv2data.h
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/kexiv2previews.h
 -rw-r--r--	root/root	opt/kde/include/libkexiv2/libkexiv2_export.h
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/msgtextedit.h
+-rw-r--r--	root/root	opt/kde/include/libkexiv2/subjectwidget.h
 -rw-r--r--	root/root	opt/kde/include/libkexiv2/version.h
 drwxr-xr-x	root/root	opt/kde/include/libkipi/
+-rw-r--r--	root/root	opt/kde/include/libkipi/exportinterface.h
+-rw-r--r--	root/root	opt/kde/include/libkipi/extension.h
 -rw-r--r--	root/root	opt/kde/include/libkipi/imagecollection.h
 -rw-r--r--	root/root	opt/kde/include/libkipi/imagecollectionselector.h
 -rw-r--r--	root/root	opt/kde/include/libkipi/imagecollectionshared.h
@@ -80,6 +90,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_dvi.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_fax.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_fb.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_ghostview.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_kimgio.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_mobi.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_ooo.so
@@ -91,34 +102,35 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/rawthumbnail.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/svgpart.so
 lrwxrwxrwx	root/root	opt/kde/lib/libgwenviewlib.so -> libgwenviewlib.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libgwenviewlib.so.4 -> libgwenviewlib.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libgwenviewlib.so.4.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkdcraw.so -> libkdcraw.so.7
-lrwxrwxrwx	root/root	opt/kde/lib/libkdcraw.so.7 -> libkdcraw.so.7.1.0
--rwxr-xr-x	root/root	opt/kde/lib/libkdcraw.so.7.1.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkexiv2.so -> libkexiv2.so.7
-lrwxrwxrwx	root/root	opt/kde/lib/libkexiv2.so.7 -> libkexiv2.so.7.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkexiv2.so.7.3.0
-lrwxrwxrwx	root/root	opt/kde/lib/libkipi.so -> libkipi.so.6
-lrwxrwxrwx	root/root	opt/kde/lib/libkipi.so.6 -> libkipi.so.6.1.0
--rwxr-xr-x	root/root	opt/kde/lib/libkipi.so.6.1.0
+lrwxrwxrwx	root/root	opt/kde/lib/libgwenviewlib.so.4 -> libgwenviewlib.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libgwenviewlib.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkdcraw.so -> libkdcraw.so.8
+lrwxrwxrwx	root/root	opt/kde/lib/libkdcraw.so.8 -> libkdcraw.so.8.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdcraw.so.8.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkexiv2.so -> libkexiv2.so.8
+lrwxrwxrwx	root/root	opt/kde/lib/libkexiv2.so.8 -> libkexiv2.so.8.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkexiv2.so.8.0.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkipi.so -> libkipi.so.7
+lrwxrwxrwx	root/root	opt/kde/lib/libkipi.so.7 -> libkipi.so.7.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkipi.so.7.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkolourpaint_lgpl.so -> libkolourpaint_lgpl.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkolourpaint_lgpl.so.4 -> libkolourpaint_lgpl.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkolourpaint_lgpl.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkolourpaint_lgpl.so.4 -> libkolourpaint_lgpl.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkolourpaint_lgpl.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libksane.so -> libksane.so.0
 lrwxrwxrwx	root/root	opt/kde/lib/libksane.so.0 -> libksane.so.0.2.0
 -rwxr-xr-x	root/root	opt/kde/lib/libksane.so.0.2.0
 lrwxrwxrwx	root/root	opt/kde/lib/libokularcore.so -> libokularcore.so.1
-lrwxrwxrwx	root/root	opt/kde/lib/libokularcore.so.1 -> libokularcore.so.1.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libokularcore.so.1.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libokularcore.so.1 -> libokularcore.so.1.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libokularcore.so.1.4.0
 drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
 -rw-r--r--	root/root	opt/kde/lib/pkgconfig/libkdcraw.pc
 -rw-r--r--	root/root	opt/kde/lib/pkgconfig/libkexiv2.pc
 -rw-r--r--	root/root	opt/kde/lib/pkgconfig/libkipi.pc
 -rw-r--r--	root/root	opt/kde/lib/pkgconfig/libksane.pc
 drwxr-xr-x	root/root	opt/kde/lib/strigi/
+-rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_dvi.so
+-rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_tiff.so
 -rwxr-xr-x	root/root	opt/kde/lib/strigi/strigila_mobi.so
--rwxr-xr-x	root/root	opt/kde/lib/strigi/strigita_dvi.so
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
@@ -133,6 +145,7 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_dvi.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_fax.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_fb.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_ghostview.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_kimgio.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_mobi.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_ooo.desktop
@@ -307,7 +320,18 @@ drwxr-xr-x	root/root	opt/kde/share/apps/libkdcraw/profiles/
 -rw-r--r--	root/root	opt/kde/share/apps/libkdcraw/profiles/srgb-d65.icm
 -rw-r--r--	root/root	opt/kde/share/apps/libkdcraw/profiles/srgb.icm
 -rw-r--r--	root/root	opt/kde/share/apps/libkdcraw/profiles/widegamut.icm
+drwxr-xr-x	root/root	opt/kde/share/apps/libkexiv2/
+drwxr-xr-x	root/root	opt/kde/share/apps/libkexiv2/data/
+-rw-r--r--	root/root	opt/kde/share/apps/libkexiv2/data/topicset.iptc-subjectcode.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/okular/
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/hicolor/
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/hicolor/16x16/
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/hicolor/16x16/apps/
+-rw-r--r--	root/root	opt/kde/share/apps/okular/icons/hicolor/16x16/apps/okular-gv.png
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/hicolor/32x32/
+drwxr-xr-x	root/root	opt/kde/share/apps/okular/icons/hicolor/32x32/apps/
+-rw-r--r--	root/root	opt/kde/share/apps/okular/icons/hicolor/32x32/apps/okular-gv.png
 -rw-r--r--	root/root	opt/kde/share/apps/okular/part.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/okular/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/okular/pics/checkmark.png
@@ -341,12 +365,15 @@ drwxr-xr-x	root/root	opt/kde/share/apps/okular/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/okular/pics/upleftarrow.png
 -rw-r--r--	root/root	opt/kde/share/apps/okular/shell.rc
 -rw-r--r--	root/root	opt/kde/share/apps/okular/tools.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/solid/
+drwxr-xr-x	root/root	opt/kde/share/apps/solid/actions/
+-rw-r--r--	root/root	opt/kde/share/apps/solid/actions/gwenview_importer.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/solid/actions/solid_camera.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/svgpart/
 -rw-r--r--	root/root	opt/kde/share/apps/svgpart/svgpart.rc
 drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
+-rw-r--r--	root/root	opt/kde/share/config.kcfg/gssettings.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/okular.kcfg
-drwxr-xr-x	root/root	opt/kde/share/config/
--rw-r--r--	root/root	opt/kde/share/config/okular.knsrc
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.ksnapshot.xml
@@ -367,7 +394,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/actions/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/gwenview.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kcolorchooser.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kgamma.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kipi.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kolourpaint.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kruler.png
@@ -386,7 +412,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/gwenview.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kdcraw.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kgamma.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kipi.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kolourpaint.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kruler.png
@@ -396,7 +421,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/gwenview.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kdcraw.png
--rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kgamma.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kipi.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kolourpaint.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kruler.png
@@ -430,6 +454,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_dvi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_fax.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_fb.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_ghostview.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_kimgio.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_mobi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_ooo.desktop
@@ -443,6 +468,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularDvi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularFax.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularFb.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/okularGhostview.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularKimgio.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularMobi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularOoo.desktop
