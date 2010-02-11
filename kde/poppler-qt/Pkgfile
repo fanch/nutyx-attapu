@@ -9,7 +9,7 @@ version=0.13.0
 release=1
 source=(http://poppler.freedesktop.org/poppler-$version.tar.gz)
 
-build() 
+build() { 
 	cd poppler-$version
 	libtoolize --force --copy
 	AT_M4DIR="m4" autoreconf -i
