@@ -5,7 +5,7 @@
 # Depends on: dbus-glib, expat, eggdbus, gobject-introspection, linux-pam
 
 name=polkit
-version=0.94
+version=0.96
 release=1
 source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz)
 build() {
