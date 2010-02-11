@@ -2,15 +2,15 @@
 # URL: http://www.rastersoft.com/programas/devede.html
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: mplayer,dvdauthor,vcdimager,cdrkit,pygtk,dejavu-ttf
+# Depends on: mplayer,dvdauthor,vcdimager,cdrkit,pygtk,dejavu-ttf, librsvg
 
 name=devede
-version=3.15.2
+version=3.16.0
 release=1
-source=(http://www.rastersoft.com/descargas/devede-3.15.2.tar.bz2)
+source=(http://www.rastersoft.com/descargas/$name-$version.tar.bz2)
 
 build() {
-	cd $name-$version
+	cd $name
         ./install.sh --DESTDIR=$PKG \
         --prefix=/usr \
 	--unistall=no \

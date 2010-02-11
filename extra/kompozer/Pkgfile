@@ -1,0 +1,25 @@
+# Description: création de site web en quelques clics
+# URL: http://kompozer.net/download.php
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: gtk,glib,pango,nss,xorg-libxt,libidl,libgnome
+
+name=kompozer
+version=0.8b1
+release=2
+source=(http://freefr.dl.sourceforge.net/project/kompozer/current/0.8b1/$name-$version-src.tar.bz2\
+	mozconfig $name.desktop)
+
+build() {
+  	cd $SRC/mozilla
+      	cp ../mozconfig .mozconfig
+  	
+	make -f client.mk build
+  	cd $SRC/obj-kompozer
+  	make DESTDIR=$PKG install
+	rm $PKG/usr/share/aclocal/nspr.m4  	
+	# put links & shortcut
+  	install -m755 -dD $PKG/usr/share/applications
+  	install -m644  $SRC/$name.desktop $PKG/usr/share/applications/
+}
+

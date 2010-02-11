@@ -6,7 +6,7 @@
 
 name=dvdauthor
 version=0.6.14
-release=2
+release=3
 source=( http://switch.dl.sourceforge.net/sourceforge/dvdauthor/$name-$version.tar.gz)
 
 

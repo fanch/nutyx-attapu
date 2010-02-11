@@ -7,7 +7,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qemu-cris
 -rwxr-xr-x	root/root	usr/bin/qemu-i386
 -rwxr-xr-x	root/root	usr/bin/qemu-img
+-rwxr-xr-x	root/root	usr/bin/qemu-io
 -rwxr-xr-x	root/root	usr/bin/qemu-m68k
+-rwxr-xr-x	root/root	usr/bin/qemu-microblaze
 -rwxr-xr-x	root/root	usr/bin/qemu-mips
 -rwxr-xr-x	root/root	usr/bin/qemu-mipsel
 -rwxr-xr-x	root/root	usr/bin/qemu-nbd
@@ -22,6 +24,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qemu-system-arm
 -rwxr-xr-x	root/root	usr/bin/qemu-system-cris
 -rwxr-xr-x	root/root	usr/bin/qemu-system-m68k
+-rwxr-xr-x	root/root	usr/bin/qemu-system-microblaze
 -rwxr-xr-x	root/root	usr/bin/qemu-system-mips
 -rwxr-xr-x	root/root	usr/bin/qemu-system-mips64
 -rwxr-xr-x	root/root	usr/bin/qemu-system-mips64el
@@ -32,6 +35,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/qemu-system-sh4
 -rwxr-xr-x	root/root	usr/bin/qemu-system-sh4eb
 -rwxr-xr-x	root/root	usr/bin/qemu-system-sparc
+-rwxr-xr-x	root/root	usr/bin/qemu-system-sparc64
 -rwxr-xr-x	root/root	usr/bin/qemu-system-x86_64
 -rwxr-xr-x	root/root	usr/bin/qemu-x86_64
 drwxr-xr-x	root/root	usr/share/
@@ -74,14 +78,19 @@ drwxr-xr-x	root/root	usr/share/qemu/keymaps/
 -rw-r--r--	root/root	usr/share/qemu/keymaps/sv
 -rw-r--r--	root/root	usr/share/qemu/keymaps/th
 -rw-r--r--	root/root	usr/share/qemu/keymaps/tr
+-rw-r--r--	root/root	usr/share/qemu/linuxboot.bin
+-rw-r--r--	root/root	usr/share/qemu/multiboot.bin
 -rw-r--r--	root/root	usr/share/qemu/openbios-ppc
 -rw-r--r--	root/root	usr/share/qemu/openbios-sparc32
 -rw-r--r--	root/root	usr/share/qemu/openbios-sparc64
+-rw-r--r--	root/root	usr/share/qemu/petalogix-s3adsp1800.dtb
 -rw-r--r--	root/root	usr/share/qemu/ppc_rom.bin
 -rw-r--r--	root/root	usr/share/qemu/pxe-e1000.bin
+-rw-r--r--	root/root	usr/share/qemu/pxe-i82559er.bin
 -rw-r--r--	root/root	usr/share/qemu/pxe-ne2k_pci.bin
 -rw-r--r--	root/root	usr/share/qemu/pxe-pcnet.bin
 -rw-r--r--	root/root	usr/share/qemu/pxe-rtl8139.bin
+-rw-r--r--	root/root	usr/share/qemu/pxe-virtio.bin
 -rw-r--r--	root/root	usr/share/qemu/vgabios-cirrus.bin
 -rw-r--r--	root/root	usr/share/qemu/vgabios.bin
 -rw-r--r--	root/root	usr/share/qemu/video.x

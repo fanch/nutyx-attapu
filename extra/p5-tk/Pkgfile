@@ -2,7 +2,7 @@
 # URL: http://search.cpan.org/~ni-s/Tk-804.027/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: perl, tk
+# Depends on: tk
 
 name=p5-tk
 version=804.028_501

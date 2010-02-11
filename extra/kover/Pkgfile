@@ -2,7 +2,7 @@
 # WYSIWYG avec support CDDB
 # URL: http://lisas.de/kover/
 # Packager: Blankoworld <blankoworld at wanadoo dot fr>
-# Depends on: cmake kdelibs automoc4 perl libcdio libcddb
+# Depends on: cmake kdelibs automoc4 libcdio libcddb
 
 name=kover
 version=4

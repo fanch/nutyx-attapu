@@ -1,0 +1,15 @@
+# Description: extra plugin de claws-mail pour l'affichage des mails en HTML
+# URL: http://www.claws-mail.org/plugin.php?plugin=gtkhtml2
+# Packager: skingrapher at legtux dot org
+# Depends on: claws-mail, gtkhtml, curl
+name=gtkhtml2_viewer
+version=0.26
+release=1
+source=(http://www.claws-mail.org/downloads/plugins/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --mandir=/usr/share/man 
+        make
+        make DESTDIR=$PKG install
+}

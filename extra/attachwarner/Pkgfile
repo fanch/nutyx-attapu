@@ -1,0 +1,15 @@
+# Description: extra plugin de claws-mail qui prévient l'utilisateur s'il oublie de joindre un fichier qu'il aura mentionné dans le corps du message qu'il aura composé
+# URL: http://www.claws-mail.org/plugin.php?plugin=attachwarner
+# Packager: skingrapher at legtux dot org
+# Depends on: claws-mail
+name=attachwarner
+version=0.2.18
+release=1
+source=(http://www.claws-mail.org/downloads/plugins/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --mandir=/usr/share/man 
+        make
+        make DESTDIR=$PKG install
+}

@@ -2,11 +2,11 @@
 # URL: http://hplip.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups, foomatic-db, foomatic-db-engine, ghostscript, libusb
+# Depends on: cups, foomatic-db, foomatic-db-engine, ghostscript, libusb, dbus-python, sane
 
 name=hplip
 version=3.9.12
-release=1
+release=2
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build() {
@@ -17,15 +17,15 @@ cd $name-$version
 	--infodir=/usr/share/info \
 	--disable-fax-build \
 	--disable-network-build \
-	--disable-gui-build \
 	--disable-doc-build \
 	--disable-qt4 \
-	--disable-foomatic-ppd-install \
-	--disable-foomatic-drv-install \
+	--enable-foomatic-ppd-install \
+	--enable-foomatic-drv-install \
 	--enable-cups-ppd-install \
 	--with-hpppddir=/usr/share/cups/model/HP \
 	--with-drvdir=/usr/share/cups/dvr/hp
 	make
 	make DESTDIR=$PKG install
 	rm -r $PKG/usr/share/doc
+	rm -r $PKG/etc/sane.d
 }
