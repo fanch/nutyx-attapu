@@ -5,8 +5,8 @@
 # Depends on: qt
 
 name=qca
-version=2.0.1
-release=3
+version=2.0.2
+release=1
 source=(http://delta.affinix.com/download/$name/2.0/$name-$version.tar.bz2)
 build() {
 	cd $name-$version 
