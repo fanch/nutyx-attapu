@@ -6,7 +6,7 @@
 
 name=vcdimager
 version=0.7.23
-release=3
+release=4
 source=(http://ftp.twaren.net/Unix/GNU/gnu/$name/$name-$version.tar.gz)
 
 
