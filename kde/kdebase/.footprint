@@ -16,11 +16,15 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/kwrite
 -rwxr-xr-x	root/root	opt/kde/bin/nspluginscan
 -rwxr-xr-x	root/root	opt/kde/bin/nspluginviewer
+-rwxr-xr-x	root/root	opt/kde/bin/servicemenudeinstallation
+-rwxr-xr-x	root/root	opt/kde/bin/servicemenuinstallation
 drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/knewmenu.h
 -rw-r--r--	root/root	opt/kde/include/konq_dndpopupmenuplugin.h
 -rw-r--r--	root/root	opt/kde/include/konq_events.h
 -rw-r--r--	root/root	opt/kde/include/konq_fileitemcapabilities.h
+-rw-r--r--	root/root	opt/kde/include/konq_historyentry.h
+-rw-r--r--	root/root	opt/kde/include/konq_historyprovider.h
 -rw-r--r--	root/root	opt/kde/include/konq_menuactions.h
 -rw-r--r--	root/root	opt/kde/include/konq_operations.h
 -rw-r--r--	root/root	opt/kde/include/konq_popupmenu.h
@@ -28,10 +32,12 @@ drwxr-xr-x	root/root	opt/kde/include/
 -rw-r--r--	root/root	opt/kde/include/konq_popupmenuplugin.h
 -rw-r--r--	root/root	opt/kde/include/konqmimedata.h
 -rw-r--r--	root/root	opt/kde/include/konqsidebarplugin.h
+-rw-r--r--	root/root	opt/kde/include/kversioncontrolplugin.h
 -rw-r--r--	root/root	opt/kde/include/libkonq_export.h
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/dolphinpart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/fileviewsvnplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_dolphingeneral.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_dolphinnavigation.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_dolphinservices.so
@@ -53,7 +59,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_solidproc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_usb.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_useraccount.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_view1394.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_favicons.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_konqy_preloader.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/khtmlkttsdplugin.so
@@ -62,8 +67,8 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konq_sidebar.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konq_sidebartree_bookmarks.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konq_sidebartree_dirtree.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/konq_sidebartree_history.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konq_sound.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/konqsidebar_history.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konqsidebar_tree.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/konqsidebar_web.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libkcminit_nsplugins.so
@@ -72,8 +77,8 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/libnsplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_applet_folderview.so
 lrwxrwxrwx	root/root	opt/kde/lib/libdolphinprivate.so -> libdolphinprivate.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libdolphinprivate.so.4 -> libdolphinprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libdolphinprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libdolphinprivate.so.4 -> libdolphinprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libdolphinprivate.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_keditbookmarks.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kfmclient.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kinfocenter.so
@@ -81,14 +86,14 @@ lrwxrwxrwx	root/root	opt/kde/lib/libdolphinprivate.so.4 -> libdolphinprivate.so.
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_konsole.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kwrite.so
 lrwxrwxrwx	root/root	opt/kde/lib/libkonq.so -> libkonq.so.5
-lrwxrwxrwx	root/root	opt/kde/lib/libkonq.so.5 -> libkonq.so.5.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkonq.so.5.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkonq.so.5 -> libkonq.so.5.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkonq.so.5.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkonqsidebarplugin.so -> libkonqsidebarplugin.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkonqsidebarplugin.so.4 -> libkonqsidebarplugin.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkonqsidebarplugin.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkonqsidebarplugin.so.4 -> libkonqsidebarplugin.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkonqsidebarplugin.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkonquerorprivate.so -> libkonquerorprivate.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libkonquerorprivate.so.4 -> libkonquerorprivate.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libkonquerorprivate.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libkonquerorprivate.so.4 -> libkonquerorprivate.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkonquerorprivate.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkonsoleprivate.so
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/applications/
@@ -109,6 +114,7 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kwrite.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/dolphin/
+-rw-r--r--	root/root	opt/kde/share/apps/dolphin/dolphinsearchcommands.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/dolphin/dolphinui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/dolphinpart/
 -rw-r--r--	root/root	opt/kde/share/apps/dolphinpart/dolphinpart.rc
@@ -371,15 +377,11 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kcmcss/
 -rw-r--r--	root/root	opt/kde/share/apps/kcmcss/template.css
 drwxr-xr-x	root/root	opt/kde/share/apps/kcmusb/
 -rw-r--r--	root/root	opt/kde/share/apps/kcmusb/usb.ids
-drwxr-xr-x	root/root	opt/kde/share/apps/kcmview1394/
--rw-r--r--	root/root	opt/kde/share/apps/kcmview1394/oui.db
 drwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/favicons.upd
 -rw-r--r--	root/root	opt/kde/share/apps/kconf_update/kfmclient_3_2.upd
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/kfmclient_3_2_update.sh
--rw-r--r--	root/root	opt/kde/share/apps/kconf_update/konqsidebartng.upd
 -rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/move_favicons.sh
--rwxr-xr-x	root/root	opt/kde/share/apps/kconf_update/move_konqsidebartng_entries.sh
 drwxr-xr-x	root/root	opt/kde/share/apps/kcontrol/
 drwxr-xr-x	root/root	opt/kde/share/apps/kcontrol/pics/
 -rw-r--r--	root/root	opt/kde/share/apps/kcontrol/pics/onlyone.png
@@ -405,24 +407,22 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kinfocenter/
 drwxr-xr-x	root/root	opt/kde/share/apps/kinfocenter/about/
 -rw-r--r--	root/root	opt/kde/share/apps/kinfocenter/about/kinfocenter.css
 -rw-r--r--	root/root	opt/kde/share/apps/kinfocenter/about/main.html
--rw-r--r--	root/root	opt/kde/share/apps/kinfocenter/about/top-right-kinfocenter.png
 -rw-r--r--	root/root	opt/kde/share/apps/kinfocenter/kinfocenterui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/
-drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/add/
--rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/add/virtualfolderadd.desktop
--rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/add/webmodule_add.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/dirtree/
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/dirtree/bookmarks_module.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/dirtree/dirtree_module.desktop
--rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/dirtree/history_module.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/entries/
--rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/.version
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/bookmarks.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/history.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/home.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/remote.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/root.desktop
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/entries/services.desktop
+drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/plugins/
+-rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/plugins/konqsidebar_history.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/plugins/konqsidebar_tree.desktop
+-rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/plugins/konqsidebar_web.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/remote/
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/remote/.directory
@@ -438,8 +438,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/remote/we
 drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/services/
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/services/.directory
 -rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/virtual_folders/services/applications.desktop
-drwxr-xr-x	root/root	opt/kde/share/apps/konqsidebartng/websidebar/
--rw-r--r--	root/root	opt/kde/share/apps/konqsidebartng/websidebar/websidebar.html
 drwxr-xr-x	root/root	opt/kde/share/apps/konqueror/
 drwxr-xr-x	root/root	opt/kde/share/apps/konqueror/about/
 -rw-r--r--	root/root	opt/kde/share/apps/konqueror/about/box-centre-konqueror.png
@@ -497,12 +495,14 @@ drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/dolphin_directoryviewpropertysettings.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/dolphin_generalsettings.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/dolphin_iconsmodesettings.kcfg
+-rw-r--r--	root/root	opt/kde/share/config.kcfg/dolphin_versioncontrolsettings.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kcm_useraccount.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/kcm_useraccount_pass.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/keditbookmarks.kcfg
 -rw-r--r--	root/root	opt/kde/share/config.kcfg/konqueror.kcfg
 drwxr-xr-x	root/root	opt/kde/share/config/
--rw-r--r--	root/root	opt/kde/share/config/konqsidebartng.rc
+-rw-r--r--	root/root	opt/kde/share/config/konqsidebartngrc
+-rw-r--r--	root/root	opt/kde/share/config/servicemenu.knsrc
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
 -rw-r--r--	root/root	opt/kde/share/dbus-1/interfaces/org.kde.FavIcon.xml
@@ -773,6 +773,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/dolphinpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ebrowsing.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/filebehavior.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/fileviewsvnplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/interrupts.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ioports.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ioslaveinfo.desktop
@@ -789,7 +790,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmperformance.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmsolidproc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmusb.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/kcmview1394.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/favicons.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/konqy_preloader.desktop
@@ -804,7 +804,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/konq_sidebartng.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/konqueror.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/konsolepart.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/lanbrowser.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/netpref.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/nic.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/opengl.desktop
@@ -844,6 +843,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/useragentstrings/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/useragentstrings/wgetoncurrent.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/xserver.desktop
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
+-rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/fileviewversioncontrolplugin.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/findpart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/konqaboutpage.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/konqdndpopupmenuplugin.desktop
@@ -876,6 +876,7 @@ drwxr-xr-x	root/root	opt/kde/share/templates/.source/
 -rw-r--r--	root/root	opt/kde/share/templates/linkHD.desktop
 -rw-r--r--	root/root	opt/kde/share/templates/linkMO.desktop
 -rw-r--r--	root/root	opt/kde/share/templates/linkNFS.desktop
+-rw-r--r--	root/root	opt/kde/share/templates/linkPath.desktop
 -rw-r--r--	root/root	opt/kde/share/templates/linkProgram.desktop
 -rw-r--r--	root/root	opt/kde/share/templates/linkURL.desktop
 -rw-r--r--	root/root	opt/kde/share/templates/linkZIP.desktop
