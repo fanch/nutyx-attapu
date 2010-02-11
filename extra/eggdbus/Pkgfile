@@ -5,7 +5,7 @@
 # Depends on: dbus, expat, docbook-xsl, libxslt
 
 name=eggdbus
-version=0.5
+version=0.6
 release=1
 source=(http://hal.freedesktop.org/releases/$name-$version.tar.gz)
 build() {

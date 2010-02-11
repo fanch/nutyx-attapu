@@ -8,9 +8,9 @@ drwxr-xr-x	root/root	usr/include/rasqal/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/librasqal.a
 -rwxr-xr-x	root/root	usr/lib/librasqal.la
-lrwxrwxrwx	root/root	usr/lib/librasqal.so -> librasqal.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/librasqal.so.1 -> librasqal.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/librasqal.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/librasqal.so -> librasqal.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/librasqal.so.2 -> librasqal.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/librasqal.so.2.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/rasqal.pc
 drwxr-xr-x	root/root	usr/share/
