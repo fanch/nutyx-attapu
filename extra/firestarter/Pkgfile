@@ -1,0 +1,23 @@
+# Description: Parefeu graphique
+# URL: http://www.fs-security.com/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: iptables, libgnomeui 
+
+name=firestarter
+version=1.0.3
+release=1
+
+source=(http://dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+        cd $name-$version
+         sed -i 's|/sbin/iptables|/usr/sbin/iptables|' src/firestarter.c
+         sed -i 's|/sbin/iptables|/usr/sbin/iptables|' src/netfilter-script.c
+
+         ./configure --prefix=/usr \
+                     --sysconfdir=/etc \
+                     --localstatedir=/var
+        make
+        make DESTDIR=$PKG install
+}
