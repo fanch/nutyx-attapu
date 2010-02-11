@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	opt/kde/include/eigen2/Eigen/
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/Geometry
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/LU
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/LeastSquares
+-rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/NewStdVector
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/QR
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/QtAlignedMalloc
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/SVD
@@ -117,6 +118,7 @@ drwxr-xr-x	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseCwise.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseCwiseBinaryOp.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseCwiseUnaryOp.h
+-rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseDiagonalProduct.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseDot.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseFlagged.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/SparseFuzzy.h
@@ -134,3 +136,13 @@ drwxr-xr-x	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/TaucsSupport.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/TriangularSolver.h
 -rw-r--r--	root/root	opt/kde/include/eigen2/Eigen/src/Sparse/UmfPackSupport.h
+drwxr-xr-x	root/root	opt/kde/include/eigen2/unsupported/
+drwxr-xr-x	root/root	opt/kde/include/eigen2/unsupported/Eigen/
+-rw-r--r--	root/root	opt/kde/include/eigen2/unsupported/Eigen/IterativeSolvers
+drwxr-xr-x	root/root	opt/kde/include/eigen2/unsupported/Eigen/src/
+drwxr-xr-x	root/root	opt/kde/include/eigen2/unsupported/Eigen/src/IterativeSolvers/
+-rw-r--r--	root/root	opt/kde/include/eigen2/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h
+-rw-r--r--	root/root	opt/kde/include/eigen2/unsupported/Eigen/src/IterativeSolvers/IterationController.h
+drwxr-xr-x	root/root	opt/kde/share/
+drwxr-xr-x	root/root	opt/kde/share/pkgconfig/
+-rw-r--r--	root/root	opt/kde/share/pkgconfig/eigen2.pc
