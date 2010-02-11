@@ -5,8 +5,8 @@
 # Depends on: aspell, glib
 
 name=enchant
-version=1.4.2
-release=2
+version=1.5.0
+release=1
 source=(http://www.abisource.com/downloads/enchant/$version/enchant-$version.tar.gz)
 
 build() {
