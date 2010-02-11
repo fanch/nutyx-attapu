@@ -10,6 +10,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/rdf_hash.h
 -rw-r--r--	root/root	usr/include/rdf_init.h
 -rw-r--r--	root/root	usr/include/rdf_iterator.h
+-rw-r--r--	root/root	usr/include/rdf_list.h
 -rw-r--r--	root/root	usr/include/rdf_log.h
 -rw-r--r--	root/root	usr/include/rdf_model.h
 -rw-r--r--	root/root	usr/include/rdf_node.h

@@ -5,13 +5,11 @@
 # Depends on: raptor, rasqal, sqlite3
 
 name=redland
-version=1.0.9
+version=1.0.10
 release=1
-source=(http://download.librdf.org/source/$name-$version.tar.gz \
-	redland-1.0.9-librdf_storage_register_factory.patch)
+source=(http://download.librdf.org/source/$name-$version.tar.gz)
 build() {
 	cd $name-$version
-	patch -Np1 -i ../redland-1.0.9-librdf_storage_register_factory.patch
 	sed -i -e 's/SQLITE_API/REDLAND_SQLITE_API/g' configure src/rdf_config.h.in src/rdf_storage_sqlite.c
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
