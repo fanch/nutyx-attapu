@@ -6,7 +6,7 @@
 
 name=poppler-qt
 version=0.13.0
-release=1
+release=2
 source=(http://poppler.freedesktop.org/poppler-$version.tar.gz)
 
 build() 
@@ -29,5 +29,7 @@ build()
 	make -C poppler libpoppler.la libpoppler-cairo.la libpoppler-arthur.la
 	make
 	make prefix=$PKG/usr install
-	rm -f $PKG/usr/lib/pkgconfig/poppler-cairo.pc
+        rm -r $PKG/usr/{share,bin}
+        rm -r $PKG/usr/lib/libpoppler.{la,so}
+        rm -f $PKG/usr/lib/pkgconfig/poppler{-cairo,-splash,}.pc
 }
