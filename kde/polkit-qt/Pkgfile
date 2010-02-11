@@ -5,16 +5,19 @@
 # Depends on: policykit, qt
 
 name=polkit-qt
-version=0.9.2
+version=0.95.1
 release=1
-source=(http://download.kde.org/stable/apps/KDE4.x/admin/$name-$version.tar.bz2)
+source=(ftp://ftp.kde.org/pub/kde/stable/$name-1/$name-1-$version.tar.bz2)
+
 build() {
-	cd $name-$version
+	cd $SRC
 	mkdir build
 	cd build
-	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
-		-DCMAKE_BUILD_TYPE=Release
-	make -j3
+	cmake ../$name-1-$version \
+		-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_SKIP_RPATH=ON
+	make
 	make DESTDIR=$PKG install
 }
 
