@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtDesigner.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtGui.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtHelp.so
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtMultimedia.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtNetwork.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtOpenGL.so
 -rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/QtScript.so
@@ -67,6 +68,9 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyQt4/uic/widget-plugins/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyQt4/uic/widget-plugins/qaxcontainer.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyQt4/uic/widget-plugins/qscintilla.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/PyQt4/uic/widget-plugins/qtwebkit.py
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/dbus/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/dbus/mainloop/
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/dbus/mainloop/qt.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/qt/
 drwxr-xr-x	root/root	usr/share/qt/qsci/
@@ -403,6 +407,17 @@ drwxr-xr-x	root/root	usr/share/sip/QtHelp/
 -rw-r--r--	root/root	usr/share/sip/QtHelp/qhelpsearchengine.sip
 -rw-r--r--	root/root	usr/share/sip/QtHelp/qhelpsearchquerywidget.sip
 -rw-r--r--	root/root	usr/share/sip/QtHelp/qhelpsearchresultwidget.sip
+drwxr-xr-x	root/root	usr/share/sip/QtMultimedia/
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/QtMultimediamod.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qabstractvideobuffer.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qabstractvideosurface.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qaudio.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qaudiodeviceinfo.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qaudioformat.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qaudioinput.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qaudiooutput.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qvideoframe.sip
+-rw-r--r--	root/root	usr/share/sip/QtMultimedia/qvideosurfaceformat.sip
 drwxr-xr-x	root/root	usr/share/sip/QtNetwork/
 -rw-r--r--	root/root	usr/share/sip/QtNetwork/QtNetworkmod.sip
 -rw-r--r--	root/root	usr/share/sip/QtNetwork/qabstractnetworkcache.sip
