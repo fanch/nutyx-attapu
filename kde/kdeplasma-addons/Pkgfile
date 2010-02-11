@@ -2,10 +2,10 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager Team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase, kdegraphics
+# Depends on: kdebase, kdegraphics, eigen2
 
 name=kdeplasma-addons
-version=4.3.5
+version=4.4.0
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 build() {
