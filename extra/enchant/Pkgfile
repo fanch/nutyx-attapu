@@ -2,7 +2,7 @@
 # URL: http://www.abisource.com/enchant/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: aspell, glib
+# Depends on: aspell, dbus-glib
 
 name=enchant
 version=1.5.0
