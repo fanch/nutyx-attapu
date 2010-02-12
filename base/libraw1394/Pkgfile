@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=libraw1394
-version=2.0.4
+version=2.0.5
 release=1
 source=(http://downloads.sourceforge.net/project/libraw1394/libraw1394/$name-$version.tar.gz)
 
