@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/eggdbus
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat, docbook-xsl, libxslt
+# Depends on: expat, docbook-xsl, libxslt, dbus-glib
 
 name=eggdbus
 version=0.6
