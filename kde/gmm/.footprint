@@ -34,6 +34,7 @@ drwxr-xr-x	root/root	usr/include/gmm/
 -rw-r--r--	root/root	usr/include/gmm/gmm_precond_ilut.h
 -rw-r--r--	root/root	usr/include/gmm/gmm_precond_ilutp.h
 -rw-r--r--	root/root	usr/include/gmm/gmm_precond_mr_approx_inverse.h
+-rw-r--r--	root/root	usr/include/gmm/gmm_range_basis.h
 -rw-r--r--	root/root	usr/include/gmm/gmm_real_part.h
 -rw-r--r--	root/root	usr/include/gmm/gmm_ref.h
 -rw-r--r--	root/root	usr/include/gmm/gmm_scaled.h

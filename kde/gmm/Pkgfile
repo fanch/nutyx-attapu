@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=gmm
-version=3.1
+version=4.0.0
 release=1
 source=(http://download.gna.org/getfem/stable/$name-$version.tar.gz)
 
