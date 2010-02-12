@@ -2,7 +2,7 @@
 # URL:  http://www.freedesktop.org/wiki/Software/DBusBindings
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus
+# Depends on: dbus, glib
 
 name=dbus-glib
 version=0.80
