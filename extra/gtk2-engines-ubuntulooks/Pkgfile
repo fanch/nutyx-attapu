@@ -1,0 +1,17 @@
+# Description: Moteur de thémes GTK+
+# URL: http://www.libsdl.org/projects/SDL_net/
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: 
+name=gtk2-engines-ubuntulooks
+version=0.9.12
+release=1
+group=
+source=(http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntulooks/ubuntulooks_0.9.12.orig.tar.gz)
+build() {
+cd ubuntulooks-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
