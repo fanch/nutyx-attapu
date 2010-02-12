@@ -1,7 +1,7 @@
 # Description: Qt Cryptographic Architecture
 # URL: http://delta.affinix.com/qca/
 # Maintainer: NuTyX core team
-# Packager: floreal.c at orange dot fr
+# Packager: lesibel at free dot fr
 # Depends on: qt
 
 name=qca
