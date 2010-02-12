@@ -2,7 +2,6 @@
 # URL: http://virtuoso.openlinksw.com/wiki/main/Main
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot ch
-# Depends on:
 
 name=virtuoso
 version=6.1.0
