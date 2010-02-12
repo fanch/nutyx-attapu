@@ -1,0 +1,17 @@
+# Description: Effets 3d pour le bureau
+# URL: compiz.org
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: xorg-libxcomposite, libpng, xorg-libsm, xorg-libxrandr, xorg-libxdamage, xorg-libxinerama, startup-notification, gconf, mesa3d, metacity, librsvg, dbus, dbus-glib, libgnome, curl, autoconf, automake, libtool, intltool, libxslt, libwnck, python, pyrex
+name=compiz
+version=0.8.4
+release=1
+group=
+source=(http://releases.compiz-fusion.org/0.8.4/compiz-0.8.4.tar.gz)
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
