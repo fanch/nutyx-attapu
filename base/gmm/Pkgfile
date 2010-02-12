@@ -2,7 +2,6 @@
 # URL: http://home.gna.org/getfem/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: 
 
 name=gmm
 version=4.0.0
