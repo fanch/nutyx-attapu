@@ -159,8 +159,8 @@ drwxr-xr-x	root/root	opt/kde/include/soprano/
 -rw-r--r--	root/root	opt/kde/include/soprano/xsd.h
 drwxr-xr-x	root/root	opt/kde/lib/
 lrwxrwxrwx	root/root	opt/kde/lib/libsoprano.so -> libsoprano.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libsoprano.so.4 -> libsoprano.so.4.2.0
--rwxr-xr-x	root/root	opt/kde/lib/libsoprano.so.4.2.0
+lrwxrwxrwx	root/root	opt/kde/lib/libsoprano.so.4 -> libsoprano.so.4.3.0
+-rwxr-xr-x	root/root	opt/kde/lib/libsoprano.so.4.3.0
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoclient.so -> libsopranoclient.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libsopranoclient.so.1 -> libsopranoclient.so.1.2.0
 -rwxr-xr-x	root/root	opt/kde/lib/libsopranoclient.so.1.2.0
@@ -177,7 +177,7 @@ drwxr-xr-x	root/root	opt/kde/lib/soprano/
 -rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_nquadserializer.so
 -rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_raptorparser.so
 -rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_raptorserializer.so
--rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_redlandbackend.so
+-rwxr-xr-x	root/root	opt/kde/lib/soprano/libsoprano_sesame2backend.so
 drwxr-xr-x	root/root	opt/kde/share/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/
 drwxr-xr-x	root/root	opt/kde/share/dbus-1/interfaces/
@@ -194,7 +194,12 @@ drwxr-xr-x	root/root	opt/kde/share/soprano/plugins/
 -rw-r--r--	root/root	opt/kde/share/soprano/plugins/nquadserializer.desktop
 -rw-r--r--	root/root	opt/kde/share/soprano/plugins/raptorparser.desktop
 -rw-r--r--	root/root	opt/kde/share/soprano/plugins/raptorserializer.desktop
--rw-r--r--	root/root	opt/kde/share/soprano/plugins/redlandbackend.desktop
+-rw-r--r--	root/root	opt/kde/share/soprano/plugins/sesame2backend.desktop
 drwxr-xr-x	root/root	opt/kde/share/soprano/rules/
 -rw-r--r--	root/root	opt/kde/share/soprano/rules/nrl.rules
 -rw-r--r--	root/root	opt/kde/share/soprano/rules/rdfs.rules
+drwxr-xr-x	root/root	opt/kde/share/soprano/sesame2/
+-rw-r--r--	root/root	opt/kde/share/soprano/sesame2/SopranoSesame2Wrapper.class
+-rw-r--r--	root/root	opt/kde/share/soprano/sesame2/openrdf-sesame-2.2.4-onejar.jar
+-rw-r--r--	root/root	opt/kde/share/soprano/sesame2/slf4j-api-1.5.5.jar
+-rw-r--r--	root/root	opt/kde/share/soprano/sesame2/slf4j-simple-1.5.5.jar
