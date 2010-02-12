@@ -1,0 +1,17 @@
+# Description: plugins compiz
+# URL: compiz.org
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: compiz, bcop, libcompizconfig, compizconfig-python
+name=compiz-plugins-main
+version=0.8.4
+release=1
+group=
+source=(http://releases.compiz-fusion.org/0.8.4/compiz-plugins-main-0.8.4.tar.gz)
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
