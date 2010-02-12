@@ -926,7 +926,7 @@ drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	root/root	var/log/cups/
 drwxr-xr-x	root/root	var/run/
 drwxr-xr-x	root/root	var/run/cups/
-dr-x--x--x	nobody/sys	var/run/cups/certs/
+dr-x--x--x	lp/sys	var/run/cups/certs/
 drwxr-xr-x	root/root	var/spool/
 drwx--x---	root/lp	var/spool/cups/
 drwxrwx--T	root/lp	var/spool/cups/tmp/
