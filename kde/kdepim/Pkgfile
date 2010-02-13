@@ -16,5 +16,7 @@ build() {
 	-DBUILD_doc=OFF
 	make -j3
 	make DESTDIR=$PKG install
+	# Déjà dans dans kdepimlibs
+	rm -r $PKG/opt/kde/share/kde4/servicetypes/kontactplugin.desktop
 }
 
