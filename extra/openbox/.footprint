@@ -15,30 +15,30 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/openbox-session
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/openbox/
-drwxr-xr-x	root/root	usr/include/openbox/3.4/
-drwxr-xr-x	root/root	usr/include/openbox/3.4/openbox/
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/color.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/font.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/geom.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/gradient.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/image.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/instance.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/mask.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/parse.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/render.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/theme.h
--rw-r--r--	root/root	usr/include/openbox/3.4/openbox/version.h
+drwxr-xr-x	root/root	usr/include/openbox/3.4.11/
+drwxr-xr-x	root/root	usr/include/openbox/3.4.11/openbox/
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/color.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/font.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/geom.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/gradient.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/image.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/instance.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/mask.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/parse.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/render.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/theme.h
+-rw-r--r--	root/root	usr/include/openbox/3.4.11/openbox/version.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libobparser.a
 -rwxr-xr-x	root/root	usr/lib/libobparser.la
-lrwxrwxrwx	root/root	usr/lib/libobparser.so -> libobparser.so.21.0.6
-lrwxrwxrwx	root/root	usr/lib/libobparser.so.21 -> libobparser.so.21.0.6
--rwxr-xr-x	root/root	usr/lib/libobparser.so.21.0.6
+lrwxrwxrwx	root/root	usr/lib/libobparser.so -> libobparser.so.21.0.7
+lrwxrwxrwx	root/root	usr/lib/libobparser.so.21 -> libobparser.so.21.0.7
+-rwxr-xr-x	root/root	usr/lib/libobparser.so.21.0.7
 -rw-r--r--	root/root	usr/lib/libobrender.a
 -rwxr-xr-x	root/root	usr/lib/libobrender.la
-lrwxrwxrwx	root/root	usr/lib/libobrender.so -> libobrender.so.21.0.6
-lrwxrwxrwx	root/root	usr/lib/libobrender.so.21 -> libobrender.so.21.0.6
--rwxr-xr-x	root/root	usr/lib/libobrender.so.21.0.6
+lrwxrwxrwx	root/root	usr/lib/libobrender.so -> libobrender.so.21.0.7
+lrwxrwxrwx	root/root	usr/lib/libobrender.so.21 -> libobrender.so.21.0.7
+-rwxr-xr-x	root/root	usr/lib/libobrender.so.21.0.7
 drwxr-xr-x	root/root	usr/lib/openbox/
 -rwxr-xr-x	root/root	usr/lib/openbox/xdg-autostart
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
@@ -76,6 +76,7 @@ drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/openbox.mo
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/obxprop.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/openbox-gnome-session.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/openbox-kde-session.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/openbox-session.1.gz
