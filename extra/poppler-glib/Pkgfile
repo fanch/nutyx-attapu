@@ -5,28 +5,26 @@
 # Depends on: gtk, poppler
 
 name=poppler-glib
-version=0.12.3
+version=0.13.0
 release=1
-source=(http://poppler.freedesktop.org/poppler-$version.tar.gz \
-	poppler-0.10-bindings.patch)
+source=(http://poppler.freedesktop.org/poppler-$version.tar.gz)
 
 build() {
 	cd poppler-$version
-	patch -Np1 -i ../poppler-0.10-bindings.patch
-	libtoolize --force --copy
-	AT_M4DIR="m4" autoreconf -i
-	  ./configure --prefix=/usr --sysconfdir=/etc \
+	./configure --prefix=/usr --sysconfdir=/etc \
               --localstatedir=/var --disable-static \
 	      --enable-zlib \
 	      --enable-libjpeg \
 	      --enable-cairo-output \
-	      --enable-poppler-qt4 \
-	      --enable-poppler-glib \
 	      --disable-poppler-qt4 \
+	      --enable-poppler-glib \
 	      --disable-poppler-qt
 	pushd poppler
 	make libpoppler-cairo.la
 	popd 
-	make
+	make -j3
 	make prefix=$PKG/usr install
+	rm -r $PKG/usr/{bin,share}
+	rm -r $PKG/usr/lib/libpoppler.*
+	rm -r $PKG/usr/lib/pkgconfig/poppler{.pc,-splash.pc,-cairo.pc}
 }
