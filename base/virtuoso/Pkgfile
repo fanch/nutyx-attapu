@@ -1,0 +1,21 @@
+# Description: A scalable cross-platform server that combines SQL/RDF/XML Data Management with Web Application Server and Web Services Platform functionality
+# URL: http://virtuoso.openlinksw.com/wiki/main/Main
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot ch
+
+name=virtuoso
+version=6.1.0
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-opensource-$version.tar.gz)
+build() {
+	cd $name-opensource-$version
+	./configure --prefix=/usr \
+		    --localstatedir=/var \
+    		    --sysconfdir=/etc \
+    		    --disable-rendezvous \
+    		    --disable-hslookup \
+    		    --disable-all-vads
+	make
+	make DESTDIR=$PKG install
+}
+

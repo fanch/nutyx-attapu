@@ -1,0 +1,18 @@
+#!/bin/sh
+
+GNOME_VERSION=
+port=firestarter
+
+# gconf schemas
+SCHEMAS="`pkginfo -l $port | grep etc/gnome/$GNOME_VERSION/gconf/schemas/.*\.schemas$`"
+for SCHEMA in $SCHEMAS
+do
+         export GCONF_CONFIG_SOURCE=`/opt/gnome/bin/gconftool-2 --get-default-source`
+        /opt/gnome/bin/gconftool-2 --makefile-install-rule /$SCHEMA > /dev/null
+done
+
+# reload gconf caches
+if [ ! -z "`pidof gconfd-2`" ]
+then
+         killall -HUP gconfd-2 > /dev/null
+fi

@@ -18,9 +18,9 @@ drwxr-xr-x	root/root	usr/lib/enchant/
 -rwxr-xr-x	root/root	usr/lib/enchant/libenchant_zemberek.la
 -rwxr-xr-x	root/root	usr/lib/enchant/libenchant_zemberek.so
 -rwxr-xr-x	root/root	usr/lib/libenchant.la
-lrwxrwxrwx	root/root	usr/lib/libenchant.so -> libenchant.so.1.4.2
-lrwxrwxrwx	root/root	usr/lib/libenchant.so.1 -> libenchant.so.1.4.2
--rw-r--r--	root/root	usr/lib/libenchant.so.1.4.2
+lrwxrwxrwx	root/root	usr/lib/libenchant.so -> libenchant.so.1.5.0
+lrwxrwxrwx	root/root	usr/lib/libenchant.so.1 -> libenchant.so.1.5.0
+-rw-r--r--	root/root	usr/lib/libenchant.so.1.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/enchant.pc
 drwxr-xr-x	root/root	usr/share/

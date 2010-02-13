@@ -1,0 +1,15 @@
+# Description: Gestionnaire de configuration CompizConfig
+# URL: compiz
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: python, pygtk
+name=ccsm
+version=0.8.4
+release=1
+group=
+source=(http://releases.compiz-fusion.org/0.8.4/ccsm-0.8.4.tar.gz)
+build() {
+cd $name-$version
+        python setup.py build install --root=$PKG  
+}
+

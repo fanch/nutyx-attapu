@@ -1,0 +1,15 @@
+# Description: langage hybride entre c et python
+# URL: http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: python
+name=pyrex
+version=0.9.8.5
+release=1
+group=
+source=(http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/Pyrex-0.9.8.5.tar.gz)
+build() {
+cd Pyrex-$version
+        python setup.py build install --root=$PKG
+}
+

@@ -5,9 +5,10 @@
 # Depends on: cups, fontconfig, kerberos
 
 name=ghostscript
-version=8.70
-release=2
-source=( http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
+version=8.71
+release=1
+
+source=( http://ghostscript.com/releases/$name-$version.tar.gz \
 	 ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/ghostscript-fonts-std-8.11.tar.gz\
 	 http://ftp.gnu.org/pub/gnu/ghostscript/gnu-gs-fonts-other-6.0.tar.gz ghostscript-fPIC.patch)
 

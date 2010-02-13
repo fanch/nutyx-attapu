@@ -1,0 +1,19 @@
+# Description: Fondation pour l'uniformisation de l'apparence des bureau
+# URL: http://www.amsn-project.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: qt
+
+name=shared-desktop-ontologies
+version=0.2
+release=1
+source=(http://downloads.sourceforge.net/project/oscaf/$name/$version/$name-$version.tar.bz2)
+
+build() {
+                cd $name-$version
+                mkdir build
+                cd build
+                cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+                make -j3
+                make DESTDIR=$PKG install
+}

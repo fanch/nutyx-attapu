@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=e2fsprogs
-version=1.41.9
+version=1.41.10
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz )
 

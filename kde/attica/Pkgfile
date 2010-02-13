@@ -1,0 +1,19 @@
+# Description: Lib pour travail collaboratif
+# URL:
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: qt
+
+name=attica
+version=0.1.2
+release=1
+source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz)
+build() {
+        cd $name-$version
+        mkdir build
+        cd build
+        cmake ../ -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make
+        make DESTDIR=$PKG install
+}
