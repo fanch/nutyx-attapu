@@ -1,0 +1,21 @@
+# Description: Outil pour le rendu des documents au format ebook
+# URL: http://sourceforge.net/projects/ebook-tools
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libxml2, cmake
+
+name=ebook-tools
+version=0.1.1
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name/$name/$name/$name/$name/$name/$name-$version.tar.gz)
+
+build() {
+cd $name-$version
+	mkdir build
+	cd build
+	cmake .. -DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=/usr
+	make
+	make DESTDIR=$PKG install
+}
+
