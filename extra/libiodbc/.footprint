@@ -1,0 +1,35 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/iodbc-config
+-rwxr-xr-x	root/root	usr/bin/iodbctest
+-rwxr-xr-x	root/root	usr/bin/iodbctestw
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libiodbc/
+-rw-r--r--	root/root	usr/include/libiodbc/iodbcext.h
+-rw-r--r--	root/root	usr/include/libiodbc/iodbcinst.h
+-rw-r--r--	root/root	usr/include/libiodbc/iodbcunix.h
+-rw-r--r--	root/root	usr/include/libiodbc/isql.h
+-rw-r--r--	root/root	usr/include/libiodbc/isqlext.h
+-rw-r--r--	root/root	usr/include/libiodbc/isqltypes.h
+-rw-r--r--	root/root	usr/include/libiodbc/odbcinst.h
+-rw-r--r--	root/root	usr/include/libiodbc/sql.h
+-rw-r--r--	root/root	usr/include/libiodbc/sqlext.h
+-rw-r--r--	root/root	usr/include/libiodbc/sqltypes.h
+-rw-r--r--	root/root	usr/include/libiodbc/sqlucode.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libiodbc.la
+lrwxrwxrwx	root/root	usr/lib/libiodbc.so -> libiodbc.so.2.1.19
+lrwxrwxrwx	root/root	usr/lib/libiodbc.so.2 -> libiodbc.so.2.1.19
+-rwxr-xr-x	root/root	usr/lib/libiodbc.so.2.1.19
+-rwxr-xr-x	root/root	usr/lib/libiodbcinst.la
+lrwxrwxrwx	root/root	usr/lib/libiodbcinst.so -> libiodbcinst.so.2.1.19
+lrwxrwxrwx	root/root	usr/lib/libiodbcinst.so.2 -> libiodbcinst.so.2.1.19
+-rwxr-xr-x	root/root	usr/lib/libiodbcinst.so.2.1.19
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libiodbc.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/iodbc-config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/iodbctest.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/iodbctestw.1.gz
