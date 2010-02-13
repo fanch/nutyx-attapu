@@ -2,10 +2,10 @@
 # URL: http://soprano.sourceforge.net/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: cmake, qt, redland, clucene, virtuoso
+# Depends on: cmake, qt, redland, clucene, virtuoso, libiodbc
 
 name=soprano
-version=2.4.0
+version=2.4.0.1
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
