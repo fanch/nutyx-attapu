@@ -2,11 +2,11 @@
 # URL: http://library.gnome.org/devel/gnome-vfs-2.0/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gconf, gnome-mime-data
+# Depends on: gconf, gnome-mime-data, samba3
 
 name=gnome-vfs
 version=2.24.2
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
