@@ -2,7 +2,7 @@
 # URL: http://strigi.sourceforge.net
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: cmake, clucene, qt, xerces-c, exiv2
+# Depends on: curl, cmake, clucene, qt, xerces-c, exiv2
 
 name=strigi
 version=0.7.2
