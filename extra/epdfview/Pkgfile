@@ -6,7 +6,7 @@
 
 name=epdfview
 version=0.1.7
-release=1
+release=2
 source=(http://trac.emma-soft.com/$name/chrome/site/releases/$name-$version.tar.bz2)
 
 build() {
