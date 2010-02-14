@@ -16,5 +16,6 @@ cd $name-$version
 	--enable-dbus --enable-librsvg
         make -j3
         make DESTDIR=$PKG install
+	rm $PKG/usr/bin/gtk-window-decorator
 }
 
