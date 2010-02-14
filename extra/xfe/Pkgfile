@@ -2,7 +2,7 @@
 # URL: http://roland65.free.fr/xfe
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: fox, libpng, libjpeg, libtiff
+# Depends on: fox, libpng, libjpeg, libtiff, expat, intltool
 
 name=xfe
 version=1.32.1
