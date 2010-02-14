@@ -46,8 +46,8 @@ lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so -> libamaroklib.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so.1 -> libamaroklib.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libamaroklib.so.1.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libamarokocsclient.so -> libamarokocsclient.so.4
-lrwxrwxrwx	root/root	opt/kde/lib/libamarokocsclient.so.4 -> libamarokocsclient.so.4.3.0
--rwxr-xr-x	root/root	opt/kde/lib/libamarokocsclient.so.4.3.0
+lrwxrwxrwx	root/root	opt/kde/lib/libamarokocsclient.so.4 -> libamarokocsclient.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libamarokocsclient.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libamarokpud.so -> libamarokpud.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libamarokpud.so.1 -> libamarokpud.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libamarokpud.so.1.0.0

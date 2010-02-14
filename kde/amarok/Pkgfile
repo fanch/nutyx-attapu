@@ -6,7 +6,7 @@
 
 name=amarok
 version=2.2.2
-release=2
+release=3
 source=(http://download.kde.org/download.php?url=stable/$name/$version/src/$name-$version.tar.bz2\
 	splash_screen.jpg)
 
