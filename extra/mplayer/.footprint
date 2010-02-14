@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/mplayer/
--r--r--r--	root/root	etc/mplayer/mplayer.conf
+-rw-r--r--	root/root	etc/mplayer/mplayer.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/gmplayer -> mplayer

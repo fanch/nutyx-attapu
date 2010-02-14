@@ -2,12 +2,12 @@
 # URL: http://www.mplayerhq.hu/DOCS/HTML/fr/index.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: yasm, faad2, x264, libcaca, speex, directfb, libmp4v2, xvid, amrnb, amrwb, libmpcdec, libdv, libmad, libpng, libmng, lzo, lame, faac, giflib,libogg, libcdio, esound, nas, libdvdcss, libdvdnav, libdvdread, libtheora, mplayer-all-codecs, cdparanoia
+# Depends on: gtk, yasm, faad2, x264, libcaca, speex, directfb, libmp4v2, xvid, amrnb, amrwb, libmpcdec, libdv, libmad, libpng, libmng, lzo, lame, faac, giflib,libogg, libcdio, esound, nas, libdvdcss, libdvdnav, libdvdread, libtheora, mplayer-all-codecs, cdparanoia
 
 name=mplayer
-version=20090801
+version=20091013
 release=1
-source=( http://www.mplayerhq.hu/MPlayer/releases/mplayer-checkout-snapshot.tar.bz2 \
+source=( http://kiao.no-ip.info/NuTyX/files/mplayer-checkout-20091013.tar.bz2 \
    http://www1.mplayerhq.hu/MPlayer/releases/fonts/font-arial-iso-8859-1.tar.bz2 \
    http://www.mplayerhq.hu/MPlayer/skins/Blue-1.7.tar.bz2\
    mplayer.conf mplayer.desktop liba52_gcc44.patch)
