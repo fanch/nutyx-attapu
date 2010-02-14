@@ -2,7 +2,7 @@
 # URL: http://www.audiocoding.com
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: fftw, qt, libsamplerate
+# Depends on: fftw, qt, libsamplerate, ruby
 
 name=liblastfm
 version=0.3.0
