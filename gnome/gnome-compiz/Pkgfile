@@ -1,0 +1,26 @@
+# Description: Effets 3d pour le bureau
+# URL: compiz.org
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: compiz, gnome-control-center, libwnck
+name=gnome-compiz
+version=0.8.4
+release=1
+group=
+source=(http://releases.compiz-fusion.org/0.8.4/compiz-0.8.4.tar.gz)
+build() {
+cd compiz-$version
+        ./configure --prefix=/usr \
+	--enable-gnome --enable-gtk --disable-kde4 \
+	--enable-metacity --enable-gconf \
+	--with-gconf-schema-file-dir=/etc/gconf/schemas \
+	--disable-dbus --disable-annotate
+        make -j3
+	pushd gtk
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/etc/gconf/schemas
+	install -m644 window-decorator/gwd.schemas \
+                $PKG/etc/gconf/schemas/gwd.schemas
+	popd
+}
+

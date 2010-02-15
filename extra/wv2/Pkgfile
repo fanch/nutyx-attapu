@@ -1,7 +1,7 @@
 # Description: Librairie permetant l'accès aux documents word de Microsoft
 # URL: http://wvware.sourceforge.net/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg, libgsf
+# Depends on: xorg, libgsf, cmake
 
 name=wv2
 version=0.4.2

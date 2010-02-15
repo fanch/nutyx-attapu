@@ -2,7 +2,7 @@
 # URL: http://bluefish.openoffice.nl/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, pcre, desktop-file-utils
+# Depends on: gtk, pcre, desktop-file-utils, gnome-vfs
 
 name=bluefish
 version=1.0.7

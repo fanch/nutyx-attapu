@@ -5,7 +5,7 @@
 # Depends on: pangomm, cairomm, gtkmm, boost, boehm-gc, imagemagick, gsl, gnome-vfs, libwpg, poppler-glib, librsvg
 name=inkscape
 version=0.47
-release=1
+release=2
 source=(http://downloads.sourceforge.net/$name/files/$name-$version.tar.bz2\
 	http://launchpadlibrarian.net/36057611/inkscape-poppler-0.12.2.patch)
 

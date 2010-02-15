@@ -19,5 +19,5 @@ build() {
          $PKG/lib/udev/rules.d/52-libmtp.rules
 	install -D -m0644 libmtp.fdi \
          $PKG/usr/share/hal/fdi/information/20thirdparty/libmtp.fdi
-
+	rm -rf $PKG/usr/share/doc
 }

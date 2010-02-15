@@ -2,7 +2,7 @@
 # URL: http://www.cmake.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: libidn
+# Depends on: libidn, curl
 
 name=cmake
 version=2.8.0

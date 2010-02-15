@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, shared-mime-info, exiv2, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
+# Depends on: kdebase-runtime, shared-mime-info, exiv2, ebook-tools, libspectre, chmlib, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
 
 name=kdegraphics
 version=4.4.0

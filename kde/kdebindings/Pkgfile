@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, kdebase-workspace, qscintilla, polkit-qt, kdegraphics, kdepimlibs, ruby, pyqt
+# Depends on: kdebase-runtime, kdebase-workspace, kdepim-runtime, qscintilla, polkit-qt, kdegraphics, kdepimlibs, ruby, pyqt
 
 name=kdebindings
 version=4.4.0
@@ -17,21 +17,17 @@ build() {
         # see http://bugs.archlinux.org/task/16175
 #        find ../$name-$version
 	find ../ruby -name CMakeLists.txt \
-                -exec sed -i "s|\${RUBY_INCLUDE_PATH}|\${RUBY_INCLUDE_PATH} /usr/include/ruby-1.9.1/${CARCH}-linux|" {} \;
+                -exec sed -i "s|\${RUBY_INCLUDE_PATH}|\${RUBY_INCLUDE_PATH} /usr/include/ruby-1.9.1/i686-linux|" {} \;
 
 	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
 		-DCMAKE_BUILD_TYPE=Release \
-		-DCMAKE_SKIP_RPATH=ON \
-		-DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
-		-DBUILD_csharp=OFF \
 		-DBUILD_java=OFF \
 		-DBUILD_php=OFF \
-		-DBUILD_ruby=OFF \
 		-DBUILD_falcon=OFF \
-		-DBUILD_smoke=OFF  \
 		-DBUILD_doc=OFF \
+		-DENABLE_KROSSRUBY=OFF \
 		-DWITH_PolkitQt=OFF
-	make -j3
+	make
 	make DESTDIR=$PKG install
 }
 

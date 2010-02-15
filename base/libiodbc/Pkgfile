@@ -2,7 +2,6 @@
 # URL: http://www.iodbc.org
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: glibc
 
 name=libiodbc
 version=3.52.7
