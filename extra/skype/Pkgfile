@@ -6,15 +6,15 @@
 
 name=skype
 version=2.1.0.81
-release=2
-source=( http://download.skype.com/linux/$name-$version.tar.bz2 \
+release=3
+source=( http://download.skype.com/linux/${name}-$version.tar.bz2 \
 skype)
 
 build() {
-	cd $name-$version
+	cd ${name}-$version
 	install -d $PKG/usr/share/$name/
 	install -d $PKG/usr/bin/
-	cp -r $SRC/$name-$version/* $PKG/usr/share/$name/
+	cp -r $SRC/${name}-$version/* $PKG/usr/share/$name/
 	cp -p ../skype $PKG/usr/bin/skype
 	chown -R root:root $PKG
         install -Dm644 $SRC/$name-$version/skype.desktop \
