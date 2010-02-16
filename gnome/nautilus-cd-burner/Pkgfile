@@ -2,11 +2,11 @@
 # URL: http://cvs.gnome.org/viewcvs/nautilus-cd-burner/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-mount, dbus, hal, nautilus
+# Depends on: gnome-mount, dbus, hal, nautilus, cdrtools, intltool
 
 name=nautilus-cd-burner
-version=2.24.0
-release=1
+version=2.25.3
+release=3
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
