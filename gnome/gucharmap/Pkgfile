@@ -5,9 +5,9 @@
 # Depends on: gtk, p5-xml-parser
 
 name=gucharmap
-version=1.10.0
+version=2.28.2
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/1.10/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.28/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
