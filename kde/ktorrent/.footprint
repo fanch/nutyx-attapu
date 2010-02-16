@@ -173,14 +173,14 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_ktorrent.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_ktorrent.so
 lrwxrwxrwx	root/root	usr/lib/libbtcore.so -> libbtcore.so.12
-lrwxrwxrwx	root/root	usr/lib/libbtcore.so.12 -> libbtcore.so.12.0.0
--rwxr-xr-x	root/root	usr/lib/libbtcore.so.12.0.0
+lrwxrwxrwx	root/root	usr/lib/libbtcore.so.12 -> libbtcore.so.12.3.0
+-rwxr-xr-x	root/root	usr/lib/libbtcore.so.12.3.0
 lrwxrwxrwx	root/root	usr/lib/libktcore.so -> libktcore.so.10
-lrwxrwxrwx	root/root	usr/lib/libktcore.so.10 -> libktcore.so.10.0.0
--rwxr-xr-x	root/root	usr/lib/libktcore.so.10.0.0
+lrwxrwxrwx	root/root	usr/lib/libktcore.so.10 -> libktcore.so.10.2.0
+-rwxr-xr-x	root/root	usr/lib/libktcore.so.10.2.0
 lrwxrwxrwx	root/root	usr/lib/libktupnp.so -> libktupnp.so.4
-lrwxrwxrwx	root/root	usr/lib/libktupnp.so.4 -> libktupnp.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libktupnp.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libktupnp.so.4 -> libktupnp.so.4.1.0
+-rwxr-xr-x	root/root	usr/lib/libktupnp.so.4.1.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/applications/kde4/
