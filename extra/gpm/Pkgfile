@@ -7,9 +7,7 @@
 name=gpm
 version=1.20.6
 release=1
-source=( http://unix.schottelius.org/$name/archives/$name-$version.tar.bz2)
-
-
+source=(http://www.nico.schottelius.org/software/$name/archives/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
