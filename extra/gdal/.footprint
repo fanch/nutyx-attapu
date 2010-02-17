@@ -73,9 +73,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgdal.a
 -rwxr-xr-x	root/root	usr/lib/libgdal.la
-lrwxrwxrwx	root/root	usr/lib/libgdal.so -> libgdal.so.1.14.0
-lrwxrwxrwx	root/root	usr/lib/libgdal.so.1 -> libgdal.so.1.14.0
--rwxr-xr-x	root/root	usr/lib/libgdal.so.1.14.0
+lrwxrwxrwx	root/root	usr/lib/libgdal.so -> libgdal.so.1.14.1
+lrwxrwxrwx	root/root	usr/lib/libgdal.so.1 -> libgdal.so.1.14.1
+-rwxr-xr-x	root/root	usr/lib/libgdal.so.1.14.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gdal/
 -rw-r--r--	root/root	usr/share/gdal/GDALLogoBW.svg
