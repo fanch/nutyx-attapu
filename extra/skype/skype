@@ -1,2 +1,2 @@
 #!/bin/sh
-cd /usr/share/skype_static && exec ./skype
+cd /usr/share/skype && exec ./skype

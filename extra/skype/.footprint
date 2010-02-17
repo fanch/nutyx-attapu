@@ -6,140 +6,140 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/skype.desktop
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/skype.png
-drwxr-xr-x	root/root	usr/share/skype_static/
--rw-r--r--	root/root	usr/share/skype_static/LICENSE
--rw-r--r--	root/root	usr/share/skype_static/README
-drwxr-xr-x	root/root	usr/share/skype_static/avatars/
--rw-r--r--	root/root	usr/share/skype_static/avatars/Angel Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Architect Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Beach Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Behind Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Business Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Call Me Sweetheart.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Call Me.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Carnaval Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Chic Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Christmas Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/College Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/DIY Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/DJ Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Desert Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Designer Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Devil Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Earbud Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Empire Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Fax Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Geisha Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Hula Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Make Skype Not War.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Metal Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Ninja Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Party Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Pop Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Rice Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skypahontas.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype 502.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Aid.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Artiste.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Beauty.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Bling.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Boarder.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Brrr... .png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Candy.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Cola.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Cool Shades.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Extreme.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Goaaaaal.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Headset.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Jah.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Jyve.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Safety.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype San.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Shorty.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Smiley.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype Time.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype in a Bag.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype-a-Manger.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype-ahoy.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype-in-one.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Skypers of the Caribbean.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Star Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Sushi Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/The Skypeness.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Travel Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Wetsuit Skype.png
--rw-r--r--	root/root	usr/share/skype_static/avatars/Yin Yang Skype.png
-drwxr-xr-x	root/root	usr/share/skype_static/icons/
--rw-r--r--	root/root	usr/share/skype_static/icons/SkypeBlue_16x16.png
--rw-r--r--	root/root	usr/share/skype_static/icons/SkypeBlue_32x32.png
--rw-r--r--	root/root	usr/share/skype_static/icons/SkypeBlue_48x48.png
-drwxr-xr-x	root/root	usr/share/skype_static/lang/
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_bg.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_bg.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_de.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_de.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_en.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_en.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_es.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_es.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_et.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_et.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_fr.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_fr.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_it.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_it.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ja.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ja.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ko.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ko.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_lt.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_lt.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_lv.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_lv.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pl.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pl.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pt_br.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pt_br.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pt_pt.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_pt_pt.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ro.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ro.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ru.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_ru.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_th.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_th.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_tr.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_tr.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_uk.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_uk.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_s.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_s.ts
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_t.qm
--rw-r--r--	root/root	usr/share/skype_static/lang/skype_zh_t.ts
--rwxr-xr-x	root/root	usr/share/skype_static/skype
--rw-r--r--	root/root	usr/share/skype_static/skype.conf
--rw-r--r--	root/root	usr/share/skype_static/skype.desktop
-drwxr-xr-x	root/root	usr/share/skype_static/sounds/
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallBusy.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallConnecting.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallFailed.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallHangup.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallHold.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallRemoteHangup.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallResume.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallRingingIn.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/CallRingingOut.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ChatIncoming.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ChatIncomingInitial.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ChatOutgoing.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ContactAdded.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ContactAuthRequest.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ContactOffline.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/ContactOnline.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/SkypeLogin.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/SkypeLogout.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/TransferComplete.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/TransferFailed.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/TransferRequest.wav
--rw-r--r--	root/root	usr/share/skype_static/sounds/VoicemailReceived.wav
+drwxr-xr-x	root/root	usr/share/skype/
+-rw-r--r--	root/root	usr/share/skype/LICENSE
+-rw-r--r--	root/root	usr/share/skype/README
+drwxr-xr-x	root/root	usr/share/skype/avatars/
+-rw-r--r--	root/root	usr/share/skype/avatars/Angel Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Architect Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Beach Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Behind Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Business Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Call Me Sweetheart.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Call Me.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Carnaval Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Chic Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Christmas Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/College Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/DIY Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/DJ Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Desert Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Designer Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Devil Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Earbud Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Empire Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Fax Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Geisha Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Hula Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Make Skype Not War.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Metal Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Ninja Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Party Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Pop Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Rice Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skypahontas.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype 502.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Aid.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Artiste.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Beauty.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Bling.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Boarder.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Brrr... .png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Candy.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Cola.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Cool Shades.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Extreme.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Goaaaaal.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Headset.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Jah.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Jyve.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Safety.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype San.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Shorty.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Smiley.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype Time.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype in a Bag.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype-a-Manger.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype-ahoy.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype-in-one.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Skypers of the Caribbean.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Star Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Sushi Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/The Skypeness.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Travel Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Wetsuit Skype.png
+-rw-r--r--	root/root	usr/share/skype/avatars/Yin Yang Skype.png
+drwxr-xr-x	root/root	usr/share/skype/icons/
+-rw-r--r--	root/root	usr/share/skype/icons/SkypeBlue_16x16.png
+-rw-r--r--	root/root	usr/share/skype/icons/SkypeBlue_32x32.png
+-rw-r--r--	root/root	usr/share/skype/icons/SkypeBlue_48x48.png
+drwxr-xr-x	root/root	usr/share/skype/lang/
+-rw-r--r--	root/root	usr/share/skype/lang/skype_bg.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_bg.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_de.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_de.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_en.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_en.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_es.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_es.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_et.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_et.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_fr.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_fr.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_it.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_it.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ja.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ja.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ko.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ko.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_lt.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_lt.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_lv.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_lv.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pl.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pl.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pt_br.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pt_br.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pt_pt.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_pt_pt.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ro.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ro.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ru.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_ru.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_th.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_th.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_tr.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_tr.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_uk.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_uk.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_zh_s.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_zh_s.ts
+-rw-r--r--	root/root	usr/share/skype/lang/skype_zh_t.qm
+-rw-r--r--	root/root	usr/share/skype/lang/skype_zh_t.ts
+-rwxr-xr-x	root/root	usr/share/skype/skype
+-rw-r--r--	root/root	usr/share/skype/skype.conf
+-rw-r--r--	root/root	usr/share/skype/skype.desktop
+drwxr-xr-x	root/root	usr/share/skype/sounds/
+-rw-r--r--	root/root	usr/share/skype/sounds/CallBusy.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallConnecting.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallFailed.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallHangup.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallHold.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallRemoteHangup.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallResume.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallRingingIn.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/CallRingingOut.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ChatIncoming.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ChatIncomingInitial.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ChatOutgoing.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ContactAdded.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ContactAuthRequest.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ContactOffline.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/ContactOnline.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/SkypeLogin.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/SkypeLogout.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/TransferComplete.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/TransferFailed.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/TransferRequest.wav
+-rw-r--r--	root/root	usr/share/skype/sounds/VoicemailReceived.wav

@@ -2,10 +2,10 @@
 # URL: http://tellico-project.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot ch
-# Depends on: qt, libxml2, libxslt, taglib, python
+# Depends on: qt, libxml2, libxslt, taglib, python, kdebase-workspace, poppler-qt
 
 name=tellico
-version=2.0
+version=2.2
 release=1
 source=(http://tellico-project.org/files/$name-$version.tar.bz2)
 

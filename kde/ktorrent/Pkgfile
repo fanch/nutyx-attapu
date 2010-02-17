@@ -2,18 +2,18 @@
 # URL: http://ktorrent.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, qca, xorg-libxft, kdebase-runtime, taglib, hicolor-icon-theme
+# Depends on: qca, xorg-libxft, kdebase-runtime, kdebase-workspace, taglib, hicolor-icon-theme, kdepimlibs
 
 name=ktorrent
-version=3.3
-release=2
+version=3.3.4
+release=1
 source=(http://ktorrent.org/downloads/$version/$name-$version.tar.bz2 \
 	$name.png  $name.desktop httpserver.patch)
 build() {
 	cd $name-$version
 	patch -Np0 -i $SRC/httpserver.patch	
 	cmake . -DCMAKE_BUILD_TYPE=Release \
-                -DCMAKE_INSTALL_PREFIX=/usr \
+                -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
                 -DCMAKE_SKIP_RPATH=ON \
                 -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
                 -DENABLE_MEDIAPLAYER_PLUGIN=false

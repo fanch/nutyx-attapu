@@ -1,0 +1,19 @@
+# Description: GUI pour ufw
+# URL: 
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: ufw, pygtk, gnome-python
+name=gufw
+version=9.10.2
+release=1
+group=
+source=(http://ftp.de.debian.org/debian/pool/main/g/gui-ufw/gui-ufw_9.10.2.orig.tar.gz)
+build() {
+cd gui-ufw-$version
+        mkdir -p $PKG/usr/share/{applications,$name,pixmaps} $PKG/usr/bin || return 1
+	cp -R * $PKG/usr/share/$name || return 1
+	sed -e 's|/usr/share/pixmaps/gufw|/usr/share/gufw/pixmaps|' -i $PKG/usr/share/gufw/model/Variable.py
+	ln -sf /usr/share/$name/$name.py $PKG/usr/bin/$name || return 1
+    	ln -s /usr/share/$name/pixmaps/icons/$name.png $PKG/usr/share/pixmaps/$name.png || return 1
+}
+
