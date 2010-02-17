@@ -2,7 +2,7 @@
 # URL:http://grass.itc.it/index.php
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: proj, gdal, fftw, swig, libpng, libtiff, sqlite3, python, tk
+# Depends on: proj, gdal, fftw, swig, libpng, libtiff, sqlite3, python, tk, mesa3d
 
 name=grass
 version=6.4.0RC5
