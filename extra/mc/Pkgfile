@@ -2,29 +2,43 @@
 # URL: http://www.ibiblio.org/mc/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gpm, slang
+# Depends on: p7zip, e2fsprogs, glib2, pcre, gpm, slang
 
 name=mc
 version=4.7.0.2
 release=1
-_name=29
-source=(http://www.midnight-commander.org/downloads/${_name})  
-#       (http://www.ibiblio.org/pub/Linux/utils/file/managers/$name/$name-$version.tar.gz)
-#	http://www.linuxfromscratch.org/patches/blfs/6.3/$name-$version-bash32-1.patch \
-#       http://www.linuxfriomscratch.org/patches/blfs/6.3/$name-$version-debian_fixes-1.patch \
-# )
+source=(http://www.midnight-commander.org/downloads/$name-$version.tar.bz2 \
+	mc-4.7.0.2_hotlist_syntax.patch)
 
 build() {
-	cd ${_name}
-#	patch -Np1 -i ../mc-4.6.1-bash32-1.patch
-#	patch -Np1 -i ../mc-4.6.1-debian_fixes-1.patch
-	./configure --prefix=/usr \
+	cd $name-$version
+	patch -p1 < ../mc-4.7.0.2_hotlist_syntax.patch
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
 		--mandir=/usr/share/man \
-		--infodir=/usr/share/info \
-		--with-glib12 \
-		--without-x \
-		--sysconfdir=/etc
+		--enable-background \
+		--enable-charset \
+		--enable-largefile \
+		--with-edit \
+		--with-gpm-mouse \
+		--with-mmap \
+		--with-samba \
+		--with-screen=slang \
+		--with-subshell \
+		--with-vfs \
+		--with-x \
+		--without-debug \
+		--without-gnome \
+		--without-included-gettext \
+		--libexecdir=/usr/lib
+
 	make
-	make DESTDIR=$PKG install	
-	chmod 1755 $PKG/usr/lib/mc/cons.saver
+	make DESTDIR=$PKG install
+	# Fix FS#15177
+        sed -i 's|op_has_zipinfo = 0|op_has_zipinfo = 1|' \
+            $PKG/usr/share/mc/extfs/uzip
+
+        # Fix FS#18312
+        rm $PKG/usr/share/mc/extfs/u7z
 }
