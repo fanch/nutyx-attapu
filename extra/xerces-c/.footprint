@@ -260,6 +260,8 @@ drwxr-xr-x	root/root	usr/include/xercesc/util/FileManagers/
 -rw-r--r--	root/root	usr/include/xercesc/util/FileManagers/PosixFileMgr.hpp
 -rw-r--r--	root/root	usr/include/xercesc/util/FlagJanitor.c
 -rw-r--r--	root/root	usr/include/xercesc/util/FlagJanitor.hpp
+-rw-r--r--	root/root	usr/include/xercesc/util/Hash2KeysSetOf.c
+-rw-r--r--	root/root	usr/include/xercesc/util/Hash2KeysSetOf.hpp
 -rw-r--r--	root/root	usr/include/xercesc/util/Hashers.hpp
 -rw-r--r--	root/root	usr/include/xercesc/util/HexBin.hpp
 -rw-r--r--	root/root	usr/include/xercesc/util/IOException.hpp
@@ -509,9 +511,9 @@ drwxr-xr-x	root/root	usr/include/xercesc/xinclude/
 -rw-r--r--	root/root	usr/include/xercesc/xinclude/XIncludeLocation.hpp
 -rw-r--r--	root/root	usr/include/xercesc/xinclude/XIncludeUtils.hpp
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libxerces-c-3.0.so
+-rwxr-xr-x	root/root	usr/lib/libxerces-c-3.1.so
 -rw-r--r--	root/root	usr/lib/libxerces-c.a
 -rwxr-xr-x	root/root	usr/lib/libxerces-c.la
-lrwxrwxrwx	root/root	usr/lib/libxerces-c.so -> libxerces-c-3.0.so
+lrwxrwxrwx	root/root	usr/lib/libxerces-c.so -> libxerces-c-3.1.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xerces-c.pc
