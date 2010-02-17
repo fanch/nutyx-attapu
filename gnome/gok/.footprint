@@ -20,7 +20,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/
 drwxr-xr-x	root/root	usr/share/gnome/help/gok/
 drwxr-xr-x	root/root	usr/share/gnome/help/gok/C/
 -rw-r--r--	root/root	usr/share/gnome/help/gok/C/gok.xml
--rwxr-xr-x	root/root	usr/share/gnome/help/gok/C/legal.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gok/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gok/
 drwxr-xr-x	root/root	usr/share/gok/C/
 -rw-r--r--	root/root	usr/share/gok/C/gok-controls.kbd
@@ -153,6 +153,17 @@ drwxr-xr-x	root/root	usr/share/gok/ca/
 -rw-r--r--	root/root	usr/share/gok/ca/quit.kbd
 -rw-r--r--	root/root	usr/share/gok/ca/text-operations.kbd
 -rw-r--r--	root/root	usr/share/gok/ca/valuator.kbd
+drwxr-xr-x	root/root	usr/share/gok/ca@valencia/
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/gok-controls.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/hide.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/launcher.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/main.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/mouse.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/move-resize.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/numberpad.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/quit.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/text-operations.kbd
+-rw-r--r--	root/root	usr/share/gok/ca@valencia/valuator.kbd
 drwxr-xr-x	root/root	usr/share/gok/cs/
 -rw-r--r--	root/root	usr/share/gok/cs/gok-controls.kbd
 -rw-r--r--	root/root	usr/share/gok/cs/hide.kbd
@@ -338,8 +349,6 @@ drwxr-xr-x	root/root	usr/share/gok/glade/
 -rw-r--r--	root/root	usr/share/gok/glade/gok.glade2
 -rw-r--r--	root/root	usr/share/gok/gok.rc
 -rw-r--r--	root/root	usr/share/gok/goklogo.png
--rw-r--r--	root/root	usr/share/gok/goksound1.wav
--rw-r--r--	root/root	usr/share/gok/goksound2.wav
 drwxr-xr-x	root/root	usr/share/gok/gu/
 -rw-r--r--	root/root	usr/share/gok/gu/gok-controls.kbd
 -rw-r--r--	root/root	usr/share/gok/gu/hide.kbd
@@ -900,6 +909,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gok/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/ch02.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/ch03.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/ch04.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-GokButton.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-arraylist.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-callbacks.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-command-common.html
@@ -917,6 +927,7 @@ drwxr-xr-x	root/root	usr/share/gtk-doc/html/gok/
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-data.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-editor.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-feedback.html
+-rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-gconf-keys.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-gconf.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-key.html
 -rw-r--r--	root/root	usr/share/gtk-doc/html/gok/gok-gok-keyboard.html
@@ -968,3 +979,8 @@ drwxr-xr-x	root/root	usr/share/omf/gok/
 -rw-r--r--	root/root	usr/share/omf/gok/gok-C.omf
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/gok.png
+drwxr-xr-x	root/root	usr/share/sounds/
+drwxr-xr-x	root/root	usr/share/sounds/freedesktop/
+drwxr-xr-x	root/root	usr/share/sounds/freedesktop/stereo/
+-rw-r--r--	root/root	usr/share/sounds/freedesktop/stereo/goksound1.wav
+-rw-r--r--	root/root	usr/share/sounds/freedesktop/stereo/goksound2.wav

@@ -6,9 +6,9 @@
 # Group: gnome/desktop
 
 name=gok
-version=2.26.0
+version=2.28.1
 release=1
-gnomever=2.26.3
+gnomever=2.28.2
 source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {
