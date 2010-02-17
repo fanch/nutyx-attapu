@@ -7,7 +7,7 @@ name=libpng
 version=1.2.39
 release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
-	http://www.linuxfromscratch.org/patches/blfs/svn/libpng-$version-apng-1.patch)
+	http://kiao.no-ip.info/NuTyX/files/libpng-$version-apng-1.patch)
 
 
 build() {
