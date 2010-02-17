@@ -7,17 +7,17 @@
 name=nvidia-96xx
 version=96.43.14
 release=1
-kernel=`uname -r`
+kernel=`uname -r|sed "s/-NuTyX//"`
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version-pkg1.run\
         )
 
 build() {
-        mkdir -p $PKG/lib/modules/$kernel/kernel/drivers/video
+        mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/video
         sh NVIDIA-Linux-x86-$version-pkg1.run --extract-only
         cd NVIDIA-Linux-x86-$version-pkg1/usr/src/nv
         ln -s Makefile.kbuild Makefile
         make SYSSRC=/usr/src/linux-$kernel module
-        install -m644 nvidia.ko $PKG/lib/modules/$kernel/kernel/drivers/video
+        install -m644 nvidia.ko $PKG/lib/modules/`uname -r`/kernel/drivers/video
         cd ../../
         mkdir -p $PKG/usr/{lib,lib/xorg/modules/{extensions,drivers},bin,share/applications,share/pixmaps}
         mkdir -p $PKG/usr/share/{man/man1,doc,licences/nvidia-71xx/}
