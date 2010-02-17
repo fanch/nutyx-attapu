@@ -2,7 +2,7 @@
 # URL: http://qgis.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: jasper, curl, qt, gsl, grass, python, pyqt, giflib, xerces-c, geos, python-numpy, gpsbabel, libgeotiff, netcdf, postgresql
+# Depends on: cmake, jasper, curl, qt, gsl, grass, python, pyqt, giflib, xerces-c, geos, python-numpy, gpsbabel, libgeotiff, netcdf, postgresql
  
 
 name=qgis
