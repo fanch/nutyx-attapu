@@ -1,0 +1,16 @@
+# Description: Une librairie pour le net
+# URL: http://www.libsdl.org/projects/SDL_net/
+# Maintainer: NuTyX core team
+# Packager: tux03 at tuxfamily dot org
+# Depends on: sdl, guile
+name=sdl_net
+version=1.2.7
+release=1
+source=(http://www.libsdl.org/projects/SDL_net/release/SDL_net-1.2.7.tar.gz)
+build() {
+cd SDL_net-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
