@@ -1,0 +1,33 @@
+# Description: Hunspell is the default spell checker of OpenOffice.org and Mozilla Firefox 3 & Thunderbird
+# URL: http://hunspell.sf.net
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: glibc, perl
+
+name=hyphen
+version=2.4
+release=1
+source=(http://downloads.sourceforge.net/hunspell/$name-$version.tar.gz )
+
+build() {
+	cd $name-$version
+  	./configure --prefix=/usr --disable-static
+  	make
+	make DESTDIR=$PKG install-libLTLIBRARIES
+  	make DESTDIR=$PKG install-binSCRIPTS
+  	make DESTDIR=$PKG install-includeHEADERS
+  
+  	# license
+  	install -D -m644 COPYING $PKG/usr/share/licenses/$name/LICENSE
+
+  	
+  	make DESTDIR=$PKG install-hyphDATA
+
+  	pushd $PKG/usr/share/hyphen/
+   	fr_FR_aliases="fr_FR fr_CA fr_BE"
+	for lang in $fr_FR_aliases; do
+        	ln -s hyph_fr_FR.dic hyph_$lang.dic
+   	done
+  	popd
+}
+
