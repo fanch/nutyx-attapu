@@ -1,0 +1,18 @@
+# Description: ""
+# URL: http://www.cabextract.org.uk/libmspack/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: glibc
+
+name=libmspack
+version=0.0.20060920alpha
+release=1
+source=(http://www.cabextract.org.uk/libmspack/$name-$version.tar.gz )
+
+build() {
+cd $name-$version
+        ./configure --prefix=/usr --disable-static
+        make
+        make DESTDIR=$PKG install
+}
+
