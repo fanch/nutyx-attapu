@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/java/
+-rw-r--r--	root/root	usr/share/java/hsqldb.jar
+drwxr-xr-x	root/root	usr/share/licenses/
+drwxr-xr-x	root/root	usr/share/licenses/hsqldb-java/
+-rw-r--r--	root/root	usr/share/licenses/hsqldb-java/hsqldb_lic.txt

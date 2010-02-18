@@ -1,0 +1,27 @@
+# Description: HSQLDB Java libraries
+# URL: http://hsqldb.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: jdk, unzip, ant
+
+name=hsqldb-java
+version=1.8.1.1
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/hsqldb/hsqldb_${version//./_}.zip  )
+
+build() {
+#  [ -z "${JAVA_HOME}" ] && . /etc/profile.d/openjdk6.sh
+#  [ -z "${ANT_HOME}" ] && . /etc/profile.d/apache-ant.sh
+
+  cd ../src/hsqldb/build
+
+  ant jar
+
+  mkdir -p $PKG/usr/share/java
+  install -m644 $SRC/hsqldb/lib/hsqldb.jar $PKG/usr/share/java/
+
+  mkdir -p $PKG/usr/share/licenses/$name
+  install -m644 $SRC/hsqldb/doc/hsqldb_lic.txt $PKG/usr/share/licenses/$name/
+
+}
+
