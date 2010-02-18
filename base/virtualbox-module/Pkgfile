@@ -2,14 +2,13 @@
 # URL: http://www.virtualbox.org
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=virtualbox-module
-version=3.1.2
-release=8
+version=3.1.4
+release=1
 _name=VirtualBox
-_kernel=`uname -r`
-_build=56127
+_kernel=`uname -r|sed "s/-NuTyX//"`
+_build=57640
 source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
 
 
@@ -18,11 +17,11 @@ build() {
 	sh "VirtualBox-${version}-${_build}-Linux_x86.run" --target "$SRC" --keep --noexec
 	tar xfj VirtualBox.tar.bz2
 	
-	mkdir -p $PKG/lib/modules/${_kernel}/kernel/drivers/misc/
+	mkdir -p $PKG/lib/modules/`uname -r`/kernel/drivers/misc/
 	cd src
 	make
 	install -D -m 0644 vboxdrv.ko \
-	$PKG/lib/modules/${_kernel}/kernel/drivers/misc/vboxdrv.ko
+	$PKG/lib/modules/`uname -r`/kernel/drivers/misc/vboxdrv.ko
 	install -D -m 0644 vboxnetflt.ko \
-	$PKG/lib/modules/${_kernel}/kernel/drivers/misc/vboxnetflt.ko
+	$PKG/lib/modules/`uname -r`/kernel/drivers/misc/vboxnetflt.ko
 }

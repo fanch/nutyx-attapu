@@ -5,8 +5,8 @@
 
 name=udev
 version=151
-release=2
-_lfs_release=20100126
+release=3
+_lfs_release=20100128
 source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
 http://www.linuxfromscratch.org/lfs/downloads/development/udev-config-${_lfs_release}.tar.bz2)
 build() {
@@ -19,8 +19,6 @@ ln -s /proc/self/fd/0 $PKG/lib/udev/devices/stdin
 ln -s /proc/self/fd/1 $PKG/lib/udev/devices/stdout
 ln -s /proc/self/fd/2 $PKG/lib/udev/devices/stderr
 ln -s /proc/kcore $PKG/lib/udev/devices/core
-
-sed -e 's/0640/0660/' extras/floppy/60-floppy.rules
 
 
 ./configure --prefix=/usr \
