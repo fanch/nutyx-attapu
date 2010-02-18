@@ -1,0 +1,16 @@
+# Description: Small, free, embeddable, source level Java interpreter with object based scripting language features written in Java
+# URL: http://www.beanshell.org/home.html
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: jdk
+
+name=beanshell
+version=2.0b4
+release=1
+source=(http://www.beanshell.org/bsh-$version.jar )
+
+build() {
+  install -m755 -d $PKG/usr/share/java/
+  install -D -m644 $SRC/bsh-$version.jar $PKG/usr/share/java/bsh.jar
+}
+
