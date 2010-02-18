@@ -83,6 +83,7 @@ lrwxrwxrwx	root/root	opt/VirtualBox/components/VBoxXPCOM.so -> ../VBoxXPCOM.so
 drwxr-xr-x	root/root	opt/VirtualBox/nls/
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_bg.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_ca.qm
+-rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_ca_VA.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_cs.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_da.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_de.qm
@@ -112,6 +113,7 @@ drwxr-xr-x	root/root	opt/VirtualBox/nls/
 -rw-r--r--	root/root	opt/VirtualBox/nls/VirtualBox_zh_TW.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_bg.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_ca.qm
+-rw-r--r--	root/root	opt/VirtualBox/nls/qt_ca_VA.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_cs.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_da.qm
 -rw-r--r--	root/root	opt/VirtualBox/nls/qt_de.qm
