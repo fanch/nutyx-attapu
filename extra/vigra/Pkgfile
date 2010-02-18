@@ -1,0 +1,24 @@
+# Description: Computer vision library
+# URL: http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libpng, libtiff, gcc-libs, sh
+
+name=vigra
+version=1.6.0
+release=1
+source=(http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/$name$version.tar.gz 
+        libpng-1.4.patch)
+
+build() {
+	cd $name$version
+        ./configure --prefix=/usr \
+		    --disable-static
+        make
+	make prefix=$PKG/usr install-exec
+	make prefix=$PKG/usr install-includes
+	make prefix=$PKG/usr/share install-docs
+
+	install -D -m644 LICENSE.txt $PKG/usr/share/licenses/$name/LICENSE
+}
+
