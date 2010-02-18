@@ -1,0 +1,34 @@
+# Description: a Mixed Integer Linear Programming (MILP) solver 
+# URL: http://lpsolve.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: glibc
+
+name=lpsolve
+_origname=lp_solve
+version=5.5.0.15
+release=1
+_mainver=5.5
+
+source=(http://downloads.sourceforge.net/project/lpsolve/lpsolve/5.5.0.15/lp_solve_5.5.0.15_source.tar.gz \
+        cflags.patch)
+
+build() {
+  cd ${_origname}_${_mainver}
+  patch -Np1 -i ../cflags.patch
+
+ # taken from Fedora spec
+ cd lpsolve55
+ sh -x ccc
+ rm bin/ux*/liblpsolve55.a
+ cd ../lp_solve
+ sh -x ccc
+ cd ..
+ 
+ # install
+ install -d $PKG/usr/{bin,lib,include/lpsolve}
+ install -m 755 lp_solve/bin/ux*/lp_solve $PKG/usr/bin/
+ install -m 755 lpsolve55/bin/ux*/liblpsolve55.so $PKG/usr/lib/
+ install -m 644 lp*.h $PKG/usr/include/lpsolve/
+}
+
