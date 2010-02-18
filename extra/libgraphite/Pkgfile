@@ -1,0 +1,19 @@
+# Description: SILGraphite - a "smart font" rendering engine - the libs and headers
+# URL: http://graphite.sil.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: gcc-libs
+
+name=libgraphite
+_name=silgraphite
+version=2.3.1
+release=1
+source=(http://downloads.sourceforge.net/project/silgraphite/silgraphite/2.3.1/silgraphite-2.3.1.tar.gz)
+
+build() {
+cd ${_name}-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
