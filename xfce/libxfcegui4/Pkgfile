@@ -1,13 +1,13 @@
-# Description: Interface graphique pour Xfce
+# Description: Librairie de l'interface graphique pour Xfce4
 # URL: http://www.xfce.org/projects/libraries/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: dbh, gtk, hicolor-icon-theme, libglade, libxfce4util, startup-notification, xfconf
-
+# Depends on: dbh, gtk+2, hicolor-icon-theme, libglade, libxfce4util, startup-notification, xfconf
+# makedepends : intltool, xorg
 name=libxfcegui4
-version=4.6.1
+version=4.6.3
 release=1
-source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2)
+source=(http://archive.xfce.org/src/xfce/$name/4.6/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
