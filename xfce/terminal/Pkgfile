@@ -5,7 +5,7 @@
 # Depends on: dbus-glib, exo, hicolor-icon-theme, startup-notification, vte
 
 name=terminal
-version=0.4.3
+version=0.4.4
 release=1
 source=(http://archive.xfce.org/src/apps/$name/${version%.*}/Terminal-$version.tar.bz2 )
 
