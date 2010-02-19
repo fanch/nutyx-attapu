@@ -1,0 +1,22 @@
+# Description: XML Security Library is a C library based on LibXML2
+# URL: http://www.aleksey.com/xmlsec/index.html
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libxml, ilibxslt, openssl, gnutls, nss
+
+name=xmlsec
+version=1.2.14
+release=2
+source=(http://www.aleksey.com/xmlsec/download/xmlsec1-$version.tar.gz )
+
+build() {
+	cd xmlsec1-$version
+        ./configure --prefix=/usr \
+		--enable-mscrypto \
+		--enable-aes
+        make
+        make DESTDIR=$PKG install
+	install -m755 -d $PKG/usr/share/licenses/$name
+	install -m644 COPYING $PKG/usr/share/licenses/$name/
+}
+
