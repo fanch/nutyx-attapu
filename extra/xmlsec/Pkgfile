@@ -2,7 +2,7 @@
 # URL: http://www.aleksey.com/xmlsec/index.html
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: libxml, ilibxslt, openssl, gnutls, nss
+# Depends on: libxml2, libxslt, gnutls, nss, libtasn1
 
 name=xmlsec
 version=1.2.14
