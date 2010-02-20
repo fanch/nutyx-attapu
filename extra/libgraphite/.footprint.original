@@ -1,8 +1,10 @@
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/graphite/
 -rw-r--r--	root/root	usr/include/graphite/FileFont.h
 -rw-r--r--	root/root	usr/include/graphite/Font.h
+-rw-r--r--	root/root	usr/include/graphite/FreetypeFont.h
 -rw-r--r--	root/root	usr/include/graphite/GrAppData.h
 -rw-r--r--	root/root	usr/include/graphite/GrClient.h
 -rw-r--r--	root/root	usr/include/graphite/GrCommon.h
@@ -25,11 +27,29 @@ drwxr-xr-x	root/root	usr/include/graphite/
 -rw-r--r--	root/root	usr/include/graphite/Segment.h
 -rw-r--r--	root/root	usr/include/graphite/SegmentAux.h
 -rw-r--r--	root/root	usr/include/graphite/SegmentPainter.h
+-rw-r--r--	root/root	usr/include/graphite/XftGrFont.h
 drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libgraphite-ft.a
+-rwxr-xr-x	root/root	usr/lib/libgraphite-ft.la
+lrwxrwxrwx	root/root	usr/lib/libgraphite-ft.so -> libgraphite-ft.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgraphite-ft.so.0 -> libgraphite-ft.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libgraphite-ft.so.0.0.0
+-rw-r--r--	root/root	usr/lib/libgraphite-xft.a
+-rwxr-xr-x	root/root	usr/lib/libgraphite-xft.la
+lrwxrwxrwx	root/root	usr/lib/libgraphite-xft.so -> libgraphite-xft.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgraphite-xft.so.0 -> libgraphite-xft.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libgraphite-xft.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libgraphite.a
 -rwxr-xr-x	root/root	usr/lib/libgraphite.la
 lrwxrwxrwx	root/root	usr/lib/libgraphite.so -> libgraphite.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libgraphite.so.3 -> libgraphite.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libgraphite.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/pango/
+drwxr-xr-x	root/root	usr/lib/pango/1.6.0/
+drwxr-xr-x	root/root	usr/lib/pango/1.6.0/modules/
+drwxr-xr-x	root/root	usr/lib/pango/1.6.0/modules/graphite/
+-rw-r--r--	root/root	usr/lib/pango/1.6.0/modules/graphite/pango-graphite.a
+-rwxr-xr-x	root/root	usr/lib/pango/1.6.0/modules/graphite/pango-graphite.la
+-rwxr-xr-x	root/root	usr/lib/pango/1.6.0/modules/graphite/pango-graphite.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/silgraphite.pc
