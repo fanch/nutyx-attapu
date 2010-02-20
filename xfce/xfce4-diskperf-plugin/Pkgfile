@@ -1,0 +1,21 @@
+# Description:  Moniteur DD pour le panel
+# URL: http://goodies.xfce.org/
+# Maintainer: NuTyX core team
+# Packager: tyrry33 at gmail dot com
+# Depends on: xfce4-panel
+
+name=xfce4-diskperf-plugin
+version=2.2.0
+release=1
+source=(http://goodies.xfce.org/releases/$name/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}

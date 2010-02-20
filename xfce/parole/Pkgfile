@@ -1,0 +1,21 @@
+# Description:  Clone totem pour xfce
+# URL: http://goodies.xfce.org/projects/applications/parole
+# Maintainer: NuTyX core team
+# Packager: tyrry33 at gmail dot com
+# Depends on: libxfce4util, libxfcegui4, gst-plugins-base, libnotify, taglib
+
+name=parole
+version=0.2.0.2
+release=1
+source=(http://archive.xfce.org/src/apps/$name/0.2/$name-$version.tar.bz2)
+
+build() {
+cd $name-$version
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/xfce4 \
+	--localstatedir=/var \
+	--disable-static
+	make
+	make DESTDIR=$PKG install
+}
