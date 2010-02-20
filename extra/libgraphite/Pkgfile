@@ -2,7 +2,7 @@
 # URL: http://graphite.sil.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: gcc-libs
+# Depends on: gcc-libs, freetype, xorg-libxft, pango, pcre
 
 name=libgraphite
 _name=silgraphite
