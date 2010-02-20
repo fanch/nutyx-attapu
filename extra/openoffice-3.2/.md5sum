@@ -1,0 +1,15 @@
+12560444c8a1d2eec4b68fe80472f1c9  OOo_3.2.0_src_binfilter.tar.bz2
+2094d07c26d2ffcf22e131658a531c67  OOo_3.2.0_src_core.tar.bz2
+586d4c9607a992169820fcccb1f5cc00  OOo_3.2.0_src_extensions.tar.bz2
+561ab60f79b0a25e90b68779227ef707  OOo_3.2.0_src_l10n.tar.bz2
+f6a738e87adf98ee4a14193f982c97e1  OOo_3.2.0_src_system.tar.bz2
+aee18235b0db7a26340d038a97c44ba6  OOo_3.2.0_src_testautomation.tar.bz2
+c8e82b4d2324fe62ad8c6e29213e80b5  buildfix-gcc44.diff
+863a3ab2c17a3d11b8fa3ec321986366  buildfix_FormulaMissingHeader.diff
+0cd6f3525939d3ef6e5a30ad30c25d27  buildfix_system_db48.diff
+71f136a31e296a04ab68932a31dd533e  default-no-startup-wizard.diff
+6c596129fb48316226ce3adfd3a4c86d  default-system-fpicker.diff
+40ca15a651e78d9cf44722046552d769  openoffice.profile
+1dc7480a04f572ad136d35923a2af66d  soffice-detect-mozilla-certificates.diff
+63209bbc64c901ef105455bda0282f45  startcenter.desktop
+e3a0b76dcd876f3d721ee7183729153d  unowinreg.dll

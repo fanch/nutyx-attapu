@@ -50,24 +50,28 @@ drwxr-xr-x	root/root	usr/include/xmlsec1/xmlsec/private/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libxmlsec1-gnutls.a
 -rwxr-xr-x	root/root	usr/lib/libxmlsec1-gnutls.la
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1-gnutls.so -> libxmlsec1-gnutls.so.1.2.14
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1-gnutls.so.1 -> libxmlsec1-gnutls.so.1.2.14
--rwxr-xr-x	root/root	usr/lib/libxmlsec1-gnutls.so.1.2.14
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1-gnutls.so -> libxmlsec1-gnutls.so.1.2.12
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1-gnutls.so.1 -> libxmlsec1-gnutls.so.1.2.12
+-rwxr-xr-x	root/root	usr/lib/libxmlsec1-gnutls.so.1.2.12
 -rw-r--r--	root/root	usr/lib/libxmlsec1-openssl.a
 -rwxr-xr-x	root/root	usr/lib/libxmlsec1-openssl.la
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1-openssl.so -> libxmlsec1-openssl.so.1.2.14
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1-openssl.so.1 -> libxmlsec1-openssl.so.1.2.14
--rwxr-xr-x	root/root	usr/lib/libxmlsec1-openssl.so.1.2.14
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1-openssl.so -> libxmlsec1-openssl.so.1.2.12
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1-openssl.so.1 -> libxmlsec1-openssl.so.1.2.12
+-rwxr-xr-x	root/root	usr/lib/libxmlsec1-openssl.so.1.2.12
 -rw-r--r--	root/root	usr/lib/libxmlsec1.a
 -rwxr-xr-x	root/root	usr/lib/libxmlsec1.la
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1.so -> libxmlsec1.so.1.2.14
-lrwxrwxrwx	root/root	usr/lib/libxmlsec1.so.1 -> libxmlsec1.so.1.2.14
--rwxr-xr-x	root/root	usr/lib/libxmlsec1.so.1.2.14
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1.so -> libxmlsec1.so.1.2.12
+lrwxrwxrwx	root/root	usr/lib/libxmlsec1.so.1 -> libxmlsec1.so.1.2.12
+-rwxr-xr-x	root/root	usr/lib/libxmlsec1.so.1.2.12
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xmlsec1-gnutls.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xmlsec1-openssl.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xmlsec1.pc
 -rw-r--r--	root/root	usr/lib/xmlsec1Conf.sh
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/xmlsec1-config.1
+-rw-r--r--	root/root	usr/man/man1/xmlsec1.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/xmlsec1.m4
@@ -112,7 +116,7 @@ drwxr-xr-x	root/root	usr/share/doc/xmlsec1/api/images/
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-gnutls-ref.html
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-gnutls.sgml
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-index.html
--rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-index.sgml
+-rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-index.sgml (EMPTY)
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-io.html
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-keyinfo.html
 -rw-r--r--	root/root	usr/share/doc/xmlsec1/api/xmlsec-keys.html
@@ -221,7 +225,3 @@ drwxr-xr-x	root/root	usr/share/doc/xmlsec1/images/
 drwxr-xr-x	root/root	usr/share/licenses/
 drwxr-xr-x	root/root	usr/share/licenses/xmlsec/
 -rw-r--r--	root/root	usr/share/licenses/xmlsec/COPYING
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/xmlsec1-config.1.gz
--rw-r--r--	root/root	usr/share/man/man1/xmlsec1.1.gz
