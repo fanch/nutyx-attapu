@@ -1,0 +1,19 @@
+# Description: Common Initialization Profile for Mozilla.org products
+# URL: http://www.mozilla.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: 
+
+name=mozilla-common
+version=1.4
+release=1
+
+install=mozilla-common.install
+
+source=( mozilla-common.sh mozilla-common.csh)
+
+build() {
+  install -m755 -d $PKG/etc/profile.d
+  install -m755 mozilla-common.{,c}sh $PKG/etc/profile.d/
+}
+
