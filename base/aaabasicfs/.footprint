@@ -170,6 +170,8 @@ lrwxrwxrwx	root/root	root/useradd -> ../etc/default/useradd
 lrwxrwxrwx	root/root	root/xorg.conf -> ../etc/X11/xorg.conf
 drwxr-xr-x	root/root	sbin/
 drwxr-xr-x	root/root	srv/
+drwxr-xr-x	root/root	srv/NuTyX/
+drwxr-xr-x	root/root	srv/NuTyX/locale/
 drwxrwxrwt	root/root	srv/sources/
 drwxr-xr-x	root/root	sys/
 drwxrwxrwt	root/root	tmp/
@@ -209,6 +211,7 @@ lrwxrwxrwx	root/root	usr/man -> share/man
 drwxr-xr-x	root/root	usr/ports/
 drwxr-xr-x	root/root	usr/sbin/
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/info/
 drwxr-xr-x	root/root	usr/share/locale/
