@@ -1,0 +1,29 @@
+# Description: Avant Window Navigator, a dock-like navigation bar for the X desktop.
+# URL: http://wiki.awn-project.org/
+# Maintainer: geantbrun at gmail dot com
+# Packager: geantbrun
+# Depends on: pygtk intltool libglade libwnck pyxdg dbus-glib xorg-libxcomposite python gtk 
+
+name=avant-window-navigator
+version=0.3.2.1
+release=1
+source=(http://launchpad.net/awn/0.2/0.3.2.1/+download/avant-window-navigator-0.3.2.1.tar.gz)
+
+build() {
+	cd $name-$version
+
+		./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--disable-dependency-tracking \
+		--disable-static \
+		--disable-vala \
+		--without-gconf \
+		--with-desktop=agnostic
+
+	make
+	make DESTDIR=$PKG install
+	
+}
+
+
