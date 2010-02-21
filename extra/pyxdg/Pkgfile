@@ -1,0 +1,16 @@
+# Description: Python library to access freedesktop.org standards.
+# URL: http://freedesktop.org/wiki/Software/pyxdg
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: python
+
+name=pyxdg
+version=0.19
+release=1
+source=(http://people.freedesktop.org/~lanius/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	python setup.py install --prefix=/usr --root=$PKG
+	rm $PKG/usr/lib/python2.6/site-packages/pyxdg-$version-py2.6.egg-info
+}
