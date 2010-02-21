@@ -1,0 +1,20 @@
+# Description: outils pour transparence fenetres
+# URL: http://www.forchheimer.se/transset-df/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: xbindkeys xorg-xcompmgr
+
+
+
+name=transset-df
+version=6
+release=1
+source=(http://www.forchheimer.se/transset-df/transset-df-6.tar.gz)
+
+build() {
+	cd $name-$version
+	make
+	install -m 0755 -D -s $name $PKG/usr/bin/transset
+}
+
+
