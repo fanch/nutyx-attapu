@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=doxygen
-version=1.6.2
+version=1.6.3
 release=1
 source=(http://ftp.stack.nl/pub/users/dimitri/$name-$version.src.tar.gz)
 build() {
