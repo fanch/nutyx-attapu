@@ -29,6 +29,8 @@ lrwxrwxrwx	root/root	usr/lib/libquicktime.so.0 -> libquicktime.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/libquicktime/
 -rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_audiocodec.la
 -rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_audiocodec.so
+-rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_ffmpeg.la
+-rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_ffmpeg.so
 -rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_lame.la
 -rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_lame.so
 -rwxr-xr-x	root/root	usr/lib/libquicktime/lqt_mjpeg.la
