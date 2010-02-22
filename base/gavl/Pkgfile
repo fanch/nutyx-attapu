@@ -1,0 +1,17 @@
+# Description: Librairie pour le support multimedia
+# URL: http://gmerlin.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=gavl
+version=1.1.1
+release=1
+source=(http://heanet.dl.sourceforge.net/sourceforge/gmerlin/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr\
+		--without-doxygen
+	make
+	make DESTDIR=$PKG install
+}
