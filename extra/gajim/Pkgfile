@@ -1,11 +1,11 @@
 # Description: Client de messagerie instantanée Jabber
 # URL: http://www.gajim.org/
 # Maintainer: L'équipe de Gajim
-# Packager: Lukc (xmpp:lukc@jabber.org)
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: libglade, pygtk, gtkspell, desktop-file-utils, pyopenssl, dbus-python
 
 name=gajim
-version=0.13.1
+version=0.13.2
 release=1
 source=(http://www.gajim.org/downloads/0.13/$name-$version.tar.bz2)
 
