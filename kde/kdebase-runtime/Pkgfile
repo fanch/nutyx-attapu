@@ -1,7 +1,7 @@
 # Description: Programme de base pour KDE4
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
-# packager: lesibel at free dot fr
+# Packager: lesibel at free dot fr
 # Depends on: soprano, shared-mime-info, oxygen-icons, kdelibs, hal, libvorbis, libogg, audiofile, alsa-utils, xine-lib, samba3, rarian, openslp, phonon
 
 name=kdebase-runtime
