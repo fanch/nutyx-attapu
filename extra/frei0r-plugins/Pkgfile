@@ -1,0 +1,20 @@
+# Description: Plugins minimaliste pour sources vidéos et filtres
+# URL: http://www.piksel.org/frei0r
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gavl
+
+name=frei0r-plugins
+version=1.1.22
+release=1
+source=(http://propirate.net/frei0r/$name-$version.tar.gz)
+
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info
+	make
+	make DESTDIR=$PKG install
+}
