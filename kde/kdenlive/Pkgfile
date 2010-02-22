@@ -5,7 +5,7 @@
 # Depends on: kdelibs, mlt, liba52, sdl_image, dvdauthor, dvgrab
 
 name=kdenlive
-version=0.7.6
+version=0.7.7
 release=1
 source=(http://heanet.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
