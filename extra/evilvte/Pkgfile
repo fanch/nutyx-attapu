@@ -1,0 +1,17 @@
+# Description: Emulateur de terminal basé sur vte
+# URL: http://www.calno.com/evilvte/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: vte
+
+name=evilvte
+version=0.4.5
+release=1
+source=(http://www.calno.com/evilvte/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
