@@ -54,18 +54,19 @@ drwxr-xr-x	root/root	usr/include/mlt/framework/
 -rw-r--r--	root/root	usr/include/mlt/framework/mlt_transition.h
 -rw-r--r--	root/root	usr/include/mlt/framework/mlt_types.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libmlt++.so -> libmlt++.so.0.4.10
--rwxr-xr-x	root/root	usr/lib/libmlt++.so.0.4.10
-lrwxrwxrwx	root/root	usr/lib/libmlt++.so.3 -> libmlt++.so.0.4.10
-lrwxrwxrwx	root/root	usr/lib/libmlt.so -> libmlt.so.0.4.10
--rwxr-xr-x	root/root	usr/lib/libmlt.so.0.4.10
-lrwxrwxrwx	root/root	usr/lib/libmlt.so.2 -> libmlt.so.0.4.10
+lrwxrwxrwx	root/root	usr/lib/libmlt++.so -> libmlt++.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libmlt++.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libmlt++.so.3 -> libmlt++.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libmlt.so -> libmlt.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libmlt.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libmlt.so.2 -> libmlt.so.0.5.0
 drwxr-xr-x	root/root	usr/lib/mlt/
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltavformat.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltcore.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltdgraft.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltdv.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmlteffectv.so
+-rwxr-xr-x	root/root	usr/lib/mlt/libmltfrei0r.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltgtk2.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltkdenlive.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltkino.so
@@ -77,6 +78,7 @@ drwxr-xr-x	root/root	usr/lib/mlt/
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltqimage.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltresample.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltsdl.so
+-rwxr-xr-x	root/root	usr/lib/mlt/libmltsox.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltvmfx.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltvorbis.so
 -rwxr-xr-x	root/root	usr/lib/mlt/libmltxine.so
@@ -102,6 +104,8 @@ drwxr-xr-x	root/root	usr/share/mlt/feeds/PAL/
 -rw-r--r--	root/root	usr/share/mlt/feeds/PAL/etv.properties
 -rw-r--r--	root/root	usr/share/mlt/feeds/PAL/example.properties
 -rw-r--r--	root/root	usr/share/mlt/feeds/PAL/obscure.properties
+drwxr-xr-x	root/root	usr/share/mlt/frei0r/
+-rw-r--r--	root/root	usr/share/mlt/frei0r/blacklist.txt
 drwxr-xr-x	root/root	usr/share/mlt/lumas/
 drwxr-xr-x	root/root	usr/share/mlt/lumas/NTSC/
 -rw-r--r--	root/root	usr/share/mlt/lumas/NTSC/luma01.pgm
@@ -170,13 +174,21 @@ drwxr-xr-x	root/root	usr/share/mlt/oldfilm/
 -rw-r--r--	root/root	usr/share/mlt/oldfilm/vignette.svg
 drwxr-xr-x	root/root	usr/share/mlt/profiles/
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080i_50
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080i_5994
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080i_60
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080p_2398
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080p_24
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080p_25
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080p_2997
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_1080p_30
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_2398
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_24
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_25
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_2997
 -rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_30
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_50
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_5994
+-rw-r--r--	root/root	usr/share/mlt/profiles/atsc_720p_60
 -rw-r--r--	root/root	usr/share/mlt/profiles/cif_15
 -rw-r--r--	root/root	usr/share/mlt/profiles/cif_ntsc
 -rw-r--r--	root/root	usr/share/mlt/profiles/cif_pal
@@ -202,6 +214,7 @@ drwxr-xr-x	root/root	usr/share/mlt/profiles/
 -rw-r--r--	root/root	usr/share/mlt/profiles/quarter_ntsc_wide
 -rw-r--r--	root/root	usr/share/mlt/profiles/quarter_pal
 -rw-r--r--	root/root	usr/share/mlt/profiles/quarter_pal_wide
+-rw-r--r--	root/root	usr/share/mlt/profiles/sdi_486i_5994
 -rw-r--r--	root/root	usr/share/mlt/profiles/square_ntsc
 -rw-r--r--	root/root	usr/share/mlt/profiles/square_ntsc_wide
 -rw-r--r--	root/root	usr/share/mlt/profiles/square_pal
