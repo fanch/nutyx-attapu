@@ -32,10 +32,10 @@ drwxr-xr-x	root/root	usr/share/slim/themes/default/
 -rw-r--r--	root/root	usr/share/slim/themes/default/background.jpg
 -rw-r--r--	root/root	usr/share/slim/themes/default/panel.png
 -rw-r--r--	root/root	usr/share/slim/themes/default/slim.theme
-drwxr-xr-x	install/install	usr/share/slim/themes/slim-nutyx/
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/COPYING
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/COPYRIGHT.background
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/COPYRIGHT.panel
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/background.png
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/panel.png
--rw-r--r--	install/install	usr/share/slim/themes/slim-nutyx/slim.theme
+drwxr-xr-x	root/root	usr/share/slim/themes/slim-nutyx/
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/COPYING
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/COPYRIGHT.background
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/COPYRIGHT.panel
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/background.png
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/panel.png
+-rw-r--r--	root/root	usr/share/slim/themes/slim-nutyx/slim.theme
