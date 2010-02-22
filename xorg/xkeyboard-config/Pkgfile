@@ -1,6 +1,7 @@
 # Description: X keyboard configuration database
 # URL: http://www.freedesktop.org/wiki/Software_2fXKeyboardConfig
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-xkbcomp, intltool
 
 name=xkeyboard-config

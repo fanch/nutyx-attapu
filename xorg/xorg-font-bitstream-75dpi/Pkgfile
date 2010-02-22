@@ -1,6 +1,7 @@
 # Description: xorg font font-bitstream-75dpi
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: tilman at crux dot nu
 # Depends on: xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale
 
 name=xorg-font-bitstream-75dpi

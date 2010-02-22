@@ -1,6 +1,7 @@
 # Description: xorg proto compositeproto
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: tilman at crux dot nu
 
 name=xorg-compositeproto
 version=0.4
