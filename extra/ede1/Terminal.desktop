@@ -1,0 +1,11 @@
+# EFLTK INI Version 2.000300
+
+  [Desktop Entry]
+    X=32
+    Exec=/usr/bin/evilvte
+    Icon=usr/share/pixmaps/evilvte.png
+    Name[fr_CH]=Terminal
+    Name=Terminal
+    Y=208
+
+

@@ -1,0 +1,96 @@
+# Description: Equinox Desktop Environment, interface graphique minimale
+# URL:         http://equinox-project.org
+# Maintainer:  NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg, hal, efltk, fox, xfe, evilvte, shared-mime-info, startup-notification, slim
+
+name=ede1
+version=1.2
+release=1
+source=(http://sourceforge.net/projects/ede/files/1.2/ede-$version.tar.gz\
+	Terminal.desktop RootWallPaper.png  Editor.desktop\
+	WallPaper.jpg FileManager.desktop startede ede.conf \
+	logoutdialog.cpp)
+build()
+{
+	cd ede
+	cp ../logoutdialog.cpp eworkpanel/
+	sed -i "s/mkdir/mkdir\ -p/" mkinstalldirs
+#         sed -i "s/Fl_Combo_Box:://" efltk/Fl_Combo_Box.h
+#         sed -i "s/\$(EFLTK_BINDIR/LD_LIBRARY_PATH=\$(EFLTK_LIBDIR)\ \$(EFLTK_BINDIR/" test/Makefile
+
+	sed -i "s/einstaller/epkgman/" eworkpanel/menu.h
+	sed -i "s@Install\ New\ Software@Gestion des paquets@" eworkpanel/menu.h
+	sed -i "s@Menu\ Editor@Editeur\ de\ menus@" eworkpanel/menu.h
+	sed -i "s@Control\ Panel@Centre\ de\ configuration@" eworkpanel/menu.h
+	sed -i "s@Programs@Programmes@" eworkpanel/menu.h
+	sed -i "s@User@Utilisateur@" eworkpanel/menu.h
+	sed -i "s@About@A\ propos@" eworkpanel/menu.h
+	sed -i "s@Panel@Gestion@" eworkpanel/menu.h
+	sed -i "s@Lock@Verrouiller@" eworkpanel/menu.h
+	sed -i "s@Favourites@Favoris@" eworkpanel/menu.h
+	sed -i "s@Find@Recherche@" eworkpanel/menu.h
+	sed -i "s@Help@Aide@" eworkpanel/menu.h
+	sed -i "s@Run@Lancer\ une\ commande@" eworkpanel/menu.h
+	sed -i "s@Quick\ Browser@Navigateur\ rapide@" eworkpanel/menu.h
+	sed -i "s@Logout@Quitter@" eworkpanel/menu.h
+	sed -i "s@Utilisateur\ Programmes@Programmes\ utilisateur@" eworkpanel/menu.h
+	# Adjust the mime data
+	sed -i "s/enotepad/xfw/g" datas/mime.conf
+	sed -i "s/mozilla/firefox/g" datas/mime.conf
+
+	# We don't want einstaller
+	sed -i "/einstaller/d" Makefile
+	sed -i "s/einstaller/epkgman/" econtrol/econtrol.cpp
+         ./configure --prefix=/usr
+	make
+	install -d $PKG/usr/bin
+	install -d $PKG/root
+	make prefix=$PKG/usr  LOCALEDIR=$PKG/usr/share/locale install
+	cp ../*.desktop $PKG/usr/share/ede/.ede/desktop/
+	mv ../WallPaper.jpg $PKG/usr/share/ede/.ede/
+	mv ../RootWallPaper.png $PKG/usr/share/ede/.ede/
+	mv ../startede $PKG/usr/bin/startede
+	chmod +x $PKG/usr/bin/startede
+	mv ../ede.conf $PKG/usr/share/ede/.ede/ede.conf
+	sed -i "s/ooffice/soffice/" $PKG/usr/share/ede/programs/Applications/ooffice.desktop
+	sed -i "s/enotepad/xfw/" $PKG/usr/share/ede/programs/Applications/notepad.desktop
+	sed -i "s/lyx/links\ -g/" $PKG/usr/share/ede/programs/Applications/lyx.desktop
+	sed -i "s/Lyx/Links/" $PKG/usr/share/ede/programs/Applications/lyx.desktop
+	mv $PKG/usr/share/ede/programs/Applications/lyx.desktop \
+	$PKG/usr/share/ede/programs/Internet/links.desktop
+	sed -i "s/ecalc/calculator/" $PKG/usr/share/ede/programs/Utilities/calc.desktop
+	cp ../FileManager.desktop $PKG/usr/share/ede/programs/Utilities/filemanager.desktop
+	sed -i "s/mozilla/firefox/" $PKG/usr/share/ede/programs/Internet/Mozilla.desktop
+	sed -i "s/firefox.png/mozilla.png/" $PKG/usr/share/ede/programs/Internet/Mozilla.desktop
+	rm $PKG/usr/share/ede/programs/Internet/lynx.desktop
+	for i in Kterm.desktop UNIX-regular.desktop UNIX.desktop Vnterm.desktop Eterm.desktop
+	do 
+		rm $PKG/usr/share/ede/programs/System/$i
+	done
+	for i in abiword.desktop Emacs.desktop Vim.desktop WordPerfect.desktop Xemacs.desktop ooffice.desktop
+	do
+		rm $PKG/usr/share/ede/programs/Applications/$i
+	done
+	for i in cooledit.desktop xwpe.desktop xxgdb.desktop
+	do
+		rm $PKG/usr/share/ede/programs/Development/$i
+	done
+	rm -rf $PKG/usr/share/ede/programs/Games
+	for i in acroread.desktop gv.desktop xpdf.desktop GIMP.desktop xsane.desktop xdvi.desktop
+	do
+		rm $PKG/usr/share/ede/programs/Graphics/$i
+	done
+	for i in Mozilla.desktop links.desktop Netscape.desktop postoffice.desktop dialup.desktop Opera.desktop
+	do
+		rm $PKG/usr/share/ede/programs/Internet/$i
+	done
+	for i in alsaplayer.desktop ecdplayer.desktop x11amp.desktop mplayer.desktop xmms.desktop realplayer.desktop
+	do 
+		rm $PKG/usr/share/ede/programs/Multimedia/$i
+	done
+	rm $PKG/usr/share/ede/.ede/desktop/Terminal.desktop
+	rm $PKG/usr/share/ede/programs/System/rxvt.desktop
+	cp ../Terminal.desktop $PKG/usr/share/ede/programs/System/Terminal.desktop
+
+}

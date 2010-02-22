@@ -1,0 +1,49 @@
+#!/bin/sh
+# $Id: $
+
+PREFIX=/usr
+XSSAVER=`which xscreensaver 2> /dev/null`
+XSETROOT=`which xsetroot 2> /dev/null`
+
+userresources=$HOME/.Xdefaults
+sysresources=/usr/X11R6/lib/X11/xinit/.Xresources
+
+if [ -f $sysresources ]; then
+    xrdb -merge $sysresources
+fi
+
+if [ -f $userresources ]; then
+    xrdb -merge $userresources
+fi
+
+PATH=$PATH:$PREFIX:$PREFIX/bin
+export PATH
+
+if [ -x $HOME/.ede ]; then
+    echo "EDE home dir exists, ok."
+else 
+    echo "Default EDE home dir for user $HOME does not exist. Creating one..."    
+    cp -R $PREFIX/share/ede/.ede $HOME
+fi
+
+# If we have xsetroot than script shoult run it
+if [ "$XSETROOT" ]; then
+	$XSETROOT -solid black
+fi
+
+# Test if XScreenSaver is somewhere in PATH, if not - don't start it
+if [ "$XSSAVER" ]; then
+	xscreensaver -nosplash &
+fi
+	if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+		eval `dbus-launch --sh-syntax --exit-with-session`
+		export DBUS_SESSION_BUS_ADDRESS
+	fi
+if [[ "$EUID" == 0 ]] ; then
+	sed -i "s@Wallpaper=/usr/share/ede/.ede/WallPaper.jpg@Wallpaper=$HOME/.ede/RootWallPaper.png@" $HOME/.ede/ede.conf
+fi
+
+exec edewm &
+exec eiconman &    
+etip &    
+exec eworkpanel

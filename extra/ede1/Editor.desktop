@@ -1,0 +1,10 @@
+# EFLTK INI Version 2.000300
+
+  [Desktop Entry]
+    X=32
+    Exec=/usr/bin/xfw
+    Icon=/usr/share/pixmaps/xfw.png
+    Name[fr_CH]=Text Editor
+    Name=Text Editor
+    Y=112
+
