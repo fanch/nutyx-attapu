@@ -1,0 +1,35 @@
+# Description: Démon pour la gestion du matériel dans l'espace utilisateur
+# URL: http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: glib, usbutils, gobject-introspection, gperf, acl, pciutils
+
+name=gudev
+version=151
+release=1
+_lfs_release=20100128
+source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/udev-$version.tar.bz2)
+build() {
+
+cd udev-$version
+
+install -dv $PKG/lib/{firmware,udev/devices/{pts,shm}}
+
+./configure --prefix=/usr \
+    --sysconfdir=/etc --sbindir=/sbin \
+    --with-rootlibdir=/lib --libexecdir=/lib/udev \
+    --docdir=/usr/share/doc/udev-$version \
+	--with-pci-ids-path=/usr/share/pci.ids.gz
+
+make 
+
+make install DESTDIR=$PKG mandir="/usr/share/man"
+
+# Remove allready included in udev
+rm -r $PKG/{lib,sbin,etc}
+rm -r $PKG/usr/share/man
+rm $PKG/usr/{lib,include}/libudev.*
+rm $PKG/usr/lib/pkgconfig/libudev.pc
+rm $PKG/usr/share/pkgconfig/udev.pc
+rm -r $PKG/usr/share/gtk-doc/html/libudev
+}
