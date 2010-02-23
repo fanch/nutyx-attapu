@@ -5,9 +5,9 @@
 # Depends on: nspr, sqlite3
 
 name=nss
-version=3.12.4
+version=3.12.5
 release=1
-source=(ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_12_4_RTM/src/$name-$version.tar.gz \
+source=(ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_12_5_RTM/src/$name-$version.tar.gz \
         nss-config.in)
 
 build() {
@@ -53,9 +53,10 @@ includedir=/usr/include/nss
 
 Name: NSS
 Description: Mozilla Network Security Services
-Version: $version
+Version: VERSION
 Requires: nspr >= 4.7.4
 Libs: -L/usr/lib -lnss3 -lnssutil3 -lsmime3 -lssl3 -lsoftokn3
 Cflags: -I/usr/include/nss
 EOF
+sed -i "s/VERSION/$version/" $PKG/usr/lib/pkgconfig/nss.pc
 }
