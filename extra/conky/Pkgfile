@@ -2,10 +2,10 @@
 # URL: http://conky.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: curl, glib
+# Depends on: xorg, lua, curl, glib
 
 name=conky
-version=1.7.0
+version=1.7.2
 release=1
 source=(http://freefr.dl.sourceforge.net/sourceforge/conky/$name-$version.tar.gz)
 
