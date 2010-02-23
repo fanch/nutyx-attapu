@@ -1,7 +1,7 @@
 # Description: Pilote pour les tablettes digitales Aiptek
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
-# Packager : thierrn1 at hispeed dot ch
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server
 
 name=xorg-xf86-input-acecad

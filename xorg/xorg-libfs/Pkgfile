@@ -1,6 +1,7 @@
 # Description: X Font Service client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: tilman at crux dot nu
 # Depends on: xorg-xproto, xorg-fontsproto, xorg-xtrans
 
 name=xorg-libfs

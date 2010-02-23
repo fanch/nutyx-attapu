@@ -1,6 +1,7 @@
 # Description: xorg lib libXfont
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: tilman at crux dot nu
 # Depends on: freetype, xorg-xproto, xorg-xtrans, xorg-fontsproto, xorg-libfontenc
 
 name=xorg-libxfont

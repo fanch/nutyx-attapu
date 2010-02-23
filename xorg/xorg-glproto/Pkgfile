@@ -1,5 +1,6 @@
 # Description: xorg proto glproto
 # URL: http://xorg.freedesktop.org
+# Packager: tilman at crux dot nu
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 
 name=xorg-glproto

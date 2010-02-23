@@ -1,7 +1,7 @@
 # Description: xorg driver xf86-input-acecad
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
-# Packager : lesibel at free dot fr
+# Packager: lesibel at free dot fr
 # Depends on: xorg-server
 
 name=xorg-xf86-input-acecad
