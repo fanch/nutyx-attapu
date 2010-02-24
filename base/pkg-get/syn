@@ -34,7 +34,7 @@ if [ ! -L /depot ]; then
 else
 	for i in `cat /etc/pkg-get.conf |grep -v ^#|grep http|cut -d "|" -f 1|cut -d" " -f2|cut -d"/" -f4`
 	do
-		rsync -avuz --delete-before rsync://nutyx.meticul.eu/nutyx/2009.1/i686/$i/ $Depot/$i/
+		rsync -avuz --delete-before rsync://nutyx.meticul.eu/nutyx/2009.3/i686/$i/ $Depot/$i/
 	done
 fi
 	
