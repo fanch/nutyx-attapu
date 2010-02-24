@@ -2,16 +2,14 @@
 # URL: http://wiki.xfce.org/releng/4.6/general-info
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: dbus-glib, exo, libglade, libnotify, libxfce4util, libxfcegui4, xfconf
+# Depends on: dbus-glib, exo, libglade, libnotify, libxfce4util, libxfcegui4, xfconf, libwnck
 
 name=xfce4-settings
-version=4.6.1
-release=2
-source=(http://www.xfce.org/archive/xfce-$version/src/$name-$version.tar.bz2\
-	xfce4-settings-4.6.1-libklavier-4.0.patch)
+version=4.6.4
+release=1
+source=(http://archive.xfce.org/src/xfce/xfce4-settings/4.6/$name-$version.tar.bz2)
 build() {
 cd $name-$version
-	patch -Np1 -i ../xfce4-settings-4.6.1-libklavier-4.0.patch
 	./configure --prefix=/usr \
 	--sysconfdir=/etc \
 	--libexecdir=/usr/lib/xfce4 \
@@ -20,4 +18,3 @@ cd $name-$version
 	make
 	make DESTDIR=$PKG install
 }
-

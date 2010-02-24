@@ -1,0 +1,21 @@
+# Description: Navigateur de stream
+# URL: http://www.nongnu.org/streamtuner/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: taglib, libxml2, gtk, curl, pygtk
+
+name=streamtuner
+version=0.99.99
+release=1
+source=(http://savannah.nongnu.org/download/streamtuner/$name-$version.tar.gz \
+        http://savannah.nongnu.org/download/streamtuner/streamtuner-0.99.99-live365.diff \
+        http://savannah.nongnu.org/download/streamtuner/streamtuner-0.99.99-pygtk-2.6.diff)
+build() {
+cd $name-$version
+patch -Np0 -i ../streamtuner-0.99.99-live365.diff
+patch -Np0 -i ../streamtuner-0.99.99-pygtk-2.6.diff
+
+./configure --prefix=/usr
+make
+make prefix=$PKG/usr  install
+}
