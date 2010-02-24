@@ -2,7 +2,7 @@
 # URL: http://streamripper.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: tyrry33 at gmail dot com
-# Depends on: libmad, libvorbis, glibc, glib2, faad2
+# Depends on: libmad, libvorbis, glib, faad2
 
 name=streamripper
 version=1.64.6
