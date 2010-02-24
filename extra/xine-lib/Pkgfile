@@ -2,25 +2,31 @@
 # URL: http://xinehq.de/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: libcaca, speex, libmng, esound, libvorbis, flac, libtheora, sdl, ffmpeg, vcdimager, wavpack, samba3
+# Depends on: libgl, libxvmc, libxcb, heimdal, faad2, libcaca, speex, libmng, esound, libvorbis, flac, libtheora, sdl, ffmpeg, vcdimager, wavpack, samba3
 
 name=xine-lib
-version=1.1.17
+version=1.1.18
 release=1
-source=(http://downloads.sourceforge.net/xine/$name-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/xine/$name-$version.tar.bz2
+ 	http://downloads.sourceforge.net/sourceforge/xine/compat.c \
+	xine-lib-1.1.1-configure-no-mcpu-march.patch)	
 
 build() {
-cd $name-$version
-	./configure --prefix=/usr \
-	--mandir=/usr/share/man \
-	--with-w32-path=/usr/lib/codecs \
-	--without-arts \
-	--without-imagemagick \
-	--disable-gnomevfs \
-	--disable-aalib \
-	--disable-modplug \
-	--with-external-ffmpeg \
-	--enable-static
+	cd $name-$version
+	cp ../compat.c src/dxr3/compat.c
+	patch -p0 < ../xine-lib-1.1.1-configure-no-mcpu-march.patch 
+
+	libtoolize --force --copy
+	aclocal -I m4
+	autoconf
+	automake --add-missing
+
+	./configure  --prefix=/usr --with-w32-path=/usr/lib/codecs \
+		     --with-xv-path=/usr/lib --with-xxmc-path=/usr/lib --with-xvmc-path=/usr/lib \
+    		     --with-libflac --with-wavpack --with-xcb \
+    		     --without-arts  --without-speex \
+		     --disable-gnomevfs --without-pulseaudio --disable-aalib \
+		     --disable-modplug --with-external-ffmpeg
 	make
 	make DESTDIR=$PKG install
 }
