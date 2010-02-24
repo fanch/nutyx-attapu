@@ -1,0 +1,22 @@
+# Description:  logiciel d'affichage et de manipulations d'images, lÃ©ger et rapide
+# URL: http://linuxbrit.co.uk/feh/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: giblib xorg-libxt
+
+name=feh
+version=1.3.4
+release=1
+
+source=(http://linuxbrit.co.uk/downloads/feh-1.3.4.tar.gz)
+
+
+build()
+{
+cd $name-$version
+./configure --prefix=/usr \
+	
+make
+make DESTDIR=$PKG install
+
+}
