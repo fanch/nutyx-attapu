@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=m4
-version=1.4.13
+version=1.4.14
 release=1
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 
