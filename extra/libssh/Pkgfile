@@ -1,0 +1,21 @@
+# Description: Librairie permettant l'usage de ssh dans des client à travers la librairie C
+# URL: http://www.libssh.org/
+# Maintainer: NuTyX
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cmake
+
+name=libssh
+version=0.4.1
+release=1
+source=(http://www.libssh.org/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake .. \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DCMAKE_BUILD_TYPE=Release
+	make
+	make DESTDIR=$PKG install
+}
