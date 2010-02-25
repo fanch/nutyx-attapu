@@ -2,6 +2,7 @@
 # URL: http://www.gnu.org/software/grub/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
+# Depends on: freetype
 
 name=grub2
 version=1.97.2
