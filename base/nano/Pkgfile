@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=nano
-version=2.2.2
+version=2.2.3
 release=1
 source=(http://www.nano-editor.org/dist/v2.2/$name-$version.tar.gz)
 
