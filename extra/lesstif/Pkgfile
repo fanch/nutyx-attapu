@@ -2,7 +2,7 @@
 # URL: http://www.littlecms.com
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: freetype
+# Depends on: freetype, xorg
 
 name=lesstif
 version=0.95.2

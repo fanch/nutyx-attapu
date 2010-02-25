@@ -2,7 +2,7 @@
 # Maintainer: Diederick de Vries <diederick at diederickdevries dot net>
 # Packager: thierryn1 at hispeed dot ch
 # URL: http://glew.sourceforge.net/
-# depends:
+# depends: mesa3d
 
 name=glew
 version=1.5.2

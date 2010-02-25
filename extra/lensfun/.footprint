@@ -8,12 +8,6 @@ lrwxrwxrwx	root/root	usr/lib/liblensfun.so.0 -> liblensfun.so.0.2.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/lensfun.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/lensfun-0.2.3/
--rw-r--r--	root/root	usr/share/doc/lensfun-0.2.3/README
--rw-r--r--	root/root	usr/share/doc/lensfun-0.2.3/cc-by-sa-3.0.txt
--rw-r--r--	root/root	usr/share/doc/lensfun-0.2.3/gpl-3.0.txt
--rw-r--r--	root/root	usr/share/doc/lensfun-0.2.3/lgpl-3.0.txt
 drwxr-xr-x	root/root	usr/share/lensfun/
 -rw-r--r--	root/root	usr/share/lensfun/6x6.xml
 -rw-r--r--	root/root	usr/share/lensfun/compact-canon.xml

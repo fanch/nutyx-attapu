@@ -2,7 +2,7 @@
 # URL: http://site.n.ml.org/info/libast/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: imlib2
+# Depends on: imlib2, freetype
 
 name=libast
 version=0.7

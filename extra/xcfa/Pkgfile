@@ -2,7 +2,7 @@
 # URL: http://download.tuxfamily.org/xcfaudio
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: gtk,taglib,curl,dvd+rw-tools
+# Depends on: gtk,taglib,curl,dvd+rw-tools, alsa-lib
 
 name=xcfa
 version=3.7.1
