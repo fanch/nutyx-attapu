@@ -2,7 +2,7 @@
 # URL:http://www.moovida.com
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on:libgl, gstreamer0.10-base, gtk2
+# Depends on: mesa3d, gst-plugins-base, gtk
 name=pigment
 version=0.3.17
 release=1
