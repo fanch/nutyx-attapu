@@ -2,7 +2,7 @@
 # URL: http://www.koffice.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: kdebase, kdepim, libwpg, wv2, glew, gsl, pstoedit, graphicsmagick, kipi-plugins
+# Depends on: kdebase, kdepim, libwpg, wv2, glew, gsl, pstoedit, graphicsmagick, kipi-plugins, eigen2
 
 name=koffice
 version=2.1.1
