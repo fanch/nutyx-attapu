@@ -2,7 +2,7 @@
 # URL: http://library.gnome.org/devel/liboobs/stable/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: samba3, libgnome, dbus-glib, system-tools-backends
+# Depends on: samba3, libgnome, dbus-glib, system-tools-backends, hal
 
 name=liboobs
 version=2.22.2
