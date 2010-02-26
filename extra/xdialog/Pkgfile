@@ -2,7 +2,7 @@
 # URL: http://xdialog.free.fr/
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: gtk
+# Depends on: gtk1
 
 name=xdialog
 version=2.3.1
@@ -12,6 +12,7 @@ source=(http://xdialog.free.fr/Xdialog-$version.tar.bz2)
 build() {
 cd Xdialog-$version
 	./configure --prefix=/usr \
+	--mandir=/usr/share/man \
 	--with-gtk
 	sed -i -e "s:RANLIB = @RANLIB@:RANLIB = /usr/bin/ranlib:" lib/Makefile
 	sed -i -e "s;XGETTEXT = :;XGETTEXT = /usr/bin/xgettext;" po/Makefile
