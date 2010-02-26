@@ -2,7 +2,7 @@
 # URL: http://ftp.acc.umu.se/pub/GNOME/sources/imlib/1.9/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxklavier
+# Depends on: libxklavier, libjpeg, libpng, giflib, libtiff, xorg-libxext
 
 name=imlib
 version=1.9.15
