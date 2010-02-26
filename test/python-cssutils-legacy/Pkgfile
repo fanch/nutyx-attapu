@@ -2,7 +2,8 @@
 # URL:http://code.google.com/p/cssutils/
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on:python
+# Depends on: python
+
 name=python-cssutils-legacy
 version=0.9.6
 release=1
