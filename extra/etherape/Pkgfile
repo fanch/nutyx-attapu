@@ -2,7 +2,7 @@
 # URL: http://etherape.sourceforge.net/ 
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: libpcap, libgnomeui
+# Depends on: libpcap, libgnomeui, gnome-doc-utils, alsa-lib
 
 name=etherape
 version=0.9.9
@@ -14,6 +14,7 @@ build() {
         ./configure --prefix=/usr
         make
         make DESTDIR=$PKG install
+	rm -r  $PKG/usr/share/gnome
 }
 
 
