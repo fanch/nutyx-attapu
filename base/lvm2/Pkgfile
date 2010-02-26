@@ -5,7 +5,7 @@
 # Depends on:
 
 name=lvm2
-version=2.02.60
+version=2.02.61
 release=1
 source=(ftp://sources.redhat.com/pub/lvm2/LVM2.$version.tgz\
 	lvmnodes)
@@ -27,6 +27,8 @@ build() {
 	install -d -m 0700 $PKG/etc/lvm/{archive,backup}
 	install -d -m 1777 $PKG/var/lock
 	install -d -m 0700 $PKG/var/lock/lvm
+	# devel in device-mapper
+	rm -r $PKG/usr/include
 }
 
 
