@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, kdebase-runtime, libxslt, libxml2
+# Depends on: kdelibs, kdebase-runtime, libxslt, libxml2, boost, subversion
 
 name=kdesdk
 version=4.4.0
