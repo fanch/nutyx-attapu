@@ -2,10 +2,9 @@
 # URL: http://www.busybox.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=busybox
-version=1.15.3
+version=1.16.0
 release=1
 source=(http://busybox.net/downloads/$name-$version.tar.bz2 \
 	config)
