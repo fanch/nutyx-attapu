@@ -2,7 +2,7 @@
 # URL: http://www.ibiblio.org/mc/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p7zip, e2fsprogs, glib2, pcre, gpm, slang
+# Depends on: p7zip, e2fsprogs, glib2, pcre, gpm, slang, glib
 
 name=mc
 version=4.7.0.2

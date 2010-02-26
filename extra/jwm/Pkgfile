@@ -2,7 +2,7 @@
 # URL: http://joewing.net/programs/jwm/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: 
+# Depends on: xorg
  
 name=jwm
 version=2.0.1
