@@ -2,7 +2,7 @@
 # URL: http://lxde.org/
 # Maintainer:geanbrun
 # Packager: geanbrun
-# Depends on: 
+# Depends on: xorg, imlib2
  
 name=idesk
 version=0.7.5
