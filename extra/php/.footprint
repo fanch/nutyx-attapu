@@ -125,6 +125,8 @@ drwxr-xr-x	root/root	usr/include/php/ext/iconv/
 -rw-r--r--	root/root	usr/include/php/ext/iconv/php_iconv_supports_errno.h
 -rw-r--r--	root/root	usr/include/php/ext/iconv/php_php_iconv_h_path.h
 -rw-r--r--	root/root	usr/include/php/ext/iconv/php_php_iconv_impl.h
+drwxr-xr-x	root/root	usr/include/php/ext/json/
+-rw-r--r--	root/root	usr/include/php/ext/json/php_json.h
 drwxr-xr-x	root/root	usr/include/php/ext/libxml/
 -rw-r--r--	root/root	usr/include/php/ext/libxml/php_libxml.h
 drwxr-xr-x	root/root	usr/include/php/ext/mbstring/
@@ -191,7 +193,6 @@ drwxr-xr-x	root/root	usr/include/php/ext/standard/
 -rw-r--r--	root/root	usr/include/php/ext/standard/cyr_convert.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/datetime.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/dl.h
--rw-r--r--	root/root	usr/include/php/ext/standard/dns.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/exec.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/file.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/flock_compat.h
@@ -208,6 +209,7 @@ drwxr-xr-x	root/root	usr/include/php/ext/standard/
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_browscap.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_crypt.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_dir.h
+-rw-r--r--	root/root	usr/include/php/ext/standard/php_dns.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_ext_syslog.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_filestat.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/php_fopen_wrappers.h
@@ -238,7 +240,6 @@ drwxr-xr-x	root/root	usr/include/php/ext/standard/
 -rw-r--r--	root/root	usr/include/php/ext/standard/streamsfuncs.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/uniqid.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/url.h
--rw-r--r--	root/root	usr/include/php/ext/standard/url_scanner.h
 -rw-r--r--	root/root	usr/include/php/ext/standard/url_scanner_ex.h
 drwxr-xr-x	root/root	usr/include/php/ext/xml/
 -rw-r--r--	root/root	usr/include/php/ext/xml/expat_compat.h
@@ -430,6 +431,7 @@ drwxr-xr-x	root/root	usr/lib/php/PEAR/Task/Windowseol/
 drwxr-xr-x	root/root	usr/lib/php/PEAR/Validator/
 -rw-r--r--	root/root	usr/lib/php/PEAR/Validator/PECL.php
 -rw-r--r--	root/root	usr/lib/php/PEAR/XMLParser.php
+-rw-r--r--	root/root	usr/lib/php/PEAR5.php
 drwxr-xr-x	root/root	usr/lib/php/Structures/
 -rw-r--r--	root/root	usr/lib/php/Structures/Graph.php
 drwxr-xr-x	root/root	usr/lib/php/Structures/Graph/
@@ -531,8 +533,9 @@ drwxr-xr-x	root/root	usr/lib/php/test/XML_Util/tests/
 -rw-r--r--	root/root	usr/lib/php/test/XML_Util/tests/testBasic_splitQualifiedName.phpt
 -rw-r--r--	root/root	usr/lib/php/test/XML_Util/tests/testBug_4950.phpt
 -rw-r--r--	root/root	usr/lib/php/test/XML_Util/tests/testBug_5392.phpt
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/php-config.1.gz
--rw-r--r--	root/root	usr/man/man1/php.1.gz
--rw-r--r--	root/root	usr/man/man1/phpize.1.gz
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/php-config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/php.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/phpize.1.gz

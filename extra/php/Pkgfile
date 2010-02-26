@@ -2,10 +2,10 @@
 # URL:         http://www.php.net
 # Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot net
-# Depends on:  mysql, apache, libxml2
+# Depends on:  mysql, apache, libxml2, libpng
 
 name=php
-version=5.2.10
+version=5.2.13
 release=1
 source=(http://www.php.net/distributions/php-$version.tar.bz2) 
 
@@ -13,6 +13,7 @@ build () {
     cd php-$version
     sed -i "s/-i -a/-i/" configure
     ./configure --prefix=/usr \
+    --mandir=/usr/share/man \
     --sysconfdir=/etc \
     --with-apxs2=/usr/sbin/apxs \
     --enable-force-cgi-redirect \
