@@ -2,7 +2,7 @@
 # URL: http://www.acetoneteam.org 
 # Maintainer:NuTyX core team
 # Packager:fanch
-# Depends on: qt,fuseiso,cdrdao,cdrkit,gnupg,pinentry,mplayer
+# Depends on: qt,fuseiso,cdrdao,cdrkit,gnupg,pinentry,mplayer, phonon
 
 name=acetoneiso
 version=2.1.1
