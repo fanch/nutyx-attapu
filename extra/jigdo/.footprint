@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/jigdo-file
+-rwxr-xr-x	root/root	usr/bin/jigdo-lite
+-rwxr-xr-x	root/root	usr/bin/jigdo-mirror
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rwxr-xr-x	root/root	usr/man/man1/jigdo-file.1
+-rwxr-xr-x	root/root	usr/man/man1/jigdo-lite.1
+-rwxr-xr-x	root/root	usr/man/man1/jigdo-mirror.1
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/jigdo/
+-rw-r--r--	root/root	usr/share/jigdo/debian-mirrors.jigdo
+drwxr-xr-x	root/root	usr/share/locale/
