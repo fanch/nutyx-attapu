@@ -2,7 +2,7 @@
 # URL: http://www.gromeck.de/?image2mpeg
 # Maintainer: NuTyX core team
 # Packager: fred.galusik at gmail dot com
-# Depends on: ffmpeg, imagemagick, lame
+# Depends on: ffmpeg, mjpegtools, imagemagick, lame, libmad
 
 name=image2mpeg
 version=1.02
