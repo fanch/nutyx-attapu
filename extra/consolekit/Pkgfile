@@ -1,7 +1,8 @@
-# Description:	framework for defining and tracking users, login sessions, and seats
-# URL:		http://www.freedesktop.org/wiki/Software/ConsoleKit
-# Maintainer:	Oleksiy Khilkevich <grim@asu.ntu-kpi.kiev.ua>
-# Depends on:	dbus, glib, xorg-libx11, policykit
+# Description: framework for defining and tracking users, login sessions, and seats
+# URL: http://www.freedesktop.org/wiki/Software/ConsoleKit
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed do ch
+# Depends on:	dbus, glib, xorg-libx11, policykit, polkit
 
 name=consolekit
 version=0.4.1
