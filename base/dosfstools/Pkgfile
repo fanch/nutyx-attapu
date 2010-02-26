@@ -1,4 +1,3 @@
-# $Id: build,v 1.3 2008/06/20 17:41:31 install Exp root $
 # Description: Commandes MS-DOS FAT pour linux
 # URL: ftp://ftp.ibiblio.org/pub/Linux/system/filesystems/dosfs/
 # Maintainer: NuTyX core team
@@ -6,20 +5,18 @@
 # Depends on:
 
 name=dosfstools
-version=2.11
+version=3.0.9
 release=1
-source=( http://fresh.t-systems-sfr.com/linux/src/$name-$version.src.tar.gz\
-       )
+source=( ftp://ftp.debian.org/debian/pool/main/d/$name/$name\_$version.orig.tar.gz)
 
 build() {
 	cd $name-$version
 	make
       mkdir -p $PKG/sbin
 	mkdir -p $PKG/usr/share/man/man8 
-	cp dosfsck/dosfsck $PKG/sbin
-	cp dosfsck/dosfsck.8 $PKG/usr/share/man/man8
-	cp mkdosfs/mkdosfs $PKG/sbin
-	cp mkdosfs/mkdosfs.8 $PKG/usr/share/man/man8
+	cp dosfsck $PKG/sbin
+	cp man/* $PKG/usr/share/man/man8
+	cp mkdosfs $PKG/sbin
 	cd $PKG/sbin && ln -s dosfsck fsck.msdos && ln -s dosfsck fsck.vfat \
 	&& ln -s mkdosfs mkfs.msdos && ln -s mkdosfs mkfs.vfat
 	cd $PKG/usr/share/man/man8 && ln -s dosfsck.8 fsck.msdos.8 \
