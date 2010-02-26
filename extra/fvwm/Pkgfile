@@ -2,7 +2,7 @@
 # URL: http://www.fvwm.org/
 # Maintainer: NuTyX packager team
 # Packager: Skippythekango at yahoo dot fr
-# Depends on: librsgv
+# Depends on: librsgv, xorg
 
 name=fvwm
 version=2.5.28
