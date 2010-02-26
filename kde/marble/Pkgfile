@@ -1,0 +1,18 @@
+# Description: widget pour se reperer geographiquement pour KDE4
+# URL: http://edu.kde.org/marble/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: kdelibs, gpsd, qt, cmake
+
+name=marble
+version=0.8.0
+release=1
+source=(http://developer.kde.org/~tackat/marble/marble-${version}_rev1005857.tar.gz)
+
+build() {
+        cd $name
+        cmake ../$name -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make
+        make DESTDIR=$PKG install
+}
+
