@@ -18,13 +18,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
-drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/not-zip-safe
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/Twisted-8.2.0-py2.6.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/twisted/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/twisted/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/twisted/__init__.pyc
