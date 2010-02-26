@@ -2,7 +2,7 @@
 # URL: http://www.nongnu.org/ratpoison
 # Maintainer: NuTyX core team
 # Packager: Skippythekangoo AT yahoo DOT fr
-# Depends on: urxvt
+# Depends on: xorg, urxvt
 name=ratpoison
 version=1.4.5
 release=1
@@ -15,5 +15,6 @@ cd $name-$version
         make DESTDIR=$PKG install
 
 	install -D -m644 $SRC/ratpoison.desktop $PKG/usr/share/xsessions/ratpoison.desktop
+	rm $PKG/usr/share/info/dir
 }
 
