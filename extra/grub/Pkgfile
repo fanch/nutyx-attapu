@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: freetype
 
-name=grub2
+name=grub
 version=1.97.2
 release=1
 source=(ftp://alpha.gnu.org/gnu/grub/grub-$version.tar.gz\
