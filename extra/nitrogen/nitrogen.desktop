@@ -2,5 +2,6 @@
   Name=nitrogen
   Exec=nitrogen
   Icon=nitrogen-48.png
-  Name[fr]=nitrogen
-  Categories=Settings;DesktopSettings;
+  Type=Application
+  Categories=Graphics
+  StartupNotify=true
