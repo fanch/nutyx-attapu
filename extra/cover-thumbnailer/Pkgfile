@@ -23,7 +23,7 @@ build() {
 	#share
 	cp ./share/* $PKG/usr/share/cover-thumbnailer/
 	#man
-	cp ./man/* $PKG/usr/share/man/man1/applications/
+	cp ./man/* $PKG/usr/share/man/man1/
 	#.desktop
 	cp ./freedesktop/* $PKG/usr/share/
 	#locale

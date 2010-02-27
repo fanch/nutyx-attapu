@@ -2,7 +2,7 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-cairo
+# Depends on: p5-cairo, gtk
 
 name=p5-gtk2
 version=1.202

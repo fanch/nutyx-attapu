@@ -3,6 +3,7 @@
 # Maintainer: NuTyX core team
 # Packager: fanch
 # Depends on: twisted_web2, pygtk, python-pigment, gst-python, python-cssutils-legacy, pil, pyopenssl, setuptools, zope-interface
+
 name=moovida
 version=1.0.8
 release=1

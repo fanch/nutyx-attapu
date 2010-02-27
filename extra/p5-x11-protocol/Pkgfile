@@ -3,7 +3,7 @@
 # Maintainer: NuTyX core team
 # Packager: Skippythekangoo AT yahoo DOT fr
 # Depends on: xorg
-name=p5-X11-Protocol
+name=p5-x11-protocol
 _name=X11-Protocol
 version=0.56
 release=1

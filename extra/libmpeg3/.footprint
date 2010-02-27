@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mpeg3cat
+-rwxr-xr-x	root/root	usr/bin/mpeg3dump
+-rwxr-xr-x	root/root	usr/bin/mpeg3peek
+-rwxr-xr-x	root/root	usr/bin/mpeg3toc
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/libmpeg3.h
+-rw-r--r--	root/root	usr/include/mpeg3private.h
+-rw-r--r--	root/root	usr/include/mpeg3protos.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libmpeg3.a

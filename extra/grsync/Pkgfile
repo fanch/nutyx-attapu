@@ -22,4 +22,5 @@ cd $name-$version
     install -m 644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
 	install -m 644 ../$name.desktop $PKG/usr/share/applications/
     install -m 644 ../$name-root.desktop $PKG/usr/share/applications/
+	mv $PKG/usr/share/locale/{fr_FR,fr}
 }
