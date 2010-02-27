@@ -1,7 +1,7 @@
 # Description: Un jeu de dessin/puzzle dans le style de Crayon Physics
 # URL: https://garage.maemo.org/projects/numptyphysics/
 # Packager: Blankoworld <blankoworld at wanadoo dot fr>
-# Depends on: svn cyrus-sasl sdl_ttf 
+# Depends on: subversion sdl_ttf 
 
 name=numptyphysics
 version=115
