@@ -11,6 +11,7 @@ build() {
 cd $name-$version
         #./configure --prefix=/usr
         make sqlite=truS
-        make prefix=/usr sqlite=true DESTDIR=$PKG install
+        make prefix=/usr mandir=/usr/share/man sqlite=true DESTDIR=$PKG install
+	chown -R 0:0 $PKG
 }
 

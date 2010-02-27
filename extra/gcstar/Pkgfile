@@ -13,7 +13,7 @@ build() {
 	cd $name
         ./install --prefix=$PKG/usr
 	install -D -m644 share/gcstar/icons/gcstar_32x32.png \
-		$PKG/usr/share/pixmaps/gcstar.png &&  \
-		cp -R share/applications $PKG/usr/share
+		$PKG/usr/share/pixmaps/gcstar.png
+	cp -R share/applications $PKG/usr/share
 }
 
