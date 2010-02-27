@@ -1,4 +1,3 @@
-
 # Description: Gestionnaire de fenetres leger
 # URL: http://www.pekwm.org
 # Maintainer: NuTyX core team
@@ -18,7 +17,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
+		--mandir=/usr/share/man \
 		--enable-xft \
 		--enable-pcre \
 		--enable-imlib2 \

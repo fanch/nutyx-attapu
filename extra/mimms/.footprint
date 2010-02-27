@@ -2,16 +2,16 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/mimms
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/python2.5/
-drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/
-drwxr-xr-x	root/root	usr/lib/python2.5/site-packages/libmimms/
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/__init__.py (EMPTY)
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/__init__.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/core.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/core.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/libmms.py
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/libmimms/libmms.pyc
--rw-r--r--	root/root	usr/lib/python2.5/site-packages/mimms-3.2-py2.5.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.6/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/libmimms/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/core.py
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/core.pyc
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/libmms.py
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/libmimms/libmms.pyc
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/mimms-3.2-py2.6.egg-info
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/

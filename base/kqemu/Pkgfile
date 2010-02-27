@@ -1,13 +1,12 @@
-# Description: 
+# Description: module pour Emulateur libre qemu
 # URL: http://www.qemu.org/
 # Maintainer: NuTyX coreteam
-# Packager: 
-# Depends on: 
+# Packager: guy
 
 name=kqemu
 version=1.4.0pre1
 release=1
-source=(http://www.qemu.org/$name-$version.tar.gz)
+source=(http://wiki.qemu.org/download/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
