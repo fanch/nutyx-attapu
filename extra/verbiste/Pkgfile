@@ -2,7 +2,7 @@
 # URL:  http://perso.b2b2c.ca/sarrazip/dev/verbiste.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxml2 gtk2
+# Depends on: libxml2, gtk, p5-xml-parser
 
 name=verbiste
 version=0.1.28
