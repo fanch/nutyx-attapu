@@ -2,7 +2,7 @@
 # URL: http://checkgmail.sourceforge.net/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-gtk, p5-gtk2-trayicon, p5-crypt-ssleay, p5-libwww, p5-xml-simple, p5-html-parser
+# Depends on: p5-gtk, p5-gtk2-trayicon, p5-crypt-ssleay, p5-libwww, p5-xml-simple, p5-html-parser, subversion
 
 name=checkgmail
 version=20091127
