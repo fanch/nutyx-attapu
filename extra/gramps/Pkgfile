@@ -2,7 +2,7 @@
 # URL: http://gramps-project.org
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on:gnome-python-extras,gtkspell,gconf
+# Depends on:gnome-python-extras,gtkspell,gconf, alsa-lib
 
 name=gramps
 version=3.1.2
