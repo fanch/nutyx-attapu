@@ -2,7 +2,7 @@
 # URL: http://subversion.tigris.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: apr, neon, expat, sqlite3
+# Depends on: apr, neon, expat, sqlite3, cyrus-sasl
 
 name=subversion
 version=1.6.9

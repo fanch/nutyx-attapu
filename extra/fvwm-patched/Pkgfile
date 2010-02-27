@@ -4,11 +4,11 @@
 # Packager: Skippythekango at yahoo dot fr
 # Depends on: librsgv, xorg, p5-tk, p5-x11-protocol
 
-name=fvwm
+name=fvwm-patched
 version=2.5.28
 release=1
-group=app
-source=(ftp://ftp.fvwm.org/pub/fvwm/version-2/$name-$version.tar.gz \
+_name=fvwm
+source=(ftp://ftp.fvwm.org/pub/fvwm/version-2/${_name}-$version.tar.gz \
 	http://fvwm.tuxfamily.org/pub/wiki/portage/files/01-fvwm-translucent-menus.patch \
 	http://fvwm.tuxfamily.org/pub/wiki/portage/files/02-fvwm-menu-xlock-xlockmore-compat.diff \
 	http://fvwm.tuxfamily.org/pub/wiki/portage/files/03-ColourBorders.patch \
@@ -32,7 +32,7 @@ source=(ftp://ftp.fvwm.org/pub/fvwm/version-2/$name-$version.tar.gz \
 
 build()
 {
-cd $name-$version
+cd ${_name}-$version
 
 patch -p0 < $SRC/01-fvwm-translucent-menus.patch
 patch -p0 < $SRC/03-ColourBorders.patch
@@ -65,5 +65,5 @@ make
 make DESTDIR=$PKG install
 
 install -D -m644 $SRC/fvwm.desktop $PKG/usr/share/xsessions/fvwm.desktop
-
+rm -r $PKG/usr/share/doc
 }

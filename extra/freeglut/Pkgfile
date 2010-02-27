@@ -2,7 +2,7 @@
 # URL: http://freeglut.sourceforge.net/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: ibxxf86vm, mesa
+# Depends on: mesa3d
 
 name=freeglut
 version=2.4.0
