@@ -2,7 +2,7 @@
 # URL: http://www.ghostscript.com/awki
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups, fontconfig, kerberos
+# Depends on: libcups, fontconfig, kerberos
 
 name=ghostscript
 version=8.71
