@@ -2,10 +2,10 @@
 # URL: http://www.fox-toolkit.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libxcursor, xorg-libxft, xorg-libxrandr, mesa3d
+# Depends on: xorg-libxcursor, xorg-libxft, xorg-libxrandr, mesa3d, libcups
 
 name=fox
-version=1.6.36
+version=1.6.37
 release=1
 source=(http://www.fox-toolkit.org/ftp/$name-$version.tar.gz)
 

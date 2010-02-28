@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups, glib, p5-xml-parser
+# Depends on: libcups, glib, p5-xml-parser
 
 name=libgnomecups
 version=0.2.3

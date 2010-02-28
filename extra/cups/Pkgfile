@@ -1,12 +1,12 @@
-# Description: Common UNIX Printing System, le système d'impression pour Linux
+# Description: Serveur et programmes pour Common UNIX Printing System, le système d'impression pour Linux
 # URL: http://www.cups.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg, libpng, libtiff, poppler, xdg-utils, dbus, hicolor-icon-theme, linux-pam
+# Depends on: libcups, dbus-glib, libusb, hicolor-icon-theme
 
 name=cups
 version=1.4.2
-release=1
+release=2
 source=( http://ftp.easysw.com/pub/$name/$version/$name-$version-source.tar.bz2\
        cups)
 
@@ -30,7 +30,9 @@ build() {
 		--enable-gnutls=no \
 		--infodir=/usr/share/info
 	make -j3
-	make BUILDROOT=$PKG install
+	make BUILDROOT=$PKG install-data install-exec
+	# Appartient à libcups
+	rm -f $PKG/usr/bin/cups-config
 	# Startup Script 
 	cd ../$scripts-$scriptsversion
 	make DESTDIR=$PKG install-$name
