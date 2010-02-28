@@ -1,0 +1,32 @@
+# Description: Librairies pour Common UNIX Printing System, le système d'impression pour Linux
+# URL: http://www.cups.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg, libpng, libtiff, poppler, xdg-utils, dbus, hicolor-icon-theme, linux-pam
+
+name=libcups
+version=1.4.2
+release=1
+source=( http://ftp.easysw.com/pub/cups/$version/cups-$version-source.tar.bz2)
+
+
+build() {
+	cd cups-$version
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--with-logdir=/var/log/cups \
+		--with-docdir=/usr/share/doc/cups \
+		--enable-raw-printing \
+		--enable-pdftops \
+		--with-pdftops=pdftops \
+		--mandir=/usr/share/man \
+		--enable-threads \
+		--enable-ssl \
+		--enable-gnutls=no \
+		--infodir=/usr/share/info
+	make -j3 
+	make BUILDROOT=$PKG install-headers install-libs
+	mkdir -p $PKG/usr/bin
+	install -m755 cups-config $PKG/usr/bin/cups-config
+}
