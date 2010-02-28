@@ -5,10 +5,10 @@
 # Depends on: freetype, ghostscript, lcms, libgsf, giflib, libxml2, openexr
 
 name=imagemagick
-version=6.5.9.3
+version=6.6.0.0
 release=1
-_version=6.5.9-3
-source=(http://kiao.no-ip.info/NuTyX/files/ImageMagick-${_version}.tar.bz2)
+_version=6.6.0-0
+source=(ftp://gd.tuwien.ac.at/pub/graphics/ImageMagick/ImageMagick-${_version}.tar.bz2)
 
 build () {
 cd ImageMagick-*
