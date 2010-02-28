@@ -2,7 +2,7 @@
 # URL: http://cyberelk.net/tim/software/pycups/
 # Maintainer: NuTyX core team
 # Packager: thierry at hispeed dot ch
-# Depends on: python, cups
+# Depends on: python, libcups
 
 name=pycups
 version=1.9.44
