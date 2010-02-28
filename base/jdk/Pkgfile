@@ -2,11 +2,10 @@
 # URL: http://java.sun.com/javase/downloads/index.jsp
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=jdk
 version=6u18
-release=1
+release=2
 [ "`uname -m`" == "i686"   ] && _ARCH=i586
 [ "`uname -m`" == "x86_64"   ] && _ARCH=amd64
 
@@ -41,4 +40,11 @@ build() {
 	$PKG/usr/share/man/man1/
 	rm -r $PKG/opt/jdk/jre/man
 	rm -r $PKG/usr/share/man/ja*
+	# Installation du plugin
+	mkdir -p $PKG/usr/lib/firefox/plugins
+	if [ ${_ARCH} = "i586" ]; then
+		ln -s /opt/jdk/jre/lib/i386/libnpjp2.so $PKG/usr/lib/firefox/plugins
+	else
+		ln -s /opt/jdk/jre/lib/amd64/libnpjp2.so $PKG/usr/lib/firefox/plugins
+	fi
 }
