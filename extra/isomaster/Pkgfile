@@ -13,7 +13,7 @@ build() {
 	cd $name-$version
         ./configure --prefix=/usr
         make
-        make DESTDIR=$PKG install
+        make PREFIX=/usr DESTDIR=$PKG install
 	install -D -m 644 ../$name.desktop \
 	$PKG/usr/share/applications/$name.desktop
 }

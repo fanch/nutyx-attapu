@@ -15,7 +15,7 @@ build() {
         make
  
         install -D -m 755 switch2 $PKG/usr/bin/switch2
-        install -D switch.1 $PKG/usr/man/man1/switch.1
+        install -D switch.1 $PKG/usr/share/man/man1/switch.1
 
        mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps
        cp ../gtk-s-t.png $PKG/usr/share/icons/hicolor/48x48/apps/gtk-s-t.png

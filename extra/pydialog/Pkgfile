@@ -4,13 +4,13 @@
 # Packager: Arnaud Fernandés <ferarduansednan at laposte dot net>
 # Depends on: python, dialog
 
-name=pythondialog
+name=pydialog
 version=2.7
 release=1
-source=(http://kiao.no-ip.info/sources/$name-$version.tar.bz2)
+source=(http://kiao.no-ip.info/sources/pythondialog-$version.tar.bz2)
 
 build() {
 
-cd $name-$version
+cd pythondialog-$version
 python setup.py build install --prefix=/usr --root=$PKG
 }

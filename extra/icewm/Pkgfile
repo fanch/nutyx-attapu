@@ -2,13 +2,13 @@
 # Description:  Gestionnaire de fenêtres 
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: xorg
+# Depends on: gtk
 
 
 name=icewm
 version=1.3.4pre1
 release=1
-source=(http://dfn.dl.sourceforge.net/sourceforge/icewm/icewm-1.3.4pre1.tar.gz)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build()
 {

@@ -2,10 +2,10 @@
 # URL: http://www.mono-project.com/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: glib
 
 name=mono
-version=2.4
+version=2.4.3
 release=1
 source=(http://www.go-mono.com/sources/$name/$name-$version.tar.bz2)
 

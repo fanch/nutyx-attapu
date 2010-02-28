@@ -2,7 +2,7 @@
 # URL: http://www.cups.org/ddk/index.php
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cups gnutls 
+# Depends on: cups gnutls kerberos
 
 name=cupsddk
 version=1.2.3

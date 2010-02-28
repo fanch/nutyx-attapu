@@ -2,7 +2,7 @@
 # URL: http://www.musicbrainz.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libmusicbrainz, curl, libofa
+# Depends on: libmusicbrainz, curl, expat
 
 name=libtunepimp
 version=0.5.3

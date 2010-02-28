@@ -2,7 +2,7 @@
 # URL: http://filezilla-project.org/
 # Maintainer:  NuTyX packager team                       
 # Packager: lesibel at free dot fr                       
-# Depends on: bus-core, wxgtk, libidn, hicolor-icon-theme, gnutls
+# Depends on: bus-core, wxgtk, libidn, hicolor-icon-theme, gnutls, libtasn1
 
 name=filezilla
 version=3.3.0.1

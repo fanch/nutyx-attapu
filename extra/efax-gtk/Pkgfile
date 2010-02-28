@@ -2,7 +2,8 @@
 # URL: http://efax-gtk.sourceforge.net/
 # Maintainer:  NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: ghostscript, libsigc++i, gv
+# Depends on: ghostscript, libsigc++, gv, gtk
+
 name=efax-gtk
 version=3.0.18
 release=2

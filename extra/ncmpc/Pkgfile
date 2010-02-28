@@ -12,5 +12,6 @@ cd $name-$version
         ./configure --prefix=/usr
         make
         make DESTDIR=$PKG install
+	chown -R 0:0 $PKG
 }
 

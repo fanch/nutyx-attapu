@@ -13,7 +13,8 @@ source=(http://downloads.sourceforge.net/$name/AfterStep-$version.tar.gz)
 build()
 {
 cd AfterStep-$version
-./configure --prefix=/usr
+./configure --prefix=/usr \
+	--mandir=/usr/share/man
 make
 make DESTDIR=$PKG install
 

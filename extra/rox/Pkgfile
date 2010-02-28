@@ -39,4 +39,5 @@ build() {
    # you can read the dimensions via inkscapes export funktion
    mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps/
    install -m 644 ../$name.svg $PKG/usr/share/icons/hicolor/48x48/apps/
+   chown -R 0:0 $PKG
 }
