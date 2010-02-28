@@ -1,0 +1,18 @@
+# Description: Visionneur de bandes dessinée
+# URL: http://comix.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: pygtk, pil, unrar, xdg-utils, gconf
+
+name=comix
+version=4.0.4
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir -p $PKG/usr
+	python install.py install --no-mime --dir $PKG/usr
+	install -D -m644 mime/comicbook.schemas \
+	$PKG/etc/gconf/schemas/comicbook.schemas
+}

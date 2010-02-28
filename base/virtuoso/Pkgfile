@@ -5,7 +5,7 @@
 
 name=virtuoso
 version=6.1.0
-release=1
+release=2
 source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-opensource-$version.tar.gz)
 build() {
 	cd $name-opensource-$version
@@ -17,5 +17,6 @@ build() {
     		    --disable-all-vads
 	make
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/bin/isql
 }
 
