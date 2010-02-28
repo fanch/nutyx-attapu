@@ -8,7 +8,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cover-thumbnailer-gui
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
--rw-r--r--	root/root	usr/share/cover-thumbnailer-gui.desktop
+-rw-r--r--	root/root	usr/share/applications/cover-thumbnailer-gui.desktop
 drwxr-xr-x	root/root	usr/share/cover-thumbnailer/
 -rw-r--r--	root/root	usr/share/cover-thumbnailer/cover-thumbnailer-gui.glade
 -rw-r--r--	root/root	usr/share/cover-thumbnailer/icon.png
