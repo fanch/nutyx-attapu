@@ -673,6 +673,72 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OpenSSL_add_all_ciphers.3ssl.gz -> OpenS
 lrwxrwxrwx	root/root	usr/share/man/man3/OpenSSL_add_all_digests.3ssl.gz -> OpenSSL_add_all_algorithms.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OpenSSL_add_ssl_algorithms.3ssl.gz -> SSL_library_init.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_DHparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_DSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_DSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_DSAparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_NETSCAPE_CERT_SEQUENCE.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_PKCS7.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_RSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_RSAPublicKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_RSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_X509.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_X509_AUX.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_X509_CRL.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_X509_REQ.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_DHparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_DSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_DSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_DSAparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_NETSCAPE_CERT_SEQUENCE.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_PKCS7.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_RSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_RSAPublicKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_RSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_X509.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_X509_AUX.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_X509_CRL.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_read_bio_X509_REQ.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_DHparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_DSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_DSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_DSAparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_NETSCAPE_CERT_SEQUENCE.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_PKCS7.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_PKCS8PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_PKCS8PrivateKey_nid.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_RSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_RSAPublicKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_RSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_AUX.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_CRL.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_REQ.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_X509_REQ_NEW.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DHparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_DSAparams.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_NETSCAPE_CERT_SEQUENCE.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_PKCS7.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_PKCS8PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_PKCS8PrivateKey_nid.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_PrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_RSAPrivateKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_RSAPublicKey.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_RSA_PUBKEY.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_X509.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_X509_AUX.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_X509_CRL.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_X509_REQ.3ssl.gz -> pem.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_write_bio_X509_REQ_NEW.3ssl.gz -> pem.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/PKCS12_create.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/PKCS12_parse.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/PKCS7_decrypt.3ssl.gz
@@ -755,6 +821,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_add_client_CA.3ssl.gz -> SSL_CTX
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_add_session.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_callback_ctrl.3ssl.gz -> SSL_CTX_ctrl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_check_private_key.3ssl.gz -> SSL_CTX_use_certificate.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_CTX_clear_options.3ssl.gz -> SSL_CTX_set_options.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_ctrl.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_flush_sessions.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_CTX_free.3ssl.gz
@@ -852,6 +919,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_alert_type_string_long.3ssl.gz -> SS
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_callback_ctrl.3ssl.gz -> SSL_CTX_ctrl.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_check_private_key.3ssl.gz -> SSL_CTX_use_certificate.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_clear.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_clear_options.3ssl.gz -> SSL_CTX_set_options.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_connect.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_ctrl.3ssl.gz -> SSL_CTX_ctrl.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_do_handshake.3ssl.gz
@@ -882,6 +950,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_options.3ssl.gz -> SSL_CTX_set_o
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_peer_certificate.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_quiet_shutdown.3ssl.gz -> SSL_CTX_set_quiet_shutdown.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_rbio.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_secure_renegotiation_support.3ssl.gz -> SSL_CTX_set_options.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_get_session.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_shutdown.3ssl.gz -> SSL_set_shutdown.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_get_ssl_method.3ssl.gz -> SSL_CTX_set_ssl_version.3ssl.gz
