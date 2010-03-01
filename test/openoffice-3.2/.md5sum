@@ -4,6 +4,8 @@
 561ab60f79b0a25e90b68779227ef707  OOo_3.2.0_src_l10n.tar.bz2
 f6a738e87adf98ee4a14193f982c97e1  OOo_3.2.0_src_system.tar.bz2
 aee18235b0db7a26340d038a97c44ba6  OOo_3.2.0_src_testautomation.tar.bz2
+9a6d8004a927f9b4df612bf8a15cc71c  OpenOffice.org-3.2.0-default-large-buttons.patch.bz2
+ac07730c9da958fefa8bf673f81ddc90  OpenOffice.org-3.2.0-default-no-registration.patch.bz2
 c8e82b4d2324fe62ad8c6e29213e80b5  buildfix-gcc44.diff
 863a3ab2c17a3d11b8fa3ec321986366  buildfix_FormulaMissingHeader.diff
 0cd6f3525939d3ef6e5a30ad30c25d27  buildfix_system_db48.diff
