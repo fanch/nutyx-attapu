@@ -1,0 +1,26 @@
+ 
+# Description: Gestionnaire de papier peint
+# URL: http://projects.l3ib.org/nitrogen/
+# Maintainer:geanbrun
+# Packager: geanbrun
+# Depends on: gtkmm
+ 
+name=nitrogen
+version=1.5
+release=1
+
+ 
+source=(http://projects.l3ib.org/nitrogen/files/nitrogen-1.5.tar.gz \
+nitrogen.desktop nitrogen-48.png)
+ 
+ 
+build() {
+cd $name-$version
+./configure --prefix=/usr \
+	
+make
+make DESTDIR=$PKG install
+
+         cp ../nitrogen-48.png $PKG/usr/share/icons/hicolor/48x48/apps/nitrogen-48.png
+install -D -m 644 ../nitrogen.desktop $PKG/usr/share/applications/nitrogen.desktop
+}
