@@ -115,7 +115,10 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-reflog
 -rwxr-xr-x	root/root	usr/lib/git-core/git-relink
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-curl
+-rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ftp
+-rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ftps
+-rwxr-xr-x	root/root	usr/lib/git-core/git-remote-http
+-rwxr-xr-x	root/root	usr/lib/git-core/git-remote-https
 -rwxr-xr-x	root/root	usr/lib/git-core/git-repack
 -rwxr-xr-x	root/root	usr/lib/git-core/git-replace
 -rwxr-xr-x	root/root	usr/lib/git-core/git-repo-config
@@ -167,6 +170,19 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto/Git/
+drwxr-xr-x	root/root	usr/lib/python2.6/
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers-0.1.0-py2.6.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/__init__.py
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/__init__.pyc
+drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/git/
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/git/__init__.py (EMPTY)
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/git/__init__.pyc
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/git/git.py
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/git/git.pyc
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/util.py
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/git_remote_helpers/util.pyc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/git-core/
 drwxr-xr-x	root/root	usr/share/git-core/templates/
@@ -233,6 +249,7 @@ drwxr-xr-x	root/root	usr/share/git-gui/lib/msgs/
 -rw-r--r--	root/root	usr/share/git-gui/lib/sshkey.tcl
 -rw-r--r--	root/root	usr/share/git-gui/lib/status_bar.tcl
 -rw-r--r--	root/root	usr/share/git-gui/lib/tclIndex
+-rw-r--r--	root/root	usr/share/git-gui/lib/themed.tcl
 -rw-r--r--	root/root	usr/share/git-gui/lib/tools.tcl
 -rw-r--r--	root/root	usr/share/git-gui/lib/tools_dlg.tcl
 -rw-r--r--	root/root	usr/share/git-gui/lib/transport.tcl
