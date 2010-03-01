@@ -1,8 +1,8 @@
-#  Description: Suite complète de office en logiciel libre 
-# URL:         http://www.openoffice.org
-# Packager:    Sibelle at free dot fr
-# Maintainer:  NuTyX packager team
-# Depends on:  crypto++, xmlsec, bison, libart_lgpl, xorg-libxtst, sane, p5-archive-zip, xulrunner, ant, cairo, gperf, cups, poppler, gconf, curl, python, libwpd, redland, xorg-libxaw, neon, dbus-glib, icu, libxslt, hicolor-icon-theme, desktop-file-utils, openldap, lucene, boost, hunspell, hsqldb-java, beanshell, saxon, vigra, hyphen, lpsolve, libmspack, myodbc, libgraphite, gtk, pstoedit
+# Description: Suite complète de office en logiciel libre 
+# URL: http://www.openoffice.org
+# Packager: Sibelle at free dot fr
+# Maintainer: NuTyX packager team
+# Depends on: imagemagick, linux-pam, libart_lgpl, xorg-libxtst, p5-archive-zip, cairo, libwpd, cups, curl, python, xorg-libxaw, neon, dbus-glib, icu, libxslt, hicolor-icon-theme, desktop-file-utils, boost, gtk, libsndfile
 
 name=openoffice
 version=3.2.0
@@ -14,6 +14,8 @@ source=(http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src
 	http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src_extensions.tar.bz2\
 	http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src_l10n.tar.bz2 \
 	http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src_binfilter.tar.bz2\
+	http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-3.2.0-default-no-registration.patch.bz2 \
+	http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-3.2.0-default-large-buttons.patch.bz2 \
 	http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src_system.tar.bz2\
 	http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src_testautomation.tar.bz2\
         http://tools.openoffice.org/unowinreg_prebuild/680/unowinreg.dll \
@@ -30,64 +32,63 @@ source=(http://download.services.openoffice.org/files/stable/3.2.0/OOo_3.2.0_src
 build() {
 	install -D -m644 startcenter.desktop \
         	$PKG/usr/share/ede/programs/Applications/startcenter.desktop
-	source /etc/profile
+	
 	mkdir -p $PKG/usr/bin
         mkdir -p $PKG/usr/share/icons
         mkdir -p $PKG/usr/share/applications
 
-	# just to make sure that it will detect the desired JDK/JVM - we want jdk
-        unset J2REDIR; unset J2SDKDIR; unset JAVA_HOME; unset CLASSPATH
-        [ -z "${JAVA_HOME}" ] && . /etc/profile
-        JAVAHOME=${JAVA_HOME}
-        [ -z "${MOZ_PLUGIN_PATH}" ] && export MOZ_PLUGIN_PATH="/usr/lib/firefox/plugins"
-        [ -z "${ANT_HOME}" ] && . /etc/profile.d/apache-ant.sh
 
-	# some speedups
-        export SMP="6"
-        MAXMODULESFLAG="-P${SMP}"
-        MAXPROCESSESFLAG="-P${SMP}"
-        export nodep=true
-        export NO_HIDS=true
-
+	bzip2 -d $SRC/OpenOffice.org-3.2.0-default-no-registration.patch.bz2
+	bzip2 -d $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch.bz2
         cd $OOdir
 
-	# build fixes
-#	patch -Np0 -i ../buildfix-gcc44.diff
-#        patch -Np0 -i ../buildfix_FormulaMissingHeader.diff
-#        patch -Np0 -i ../buildfix_system_db48.diff
-
-	# allows soffice to find the user's firefox profile so that it can read
-        # its digital certificates. Nss stores digital certificates in your mozilla firefox profile. 
-#        patch -Np0 -i $SRC/soffice-detect-mozilla-certificates.diff
-
-	# remove the startup wizard
-#        patch -Np0 -i $SRC/default-no-startup-wizard.diff
-        # enables the default system-file-picker in case we have that built
-#        patch -Np0 -i $SRC/default-system-fpicker.diff
+	patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-no-registration.patch
+        patch -Np0 -i $SRC/default-no-startup-wizard.diff
+        patch -Np0 -i $SRC/default-system-fpicker.diff
+	patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch
 
 	cd $SRC/$OOdir
+	./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--disable-graphite \
+	--disable-ldap \
+	--disable-mozilla \
+	--disable-odk \
+	--disable-qadevooo \
+	--disable-fontooo \
+	--disable-systray \
+	--enable-dbus \
+	--disable-gnome-vfs \
+	--enable-gio \
+	--disable-build-mozilla \
+	--disable-binfilter \
+	--without-agg \
+	--without-gpc \
+	--without-fonts \
+	--without-ppds \
+	--without-afms \
+	--with-package-format=native \
+	--with-system-libs \
+	--without-system-lucene \
+	--without-system-hsqldb \
+	--without-system-beanshell \
+	--without-system-saxon \
+	--with-system-boost \
+	--without-system-hunspell \
+	--without-system-altlinuxhyph \
+	--without-system-lpsolve \
+	--without-stlport4 \
+	--without-java --with-lang="en-US de fr it es pt pl tr" \
+	--with-use-shell=bash --with-alloc=system
 
-        # needed to build the OO-SDK
-        mv $SRC/unowinreg.dll external/unowinreg
-
-        # export C(XX)FLAGS
-        # http://www.openoffice.org/issues/show_bug.cgi?id=103205
-        unset CFLAGS
-        unset CXXFLAGS
-
-        # Need to recreate the configure script because of patches
-        autoreconf -v
-
-./configure --with-build-version="$version NuTyX $OOdir" --with-vendor="NuTyX" --prefix=/usr --exec-prefix=/usr --with-lang="fr" --with-dict=ALL --disable-gnome-vfs --disable-qadevooo --disable-systray --disable-mathmldtd --enable-binfilter --enable-cairo --enable-crashdump=yes --enable-cups --enable-dbus --enable-evolution2 --enable-gio --enable-gtk --enable-graphite --enable-ldap --enable-lockdown --enable-minimizer --enable-odk --enable-opengl --enable-pdfimport --enable-presenter-console --enable-report-builder --enable-vba --enable-wiki-publisher --with-package-format=native --without-fonts --without-afms --without-ppds --without-system-agg --without-system-lucene --with-system-stdlibs --with-system-libs --disable-mozilla --with-system-headers --with-alloc=system --with-jdk-home=${JAVA_HOME} --with-lucene-core-jar=/usr/share/java/lucene-core.jar --with-lucene-analyzers-jar=/usr/share/java/lucene-analyzers.jar --with-saxon-jar=/usr/share/java/saxon/saxon9he.jar --with-use-shell=bash --without-stlport --disable-pam --with-system-zlib --with-intro-bitmaps=$SRC/OOO320_m12/ooo_custom_images/nologo/introabout/intro.bmp
-	# Setup environment for build
+	#
 	source LinuxX86Env.Set.sh
 
 	# Build dmake utility
 	./bootstrap
- 
-	cd instsetoo_native
-        build.pl -P${SMP} ${MAXMODULESFLAG} ${MAXPROCESSESFLAG} --dlv_switch -link --all
-	cp /usr/include/X11/extensions/Xrender.h x11_extensions/inc/Xrender.h
+ 	
+	cd instsetoo_native/util
+        build.pl --dlv_switch -link --all -P0 -- -P0 -s
 
         # install binaries
         cp -R instsetoo_native/unxlngi6.pro/OpenOffice/native/install/fr/linux-2.6-intel/buildroot/* $PKG/
