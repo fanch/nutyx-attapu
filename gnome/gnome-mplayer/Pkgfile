@@ -5,18 +5,21 @@
 # Depends on: mplayer, dbus-glib, libnotify, libgpod
 
 name=gnome-mplayer
-version=0.9.9
+version=0.9.9.2
 release=1
 source=(http://gnome-mplayer.googlecode.com/files/$name-$version.tar.gz)
 
 build() {
 	  cd $SRC/$name-$version
-  ./configure --prefix=$GNOME_PREFIX --sysconfdir=/etc \
-	--disable-schemas-install --without-gconf
+	./configure --prefix=$GNOME_PREFIX \
+	--sysconfdir=/etc \
+	--disable-schemas-install \
+	--without-gconf
 
   make  -j3
   make DESTDIR=$PKG install
  sed -i 's@Exec=gnome-mplayer@Exec=gnome-mplayer %F@' $PKG/usr/share/applications/$name.desktop
+ rm -r	$PKG/usr/share/doc
 }
 
 
