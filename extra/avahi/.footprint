@@ -121,9 +121,9 @@ lrwxrwxrwx	root/root	usr/lib/libavahi-common.so.3 -> libavahi-common.so.3.5.1
 -rwxr-xr-x	root/root	usr/lib/libavahi-common.so.3.5.1
 -rw-r--r--	root/root	usr/lib/libavahi-core.a
 -rwxr-xr-x	root/root	usr/lib/libavahi-core.la
-lrwxrwxrwx	root/root	usr/lib/libavahi-core.so -> libavahi-core.so.6.0.0
-lrwxrwxrwx	root/root	usr/lib/libavahi-core.so.6 -> libavahi-core.so.6.0.0
--rwxr-xr-x	root/root	usr/lib/libavahi-core.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/libavahi-core.so -> libavahi-core.so.6.0.1
+lrwxrwxrwx	root/root	usr/lib/libavahi-core.so.6 -> libavahi-core.so.6.0.1
+-rwxr-xr-x	root/root	usr/lib/libavahi-core.so.6.0.1
 -rw-r--r--	root/root	usr/lib/libavahi-glib.a
 -rwxr-xr-x	root/root	usr/lib/libavahi-glib.la
 lrwxrwxrwx	root/root	usr/lib/libavahi-glib.so -> libavahi-glib.so.1.0.1
