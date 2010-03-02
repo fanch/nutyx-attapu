@@ -2,7 +2,7 @@
 # URL: http://cvs.gnome.org/viewcvs/gtkhtml/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libgnomeui, gnome-icon-theme, libgnomeprintui, libsoup, enchant
+# Depends on: libgnomeui, gnome-icon-theme, libgnomeprintui, libsoup, enchant, iso-codes
 
 name=gtkhtml
 version=3.28.2
