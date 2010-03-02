@@ -5,8 +5,8 @@
 # Depends on: xorg, glitz, libpng, xorg-xcb-util
 
 name=cairo
-version=1.8.8
-release=2
+version=1.8.10
+release=1
 source=( http://cairographics.org/releases/$name-$version.tar.gz )
 
 build() {
