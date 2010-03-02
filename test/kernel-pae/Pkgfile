@@ -3,7 +3,7 @@
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 
-name=kernel
+name=kernel-pae
 version=2.6.33
 _BaseVersion=2.6.33
 release=1
