@@ -5,13 +5,14 @@
 # Depends on: 
 
 name=libjpeg
-version=8a
+version=8.0
+_version=8a
 release=1
-source=( http://www.ijg.org/files/jpegsrc.v$version.tar.gz)
+source=( http://www.ijg.org/files/jpegsrc.v${_version}.tar.gz)
 
 
 build() {
-	cd jpeg-$version
+	cd jpeg-${_version}
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
