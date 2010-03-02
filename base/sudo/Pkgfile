@@ -2,10 +2,9 @@
 # URL: http://www.gratisoft.us/sudo/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=sudo
-version=1.7.2p2
+version=1.7.2p4
 release=1
 source=(ftp://ftp.sudo.ws/pub/sudo/$name-$version.tar.gz)
 

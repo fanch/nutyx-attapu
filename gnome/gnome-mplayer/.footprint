@@ -4,17 +4,6 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-mplayer.desktop
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/gnome-mplayer/
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/AUTHORS (EMPTY)
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/COPYING
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/ChangeLog
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/INSTALL
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/NEWS (EMPTY)
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/README
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/dbus.txt
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/keyboard_shortcuts.txt
--rw-r--r--	root/root	usr/share/doc/gnome-mplayer/plugin-interaction.txt
 drwxr-xr-x	root/root	usr/share/gnome-control-center/
 drwxr-xr-x	root/root	usr/share/gnome-control-center/default-apps/
 -rw-r--r--	root/root	usr/share/gnome-control-center/default-apps/gnome-mplayer.xml
