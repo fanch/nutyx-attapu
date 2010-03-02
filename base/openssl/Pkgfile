@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=openssl
-version=0.9.8l
+version=0.9.8m
 release=1
 source=(http://www.openssl.org/source/$name-$version.tar.gz)
 

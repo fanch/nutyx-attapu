@@ -2,11 +2,10 @@
 # URL: http://git-scm.com/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: curl, libidn
-# Nice to have: tk
+# Depends on: curl, libidn, expat, python
 
 name=git
-version=1.6.6
+version=1.7.0.1
 release=1
 source=(http://www.kernel.org/pub/software/scm/$name/$name-{,manpages-}$version.tar.bz2)
 
