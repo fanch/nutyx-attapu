@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=libjpeg
-version=7
+version=8
 release=1
 source=( http://www.ijg.org/files/jpegsrc.v$version.tar.gz)
 
