@@ -24,7 +24,10 @@ lrwxrwxrwx	root/root	lib/libip4tc.so.0 -> libip4tc.so.0.0.0
 lrwxrwxrwx	root/root	lib/libip6tc.so -> libip6tc.so.0.0.0
 lrwxrwxrwx	root/root	lib/libip6tc.so.0 -> libip6tc.so.0.0.0
 -rwxr-xr-x	root/root	lib/libip6tc.so.0.0.0
--rw-r--r--	root/root	lib/libipq.a
+-rwxr-xr-x	root/root	lib/libipq.la
+lrwxrwxrwx	root/root	lib/libipq.so -> libipq.so.0.0.0
+lrwxrwxrwx	root/root	lib/libipq.so.0 -> libipq.so.0.0.0
+-rwxr-xr-x	root/root	lib/libipq.so.0.0.0
 -rwxr-xr-x	root/root	lib/libiptc.la
 lrwxrwxrwx	root/root	lib/libiptc.so -> libiptc.so.0.0.0
 lrwxrwxrwx	root/root	lib/libiptc.so.0 -> libiptc.so.0.0.0

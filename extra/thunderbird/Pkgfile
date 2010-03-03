@@ -5,7 +5,7 @@
 # Depends on: alsa-libs, gtk, libidl
 
 name=thunderbird
-version=3.0.2
+version=3.0.3
 release=1
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/fr/$name-$version.tar.bz2 \
 thunderbird.desktop \
