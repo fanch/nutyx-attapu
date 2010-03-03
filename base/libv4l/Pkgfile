@@ -1,0 +1,17 @@
+# Description: Librairie pour video 4 linux
+# URL: http://hansdegoede.livejournal.com/3636.html
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on:
+
+name=libv4l
+version=0.6.4
+release=1
+source=(http://people.fedoraproject.org/~jwrdegoede/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	sed -i 's|CFLAGS :=|CFLAGS ?=|' libv4l1/Makefile libv4l2/Makefile libv4lconvert/Makefile
+	make LIBDIR="/usr/lib"
+	make install PREFIX="/usr" DESTDIR=$PKG/
+}
