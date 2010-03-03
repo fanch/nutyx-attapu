@@ -5,8 +5,9 @@
 # Depends on: xorg-server
 
 name=nvidia
-version=190.53
-release=9
+#version=190.53
+version=195.36.08
+release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
 source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg0.run\
@@ -16,7 +17,7 @@ build() {
 	sh NVIDIA-Linux-${_ARCH}-$version-pkg0.run --extract-only
 	cd NVIDIA-Linux-${_ARCH}-$version-pkg0
 
-	patch -p0 -i $SRC/$name-makefile.patch usr/src/nv/Makefile.kbuild
+#	patch -p0 -i $SRC/$name-makefile.patch usr/src/nv/Makefile.kbuild
 
 
 	mkdir -p $PKG/usr/lib \

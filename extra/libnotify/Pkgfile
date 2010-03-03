@@ -5,7 +5,7 @@
 # Depends on: gtk, dbus
 
 name=libnotify
-version=0.4.4
+version=0.4.5
 release=1
 source=(http://www.galago-project.org/files/releases/source/$name/$name-$version.tar.gz)
 
