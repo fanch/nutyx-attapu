@@ -1,136 +1,75 @@
-# Description: Suite complète de office en logiciel libre 
-# URL:         http://www.openoffice.org
-# Packager:    Sibelle at free dot fr
-# Maintainer:  NuTyX packager team
-# Depends on:  curl, python, libxslt, libpthread-stubs, gperf, ant, p5-archive-zip, libsndfile
+# Description: Suite complète de office en logiciel libre
+# URL: http://www.openoffice.org
+# Packager: Sibelle at free dot fr
+# Maintainer: NuTyX packager team
+# Depends on: imagemagick, linux-pam, libart_lgpl, xorg-libxtst, p5-archive-zip, cairo, libwpd, cups, curl, python, xorg-libxaw, neon, dbus-glib, icu, libxslt, hicolor-icon-theme, desktop-file-utils, boost, gtk, libsndfile
+
 name=openoffice
-version=3.1.1
+version=3.2.0
 release=1
-OOdir=OOO310_m19
-#source=()
-source=( ftp://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_core.tar.bz2\
-         http://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_system.tar.bz2\
-          #http://www.linuxfromscratch.org/patches/blfs/svn/OOo_2.3.1-use_bin_hsqldb-1.patch\
-           ftp://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_l10n.tar.bz2 \
-	buildfix-gcc43.diff system_hsqldb.diff buildfix-openjdk-6-no-rhino.diff libxmlsec-findcerts.diff \
-	soffice-detect-mozilla-certificates.diff shell.patch \
-	ftp://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_extensions.tar.bz2\
-	ftp://ftp.gwdg.de/pub/openoffice/stable/$version/OOo_${version}_src_binfilter.tar.bz2\
-	ooffice.desktop ooo_getline.diff)
+OOdir=OOO320_m12
+
+source=(http://download.services.openoffice.org/files/stable/$version/OOo_${version}_src_{core,system,l10n,extensions,binfilter}.tar.bz2 \
+        http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-no-registration.patch.bz2 \
+        http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-large-buttons.patch.bz2 \
+        startcenter.desktop default-no-startup-wizard.diff default-system-fpicker.diff \
+        soffice-detect-mozilla-certificates.diff buildfix-gcc44.diff buildfix_FormulaMissingHeader.diff buildfix_system_db48.diff)
+
 build() {
-	install -D -m644 ooffice.desktop \
-        $PKG/usr/share/ede/programs/Applications/ooffice.desktop
-	source /etc/profile
-	mkdir -p $PKG/opt
-	mkdir -p $PKG/usr/bin
+        install -D -m644 startcenter.desktop \
+                $PKG/usr/share/ede/programs/Applications/startcenter.desktop
+        mkdir -p $PKG/opt
+        mkdir -p $PKG/usr/bin
         mkdir -p $PKG/usr/share/icons
         mkdir -p $PKG/usr/share/applications
+
+        bzip2 -d $SRC/OpenOffice.org-3.2.0-default-no-registration.patch.bz2
+        bzip2 -d $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch.bz2
         cd $OOdir
 
-	# build fixes
-	patch -Np0 -i ../ooo_getline.diff
-#	patch -Np0 -i ../buildfix-gcc43.diff
-#	patch -Np0 -i ../system_hsqldb.diff
-#	patch -Np0 -i ../buildfix-openjdk-6-no-rhino.diff
+        patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-no-registration.patch
+        patch -Np0 -i $SRC/default-no-startup-wizard.diff
+        patch -Np0 -i $SRC/default-system-fpicker.diff
+        patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch
 
-	# allows xmlsec to be able to read the format of the digital certificates.
-#	patch -Np0 -i ../libxmlsec-findcerts.diff
-	# allows soffice to find the user's firefox profile so that it can read
-	# his digital certificates. Nss stores digital certificates in your mozilla firefox profile. 
-#	patch -Np0 -i ../soffice-detect-mozilla-certificates.diff
-
-	# important bugfixes
-	# try to fix non-gtk integration 
-	#patch -Np0 -i ../shell.patch
-
-
-	#patch -Np0 -i ../internal-db-no-java_oog680_m9.diff
-#	cd config_office
-
-#	autoreconf -v
-
-	./configure --prefix=/opt/openoffice3 \
-    	--enable-libart \
-        --disable-fontooo \
-        --disable-gnome-vfs \
-    	--without-fonts \
-        --with-system-stdlibs \
-        --without-system-jars \
-    	--with-system-freetype \
-        --with-system-expat \
-        --with-system-libxml \
-    	--with-system-zlib \
-        --enable-cairo \
-        --enable-build-mozilla \
-    	--with-build-version=BLFS \
-        --with-package-format=native \
-    	--disable-binfilter \
-        --disable-odk \
-        --disable-qadevooo \
-        --with-java-home=${JAVA_HOME} \
-        --with-jdk-home=${JAVA_HOME} \
-        --disable-mozilla \
-        --with-ant-home=/opt/ant \
-        --with-system-python \
-	--with-system-cairo\
-        --with-system-curl \
-        --disable-pam \
-        --with-system-jpeg \
-        --disable-neon \
-        --with-system-sndfile \
-        --with-lang="fr" \
-	--with-arch=x86 \
-        --exec-prefix=/usr/bin \
-	--with-use-shell=bash \
-        --without-myspell-dicts \
-	--enable-pdfimport \
-	--enable-qadevooo \
-	--disable-kde \
-	--disable-kdeab \
-	--with-dict=ALL \
-	--with-vendor="NuTyX"
-#	cd ..
+        cd $SRC/$OOdir
+        ./configure --prefix=/usr --sysconfdir=/etc --disable-graphite --disable-ldap --disable-mozilla --disable-odk \
+        --disable-qadevooo --disable-fontooo --disable-systray --enable-dbus --disable-gnome-vfs --enable-gio --disable-build-mozilla --disable-binfilter --without-agg --without-gpc --without-fonts --without-ppds \
+        --without-afms --with-package-format=native --with-system-libs --without-system-lucene --without-system-hsqldb --without-system-beanshell --without-system-saxon --with-system-boost \
+        --without-system-hunspell --without-system-altlinuxhyph --without-system-lpsolve --without-stlport4 --without-java --with-lang="fr" --with-arch=x86 --with-use-shell=bash --with-alloc=system
+        #
         umask 0022
-	unset LANG LC_ALL
-#	patch -Np1 -i ../OOo_2.3.1-use_bin_hsqldb-1.patch
-	./bootstrap
-	. LinuxX86Env.Set.sh
-#	source LinuxX86Env.Set.sh
-#	./bootstrap ave
- 
-       cp /usr/include/X11/extensions/Xrender.h x11_extensions/inc/Xrender.h
-	dmake
-# pushd instsetoo_native/unxlngi6.pro/OpenOffice/inative/install/fr/linux-2.6-intel/buildroot/opt
-
-#	cp -r /home/ooo-compile/openoffice-fr/src/$OOdir $SRC/
-#	cd $OOdir
-
-	cp -r -v instsetoo_native/unxlngi6.pro/OpenOffice/native/install/fr/linux-2.6-intel/buildroot/* $PKG/
-#        popd
-	cd $PKG/opt
-	mv openoffice.org3 openoffice3
+        unset LANG LC_ALL
+        source LinuxX86Env.Set.sh
+        # Build dmake utility
+        ./bootstrap
+        cd instsetoo_native/util
+        build.pl --dlv_switch -link --all -P1 -- -P1 -s
+        # install binaries
+        cp -R ../unxlngi6.pro/OpenOffice/native/install/fr/linux-2.6-intel/buildroot/* $PKG/
+        ## Step 1
+        cd $PKG/opt
+        mv openoffice.org3 openoffice3
         for appl in sbase scalc sdraw simpress smath soffice spadmin swriter
-	do
-    	ln -v -sf /opt/openoffice3/program/$appl $PKG/usr/bin/$appl
-	done
-	cd ../../src/$OOdir/
-	cd sysui/desktop/icons
-	install -v -d $PKG/usr/share/icons/{hicolor,locolor} -m755
-	cp -r -v hicolor/*x* $PKG/usr/share/icons/hicolor
-	cp -r -v locolor/*x* $PKG/usr/share/icons/locolor
-
-	install -v -d /usr/share/applications -m 755 &&
-	cd $PKG/opt/openoffice3/share/xdg/
-	chmod 644 *
-	for appl in *.desktop
-	do
-    		sed -i '/Exec/d' $appl
-    		echo "Exec=/usr/bin/s`echo $appl | sed 's/.desktop//'`" >> $appl
-    		sed -i '/Icon/d' $appl
-    		echo "Icon=`echo $appl | sed 's/.desktop//'`" >> $appl
-	done
-	sed -i 's@bin/sprinteradmin@bin/spadmin@' printeradmin.desktop &&
-	chmod 444 *
-	cp -v *.desktop $PKG/usr/share/applications
-
+        do
+                ln -v -sf /opt/openoffice3/program/$appl $PKG/usr/bin/$appl
+        done
+        ## Icons
+        cd $SRC/$OOdir/sysui/desktop/icons
+        install -v -d $PKG/usr/share/icons/{hicolor,locolor} -m755
+        cp -r -v hicolor/*x* $PKG/usr/share/icons/hicolor
+        cp -r -v locolor/*x* $PKG/usr/share/icons/locolor
+        ## desktop files
+        cd $PKG/opt/openoffice3/share/xdg/
+        chmod 644 *
+        for appl in *.desktop
+        do
+                sed -i '/Exec/d' $appl
+                echo "Exec=/usr/bin/s`echo $appl | sed 's/.desktop//'`" >> $appl
+                sed -i '/Icon/d' $appl
+                echo "Icon=`echo $appl | sed 's/.desktop//'`" >> $appl
+        done
+        sed -i 's@bin/sprinteradmin@bin/spadmin@' printeradmin.desktop &&
+        chmod 444 *
+        cp -v *.desktop $PKG/usr/share/applications
 }
