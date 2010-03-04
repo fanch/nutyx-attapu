@@ -1,0 +1,22 @@
+# Description: Avant Window Navigator, a dock-like navigation bar for the X desktop.
+# URL: http://wiki.awn-project.org/
+# Maintainer: geantbrun at gmail dot com
+# Packager: geantbrun
+# Depends on: intltool glib gconf pycairo pygtk avant-window-navigator libsexy libnotify vte libgnomeui gnome-desktop libgtop libgnome-menu
+
+name=awn-extras-applets
+version=0.3.2.2
+release=1
+source=(http://launchpad.net/awn-extras/0.2/0.3.2.2/+download/awn-extras-applets-0.3.2.2.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./autogen.sh
+
+	make
+	make DESTDIR=$PKG install
+	
+}
+
+

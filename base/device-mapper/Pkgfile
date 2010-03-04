@@ -4,24 +4,22 @@
 # Maintainer:   thierryn1 at hispeed dot ch
 
 name=device-mapper
-version=1.02.28
+version=2.02.61
 release=1
-source=(ftp://sources.redhat.com/pub/dm/device-mapper.$version.tgz)
+source=(ftp://sources.redhat.com/pub/lvm2/LVM2.$version.tgz)
 
 build() {
-	cd device-mapper.$version
+	cd LVM2.$version
 	./configure \
 	        --prefix=/usr \
         	--libdir=/lib \
 	        --mandir=/usr/share/man \
         	--sbindir=/sbin \
 	        --enable-pkgconfig \
-        	--disable-nls \
-	        --with-optimisation="$CFLAGS" \
-		--enable-static_link # Required for dmraid
-	make
-	make DESTDIR=$PKG install
+	        --with-optimisation="$CFLAGS"
+	make device-mapper
+	make DESTDIR=$PKG install_device-mapper
 	find $PKG -type f -exec chmod u+w {} \;
 	# Suppression des binaires, lib et man
-	rm -r $PKG/{lib,sbin/dmsetup,usr/share}
+	rm -r $PKG/{sbin,usr/share}
 }

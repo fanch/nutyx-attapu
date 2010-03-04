@@ -8,18 +8,17 @@ drwx------	root/root	etc/rc.d/init.d/
 -rwxr-xr-x	root/root	etc/rc.d/init.d/lvmnodes
 drwx------	root/root	etc/rc.d/rcsysinit.d/
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S19lvmnodes -> ../init.d/lvmnodes
-drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libdevmapper.so -> libdevmapper.so.1.02
--r-xr-xr-x	root/root	lib/libdevmapper.so.1.02
 drwxr-xr-x	root/root	sbin/
--r-xr-xr-x	root/root	sbin/dmsetup
+lrwxrwxrwx	root/root	sbin/dmsetup -> dmsetup.static
+-r-xr-xr-x	root/root	sbin/dmsetup.static
 -r-xr-xr-x	root/root	sbin/fsadm
 lrwxrwxrwx	root/root	sbin/lvchange -> lvm
 lrwxrwxrwx	root/root	sbin/lvconvert -> lvm
 lrwxrwxrwx	root/root	sbin/lvcreate -> lvm
 lrwxrwxrwx	root/root	sbin/lvdisplay -> lvm
 lrwxrwxrwx	root/root	sbin/lvextend -> lvm
--r-xr-xr-x	root/root	sbin/lvm
+lrwxrwxrwx	root/root	sbin/lvm -> lvm.static
+-r-xr-xr-x	root/root	sbin/lvm.static
 lrwxrwxrwx	root/root	sbin/lvmchange -> lvm
 lrwxrwxrwx	root/root	sbin/lvmdiskscan -> lvm
 -r-xr-xr-x	root/root	sbin/lvmdump
