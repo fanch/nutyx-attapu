@@ -1,18 +1,17 @@
-# Description: Perl program to create manipulate read and write Zip archive files
+# Description: Programe Perl pour la création, la manipulation et l'écriture des fichiers d'archive Zip
 # URL: http://search.cpan.org/~adamk/Archive-Zip-1.23/lib/Archive/Zip.pm
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=p5-archive-zip
-version=1.27.1
+version=1.30
 release=1
-source=( http://cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-1.27_01.tar.gz
+source=( http://cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-$version.tar.gz
          )
 
 
 build() {
-	cd Archive-Zip-1.27_01
+	cd Archive-*
         perl Makefile.PL
 	make OPTIMIZE="${CFLAGS}"
 	make DESTDIR=${PKG} install

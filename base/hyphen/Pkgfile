@@ -1,8 +1,7 @@
-# Description: Hunspell is the default spell checker of OpenOffice.org and Mozilla Firefox 3 & Thunderbird
+# Description: Correcteur d'orthographe par défaut de openoffice, de firefox et thunderbird
 # URL: http://hunspell.sf.net
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: glibc, perl
 
 name=hyphen
 version=2.4

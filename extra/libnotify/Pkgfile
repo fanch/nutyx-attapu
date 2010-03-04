@@ -2,10 +2,10 @@
 # URL: http://www.galago-project.org/news/index.php
 # Maintainer: NuTyX
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, dbus
+# Depends on: gtk, dbus-glib
 
 name=libnotify
-version=0.4.4
+version=0.4.5
 release=1
 source=(http://www.galago-project.org/files/releases/source/$name/$name-$version.tar.gz)
 
