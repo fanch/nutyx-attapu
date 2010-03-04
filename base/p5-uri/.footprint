@@ -9,14 +9,17 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/URI/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/Escape.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/Heuristic.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/IRI.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/QueryParam.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/Split.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/URL.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/WithBase.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_foreign.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_generic.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_idna.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_ldap.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_login.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_punycode.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_query.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_segment.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/URI/_server.pm
@@ -71,6 +74,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/URI::Split.3.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::URL.3.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::WithBase.3.gz
+-r--r--r--	root/root	usr/share/man/man3/URI::_punycode.3.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::data.3.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::file.3.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::ldap.3.gz
