@@ -20,7 +20,7 @@ openbox)
                 eval `dbus-launch --sh-syntax --exit-with-session`
                 export DBUS_SESSION_BUS_ADDRESS
         fi
-	exec openbox
+	exec openbox-session
 	;;
 lxde)
         if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
