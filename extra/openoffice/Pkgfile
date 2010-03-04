@@ -1,0 +1,75 @@
+# Description: Suite complète de office en logiciel libre
+# URL: http://www.openoffice.org
+# Packager: Sibelle at free dot fr
+# Maintainer: NuTyX packager team
+# Depends on: imagemagick, linux-pam, libart_lgpl, xorg-libxtst, p5-archive-zip, cairo, libwpd, cups, curl, python, xorg-libxaw, neon, dbus-glib, icu, libxslt, hicolor-icon-theme, desktop-file-utils, boost, gtk, libsndfile
+
+name=openoffice
+version=3.2.0
+release=1
+OOdir=OOO320_m12
+
+source=(http://download.services.openoffice.org/files/stable/$version/OOo_${version}_src_{core,system,l10n,extensions,binfilter}.tar.bz2 \
+        http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-no-registration.patch.bz2 \
+        http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-large-buttons.patch.bz2 \
+        startcenter.desktop default-no-startup-wizard.diff default-system-fpicker.diff \
+        soffice-detect-mozilla-certificates.diff buildfix-gcc44.diff buildfix_FormulaMissingHeader.diff buildfix_system_db48.diff)
+
+build() {
+        install -D -m644 startcenter.desktop \
+                $PKG/usr/share/ede/programs/Applications/startcenter.desktop
+        mkdir -p $PKG/opt
+        mkdir -p $PKG/usr/bin
+        mkdir -p $PKG/usr/share/icons
+        mkdir -p $PKG/usr/share/applications
+
+        bzip2 -d $SRC/OpenOffice.org-3.2.0-default-no-registration.patch.bz2
+        bzip2 -d $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch.bz2
+        cd $OOdir
+
+        patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-no-registration.patch
+        patch -Np0 -i $SRC/default-no-startup-wizard.diff
+        patch -Np0 -i $SRC/default-system-fpicker.diff
+        patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch
+
+        cd $SRC/$OOdir
+        ./configure --prefix=/usr --sysconfdir=/etc --disable-graphite --disable-ldap --disable-mozilla --disable-odk \
+        --disable-qadevooo --disable-fontooo --disable-systray --enable-dbus --disable-gnome-vfs --enable-gio --disable-build-mozilla --disable-binfilter --without-agg --without-gpc --without-fonts --without-ppds \
+        --without-afms --with-package-format=native --with-system-libs --without-system-lucene --without-system-hsqldb --without-system-beanshell --without-system-saxon --with-system-boost \
+        --without-system-hunspell --without-system-altlinuxhyph --without-system-lpsolve --without-stlport4 --without-java --with-lang="fr" --with-arch=x86 --with-use-shell=bash --with-alloc=system
+        #
+        umask 0022
+        unset LANG LC_ALL
+        source LinuxX86Env.Set.sh
+        # Build dmake utility
+        ./bootstrap
+        cd instsetoo_native/util
+        build.pl --dlv_switch -link --all -P1 -- -P1 -s
+        # install binaries
+        cp -R ../unxlngi6.pro/OpenOffice/native/install/fr/linux-2.6-intel/buildroot/* $PKG/
+        ## Step 1
+        cd $PKG/opt
+        mv openoffice.org3 openoffice3
+        for appl in sbase scalc sdraw simpress smath soffice spadmin swriter
+        do
+                ln -v -sf /opt/openoffice3/program/$appl $PKG/usr/bin/$appl
+        done
+        ## Icons
+        cd $SRC/$OOdir/sysui/desktop/icons
+        install -v -d $PKG/usr/share/icons/{hicolor,locolor} -m755
+        cp -r -v hicolor/*x* $PKG/usr/share/icons/hicolor
+        cp -r -v locolor/*x* $PKG/usr/share/icons/locolor
+        ## desktop files
+        cd $PKG/opt/openoffice3/share/xdg/
+        chmod 644 *
+        for appl in *.desktop
+        do
+                sed -i '/Exec/d' $appl
+                echo "Exec=/usr/bin/s`echo $appl | sed 's/.desktop//'`" >> $appl
+                sed -i '/Icon/d' $appl
+                echo "Icon=`echo $appl | sed 's/.desktop//'`" >> $appl
+        done
+        sed -i 's@bin/sprinteradmin@bin/spadmin@' printeradmin.desktop &&
+        chmod 444 *
+        cp -v *.desktop $PKG/usr/share/applications
+}
