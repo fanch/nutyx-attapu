@@ -2,7 +2,6 @@
 # URL: http://hunspell.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: gcc-libs, readline
 
 name=hunspell
 version=1.2.8
