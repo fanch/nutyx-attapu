@@ -2,10 +2,9 @@
 # URL: http://www.sno.phy.queensu.ca/~phil/exiftool/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=p5-exiftool
-version=8.02
+version=8.12
 release=1
 source=(http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-$version.tar.gz)
 
