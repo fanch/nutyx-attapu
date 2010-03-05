@@ -1,0 +1,27 @@
+# Description: Slideshow Maker In Linux Environnement
+# URL: http://smile.tuxfamily.org/
+# Packager: ranger42 at free dot fr
+# Depends on: qt, sox, mplayer, imagemagick, perl
+
+name=smile
+version=1.0
+release=1
+source=(http://download.tuxfamily.org/smiletool/$name-$version.tar.gz \
+        smile.desktop)
+
+
+
+build() {
+        cd $name
+
+        qmake
+        make clean
+        make
+        mkdir -p $PKG/{opt/smile/bin,usr/share/{applications,pixmaps}}
+        cp -R BIB_ManSlide/* $PKG/opt/smile/
+        cp -R Interface $PKG/opt/smile/
+        cp smile fake.pl $PKG/opt/smile/bin
+        install -D -m644 $SRC/smile.desktop $PKG/usr/share/applications/smile.desktop
+        install -D -m644 Interface/Theme/logostart.png $PKG/usr/share/pixmaps/smile.png
+        chmod 755 -R $PKG/opt/smile/Luma
+}

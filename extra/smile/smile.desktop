@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Smile
+Exec=smile
+Icon=smile
+Categories=AudioVideo;
+Comment=Slideshow Maker In Linux Environement
+Comment[fr]=Utilitaire pour créer des diaporamas dans Linux
+Terminal=false
+Type=Application
+StartupNotify=true

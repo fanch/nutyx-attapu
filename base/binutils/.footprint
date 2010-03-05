@@ -41,22 +41,21 @@ drwxr-xr-x	root/root	usr/lib/ldscripts/
 -rw-r--r--	root/root	usr/lib/ldscripts/i386linux.xn
 -rw-r--r--	root/root	usr/lib/ldscripts/i386linux.xr
 -rw-r--r--	root/root	usr/lib/ldscripts/i386linux.xu
--rwxr-xr-x	root/root	usr/lib/libbfd-2.19.1.so
+-rwxr-xr-x	root/root	usr/lib/libbfd-2.20.1.20100303.so
 -rw-r--r--	root/root	usr/lib/libbfd.a
 -rwxr-xr-x	root/root	usr/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.19.1.so
+lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.20.1.20100303.so
 -rw-r--r--	root/root	usr/lib/libiberty.a
--rwxr-xr-x	root/root	usr/lib/libopcodes-2.19.1.so
+-rwxr-xr-x	root/root	usr/lib/libopcodes-2.20.1.20100303.so
 -rw-r--r--	root/root	usr/lib/libopcodes.a
 -rwxr-xr-x	root/root	usr/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.19.1.so
+lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.20.1.20100303.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/as.info.gz
 -rw-r--r--	root/root	usr/share/info/bfd.info.gz
 -rw-r--r--	root/root	usr/share/info/binutils.info.gz
 -rw-r--r--	root/root	usr/share/info/configure.info.gz
--rw-r--r--	root/root	usr/share/info/dir.gz
 -rw-r--r--	root/root	usr/share/info/gprof.info.gz
 -rw-r--r--	root/root	usr/share/info/ld.info.gz
 drwxr-xr-x	root/root	usr/share/locale/

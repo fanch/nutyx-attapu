@@ -1,0 +1,16 @@
+# Description: Connecteur Python pour la librairie cairo
+# URL: http://www.cairographics.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python alsa-lib
+
+name=pyalsaaudio
+version=0.6
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	python setup.py build
+	python setup.py install --prefix=/usr --root=$PKG
+}

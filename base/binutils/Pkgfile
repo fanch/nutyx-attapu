@@ -2,11 +2,10 @@
 # URL: http://sources.redhat.com/binutils/
 # Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=binutils
-version=2.19.1
-release=2
+version=2.20.1
+release=1
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 
 build() {
@@ -24,13 +23,11 @@ cd ../binutils-build
 --mandir=/usr/share/man \
 --infodir=/usr/share/info \
 --enable-shared
-sed -i -e "s:mandir \= \/usr\/share:mandir \= ${pkgdir}\/usr\/share:" Makefile
-sed -i -e "s:infodir \= \/usr\/share:infodir \= ${pkgdir}\/usr\/share:" Makefile 
 make tooldir=/usr
 make check
 make tooldir=/usr DESTDIR=$PKG install
 cp ../$name-$version/include/libiberty.h $PKG/usr/include
-rm -rf $PKG/usr/info
+rm $PKG/usr/share/info/dir
 sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/libbfd.la
 
 }
