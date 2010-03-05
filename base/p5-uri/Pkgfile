@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=p5-uri
-version=1.40
+version=1.52
 release=1
 source=(ftp://ftp.demon.co.uk/pub/CPAN/modules/by-module/URI/URI-$version.tar.gz)
 
