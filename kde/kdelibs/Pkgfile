@@ -5,7 +5,7 @@
 # Depends on: gamin, automoc4, xz-utils, qt, polkit-qt, strigi, soprano, qca, eigen, gmm, dbus, jasper, openexr, giflib, avahi, enchant, pcre, shared-mime-info, kerberos, acl, attica, shared-desktop-ontologies, libcups
 
 name=kdelibs
-version=4.4.0
+version=4.4.1
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 
