@@ -247,7 +247,6 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmkwinscreenedges.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmkwm.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlaunch.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlilo.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmlocale.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmnic.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmnotify.mo
@@ -266,7 +265,6 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcmxinerama.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcolorchooser.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kcron.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdat.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kde-menu.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdeasciiquarium.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kdebugdialog.mo
@@ -464,7 +462,6 @@ drwxr-xr-x	root/root	opt/kde/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ksysguardlsofwidgets.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ksystemlog.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ksystraycmd.mo
--rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ksysv.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/kteatime.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ktexteditor_codesnippets_core.mo
 -rw-r--r--	root/root	opt/kde/share/locale/fr/LC_MESSAGES/ktexteditor_plugins.mo
