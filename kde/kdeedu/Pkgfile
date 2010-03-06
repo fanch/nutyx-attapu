@@ -5,7 +5,7 @@
 # Depends on: kdebase-runtime, libxslt, libxml2
 
 name=kdeedu
-version=4.4.0
+version=4.4.1
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 
