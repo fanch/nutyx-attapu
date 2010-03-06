@@ -2,11 +2,10 @@
 # URL: http://www.varlock.com
 # Maintainer: Simone Rota, sip at crux dot nu
 # Packager: Simone Rota, sip at crux dot nu
-# Depends on:
 
 name=pkg-get
 version=0.4.5
-release=12
+release=13
 source=(http://www.varlock.com/files/$name-$version.tar.gz \
 	pkg-get-0.4.5-NuTyX-02.patch pkg-get.conf pkg-repgen.patch syn)
 
