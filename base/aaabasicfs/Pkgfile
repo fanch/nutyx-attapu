@@ -70,6 +70,7 @@ postgres:x:41:41:PostgreSQL Server:/srv/pgsql/data:/bin/bash
 rsyncd:48:48:rsyncd Daemon:/home/rsync:/bin/false
 sshd:x:50:50:sshd PrivSep:/var/lib/sshd:/bin/false
 policykit:x:62:62:PolicyKit:/:/sbin/nologin
+tomcat:x:66:66:Tomcat Server:/opt/tomcat:/bin/false
 clamav:x:97:97:Clamav Antivirus:/dev/null:/bin/false
 anonymous:x:98:1000::/home/anonymous:/bin/false
 nobody:x:99:99:Unprivileged User:/dev/null:/bin/false
@@ -110,6 +111,7 @@ games:x:60:
 halusers:x:61:
 policykit:x:62:
 fuse:x:65:
+tomcat:x:66:
 scanner:x:70:
 vboxusers:x:80:
 clamav:x:97:
