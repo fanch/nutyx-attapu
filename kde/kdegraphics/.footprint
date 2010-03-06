@@ -98,7 +98,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_mobi.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_ooo.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_plucker.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_poppler.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_tiff.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularGenerator_xps.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/okularpart.so
@@ -154,7 +153,6 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_kimgio.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_mobi.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_ooo.desktop
--rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_pdf.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_plucker.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_tiff.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/okularApplication_xps.desktop
@@ -466,7 +464,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_mobi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_ooo.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_plucker.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_poppler.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_tiff.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/libokularGenerator_xps.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/mobithumbnail.desktop
@@ -483,7 +480,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularMobi.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularOoo.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularPlucker.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/okularPoppler.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularTiff.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okularXps.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/okular_part.desktop
