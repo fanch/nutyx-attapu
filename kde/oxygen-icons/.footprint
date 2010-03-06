@@ -94,6 +94,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/actions/zoom-fit-width.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/animations/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/accessories-character-map.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/accessories-dictionary.png
@@ -103,7 +104,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/basket.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/bovo.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/device-notifier.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/digikam.png
@@ -1384,6 +1384,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/phone.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/printer.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/scanner.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/secure-card.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/video-display.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/video-projector.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/video-television.png
@@ -2327,6 +2328,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/animations/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/animations/process-working-kde.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/animations/process-working.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/accessories-character-map.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/accessories-dictionary.png
@@ -2536,6 +2538,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/phone.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/printer.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/scanner.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/secure-card.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/video-display.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/video-projector.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/video-television.png
@@ -2965,11 +2968,11 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/actions/tools-rip-audio-cd.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/actions/tools-rip-video-cd.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/256x256/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/MameExecutor.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/accessories-dictionary.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/akonadi.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/k3b.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/karbon.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/256x256/apps/kbruch.png
@@ -3731,6 +3734,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/animations/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/animations/process-idle-kde.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/animations/process-working-kde.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/accessories-character-map.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/accessories-dictionary.png
@@ -3946,6 +3950,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/devices/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/phone.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/printer.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/scanner.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/secure-card.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/video-display.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/video-projector.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/video-television.png
@@ -4830,6 +4835,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/animations/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/animations/process-idle-kde.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/animations/process-working-kde.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/accessories-character-map.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/accessories-dictionary.png
@@ -5500,6 +5506,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/actions/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/actions/zoom-fit-width.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/animations/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/Charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/accessories-calculator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/accessories-character-map.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/accessories-dictionary.png
@@ -5509,7 +5516,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/basket.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/bovo.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/charm.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/digikam.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/esd.png
