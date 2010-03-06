@@ -4,10 +4,10 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=initrd
-version=2.6.32.9
-release=2
-_tools=29122009
-_baseversion=2.6.32
+version=2.6.33
+release=1
+_tools=06032010
+_baseversion=2.6.33
 SCRIPT_VERSION="2009.3"
 source=()
 build(){
@@ -45,8 +45,6 @@ done
 $WDIR/rootfs/sbin/depmod -b $WDIR/rootfs ${_baseversion}-NuTyX
 	
 cp install-${SCRIPT_VERSION}.ash $WDIR/rootfs/root/
-sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-install
-sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-mirroir
 	
 # Compression des modules
 cd $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX
