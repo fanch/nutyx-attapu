@@ -5,7 +5,7 @@
 
 name=virtualbox-module
 version=3.1.4
-release=1
+release=2
 _name=VirtualBox
 _kernel=`uname -r|sed "s/-NuTyX//"`
 _build=57640
