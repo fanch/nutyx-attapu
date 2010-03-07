@@ -23,7 +23,6 @@ build() {
 	install -dv -m 0750 $PKG/root	
 	install -dv -m 1777 $PKG/tmp 
 	install -dv -m 1777 $PKG/var/tmp
-	mkdir -pv $PKG/srv/NuTyX/locale
 	mkdir -pv $PKG/usr/{,local/}{bin,include,lib,sbin,src}
 	mkdir -pv $PKG/usr/{,local/}share/{doc,info,locale,man}
 	mkdir -v  $PKG/usr/{,local/}share/{misc,terminfo,zoneinfo}
