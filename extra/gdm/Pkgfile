@@ -6,9 +6,9 @@
 
 name=gdm
 version=2.20.10
-release=7
+release=8
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/2.20/$name-$version.tar.bz2 \
-       http://kiao.no-ip.info/NuTyX/files/nutyx09.tar.gz \
+       http://kiao.no-ip.info/NuTyX/files/nutyx09-2.tar.gz \
 	defaults.conf NuTyXlogo.png)
 
 build() {
@@ -67,4 +67,5 @@ EOF
 	install -D -m444 ../defaults.conf $PKG/usr/share/gdm/defaults.conf
 	cp -a $SRC/nutyx09 $PKG/usr/share/gdm/themes/
 	rm $PKG/usr/share/xsessions/gnome.desktop
+	chown -R root:root $PKG/usr/share/gdm/themes/
 }
