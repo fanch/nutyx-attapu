@@ -7,8 +7,8 @@
 name=opal
 version=3.6.6
 release=1
-source=(http://www.ekiga.org/admin/downloads/latest/sources/ekiga_3.2.6/$name-$version.tar.gz)
-
+source=(ftp://ftp.gnome.org/pub/gnome/sources/opal/3.6/$name-$version.tar.bz2)
+        ftp://ftp.gnome.org/pub/gnome/sources/opal/3.6/opal-3.6.6.tar.bz2
 build() {
 	cd $name-$version
 		./configure --prefix=/usr\
