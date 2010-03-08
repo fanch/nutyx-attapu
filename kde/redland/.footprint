@@ -37,6 +37,9 @@ drwxr-xr-x	root/root	usr/lib/redland/
 -rw-r--r--	root/root	usr/lib/redland/librdf_storage_sqlite.a
 -rwxr-xr-x	root/root	usr/lib/redland/librdf_storage_sqlite.la
 -rwxr-xr-x	root/root	usr/lib/redland/librdf_storage_sqlite.so
+-rw-r--r--	root/root	usr/lib/redland/librdf_storage_virtuoso.a
+-rwxr-xr-x	root/root	usr/lib/redland/librdf_storage_virtuoso.la
+-rwxr-xr-x	root/root	usr/lib/redland/librdf_storage_virtuoso.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
