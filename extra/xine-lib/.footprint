@@ -88,6 +88,7 @@ drwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/vidix/
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_dxr3_video.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_faad.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_ff.so
+-rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_gdk_pixbuf.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_gsm610.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_lpcm.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_decode_mad.so
@@ -114,6 +115,7 @@ drwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/vidix/
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_flv.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_games.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_iff.so
+-rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_image.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_matroska.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_mng.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_dmx_mpeg.so
@@ -143,6 +145,7 @@ drwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/vidix/
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_pvr.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_rtp.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_rtsp.so
+-rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_smb.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_stdin_fifo.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_v4l.so
 -rwxr-xr-x	root/root	usr/lib/xine/plugins/1.28/xineplug_inp_v4l2.so
