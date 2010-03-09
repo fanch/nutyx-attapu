@@ -5,7 +5,7 @@
 # Depends on:  apr, sqlite3
 
 name=apache
-version=2.2.14
+version=2.2.15
 release=1
 source=(http://archive.apache.org/dist/httpd/httpd-$version.tar.bz2 \
 	http://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.2.11-config-1.patch
