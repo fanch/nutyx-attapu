@@ -36,10 +36,10 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/openssh/
 -rwxr-xr-x	root/root	usr/lib/openssh/sftp-server
 -rws--x--x	root/root	usr/lib/openssh/ssh-keysign
+-rwxr-xr-x	root/root	usr/lib/openssh/ssh-pkcs11-helper
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/sshd
 drwxr-xr-x	root/root	usr/share/
--rw-r--r--	root/root	usr/share/Ssh.bin
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/scp.1.gz
@@ -57,6 +57,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/sftp-server.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/ssh-keysign.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/ssh-pkcs11-helper.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/sshd.8.gz
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
