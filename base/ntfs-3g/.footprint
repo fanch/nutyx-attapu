@@ -1,9 +1,9 @@
 drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/ntfs-3g
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libntfs-3g.so -> libntfs-3g.so.73.0.0
-lrwxrwxrwx	root/root	lib/libntfs-3g.so.73 -> libntfs-3g.so.73.0.0
--rw-r--r--	root/root	lib/libntfs-3g.so.73.0.0
+lrwxrwxrwx	root/root	lib/libntfs-3g.so -> libntfs-3g.so.75.0.0
+lrwxrwxrwx	root/root	lib/libntfs-3g.so.75 -> libntfs-3g.so.75.0.0
+-rw-r--r--	root/root	lib/libntfs-3g.so.75.0.0
 drwxr-xr-x	root/root	sbin/
 lrwxrwxrwx	root/root	sbin/mount.ntfs-3g -> /bin/ntfs-3g
 drwxr-xr-x	root/root	usr/
@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	usr/include/ntfs-3g/
 -rw-r--r--	root/root	usr/include/ntfs-3g/attrlist.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/bitmap.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/bootsect.h
+-rw-r--r--	root/root	usr/include/ntfs-3g/cache.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/collate.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/compat.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/compress.h
@@ -37,6 +38,8 @@ drwxr-xr-x	root/root	usr/include/ntfs-3g/
 -rw-r--r--	root/root	usr/include/ntfs-3g/misc.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/mst.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/ntfstime.h
+-rw-r--r--	root/root	usr/include/ntfs-3g/object_id.h
+-rw-r--r--	root/root	usr/include/ntfs-3g/param.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/reparse.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/runlist.h
 -rw-r--r--	root/root	usr/include/ntfs-3g/security.h
