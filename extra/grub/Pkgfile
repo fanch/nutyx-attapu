@@ -5,7 +5,7 @@
 # Depends on: freetype
 
 name=grub
-version=1.97.2
+version=1.98
 release=1
 source=(ftp://alpha.gnu.org/gnu/grub/grub-$version.tar.gz\
 	grub.cfg)
