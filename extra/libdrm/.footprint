@@ -9,11 +9,19 @@ drwxr-xr-x	root/root	usr/include/drm/
 -rw-r--r--	root/root	usr/include/drm/mga_drm.h
 -rw-r--r--	root/root	usr/include/drm/nouveau_drm.h
 -rw-r--r--	root/root	usr/include/drm/r128_drm.h
+-rw-r--r--	root/root	usr/include/drm/radeon_bo.h
+-rw-r--r--	root/root	usr/include/drm/radeon_bo_gem.h
+-rw-r--r--	root/root	usr/include/drm/radeon_bo_int.h
+-rw-r--r--	root/root	usr/include/drm/radeon_cs.h
+-rw-r--r--	root/root	usr/include/drm/radeon_cs_gem.h
+-rw-r--r--	root/root	usr/include/drm/radeon_cs_int.h
 -rw-r--r--	root/root	usr/include/drm/radeon_drm.h
 -rw-r--r--	root/root	usr/include/drm/savage_drm.h
 -rw-r--r--	root/root	usr/include/drm/sis_drm.h
 -rw-r--r--	root/root	usr/include/drm/via_drm.h
 -rw-r--r--	root/root	usr/include/intel_bufmgr.h
+drwxr-xr-x	root/root	usr/include/libkms/
+-rw-r--r--	root/root	usr/include/libkms/libkms.h
 -rw-r--r--	root/root	usr/include/xf86drm.h
 -rw-r--r--	root/root	usr/include/xf86drmMode.h
 drwxr-xr-x	root/root	usr/lib/
@@ -25,6 +33,16 @@ lrwxrwxrwx	root/root	usr/lib/libdrm.so.2 -> libdrm.so.2.4.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_intel.so -> libdrm_intel.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libdrm_intel.so.1 -> libdrm_intel.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libdrm_intel.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_radeon.la
+lrwxrwxrwx	root/root	usr/lib/libdrm_radeon.so -> libdrm_radeon.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libdrm_radeon.so.1 -> libdrm_radeon.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libdrm_radeon.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libkms.la
+lrwxrwxrwx	root/root	usr/lib/libkms.so -> libkms.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libkms.so.1 -> libkms.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libkms.so.1.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_intel.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libdrm_radeon.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libkms.pc
