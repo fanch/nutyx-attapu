@@ -1,0 +1,15 @@
+# Description: SCons is an open source software contruction tool that is a substitute for make.
+# URL: http://scons.org
+# Maintainer: skingrapher at legtux dot org
+# Depends on: python 
+
+name=scons
+version=1.2.0
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+build () 
+{ 
+    cd $name-$version
+    python setup.py install --standard-lib --prefix=/usr --install-data=/usr/share --root=$PKG;
+    install -D -m644 LICENSE.txt $PKG/usr/share/licenses/$name/LICENSE
+}

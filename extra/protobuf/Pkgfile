@@ -1,0 +1,16 @@
+# Description: A way of encoding structured data in an efficient yet extensible format
+# URL: http://code.google.com/p/protobuf/
+# Maintainer: skingrapher at legtux dot org
+# Depends on: gcc, zlib 
+
+name=protobuf
+version=2.3.0
+release=1
+source=(http://protobuf.googlecode.com/files/$name-$version.tar.bz2)
+build () 
+{ 
+    cd $name-$version
+    ./autogen.sh
+    ./configure --prefix=/usr --mandir=/usr/share/man --disable-static
+    make DESTDIR=$PKG install
+}
