@@ -2,7 +2,7 @@
 # URL: http://fontconfig.org/wiki/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: freetype
+# Depends on: freetype, libxml2
 
 name=fontconfig
 version=2.7.0
