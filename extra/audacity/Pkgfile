@@ -1,0 +1,24 @@
+# Description: Programme pour la manipulation des fichiers audio
+# URL: http://audacity.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: wxgtk libmad libvorbis libid3tag flac libsamplerate lame shared-mime-info
+
+name=audacity
+version=1.3.11
+release=1
+source=(http://audacity.googlecode.com/files/$name-minsrc-$version.tar.bz2)
+
+build() {
+	cd $name-*
+	WX_CONFIG=/usr/bin/wx-config
+	./configure --prefix=/usr \
+	--with-portaudio=v19 --with-libsamplerate=system \
+     --without-libresample --with-libmad=system \
+     --with-id3tag=system --with-flac=system \
+     --with-vorbis=system --with-libexpat=system \
+     --with-libsndfile=system --with-soundtouch \
+     --enable-unicode --without-taglib
+	make
+	make DESTDIR=$PKG install
+}
