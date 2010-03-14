@@ -1,7 +1,6 @@
-# Description: A way of encoding structured data in an efficient yet extensible format
+# Description: Une façon d'encoder les données structurées de manière éfficace et extensible
 # URL: http://code.google.com/p/protobuf/
 # Maintainer: skingrapher at legtux dot org
-# Depends on: gcc, zlib 
 
 name=protobuf
 version=2.3.0
