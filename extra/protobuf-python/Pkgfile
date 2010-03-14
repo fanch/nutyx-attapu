@@ -1,0 +1,14 @@
+# Description: Google's data interchange format utility (python API).
+# URL: http://code.google.com/p/protobuf/
+# Maintainer: skingrapher at legtux dot org
+# Depends on: python, protobuf>=2.3.0, setuptools
+
+name=protobuf-python
+version=2.3.0
+release=1
+source=(http://protobuf.googlecode.com/files/protobuf-2.3.0.tar.bz2)
+build () 
+{ 
+    cd protobuf-$version/python
+    python setup.py install --prefix=/usr --root $PKG
+}
