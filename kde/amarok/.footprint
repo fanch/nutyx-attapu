@@ -42,6 +42,9 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_lastfm.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_magnatunestore.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_amarok_service_mp3tunes.so
+lrwxrwxrwx	root/root	opt/kde/lib/libamarok-sqlcollection.so -> libamarok-sqlcollection.so.1
+lrwxrwxrwx	root/root	opt/kde/lib/libamarok-sqlcollection.so.1 -> libamarok-sqlcollection.so.1.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libamarok-sqlcollection.so.1.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so -> libamaroklib.so.1
 lrwxrwxrwx	root/root	opt/kde/lib/libamaroklib.so.1 -> libamaroklib.so.1.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libamaroklib.so.1.0.0
@@ -548,6 +551,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_mp3tunes.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_mp3tunes_config.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amarok_service_opmldirectory.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/amarokitpc.protocol
 -rw-r--r--	root/root	opt/kde/share/kde4/services/amaroklastfm.protocol
 drwxr-xr-x	root/root	opt/kde/share/kde4/servicetypes/
 -rw-r--r--	root/root	opt/kde/share/kde4/servicetypes/amarok_codecinstall.desktop
