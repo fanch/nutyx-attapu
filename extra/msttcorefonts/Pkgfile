@@ -1,5 +1,5 @@
-# $Id: build,v 1.2 2008/08/13 10:03:53 install Exp $
-# Description: Police de caract�res suppl�mentaires
+# $Id: build,v 1.2 2010/01/12 install Exp $
+# Description: Police de caracteres supplementaires
 # URL: http://thelinuxbox.org/
 # Maintainer: Linux From Scratch 
 # Packager: Thierry Nuttens, thierryn1 at hispeed dot ch
@@ -7,13 +7,15 @@
 
 name=msttcorefonts
 version=20100112
-release=1
-group=travail
+release=2
 source=( http://thelinuxbox.org/downloads/fonts/$name.tar.gz)
 
 build() {
 	cd $name
-	mkdir -p $PKG/usr/lib/X11/fonts/TTF
-	mv * $PKG/usr/lib/X11/fonts/TTF
+	mkdir -p $PKG/usr/share/fonts/TTF
+	install -v -m644 *.ttf $PKG/usr/share/fonts/TTF
+
+#	mv * $PKG/usr/share/fonts/TTF
+
 }
 

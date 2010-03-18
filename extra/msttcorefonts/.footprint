@@ -1,66 +1,64 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/X11/
-drwxr-xr-x	root/root	usr/lib/X11/fonts/
-drwxr-xr-x	root/root	usr/lib/X11/fonts/TTF/
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Andale_Mono.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Black.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Comic_Sans_MS.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Comic_Sans_MS_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Impact.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Bold.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Bold_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Webdings.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/andalemo.ttf -> Andale_Mono.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arial.ttf -> Arial.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arialbd.ttf -> Arial_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arialbi.ttf -> Arial_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/ariali.ttf -> Arial_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/ariblk.ttf -> Arial_Black.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/comic.ttf -> Comic_Sans_MS.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/comicbd.ttf -> Comic_Sans_MS_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/cour.ttf -> Courier_New.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/courbd.ttf -> Courier_New_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/courbi.ttf -> Courier_New_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/couri.ttf -> Courier_New_Italic.ttf
--rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/eula.htm
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgia.ttf -> Georgia.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiab.ttf -> Georgia_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiai.ttf -> Georgia_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiaz.ttf -> Georgia_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/impact.ttf -> Impact.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/times.ttf -> Times_New_Roman.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesbd.ttf -> Times_New_Roman_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesbi.ttf -> Times_New_Roman_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesi.ttf -> Times_New_Roman_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebuc.ttf -> Trebuchet_MS.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucbd.ttf -> Trebuchet_MS_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucbi.ttf -> Trebuchet_MS_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucit.ttf -> Trebuchet_MS_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdana.ttf -> Verdana.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanab.ttf -> Verdana_Bold.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanai.ttf -> Verdana_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanaz.ttf -> Verdana_Bold_Italic.ttf
-lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/webdings.ttf -> Webdings.ttf
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/TTF/
+-rw-r--r--	root/root	usr/share/fonts/TTF/Andale_Mono.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Arial.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Arial_Black.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Arial_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Arial_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Arial_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Comic_Sans_MS.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Comic_Sans_MS_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Courier_New.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Courier_New_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Courier_New_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Courier_New_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Georgia.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Georgia_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Georgia_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Georgia_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Impact.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Times_New_Roman.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Times_New_Roman_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Times_New_Roman_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Times_New_Roman_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Trebuchet_MS.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Trebuchet_MS_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Trebuchet_MS_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Trebuchet_MS_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Verdana.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Verdana_Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Verdana_Bold_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Verdana_Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/Webdings.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/andalemo.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/arial.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/arialbd.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/arialbi.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/ariali.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/ariblk.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/comic.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/comicbd.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/cour.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/courbd.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/courbi.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/couri.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/georgia.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/georgiab.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/georgiai.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/georgiaz.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/impact.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/times.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/timesbd.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/timesbi.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/timesi.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/trebuc.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/trebucbd.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/trebucbi.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/trebucit.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/verdana.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/verdanab.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/verdanai.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/verdanaz.ttf
+-rw-r--r--	root/root	usr/share/fonts/TTF/webdings.ttf
