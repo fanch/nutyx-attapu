@@ -1,0 +1,20 @@
+# Description: Moteur GTK pour pouvoir utiliser les thèmes Qt
+# URL: http://gtk-qt.ecs.soton.ac.uk/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on:  kdebase, qt, libbonoboui, kdelibs
+
+name=gtk-qt-engine
+version=1.1
+release=2
+source=(http://gtk-qt-engine.googlecode.com/files/$name-$version.tar.bz2 \
+	gtk-qt-engine.rc.sh  .gtkrc-2.0-kde4 )
+build() {
+        cd $name
+        cmake . -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        make
+        make DESTDIR=$PKG install
+	mkdir -p $PKG/etc/skel/.kde/env
+	cp $SRC/gtk-qt-engine.rc.sh $PKG/etc/skel/.kde/env/
+	cp $SRC/.gtkrc-2.0-kde4	$PKG/etc/skel
+}
