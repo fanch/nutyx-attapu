@@ -1,0 +1,66 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/X11/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/
+drwxr-xr-x	root/root	usr/lib/X11/fonts/TTF/
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Andale_Mono.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Black.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Arial_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Comic_Sans_MS.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Comic_Sans_MS_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Courier_New_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Georgia_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Impact.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Times_New_Roman_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Trebuchet_MS_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Bold.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Bold_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Verdana_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/Webdings.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/andalemo.ttf -> Andale_Mono.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arial.ttf -> Arial.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arialbd.ttf -> Arial_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/arialbi.ttf -> Arial_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/ariali.ttf -> Arial_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/ariblk.ttf -> Arial_Black.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/comic.ttf -> Comic_Sans_MS.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/comicbd.ttf -> Comic_Sans_MS_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/cour.ttf -> Courier_New.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/courbd.ttf -> Courier_New_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/courbi.ttf -> Courier_New_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/couri.ttf -> Courier_New_Italic.ttf
+-rw-r--r--	1000/1000	usr/lib/X11/fonts/TTF/eula.htm
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgia.ttf -> Georgia.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiab.ttf -> Georgia_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiai.ttf -> Georgia_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/georgiaz.ttf -> Georgia_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/impact.ttf -> Impact.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/times.ttf -> Times_New_Roman.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesbd.ttf -> Times_New_Roman_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesbi.ttf -> Times_New_Roman_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/timesi.ttf -> Times_New_Roman_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebuc.ttf -> Trebuchet_MS.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucbd.ttf -> Trebuchet_MS_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucbi.ttf -> Trebuchet_MS_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/trebucit.ttf -> Trebuchet_MS_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdana.ttf -> Verdana.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanab.ttf -> Verdana_Bold.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanai.ttf -> Verdana_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/verdanaz.ttf -> Verdana_Bold_Italic.ttf
+lrwxrwxrwx	1000/1000	usr/lib/X11/fonts/TTF/webdings.ttf -> Webdings.ttf
