@@ -6,7 +6,7 @@
 
 name=gtk-qt-engine
 version=1.1
-release=2
+release=1
 source=(http://gtk-qt-engine.googlecode.com/files/$name-$version.tar.bz2 \
 	gtk-qt-engine.rc.sh  .gtkrc-2.0-kde4 )
 build() {
