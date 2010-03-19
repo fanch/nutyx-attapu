@@ -45,13 +45,13 @@ drwxr-xr-x	root/root	usr/include/sylpheed/sylph/
 -rw-r--r--	root/root	usr/include/sylpheed/sylph/xml.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libsylph-0.la
-lrwxrwxrwx	root/root	usr/lib/libsylph-0.so -> libsylph-0.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libsylph-0.so.1 -> libsylph-0.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libsylph-0.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsylph-0.so -> libsylph-0.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libsylph-0.so.1 -> libsylph-0.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libsylph-0.so.1.0.1
 -rwxr-xr-x	root/root	usr/lib/libsylpheed-plugin-0.la
-lrwxrwxrwx	root/root	usr/lib/libsylpheed-plugin-0.so -> libsylpheed-plugin-0.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/libsylpheed-plugin-0.so.1 -> libsylpheed-plugin-0.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/libsylpheed-plugin-0.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsylpheed-plugin-0.so -> libsylpheed-plugin-0.so.1.0.1
+lrwxrwxrwx	root/root	usr/lib/libsylpheed-plugin-0.so.1 -> libsylpheed-plugin-0.so.1.0.1
+-rwxr-xr-x	root/root	usr/lib/libsylpheed-plugin-0.so.1.0.1
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/sylpheed.desktop
