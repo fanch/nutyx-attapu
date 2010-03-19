@@ -1,42 +1,108 @@
 # Description: Navigateur de chez Google
-# URL: http://www.google.com
+# URL: htt:p//www.google.com
 # Maintainer: NuTyX core team
 # Packager: geantbrun
-# Depends on: xz-utils
+# Depends on: xz-utils, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent
 
 name=google-chrome
-version=4.0.249.43
+version=5.0.307.11
 release=1
-if [ "`uname -m`" = 'x86_64' ]; then
-	ARCH='amd64'
-	else
-	ARCH='i386'
-fi
-source=(http://dl.google.com/dl/linux/direct/google-chrome-beta_current_${ARCH}.deb )
+
+#source=(http://dl.google.com/dl/linux/direct/google-chrome-beta_current_${ARCH}.deb 
+
+source=( http://sibelle.dyndns.org/sources/google-chrome-5.0.307.11.tar.gz
+	 chromium.desktop chromium.sh drop_sse2.patch ffmpeg_branding_mime.patch libpng-1.4.patch)
 
 build() {
-	ar -x google-chrome-beta_current_$ARCH.deb 
-	unlzma data.tar.lzma
-	tar xf data.tar
-	mkdir -p $PKG/opt $PKG/usr/bin $PKG/usr/share/applications $PKG/usr/lib
+
+#	ar -x google-chrome-beta_current_$ARCH.deb 
+#	unlzma data.tar.lzma
+#	tar xf data.tar
+#	mkdir -p $PKG/opt $PKG/usr/bin $PKG/usr/share/applications $PKG/usr/lib
+#	
+#	mv opt/google $PKG/opt
+#	cd $PKG/opt/google/chrome
+#
+#	cd $PKG/usr/bin/
+#	ln -s ../../opt/google/chrome/google-chrome
+#
+#	cd $PKG/opt/google/chrome
+#	ln -s ../../../usr/lib/firefox/plugins
+#
+#	cd $PKG/usr/share/applications
+#	ln -s ../../../opt/google/chrome/google-chrome.desktop
+#	cd $PKG/usr/lib
+#	ln -s libnss3.so libnss3.so.1d
+#       ln -s libnssutil3.so libnssutil3.so.1d
+#        ln -s libsmime3.so libsmime3.so.1d
+#        ln -s libssl3.so libssl3.so.1d
+#        ln -s libplds4.so libplds4.so.0d
+#       ln -s libplc4.so libplc4.so.0d
+#       ln -s libnspr4.so libnspr4.so.0d
+#	ln -s libjpeg.so libjpeg.so.62
 	
-	mv opt/google $PKG/opt
-	cd $PKG/opt/google/chrome
+	cd $SRC/$name-$version
 
-	cd $PKG/usr/bin/
-	ln -s ../../opt/google/chrome/google-chrome
+        export GYP_GENERATORS='make'
+        export BUILDTYPE='Release'
+        export GYP_DEFINES="gcc_version=44 \
+                no_strict_aliasing=1 \
+                linux_sandbox_path=/usr/lib/chromium/chromium-sandbox \
+                linux_strip_binary=1 \
+                release_extra_cflags='${CFLAGS}' \
+                ffmpeg_branding=Chrome \
+                use_system_libjpeg=1 \
+                use_system_libxslt=1 \
+                use_system_bzip2=1 \
+                use_system_libpng=1 \
+                use_system_ffmpeg=1 \
+                use_system_yasm=1 \
+                use_system_libevent=1 \
+                use_system_ssl=1"
 
-	cd $PKG/opt/google/chrome
-	ln -s ../../../usr/lib/firefox/plugins
+        patch -p0 -i $SRC/ffmpeg_branding_mime.patch  
+        # i686 does not include SSE2
+        # see http://code.google.com/p/chromium/issues/detail?id=9007
+        patch -p0 -i $SRC/drop_sse2.patch  
+        # see http://codereview.chromium.org/569009/show
+        patch -p0 -i $SRC/libpng-1.4.patch  
 
-	cd $PKG/usr/share/applications
-	ln -s ../../../opt/google/chrome/google-chrome.desktop
-	cd $PKG/usr/lib
-	ln -s libnss3.so libnss3.so.1d
-        ln -s libnssutil3.so libnssutil3.so.1d
-        ln -s libsmime3.so libsmime3.so.1d
-        ln -s libssl3.so libssl3.so.1d
-        ln -s libplds4.so libplds4.so.0d
-        ln -s libplc4.so libplc4.so.0d
-        ln -s libnspr4.so libnspr4.so.0d
+        export PATH=./depot_tools/:$PATH
+        gclient.py runhooks --force  
+
+        cd src
+        make chrome chrome_sandbox  
+
+        cd $SRC/$name-$version
+
+        install -m 0755 -D src/out/Release/chrome \
+                $PKG/usr/lib/chromium/chromium
+        install -m 4555 -o root -g root -D src/out/Release/chrome_sandbox \
+                $PKG/usr/lib/chromium/chromium-sandbox
+        install -m 0644 -D src/out/Release/chrome.pak \
+                $PKG/usr/lib/chromium/chrome.pak
+        ln -s /usr/lib/libavcodec.so.52 $PKG/usr/lib/chromium/libavcodec.so.52
+        ln -s /usr/lib/libavformat.so.52 $PKG/usr/lib/chromium/libavformat.so.52
+        ln -s /usr/lib/libavutil.so.50 $PKG/usr/lib/chromium/libavutil.so.50
+        cp -a src/out/Release/locales src/out/Release/resources \
+                $PKG/usr/lib/chromium/
+        find $PKG/usr/lib/chromium/ -name '*.d' -type f -delete
+        install -m 0644 -D src/out/Release/chrome.1 \
+                $PKG/usr/share/man/man1/chromium.1
+
+        install -m 0644 -D $SRC/chromium.desktop \
+                $PKG/usr/share/applications/chromium.desktop
+        for size in 16 32 48 256; do
+                install -m 0644 -D \
+                        src/chrome/app/theme/chromium/product_logo_${size}.png \
+                        $PKG/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png
+        done
+        install -m 0755 -D $SRC/chromium.sh \
+                $PKG/usr/bin/chromium
+
+        install -m 0644 -D src/LICENSE \
+                $PKG/usr/share/licenses/chromium/LICENSE
+
+
+
 }

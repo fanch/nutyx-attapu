@@ -1,0 +1,20 @@
+# Decription: Bibliothèque de notification d'événements
+# URL: http://www.monkey.org/~provos/libevent/ 
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: glibc 
+
+name=libevent
+version=1.4.13
+release=1
+
+source=( http://www.monkey.org/~provos/$name-$version-stable.tar.gz )
+
+build() {
+	cd $name-$version-stable
+        ./configure --prefix=/usr \
+		--sysconfdir=/etc
+        make
+        make DESTDIR=$PKG install
+}
+
