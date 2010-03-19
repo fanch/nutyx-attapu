@@ -2,12 +2,13 @@
 # URL: http://members.dslextreme.com/users/billw/gkrellm/gkrellm.html
 # Maintainer: geantbrun at gmail dot com
 # Packager: geantbrun
-# Depends on: gtk
+# Depends on: gtk lm_sensors
 
 name=gkrellm
 version=2.3.4
 release=1
-source=(http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.4.tar.gz)
+source=(http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.4.tar.gz\
+ $name.desktop $name.png)
 
 build() {
 	cd $name-$version
@@ -16,7 +17,8 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	
+	install -D -m 644 ../$name.desktop $PKG/usr/share/applications/$name.desktop
+        install -D -m 644 ../$name.png $PKG/usr/share/pixmaps/$name.png
 }
 
 
