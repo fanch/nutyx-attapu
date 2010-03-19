@@ -19,3 +19,9 @@ drwxr-xr-x	root/root	share/man/
 drwxr-xr-x	root/root	share/man/man1/
 -rw-r--r--	root/root	share/man/man1/gkrellm.1.gz
 -rw-r--r--	root/root	share/man/man1/gkrellmd.1.gz
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/gkrellm.desktop
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/gkrellm.png
