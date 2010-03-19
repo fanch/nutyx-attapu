@@ -1,18 +1,18 @@
 # Description: Permet l'implémentation de code python dans des applications utilisant gtk
 # URL: http://www.pygtk.org/
 # Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
+# Packager: skingrapher at legtux dot org
 # Depends on: gtk, pygobject, pycairo, libglade
 
 name=pygtk
-version=2.16.0
+version=2.17.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
 	sed -i -e 's/SUBDIRS = codegen . $(GTK_SUBDIR) examples tests docs/SUBDIRS = codegen . $(GTK_SUBDIR) examples tests/' Makefile.in
-	./configure --prefix=/usr 
+	./configure --prefix=/usr --enable-numpy
 	make
 	make DESTDIR=$PKG install
 	install -m644 gtk/gtk-extrafuncs.defs $PKG/usr/share/pygtk/2.0/defs/
