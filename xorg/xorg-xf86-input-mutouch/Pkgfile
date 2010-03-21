@@ -7,11 +7,11 @@
 name=xorg-xf86-input-mutouch
 version=1.2.1
 release=2
-source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-mutouch-$version.tar.bz2)
-
+source=(http://xorg.freedesktop.org/releases/individual/driver/xf86-input-mutouch-$version.tar.bz2 \
+	mutouch-1.2.1-abi.patch) 
 build() {
 	cd xf86-input-mutouch-$version
-
+	patch -Np1 -i ../mutouch-1.2.1-abi.patch
 	./configure --prefix=/usr
 
 	make
