@@ -1,11 +1,11 @@
 # Description: Librairie C++ et utilitaires pour manipuler des donnees d'images
 # URL: http://www.exiv2.org/index.html
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: expat
 
 name=exiv2
-version=0.18.1
+version=0.19
 release=1
 source=(http://www.exiv2.org/$name-$version.tar.gz)
 
