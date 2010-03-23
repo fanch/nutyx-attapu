@@ -1,0 +1,18 @@
+# Description: horloge graphique préfère GTK
+# URL: http://xonclock.sourceforge.net/
+# Maintainer: tyrry33 at gmail dot com
+# Packager: tyrry
+# Depends on: libpng, libjpeg, libtiff, libxpm, xorg
+
+name=xonclock
+version=0.0.9.2
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/xonclock-0.0.9.2/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+        ./configure
+	make
+	make DESTDIR=$PKG install
+	
+}
