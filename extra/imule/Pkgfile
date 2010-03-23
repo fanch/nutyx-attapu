@@ -1,0 +1,23 @@
+# Description: Logiciel de partage de fichiers P2P anonymes
+# URL: http://www.imule.i2p.tin0.de
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: wxgtk
+
+name=imule
+version=1.4.6
+release=1
+source=(http://aceini.no-ip.info/$name/$version/iMule_${version}_src.tbz)
+
+build() {
+	tar xf iMule_${version}_src.tbz
+	cd iMule-$version-src
+	./configure --enable-debug=no \
+	--enable-optimize=yes \
+	--prefix=/usr \
+	--disable-profile
+	make
+	make DESTDIR=$PKG install
+
+}
+

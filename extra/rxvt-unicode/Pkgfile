@@ -1,0 +1,49 @@
+# Description: Clone d'un terminal rxvt (urxvt) avec support 256 couileurs
+# URL:http://software.schmorp.de/pkg/rxvt-unicode.html
+# Maintainer:  NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: xorg-libxft, p5-xml-parser
+
+name=rxvt-unicode
+version=9.07
+release=1
+source=(http://dist.schmorp.de/$name/$name-$version.tar.bz2 \
+	rxvt-unicode.desktop \ 
+	rxvt-unicode.png \
+	font-width-fix.patch )
+
+build() {
+	cd $name-$version
+	 # Add 256 color support
+         patch -p1 -i doc/urxvt-8.2-256color.patch || return 1
+
+	# Fix font width bug fix
+        patch -p0 -i ../font-width-fix.patch || return 1
+
+        ./configure --prefix=/usr \
+		--with-terminfo=/usr/share/terminfo \
+                --with-term=rxvt-256color \
+                --enable-smart-resize \
+		--enable-font-styles \
+		--enable-xim \
+    		--enable-keepscrolling \
+    		--enable-selectionscrolling \
+		--enable-xpm-background \
+    		--enable-transparency \
+    		--enable-utmp \
+    		--enable-wtmp \
+    		--enable-lastlog
+
+        make
+        make DESTDIR=$PKG install
+
+        # install the tabbing wrapper
+        sed -i 's/\"rxvt\"/"urxvt"/' doc/rxvt-tabbed
+        install -D -m755 doc/rxvt-tabbed $PKG/usr/bin/urxvt-tabbed
+
+        # install freedesktop menu and icon ( icon from cvs checkout )
+        install -D -m644 ../rxvt-unicode.desktop \
+                $PKG/usr/share/applications/rxvt-unicode.desktop
+        install -Dm644 ../rxvt-unicode.png \
+                $PKG/usr/share/pixmaps/rxvt-unicode.png
+}

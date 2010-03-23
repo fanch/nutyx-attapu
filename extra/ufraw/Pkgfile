@@ -1,22 +1,19 @@
 # Description: outil seul ou plugin pour Gimp de conversion de fichier raw (inclu dcraw) 
 # URL: http://ufraw.sourceforge.net/
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: gimp, exiv2, lcms, libexif, libjpeg, libpng, libtiff
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gimp, exiv2, lcms, libexif, libjpeg, libpng, libtiff, gtkimageview
 
 name=ufraw
-version=0.15
+version=0.16
 release=1
-source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
-	ufraw-0.15-glibc-2.10.patch)
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 build() {
 cd ufraw-$version
-patch -Np1 -i ../ufraw-0.15-glibc-2.10.patch
 	./configure --prefix=/usr \
 	--enable-extras \
 	--enable-mime \
 	--enable-openmp \
-	--with-libexif \
 	--with-exiv2
 	sed -i 's@-ffast-math -fomit-frame-pointer -W -Wall -O3@$CFLAGS@g' Makefile
 	make

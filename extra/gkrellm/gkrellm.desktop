@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=gkrellm
+Comment=Manage devices
+Exec=gkrellm
+Icon=/usr/share/pixmaps/gkrellm.png
+Terminal=false
+Type=Application
+Categories=GTK;System;
+

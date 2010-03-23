@@ -5,7 +5,7 @@
 # Depends on: gtk, gpgme, gnupg, gnupg1
 
 name=sylpheed
-version=3.0.0
+version=3.0.1
 release=1
 source=(http://sylpheed.sraoss.jp/sylpheed/v3.0/$name-$version.tar.bz2 \
   sylpheed.desktop)

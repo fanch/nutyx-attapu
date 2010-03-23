@@ -1,0 +1,25 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/gtkimageview/
+-rw-r--r--	root/root	usr/include/gtkimageview/cursors.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gdkpixbufdrawcache.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkanimview.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkiimagetool.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimagenav.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimagescrollwin.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimagetooldragger.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimagetoolpainter.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimagetoolselector.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimageview-typebuiltins.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkimageview.h
+-rw-r--r--	root/root	usr/include/gtkimageview/gtkzooms.h
+-rw-r--r--	root/root	usr/include/gtkimageview/mouse_handler.h
+-rw-r--r--	root/root	usr/include/gtkimageview/utils.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libgtkimageview.a
+-rwxr-xr-x	root/root	usr/lib/libgtkimageview.la
+lrwxrwxrwx	root/root	usr/lib/libgtkimageview.so -> libgtkimageview.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libgtkimageview.so.0 -> libgtkimageview.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libgtkimageview.so.0.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/gtkimageview.pc

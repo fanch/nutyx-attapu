@@ -1,10 +1,9 @@
 drwxr-xr-x	root/root	etc/
-drwxr-xr-x	root/root	etc/midori/
-drwxr-xr-x	root/root	etc/midori/extensions/
-drwxr-xr-x	root/root	etc/midori/extensions/libadblock.so/
--rw-r--r--	root/root	etc/midori/extensions/libadblock.so/config
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/midori/
+drwxr-xr-x	root/root	etc/xdg/midori/extensions/
+drwxr-xr-x	root/root	etc/xdg/midori/extensions/libadblock.so/
+-rw-r--r--	root/root	etc/xdg/midori/extensions/libadblock.so/config
 -rw-r--r--	root/root	etc/xdg/midori/search
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -14,7 +13,6 @@ drwxr-xr-x	root/root	usr/lib/midori/
 -rw-r--r--	root/root	usr/lib/midori/libadblock.so
 -rw-r--r--	root/root	usr/lib/midori/libcolorful-tabs.so
 -rw-r--r--	root/root	usr/lib/midori/libcookie-manager.so
--rw-r--r--	root/root	usr/lib/midori/libdnsprefetch.so
 -rw-r--r--	root/root	usr/lib/midori/libfeed-panel.so
 -rw-r--r--	root/root	usr/lib/midori/libformhistory.so
 -rw-r--r--	root/root	usr/lib/midori/libmouse-gestures.so

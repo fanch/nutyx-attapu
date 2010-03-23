@@ -6,7 +6,7 @@
 
 name=nvidia-96xx
 version=96.43.16
-release=1
+release=2
 kernel=`uname -r|sed "s/-NuTyX//"`
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version-pkg1.run\
         )

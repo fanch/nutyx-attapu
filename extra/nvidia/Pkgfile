@@ -6,7 +6,7 @@
 
 name=nvidia
 #version=190.53
-version=195.36.08
+version=195.36.15
 release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
