@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	usr/include/firefox/
 -rw-r--r--	root/root	usr/include/firefox/js.msg
 -rw-r--r--	root/root	usr/include/firefox/jsopcode.tbl
 -rw-r--r--	root/root	usr/include/firefox/jsproto.tbl
+-rw-r--r--	root/root	usr/include/firefox/nssck.api
 -rw-r--r--	root/root	usr/include/firefox/xptcstubsdecl.inc
 -rw-r--r--	root/root	usr/include/firefox/xptcstubsdef.inc
 drwxr-xr-x	root/root	usr/lib/
@@ -268,9 +269,21 @@ drwxr-xr-x	root/root	usr/lib/firefox/icons/
 -rw-r--r--	root/root	usr/lib/firefox/icons/mozicon128.png
 -rwxr-xr-x	root/root	usr/lib/firefox/install.rdf
 -rwxr-xr-x	root/root	usr/lib/firefox/js
+-rw-r--r--	root/root	usr/lib/firefox/libfreebl3.chk
+-rwxr-xr-x	root/root	usr/lib/firefox/libfreebl3.so
 -rwxr-xr-x	root/root	usr/lib/firefox/libmozjs.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libnss3.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libnssckbi.so
+-rw-r--r--	root/root	usr/lib/firefox/libnssdbm3.chk
+-rwxr-xr-x	root/root	usr/lib/firefox/libnssdbm3.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libnssutil3.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libsmime3.so
+-rw-r--r--	root/root	usr/lib/firefox/libsoftokn3.chk
+-rwxr-xr-x	root/root	usr/lib/firefox/libsoftokn3.so
+-rwxr-xr-x	root/root	usr/lib/firefox/libssl3.so
 -rwxr-xr-x	root/root	usr/lib/firefox/libxpcom.so
 -rwxr-xr-x	root/root	usr/lib/firefox/libxul.so
+-rwxr-xr-x	root/root	usr/lib/firefox/mangle
 drwxr-xr-x	root/root	usr/lib/firefox/modules/
 -rw-r--r--	root/root	usr/lib/firefox/modules/CertUtils.jsm
 -rw-r--r--	root/root	usr/lib/firefox/modules/DownloadLastDir.jsm
@@ -366,6 +379,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/searchplugins/
 -rw-r--r--	root/root	usr/lib/firefox/searchplugins/google.xml
 -rw-r--r--	root/root	usr/lib/firefox/searchplugins/wikipedia.xml
 -rw-r--r--	root/root	usr/lib/firefox/searchplugins/yahoo.xml
+-rwxr-xr-x	root/root	usr/lib/firefox/shlibsign
 -rwxr-xr-x	root/root	usr/lib/firefox/xpcshell
 -rwxr-xr-x	root/root	usr/lib/firefox/xpidl
 -rwxr-xr-x	root/root	usr/lib/firefox/xpt_dump
