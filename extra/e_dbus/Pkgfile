@@ -1,0 +1,18 @@
+# Description: Libraries fournissant les fonctionnalitées de  boucle d'évenemennt pour E17. 
+# URL: http://www.enlightenment.org/
+# Maintainer: NuTyX core team
+# Packager: A DEFINIR
+# Depends on: edje hal
+
+name=e_dbus
+version=0.5.0.063
+release=1
+source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz2)
+
+build()
+{
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make install DESTDIR=$PKG
+}
