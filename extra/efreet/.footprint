@@ -1,0 +1,54 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/efreet_alloc
+-rwxr-xr-x	root/root	usr/bin/efreet_cache_test
+-rwxr-xr-x	root/root	usr/bin/efreet_menu_alloc
+-rwxr-xr-x	root/root	usr/bin/efreet_spec_test
+-rwxr-xr-x	root/root	usr/bin/efreet_test
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/efreet/
+-rw-r--r--	root/root	usr/include/efreet/Efreet.h
+-rw-r--r--	root/root	usr/include/efreet/Efreet_Mime.h
+-rw-r--r--	root/root	usr/include/efreet/Efreet_Trash.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_base.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_desktop.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_icon.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_ini.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_menu.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_uri.h
+-rw-r--r--	root/root	usr/include/efreet/efreet_utils.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libefreet-ver-svn-05.so.0 -> libefreet-ver-svn-05.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet-ver-svn-05.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libefreet.a
+-rwxr-xr-x	root/root	usr/lib/libefreet.la
+lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime-ver-svn-05.so.0 -> libefreet_mime-ver-svn-05.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime-ver-svn-05.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libefreet_mime.a
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime.la
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash-ver-svn-05.so.0 -> libefreet_trash-ver-svn-05.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash-ver-svn-05.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libefreet_trash.a
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash.la
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash-ver-svn-05.so.0.5.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/efreet-mime.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/efreet-trash.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/efreet.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/efreet/
+drwxr-xr-x	root/root	usr/share/efreet/test/
+-rw-r--r--	root/root	usr/share/efreet/test/entry
+-rw-r--r--	root/root	usr/share/efreet/test/entry.png
+-rw-r--r--	root/root	usr/share/efreet/test/long.ini
+-rw-r--r--	root/root	usr/share/efreet/test/preferences.menu
+drwxr-xr-x	root/root	usr/share/efreet/test/sub/
+-rw-r--r--	root/root	usr/share/efreet/test/sub/test.desktop
+-rw-r--r--	root/root	usr/share/efreet/test/test.desktop
+-rw-r--r--	root/root	usr/share/efreet/test/test.ini
+-rw-r--r--	root/root	usr/share/efreet/test/test.menu
+-rw-r--r--	root/root	usr/share/efreet/test/test_garbage
+-rw-r--r--	root/root	usr/share/efreet/test/test_menu_slash_bad.menu
+-rw-r--r--	root/root	usr/share/efreet/test/test_type.desktop
