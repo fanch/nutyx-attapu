@@ -1,0 +1,19 @@
+# Description: Module based on ibox from DR17 and is intended to become a taskbar.
+# URL: http://code.google.com/p/itask-module/wiki/Itask	
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: edje, glib, e17
+
+name=itask
+version=20100324
+release=1
+source=(http://kiao.no-ip.info/NuTyX/files/itask-20100324.tar.bz2)
+
+build()
+{
+    cd $name-$version
+
+    ./autogen.sh --prefix=/usr
+    make
+    make install DESTDIR=$PKG
+}

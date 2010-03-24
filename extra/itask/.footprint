@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/enlightenment/
+drwxr-xr-x	root/root	usr/lib/enlightenment/modules/
+drwxr-xr-x	root/root	usr/lib/enlightenment/modules/itask/
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/e-module-itask.edj
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/itask.edc
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/itask.edj
+drwxr-xr-x	root/root	usr/lib/enlightenment/modules/itask/linux-gnu-i686-ver-svn-05/
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/linux-gnu-i686-ver-svn-05/module.a
+-rwxr-xr-x	root/root	usr/lib/enlightenment/modules/itask/linux-gnu-i686-ver-svn-05/module.la
+-rwxr-xr-x	root/root	usr/lib/enlightenment/modules/itask/linux-gnu-i686-ver-svn-05/module.so
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/module.desktop
+-rw-r--r--	root/root	usr/lib/enlightenment/modules/itask/module_icon.png
