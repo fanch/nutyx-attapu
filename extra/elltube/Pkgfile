@@ -2,7 +2,7 @@
 # URL: http://elltube.sourceforge.net/
 # Maintainer: tyrry33 at gmail dot com
 # Packager: tyrry
-# Depends on: qt4, pyqt4, ffmpeg, python
+# Depends on: qt, pyqt, ffmpeg, python
 
 name=elltube
 version=0.3
@@ -12,5 +12,5 @@ source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
         make
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }
