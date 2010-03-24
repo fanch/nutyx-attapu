@@ -1,0 +1,21 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/edje_cc
+-rwxr-xr-x	root/root	usr/bin/edje_decc
+-rwxr-xr-x	root/root	usr/bin/edje_recc
+-rwxr-xr-x	root/root	usr/bin/inkscape2edc
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/Edje.h
+-rw-r--r--	root/root	usr/include/Edje_Edit.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libedje-ver-svn-05.so.0 -> libedje-ver-svn-05.so.0.9.93
+-rwxr-xr-x	root/root	usr/lib/libedje-ver-svn-05.so.0.9.93
+-rw-r--r--	root/root	usr/lib/libedje.a
+-rwxr-xr-x	root/root	usr/lib/libedje.la
+lrwxrwxrwx	root/root	usr/lib/libedje.so -> libedje-ver-svn-05.so.0.9.93
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/edje.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/edje/
+drwxr-xr-x	root/root	usr/share/edje/include/
+-rw-r--r--	root/root	usr/share/edje/include/edje.inc

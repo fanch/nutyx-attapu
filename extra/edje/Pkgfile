@@ -1,0 +1,18 @@
+# Description: Librairie multimedia pour utiliser avec E17. 
+# URL: http://www.enlightenment.org/
+# Maintainer: NuTyX core team
+# Packager: A DEFINIR
+# Depends on: lua, embryo, eet, evas
+
+name=edje
+version=0.9.93.063
+release=1
+source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz2)
+
+build()
+{
+	cd $name-$version 
+	./configure --prefix=/usr
+	make
+	make install DESTDIR=$PKG
+}
