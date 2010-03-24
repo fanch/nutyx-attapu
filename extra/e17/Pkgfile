@@ -1,0 +1,21 @@
+# Description: Enlightenment DR17 window manager snapshot version.
+# URL: http://www.enlightenment.org/
+# Maintainer: NuTyX core team
+# Packager: geantbrun at gmail dot com
+# Depends on: eina,evas,ecore, e_dbus,embryo,eet,efreet,edje,curl,gdm
+
+name=e17
+version=0.16.999.063
+release=1
+source=(http://download.enlightenment.org/snapshots/LATEST/enlightenment-$version.tar.bz2 \ 
+	e17.desktop)
+
+build()
+{ 
+        install -D -m644 e17.desktop $PKG/usr/share/xsessions/e17.desktop
+        install -D -m644 e17.desktop $PKG/opt/kde/share/apps/kdm/sessions/e17.desktop
+	cd enlightenment-$version
+	./configure --disable-nls --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
