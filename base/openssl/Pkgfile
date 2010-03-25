@@ -2,10 +2,9 @@
 # URL: http://www.openssl.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=openssl
-version=0.9.8m
+version=0.9.8n
 release=1
 source=(http://www.openssl.org/source/$name-$version.tar.gz)
 
