@@ -3,13 +3,13 @@
 # Maintainer: NuTyX core team
 # Packager: fredjo
 
-name=bind
+name=bind-utils
 version=9.4.1-P1
 release=1
 source=(http://gd.tuwien.ac.at/infosys/servers/isc/bind9/9.4.1-P1/bind-9.4.1-P1.tar.gz)
 
 build(){
-	cd $name-$version
+	cd bind-$version
 	./configure --prefix=/usr \
 		    --mandir=/usr/share/man 
 	make -C lib/dns
