@@ -1,0 +1,17 @@
+# Description: Ce petit programme permet de modifier facilement votre thème GTK
+# URL: http://plasmasturm.org/code/gtk-chtheme/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gtk
+
+name=gtk-chtheme
+version=0.3.1
+release=1
+source=(http://plasmasturm.org/programs/gtk-chtheme/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	make
+	mkdir -p $PKG/usr/bin
+	install -m755 gtk-chtheme $PKG/usr/bin
+}
