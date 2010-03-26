@@ -4,11 +4,11 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=virtualbox-module
-version=3.1.4
-release=2
+version=3.1.6
+release=1
 _name=VirtualBox
 _kernel=`uname -r|sed "s/-NuTyX//"`
-_build=57640
+_build=59338
 source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
 
 
