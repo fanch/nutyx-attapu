@@ -2,18 +2,63 @@
 # URL: htt:p//www.google.com
 # Maintainer: NuTyX core team
 # Packager: geantbrun
-# Depends on: xz-utils, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
+# Depends on: subversion, xz-utils, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
 
 name=chromium
-version=5.0.342.7
+build=42902
+version=5.0.364.0
 release=1
 
-source=( ftp://ftp.archlinux.org/other/chromium/chromium-$version.tar.xz
-	 chromium.desktop chromium.sh drop_sse2.patch ffmpeg_branding_mime.patch libpng-1.4.patch)
+source=(chromium.desktop chromium.sh drop_sse2.patch ffmpeg_branding_mime.patch libpng-1.4.patch)
 
 build() {
-	tar -xf $SRC/chromium-$version.tar.xz
-	cd $SRC/chromium-$version
+
+# Recuperation des sources 
+	nonessential_dirs=(
+        	'src/chrome/test/data'
+        	'src/chrome/tools/test/reference_build'
+        	'src/gears/binaries'
+        	'src/net/data/cache_tests'
+        	'src/o3d/documentation'
+        	'src/o3d/samples'
+        	'src/third_party/lighttpd'
+        	'src/third_party/WebKit/LayoutTests'
+        	'src/webkit/data/layout_tests'
+        	'src/webkit/tools/test/reference_build'
+	)
+
+	mkdir -p chromium-$build
+	cd chromium-$build
+
+# Pour obtenir la plus recente revision d'une maj majeure
+	svn co -r$build -q http://src.chromium.org/svn/trunk/tools/depot_tools/ depot_tools
+	chmod +x ./depot_tools/*
+	export PATH=$SRC/depot_tools/:$PATH
+	gclient.py config http://src.chromium.org/svn/releases/$version
+
+	sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
+    	    -e '15i\      "src/chrome/tools/test/reference_build": None,' \
+	    -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32": None,' \
+            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32_dbg": None,' \
+            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64": None,' \
+            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64_dbg": None,' \
+            -i .gclient
+
+	gclient.py sync --force --nohooks
+
+	svnbuild src > src/build/LASTCHANGE.in
+
+	for i in ${nonessential_dirs[@]}; do
+        	rm -rf $i
+	done
+
+	find . -name '.svn' -type d -exec rm -rf {} \;
+	find . -iname '*.dll' -delete
+	find . -iname '*.exe' -delete
+	find . -iname '*.o' -delete
+	find . -iname '*.nexe' -delete
+
+# Compilation des sources
 
         export GYP_GENERATORS='make'
         export BUILDTYPE='Release'
@@ -74,7 +119,4 @@ build() {
 
         install -m 0644 -D src/LICENSE \
                 $PKG/usr/share/licenses/chromium/LICENSE
-
-
-
 }
