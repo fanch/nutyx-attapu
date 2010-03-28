@@ -1,8 +1,8 @@
 # Description: Navigateur de chez Google
-# URL: htt:p//www.google.com
+# URL: http://www.google.com
 # Maintainer: NuTyX core team
-# Packager: geantbrun
-# Depends on: subversion, xz-utils, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
+# Packager: sibelle at free dot fr
+# Depends on: libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
 
 name=chromium
 build=42902
@@ -26,33 +26,38 @@ build() {
         	'src/webkit/data/layout_tests'
         	'src/webkit/tools/test/reference_build'
 	)
-
-	mkdir -p chromium-$build
+	if [ ! -d /usr/src/chromium-$build ]; then
+		mkdir -p /usr/src/chromium-$build
+	fi
+	ln -s /usr/src/chromium-$build
 	cd chromium-$build
 
 # Pour obtenir la plus recente revision d'une maj majeure
-	svn co -r$build -q http://src.chromium.org/svn/trunk/tools/depot_tools/ depot_tools
-	chmod +x ./depot_tools/*
-	export PATH=$SRC/depot_tools/:$PATH
-	gclient.py config http://src.chromium.org/svn/releases/$version
+	if [ ! -d depot_tools]; then
 
-	sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
+		svn co -r$build -q http://src.chromium.org/svn/trunk/tools/depot_tools/ depot_tools
+	fi
+	chmod +x ./depot_tools/*
+	export PATH=./depot_tools/:$PATH
+	if [ ! -f .gclient ]; then
+		gclient.py config http://src.chromium.org/svn/releases/$version
+
+		sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
     	    -e '15i\      "src/chrome/tools/test/reference_build": None,' \
 	    -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32_dbg": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64_dbg": None,' \
             -i .gclient
+		gclient.py sync --force --nohooks
 
-	gclient.py sync --force --nohooks
-
-	svnbuild src > src/build/LASTCHANGE.in
+	fi
 
 	for i in ${nonessential_dirs[@]}; do
         	rm -rf $i
 	done
 
-	find . -name '.svn' -type d -exec rm -rf {} \;
+	find . -name '.svn' -type d -delete
 	find . -iname '*.dll' -delete
 	find . -iname '*.exe' -delete
 	find . -iname '*.o' -delete
@@ -90,7 +95,7 @@ build() {
         cd src
         make chrome chrome_sandbox  
 
-        cd $SRC/$name-$version
+        cd $SRC/$name-$build
 
         install -m 0755 -D src/out/Release/chrome \
                 $PKG/usr/lib/chromium/chromium

@@ -1,0 +1,2 @@
+Il est recommandé de supprimer le dossier /usr/src/chromium-* si on compile le paquet depuis les sources.
+Paquets necessaires pour la compilation: subversion
