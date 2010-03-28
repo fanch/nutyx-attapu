@@ -1,10 +1,12 @@
 [Desktop Entry]
 Categories=Application;Network;Internet;
 Encoding=UTF-8
-Exec=/usr/lib/wicd/gui.py
+Exec=wicd-client
 GenericName=Network Manager
-Icon=/usr/share/pixmaps/wicd.png
+GenericName[fr]=Gestionnaire de réseaux
+Icon=wicd-gtk
 Comment=Manage Wired/Wireless Networks
+Comment[fr]=Gère les réseaux filaires et sans fils
 Name=Wicd
 Terminal=false
 Type=Application

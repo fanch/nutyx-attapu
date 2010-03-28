@@ -6,7 +6,7 @@
 
 name=wicd
 version=1.7.0
-release=3
+release=4
 source=(http://downloads.sourceforge.net/$name/wicd-$version.tar.gz \
 	wicd wicd_in_usr.patch wicd-locale.patch wicd.desktop )
 
