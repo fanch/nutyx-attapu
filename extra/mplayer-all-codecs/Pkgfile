@@ -5,7 +5,7 @@
 
 
 name=mplayer-all-codecs
-version=20071007
+version=20100303
 release=1
 source=(http://www3.mplayerhq.hu/MPlayer/releases/codecs/all-$version.tar.bz2)
 
