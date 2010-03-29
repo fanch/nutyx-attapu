@@ -1,0 +1,17 @@
+# Description: Support fuse pour SSH
+# URL: http://fuse.sourceforge.net/sshfs.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: fuse, glib
+
+name=sshfs
+version=2.2
+release=1
+source=(http://surfnet.dl.sourceforge.net/sourceforge/fuse/$name-fuse-$version.tar.gz)
+
+build() {
+cd $name-fuse-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
