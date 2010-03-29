@@ -12,6 +12,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/uil
 -rwxr-xr-x	root/root	usr/bin/xmbind
 drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/Dt/
+-rw-r--r--	root/root	usr/include/Dt/Print.h
 drwxr-xr-x	root/root	usr/include/Mrm/
 -rw-r--r--	root/root	usr/include/Mrm/MrmAppl.h
 -rw-r--r--	root/root	usr/include/Mrm/MrmDecls.h
@@ -195,6 +197,10 @@ drwxr-xr-x	root/root	usr/lib/X11/
 drwxr-xr-x	root/root	usr/lib/X11/app-defaults/
 -rw-r--r--	root/root	usr/lib/X11/app-defaults/Mwm
 lrwxrwxrwx	root/root	usr/lib/X11/mwm -> /etc/X11/mwm
+-rwxr-xr-x	root/root	usr/lib/libDtPrint.la
+lrwxrwxrwx	root/root	usr/lib/libDtPrint.so -> libDtPrint.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libDtPrint.so.1 -> libDtPrint.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libDtPrint.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libMrm.la
 lrwxrwxrwx	root/root	usr/lib/libMrm.so -> libMrm.so.2.0.1
 lrwxrwxrwx	root/root	usr/lib/libMrm.so.2 -> libMrm.so.2.0.1
