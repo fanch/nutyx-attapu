@@ -5,9 +5,9 @@
 # Depends on: tk, gnutls, sox, farsight2
 
 name=amsn
-version=0.98.1
-release=2
-source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
+version=0.98.3
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version-src.tar.gz)
 
 build() {
 		cd $name-$version
