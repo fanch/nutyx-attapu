@@ -1,8 +1,8 @@
 # Description: Version libre de OSF/Motif
-# URL: http://www.littlecms.com
+# URL: http://lesstif.sourceforge.net/
 # Maintainer: NuTyX core team 
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: freetype, xorg
+# Depends on: freetype, xorg, xorg-libxp
 
 name=lesstif
 version=0.95.2
