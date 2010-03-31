@@ -5,7 +5,7 @@
 # Depends on: qt
 
 name=shared-desktop-ontologies
-version=0.2
+version=0.3
 release=1
 source=(http://downloads.sourceforge.net/project/oscaf/$name/$version/$name-$version.tar.bz2)
 
