@@ -442,6 +442,7 @@ drwxr-xr-x	root/root	opt/jdk/jre/lib/security/
 -r--r--r--	root/root	opt/jdk/jre/lib/security/java.security
 -r--r--r--	root/root	opt/jdk/jre/lib/security/javaws.policy
 -r--r--r--	root/root	opt/jdk/jre/lib/security/local_policy.jar
+-r--r--r--	root/root	opt/jdk/jre/lib/security/trusted.libraries
 drwxr-xr-x	root/root	opt/jdk/jre/lib/servicetag/
 -r--r--r--	root/root	opt/jdk/jre/lib/servicetag/jdk_header.png
 -r--r--r--	root/root	opt/jdk/jre/lib/sound.properties
@@ -584,6 +585,7 @@ drwxr-xr-x	root/root	opt/jdk/jre/lib/zi/America/Kentucky/
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Managua
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Manaus
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Martinique
+-rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Matamoros
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Mazatlan
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Menominee
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Merida
@@ -602,6 +604,7 @@ drwxr-xr-x	root/root	opt/jdk/jre/lib/zi/America/Kentucky/
 drwxr-xr-x	root/root	opt/jdk/jre/lib/zi/America/North_Dakota/
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/North_Dakota/Center
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/North_Dakota/New_Salem
+-rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Ojinaga
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Panama
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Pangnirtung
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Paramaribo
@@ -616,6 +619,7 @@ drwxr-xr-x	root/root	opt/jdk/jre/lib/zi/America/North_Dakota/
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Regina
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Resolute
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Rio_Branco
+-rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Santa_Isabel
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Santarem
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Santiago
 -rw-r--r--	root/root	opt/jdk/jre/lib/zi/America/Santo_Domingo
