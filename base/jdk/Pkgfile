@@ -4,8 +4,8 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=jdk
-version=6u18
-release=2
+version=6u19
+release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=i586
 [ "`uname -m`" == "x86_64"   ] && _ARCH=amd64
 
