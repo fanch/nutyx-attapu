@@ -5,7 +5,7 @@
 
 name=initrd
 version=2.6.33.1
-release=1
+release=2
 _tools=06032010
 _baseversion=2.6.33
 SCRIPT_VERSION="2009.3"
@@ -35,13 +35,18 @@ hamradio appletalk cxgb3 mlx4 sfc
 do 
 	rm -r $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/drivers/net/$i
 done
-for i in fat ntfs smbfs vfat ext4
+for i in fat ntfs smbfs vfat ext4 fs nfs nfs_common nfsd lockd
 do
 	if [ -d lib/modules/${_baseversion}-NuTyX/kernel/fs/$i ]; then
 		cp -a lib/modules/${_baseversion}-NuTyX/kernel/fs/$i \
 		$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/fs/
 	fi
 done
+if [ -d lib/modules/${_baseversion}-NuTyX/kernel/net/sunrpc ]; then
+	mkdir -p $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/net/
+	cp -a lib/modules/${_baseversion}-NuTyX/kernel/net/sunrpc \
+	$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/net/
+fi
 $WDIR/rootfs/sbin/depmod -b $WDIR/rootfs ${_baseversion}-NuTyX
 	
 cp install-${SCRIPT_VERSION}.ash $WDIR/rootfs/root/
