@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdelibs, boost, libical, gpgme, akonadi, cyrus-sasl
+# Depends on: kdelibs, boost, libical, gpgme, akonadi, cyrus-sasl, openldap
 
 name=kdepimlibs
 version=4.4.2
