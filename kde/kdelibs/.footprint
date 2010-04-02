@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/kwrapper4
 -rwxr-xr-x	root/root	opt/kde/bin/makekdewidgets
 -rwxr-xr-x	root/root	opt/kde/bin/meinproc4
+-rwxr-xr-x	root/root	opt/kde/bin/nepomuk-rcgen
 -rwxr-xr-x	root/root	opt/kde/bin/preparetips
 drwxr-xr-x	root/root	opt/kde/etc/
 drwxr-xr-x	root/root	opt/kde/etc/dbus-1/
@@ -1640,6 +1641,48 @@ drwxr-xr-x	root/root	opt/kde/include/kunittest/
 -rw-r--r--	root/root	opt/kde/include/kxutils.h
 -rw-r--r--	root/root	opt/kde/include/kxyselector.h
 -rw-r--r--	root/root	opt/kde/include/kzip.h
+drwxr-xr-x	root/root	opt/kde/include/nepomuk/
+-rw-r--r--	root/root	opt/kde/include/nepomuk/andterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/class.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/comparisonterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/desktopontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/entity.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/fileontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/filequery.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/global.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/groupterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/kmetadatatagcloud.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/kmetadatatagwidget.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/kratingpainter.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/kratingwidget.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/ktagcloudwidget.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/ktagdisplaywidget.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/literal.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/literalterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/negationterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/nepomuk_export.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukquery_export.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/nepomukservice.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/ontology.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/ontologyloader.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/ontologymanager.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/orterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/property.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/query.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/queryparser.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/queryserviceclient.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resource.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resourcemanager.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resourceterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/resourcetypeterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/result.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/simpleterm.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/tag.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/term.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/thing.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/tools.h
+-rw-r--r--	root/root	opt/kde/include/nepomuk/variant.h
 -rw-r--r--	root/root	opt/kde/include/netwm.h
 -rw-r--r--	root/root	opt/kde/include/netwm_def.h
 -rw-r--r--	root/root	opt/kde/include/passdlg.h
@@ -1950,6 +1993,12 @@ lrwxrwxrwx	root/root	opt/kde/lib/libkunittest.so.4 -> libkunittest.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkutils.so -> libkutils.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libkutils.so.4 -> libkutils.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkutils.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomuk.so -> libnepomuk.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomuk.so.4 -> libnepomuk.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libnepomuk.so.4.4.0
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomukquery.so -> libnepomukquery.so.4
+lrwxrwxrwx	root/root	opt/kde/lib/libnepomukquery.so.4 -> libnepomukquery.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libnepomukquery.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libplasma.so -> libplasma.so.3
 lrwxrwxrwx	root/root	opt/kde/lib/libplasma.so.3 -> libplasma.so.3.0.0
 -rwxr-xr-x	root/root	opt/kde/lib/libplasma.so.3.0.0
@@ -4071,6 +4120,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_insertfile/
 -rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_insertfile/ktexteditor_insertfileui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_kdatatool/
 -rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_kdatatool/ktexteditor_kdatatoolui.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/nepomuk/
+drwxr-xr-x	root/root	opt/kde/share/apps/nepomuk/pics/
+-rw-r--r--	root/root	opt/kde/share/apps/nepomuk/pics/rating.png
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma/
 drwxr-xr-x	root/root	opt/kde/share/apps/plasma/services/
 -rw-r--r--	root/root	opt/kde/share/apps/plasma/services/dataengineservice.operations
