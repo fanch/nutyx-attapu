@@ -103,7 +103,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/akonadi.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/device-notifier.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/apps/digikam.png
@@ -1186,7 +1185,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/akonadi.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/digikam.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/esd.png
@@ -2337,7 +2335,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/akonadi.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/device-notifier.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/digikam.png
@@ -3744,7 +3741,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/application-sxw.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/device-notifier.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/digikam.png
@@ -4844,7 +4840,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/akonadi.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/digikam.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/apps/esd.png
@@ -5515,7 +5510,6 @@ drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/akonadi.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/akregator.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/basket.png
--rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/bovo.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/clock.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/digikam.png
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/apps/esd.png
