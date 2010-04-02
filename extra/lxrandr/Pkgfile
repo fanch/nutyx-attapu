@@ -2,7 +2,7 @@
 # URL: http://lxde.org/about.html
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on:  gtk
+# Depends on:  gtk, xorg-xrandr
 
 name=lxrandr
 version=0.1
