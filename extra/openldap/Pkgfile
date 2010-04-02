@@ -3,18 +3,17 @@
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: cyrus-sasl
+
 name=openldap
-version=2.4.13
+version=2.4.21
 release=1
-source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/$name-$version.tgz \
-	$name-config.patch slapd)
+source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/$name-$version.tgz)
 
 build() {
+        source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2	
 	cd $name-$version
-#	patch -p0 -i $SRC/$name-config.patch
-
-	# Workaround for: (ITS#5464) ucred guarded by __USE_GNU in glibc 2.8
-	# http://www.openldap.org/lists/openldap-bugs/200804/msg00074.html
 	export CPPFLAGS="$CPPFLAGS -D_GNU_SOURCE"
 
 	./configure --prefix=/usr \
@@ -62,24 +61,9 @@ build() {
 	 ln -s liblber.so liblber.so.2;
 	 ln -s libldap.so libldap.so.2;
 	 ln -s libldap_r.so libldap_r.so.2) || exit 1
-
-	mkdir -p $PKG/etc/rc.d/init.d
-	mkdir -p $PKG/etc/rc.d/rc0.d
-	mkdir -p $PKG/etc/rc.d/rc1.d
-	mkdir -p $PKG/etc/rc.d/rc2.d
-	mkdir -p $PKG/etc/rc.d/rc3.d
-	mkdir -p $PKG/etc/rc.d/rc4.d
-	mkdir -p $PKG/etc/rc.d/rc5.d
-	mkdir -p $PKG/etc/rc.d/rc6.d
-	install -m 755 $SRC/slapd $PKG/etc/rc.d/init.d/slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc0.d/K29slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc1.d/K29slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc2.d/S21slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc3.d/S21slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc4.d/S21slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc5.d/S21slapd
-	ln -s ../init.d/slapd $PKG/etc/rc.d/rc6.d/K29slapd
-
-
+	# Installation of the script
+        cd ../$scripts-$scriptsversion
+        make DESTDIR=$PKG install-openldap1
+	
 	rm -f $PKG/etc/openldap/schema/README
 }
