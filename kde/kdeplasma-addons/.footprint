@@ -103,7 +103,6 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_oseiprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_potd_wcpotdprovider.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_mandelbrot.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_marble.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_pattern.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_virus.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plasma_wallpaper_weather.so
@@ -456,7 +455,6 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-wikipedia.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-runner-wikitravel.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-mandelbrot.desktop
--rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-marble.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-pattern.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-virus.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-wallpaper-weather.desktop
