@@ -37,6 +37,7 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/kapptemplate
 -rwxr-xr-x	root/root	opt/kde/bin/kate
 -rwxr-xr-x	root/root	opt/kde/bin/katesnippetstng_editor
+-rwxr-xr-x	root/root	opt/kde/bin/kbugbuster
 -rwxr-xr-x	root/root	opt/kde/bin/kcachegrind
 -rwxr-xr-x	root/root	opt/kde/bin/kde_generate_export_header
 -rwxr-xr-x	root/root	opt/kde/bin/kdedoc
@@ -101,6 +102,7 @@ drwxr-xr-x	root/root	opt/kde/include/ktexteditor_codesnippets_core/
 drwxr-xr-x	root/root	opt/kde/lib/
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/cervisiapart.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kabcformat_kdeaccounts.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kate_kttsd.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/katebacktracebrowserplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/katebuildplugin.so
@@ -120,6 +122,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/katetabbarextensionplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/katetextfilterplugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/katexmlcheckplugin.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcal_bugzilla.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kded_ksvnd.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_perldoc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kio_svn.so
@@ -165,6 +168,7 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kapptemplate.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kate.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/katesnippetstng_editor.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/kbugbuster.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kcachegrind.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kompare.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kuiviewer.desktop
@@ -175,6 +179,9 @@ drwxr-xr-x	root/root	opt/kde/share/apps/cervisia/
 -rw-r--r--	root/root	opt/kde/share/apps/cervisia/cervisiashellui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/cervisiapart/
 -rw-r--r--	root/root	opt/kde/share/apps/cervisiapart/cervisiaui.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/kabc/
+drwxr-xr-x	root/root	opt/kde/share/apps/kabc/formats/
+-rw-r--r--	root/root	opt/kde/share/apps/kabc/formats/kdeaccountsplugin.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/kate/
 -rw-r--r--	root/root	opt/kde/share/apps/kate/default.katesession
 -rw-r--r--	root/root	opt/kde/share/apps/kate/externaltools
@@ -221,9 +228,6 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kate/plugins/katequickdocumentswitcher/
 drwxr-xr-x	root/root	opt/kde/share/apps/kate/plugins/katesnippets/
 -rw-r--r--	root/root	opt/kde/share/apps/kate/plugins/katesnippets/plugin_katesnippets.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kate/plugins/katesnippets_tng/
-drwxr-xr-x	root/root	opt/kde/share/apps/kate/plugins/katesnippets_tng/data/
--rw-r--r--	root/root	opt/kde/share/apps/kate/plugins/katesnippets_tng/data/testsnippets.xml
--rw-r--r--	root/root	opt/kde/share/apps/kate/plugins/katesnippets_tng/data/testsnippetscpp.xml
 -rw-r--r--	root/root	opt/kde/share/apps/kate/plugins/katesnippets_tng/ui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kate/plugins/katesymbolviewer/
 -rw-r--r--	root/root	opt/kde/share/apps/kate/plugins/katesymbolviewer/ui.rc
@@ -238,6 +242,13 @@ drwxr-xr-x	root/root	opt/kde/share/apps/katepart/
 drwxr-xr-x	root/root	opt/kde/share/apps/katepart/syntax/
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/katetemplate.xml
 -rw-r--r--	root/root	opt/kde/share/apps/katepart/syntax/kdesvn-buildrc.xml
+drwxr-xr-x	root/root	opt/kde/share/apps/kbugbuster/
+-rw-r--r--	root/root	opt/kde/share/apps/kbugbuster/kbugbusterui.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/kbugbuster/pics/
+-rw-r--r--	root/root	opt/kde/share/apps/kbugbuster/pics/bars.png
+-rw-r--r--	root/root	opt/kde/share/apps/kbugbuster/pics/logo.png
+-rw-r--r--	root/root	opt/kde/share/apps/kbugbuster/pics/tools.png
+-rw-r--r--	root/root	opt/kde/share/apps/kbugbuster/pics/top-right.png
 drwxr-xr-x	root/root	opt/kde/share/apps/kcachegrind/
 drwxr-xr-x	root/root	opt/kde/share/apps/kcachegrind/icons/
 drwxr-xr-x	root/root	opt/kde/share/apps/kcachegrind/icons/hicolor/
@@ -296,6 +307,10 @@ drwxr-xr-x	root/root	opt/kde/share/apps/kompare/
 -rw-r--r--	root/root	opt/kde/share/apps/kompare/kompareui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kpartloader/
 -rw-r--r--	root/root	opt/kde/share/apps/kpartloader/kpartloaderui.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_snippets/
+drwxr-xr-x	root/root	opt/kde/share/apps/ktexteditor_snippets/data/
+-rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_snippets/data/testsnippets.xml
+-rw-r--r--	root/root	opt/kde/share/apps/ktexteditor_snippets/data/testsnippetscpp.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/kuiviewer/
 -rw-r--r--	root/root	opt/kde/share/apps/kuiviewer/kuiviewerui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/kuiviewerpart/
@@ -492,6 +507,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/kompare.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/128x128/apps/umbrello.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/
@@ -499,6 +515,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/cervisia.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kompare.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/kuiviewer.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/umbrello.png
@@ -509,6 +526,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/cervisia.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kompare.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/umbrello.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/
@@ -516,6 +534,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/cervisia.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kcachegrind.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kompare.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/32x32/apps/kuiviewer.png
@@ -527,6 +546,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/cervisia.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kcachegrind.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kompare.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/48x48/apps/kuiviewer.png
@@ -535,6 +555,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kapptemplate.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kate.png
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/kbugbuster.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/umbrello.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
@@ -676,6 +697,9 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/kded/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kded/ksvnd.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/komparenavtreepart.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/komparepart.desktop
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/
+drwxr-xr-x	root/root	opt/kde/share/kde4/services/kresources/kcal/
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kresources/kcal/bugzilla.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kuiviewer_part.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/perldoc.protocol
 -rw-r--r--	root/root	opt/kde/share/kde4/services/plasma-applet-katesession.desktop
