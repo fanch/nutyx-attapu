@@ -195,6 +195,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/CompassFloatItem.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/CrosshairsPlugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/GeoRendererPlugin.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/GpsdPositionProviderPlugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/GraticulePlugin.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/MapScaleFloatItem.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/plugins/marble/NavigationFloatItem.so
