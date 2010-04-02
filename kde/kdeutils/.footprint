@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/ark
+-rwxr-xr-x	root/root	opt/kde/bin/irkick
 -rwxr-xr-x	root/root	opt/kde/bin/kcalc
 -rwxr-xr-x	root/root	opt/kde/bin/kcharselect
 -rwxr-xr-x	root/root	opt/kde/bin/kdf
@@ -19,6 +20,7 @@ drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/arkpart.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kdf.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_kwallet.so
+-rwxr-xr-x	root/root	opt/kde/lib/kde4/kcm_lirc.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kerfuffle_cli7z.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kerfuffle_clirar.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/kerfuffle_clizip.so
@@ -39,7 +41,11 @@ lrwxrwxrwx	root/root	opt/kde/lib/libkastencore.so.4 -> libkastencore.so.4.4.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkastengui.so -> libkastengui.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libkastengui.so.4 -> libkastengui.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkastengui.so.4.4.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_irkick.so
 -rwxr-xr-x	root/root	opt/kde/lib/libkdeinit4_kcalc.so
+lrwxrwxrwx	root/root	opt/kde/lib/libkdelirc_shared.so -> libkdelirc_shared.so.1
+lrwxrwxrwx	root/root	opt/kde/lib/libkdelirc_shared.so.1 -> libkdelirc_shared.so.1.0.0
+-rwxr-xr-x	root/root	opt/kde/lib/libkdelirc_shared.so.1.0.0
 lrwxrwxrwx	root/root	opt/kde/lib/libkerfuffle.so -> libkerfuffle.so.4
 lrwxrwxrwx	root/root	opt/kde/lib/libkerfuffle.so.4 -> libkerfuffle.so.4.4.0
 -rwxr-xr-x	root/root	opt/kde/lib/libkerfuffle.so.4.4.0
@@ -67,6 +73,7 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KCharSelect.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KFloppy.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/ark.desktop
+-rw-r--r--	root/root	opt/kde/share/applications/kde4/irkick.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kcalc.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kdf.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/kgpg.desktop
@@ -81,6 +88,8 @@ drwxr-xr-x	root/root	opt/kde/share/apps/
 drwxr-xr-x	root/root	opt/kde/share/apps/ark/
 -rw-r--r--	root/root	opt/kde/share/apps/ark/ark_part.rc
 -rw-r--r--	root/root	opt/kde/share/apps/ark/arkui.rc
+drwxr-xr-x	root/root	opt/kde/share/apps/irkick/
+-rw-r--r--	root/root	opt/kde/share/apps/irkick/irkick.notifyrc
 drwxr-xr-x	root/root	opt/kde/share/apps/kcalc/
 -rw-r--r--	root/root	opt/kde/share/apps/kcalc/kcalcui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/kcalc/scienceconstants.xml
@@ -174,11 +183,23 @@ drwxr-xr-x	root/root	opt/kde/share/apps/printer-applet/
 -rw-r--r--	root/root	opt/kde/share/apps/printer-applet/printer-applet.ui
 -rw-r--r--	root/root	opt/kde/share/apps/printer-applet/printer-appletui.rc
 -rw-r--r--	root/root	opt/kde/share/apps/printer-applet/statereason.py
+drwxr-xr-x	root/root	opt/kde/share/apps/profiles/
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/amarok.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/dragonplayer.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/klauncher.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/kmix.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/konqueror.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/okular.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/profile.dtd
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/shutdown.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/suspend.profile.xml
+-rw-r--r--	root/root	opt/kde/share/apps/profiles/vlc.profile.xml
 drwxr-xr-x	root/root	opt/kde/share/apps/superkaramba/
 -rw-r--r--	root/root	opt/kde/share/apps/superkaramba/superkarambaui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/sweeper/
 -rw-r--r--	root/root	opt/kde/share/apps/sweeper/sweeperui.rc
 drwxr-xr-x	root/root	opt/kde/share/autostart/
+-rw-r--r--	root/root	opt/kde/share/autostart/irkick.desktop
 -rw-r--r--	root/root	opt/kde/share/autostart/kgpg.desktop
 -rw-r--r--	root/root	opt/kde/share/autostart/printer-applet.desktop
 drwxr-xr-x	root/root	opt/kde/share/config.kcfg/
@@ -216,6 +237,7 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/16x16/apps/superkaramba.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/22x22/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/irkick.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kdf.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kfloppy.png
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/22x22/apps/kgpg.png
@@ -254,17 +276,48 @@ drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/64x64/apps/superkaramba.png
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	opt/kde/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/irkick.svgz
 -rw-r--r--	root/root	opt/kde/share/icons/hicolor/scalable/apps/superkaramba.svgz
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/128x128/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/128x128/devices/infrared-remote.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/apps/kcmdf.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/16x16/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/16x16/devices/infrared-remote.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/actions/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/irkickflash.png
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/actions/irkickoff.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/apps/kcmdf.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/22x22/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/22x22/devices/infrared-remote.png
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/
 drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/apps/
 -rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/apps/kcmdf.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/32x32/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/32x32/devices/infrared-remote.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/42x42/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/42x42/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/42x42/devices/infrared-remote.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/48x48/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/48x48/devices/infrared-remote.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/64x64/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/64x64/devices/infrared-remote.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/8x8/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/8x8/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/8x8/devices/infrared-remote.png
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/actions/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/scalable/actions/irkickflash.svgz
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/scalable/actions/irkickoff.svgz
+drwxr-xr-x	root/root	opt/kde/share/icons/oxygen/scalable/devices/
+-rw-r--r--	root/root	opt/kde/share/icons/oxygen/scalable/devices/infrared-remote.svgz
 drwxr-xr-x	root/root	opt/kde/share/kde4/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/
 drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
@@ -275,6 +328,7 @@ drwxr-xr-x	root/root	opt/kde/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ServiceMenus/viewdecrypted.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/ark_part.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kbytearrayedit.desktop
+-rw-r--r--	root/root	opt/kde/share/kde4/services/kcm_lirc.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kcmdf.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kerfuffle_cli7z.desktop
 -rw-r--r--	root/root	opt/kde/share/kde4/services/kerfuffle_clirar.desktop
