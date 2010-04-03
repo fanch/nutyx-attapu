@@ -1,7 +1,6 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/kde/
 drwxr-xr-x	root/root	opt/kde/bin/
--rwxr-xr-x	root/root	opt/kde/bin/akonadi_nepomuk_email_feeder
 -rwxr-xr-x	root/root	opt/kde/bin/akonadiconsole
 -rwxr-xr-x	root/root	opt/kde/bin/akregator
 -rwxr-xr-x	root/root	opt/kde/bin/akregatorstorageexporter
@@ -36,6 +35,10 @@ drwxr-xr-x	root/root	opt/kde/bin/
 -rwxr-xr-x	root/root	opt/kde/bin/kwatchgnupg
 -rwxr-xr-x	root/root	opt/kde/bin/sloxwizard
 drwxr-xr-x	root/root	opt/kde/lib/
+drwxr-xr-x	root/root	opt/kde/lib/akonadi/
+drwxr-xr-x	root/root	opt/kde/lib/akonadi/contact/
+drwxr-xr-x	root/root	opt/kde/lib/akonadi/contact/editorpageplugins/
+-rwxr-xr-x	root/root	opt/kde/lib/akonadi/contact/editorpageplugins/cryptopageplugin.so
 drwxr-xr-x	root/root	opt/kde/lib/kde4/
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/akregator_config_advanced.so
 -rwxr-xr-x	root/root	opt/kde/lib/kde4/akregator_config_appearance.so
@@ -232,9 +235,6 @@ drwxr-xr-x	root/root	opt/kde/lib/strigi/
 -rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_ics.so
 -rwxr-xr-x	root/root	opt/kde/lib/strigi/strigiea_vcf.so
 drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/akonadi/
-drwxr-xr-x	root/root	opt/kde/share/akonadi/agents/
--rw-r--r--	root/root	opt/kde/share/akonadi/agents/nepomukemailfeeder.desktop
 drwxr-xr-x	root/root	opt/kde/share/applications/
 drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/KMail.desktop
@@ -256,10 +256,6 @@ drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/korganizer.desktop
 -rw-r--r--	root/root	opt/kde/share/applications/kde4/ktimetracker.desktop
 drwxr-xr-x	root/root	opt/kde/share/apps/
-drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/
-drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/
-drwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/editorpageplugins/
--rwxr-xr-x	root/root	opt/kde/share/apps/akonadi/contact/editorpageplugins/cryptopageplugin.so
 drwxr-xr-x	root/root	opt/kde/share/apps/akonadiconsole/
 -rw-r--r--	root/root	opt/kde/share/apps/akonadiconsole/akonadiconsoleui.rc
 drwxr-xr-x	root/root	opt/kde/share/apps/akregator/
