@@ -5,7 +5,7 @@
 # Depends on: kdebase, kdepim, libwpg, wv2, glew, gsl, pstoedit, graphicsmagick, kipi-plugins, eigen2
 
 name=koffice
-version=2.1.1
+version=2.1.2
 release=1
 source=(ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-$version.tar.bz2 \
         ftp://ftp.kde.org/pub/kde/stable/$name-$version/$name-l10n/$name-l10n-fr-$version.tar.bz2)
