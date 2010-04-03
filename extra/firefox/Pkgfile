@@ -5,7 +5,7 @@
 # Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss, libnotify, sqlite3, dbus-glib
 
 name=firefox
-version=3.6.2
+version=3.6.3
 release=1
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2\
 	http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/xpi/fr.xpi\
