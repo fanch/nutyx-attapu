@@ -1,0 +1,64 @@
+# Description: L'initrd avec le système de maintenance pour le kernel-pae
+# URL:  http://www.kernel.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=initrd-pae
+version=2.6.33.2
+release=1
+_tools=02042010
+_baseversion=2.6.33
+SCRIPT_VERSION="2009.3"
+source=()
+build(){
+wget http://kiao.no-ip.info/NuTyX/tools/install-${SCRIPT_VERSION}.ash
+wget http://kiao.no-ip.info/NuTyX/2009.3/`uname -m`/release/kernel-pae%23$version-1.pkg.tar.gz
+WDIR=$SRC/installtools
+tar xf kernel*
+mkdir -p $WDIR
+wget http://kiao.no-ip.info/NuTyX/tools/installtools-${_tools}.tar.gz
+tar -C $WDIR --use-compress-program=gzip -xf installtools-${_tools}.tar.gz
+
+mkdir -p $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/{drivers,fs}
+cp -a lib/modules/${_baseversion}-NuTyX/kernel/crypto \
+$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/
+for i in ata block input ide hid message parport \
+serial misc net pcmcia scsi usb md rtc
+do
+	if [ -d lib/modules/${_baseversion}-NuTyX/kernel/drivers/$i ]; then
+		cp -a lib/modules/${_baseversion}-NuTyX/kernel/drivers/$i \
+		$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/drivers/
+	fi
+done
+for i in wireless irda wan bonding \
+hamradio appletalk cxgb3 mlx4 sfc
+do 
+	rm -r $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/drivers/net/$i
+done
+for i in fat ntfs smbfs vfat ext4 fs nfs nfs_common nfsd lockd
+do
+	if [ -d lib/modules/${_baseversion}-NuTyX/kernel/fs/$i ]; then
+		cp -a lib/modules/${_baseversion}-NuTyX/kernel/fs/$i \
+		$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/fs/
+	fi
+done
+if [ -d lib/modules/${_baseversion}-NuTyX/kernel/net/sunrpc ]; then
+	mkdir -p $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/net/
+	cp -a lib/modules/${_baseversion}-NuTyX/kernel/net/sunrpc \
+	$WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/net/
+fi
+$WDIR/rootfs/sbin/depmod -b $WDIR/rootfs ${_baseversion}-NuTyX
+	
+cp install-${SCRIPT_VERSION}.ash $WDIR/rootfs/root/
+	
+# Compression des modules
+cd $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX
+find . -name "*.ko" -exec gzip '{}' \;
+sed -i 's/\.ko/.ko.gz/g' modules.dep
+cd -
+sed -i "s/#version#/$version/" $WDIR/iso/isolinux/boot.msg
+cp  boot/kernel-$version $WDIR/iso/isolinux/kernel
+sh $WDIR/script/mkinitrd $WDIR
+mkdir -p $PKG/boot
+cp $WDIR/iso/isolinux/initrd $PKG/boot/nutyx-initrd
+}
