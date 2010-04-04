@@ -5,7 +5,7 @@
 # Depends on: libcanberra, gst-plugins-base, libcanberra, libgnomekbd, gnome-panel, metacity, nautilus, hal, gnome-settings-daemon, evolution-data-server
 
 name=gnome-control-center
-version=2.28.1
+version=2.30.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 

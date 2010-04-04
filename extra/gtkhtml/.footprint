@@ -22,12 +22,10 @@ drwxr-xr-x	root/root	usr/include/libgtkhtml-3.14/gtkhtml/
 -rw-r--r--	root/root	usr/include/libgtkhtml-3.14/gtkhtml/htmltokenizer.h
 -rw-r--r--	root/root	usr/include/libgtkhtml-3.14/gtkhtml/htmltypes.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libgtkhtml-3.14.a
 -rwxr-xr-x	root/root	usr/lib/libgtkhtml-3.14.la
 lrwxrwxrwx	root/root	usr/lib/libgtkhtml-3.14.so -> libgtkhtml-3.14.so.19.1.1
 lrwxrwxrwx	root/root	usr/lib/libgtkhtml-3.14.so.19 -> libgtkhtml-3.14.so.19.1.1
 -rwxr-xr-x	root/root	usr/lib/libgtkhtml-3.14.so.19.1.1
--rw-r--r--	root/root	usr/lib/libgtkhtml-editor.a
 -rwxr-xr-x	root/root	usr/lib/libgtkhtml-editor.la
 lrwxrwxrwx	root/root	usr/lib/libgtkhtml-editor.so -> libgtkhtml-editor.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libgtkhtml-editor.so.0 -> libgtkhtml-editor.so.0.0.0

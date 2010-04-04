@@ -18,7 +18,6 @@ drwxr-xr-x	root/root	etc/sound/events/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cpufreq-selector
--rwxr-xr-x	root/root	usr/bin/invest-chart
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bonobo/
 drwxr-xr-x	root/root	usr/lib/bonobo/servers/
@@ -30,7 +29,6 @@ drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_DriveMountApplet.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_GWeatherApplet_Factory.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_GeyesApplet.server
--rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_GtikApplet.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_KeyboardApplet.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_MailcheckApplet_Factory.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_MiniCommanderApplet.server
@@ -40,7 +38,6 @@ drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_Panel_TrashApplet.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_Panel_WirelessApplet.server
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_StickyNotesApplet.server
--rw-r--r--	root/root	usr/lib/bonobo/servers/Invest_Applet.server
 drwxr-xr-x	root/root	usr/lib/gnome-applets/
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/accessx-status-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/battstat-applet-2
@@ -48,41 +45,12 @@ drwxr-xr-x	root/root	usr/lib/gnome-applets/
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/cpufreq-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/drivemount_applet2
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/geyes_applet2
--rwxr-xr-x	root/root	usr/lib/gnome-applets/gnome-keyboard-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/gweather-applet-2
--rwxr-xr-x	root/root	usr/lib/gnome-applets/invest-applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/mixer_applet2
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/multiload-applet-2
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/null_applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/stickynotes_applet
 -rwxr-xr-x	root/root	usr/lib/gnome-applets/trashapplet
-drwxr-xr-x	root/root	usr/lib/python2.6/
-drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
-drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/invest/
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/__init__.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/__init__.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/__init__.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/about.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/about.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/about.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/applet.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/applet.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/applet.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/chart.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/chart.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/chart.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/defs.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/defs.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/defs.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/preferences.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/preferences.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/preferences.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/quotes.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/quotes.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/quotes.pyo
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/widgets.py
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/widgets.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/invest/widgets.pyo
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
@@ -94,21 +62,16 @@ drwxr-xr-x	root/root	usr/share/gnome-2.0/ui/
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_CPUFreqApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_CharpickerApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_DriveMountApplet.xml
--rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_GSwitchItApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_GWeatherApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_GeyesApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_MixerApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_MultiloadApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_Panel_TrashApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_StickyNotesApplet.xml
--rw-r--r--	root/root	usr/share/gnome-2.0/ui/Invest_Applet.xml
 drwxr-xr-x	root/root	usr/share/gnome-applets/
 drwxr-xr-x	root/root	usr/share/gnome-applets/builder/
 -rw-r--r--	root/root	usr/share/gnome-applets/builder/battstat_applet.ui
 -rw-r--r--	root/root	usr/share/gnome-applets/builder/cpufreq-preferences.ui
--rw-r--r--	root/root	usr/share/gnome-applets/builder/financialchart.ui
--rw-r--r--	root/root	usr/share/gnome-applets/builder/gswitchit.ui
--rw-r--r--	root/root	usr/share/gnome-applets/builder/prefs-dialog.ui
 -rw-r--r--	root/root	usr/share/gnome-applets/builder/stickynotes.ui
 -rw-r--r--	root/root	usr/share/gnome-applets/builder/trashapplet-empty-progress.ui
 drwxr-xr-x	root/root	usr/share/gnome-applets/geyes/
@@ -136,14 +99,6 @@ drwxr-xr-x	root/root	usr/share/gnome-applets/geyes/Tango/
 -rw-r--r--	root/root	usr/share/gnome-applets/geyes/Tango/config
 -rw-r--r--	root/root	usr/share/gnome-applets/geyes/Tango/tango-eye.png
 -rw-r--r--	root/root	usr/share/gnome-applets/geyes/Tango/tango-pupil.png
-drwxr-xr-x	root/root	usr/share/gnome-applets/invest-applet/
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest-16_neutral.png
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest-22_down.png
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest-22_neutral.png
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest-22_up.png
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest_down.svg
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest_neutral.svg
--rw-r--r--	root/root	usr/share/gnome-applets/invest-applet/invest_up.svg
 drwxr-xr-x	root/root	usr/share/gnome/
 drwxr-xr-x	root/root	usr/share/gnome/help/
 drwxr-xr-x	root/root	usr/share/gnome/help/accessx-status/
@@ -434,14 +389,22 @@ drwxr-xr-x	root/root	usr/share/gnome/help/battstat/cs/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-credits-hal.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/battstat-preferences.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/cs/figures/context-menu.png
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/da/
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/da/battstat.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/battstat/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/da/figures/battstat-applet-expanded.png -> ../../C/figures/battstat-applet-expanded.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/da/figures/battstat-applet.png -> ../../C/figures/battstat-applet.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/da/figures/battstat-credits-hal.png -> ../../C/figures/battstat-credits-hal.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/da/figures/battstat-preferences.png -> ../../C/figures/battstat-preferences.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/da/figures/context-menu.png -> ../../C/figures/context-menu.png
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/de/
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/de/battstat.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/de/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/de/figures/battstat-applet-expanded.png -> ../../C/figures/battstat-applet-expanded.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/de/figures/battstat-applet-expanded.png
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/de/figures/battstat-applet.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/de/figures/battstat-credits-hal.png -> ../../C/figures/battstat-credits-hal.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/de/figures/battstat-preferences.png -> ../../C/figures/battstat-preferences.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/battstat/de/figures/context-menu.png -> ../../C/figures/context-menu.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/de/figures/battstat-preferences.png
+-rw-r--r--	root/root	usr/share/gnome/help/battstat/de/figures/context-menu.png
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/el/
 -rw-r--r--	root/root	usr/share/gnome/help/battstat/el/battstat.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/battstat/el/figures/
@@ -574,7 +537,7 @@ drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/cs/
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/cs/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/cs/figures/charpalette_applet.png -> ../../C/figures/charpalette_applet.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/cs/figures/charpalette_chargroup.png -> ../../C/figures/charpalette_chargroup.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/cs/figures/charpick-preferences.png -> ../../C/figures/charpick-preferences.png
+-rw-r--r--	root/root	usr/share/gnome/help/char-palette/cs/figures/charpick-preferences.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/char-palette/cs/figures/charpick_characters.png -> ../../C/figures/charpick_characters.png
 drwxr-xr-x	root/root	usr/share/gnome/help/char-palette/de/
 -rw-r--r--	root/root	usr/share/gnome/help/char-palette/de/char-palette.xml
@@ -733,9 +696,9 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-100.
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-25.png -> ../../C/figures/cpufreq-25.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-50.png -> ../../C/figures/cpufreq-50.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-75.png -> ../../C/figures/cpufreq-75.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences-smp.png -> ../../C/figures/cpufreq-applet-preferences-smp.png
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences-smp.png
 -rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-preferences.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-selector-both.png -> ../../C/figures/cpufreq-applet-selector-both.png
+-rw-r--r--	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-selector-both.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet-selector.png -> ../../C/figures/cpufreq-applet-selector.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/cpufreq-applet/de/figures/cpufreq-applet.png -> ../../C/figures/cpufreq-applet.png
 drwxr-xr-x	root/root	usr/share/gnome/help/cpufreq-applet/el/
@@ -1082,6 +1045,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/geyes/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/C/figures/geyes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/C/geyes.xml
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/ast/
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/ast/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/geyes/ast/figures/geyes_applet.png -> ../../C/figures/geyes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/geyes/ast/geyes.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/bg/
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/bg/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/geyes/bg/figures/geyes_applet.png -> ../../C/figures/geyes_applet.png
@@ -1154,38 +1121,14 @@ drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_CN/
 drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_CN/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_CN/figures/geyes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_CN/geyes.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/C/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/C/gswitchit.xml
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/C/legal.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/ca/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/ca/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/cs/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/cs/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/de/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/de/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/el/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/el/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/en_GB/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/en_GB/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/es/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/es/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/eu/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/eu/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/fi/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/fi/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/fr/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/fr/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/oc/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/oc/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/ru/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/ru/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/sv/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/sv/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/uk/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/uk/gswitchit.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/gswitchit/zh_CN/
--rw-r--r--	root/root	usr/share/gnome/help/gswitchit/zh_CN/gswitchit.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_HK/
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_HK/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_HK/figures/geyes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_HK/geyes.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_TW/
+drwxr-xr-x	root/root	usr/share/gnome/help/geyes/zh_TW/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_TW/figures/geyes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/geyes/zh_TW/geyes.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gweather/
 drwxr-xr-x	root/root	usr/share/gnome/help/gweather/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/gweather/C/figures/
@@ -1528,28 +1471,6 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/zh_CN/figures/stock_weather-s
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/zh_CN/figures/stock_weather-storm.png -> ../../C/figures/stock_weather-storm.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gweather/zh_CN/figures/stock_weather-sunny.png -> ../../C/figures/stock_weather-sunny.png
 -rw-r--r--	root/root	usr/share/gnome/help/gweather/zh_CN/gweather.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/C/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/C/invest-applet.xml
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/C/legal.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/ca/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/ca/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/de/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/de/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/el/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/el/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/en_GB/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/en_GB/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/es/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/es/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/fi/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/fi/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/ru/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/ru/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/sv/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/sv/invest-applet.xml
-drwxr-xr-x	root/root	usr/share/gnome/help/invest-applet/zh_CN/
--rw-r--r--	root/root	usr/share/gnome/help/invest-applet/zh_CN/invest-applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/C/figures/
@@ -1564,6 +1485,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/cs/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/cs/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/cs/figures/volumecontrol_applet.png -> ../../C/figures/volumecontrol_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/cs/mixer_applet2.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/da/
+drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/mixer_applet2/da/figures/volumecontrol_applet.png -> ../../C/figures/volumecontrol_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/da/mixer_applet2.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/mixer_applet2/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/mixer_applet2/de/figures/volumecontrol_applet.png
@@ -1888,6 +1813,22 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stick
 lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynotes-prefs.png -> ../../C/figures/stickynotes-prefs.png
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/figures/stickynotes_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_CN/stickynotes_applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/stickynote-right-menu-lock.png -> ../../C/figures/stickynote-right-menu-lock.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/stickynote-right-menu-new.png -> ../../C/figures/stickynote-right-menu-new.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/stickynotes-note-prefs.png -> ../../C/figures/stickynotes-note-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/stickynotes-prefs.png -> ../../C/figures/stickynotes-prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/figures/stickynotes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_HK/stickynotes_applet.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/
+drwxr-xr-x	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynote-right-menu-lock.png -> ../../C/figures/stickynote-right-menu-lock.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynote-right-menu-new.png -> ../../C/figures/stickynote-right-menu-new.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes-note-prefs.png -> ../../C/figures/stickynotes-note-prefs.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes-prefs.png -> ../../C/figures/stickynotes-prefs.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/stickynotes_applet/zh_TW/stickynotes_applet.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/trashapplet/C/figures/
@@ -1989,13 +1930,11 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/gnome-cpu-frequency-applet.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/gnome-eyes-applet.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/gnome-sticky-notes-applet.png
--rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/invest-applet.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/gnome-cpu-frequency-applet.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/gnome-eyes-applet.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/gnome-sticky-notes-applet.png
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/invest-applet.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/24x24/apps/gnome-cpu-frequency-applet.png
@@ -2009,13 +1948,11 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/ax-applet.png
--rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/invest-applet.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/gnome-cpu-frequency-applet.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/gnome-eyes-applet.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/gnome-sticky-notes-applet.svg
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/invest-applet.svg
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -2045,6 +1982,7 @@ drwxr-xr-x	root/root	usr/share/omf/battstat/
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-bg.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-ca.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-cs.omf
+-rw-r--r--	root/root	usr/share/omf/battstat/battstat-da.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-de.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-el.omf
 -rw-r--r--	root/root	usr/share/omf/battstat/battstat-en_GB.omf
@@ -2122,6 +2060,7 @@ drwxr-xr-x	root/root	usr/share/omf/drivemount/
 -rw-r--r--	root/root	usr/share/omf/drivemount/drivemount-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/geyes/
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-C.omf
+-rw-r--r--	root/root	usr/share/omf/geyes/geyes-ast.omf
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-bg.omf
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-ca.omf
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-cs.omf
@@ -2140,22 +2079,8 @@ drwxr-xr-x	root/root	usr/share/omf/geyes/
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-sv.omf
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-uk.omf
 -rw-r--r--	root/root	usr/share/omf/geyes/geyes-zh_CN.omf
-drwxr-xr-x	root/root	usr/share/omf/gswitchit/
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-C.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-ca.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-cs.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-de.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-el.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-en_GB.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-es.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-eu.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-fi.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-fr.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-oc.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-ru.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-sv.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-uk.omf
--rw-r--r--	root/root	usr/share/omf/gswitchit/gswitchit-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/geyes/geyes-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/geyes/geyes-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/omf/gweather/
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-C.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-ar.omf
@@ -2177,21 +2102,11 @@ drwxr-xr-x	root/root	usr/share/omf/gweather/
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-sv.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-uk.omf
 -rw-r--r--	root/root	usr/share/omf/gweather/gweather-zh_CN.omf
-drwxr-xr-x	root/root	usr/share/omf/invest-applet/
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-C.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-ca.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-de.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-el.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-en_GB.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-es.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-fi.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-ru.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-sv.omf
--rw-r--r--	root/root	usr/share/omf/invest-applet/invest-applet-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/omf/mixer_applet2/
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-C.omf
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-ca.omf
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-cs.omf
+-rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-da.omf
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-de.omf
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-el.omf
 -rw-r--r--	root/root	usr/share/omf/mixer_applet2/mixer_applet2-en_GB.omf
@@ -2247,6 +2162,8 @@ drwxr-xr-x	root/root	usr/share/omf/stickynotes_applet/
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-sv.omf
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-uk.omf
 -rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-zh_HK.omf
+-rw-r--r--	root/root	usr/share/omf/stickynotes_applet/stickynotes_applet-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/omf/trashapplet/
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-C.omf
 -rw-r--r--	root/root	usr/share/omf/trashapplet/trashapplet-ca.omf

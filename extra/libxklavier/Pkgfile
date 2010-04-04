@@ -5,7 +5,7 @@
 # Depends on: hicolor-icon-theme, iso-codes
 
 name=libxklavier
-version=4.0
+version=5.0
 release=1
 source=( http://downloads.sourceforge.net/gswitchit/$name-$version.tar.bz2)
 

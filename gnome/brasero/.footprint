@@ -41,8 +41,12 @@ drwxr-xr-x	root/root	usr/include/brasero/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/brasero/
 drwxr-xr-x	root/root	usr/lib/brasero/plugins/
+-rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-audio2cue.la
+-rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-audio2cue.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-burn-uri.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-burn-uri.so
+-rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-cdda2wav.la
+-rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-cdda2wav.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-cdrdao.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-cdrdao.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-cdrecord.la
@@ -71,8 +75,6 @@ drwxr-xr-x	root/root	usr/lib/brasero/plugins/
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-readcd.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-readom.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-readom.so
--rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-toc2cue.la
--rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-toc2cue.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-transcode.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-transcode.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-vcdimager.la
@@ -81,6 +83,9 @@ drwxr-xr-x	root/root	usr/lib/brasero/plugins/
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-vob.so
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-wodim.la
 -rwxr-xr-x	root/root	usr/lib/brasero/plugins/libbrasero-wodim.so
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/BraseroBurn-1.0.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/BraseroMedia-1.0.typelib
 -rwxr-xr-x	root/root	usr/lib/libbrasero-burn.la
 lrwxrwxrwx	root/root	usr/lib/libbrasero-burn.so -> libbrasero-burn.so.0.2.0
 lrwxrwxrwx	root/root	usr/lib/libbrasero-burn.so.0 -> libbrasero-burn.so.0.2.0
@@ -280,6 +285,9 @@ drwxr-xr-x	root/root	usr/share/brasero/icons/hicolor/scalable/status/
 -rw-r--r--	root/root	usr/share/brasero/icons/hicolor/scalable/status/brasero-disc-90.svg
 -rw-r--r--	root/root	usr/share/brasero/icons/hicolor/scalable/status/brasero-disc-95.svg
 -rw-r--r--	root/root	usr/share/brasero/logo.png
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/BraseroBurn-1.0.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/BraseroMedia-1.0.gir
 drwxr-xr-x	root/root	usr/share/gnome/
 drwxr-xr-x	root/root	usr/share/gnome/help/
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/
@@ -288,6 +296,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/brasero/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/C/figures/brasero_main.png
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/bg/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/bg/brasero.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/brasero/bg/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/brasero/bg/figures/brasero_main.png
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/ca/
 -rw-r--r--	root/root	usr/share/gnome/help/brasero/ca/brasero.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/brasero/ca/figures/
@@ -377,6 +389,7 @@ drwxr-xr-x	root/root	usr/share/mime/packages/
 drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/brasero/
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-C.omf
+-rw-r--r--	root/root	usr/share/omf/brasero/brasero-bg.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-ca.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-cs.omf
 -rw-r--r--	root/root	usr/share/omf/brasero/brasero-de.omf

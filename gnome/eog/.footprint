@@ -21,7 +21,6 @@ drwxr-xr-x	root/root	usr/include/eog-2.20/eog/
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-job-queue.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-jobs.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-list-store.h
--rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-message-area.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-plugin.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-properties-dialog.h
 -rw-r--r--	root/root	usr/include/eog-2.20/eog/eog-scroll-view.h

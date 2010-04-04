@@ -11,9 +11,9 @@ drwxr-xr-x	root/root	usr/include/libxklavier/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libxklavier.a
 -rwxr-xr-x	root/root	usr/lib/libxklavier.la
-lrwxrwxrwx	root/root	usr/lib/libxklavier.so -> libxklavier.so.15.0.0
-lrwxrwxrwx	root/root	usr/lib/libxklavier.so.15 -> libxklavier.so.15.0.0
--rwxr-xr-x	root/root	usr/lib/libxklavier.so.15.0.0
+lrwxrwxrwx	root/root	usr/lib/libxklavier.so -> libxklavier.so.16.0.0
+lrwxrwxrwx	root/root	usr/lib/libxklavier.so.16 -> libxklavier.so.16.0.0
+-rwxr-xr-x	root/root	usr/lib/libxklavier.so.16.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libxklavier.pc
 drwxr-xr-x	root/root	usr/share/

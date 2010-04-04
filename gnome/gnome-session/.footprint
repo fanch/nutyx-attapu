@@ -11,10 +11,10 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnome-session-properties
 -rwxr-xr-x	root/root	usr/bin/gnome-session-save
 -rwxr-xr-x	root/root	usr/bin/gnome-wm
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/gnome-session/
-drwxr-xr-x	root/root	usr/lib/gnome-session/helpers/
--rwxr-xr-x	root/root	usr/lib/gnome-session/helpers/gnome-settings-daemon-helper
+drwxr-xr-x	root/root	usr/libexec/
+drwxr-xr-x	root/root	usr/libexec/gnome-session/
+drwxr-xr-x	root/root	usr/libexec/gnome-session/helpers/
+-rwxr-xr-x	root/root	usr/libexec/gnome-session/helpers/gnome-settings-daemon-helper
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/session-properties.desktop

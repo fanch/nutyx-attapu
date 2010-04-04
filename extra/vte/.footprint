@@ -12,9 +12,9 @@ drwxr-xr-x	root/root	usr/include/vte/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libvte.a
 -rwxr-xr-x	root/root	usr/lib/libvte.la
-lrwxrwxrwx	root/root	usr/lib/libvte.so -> libvte.so.9.12.1
-lrwxrwxrwx	root/root	usr/lib/libvte.so.9 -> libvte.so.9.12.1
--rwxr-xr-x	root/root	usr/lib/libvte.so.9.12.1
+lrwxrwxrwx	root/root	usr/lib/libvte.so -> libvte.so.9.13.0
+lrwxrwxrwx	root/root	usr/lib/libvte.so.9 -> libvte.so.9.13.0
+-rwxr-xr-x	root/root	usr/lib/libvte.so.9.13.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/pyvte.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/vte.pc
