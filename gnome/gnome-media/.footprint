@@ -19,11 +19,6 @@ drwxr-xr-x	root/root	usr/include/gnome-media/profiles/
 -rw-r--r--	root/root	usr/include/gnome-media/profiles/audio-profiles-edit.h
 -rw-r--r--	root/root	usr/include/gnome-media/profiles/gnome-media-profiles.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/libglade/
-drwxr-xr-x	root/root	usr/lib/libglade/2.0/
--rw-r--r--	root/root	usr/lib/libglade/2.0/libgnome-media-profiles.a
--rwxr-xr-x	root/root	usr/lib/libglade/2.0/libgnome-media-profiles.la
--rwxr-xr-x	root/root	usr/lib/libglade/2.0/libgnome-media-profiles.so
 -rw-r--r--	root/root	usr/lib/libgnome-media-profiles.a
 -rwxr-xr-x	root/root	usr/lib/libgnome-media-profiles.la
 lrwxrwxrwx	root/root	usr/lib/libgnome-media-profiles.so -> libgnome-media-profiles.so.0.0.0
@@ -37,8 +32,8 @@ drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/gnome-volume-control.desktop
 -rw-r--r--	root/root	usr/share/applications/gstreamer-properties.desktop
 drwxr-xr-x	root/root	usr/share/gnome-media/
-drwxr-xr-x	root/root	usr/share/gnome-media/glade/
--rw-r--r--	root/root	usr/share/gnome-media/glade/gnome-audio-profiles.glade2
+-rw-r--r--	root/root	usr/share/gnome-media/gnome-audio-profile-edit.ui
+-rw-r--r--	root/root	usr/share/gnome-media/gnome-audio-profile-new.ui
 drwxr-xr-x	root/root	usr/share/gnome-media/pixmaps/
 -rw-r--r--	root/root	usr/share/gnome-media/pixmaps/chain-broken.png
 -rw-r--r--	root/root	usr/share/gnome-media/pixmaps/chain.png
@@ -56,6 +51,36 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/C/figures/gnome-audio-profiles-profiles-window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/C/gnome-audio-profiles.xml
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/C/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/de/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/de/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/de/figures/gnome-audio-profiles-profile-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/de/figures/gnome-audio-profiles-profiles-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/de/gnome-audio-profiles.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/de/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/el/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/el/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-audio-profiles/el/figures/gnome-audio-profiles-profile-window.png -> ../../C/figures/gnome-audio-profiles-profile-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-audio-profiles/el/figures/gnome-audio-profiles-profiles-window.png -> ../../C/figures/gnome-audio-profiles-profiles-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/el/gnome-audio-profiles.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/el/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/es/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/es/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-audio-profiles/es/figures/gnome-audio-profiles-profile-window.png -> ../../C/figures/gnome-audio-profiles-profile-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-audio-profiles/es/figures/gnome-audio-profiles-profiles-window.png -> ../../C/figures/gnome-audio-profiles-profiles-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/es/gnome-audio-profiles.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/es/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/figures/gnome-audio-profiles-profile-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/figures/gnome-audio-profiles-profiles-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/gnome-audio-profiles.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/fr/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/figures/gnome-audio-profiles-profile-window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/figures/gnome-audio-profiles-profiles-window.png -> ../../C/figures/gnome-audio-profiles-profiles-window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/gnome-audio-profiles.xml
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-audio-profiles/sv/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/C/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/C/figures/
@@ -70,6 +95,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/cs/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/cs/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-sound-recorder/cs/figures/grecord_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-sound-recorder/cs/gnome-sound-recorder.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/da/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-sound-recorder/da/figures/grecord_window.png -> ../../C/figures/grecord_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-sound-recorder/da/gnome-sound-recorder.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-sound-recorder/de/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-sound-recorder/de/figures/grecord_window.png
@@ -226,6 +255,10 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/th/
 drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/th/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gstreamer-properties/th/figures/gstreamer_properties_window.png
 -rw-r--r--	root/root	usr/share/gnome/help/gstreamer-properties/th/gstreamer-properties.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/uk/
+drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/uk/figures/
+-rw-r--r--	root/root	usr/share/gnome/help/gstreamer-properties/uk/figures/gstreamer_properties_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/gstreamer-properties/uk/gstreamer-properties.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/zh_CN/
 drwxr-xr-x	root/root	usr/share/gnome/help/gstreamer-properties/zh_CN/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/gstreamer-properties/zh_CN/figures/gstreamer_properties_window.png -> ../../C/figures/gstreamer_properties_window.png
@@ -269,10 +302,16 @@ drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/gnome-audio-profiles/
 -rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-C.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-de.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-el.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-es.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-fr.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-audio-profiles/gnome-audio-profiles-sv.omf
 drwxr-xr-x	root/root	usr/share/omf/gnome-sound-recorder/
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-C.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-ca.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-cs.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-da.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-de.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-el.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-en_GB.omf
@@ -313,6 +352,7 @@ drwxr-xr-x	root/root	usr/share/omf/gstreamer-properties/
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-ru.omf
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-sv.omf
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-th.omf
+-rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-uk.omf
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/sounds/
 drwxr-xr-x	root/root	usr/share/sounds/gnome/
