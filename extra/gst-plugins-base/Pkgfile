@@ -5,7 +5,7 @@
 # Depends on: alsa-lib, cdparanoia, dbus, gstreamer, libogg, liboil, libtheora, libvisual, libvorbis, libxml2, gnome-vfs
 
 name=gst-plugins-base
-version=0.10.25
+version=0.10.28
 release=1
 source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
 
