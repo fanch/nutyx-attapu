@@ -18,11 +18,13 @@ drwxr-xr-x	root/root	usr/include/atk-1.0/atk/
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atknoopobjectfactory.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkobject.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkobjectfactory.h
+-rw-r--r--	root/root	usr/include/atk-1.0/atk/atkplug.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkregistry.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkrelation.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkrelationset.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkrelationtype.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkselection.h
+-rw-r--r--	root/root	usr/include/atk-1.0/atk/atksocket.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkstate.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkstateset.h
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkstreamablecontent.h
@@ -32,9 +34,9 @@ drwxr-xr-x	root/root	usr/include/atk-1.0/atk/
 -rw-r--r--	root/root	usr/include/atk-1.0/atk/atkvalue.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libatk-1.0.la
-lrwxrwxrwx	root/root	usr/lib/libatk-1.0.so -> libatk-1.0.so.0.2809.1
-lrwxrwxrwx	root/root	usr/lib/libatk-1.0.so.0 -> libatk-1.0.so.0.2809.1
--rwxr-xr-x	root/root	usr/lib/libatk-1.0.so.0.2809.1
+lrwxrwxrwx	root/root	usr/lib/libatk-1.0.so -> libatk-1.0.so.0.2913.1
+lrwxrwxrwx	root/root	usr/lib/libatk-1.0.so.0 -> libatk-1.0.so.0.2913.1
+-rwxr-xr-x	root/root	usr/lib/libatk-1.0.so.0.2913.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/atk.pc
 drwxr-xr-x	root/root	usr/share/
