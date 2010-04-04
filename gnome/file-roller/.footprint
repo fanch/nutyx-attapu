@@ -25,6 +25,7 @@ drwxr-xr-x	root/root	usr/share/file-roller/icons/hicolor/24x24/actions/
 -rw-r--r--	root/root	usr/share/file-roller/icons/hicolor/24x24/actions/add-files-to-archive.png
 -rw-r--r--	root/root	usr/share/file-roller/icons/hicolor/24x24/actions/add-folder-to-archive.png
 -rw-r--r--	root/root	usr/share/file-roller/icons/hicolor/24x24/actions/extract-archive.png
+-rw-r--r--	root/root	usr/share/file-roller/packages.match
 drwxr-xr-x	root/root	usr/share/file-roller/ui/
 -rw-r--r--	root/root	usr/share/file-roller/ui/add-options.ui
 -rw-r--r--	root/root	usr/share/file-roller/ui/batch-add-files.ui
@@ -175,6 +176,14 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/vi/figures/file-roller_mai
 lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/vi/figures/file-roller_rightarrow.png -> ../../C/figures/file-roller_rightarrow.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/vi/figures/file-roller_uparrow.png -> ../../C/figures/file-roller_uparrow.png
 -rw-r--r--	root/root	usr/share/gnome/help/file-roller/vi/file-roller.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/file-roller/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/file-roller_home.png -> ../../C/figures/file-roller_home.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/file-roller_leftarrow.png -> ../../C/figures/file-roller_leftarrow.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/file-roller_main_window.png -> ../../C/figures/file-roller_main_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/file-roller_rightarrow.png -> ../../C/figures/file-roller_rightarrow.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/file-roller/zh_CN/figures/file-roller_uparrow.png -> ../../C/figures/file-roller_uparrow.png
+-rw-r--r--	root/root	usr/share/gnome/help/file-roller/zh_CN/file-roller.xml
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
@@ -215,3 +224,4 @@ drwxr-xr-x	root/root	usr/share/omf/file-roller/
 -rw-r--r--	root/root	usr/share/omf/file-roller/file-roller-sv.omf
 -rw-r--r--	root/root	usr/share/omf/file-roller/file-roller-uk.omf
 -rw-r--r--	root/root	usr/share/omf/file-roller/file-roller-vi.omf
+-rw-r--r--	root/root	usr/share/omf/file-roller/file-roller-zh_CN.omf
