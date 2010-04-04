@@ -13,18 +13,19 @@ drwxr-xr-x	root/root	usr/include/libgnomekbd/
 -rw-r--r--	root/root	usr/include/libgnomekbd/gkbd-indicator.h
 -rw-r--r--	root/root	usr/include/libgnomekbd/gkbd-keyboard-config.h
 -rw-r--r--	root/root	usr/include/libgnomekbd/gkbd-keyboard-drawing.h
+-rw-r--r--	root/root	usr/include/libgnomekbd/gkbd-status.h
 -rw-r--r--	root/root	usr/include/libgnomekbd/gkbd-util.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgnomekbd.a
 -rwxr-xr-x	root/root	usr/lib/libgnomekbd.la
-lrwxrwxrwx	root/root	usr/lib/libgnomekbd.so -> libgnomekbd.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libgnomekbd.so.4 -> libgnomekbd.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgnomekbd.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgnomekbd.so -> libgnomekbd.so.4.1.0
+lrwxrwxrwx	root/root	usr/lib/libgnomekbd.so.4 -> libgnomekbd.so.4.1.0
+-rwxr-xr-x	root/root	usr/lib/libgnomekbd.so.4.1.0
 -rw-r--r--	root/root	usr/lib/libgnomekbdui.a
 -rwxr-xr-x	root/root	usr/lib/libgnomekbdui.la
-lrwxrwxrwx	root/root	usr/lib/libgnomekbdui.so -> libgnomekbdui.so.4.0.0
-lrwxrwxrwx	root/root	usr/lib/libgnomekbdui.so.4 -> libgnomekbdui.so.4.0.0
--rwxr-xr-x	root/root	usr/lib/libgnomekbdui.so.4.0.0
+lrwxrwxrwx	root/root	usr/lib/libgnomekbdui.so -> libgnomekbdui.so.4.1.0
+lrwxrwxrwx	root/root	usr/lib/libgnomekbdui.so.4 -> libgnomekbdui.so.4.1.0
+-rwxr-xr-x	root/root	usr/lib/libgnomekbdui.so.4.1.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgnomekbd.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgnomekbdui.pc
