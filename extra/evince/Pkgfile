@@ -1,0 +1,33 @@
+# Description: Permet de visionner des documents aux différents formats (PS,PDF,...)
+# URL: http://projects.gnome.org/evince/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, cairo, cups, dbus-glib, djvulibre, expat, fontconfig, freetype, gconf, glib, glitz, gnome-icon-theme, gnome-doc-utils, gnome-keyring, gsfonts, gtk, libpng, orbit2, pango, xorg-libpixman, poppler-glib, shared-mime-info, libspectre, lcms
+
+name=evince
+version=2.30.0
+release=1
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
+	evince.desktop)
+
+build() {
+cd $name-$version
+	./configure --prefix=$GNOME_PREFIX \
+	--sysconfdir=/etc \
+	--localstatedir=/var/lib \
+	--mandir=$GNOME_PREFIX/share/man \
+	--enable-pixbuf \
+	--enable-impress \
+	--disable-nautilus \
+	--enable-djvu \
+	--disable-schemas-install \
+	--disable-scrollkeeper
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/$(pkg-config --variable=prefix ORBit-2.0)/share/gtk-doc
+	install -D -m 644 ../evince.desktop \
+	$PKG/$(pkg-config --variable=prefix ORBit-2.0)/share/applications/evince.desktop
+}
+
