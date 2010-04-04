@@ -5,7 +5,7 @@
 # Depends on: gtk, p5-xml-parser, gtk-doc, pygtk
 
 name=vte
-version=0.23.5
+version=0.24.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
