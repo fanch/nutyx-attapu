@@ -41,9 +41,9 @@ drwxr-xr-x	root/root	usr/lib/gnome-panel/
 -rwxr-xr-x	root/root	usr/lib/gnome-panel/wnck-applet
 -rw-r--r--	root/root	usr/lib/libpanel-applet-2.a
 -rwxr-xr-x	root/root	usr/lib/libpanel-applet-2.la
-lrwxrwxrwx	root/root	usr/lib/libpanel-applet-2.so -> libpanel-applet-2.so.0.2.60
-lrwxrwxrwx	root/root	usr/lib/libpanel-applet-2.so.0 -> libpanel-applet-2.so.0.2.60
--rwxr-xr-x	root/root	usr/lib/libpanel-applet-2.so.0.2.60
+lrwxrwxrwx	root/root	usr/lib/libpanel-applet-2.so -> libpanel-applet-2.so.0.2.67
+lrwxrwxrwx	root/root	usr/lib/libpanel-applet-2.so.0 -> libpanel-applet-2.so.0.2.67
+-rwxr-xr-x	root/root	usr/lib/libpanel-applet-2.so.0.2.67
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpanelapplet-2.0.pc
 drwxr-xr-x	root/root	usr/share/
@@ -113,8 +113,13 @@ drwxr-xr-x	root/root	usr/share/gnome/help/clock/ca/figures/
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/cs/
 -rw-r--r--	root/root	usr/share/gnome/help/clock/cs/clock.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/cs/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/clock/cs/figures/clock_applet.png -> ../../C/figures/clock_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/clock/cs/figures/clock_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/clock/cs/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/da/
+-rw-r--r--	root/root	usr/share/gnome/help/clock/da/clock.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/da/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/clock/da/figures/clock_applet.png -> ../../C/figures/clock_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/clock/da/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/de/
 -rw-r--r--	root/root	usr/share/gnome/help/clock/de/clock.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/de/figures/
@@ -180,6 +185,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/clock/pa/
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/pa/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/clock/pa/figures/clock_applet.png -> ../../C/figures/clock_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/clock/pa/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/pt/
+-rw-r--r--	root/root	usr/share/gnome/help/clock/pt/clock.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/pt/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/clock/pt/figures/clock_applet.png -> ../../C/figures/clock_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/clock/pt/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/pt_BR/
 -rw-r--r--	root/root	usr/share/gnome/help/clock/pt_BR/clock.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/pt_BR/figures/
@@ -215,6 +225,11 @@ drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_CN/
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_CN/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/clock/zh_CN/figures/clock_applet.png
 -rw-r--r--	root/root	usr/share/gnome/help/clock/zh_CN/legal.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_HK/
+-rw-r--r--	root/root	usr/share/gnome/help/clock/zh_HK/clock.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_HK/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/clock/zh_HK/figures/clock_applet.png -> ../../C/figures/clock_applet.png
+-rw-r--r--	root/root	usr/share/gnome/help/clock/zh_HK/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_TW/
 -rw-r--r--	root/root	usr/share/gnome/help/clock/zh_TW/clock.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/clock/zh_TW/figures/
@@ -397,6 +412,7 @@ drwxr-xr-x	root/root	usr/share/omf/clock/
 -rw-r--r--	root/root	usr/share/omf/clock/clock-ar.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-ca.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-cs.omf
+-rw-r--r--	root/root	usr/share/omf/clock/clock-da.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-de.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-el.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-en_GB.omf
@@ -410,6 +426,7 @@ drwxr-xr-x	root/root	usr/share/omf/clock/
 -rw-r--r--	root/root	usr/share/omf/clock/clock-nl.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-oc.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-pa.omf
+-rw-r--r--	root/root	usr/share/omf/clock/clock-pt.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-pt_BR.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-ru.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-sr.omf
@@ -417,6 +434,7 @@ drwxr-xr-x	root/root	usr/share/omf/clock/
 -rw-r--r--	root/root	usr/share/omf/clock/clock-th.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-uk.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-zh_CN.omf
+-rw-r--r--	root/root	usr/share/omf/clock/clock-zh_HK.omf
 -rw-r--r--	root/root	usr/share/omf/clock/clock-zh_TW.omf
 drwxr-xr-x	root/root	usr/share/omf/fish/
 -rw-r--r--	root/root	usr/share/omf/fish/fish-C.omf
