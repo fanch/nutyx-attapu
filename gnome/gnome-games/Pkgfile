@@ -2,13 +2,13 @@
 # URL: http://www.gnome.org/softwaremap/projects/gnome-games/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
 # Packager: jaeger at morpheus dot net
-# Depends on: libgnomeui, librsvg, rarian, gob, avahi, gnome-python-desktop, guile, libggz, ggz-client-libs
+# Depends on: libgnomeui, librsvg, rarian, gob, avahi, gnome-python-desktop, guile, libggz, ggz-client-libs, clutter-gtk
 # Group: gnome/desktop
 
 name=gnome-games
-version=2.26.3
+version=2.30.0
 release=1
-gnomever=2.26.3
+gnomever=2.30.0
 source=(http://download.gnome.org/desktop/${gnomever%.*}/$gnomever/sources/$name-$version.tar.bz2)
 
 build() {

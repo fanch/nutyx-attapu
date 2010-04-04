@@ -1,18 +1,18 @@
-# Description: Editeur pour Metacity
-# URL: http://www.gnome.org
+# Description: librairie gerant les mots de passe et autres secrets des utilisateurs 
+# URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, docbook-xsl, gnome-doc-utils
+# Depends on: 
 
-name=zenity
+name=libgnome-keyring
 version=2.30.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=$GNOME_PREFIX \
-		--sysconfdir=/etc
+	./configure --prefix=$GNOME_PREFIX 
 	make
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/gtk-doc
 }

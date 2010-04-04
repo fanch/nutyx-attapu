@@ -2,11 +2,11 @@
 # URL: http://www.personal.psu.edu/users/k/f/kfv101/procman/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libgnomeui, libgtop, libwnck, libgnomesu, gtkmm
+# Depends on: libgnomeui, libgtop, libwnck, libgnomesu, gtkmm, glibmm
 
 
 name=gnome-system-monitor
-version=2.28.0
+version=2.28.1
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {

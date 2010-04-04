@@ -15,6 +15,7 @@ build() {
 		--localstatedir=/var/lib \
 		--mandir=$GNOME_PREFIX/share/man \
 		--disable-schemas-install \
+		--without-ca-file \
 		--disable-scrollkeeper
 	make
 	make DESTDIR=$PKG install

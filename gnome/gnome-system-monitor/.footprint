@@ -30,19 +30,19 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/C/legal.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/ar/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ar/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ar/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/bg/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/bg/figures/
@@ -62,164 +62,180 @@ drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/bg/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/bg/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/ca/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/ca/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/cs/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/cs/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/cs/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/da/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/columnContextMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/gnome-system-monitor_window.png -> ../../C/figures/gnome-system-monitor_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/da/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/da/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/de/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/de/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/el/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/columnContextMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/gnome-system-monitor_window.png -> ../../C/figures/gnome-system-monitor_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/el/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/el/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/es/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/es/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/es/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/fr/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/fr/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/fr/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/oc/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/columnContextMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/gnome-system-monitor_window.png -> ../../C/figures/gnome-system-monitor_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/oc/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/oc/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/pa/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/columnContextMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/gnome-system-monitor_window.png -> ../../C/figures/gnome-system-monitor_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/pa/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/pa/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/sv/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/addColumn.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/changePriority.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/colorPanel.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/gnome-system-monitor_window.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/memoryMaps.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/moreInfo.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/processListing.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortButton.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortMenu.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortMenu2.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/systemMonitor.png
--rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/viewMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/sv/figures/viewMenu.png -> ../../C/figures/viewMenu.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/sv/gnome-system-monitor.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/
+drwxr-xr-x	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/addColumn.png -> ../../C/figures/addColumn.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/changePriority.png -> ../../C/figures/changePriority.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/colorPanel.png -> ../../C/figures/colorPanel.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/columnContextMenu.png -> ../../C/figures/columnContextMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/gnome-system-monitor_window.png -> ../../C/figures/gnome-system-monitor_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/memoryMaps.png -> ../../C/figures/memoryMaps.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/moreInfo.png -> ../../C/figures/moreInfo.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/processListing.png -> ../../C/figures/processListing.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/sortButton.png -> ../../C/figures/sortButton.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/sortMenu.png -> ../../C/figures/sortMenu.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/sortMenu2.png -> ../../C/figures/sortMenu2.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/systemMonitor.png -> ../../C/figures/systemMonitor.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/figures/viewMenu.png -> ../../C/figures/viewMenu.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-system-monitor/zh_CN/gnome-system-monitor.xml
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
@@ -239,6 +255,7 @@ drwxr-xr-x	root/root	usr/share/omf/gnome-system-monitor/
 -rw-r--r--	root/root	usr/share/omf/gnome-system-monitor/gnome-system-monitor-oc.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-system-monitor/gnome-system-monitor-pa.omf
 -rw-r--r--	root/root	usr/share/omf/gnome-system-monitor/gnome-system-monitor-sv.omf
+-rw-r--r--	root/root	usr/share/omf/gnome-system-monitor/gnome-system-monitor-zh_CN.omf
 drwxr-xr-x	root/root	usr/share/pixmaps/
 drwxr-xr-x	root/root	usr/share/pixmaps/gnome-system-monitor/
 -rw-r--r--	root/root	usr/share/pixmaps/gnome-system-monitor/download.svg

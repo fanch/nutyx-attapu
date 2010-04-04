@@ -5,7 +5,7 @@
 # Depends on: curl, dbus, gconf, gnome-vfs, gperf, gstreamer, gst-plugins-base, gtk, gtk-doc, icu, libpng, orbit2, pango, enchant, libsoup
 
 name=webkit
-version=1.1.19
+version=1.1.22
 release=1
 source=(http://webkitgtk.org/$name-$version.tar.gz)
 

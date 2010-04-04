@@ -5,9 +5,9 @@
 # Depends on: libgnomeui, gnome-doc-utils
 
 name=gcalctool
-version=5.28.2
+version=5.30.0
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/5.28/$name-$version.tar.bz2)
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/5.30/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

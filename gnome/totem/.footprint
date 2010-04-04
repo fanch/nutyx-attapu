@@ -152,8 +152,14 @@ drwxr-xr-x	root/root	usr/share/gnome/help/totem/C/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/totem/C/totem.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/bg/
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/bg/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_next_button.png -> ../../C/figures/totem_next_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_pause_button.png -> ../../C/figures/totem_pause_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_play_button.png -> ../../C/figures/totem_play_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_previous_button.png -> ../../C/figures/totem_previous_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_show_playlist_button.png -> ../../C/figures/totem_show_playlist_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/bg/figures/totem_start_window.png
--rw-r--r--	root/root	usr/share/gnome/help/totem/bg/legal.xml
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/bg/figures/totem_volume_mute_button.png -> ../../C/figures/totem_volume_mute_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/bg/totem.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/ca/
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/ca/figures/
@@ -173,7 +179,7 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_pause_button.pn
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_play_button.png -> ../../C/figures/totem_play_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_previous_button.png -> ../../C/figures/totem_previous_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_show_playlist_button.png -> ../../C/figures/totem_show_playlist_button.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_start_window.png -> ../../C/figures/totem_start_window.png
+-rw-r--r--	root/root	usr/share/gnome/help/totem/cs/figures/totem_start_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/cs/figures/totem_volume_mute_button.png -> ../../C/figures/totem_volume_mute_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/cs/totem.xml
@@ -243,6 +249,17 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/totem/eu/figures/totem_show_playlist_b
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/eu/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/eu/figures/totem_volume_mute_button.png -> ../../C/figures/totem_volume_mute_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/eu/totem.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/totem/fi/
+drwxr-xr-x	root/root	usr/share/gnome/help/totem/fi/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_next_button.png -> ../../C/figures/totem_next_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_pause_button.png -> ../../C/figures/totem_pause_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_play_button.png -> ../../C/figures/totem_play_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_previous_button.png -> ../../C/figures/totem_previous_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_show_playlist_button.png -> ../../C/figures/totem_show_playlist_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_start_window.png -> ../../C/figures/totem_start_window.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/fi/figures/totem_volume_mute_button.png -> ../../C/figures/totem_volume_mute_button.png
+-rw-r--r--	root/root	usr/share/gnome/help/totem/fi/totem.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/fr/
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/fr/figures/
 -rw-r--r--	root/root	usr/share/gnome/help/totem/fr/figures/totem_next_button.png
@@ -322,10 +339,10 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/totem/pt_BR/figures/totem_volume_mute_
 -rw-r--r--	root/root	usr/share/gnome/help/totem/pt_BR/totem.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/ru/
 drwxr-xr-x	root/root	usr/share/gnome/help/totem/ru/figures/
--rw-r--r--	root/root	usr/share/gnome/help/totem/ru/figures/totem_next_button.png
--rw-r--r--	root/root	usr/share/gnome/help/totem/ru/figures/totem_pause_button.png
--rw-r--r--	root/root	usr/share/gnome/help/totem/ru/figures/totem_play_button.png
--rw-r--r--	root/root	usr/share/gnome/help/totem/ru/figures/totem_previous_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_next_button.png -> ../../C/figures/totem_next_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_pause_button.png -> ../../C/figures/totem_pause_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_play_button.png -> ../../C/figures/totem_play_button.png
+lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_previous_button.png -> ../../C/figures/totem_previous_button.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_show_playlist_button.png -> ../../C/figures/totem_show_playlist_button.png
 -rw-r--r--	root/root	usr/share/gnome/help/totem/ru/figures/totem_start_window.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/totem/ru/figures/totem_volume_maximum_button.png -> ../../C/figures/totem_volume_maximum_button.png
@@ -462,6 +479,7 @@ drwxr-xr-x	root/root	usr/share/omf/totem/
 -rw-r--r--	root/root	usr/share/omf/totem/totem-en_GB.omf
 -rw-r--r--	root/root	usr/share/omf/totem/totem-es.omf
 -rw-r--r--	root/root	usr/share/omf/totem/totem-eu.omf
+-rw-r--r--	root/root	usr/share/omf/totem/totem-fi.omf
 -rw-r--r--	root/root	usr/share/omf/totem/totem-fr.omf
 -rw-r--r--	root/root	usr/share/omf/totem/totem-it.omf
 -rw-r--r--	root/root	usr/share/omf/totem/totem-ja.omf
