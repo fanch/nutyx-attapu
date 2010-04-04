@@ -5,7 +5,7 @@
 # Depends on: libgnomecanvas, gnome-icon-theme, libgnomeprint
 
 name=libgnomeprintui
-version=2.18.4
+version=2.18.5
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 
