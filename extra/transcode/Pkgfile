@@ -1,0 +1,39 @@
+# Description: Jeu de commande en ligne très puissante pour convertir des formats audios ou vidéos
+# URL: http://www.transcoding.org/cgi-bin/transcode
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: alsa-lib, libxml2, libjpgeg, lzo, libtheora, xorg-libxv, libmpeg2, libmpeg3, libfame, liba52, libdvdread, libdvdcss, libquicktime, libdv, libvorbis, libogg, sdl, imagemagick, ffmpeg
+
+name=transcode
+version=1.1.5
+release=1
+source=( http://download.berlios.de/tcforge/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+		--enable-avifile \
+		--enable-ogg \
+		--enable-vorbis \
+		--enable-libdv \
+		--enable-libfame \
+		--enable-freetype2 \
+		--enable-libquicktime \
+		--enable-a52 \
+		--enable-libmpeg3 \
+		--enable-imagemagick \
+		--enable-libxml2 \
+		--enable-sdl \
+		--enable-theora \
+		--enable-x264 \
+		--enable-alsa \
+		--enable-libjpeg \
+		--enable-lzo \
+		--enable-xvid \
+		--enable-lame
+	
+	make
+	make DESTDIR=$PKG install
+}
