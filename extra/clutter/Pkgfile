@@ -2,7 +2,7 @@
 # URL: http://www.clutter-project.org
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, mesa3d
+# Depends on: gtk, mesa3d, gobject-introspection, gir-repository
 
 name=clutter
 version=1.2.4
@@ -13,7 +13,8 @@ source=(http://www.clutter-project.org/sources/clutter/1.2/$name-$version.tar.bz
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr 
+	./configure --prefix=/usr \
+	--enable-introspection
 	make
 	make DESTDIR=$PKG install
 }
