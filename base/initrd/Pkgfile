@@ -5,8 +5,8 @@
 
 name=initrd
 version=2.6.33.2
-release=1
-_tools=02042010
+release=2
+_tools=04042010
 _baseversion=2.6.33
 SCRIPT_VERSION="2009.3"
 source=()
