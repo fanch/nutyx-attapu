@@ -31,6 +31,7 @@ drwxr-xr-x	root/root	usr/share/gnome-2.0/ui/
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_BrightnessApplet.xml
 -rw-r--r--	root/root	usr/share/gnome-2.0/ui/GNOME_InhibitApplet.xml
 drwxr-xr-x	root/root	usr/share/gnome-power-manager/
+-rw-r--r--	root/root	usr/share/gnome-power-manager/acme.ui
 -rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-feedback-widget.ui
 -rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-prefs.ui
 -rw-r--r--	root/root	usr/share/gnome-power-manager/gpm-statistics.ui
@@ -428,7 +429,7 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/ca/figures/gpm-sus
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/de/
 drwxr-xr-x	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/applet-brightness.png -> ../../C/figures/applet-brightness.png
-lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/applet-inhibit.png -> ../../C/figures/applet-inhibit.png
+-rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/applet-inhibit.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-cell-capacity.png -> ../../C/figures/gpm-cell-capacity.png
 -rw-r--r--	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-charged.png
 lrwxrwxrwx	root/root	usr/share/gnome/help/gnome-power-manager/de/figures/gpm-critical.png -> ../../C/figures/gpm-critical.png
