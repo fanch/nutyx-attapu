@@ -1,0 +1,17 @@
+# Description: Un lecteur audio GTK+ écrit en Python
+# URL: http://code.google.com/p/quodlibet/ [^]
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gst-python, gst-plugins-base, gst-plugins-good, gst-plugins-ugly, mutagen, pygtk
+name=quodlibet
+version=2.2.1
+release=1
+source=(http://quodlibet.googlecode.com/files/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./setup.py build
+	./setup.py install --prefix="$PKG/usr"
+	install -D -m644 quodlibet/images/exfalso.png "$PKG/usr/share/pixmaps/exfalso.png"
+	install -D -m644 quodlibet/images/quodlibet.png "$PKG/usr/share/pixmaps/quodlibet.png"
+}
