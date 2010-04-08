@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxslt, p5-xml-parser, rarian, docbook-xml
+# Depends on: intltool, libxslt, p5-xml-parser, rarian, docbook-xml
 
 name=gnome-doc-utils
 version=0.20.0
