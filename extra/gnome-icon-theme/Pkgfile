@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: icon-naming-utils, p5-xml-parser
+# Depends on: intltool, icon-naming-utils, p5-xml-parser
 
 name=gnome-icon-theme
 version=2.30.0
