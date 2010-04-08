@@ -2,7 +2,7 @@
 # URL: http://www.ggzgamingzone.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libggz
+# Depends on: libggz, expat
 
 name=ggz-client-libs
 version=0.0.14.1
