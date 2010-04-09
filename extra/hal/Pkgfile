@@ -2,7 +2,7 @@
 # URL: http://freedesktop.org/wiki/Software_2fhal
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus-glib, glib, usbutils, pciutils, libusb, eject, hal-info
+# Depends on: dbus-glib, glib, usbutils, pciutils, libusb, eject, hal-info, gperf
 
 name=hal
 version=0.5.13

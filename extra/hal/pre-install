@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# check for haldaemon group or add one
+getent group haldaemon || /usr/sbin/groupadd -g 19 haldaemon
+
+# check for plugdev group or add one
+getent group plugdev || /usr/sbin/groupadd plugdev
+
+# check for haldaemon user or add one
+getent passwd haldaemon || /usr/sbin/useradd -g haldaemon -u 19 -d /var/empty -s /bin/false -c "HAL Daemon User" haldaemon
+
+# lock the account
+/bin/passwd -l haldaemon
+
