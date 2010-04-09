@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/PolicyKit/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat, dbus-glib
+# Depends on: dbus, expat, dbus-glib, intltool
 
 name=policykit
 version=0.9
