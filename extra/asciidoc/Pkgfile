@@ -1,0 +1,17 @@
+# Description: Format de document texte pour de petits documents, articles, books et UNIX man page
+# URL: http://www.methods.co.nz/asciidoc/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on:python, libxslt, docbook-xsl
+
+name=asciidoc
+version=8.5.3
+release=1
+source=(http://downloads.sourceforge.net/asciidoc/$name-$version.tar.gz)
+build() { 
+   cd $SRC/$name-$version
+   ./configure --prefix=/usr --sysconfdir=/etc 
+   make install DESTDIR="$PKG" 
+   install -Dm644 asciidocapi.py $PKG/usr/lib/python2.6/site-packages/asciidocapi.py
+}
+
