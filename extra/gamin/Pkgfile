@@ -2,7 +2,7 @@
 # URL:  http://www.gnome.org/~veillard/gamin
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python
+# Depends on: python, glib
 
 name=gamin
 version=0.1.10
