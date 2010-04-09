@@ -5,9 +5,21 @@ drwxr-xr-x	root/root	etc/gconf/schemas/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cheese
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/cheese/
+-rw-r--r--	root/root	usr/include/cheese/cheese-avatar-chooser.h
+-rw-r--r--	root/root	usr/include/cheese/cheese-camera-device-monitor.h
+-rw-r--r--	root/root	usr/include/cheese/cheese-widget.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cheese/
 -rwxr-xr-x	root/root	usr/lib/cheese/cheese-bugreport.sh
+-rw-r--r--	root/root	usr/lib/libcheese-gtk.a
+-rwxr-xr-x	root/root	usr/lib/libcheese-gtk.la
+lrwxrwxrwx	root/root	usr/lib/libcheese-gtk.so -> libcheese-gtk.so.18.0.0
+lrwxrwxrwx	root/root	usr/lib/libcheese-gtk.so.18 -> libcheese-gtk.so.18.0.0
+-rwxr-xr-x	root/root	usr/lib/libcheese-gtk.so.18.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/cheese-gtk.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/cheese.desktop
@@ -67,12 +79,6 @@ drwxr-xr-x	root/root	usr/share/cheese/pixmaps/
 -rw-r--r--	root/root	usr/share/cheese/pixmaps/cheese-2.svg
 -rw-r--r--	root/root	usr/share/cheese/pixmaps/cheese-3.svg
 -rw-r--r--	root/root	usr/share/cheese/pixmaps/thumbnail-frame.png
-drwxr-xr-x	root/root	usr/share/cheese/sounds/
--rw-r--r--	root/root	usr/share/cheese/sounds/shutter0.ogg
--rw-r--r--	root/root	usr/share/cheese/sounds/shutter1.ogg
--rw-r--r--	root/root	usr/share/cheese/sounds/shutter2.ogg
--rw-r--r--	root/root	usr/share/cheese/sounds/shutter3.ogg
--rw-r--r--	root/root	usr/share/cheese/sounds/shutter4.ogg
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.gnome.Cheese.service
@@ -98,6 +104,15 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-main.jpg -> .
 lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
 lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
 lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/ca/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/cs/
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/cs/cheese.xml
+drwxr-xr-x	root/root	usr/share/gnome/help/cheese/cs/figures/
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
+lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/cs/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/de/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/de/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/de/figures/
@@ -128,12 +143,12 @@ lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/en_GB/figures/cheese-wide.jpg -
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/es/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/es/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/es/figures/
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-effects.jpg -> ../../C/figures/cheese-effects.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-fullscreen.jpg -> ../../C/figures/cheese-fullscreen.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-main.jpg -> ../../C/figures/cheese-main.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-preferences.jpg -> ../../C/figures/cheese-preferences.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-effects.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-fullscreen.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-main.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-preferences.jpg
 lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-share.jpg -> ../../C/figures/cheese-share.jpg
-lrwxrwxrwx	root/root	usr/share/gnome/help/cheese/es/figures/cheese-wide.jpg -> ../../C/figures/cheese-wide.jpg
+-rw-r--r--	root/root	usr/share/gnome/help/cheese/es/figures/cheese-wide.jpg
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/fr/
 -rw-r--r--	root/root	usr/share/gnome/help/cheese/fr/cheese.xml
 drwxr-xr-x	root/root	usr/share/gnome/help/cheese/fr/figures/
@@ -246,6 +261,7 @@ drwxr-xr-x	root/root	usr/share/omf/
 drwxr-xr-x	root/root	usr/share/omf/cheese/
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-C.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-ca.omf
+-rw-r--r--	root/root	usr/share/omf/cheese/cheese-cs.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-de.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-el.omf
 -rw-r--r--	root/root	usr/share/omf/cheese/cheese-en_GB.omf
