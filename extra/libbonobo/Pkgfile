@@ -2,7 +2,7 @@
 # URL: http://developer.gnome.org/arch/gnome/componentmodel/bonobo.html
 # Packager: thierryn1 at hispeed dot ch
 # Maintainer: NuTyX core team
-# Depends on: orbit2, libxml2, p5-xml-parser
+# Depends on: orbit2, libxml2, p5-xml-parser, dbus-glib
 
 name=libbonobo
 version=2.24.2
