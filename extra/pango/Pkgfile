@@ -2,7 +2,7 @@
 # URL: http://gnome.org
 # Maintainer: NuTyX core teamm
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo
+# Depends on: cairo, glib
 
 name=pango
 version=1.26.0
