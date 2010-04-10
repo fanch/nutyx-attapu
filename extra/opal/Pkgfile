@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libtheora, x264, ffmpeg
+# Depends on: libtheora, x264, ffmpeg, ptlib
 
 name=opal
 version=3.6.6
