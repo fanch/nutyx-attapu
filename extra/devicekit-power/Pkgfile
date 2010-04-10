@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/PolicyKit/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, expat, policykit
+# Depends on: dbus, expat, policykit, libusb, devicekit
 
 name=devicekit-power
 version=009
