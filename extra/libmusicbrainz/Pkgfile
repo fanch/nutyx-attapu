@@ -2,7 +2,7 @@
 # URL: http://musicbrainz.org/doc/libmusicbrainz
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python
+# Depends on: python, expat
 
 name=libmusicbrainz
 version=2.1.5
