@@ -2,7 +2,7 @@
 # URL: http://freedesktop.org/wiki/Software/startup-notification
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libx11
+# Depends on: xorg-libx11, xorg-xcb-util
 
 name=startup-notification
 version=0.10
