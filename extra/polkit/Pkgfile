@@ -2,7 +2,7 @@
 # URL: http://hal.freedesktop.org/docs/polkit
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus-glib, expat, eggdbus, gobject-introspection, linux-pam
+# Depends on: dbus-glib, expat, eggdbus, gobject-introspection, linux-pam, intltool
 
 name=polkit
 version=0.96
