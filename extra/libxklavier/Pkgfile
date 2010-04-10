@@ -2,7 +2,7 @@
 # URL:  http://www.freedesktop.org/wiki/Software/LibXklavier
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: hicolor-icon-theme, iso-codes
+# Depends on: hicolor-icon-theme, iso-codes, libxml2, xorg-libx11
 
 name=libxklavier
 version=5.0
