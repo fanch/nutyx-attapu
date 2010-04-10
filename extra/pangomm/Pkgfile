@@ -2,7 +2,7 @@
 # URL: http://cairographics.org/cairomm/
 # Maintainer: NuTyX coret team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: pango
+# Depends on: pango, glibmm, cairomm
 
 name=pangomm
 version=2.26.0
