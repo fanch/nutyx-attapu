@@ -10,15 +10,18 @@ drwxr-xr-x	root/root	usr/lib/bonobo/
 drwxr-xr-x	root/root	usr/lib/bonobo/servers/
 -rw-r--r--	root/root	usr/lib/bonobo/servers/GNOME_Magnifier.server
 -rwxr-xr-x	root/root	usr/lib/libgnome-mag.la
-lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so -> libgnome-mag.so.2.3.9
-lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so.2 -> libgnome-mag.so.2.3.9
--rwxr-xr-x	root/root	usr/lib/libgnome-mag.so.2.3.9
+lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so -> libgnome-mag.so.2.4.1
+lrwxrwxrwx	root/root	usr/lib/libgnome-mag.so.2 -> libgnome-mag.so.2.4.1
+-rwxr-xr-x	root/root	usr/lib/libgnome-mag.so.2.4.1
 drwxr-xr-x	root/root	usr/lib/orbit-2.0/
 -rwxr-xr-x	root/root	usr/lib/orbit-2.0/GNOME_Magnifier_module.la
 -rwxr-xr-x	root/root	usr/lib/orbit-2.0/GNOME_Magnifier_module.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnome-mag-1.0.pc
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/dbus-1/
+drwxr-xr-x	root/root	usr/share/dbus-1/services/
+-rw-r--r--	root/root	usr/share/dbus-1/services/org.freedesktop.gnome.Magnifier.service
 drwxr-xr-x	root/root	usr/share/gnome-mag/
 drwxr-xr-x	root/root	usr/share/gnome-mag/1_32/
 -rw-r--r--	root/root	usr/share/gnome-mag/1_32/appstart.xpm
@@ -40,6 +43,9 @@ drwxr-xr-x	root/root	usr/share/gnome-mag/1_32/
 -rw-r--r--	root/root	usr/share/gnome-mag/1_32/top_side.xpm
 -rw-r--r--	root/root	usr/share/gnome-mag/1_32/up.xpm
 -rw-r--r--	root/root	usr/share/gnome-mag/1_32/xterm.xpm
+drwxr-xr-x	root/root	usr/share/gnome-mag/dbus/
+-rw-r--r--	root/root	usr/share/gnome-mag/dbus/org.freedesktop.gnome.Magnifier
+-rw-r--r--	root/root	usr/share/gnome-mag/dbus/org.freedesktop.gnome.ZoomRegion
 -rw-r--r--	root/root	usr/share/gnome-mag/default-cursor.xpm
 drwxr-xr-x	root/root	usr/share/idl/
 drwxr-xr-x	root/root	usr/share/idl/gnome-mag-1.0/
