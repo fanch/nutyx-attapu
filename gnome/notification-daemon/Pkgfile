@@ -1,7 +1,7 @@
 # Description: Galago Project notification daemon
 # URL: http://www.galago-project.org/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
-# Depends on: dbus-glib, libsexy, libwnck, gconf
+# Depends on: dbus-glib, libsexy, libwnck, gconf, libnotify, libglade
 
 name=notification-daemon
 version=0.4.0
