@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, p5-xml-parser
+# Depends on: gtk, p5-xml-parser, gconf
 
 name=gucharmap
 version=2.30.0
