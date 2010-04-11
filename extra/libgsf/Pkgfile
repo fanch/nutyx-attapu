@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-xml-parser, gconf, pygtk
+# Depends on: p5-xml-parser, gconf, pygtk, gnome-vfs, libbonobo
 
 name=libgsf
 version=1.14.16
