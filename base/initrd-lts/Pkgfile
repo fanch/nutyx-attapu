@@ -5,13 +5,13 @@
 
 name=initrd-lts
 version=2.6.30.10
-release=2
-_tools=29122009
-SCRIPT_VERSION="2009.2"
+release=3
+_tools=04042010
+SCRIPT_VERSION="2009.3"
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install-${SCRIPT_VERSION}.ash
-wget http://kiao.no-ip.info/NuTyX/2009.2/`uname -m`/test/kernel-lts%23$version-2.pkg.tar.gz
+wget http://kiao.no-ip.info/NuTyX/2009.3/`uname -m`/release/kernel-lts%23$version-2.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR
@@ -22,7 +22,7 @@ mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/{drivers,fs}
 cp -a lib/modules/$version/kernel/crypto \
 $WDIR/rootfs/lib/modules/$version/kernel/
 for i in ata block input ide hid message parport \
-serial misc net pcmcia scsi usb md
+serial misc net pcmcia scsi usb md rtc
 do
 	if [ -d lib/modules/$version/kernel/drivers/$i ]; then
 		cp -a lib/modules/$version/kernel/drivers/$i \
@@ -34,19 +34,22 @@ hamradio appletalk cxgb3 mlx4 sfc
 do 
 	rm -r $WDIR/rootfs/lib/modules/$version/kernel/drivers/net/$i
 done
-for i in fat ntfs smbfs vfat ext4
+for i in fat ntfs smbfs vfat ext4 fs nfs nfs_common nfsd lockd
 do
 	if [ -d lib/modules/$version/kernel/fs/$i ]; then
 		cp -a lib/modules/$version/kernel/fs/$i \
 		$WDIR/rootfs/lib/modules/$version/kernel/fs/
 	fi
 done
+if [ -d lib/modules/$version/kernel/net/sunrpc ]; then
+        mkdir -p $WDIR/rootfs/lib/modules/$version/kernel/net/
+        cp -a lib/modules/$version/kernel/net/sunrpc \
+        $WDIR/rootfs/lib/modules/$version/kernel/net/
+fi
 $WDIR/rootfs/sbin/depmod -b $WDIR/rootfs $version
 	
 cp install-${SCRIPT_VERSION}.ash $WDIR/rootfs/root/
-sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-install
-sed -i "s/2009/${SCRIPT_VERSION}/g" $WDIR/rootfs/sbin/setup-mirroir
-	
+
 # Compression des modules
 cd $WDIR/rootfs/lib/modules/$version
 find . -name "*.ko" -exec gzip '{}' \;
