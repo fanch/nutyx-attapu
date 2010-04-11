@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libbonobo, libgnomecups, libart_lgpl
+# Depends on: pango, libbonobo, libgnomecups, libart_lgpl
 
 name=libgnomeprint
 version=2.18.7
