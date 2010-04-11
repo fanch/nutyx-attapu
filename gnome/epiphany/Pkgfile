@@ -2,10 +2,10 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-doc-utils, gnome-desktop, startup-notification,iso-codes, avahi, webkit, libcanberra, libnotify
+# Depends on: gnome-doc-utils, gnome-desktop, startup-notification,iso-codes, avahi, webkit, libcanberra, libnotify, nss
 
 name=epiphany
-version=2.30.0
+version=2.30.2
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {
