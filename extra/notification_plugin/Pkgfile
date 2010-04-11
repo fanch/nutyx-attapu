@@ -1,7 +1,8 @@
 # Description: extra plugin de claws-mail pour notifier l'utilisateur de nouveaux messages ou de messages non lus 
 # URL: http://www.claws-mail.org/plugin.php?plugin=notification
 # Packager: skingrapher at legtux dot org
-# Depends on: claws-mail
+# Depends on: claws-mail, libnotify
+
 name=notification_plugin
 version=0.24
 release=1
