@@ -2,7 +2,7 @@
 # URL: http://gtk-vnc.sourceforge.net/
 # Maintainer: Matt Housh, jaeger at morpheus dot net
 # Packager: jaeger at morpheus dot net
-# Depends on: gtk, pygtk
+# Depends on: gtk, pygtk, gnutls
 
 name=gtk-vnc
 version=0.3.8
