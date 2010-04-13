@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-vfs, libsoup, intltool, libgnome-keyring
+# Depends on: gnome-vfs, libsoup, intltool, libgnome-keyring, gtk-doc
 
 name=libgweather
 version=2.30.0
