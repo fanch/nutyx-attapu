@@ -2,7 +2,7 @@
 # URL: http://jasonday.home.att.net
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on:
+# Depends on: pilot-link
 
 name=libmal
 version=0.44.1
