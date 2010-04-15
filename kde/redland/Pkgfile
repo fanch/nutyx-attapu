@@ -2,17 +2,21 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: raptor, rasqal, sqlite3
+# Depends on: raptor, rasqal, sqlite3, unixodbc
 
 name=redland
 version=1.0.10
-release=1
-source=(http://download.librdf.org/source/$name-$version.tar.gz)
+release=2
+source=(http://download.librdf.org/source/$name-$version.tar.gz\
+	librdf_storage_register_factory.patch)
 build() {
 	cd $name-$version
+	patch -Np1 -i ../librdf_storage_register_factory.patch
 	sed -i -e 's/SQLITE_API/REDLAND_SQLITE_API/g' configure src/rdf_config.h.in src/rdf_storage_sqlite.c
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
+		--with-raptor=system \
+		--with-rasqual=system \
 		--with-mysql=no \
 		--with-sqlite=3
 	make
