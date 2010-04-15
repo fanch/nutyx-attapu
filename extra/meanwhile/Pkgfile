@@ -2,7 +2,7 @@
 # URL: http://meanwhile.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on : doxygen
+# Depends on : doxygen, glib
 
 name=meanwhile
 version=1.0.2
