@@ -2,7 +2,7 @@
 # URL: http://gitorious.org/projects/capseo/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mesa3d
+# Depends on: mesa3d, libogg
 
 name=capseo
 version=0.3
