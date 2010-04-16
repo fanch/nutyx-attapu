@@ -2,7 +2,7 @@
 # URL: http://xiph.org/ao/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, nas
+# Depends on: alsa-lib, nas, esound
 
 name=libao
 version=0.8.8
