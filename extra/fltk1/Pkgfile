@@ -2,7 +2,7 @@
 # URL: http://www.fltk.org/
 # Maintainer: NuTyX
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg libpng xorg-libxft xorg-libxi xorg-libxinerama
+# Depends on: libjpeg libpng xorg-libxft xorg-libxi xorg-libxinerama, mesa3d
 
 name=fltk1
 version=r6960
