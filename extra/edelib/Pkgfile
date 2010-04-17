@@ -2,7 +2,7 @@
 # URL: http://equinox-project.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg, jam, fltk1, efltk,doxygen
+# Depends on: xorg, jam, fltk1, efltk,doxygen, dbus
 
 name=edelib
 version=2.0-beta-2
