@@ -2,10 +2,9 @@
 # URL: http://www.openssh.org/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=openssh
-version=5.4p1
+version=5.5p1
 release=1
 source=(ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz\
          sshd\
