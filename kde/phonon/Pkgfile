@@ -2,7 +2,7 @@
 # URL: http://phonon.kde.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: qt, xine-lib
+# Depends on: qt, xine-lib, cmake, automoc4
 name=phonon
 version=4.3.95
 release=1

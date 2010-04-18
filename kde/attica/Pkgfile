@@ -1,8 +1,8 @@
 # Description: Lib pour travail collaboratif
-# URL:
+# URL: http://www.kde.org/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: qt
+# Depends on: qt, cmake
 
 name=attica
 version=0.1.2
