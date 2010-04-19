@@ -2,7 +2,7 @@
 # URL: http://www.gnokii.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: p5-xml-parser, gtk, glib
+# Depends on: p5-xml-parser, gtk, glib, mysqlclient
 
 name=gnokii
 version=0.6.28.1
@@ -10,13 +10,11 @@ release=1
 source=(http://www.gnokii.org/download/$name/gnokii-$version.tar.bz2 \
 	gnokii.patch)
 
-
-
 build() {
 	cd $name-*
-        ./configure --prefix=$KDE_PREFIX
 	sed -i 's|cellphone|phone|' xgnokii/xgnokii.desktop.in
 	patch -Np1 -i $SRC/gnokii.patch
+ 	./configure --prefix=$KDE_PREFIX 
 	make
 	make DESTDIR=$PKG install
 
