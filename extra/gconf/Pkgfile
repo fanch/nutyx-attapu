@@ -5,17 +5,22 @@
 # Depends on: orbit2, polkit, glib, gtk
 
 name=gconf
-version=2.28.0
+version=2.28.1
+ver_lfs=2.28.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/GConf/${version%.*}/GConf-$version.tar.bz2\
-	 http://www.linuxfromscratch.org/patches/blfs/svn/GConf-$version-sysconfdir-1.patch)
+	http://www.linuxfromscratch.org/patches/blfs/svn/GConf-$ver_lfs-sysconfdir-1.patch )
+
 build() {
 	cd GConf-$version
-	patch -Np1 -i ../GConf-$version-sysconfdir-1.patch
+	patch -Np1 -i ../GConf-$ver_lfs-sysconfdir-1.patch
+
 	./configure --prefix=$GNOME_PREFIX\
 	            --sysconfdir=/etc \
-            --libexecdir=$GNOME_PREFIX/lib/GConf \
-            --mandir=$GNOME_PREFIX/share/man
+		    --disable-static \
+ 		    --enable-defaults-service \
+            	    --libexecdir=$GNOME_PREFIX/lib/GConf \
+            	    --mandir=$GNOME_PREFIX/share/man
 	make
 	make DESTDIR=$PKG install
 	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
