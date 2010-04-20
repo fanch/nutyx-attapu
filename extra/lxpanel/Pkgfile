@@ -3,7 +3,7 @@
 # Maintainer:geanbrun
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: gtk, menu-cache
+# Depends on: gtk, menu-cache, alsa-lib
 
 name=lxpanel
 version=0.5.4.1
