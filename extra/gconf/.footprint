@@ -28,16 +28,13 @@ drwxr-xr-x	root/root	usr/include/gconf/2/gconf/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/GConf/
 drwxr-xr-x	root/root	usr/lib/GConf/2/
--rw-r--r--	root/root	usr/lib/GConf/2/libgconfbackend-oldxml.a
 -rwxr-xr-x	root/root	usr/lib/GConf/2/libgconfbackend-oldxml.la
 -rwxr-xr-x	root/root	usr/lib/GConf/2/libgconfbackend-oldxml.so
--rw-r--r--	root/root	usr/lib/GConf/2/libgconfbackend-xml.a
 -rwxr-xr-x	root/root	usr/lib/GConf/2/libgconfbackend-xml.la
 -rwxr-xr-x	root/root	usr/lib/GConf/2/libgconfbackend-xml.so
 -rwxr-xr-x	root/root	usr/lib/GConf/gconf-defaults-mechanism
 -rwxr-xr-x	root/root	usr/lib/GConf/gconf-sanity-check-2
 -rwxr-xr-x	root/root	usr/lib/GConf/gconfd-2
--rw-r--r--	root/root	usr/lib/libgconf-2.a
 -rwxr-xr-x	root/root	usr/lib/libgconf-2.la
 lrwxrwxrwx	root/root	usr/lib/libgconf-2.so -> libgconf-2.so.4.1.5
 lrwxrwxrwx	root/root	usr/lib/libgconf-2.so.4 -> libgconf-2.so.4.1.5
