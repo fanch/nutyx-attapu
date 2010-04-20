@@ -1,0 +1,16 @@
+# Description: gestionnaire de fenêtre minimaliste sous le système X Window
+# URL: http://evilwm.sourceforge.net
+# Maintainer: skingrapher at legtux dot org
+# Depends on: xorg-xrandr 
+
+name=evilwm
+version=1.0.1
+release=1
+source=(http://www.6809.org.uk/evilwm/$name-$version.tar.gz evilwm.desktop)
+build () 
+{ 
+    cd $name-$version
+    make
+    make DESTDIR=$PKG install
+    install -D -m644 ../evilwm.desktop $PKG/etc/X11/sessions/evilwm.desktop
+}
