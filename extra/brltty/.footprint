@@ -1,0 +1,4 @@
+drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/brltty.conf
+drwxr-xr-x	root/root	etc/conf.d/
+-rw-r--r--	root/root	etc/conf.d/brltty.conf
