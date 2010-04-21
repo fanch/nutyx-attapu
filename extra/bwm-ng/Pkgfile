@@ -1,0 +1,17 @@
+# Description: Moniteur de bande passante et accès disque en mode console
+# URL:http://sourceforge.net/projects/bwmng/
+# Maintainer: NuTyX core team
+# Packager: charles dot rapenne at gmail dot com
+# Depends on: 
+
+name=bwm-ng
+version=0.6
+release=1
+source=(http://garr.dl.sourceforge.net/project/bwmng/bwmng/0.6/$name-$version.tar.gz)
+build() {
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
