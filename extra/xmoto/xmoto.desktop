@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Xmoto
+Comment=Jeu de motocross en 2D
+Exec=xmoto
+Icon=xmoto
+Terminal=false
+Type=Application
+Categories=Application;Game;
+StartupNotify=true

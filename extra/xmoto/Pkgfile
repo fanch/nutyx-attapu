@@ -1,0 +1,23 @@
+# Description: Jeu de simulation de motocross en 2D
+# URL: http://xmoto.tuxfamily.org
+# Maintainer: NuTyX core team
+# Packager: charles dot rapenne at gmail dot com
+# Depends on: ode, libjpeg, libpng, zlib, bzip2, sdl, sdl_ttf, curl, lua, sdl_mixer, sdl_net, sqlite3
+name=xmoto
+version=0.5.2
+release=1
+source=(http://download.tuxfamily.org/xmoto/xmoto/0.5.2/$name-$version-src.tar.gz xmoto.desktop)
+build() {
+
+mkdir -p $PKG/usr/share/pixmaps/ $PKG/usr/share/applications/
+
+cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+
+install -m 644 ../xmoto.desktop $PKG/usr/share/applications/
+install -m 644 extra/xmoto.xpm $PKG/usr/share/pixmaps/
+
+}
+
