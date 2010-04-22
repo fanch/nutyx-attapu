@@ -5,7 +5,7 @@
 # Depends on: aspell, ruby, cmake
 
 name=weechat
-version=0.3.1
+version=0.3.2
 release=1
 source=(http://weechat.org/files/src/$name-$version.tar.gz)
 build() {
