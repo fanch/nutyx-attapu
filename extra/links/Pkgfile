@@ -2,7 +2,7 @@
 # URL: http://links.twibright.com/
 # Maintainer: NuTyX core team
 # Packager: lesibel at free dot fr
-# Depends on: bzip2, zlib, openssl, gpm
+# Depends on: gpm
 
 name=links
 version=2.3pre1
