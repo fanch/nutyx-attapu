@@ -1,0 +1,24 @@
+# Decription: Navigateur en mode texte
+# URL: http://links.twibright.com/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: bzip2, zlib, openssl, gpm
+
+name=links
+version=2.3pre1
+release=1
+
+source=(http://links.twibright.com/download/$name-$version.tar.bz2 ) 
+
+build() {
+	cd $name-$version
+
+        ./configure --prefix=/usr \
+		    --mandir=/usr/share/man \
+		    --enable-javascript \
+		    --disable-graphics \
+		    --without-x 
+        make
+        make DESTDIR=$PKG install
+}
+
