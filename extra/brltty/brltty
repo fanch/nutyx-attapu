@@ -3,17 +3,13 @@
 daemon_name=brltty
 
 . /etc/sysconfig/rc
-. $rc_functions
+. ${rc_functions}
 . /etc/conf.d/$daemon_name.conf
-
-get_pid() {
-	pidof -o %PPID $daemon_name
-}
 
 case "$1" in
   start)
     boot_mesg "Starting $daemon_name daemon"
-    loadproc /usr/bin/$daemon_name;;
+    loadproc /usr/bin/$daemon_name $brltty_args;;
 
   stop)
     loadproc "Stopping $daemon_name daemon"

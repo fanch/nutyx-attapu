@@ -23,19 +23,10 @@ build() {
               	--disable-caml-bindings
         make
         make INSTALL_ROOT=$PKG install
-	mkdir -p $PKG/etc/rc.d/init.d
-	install -D -m 755 $SRC/brltty $PKG/etc/rc.d/init.d/brltty
+	mkdir -p $PKG/etc/rc.d/rcsysinit.d
+	install -D -m 755 $SRC/brltty $PKG/etc/rc.d/rcsysinit.d/S25brltty
 	install -D -m 644 $SRC/brltty.conf $PKG/etc/conf.d/brltty.conf
 	install -D -m 644 Documents/brltty.conf $PKG/etc/brltty.conf
-	mkdir -p $PKG/etc/rc.d/rc{0,1,2,3,4,5,6}.d
-	for i in 2 3 4 5;
-	do 
-		ln -s ../init/$name $PKG/etc/rc.d/rc$i.d/S10$name
-	done
-	for i in 0 1 6;
-	do 
-		ln -s ../init/$name $PKG/etc/rc.d/rc$i.d/K99$name
-	done
 
 }
 
