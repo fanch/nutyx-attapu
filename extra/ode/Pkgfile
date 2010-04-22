@@ -6,8 +6,8 @@
 
 name=ode
 version=0.11.1
-release=1
-source=(http://dl.sourceforge.net/sourceforge/opende/$name-$version.tar.bz2)
+release=2
+source=(http://downloads.sourceforge.net/project/opende/ODE/$version/$name-$version.tar.bz2)
 
 build() {
   cd $name-$version
