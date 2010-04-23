@@ -297,7 +297,6 @@ drwxr-xr-x	root/root	usr/include/drm/
 -rw-r--r--	root/root	usr/include/drm/.install (EMPTY)
 -rw-r--r--	root/root	usr/include/drm/i810_drm.h
 -rw-r--r--	root/root	usr/include/drm/i830_drm.h
--rw-r--r--	root/root	usr/include/drm/nouveau_drm.h
 -rw-r--r--	root/root	usr/include/drm/vmwgfx_drm.h
 -rw-r--r--	root/root	usr/include/elf.h
 -rw-r--r--	root/root	usr/include/endian.h
