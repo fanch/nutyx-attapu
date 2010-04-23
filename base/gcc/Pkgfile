@@ -5,7 +5,7 @@
 # Depends on:
 
 name=gcc
-version=4.4.1
+version=4.5.0
 release=1
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version/$name-$version.tar.bz2\
  )
@@ -21,18 +21,15 @@ case `uname -m` in
 esac
 	
 sed -i 's@\./fixinc\.sh@-c true@' gcc/Makefile.in	
+sed -i 's/getline/get_line/' libiberty/testsuite/test-demangle.c
 
 mkdir ../gcc-build
 cd ../gcc-build
 ../$name-$version/configure --prefix=/usr \
-	--libexecdir=/usr/lib \
-	--enable-languages=c,c++,objc,fortran \
-	--enable-threads=posix \
-	--enable-__cxa_atexit \
-	--enable-clocale=gnu \
-	--enable-shared \
-        --infodir=/usr/share/info \
-        --mandir=/usr/share/man --with-x=no \
+	--libexecdir=/usr/lib --enable-shared \
+	--enable-threads=posix --enable-__cxa_atexit \
+	--enable-clocale=gnu --enable-languages=c,c++,objc,fortran \
+        --infodir=/usr/share/info --mandir=/usr/share/man --with-x=no \
 	--disable-multilib --disable-bootstrap
 
     	make
