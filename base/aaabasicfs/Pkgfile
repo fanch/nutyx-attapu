@@ -5,11 +5,11 @@
 # Depends on:
 
 name=aaabasicfs
-version=2009.3
+version=2010
 release=1
 scriptsversion=lfs-bootscripts-20100124
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
- hosts clock console fstab inittab message inputrc network xorg.conf \
+ hosts clock console fstab inittab message inputrc network \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
  blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc )
 
@@ -171,7 +171,6 @@ EOF
 Session=
 EOF
 	mkdir -v $PKG/etc/X11
-	cp -v xorg.conf $PKG/etc/X11/
 	cd $PKG/root/
 	ln -s ../etc/fstab
 	ln -s ../etc/hosts
