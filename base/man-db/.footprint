@@ -18,6 +18,10 @@ drwxr-xr-x	root/root	usr/lib/man-db/
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/accessdb
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/man-db/
+-rw-r--r--	root/root	usr/share/doc/man-db/man-db-manual.ps
+-rw-r--r--	root/root	usr/share/doc/man-db/man-db-manual.txt
 drwxr-xr-x	root/root	usr/share/locale/
 drwxr-xr-x	root/root	usr/share/locale/fr/
 drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
