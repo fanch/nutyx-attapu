@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=openssl
-version=0.9.8n
+version=1.0.0
 release=1
 source=(http://www.openssl.org/source/$name-$version.tar.gz)
 
