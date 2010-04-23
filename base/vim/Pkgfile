@@ -6,13 +6,11 @@
 
 name=vim
 version=7.2
-release=2
-source=(ftp://ftp.vim.org/pub/vim/unix/vim-$version.tar.bz2 \
-http://www.linuxfromscratch.org/patches/lfs/development/$name-$version-fixes-5.patch \
-          vimrc)
+release=1
+source=(ftp://ftp.vim.org/pub/vim/unix/vim-$version.tar.bz2\
+	vimrc)
 build () {
 cd $name${version/\./}
-patch -Np1 -i ../$name-$version-fixes-5.patch
 echo '#define SYS_VIMRC_FILE "/etc/vimrc"' >> src/feature.h
 ./configure --prefix=/usr \
 	--enable-gui=no --with-x=no \
