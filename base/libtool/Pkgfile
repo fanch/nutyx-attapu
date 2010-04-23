@@ -2,10 +2,9 @@
 # URL: http://www.gnu.org/software/libtool/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libtool
-version=2.2.6a
+version=2.2.6b
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz )
 
