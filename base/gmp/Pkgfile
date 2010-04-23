@@ -2,10 +2,9 @@
 # URL: ftp://ftp.gnu.org/gnu/gmp/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=gmp
-version=4.3.2
+version=5.0.1
 release=1
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
 build()
