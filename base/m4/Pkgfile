@@ -2,7 +2,6 @@
 # URL: http://www.seindal.dk/rene/gnu/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=m4
 version=1.4.14
