@@ -2,7 +2,6 @@
 # URL:  http://pkgconfig.freedesktop.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=pkg-config
 version=0.23
