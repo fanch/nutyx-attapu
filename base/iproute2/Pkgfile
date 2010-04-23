@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=iproute2
-version=2.6.31
+version=2.6.33
 release=1
 source=( http://devresources.linuxfoundation.org/dev/$name/download/$name-$version.tar.bz2\
          )
@@ -12,10 +12,10 @@ source=( http://devresources.linuxfoundation.org/dev/$name/download/$name-$versi
 
 build() {
 cd $name-*
-sed -i "s|-O2|$CFLAGS -DIPT_LIB_DIR=\\\\\"/usr/lib/xtables\\\\\"|" Makefile
+sed -i '/^TARGETS/s@arpd@@g' misc/Makefile
 make SBINDIR=/sbin MANDIR=/usr/share/man INFODIR=/usr/share/info \
 	DESTDIR=$PKG install
 mkdir -p $PKG/usr/sbin
-mv $PKG/sbin/arpd $PKG/usr/sbin/
+# mv $PKG/sbin/arpd $PKG/usr/sbin/
 rm -r $PKG/{share,lib,usr/lib}       
 }
