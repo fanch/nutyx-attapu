@@ -2,10 +2,9 @@
 # URL: http://www.gnu.org/software/coreutils/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=coreutils
-version=8.2
+version=8.4
 release=1
 source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz \
 	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-i18n-1.patch\
