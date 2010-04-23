@@ -2,10 +2,9 @@
 # URL: http://www.gnu.org/software/cpio/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=cpio
-version=2.10
+version=2.11
 release=1
 source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2\
 )
