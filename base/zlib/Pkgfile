@@ -5,23 +5,18 @@
 # Depends on:
 
 name=zlib
-version=1.2.3
+version=1.2.4
 release=1
 source=(http://www.zlib.net/$name-$version.tar.bz2)
 
 build() {
     cd $name-$version
-	export CFLAGS="${CFLAGS} -fPIC"
-    ./configure --prefix=/usr --shared --libdir=/lib
-    make
-    make prefix=$PKG/usr  libdir=$PKG/lib install
-	rm -v $PKG/lib/libz.so
-	mkdir -p $PKG/usr/lib
-	ln -sfv ../../lib/libz.so.1.2.3 $PKG/usr/lib/libz.so
-    make clean
     ./configure --prefix=/usr
     make
     make prefix=$PKG/usr install
+    mkdir $PKG/lib
+    mv -v $PKG/usr/lib/libz.so.* $PKG/lib
 
-    chmod -v 644 $PKG/usr/lib/libz.a
+    ln -sfv ../../lib/libz.so.1.2.4 $PKG/usr/lib/libz.so
+
 }
