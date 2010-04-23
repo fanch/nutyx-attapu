@@ -3,6 +3,7 @@ drwxr-xr-x	root/root	bin/
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/depmod.d/
 drwxr-xr-x	root/root	etc/modprobe.d/
+-rw-r--r--	root/root	etc/modprobe.d/blacklist-fb
 -rw-r--r--	root/root	etc/modprobe.d/modprobe.conf
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/depmod
