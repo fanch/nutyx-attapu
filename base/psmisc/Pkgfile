@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=psmisc
-version=22.10
+version=22.11
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz)
 
@@ -16,5 +16,6 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	mkdir -p $PKG/usr/bin
+#	mv /usr/bin/killall /bin
 #	ln -sv killall $PKG/bin/pidof
 }
