@@ -33,6 +33,7 @@ drwxr-xr-x	root/root	sbin/
 lrwxrwxrwx	root/root	sbin/swapoff -> swapon
 -rwxr-xr-x	root/root	sbin/swapon
 -rwxr-xr-x	root/root	sbin/switch_root
+-rwxr-xr-x	root/root	sbin/wipefs
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cal
@@ -44,6 +45,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/cytune
 -rwxr-xr-x	root/root	usr/bin/ddate
+-rwxr-xr-x	root/root	usr/bin/fallocate
 -rwxr-xr-x	root/root	usr/bin/flock
 -rwxr-xr-x	root/root	usr/bin/getopt
 -rwxr-xr-x	root/root	usr/bin/hexdump
@@ -73,6 +75,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/tailf
 -rwxr-xr-x	root/root	usr/bin/taskset
 -rwxr-xr-x	root/root	usr/bin/ul
+-rwxr-xr-x	root/root	usr/bin/unshare
 -rwxr-xr-x	root/root	usr/bin/uuidgen
 -rwxr-xr-x	root/root	usr/bin/whereis
 -rwxr-sr-x	root/tty	usr/bin/write
@@ -125,6 +128,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/column.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ddate.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dmesg.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fallocate.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/flock.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/getopt.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/hexdump.1.gz
@@ -151,6 +155,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/tailf.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/taskset.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ul.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/unshare.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/uuidgen.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/whereis.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/write.1.gz
@@ -206,6 +211,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/tunelp.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/umount.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/uuidd.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/wipefs.8.gz
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/hwclock/
