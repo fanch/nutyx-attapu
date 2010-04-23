@@ -1,3 +1,3 @@
 host=kiao.no-ip.info:22
-collection=ports/nutyx-2009/kde/
+collection=ports/nutyx-attapu/kde/
 destination=/usr/ports/kde

@@ -1,7 +1,7 @@
-81463928446390b11fad53471e4ac583  base.rsync
-e1ef056cd3d83a3ec44838cabf632b50  extra.rsync
-494d1b18f85780621194e1b302d0dbe0  gnome.rsync
-caec4fc14e6c0cb971ab805614a124b7  kde.rsync
+6e2641a5261fae939820726663f8f7ef  base.rsync
+ec4d6c6b77dbf1b34fc1cbce768f08c9  extra.rsync
+1638ee8d0897ff01facc54fc3b3b1993  gnome.rsync
+81a1d0451caa1b6563f0bff627812eb5  kde.rsync
 1f178e2bb1beab9782993931c9832280  ports-1.5.tar.gz
-deaee599bfb2e333adcdd4df379ce8bc  xfce.rsync
-7122e27602963d9ac2f424ec07f93466  xorg.rsync
+6cae147a1fb7984fd5c83ccd68fee081  xfce.rsync
+d0d33d83c80892b274c7e547f5e35a00  xorg.rsync
