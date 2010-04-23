@@ -7,10 +7,11 @@
 name=flex
 version=2.5.35
 release=1
-source=( http://prdownloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
-
+source=( http://prdownloads.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2\
+	http://www.linuxfromscratch.org/patches/lfs/development/flex-2.5.35-gcc44-1.patch)
 build() {
 cd $name-$version
+patch -Np1 -i ../flex-2.5.35-gcc44-1.patch
 ./configure --prefix=/usr \
 	--mandir=/usr/share/man \
         --infodir=/usr/share/info
