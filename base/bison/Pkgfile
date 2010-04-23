@@ -2,12 +2,12 @@
 # URL:         	http://www.gnu.org/software/bison/
 # Maintainer:	NuTyX core team
 # Packager:	thierryn1 at hispeed dot ch
-# Depends on:
 
 name=bison
-version=2.4.1
+version=2.4.2
 release=1
-source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2)
+source=(ftp://ftp.gnu.org/gnu/$name/$name-$version.tar.bz2\
+	http://www.linuxfromscratch.org/patches/lfs/development/bison-2.4.2-gcc-1.patch)
 
 build() {
 cd $name-$version
