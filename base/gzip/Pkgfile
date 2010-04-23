@@ -12,7 +12,6 @@ source=( http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
-# sed -i 's/futimens/gl_&/' gzip.c lib/utimens.{c,h}
 ./configure --prefix=/usr \
 	--mandir=/usr/share/man \
 	--bindir=/bin \
@@ -22,8 +21,6 @@ install -d $PKG/usr/bin
 make DESTDIR=$PKG install
 mv -v $PKG/bin/{gzexe,uncompress,zcmp,zdiff,zegrep} $PKG/usr/bin
 mv -v $PKG/bin/{zfgrep,zforce,zgrep,zless,zmore,znew} $PKG/usr/bin
-# rm $PKG/usr/bin/uncompress
-# ln -s /bin/gunzip $PKG/usr/bin/uncompress
 if [ -f $PKG/usr/share/info/dir ]; then 
 	rm $PKG/usr/share/info/dir
 fi
