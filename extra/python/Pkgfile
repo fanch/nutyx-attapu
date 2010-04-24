@@ -5,7 +5,7 @@
 # Depends on: pth, sqlite3
 
 name=python
-version=2.6.4
+version=2.6.5
 release=1
 source=( http://www.python.org/ftp/python/$version/Python-$version.tar.bz2)
 
