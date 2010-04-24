@@ -1,3 +1,7 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/X11/
+drwxr-xr-x	root/root	etc/X11/xorg.conf.d/
+-rw-r--r--	root/root	etc/X11/xorg.conf.d/10-evdev.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/X -> Xorg
@@ -8,6 +12,7 @@ lrwxrwxrwx	root/root	usr/bin/X -> Xorg
 -rwxr-xr-x	root/root	usr/bin/cvt
 -rwxr-xr-x	root/root	usr/bin/dmxaddinput
 -rwxr-xr-x	root/root	usr/bin/dmxaddscreen
+-rwxr-xr-x	root/root	usr/bin/dmxinfo
 -rwxr-xr-x	root/root	usr/bin/dmxreconfig
 -rwxr-xr-x	root/root	usr/bin/dmxresize
 -rwxr-xr-x	root/root	usr/bin/dmxrminput
@@ -16,7 +21,6 @@ lrwxrwxrwx	root/root	usr/bin/X -> Xorg
 -rwxr-xr-x	root/root	usr/bin/dmxwininfo
 -rwxr-xr-x	root/root	usr/bin/gtf
 -rwxr-xr-x	root/root	usr/bin/vdltodmx
--rwxr-xr-x	root/root	usr/bin/xdmx
 -rwxr-xr-x	root/root	usr/bin/xdmxconfig
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/xorg/
@@ -74,6 +78,7 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/i2c_def.h
 -rw-r--r--	root/root	usr/include/xorg/input.h
 -rw-r--r--	root/root	usr/include/xorg/inputstr.h
+-rw-r--r--	root/root	usr/include/xorg/list.h
 -rw-r--r--	root/root	usr/include/xorg/mi.h
 -rw-r--r--	root/root	usr/include/xorg/mibank.h
 -rw-r--r--	root/root	usr/include/xorg/mibstore.h

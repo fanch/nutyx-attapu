@@ -1,10 +1,11 @@
-# Description: X Window System server
+# Description: Serveur X Window
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-xf86driproto, xorg-dri2proto, xorg-libxkbui, xorg-xcmiscproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman, xorg-libpciaccess, xorg-libxscrnsaver
 
 name=xorg-server
-version=1.7.3
+version=1.8.0
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2)
 
@@ -14,8 +15,9 @@ build() {
 	./configure --prefix=/usr --enable-dri \
 		--disable-config-hal \
 	            --localstatedir=/var \
+		--sysconfdir=/etc/X11 \
 	            --with-xkb-output=/var/lib/xkb
-
+	sed -i 's|xorgconfddir = $(prefix)|xorgconfddir = |' config/Makefile
 	make
 	make DESTDIR=$PKG install
 
