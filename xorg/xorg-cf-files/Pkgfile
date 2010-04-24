@@ -1,10 +1,10 @@
-# Description: xorg configuration files
+# Description: Fichiers de configuration pour Xorg
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 
 name=xorg-cf-files
-version=1.0.2
+version=1.0.3
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/util/$name-$version.tar.bz2)
 
