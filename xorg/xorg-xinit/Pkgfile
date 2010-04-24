@@ -1,10 +1,11 @@
-# Description: X Window System initializer
+# Description: Initialiseur du Système X Window
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server
 
 name=xorg-xinit
-version=1.2.0
+version=1.2.1
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/app/xinit-$version.tar.bz2\
 	xinitrc.patch)
