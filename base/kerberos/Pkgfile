@@ -5,9 +5,9 @@
 # Depends on:
 
 name=kerberos
-version=1.6.3
+version=1.8.1
 release=1
-source=(http://web.mit.edu/$name/www/dist/krb5/1.6/krb5-$version-signed.tar)
+source=(http://web.mit.edu/$name/www/dist/krb5/1.8/krb5-$version-signed.tar)
 build()  {
 	tar xf krb5-${version}-signed.tar
 	tar xzf krb5-${version}.tar.gz
@@ -25,16 +25,7 @@ build()  {
 	make -j3
 	make DESTDIR=$PKG install
 
-	for file in telnet ftp rcp rlogin rsh uuclient; do
-		mv ${PKG}/usr/bin/$file ${PKG}/usr/bin/k${file}
-	done
-	for file in ftpd telnetd uuserver; do
-		mv ${PKG}/usr/sbin/$file ${PKG}/usr/sbin/k${file}
-	done
-	for file in telnet.1 ftp.1 rcp.1 rsh.1 rlogin.1 telnetd.8 ftpd.8; do
-		mv ${PKG}/usr/share/man/man`echo $file | cut -f2 -d.`/$file \
-		${PKG}/usr/share/man/man`echo $file | cut -f2 -d.`/k${file}
-	done
+	mv ${PKG}/usr/bin/uuclient ${PKG}/usr/bin/kuucclient
 
 	mkdir -p $PKG/{lib,bin}
 	mv -v $PKG/usr/bin/ksu $PKG/bin
