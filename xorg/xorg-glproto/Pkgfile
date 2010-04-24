@@ -1,10 +1,10 @@
 # Description: xorg proto glproto
 # URL: http://xorg.freedesktop.org
-# Packager: tilman at crux dot nu
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Packager: thierryn1 at hispeed dot ch
+# Maintainer: NuTyX core team
 
 name=xorg-glproto
-version=1.4.10
+version=1.4.11
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/proto/glproto-$version.tar.bz2)
 
