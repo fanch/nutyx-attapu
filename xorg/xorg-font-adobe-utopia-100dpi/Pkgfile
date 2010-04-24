@@ -1,8 +1,8 @@
 # Description: xorg font font-adobe-utopia-100dpi
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
-# Depends on: xorg-mkfontdir, xorg-mkfontscale
+# Packager: thierryn1 at hispeed do ch
+# Depends on: xorg-mkfontdir, xorg-mkfontscale, xorg-font-util
 
 name=xorg-font-adobe-utopia-100dpi
 version=1.0.1
