@@ -1,6 +1,7 @@
 # Description: XCB X protocol descriptions
 # URL: http://xcb.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: python
 
 name=xorg-xcb-proto
