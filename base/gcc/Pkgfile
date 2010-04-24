@@ -2,11 +2,10 @@
 # URL: http://gcc.gnu.org
 # Packager: thierryn1 at hispeed dot ch
 # Maintainer: NuTyX core team
-# Depends on:
 
 name=gcc
 version=4.5.0
-release=1
+release=2
 source=(ftp://ftp.gnu.org/gnu/$name/$name-$version/$name-$version.tar.bz2\
  )
 	
@@ -40,6 +39,8 @@ cd ../gcc-build
     ln -sf gcc $PKG/usr/bin/cc
     ln -sf g++ $PKG/usr/bin/c++
     mv $PKG/usr/lib/gcc/*/$version/include-fixed/{limits.h,syslimits.h} $PKG/usr/lib/gcc/*/$version/include/
+    # Move the python files, tanks to bouleetbil
+    mv $PKG/usr/lib/libstdc++.so.6.0.14-gdb.py $PKG/usr/share/$name-$version/python/libstdcxx/
     # Remove the dir file
     if [ -f $PKG/usr/share/info/dir ]; then
 	rm $PKG/usr/share/info/dir

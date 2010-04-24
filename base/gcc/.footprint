@@ -1005,7 +1005,6 @@ lrwxrwxrwx	root/root	usr/lib/libssp.so.0 -> libssp.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libstdc++.so -> libstdc++.so.6.0.14
 lrwxrwxrwx	root/root	usr/lib/libstdc++.so.6 -> libstdc++.so.6.0.14
 -rwxr-xr-x	root/root	usr/lib/libstdc++.so.6.0.14
--rw-r--r--	root/root	usr/lib/libstdc++.so.6.0.14-gdb.py
 -rw-r--r--	root/root	usr/lib/libsupc++.a
 -rwxr-xr-x	root/root	usr/lib/libsupc++.la
 drwxr-xr-x	root/root	usr/share/
@@ -1013,6 +1012,7 @@ drwxr-xr-x	root/root	usr/share/gcc-4.5.0/
 drwxr-xr-x	root/root	usr/share/gcc-4.5.0/python/
 drwxr-xr-x	root/root	usr/share/gcc-4.5.0/python/libstdcxx/
 -rw-r--r--	root/root	usr/share/gcc-4.5.0/python/libstdcxx/__init__.py
+-rw-r--r--	root/root	usr/share/gcc-4.5.0/python/libstdcxx/libstdc++.so.6.0.14-gdb.py
 drwxr-xr-x	root/root	usr/share/gcc-4.5.0/python/libstdcxx/v6/
 -rw-r--r--	root/root	usr/share/gcc-4.5.0/python/libstdcxx/v6/__init__.py
 -rw-r--r--	root/root	usr/share/gcc-4.5.0/python/libstdcxx/v6/printers.py
