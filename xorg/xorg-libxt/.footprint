@@ -1,6 +1,4 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/makestrs
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/X11/
 -rw-r--r--	root/root	usr/include/X11/CallbackI.h
@@ -46,8 +44,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xt.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/makestrs.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/MenuPopdown.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/MenuPopup.3.gz

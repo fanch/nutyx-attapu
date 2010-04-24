@@ -1,11 +1,11 @@
-# Description: xorg lib libXt
+# Description: Librairie libXt pour Xorg
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libsm, xorg-libx11, xorg-xproto, xorg-kbproto
 
 name=xorg-libxt
-version=1.0.7
+version=1.0.8
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/lib/libXt-$version.tar.bz2)
 
