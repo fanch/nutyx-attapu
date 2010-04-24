@@ -1,7 +1,8 @@
 # Description: xorg font font-bitstream-speedo
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-mkfontdir, xorg-mkfontscale, xorg-font-util
 
 name=xorg-font-bitstream-speedo
 version=1.0.0
