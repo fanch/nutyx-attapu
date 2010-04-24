@@ -5,14 +5,14 @@
 
 name=initrd
 version=2.6.33.2
-release=2
-_tools=04042010
+release=3
+_tools=24042010
 _baseversion=2.6.33
-SCRIPT_VERSION="2009.3"
+SCRIPT_VERSION="attapu"
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install-${SCRIPT_VERSION}.ash
-wget http://kiao.no-ip.info/NuTyX/2009.3/`uname -m`/release/kernel%23$version-1.pkg.tar.gz
+wget http://kiao.no-ip.info/NuTyX/attapu/`uname -m`/release/kernel%23$version-1.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR
