@@ -2,10 +2,10 @@
 # URL: http://gnome.org
 # Maintainer: NuTyX core teamm
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo, glib
+# Depends on: cairo, glib, libthai
 
 name=pango
-version=1.26.0
+version=1.28.0
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\	
 	pango.modules)
