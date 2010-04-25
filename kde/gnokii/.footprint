@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gnokii
@@ -99,7 +98,6 @@ drwxr-xr-x	root/root	usr/share/doc/gnokii/sample/logo/
 -rw-r--r--	root/root	usr/share/doc/gnokii/sample/magic
 drwxr-xr-x	root/root	usr/share/doc/gnokii/sample/ppp/
 -rw-r--r--	root/root	usr/share/doc/gnokii/sample/ppp/cimd-connect
--rw-r--r--	root/root	usr/share/doc/gnokii/sample/ppp/options
 -rw-r--r--	root/root	usr/share/doc/gnokii/sample/ppp/pap-secrets
 -rw-r--r--	root/root	usr/share/doc/gnokii/sample/ppp/ppp-6210-modem
 -rw-r--r--	root/root	usr/share/doc/gnokii/sample/ppp/ppp-FILES

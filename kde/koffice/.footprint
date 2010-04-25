@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/karbon
@@ -705,7 +704,6 @@ drwxr-xr-x	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/rotate.png
 -rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/shear.png
 -rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/strokedocker.png
--rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/tooloptions.png
 -rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/translate.png
 -rw-r--r--	root/root	usr/share/apps/karbon/icons/hicolor/16x16/actions/unlocked.png
 drwxr-xr-x	root/root	usr/share/apps/karbon/icons/hicolor/16x16/apps/
@@ -791,7 +789,6 @@ drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/chart_polar.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/chart_ring.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/data.png
--rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/options.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/16x16/actions/wizard.png
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/22x22/
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/
@@ -808,7 +805,6 @@ drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/chart_polar.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/chart_ring.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/data.png
--rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/options.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/22x22/actions/wizard.png
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/32x32/
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/
@@ -825,7 +821,6 @@ drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/chart_polar.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/chart_ring.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/data.png
--rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/options.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/32x32/actions/wizard.png
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/
@@ -841,7 +836,6 @@ drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/chart_pie_3d.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/chart_polar.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/chart_ring.png
--rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/options.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/template_barchart.png
 -rw-r--r--	root/root	usr/share/apps/kchart/icons/hicolor/48x48/actions/template_empty.png
 drwxr-xr-x	root/root	usr/share/apps/kchart/icons/hicolor/scalable/
@@ -1933,7 +1927,6 @@ drwxr-xr-x	root/root	usr/share/apps/kspread/scripts/docker/
 drwxr-xr-x	root/root	usr/share/apps/kspread/scripts/extensions/
 -rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/csvexport.py
 -rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/csvimport.py
--rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/csvoptions.ui
 -rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/htmlexport.py
 -rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/htmlexportinfos.ui
 -rw-r--r--	root/root	usr/share/apps/kspread/scripts/extensions/kexidbexport.py
@@ -2130,11 +2123,9 @@ drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/HTML/
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/karbon/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/karbon/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/karbon/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/karbon/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/kchart/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kchart/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kchart/file-toolbar.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kchart/file-toolbar2.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kchart/index.cache.bz2
@@ -2169,7 +2160,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kchart/common -> /opt/kde/share/doc/H
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kchart/toolbars.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/kformula/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/ambiguous-string.png
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kformula/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/file-toolbar.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/file-toolbar2.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/green1.png
@@ -2190,17 +2180,14 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kformula/common -> /opt/kde/share/doc
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/shortcut1.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kformula/toolbars.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/koffice/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/koffice/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/koffice/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/koffice/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/kplato/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/commands.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kplato/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/definitions.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/index.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/mainwindow.docbook
--rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/options.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kplato/wbs.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/kspread/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/advanced.docbook
@@ -2213,7 +2200,6 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/fr/kspread/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/cellformat5.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/chart1.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/commands.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kspread/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/config.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/configdialog.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/copy1.png
@@ -2228,7 +2214,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/kspread/common -> /opt/kde/share/doc/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/sort1.png
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/kspread/starting1.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/thesaurus/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/thesaurus/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/thesaurus/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/thesaurus/index.docbook
 drwxr-xr-x	root/root	usr/share/icons/

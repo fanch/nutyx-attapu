@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	etc/skel/
 drwxr-xr-x	root/root	etc/skel/.kde/
 drwxr-xr-x	root/root	etc/skel/.kde/env/
 -rwxr-xr-x	root/root	etc/skel/.kde/env/gtk-qt-engine.rc.sh
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/kde4/

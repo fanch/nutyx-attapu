@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/konversation
@@ -111,7 +110,6 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/en/konversation/
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/checkidentities.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/colorchooser_screen.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/colorize.png
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/konversation/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/configure.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/dccstatus_screen_co.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/editserver_screen_co.png
@@ -157,17 +155,14 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/en/konversation/common -> /opt/kde/share
 -rw-r--r--	root/root	usr/share/doc/HTML/en/konversation/webbrowser_screen_co.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/et/
 drwxr-xr-x	root/root	usr/share/doc/HTML/et/konversation/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/et/konversation/common -> /opt/kde/share/doc/HTML/et//common
 -rw-r--r--	root/root	usr/share/doc/HTML/et/konversation/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/et/konversation/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/it/
 drwxr-xr-x	root/root	usr/share/doc/HTML/it/konversation/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/it/konversation/common -> /opt/kde/share/doc/HTML/it//common
 -rw-r--r--	root/root	usr/share/doc/HTML/it/konversation/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/it/konversation/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/pt_BR/
 drwxr-xr-x	root/root	usr/share/doc/HTML/pt_BR/konversation/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/pt_BR/konversation/common -> /opt/kde/share/doc/HTML/pt_BR//common
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/konversation/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/konversation/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/sv/
@@ -179,7 +174,6 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/sv/konversation/
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/channellist_screen_co.png
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/checkidentities.png
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/colorchooser_screen.png
-lrwxrwxrwx	root/root	usr/share/doc/HTML/sv/konversation/common -> /opt/kde/share/doc/HTML/sv//common
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/dccstatus_screen_co.png
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/first_channel_co.png
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/first_serverlist_co.png
@@ -205,7 +199,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/sv/konversation/common -> /opt/kde/share
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/konversation/webbrowser_screen_co.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/uk/
 drwxr-xr-x	root/root	usr/share/doc/HTML/uk/konversation/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/uk/konversation/common -> /opt/kde/share/doc/HTML/uk//common
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/konversation/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/konversation/index.docbook
 drwxr-xr-x	root/root	usr/share/icons/

@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/tellico
@@ -134,8 +133,6 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/tellico/
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/advanced.docbook
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/amazon-options.png
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/tellico/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/configuration.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/csv-dialog.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/details.docbook
@@ -146,18 +143,14 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/en/tellico/common -> /opt/kde/share/doc/
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/export-bibtex.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/export-csv.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/export-html.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/export-options.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/export-pdb.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/externalexec-options.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/faqs.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/fetch-dialog.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/fields-dialog.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/filter-dialog.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/filter-view.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/fundamentals.docbook
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/general-options.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/hacking.docbook
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/imdb-options.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/importing-exporting.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/index.docbook
@@ -165,16 +158,10 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/en/tellico/common -> /opt/kde/share/doc/
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/loan-view.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/main-window.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/menus.docbook
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/print-options.png
 -rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/report-dialog.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/source-options.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/sru-options.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/template-options.png
--rw-r--r--	root/root	usr/share/doc/HTML/en/tellico/z3950-options.png
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/
 drwxr-xr-x	root/root	usr/share/doc/HTML/fr/tellico/
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/tellico/advanced.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/tellico/common -> /opt/kde/share/doc/HTML/fr//common
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/tellico/configuration.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/tellico/details.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/fr/tellico/faqs.docbook
@@ -187,7 +174,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/fr/tellico/common -> /opt/kde/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/HTML/pt_BR/
 drwxr-xr-x	root/root	usr/share/doc/HTML/pt_BR/tellico/
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/tellico/advanced.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/pt_BR/tellico/common -> /opt/kde/share/doc/HTML/pt_BR//common
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/tellico/configuration.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/tellico/details.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/pt_BR/tellico/faqs.docbook
@@ -200,7 +186,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/pt_BR/tellico/common -> /opt/kde/share/d
 drwxr-xr-x	root/root	usr/share/doc/HTML/sv/
 drwxr-xr-x	root/root	usr/share/doc/HTML/sv/tellico/
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/tellico/advanced.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/sv/tellico/common -> /opt/kde/share/doc/HTML/sv//common
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/tellico/configuration.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/tellico/details.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/sv/tellico/faqs.docbook
@@ -213,7 +198,6 @@ lrwxrwxrwx	root/root	usr/share/doc/HTML/sv/tellico/common -> /opt/kde/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/HTML/uk/
 drwxr-xr-x	root/root	usr/share/doc/HTML/uk/tellico/
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/tellico/advanced.docbook
-lrwxrwxrwx	root/root	usr/share/doc/HTML/uk/tellico/common -> /opt/kde/share/doc/HTML/uk//common
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/tellico/configuration.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/tellico/details.docbook
 -rw-r--r--	root/root	usr/share/doc/HTML/uk/tellico/faqs.docbook

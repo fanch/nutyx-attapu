@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/KDE/
@@ -1000,36 +999,28 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kcontrol/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kcontrol/kresources/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kcontrol/kresources/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kcontrol/kresources/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kcontrol/kresources/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/imap/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/imap/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/imap/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/imap/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/ldap/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/ldap/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/ldap/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/ldap/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/mbox/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/mbox/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/mbox/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/mbox/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/nntp/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/nntp/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/nntp/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/nntp/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/pop3/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/pop3/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/pop3/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/pop3/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/sieve/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/sieve/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/sieve/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/sieve/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/smtp/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/smtp/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/smtp/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/smtp/index.docbook
 drwxr-xr-x	root/root	usr/share/kde4/

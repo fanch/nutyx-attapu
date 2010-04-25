@@ -18,7 +18,6 @@ drwxr-xr-x	root/root	etc/rc.d/rc5.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc5.d/S40kdm -> ../init.d/kdm
 drwxr-xr-x	root/root	etc/rc.d/rc6.d/
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/K10kdm -> ../init.d/kdm
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/genkdmconf
@@ -216,7 +215,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_bell.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_clock.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_colors.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_desktopthemedetails.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_display.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fontinst.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fonts.so
@@ -233,7 +231,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwincompositing.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwindecoration.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwindesktop.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinrules.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinscreenedges.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwintabbox.so
@@ -246,7 +243,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_solid_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_standard_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_style.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_workspaceoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_xinerama.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_kephal.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_khotkeys.so
@@ -507,21 +503,6 @@ drwxr-xr-x	root/root	usr/share/apps/color-schemes/
 -rw-r--r--	root/root	usr/share/apps/color-schemes/OxygenCold.colors
 -rw-r--r--	root/root	usr/share/apps/color-schemes/Steel.colors
 -rw-r--r--	root/root	usr/share/apps/color-schemes/WontonSoup.colors
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/colors
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/metadata.desktop
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/background.svgz
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/panel-background.svgz
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/systemtray.svgz
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/calendar/
--rw-r--r--	root/root	usr/share/apps/desktoptheme/default/calendar/mini-calendar.svgz
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/system-monitor/
--rw-r--r--	root/root	usr/share/apps/desktoptheme/default/system-monitor/hdd_panel.svgz
-drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/widgets/
--rw-r--r--	root/root	usr/share/apps/desktoptheme/default/widgets/battery-oxygen.svgz
 drwxr-xr-x	root/root	usr/share/apps/doc/
 drwxr-xr-x	root/root	usr/share/apps/doc/kdm/
 -rw-r--r--	root/root	usr/share/apps/doc/kdm/README
@@ -691,7 +672,6 @@ drwxr-xr-x	root/root	usr/share/apps/kdm/themes/circles/
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/circles.xml
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/flower.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/help.png
--rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/options.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/screenshot.png
 drwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/.directory
@@ -1860,7 +1840,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/clock.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/colors.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/desktop.desktop
--rw-r--r--	root/root	usr/share/kde4/services/desktopthemedetails.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/display.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fontinst.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fonts.desktop
@@ -1961,7 +1940,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/kwindecoration.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinfocus.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinmoving.desktop
--rw-r--r--	root/root	usr/share/kde4/services/kwinoptions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinrules.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinscreenedges.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwintabbox.desktop
@@ -2101,7 +2079,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/solidbackends/
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_wicd.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/standard_actions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/style.desktop
--rw-r--r--	root/root	usr/share/kde4/services/workspaceoptions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/xinerama.desktop
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kwineffect.desktop

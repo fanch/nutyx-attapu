@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/krubyapplication
@@ -1110,8 +1109,6 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/solid/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/genericinterface.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/networking.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/networkinterface.sip
--rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/opticaldisc.sip
--rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/opticaldrive.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/portablemediaplayer.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/powermanagement.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/solid/predicate.sip

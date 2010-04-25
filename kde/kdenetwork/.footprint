@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kget
@@ -249,9 +248,6 @@ drwxr-xr-x	root/root	usr/share/apps/kget/
 drwxr-xr-x	root/root	usr/share/apps/kget/content_fetch_scripts/
 drwxr-xr-x	root/root	usr/share/apps/kget/content_fetch_scripts/youtubedl/
 -rw-r--r--	root/root	usr/share/apps/kget/content_fetch_scripts/youtubedl/kget_youtubedl.py
--rw-r--r--	root/root	usr/share/apps/kget/content_fetch_scripts/youtubedl/kget_youtubedl_option.py
--rw-r--r--	root/root	usr/share/apps/kget/content_fetch_scripts/youtubedl/ui_youtube_option.py
--rw-r--r--	root/root	usr/share/apps/kget/content_fetch_scripts/youtubedl/youtube_option.ui
 -rw-r--r--	root/root	usr/share/apps/kget/kget.notifyrc
 -rw-r--r--	root/root	usr/share/apps/kget/kgetui.rc
 drwxr-xr-x	root/root	usr/share/apps/kget/pics/

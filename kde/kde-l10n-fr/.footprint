@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/apps/
@@ -197,7 +196,6 @@ drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_akonadicontact_actions.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_attica.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_autostart.mo
--rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_desktopthemedetails.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_device_automounter.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_emoticons.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcm_krfb.mo
@@ -261,7 +259,6 @@ drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcmstyle.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcmusb.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcmview1394.mo
--rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcmworkspaceoptions.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcmxinerama.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcolorchooser.mo
 -rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/kcron.mo

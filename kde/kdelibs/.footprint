@@ -1,4 +1,3 @@
-drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/checkXML
@@ -1791,8 +1790,6 @@ drwxr-xr-x	root/root	usr/include/solid/
 -rw-r--r--	root/root	usr/include/solid/genericinterface.h
 -rw-r--r--	root/root	usr/include/solid/networking.h
 -rw-r--r--	root/root	usr/include/solid/networkinterface.h
--rw-r--r--	root/root	usr/include/solid/opticaldisc.h
--rw-r--r--	root/root	usr/include/solid/opticaldrive.h
 -rw-r--r--	root/root	usr/include/solid/portablemediaplayer.h
 -rw-r--r--	root/root	usr/include/solid/powermanagement.h
 -rw-r--r--	root/root	usr/include/solid/predicate.h
@@ -1862,7 +1859,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/ktexteditor_python-encoding.so
 -rwxr-xr-x	root/root	usr/lib/kde4/ktranscript.so
 drwxr-xr-x	root/root	usr/lib/kde4/libexec/
-lrwxrwxrwx	root/root	usr/lib/kde4/libexec/filesharelist -> /opt/kde/lib/kde4/libexec/fileshareset
 -rwsr-xr-x	root/root	usr/lib/kde4/libexec/fileshareset
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kauth-policy-gen
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kcmremotewidgetshelper
@@ -3867,7 +3863,6 @@ drwxr-xr-x	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.jump2.xml
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.locate.xml
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.next.xml
--rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.options.xml
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.prev.xml
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.print.xml
 -rw-r--r--	root/root	usr/share/apps/ksgmltools2/docbook/xsl/params/htmlhelp.button.refresh.xml
@@ -4220,43 +4215,33 @@ drwxr-xr-x	root/root	usr/share/doc/HTML/en/common/
 -rw-r--r--	root/root	usr/share/doc/HTML/en/common/xml.dcl
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/data/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/data/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/data/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/data/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/file/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/file/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/file/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/file/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/ftp/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/ftp/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/ftp/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/ftp/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/help/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/help/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/help/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/help/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/http/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/http/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/http/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/http/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/mailto/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/mailto/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/mailto/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/mailto/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/rlogin/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/rlogin/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/rlogin/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/rlogin/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/telnet/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/telnet/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/telnet/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/telnet/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kioslave/webdav/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kioslave/webdav/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/webdav/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kioslave/webdav/index.docbook
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/sonnet/
-lrwxrwxrwx	root/root	usr/share/doc/HTML/en/sonnet/common -> /opt/kde/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/sonnet/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/sonnet/index.docbook
 drwxr-xr-x	root/root	usr/share/icons/
@@ -4406,8 +4391,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/kross.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/makekdewidgets.1.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
--rw-r--r--	root/root	usr/share/man/man7/kdeoptions.7.gz
--rw-r--r--	root/root	usr/share/man/man7/qtoptions.7.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/kbuildsycoca4.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/kcookiejar4.8.gz
