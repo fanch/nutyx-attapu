@@ -1,6 +1,7 @@
 # Description: List X fonts
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: thierryn1 at hispeed dot ch
+# Packager: thierry1 at hispeed dot ch
 # Depends on: xorg-libx11
 
 name=xorg-xlsfonts
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xlsfonts-$version.ta
 build() {
 	cd xlsfonts-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
