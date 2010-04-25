@@ -26,10 +26,10 @@ drwxr-xr-x	root/root	usr/lib/X11/xdm/pixmaps/
 -rw-r--r--	root/root	usr/lib/X11/xdm/pixmaps/xorg-bw.xpm
 -rw-r--r--	root/root	usr/lib/X11/xdm/pixmaps/xorg.xpm
 -rw-r--r--	root/root	usr/lib/X11/xdm/xdm-config
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/xdm.1.gz
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/xdm.1.gz
 drwxr-xr-x	root/root	usr/share/X11/
 drwxr-xr-x	root/root	usr/share/X11/app-defaults/
 -rw-r--r--	root/root	usr/share/X11/app-defaults/Chooser

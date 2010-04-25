@@ -1,10 +1,11 @@
-# Description: X display manager
+# Description: Gestionnaire de login X display
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server, xorg-xrdb
 
 name=xorg-xdm
-version=1.1.8
+version=1.1.10
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/app/xdm-$version.tar.bz2 \
         xdm)
@@ -12,7 +13,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xdm-$version.tar.bz2
 build() {
 	cd xdm-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
