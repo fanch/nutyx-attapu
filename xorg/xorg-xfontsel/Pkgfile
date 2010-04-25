@@ -1,6 +1,7 @@
 # Description: X font selector
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libxaw
 
 name=xorg-xfontsel
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xfontsel-$version.ta
 build() {
 	cd xfontsel-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr --mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
