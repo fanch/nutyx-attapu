@@ -1,0 +1,26 @@
+# Description: Librairie de fonctions de support PNG version 1.2
+# URL: http://www.libpng.org/pub/png/libpng.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=libpng12
+version=1.2.42
+release=1
+source=( http://downloads.sourceforge.net/libpng/libpng-$version.tar.bz2\
+ http://www.linuxfromscratch.org/patches/blfs/svn/libpng-1.2.42-apng-1.patch)
+
+build() {
+	cd libpng-$version
+	patch -Np1 -i ../libpng-$version-apng-1.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-debug
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/bin/libpng-config 
+	rm $PKG/usr/include/{png.h,pngconf.h}
+        rm $PKG/usr/lib/libpng.{a,la,so,so.3}
+	rm $PKG/usr/lib/pkgconfig/libpng.pc
+	rm -r $PKG/usr/share/
+}
