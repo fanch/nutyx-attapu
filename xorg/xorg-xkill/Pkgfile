@@ -1,6 +1,7 @@
 # Description: x window sniper
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libxmu
 
 name=xorg-xkill
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xkill-$version.tar.b
 build() {
 	cd xkill-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
