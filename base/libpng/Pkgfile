@@ -4,15 +4,15 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=libpng
-version=1.2.39
+version=1.4.1
 release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
-	http://kiao.no-ip.info/NuTyX/files/libpng-$version-apng-1.patch)
-
+	http://downloads.sourceforge.net/sourceforge/libpng-apng/$name-$version-apng.patch.gz)
 
 build() {
+	gzip -d $name-$version-apng.patch.gz
 	cd $name-$version
-	patch -Np1 -i ../libpng-$version-apng-1.patch
+	patch -Np1 -i ../$name-$version-apng.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
