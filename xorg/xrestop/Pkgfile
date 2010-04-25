@@ -1,6 +1,7 @@
 # Description: top like tool for monitoring X client/server resource usage
 # URL: http://freedesktop.org/wiki/Software/xrestop
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libxres
 
 name=xrestop
@@ -11,7 +12,7 @@ source=(http://projects.o-hand.com/sources/$name/$name-$version.tar.gz)
 build() {
 	cd xrestop-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
