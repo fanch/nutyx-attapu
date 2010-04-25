@@ -5,7 +5,7 @@
 # Depends on: libdatrie
 
 name=libthai
-version=0.1.13
+version=0.1.14
 release=1
 source=( http://linux.thai.net/pub/thailinux/software/$name/$name-$version.tar.gz)
 
