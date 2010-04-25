@@ -1,6 +1,7 @@
 # Description: X11 server performance test program
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libxmu, xorg-libxft, xorg-libxext
 
 name=xorg-x11perf
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/x11perf-$version.tar
 build() {
 	cd x11perf-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
