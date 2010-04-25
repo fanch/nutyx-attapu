@@ -14,7 +14,7 @@ build() {
 	mkdir build
 	cd build
 
-	cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX ..
+	cmake -DCMAKE_INSTALL_PREFIX=/usr ..
 	make
 	make DESTDIR=$PKG install
 

@@ -14,11 +14,11 @@ build() {
         mkdir build
         cd build
         cmake ../${name}-l10n-fr-$version \
-                -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+                -DCMAKE_INSTALL_PREFIX=/usr
         make -j3
         make DESTDIR=$PKG install
         rm -r *
-        cmake ../${name}-$version -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        cmake ../${name}-$version -DCMAKE_INSTALL_PREFIX=/usr
         make -j3
         make DESTDIR=$PKG install
         for i in format-justify-center.png format-justify-fill.png \
@@ -34,9 +34,9 @@ build() {
         object-order-raise.png \
         object-ungroup.png
         do
-                if [ -f $PKG/$KDE_PREFIX/share/icons/oxygen/16x16/actions/$i ]; then
-                        rm $PKG/$KDE_PREFIX/share/icons/oxygen/16x16/actions/$i
+                if [ -f $PKG//usr/share/icons/oxygen/16x16/actions/$i ]; then
+                        rm $PKG//usr/share/icons/oxygen/16x16/actions/$i
                 fi
         done
-        rm -r $PKG/$KDE_PREFIX/share/doc/HTML/en
+        rm -r $PKG//usr/share/doc/HTML/en
 }

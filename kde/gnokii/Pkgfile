@@ -14,7 +14,7 @@ build() {
 	cd $name-*
 	sed -i 's|cellphone|phone|' xgnokii/xgnokii.desktop.in
 	patch -Np1 -i $SRC/gnokii.patch
- 	./configure --prefix=$KDE_PREFIX 
+ 	./configure --prefix=/usr 
 	make
 	make DESTDIR=$PKG install
 

@@ -11,7 +11,7 @@ source=(http://gtk-qt-engine.googlecode.com/files/$name-$version.tar.bz2 \
 	gtk-qt-engine.rc.sh  .gtkrc-2.0-kde4 )
 build() {
         cd $name
-        cmake . -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        cmake . -DCMAKE_INSTALL_PREFIX=/usr
         make
         make DESTDIR=$PKG install
 	mkdir -p $PKG/etc/skel/.kde/env

@@ -1,46 +1,46 @@
 drwxr-xr-x	root/root	opt/
-drwxr-xr-x	root/root	opt/kde/
-drwxr-xr-x	root/root	opt/kde/include/
-drwxr-xr-x	root/root	opt/kde/include/polkit-qt-1/
-drwxr-xr-x	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/ActionDescription
-drwxr-xr-x	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Agent/
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Agent/Listener
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Agent/Session
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Authority
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Details
-drwxr-xr-x	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Gui/
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Gui/Action
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Gui/ActionButton
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Gui/ActionButtons
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Identity
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/Subject
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/PolkitQt1/TemporaryAuthorization
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-actiondescription.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-agent-listener.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-agent-session.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-authority.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-details.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-export.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-gui-action.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-gui-actionbutton.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-gui-actionbuttons.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-identity.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-subject.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-temporaryauthorization.h
--rw-r--r--	root/root	opt/kde/include/polkit-qt-1/polkitqt1-version.h
-drwxr-xr-x	root/root	opt/kde/lib/
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-agent-1.so -> libpolkit-qt-agent-1.so.0
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-agent-1.so.0 -> libpolkit-qt-agent-1.so.0.95.1
--rwxr-xr-x	root/root	opt/kde/lib/libpolkit-qt-agent-1.so.0.95.1
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-core-1.so -> libpolkit-qt-core-1.so.0
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-core-1.so.0 -> libpolkit-qt-core-1.so.0.95.1
--rwxr-xr-x	root/root	opt/kde/lib/libpolkit-qt-core-1.so.0.95.1
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-gui-1.so -> libpolkit-qt-gui-1.so.0
-lrwxrwxrwx	root/root	opt/kde/lib/libpolkit-qt-gui-1.so.0 -> libpolkit-qt-gui-1.so.0.95.1
--rwxr-xr-x	root/root	opt/kde/lib/libpolkit-qt-gui-1.so.0.95.1
-drwxr-xr-x	root/root	opt/kde/lib/pkgconfig/
--rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-1.pc
--rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-agent-1.pc
--rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-core-1.pc
--rw-r--r--	root/root	opt/kde/lib/pkgconfig/polkit-qt-gui-1.pc
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/polkit-qt-1/
+drwxr-xr-x	root/root	usr/include/polkit-qt-1/PolkitQt1/
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/ActionDescription
+drwxr-xr-x	root/root	usr/include/polkit-qt-1/PolkitQt1/Agent/
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Agent/Listener
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Agent/Session
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Authority
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Details
+drwxr-xr-x	root/root	usr/include/polkit-qt-1/PolkitQt1/Gui/
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Gui/Action
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Gui/ActionButton
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Gui/ActionButtons
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Identity
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/Subject
+-rw-r--r--	root/root	usr/include/polkit-qt-1/PolkitQt1/TemporaryAuthorization
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-actiondescription.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-agent-listener.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-agent-session.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-authority.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-details.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-export.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-gui-action.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-gui-actionbutton.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-gui-actionbuttons.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-identity.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-subject.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-temporaryauthorization.h
+-rw-r--r--	root/root	usr/include/polkit-qt-1/polkitqt1-version.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-agent-1.so -> libpolkit-qt-agent-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-agent-1.so.0 -> libpolkit-qt-agent-1.so.0.95.1
+-rwxr-xr-x	root/root	usr/lib/libpolkit-qt-agent-1.so.0.95.1
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-core-1.so -> libpolkit-qt-core-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-core-1.so.0 -> libpolkit-qt-core-1.so.0.95.1
+-rwxr-xr-x	root/root	usr/lib/libpolkit-qt-core-1.so.0.95.1
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-gui-1.so -> libpolkit-qt-gui-1.so.0
+lrwxrwxrwx	root/root	usr/lib/libpolkit-qt-gui-1.so.0 -> libpolkit-qt-gui-1.so.0.95.1
+-rwxr-xr-x	root/root	usr/lib/libpolkit-qt-gui-1.so.0.95.1
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/polkit-qt-1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/polkit-qt-agent-1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/polkit-qt-core-1.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/polkit-qt-gui-1.pc

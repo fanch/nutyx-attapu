@@ -11,7 +11,7 @@ source=(http://switch.dl.sourceforge.net/sourceforge/k3b/k3b-$version.tar.bz2)
 
 build() {
 cd k3b-*
-cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_SKIP_RPATH=ON -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
  -DBUILD_doc=OFF
 	

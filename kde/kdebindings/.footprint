@@ -1,249 +1,249 @@
 drwxr-xr-x	root/root	opt/
-drwxr-xr-x	root/root	opt/kde/
-drwxr-xr-x	root/root	opt/kde/bin/
--rwxr-xr-x	root/root	opt/kde/bin/krubyapplication
-lrwxrwxrwx	root/root	opt/kde/bin/pykdeuic4 -> /usr/lib/python2.6/site-packages/PyQt4/uic/pykdeuic4.py
--rwxr-xr-x	root/root	opt/kde/bin/rbkconfig_compiler4
--rwxr-xr-x	root/root	opt/kde/bin/rbqtapi
--rwxr-xr-x	root/root	opt/kde/bin/rbrcc
--rwxr-xr-x	root/root	opt/kde/bin/rbuic4
--rwxr-xr-x	root/root	opt/kde/bin/smokeapi
--rwxr-xr-x	root/root	opt/kde/bin/smokegen
-drwxr-xr-x	root/root	opt/kde/include/
-drwxr-xr-x	root/root	opt/kde/include/qtruby/
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall.h
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall_basetypes.h
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall_complex.h
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall_macros.h
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall_primitives.h
--rw-r--r--	root/root	opt/kde/include/qtruby/marshall_types.h
--rw-r--r--	root/root	opt/kde/include/qtruby/qtruby.h
--rw-r--r--	root/root	opt/kde/include/qtruby/smokeruby.h
--rw-r--r--	root/root	opt/kde/include/smoke.h
-drwxr-xr-x	root/root	opt/kde/include/smoke/
--rw-r--r--	root/root	opt/kde/include/smoke/akonadi_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/attica_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kdecore_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kdeui_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kfile_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/khtml_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kio_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/knewstuff2_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/knewstuff3_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kparts_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/ktexteditor_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/kutils_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/nepomuk_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/nepomukquery_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/okular_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/phonon_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/plasma_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qimageblitz_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qsci_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qt_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtcore_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtdbus_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtgui_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtmultimedia_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtnetwork_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtopengl_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtscript_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtsql_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtsvg_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qttest_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtuitools_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtwebkit_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtxml_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/qtxmlpatterns_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/solid_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/soprano_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/sopranoclient_smoke.h
--rw-r--r--	root/root	opt/kde/include/smoke/sopranoserver_smoke.h
-drwxr-xr-x	root/root	opt/kde/lib/
-drwxr-xr-x	root/root	opt/kde/lib/kde4/
--rwxr-xr-x	root/root	opt/kde/lib/kde4/kpythonpluginfactory.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/krosspython.so
--rwxr-xr-x	root/root	opt/kde/lib/kde4/krubypluginfactory.so
--rwxr-xr-x	root/root	opt/kde/lib/libcppparser.so
-lrwxrwxrwx	root/root	opt/kde/lib/libqtruby4shared.so -> libqtruby4shared.so.2
-lrwxrwxrwx	root/root	opt/kde/lib/libqtruby4shared.so.2 -> libqtruby4shared.so.2.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libqtruby4shared.so.2.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeakonadi.so -> libsmokeakonadi.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeakonadi.so.3 -> libsmokeakonadi.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeakonadi.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeattica.so -> libsmokeattica.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeattica.so.3 -> libsmokeattica.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeattica.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekdecore.so -> libsmokekdecore.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekdecore.so.3 -> libsmokekdecore.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekdecore.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekdeui.so -> libsmokekdeui.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekdeui.so.3 -> libsmokekdeui.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekdeui.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekfile.so -> libsmokekfile.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekfile.so.3 -> libsmokekfile.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekfile.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekhtml.so -> libsmokekhtml.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekhtml.so.3 -> libsmokekhtml.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekhtml.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekio.so -> libsmokekio.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekio.so.3 -> libsmokekio.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekio.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeknewstuff2.so -> libsmokeknewstuff2.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeknewstuff2.so.3 -> libsmokeknewstuff2.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeknewstuff2.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeknewstuff3.so -> libsmokeknewstuff3.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeknewstuff3.so.3 -> libsmokeknewstuff3.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeknewstuff3.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekparts.so -> libsmokekparts.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekparts.so.3 -> libsmokekparts.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekparts.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokektexteditor.so -> libsmokektexteditor.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokektexteditor.so.3 -> libsmokektexteditor.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokektexteditor.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekutils.so -> libsmokekutils.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokekutils.so.3 -> libsmokekutils.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokekutils.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokenepomuk.so -> libsmokenepomuk.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokenepomuk.so.3 -> libsmokenepomuk.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokenepomuk.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokenepomukquery.so -> libsmokenepomukquery.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokenepomukquery.so.3 -> libsmokenepomukquery.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokenepomukquery.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeokular.so -> libsmokeokular.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeokular.so.3 -> libsmokeokular.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeokular.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokephonon.so -> libsmokephonon.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokephonon.so.3 -> libsmokephonon.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokephonon.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeplasma.so -> libsmokeplasma.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeplasma.so.3 -> libsmokeplasma.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeplasma.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqimageblitz.so -> libsmokeqimageblitz.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqimageblitz.so.3 -> libsmokeqimageblitz.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqimageblitz.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqsci.so -> libsmokeqsci.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqsci.so.3 -> libsmokeqsci.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqsci.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqt.so -> libsmokeqt.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqt.so.3 -> libsmokeqt.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqt.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtcore.so -> libsmokeqtcore.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtcore.so.3 -> libsmokeqtcore.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtcore.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtdbus.so -> libsmokeqtdbus.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtdbus.so.3 -> libsmokeqtdbus.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtdbus.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtgui.so -> libsmokeqtgui.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtgui.so.3 -> libsmokeqtgui.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtgui.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtmultimedia.so -> libsmokeqtmultimedia.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtmultimedia.so.3 -> libsmokeqtmultimedia.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtmultimedia.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtnetwork.so -> libsmokeqtnetwork.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtnetwork.so.3 -> libsmokeqtnetwork.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtnetwork.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtopengl.so -> libsmokeqtopengl.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtopengl.so.3 -> libsmokeqtopengl.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtopengl.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtscript.so -> libsmokeqtscript.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtscript.so.3 -> libsmokeqtscript.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtscript.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtsql.so -> libsmokeqtsql.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtsql.so.3 -> libsmokeqtsql.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtsql.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtsvg.so -> libsmokeqtsvg.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtsvg.so.3 -> libsmokeqtsvg.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtsvg.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqttest.so -> libsmokeqttest.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqttest.so.3 -> libsmokeqttest.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqttest.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtuitools.so -> libsmokeqtuitools.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtuitools.so.3 -> libsmokeqtuitools.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtuitools.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtwebkit.so -> libsmokeqtwebkit.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtwebkit.so.3 -> libsmokeqtwebkit.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtwebkit.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtxml.so -> libsmokeqtxml.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtxml.so.3 -> libsmokeqtxml.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtxml.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtxmlpatterns.so -> libsmokeqtxmlpatterns.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokeqtxmlpatterns.so.3 -> libsmokeqtxmlpatterns.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokeqtxmlpatterns.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesolid.so -> libsmokesolid.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesolid.so.3 -> libsmokesolid.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokesolid.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesoprano.so -> libsmokesoprano.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesoprano.so.3 -> libsmokesoprano.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokesoprano.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesopranoclient.so -> libsmokesopranoclient.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesopranoclient.so.3 -> libsmokesopranoclient.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokesopranoclient.so.3.0.0
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesopranoserver.so -> libsmokesopranoserver.so.3
-lrwxrwxrwx	root/root	opt/kde/lib/libsmokesopranoserver.so.3 -> libsmokesopranoserver.so.3.0.0
--rwxr-xr-x	root/root	opt/kde/lib/libsmokesopranoserver.so.3.0.0
-drwxr-xr-x	root/root	opt/kde/lib/smokegen/
--rwxr-xr-x	root/root	opt/kde/lib/smokegen/generator_dump.so
--rwxr-xr-x	root/root	opt/kde/lib/smokegen/generator_smoke.so
-drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/applications/
-drwxr-xr-x	root/root	opt/kde/share/applications/kde4/
--rw-r--r--	root/root	opt/kde/share/applications/kde4/dbpedia_references.desktop
-drwxr-xr-x	root/root	opt/kde/share/apps/
-drwxr-xr-x	root/root	opt/kde/share/apps/dbpedia_references/
--rw-r--r--	root/root	opt/kde/share/apps/dbpedia_references/dbpedia_references.rb
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/__init__.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/default.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/kdecoreExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdecoreExamples/__init__.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdecoreExamples/kaboutdata.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdecoreExamples/kstandarddirs.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/__init__.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kaboutapplicationdialog.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kaboutkdedialog.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kapplication.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcolorbutton.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcolorcells.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcolorcombo.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcolordialog.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcolorpatch.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kcombobox.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kdatepicker.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kdatewidget.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kfontdialog.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/klistwidget.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kdeuiExamples/kmainwindow.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/khtmlExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/khtmlExamples/__init__.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/kioExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kioExamples/__init__.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/kpartsExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kpartsExamples/__init__.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kpartsExamples/katepart.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/kutilsExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/kutilsExamples/__init__.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/polkitqtExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/polkitqtExamples/PkExampleUi.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/polkitqtExamples/README
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/polkitqtExamples/pkexample.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/polkitqtExamples/pkexamplehelper.py
-drwxr-xr-x	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/__init__.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_audiointerface.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_device.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_networkinterface.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_processor.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_storageaccess.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_storagedrive.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solidExamples/solid_storagevolume.py
--rw-r--r--	root/root	opt/kde/share/apps/pykde4/examples/solid_demo.py
-drwxr-xr-x	root/root	opt/kde/share/smokegen/
--rw-r--r--	root/root	opt/kde/share/smokegen/kde-config.xml
--rw-r--r--	root/root	opt/kde/share/smokegen/qt-config.xml
--rw-r--r--	root/root	opt/kde/share/smokegen/qtdefines
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/krubyapplication
+lrwxrwxrwx	root/root	usr/bin/pykdeuic4 -> /usr/lib/python2.6/site-packages/PyQt4/uic/pykdeuic4.py
+-rwxr-xr-x	root/root	usr/bin/rbkconfig_compiler4
+-rwxr-xr-x	root/root	usr/bin/rbqtapi
+-rwxr-xr-x	root/root	usr/bin/rbrcc
+-rwxr-xr-x	root/root	usr/bin/rbuic4
+-rwxr-xr-x	root/root	usr/bin/smokeapi
+-rwxr-xr-x	root/root	usr/bin/smokegen
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/qtruby/
+-rw-r--r--	root/root	usr/include/qtruby/marshall.h
+-rw-r--r--	root/root	usr/include/qtruby/marshall_basetypes.h
+-rw-r--r--	root/root	usr/include/qtruby/marshall_complex.h
+-rw-r--r--	root/root	usr/include/qtruby/marshall_macros.h
+-rw-r--r--	root/root	usr/include/qtruby/marshall_primitives.h
+-rw-r--r--	root/root	usr/include/qtruby/marshall_types.h
+-rw-r--r--	root/root	usr/include/qtruby/qtruby.h
+-rw-r--r--	root/root	usr/include/qtruby/smokeruby.h
+-rw-r--r--	root/root	usr/include/smoke.h
+drwxr-xr-x	root/root	usr/include/smoke/
+-rw-r--r--	root/root	usr/include/smoke/akonadi_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/attica_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kdecore_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kdeui_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kfile_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/khtml_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kio_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/knewstuff2_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/knewstuff3_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kparts_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/ktexteditor_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/kutils_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/nepomuk_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/nepomukquery_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/okular_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/phonon_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/plasma_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qimageblitz_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qsci_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qt_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtcore_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtdbus_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtgui_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtmultimedia_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtnetwork_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtopengl_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtscript_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtsql_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtsvg_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qttest_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtuitools_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtwebkit_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtxml_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/qtxmlpatterns_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/solid_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/soprano_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/sopranoclient_smoke.h
+-rw-r--r--	root/root	usr/include/smoke/sopranoserver_smoke.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/kde4/
+-rwxr-xr-x	root/root	usr/lib/kde4/kpythonpluginfactory.so
+-rwxr-xr-x	root/root	usr/lib/kde4/krosspython.so
+-rwxr-xr-x	root/root	usr/lib/kde4/krubypluginfactory.so
+-rwxr-xr-x	root/root	usr/lib/libcppparser.so
+lrwxrwxrwx	root/root	usr/lib/libqtruby4shared.so -> libqtruby4shared.so.2
+lrwxrwxrwx	root/root	usr/lib/libqtruby4shared.so.2 -> libqtruby4shared.so.2.0.0
+-rwxr-xr-x	root/root	usr/lib/libqtruby4shared.so.2.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeakonadi.so -> libsmokeakonadi.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeakonadi.so.3 -> libsmokeakonadi.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeakonadi.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeattica.so -> libsmokeattica.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeattica.so.3 -> libsmokeattica.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeattica.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekdecore.so -> libsmokekdecore.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekdecore.so.3 -> libsmokekdecore.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekdecore.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekdeui.so -> libsmokekdeui.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekdeui.so.3 -> libsmokekdeui.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekdeui.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekfile.so -> libsmokekfile.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekfile.so.3 -> libsmokekfile.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekfile.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekhtml.so -> libsmokekhtml.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekhtml.so.3 -> libsmokekhtml.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekhtml.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekio.so -> libsmokekio.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekio.so.3 -> libsmokekio.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekio.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeknewstuff2.so -> libsmokeknewstuff2.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeknewstuff2.so.3 -> libsmokeknewstuff2.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeknewstuff2.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeknewstuff3.so -> libsmokeknewstuff3.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeknewstuff3.so.3 -> libsmokeknewstuff3.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeknewstuff3.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekparts.so -> libsmokekparts.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekparts.so.3 -> libsmokekparts.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekparts.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokektexteditor.so -> libsmokektexteditor.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokektexteditor.so.3 -> libsmokektexteditor.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokektexteditor.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokekutils.so -> libsmokekutils.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokekutils.so.3 -> libsmokekutils.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokekutils.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokenepomuk.so -> libsmokenepomuk.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokenepomuk.so.3 -> libsmokenepomuk.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokenepomuk.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokenepomukquery.so -> libsmokenepomukquery.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokenepomukquery.so.3 -> libsmokenepomukquery.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokenepomukquery.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeokular.so -> libsmokeokular.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeokular.so.3 -> libsmokeokular.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeokular.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokephonon.so -> libsmokephonon.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokephonon.so.3 -> libsmokephonon.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokephonon.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeplasma.so -> libsmokeplasma.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeplasma.so.3 -> libsmokeplasma.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeplasma.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqimageblitz.so -> libsmokeqimageblitz.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqimageblitz.so.3 -> libsmokeqimageblitz.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqimageblitz.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqsci.so -> libsmokeqsci.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqsci.so.3 -> libsmokeqsci.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqsci.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqt.so -> libsmokeqt.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqt.so.3 -> libsmokeqt.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqt.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtcore.so -> libsmokeqtcore.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtcore.so.3 -> libsmokeqtcore.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtcore.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtdbus.so -> libsmokeqtdbus.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtdbus.so.3 -> libsmokeqtdbus.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtdbus.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtgui.so -> libsmokeqtgui.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtgui.so.3 -> libsmokeqtgui.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtgui.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtmultimedia.so -> libsmokeqtmultimedia.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtmultimedia.so.3 -> libsmokeqtmultimedia.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtmultimedia.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtnetwork.so -> libsmokeqtnetwork.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtnetwork.so.3 -> libsmokeqtnetwork.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtnetwork.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtopengl.so -> libsmokeqtopengl.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtopengl.so.3 -> libsmokeqtopengl.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtopengl.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtscript.so -> libsmokeqtscript.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtscript.so.3 -> libsmokeqtscript.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtscript.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtsql.so -> libsmokeqtsql.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtsql.so.3 -> libsmokeqtsql.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtsql.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtsvg.so -> libsmokeqtsvg.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtsvg.so.3 -> libsmokeqtsvg.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtsvg.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqttest.so -> libsmokeqttest.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqttest.so.3 -> libsmokeqttest.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqttest.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtuitools.so -> libsmokeqtuitools.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtuitools.so.3 -> libsmokeqtuitools.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtuitools.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtwebkit.so -> libsmokeqtwebkit.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtwebkit.so.3 -> libsmokeqtwebkit.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtwebkit.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtxml.so -> libsmokeqtxml.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtxml.so.3 -> libsmokeqtxml.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtxml.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtxmlpatterns.so -> libsmokeqtxmlpatterns.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokeqtxmlpatterns.so.3 -> libsmokeqtxmlpatterns.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokeqtxmlpatterns.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokesolid.so -> libsmokesolid.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokesolid.so.3 -> libsmokesolid.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokesolid.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokesoprano.so -> libsmokesoprano.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokesoprano.so.3 -> libsmokesoprano.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokesoprano.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokesopranoclient.so -> libsmokesopranoclient.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokesopranoclient.so.3 -> libsmokesopranoclient.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokesopranoclient.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokesopranoserver.so -> libsmokesopranoserver.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokesopranoserver.so.3 -> libsmokesopranoserver.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokesopranoserver.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/smokegen/
+-rwxr-xr-x	root/root	usr/lib/smokegen/generator_dump.so
+-rwxr-xr-x	root/root	usr/lib/smokegen/generator_smoke.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+drwxr-xr-x	root/root	usr/share/applications/kde4/
+-rw-r--r--	root/root	usr/share/applications/kde4/dbpedia_references.desktop
+drwxr-xr-x	root/root	usr/share/apps/
+drwxr-xr-x	root/root	usr/share/apps/dbpedia_references/
+-rw-r--r--	root/root	usr/share/apps/dbpedia_references/dbpedia_references.rb
+drwxr-xr-x	root/root	usr/share/apps/pykde4/
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/__init__.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/default.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/kdecoreExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdecoreExamples/__init__.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdecoreExamples/kaboutdata.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdecoreExamples/kstandarddirs.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/__init__.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kaboutapplicationdialog.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kaboutkdedialog.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kapplication.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcolorbutton.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcolorcells.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcolorcombo.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcolordialog.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcolorpatch.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kcombobox.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kdatepicker.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kdatewidget.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kfontdialog.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/klistwidget.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kdeuiExamples/kmainwindow.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/khtmlExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/khtmlExamples/__init__.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/kioExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kioExamples/__init__.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/kpartsExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kpartsExamples/__init__.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kpartsExamples/katepart.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/kutilsExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/kutilsExamples/__init__.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/polkitqtExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/polkitqtExamples/PkExampleUi.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/polkitqtExamples/README
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/polkitqtExamples/pkexample.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/polkitqtExamples/pkexamplehelper.py
+drwxr-xr-x	root/root	usr/share/apps/pykde4/examples/solidExamples/
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/__init__.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_audiointerface.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_device.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_networkinterface.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_processor.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_storageaccess.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_storagedrive.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solidExamples/solid_storagevolume.py
+-rw-r--r--	root/root	usr/share/apps/pykde4/examples/solid_demo.py
+drwxr-xr-x	root/root	usr/share/smokegen/
+-rw-r--r--	root/root	usr/share/smokegen/kde-config.xml
+-rw-r--r--	root/root	usr/share/smokegen/qt-config.xml
+-rw-r--r--	root/root	usr/share/smokegen/qtdefines
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.6/

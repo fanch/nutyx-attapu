@@ -12,10 +12,10 @@ build() {
 	cd $name-$version
 	mkdir build
 	cd build
-	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
 	-DBUILD_doc=OFF
 	make -j3
 	make DESTDIR=$PKG install
-	rm $PKG/$KDE_PREFIX/share/apps/profiles/kscd.profile.xml
+	rm $PKG/usr/share/apps/profiles/kscd.profile.xml
 }
 

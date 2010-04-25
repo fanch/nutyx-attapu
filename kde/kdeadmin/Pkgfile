@@ -15,8 +15,8 @@ build() {
 	sed -i "/kpackage/d" CMakeLists.txt
 	mkdir build
 	cd build
-	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
-	-Dscriptsdir=$KDE_PREFIX/share/apps/knetworkconf/backends \
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
+	-Dscriptsdir=/usr/share/apps/knetworkconf/backends \
 	-DBUILD_doc=OFF
 	make -j3
 	make DESTDIR=$PKG install

@@ -14,15 +14,15 @@ build() {
 	cd $name-$version
 	mkdir build
 	cd build
-	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
 	make -j3
 	make DESTDIR=$PKG install
 	cp $SRC/NuTyXlogo.png \
-	$PKG/$KDE_PREFIX/share/icons/oxygen/256x256/places
+	$PKG//usr/share/icons/oxygen/256x256/places
 	for i in 256x256 128x128 64x64 48x48 32x32 22x22 16x16
-		do rm $PKG/$KDE_PREFIX/share/icons/oxygen/$i/places/start-here-kde.png
+		do rm $PKG//usr/share/icons/oxygen/$i/places/start-here-kde.png
 		ln -sv ../../256x256/places/NuTyXlogo.png \
-		$PKG/$KDE_PREFIX/share/icons/oxygen/$i/places/start-here-kde.png
+		$PKG//usr/share/icons/oxygen/$i/places/start-here-kde.png
 	done
 }
 

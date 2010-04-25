@@ -19,7 +19,7 @@ build() {
 	find ../ruby -name CMakeLists.txt \
                 -exec sed -i "s|\${RUBY_INCLUDE_PATH}|\${RUBY_INCLUDE_PATH} /usr/include/ruby-1.9.1/i686-linux|" {} \;
 
-	cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_BUILD_TYPE=Release \
 		-DBUILD_java=OFF \
 		-DBUILD_php=OFF \

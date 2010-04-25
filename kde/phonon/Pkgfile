@@ -14,7 +14,7 @@ mkdir build
 cd build
 cmake ../${_name}-${version} \
 	-DCMAKE_BUILD_TYPE=Release \
-	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+	-DCMAKE_INSTALL_PREFIX=/usr
 make
 make DESTDIR=$PKG install
 }

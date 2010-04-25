@@ -29,38 +29,38 @@ build() {
         cd $name-$version
         mkdir build
         cd build
-        cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+        cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
 	-DBUILD_doc=OFF
         make -j3
         make DESTDIR=$PKG install
         cd ..
         install -m644 ../{ede.desktop,lxde.desktop} \
-        $PKG/$KDE_PREFIX/share/apps/kdm/sessions/
+        $PKG/usr/share/apps/kdm/sessions/
         install -m755 ../Xsession.kde4 \
-        $PKG/$KDE_PREFIX/share/config/kdm/Xsession
+        $PKG/usr/share/config/kdm/Xsession
 	chown -R 0:0 ../kdm-nutyx
 	cp -a ../kdm-nutyx \
-	$PKG/$KDE_PREFIX/share/apps/kdm/themes/
+	$PKG/usr/share/apps/kdm/themes/
         sed -i "s/AllowRootLogin=false/AllowRootLogin=true/" \
-        $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        $PKG/usr/share/config/kdm/kdmrc
         sed -i "s@gnome-session@/opt/gnome/bin/gnome-session@" \
-        $PKG/$KDE_PREFIX/share/apps/kdm/sessions/gnome.desktop
-        sed -i "s/oxygen-air/kdm-nutyx/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
-        sed -i "s/xdm.pid/kdm.pid/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
-        sed -i "s/#Language=de_DE/Language=fr_FR/" $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        $PKG/usr/share/apps/kdm/sessions/gnome.desktop
+        sed -i "s/oxygen-air/kdm-nutyx/" $PKG/usr/share/config/kdm/kdmrc
+        sed -i "s/xdm.pid/kdm.pid/" $PKG/usr/share/config/kdm/kdmrc
+        sed -i "s/#Language=de_DE/Language=fr_FR/" $PKG//usr/share/config/kdm/kdmrc
 
-        mv  $PKG/$KDE_PREFIX/share/config/kdm/kdmrc $PKG/etc/kde/kdmrc
-        ln -sv /etc/kde/kdmrc $PKG/$KDE_PREFIX/share/config/kdm/kdmrc
+        mv  $PKG/usr/share/config/kdm/kdmrc $PKG/etc/kde/kdmrc
+        ln -sv /etc/kde/kdmrc $PKG/usr/share/config/kdm/kdmrc
 	# Wallpaper still dirty method 
-	rm -r $PKG/$KDE_PREFIX/share/wallpapers
-	mkdir $PKG/$KDE_PREFIX/share/wallpapers
+	rm -r $PKG/usr/share/wallpapers
+	mkdir $PKG/usr/share/wallpapers
 	cp -a ../Air \
-	$PKG/$KDE_PREFIX/share/wallpapers/
+	$PKG/usr/share/wallpapers/
 	# ksplash also quite dirty
-	rm -r $PKG/$KDE_PREFIX/share/apps/ksplash/Themes/Default
+	rm -r $PKG/usr/share/apps/ksplash/Themes/Default
 	cp -a ../Absolute-NuTyX \
-	$PKG/$KDE_PREFIX/share/apps/ksplash/Themes/
+	$PKG/usr/share/apps/ksplash/Themes/
 	ln -sv Absolute-NuTyX \
-	$PKG/$KDE_PREFIX/share/apps/ksplash/Themes/Default
+	$PKG/usr/share/apps/ksplash/Themes/Default
 	chown -R root:root $PKG
 }

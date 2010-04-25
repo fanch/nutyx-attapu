@@ -13,7 +13,7 @@ build() {
 	cd $name-$version
 	patch -Np0 -i $SRC/httpserver.patch	
 	cmake . -DCMAKE_BUILD_TYPE=Release \
-                -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+                -DCMAKE_INSTALL_PREFIX=/usr \
                 -DCMAKE_SKIP_RPATH=ON \
                 -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
                 -DENABLE_MEDIAPLAYER_PLUGIN=false

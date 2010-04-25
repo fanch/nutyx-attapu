@@ -14,12 +14,12 @@ build() {
 	cd build
 	cmake ../$name-$version \
 	-DCMAKE_BUILD_TYPE=Release \
-	-DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+	-DCMAKE_INSTALL_PREFIX=/usr \
 	-DBUILD_doc=OFF
 	make
 	make DESTDIR=$PKG install
 
 	# icons are included in kdebase-runtime
-	rm -r $PKG/$KDE_PREFIX/share/icons/oxygen/
+	rm -r $PKG//usr/share/icons/oxygen/
 }
 

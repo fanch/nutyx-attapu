@@ -14,10 +14,10 @@ build() {
 	cd $name-$version
 	mkdir build
         cd build
-        cmake ../ -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX \
+        cmake ../ -DCMAKE_INSTALL_PREFIX=/usr \
 	-DCMAKE_SKIP_RPATH=ON \
 	-DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed'
 	make -j3
 	make DESTDIR=$PKG install
-	cp $SRC/splash_screen.jpg $PKG/$KDE_PREFIX/share/apps/amarok/images/splash_screen.jpg
+	cp $SRC/splash_screen.jpg $PKG//usr/share/apps/amarok/images/splash_screen.jpg
 }

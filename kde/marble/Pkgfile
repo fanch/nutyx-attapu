@@ -11,7 +11,7 @@ source=(http://developer.kde.org/~tackat/marble/marble-${version}_rev1005857.tar
 
 build() {
         cd $name
-        cmake ../$name -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX
+        cmake ../$name -DCMAKE_INSTALL_PREFIX=/usr
         make
         make DESTDIR=$PKG install
 }
