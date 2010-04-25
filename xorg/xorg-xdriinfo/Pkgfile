@@ -1,7 +1,8 @@
-# Description: Query configuration information of DRI drivers
+# Description: Requête d'information sur la configuration des pilotres DRI
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-libx11, xorg-glproto
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11, xorg-glproto, mesa3d
 
 name=xorg-xdriinfo
 version=1.0.2
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xdriinfo-$version.ta
 build() {
 	cd xdriinfo-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
