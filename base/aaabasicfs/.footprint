@@ -7,6 +7,8 @@ crw-------	root/root	dev/console (5, 1)
 crw-rw-rw-	root/root	dev/null (1, 3)
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/X11/
+drwxr-xr-x	root/root	etc/X11/xorg.conf.d/
+-rw-r--r--	root/root	etc/X11/xorg.conf.d/10-keyboard.conf
 -rw-r--r--	root/root	etc/bashrc
 -rw-r--r--	root/root	etc/blfs-bootscripts
 drwxr-xr-x	root/root	etc/default/
@@ -136,6 +138,7 @@ drwxr-x---	root/root	root/
 -rw-r--r--	root/root	root/.bash_profile
 -rw-r--r--	root/root	root/.bashrc
 lrwxrwxrwx	root/root	root/.xinitrc -> ../etc/skel/.xinitrc
+lrwxrwxrwx	root/root	root/10-keyboard.conf -> ../etc/X11/xorg.conf.d/10-keyboard.conf
 lrwxrwxrwx	root/root	root/X.sh -> ../etc/profile.d/X.sh
 lrwxrwxrwx	root/root	root/bashrc -> ../etc/bashrc
 drwxr-xr-x	root/root	root/bin/
@@ -166,7 +169,6 @@ lrwxrwxrwx	root/root	root/resolv.conf -> ../etc/resolv.conf
 lrwxrwxrwx	root/root	root/shells -> ../etc/shells
 lrwxrwxrwx	root/root	root/unmask.sh -> ../etc/profile.d/unmask.sh
 lrwxrwxrwx	root/root	root/useradd -> ../etc/default/useradd
-lrwxrwxrwx	root/root	root/xorg.conf -> ../etc/X11/xorg.conf
 drwxr-xr-x	root/root	sbin/
 drwxr-xr-x	root/root	srv/
 drwxrwxrwt	root/root	srv/sources/

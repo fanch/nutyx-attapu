@@ -9,7 +9,7 @@ version=2010
 release=1
 scriptsversion=lfs-bootscripts-20100124
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
- hosts clock console fstab inittab message inputrc network \
+ hosts clock console fstab inittab message inputrc network 10-keyboard.conf \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
  blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc )
 
@@ -170,7 +170,8 @@ EOF
 [Desktop]
 Session=
 EOF
-	mkdir -v $PKG/etc/X11
+	mkdir -vp $PKG/etc/X11/xorg.conf.d
+	cp -v $SRC/10-keyboard.conf $PKG/etc/X11/xorg.conf.d/
 	cd $PKG/root/
 	ln -s ../etc/fstab
 	ln -s ../etc/hosts
@@ -196,7 +197,7 @@ EOF
 	ln -s ../etc/sysconfig/console
 	ln -s ../etc/sysconfig/network
 	ln -s ../etc/sysconfig/modules
-	ln -s ../etc/X11/xorg.conf
+	ln -s ../etc/X11/xorg.conf.d/10-keyboard.conf
 	ln -s ../etc/default/useradd
 	ln -s ../etc/prt-get.conf
 	ln -s ../etc/pkg-get.conf
