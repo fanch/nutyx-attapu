@@ -1,6 +1,7 @@
 # Description: Set the keyboard using the X Keyboard Extension
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX coret team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libx11, xorg-libxkbfile
 
 name=xorg-setxkbmap
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/setxkbmap-$version.t
 build() {
 	cd setxkbmap-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
