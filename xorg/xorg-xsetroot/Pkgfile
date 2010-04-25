@@ -1,6 +1,7 @@
 # Description: Root window parameter setting utility for X
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-server, xorg-xbitmaps, xorg-libx11, xorg-libxmu
 
 name=xorg-xsetroot
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xsetroot-$version.ta
 build() {
 	cd xsetroot-$version
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr --mandir=/usr/share/man
 
 	make
 	make DESTDIR=$PKG install
