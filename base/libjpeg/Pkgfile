@@ -2,10 +2,9 @@
 # URL: http://www.ijg.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=libjpeg
-version=7
+version=8a
 release=1
 source=( http://www.ijg.org/files/jpegsrc.v${version}.tar.gz)
 
