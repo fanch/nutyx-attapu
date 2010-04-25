@@ -1,6 +1,7 @@
 # Description: Query or set X gamma correction
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libx11, xorg-libxxf86vm
 
 name=xorg-xgamma
@@ -11,7 +12,7 @@ source=(http://xorg.freedesktop.org/releases/individual/app/xgamma-$version.tar.
 build() {
 	cd xgamma-$version
 
-	./configure --prefix=/usr --mandir=/usr/man
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install
