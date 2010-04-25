@@ -1,9 +1,8 @@
-drwxr-xr-x	root/root	opt/
-drwxr-xr-x	root/root	opt/kde/
-drwxr-xr-x	root/root	opt/kde/bin/
--rwxr-xr-x	root/root	opt/kde/bin/automoc4
-drwxr-xr-x	root/root	opt/kde/lib/
-drwxr-xr-x	root/root	opt/kde/lib/automoc4/
--rw-r--r--	root/root	opt/kde/lib/automoc4/Automoc4Config.cmake
--rw-r--r--	root/root	opt/kde/lib/automoc4/Automoc4Version.cmake
--rw-r--r--	root/root	opt/kde/lib/automoc4/automoc4.files.in
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/automoc4
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/automoc4/
+-rw-r--r--	root/root	usr/lib/automoc4/Automoc4Config.cmake
+-rw-r--r--	root/root	usr/lib/automoc4/Automoc4Version.cmake
+-rw-r--r--	root/root	usr/lib/automoc4/automoc4.files.in
