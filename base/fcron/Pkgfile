@@ -19,6 +19,7 @@ http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.
 		cd $name-$version
                 ./configure --prefix=/usr\
 			--sysconfdir=/etc \
+			--with-pam=no \
 			    --without-sendmail\
 			--localstatedir=/var \
 			    --with-boot-install=no\
