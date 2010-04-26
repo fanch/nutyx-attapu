@@ -5,10 +5,7 @@ lrwxrwxrwx	root/root	usr/bin/f95 -> gfortran
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/gcc/
 drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/
-drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/
-drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/limits.h
--rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.4.1/include-fixed/syslimits.h
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/gfortran.1
+drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.5.0/
+drwxr-xr-x	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.5.0/include-fixed/
+-rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.5.0/include-fixed/limits.h
+-rw-r--r--	root/root	usr/lib/gcc/i686-pc-linux-gnu/4.5.0/include-fixed/syslimits.h
