@@ -7,11 +7,12 @@
 name=guile
 version=1.8.7
 release=1
-source=( http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz)
-
+source=( http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz\
+	guile-gcc-4.5.0-doc-1.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../guile-gcc-4.5.0-doc-1.patch
 	sed -i -e '20,$ d' \
        	-e 's|slib)|&)\n(load-from-path "slib/guile.init")|' \
     	ice-9/slib.scm
