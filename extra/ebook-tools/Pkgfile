@@ -7,7 +7,7 @@
 name=ebook-tools
 version=0.1.1
 release=1
-source=(http://downloads.sourceforge.net/sourceforge/$name/$name/$name/$name/$name/$name/$name/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name/$name-$version.tar.gz)
 
 build() {
 cd $name-$version
