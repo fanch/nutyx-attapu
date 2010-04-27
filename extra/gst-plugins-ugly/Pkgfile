@@ -5,7 +5,7 @@
 # Depends on: gst-plugins-base, lame, liba52, libdvdnav, libdvdread, libmad, libmpeg2, libsidplay, libcdio, x264
 
 name=gst-plugins-ugly
-version=0.10.13
+version=0.10.14
 release=1
 source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
 
