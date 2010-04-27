@@ -20,6 +20,7 @@ drwxr-xr-x	root/root	usr/include/webkit-1.0/webkit/
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitdownload.h
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitenumtypes.h
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkiterror.h
+-rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitgeolocationpolicydecision.h
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkithittestresult.h
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitnetworkrequest.h
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitnetworkresponse.h
@@ -40,9 +41,9 @@ drwxr-xr-x	root/root	usr/include/webkit-1.0/webkit/
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitwebwindowfeatures.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.la
-lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so -> libwebkit-1.0.so.2.16.0
-lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so.2 -> libwebkit-1.0.so.2.16.0
--rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.so.2.16.0
+lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so -> libwebkit-1.0.so.2.17.2
+lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so.2 -> libwebkit-1.0.so.2.17.2
+-rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.so.2.17.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/webkit-1.0.pc
 drwxr-xr-x	root/root	usr/share/
@@ -70,6 +71,7 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/CallStackSidebarPane.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Callback.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/ChangesView.js
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Checkbox.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Color.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/ConsolePanel.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/ConsoleView.js
@@ -90,7 +92,14 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/FontView.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/ImageView.js
 drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/auditsIcon.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/back.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointBorder.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointConditionalBorder.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointConditionalCounterBorder.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointCounterBorder.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointsActivateButtonGlyph.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/breakpointsDeactivateButtonGlyph.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/checker.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/clearConsoleButtonGlyph.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/closeButtons.png
@@ -99,8 +108,6 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/cookie.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/database.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/databaseTable.png
--rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/deactivateBreakpointsButtonGlyph.png
--rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/deactivateBreakpointsDisabledButtonGlyph.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/debuggerContinue.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/debuggerPause.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/debuggerStepInto.png
@@ -150,6 +157,7 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/profileSmallIcon.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/profilesIcon.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/profilesSilhouette.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/programCounterBorder.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/radioDot.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/recordButtonGlyph.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/recordToggledButtonGlyph.png
@@ -177,6 +185,7 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/segmentSelected.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/segmentSelectedEnd.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/sessionStorage.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/spinner.gif
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/splitviewDimple.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/splitviewDividerBackground.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/statusbarBackground.png
@@ -236,6 +245,7 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/warningOrangeDot.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/warningsErrors.png
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/Images/whiteConnectorPoint.png
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/InjectedFakeWorker.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/InjectedScript.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/InjectedScriptAccess.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/InspectorBackendStub.js
@@ -289,6 +299,7 @@ drwxr-xr-x	root/root	usr/share/webkit-1.0/webinspector/Images/
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/View.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/WatchExpressionsSidebarPane.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/WelcomeView.js
+-rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/WorkersSidebarPane.js
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/audits.css
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/inspector.css
 -rw-r--r--	root/root	usr/share/webkit-1.0/webinspector/inspector.html
