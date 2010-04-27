@@ -8,11 +8,12 @@ name=gimp
 version=2.6.8
 release=3
 source=(ftp://ftp.gimp.org/pub/gimp/v2.6/gimp-$version.tar.bz2 \
-	gimp-splash-2009-2.png gimp.desktop)
+	gimp-splash-2009-2.png gimp.desktop libpng-1.4.patch)
 
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../libpng-1.4.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
