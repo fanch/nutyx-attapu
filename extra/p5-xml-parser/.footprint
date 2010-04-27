@@ -3,7 +3,6 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/5.12.0/
 drwxr-xr-x	root/root	usr/lib/perl5/5.12.0/i686-linux-thread-multi/
--rw-r--r--	root/root	usr/lib/perl5/5.12.0/i686-linux-thread-multi/perllocal.pod
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/
