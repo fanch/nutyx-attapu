@@ -5,8 +5,8 @@
 # Depends on: libcups, dbus-glib, libusb, hicolor-icon-theme
 
 name=cups
-version=1.4.2
-release=2
+version=1.4.3
+release=1
 source=( http://ftp.easysw.com/pub/$name/$version/$name-$version-source.tar.bz2\
        cups)
 
