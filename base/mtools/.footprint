@@ -1,8 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/amuFormat.sh
--rwxr-xr-x	root/root	usr/bin/floppyd
--rwxr-xr-x	root/root	usr/bin/floppyd_installtest
 lrwxrwxrwx	root/root	usr/bin/lz -> uz
 lrwxrwxrwx	root/root	usr/bin/mattrib -> mtools
 lrwxrwxrwx	root/root	usr/bin/mbadblocks -> mtools
