@@ -2,14 +2,16 @@
 # URL:http://sourceforge.net/projects/libmsn 
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cmake
+# Depends on: cmake, openssl
 
 name=libmsn
-version=4.0-beta7
+version=4.1
 release=1
-source=(http://freefr.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2)
+source=(http://freefr.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.bz2 \
+       openssl1.patch)
 
 build() {
+		patch -Np0 -i $SRC/openssl1.patch
 		cd $name-$version
 		mkdir build
 		cd build
