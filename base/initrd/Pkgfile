@@ -4,9 +4,9 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=initrd
-version=2.6.33.2
-release=3
-_tools=24042010
+version=2.6.33.3
+release=1
+_tools=27042010
 _baseversion=2.6.33
 SCRIPT_VERSION="attapu"
 source=()
@@ -18,7 +18,16 @@ tar xf kernel*
 mkdir -p $WDIR
 wget http://kiao.no-ip.info/NuTyX/tools/installtools-${_tools}.tar.gz
 tar -C $WDIR --use-compress-program=gzip -xf installtools-${_tools}.tar.gz
-
+for i in $WDIR/rootfs/install/setup-install \
+	 $WDIR/rootfs/install/setup-mirroir
+do
+	sed -i "s|#INSTALL#|install-$SCRIPT_VERSION.ash|" $i
+done
+for i in $WDIR/rootfs/etc/init.d/main.txt $WDIR/rootfs/etc/init.d/functions \
+	 $WDIR/rootfs/install/setup-grub
+do
+	sed -i "s|#VERSION#|$SCRIPT_VERSION|" $i
+done
 mkdir -p $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/{drivers,fs}
 cp -a lib/modules/${_baseversion}-NuTyX/kernel/crypto \
 $WDIR/rootfs/lib/modules/${_baseversion}-NuTyX/kernel/
