@@ -34,6 +34,8 @@ drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/canvas.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/canvas.pyc
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/canvas.pyo
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/ui.la
+-rwxr-xr-x	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/ui.so
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/vfs.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/vfs.pyc
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/gtk-2.0/gnome/vfs.pyo
