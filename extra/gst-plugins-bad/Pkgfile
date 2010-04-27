@@ -5,8 +5,8 @@
 # Depends on: gstreamer, gst-plugins-base, faad2, libsndfile, libmpcdec, libdc1394, faac, xvid, librsvg, amrwb, libmusicbrainz, libexif, directfb, esound, libdvdnav, sdl
 
 name=gst-plugins-bad
-version=0.10.17
-release=2
+version=0.10.18
+release=1
 source=(http://gstreamer.freedesktop.org/src/$name/$name-$version.tar.gz)
 
 build() {
