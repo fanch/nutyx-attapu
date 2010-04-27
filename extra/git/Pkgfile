@@ -5,7 +5,7 @@
 # Depends on: curl, libidn, expat, python
 
 name=git
-version=1.7.0.1
+version=1.7.1
 release=1
 source=(http://www.kernel.org/pub/software/scm/$name/$name-{,manpages-}$version.tar.bz2)
 
