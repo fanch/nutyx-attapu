@@ -1,11 +1,11 @@
-# Description: Python binding pour gstreamer
+# Description: Connecteurs python pour gstreamer
 # URL: http://gstreamer.freedesktop.org/modules/gst-python.html
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: gstreamer, gst-plugins-base, pygtk
 
 name=gst-python
-version=0.10.15
+version=0.10.18
 release=1
 source=(http://gstreamer.freedesktop.org/src/gst-python/gst-python-$version.tar.bz2)
 

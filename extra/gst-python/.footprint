@@ -74,6 +74,7 @@ drwxr-xr-x	root/root	usr/share/gst-python/0.10/examples/
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/fvumeter.py
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/gst-discover
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/gstfile.py
+-rw-r--r--	root/root	usr/share/gst-python/0.10/examples/maemogst.py
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/mixer.py
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/pipeline-tester
 -rw-r--r--	root/root	usr/share/gst-python/0.10/examples/play.py
