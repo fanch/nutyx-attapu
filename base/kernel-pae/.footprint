@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-2.6.33.2
--rw-r--r--	root/root	boot/config-2.6.33.2
-lrwxrwxrwx	root/root	boot/kernel -> kernel-2.6.33.2
--rw-r--r--	root/root	boot/kernel-2.6.33.2
+-rw-r--r--	root/root	boot/System.map-2.6.33.3
+-rw-r--r--	root/root	boot/config-2.6.33.3
+lrwxrwxrwx	root/root	boot/kernel -> kernel-2.6.33.3
+-rw-r--r--	root/root	boot/kernel-2.6.33.3
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/3com/
@@ -3673,6 +3673,7 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/arch/x86/lguest/
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/arch/x86/lib/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.atomic64_32.o.cmd
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.built-in.o.cmd
+-rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.cache-smp.o.cmd
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.checksum_32.o.cmd
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.delay.o.cmd
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/.getuser.o.cmd
@@ -3693,6 +3694,8 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/arch/x86/lib/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/atomic64_32.c
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/atomic64_32.o
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/built-in.o
+-rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/cache-smp.c
+-rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/cache-smp.o
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/checksum_32.S
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/checksum_32.o
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/clear_page_64.S
@@ -3731,6 +3734,7 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/arch/x86/lib/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/putuser.S
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/putuser.o
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/rwlock_64.S
+-rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/rwsem_64.S
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/semaphore_32.S
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/semaphore_32.o
 -rw-r--r--	root/root	usr/src/linux-2.6.33/arch/x86/lib/string_32.c
@@ -4491,6 +4495,7 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/b43/pcicore/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/b43/pcicore/autoselect.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/b43/phy/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/b43/phy/lp.h (EMPTY)
+-rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/b43/pio.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/b43legacy.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/b43legacy/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/b43legacy/dma.h (EMPTY)
@@ -7650,6 +7655,7 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/ssb/
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/ssb/b43/
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/ssb/b43/pci/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/ssb/b43/pci/bridge.h (EMPTY)
+-rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/ssb/blockio.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/ssb/driver/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/ssb/driver/pcicore.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/ssb/driver/pcicore/
