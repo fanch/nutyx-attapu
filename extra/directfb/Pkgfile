@@ -5,13 +5,14 @@
 # Depends on: libjpeg , libpng, freetype, xorg-libx11, mesa3d, libvncserver
 
 name=directfb
-version=1.4.1
+version=1.4.3
 release=1
-source=(ftp://ftp.debian.org/debian/pool/main/d/directfb/directfb_1.4.1.orig.tar.gz)
-
+source=(http://www.directfb.org/downloads/Core/DirectFB-1.4/DirectFB-$version.tar.gz \
+libpng-1.4.patch)
 # To build with multicore add --enable-multi
 build() {
-	cd $name-$version
+	cd  DirectFB-$version
+	patch -Np1 -i  ../libpng-1.4.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--enable-zlib \
