@@ -2,10 +2,9 @@
 # URL: http://www.mysql.com
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=libmysql
-version=5.1.41
+version=5.1.46
 release=1
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/mysql-$version.tar.gz )
 
