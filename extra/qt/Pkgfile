@@ -1,11 +1,11 @@
 # Description: Librairie très évolué de chez Nokia
 # URL: http://qt.nokia.com/products/
 # Maintainer: NuTyX core team
-# Packager: thierryn1 at hispeed dot ch
+# Packager: sibelle at free dot fr
 # Depends on: libpng, libjpeg, libmng, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
 
 name=qt
-version=4.6.1
+version=4.6.2
 release=1
 _name=qt-everywhere-opensource-src-${version}
 
