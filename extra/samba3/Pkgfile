@@ -5,23 +5,22 @@
 # Depends on: libcups, gamin
 
 name=samba3
-version=3.3.7
-release=2
+version=3.5.2
+release=1
 localname=samba
 source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz\
        smb.conf)
 
 
 build() {
-	cd $localname-$version/source
+	cd $localname-$version/source3
 	./configure --prefix=/usr \
 		--localstatedir=/var \
 		--sysconfdir=/etc \
                 --with-piddir=/var/run \
                 --with-pammodulesdir=/lib/security \
-		--with-fhs \
-                --with-cups \
-                --with-smbmount
+		--with-fhs --with-cups --with-syslog \
+                --with-cifsumount --with-cifsmount
 	make -j3
 	make DESTDIR=$PKG install
         
@@ -29,13 +28,12 @@ build() {
 
         chmod -v 644 $PKG/usr/include/libsmbclient.h
         install -d $PKG/lib
-	install -v -m755 nsswitch/libnss_win{s,bind}.so $PKG/lib
+	install -v -m755 $SRC/$localname-$version/nsswitch/libnss_win{s,bind}.so $PKG/lib
         ln -v -sf libnss_winbind.so $PKG/lib/libnss_winbind.so.2
         ln -v -sf libnss_wins.so $PKG/lib/libnss_wins.so.2
         
 	install -v -m644 ../examples/smb.conf.default $PKG/etc/samba/smb.conf.default
-        chmod -v 4755  \
-              $PKG/usr/sbin/{,u}mount.cifs
+        chmod -v 4755  $PKG/usr/sbin/{,u}mount.cifs
         cp $SRC/smb.conf $PKG/etc/samba/
 	#  cups 
         cd $PKG/usr/lib/
