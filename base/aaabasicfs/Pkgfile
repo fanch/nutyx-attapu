@@ -6,7 +6,7 @@
 
 name=aaabasicfs
 version=2010
-release=1
+release=beta-1
 scriptsversion=lfs-bootscripts-20100124
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
  hosts clock console fstab inittab message inputrc network \
@@ -47,7 +47,8 @@ build() {
 	# Creating essential Files and Symlinks
 	touch $PKG/etc/mtab
 	ln -sv bash $PKG/bin/sh
-	echo "$version-$release" > $PKG/etc/nutyx-version
+	mkdir -p $PKG/var/lib/pkg/
+	echo "$version-$release" > $PKG/var/lib/pkg/nutyx-version
 	cat > $PKG/etc/shells << "EOF"
 /bin/sh
 /bin/bash

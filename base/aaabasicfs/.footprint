@@ -16,7 +16,6 @@ drwxr-xr-x	root/root	etc/default/
 -rw-r--r--	root/root	etc/inittab
 -rw-r--r--	root/root	etc/inputrc
 -rw-r--r--	root/root	etc/mtab (EMPTY)
--rw-r--r--	root/root	etc/nutyx-version
 drwxr-xr-x	root/root	etc/opt/
 -rw-r--r--	root/root	etc/passwd
 -rw-r--r--	root/root	etc/profile
@@ -229,6 +228,8 @@ drwxr-xr-x	root/root	var/cache/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/locate/
 drwxr-xr-x	root/root	var/lib/misc/
+drwxr-xr-x	root/root	var/lib/pkg/
+-rw-r--r--	root/root	var/lib/pkg/nutyx-version
 drwxr-xr-x	root/root	var/local/
 drwxr-xr-x	root/root	var/lock/
 drwxr-xr-x	root/root	var/log/
