@@ -5,7 +5,7 @@
 # Depends on: libpng, libjpeg, libmng, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk
 
 name=qt
-version=4.6.2
+version=4.6.1
 release=1
 _name=qt-everywhere-opensource-src-${version}
 
