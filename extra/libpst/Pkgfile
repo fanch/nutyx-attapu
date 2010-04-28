@@ -1,0 +1,22 @@
+# Description: Convertisseur Outlook.pst pour evolution
+# URL: http://www.five-ten-sg.com/libpst/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: python, boost
+
+name=libpst
+version=0.6.41
+release=1
+source=( http://www.five-ten-sg.com/libpst/packages/$name-$version.tar.gz)
+
+
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr\
+	--mandir=/usr/share/man\
+	--infodir=/usr/share/info \
+	--disable-static --enable-libpst-shared --disable-dii
+	make
+	make DESTDIR=$PKG install
+}
