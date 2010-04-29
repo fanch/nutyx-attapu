@@ -6,15 +6,18 @@
 
 name=slim
 version=1.3.1
-release=3
+release=4
 source=(http://download.berlios.de/$name/$name-$version.tar.gz\
 	http://kiao.no-ip.info/NuTyX/files/slimnutyx-2009.2.tar.gz
-	stdlib.patch xinitrc gcc44.patch \
-	slim slim.conf )
+	stdlib.patch xinitrc gcc44.patch slim-restart.patch\
+	slim slim.conf slim-tty-slowness.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../slim-tty-slowness.patch
 	patch -Np1 -i ../gcc44.patch
+	patch -Np1 -i ../slim-restart.patch
+	sed -i -e 's/png12/png14/g' Makefile
 	make
 	sed -i "s|/usr/X11R6/include|/usr/include/xorg|g" slim.conf
 	sed -i "s|/usr/X11R6/|/usr/|g" slim.conf

@@ -1,6 +1,8 @@
 87a3a022fa1d6dfe460c2989de1da5db  gcc44.patch
 f7e9ef62e3d4c8e3e85865c0a169fc5f  slim
 727d0acb24c0fbf0751134c37a9c895f  slim-1.3.1.tar.gz
+648d871fe7d2a97b7d7b928019e2feee  slim-restart.patch
+be48f19a2e2f154bed750171e8d0fc7f  slim-tty-slowness.patch
 d0c5fd4f91c385cc23c35f981ac2c695  slim.conf
 fdfe21bf4e734d7bdcdcd827b7e13585  slimnutyx-2009.2.tar.gz
 9143a67ce78ca11a7e811138859ad54f  stdlib.patch
