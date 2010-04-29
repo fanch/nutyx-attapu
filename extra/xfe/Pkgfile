@@ -8,12 +8,13 @@ name=xfe
 version=1.32.1
 release=2
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz\
-	$name-$version-pos-01.patch)
+	$name-$version-pos-01.patch gcc4.5.patch)
 
 
 build() {
 	cd $name-$version
 	patch -Np1 -i ../$name-$version-pos-01.patch
+	patch -Np0 -i ../gcc4.5.patch
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
