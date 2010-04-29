@@ -5,12 +5,13 @@
 # Depends on: python, libcups
 
 name=pycups
-version=1.9.44
+version=1.9.49
 release=1
-source=(http://cyberelk.net/tim/data/pycups/$name-$version.tar.bz2)
-
+source=(http://cyberelk.net/tim/data/pycups/$name-$version.tar.bz2\
+ pycups-1.9.49-python-2.5.patch)
 build() {
 	cd $name-$version
+	patch -Np1 -i ../pycups-1.9.49-python-2.5.patch
 	make
 	make DESTDIR=$PKG install
 }

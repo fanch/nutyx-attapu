@@ -1,0 +1,9 @@
+--- pycups-1.9.49/setup.py.orig	2010-04-29 22:54:22.000000000 +0200
++++ pycups-1.9.49/setup.py	2010-04-29 22:55:20.000000000 +0200
+@@ -3,4 +3,5 @@
+        ext_modules=[Extension("cups",
+                               ["cupsmodule.c", "cupsconnection.c",
+                                "cupsppd.c", "cupsipp.c"],
+-                              libraries=["cups"])])
++                              libraries=["cups"],
++				define_macros=[("VERSION", '"1.9.49"')])])
