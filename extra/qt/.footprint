@@ -2850,6 +2850,7 @@ drwxr-xr-x	root/root	usr/include/phonon/
 -rw-r--r--	root/root	usr/include/phonon/ObjectDescriptionModel
 -rw-r--r--	root/root	usr/include/phonon/ObjectDescriptionModelData
 -rw-r--r--	root/root	usr/include/phonon/Path
+-rw-r--r--	root/root	usr/include/phonon/Phonon
 -rw-r--r--	root/root	usr/include/phonon/PlatformPlugin
 -rw-r--r--	root/root	usr/include/phonon/SeekSlider
 -rw-r--r--	root/root	usr/include/phonon/StreamInterface
@@ -2897,123 +2898,123 @@ drwxr-xr-x	root/root	usr/include/phonon/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libQt3Support.la
 -rw-r--r--	root/root	usr/lib/libQt3Support.prl
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.6 -> libQt3Support.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so -> libQt3Support.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4 -> libQt3Support.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQt3Support.so.4.6 -> libQt3Support.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQt3Support.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtAssistantClient.prl
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.6 -> libQtAssistantClient.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so -> libQtAssistantClient.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4 -> libQtAssistantClient.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtAssistantClient.so.4.6 -> libQtAssistantClient.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtAssistantClient.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtCLucene.la
 -rw-r--r--	root/root	usr/lib/libQtCLucene.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.6 -> libQtCLucene.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so -> libQtCLucene.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4 -> libQtCLucene.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtCLucene.so.4.6 -> libQtCLucene.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtCLucene.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtCore.la
 -rw-r--r--	root/root	usr/lib/libQtCore.prl
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.6 -> libQtCore.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so -> libQtCore.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4 -> libQtCore.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtCore.so.4.6 -> libQtCore.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtCore.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtDBus.la
 -rw-r--r--	root/root	usr/lib/libQtDBus.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.6 -> libQtDBus.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so -> libQtDBus.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4 -> libQtDBus.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDBus.so.4.6 -> libQtDBus.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtDBus.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtDesigner.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.6 -> libQtDesigner.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so -> libQtDesigner.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4 -> libQtDesigner.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesigner.so.4.6 -> libQtDesigner.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtDesigner.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtDesignerComponents.prl
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.6 -> libQtDesignerComponents.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so -> libQtDesignerComponents.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4 -> libQtDesignerComponents.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtDesignerComponents.so.4.6 -> libQtDesignerComponents.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtDesignerComponents.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtGui.la
 -rw-r--r--	root/root	usr/lib/libQtGui.prl
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.6 -> libQtGui.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so -> libQtGui.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4 -> libQtGui.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtGui.so.4.6 -> libQtGui.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtGui.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtHelp.la
 -rw-r--r--	root/root	usr/lib/libQtHelp.prl
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.6 -> libQtHelp.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so -> libQtHelp.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4 -> libQtHelp.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtHelp.so.4.6 -> libQtHelp.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtHelp.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtMultimedia.la
 -rw-r--r--	root/root	usr/lib/libQtMultimedia.prl
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so -> libQtMultimedia.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4 -> libQtMultimedia.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4.6 -> libQtMultimedia.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtMultimedia.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so -> libQtMultimedia.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4 -> libQtMultimedia.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtMultimedia.so.4.6 -> libQtMultimedia.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtMultimedia.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtNetwork.la
 -rw-r--r--	root/root	usr/lib/libQtNetwork.prl
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.6 -> libQtNetwork.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so -> libQtNetwork.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4 -> libQtNetwork.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtNetwork.so.4.6 -> libQtNetwork.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtNetwork.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.la
 -rw-r--r--	root/root	usr/lib/libQtOpenGL.prl
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.6 -> libQtOpenGL.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so -> libQtOpenGL.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4 -> libQtOpenGL.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtOpenGL.so.4.6 -> libQtOpenGL.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtOpenGL.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtScript.la
 -rw-r--r--	root/root	usr/lib/libQtScript.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.6 -> libQtScript.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so -> libQtScript.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4 -> libQtScript.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtScript.so.4.6 -> libQtScript.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtScript.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.la
 -rw-r--r--	root/root	usr/lib/libQtScriptTools.prl
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.6 -> libQtScriptTools.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so -> libQtScriptTools.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4 -> libQtScriptTools.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtScriptTools.so.4.6 -> libQtScriptTools.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtScriptTools.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtSql.la
 -rw-r--r--	root/root	usr/lib/libQtSql.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.6 -> libQtSql.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so -> libQtSql.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4 -> libQtSql.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtSql.so.4.6 -> libQtSql.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtSql.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtSvg.la
 -rw-r--r--	root/root	usr/lib/libQtSvg.prl
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.6 -> libQtSvg.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so -> libQtSvg.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4 -> libQtSvg.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtSvg.so.4.6 -> libQtSvg.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtSvg.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtTest.la
 -rw-r--r--	root/root	usr/lib/libQtTest.prl
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.6 -> libQtTest.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so -> libQtTest.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4 -> libQtTest.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtTest.so.4.6 -> libQtTest.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtTest.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtUiTools.a
 -rw-r--r--	root/root	usr/lib/libQtUiTools.prl
 -rw-r--r--	root/root	usr/lib/libQtWebKit.la
 -rw-r--r--	root/root	usr/lib/libQtWebKit.prl
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.6 -> libQtWebKit.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so -> libQtWebKit.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4 -> libQtWebKit.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtWebKit.so.4.6 -> libQtWebKit.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtWebKit.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtXml.la
 -rw-r--r--	root/root	usr/lib/libQtXml.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.6 -> libQtXml.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so -> libQtXml.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4 -> libQtXml.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtXml.so.4.6 -> libQtXml.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtXml.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.la
 -rw-r--r--	root/root	usr/lib/libQtXmlPatterns.prl
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.6.1
-lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.6 -> libQtXmlPatterns.so.4.6.1
--rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so -> libQtXmlPatterns.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4 -> libQtXmlPatterns.so.4.6.2
+lrwxrwxrwx	root/root	usr/lib/libQtXmlPatterns.so.4.6 -> libQtXmlPatterns.so.4.6.2
+-rwxr-xr-x	root/root	usr/lib/libQtXmlPatterns.so.4.6.2
 -rw-r--r--	root/root	usr/lib/libphonon.la
 -rw-r--r--	root/root	usr/lib/libphonon.prl
 lrwxrwxrwx	root/root	usr/lib/libphonon.so -> libphonon.so.4.3.1
@@ -3167,6 +3168,8 @@ drwxr-xr-x	root/root	usr/share/qt/mkspecs/features/symbian/
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/application_icon.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/armcc_warnings.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/data_caging_paths.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/def_files.prf
+-rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/def_files_disabled.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/default_post.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/default_pre.prf
 -rw-r--r--	root/root	usr/share/qt/mkspecs/features/symbian/epocallowdlldata.prf
