@@ -1,0 +1,27 @@
+# Description: Pilotes pour les cartes graphiques NVIDIA
+# URL: http://www.nvidia.com/object/unix.html
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-server, nvidia
+
+name=nvidia-settings
+version=195.36.24
+release=1
+[ "`uname -m`" == "i686"   ] && _ARCH=x86
+[ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
+source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg0.run)
+
+build() {
+	sh NVIDIA-Linux-${_ARCH}-$version-pkg0.run --extract-only
+	cd NVIDIA-Linux-${_ARCH}-$version-pkg0
+
+
+
+	mkdir -p $PKG/usr/lib \
+		$PKG/usr/bin $PKG/usr/share/man/man1
+
+	# install xconfig/settings programs and manpages
+	install -m 0755 usr/bin/nvidia-{xconfig,settings} $PKG/usr/bin/
+	install -m 0644 usr/share/man/man1/nvidia-{xconfig,settings}.1.gz \
+		$PKG/usr/share/man/man1/
+}
