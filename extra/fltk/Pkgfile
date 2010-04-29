@@ -5,7 +5,7 @@
 # Depends on: libjpeg libpng12 xorg-libxft xorg-libxi xorg-libxinerama mesa3d
 
 name=fltk
-version=r6960
+version=r7513
 release=1
 source=(http://ftp.easysw.com/pub/fltk/snapshots/fltk-2.0.x-$version.tar.bz2\
 	scandir_posix.patch)
