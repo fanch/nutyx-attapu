@@ -5,13 +5,11 @@
 # Depends on: xorg-server
 
 name=nvidia
-#version=190.53
-version=195.36.15
+version=195.36.24
 release=1
 [ "`uname -m`" == "i686"   ] && _ARCH=x86
 [ "`uname -m`" == "x86_64"   ] && _ARCH=x86_64
-source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg0.run\
-	$name-makefile.patch)
+source=(http://us.download.nvidia.com/XFree86/Linux-${_ARCH}/$version/NVIDIA-Linux-${_ARCH}-$version-pkg0.run)
 
 build() {
 	sh NVIDIA-Linux-${_ARCH}-$version-pkg0.run --extract-only
@@ -50,5 +48,11 @@ build() {
 	# install it
 	install -m 0644 -D nvidia.ko \
 		$PKG/lib/modules/`uname -r`/kernel/video/nvidia/nvidia.ko
-
+	mkdir -p $PKG/etc/X11/xorg.conf.d
+cat > $PKG/etc/X11/xorg.conf.d/30-nvidia.conf << "EOF"
+Section "Device"
+        Identifier      "NVIDIA"
+        Driver          "nvidia"
+EndSection
+EOF
 }
