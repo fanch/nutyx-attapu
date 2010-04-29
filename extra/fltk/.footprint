@@ -209,7 +209,6 @@ lrwxrwxrwx	root/root	usr/lib/libfltk2_glut.so -> libfltk2_glut.so.2.0
 -rw-r--r--	root/root	usr/lib/libfltk2_images.a
 lrwxrwxrwx	root/root	usr/lib/libfltk2_images.so -> libfltk2_images.so.2.0
 -rwxr-xr-x	root/root	usr/lib/libfltk2_images.so.2.0
--rw-r--r--	root/root	usr/lib/libfltk2_png.a
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
