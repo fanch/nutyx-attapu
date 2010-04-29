@@ -8,9 +8,9 @@ name=slib
 version=3a5
 release=1
 source=( http://groups.csail.mit.edu/mac/ftpdir/scm/OLD//$name$version.tar.gz\
-         http://www.linuxfromscratch.org/patches/blfs/svn/slib-3a4-guile_fixes-1.patch\
          slibcat)
 
+#         http://www.linuxfromscratch.org/patches/blfs/svn/slib-3a4-guile_fixes-1.patch\
 
 build() {
 	cd $name
