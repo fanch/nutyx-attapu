@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/include/poppler/qt4/
 -rw-r--r--	root/root	usr/include/poppler/qt4/poppler-export.h
 -rw-r--r--	root/root	usr/include/poppler/qt4/poppler-form.h
 -rw-r--r--	root/root	usr/include/poppler/qt4/poppler-link.h
+-rw-r--r--	root/root	usr/include/poppler/qt4/poppler-optcontent.h
 -rw-r--r--	root/root	usr/include/poppler/qt4/poppler-page-transition.h
 -rw-r--r--	root/root	usr/include/poppler/qt4/poppler-qt4.h
 drwxr-xr-x	root/root	usr/lib/
