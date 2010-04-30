@@ -7,7 +7,7 @@
 name=gnokii
 version=0.6.28.1
 release=1
-source=(http://www.gnokii.org/download/$name/gnokii-$version.tar.bz2 \
+source=(http://www.gnokii.org/download/$name/0.6.x/gnokii-$version.tar.bz2 \
 	gnokii.patch)
 
 build() {
