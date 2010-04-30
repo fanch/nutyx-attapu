@@ -1,0 +1,34 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/ODBCDataSources/
+-rw-r--r--	root/root	etc/odbc.ini (EMPTY)
+-rw-r--r--	root/root	etc/odbcinst.ini (EMPTY)
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dltest
+-rwxr-xr-x	root/root	usr/bin/isql
+-rwxr-xr-x	root/root	usr/bin/iusql
+-rwxr-xr-x	root/root	usr/bin/odbc_config
+-rwxr-xr-x	root/root	usr/bin/odbcinst
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/odbcinst.h
+-rw-r--r--	root/root	usr/include/odbcinstext.h
+-rw-r--r--	root/root	usr/include/sql.h
+-rw-r--r--	root/root	usr/include/sqlext.h
+-rw-r--r--	root/root	usr/include/sqltypes.h
+-rw-r--r--	root/root	usr/include/sqlucode.h
+-rw-r--r--	root/root	usr/include/unixodbc_conf.h
+-rw-r--r--	root/root	usr/include/uodbc_extras.h
+-rw-r--r--	root/root	usr/include/uodbc_stats.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libodbc.la
+lrwxrwxrwx	root/root	usr/lib/libodbc.so -> libodbc.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libodbc.so.1 -> libodbc.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libodbc.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libodbccr.la
+lrwxrwxrwx	root/root	usr/lib/libodbccr.so -> libodbccr.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libodbccr.so.1 -> libodbccr.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libodbccr.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libodbcinst.la
+lrwxrwxrwx	root/root	usr/lib/libodbcinst.so -> libodbcinst.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libodbcinst.so.1 -> libodbcinst.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libodbcinst.so.1.0.0

@@ -1,11 +1,10 @@
-# Description:
-# URL:
+# Description: Implémentation libre permettant une application pour accéder aux données via odbc
+# URL: http://www.unixodbc.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=unixodbc
-version=2.2.14
+version=2.3.0
 release=1
 source=(http://www.unixodbc.org/unixODBC-$version.tar.gz)
 build() { 
