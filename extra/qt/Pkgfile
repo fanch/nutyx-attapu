@@ -30,7 +30,8 @@ build() {
 		-plugin-sql-{mysql,sqlite} \
 		-system-sqlite \
 		-xmlpatterns \
-		-phonon \
+		-no-phonon \
+		-no-phonon-backend \
 		-svg \
 		-webkit \
 		-scripttools \
