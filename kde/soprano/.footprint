@@ -171,6 +171,9 @@ lrwxrwxrwx	root/root	usr/lib/libsopranoserver.so.1 -> libsopranoserver.so.1.2.0
 -rwxr-xr-x	root/root	usr/lib/libsopranoserver.so.1.2.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/soprano.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/sopranoclient.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/sopranoindex.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/sopranoserver.pc
 drwxr-xr-x	root/root	usr/lib/soprano/
 -rwxr-xr-x	root/root	usr/lib/soprano/libsoprano_nquadparser.so
 -rwxr-xr-x	root/root	usr/lib/soprano/libsoprano_nquadserializer.so

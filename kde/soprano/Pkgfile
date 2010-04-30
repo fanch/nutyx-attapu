@@ -5,7 +5,7 @@
 # Depends on: cmake, qt, redland, clucene, virtuoso, libiodbc
 
 name=soprano
-version=2.4.0.1
+version=2.4.3
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
