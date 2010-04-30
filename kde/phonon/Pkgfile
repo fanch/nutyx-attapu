@@ -4,15 +4,14 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: qt, xine-lib, cmake, automoc4
 name=phonon
-version=4.3.95
+version=4.4.0
 release=1
-_name=phonon
-source=(http://kiao.no-ip.info/NuTyX/files/${name}-$version.tar.gz)
+source=(http://download.kde.org/stable/$name/$version/${name}-$version.tgz)
 build() {
 
 mkdir build
 cd build
-cmake ../${_name}-${version} \
+cmake ../${name}-* \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DCMAKE_INSTALL_PREFIX=/usr
 make
