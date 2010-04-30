@@ -4,8 +4,8 @@
 # Packager: lesibel at free dot ch
 
 name=virtuoso
-version=6.1.0
-release=2
+version=6.1.1
+release=1
 source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-opensource-$version.tar.gz)
 build() {
 	cd $name-opensource-$version

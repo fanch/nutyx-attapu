@@ -5,6 +5,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/virt_mail
 -rwxr-xr-x	root/root	usr/bin/virtuoso-t
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/hibernate/
+-rw-r--r--	root/root	usr/lib/hibernate/virt_dialect.jar
 drwxr-xr-x	root/root	usr/lib/jdbc-2.0/
 -rw-r--r--	root/root	usr/lib/jdbc-2.0/virtjdbc2.jar
 drwxr-xr-x	root/root	usr/lib/jdbc-3.0/
@@ -18,6 +20,8 @@ drwxr-xr-x	root/root	usr/lib/jena/
 -rw-r--r--	root/root	usr/lib/libvirtuoso-t.a
 -rwxr-xr-x	root/root	usr/lib/libvirtuoso-t.la
 drwxr-xr-x	root/root	usr/lib/sesame/
+-rw-r--r--	root/root	usr/lib/sesame/create-virtuoso.xsl
+-rw-r--r--	root/root	usr/lib/sesame/create.xsl
 -rw-r--r--	root/root	usr/lib/sesame/virt_sesame.jar
 -rw-r--r--	root/root	usr/lib/sesame/virt_sesame2.jar
 -rw-r--r--	root/root	usr/lib/sesame/virt_sesame3.jar
@@ -48,6 +52,7 @@ drwxr-xr-x	root/root	usr/share/virtuoso/doc/
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.CVS
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.UPGRADE
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.WINDOWS
+-rw-r--r--	root/root	usr/share/virtuoso/doc/README.hibernate
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.jena
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.jsse
 -rw-r--r--	root/root	usr/share/virtuoso/doc/README.php5
