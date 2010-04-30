@@ -5,8 +5,8 @@
 # Depends on: libusb, libjpeg, libtiff, libgphoto2, libieee1284, gtk, libexif
 
 name=sane
-version=1.0.20
-release=2
+version=1.0.21
+release=1
 source=( ftp://ftp2.sane-project.org/pub/sane/$name-backends-$version/$name-backends-$version.tar.gz)
 
 
