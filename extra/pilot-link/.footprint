@@ -43,8 +43,10 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/pi-address.h
 -rw-r--r--	root/root	usr/include/pi-appinfo.h
 -rw-r--r--	root/root	usr/include/pi-args.h
+-rw-r--r--	root/root	usr/include/pi-blob.h
 -rw-r--r--	root/root	usr/include/pi-bluetooth.h
 -rw-r--r--	root/root	usr/include/pi-buffer.h
+-rw-r--r--	root/root	usr/include/pi-calendar.h
 -rw-r--r--	root/root	usr/include/pi-cmp.h
 -rw-r--r--	root/root	usr/include/pi-contact.h
 -rw-r--r--	root/root	usr/include/pi-datebook.h
@@ -57,6 +59,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/pi-header.h
 -rw-r--r--	root/root	usr/include/pi-hinote.h
 -rw-r--r--	root/root	usr/include/pi-inet.h
+-rw-r--r--	root/root	usr/include/pi-location.h
 -rw-r--r--	root/root	usr/include/pi-macros.h
 -rw-r--r--	root/root	usr/include/pi-mail.h
 -rw-r--r--	root/root	usr/include/pi-md5.h

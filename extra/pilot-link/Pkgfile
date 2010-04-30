@@ -2,15 +2,17 @@
 # URL: http://www.pilot-link.org/
 # Maintainer: NutyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on :
+# Depends on: libusb, libpng, popt
 
 name=pilot-link
-version=0.12.3
+version=0.12.5
 release=1
-source=(http://downloads.pilot-link.org/$name-$version.tar.bz2)
+source=(http://downloads.pilot-link.org/$name-$version.tar.bz2\
+	pilot-link-png14.patch)
 
 build () {
 cd $name-$version
+patch -Np1 -i ../pilot-link-png14.patch
 ./configure --prefix=/usr \
 	--enable-conduits \
 	--enable-libusb \
