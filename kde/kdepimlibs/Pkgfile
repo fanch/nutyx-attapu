@@ -17,4 +17,5 @@ build() {
 	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
 	make -j3
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc
 }
