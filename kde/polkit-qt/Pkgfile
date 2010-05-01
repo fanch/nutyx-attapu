@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: policykit, qt, cmake
+# Depends on: policykit, qt, cmake, automoc4
 
 name=polkit-qt
 version=0.95.1
