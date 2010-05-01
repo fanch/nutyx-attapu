@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kwalletmanager
 -rwxr-xr-x	root/root	usr/bin/kwikdisk
 -rwxr-xr-x	root/root	usr/bin/okteta
+lrwxrwxrwx	root/root	usr/bin/printer-applet -> /usr/share/apps/printer-applet/printer-applet.py
 -rwxr-xr-x	root/root	usr/bin/superkaramba
 -rwxr-xr-x	root/root	usr/bin/sweeper
 drwxr-xr-x	root/root	usr/lib/
@@ -26,6 +27,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libbz2.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libgz.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libxz.so
+-rwxr-xr-x	root/root	usr/lib/kde4/libextracthere.so
 -rwxr-xr-x	root/root	usr/lib/kde4/libkbytearrayedit.so
 -rwxr-xr-x	root/root	usr/lib/kde4/oktetapart.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_package_superkaramba.so
@@ -324,6 +326,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/encryptfile.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/encryptfolder.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/viewdecrypted.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/ark_dndextract.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ark_part.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kbytearrayedit.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_lirc.desktop
