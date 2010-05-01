@@ -5,9 +5,9 @@
 # Depends on: glib
 
 name=desktop-file-utils
-version=0.15
+version=0.16
 release=1
-source=( http://freedesktop.org/software/$name/releases/$name-$version.tar.gz)
+source=( http://freedesktop.org/software/$name/releases/$name-$version.tar.bz2)
 
 
 build() {
