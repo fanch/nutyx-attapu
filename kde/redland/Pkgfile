@@ -12,9 +12,9 @@ source=(http://download.librdf.org/source/$name-$version.tar.gz\
 build() {
 	cd $name-$version
 	patch -Np1 -i ../librdf_storage_register_factory.patch
-#	sed -i -e 's/SQLITE_API/REDLAND_SQLITE_API/g' configure src/rdf_config.h.in src/rdf_storage_sqlite.c
-	sed -i -e '/SHAVE/d' configure.ac
-	autoreconf
+	sed -i -e 's/SQLITE_API/REDLAND_SQLITE_API/g' configure src/rdf_config.h.in src/rdf_storage_sqlite.c
+#	sed -i -e '/SHAVE/d' configure.ac
+#	autoreconf
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--with-raptor=system \
