@@ -21,5 +21,6 @@ build() {
 	-DBUILD_doc=OFF
 	make -j3
 	make DESTDIR=$PKG install
+	rm $PKG/usr/share/icons/hicolor/index.theme
 }
 
