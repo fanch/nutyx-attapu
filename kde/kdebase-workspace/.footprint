@@ -262,6 +262,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_calculatorrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_kill.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_locations.so
+-rwxr-xr-x	root/root	usr/lib/kde4/krunner_nepomuksearchrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_placesrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_plasma-desktop.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_powerdevil.so
@@ -363,6 +364,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_geolocation.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_hotplug.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_keystate.so
+-rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_metadata.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_mouse.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_network.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_notifications.so
@@ -2025,6 +2027,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-time.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-weather.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-akonadi.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-metadata.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-searchlaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-geolocation-ip.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-packagestructure-dashboard.desktop
@@ -2035,6 +2038,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-kill.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-kill_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-locations.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-nepomuksearch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-places.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-plasma-desktop.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-powerdevil.desktop
