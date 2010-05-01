@@ -2,7 +2,7 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: raptor, rasqal, sqlite3, unixodbc
+# Depends on: raptor, rasqal, sqlite3, unixodbc, gtk-doc
 
 name=redland
 version=1.0.10
