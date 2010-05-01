@@ -26,6 +26,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kuiserver
 -rwxr-xr-x	root/root	usr/bin/kwalletd
 -rwxr-xr-x	root/root	usr/bin/kwriteconfig
+-rwxr-xr-x	root/root	usr/bin/nepomukserver
+-rwxr-xr-x	root/root	usr/bin/nepomukservicestub
 -rwxr-xr-x	root/root	usr/bin/plasmapkg
 -rwxr-xr-x	root/root	usr/bin/solid-hardware
 drwxr-xr-x	root/root	usr/etc/
@@ -57,6 +59,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kdnssd.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_knotify.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_locale.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_nepomuk.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_phonon.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_phononxine.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_trash.so
@@ -65,6 +68,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_device_automounter.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_kpasswdserver.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_ktimezoned.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kded_nepomuksearchmodule.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_networkwatcher.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_phononserver.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_remotedirnotify.so
@@ -82,6 +86,8 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_floppy.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_info.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_man.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kio_nepomuk.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kio_nepomuksearch.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_network.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_nfs.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_remote.so
@@ -89,6 +95,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_sftp.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_smb.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_thumbnail.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kio_timeline.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_trash.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kshorturifilter.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kstyle_oxygen_config.so
@@ -111,6 +118,13 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/librenaudioplugin.so
 -rwxr-xr-x	root/root	usr/lib/kde4/librenimageplugin.so
 -rwxr-xr-x	root/root	usr/lib/kde4/localdomainurifilter.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukfilewatch.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukmigration1.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukontologyloader.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukqueryservice.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukremovablestorageservice.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukstorage.so
+-rwxr-xr-x	root/root	usr/lib/kde4/nepomukstrigiservice.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_appletscript_simple_javascript.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_dataenginescript_javascript.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_runnerscript_javascript.so
@@ -128,12 +142,15 @@ drwxr-xr-x	root/root	usr/lib/kde4/plugins/styles/
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_khelpcenter.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kuiserver.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kwalletd.so
+-rwxr-xr-x	root/root	usr/lib/libkdeinit4_nepomukserver.so
 lrwxrwxrwx	root/root	usr/lib/libkwalletbackend.so -> libkwalletbackend.so.4
 lrwxrwxrwx	root/root	usr/lib/libkwalletbackend.so.4 -> libkwalletbackend.so.4.4.0
 -rwxr-xr-x	root/root	usr/lib/libkwalletbackend.so.4.4.0
 lrwxrwxrwx	root/root	usr/lib/libmolletnetwork.so -> libmolletnetwork.so.4
 lrwxrwxrwx	root/root	usr/lib/libmolletnetwork.so.4 -> libmolletnetwork.so.4.4.0
 -rwxr-xr-x	root/root	usr/lib/libmolletnetwork.so.4.4.0
+drwxr-xr-x	root/root	usr/lib/strigi/
+-rwxr-xr-x	root/root	usr/lib/strigi/strigiindex_nepomukbackend.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/applications/kde4/
@@ -364,11 +381,17 @@ drwxr-xr-x	root/root	usr/share/apps/kwalletd/
 -rw-r--r--	root/root	usr/share/apps/kwalletd/kwalletd.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/libphonon/
 -rw-r--r--	root/root	usr/share/apps/libphonon/hardwaredatabase
+drwxr-xr-x	root/root	usr/share/apps/nepomukstorage/
+-rw-r--r--	root/root	usr/share/apps/nepomukstorage/nepomukstorage.notifyrc
+drwxr-xr-x	root/root	usr/share/apps/nepomukstrigiservice/
+-rw-r--r--	root/root	usr/share/apps/nepomukstrigiservice/nepomukstrigiservice.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/phonon/
 -rw-r--r--	root/root	usr/share/apps/phonon/phonon.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/remoteview/
 -rw-r--r--	root/root	usr/share/apps/remoteview/network.desktop
 -rw-r--r--	root/root	usr/share/apps/remoteview/smb-network.desktop
+drwxr-xr-x	root/root	usr/share/autostart/
+-rw-r--r--	root/root	usr/share/autostart/nepomukserver.desktop
 drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/khelpcenter.kcfg
 drwxr-xr-x	root/root	usr/share/config/
@@ -380,7 +403,16 @@ drwxr-xr-x	root/root	usr/share/config/
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.KTimeZoned.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.NepomukServer.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.khelpcenter.kcmhelpcenter.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.OntologyManager.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.Query.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.QueryService.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.RemovableStorage.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.ServiceControl.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.ServiceManager.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.Storage.xml
+-rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.nepomuk.Strigi.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.network.kioslavenotifier.xml
 drwxr-xr-x	root/root	usr/share/dbus-1/services/
 -rw-r--r--	root/root	usr/share/dbus-1/services/org.kde.knotify.service
@@ -524,6 +556,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/
 -rw-r--r--	root/root	usr/share/kde4/services/jpegthumbnail.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_attica.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_kdnssd.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcm_nepomuk.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_phonon.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_phononxine.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmcgi.desktop
@@ -535,6 +568,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kded/
 -rw-r--r--	root/root	usr/share/kde4/services/kded/device_automounter.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/kpasswdserver.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/ktimezoned.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kded/nepomuksearchmodule.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/networkwatcher.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/phononserver.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/remotedirnotify.desktop
@@ -553,6 +587,15 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kded/
 -rw-r--r--	root/root	usr/share/kde4/services/localdomainurifilter.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/lzma.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/man.protocol
+-rw-r--r--	root/root	usr/share/kde4/services/nepomuk.protocol
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukfilewatch.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukmigration1.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukontologyloader.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukqueryservice.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukremovablestorageservice.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomuksearch.protocol
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukstorage.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nepomukstrigiservice.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/network.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/nfs.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-scriptengine-applet-simple-javascript.desktop
@@ -668,12 +711,14 @@ drwxr-xr-x	root/root	usr/share/kde4/services/searchproviders/
 -rw-r--r--	root/root	usr/share/kde4/services/tar.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/textthumbnail.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/thumbnail.protocol
+-rw-r--r--	root/root	usr/share/kde4/services/timeline.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/trash.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/windowsexethumbnail.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/windowsimagethumbnail.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/xz.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/zip.protocol
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
+-rw-r--r--	root/root	usr/share/kde4/servicetypes/nepomukservice.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/phononbackend.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/searchprovider.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/thumbcreator.desktop
