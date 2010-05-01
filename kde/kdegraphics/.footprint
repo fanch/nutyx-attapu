@@ -97,7 +97,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_mobi.so
 -rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_ooo.so
 -rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_plucker.so
--rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_poppler.so
 -rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_tiff.so
 -rwxr-xr-x	root/root	usr/lib/kde4/okularGenerator_xps.so
 -rwxr-xr-x	root/root	usr/lib/kde4/okularpart.so
@@ -153,7 +152,6 @@ drwxr-xr-x	root/root	usr/share/applications/kde4/
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_kimgio.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_mobi.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_ooo.desktop
--rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_pdf.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_plucker.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_tiff.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okularApplication_xps.desktop
@@ -299,6 +297,8 @@ drwxr-xr-x	root/root	usr/share/apps/kolourpaint/pics/
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/image_rotate_clockwise.png
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/image_skew_horizontal.png
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/image_skew_vertical.png
+-rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/option_opaque.png
+-rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/option_transparent.png
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/resize.png
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/scale.png
 -rw-r--r--	root/root	usr/share/apps/kolourpaint/pics/smooth_scale.png
@@ -463,7 +463,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_mobi.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_ooo.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_plucker.desktop
--rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_poppler.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_tiff.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/libokularGenerator_xps.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/mobithumbnail.desktop
@@ -480,7 +479,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/okularMobi.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/okularOoo.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/okularPlucker.desktop
--rw-r--r--	root/root	usr/share/kde4/services/okularPoppler.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/okularTiff.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/okularXps.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/okular_part.desktop
