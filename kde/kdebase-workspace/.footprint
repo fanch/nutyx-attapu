@@ -215,6 +215,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_bell.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_clock.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_colors.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_desktopthemedetails.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_display.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fontinst.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fonts.so
@@ -231,6 +232,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwincompositing.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwindecoration.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwindesktop.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinrules.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinscreenedges.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwintabbox.so
@@ -243,6 +245,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_solid_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_standard_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_style.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_workspaceoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_xinerama.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_kephal.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_khotkeys.so
@@ -259,7 +262,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_calculatorrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_kill.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_locations.so
--rwxr-xr-x	root/root	usr/lib/kde4/krunner_nepomuksearchrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_placesrunner.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_plasma-desktop.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_powerdevil.so
@@ -361,7 +363,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_geolocation.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_hotplug.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_keystate.so
--rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_metadata.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_mouse.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_network.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_notifications.so
@@ -503,6 +504,21 @@ drwxr-xr-x	root/root	usr/share/apps/color-schemes/
 -rw-r--r--	root/root	usr/share/apps/color-schemes/OxygenCold.colors
 -rw-r--r--	root/root	usr/share/apps/color-schemes/Steel.colors
 -rw-r--r--	root/root	usr/share/apps/color-schemes/WontonSoup.colors
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/colors
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/metadata.desktop
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/background.svgz
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/panel-background.svgz
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/systemtray.svgz
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/calendar/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/default/calendar/mini-calendar.svgz
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/system-monitor/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/default/system-monitor/hdd_panel.svgz
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/widgets/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/default/widgets/battery-oxygen.svgz
 drwxr-xr-x	root/root	usr/share/apps/doc/
 drwxr-xr-x	root/root	usr/share/apps/doc/kdm/
 -rw-r--r--	root/root	usr/share/apps/doc/kdm/README
@@ -672,6 +688,7 @@ drwxr-xr-x	root/root	usr/share/apps/kdm/themes/circles/
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/circles.xml
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/flower.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/help.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/options.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/screenshot.png
 drwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/.directory
@@ -1840,6 +1857,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/clock.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/colors.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/desktop.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/desktopthemedetails.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/display.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fontinst.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fonts.desktop
@@ -1940,6 +1958,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/kwindecoration.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinfocus.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinmoving.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kwinoptions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinrules.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwinscreenedges.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwintabbox.desktop
@@ -2006,7 +2025,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-time.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-weather.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-akonadi.desktop
--rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-metadata.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-searchlaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-geolocation-ip.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-packagestructure-dashboard.desktop
@@ -2017,7 +2035,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-kill.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-kill_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-locations.desktop
--rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-nepomuksearch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-places.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-plasma-desktop.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-powerdevil.desktop
@@ -2079,6 +2096,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/solidbackends/
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_wicd.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/standard_actions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/style.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/workspaceoptions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/xinerama.desktop
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kwineffect.desktop

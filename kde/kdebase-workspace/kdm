@@ -11,7 +11,7 @@ case "$1" in
 		boot_mesg "Starting KDM"
 		export HOME=/root
 		cd $HOME
-		/opt/kde/bin/kdm
+		/usr/bin/kdm
 		;;
 	stop)
 		boot_mesg "Stopping KDM"
