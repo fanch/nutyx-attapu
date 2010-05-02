@@ -5,7 +5,7 @@
 # Depends on: expat
 
 name=neon
-version=0.26.3
+version=0.29.3
 release=1
 source=( http://www.webdav.org/neon/$name-$version.tar.gz)
 
@@ -13,10 +13,11 @@ source=( http://www.webdav.org/neon/$name-$version.tar.gz)
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
-		--with-ssl \
+		--with-ssl=openssl \
 		--enable-shared \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc/
 }
