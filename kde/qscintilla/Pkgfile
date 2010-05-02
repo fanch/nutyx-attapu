@@ -5,7 +5,7 @@
 # Depends on: qt
 
 name=qscintilla
-version=2.4.2
+version=2.4.3
 release=1
 source=(http://www.riverbankcomputing.com/static/Downloads/QScintilla2/QScintilla-gpl-$version.tar.gz)
 build() {
