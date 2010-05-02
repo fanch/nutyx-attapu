@@ -5,8 +5,8 @@
 # Depends on: libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
 
 name=chromium
-build=42902
-version=5.0.364.0
+build=46198
+version=5.0.394.0
 release=1
 
 source=(chromium.desktop chromium.sh drop_sse2.patch ffmpeg_branding_mime.patch libpng-1.4.patch)
