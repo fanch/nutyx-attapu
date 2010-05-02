@@ -7,10 +7,12 @@
 name=amule
 version=2.2.6
 release=2
-source=(http://download.berlios.de/amule/aMule-$version.tar.bz2)
+source=(http://download.berlios.de/amule/aMule-$version.tar.bz2\
+	amule-2.2.6-gcc-01.patch)
 
 build() {
 	cd aMule-$version
+	patch -Np1 -i ../amule-2.2.6-gcc-01.patch
 	export CFLAGS="${CFLAGS//-fstack-protector/}"
 	export CXXFLAGS="${CXXFLAGS//-fstack-protector/}"
 	./configure 	--prefix=/usr \

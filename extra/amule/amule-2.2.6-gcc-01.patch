@@ -1,0 +1,11 @@
+--- aMule-2.2.6/src/utils/wxCas/src/wxcasframe.cpp	2008-09-06 17:39:00.000000000 +0200
++++ aMule-2.2.6/src/utils/wxCas/src/wxcasframe.cpp.new	2010-05-02 14:34:26.000000000 +0200
+@@ -289,7 +289,7 @@
+ #else
+ 
+ 	memdc.
+-	SetFont ( wxFont::wxFont ( 8, wxSWISS, wxNORMAL, wxBOLD ) );
++	SetFont (wxFont ( 8, wxSWISS, wxNORMAL, wxBOLD ) );
+ #endif
+ 
+ 	memdc.
