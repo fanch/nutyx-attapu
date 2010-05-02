@@ -2,7 +2,7 @@
 # URL: http://www.mplayerhq.hu/DOCS/HTML/fr/index.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, yasm, faad2, x264, libcaca, speex, directfb, libmp4v2, xvid, amrnb, amrwb, libmpcdec, libdv, libmad, libpng, libmng, lzo, lame, faac, giflib,libogg, libcdio, esound, nas, libdvdcss, libdvdnav, libdvdread, libtheora, mplayer-all-codecs, cdparanoia
+# Depends on: alsa-lib, gtk, yasm, faad2, x264, libcaca, speex, directfb, libmp4v2, xvid, amrnb, amrwb, libmpcdec, libdv, libmad, libpng, libmng, lzo, lame, faac, giflib,libogg, libcdio, esound, nas, libdvdcss, libdvdnav, libdvdread, libtheora, mplayer-all-codecs, cdparanoia
 
 name=mplayer
 version=20091013
