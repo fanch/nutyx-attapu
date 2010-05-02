@@ -2,7 +2,7 @@
 # URL:         http://equinox-project.org
 # Maintainer:  NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg, hal, efltk, fox, xfe, evilvte, shared-mime-info, startup-notification, slim
+# Depends on: xorg, hal, efltk, fox, xfe, evilvte, shared-mime-info, startup-notification
 
 name=ede1
 version=1.2
