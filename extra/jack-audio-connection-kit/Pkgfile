@@ -2,12 +2,12 @@
 # URL: http://jackaudio.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: flac, libsndfile, portaudio
+# Depends on: flac, libsndfile
 
 name=jack-audio-connection-kit
-version=0.109.2
+version=0.118.0
 release=1
-source=(http://mesh.dl.sourceforge.net/sourceforge/jackit/$name-$version.tar.gz)
+source=(http://jackaudio.org/downloads/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
