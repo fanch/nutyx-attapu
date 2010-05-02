@@ -2,7 +2,7 @@
 # URL: http://wiki.awn-project.org/
 # Maintainer: geantbrun at gmail dot com
 # Packager: geantbrun
-# Depends on: pygtk intltool libglade libwnck pyxdg dbus-glib xorg-libxcomposite python gtk 
+# Depends on: pygtk intltool libglade libwnck pyxdg dbus-glib xorg-libxcomposite python gtk startup-notification
 
 name=avant-window-navigator
 version=0.3.2.1
