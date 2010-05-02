@@ -13,6 +13,7 @@ source=(http://archive.apache.org/dist/ant/source/apache-ant-$version-src.tar.bz
 
 
 build() {
+	source /etc/profile
 	export CLASSPATH=$CLASSPATH:/usr/share/junit-4.5/junit-4.5.jar:/usr/share/junit-4.5
 	cd apache-ant-$version
         sed -i 's|/etc/ant.conf|/etc/ant/ant.conf|' src/script/ant
