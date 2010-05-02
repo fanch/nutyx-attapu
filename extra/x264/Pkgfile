@@ -5,7 +5,7 @@
 # Depends on: yasm 
 
 name=x264
-version=20081219
+version=20091224
 release=1
 source=(http://www.dcaf-security.org/distfiles/x264-$version-5f8a149.tar.bz2)
 
