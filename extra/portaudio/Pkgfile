@@ -1,9 +1,8 @@
-# $Id: build,v 1.3 2008/06/09 22:59:39 root Exp root $
 # Description: Platform multiplatform API audio
 # URL: http://www.portaudio.com/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: jack-audio-connection-kit
 
 name=portaudio
 version=19
@@ -13,8 +12,7 @@ source=(http://www.portaudio.com/archives/pa_stable_v19_20071207.tar.gz)
 build() {
 	mkdir -p $PKG/usr/{include,lib}
 	cd $name
-	./configure --prefix=/usr \
-		--with-host_os
+	./configure --prefix=/usr
 	make all-recursive
 	make PREFIX=$PKG/usr install
 	chown -R 0:0 $PKG
