@@ -2,22 +2,22 @@
 # URL: http://untrepid.com/acidrip/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mplayer, lame, libdvdcss, p5-gtk, lsdvd
+# Depends on: mplayer, lame, libdvdcss, p5-gtk, lsdvd, mplayer
 
 name=acidrip
 version=0.14
 release=1
-perlVer=5.10.0
+perlVer=5.12.0
 source=(http://switch.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz\
-	acidrip.desktop\
+	acidrip.desktop crop-fixes.patch\
 	 http://untrepid.com/acidrip/acidrip-icon4bit.png)
 
 build() {
 	cd $name-$version
+	patch -up1 < ../crop-fixes.patch 
 	perl Makefile.PL \
-      INSTALLARCHLIB=/usr/lib/perl5/$perlV/$archname  \
-      INSTALLSITELIB=/usr/lib/perl5/site_perl/$perlVer \
-      INSTALLSITEARCH=/usr/lib/perl5/site_perl/$perlVer/$archname
+      INSTALLSITELIB=/usr/lib/perl5/site_perl/$perlVer 
+
   sed -i "s%^DESTDIR.*%DESTDIR=$PKG%" Makefile
 	make
 	make DESTDIR=$PKG install
