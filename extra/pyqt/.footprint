@@ -450,6 +450,7 @@ drwxr-xr-x	root/root	usr/share/sip/QtNetwork/
 -rw-r--r--	root/root	usr/share/sip/QtNetwork/qurlinfo.sip
 drwxr-xr-x	root/root	usr/share/sip/QtOpenGL/
 -rw-r--r--	root/root	usr/share/sip/QtOpenGL/QtOpenGLmod.sip
+-rw-r--r--	root/root	usr/share/sip/QtOpenGL/opengl_types.sip
 -rw-r--r--	root/root	usr/share/sip/QtOpenGL/qgl.sip
 -rw-r--r--	root/root	usr/share/sip/QtOpenGL/qglcolormap.sip
 -rw-r--r--	root/root	usr/share/sip/QtOpenGL/qglframebufferobject.sip
