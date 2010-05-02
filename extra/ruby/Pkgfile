@@ -6,12 +6,14 @@
 
 name=ruby
 version=1.9.1
-_version=1.9.1-p243
+_version=1.9.1-p378
 release=1
-source=(ftp://ftp.ruby-lang.org/pub/ruby/1.9/$name-$_version.tar.gz)
+source=(ftp://ftp.ruby-lang.org/pub/ruby/1.9/$name-$_version.tar.gz \
+	openssl-1.0.patch)
 
 build() {
 	cd $name-$_version
+	patch -p1 -i $SRC/openssl-1.0.patch
 	./configure --prefix=/usr \
 		--enable-shared \
                 --enable-pthread
