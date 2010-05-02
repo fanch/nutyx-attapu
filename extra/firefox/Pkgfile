@@ -2,11 +2,11 @@
 # URL: http://www.mozilla.com/firefox/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, gtk, libidl, pango, python, curl, nss, libnotify, sqlite3, dbus-glib
+# Depends on: alsa-lib, gtk, libpng12, libidl, pango, python, curl, nss, libnotify, sqlite3, dbus-glib
 
 name=firefox
 version=3.6.3
-release=1
+release=2
 source=(http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/source/$name-$version.source.tar.bz2\
 	http://releases.mozilla.org/pub/mozilla.org/$name/releases/$version/linux-i686/xpi/fr.xpi\
         mozconfig firefox.desktop)
