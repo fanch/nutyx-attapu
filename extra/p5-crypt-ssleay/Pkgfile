@@ -15,6 +15,6 @@ cd Crypt-SSLeay-$version
 	mkdir -p $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/
 	make
 	make DESTDIR=$PKG install
-	rm -rf $PKG/usr/lib/perl5/5.10.1/i686-linux-thread-multi/perllocal.pod
+	find $PKG -name perllocal.pod -exec rm {} \;
 }
 
