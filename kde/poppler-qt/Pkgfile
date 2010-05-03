@@ -5,8 +5,8 @@
 # Depends on: qt, poppler
 
 name=poppler-qt
-version=0.13.0
-release=3
+version=0.13.3
+release=1
 source=(http://poppler.freedesktop.org/poppler-$version.tar.gz)
 
 build() { 
@@ -20,7 +20,8 @@ build() {
 	      --enable-poppler-qt4 \
 	      --disable-poppler-glib \
 	      --disable-gtk-test \
-	      --disable-poppler-qt
+	      --disable-poppler-qt \
+		--disable-poppler-cpp
 	make -j3
 	make prefix=$PKG/usr install
 
