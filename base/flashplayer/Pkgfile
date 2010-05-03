@@ -2,18 +2,15 @@
 # URL: http://www.macromedia.com
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: firefox
 
 name=flashplayer
 version=10.1.p3
 release=1
 
-#source=(http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_${version%%.*}_linux.tar.gz)
 
 source=(http://download.macromedia.com/pub/labs/flashplayer10/flashplayer10_1_p3_linux_022310.tar.gz)
 
 build() {
-#  install -D -m 0755 install_flash_player_${version%%.*}_linux/libflashplayer.so \
    install -D -m 0755 $SRC/libflashplayer.so $PKG/usr/lib/firefox/plugins/libflashplayer.so
 }
 
