@@ -6,7 +6,7 @@
 
 name=mysql
 version=5.1.46
-release=1
+release=2
 source=(http://mirror.switch.ch/mirror/mysql/Downloads/MySQL-5.1/$name-$version.tar.gz \
         mysql-$version-skip-abi-check.patch )
 
@@ -29,6 +29,7 @@ build () {
                 --enable-local-infile \
                 --with-unix-socket-path=/var/run/mysql/mysql.sock \
                 --with-extra-charsets=all \
+		--with-plugins=partition,innobase,innodb_plugin \
                 --without-debug \
                 --without-readline \
                 --without-docs \
