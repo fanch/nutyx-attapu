@@ -6,7 +6,7 @@
 
 name=aaabasicfs
 version=2010
-release=beta-1
+release=beta-2
 scriptsversion=lfs-bootscripts-20100124
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
  hosts clock console fstab inittab message inputrc network \
