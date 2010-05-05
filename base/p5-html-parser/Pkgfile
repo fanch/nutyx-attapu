@@ -5,7 +5,7 @@
 # Depends on: 
 
 name=p5-html-parser
-version=3.64
+version=3.65
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-$version.tar.gz)
 
