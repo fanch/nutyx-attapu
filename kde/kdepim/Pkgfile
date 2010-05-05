@@ -5,7 +5,7 @@
 # Depends on: kdebase-runtime, kdepimlibs, gnokii, pilot-link, libmal
 
 name=kdepim
-version=4.4.2
+version=4.4.3
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 build() {

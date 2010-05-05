@@ -5,7 +5,7 @@
 # Depends on: soprano, shared-mime-info, oxygen-icons, kdelibs, hal, libvorbis, libogg, audiofile, alsa-utils, xine-lib, samba3, rarian, openslp, phonon, libssh
 
 name=kdebase-runtime
-version=4.4.2
+version=4.4.3
 release=1
 source=(http://download.kde.org/stable/$version/src/$name-$version.tar.bz2)
 
