@@ -5,7 +5,7 @@
 # Depends on: p5-crypt-ssleay
 
 name=p5-libwww
-version=5.831
+version=5.834
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-$version.tar.gz)
 build() {
