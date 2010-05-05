@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/k3biso9660.h
 -rw-r--r--	root/root	usr/include/k3biso9660backend.h
 -rw-r--r--	root/root	usr/include/k3biso9660imagewritingjob.h
+-rw-r--r--	root/root	usr/include/k3bisooptions.h
 -rw-r--r--	root/root	usr/include/k3bjob.h
 -rw-r--r--	root/root	usr/include/k3bjobhandler.h
 -rw-r--r--	root/root	usr/include/k3blistview.h
@@ -103,6 +104,7 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/k3bvalidators.h
 -rw-r--r--	root/root	usr/include/k3bvcddoc.h
 -rw-r--r--	root/root	usr/include/k3bvcdjob.h
+-rw-r--r--	root/root	usr/include/k3bvcdoptions.h
 -rw-r--r--	root/root	usr/include/k3bverificationjob.h
 -rw-r--r--	root/root	usr/include/k3bversion.h
 -rw-r--r--	root/root	usr/include/k3bvideodvd.h
