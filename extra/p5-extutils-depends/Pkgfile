@@ -2,7 +2,7 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gdk-pixbuf p5-xml-parser p5-xml-writer p5-gtk-ex-utils
+# Depends on: p5-xml-parser p5-xml-writer
 
 name=p5-extutils-depends
 version=0.301
