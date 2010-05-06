@@ -7,10 +7,12 @@
 name=vlc
 version=1.0.5
 release=1
-source=(http://download.videolan.org/pub/videolan/$name/$version/$name-$version.tar.bz2 )
+source=(http://download.videolan.org/pub/videolan/$name/$version/$name-$version.tar.bz2 \
+	libpng-1.4.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../libpng-1.4.patch
 export LDFLAGS_ffmpeg="-lfaad -la52 -lxvidcore -lmp3lame -lx264"
 		./configure --prefix=/usr \
 	--enable-dvdread \
