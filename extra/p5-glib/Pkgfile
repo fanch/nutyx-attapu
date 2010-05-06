@@ -2,10 +2,10 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-extutils-depends, gobject-introspection
+# Depends on: p5-extutils-depends, gobject-introspection, p5-extutils-pkgconfig
 
 name=p5-glib
-version=1.200
+version=1.221
 release=1
 source=(http://www.cpan.org/modules/by-module/Glib/Glib-$version.tar.gz)
 

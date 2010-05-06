@@ -28,6 +28,8 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Object.pod
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Object/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Object/Subclass.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/OptionContext.pod
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/OptionGroup.pod
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Param/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Param/Boolean.pod
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Glib/Param/Double.pod
@@ -69,6 +71,8 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Glib::Markup.3.gz
 -r--r--r--	root/root	usr/share/man/man3/Glib::Object.3.gz
 -r--r--r--	root/root	usr/share/man/man3/Glib::Object::Subclass.3.gz
+-r--r--r--	root/root	usr/share/man/man3/Glib::OptionContext.3.gz
+-r--r--r--	root/root	usr/share/man/man3/Glib::OptionGroup.3.gz
 -r--r--r--	root/root	usr/share/man/man3/Glib::Param::Boolean.3.gz
 -r--r--r--	root/root	usr/share/man/man3/Glib::Param::Double.3.gz
 -r--r--r--	root/root	usr/share/man/man3/Glib::Param::Enum.3.gz
