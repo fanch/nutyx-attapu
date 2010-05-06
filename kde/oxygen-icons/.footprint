@@ -914,6 +914,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-forward.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-forwarded-replied.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-forwarded.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-invitation.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-mark-important.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-mark-junk.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/mail-mark-notjunk.png
@@ -1072,6 +1073,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/16x16/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/user-group-new.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/user-group-properties.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/user-properties.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/view-bank.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/view-barcode-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/view-barcode.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/actions/view-calendar-agenda.png
@@ -2052,6 +2054,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-flag.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-forward.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-forwarded.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-invitation.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-mark-important.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-mark-notjunk.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/mail-mark-read.png
@@ -2218,6 +2221,8 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/user-group-new.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/user-group-properties.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/user-properties.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/view-bank-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/view-bank.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/view-barcode-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/view-barcode.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/actions/view-calendar-agenda.png
@@ -3476,6 +3481,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-flag.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-forward.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-forwarded.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-invitation.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-mark-important.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-mark-junk.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/mail-mark-notjunk.png
@@ -3625,6 +3631,8 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/user-group-new.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/user-group-properties.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/user-properties.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-bank-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-bank.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-barcode-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-barcode.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-calendar-agenda.png
@@ -3657,6 +3665,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-close.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-file-columns.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-filter.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-financial-list.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-form-action.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-form-table.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-form.png
@@ -4587,6 +4596,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-forward.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-forwarded-replied.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-forwarded.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-invitation.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-mark-important.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-mark-junk.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/mail-mark-notjunk.png
@@ -4727,6 +4737,8 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/user-group-new.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/user-group-properties.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/user-properties.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-bank-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-bank.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-barcode-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-barcode.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-calendar-agenda.png
@@ -4759,6 +4771,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-close.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-file-columns.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-filter.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-financial-list.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-form-action.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-form-table.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-form.png
@@ -4803,6 +4816,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-split-left-right.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-split-top-bottom.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-statistics.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-stock-account.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-table-of-contents-ltr.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-table-of-contents-rtl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-task-add.png
