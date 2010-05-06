@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/projects/totem/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: iso-codes, eel, gst-plugins-good, nautilus, gst-plugins-bad, gst-plugins-ugly, gst-ffmpeg, totem-pl-parser
+# Depends on: iso-codes, gst-plugins-good, nautilus, gst-plugins-bad, gst-plugins-ugly, gst-ffmpeg, totem-pl-parser
 
 name=totem
 version=2.30.0
