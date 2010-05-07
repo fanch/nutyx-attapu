@@ -7,10 +7,12 @@
 name=yawp
 version=0.3.2
 release=2
-source=(http://downloads.sourceforge.net/yawp/yawp-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/yawp/yawp-$version.tar.bz2\
+	yawp-0.3.2-gcc-01.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../yawp-0.3.2-gcc-01.patch
 	mkdir build
 	cd build
 	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr

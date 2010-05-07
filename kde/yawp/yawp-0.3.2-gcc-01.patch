@@ -1,0 +1,31 @@
+--- yawp-0.3.2/applet/countrymap.cpp	2009-12-06 21:08:29.000000000 +0100
++++ yawp-0.3.2.new/applet/countrymap.cpp	2010-05-07 18:11:21.000000000 +0200
+@@ -47,7 +47,7 @@
+ const QString CountryMap::sFlagTemplate("l10n/%1/flag.png");
+ 
+ 
+-CountryMap::CountryMap *
++CountryMap *
+ CountryMap::instance()
+ {
+ 	QMutexLocker locker( &singeltonMutex );
+@@ -210,7 +210,7 @@
+ 
+ /******************************************************************************/
+ 
+-UsStatesMap::UsStatesMap *
++UsStatesMap *
+ UsStatesMap::instance()
+ {
+ 	QMutexLocker locker( &singeltonMutex );
+--- yawp-0.3.2/applet/ionlistmodel.cpp	2009-12-06 21:08:29.000000000 +0100
++++ yawp-0.3.2.new/applet/ionlistmodel.cpp	2010-05-07 18:12:09.000000000 +0200
+@@ -45,7 +45,7 @@
+ 	return bReturnVal;
+ }
+ 
+-IonListModel::IonListModel *
++IonListModel *
+ IonListModel::instance()
+ {
+ 	QMutexLocker locker( &m_singeltonMutex );
