@@ -2,6 +2,10 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdenlive
 -rwxr-xr-x	root/root	usr/bin/kdenlive_render
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/kde4/
+-rwxr-xr-x	root/root	usr/lib/kde4/libkdenlive_sampleplugin.so
+-rwxr-xr-x	root/root	usr/lib/kde4/westleypreview.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/applications/kde4/
@@ -287,8 +291,3 @@ drwxr-xr-x	root/root	usr/share/mime/packages/
 -rw-r--r--	root/root	usr/share/mime/packages/westley.xml
 drwxr-xr-x	root/root	usr/share/pixmaps/
 -rw-r--r--	root/root	usr/share/pixmaps/kdenlive.xpm
-drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/kde4/
--rwxr-xr-x	root/root	usr/lib/kde4/libkdenlive_sampleplugin.so
--rwxr-xr-x	root/root	usr/lib/kde4/westleypreview.so
