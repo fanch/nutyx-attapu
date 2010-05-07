@@ -2,18 +2,19 @@
 # URL:http://code.google.com/p/qtscriptgenerator/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: qt
+# Depends on: qt, phonon
 name=qtscriptgenerator
 version=0.1.0
-release=1
+release=2
 
 source=(http://$name.googlecode.com/files/$name-src-$version.tar.gz \
-        qtscriptgenerator.gcc-4.4.patch)
+        qtscriptgenerator-gcc44.patch phonon.patch ) 
 
 build() {
 	cd $name-src-$version/generator
+ 	patch -Np1 -i $SRC/qtscriptgenerator-gcc44.patch
   # prepare plugins
- 	patch -Np1 -i $SRC/qtscriptgenerator.gcc-4.4.patch
+	patch -Np2 -i $SRC/phonon.patch 
 	qmake
 	make
  	./generator --include-paths=/usr/include
