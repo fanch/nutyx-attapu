@@ -1,11 +1,11 @@
 # Description: Outil pour la diffusion vidéo
-# URL: http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
+# URL: http://www.dennedy.org/mlt/twiki/bin/view/MLT/
 # Packager: NuTyX core team
 # Maintainer: thierryn1 at hispeed dot ch
 # Depends on: qt, sdl, gtk, ffmpeg, sox, libquicktime, frei0r-plugins
 
 name=mlt
-version=0.5.0
+version=0.5.4
 release=1
 source=(http://internap.dl.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
 
