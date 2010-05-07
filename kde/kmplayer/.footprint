@@ -33,6 +33,7 @@ drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/HTML/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/
 drwxr-xr-x	root/root	usr/share/doc/HTML/en/kmplayer/
+lrwxrwxrwx	root/root	usr/share/doc/HTML/en/kmplayer/common -> /usr/share/doc/HTML/en/common
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kmplayer/index.cache.bz2
 -rw-r--r--	root/root	usr/share/doc/HTML/en/kmplayer/index.docbook
 drwxr-xr-x	root/root	usr/share/icons/
