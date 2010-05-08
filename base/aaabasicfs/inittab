@@ -1,11 +1,10 @@
 # Begin /etc/inittab
 
-# Pour le lancement de slim, supprimer le commentaire de la ligne ci-dessous
+# Pour le lancement de slim: id:3
+# Pour le lancement de gdm:  id:4
+# Pour le lancement de kdm:  id:5
+
 id:4:initdefault:
-# Pour le lancement de gdm, supprimer le commentaire de la ligne ci-dessous
-# id:4:initdefault:
-# Pour le lancement de kdm, supprimer le commentaire la ligne ci-dessous
-# id:5:initdefault:
 
 si::sysinit:/etc/rc.d/init.d/rc sysinit
 

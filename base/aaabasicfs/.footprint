@@ -7,7 +7,7 @@ crw-------	root/root	dev/console (5, 1)
 crw-rw-rw-	root/root	dev/null (1, 3)
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/bashrc
--rw-r--r--	root/root	etc/blfs-bootscripts
+lrwxrwxrwx	root/root	etc/blfs-bootscripts -> /var/lib/pkg/blfs-bootscripts
 drwxr-xr-x	root/root	etc/default/
 -rw-r--r--	root/root	etc/default/useradd
 -rw-r--r--	root/root	etc/fstab
@@ -16,6 +16,7 @@ drwxr-xr-x	root/root	etc/default/
 -rw-r--r--	root/root	etc/inittab
 -rw-r--r--	root/root	etc/inputrc
 -rw-r--r--	root/root	etc/mtab (EMPTY)
+lrwxrwxrwx	root/root	etc/nutyx-version -> /var/lib/pkg/nutyx-version
 drwxr-xr-x	root/root	etc/opt/
 -rw-r--r--	root/root	etc/passwd
 -rw-r--r--	root/root	etc/profile
@@ -23,7 +24,6 @@ drwxr-xr-x	root/root	etc/profile.d/
 -rw-r--r--	root/root	etc/profile.d/X.sh
 -rw-r--r--	root/root	etc/profile.d/dircolors.sh
 -rw-r--r--	root/root	etc/profile.d/extrapaths.sh
--rw-r--r--	root/root	etc/profile.d/i18n.sh
 -rw-r--r--	root/root	etc/profile.d/readline.sh
 -rw-r--r--	root/root	etc/profile.d/unmask.sh
 drwxr-xr-x	root/root	etc/rc.d/
@@ -34,6 +34,7 @@ drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/consolelog
 -rw-r--r--	root/root	etc/rc.d/init.d/functions
 -rwxr-xr--	root/root	etc/rc.d/init.d/halt
+-rwxr-xr--	root/root	etc/rc.d/init.d/iplink
 -rwxr-xr--	root/root	etc/rc.d/init.d/localnet
 -rwxr-xr--	root/root	etc/rc.d/init.d/modules
 -rwxr-xr--	root/root	etc/rc.d/init.d/mountfs
@@ -101,7 +102,6 @@ drwxr-xr-x	root/root	etc/skel/
 -rw-r--r--	root/root	etc/skel/.dmrc
 lrwxrwxrwx	root/root	etc/skel/.xinitrc -> /etc/slim.xinitrc
 drwxr-xr-x	root/root	etc/sysconfig/
--rw-r--r--	root/root	etc/sysconfig/clock
 -rw-r--r--	root/root	etc/sysconfig/console
 -rw-r--r--	root/root	etc/sysconfig/modules
 -rw-r--r--	root/root	etc/sysconfig/network
@@ -229,6 +229,7 @@ drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/locate/
 drwxr-xr-x	root/root	var/lib/misc/
 drwxr-xr-x	root/root	var/lib/pkg/
+-rw-r--r--	root/root	var/lib/pkg/blfs-bootscripts
 -rw-r--r--	root/root	var/lib/pkg/nutyx-version
 drwxr-xr-x	root/root	var/local/
 drwxr-xr-x	root/root	var/lock/

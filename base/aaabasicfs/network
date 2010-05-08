@@ -1,1 +1,45 @@
-HOSTNAME=nutyx
+#!/bin/sh
+# Begin $rc_base/init.d/network
+
+# Based on sysklogd script from LFS-3.1 and earlier.
+# Rewritten by thierryn1@hispeed.ch
+
+. /etc/sysconfig/rc
+. $rc_functions
+
+case "$1" in
+	start)
+		if [ -f /usr/share/wicd/daemon/wicd-daemon.py ]; then
+			boot_mesg "Starting the wicd Daemon..."
+			loadproc /usr/share/wicd/daemon/wicd-daemon.py
+				if grep -v ^# /etc/fstab | grep _netdev > /dev/null; then
+					while ! grep "nameserver" /etc/resolv.conf ; do sleep 1;done
+					boot_mesg "Network successfully configured..."
+					echo_ok
+				fi
+		
+		else 
+			if  [ -f /etc/rc.d/init.d/iplink ]; then
+				/etc/rc.d/init.d/iplink start
+			fi
+		fi
+		;;
+
+	stop)
+		if [ -f /usr/share/wicd/daemon/wicd-daemon.py ]; then
+				boot_mesg "Stopping the wicd Daemon..."
+				loadproc /usr/share/wicd/daemon/wicd-daemon.py --kill
+		else
+			if  [ -f /etc/rc.d/init.d/iplink ]; then
+                                /etc/rc.d/init.d/iplink stop
+                        fi
+		fi
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop}"
+		exit 1
+		;;
+esac
+
+# End $rc_base/init.d/network

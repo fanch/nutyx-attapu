@@ -6,12 +6,12 @@
 
 name=aaabasicfs
 version=2010
-release=beta-2
+release=beta-3
 scriptsversion=lfs-bootscripts-20100124
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
- hosts clock console fstab inittab message inputrc network \
+ hosts console fstab inittab message inputrc network \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
- blfs-bootscripts nu readline.sh unmask.sh X.sh i18n.sh bashrc )
+ blfs-bootscripts nu readline.sh unmask.sh X.sh bashrc )
 
 
 build() {
@@ -49,6 +49,8 @@ build() {
 	ln -sv bash $PKG/bin/sh
 	mkdir -p $PKG/var/lib/pkg/
 	echo "$version-$release" > $PKG/var/lib/pkg/nutyx-version
+	ln -s /var/lib/pkg/nutyx-version $PKG/etc/nutyx-version
+	
 	cat > $PKG/etc/shells << "EOF"
 /bin/sh
 /bin/bash
@@ -143,6 +145,9 @@ EOF
 	cd $scriptsversion
 	patch -Np1 -i ../lfs-bootscripts-01.patch
 	make DESTDIR=$PKG install
+	# Rename network script
+	mv $PKG/etc/rc.d/init.d/{network,iplink}
+	cp $SRC/network $PKG/etc/rc.d/init.d/
 	# We want to start the network when init 2
 	mv $PKG/etc/rc.d/rc2.d/{K80,S20}network
 	cd ..	
@@ -152,9 +157,10 @@ EOF
 	# Configuration files
 	cp -v {hosts,fstab,inittab,profile,inputrc,bashrc.etc} $PKG/etc/
 	mv $PKG/etc/bashrc.etc $PKG/etc/bashrc
-	cp -v {dircolors.sh,extrapaths.sh,readline.sh,unmask.sh,X.sh,i18n.sh}\
+	cp -v {dircolors.sh,extrapaths.sh,readline.sh,unmask.sh,X.sh}\
 	$PKG/etc/profile.d/
-	cp -v {clock,console,network} $PKG/etc/sysconfig/
+	cp -v console $PKG/etc/sysconfig/
+	echo "HOSTNAME=nutyx" > $PKG/etc/sysconfig/network
 	cp -v bash_profile $PKG/etc/skel/.bash_profile
 	cp -v bashrc $PKG/etc/skel/.bashrc
 	ln -s /etc/slim.xinitrc $PKG/etc/skel/.xinitrc
@@ -163,8 +169,8 @@ EOF
 	mkdir -p $PKG/root/bin
 	cp -v nu $PKG/root/bin
        # Customise startup scripts
-	cp blfs-bootscripts $PKG/etc/
-	
+	cp blfs-bootscripts $PKG/var/lib/pkg/
+	ln -s /var/lib/pkg/blfs-bootscripts $PKG/etc/blfs-bootscripts
 	cp -v message $PKG/boot/
 
 	cat > $PKG/etc/skel/.dmrc << "EOF"
