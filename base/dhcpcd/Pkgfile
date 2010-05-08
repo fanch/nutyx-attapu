@@ -2,10 +2,9 @@
 # URL: http://roy.marples.name/projects/dhcpcd
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=dhcpcd
-version=5.1.3
+version=5.2.2
 release=1
 source=( http://roy.marples.name/downloads/$name/$name-$version.tar.bz2\
           dhcpcd \
@@ -13,7 +12,7 @@ source=( http://roy.marples.name/downloads/$name/$name-$version.tar.bz2\
 
 build() {
 	source /etc/blfs-bootscripts
-        wget http://www.linuxfromscratch.org/blfs/downloads/svn/${scripts}-${scriptsversion}.tar.bz2
+       wget http://www.linuxfromscratch.org/blfs/downloads/svn/${scripts}-${scriptsversion}.tar.bz2
         tar xvf $scripts-$scriptsversion.tar.bz2
 	cd $name-$version
 	    ./configure --prefix= \
