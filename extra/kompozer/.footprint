@@ -1481,6 +1481,10 @@ drwxr-xr-x	root/root	usr/include/kompozer/plugin/
 -rw-r--r--	root/root	usr/include/kompozer/plugin/nsplugin.h
 -rw-r--r--	root/root	usr/include/kompozer/plugin/nsplugindefs.h
 -rw-r--r--	root/root	usr/include/kompozer/plugin/nspluginroot.h
+drwxr-xr-x	root/root	usr/include/kompozer/png/
+-rw-r--r--	root/root	usr/include/kompozer/png/mozpngconf.h
+-rw-r--r--	root/root	usr/include/kompozer/png/png.h
+-rw-r--r--	root/root	usr/include/kompozer/png/pngconf.h
 drwxr-xr-x	root/root	usr/include/kompozer/pref/
 -rw-r--r--	root/root	usr/include/kompozer/pref/nsIPref.h
 -rw-r--r--	root/root	usr/include/kompozer/pref/nsIPrefBranchInternal.h

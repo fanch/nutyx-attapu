@@ -5,7 +5,7 @@
 # Depends on: glib
 
 name=mono
-version=2.4.3
+version=2.6.4
 release=1
 source=(http://www.go-mono.com/sources/$name/$name-$version.tar.bz2)
 

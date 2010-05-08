@@ -6,9 +6,11 @@
 
 name=ktorrent
 version=3.3.4
+
 release=1
 source=(http://ktorrent.org/downloads/$version/$name-$version.tar.bz2 \
 	$name.png  $name.desktop httpserver.patch)
+
 build() {
 	cd $name-$version
 	patch -Np0 -i $SRC/httpserver.patch	
@@ -20,9 +22,9 @@ build() {
         make
         make DESTDIR=$PKG install
 	mkdir -p $PKG/usr/share/applications
-	install -m 644 ../$name.desktop $PKG/usr/share/applications/
+	install -m 644 $SRC/$name.desktop $PKG/usr/share/applications/
 	mkdir -p $PKG/usr/share/icons/hicolor/48x48/apps/
-	install -m 644 ../$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
+	install -m 644 $SRC/$name.png $PKG/usr/share/icons/hicolor/48x48/apps/
 }
 
 
