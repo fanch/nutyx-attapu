@@ -3,8 +3,9 @@
 # Maintainer: NuTyX core team
 # Packager: Skippythekangoo AT yahoo DOT fr
 # Depends on: python
+
 name=urwid
-version=0.9.8.4
+version=0.9.9.1
 release=1
 source=(http://excess.org/$name/$name-$version.tar.gz)
 build() {
