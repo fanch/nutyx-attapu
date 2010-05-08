@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Application;Network;Internet;
 Encoding=UTF-8
-Exec=wicd-client
+Exec=wicd-client --no-tray
 GenericName=Network Manager
 GenericName[fr]=Gestionnaire de réseaux
 Icon=wicd-gtk
