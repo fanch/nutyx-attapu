@@ -5,9 +5,9 @@
 # Depends on: gtk,glib,pango,nss,xorg-libxt,libidl,libgnome
 
 name=kompozer
-version=0.8b1
-release=2
-source=(http://freefr.dl.sourceforge.net/project/kompozer/current/0.8b1/$name-$version-src.tar.bz2\
+version=0.8b3
+release=1
+source=(http://freefr.dl.sourceforge.net/project/kompozer/current/$version/$name-$version-src.tar.bz2\
 	mozconfig $name.desktop)
 
 build() {
