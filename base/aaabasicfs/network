@@ -6,14 +6,24 @@
 
 . /etc/sysconfig/rc
 . $rc_functions
-
+let TIME=20
 case "$1" in
 	start)
 		if [ -f /usr/share/wicd/daemon/wicd-daemon.py ]; then
 			boot_mesg "Starting the wicd Daemon..."
 			loadproc /usr/share/wicd/daemon/wicd-daemon.py
 				if grep -v ^# /etc/fstab | grep _netdev > /dev/null; then
-					while ! grep "nameserver" /etc/resolv.conf ; do sleep 1;done
+					while ! grep "nameserver" /etc/resolv.conf ; 
+						do 
+							sleep 1
+							echo -n .
+							let TIME=$TIME-1
+							if [ $TIME -lt 1 ]; then
+								boot_mesg "Time out"
+								echo_failure
+								exit 1
+							fi
+						done
 					boot_mesg "Network successfully configured..."
 					echo_ok
 				fi
