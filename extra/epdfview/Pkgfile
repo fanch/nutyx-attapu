@@ -2,7 +2,7 @@
 # URL: http://trac.emma-soft.com/epdfview
 # Maintainer: NuTyX core team
 # Packager: skingrapher at legtux dot org
-# Depends on: poppler, gtk
+# Depends on: poppler, gtk, poppler-glib 
 
 name=epdfview
 version=0.1.7
