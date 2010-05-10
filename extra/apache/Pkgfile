@@ -8,14 +8,14 @@ name=apache
 version=2.2.15
 release=1
 source=(http://archive.apache.org/dist/httpd/httpd-$version.tar.bz2 \
-	http://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.2.11-config-1.patch
+	http://www.linuxfromscratch.org/patches/blfs/svn/httpd-2.2.15-config-1.patch
         apache )
 build(){
 	source /etc/blfs-bootscripts
         wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
         tar xvf $scripts-$scriptsversion.tar.bz2
    	cd httpd-$version
-	patch -Np1 -i ../httpd-2.2.11-config-1.patch
+	patch -Np1 -i ../httpd-2.2.15-config-1.patch
 	./configure --enable-layout=FHS --enable-mods-shared=all 
 	make 
 	make DESTDIR=$PKG install

@@ -6,11 +6,11 @@
 
 name=foomatic-db
 version=4.0
-release=1
+release=2
 source=(http://www.linuxprinting.org/download/foomatic/$name-$version-current.tar.gz)
 
 build() {
-	cd $name-20091122
+	cd $name-20100218
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install

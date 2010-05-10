@@ -7,10 +7,12 @@
 name=libgd
 version=2.0.35
 release=1
-source=( http://www.libgd.org/releases/gd-$version.tar.gz )
+source=( http://www.libgd.org/releases/gd-$version.tar.gz \
+	libpng14-enable-read-dither.patch)
 
 build () {
   cd gd-$version
+   patch -Np1 -i ../libpng14-enable-read-dither.patch
   ./configure --prefix=/usr
   make
   make DESTDIR=$PKG install

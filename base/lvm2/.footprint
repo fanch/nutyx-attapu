@@ -59,6 +59,9 @@ lrwxrwxrwx	root/root	sbin/vgs -> lvm
 lrwxrwxrwx	root/root	sbin/vgscan -> lvm
 lrwxrwxrwx	root/root	sbin/vgsplit -> lvm
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+-r--r--r--	root/root	usr/lib/libdevmapper.a
+lrwxrwxrwx	root/root	usr/lib/libdevmapper.so -> ../../lib/libdevmapper.so.1.02
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man5/

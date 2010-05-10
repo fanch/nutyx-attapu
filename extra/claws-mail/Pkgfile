@@ -3,7 +3,7 @@
 # Packager: skingrapher at legtux dot org
 # Depends on: bogofilter, enchant, aspell, libetpan, gnupg, gpgme, gnutls, dbus, gtk, libtasn1
 name=claws-mail
-version=3.7.5cvs7
+version=3.7.6
 release=1
 source=(http://www.claws-mail.org/snapshots/$name-$version.tar.bz2)
 

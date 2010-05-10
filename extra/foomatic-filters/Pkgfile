@@ -2,10 +2,10 @@
 # URL: http://www.linuxprinting.org/foomatic.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libxml2, ghostscript
+# Depends on:  a2ps, libxml2, ghostscript
 
 name=foomatic-filters
-version=4.0.3
+version=4.0.4
 release=1
 source=(http://www.linuxprinting.org/download/foomatic/$name-$version.tar.gz)
 

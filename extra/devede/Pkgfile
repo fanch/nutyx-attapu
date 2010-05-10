@@ -5,12 +5,12 @@
 # Depends on: mplayer,dvdauthor,vcdimager,cdrkit,pygtk,dejavu-ttf, librsvg
 
 name=devede
-version=3.16.0
+version=3.16.8
 release=1
 source=(http://www.rastersoft.com/descargas/$name-$version.tar.bz2)
 
 build() {
-	cd $name
+	cd $name-$version
         ./install.sh --DESTDIR=$PKG \
         --prefix=/usr \
 	--unistall=no \
