@@ -5,7 +5,7 @@
 # Depends on: tk
 
 name=p5-tk
-version=804.028_501
+version=804.028_502
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/S/SR/SREZIC/Tk-$version.tar.gz)
 
