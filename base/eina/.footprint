@@ -22,9 +22,11 @@ drwxr-xr-x	root/root	usr/include/eina-0/eina/
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_fp.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_hash.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_list.x
+-rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_log.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_mempool.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_rbtree.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_rectangle.x
+-rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_str.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_stringshare.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_tiler.x
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_inline_trash.x
@@ -38,27 +40,22 @@ drwxr-xr-x	root/root	usr/include/eina-0/eina/
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_matrixsparse.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_mempool.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_module.h
+-rw-r--r--	root/root	usr/include/eina-0/eina/eina_quadtree.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_rbtree.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_rectangle.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_safety_checks.h
+-rw-r--r--	root/root	usr/include/eina-0/eina/eina_str.h
+-rw-r--r--	root/root	usr/include/eina-0/eina/eina_strbuf.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_stringshare.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_tiler.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_trash.h
 -rw-r--r--	root/root	usr/include/eina-0/eina/eina_types.h
 -rw-r--r--	root/root	usr/include/eina-0/eina_config.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/eina/
-drwxr-xr-x	root/root	usr/lib/eina/mp/
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_chained_mempool.la
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_chained_mempool.so
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_fixed_bitmap.la
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_fixed_bitmap.so
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_pass_through.la
--rwxr-xr-x	root/root	usr/lib/eina/mp/eina_pass_through.so
-lrwxrwxrwx	root/root	usr/lib/libeina-ver-svn-05.so.0 -> libeina-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libeina-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libeina-ver-pre-svn-05.so.0 -> libeina-ver-pre-svn-05.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libeina-ver-pre-svn-05.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libeina.a
 -rwxr-xr-x	root/root	usr/lib/libeina.la
-lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libeina.so -> libeina-ver-pre-svn-05.so.0.9.9
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/eina-0.pc
