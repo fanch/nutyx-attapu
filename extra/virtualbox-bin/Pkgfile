@@ -5,9 +5,9 @@
 # Depends on: virtualbox-module, sdl
 
 name=virtualbox-bin
-version=3.1.6
+version=3.1.8
 release=1
-_release=59338
+_release=61349
 source=(http://download.virtualbox.org/virtualbox/$version/VirtualBox-${version}-${_release}-Linux_x86.run)
 
 
