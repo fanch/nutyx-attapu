@@ -6,14 +6,15 @@
 
 name=openoffice
 version=3.2.0
-release=1
+release=2
 OOdir=OOO320_m12
 
 source=(http://download.services.openoffice.org/files/stable/$version/OOo_${version}_src_{core,system,l10n,extensions,binfilter}.tar.bz2 \
         http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-no-registration.patch.bz2 \
         http://www.paldo.org/paldo/sources/OpenOffice.org/OpenOffice.org-${version}-default-large-buttons.patch.bz2 \
         startcenter.desktop default-no-startup-wizard.diff default-system-fpicker.diff \
-        soffice-detect-mozilla-certificates.diff buildfix-gcc44.diff buildfix_FormulaMissingHeader.diff buildfix_system_db48.diff)
+        soffice-detect-mozilla-certificates.diff buildfix-gcc44.diff buildfix_FormulaMissingHeader.diff buildfix_system_db48.diff\
+	http://cgit.freedesktop.org/ooo-build/ooo-build/plain/patches/dev300/cppu-lbnames-enable-gcc-4.5.diff)
 
 build() {
         install -D -m644 startcenter.desktop \
@@ -31,6 +32,8 @@ build() {
         patch -Np0 -i $SRC/default-no-startup-wizard.diff
         patch -Np0 -i $SRC/default-system-fpicker.diff
         patch -Np0 -i $SRC/OpenOffice.org-3.2.0-default-large-buttons.patch
+	# gcc4.5 fix
+        patch -Np0 -i $SRC/cppu-lbnames-enable-gcc-4.5.diff 
 
         cd $SRC/$OOdir
         ./configure --prefix=/usr --sysconfdir=/etc --disable-graphite --disable-ldap --disable-mozilla --disable-odk \
@@ -44,7 +47,7 @@ build() {
         # Build dmake utility
         ./bootstrap
         cd instsetoo_native/util
-        build.pl --dlv_switch -link --all -P1 -- -P1 -s
+        build.pl --dlv_switch -link --all -P4 -- -P4 -s
         # install binaries
         cp -R ../unxlngi6.pro/OpenOffice/native/install/fr/linux-2.6-intel/buildroot/* $PKG/
         ## Step 1

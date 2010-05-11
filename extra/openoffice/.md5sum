@@ -8,6 +8,7 @@ ac07730c9da958fefa8bf673f81ddc90  OpenOffice.org-3.2.0-default-no-registration.p
 c8e82b4d2324fe62ad8c6e29213e80b5  buildfix-gcc44.diff
 863a3ab2c17a3d11b8fa3ec321986366  buildfix_FormulaMissingHeader.diff
 0cd6f3525939d3ef6e5a30ad30c25d27  buildfix_system_db48.diff
+e666e8cea0ef557a8bce41c58dd16408  cppu-lbnames-enable-gcc-4.5.diff
 71f136a31e296a04ab68932a31dd533e  default-no-startup-wizard.diff
 6c596129fb48316226ce3adfd3a4c86d  default-system-fpicker.diff
 1dc7480a04f572ad136d35923a2af66d  soffice-detect-mozilla-certificates.diff
