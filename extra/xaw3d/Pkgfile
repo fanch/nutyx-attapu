@@ -2,7 +2,7 @@
 # URL: http://directory.fsf.org/project/xaw3d/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: xorg-imake, xorg-libxt, xorg-libxp
+# Depends on: xorg-imake, xorg-libxt, xorg-libxp, xorg-libxpm, xorg-libxmu
 
 name=xaw3d
 version=1.5E
