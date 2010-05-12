@@ -5,10 +5,9 @@
 # Depends on: xorg, xorg-imake, xorg-gccmakedep, libjpeg
 
 name=tightvnc-viewer
-version=1.3.9
+version=1.3.10
 release=1
-source=(http://dl.sourceforge.net/sourceforge/vnc-tight/tightvnc-${version}_unixsrc.tar.bz2)
-
+source=(http://www.tightvnc.com/download/$version/tightvnc-${version}_unixsrc.tar.bz2)
 build() {
 	cd vnc_unixsrc
 	xmkmf -a
