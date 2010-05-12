@@ -5,7 +5,7 @@
 # Depends on: asciidoc, libevent, openssl, zlib
 
 name=tor
-version=0.2.2.10-alpha
+version=0.2.2.13-alpha
 release=1
 source=(http://www.torproject.org/dist/$name-$version.tar.gz)
 build() {
