@@ -5,7 +5,7 @@
 # Depends on: glib, gtk, libxml2, p5-xml-parser, gnutls, nss, nspr, xorg-libxscrnsaver, gstreamer, startup-notification, hicolor-icon-theme, libidn, farsight2
 
 name=pidgin
-version=2.6.6
+version=2.7.0
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
 
