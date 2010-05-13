@@ -2,6 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
+# Depends on :  xorg-libxext, xorg-libxi
 
 name=xorg-xinput
 version=1.4.2
