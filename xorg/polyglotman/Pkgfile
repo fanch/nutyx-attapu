@@ -5,7 +5,10 @@
 name=polyglotman
 version=3.2
 release=1
-source=(http://dl.sourceforge.net/$name/rman-$version.tar.gz)
+
+#source=(http://dl.sourceforge.net/$name/rman-$version.tar.gz)
+
+source=(http://downloads.sourceforge.net/project/polyglotman/polyglotman/$version/rman-$version.tar.gz)
 
 build() {
 	cd rman-$version
