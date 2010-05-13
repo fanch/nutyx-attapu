@@ -5,7 +5,7 @@
 # Depends on:
 
 name=p5-alien
-version=8.79
+version=8.80
 release=1
 source=(http://ftp.debian.org/debian/pool/main/a/alien/alien_${version}.tar.gz)
 
