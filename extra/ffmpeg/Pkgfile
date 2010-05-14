@@ -2,11 +2,11 @@
 # URL: http://ffmpeg.mplayerhq.hu/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: amrnb, amrwb,liba52, imlib2, lame, sdl, libvorbis, libogg, xvid, faac, faad2, libtheora, x264
+# Depends on: amrnb, amrwb, liba52, imlib2, lame, sdl, libvorbis, libogg, xvid, faac, faad2, libtheora, x264, alsa-lib
 
 
 name=ffmpeg
-version=0.5
+version=0.5.1
 release=1
 source=(http://ffmpeg.org/releases/$name-$version.tar.bz2)
 
