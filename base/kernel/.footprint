@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	boot/
--rw-r--r--	root/root	boot/System.map-2.6.33.3
--rw-r--r--	root/root	boot/config-2.6.33.3
-lrwxrwxrwx	root/root	boot/kernel -> kernel-2.6.33.3
--rw-r--r--	root/root	boot/kernel-2.6.33.3
+-rw-r--r--	root/root	boot/System.map-2.6.33.4
+-rw-r--r--	root/root	boot/config-2.6.33.4
+lrwxrwxrwx	root/root	boot/kernel -> kernel-2.6.33.4
+-rw-r--r--	root/root	boot/kernel-2.6.33.4
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/firmware/
 drwxr-xr-x	root/root	lib/firmware/3com/
