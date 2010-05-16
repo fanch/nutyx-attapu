@@ -6,7 +6,7 @@
 
 name=kdegraphics
 version=4.4.3
-release=1
+release=2
 source=( ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
 
 build() {
