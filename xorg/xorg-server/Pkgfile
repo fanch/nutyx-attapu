@@ -13,13 +13,16 @@ build() {
 	cd $name-$version
 
 	./configure --prefix=/usr --enable-dri \
+		--enable-xvfb \
+		--enable-composite \
+		--enable-config-udev \
 		--disable-config-hal \
 	            --localstatedir=/var \
 		--sysconfdir=/etc/X11 \
+		--datadir=/etc \
 	            --with-xkb-output=/var/lib/xkb
-#	sed -i 's|xorgconfddir = $(prefix)|xorgconfddir = |' config/Makefile
 	make
 	make DESTDIR=$PKG install
-
+	mv $PKG/etc/aclocal $PKG/usr/share/
 	rmdir $PKG/var/log
 }
