@@ -17,9 +17,8 @@ build() {
 	            --localstatedir=/var \
 		--sysconfdir=/etc/X11 \
 	            --with-xkb-output=/var/lib/xkb
-#	sed -i 's|xorgconfddir = $(prefix)|xorgconfddir = |' config/Makefile
+	sed -i 's|xorgconfddir = $(datadir)|xorgconfddir = /etc|' config/Makefile
 	make
 	make DESTDIR=$PKG install
-
 	rmdir $PKG/var/log
 }

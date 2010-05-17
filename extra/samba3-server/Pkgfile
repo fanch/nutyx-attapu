@@ -1,0 +1,40 @@
+# Description: Service de partage de fichiers et imprimantes Windows pour Linux
+# URL: http://www.samba.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: samba3
+
+name=samba3-server
+version=3.5.2
+release=1
+localname=samba
+source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz\
+       smb.conf)
+
+
+build() {
+	source /etc/blfs-bootscripts
+	wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+	tar xf $scripts-$scriptsversion.tar.bz2
+	cd $scripts-$scriptsversion
+	make DESTDIR=$PKG install-samba
+	make DESTDIR=$PKG install-winbind
+	cd ../$localname-$version/source3
+	./configure --prefix=/usr \
+		--localstatedir=/var \
+		--sysconfdir=/etc \
+                --with-piddir=/var/run \
+                --with-pammodulesdir=/lib/security \
+		--with-fhs --with-cups --with-syslog \
+                --with-cifsumount --with-cifsmount
+	make -j3
+	make DESTDIR=$PKG install
+        
+        # reorganise files
+	rm -r $PKG/{lib,usr/{lib,include,bin,share/{samba,locale,man/man{1,5,7}}}}
+	rm $PKG/usr/sbin/{u,}mount.cifs
+	rm $PKG/usr/share/man/man8/{swat.8,{u,}mount.cifs.8}
+	install -v -m644 ../examples/smb.conf.default $PKG/etc/samba/smb.conf.default
+        cp $SRC/smb.conf $PKG/etc/samba/
+
+}

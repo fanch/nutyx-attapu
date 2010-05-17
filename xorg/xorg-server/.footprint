@@ -204,6 +204,8 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libextmod.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/librecord.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/librecord.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libfb.la
