@@ -2,11 +2,11 @@
 # URL: http://www.openldap.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cyrus-sasl
+# Depends on: libldap
 
 name=openldap
 version=2.4.21
-release=1
+release=2
 source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/$name-$version.tgz)
 
 build() {
@@ -50,7 +50,7 @@ build() {
 		--enable-shared
 
 	make depend
-	make -j3
+	make
 	make DESTDIR=$PKG install   
 
 	sed -i -e "s|-L${PKG}/usr/lib||g" $PKG/usr/lib/*.la
@@ -64,6 +64,8 @@ build() {
 	# Installation of the script
         cd ../$scripts-$scriptsversion
         make DESTDIR=$PKG install-openldap1
-	
+	# Suppress files from libldap
+	rm -r $PKG/usr/share/man/man{3,5}
+	rm -r $PKG/usr/{lib,include}	
 	rm -f $PKG/etc/openldap/schema/README
 }
