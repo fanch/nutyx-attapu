@@ -5,7 +5,7 @@
 # Depends on: glib
 
 name=irssi
-version=0.8.14
+version=0.8.15
 release=1
 source=(http://irssi.org/files/$name-$version.tar.bz2)
 
