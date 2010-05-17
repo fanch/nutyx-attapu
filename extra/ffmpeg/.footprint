@@ -37,9 +37,9 @@ drwxr-xr-x	root/root	usr/include/libpostproc/
 drwxr-xr-x	root/root	usr/include/libswscale/
 -rw-r--r--	root/root	usr/include/libswscale/swscale.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.52.20.0
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so.52 -> libavcodec.so.52.20.0
--rwxr-xr-x	root/root	usr/lib/libavcodec.so.52.20.0
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.52.20.1
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.52 -> libavcodec.so.52.20.1
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.52.20.1
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.52.1.0
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so.52 -> libavdevice.so.52.1.0
 -rwxr-xr-x	root/root	usr/lib/libavdevice.so.52.1.0

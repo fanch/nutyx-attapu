@@ -2,14 +2,17 @@
 # URL: http://www.google.com
 # Maintainer: NuTyX core team
 # Packager: sibelle at free dot fr
-# Depends on: libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
+
+##### ATTENTION : Ne pas lever git des deps ######
+
+# Depends on: git, subversion, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
 
 name=chromium
-build=46198
-version=5.0.394.0
+build=47269
+version=6.0.404.0
 release=1
 
-source=(chromium.desktop chromium.sh drop_sse2.patch ffmpeg_branding_mime.patch libpng-1.4.patch)
+source=(chromium.desktop chromium.sh)
 
 build() {
 
@@ -33,7 +36,7 @@ build() {
 	cd chromium-$build
 
 # Pour obtenir la plus recente revision d'une maj majeure
-	if [ ! -d depot_tools]; then
+	if [ ! -d depot_tools ]; then
 
 		svn co -r$build -q http://src.chromium.org/svn/trunk/tools/depot_tools/ depot_tools
 	fi
@@ -42,22 +45,22 @@ build() {
 	if [ ! -f .gclient ]; then
 		gclient.py config http://src.chromium.org/svn/releases/$version
 
-		sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
+	sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
     	    -e '15i\      "src/chrome/tools/test/reference_build": None,' \
 	    -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32_dbg": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64": None,' \
             -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64_dbg": None,' \
             -i .gclient
-		gclient.py sync --force --nohooks
+	
+	gclient.py sync --force --nohooks
 
 	fi
 
 	for i in ${nonessential_dirs[@]}; do
-        	rm -rf $i
+        	[ -d "$i" ] && rm -rf "$i"
 	done
 
-	find . -name '.svn' -type d -delete
 	find . -iname '*.dll' -delete
 	find . -iname '*.exe' -delete
 	find . -iname '*.o' -delete
@@ -67,7 +70,7 @@ build() {
 
         export GYP_GENERATORS='make'
         export BUILDTYPE='Release'
-        export GYP_DEFINES="gcc_version=44 \
+        export GYP_DEFINES="gcc_version=45 \
                 no_strict_aliasing=1 \
                 linux_sandbox_path=/usr/lib/chromium/chromium-sandbox \
                 linux_strip_binary=1 \
@@ -76,23 +79,19 @@ build() {
                 use_system_libjpeg=1 \
                 use_system_libxslt=1 \
                 use_system_bzip2=1 \
-                use_system_libpng=1 \
-                use_system_ffmpeg=1 \
+                uise_system_libpng=1 \
+                use_system_ffmpeg=0 \
                 use_system_yasm=1 \
                 use_system_libevent=1 \
                 use_system_ssl=0"
 
-        patch -p0 -i $SRC/ffmpeg_branding_mime.patch  
-        # i686 does not include SSE2
-        # see http://code.google.com/p/chromium/issues/detail?id=9007
-        patch -p0 -i $SRC/drop_sse2.patch  
-        # see http://codereview.chromium.org/569009/show
-        patch -p0 -i $SRC/libpng-1.4.patch  
 
         export PATH=./depot_tools/:$PATH
-        gclient.py runhooks --force  
+
+	gclient.py runhooks --force	
 
         cd src
+
         make chrome chrome_sandbox  
 
         cd $SRC/$name-$build

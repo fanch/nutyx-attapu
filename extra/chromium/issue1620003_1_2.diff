@@ -1,0 +1,13 @@
+Index: chrome/browser/cocoa/browser_frame_view.mm
+===================================================================
+--- chrome/browser/cocoa/browser_frame_view.mm	(revision 43477)
++++ chrome/browser/cocoa/browser_frame_view.mm	(working copy)
+@@ -243,7 +243,7 @@
+ 
+     [[NSGraphicsContext currentContext] setPatternPhase:phase];
+     [themeImageColor set];
+-    NSRectFill(dirtyRect);
++    NSRectFillUsingOperation(dirtyRect, NSCompositeSourceOver);
+     themed = YES;
+   } else if (gradient) {
+     NSPoint startPoint = NSMakePoint(NSMinX(bounds), NSMaxY(bounds));
