@@ -2,14 +2,13 @@
 # URL: http://www.samba.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libcups, gamin
+# Depends on: libcups, gamin, kerberos
 
 name=samba3
 version=3.5.2
-release=1
+release=2
 localname=samba
-source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz\
-       smb.conf)
+source=( http://us6.samba.org/samba/ftp/stable/$localname-$version.tar.gz)
 
 
 build() {
@@ -21,7 +20,7 @@ build() {
                 --with-pammodulesdir=/lib/security \
 		--with-fhs --with-cups --with-syslog \
                 --with-cifsumount --with-cifsmount
-	make -j3
+	make
 	make DESTDIR=$PKG install
         
         # reorganise files
@@ -34,10 +33,15 @@ build() {
         
 	install -v -m644 ../examples/smb.conf.default $PKG/etc/samba/smb.conf.default
         chmod -v 4755  $PKG/usr/sbin/{,u}mount.cifs
-        cp $SRC/smb.conf $PKG/etc/samba/
 	#  cups 
         cd $PKG/usr/lib/
         install -d cups/backend
         ln -v -sf /usr/bin/smbspool $PKG/usr/lib/cups/backend/smb
-      	install -d -m 1777 $PKG/var/spool/samba 
+	rm -r $PKG/{var,etc,usr/share/samba}
+	rm -r $PKG/usr/sbin/{nmbd,smbd,swat,winbindd}
+	# Ne garder que les mans de mount.cifs 
+	mv $PKG/usr/share/man/man8/{u,}mount.cifs.8 .
+	rm -r $PKG/usr/share/man/man8
+	mkdir -p $PKG/usr/share/man/man8
+	mv {u,}mount.cifs.8 $PKG/usr/share/man/man8/
 }
