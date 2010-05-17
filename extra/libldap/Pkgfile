@@ -1,0 +1,70 @@
+# Description: Outil permettant d'accéder au protocol LDAP
+# URL: http://www.openldap.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: cyrus-sasl
+
+name=libldap
+version=2.4.21
+release=1
+source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$version.tgz)
+
+build() {
+	cd openldap-$version
+	export CPPFLAGS="$CPPFLAGS -D_GNU_SOURCE"
+
+	./configure --prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/sbin \
+		--mandir=/usr/share/man \
+		--localstatedir=/var/openldap \
+		--disable-nls \
+		--enable-syslog \
+		--with-threads \
+		--with-tls \
+		--with-cyrus-sasl \
+		--enable-spasswd \
+		--enable-dynamic \
+		--enable-ipv6 \
+		--enable-modules \
+		--enable-crypt \
+		--enable-rewrite \
+		--disable-ldbm \
+		--disable-bdb \
+		--disable-hdb \
+		--enable-ldap \
+		--enable-meta \
+		--enable-monitor \
+		--enable-dnssrv \
+		--enable-null \
+		--enable-perl \
+		--with-dyngroup \
+		--with-proxycache \
+		--enable-wrappers \
+		--enable-aci \
+		--enable-dynamic
+	cd include
+	make
+	make DESTDIR=$PKG install   
+
+	cd ../libraries
+	make depend
+	make
+	make DESTDIR=$PKG install
+
+	cd ../doc/man/man3
+	make
+        make DESTDIR=$PKG install
+
+	cd ../man5
+	make
+	make DESTDIR=$PKG install
+
+	# compatiblity links
+	(cd $PKG/usr/lib; 
+	 ln -s liblber.so liblber.so.2;
+	 ln -s libldap.so libldap.so.2;
+	 ln -s libldap_r.so libldap_r.so.2) || exit 1
+	rm $PKG/etc/openldap/*.default
+
+}
