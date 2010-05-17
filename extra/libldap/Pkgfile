@@ -65,6 +65,5 @@ build() {
 	 ln -s liblber.so liblber.so.2;
 	 ln -s libldap.so libldap.so.2;
 	 ln -s libldap_r.so libldap_r.so.2) || exit 1
-	rm $PKG/etc/openldap/*.default
-
+	rm -r $PKG/etc
 }
