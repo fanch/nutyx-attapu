@@ -4,9 +4,9 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=initrd
-version=2.6.33.3
+version=2.6.33.4
 release=1
-_tools=27042010
+_tools=08052010
 _baseversion=2.6.33
 SCRIPT_VERSION="attapu"
 source=()

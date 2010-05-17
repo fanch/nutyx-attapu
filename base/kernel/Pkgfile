@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=kernel
-version=2.6.33.3
+version=2.6.33.4
 _BaseVersion=2.6.33
 release=1
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${_BaseVersion}.tar.bz2 config_64 config \

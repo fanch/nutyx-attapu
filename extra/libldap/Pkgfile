@@ -2,18 +2,15 @@
 # URL: http://www.openldap.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libldap
+# Depends on: cyrus-sasl
 
-name=openldap
+name=libldap
 version=2.4.21
-release=2
-source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/$name-$version.tgz)
+release=1
+source=(ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/openldap-$version.tgz)
 
 build() {
-        source /etc/blfs-bootscripts
-        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
-        tar xvf $scripts-$scriptsversion.tar.bz2	
-	cd $name-$version
+	cd openldap-$version
 	export CPPFLAGS="$CPPFLAGS -D_GNU_SOURCE"
 
 	./configure --prefix=/usr \
@@ -32,11 +29,9 @@ build() {
 		--enable-modules \
 		--enable-crypt \
 		--enable-rewrite \
-		--enable-ldbm \
-		--enable-ldbm-api=berkeley \
-		--enable-ldbm-type=btree \
-		--enable-bdb \
-		--enable-hdb \
+		--disable-ldbm \
+		--disable-bdb \
+		--disable-hdb \
 		--enable-ldap \
 		--enable-meta \
 		--enable-monitor \
@@ -47,25 +42,28 @@ build() {
 		--with-proxycache \
 		--enable-wrappers \
 		--enable-aci \
-		--enable-shared
-
-	make depend
+		--enable-dynamic
+	cd include
 	make
 	make DESTDIR=$PKG install   
 
-	sed -i -e "s|-L${PKG}/usr/lib||g" $PKG/usr/lib/*.la
-	/sbin/ldconfig -n $PKG/usr/lib
+	cd ../libraries
+	make depend
+	make
+	make DESTDIR=$PKG install
+
+	cd ../doc/man/man3
+	make
+        make DESTDIR=$PKG install
+
+	cd ../man5
+	make
+	make DESTDIR=$PKG install
 
 	# compatiblity links
 	(cd $PKG/usr/lib; 
 	 ln -s liblber.so liblber.so.2;
 	 ln -s libldap.so libldap.so.2;
 	 ln -s libldap_r.so libldap_r.so.2) || exit 1
-	# Installation of the script
-        cd ../$scripts-$scriptsversion
-        make DESTDIR=$PKG install-openldap1
-	# Suppress files from libldap
-	rm -r $PKG/usr/share/man/man{3,5}
-	rm -r $PKG/usr/{lib,include}	
-	rm -f $PKG/etc/openldap/schema/README
+	rm -r $PKG/etc
 }
