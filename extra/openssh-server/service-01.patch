@@ -1,0 +1,44 @@
+--- blfs-bootscripts-20090302.original/blfs/init.d/sshd	2008-03-12 22:45:44.000000000 +0100
++++ blfs-bootscripts-20090302/blfs/init.d/sshd	2010-04-20 15:06:38.000000000 +0200
+@@ -3,22 +3,35 @@
+ 
+ # Based on sysklogd script from LFS-3.1 and earlier.
+ # Rewritten by Gerard Beekmans  - gerard@linuxfromscratch.org
++# Add create user and Groups - thierryn1@hispeed.ch
+ 
+-#$LastChangedBy: dnicholson $
+-#$Date: 2008-03-12 21:45:44 +0000 (Wed, 12 Mar 2008) $
++# $Id: sshd,v 1.2 2007/09/26 10:21:45 install Exp install $
+ 
+ . /etc/sysconfig/rc
+ . $rc_functions
+-
+-pidfile=/var/run/sshd.pid
++newgroup=sshd
++newuser=sshd
++newid=50
++getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
++getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
++-u $newid -d /var/lib/sshd -s /bin/false -c "sshd PrivSep" $newuser
+ 
+ case "$1" in
+     start)
+         boot_mesg "Starting SSH Server..."
++        if [ ! -f /etc/ssh/ssh_host_key ]; then
++                 /usr/bin/ssh-keygen -t rsa1 -N "" -f /etc/ssh/ssh_host_key
++        fi
++        if [ ! -f /etc/ssh/ssh_host_rsa_key ]; then
++                 /usr/bin/ssh-keygen -t rsa -N "" -f /etc/ssh/ssh_host_rsa_key
++        fi
++        if [ ! -f /etc/ssh/ssh_host_dsa_key ]; then
++                 /usr/bin/ssh-keygen -t dsa -N "" -f /etc/ssh/ssh_host_dsa_key
++        fi
+         # Also prevent ssh from being killed by out of memory conditions
+-        loadproc /usr/sbin/sshd
++        loadproc /usr/sbin/sshd 
+         sleep 1
+-        echo "-16" >/proc/`cat $pidfile`/oom_adj
++        echo "-16" >/proc/`cat /var/run/sshd.pid`/oom_adj
+         ;;
+ 
+     stop)

@@ -1,0 +1,39 @@
+# Description: Services de shell sécurisé openssh
+# URL: http://www.openssh.org/
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: openssh
+
+name=openssh-server
+version=5.5p1
+release=1
+source=(ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-$version.tar.gz\
+         service-01.patch)
+
+build() {
+	source /etc/blfs-bootscripts
+        wget http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
+        tar xvf $scripts-$scriptsversion.tar.bz2
+	cd openssh-$version
+        sed -i "s:-lcrypto:/usr/lib/libcrypto.a -ldl:g" configure
+        sed -i "s/lkrb5 -ldes/lkrb5/" configure
+        install -v -m700 -d $PKG/var/lib/sshd
+        chown -v 0:2 $PKG/var/lib/sshd
+	./configure --prefix=/usr \
+                    --sysconfdir=/etc/ssh \
+                    --libexecdir=/usr/lib/openssh \
+                    --with-tcp-wrappers --with-md5-passwords \
+                    --with-privsep-path=/var/lib/sshd \
+		--mandir=/usr/share/man \
+		--infodir=/usr/share/info \
+                --disable-debug
+	make DESTDIR=$PKG install
+        cd ../$scripts-$scriptsversion
+        patch -Np1 -i ../service-01.patch
+	make DESTDIR=$PKG install-sshd
+	echo "PermitRootLogin no" >> $PKG/etc/ssh/sshd_config
+	# Suppression du client et ses man
+	rm $PKG/etc/ssh/{ssh_config,moduli}
+	rm -r $PKG/usr/bin
+	rm -r $PKG/usr/share/man/man{1,5}
+}
