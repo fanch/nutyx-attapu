@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch 
 
 name=e2fsprogs
-version=1.41.11
+version=1.41.12
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.gz )
 
