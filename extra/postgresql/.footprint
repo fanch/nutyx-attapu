@@ -1177,6 +1177,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-25.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-26.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-27.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-28.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-29.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-4.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-7-4-5.html
@@ -1201,6 +1203,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-21.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-22.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-23.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-24.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-25.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-4.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-0-5.html
@@ -1221,6 +1225,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-18.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-19.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-2.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-20.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-21.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-4.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-1-5.html
@@ -1236,6 +1242,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-13.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-14.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-15.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-16.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-17.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-2.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-4.html
@@ -1246,6 +1254,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2-9.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-2.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-1.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-10.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-11.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-2.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3-4.html
@@ -1257,6 +1267,8 @@ drwxr-xr-x	root/root	usr/share/doc/postgresql/html/
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-3.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-4-1.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-4-2.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-4-3.html
+-rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-4-4.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release-8-4.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/release.html
 -rw-r--r--	root/root	usr/share/doc/postgresql/html/resources.html
@@ -1857,6 +1869,7 @@ drwxr-xr-x	root/root	usr/share/postgresql/timezone/America/Argentina/
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Atikokan
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Atka
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Bahia
+-rw-r--r--	root/root	usr/share/postgresql/timezone/America/Bahia_Banderas
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Barbados
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Belem
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Belize
@@ -1931,6 +1944,7 @@ drwxr-xr-x	root/root	usr/share/postgresql/timezone/America/Kentucky/
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Manaus
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Marigot
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Martinique
+-rw-r--r--	root/root	usr/share/postgresql/timezone/America/Matamoros
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Mazatlan
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Mendoza
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Menominee
@@ -1950,6 +1964,7 @@ drwxr-xr-x	root/root	usr/share/postgresql/timezone/America/Kentucky/
 drwxr-xr-x	root/root	usr/share/postgresql/timezone/America/North_Dakota/
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/North_Dakota/Center
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/North_Dakota/New_Salem
+-rw-r--r--	root/root	usr/share/postgresql/timezone/America/Ojinaga
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Panama
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Pangnirtung
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Paramaribo
@@ -1966,6 +1981,7 @@ drwxr-xr-x	root/root	usr/share/postgresql/timezone/America/North_Dakota/
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Resolute
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Rio_Branco
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Rosario
+-rw-r--r--	root/root	usr/share/postgresql/timezone/America/Santa_Isabel
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Santarem
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Santiago
 -rw-r--r--	root/root	usr/share/postgresql/timezone/America/Santo_Domingo
@@ -1995,6 +2011,7 @@ drwxr-xr-x	root/root	usr/share/postgresql/timezone/Antarctica/
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/Casey
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/Davis
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/DumontDUrville
+-rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/Macquarie
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/Mawson
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/McMurdo
 -rw-r--r--	root/root	usr/share/postgresql/timezone/Antarctica/Palmer

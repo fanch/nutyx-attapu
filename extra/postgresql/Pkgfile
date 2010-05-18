@@ -5,7 +5,7 @@
 # Depends on: libxml2, linux-pam
 
 name=postgresql
-version=8.4.2
+version=8.4.4
 release=1
 source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2 \
         nutyx-01.patch build.patch postgresql.pam)
