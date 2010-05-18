@@ -1,0 +1,44 @@
+# Description: Service de DNS
+# URL: http://www.avahi.org/
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: avahi
+
+
+name=avahi-server
+version=0.6.25
+release=1
+source=(http://www.avahi.org/download/avahi-$version.tar.gz\
+	avahid network-wired.png)
+
+build() {
+	cd avahi-$version
+	  ./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var/lib \
+	--disable-qt3 \
+	--disable-qt4 \
+	--disable-monodoc \
+	--disable-doxygen-doc \
+	--disable-xmltoman \
+	--enable-compat-libdns_sd \
+	--enable-compat-howl \
+	--with-distro=none \
+	--disable-gdbm \
+	--disable-mono \
+	--enable-autoipd 
+	make
+	make DESTDIR=$PKG install
+        mkdir -v -p $PKG/etc/rc.d/init.d
+        mkdir -v -p $PKG/etc/rc.d/rc{0,1,3,4,5,6}.d
+        install -D -m755 ../avahid $PKG/etc/rc.d/init.d/avahid
+
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc3.d/S43avahid
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc5.d/S43avahid
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc4.d/S43avahid
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc0.d/K13avahid
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc1.d/K13avahid
+        ln -svf ../init.d/avahid $PKG/etc/rc.d/rc6.d/K13avahid
+	rm -r $PKG/{etc/dbus-1,usr/{include,bin,lib,share/{avahi,locale,applications,man/man{1,5}}}}
+
+}
