@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/Evas.h
 -rw-r--r--	root/root	usr/include/Evas_Engine_Buffer.h
+-rw-r--r--	root/root	usr/include/Evas_Engine_GL_X11.h
 -rw-r--r--	root/root	usr/include/Evas_Engine_Software_16_X11.h
 -rw-r--r--	root/root	usr/include/Evas_Engine_Software_X11.h
 -rw-r--r--	root/root	usr/include/Evas_Engine_XRender_X11.h
@@ -16,6 +17,10 @@ drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/linux-gnu-i686-ver-svn-05/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/linux-gnu-i686-ver-svn-05/module.la
 -rwxr-xr-x	root/root	usr/lib/evas/modules/engines/buffer/linux-gnu-i686-ver-svn-05/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/
+drwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/linux-gnu-i686-ver-svn-05/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/linux-gnu-i686-ver-svn-05/module.la
+-rwxr-xr-x	root/root	usr/lib/evas/modules/engines/gl_x11/linux-gnu-i686-ver-svn-05/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_16/
 drwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_16/linux-gnu-i686-ver-svn-05/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/engines/software_16/linux-gnu-i686-ver-svn-05/module.la
@@ -84,6 +89,7 @@ lrwxrwxrwx	root/root	usr/lib/libevas-ver-svn-05.so.0 -> libevas-ver-svn-05.so.0.
 -rwxr-xr-x	root/root	usr/lib/libevas.la
 lrwxrwxrwx	root/root	usr/lib/libevas.so -> libevas-ver-svn-05.so.0.9.9
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/evas-opengl-x11.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/evas-software-16-x11.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/evas-software-buffer.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/evas-software-x11.pc
