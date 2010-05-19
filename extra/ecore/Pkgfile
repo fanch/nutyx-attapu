@@ -11,9 +11,8 @@ source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz
 
 build()
 {
-cd $SRC/$name-$version 
+cd $SRC/$name-$version
 	./configure --prefix=/usr
-	
 make
 make DESTDIR=$PKG install
 
