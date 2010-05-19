@@ -11,11 +11,12 @@ source=(http://ezix.org/software/files/$name-$version.tar.gz \
 lshw.png \
 lshw.svg \
 abi_stdlib.diff
-lshw.desktop)
+lshw.desktop lshw-gcc-4.5.patch)
 
 build() {
 cd $name-$version
 	patch -Np0 -i ../abi_stdlib.diff
+	patch -Np1 -i ../lshw-gcc-4.5.patch
 	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/Makefile
 	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/core/Makefile
 	sed -i 's@-g -Wall@-g -Wall -O2 -march=i686 -pipe@g' src/gui/Makefile
