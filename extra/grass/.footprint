@@ -2647,7 +2647,6 @@ drwxr-xr-x	root/root	opt/grass-6.4.0RC5/man/man1/
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/modcolr.1
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/modhead.1
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/modhist.1
--rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/nviz.1
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/nviz_cmd.1
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/p.out.vrml.1
 -rw-r--r--	root/root	opt/grass-6.4.0RC5/man/man1/photo.2image.1
