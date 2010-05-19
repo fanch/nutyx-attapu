@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/midori/
 -rw-r--r--	root/root	usr/lib/midori/libadblock.so
+-rw-r--r--	root/root	usr/lib/midori/libaddons.so
 -rw-r--r--	root/root	usr/lib/midori/libcolorful-tabs.so
 -rw-r--r--	root/root	usr/lib/midori/libcookie-manager.so
 -rw-r--r--	root/root	usr/lib/midori/libfeed-panel.so
@@ -18,6 +19,7 @@ drwxr-xr-x	root/root	usr/lib/midori/
 -rw-r--r--	root/root	usr/lib/midori/libmouse-gestures.so
 -rw-r--r--	root/root	usr/lib/midori/libpage-holder.so
 -rw-r--r--	root/root	usr/lib/midori/libshortcuts.so
+-rw-r--r--	root/root	usr/lib/midori/libstatus-clock.so
 -rw-r--r--	root/root	usr/lib/midori/libstatusbar-features.so
 -rw-r--r--	root/root	usr/lib/midori/libtab-panel.so
 -rw-r--r--	root/root	usr/lib/midori/libtab-switcher.so

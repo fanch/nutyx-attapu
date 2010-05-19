@@ -5,7 +5,7 @@
 # Depends on: atk, cairo, desktop-file-utils, enchant, fontconfig, freetype, gtk, gnutls, glib, gstreamer, hicolor-icon-theme, intltool, libgcrypt, libgpg-error, libtasn1, libsoup, libunique, libxml2, pango, sqlite3, webkit, xdg-utils, librsvg
 
 name=midori
-version=0.2.3
+version=0.2.5
 release=1
 source=(http://archive.xfce.org/src/apps/$name/0.2/$name-$version.tar.bz2)
 
