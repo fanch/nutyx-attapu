@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=ntfs-3g
-version=2010.3.6
+version=2010.5.16
 release=1
 source=(http://tuxera.com/opensource/$name-$version.tgz)
 
