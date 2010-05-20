@@ -12,7 +12,15 @@ source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz
 build()
 {
   cd $name-$version 
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr \
+	--enable-font-loader-eet \
+	--enable-image-loader-gif \
+	--enable-image-loader-jpeg \
+	--enable-image-loader-png \
+	--enable-image-loader-tiff \
+	--enable-buffer --enable-image-loader-eet \
+	--enable-gl-x11
   make
   make install DESTDIR=$PKG
 }
+

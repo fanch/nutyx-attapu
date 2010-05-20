@@ -1,0 +1,11 @@
+--- lshw-B.02.13-original/src/core/scsi.cc	2008-05-09 22:32:50.000000000 +0200
++++ lshw-B.02.13/src/core/scsi.cc	2010-05-19 16:58:50.000000000 +0200
+@@ -842,7 +842,7 @@
+ 
+           if (!controller)
+           {
+-            controller = node.addChild(hwNode::hwNode("scsi", hw::storage));
++            controller = node.addChild(hwNode("scsi", hw::storage));
+             if (controller)
+             {
+               controller->setLogicalName(host_logicalname(number));

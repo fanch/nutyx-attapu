@@ -18,16 +18,16 @@ drwxr-xr-x	root/root	usr/lib/cups/driver/
 lrwxrwxrwx	root/root	usr/lib/cups/driver/foomatic -> /usr/bin/foomatic-ppdfile
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/Foomatic/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/Foomatic/DB.pm
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/Foomatic/Defaults.pm
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/Foomatic/PPD.pm
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/Foomatic/UIElem.pm
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto/Foomatic/
--rw-r--r--	root/root	usr/lib/perl5/site_perl/5.10.1/i686-linux-thread-multi/auto/Foomatic/.packlist
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/Foomatic/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/Foomatic/DB.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/Foomatic/Defaults.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/Foomatic/PPD.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/Foomatic/UIElem.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Foomatic/
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Foomatic/.packlist
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/foomatic-addpjloptions
 -rwxr-xr-x	root/root	usr/sbin/foomatic-cleanupdrivers

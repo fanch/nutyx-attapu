@@ -2,17 +2,17 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
 # Packager: A DEFINIR
-# Depends on:  
 
 name=eina
-version=svn-48737
+version=0.9.9.063
 release=1
-source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.bz2)
+source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz2)
 
 build()
 {
-	cd $name*
-	./autogen.sh --prefix=/usr
+	cd $name-$version 
+	./configure --prefix=/usr
 	make
 	make install DESTDIR=$PKG
 }
+
