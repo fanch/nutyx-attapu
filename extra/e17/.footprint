@@ -1,9 +1,3 @@
-drwxr-xr-x	root/root	opt/
-drwxr-xr-x	root/root	opt/kde/
-drwxr-xr-x	root/root	opt/kde/share/
-drwxr-xr-x	root/root	opt/kde/share/apps/
-drwxr-xr-x	root/root	opt/kde/share/apps/kdm/
-drwxr-xr-x	root/root	opt/kde/share/apps/kdm/sessions/
 -rw-r--r--	root/root	opt/kde/share/apps/kdm/sessions/e17.desktop
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -663,6 +657,10 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/enlightenment.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/everything.pc
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x      root/root       usr/share/apps/
+drwxr-xr-x      root/root       usr/share/apps/kdm/
+drwxr-xr-x      root/root       usr/share/apps/kdm/sessions/
+-rw-r--r--      root/root       usr/share/apps/kdm/sessions/e17.desktop
 drwxr-xr-x	root/root	usr/share/enlightenment/
 -rw-r--r--	root/root	usr/share/enlightenment/AUTHORS
 -rw-r--r--	root/root	usr/share/enlightenment/COPYING
