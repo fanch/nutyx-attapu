@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=libpng
-version=1.4.1
+version=1.4.2
 release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 \
 	http://downloads.sourceforge.net/sourceforge/libpng-apng/$name-$version-apng.patch.gz\
@@ -14,7 +14,7 @@ build() {
 	gzip -d $name-$version-apng.patch.gz
 	cd $name-$version
 	patch -Np1 -i ../$name-$version-apng.patch
-	patch -Np1 -i ../libpng14-enable-read-dither.patch
+#	patch -Np1 -i ../libpng14-enable-read-dither.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
