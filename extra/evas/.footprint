@@ -46,6 +46,10 @@ drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/eet/
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/eet/linux-gnu-i686-ver-svn-05/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/eet/linux-gnu-i686-ver-svn-05/module.la
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/eet/linux-gnu-i686-ver-svn-05/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/gif/
+drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/gif/linux-gnu-i686-ver-svn-05/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/gif/linux-gnu-i686-ver-svn-05/module.la
+-rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/gif/linux-gnu-i686-ver-svn-05/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/jpeg/
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/jpeg/linux-gnu-i686-ver-svn-05/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/jpeg/linux-gnu-i686-ver-svn-05/module.la
