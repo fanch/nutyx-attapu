@@ -2,7 +2,7 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: eina,evas,ecore, e_dbus,embryo,eet,efreet,edje,curl,gdm
+# Depends on: eina, evas, ecore, e_dbus, embryo, eet, efreet, edje, curl, gdm, alsa-lib
 
 name=e17
 version=0.16.999.063
@@ -11,11 +11,14 @@ source=(http://download.enlightenment.org/snapshots/LATEST/enlightenment-$versio
 	e17.desktop)
 
 build()
-{ 
-        install -D -m644 e17.desktop $PKG/usr/share/xsessions/e17.desktop
+{
+	install -D -m644 e17.desktop $PKG/usr/share/xsessions/e17.desktop
         install -D -m644 e17.desktop $PKG/opt/kde/share/apps/kdm/sessions/e17.desktop
+ 
 	cd enlightenment-$version
-	./configure --disable-nls --prefix=/usr
+
+	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
+
 }
