@@ -6,7 +6,7 @@
 name=kernel
 version=2.6.33.4
 _BaseVersion=2.6.33
-release=1
+release=2
 source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${_BaseVersion}.tar.bz2 config_64 config \
         http://www.kernel.org/pub/linux/kernel/v2.6/patch-$version.bz2)
 
