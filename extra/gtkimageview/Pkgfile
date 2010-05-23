@@ -6,11 +6,12 @@
 
 name=gtkimageview
 version=1.6.4
-release=1
-source=(http://trac.bjourne.webfactional.com/attachment/wiki/WikiStart/$name-$version.tar.gz)
-
+release=2
+source=(http://trac.bjourne.webfactional.com/attachment/wiki/WikiStart/gtkimageview-1.6.4.tar.gz?format=raw)
 
 build() {
+	mv $SRC/$name-$version.tar.gz?format=raw $SRC/$name-$version.tar.gz
+	tar -xvf $SRC/$name-$version.tar.gz
 	cd $name-$version
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
