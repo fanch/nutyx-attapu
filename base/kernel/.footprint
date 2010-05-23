@@ -4989,11 +4989,15 @@ drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/drm/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/i810.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/i830.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/i915.h (EMPTY)
+drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/drm/i915/
+-rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/i915/kms.h (EMPTY)
 drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/drm/kms/
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/kms/helper.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/mga.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/r128.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/radeon.h (EMPTY)
+drwxr-xr-x	root/root	usr/src/linux-2.6.33/include/config/drm/radeon/
+-rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/radeon/kms.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/savage.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/sis.h (EMPTY)
 -rw-r--r--	root/root	usr/src/linux-2.6.33/include/config/drm/tdfx.h (EMPTY)
