@@ -5,9 +5,9 @@
 
 name=ntfs-3g
 version=2010.5.16
-release=1
-source=(http://tuxera.com/opensource/$name-$version.tgz)
-
+release=2
+source=(http://tuxera.com/opensource/$name-$version.tgz\
+	25-ntfs-config-write-policy.fdi)
 build() {
 	cd $name-$version
 	./configure --prefix=/usr \
@@ -15,6 +15,10 @@ build() {
 	--disable-ldconfig
 	make
 	make DESTDIR=$PKG install
+	ln -s ntfs-3g $PKG/sbin/mount.ntfs
 	chmod a-x $PKG/lib/*.so
 	rm -rf $PKG/usr/share/doc
+	install -m755 -d $PKG/usr/share/hal/fdi/policy/10osvendor
+	install -m644 $SRC/25-ntfs-config-write-policy.fdi \
+$PKG/usr/share/hal/fdi/policy/10osvendor/
 }

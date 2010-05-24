@@ -7,6 +7,7 @@ lrwxrwxrwx	root/root	lib/libntfs-3g.so.76 -> libntfs-3g.so.76.0.0
 -rw-r--r--	root/root	lib/libntfs-3g.so.76.0.0
 drwxr-xr-x	root/root	sbin/
 lrwxrwxrwx	root/root	sbin/mount.lowntfs-3g -> /bin/lowntfs-3g
+lrwxrwxrwx	root/root	sbin/mount.ntfs -> ntfs-3g
 lrwxrwxrwx	root/root	sbin/mount.ntfs-3g -> /bin/ntfs-3g
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -53,6 +54,11 @@ lrwxrwxrwx	root/root	usr/lib/libntfs-3g.so -> /lib/libntfs-3g.so
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libntfs-3g.pc
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/hal/
+drwxr-xr-x	root/root	usr/share/hal/fdi/
+drwxr-xr-x	root/root	usr/share/hal/fdi/policy/
+drwxr-xr-x	root/root	usr/share/hal/fdi/policy/10osvendor/
+-rw-r--r--	root/root	usr/share/hal/fdi/policy/10osvendor/25-ntfs-config-write-policy.fdi
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man8/
 lrwxrwxrwx	root/root	usr/share/man/man8/mount.lowntfs-3g.8.gz -> ntfs-3g.8.gz
