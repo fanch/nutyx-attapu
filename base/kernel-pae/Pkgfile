@@ -4,14 +4,14 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=kernel-pae
-version=2.6.33.4
-_BaseVersion=2.6.33
+version=2.6.34
+_BaseVersion=2.6.34
 release=1
-source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${_BaseVersion}.tar.bz2 config_64 config \
-        http://www.kernel.org/pub/linux/kernel/v2.6/patch-$version.bz2)
+source=(http://www.kernel.org/pub/linux/kernel/v2.6/linux-${_BaseVersion}.tar.bz2 config_64 config)
+#        http://www.kernel.org/pub/linux/kernel/v2.6/patch-$version.bz2)
 
 build(){
-bzip2 -d patch-$version.bz2
+# bzip2 -d patch-$version.bz2
 cd linux-${_BaseVersion}
 make mrproper
 case `uname -m` in
@@ -20,7 +20,7 @@ case `uname -m` in
         i?86)
         mv $SRC/config ./.config;;
 esac
-patch -Np1 -i ../patch-$version
+# patch -Np1 -i ../patch-$version
 sed -i "s/EXTRAVERSION = .*/EXTRAVERSION =/" Makefile
 make -j3
 make INSTALL_MOD_PATH=$PKG modules_install
