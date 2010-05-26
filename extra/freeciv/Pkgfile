@@ -1,0 +1,17 @@
+# Description: Freeciv est un jeu de stratégie, Open Source, il peut être joué en ligne contre d'autres joueurs, ou en simple joueur contre des AI.
+# URL: http://www.freeciv.net/
+# Maintainer: NuTyX core team
+# Packager: Shai_- <romain.gailleton at gmail dot com>
+# Depends on: gtk2, ...
+name=freeciv
+version=2.2.0
+release=1
+source=(http://downloads.sourceforge.net/project/freeciv/Freeciv%202.2/$version/$name-$version.tar.bz2)
+build() {
+	cd $name-$version
+
+        ./configure --prefix=/usr
+
+        make
+        make DESTDIR=$PKG install
+}
