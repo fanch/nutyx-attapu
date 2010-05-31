@@ -1,2 +1,6 @@
+579812a7c64b4ca4dfb573a5fe9af2a2  chromium-5.0.375.67.tar.bz2
 897de25e9c25a01f8b1b67abe554a6b7  chromium.desktop
 93cd6f5f53b15546dc9d3de49118534c  chromium.sh
+dfbc18bb26dffa2dc6d4d3a857730902  drop_sse2.patch
+ae9e26e6c2d164e6af0e513dae2273a3  ffmpeg_branding_mime.patch
+bb75bfdfe85db26639abbea9054b85f9  libpng-1.4.patch
