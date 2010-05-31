@@ -1,16 +1,29 @@
 # Description: Modules kernel pour les cartes wifi à base de Atheros
 # URL: http://madwifi.org
 # Maintainer: NuTyX core team
-# Packager: guy
+# Packager: guy 
 
 name=madwifi
-version=0.9.4.4119
+
+version=0.9.4.4128
+
+_version=trunk
+snapshot=r4128-20100325
+_kernver=`uname -r`
 release=1
-source=(ftp://ftp.archlinux.org/other/$name/$name-$version.tar.bz2)
+
+#source=(ftp://ftp.archlinux.org/other/$name/$name-$version.tar.bz2)
+
+source=(http://snapshots.madwifi-project.org/madwifi-trunk/madwifi-trunk-$snapshot.tar.gz)
 
 build() {
-    cd $name
-    sed -i -e 's/-Werror//g' Makefile.inc
+    cd $name-${_version}-$snapshot
+
+	sed -i -e 's/-Werror//g' Makefile.inc
+  	make KERNELPATH=/lib/modules/$_kernver/build KERNELRELEASE=$_kernver modules
+  	make KERNELPATH=/lib/modules/$_kernver/build KERNELRELEASE=$_kernver modules \
+       	     DESTDIR=$SRC/pkg KERNELRELEASE=$_kernver install-modules
+
     make 
     make DESTDIR=$PKG BINDIR=/usr/bin MANDIR=/usr/share/man install
 }
