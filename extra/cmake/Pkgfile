@@ -5,8 +5,8 @@
 # Depends on: libidn, curl, expat
 
 name=cmake
-version=2.8.0
-release=2
+version=2.8.1
+release=1
 source=(http://www.cmake.org/files/v2.8/$name-$version.tar.gz)
 
 build() {

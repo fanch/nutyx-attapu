@@ -3,124 +3,71 @@
 # Maintainer: NuTyX core team
 # Packager: sibelle at free dot fr
 
-##### ATTENTION : Ne pas lever git des deps ######
-
-# Depends on: git, subversion, libjpeg, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxslt, ffmpeg, p5-event, libevent, pyopenssl
+# Depends on: yasm, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxss, libevent
 
 name=chromium
-build=47269
-version=6.0.404.0
+version=5.0.375.67
 release=1
 
-source=(chromium.desktop chromium.sh)
+source=(http://build.chromium.org/buildbot/official/$name-$version.tar.bz2 \
+	chromium.desktop chromium.sh \
+	ffmpeg_branding_mime.patch drop_sse2.patch libpng-1.4.patch)
 
 build() {
 
-# Recuperation des sources 
-	nonessential_dirs=(
-        	'src/chrome/test/data'
-        	'src/chrome/tools/test/reference_build'
-        	'src/gears/binaries'
-        	'src/net/data/cache_tests'
-        	'src/o3d/documentation'
-        	'src/o3d/samples'
-        	'src/third_party/lighttpd'
-        	'src/third_party/WebKit/LayoutTests'
-        	'src/webkit/data/layout_tests'
-        	'src/webkit/tools/test/reference_build'
-	)
-	if [ ! -d /usr/src/chromium-$build ]; then
-		mkdir -p /usr/src/chromium-$build
-	fi
-	ln -s /usr/src/chromium-$build
-	cd chromium-$build
-
-# Pour obtenir la plus recente revision d'une maj majeure
-	if [ ! -d depot_tools ]; then
-
-		svn co -r$build -q http://src.chromium.org/svn/trunk/tools/depot_tools/ depot_tools
-	fi
-	chmod +x ./depot_tools/*
-	export PATH=./depot_tools/:$PATH
-	if [ ! -f .gclient ]; then
-		gclient.py config http://src.chromium.org/svn/releases/$version
-
-	sed -e '15i\      "src/third_party/WebKit/LayoutTests": None,' \
-    	    -e '15i\      "src/chrome/tools/test/reference_build": None,' \
-	    -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32": None,' \
-            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/ia32_dbg": None,' \
-            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64": None,' \
-            -e '15i\      "src/third_party/ffmpeg/binaries/chromium/linux/x64_dbg": None,' \
-            -i .gclient
-	
-	gclient.py sync --force --nohooks
-
-	fi
-
-	for i in ${nonessential_dirs[@]}; do
-        	[ -d "$i" ] && rm -rf "$i"
-	done
-
-	find . -iname '*.dll' -delete
-	find . -iname '*.exe' -delete
-	find . -iname '*.o' -delete
-	find . -iname '*.nexe' -delete
-
 # Compilation des sources
 
-        export GYP_GENERATORS='make'
-        export BUILDTYPE='Release'
-        export GYP_DEFINES="gcc_version=45 \
-                no_strict_aliasing=1 \
-                linux_sandbox_path=/usr/lib/chromium/chromium-sandbox \
-                linux_strip_binary=1 \
-                release_extra_cflags='${CFLAGS}' \
-                ffmpeg_branding=Chrome \
-                use_system_libjpeg=1 \
-                use_system_libxslt=1 \
-                use_system_bzip2=1 \
-                uise_system_libpng=1 \
-                use_system_ffmpeg=0 \
-                use_system_yasm=1 \
-                use_system_libevent=1 \
-                use_system_ssl=0"
+	cd $name-$version
+
+### Patch
+	patch -p1 -i$SRC/ffmpeg_branding_mime.patch
+#	patch -p1 -i$SRC/drop_sse2.patch
+	patch -p1 -i$SRC/libpng-1.4.patch
+
+### Configure
+	build/gyp_chromium -f make build/all.gyp --depth=. \
+	    -Dgcc_version=45 \
+	    -Dno_strict_aliasing=1 \
+	    -Dwerror= \
+	    -Dlinux_sandbox_path=/usr/lib/chromium/chromium-sandbox \
+	    -Dlinux_strip_binary=1 \
+	    -Drelease_extra_cflags="${CFLAGS}" \
+	    -Dffmpeg_branding=Chrome \
+	    -Duse_system_libjpeg=1 \
+	    -Duse_system_libxslt=0 \
+	    -Duse_system_libxml=0 \
+	    -Duse_system_bzip2=1 \
+	    -Duse_system_zlib=1 \
+	    -Duse_system_libpng=1 \
+	    -Duse_system_ffmpeg=0 \
+	    -Duse_system_yasm=1 \
+	    -Duse_system_libevent=1 \
+	    -Duse_system_ssl=0
 
 
-        export PATH=./depot_tools/:$PATH
+        make chrome chrome_sandbox BUILDTYPE=Release  
 
-	gclient.py runhooks --force	
+	cd $SRC/$name-$version
 
-        cd src
+        install -m 0755 -D out/Release/chrome $PKG/usr/lib/chromium/chromium
+        install -m 4555 -o root -g root -D out/Release/chrome_sandbox $PKG/usr/lib/chromium/chromium-sandbox
+        install -m 0644 -D out/Release/chrome.pak $PKG/usr/lib/chromium/chrome.pak
 
-        make chrome chrome_sandbox  
-
-        cd $SRC/$name-$build
-
-        install -m 0755 -D src/out/Release/chrome \
-                $PKG/usr/lib/chromium/chromium
-        install -m 4555 -o root -g root -D src/out/Release/chrome_sandbox \
-                $PKG/usr/lib/chromium/chromium-sandbox
-        install -m 0644 -D src/out/Release/chrome.pak \
-                $PKG/usr/lib/chromium/chrome.pak
         ln -s /usr/lib/libavcodec.so.52 $PKG/usr/lib/chromium/libavcodec.so.52
         ln -s /usr/lib/libavformat.so.52 $PKG/usr/lib/chromium/libavformat.so.52
         ln -s /usr/lib/libavutil.so.50 $PKG/usr/lib/chromium/libavutil.so.50
-        cp -a src/out/Release/locales src/out/Release/resources \
-                $PKG/usr/lib/chromium/
+        cp -a out/Release/locales out/Release/resources $PKG/usr/lib/chromium/
         find $PKG/usr/lib/chromium/ -name '*.d' -type f -delete
-        install -m 0644 -D src/out/Release/chrome.1 \
-                $PKG/usr/share/man/man1/chromium.1
+        install -m 0644 -D out/Release/chrome.1 $PKG/usr/share/man/man1/chromium.1
 
-        install -m 0644 -D $SRC/chromium.desktop \
-                $PKG/usr/share/applications/chromium.desktop
+        install -m 0644 -D ../chromium.desktop $PKG/usr/share/applications/chromium.desktop
+
         for size in 16 32 48 256; do
                 install -m 0644 -D \
-                        src/chrome/app/theme/chromium/product_logo_${size}.png \
+                        chrome/app/theme/chromium/product_logo_${size}.png \
                         $PKG/usr/share/icons/hicolor/${size}x${size}/apps/chromium.png
         done
-        install -m 0755 -D $SRC/chromium.sh \
-                $PKG/usr/bin/chromium
+        install -m 0755 -D ../chromium.sh $PKG/usr/bin/chromium
 
-        install -m 0644 -D src/LICENSE \
-                $PKG/usr/share/licenses/chromium/LICENSE
+        install -m 0644 -D LICENSE $PKG/usr/share/licenses/chromium/LICENSE
 }

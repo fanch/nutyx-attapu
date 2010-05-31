@@ -1,0 +1,23 @@
+# Decription: Librairie nécessaire pour implémenter dbus sous Qt 
+# URL: http://people.canonical.com/~agateau/dbusmenu/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: cmake, qt
+
+name=libdbusmenu-qt
+version=0.3.3
+release=1
+
+source=(http://people.canonical.com/~agateau/dbusmenu/$name-$version.tar.bz2 )
+
+build() {
+	cd $name-$version
+        mkdir build
+        cd build
+        cmake -DCMAKE_INSTALL_PREFIX=/usr .. \
+              -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_SKIP_RPATH=OFF
+        make -j3
+        make DESTDIR=$PKG install
+}
+
