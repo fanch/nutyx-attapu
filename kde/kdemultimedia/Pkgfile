@@ -5,9 +5,12 @@
 # Depends on: kdelibs, taglib, libmusicbrainz, cdparanoia, phonon
 
 name=kdemultimedia
-version=4.4.3
+version=4.4.81svn1131245
 release=1
-source=( ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
+#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
+source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/$name-4.4.81svn1131245.tar.bz2)
+
+
 build() {
 	cd $name-$version
 	mkdir build
@@ -16,6 +19,6 @@ build() {
 	-DBUILD_doc=OFF
 	make -j3
 	make DESTDIR=$PKG install
-	rm $PKG/usr/share/apps/profiles/kscd.profile.xml
+#	rm $PKG/usr/share/apps/profiles/kscd.profile.xml
 }
 
