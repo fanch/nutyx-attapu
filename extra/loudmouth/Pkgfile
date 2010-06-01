@@ -2,7 +2,7 @@
 # URL: http://developer.imendio.com/wiki/Loudmouth
 # Packager: thierryn1 at hispeed dot ch
 # Maintainer: NuTyX core team
-# Depends on: libidn
+# Depends on: libidn, glib
 
 name=loudmouth
 version=1.4.3
