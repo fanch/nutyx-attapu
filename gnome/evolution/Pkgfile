@@ -1,7 +1,7 @@
 # Description: client messagerie evolution
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk-doc, gtkhtml, gnome-doc-utils, evolution-data-server, libcanberra, libunique, networkmanager, gtkimageview, nss, hal, dbus-glib, gstreamer, libnotify, intltool, gnome-desktop
+# Depends on: libpst, gtk-doc, gtkhtml, gnome-doc-utils, evolution-data-server, libcanberra, libunique, networkmanager, gtkimageview, nss, hal, dbus-glib, gstreamer, libnotify, intltool, gnome-desktop
 
 name=evolution
 version=2.30.1.2
