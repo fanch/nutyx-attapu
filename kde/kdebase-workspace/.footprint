@@ -32,6 +32,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdostartupconfig4
 -rwxr-xr-x	root/root	usr/bin/kfontinst
 -rwxr-xr-x	root/root	usr/bin/kfontview
+-rwxr-xr-x	root/root	usr/bin/kinfocenter
 -rwxr-xr-x	root/root	usr/bin/klipper
 -rwxr-xr-x	root/root	usr/bin/kmenuedit
 -rwxr-xr-x	root/root	usr/bin/krandom.kss
@@ -47,17 +48,16 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ksysguardd
 -rwxr-xr-x	root/root	usr/bin/ksystraycmd
 -rwxr-xr-x	root/root	usr/bin/kwin
--rwxr-xr-x	root/root	usr/bin/kwin_killer_helper
--rwxr-xr-x	root/root	usr/bin/kwin_rules_dialog
 -rwxr-xr-x	root/root	usr/bin/kwrited
--rwxr-xr-x	root/root	usr/bin/kxkb
+-rwxr-xr-x	root/root	usr/bin/oxygen-demo
+-rwxr-xr-x	root/root	usr/bin/oxygen-settings
 -rwxr-xr-x	root/root	usr/bin/plasma-desktop
 -rwxr-xr-x	root/root	usr/bin/plasma-netbook
 -rwxr-xr-x	root/root	usr/bin/plasma-overlay
+-rwxr-xr-x	root/root	usr/bin/plasma-windowed
 -rwxr-xr-x	root/root	usr/bin/plasmaengineexplorer
 -rwxr-xr-x	root/root	usr/bin/plasmawallpaperviewer
 -rwxr-xr-x	root/root	usr/bin/plasmoidviewer
--rwxr-xr-x	root/root	usr/bin/safestartkde
 -rwxr-xr-x	root/root	usr/bin/solid-action-desktop-gen
 -rwxr-xr-x	root/root	usr/bin/solid-bluetooth
 -rwxr-xr-x	root/root	usr/bin/solid-network
@@ -69,6 +69,7 @@ drwxr-xr-x	root/root	usr/etc/dbus-1/
 drwxr-xr-x	root/root	usr/etc/dbus-1/system.d/
 -rw-r--r--	root/root	usr/etc/dbus-1/system.d/org.kde.fontinst.conf
 -rw-r--r--	root/root	usr/etc/dbus-1/system.d/org.kde.kcontrol.kcmclock.conf
+-rw-r--r--	root/root	usr/etc/dbus-1/system.d/org.kde.kcontrol.kcmkdm.conf
 -rw-r--r--	root/root	usr/etc/dbus-1/system.d/org.kde.ksysguard.processlisthelper.conf
 -rw-r--r--	root/root	usr/etc/ksysguarddrc
 drwxr-xr-x	root/root	usr/include/
@@ -81,12 +82,6 @@ drwxr-xr-x	root/root	usr/include/KDE/Plasma/Weather/
 -rw-r--r--	root/root	usr/include/kdecoration.h
 -rw-r--r--	root/root	usr/include/kdecorationbridge.h
 -rw-r--r--	root/root	usr/include/kdecorationfactory.h
-drwxr-xr-x	root/root	usr/include/kephal/
--rw-r--r--	root/root	usr/include/kephal/configurations.h
--rw-r--r--	root/root	usr/include/kephal/kephal.h
--rw-r--r--	root/root	usr/include/kephal/kephal_export.h
--rw-r--r--	root/root	usr/include/kephal/outputs.h
--rw-r--r--	root/root	usr/include/kephal/screens.h
 -rw-r--r--	root/root	usr/include/kgreeterplugin.h
 -rw-r--r--	root/root	usr/include/kscreensaver.h
 -rw-r--r--	root/root	usr/include/kscreensaver_vroot.h
@@ -113,6 +108,9 @@ drwxr-xr-x	root/root	usr/include/ksysguard/
 -rw-r--r--	root/root	usr/include/kwinshadereffect.h
 -rw-r--r--	root/root	usr/include/kwinxrenderutils.h
 drwxr-xr-x	root/root	usr/include/kworkspace/
+-rw-r--r--	root/root	usr/include/kworkspace/kactivityconsumer.h
+-rw-r--r--	root/root	usr/include/kworkspace/kactivitycontroller.h
+-rw-r--r--	root/root	usr/include/kworkspace/kactivityinfo.h
 -rw-r--r--	root/root	usr/include/kworkspace/kdisplaymanager.h
 -rw-r--r--	root/root	usr/include/kworkspace/kwindowlistmenu.h
 -rw-r--r--	root/root	usr/include/kworkspace/kworkspace.h
@@ -190,11 +188,11 @@ drwxr-xr-x	root/root	usr/include/taskmanager/
 -rw-r--r--	root/root	usr/include/taskmanager/taskmanager_export.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/KDE4Workspace-4.4.3/
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.3/KDE4WorkspaceConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.3/KDE4WorkspaceConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.3/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.3/KDE4WorkspaceLibraryTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceLibraryTargets.cmake
 drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/krdb_clearlibrarypath
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin_update_default_rules
@@ -204,6 +202,7 @@ drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/plasma-to-plasma-desktop
 drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/classic_mode.so
+-rwxr-xr-x	root/root	usr/lib/kde4/devinfo.so
 -rwxr-xr-x	root/root	usr/lib/kde4/fontthumbnail.so
 -rwxr-xr-x	root/root	usr/lib/kde4/icon_mode.so
 -rwxr-xr-x	root/root	usr/lib/kde4/ion_bbcukmet.so
@@ -215,16 +214,18 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_bell.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_clock.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_colors.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_desktopthemedetails.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_desktoppaths.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_desktoptheme.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_display.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fontinst.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fonts.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_hotkeys.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_info.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_infosummary.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_input.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_joystick.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kdm.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_keyboard.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_keyboard_layout.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_keys.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_krunner_kill.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_ksplashthemes.so
@@ -237,22 +238,31 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwinscreenedges.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwintabbox.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_launch.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_memory.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_nic.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_opengl.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_pci.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_powerdevilconfig.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_randr.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_samba.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_screensaver.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_smserver.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_solid.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_solid_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_standard_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_style.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_usb.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_workspaceoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_xinerama.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kded_freespacenotifier.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_kephal.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kded_keyboard.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_khotkeys.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_networkstatus.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_powerdevil.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_randrmonitor.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_statusnotifierwatcher.so
+-rwxr-xr-x	root/root	usr/lib/kde4/keyboard_layout_widget.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kfontviewpart.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kgreet_classic.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kgreet_generic.so
@@ -272,8 +282,10 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_shell.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_solid.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_webshortcuts.so
+-rwxr-xr-x	root/root	usr/lib/kde4/krunner_windowedwidgets.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krunner_windows.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kstyle_keramik_config.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kstyle_oxygen_config.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin3_aurorae.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin3_b2.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin3_kde2.so
@@ -287,7 +299,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin3_tabstrip.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin3_web.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin4_effect_builtins.so
--rwxr-xr-x	root/root	usr/lib/kde4/kwin_aurorae_config.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin_b2_config.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin_kde2_config.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kwin_keramik_config.so
@@ -302,12 +313,16 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/fontinst_x11
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kcheckpass
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kcmdatetimehelper
+-rwxr-xr-x	root/root	usr/lib/kde4/libexec/kcmkdmhelper
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kdm_config
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kdm_greet
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kfontprint
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/krootimage
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/kscreenlocker
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/ksysguardprocesslist_helper
+-rwxr-xr-x	root/root	usr/lib/kde4/libexec/kwin_killer_helper
+-rwxr-xr-x	root/root	usr/lib/kde4/libexec/kwin_opengl_test
+-rwxr-xr-x	root/root	usr/lib/kde4/libexec/kwin_rules_dialog
 -rwxr-xr-x	root/root	usr/lib/kde4/libexec/test_kcm_xinerama
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma-geolocation-ip.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_animator_default.so
@@ -319,8 +334,10 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_devicenotifier.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_dig_clock.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_icon.so
+-rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_keyboard.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_launcher.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_lockout.so
+-rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_notifications.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_pager.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_panelspacer_internal.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_applet_quicklaunch.so
@@ -357,6 +374,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_applicationjobs.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_apps.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_calendar.so
+-rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_devicenotifications.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_dict.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_executable.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_favicons.so
@@ -374,6 +392,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/libexec/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_rss.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_searchlaunch.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_soliddevice.so
+-rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_statusnotifieritem.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_systemmonitor.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_tasks.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_time.so
@@ -389,13 +408,15 @@ drwxr-xr-x	root/root	usr/lib/kde4/plugins/designer/
 -rwxr-xr-x	root/root	usr/lib/kde4/plugins/designer/ksysguardwidgets.so
 drwxr-xr-x	root/root	usr/lib/kde4/plugins/gui_platform/
 -rwxr-xr-x	root/root	usr/lib/kde4/plugins/gui_platform/libkde.so
+drwxr-xr-x	root/root	usr/lib/kde4/plugins/styles/
+-rwxr-xr-x	root/root	usr/lib/kde4/plugins/styles/oxygen.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_fakenet.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_hal_power.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_lirc.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_wicd.so
 lrwxrwxrwx	root/root	usr/lib/libkdecorations.so -> libkdecorations.so.4
-lrwxrwxrwx	root/root	usr/lib/libkdecorations.so.4 -> libkdecorations.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkdecorations.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkdecorations.so.4 -> libkdecorations.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkdecorations.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kaccess.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kcminit.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kcminit_startup.so
@@ -406,80 +427,84 @@ lrwxrwxrwx	root/root	usr/lib/libkdecorations.so.4 -> libkdecorations.so.4.4.0
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_ksysguard.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kwin.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kwin_rules_dialog.so
--rwxr-xr-x	root/root	usr/lib/libkdeinit4_kxkb.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_plasma-desktop.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_plasma-netbook.so
+-rwxr-xr-x	root/root	usr/lib/libkdeinit4_plasma-windowed.so
 lrwxrwxrwx	root/root	usr/lib/libkephal.so -> libkephal.so.4
-lrwxrwxrwx	root/root	usr/lib/libkephal.so.4 -> libkephal.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkephal.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkephal.so.4 -> libkephal.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkephal.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkfontinst.so -> libkfontinst.so.4
-lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.4 -> libkfontinst.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkfontinst.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkfontinst.so.4 -> libkfontinst.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkfontinst.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so -> libkfontinstui.so.4
-lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.4 -> libkfontinstui.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.4.4.0
-lrwxrwxrwx	root/root	usr/lib/libkhotkeysprivate.so.4 -> libkhotkeysprivate.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkhotkeysprivate.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkfontinstui.so.4 -> libkfontinstui.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkfontinstui.so.4.5.0
+lrwxrwxrwx	root/root	usr/lib/libkhotkeysprivate.so.4 -> libkhotkeysprivate.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkhotkeysprivate.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/libkickoff.so
 lrwxrwxrwx	root/root	usr/lib/libkscreensaver.so -> libkscreensaver.so.5
 lrwxrwxrwx	root/root	usr/lib/libkscreensaver.so.5 -> libkscreensaver.so.5.0.0
 -rwxr-xr-x	root/root	usr/lib/libkscreensaver.so.5.0.0
 lrwxrwxrwx	root/root	usr/lib/libksgrd.so -> libksgrd.so.4
-lrwxrwxrwx	root/root	usr/lib/libksgrd.so.4 -> libksgrd.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libksgrd.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libksgrd.so.4 -> libksgrd.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libksgrd.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libksignalplotter.so -> libksignalplotter.so.4
-lrwxrwxrwx	root/root	usr/lib/libksignalplotter.so.4 -> libksignalplotter.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libksignalplotter.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libksignalplotter.so.4 -> libksignalplotter.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libksignalplotter.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkwineffects.so -> libkwineffects.so.1
 lrwxrwxrwx	root/root	usr/lib/libkwineffects.so.1 -> libkwineffects.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libkwineffects.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libkwinnvidiahack.so -> libkwinnvidiahack.so.4
-lrwxrwxrwx	root/root	usr/lib/libkwinnvidiahack.so.4 -> libkwinnvidiahack.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkwinnvidiahack.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkwinnvidiahack.so.4 -> libkwinnvidiahack.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkwinnvidiahack.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkworkspace.so -> libkworkspace.so.4
-lrwxrwxrwx	root/root	usr/lib/libkworkspace.so.4 -> libkworkspace.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkworkspace.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkworkspace.so.4 -> libkworkspace.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkworkspace.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/liblsofui.so -> liblsofui.so.4
-lrwxrwxrwx	root/root	usr/lib/liblsofui.so.4 -> liblsofui.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/liblsofui.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/liblsofui.so.4 -> liblsofui.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/liblsofui.so.4.5.0
+lrwxrwxrwx	root/root	usr/lib/liboxygenstyle.so -> liboxygenstyle.so.4
+lrwxrwxrwx	root/root	usr/lib/liboxygenstyle.so.4 -> liboxygenstyle.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/liboxygenstyle.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so -> libplasma-geolocation-interface.so.4
-lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so.4 -> libplasma-geolocation-interface.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libplasma-geolocation-interface.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libplasma-geolocation-interface.so.4 -> libplasma-geolocation-interface.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libplasma-geolocation-interface.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libplasma_applet-system-monitor.so -> libplasma_applet-system-monitor.so.4
-lrwxrwxrwx	root/root	usr/lib/libplasma_applet-system-monitor.so.4 -> libplasma_applet-system-monitor.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libplasma_applet-system-monitor.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libplasma_applet-system-monitor.so.4 -> libplasma_applet-system-monitor.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libplasma_applet-system-monitor.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libplasmaclock.so -> libplasmaclock.so.4
-lrwxrwxrwx	root/root	usr/lib/libplasmaclock.so.4 -> libplasmaclock.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libplasmaclock.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libplasmaclock.so.4 -> libplasmaclock.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libplasmaclock.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libplasmagenericshell.so -> libplasmagenericshell.so.4
-lrwxrwxrwx	root/root	usr/lib/libplasmagenericshell.so.4 -> libplasmagenericshell.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libplasmagenericshell.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libplasmagenericshell.so.4 -> libplasmagenericshell.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libplasmagenericshell.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libprocesscore.so -> libprocesscore.so.4
-lrwxrwxrwx	root/root	usr/lib/libprocesscore.so.4 -> libprocesscore.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libprocesscore.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libprocesscore.so.4 -> libprocesscore.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libprocesscore.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libprocessui.so -> libprocessui.so.4
-lrwxrwxrwx	root/root	usr/lib/libprocessui.so.4 -> libprocessui.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libprocessui.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libprocessui.so.4 -> libprocessui.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libprocessui.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libsolidcontrol.so -> libsolidcontrol.so.4
-lrwxrwxrwx	root/root	usr/lib/libsolidcontrol.so.4 -> libsolidcontrol.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libsolidcontrol.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libsolidcontrol.so.4 -> libsolidcontrol.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libsolidcontrol.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libsolidcontrolifaces.so -> libsolidcontrolifaces.so.4
-lrwxrwxrwx	root/root	usr/lib/libsolidcontrolifaces.so.4 -> libsolidcontrolifaces.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libsolidcontrolifaces.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libsolidcontrolifaces.so.4 -> libsolidcontrolifaces.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libsolidcontrolifaces.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libsystemsettingsview.so -> libsystemsettingsview.so.1
 -rwxr-xr-x	root/root	usr/lib/libsystemsettingsview.so.1
 lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so -> libtaskmanager.so.4
-lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.4 -> libtaskmanager.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libtaskmanager.so.4 -> libtaskmanager.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libtaskmanager.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libweather_ion.so -> libweather_ion.so.4
-lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.4 -> libweather_ion.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libweather_ion.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libweather_ion.so.4 -> libweather_ion.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libweather_ion.so.4.5.0
 drwxr-xr-x	root/root	usr/lib/strigi/
 -rwxr-xr-x	root/root	usr/lib/strigi/strigita_font.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/applications/kde4/
 -rw-r--r--	root/root	usr/share/applications/kde4/kfontview.desktop
+-rw-r--r--	root/root	usr/share/applications/kde4/kinfocenter.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/klipper.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kmenuedit.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/krandrtray.desktop
@@ -513,7 +538,6 @@ drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/
 drwxr-xr-x	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/background.svgz
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/panel-background.svgz
--rw-r--r--	root/root	usr/share/apps/desktoptheme/air-netbook/widgets/systemtray.svgz
 drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/
 drwxr-xr-x	root/root	usr/share/apps/desktoptheme/default/calendar/
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/default/calendar/mini-calendar.svgz
@@ -525,6 +549,8 @@ drwxr-xr-x	root/root	usr/share/apps/doc/
 drwxr-xr-x	root/root	usr/share/apps/doc/kdm/
 -rw-r--r--	root/root	usr/share/apps/doc/kdm/README
 -rw-r--r--	root/root	usr/share/apps/doc/kdm/greeter.dtd
+drwxr-xr-x	root/root	usr/share/apps/freespacenotifier/
+-rw-r--r--	root/root	usr/share/apps/freespacenotifier/freespacenotifier.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/kaccess/
 -rw-r--r--	root/root	usr/share/apps/kaccess/kaccess.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/katepart/
@@ -547,6 +573,8 @@ drwxr-xr-x	root/root	usr/share/apps/kcmkeys/
 -rw-r--r--	root/root	usr/share/apps/kcmkeys/wm3.kksrc
 drwxr-xr-x	root/root	usr/share/apps/kcmsolidactions/
 -rw-r--r--	root/root	usr/share/apps/kcmsolidactions/solid-action-template.desktop
+drwxr-xr-x	root/root	usr/share/apps/kcmusb/
+-rw-r--r--	root/root	usr/share/apps/kcmusb/usb.ids
 drwxr-xr-x	root/root	usr/share/apps/kconf_update/
 -rwxr-xr-x	root/root	usr/share/apps/kconf_update/convertShortcuts.pl
 -rw-r--r--	root/root	usr/share/apps/kconf_update/kaccel.upd
@@ -554,6 +582,7 @@ drwxr-xr-x	root/root	usr/share/apps/kconf_update/
 -rw-r--r--	root/root	usr/share/apps/kconf_update/klipper-kconfigxt.upd
 -rw-r--r--	root/root	usr/share/apps/kconf_update/krdb.upd
 -rw-r--r--	root/root	usr/share/apps/kconf_update/ksmserver.upd
+-rw-r--r--	root/root	usr/share/apps/kconf_update/ksmserver_shortcuts.upd
 -rw-r--r--	root/root	usr/share/apps/kconf_update/kwin.upd
 -rwxr-xr-x	root/root	usr/share/apps/kconf_update/kwin3_plugin.pl
 -rw-r--r--	root/root	usr/share/apps/kconf_update/kwin3_plugin.upd
@@ -692,6 +721,21 @@ drwxr-xr-x	root/root	usr/share/apps/kdm/themes/circles/
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/help.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/options.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/circles/screenshot.png
+drwxr-xr-x	root/root	usr/share/apps/kdm/themes/ethais/
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/KdmGreeterTheme.desktop
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/ethais.xml
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/lineedit_active.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/lineedit_normal.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/lock.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/login_active.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/login_normal.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/pw_icon.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/rectangle.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/rectangle_overlay.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/screenshot.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/session_normal.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/system_normal.png
+-rw-r--r--	root/root	usr/share/apps/kdm/themes/ethais/user_icon.png
 drwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/.directory
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/KdmGreeterTheme.desktop
@@ -710,19 +754,16 @@ drwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/user-entry.png
 -rwxr-xr-x	root/root	usr/share/apps/kdm/themes/kdm-nutyx/win-login.png
 drwxr-xr-x	root/root	usr/share/apps/kdm/themes/oxygen-air/
--rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/1920x1200.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/KdmGreeterTheme.desktop
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/caps.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/icon-kde.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/oxygen-air.xml
--rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/pw-entry-li.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/pw-entry.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/screenshot.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/session_button-li.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/session_button.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/system_button-li.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/system_button.png
--rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/user-entry-li.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/user-entry.png
 -rw-r--r--	root/root	usr/share/apps/kdm/themes/oxygen-air/win-login.png
 drwxr-xr-x	root/root	usr/share/apps/kdm/themes/oxygen/
@@ -764,6 +805,8 @@ drwxr-xr-x	root/root	usr/share/apps/khotkeys/
 -rw-r--r--	root/root	usr/share/apps/khotkeys/kde32b1.khotkeys
 -rw-r--r--	root/root	usr/share/apps/khotkeys/konqueror_gestures_kde321.khotkeys
 -rw-r--r--	root/root	usr/share/apps/khotkeys/printscreen.khotkeys
+drwxr-xr-x	root/root	usr/share/apps/kinfocenter/
+-rw-r--r--	root/root	usr/share/apps/kinfocenter/kinfocenterui.rc
 drwxr-xr-x	root/root	usr/share/apps/kmenuedit/
 drwxr-xr-x	root/root	usr/share/apps/kmenuedit/icons/
 drwxr-xr-x	root/root	usr/share/apps/kmenuedit/icons/oxygen/
@@ -810,6 +853,15 @@ drwxr-xr-x	root/root	usr/share/apps/ksplash/Themes/Simple/
 drwxr-xr-x	root/root	usr/share/apps/ksplash/Themes/SimpleSmall/
 -rw-r--r--	root/root	usr/share/apps/ksplash/Themes/SimpleSmall/Preview.png
 -rw-r--r--	root/root	usr/share/apps/ksplash/Themes/SimpleSmall/Theme.rc
+drwxr-xr-x	root/root	usr/share/apps/kstyle/
+drwxr-xr-x	root/root	usr/share/apps/kstyle/themes/
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/oxygen.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtcde.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtcleanlooks.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtgtk.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtmotif.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtplastique.themerc
+-rw-r--r--	root/root	usr/share/apps/kstyle/themes/qtwindows.themerc
 drwxr-xr-x	root/root	usr/share/apps/ksysguard/
 -rw-r--r--	root/root	usr/share/apps/ksysguard/ProcessTable.sgrd
 -rw-r--r--	root/root	usr/share/apps/ksysguard/SystemLoad2.sgrd
@@ -817,6 +869,13 @@ drwxr-xr-x	root/root	usr/share/apps/ksysguard/
 -rw-r--r--	root/root	usr/share/apps/ksysguard/ksysguardui.rc
 drwxr-xr-x	root/root	usr/share/apps/ksysguard/scripts/
 -rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/README
+drwxr-xr-x	root/root	usr/share/apps/ksysguard/scripts/smaps/
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/helper.js
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/index.html
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/main.js
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/smaps.desktop
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/sorttable.js
+-rw-r--r--	root/root	usr/share/apps/ksysguard/scripts/smaps/style.css
 drwxr-xr-x	root/root	usr/share/apps/kthememanager/
 drwxr-xr-x	root/root	usr/share/apps/kthememanager/themes/
 drwxr-xr-x	root/root	usr/share/apps/kthememanager/themes/HighContrastDark-big/
@@ -897,9 +956,14 @@ drwxr-xr-x	root/root	usr/share/apps/kwin/default_rules/
 drwxr-xr-x	root/root	usr/share/apps/kwrited/
 -rw-r--r--	root/root	usr/share/apps/kwrited/kwrited.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/plasma-desktop/
+drwxr-xr-x	root/root	usr/share/apps/plasma-desktop/init/
+-rw-r--r--	root/root	usr/share/apps/plasma-desktop/init/00-defaultLayout.js
 -rw-r--r--	root/root	usr/share/apps/plasma-desktop/plasma-desktop.notifyrc
+drwxr-xr-x	root/root	usr/share/apps/plasma-desktop/updates/
+-rw-r--r--	root/root	usr/share/apps/plasma-desktop/updates/systray-to-notifications-widget.js
 drwxr-xr-x	root/root	usr/share/apps/plasma-netbook/
--rw-r--r--	root/root	usr/share/apps/plasma-netbook/plasma-default-layoutrc
+drwxr-xr-x	root/root	usr/share/apps/plasma-netbook/init/
+-rw-r--r--	root/root	usr/share/apps/plasma-netbook/init/00-defaultLayout.js
 drwxr-xr-x	root/root	usr/share/apps/plasma/
 drwxr-xr-x	root/root	usr/share/apps/plasma/dashboard/
 drwxr-xr-x	root/root	usr/share/apps/plasma/dashboard/AppleClasses/
@@ -911,6 +975,23 @@ drwxr-xr-x	root/root	usr/share/apps/plasma/dashboard/AppleClasses/
 -rw-r--r--	root/root	usr/share/apps/plasma/dashboard/AppleClasses/AppleSlider.js
 drwxr-xr-x	root/root	usr/share/apps/plasma/dashboard/button/
 -rw-r--r--	root/root	usr/share/apps/plasma/dashboard/button/genericButton.js
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-desktop.defaultPanel/
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-desktop.defaultPanel/contents/
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-desktop.defaultPanel/contents/layout.js
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-desktop.defaultPanel/metadata.desktop
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPage/
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPage/contents/
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPage/contents/layout.js
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPage/metadata.desktop
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPanel/
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPanel/contents/
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPanel/contents/layout.js
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultPanel/metadata.desktop
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultSal/
+drwxr-xr-x	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultSal/contents/
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultSal/contents/layout.js
+-rw-r--r--	root/root	usr/share/apps/plasma/layout-templates/org.kde.plasma-netbook.defaultSal/metadata.desktop
 drwxr-xr-x	root/root	usr/share/apps/plasma/services/
 -rw-r--r--	root/root	usr/share/apps/plasma/services/applicationjobs.operations
 -rw-r--r--	root/root	usr/share/apps/plasma/services/apps.operations
@@ -918,6 +999,7 @@ drwxr-xr-x	root/root	usr/share/apps/plasma/services/
 -rw-r--r--	root/root	usr/share/apps/plasma/services/notifications.operations
 -rw-r--r--	root/root	usr/share/apps/plasma/services/nowplaying.operations
 -rw-r--r--	root/root	usr/share/apps/plasma/services/searchlaunch.operations
+-rw-r--r--	root/root	usr/share/apps/plasma/services/statusnotifieritem.operations
 -rw-r--r--	root/root	usr/share/apps/plasma/services/tasks.operations
 drwxr-xr-x	root/root	usr/share/apps/plasma_scriptengine_ruby/
 -rw-r--r--	root/root	usr/share/apps/plasma_scriptengine_ruby/applet.rb
@@ -936,7 +1018,6 @@ drwxr-xr-x	root/root	usr/share/apps/solid/devices/
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-Button.desktop
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-Camera.desktop
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-DvbInterface.desktop
--rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-GenericInterface.desktop
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-NetworkInterface.desktop
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-OpticalDisc.desktop
 -rw-r--r--	root/root	usr/share/apps/solid/devices/solid-device-OpticalDrive.desktop
@@ -963,6 +1044,7 @@ drwxr-xr-x	root/root	usr/share/autostart/
 -rw-r--r--	root/root	usr/share/autostart/plasma-desktop.desktop
 -rw-r--r--	root/root	usr/share/autostart/plasma.desktop
 drwxr-xr-x	root/root	usr/share/config.kcfg/
+-rw-r--r--	root/root	usr/share/config.kcfg/freespacenotifier.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/klaunch.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/kscreensaversettings.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/kwin.kcfg
@@ -1003,6 +1085,7 @@ drwxr-xr-x	root/root	usr/share/dbus-1/services/
 drwxr-xr-x	root/root	usr/share/dbus-1/system-services/
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.fontinst.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmclock.service
+-rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmkdm.service
 -rw-r--r--	root/root	usr/share/dbus-1/system-services/org.kde.ksysguard.processlisthelper.service
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/Oxygen_Black/
@@ -1773,7 +1856,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kmenuedit.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/ksplash.png
--rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kxkb.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kmenuedit.png
@@ -1782,12 +1864,10 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kmenuedit.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/ksplash.png
--rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kxkb.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kmenuedit.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/ksplash.png
--rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kxkb.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/ksplash.png
@@ -1859,38 +1939,49 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/clock.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/colors.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/desktop.desktop
--rw-r--r--	root/root	usr/share/kde4/services/desktopthemedetails.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/desktoppath.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/desktoptheme.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/devinfo.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/display.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/dma.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fontinst.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fonts.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/fonts.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/fontthumbnail.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/interrupts.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ion-bbcukmet.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ion-envcan.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ion-noaa.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ion-wettercom.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/ioports.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/joystick.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kaccess.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcm_infosummary.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_keyboard.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcm_memory.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcm_pci.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcm_solid.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmaccess.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmlaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmsmserver.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcmusb.desktop
 drwxr-xr-x	root/root	usr/share/kde4/services/kded/
+-rw-r--r--	root/root	usr/share/kde4/services/kded/freespacenotifier.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/kephal.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kded/keyboard.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/khotkeys.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/networkstatus.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/powerdevil.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/randrmonitor.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/statusnotifierwatcher.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kdm.desktop
--rw-r--r--	root/root	usr/share/kde4/services/keyboard.desktop
--rw-r--r--	root/root	usr/share/kde4/services/keyboard_layout.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/keys.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kfontviewpart.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/khotkeys.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ksplashthememgr.desktop
 drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
+-rw-r--r--	root/root	usr/share/kde4/services/kwin/blur.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kwin/blur_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/boxswitch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/boxswitch_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/coverswitch.desktop
@@ -1911,6 +2002,8 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/fallapart.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/flipswitch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/flipswitch_config.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kwin/glide.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kwin/glide_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/highlightwindow.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/invert.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwin/invert_config.desktop
@@ -1965,6 +2058,8 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/kwinscreenedges.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwintabbox.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/mouse.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/nic.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/opengl.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-animator-default.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-activitybar.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-analogclock.desktop
@@ -1975,6 +2070,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-icon.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-launcher.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-lockout.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-notifications.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-panelspacer-internal.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-quicklaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-searchbox.desktop
@@ -1992,6 +2088,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-applet-windowlist.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-battery-default.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-containment-desktop.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-containment-desktopdashboard.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-containment-netpanel.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-containment-newspaper.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-containment-panel.desktop
@@ -2007,6 +2104,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-applicationjobs.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-apps.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-calendar.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-devicenotifications.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-dict.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-executable.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-dataengine-favicons.desktop
@@ -2030,6 +2128,10 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-metadata.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-searchlaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-geolocation-ip.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-layout-org.kde.plasma-desktop.defaultPanel.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-layout-org.kde.plasma-netbook.defaultPage.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-layout-org.kde.plasma-netbook.defaultPanel.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-layout-org.kde.plasma-netbook.defaultSal.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-packagestructure-dashboard.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-packagestructure-web.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-pager-default.desktop
@@ -2047,9 +2149,11 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-shell.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-solid.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-webshortcuts.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-windowedwidgets.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-runner-windows.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-bookmarks.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-contacts.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-development.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-education.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-games.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-sal-graphics.desktop
@@ -2065,33 +2169,41 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-tasks-default.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-wallpaper-color.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/plasma-wallpaper-image.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma_applet_keyboard.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/plasma_engine_statusnotifieritem.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/powerdevilconfig.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/randr.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/recentdocuments.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/screensaver.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-about-me.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/scsi.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-accessibility.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-advanced-user-settings.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-advanced.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-appearance.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-account-details.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-application-and-system-notifications.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-application-appearance-and-behavior.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-application-appearance.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-audio-and-video.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-bluetooth.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-classic-view.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-computer-administration.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-desktop.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-desktop-appearance.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-display.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-general.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-hardware.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-icon-view.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-input-actions.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-keyboard-and-mouse.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-look-and-feel.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-input-devices.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-locale.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-lost-and-found.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-network-and-connectivity.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-network-settings.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-notifications.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-personal.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-regional-and-language.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-permissions.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-personal-information.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-removable-devices.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-security.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-sharing.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-system.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-shortcuts-and-gestures.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-startup-and-shutdown.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-system-administration.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-window-behaviour.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/settings-workspace-appearance-and-behavior.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/smbstatus.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/solid-actions.desktop
 drwxr-xr-x	root/root	usr/share/kde4/services/solidbackends/
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_fakenet.desktop
@@ -2102,9 +2214,11 @@ drwxr-xr-x	root/root	usr/share/kde4/services/solidbackends/
 -rw-r--r--	root/root	usr/share/kde4/services/style.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/workspaceoptions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/xinerama.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/xserver.desktop
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kwineffect.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/plasma-geolocationprovider.desktop
+-rw-r--r--	root/root	usr/share/kde4/servicetypes/plasma-layout-template.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/plasma-sal-menu.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/screensaver.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/solid-device-type.desktop
@@ -2119,6 +2233,7 @@ drwxr-xr-x	root/root	usr/share/polkit-1/
 drwxr-xr-x	root/root	usr/share/polkit-1/actions/
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.fontinst.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kcontrol.kcmclock.policy
+-rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kcontrol.kcmkdm.policy
 -rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.ksysguard.processlisthelper.policy
 drwxr-xr-x	root/root	usr/share/sounds/
 -rw-r--r--	root/root	usr/share/sounds/pop.wav
