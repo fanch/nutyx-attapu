@@ -5,9 +5,9 @@
 # Depends on: p5-xml-parser, gtk, glib, mysqlclient
 
 name=gnokii
-version=0.6.28.1
+version=0.6.29
 release=1
-source=(http://www.gnokii.org/download/$name/0.6.x/gnokii-$version.tar.bz2 \
+source=(http://www.gnokii.org/download/$name/$name-$version.tar.bz2 \
 	gnokii.patch)
 
 build() {
