@@ -1,0 +1,17 @@
+# Description: outil de Clustering
+# URL: http://bonsai.ims.u-tokyo.ac.jp/~mdehoon/software/cluster/software.htm
+# Maintainer: NuTyX core team
+# Packager: Shai_- romain.gailleton at gmail dot com
+# Depends on: 
+name=cluster
+version=1.49
+release=1
+source=(http://bonsai.ims.u-tokyo.ac.jp/~mdehoon/software/$name/$name-$version.tar.gz)
+build(){
+	cd $name-$version
+
+        ./configure --prefix=/usr
+
+        make
+        make DESTDIR=$PKG install 
+}
