@@ -4,9 +4,9 @@
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: qt, xine-lib, cmake, automoc4
 name=phonon
-version=4.4.0
+version=4.4.1
 release=1
-source=(http://download.kde.org/stable/$name/$version/${name}-$version.tgz)
+source=(ftp://ftp.lip6.fr/pub/X11/kde/stable/$name/$version/${name}-$version.tar.bz2)
 build() {
 
 mkdir build
