@@ -2,12 +2,14 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, shared-mime-info, exiv2, ebook-tools, libspectre, chmlib, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
+# Depends on: lcms, kdebase-runtime, shared-mime-info, exiv2, ebook-tools, libspectre, chmlib, libgphoto2, poppler-qt, qca, kdelibs, lcms, soprano, qimageblitz, sane, djvulibre
 
 name=kdegraphics
-version=4.4.3
-release=2
-source=( ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
+version=4.4.81svn1131245
+release=1
+#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
+
+source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/$name-4.4.81svn1131245.tar.bz2)
 
 build() {
 	cd $name-$version
