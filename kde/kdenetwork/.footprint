@@ -89,7 +89,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/fileshare_propsdlgplugin.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_fileshare.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kcmsambaconf.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_kget_bittorrentfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kget_checksumsearchfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kget_contentfetchfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kget_metalinkfactory.so
@@ -118,14 +117,13 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_krdc_rdpplugin.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_krdc_vncplugin.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_dnssdwatcher.so
--rwxr-xr-x	root/root	usr/lib/kde4/kget_bittorrentfactory.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kget_browser_integration.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_checksumsearchfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_contentfetchfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_kiofactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_metalinkfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_mirrorsearchfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kget_multisegkiofactory.so
--rwxr-xr-x	root/root	usr/lib/kde4/khtml_kget.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_zeroconf.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kopete_addbookmarks.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kopete_aim.so
@@ -168,20 +166,20 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_kget_barapplet.so
 -rwxr-xr-x	root/root	usr/lib/kde4/plasma_kget_piechart.so
 lrwxrwxrwx	root/root	usr/lib/libkgetcore.so -> libkgetcore.so.4
-lrwxrwxrwx	root/root	usr/lib/libkgetcore.so.4 -> libkgetcore.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkgetcore.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkgetcore.so.4 -> libkgetcore.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkgetcore.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkopete.so -> libkopete.so.4
-lrwxrwxrwx	root/root	usr/lib/libkopete.so.4 -> libkopete.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkopete.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkopete.so.4 -> libkopete.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkopete.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkopete_oscar.so -> libkopete_oscar.so.4
-lrwxrwxrwx	root/root	usr/lib/libkopete_oscar.so.4 -> libkopete_oscar.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkopete_oscar.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkopete_oscar.so.4 -> libkopete_oscar.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkopete_oscar.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkopete_otr_shared.so -> libkopete_otr_shared.so.1
 lrwxrwxrwx	root/root	usr/lib/libkopete_otr_shared.so.1 -> libkopete_otr_shared.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libkopete_otr_shared.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libkopete_videodevice.so -> libkopete_videodevice.so.4
-lrwxrwxrwx	root/root	usr/lib/libkopete_videodevice.so.4 -> libkopete_videodevice.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkopete_videodevice.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkopete_videodevice.so.4 -> libkopete_videodevice.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkopete_videodevice.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkopeteaddaccountwizard.so -> libkopeteaddaccountwizard.so.1
 lrwxrwxrwx	root/root	usr/lib/libkopeteaddaccountwizard.so.1 -> libkopeteaddaccountwizard.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libkopeteaddaccountwizard.so.1.0.0
@@ -201,10 +199,10 @@ lrwxrwxrwx	root/root	usr/lib/libkopetestatusmenu.so -> libkopetestatusmenu.so.1
 lrwxrwxrwx	root/root	usr/lib/libkopetestatusmenu.so.1 -> libkopetestatusmenu.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libkopetestatusmenu.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libkrdccore.so -> libkrdccore.so.4
-lrwxrwxrwx	root/root	usr/lib/libkrdccore.so.4 -> libkrdccore.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkrdccore.so.4.4.0
-lrwxrwxrwx	root/root	usr/lib/libkrfbprivate.so -> libkrfbprivate.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkrfbprivate.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkrdccore.so.4 -> libkrdccore.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkrdccore.so.4.5.0
+lrwxrwxrwx	root/root	usr/lib/libkrfbprivate.so -> libkrfbprivate.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkrfbprivate.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkyahoo.so -> libkyahoo.so.1
 lrwxrwxrwx	root/root	usr/lib/libkyahoo.so.1 -> libkyahoo.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libkyahoo.so.1.0.0
@@ -1560,8 +1558,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kconfiguredialog/
 -rw-r--r--	root/root	usr/share/kde4/services/kconfiguredialog/kopete_webpresence_config.desktop
 drwxr-xr-x	root/root	usr/share/kde4/services/kded/
 -rw-r--r--	root/root	usr/share/kde4/services/kded/dnssdwatcher.desktop
--rw-r--r--	root/root	usr/share/kde4/services/kget_bittorrentfactory.desktop
--rw-r--r--	root/root	usr/share/kde4/services/kget_bittorrentfactory_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kget_checksumsearchfactory.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kget_checksumsearchfactory_config.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kget_contentfetchfactory.desktop

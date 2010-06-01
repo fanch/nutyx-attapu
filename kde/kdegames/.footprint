@@ -177,20 +177,21 @@ lrwxrwxrwx	root/root	usr/lib/libkdegames.so -> libkdegames.so.5
 lrwxrwxrwx	root/root	usr/lib/libkdegames.so.5 -> libkdegames.so.5.0.0
 -rwxr-xr-x	root/root	usr/lib/libkdegames.so.5.0.0
 lrwxrwxrwx	root/root	usr/lib/libkggzgames.so -> libkggzgames.so.4
-lrwxrwxrwx	root/root	usr/lib/libkggzgames.so.4 -> libkggzgames.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkggzgames.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkggzgames.so.4 -> libkggzgames.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkggzgames.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkggzmod.so -> libkggzmod.so.4
-lrwxrwxrwx	root/root	usr/lib/libkggzmod.so.4 -> libkggzmod.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkggzmod.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkggzmod.so.4 -> libkggzmod.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkggzmod.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkggznet.so -> libkggznet.so.4
-lrwxrwxrwx	root/root	usr/lib/libkggznet.so.4 -> libkggznet.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkggznet.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkggznet.so.4 -> libkggznet.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkggznet.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkmahjongglib.so -> libkmahjongglib.so.4
-lrwxrwxrwx	root/root	usr/lib/libkmahjongglib.so.4 -> libkmahjongglib.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkmahjongglib.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkmahjongglib.so.4 -> libkmahjongglib.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkmahjongglib.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkolfprivate.so -> libkolfprivate.so.4
-lrwxrwxrwx	root/root	usr/lib/libkolfprivate.so.4 -> libkolfprivate.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkolfprivate.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkolfprivate.so.4 -> libkolfprivate.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkolfprivate.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/liblibkcardgame.so
 lrwxrwxrwx	root/root	usr/lib/libpala.so -> libpala.so.0
 lrwxrwxrwx	root/root	usr/lib/libpala.so.0 -> libpala.so.0.1.0
 -rwxr-xr-x	root/root	usr/lib/libpala.so.0.1.0
@@ -504,6 +505,9 @@ drwxr-xr-x	root/root	usr/share/apps/granatier/themes/
 -rw-r--r--	root/root	usr/share/apps/granatier/themes/granatier.desktop
 -rw-r--r--	root/root	usr/share/apps/granatier/themes/granatier.svgz
 -rw-r--r--	root/root	usr/share/apps/granatier/themes/granatier_preview.png
+-rw-r--r--	root/root	usr/share/apps/granatier/themes/waterbomb.desktop
+-rw-r--r--	root/root	usr/share/apps/granatier/themes/waterbomb.svgz
+-rw-r--r--	root/root	usr/share/apps/granatier/themes/waterbomb_preview.png
 drwxr-xr-x	root/root	usr/share/apps/kapman/
 -rw-r--r--	root/root	usr/share/apps/kapman/defaultmaze.xml
 -rw-r--r--	root/root	usr/share/apps/kapman/kapmanui.rc
@@ -557,12 +561,12 @@ drwxr-xr-x	root/root	usr/share/apps/kblocks/themes/
 drwxr-xr-x	root/root	usr/share/apps/kbounce/
 -rw-r--r--	root/root	usr/share/apps/kbounce/kbounceui.rc
 drwxr-xr-x	root/root	usr/share/apps/kbounce/sounds/
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/death.au
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/reflect.au
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/seconds.au
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/timeout.au
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/wallend.au
--rw-r--r--	root/root	usr/share/apps/kbounce/sounds/wallstart.au
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/death.wav
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/reflect.wav
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/seconds.wav
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/timeout.wav
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/wallend.wav
+-rw-r--r--	root/root	usr/share/apps/kbounce/sounds/wallstart.wav
 drwxr-xr-x	root/root	usr/share/apps/kbounce/themes/
 -rw-r--r--	root/root	usr/share/apps/kbounce/themes/default.desktop
 -rw-r--r--	root/root	usr/share/apps/kbounce/themes/egyptian_bounce.png
@@ -645,6 +649,7 @@ drwxr-xr-x	root/root	usr/share/apps/kgoldrunner/system/
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_cnt.txt
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_ende.txt
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_kgr.txt
+-rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_lars.txt
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_plws.txt
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_plwv.txt
 -rw-r--r--	root/root	usr/share/apps/kgoldrunner/system/game_sot.txt
@@ -1007,21 +1012,30 @@ drwxr-xr-x	root/root	usr/share/apps/konquest/pics/
 -rw-r--r--	root/root	usr/share/apps/konquest/pics/default_theme.svgz
 -rw-r--r--	root/root	usr/share/apps/konquest/pics/konquest-splash.png
 drwxr-xr-x	root/root	usr/share/apps/kpat/
-drwxr-xr-x	root/root	usr/share/apps/kpat/demos/
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_1.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_10.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_11.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_12.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_17.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_18.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_2.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_3.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_5.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_7.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_8.png
--rw-r--r--	root/root	usr/share/apps/kpat/demos/demo_9.png
 -rw-r--r--	root/root	usr/share/apps/kpat/kpatui.rc
--rw-r--r--	root/root	usr/share/apps/kpat/theme.svgz
+drwxr-xr-x	root/root	usr/share/apps/kpat/previews/
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/1.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/10.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/11.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/12.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/17.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/18.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/2.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/3.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/5.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/7.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/8.png
+-rw-r--r--	root/root	usr/share/apps/kpat/previews/9.png
+drwxr-xr-x	root/root	usr/share/apps/kpat/themes/
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/ancientegypt.desktop
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/ancientegypt.png
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/ancientegypt.svgz
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/cleangreen.desktop
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/cleangreen.png
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/cleangreen.svgz
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/oldertheme.desktop
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/oldertheme.png
+-rw-r--r--	root/root	usr/share/apps/kpat/themes/oldertheme.svgz
 drwxr-xr-x	root/root	usr/share/apps/kreversi/
 -rw-r--r--	root/root	usr/share/apps/kreversi/kreversi.notifyrc
 -rw-r--r--	root/root	usr/share/apps/kreversi/kreversiui.rc
@@ -1240,6 +1254,9 @@ drwxr-xr-x	root/root	usr/share/apps/ktron/themes/
 drwxr-xr-x	root/root	usr/share/apps/ktuberling/
 -rw-r--r--	root/root	usr/share/apps/ktuberling/ktuberlingui.rc
 drwxr-xr-x	root/root	usr/share/apps/ktuberling/pics/
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/butterflies.desktop
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/butterflies.svgz
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/butterflies.theme
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/christmas.desktop
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/christmas.svgz
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/christmas.theme
@@ -1261,6 +1278,9 @@ drwxr-xr-x	root/root	usr/share/apps/ktuberling/pics/
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robin-tux.desktop
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robin-tux.svgz
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robin-tux.theme
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robot_workshop.desktop
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robot_workshop.svgz
+-rw-r--r--	root/root	usr/share/apps/ktuberling/pics/robot_workshop.theme
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/train_valley.desktop
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/train_valley.svgz
 -rw-r--r--	root/root	usr/share/apps/ktuberling/pics/train_valley.theme
@@ -1387,11 +1407,16 @@ drwxr-xr-x	root/root	usr/share/apps/palapeli/backgrounds/
 -rw-r--r--	root/root	usr/share/apps/palapeli/backgrounds/gon-defends-the-critters-1.jpg
 -rw-r--r--	root/root	usr/share/apps/palapeli/backgrounds/mahogany-handjob-1.jpg
 drwxr-xr-x	root/root	usr/share/apps/palapeli/collection/
--rw-r--r--	root/root	usr/share/apps/palapeli/collection/castle-maintenon.puzzle
--rw-r--r--	root/root	usr/share/apps/palapeli/collection/cincinnati-bridge.puzzle
--rw-r--r--	root/root	usr/share/apps/palapeli/collection/citrus-fruits.puzzle
--rw-r--r--	root/root	usr/share/apps/palapeli/collection/european-honey-bee.puzzle
--rw-r--r--	root/root	usr/share/apps/palapeli/collection/panther-chameleon-female.puzzle
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/castle-maintenon.desktop
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/castle-maintenon.jpg
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/cincinnati-bridge.desktop
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/cincinnati-bridge.jpg
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/citrus-fruits.desktop
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/citrus-fruits.jpg
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/european-honey-bee.desktop
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/european-honey-bee.jpg
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/panther-chameleon-female.desktop
+-rw-r--r--	root/root	usr/share/apps/palapeli/collection/panther-chameleon-female.jpg
 -rw-r--r--	root/root	usr/share/apps/palapeli/palapeli-collectionui.rc
 -rw-r--r--	root/root	usr/share/apps/palapeli/palapeli-puzzletableui.rc
 -rw-r--r--	root/root	usr/share/apps/palapeli/palapeli.kcfg
@@ -1406,6 +1431,7 @@ drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/kjumpingcube.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/klines.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/kmahjongg.kcfg
+-rw-r--r--	root/root	usr/share/config.kcfg/kpat.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/kshisen.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/ksirksettings.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/ksirkskineditorsettings.kcfg
@@ -1416,11 +1442,13 @@ drwxr-xr-x	root/root	usr/share/config.kcfg/
 drwxr-xr-x	root/root	usr/share/config/
 -rw-r--r--	root/root	usr/share/config/katomic.knsrc
 -rw-r--r--	root/root	usr/share/config/kblocks.knsrc
+-rw-r--r--	root/root	usr/share/config/kcardtheme.knsrc
 -rw-r--r--	root/root	usr/share/config/kdiamond.knsrc
 -rw-r--r--	root/root	usr/share/config/kgoldrunner.knsrc
 -rw-r--r--	root/root	usr/share/config/kigo-games.knsrc
 -rw-r--r--	root/root	usr/share/config/kigo.knsrc
 -rw-r--r--	root/root	usr/share/config/kmines.knsrc
+-rw-r--r--	root/root	usr/share/config/kpat.knsrc
 -rw-r--r--	root/root	usr/share/config/ksirk.knsrc
 -rw-r--r--	root/root	usr/share/config/ksudokurc
 -rw-r--r--	root/root	usr/share/config/ktron.knsrc
@@ -1466,7 +1494,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/ktuberling.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/kubrick.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/lskat.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/128x128/mimetypes/application-x-palapeli.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/mimetypes/application-x-tuberling.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
@@ -1506,7 +1536,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/ktuberling.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kubrick.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/lskat.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/16x16/mimetypes/application-x-palapeli.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/mimetypes/application-x-tuberling.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
@@ -1547,6 +1579,11 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/lskat.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/mimetypes/
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/mimetypes/application-x-tuberling.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/24x24/apps/palapeli.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/24x24/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/24x24/mimetypes/application-x-palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/256x256/apps/kdesnake.png
@@ -1589,7 +1626,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/ktuberling.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kubrick.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/lskat.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/32x32/mimetypes/application-x-palapeli.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/mimetypes/application-x-tuberling.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
@@ -1629,7 +1668,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/ktuberling.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kubrick.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/lskat.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/48x48/mimetypes/application-x-palapeli.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/mimetypes/application-x-tuberling.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
@@ -1669,7 +1710,9 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/ktuberling.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/kubrick.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/lskat.png
+-rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/palapeli.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/mimetypes/
+-rw-r--r--	root/root	usr/share/icons/hicolor/64x64/mimetypes/application-x-palapeli.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/mimetypes/application-x-tuberling.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/

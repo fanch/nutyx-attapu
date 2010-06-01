@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/include/libkcompactdisc/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/dragonpart.so
+-rwxr-xr-x	root/root	usr/lib/kde4/ffmpegthumbs.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_audiocd.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_cddb.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_audiocd.so
@@ -31,14 +32,14 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/libaudiocd_encoder_wav.so
 -rwxr-xr-x	root/root	usr/lib/kde4/videopreview.so
 lrwxrwxrwx	root/root	usr/lib/libaudiocdplugins.so -> libaudiocdplugins.so.4
-lrwxrwxrwx	root/root	usr/lib/libaudiocdplugins.so.4 -> libaudiocdplugins.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libaudiocdplugins.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libaudiocdplugins.so.4 -> libaudiocdplugins.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libaudiocdplugins.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkcddb.so -> libkcddb.so.4
-lrwxrwxrwx	root/root	usr/lib/libkcddb.so.4 -> libkcddb.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkcddb.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkcddb.so.4 -> libkcddb.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkcddb.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkcompactdisc.so -> libkcompactdisc.so.4
-lrwxrwxrwx	root/root	usr/lib/libkcompactdisc.so.4 -> libkcompactdisc.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkcompactdisc.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkcompactdisc.so.4 -> libkcompactdisc.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkcompactdisc.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kmix.so
 -rwxr-xr-x	root/root	usr/lib/libkdeinit4_kmixctrl.so
 drwxr-xr-x	root/root	usr/share/
@@ -98,7 +99,6 @@ drwxr-xr-x	root/root	usr/share/apps/kscd/skin/
 -rw-r--r--	root/root	usr/share/apps/kscd/skin/Obsidian-Coast.svg
 -rw-r--r--	root/root	usr/share/apps/kscd/skin/Steel.svg
 -rw-r--r--	root/root	usr/share/apps/kscd/skin/default.svg
-drwxr-xr-x	root/root	usr/share/apps/profiles/
 drwxr-xr-x	root/root	usr/share/apps/solid/
 drwxr-xr-x	root/root	usr/share/apps/solid/actions/
 -rw-r--r--	root/root	usr/share/apps/solid/actions/dragonplayer-opendvd.desktop
@@ -189,6 +189,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/audiocd.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/audiocd.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/dragonplayer_part.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/ffmpegthumbs.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kmixctrl_restore.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/libkcddb.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/videopreview.desktop

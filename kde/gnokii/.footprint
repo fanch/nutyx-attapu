@@ -25,9 +25,9 @@ drwxr-xr-x	root/root	usr/include/gnokii/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgnokii.a
 -rwxr-xr-x	root/root	usr/lib/libgnokii.la
-lrwxrwxrwx	root/root	usr/lib/libgnokii.so -> libgnokii.so.5.0.0
-lrwxrwxrwx	root/root	usr/lib/libgnokii.so.5 -> libgnokii.so.5.0.0
--rwxr-xr-x	root/root	usr/lib/libgnokii.so.5.0.0
+lrwxrwxrwx	root/root	usr/lib/libgnokii.so -> libgnokii.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/libgnokii.so.6 -> libgnokii.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/libgnokii.so.6.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gnokii.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/xgnokii.pc
@@ -61,7 +61,7 @@ drwxr-xr-x	root/root	usr/share/doc/gnokii/
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-MacOSX
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-PCSC
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-Symbian
--rw-r--r--	root/root	usr/share/doc/gnokii/README-WIN32
+-rw-r--r--	root/root	usr/share/doc/gnokii/README-WINDOWS
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-dancall
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-ericsson
 -rw-r--r--	root/root	usr/share/doc/gnokii/README-siemens

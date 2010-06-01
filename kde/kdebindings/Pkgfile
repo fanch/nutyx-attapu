@@ -2,12 +2,13 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, kdebase-workspace, kdepim-runtime, qscintilla, polkit-qt, kdepimlibs, ruby, pyqt
+# Depends on: kdebase-runtime, kdebase-workspace, qscintilla, polkit-qt, kdepimlibs, ruby, pyqt
 
 name=kdebindings
-version=4.4.3
+version=4.4.81svn1131245
 release=1
-source=( ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
+#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
+source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/kdebindings-4.4.81svn1131245.tar.bz2 )
 build() {
 	cd $name-$version
 	mkdir build

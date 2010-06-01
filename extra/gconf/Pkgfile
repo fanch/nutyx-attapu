@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: orbit2, polkit, glib, gtk
+# Depends on: orbit2, polkit, glib, gtk, openldap
 
 name=gconf
 version=2.28.1

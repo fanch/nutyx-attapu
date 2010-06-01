@@ -5,9 +5,11 @@
 # Depends on: qt, cmake
 
 name=attica
-version=0.1.2
+version=0.1.4
 release=1
-source=(http://kiao.no-ip.info/NuTyX/files/$name-$version.tar.gz)
+
+source=(http://mirrors.isc.org/pub/kde/stable/$name//$name-$version.tar.bz2)
+
 build() {
         cd $name-$version
         mkdir build

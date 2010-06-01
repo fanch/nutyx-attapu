@@ -5,10 +5,12 @@
 # Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, kdepimlibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury
 
 name=kdebase-workspace
-version=4.4.3
+version=4.4.81svn1131245
 release=1
-source=( ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2\
-        kdm lxde.desktop ede.desktop Xsession.kde4 \
+#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2 \
+source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/$name-4.4.81svn1131245.tar.bz2 \
+        kdm \
+	lxde.desktop ede.desktop Xsession.kde4 \
 	http://kiao.no-ip.info/NuTyX/files/kdm-nutyx2009-2.tar.gz\
 	http://kiao.no-ip.info/NuTyX/files/absolute-nutyx.tar.gz \
 	http://kiao.no-ip.info/NuTyX/files/nutyx-wall2009-2.tar.gz)
@@ -51,12 +53,12 @@ build() {
 
         mv  $PKG/usr/share/config/kdm/kdmrc $PKG/etc/kde/kdmrc
         ln -sv /etc/kde/kdmrc $PKG/usr/share/config/kdm/kdmrc
-	# Wallpaper still dirty method 
+ # Wallpaper still dirty method 
 	rm -r $PKG/usr/share/wallpapers
 	mkdir $PKG/usr/share/wallpapers
 	cp -a ../Air \
 	$PKG/usr/share/wallpapers/
-	# ksplash also quite dirty
+ # ksplash also quite dirty
 	rm -r $PKG/usr/share/apps/ksplash/Themes/Default
 	cp -a ../Absolute-NuTyX \
 	$PKG/usr/share/apps/ksplash/Themes/

@@ -5,11 +5,11 @@
 # Depends on: libtiff, libjpeg, python
 
 name=lcms
-version=2.0
+version=1.19
 release=1
-#source=( http://www.littlecms.com/$name-$version.tar.gz)
+source=( http://www.littlecms.com/$name-$version.tar.gz)
 
-source=(http://freefr.dl.sourceforge.net/project/lcms/lcms/2.0/lcms2-2.0a.tar.gz)
+#source=(http://freefr.dl.sourceforge.net/project/lcms/lcms/2.0/lcms2-2.0a.tar.gz)
 
 build() {
 	cd $name-$version

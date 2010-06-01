@@ -5,9 +5,9 @@
 # Depends on: kdebase
 
 name=kde-l10n-fr
-version=4.4.3
+version=4.4.80
 release=1
-source=(http://mirrors.dotsrc.org/kde/stable/$version/src/kde-l10n/$name-$version.tar.bz2)
+source=(http://mirrors.dotsrc.org/kde/unstable/$version/src/kde-l10n/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 	mkdir build

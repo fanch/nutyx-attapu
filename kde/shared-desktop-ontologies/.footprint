@@ -20,10 +20,14 @@ drwxr-xr-x	root/root	usr/share/ontology/dc/
 drwxr-xr-x	root/root	usr/share/ontology/nepomuk/
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nao.ontology
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nao.trig
+-rw-r--r--	root/root	usr/share/ontology/nepomuk/ndo.ontology
+-rw-r--r--	root/root	usr/share/ontology/nepomuk/ndo.trig
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nrl.ontology
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nrl.trig
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nso.ontology
 -rw-r--r--	root/root	usr/share/ontology/nepomuk/nso.trig
+-rw-r--r--	root/root	usr/share/ontology/nepomuk/nuao.ontology
+-rw-r--r--	root/root	usr/share/ontology/nepomuk/nuao.trig
 drwxr-xr-x	root/root	usr/share/ontology/nie/
 -rw-r--r--	root/root	usr/share/ontology/nie/ncal.ontology
 -rw-r--r--	root/root	usr/share/ontology/nie/ncal.trig
