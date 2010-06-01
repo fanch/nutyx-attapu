@@ -18,6 +18,7 @@ drwxr-xr-x	root/root	usr/include/KDE/Akonadi/
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CachePolicy
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ChangeRecorder
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/Collection
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionComboBox
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionCopyJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionCreateJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionDeleteJob
@@ -35,6 +36,20 @@ drwxr-xr-x	root/root	usr/include/KDE/Akonadi/
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionStatisticsJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionStatisticsModel
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/CollectionView
+drwxr-xr-x	root/root	usr/include/KDE/Akonadi/Contact/
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactDefaultActions
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactEditor
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactEditorDialog
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupEditor
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupEditorDialog
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupExpandJob
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupSearchJob
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupViewer
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactGroupViewerDialog
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactSearchJob
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactViewer
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/ContactViewerDialog
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/Contact/RecentContactsCollectionRequestJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/Control
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/Entity
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/EntityDisplayAttribute
@@ -52,10 +67,21 @@ drwxr-xr-x	root/root	usr/include/KDE/Akonadi/
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemModifyJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemMonitor
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemMoveJob
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemSearchJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemSerializerPlugin
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemSync
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/ItemView
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/Job
+drwxr-xr-x	root/root	usr/include/KDE/Akonadi/KCal/
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KCal/IncidenceMimeTypeVisitor
+drwxr-xr-x	root/root	usr/include/KDE/Akonadi/KMime/
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/AddressAttribute
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/MessageFolderAttribute
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/MessageModel
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/MessageThreaderProxyModel
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/MessageThreadingAttribute
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/SpecialMailCollections
+-rw-r--r--	root/root	usr/include/KDE/Akonadi/KMime/SpecialMailCollectionsRequestJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/LinkJob
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/Monitor
 -rw-r--r--	root/root	usr/include/KDE/Akonadi/PreprocessorBase
@@ -103,6 +129,7 @@ drwxr-xr-x	root/root	usr/include/KDE/KABC/
 -rw-r--r--	root/root	usr/include/KDE/KABC/StdAddressBook
 -rw-r--r--	root/root	usr/include/KDE/KABC/TimeZone
 -rw-r--r--	root/root	usr/include/KDE/KABC/VCardConverter
+-rw-r--r--	root/root	usr/include/KDE/KABC/VCardDrag
 -rw-r--r--	root/root	usr/include/KDE/KABC/VCardFormat
 drwxr-xr-x	root/root	usr/include/KDE/KBlog/
 -rw-r--r--	root/root	usr/include/KDE/KBlog/Blog
@@ -238,6 +265,7 @@ drwxr-xr-x	root/root	usr/include/KDE/KMime/
 -rw-r--r--	root/root	usr/include/KDE/KMime/MDN
 -rw-r--r--	root/root	usr/include/KDE/KMime/Message
 -rw-r--r--	root/root	usr/include/KDE/KMime/NewsArticle
+-rw-r--r--	root/root	usr/include/KDE/KMime/Util
 drwxr-xr-x	root/root	usr/include/KDE/KPIMIdentities/
 -rw-r--r--	root/root	usr/include/KDE/KPIMIdentities/Identity
 -rw-r--r--	root/root	usr/include/KDE/KPIMIdentities/IdentityCombo
@@ -318,6 +346,7 @@ drwxr-xr-x	root/root	usr/include/akonadi/
 -rw-r--r--	root/root	usr/include/akonadi/agentinstancemodel.h
 -rw-r--r--	root/root	usr/include/akonadi/agentinstancewidget.h
 -rw-r--r--	root/root	usr/include/akonadi/agentmanager.h
+-rw-r--r--	root/root	usr/include/akonadi/agentsearchinterface.h
 -rw-r--r--	root/root	usr/include/akonadi/agenttype.h
 -rw-r--r--	root/root	usr/include/akonadi/agenttypedialog.h
 -rw-r--r--	root/root	usr/include/akonadi/agenttypemodel.h
@@ -349,6 +378,7 @@ drwxr-xr-x	root/root	usr/include/akonadi/
 -rw-r--r--	root/root	usr/include/akonadi/collectionstatisticsmodel.h
 -rw-r--r--	root/root	usr/include/akonadi/collectionview.h
 drwxr-xr-x	root/root	usr/include/akonadi/contact/
+-rw-r--r--	root/root	usr/include/akonadi/contact/abstractcontactformatter.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/akonadi-contact_export.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactdefaultactions.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contacteditor.h
@@ -361,9 +391,15 @@ drwxr-xr-x	root/root	usr/include/akonadi/contact/
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactgroupviewer.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactgroupviewerdialog.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactsearchjob.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/contactsfilterproxymodel.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/contactstreemodel.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactviewer.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/contactviewerdialog.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/emailaddressselection.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/emailaddressselectiondialog.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/emailaddressselectionwidget.h
 -rw-r--r--	root/root	usr/include/akonadi/contact/recentcontactscollectionrequestjob.h
+-rw-r--r--	root/root	usr/include/akonadi/contact/standardcontactformatter.h
 -rw-r--r--	root/root	usr/include/akonadi/control.h
 -rw-r--r--	root/root	usr/include/akonadi/entity.h
 -rw-r--r--	root/root	usr/include/akonadi/entitydisplayattribute.h
@@ -411,6 +447,7 @@ drwxr-xr-x	root/root	usr/include/akonadi/kmime/
 -rw-r--r--	root/root	usr/include/akonadi/mimetypechecker.h
 -rw-r--r--	root/root	usr/include/akonadi/monitor.h
 -rw-r--r--	root/root	usr/include/akonadi/partfetcher.h
+-rw-r--r--	root/root	usr/include/akonadi/persistentsearchattribute.h
 -rw-r--r--	root/root	usr/include/akonadi/preprocessorbase.h
 drwxr-xr-x	root/root	usr/include/akonadi/private/
 -rw-r--r--	root/root	usr/include/akonadi/private/collectionpathresolver_p.h
@@ -464,6 +501,7 @@ drwxr-xr-x	root/root	usr/include/gpgme++/interfaces/
 -rw-r--r--	root/root	usr/include/gpgme++/signingresult.h
 -rw-r--r--	root/root	usr/include/gpgme++/trustitem.h
 -rw-r--r--	root/root	usr/include/gpgme++/verificationresult.h
+-rw-r--r--	root/root	usr/include/gpgme++/vfsmountresult.h
 drwxr-xr-x	root/root	usr/include/kabc/
 -rw-r--r--	root/root	usr/include/kabc/address.h
 -rw-r--r--	root/root	usr/include/kabc/addressbook.h
@@ -499,6 +537,7 @@ drwxr-xr-x	root/root	usr/include/kabc/
 -rw-r--r--	root/root	usr/include/kabc/timezone.h
 -rw-r--r--	root/root	usr/include/kabc/vcard.h
 -rw-r--r--	root/root	usr/include/kabc/vcardconverter.h
+-rw-r--r--	root/root	usr/include/kabc/vcarddrag.h
 -rw-r--r--	root/root	usr/include/kabc/vcardformat.h
 -rw-r--r--	root/root	usr/include/kabc/vcardline.h
 -rw-r--r--	root/root	usr/include/kabc/vcardparser.h
@@ -571,6 +610,8 @@ drwxr-xr-x	root/root	usr/include/kcal/
 -rw-r--r--	root/root	usr/include/kcal/vcalformat.h
 drwxr-xr-x	root/root	usr/include/kholidays/
 -rw-r--r--	root/root	usr/include/kholidays/astroseasons.h
+-rw-r--r--	root/root	usr/include/kholidays/holiday.h
+-rw-r--r--	root/root	usr/include/kholidays/holidayregion.h
 -rw-r--r--	root/root	usr/include/kholidays/holidays.h
 -rw-r--r--	root/root	usr/include/kholidays/kholidays_export.h
 -rw-r--r--	root/root	usr/include/kholidays/lunarphase.h
@@ -664,6 +705,7 @@ drwxr-xr-x	root/root	usr/include/kpimtextedit/
 -rw-r--r--	root/root	usr/include/kpimtextedit/emailquotehighlighter.h
 -rw-r--r--	root/root	usr/include/kpimtextedit/kpimtextedit_export.h
 -rw-r--r--	root/root	usr/include/kpimtextedit/textedit.h
+-rw-r--r--	root/root	usr/include/kpimtextedit/textutils.h
 drwxr-xr-x	root/root	usr/include/kpimutils/
 -rw-r--r--	root/root	usr/include/kpimutils/email.h
 -rw-r--r--	root/root	usr/include/kpimutils/kfileio.h
@@ -822,86 +864,86 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_sieve.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kio_smtp.so
 lrwxrwxrwx	root/root	usr/lib/libakonadi-contact.so -> libakonadi-contact.so.4
-lrwxrwxrwx	root/root	usr/lib/libakonadi-contact.so.4 -> libakonadi-contact.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libakonadi-contact.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libakonadi-contact.so.4 -> libakonadi-contact.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libakonadi-contact.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libakonadi-kabc.so -> libakonadi-kabc.so.4
-lrwxrwxrwx	root/root	usr/lib/libakonadi-kabc.so.4 -> libakonadi-kabc.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libakonadi-kabc.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libakonadi-kabc.so.4 -> libakonadi-kabc.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libakonadi-kabc.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libakonadi-kcal.so -> libakonadi-kcal.so.4
-lrwxrwxrwx	root/root	usr/lib/libakonadi-kcal.so.4 -> libakonadi-kcal.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libakonadi-kcal.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libakonadi-kcal.so.4 -> libakonadi-kcal.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libakonadi-kcal.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libakonadi-kde.so -> libakonadi-kde.so.4
-lrwxrwxrwx	root/root	usr/lib/libakonadi-kde.so.4 -> libakonadi-kde.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libakonadi-kde.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libakonadi-kde.so.4 -> libakonadi-kde.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libakonadi-kde.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libakonadi-kmime.so -> libakonadi-kmime.so.4
-lrwxrwxrwx	root/root	usr/lib/libakonadi-kmime.so.4 -> libakonadi-kmime.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libakonadi-kmime.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libakonadi-kmime.so.4 -> libakonadi-kmime.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libakonadi-kmime.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libgpgme++-pth.so -> libgpgme++-pth.so.2
-lrwxrwxrwx	root/root	usr/lib/libgpgme++-pth.so.2 -> libgpgme++-pth.so.2.4.0
--rwxr-xr-x	root/root	usr/lib/libgpgme++-pth.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libgpgme++-pth.so.2 -> libgpgme++-pth.so.2.6.0
+-rwxr-xr-x	root/root	usr/lib/libgpgme++-pth.so.2.6.0
 lrwxrwxrwx	root/root	usr/lib/libgpgme++-pthread.so -> libgpgme++-pthread.so.2
-lrwxrwxrwx	root/root	usr/lib/libgpgme++-pthread.so.2 -> libgpgme++-pthread.so.2.4.0
--rwxr-xr-x	root/root	usr/lib/libgpgme++-pthread.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libgpgme++-pthread.so.2 -> libgpgme++-pthread.so.2.6.0
+-rwxr-xr-x	root/root	usr/lib/libgpgme++-pthread.so.2.6.0
 lrwxrwxrwx	root/root	usr/lib/libgpgme++.so -> libgpgme++.so.2
-lrwxrwxrwx	root/root	usr/lib/libgpgme++.so.2 -> libgpgme++.so.2.4.0
--rwxr-xr-x	root/root	usr/lib/libgpgme++.so.2.4.0
+lrwxrwxrwx	root/root	usr/lib/libgpgme++.so.2 -> libgpgme++.so.2.6.0
+-rwxr-xr-x	root/root	usr/lib/libgpgme++.so.2.6.0
 lrwxrwxrwx	root/root	usr/lib/libkabc.so -> libkabc.so.4
-lrwxrwxrwx	root/root	usr/lib/libkabc.so.4 -> libkabc.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkabc.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkabc.so.4 -> libkabc.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkabc.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkabc_file_core.so -> libkabc_file_core.so.4
-lrwxrwxrwx	root/root	usr/lib/libkabc_file_core.so.4 -> libkabc_file_core.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkabc_file_core.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkabc_file_core.so.4 -> libkabc_file_core.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkabc_file_core.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkblog.so -> libkblog.so.4
-lrwxrwxrwx	root/root	usr/lib/libkblog.so.4 -> libkblog.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkblog.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkblog.so.4 -> libkblog.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkblog.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkcal.so -> libkcal.so.4
-lrwxrwxrwx	root/root	usr/lib/libkcal.so.4 -> libkcal.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkcal.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkcal.so.4 -> libkcal.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkcal.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkholidays.so -> libkholidays.so.4
-lrwxrwxrwx	root/root	usr/lib/libkholidays.so.4 -> libkholidays.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkholidays.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkholidays.so.4 -> libkholidays.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkholidays.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkimap.so -> libkimap.so.4
-lrwxrwxrwx	root/root	usr/lib/libkimap.so.4 -> libkimap.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkimap.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkimap.so.4 -> libkimap.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkimap.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkldap.so -> libkldap.so.4
-lrwxrwxrwx	root/root	usr/lib/libkldap.so.4 -> libkldap.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkldap.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkldap.so.4 -> libkldap.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkldap.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkmime.so -> libkmime.so.4
-lrwxrwxrwx	root/root	usr/lib/libkmime.so.4 -> libkmime.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkmime.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkmime.so.4 -> libkmime.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkmime.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkontactinterface.so -> libkontactinterface.so.4
-lrwxrwxrwx	root/root	usr/lib/libkontactinterface.so.4 -> libkontactinterface.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkontactinterface.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkontactinterface.so.4 -> libkontactinterface.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkontactinterface.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkpimidentities.so -> libkpimidentities.so.4
-lrwxrwxrwx	root/root	usr/lib/libkpimidentities.so.4 -> libkpimidentities.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkpimidentities.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkpimidentities.so.4 -> libkpimidentities.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkpimidentities.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkpimtextedit.so -> libkpimtextedit.so.4
-lrwxrwxrwx	root/root	usr/lib/libkpimtextedit.so.4 -> libkpimtextedit.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkpimtextedit.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkpimtextedit.so.4 -> libkpimtextedit.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkpimtextedit.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkpimutils.so -> libkpimutils.so.4
-lrwxrwxrwx	root/root	usr/lib/libkpimutils.so.4 -> libkpimutils.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkpimutils.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkpimutils.so.4 -> libkpimutils.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkpimutils.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkresources.so -> libkresources.so.4
-lrwxrwxrwx	root/root	usr/lib/libkresources.so.4 -> libkresources.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkresources.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkresources.so.4 -> libkresources.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkresources.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libktnef.so -> libktnef.so.4
-lrwxrwxrwx	root/root	usr/lib/libktnef.so.4 -> libktnef.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libktnef.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libktnef.so.4 -> libktnef.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libktnef.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkxmlrpcclient.so -> libkxmlrpcclient.so.4
-lrwxrwxrwx	root/root	usr/lib/libkxmlrpcclient.so.4 -> libkxmlrpcclient.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libkxmlrpcclient.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libkxmlrpcclient.so.4 -> libkxmlrpcclient.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libkxmlrpcclient.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libmailtransport.so -> libmailtransport.so.4
-lrwxrwxrwx	root/root	usr/lib/libmailtransport.so.4 -> libmailtransport.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libmailtransport.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libmailtransport.so.4 -> libmailtransport.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libmailtransport.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libmicroblog.so -> libmicroblog.so.4
-lrwxrwxrwx	root/root	usr/lib/libmicroblog.so.4 -> libmicroblog.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libmicroblog.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libmicroblog.so.4 -> libmicroblog.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libmicroblog.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libqgpgme.so -> libqgpgme.so.1
 lrwxrwxrwx	root/root	usr/lib/libqgpgme.so.1 -> libqgpgme.so.1.0.1
 -rwxr-xr-x	root/root	usr/lib/libqgpgme.so.1.0.1
 lrwxrwxrwx	root/root	usr/lib/libsyndication.so -> libsyndication.so.4
-lrwxrwxrwx	root/root	usr/lib/libsyndication.so.4 -> libsyndication.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libsyndication.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libsyndication.so.4 -> libsyndication.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libsyndication.so.4.5.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/apps/
 drwxr-xr-x	root/root	usr/share/apps/akonadi-kde/
@@ -910,6 +952,21 @@ drwxr-xr-x	root/root	usr/share/apps/akonadi/
 drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/
 drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/data/
 -rw-r--r--	root/root	usr/share/apps/akonadi/contact/data/zone.tab
+drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/icons/
+drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/icons/oxygen/
+drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/
+drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/aim_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/gadu_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/groupwise_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/icq_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/irc_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/jabber_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/meanwhile_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/msn_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/skype_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/sms_protocol.png
+-rw-r--r--	root/root	usr/share/apps/akonadi/contact/icons/oxygen/16x16/apps/yahoo_protocol.png
 drwxr-xr-x	root/root	usr/share/apps/akonadi/contact/pics/
 -rw-r--r--	root/root	usr/share/apps/akonadi/contact/pics/world.jpg
 drwxr-xr-x	root/root	usr/share/apps/cmake/
@@ -929,63 +986,74 @@ drwxr-xr-x	root/root	usr/share/apps/kconf_update/
 -rw-r--r--	root/root	usr/share/apps/kconf_update/mailtransports.upd
 -rwxr-xr-x	root/root	usr/share/apps/kconf_update/migrate-transports.pl
 drwxr-xr-x	root/root	usr/share/apps/libkholidays/
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_BelgiumDutch
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_BelgiumFrench
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_BelgiumWalloon
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_Suedtirol
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ar
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_at
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_au
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_bavarian
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_bg
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_br
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ca
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_catalan
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ch
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_cl
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_cn
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_co
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_cz
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_de
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_dk
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ee
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_es
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_fi
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_fr
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_frswiss
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_gb
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_gr
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_gt
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_hu
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ie
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_il
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_in
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_is
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_it
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_jm
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_jp
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_lt
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_luFrench
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_luLuxembourgish
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_mx
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_na
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_nl
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_no
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_nz
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_pl
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_pt
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_py
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_quebec
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ro
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ru
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_se
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_si
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_sk
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_th
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_ua
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_us
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_uy
--rw-r--r--	root/root	usr/share/apps/libkholidays/holiday_za
+drwxr-xr-x	root/root	usr/share/apps/libkholidays/plan1/
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ar_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_at_de
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-act_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-nsw_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-nt_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-qld_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-sa_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-tas_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-vic_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_au-wa_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_be_fr
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_be_nl
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_be_wa
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_bg_bg
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_br_pt-br
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_by
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ca-qc_fr
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ca_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ch_fr
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_cl_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_cn_zh-cn
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_co_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_cz_cs
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_de-by_de
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_de_de
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_dk_da
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ee_et
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_es-ct_ca
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_es_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_fi_fi
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_fr_fr
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_gb-eaw_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_gb-nir_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_gb-sct_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_gr_el
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_gt_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_hu_hu
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ie_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_il_en-us
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_in_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_is_is
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_it-bz_de
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_it_it
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_jm_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_jp_en-us
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_jp_ja
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_lt_lt
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_lu_fr
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_lu_lb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_mx_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_na_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_nl_nl
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_no_nb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_nz_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_pl_pl
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_pt_pt
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_py_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ro_ro
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ru_ru
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_se_sv
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_si_sl
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_sk_sk
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_th_en-gb
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_ua_uk
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_us_en-us
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_uy_es
+-rw-r--r--	root/root	usr/share/apps/libkholidays/plan1/holiday_za_en-gb
 drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/mailtransport.kcfg
 -rw-r--r--	root/root	usr/share/config.kcfg/recentcontactscollections.kcfg
@@ -996,6 +1064,19 @@ drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.pim.IdentityManager.xml
 drwxr-xr-x	root/root	usr/share/kde4/
 drwxr-xr-x	root/root	usr/share/kde4/services/
+drwxr-xr-x	root/root	usr/share/kde4/services/akonadi/
+drwxr-xr-x	root/root	usr/share/kde4/services/akonadi/contact/
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/aimprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/gaduprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/groupwiseprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/icqprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/ircprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/jabberprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/meanwhileprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/msnprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/skypeprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/smsprotocol.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/akonadi/contact/yahooprotocol.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/akonadicontact_actions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/imap4.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/imaps.protocol
@@ -1023,6 +1104,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kresources/kcal/
 -rw-r--r--	root/root	usr/share/kde4/services/smtp.protocol
 -rw-r--r--	root/root	usr/share/kde4/services/smtps.protocol
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
+-rw-r--r--	root/root	usr/share/kde4/servicetypes/kaddressbookimprotocol.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kontactplugin.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kresources_manager.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kresources_plugin.desktop
