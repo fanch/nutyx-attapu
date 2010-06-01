@@ -295,6 +295,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/128x128/devices/
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/pda.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/phone-openmoko-freerunner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/phone.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/printer-laser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/printer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/scanner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/devices/secure-card.png
@@ -2974,6 +2975,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/accessories-calculator.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/accessories-dictionary.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/akonadi.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/internet-web-browser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/k3b.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/karbon.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kbruch.png
@@ -3051,6 +3053,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/256x256/devices/
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/network-wireless-connected-75.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/network-wireless-disconnected.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/network-wireless.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/printer-laser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/secure-card.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/devices/video-display.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/256x256/mimetypes/
@@ -3576,6 +3579,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/shapes.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/show-menu.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/speaker.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/split.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/story-editor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/stroke-cap-butt.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/stroke-cap-round.png
@@ -3653,6 +3657,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-calendar.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-catalog.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-certificate-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-certificate-export-secret.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-certificate-export-server.png
@@ -3663,6 +3668,8 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-certificate.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-choose.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-close.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-credit-card-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-currency-list.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-file-columns.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-filter.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-financial-list.png
@@ -3672,6 +3679,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-fullscreen.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-grid.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-history.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-investment.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-ldap-resource.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-left-close.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-list-details.png
@@ -3713,6 +3721,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-split-left-right.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-split-top-bottom.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-statistics.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-stock-account.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-table-of-contents-ltr.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-table-of-contents-rtl.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/actions/view-task-add.png
@@ -3952,6 +3961,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/devices/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/pda.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/phone-openmoko-freerunner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/phone.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/printer-laser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/printer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/scanner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/devices/secure-card.png
@@ -4684,6 +4694,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/services.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/show-menu.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/speaker.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/split.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/story-editor.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/stroke-cap-butt.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/stroke-cap-round.png
@@ -4708,6 +4719,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/tab-duplicate.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/tab-new-background.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/tab-new.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/taxes-finances.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/text-field.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/text-frame-link.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/text-frame-unlink.png
@@ -4759,6 +4771,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-calendar-whatsnext.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-calendar-workweek.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-calendar.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-catalog.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-certificate-add.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-certificate-export-secret.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-certificate-export-server.png
@@ -4769,6 +4782,9 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-certificate.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-choose.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-close.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-credit-card-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-currency-list.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-documents-finances.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-file-columns.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-filter.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-financial-list.png
@@ -4778,6 +4794,8 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-fullscreen.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-grid.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-history.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-investment-account.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-investment.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-ldap-resource.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-left-close.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/actions/view-list-details.png
@@ -5055,6 +5073,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/devices/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/pda.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/phone-openmoko-freerunner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/phone.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/printer-laser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/printer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/scanner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/devices/secure-card.png
@@ -5710,6 +5729,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/devices/
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/pda.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/phone-openmoko-freerunner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/phone.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/printer-laser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/printer.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/scanner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/devices/video-display.png
