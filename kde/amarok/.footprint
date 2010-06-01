@@ -17,7 +17,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_collection-umscollection.so
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_containment_vertical.so
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_context_applet_albums.so
--rwxr-xr-x	root/root	usr/lib/kde4/amarok_context_applet_coverbling.so
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_context_applet_currenttrack.so
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_context_applet_info.so
 -rwxr-xr-x	root/root	usr/lib/kde4/amarok_context_applet_lyrics.so
@@ -49,12 +48,15 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 lrwxrwxrwx	root/root	usr/lib/libamarok-sqlcollection.so -> libamarok-sqlcollection.so.1
 lrwxrwxrwx	root/root	usr/lib/libamarok-sqlcollection.so.1 -> libamarok-sqlcollection.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libamarok-sqlcollection.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libamarokcore.so -> libamarokcore.so.1
+lrwxrwxrwx	root/root	usr/lib/libamarokcore.so.1 -> libamarokcore.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libamarokcore.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libamaroklib.so -> libamaroklib.so.1
 lrwxrwxrwx	root/root	usr/lib/libamaroklib.so.1 -> libamaroklib.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libamaroklib.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/libamarokocsclient.so -> libamarokocsclient.so.4
-lrwxrwxrwx	root/root	usr/lib/libamarokocsclient.so.4 -> libamarokocsclient.so.4.4.0
--rwxr-xr-x	root/root	usr/lib/libamarokocsclient.so.4.4.0
+lrwxrwxrwx	root/root	usr/lib/libamarokocsclient.so.4 -> libamarokocsclient.so.4.5.0
+-rwxr-xr-x	root/root	usr/lib/libamarokocsclient.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libamarokpud.so -> libamarokpud.so.1
 lrwxrwxrwx	root/root	usr/lib/libamarokpud.so.1 -> libamarokpud.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libamarokpud.so.1.0.0
@@ -387,13 +389,6 @@ drwxr-xr-x	root/root	usr/share/apps/amarok/images/
 -rw-r--r--	root/root	usr/share/apps/amarok/images/amarok-videoclip-vimeo.png
 -rw-r--r--	root/root	usr/share/apps/amarok/images/amarok-videoclip-youtube.png
 -rw-r--r--	root/root	usr/share/apps/amarok/images/amarok_icon.svg
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingdefaultcover.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingfastback.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingfastforward.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingfullscreen.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingjumptoplaying.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingtofirst.png
--rw-r--r--	root/root	usr/share/apps/amarok/images/blingtolast.png
 -rw-r--r--	root/root	usr/share/apps/amarok/images/default-theme-clean.svg
 -rw-r--r--	root/root	usr/share/apps/amarok/images/emblem-ampache-scalable.svgz
 -rw-r--r--	root/root	usr/share/apps/amarok/images/emblem-ampache.png
@@ -539,7 +534,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/amarok_append.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/amarok-containment-vertical.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/amarok-context-applet-albums.desktop
--rw-r--r--	root/root	usr/share/kde4/services/amarok-context-applet-coverbling.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/amarok-context-applet-currenttrack.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/amarok-context-applet-info.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/amarok-context-applet-lyrics.desktop

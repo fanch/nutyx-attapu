@@ -5,9 +5,9 @@
 # Depends on: kdelibs, kdemultimedia, qtscriptgenerator, taglib-extras, libgpod, libmtp, liblastfm, loudmouth
 
 name=amarok
-version=2.3.0.90
+version=2.3.1
 release=1
-source=(http://download.kde.org/download.php?url=unstable/$name/$version/src/$name-$version.tar.bz2\
+source=(http://download.kde.org/download.php?url=stable/$name/$version/src/$name-$version.tar.bz2\
 	splash_screen.jpg)
 
 build() {
