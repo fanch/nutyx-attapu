@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/krubyapplication
+-rwxr-xr-x	root/root	usr/bin/puic4
 lrwxrwxrwx	root/root	usr/bin/pykdeuic4 -> /usr/lib/python2.6/site-packages/PyQt4/uic/pykdeuic4.py
 -rwxr-xr-x	root/root	usr/bin/rbkconfig_compiler4
 -rwxr-xr-x	root/root	usr/bin/rbqtapi
@@ -34,12 +35,10 @@ drwxr-xr-x	root/root	usr/include/smoke/
 -rw-r--r--	root/root	usr/include/smoke/kutils_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/nepomuk_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/nepomukquery_smoke.h
--rw-r--r--	root/root	usr/include/smoke/okular_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/phonon_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/plasma_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/qimageblitz_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/qsci_smoke.h
--rw-r--r--	root/root	usr/include/smoke/qt_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/qtcore_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/qtdbus_smoke.h
 -rw-r--r--	root/root	usr/include/smoke/qtgui_smoke.h
@@ -60,6 +59,7 @@ drwxr-xr-x	root/root	usr/include/smoke/
 -rw-r--r--	root/root	usr/include/smoke/sopranoserver_smoke.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/kde4/
+-rwxr-xr-x	root/root	usr/lib/kde4/kperlpluginfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kpythonpluginfactory.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krosspython.so
 -rwxr-xr-x	root/root	usr/lib/kde4/krubypluginfactory.so
@@ -73,6 +73,9 @@ lrwxrwxrwx	root/root	usr/lib/libsmokeakonadi.so.3 -> libsmokeakonadi.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsmokeattica.so -> libsmokeattica.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokeattica.so.3 -> libsmokeattica.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokeattica.so.3.0.0
+lrwxrwxrwx	root/root	usr/lib/libsmokebase.so -> libsmokebase.so.3
+lrwxrwxrwx	root/root	usr/lib/libsmokebase.so.3 -> libsmokebase.so.3.0.0
+-rwxr-xr-x	root/root	usr/lib/libsmokebase.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsmokekdecore.so -> libsmokekdecore.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokekdecore.so.3 -> libsmokekdecore.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokekdecore.so.3.0.0
@@ -109,9 +112,6 @@ lrwxrwxrwx	root/root	usr/lib/libsmokenepomuk.so.3 -> libsmokenepomuk.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsmokenepomukquery.so -> libsmokenepomukquery.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokenepomukquery.so.3 -> libsmokenepomukquery.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokenepomukquery.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libsmokeokular.so -> libsmokeokular.so.3
-lrwxrwxrwx	root/root	usr/lib/libsmokeokular.so.3 -> libsmokeokular.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libsmokeokular.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsmokephonon.so -> libsmokephonon.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokephonon.so.3 -> libsmokephonon.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokephonon.so.3.0.0
@@ -124,9 +124,6 @@ lrwxrwxrwx	root/root	usr/lib/libsmokeqimageblitz.so.3 -> libsmokeqimageblitz.so.
 lrwxrwxrwx	root/root	usr/lib/libsmokeqsci.so -> libsmokeqsci.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokeqsci.so.3 -> libsmokeqsci.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokeqsci.so.3.0.0
-lrwxrwxrwx	root/root	usr/lib/libsmokeqt.so -> libsmokeqt.so.3
-lrwxrwxrwx	root/root	usr/lib/libsmokeqt.so.3 -> libsmokeqt.so.3.0.0
--rwxr-xr-x	root/root	usr/lib/libsmokeqt.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libsmokeqtcore.so -> libsmokeqtcore.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokeqtcore.so.3 -> libsmokeqtcore.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokeqtcore.so.3.0.0
@@ -181,6 +178,38 @@ lrwxrwxrwx	root/root	usr/lib/libsmokesopranoclient.so.3 -> libsmokesopranoclient
 lrwxrwxrwx	root/root	usr/lib/libsmokesopranoserver.so -> libsmokesopranoserver.so.3
 lrwxrwxrwx	root/root	usr/lib/libsmokesopranoserver.so.3 -> libsmokesopranoserver.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libsmokesopranoserver.so.3.0.0
+drwxr-xr-x	root/root	usr/lib/perl5/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/KDECore4.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/KDEUi4.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/KIO4.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Plasma4.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/classinfo.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/debug.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/isa.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/signals.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtCore4/slots.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtGui4.pm
+-rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/QtTest4.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KDECore4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KDECore4/KDECore4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KDEUi4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KDEUi4/KDEUi4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KIO4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/KIO4/KIO4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Plasma4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Plasma4/Plasma4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtCore4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtCore4/QtCore4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtGui4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtGui4/QtGui4.so
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtTest4/
+-rwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/QtTest4/QtTest4.so
 drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/PyKDE4/
@@ -228,11 +257,13 @@ drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/akonadi/
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/akonadi.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/khtml.so
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/kio.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/korundum4.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/ktexteditor.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/nepomuk.so
--rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/okular.so
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/phonon.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/plasma_applet.so
+-rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/qscintilla.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/qtruby4.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/qtscript.so
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/qttest.so
@@ -242,12 +273,16 @@ drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/
 -rwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/i686-linux/soprano.so
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/khtml/
 -rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/khtml/khtml.rb
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/kio/
+-rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/kio/kio.rb
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/ktexteditor/
 -rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/ktexteditor/ktexteditor.rb
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/nepomuk/
 -rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/nepomuk/nepomuk.rb
-drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/okular/
--rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/okular/okular.rb
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/phonon/
+-rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/phonon/phonon.rb
+drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/qscintilla/
+-rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/qscintilla/qscintilla.rb
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/qtscript/
 -rw-r--r--	root/root	usr/lib/ruby/site_ruby/1.9.1/qtscript/qtscript.rb
 drwxr-xr-x	root/root	usr/lib/ruby/site_ruby/1.9.1/qttest/
@@ -329,6 +364,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/akonadi/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agentinstancemodel.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agentinstancewidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agentmanager.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agentsearchinterface.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agenttype.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agenttypedialog.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/agenttypemodel.sip
@@ -393,6 +429,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/akonadi/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/mimetypechecker.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/monitor.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/partfetcher.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/persistentsearchattribute.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/preprocessorbase.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/resourcebase.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/akonadi/resourcesynchronizationjob.sip
@@ -526,6 +563,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kdeui/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kapplication.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/karrowbutton.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kassistantdialog.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kbreadcrumbselectionmodel.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kbugreport.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kbuttongroup.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kcapacitybar.sip
@@ -595,6 +633,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kdeui/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/klanguagebutton.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kled.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/klineedit.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/klinkitemselectionmodel.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/klistwidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/klistwidgetsearchline.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmainwindow.sip
@@ -603,6 +642,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kdeui/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmenubar.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmessagebox.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmessageboxmessagehandler.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmodelindexproxymapper.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmodifierkeyinfo.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kmultitabbar.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/knewpassworddialog.sip
@@ -634,6 +674,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kdeui/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kprogressdialog.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kpushbutton.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/krecentfilesaction.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/krecursivefilterproxymodel.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kreplace.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kreplacedialog.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/krestrictedline.sip
@@ -683,6 +724,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kdeui/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kuniqueapplication.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kurllabel.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kvbox.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kviewstatesaver.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kwallet.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kwidgetitemdelegate.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kdeui/kwidgetjobtracker.sip
@@ -786,6 +828,8 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kio/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfileitemactions.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfileitemdelegate.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfileitemlistproperties.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfilemetadataconfigurationwidget.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfilemetadatawidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfilemetainfo.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfilemetainfoitem.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kfileplacesmodel.sip
@@ -801,6 +845,8 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kio/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kiomod.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kmimetypechooser.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kmountpoint.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/knameandurlinputdialog.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/knewfilemenu.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/knfsshare.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/konqbookmarkmenu.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kio/kopenwithdialog.sip
@@ -852,6 +898,8 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/knewstuff/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/entry.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/installation.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_downloaddialog.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_downloadmanager.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_downloadwidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_entry.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_knewstuffaction.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/knewstuff/knewstuff3_knewstuffbutton.sip
@@ -874,6 +922,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/kparts/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kparts/part.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kparts/partmanager.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kparts/plugin.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/kparts/scriptableextension.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/kparts/statusbarextension.sip
 drwxr-xr-x	root/root	usr/share/sip/PyKDE4/ktexteditor/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/ktexteditor/attribute.sip
@@ -928,7 +977,6 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/nepomuk/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/global.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/groupterm.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/kmetadatatagcloud.sip
--rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/kmetadatatagwidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/kratingpainter.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/kratingwidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/ktagcloudwidget.sip
@@ -936,10 +984,12 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/nepomuk/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/literal.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/literalterm.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/negationterm.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/nepomukmassupdatejob.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/nepomukmod.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/nepomukontologyloader.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/nepomukservice.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/ontology.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/optionalterm.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/orterm.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/property.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/query.sip
@@ -952,6 +1002,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/nepomuk/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/result.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/simpleterm.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/tag.sip
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/tagwidget.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/term.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/thing.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/nepomuk/tools.sip
@@ -999,6 +1050,7 @@ drwxr-xr-x	root/root	usr/share/sip/PyKDE4/phonon/
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/phonon/volumefadereffect.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/phonon/volumeslider.sip
 drwxr-xr-x	root/root	usr/share/sip/PyKDE4/plasma/
+-rw-r--r--	root/root	usr/share/sip/PyKDE4/plasma/abstractdialogmanager.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/plasma/abstractrunner.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/plasma/abstracttoolbox.sip
 -rw-r--r--	root/root	usr/share/sip/PyKDE4/plasma/accessappletjob.sip
