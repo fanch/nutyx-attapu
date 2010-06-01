@@ -1,0 +1,19 @@
+# Description: Utilitaire de capture vidéo d'écran 
+# URL: http://xvidcap.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: Shai_- <romain.gailleton at gmail dot com>
+# Depends on: gtk
+name=xvidcap
+version=1.1.7
+release=1
+source=(http://downloads.sourceforge.net/project/$name/$name/$version/$name-$version.tar.gz)
+build() {
+	cd $name-$version
+
+	sed -e 's,<X11/extensions/shmstr.h>,<X11/extensions/shmproto.h>,' -i src/capture.c
+
+        ./configure --prefix=/usr
+
+        make
+        make DESTDIR=$PKG install
+}
