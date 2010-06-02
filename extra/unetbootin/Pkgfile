@@ -2,7 +2,8 @@
 # URL: http://unetbootin.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: Shai_- < romain dot gailleton at gmail dot com >
-# Depends on: syslinux,p7zip-full,libqt4-core,libqt4-gui,libqt4-network
+# Depends on: syslinux,p7zip,qt
+
 name=unetbootin
 version=442
 release=1
@@ -14,8 +15,9 @@ build() {
 	lupdate unetbootin.pro
 	lrelease unetbootin.pro
 	qmake "DEFINES += NOSTATIC" "RESOURCES -= unetbootin.qrc"
-	make DESTDIR=$PKG
+	make
 	mv unetbootin-pro.bak unetbootin.pro
-	cp -R "/tmp/work/src/" $PKG
+	mkdir -p $PKG/usr/bin
+	cp unetbootin $PKG/usr/bin/
 
 }
