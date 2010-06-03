@@ -1,0 +1,23 @@
+# Description: créé des liveUSB depuis une LiveISO
+# URL: http://unetbootin.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: Shai_- < romain dot gailleton at gmail dot com >
+# Depends on: syslinux,p7zip,qt
+
+name=unetbootin
+version=442
+release=1
+source=(http://unetbootin.sourceforge.net/$name-source-clean-latest.tar.gz)
+build() {
+
+	cp unetbootin.pro unetbootin-pro.bak
+	sed -i '/^RESOURCES/d' unetbootin.pro
+	lupdate unetbootin.pro
+	lrelease unetbootin.pro
+	qmake "DEFINES += NOSTATIC" "RESOURCES -= unetbootin.qrc"
+	make
+	mv unetbootin-pro.bak unetbootin.pro
+	mkdir -p $PKG/usr/bin
+	cp unetbootin $PKG/usr/bin/
+
+}
