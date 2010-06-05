@@ -5,8 +5,8 @@
 # Depends on: python, zlib, readline, ncurses
 
 name=libxml2
-version=2.7.6
-release=2
+version=2.7.7
+release=1
 source=(ftp://xmlsoft.org/libxml2/$name-$version.tar.gz \
 	largefile64.patch \
 	zlib.patch )
@@ -14,7 +14,7 @@ source=(ftp://xmlsoft.org/libxml2/$name-$version.tar.gz \
 build() {
 	cd $name-$version
 	patch -Np1 -i "$SRC/largefile64.patch"
-	patch -p1 -i "$SRC/zlib.patch"
+#	patch -p1 -i "$SRC/zlib.patch"
 
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \

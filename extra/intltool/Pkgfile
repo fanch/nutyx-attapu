@@ -5,9 +5,9 @@
 # Depends on: p5-xml-parser
 
 name=intltool
-version=0.40.6
+version=0.41.1
 release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/0.40/$name-$version.tar.bz2)
+source=(http://edge.launchpad.net/intltool/trunk/0.41.1/+download/intltool-0.41.1.tar.gz)
 
 build() {
 cd $name-$version

@@ -5,7 +5,7 @@
 # Depends on: expat
 
 name=dbus
-version=1.2.16
+version=1.2.24
 release=1
 source=(http://dbus.freedesktop.org/releases/dbus/$name-$version.tar.gz \
        session-local.conf\

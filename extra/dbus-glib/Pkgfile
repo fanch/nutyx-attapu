@@ -5,7 +5,7 @@
 # Depends on: dbus, glib
 
 name=dbus-glib
-version=0.80
+version=0.86
 release=1
 source=( http://dbus.freedesktop.org/releases/$name/$name-$version.tar.gz)
 

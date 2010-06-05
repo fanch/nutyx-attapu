@@ -5,9 +5,9 @@
 # Depends on: python
 
 name=boost
-version=1.42.0
+version=1.43.0
 release=1
-_boostver=1_42_0
+_boostver=1_43_0
 source=(http://downloads.sourceforge.net/$name/boost_${version//./_}.tar.bz2\
         layout-tagged.patch translate_exception.patch )
 
