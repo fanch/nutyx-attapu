@@ -1,0 +1,24 @@
+
+# Description: un client bitorrent en c++ comme alternative aux autres client.
+# URL:http://www.rasterbar.com/products/libtorrent/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: boost, python
+
+name=libtorrent-rasterbar
+version=0.15.0
+release=1
+source=(http://libtorrent.googlecode.com/files/$name-$version.tar.gz
+        disable-valloc.dpatch)
+
+
+build() {
+  cd $SRC/$name-$version
+  patch -Np1 -i $SRC/disable-valloc.dpatch
+  ./configure --prefix=/usr --enable-python-binding \
+              --with-boost-filesystem=mt \
+              --with-boost-thread=mt 
+  make 
+  make DESTDIR=$PKG install 
+  install -D COPYING $PKG/usr/share/licenses/$name/LICENSE
+}
