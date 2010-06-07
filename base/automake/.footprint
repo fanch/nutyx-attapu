@@ -126,9 +126,6 @@ drwxr-xr-x	root/root	usr/share/automake-1.11/am/
 -rwxr-xr-x	root/root	usr/share/automake-1.11/symlink-tree
 -rw-r--r--	root/root	usr/share/automake-1.11/texinfo.tex
 -rwxr-xr-x	root/root	usr/share/automake-1.11/ylwrap
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/automake/
--rw-r--r--	root/root	usr/share/doc/automake/amhello-1.0.tar.gz
 drwxr-xr-x	root/root	usr/share/info/
 -rw-r--r--	root/root	usr/share/info/automake.info-1.gz
 -rw-r--r--	root/root	usr/share/info/automake.info-2.gz
