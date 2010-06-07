@@ -6,7 +6,7 @@
 name=util-linux-ng
 version=2.17.2
 release=1
-source=(http://www.kernel.org/pub/linux/utils/util-linux-ng/v2.16/$name-$version.tar.bz2)
+source=(http://www.kernel.org/pub/linux/utils/util-linux-ng/v2.17/$name-$version.tar.bz2)
 
 build() {
 cd $name-$version
