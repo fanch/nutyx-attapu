@@ -1,6 +1,7 @@
 3887f95991887096a4de8760541bf7fe  SUPPORTED
 fe5f1e6bec88c71f28b1196961b89789  gcc-4.5.0-glibc-01.patch
-6856d5d8b1239556687f0d1217f3f266  glibc-2.11.1.tar.bz2
+d1f28cb98acb9417fe52596908bbb9fd  glibc-2.11.2-gcc_fix-1.patch
+414fc1bad64c0e34ead0bb3d0f191456  glibc-2.11.2.tar.bz2
 337046ceada10c767b1677d8393e1f8c  ld.so.conf
-80c5ff544b0ee4d9b5d8b8b89d4a0ef9  linux-2.6.33.2.tar.bz2
+10eebcb0178fb4540e2165bfd7efc7ad  linux-2.6.34.tar.bz2
 dc28b61b16df5707770e4f936bf6fa31  nsswitch.conf
