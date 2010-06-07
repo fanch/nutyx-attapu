@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=libtool
-version=2.2.6b
+version=2.2.8
 release=1
 source=(http://ftp.gnu.org/gnu/$name/$name-$version.tar.gz )
 
