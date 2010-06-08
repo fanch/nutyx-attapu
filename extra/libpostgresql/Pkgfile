@@ -4,7 +4,7 @@
 # Packager: lesibel at free dot fr
 # Depends on: libxml2, linux-pam
 
-name=postgresql
+name=libpostgresql
 version=8.4.4
 release=1
 source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2 \
@@ -12,7 +12,7 @@ source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz
 
 build() {
 
-  cd $name-$version
+  cd postgresql-$version
 
   # patch to remove regress/test make target (won't build with it present)
   patch -Np1 -i ../build.patch 
