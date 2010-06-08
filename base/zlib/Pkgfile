@@ -17,6 +17,6 @@ build() {
     mkdir $PKG/lib
     mv -v $PKG/usr/lib/libz.so.* $PKG/lib
 
-    ln -sfv ../../lib/libz.so.1.2.4 $PKG/usr/lib/libz.so
+    ln -sfv ../../lib/libz.so.$version $PKG/usr/lib/libz.so
 
 }
