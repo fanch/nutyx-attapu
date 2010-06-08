@@ -129,7 +129,7 @@ drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/16x16/actions/
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/object-rotate-right.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/view-page-continuous.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/view-page-facing.png
--rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/zoom-fit-page.png
+-rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/zoom-fit-height.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/zoom-fit-width.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/16x16/actions/zoom.png
 drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/16x16/mimetypes/
@@ -153,7 +153,7 @@ drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/24x24/actions/
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/stock_filters-invert.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/view-page-continuous.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/view-page-facing.png
--rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/zoom-fit-page.png
+-rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/zoom-fit-height.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/zoom-fit-width.png
 -rw-r--r--	root/root	usr/share/evince/icons/hicolor/24x24/actions/zoom.png
 drwxr-xr-x	root/root	usr/share/evince/icons/hicolor/24x24/mimetypes/

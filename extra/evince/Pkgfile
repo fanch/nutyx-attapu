@@ -5,7 +5,7 @@
 # Depends on: atk, cairo, libcups, dbus-glib, djvulibre, expat, fontconfig, freetype, gconf, glib, glitz, gnome-icon-theme, gnome-doc-utils, libgnome-keyring, gsfonts, gtk, libpng, orbit2, pango, xorg-libpixman, poppler-glib, shared-mime-info, libspectre, lcms
 
 name=evince
-version=2.30.0
+version=2.30.1
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
 	evince.desktop)
