@@ -1,0 +1,35 @@
+# Description: Système de base de données relationnelles très complète basée sur les objects
+# URL: http://www.postgresql.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libxml2, linux-pam
+
+name=postgresql
+version=8.4.4
+release=1
+source=(ftp://ftp.postgresql.org/pub/source/v$version/postgresql-$version.tar.bz2 \
+        build.patch postgresql.pam)
+
+build() {
+
+  cd $name-$version
+
+  # patch to remove regress/test make target (won't build with it present)
+  patch -Np1 -i ../build.patch 
+
+  # configure
+  ./configure --prefix=/usr --mandir=/usr/share/man \
+  --with-docdir=/usr/share/doc --with-openssl \
+  --enable-thread-safety \
+  --with-pam --with-libxml
+
+  # build
+  make -j3
+
+  for i in src/interfaces src/bin/pg_config src/include; do
+		cd $i
+		make DESTDIR=$PKG install
+		cd -
+	done
+
+}
