@@ -5,7 +5,7 @@
 # Depends on: cairo, pango, atk, libtiff, glib, jasper, libjpeg, shared-mime-info, libcups, kerberos
 
 name=gtk
-version=2.20.0
+version=2.21.1
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/gtk+/${version%.*}/gtk+-$version.tar.bz2)
 
