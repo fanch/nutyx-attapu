@@ -173,7 +173,7 @@ EOF
        # Customise startup scripts
 	cat > $PKG/var/lib/pkg/blfs-bootscripts << "EOF"
 scripts=blfs-bootscripts
-scriptsversion=$BLFSscriptsversion
+scriptsversion=`echo $BLFSscriptsversion`
 EOF
 	ln -s /var/lib/pkg/blfs-bootscripts $PKG/etc/blfs-bootscripts
 	cp -v message $PKG/boot/

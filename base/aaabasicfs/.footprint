@@ -39,7 +39,7 @@ drwxr-xr-x	root/root	etc/rc.d/init.d/
 -rwxr-xr--	root/root	etc/rc.d/init.d/modules
 -rwxr-xr--	root/root	etc/rc.d/init.d/mountfs
 -rwxr-xr--	root/root	etc/rc.d/init.d/mountkernfs
--rwxr-xr-x	root/root	etc/rc.d/init.d/network
+-rwxr-xr--	root/root	etc/rc.d/init.d/network
 -rwxr-xr--	root/root	etc/rc.d/init.d/random
 -rwxr-xr--	root/root	etc/rc.d/init.d/rc
 -rwxr-xr--	root/root	etc/rc.d/init.d/reboot
