@@ -173,8 +173,8 @@ EOF
        # Customise startup scripts
 	cat > $PKG/var/lib/pkg/blfs-bootscripts << "EOF"
 scripts=blfs-bootscripts
-scriptsversion=`echo $BLFSscriptsversion`
 EOF
+	echo "scriptsversion=$BLFSscriptsversion" >> $PKG/var/lib/pkg/blfs-bootscripts
 	ln -s /var/lib/pkg/blfs-bootscripts $PKG/etc/blfs-bootscripts
 	cp -v message $PKG/boot/
 	# Install Random Number Generation
