@@ -2,7 +2,7 @@
 # URL: http://www.gtk.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo, pango, atk, libtiff, glib, jasper, libjpeg, shared-mime-info, libcups, kerberos
+# Depends on: cairo, pango, atk, libtiff, glib, jasper, libjpeg, shared-mime-info, libcups, kerberos, libpng12
 
 name=gtk
 version=2.21.1
