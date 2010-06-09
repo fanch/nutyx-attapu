@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=lvm2
-version=2.02.65
+version=2.02.67
 release=1
 source=(ftp://sources.redhat.com/pub/lvm2/LVM2.$version.tgz\
 	lvmnodes)
