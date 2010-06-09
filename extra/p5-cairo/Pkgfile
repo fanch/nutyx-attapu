@@ -2,10 +2,10 @@
 # URL: http://www.gtkperl.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p5-glib, p5-extutils-pkgconfig, cairo
+# Depends on: p5-glib, p5-extutils-pkgconfig, cairo, libpng12
 
 name=p5-cairo
-version=1.060
+version=1.061
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/T/TS/TSCH/Cairo-${version}.tar.gz)
 

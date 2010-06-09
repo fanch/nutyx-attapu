@@ -1,22 +1,20 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/perl5/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo.pm
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/Files.pm
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/cairo-perl-auto.h
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/cairo-perl-auto.typemap
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/cairo-perl.h
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/cairo-perl.typemap
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Cairo/Install/doctypes
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Cairo/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Cairo/Cairo.bs (EMPTY)
--r-xr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Cairo/Cairo.so
+drwxr-xr-x	root/root	usr/lib/perl5/site/
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site/Cairo/
+drwxr-xr-x	root/root	usr/lib/perl5/site/Cairo/Install/
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/Files.pm
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/cairo-perl-auto.h
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/cairo-perl-auto.typemap
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/cairo-perl.h
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/cairo-perl.typemap
+-r--r--r--	root/root	usr/lib/perl5/site/Cairo/Install/doctypes
+drwxr-xr-x	root/root	usr/lib/perl5/site/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site/auto/Cairo/
+-r--r--r--	root/root	usr/lib/perl5/site/auto/Cairo/Cairo.bs (EMPTY)
+-r-xr-xr-x	root/root	usr/lib/perl5/site/auto/Cairo/Cairo.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man3/
