@@ -5,13 +5,13 @@
 
 name=initrd-lts
 version=2.6.30.10
-release=3
-_tools=04042010
-SCRIPT_VERSION="2009.3"
+release=4
+_tools=03062010
+SCRIPT_VERSION="attapu"
 source=()
 build(){
 wget http://kiao.no-ip.info/NuTyX/tools/install-${SCRIPT_VERSION}.ash
-wget http://kiao.no-ip.info/NuTyX/2009.3/`uname -m`/release/kernel-lts%23$version-2.pkg.tar.gz
+wget http://kiao.no-ip.info/NuTyX/attapu/`uname -m`/release/kernel-lts%23$version-2.pkg.tar.gz
 WDIR=$SRC/installtools
 tar xf kernel*
 mkdir -p $WDIR
