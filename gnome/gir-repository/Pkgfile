@@ -2,7 +2,7 @@
 # URL: http://
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: avahi, gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck, babl
+# Depends on: avahi, gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck, babl, startup-notification
 
 name=gir-repository
 version=0.6.5
