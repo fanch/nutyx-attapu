@@ -2,7 +2,7 @@
 # URL: http://www.twotoasts.de/index.php?/pages/midori_summary.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: atk, cairo, desktop-file-utils, enchant, fontconfig, freetype, gtk, gnutls, glib, gstreamer, hicolor-icon-theme, intltool, libgcrypt, libgpg-error, libtasn1, libsoup, libunique, libxml2, pango, sqlite3, webkit, xdg-utils, librsvg
+# Depends on: atk, cairo, desktop-file-utils, enchant, fontconfig, freetype, gtk, gnutls, glib, gstreamer, hicolor-icon-theme, intltool, libgcrypt, libgpg-error, libtasn1, libsoup, libunique, libxml2, pango, sqlite3, webkit, xdg-utils, librsvg, hunspell
 
 name=midori
 version=0.2.5
