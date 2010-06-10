@@ -1,10 +1,9 @@
-# Description: Glade est un outil RAD pour facilter le developpement 
-d'interfacs utilisatieurs pour le toolkit GTK+ et pour l'environement de bureau GNOME
+# Description: Glade est un outil RAD pour facilter le developpement d'interfacs utilisatieurs pour le toolkit GTK+ et pour l'environement de bureau GNOME
 # URL: http://gcompris.net/-fr-
 # Maintainer: NuTyX core team
 # Packager: Shai_- <romain.gailleton at gmail dot com
-# Depends on: gtk, ...
-name=glade3
+# Depends on: gtk
+name=glade
 version=3.6.7
 release=1
 source=(http://ftp.gnome.org/pub/GNOME/sources/$name/3.6/$name-$version.tar.bz2)
