@@ -2,10 +2,10 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, libffi, python
+# Depends on: glib, libffi, python, cairo
 
 name=gobject-introspection
-version=0.6.6
+version=0.6.14
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 

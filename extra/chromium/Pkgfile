@@ -6,7 +6,7 @@
 # Depends on: yasm, nss, gconf, alsa-lib, xdg-utils, hicolor-icon-theme, bzip2, libxss, libevent
 
 name=chromium
-version=5.0.375.67
+version=5.0.375.71
 release=1
 
 source=(http://build.chromium.org/buildbot/official/$name-$version.tar.bz2 \
