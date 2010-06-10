@@ -6,7 +6,7 @@
 name=wv
 version=1.2.4
 release=1
-source=(http://downloads.sourceforge.net/project/wvware/$name-$version.tar.gz)
+source=(http://downloads.sourceforge.net/project/wvware/$name/$version/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
