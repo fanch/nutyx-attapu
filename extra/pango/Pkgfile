@@ -2,11 +2,11 @@
 # URL: http://gnome.org
 # Maintainer: NuTyX core teamm
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo, glib, libthai
+# Depends on: cairo, glib, libthai, freetype
 
 name=pango
 version=1.28.0
-release=1
+release=2
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\	
 	pango.modules)
 
@@ -16,11 +16,12 @@ build() {
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
-                --sysconfdir=/etc
+                --sysconfdir=/etc 
 	make
 	make DESTDIR=$PKG install
         rm -rf $PKG/usr/share/gtk-doc
 	install -m644 ../pango.modules $PKG/etc/pango/
-	rm -rf $PKG/usr/lib/girepository-1.0
-	rm -rf $PKG/usr/share/gir-1.0/
+#	rm -rf $PKG/usr/lib/girepository-1.0
+#	rm -rf $PKG/usr/share/gir-1.0/	
+
 }
