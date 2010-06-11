@@ -2,7 +2,7 @@
 # URL: http://www.gtk.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib
+# Depends on: glib, gobject-introspection
 
 name=atk
 version=1.30.0
