@@ -2,14 +2,16 @@
 # URL: http://download.librdf.org/source/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: raptor, rasqal, sqlite3, unixodbc, gtk-doc
+# Depends on: raptor, db, rasqal, sqlite3, unixodbc, gtk-doc, mpfr, libpostgresql
 
 name=redland
 version=1.0.10
 release=3
-source=(http://download.librdf.org/source/$name-$version.tar.gz)
+source=(http://download.librdf.org/source/$name-$version.tar.gz \
+	librdf_storage_register_factory.patch)
 build() {
 	cd $name-$version
+	patch -p1 -i $SRC/librdf_storage_register_factory.patch
 	sed -i -e '/SHAVE/d' configure.ac
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
