@@ -1,0 +1,2078 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/lmms
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/lmms/
+-rw-r--r--	root/root	usr/include/lmms/AudioAlsa.h
+-rw-r--r--	root/root	usr/include/lmms/AudioDevice.h
+-rw-r--r--	root/root	usr/include/lmms/AudioDummy.h
+-rw-r--r--	root/root	usr/include/lmms/AudioFileDevice.h
+-rw-r--r--	root/root	usr/include/lmms/AudioFileOgg.h
+-rw-r--r--	root/root	usr/include/lmms/AudioFileWave.h
+-rw-r--r--	root/root	usr/include/lmms/AudioJack.h
+-rw-r--r--	root/root	usr/include/lmms/AudioOss.h
+-rw-r--r--	root/root	usr/include/lmms/AudioPort.h
+-rw-r--r--	root/root	usr/include/lmms/AudioPortAudio.h
+-rw-r--r--	root/root	usr/include/lmms/AudioPulseAudio.h
+-rw-r--r--	root/root	usr/include/lmms/AudioSampleRecorder.h
+-rw-r--r--	root/root	usr/include/lmms/AudioSdl.h
+-rw-r--r--	root/root	usr/include/lmms/AutomatableModel.h
+-rw-r--r--	root/root	usr/include/lmms/AutomatableModelView.h
+-rw-r--r--	root/root	usr/include/lmms/Clipboard.h
+-rw-r--r--	root/root	usr/include/lmms/ComboBoxModel.h
+-rw-r--r--	root/root	usr/include/lmms/Controller.h
+-rw-r--r--	root/root	usr/include/lmms/ControllerConnection.h
+-rw-r--r--	root/root	usr/include/lmms/ControllerConnectionDialog.h
+-rw-r--r--	root/root	usr/include/lmms/ControllerDialog.h
+-rw-r--r--	root/root	usr/include/lmms/ControllerRackView.h
+-rw-r--r--	root/root	usr/include/lmms/ControllerView.h
+-rw-r--r--	root/root	usr/include/lmms/DummyEffect.h
+-rw-r--r--	root/root	usr/include/lmms/DummyInstrument.h
+-rw-r--r--	root/root	usr/include/lmms/DummyPlugin.h
+-rw-r--r--	root/root	usr/include/lmms/Effect.h
+-rw-r--r--	root/root	usr/include/lmms/EffectChain.h
+-rw-r--r--	root/root	usr/include/lmms/EffectControlDialog.h
+-rw-r--r--	root/root	usr/include/lmms/EffectControls.h
+-rw-r--r--	root/root	usr/include/lmms/EffectRackView.h
+-rw-r--r--	root/root	usr/include/lmms/EffectSelectDialog.h
+-rw-r--r--	root/root	usr/include/lmms/EffectView.h
+-rw-r--r--	root/root	usr/include/lmms/EnvelopeAndLfoParameters.h
+-rw-r--r--	root/root	usr/include/lmms/EnvelopeAndLfoView.h
+-rw-r--r--	root/root	usr/include/lmms/FxMixer.h
+-rw-r--r--	root/root	usr/include/lmms/FxMixerView.h
+-rw-r--r--	root/root	usr/include/lmms/ImportFilter.h
+-rw-r--r--	root/root	usr/include/lmms/Instrument.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentFunctionViews.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentFunctions.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentMidiIOView.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentPlayHandle.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentSoundShaping.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentSoundShapingView.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentTrack.h
+-rw-r--r--	root/root	usr/include/lmms/InstrumentView.h
+-rw-r--r--	root/root	usr/include/lmms/JournallingObject.h
+-rw-r--r--	root/root	usr/include/lmms/LadspaBase.h
+-rw-r--r--	root/root	usr/include/lmms/LadspaControl.h
+-rw-r--r--	root/root	usr/include/lmms/LadspaControlView.h
+-rw-r--r--	root/root	usr/include/lmms/LfoController.h
+-rw-r--r--	root/root	usr/include/lmms/MainWindow.h
+-rw-r--r--	root/root	usr/include/lmms/MeterDialog.h
+-rw-r--r--	root/root	usr/include/lmms/MeterModel.h
+-rw-r--r--	root/root	usr/include/lmms/MicroTimer.h
+-rw-r--r--	root/root	usr/include/lmms/MidiAlsaRaw.h
+-rw-r--r--	root/root	usr/include/lmms/MidiAlsaSeq.h
+-rw-r--r--	root/root	usr/include/lmms/MidiClient.h
+-rw-r--r--	root/root	usr/include/lmms/MidiController.h
+-rw-r--r--	root/root	usr/include/lmms/MidiDummy.h
+-rw-r--r--	root/root	usr/include/lmms/MidiEventProcessor.h
+-rw-r--r--	root/root	usr/include/lmms/MidiOss.h
+-rw-r--r--	root/root	usr/include/lmms/MidiPort.h
+-rw-r--r--	root/root	usr/include/lmms/MidiPortMenu.h
+-rw-r--r--	root/root	usr/include/lmms/MidiWinMM.h
+-rw-r--r--	root/root	usr/include/lmms/Model.h
+-rw-r--r--	root/root	usr/include/lmms/ModelView.h
+-rw-r--r--	root/root	usr/include/lmms/Oscillator.h
+-rw-r--r--	root/root	usr/include/lmms/PeakController.h
+-rw-r--r--	root/root	usr/include/lmms/Piano.h
+-rw-r--r--	root/root	usr/include/lmms/PianoView.h
+-rw-r--r--	root/root	usr/include/lmms/Plugin.h
+-rw-r--r--	root/root	usr/include/lmms/PluginView.h
+-rw-r--r--	root/root	usr/include/lmms/ProjectJournal.h
+-rw-r--r--	root/root	usr/include/lmms/ProjectRenderer.h
+-rw-r--r--	root/root	usr/include/lmms/RemotePlugin.h
+-rw-r--r--	root/root	usr/include/lmms/SerializingObject.h
+-rw-r--r--	root/root	usr/include/lmms/SideBar.h
+-rw-r--r--	root/root	usr/include/lmms/SideBarWidget.h
+-rw-r--r--	root/root	usr/include/lmms/SweepOscillator.h
+-rw-r--r--	root/root	usr/include/lmms/TempoSyncKnob.h
+-rw-r--r--	root/root	usr/include/lmms/TempoSyncKnobModel.h
+-rw-r--r--	root/root	usr/include/lmms/ToolPlugin.h
+-rw-r--r--	root/root	usr/include/lmms/ToolPluginView.h
+-rw-r--r--	root/root	usr/include/lmms/about_dialog.h
+-rw-r--r--	root/root	usr/include/lmms/aeffectx.h
+-rw-r--r--	root/root	usr/include/lmms/atomic_int.h
+-rw-r--r--	root/root	usr/include/lmms/automatable_button.h
+-rw-r--r--	root/root	usr/include/lmms/automatable_slider.h
+-rw-r--r--	root/root	usr/include/lmms/automation_editor.h
+-rw-r--r--	root/root	usr/include/lmms/automation_pattern.h
+-rw-r--r--	root/root	usr/include/lmms/automation_pattern_view.h
+-rw-r--r--	root/root	usr/include/lmms/automation_track.h
+-rw-r--r--	root/root	usr/include/lmms/base64.h
+-rw-r--r--	root/root	usr/include/lmms/basic_filters.h
+-rw-r--r--	root/root	usr/include/lmms/bb_editor.h
+-rw-r--r--	root/root	usr/include/lmms/bb_track.h
+-rw-r--r--	root/root	usr/include/lmms/bb_track_container.h
+-rw-r--r--	root/root	usr/include/lmms/caption_menu.h
+-rw-r--r--	root/root	usr/include/lmms/combobox.h
+-rw-r--r--	root/root	usr/include/lmms/config_mgr.h
+-rw-r--r--	root/root	usr/include/lmms/cpuload_widget.h
+-rw-r--r--	root/root	usr/include/lmms/custom_events.h
+-rw-r--r--	root/root	usr/include/lmms/debug.h
+-rw-r--r--	root/root	usr/include/lmms/detuning_helper.h
+-rw-r--r--	root/root	usr/include/lmms/drumsynth.h
+-rw-r--r--	root/root	usr/include/lmms/effect_lib.h
+-rw-r--r--	root/root	usr/include/lmms/embed.cpp
+-rw-r--r--	root/root	usr/include/lmms/embed.h
+-rw-r--r--	root/root	usr/include/lmms/endian_handling.h
+-rw-r--r--	root/root	usr/include/lmms/engine.h
+-rw-r--r--	root/root	usr/include/lmms/export.h
+-rw-r--r--	root/root	usr/include/lmms/export_project_dialog.h
+-rw-r--r--	root/root	usr/include/lmms/fade_button.h
+-rw-r--r--	root/root	usr/include/lmms/fader.h
+-rw-r--r--	root/root	usr/include/lmms/fft_helpers.h
+-rw-r--r--	root/root	usr/include/lmms/fifo_buffer.h
+-rw-r--r--	root/root	usr/include/lmms/file_browser.h
+-rw-r--r--	root/root	usr/include/lmms/graph.h
+-rw-r--r--	root/root	usr/include/lmms/group_box.h
+-rw-r--r--	root/root	usr/include/lmms/gui_templates.h
+-rw-r--r--	root/root	usr/include/lmms/inline_automation.h
+-rw-r--r--	root/root	usr/include/lmms/interpolation.h
+-rw-r--r--	root/root	usr/include/lmms/knob.h
+-rw-r--r--	root/root	usr/include/lmms/ladspa.h
+-rw-r--r--	root/root	usr/include/lmms/ladspa_2_lmms.h
+-rw-r--r--	root/root	usr/include/lmms/ladspa_manager.h
+-rw-r--r--	root/root	usr/include/lmms/lcd_spinbox.h
+-rw-r--r--	root/root	usr/include/lmms/led_checkbox.h
+-rw-r--r--	root/root	usr/include/lmms/lmms_basics.h
+-rw-r--r--	root/root	usr/include/lmms/lmms_constants.h
+-rw-r--r--	root/root	usr/include/lmms/lmms_math.h
+-rw-r--r--	root/root	usr/include/lmms/lmms_style.h
+-rw-r--r--	root/root	usr/include/lmms/lmmsconfig.h
+-rw-r--r--	root/root	usr/include/lmms/midi.h
+-rw-r--r--	root/root	usr/include/lmms/midi_time.h
+-rw-r--r--	root/root	usr/include/lmms/mixer.h
+-rw-r--r--	root/root	usr/include/lmms/mmp.h
+-rw-r--r--	root/root	usr/include/lmms/note.h
+-rw-r--r--	root/root	usr/include/lmms/note_play_handle.h
+-rw-r--r--	root/root	usr/include/lmms/nstate_button.h
+-rw-r--r--	root/root	usr/include/lmms/panning.h
+-rw-r--r--	root/root	usr/include/lmms/panning_constants.h
+-rw-r--r--	root/root	usr/include/lmms/pattern.h
+-rw-r--r--	root/root	usr/include/lmms/pch.h
+-rw-r--r--	root/root	usr/include/lmms/piano_roll.h
+-rw-r--r--	root/root	usr/include/lmms/pixmap_button.h
+-rw-r--r--	root/root	usr/include/lmms/play_handle.h
+-rw-r--r--	root/root	usr/include/lmms/plugin_browser.h
+-rw-r--r--	root/root	usr/include/lmms/preset_preview_play_handle.h
+-rw-r--r--	root/root	usr/include/lmms/project_notes.h
+-rw-r--r--	root/root	usr/include/lmms/project_version.h
+-rw-r--r--	root/root	usr/include/lmms/rename_dialog.h
+-rw-r--r--	root/root	usr/include/lmms/rubberband.h
+-rw-r--r--	root/root	usr/include/lmms/sample_buffer.h
+-rw-r--r--	root/root	usr/include/lmms/sample_play_handle.h
+-rw-r--r--	root/root	usr/include/lmms/sample_record_handle.h
+-rw-r--r--	root/root	usr/include/lmms/sample_track.h
+-rw-r--r--	root/root	usr/include/lmms/samplerate.h
+-rw-r--r--	root/root	usr/include/lmms/setup_dialog.h
+-rw-r--r--	root/root	usr/include/lmms/shared_object.h
+-rw-r--r--	root/root	usr/include/lmms/song.h
+-rw-r--r--	root/root	usr/include/lmms/song_editor.h
+-rw-r--r--	root/root	usr/include/lmms/string_pair_drag.h
+-rw-r--r--	root/root	usr/include/lmms/surround_area.h
+-rw-r--r--	root/root	usr/include/lmms/tab_bar.h
+-rw-r--r--	root/root	usr/include/lmms/tab_button.h
+-rw-r--r--	root/root	usr/include/lmms/tab_widget.h
+-rw-r--r--	root/root	usr/include/lmms/templates.h
+-rw-r--r--	root/root	usr/include/lmms/text_float.h
+-rw-r--r--	root/root	usr/include/lmms/timeline.h
+-rw-r--r--	root/root	usr/include/lmms/tool_button.h
+-rw-r--r--	root/root	usr/include/lmms/tooltip.h
+-rw-r--r--	root/root	usr/include/lmms/track.h
+-rw-r--r--	root/root	usr/include/lmms/track_container.h
+-rw-r--r--	root/root	usr/include/lmms/track_container_view.h
+-rw-r--r--	root/root	usr/include/lmms/track_label_button.h
+-rw-r--r--	root/root	usr/include/lmms/transformable_auto_model.h
+-rw-r--r--	root/root	usr/include/lmms/update_event.h
+-rw-r--r--	root/root	usr/include/lmms/visualization_widget.h
+-rw-r--r--	root/root	usr/include/lmms/volume.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/lmms/
+-rwxr-xr-x	root/root	usr/lib/lmms/RemoteZynAddSubFx
+drwxr-xr-x	root/root	usr/lib/lmms/ladspa/
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/calf.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/caps.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/cmt.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/comb_1190.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/dc_remove_1207.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/dj_eq_1901.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/fast_lookahead_limiter_1913.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/flanger_1191.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/mbeq_1197.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/phasers_1217.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_autopan.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_chorusflanger.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_deesser.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_doubler.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_dynamics_m.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_dynamics_st.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_echo.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_eq.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_eqbw.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_limiter.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_pinknoise.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_pitch.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_reflector.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_reverb.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_rotspeak.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_sigmoid.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_tremolo.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_tubewarmth.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/tap_vibrato.so
+-rwxr-xr-x	root/root	usr/lib/lmms/ladspa/vynil_1905.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libZynAddSubFxCore.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libaudiofileprocessor.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libbassbooster.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libbitinvader.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libflpimport.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libkicker.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspabrowser.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libladspaeffect.so
+-rwxr-xr-x	root/root	usr/lib/lmms/liblb302.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libmidiimport.so
+-rwxr-xr-x	root/root	usr/lib/lmms/liborganic.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libpapu.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libpatman.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libpeakcontrollereffect.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libsf2player.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libsid.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libspectrumanalyzer.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libstereoenhancer.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libstereomatrix.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libtripleoscillator.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libvestige.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libvibedstrings.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libvstbase.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libvsteffect.so
+-rwxr-xr-x	root/root	usr/lib/lmms/libzynaddsubfx.so
+-rwxr-xr-x	root/root	usr/lib/lmms/remote_vst_plugin
+-rwxr-xr-x	root/root	usr/lib/lmms/remote_vst_plugin.exe.so
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/lmms.desktop
+drwxr-xr-x	root/root	usr/share/lmms/
+drwxr-xr-x	root/root	usr/share/lmms/backgrounds/
+-rw-r--r--	root/root	usr/share/lmms/backgrounds/lmms_tile.png
+-rw-r--r--	root/root	usr/share/lmms/backgrounds/vinnie.png
+drwxr-xr-x	root/root	usr/share/lmms/locale/
+-rw-r--r--	root/root	usr/share/lmms/locale/ca.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/cs.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/de.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/en.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/es.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/fr.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/ir.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/it.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/ja.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/ko.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/nl.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/pt_br.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/ru.qm
+-rw-r--r--	root/root	usr/share/lmms/locale/sv.qm
+drwxr-xr-x	root/root	usr/share/lmms/presets/
+drwxr-xr-x	root/root	usr/share/lmms/presets/AudioFileProcessor/
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/Bass-Mania.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/Erazor.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/Fat-Reversed-Kick.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/Kick-4-your-Subwoofer.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/SString.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/AudioFileProcessor/orion.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/BitInvader/
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/alien_strings.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/beehive.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/bell.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/cello.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/drama.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/epiano.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/pluck.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/soft_pad.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/spacefx.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/subbass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/sweep_pad.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/toy_piano.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/BitInvader/wah_synth.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/LB302/
+-rw-r--r--	root/root	usr/share/lmms/presets/LB302/GoodOldTimes.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/LB302/Oh Synth.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/LB302/STrash.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/Organic/
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/organ_blues.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/organ_risingsun.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/organ_swish.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/pad_ethereal.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/pad_rich.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/pad_sweep.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/puresine.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Organic/sequencer_64.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/TripleOscillator/
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/AmazingBubbles.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/AnalogDreamz.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/AnalogTimes.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/AnalogTimes2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Analogous.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/ArpKing.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Arpeggio_1.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Arpeggio_2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Bell.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Bell_2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/ChurchOrgan.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/DeathBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Distorted-FM-Bass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Dull-Bell-Arp.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/E-Organ.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/E-Organ2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Erazzor.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Fat-FMish-Bells.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Fat-TB303-Arp.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Fat.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/FatCheese.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Freaky-Bass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/FutureBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Gong.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harmonium.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harp-of-a-Fairy.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Harpsichord.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/HiPad.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Jupiter.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Kick.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Kick2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/LFO-party.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/LovelyDream.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/MoogArpeggio.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/MoveYourBody.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/OldComputerGames.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Play-some-rock.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/PluckArpeggio.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Plucked.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/PowerStrings.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/RaveBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Ravemania.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/ResoBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/ResonantPad.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/RockOrgan.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Rough!.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SBass2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SEGuitar.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SawLead.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SawReso.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short1.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short2.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short3.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Short4.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Snare.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SoftBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SoftStrings.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/SpaceBass.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Square.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Supernova.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TB303-Arpeggio.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TB303.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TheFirstOne.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TheMaster.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/TranceLead.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/WarmStack.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Whistle.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/TripleOscillator/Xylophon.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/Vibed/
+-rw-r--r--	root/root	usr/share/lmms/presets/Vibed/Harpsichord.xpf
+-rw-r--r--	root/root	usr/share/lmms/presets/Vibed/SadPad.xpf
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0001-Arpeggio1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0002-Arpeggio2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0003-Arpeggio3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0004-Arpeggio4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0005-Arpeggio5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0006-Aporggio6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0007-Arpeggio7.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0008-Arpeggio8.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0009-Arpeggio9.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0010-Arpeggio10.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0011-Arpeggio11.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0033-Sequence1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0034-Sequence2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0036-Echoed Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0037-Echo FX.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0039-Soft Arpeggio1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0040-Soft Arpeggio2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0041-Soft Arpeggio3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0042-Soft Arpeggio4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0043-Soft Arpeggio5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0065-Hyper Organ1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0066-Hyper Arpeggio.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Arpeggios/0068-Glass Arpeggio.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0001-Bass 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0002-Bass 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0003-Bass 3 _analog_.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0004-Bass 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0005-Bass 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0006-Analogue Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0033-Wah Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0035-FM Bass 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Bass/0036-FM Bass 2.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0001-FM Thrumpet.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0003-Synth Brazz 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0004-Synth Brazz 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0005-Synth Brass 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0006-Synth Brass 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0007-Synth Brass 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0008-Brass Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0009-Wah Brass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0010-Solo Synth1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0011-Brazz 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0012-Brazz 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0033-Analog Brass 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0034-Analog Brass 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0035-Analog Brass 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0036-Analog Brass 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0065-Simple Brass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Brass/0066-Fat Brass.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0001-AHH Choir 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0002-AHH Choir 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0003-EHH Choir 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0004-Voice OOH.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0005-Choir Pad1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0006-Choir Pad2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0007-Choir Pad3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0008-Choir Pad4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0009-Choir Pad5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0010-Choir Pad6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0033-Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0034-Slow Morph_Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0035-Wah Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0036-Eooooo.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0037-Voiced Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0039-Ohh Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0065-Vocal Morph 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0066-Vocal Morph 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0067-Vocal Morph 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0068-Vocal Morph 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0069-Vocal Morph 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0070-Vocal Morph 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ChoirAndVoice/0071-Vocal Morph 7.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0001-Xylophone.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0002-Vibraphone.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0003-Soft Vibes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0004-Simple Chimes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0005-Silver Bell.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0008-Ethereal.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0010-Trem Lead.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0012-Trem Synth Piano 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0015-Simple Square.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0016-Full Square.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0018-Steel Wire.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0020-Fantasia.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0021-Soft.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0028-Echo Bubbles.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0029-Full Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0030-Slow Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0032-Pizzicato Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0033-Trem Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0034-Warm Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0035-Hard Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0036-Bright Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0037-Multi Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0038-Slow Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0039-Medium Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0040-Hard Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0041-Voiced Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0042-Matrix.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0043-Sweep Matrix.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0044-Wipe Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0045-Hard Stereo Sweep Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0046-Master Synth Low.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0047-Master Synth High.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0048-Sharp Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0050-Fretless Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0051-Decay Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0052-Steel Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0053-Synth Bass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0057-Sub Delay.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0058-Reed Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0059-Soft Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0060-Thin Pipe.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0061-Great Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0062-Hammond Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0064-Sines.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0067-Soft Flute.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0068-Warm Flute.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0071-Ocarina.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0073-Variable Reed.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0075-Smooth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0077-Whistle.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0078-Ghost Whistle.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0079-Ice Field.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0080-Hollow Ice Field.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0081-Beyond.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0083-Sweep Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0084-Breathy Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0085-Bottle.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0086-ReedBank.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0087-Sweep Rushes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0088-Rushes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0089-Medium Rushes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0090-Bright Rushes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0091-Bright Rush Pipe.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0092-Bright Rush Long Tail.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0093-Voyager.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0094-Soft Voyager.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0095-Soft Voyager Reverse.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0096-Echo Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0097-Sharp.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0098-Sharp and Deep.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0099-Sharp Reed.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0100-Far Reed.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0102-Bassoon.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0103-Clarinet.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0106-Aooww.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0107-Daooww.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0108-Yaooww.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0109-Yiee.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0110-Eeoow.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0112-Overdrive.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0113-Overdrive 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0114-Overdrive 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0116-Power Guitar 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0117-Power Guitar 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0120-Wet Brass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0123-Prophesy.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0125-Pan Pipe 32.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0126-Pan Pipe.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0127-Pan Pipe 96.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0131-Lite Guitar.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0132-Trem Guitar.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0133-Smooth Guitar.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0134-Nylon Guitar.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0139-Home Piano.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0140-Moonlight Piano.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0141-Soft Piano1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0142-Soft Piano2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0143-Space Piano.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0146-Space Voice.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0147-Space Voice 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0149-Soft Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0150-Full Choir.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0151-Soft Ahh.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0152-Breathy Ahh.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0155-Super Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0156-Hyper Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0157-Hyper Matrix.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0158-Extreme.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Collections/WillGodfrey/0160-Wind and Surf.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Drums/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Drums/0001-Drums Kit1.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0001-Layered1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0002-Layered2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0005-Organ and Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0007-Organ Choir Pad1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0008-Organ Choir Pad2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0033-Rhodes Strings1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0034-Rhodes Strings2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0035-Rhodes Strings3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0036-Rhodes Strings4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Dual/0065-Dream of the Saw.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0001-Emptyness1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0002-Emptyness2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0003-Space Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0004-Weird Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0006-Space SynthBrass.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0008-Space Voice1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0009-Space Voice2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0010-Space Voice3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0011-Space Choir1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0012-Space Choir2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0014-Glass Voices.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0015-Strange Voice.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0033-ImpossibleDream1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0034-ImpossibleDream2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0035-ImpossibleDream3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0036-ImpossibleDream4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0037-ImpossibleDream5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0040-Delayed Echo.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0041-Fade Down Echo.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0042-Rhodes Space1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0043-Rhodes Space2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0065-Long SpaceChoir1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Fantasy/0066-Long SpaceChoir2.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0001-Dist Guitar 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0002-Dist Guitar 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0003-Dist Guitar 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0004-Dist Guitar 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0005-Dist Guitar 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0033-Trash Guitar 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0034-Trash Guitar 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0035-Short.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Guitar/0065-Clean Guitar1.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0001-Memories.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0002-Bells 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0003-Bells 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0004-Bells 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0006-SuperSaw 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0007-SuperSaw 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0008-SuperSaw 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0009-SuperSaw 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0010-SuperSaw 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0033-Trash Synth 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0034-Trash Synth 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Misc/0035-Trash Synth 3.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0001-Synth Effect.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0002-Ioioioioioi.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0003-Noise1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0004-Noise2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0006-Wind.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0033-Metal Sound 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0034-Metal Sound 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0035-Metal Sound 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0037-Metal Sound 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0038-Metal Sound 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Noises/0065-Short noise.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0001-Organ 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0002-Organ 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0003-Organ 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0004-Organ 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0005-Organ 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0006-Organ 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0007-Organ 7.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0008-Organ 8.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0009-Organ 9.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0010-Organ 10.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0011-Organ 11.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0033-Cathedral Organ1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0034-Cathedral Organ2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0035-Cathedral Organ3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0037-Church Organ 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0038-Church Organ 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0039-Church Organ 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0041-Church Organ Soft.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0065-Nice Organ 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0066-Nice Organ 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0067-Sub_Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0068-Square Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0069-Soft Organ 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0070-Soft Organ 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0071-Synth Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0072-Fantasy Organ.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0097-Accordion Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0098-Accordion Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0099-Synth Accordion1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0100-Synth Accordion2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Organ/0101-Accordion 1.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0001-Sine Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0002-sin2x  pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0003-Analog Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0004-Analog Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0005-Square Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0006-Square Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0008-Resonance Pad1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0009-Resonance Pad2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0033-Synth Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0034-Synth Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0035-Synth Pad 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0036-Synth Pad 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0065-Soft Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Pads/0066-Flanged Pad 1.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0001-Plucked 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0002-Plucked 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0003-Plucked 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0004-Plucked 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0005-Plucked 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0006-Plucked 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0033-Plucked String1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0034-Plucked String2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Plucked/0036-Plucked Wah.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0001-Flute 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0002-Flute 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0003-Flute 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0005-FM Reed.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0006-Clarinet.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0007-Breathy1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0033-Reed 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0034-Reed 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0035-Reed 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0036-Reed 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0037-Reed 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0038-Reed 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0039-Reed 7.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0065-Fat Reed1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0066-Fat Reed2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/ReedAndWind/0067-Fat Reed3 square.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0001-DX Rhodes 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0002-DX Rhodes 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0003-DX Rhodes 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0004-DX Rhodes 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0005-DX Rhodes 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0007-Dig Rhodes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0008-Synth Rhodes1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0009-Synth Rhodes2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0010-Synth Rhodes3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0012-Ice Rhodes1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0013-Ice Rhodes2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0014-Ice Rhodes3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0033-FM Rhodes 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0034-FM Rhodes 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0035-FM Rhodes 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0036-FM Rhodes 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0037-FM Rhodes 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0038-FM Rhodes 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0041-Soft Rhodes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0042-Hard Rhodes1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0043-Hard Rhodes2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0044-Echo Rhodes.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0045-A long time ago.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Rhodes/0065-Steel Rhodes.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Splited/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Splited/0001-Strings and Reed1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Splited/0002-Strings and Reed2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Splited/0003-Strings and Flute.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Splited/0033-Choir and Reed.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0001-Saw Strings 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0002-Saw Strings 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0003-Saw Strings 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0004-Saw Strings 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0005-Saw Strings 5.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0006-Saw Strings 6.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0007-Saw Strings 7.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0008-Saw Strings 8.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0011-Strings Pad1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0012-Strings Pad2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0013-Strings Pad3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0016-Sweep Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0017-Sweep Pad 1 Fat.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0018-Sweep Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0019-Sweep Pad 3Wah.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0020-Sweep Pad 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0033-Strings1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0034-Dark Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0035-Octave Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0036-Fast Attack.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0038-Fat Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0041-Saw 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0042-Saw 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0043-Saw 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0044-Saw Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0045-Soft Saw Pad.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0046-Echoed Saw.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0047-Vibratto Saw1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0048-Wah1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0050-Synth Violin 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0051-Synth Violin 2 Fat.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0065-Simple Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0066-Dual Strings.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Strings/0067-Dual StringsOct.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0001-Soft Synth 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0002-Soft Synth 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0004-Pulse Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0005-Pulse Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0007-Analog Filter 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0008-Analog Filter 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0033-Phased Pad 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0034-Phased Pad 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0035-Phased Pad 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0037-Resonance Synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0039-Multi-phase synth.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0065-Computer Lead.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0067-Detuned Harmonic.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/Synth/0097-FM Synth.xiz
+drwxr-xr-x	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0001-Soft Piano 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0002-Soft Piano 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0004-Fantasy Bell.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0005-Synth Piano1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0006-Synth Piano2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0007-Termollo1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0008-Termollo2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0009-Termollo3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0011-Drop1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0012-Drop2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0033-Analog Piano 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0034-Analog Piano 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0035-Analog Piano 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0037-FM Synth1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0039-BinaryPiano1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0040-BinaryPiano2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0065-Synth Piano 1.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0066-Synth Piano 2.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0067-Synth Piano 3.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0068-Synth Piano 3 fat.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0069-Synth Piano 3 det.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0070-Synth Piano 4.xiz
+-rw-r--r--	root/root	usr/share/lmms/presets/ZynAddSubFX/SynthPiano/0071-Synth Piano 5.xiz
+drwxr-xr-x	root/root	usr/share/lmms/projects/
+drwxr-xr-x	root/root	usr/share/lmms/projects/cool_songs/
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/BlueWolf-DreamTravel.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Chris-HorizonRemix.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Chris-RaveRiff.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Djeezus-BeatRolls.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Djeezus-Oscilisous.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Lokori-Systematic_Chaos.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Malex-Horizon4.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Marfil-MarfilDrum01.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/MysthR-Living.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/OrtalDj-FirstProyect.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/SharkyX-Experiments.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Siegel-DreamWave.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Siegel-SpeedTrack.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Silva-ElvesCall.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Skiessi-Onion.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Skiessi-RandomProjectNumber14253.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/Skiessi-TurningPoint.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-DearJonDoe.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-Lamentelnes.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/StrictProduction-Underline.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-Confused.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-Psycho.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/TobyDox-TheFourthDimension.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/cool_songs/j1m-DingDong.mmp
+drwxr-xr-x	root/root	usr/share/lmms/projects/demos/
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/TobyDox-Crystallo.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/Zvonsully-RaceTheZBeat.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/beat_collection.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo1.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo2.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo3.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo4.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo5.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/demo6.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/lb302quick.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/loop_collection.mmp
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/newFangled.mmpz
+-rw-r--r--	root/root	usr/share/lmms/projects/demos/some_basslines.mmp
+drwxr-xr-x	root/root	usr/share/lmms/projects/tutorials/
+-rw-r--r--	root/root	usr/share/lmms/projects/tutorials/editing_note_volumes.mmp
+drwxr-xr-x	root/root	usr/share/lmms/samples/
+drwxr-xr-x	root/root	usr/share/lmms/samples/basses/
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass_acid01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass_acid02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass_hard01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass_hard02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/bass_punch01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/horror_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/matrix1000_pluck01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/rave_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/rave_bass02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/rave_bass03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/rave_bass04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/synth_acid01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/synth_acid02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/basses/techno_synth01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/bassloopes/
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/briff01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/rave_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/rave_bass02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/tb303_01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_bass02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_synth01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_synth02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_synth03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/bassloopes/techno_synth04.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/beats/
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/909beat01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/break01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/break02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/break03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/electro_beat01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/electro_beat02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/house_loop01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/jungle01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/rave_hihat01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/rave_hihat02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/rave_kick01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/rave_kick02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/beats/rave_snare01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/drums/
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum_acoustic01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/bassdrum_acoustic02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clap01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clap02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clap03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clap04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clav01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/clav02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/crash01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/crash02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_closed01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_closed02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_closed03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_closed04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_closed05.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_foot_pedal01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/hihat_opened03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_distorted01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_hard01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_hardcore01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_hiphop01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_long01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_soft01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/kick_soft02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_bass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_rim01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/nasty_snare01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/ride01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/ride02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/rim01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/shaker03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/sidestick01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare05.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare06.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare07.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_acoustic01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_electro01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_harsh01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_hiphop01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_hiphop02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_muffled01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_muffled02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_rim01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/snare_short01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom05.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom_hi01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom_low01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/tom_mid01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/wood01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/zap01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/zap02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/drums/zap03.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/acoustic/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Brush1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Brush2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/JazzKick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/JazzSnr.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/JazzSnr_H.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/K_Muffle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Plain_Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Ride2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Ride3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/acoustic/Snare.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/cr78/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Bongo_h.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Bongo_l.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Clave.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Conga.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Hihat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Maracas.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr78/Tamb.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/cr8000/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Clave.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Conga_l.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Conga_m.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Hat_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Hat_o.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/cr8000/Snare.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/effects/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Bubble.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Cicada.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Glass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Glass_rn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Gunshot.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Hammer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Laser.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Reverse.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Ringing.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Scissors.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/Sonar.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/dialing.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/hammer2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/impulses.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/loop.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/effects/thunder.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/electro/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/Boom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/H_closed.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/H_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/Hi-q.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/Hi-q_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/K_8bit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/K_Linn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/K_reverb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/S_8bit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/S_Linn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/S_reverb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/Syntom_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/Syntom_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/electro/s_eq.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/farfisa/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Bongo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Cym.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_K_H.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_K_K.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_S_B.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/farfisa/Fisa_Tom.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/ferraro/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/curb_meat_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/eel_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/feed_this.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/gerbil_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/grumpy_buzzard.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/jaguar_hats.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/radio_hats.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/ferraro/worm_bass.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/instrument/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/E_Piano.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/FM_Bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/Moog_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/Oboe.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/Temple_Bell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/flute.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/mute_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/pizzi.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/soft_piano.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/square_lead.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/sweep.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/techno_stab.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/tinkle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/trumpet.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/upright_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/violin.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/instrument/whistler.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/hihatopclo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/ramacymlong.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/ramacymshort.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/ride6.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/snare5.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/vibra.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/wood.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/wood2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/jorgensohn/zurrr.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/latin/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Bongo_h.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Bongo_m2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Bongo_mu.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Clave_we.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Gamelan.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Maracas.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Shaker_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Shaker_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Tamb_hit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Tamb_shk.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/ThumbPno.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/Triangle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/bongo_l.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/guiro.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/one_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/latin/taiko.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/linn/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cab.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cga1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cga2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cga3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cgam.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_clp.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_cow.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_kik.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_snr.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_stk.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tamb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tom1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tom2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tom3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tom4.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/linn/linn_tom5.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/magnetboy/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Eye_Eye.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Fp1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Mist1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Mist2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Randion1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Squelb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Throaties1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone10.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone11.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone12.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone14.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone15.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone16.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone17.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone18.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone19.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone20.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone4.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone5.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone6.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone7.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone8.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone9.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/magnetboy/Tone_float1.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/'lectro_hammer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/'lectro_square_hammer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/12-bit_heavy_hitter.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/909_hard_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/AAH.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/B1_B2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Distant_Thunder.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/N_low.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/N_vlow.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/RimShot.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Saber_fight.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Simple-c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Simple-r.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Simple-s.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Tone_dis.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Tone_sw2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/Tone_swp.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/airbrush_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ambient_noise_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/amen_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/amen_sn_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/and_loud_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/another_909_moment.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/another_example_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/application_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/b1_0.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/b1_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/b1_5.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/b1_9.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/basic_808_click_hum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/battle_hook_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bauble_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/beat_box_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/beefy_wack.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/big_80's.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/big_80's_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/big_sleeper_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/blended_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bouncy809bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/break_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/breathing_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bright_house_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/buff_hit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/buff_sound.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bug_into_water.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bulge_n_yr_woofer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/bumpin_quickie.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/calamity_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/change_the_channel_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/chow_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/clappy_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/clean_low_key_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/clean_soft_808.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/clearly_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/close_mic_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/compression_does_it_808.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/crusty_bump.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/crusty_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/decompression_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/deep_bauble_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/deep_tones.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/difference_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/different_909_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/dirty_world_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/dist_sub_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/dist_sub_kick_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/electro_dnb_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/electro_snare_layer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/electronic_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/end_transmission.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/every_909.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/fatness.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/fattie_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/feel_me!.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/few_people_will_use_this_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/flat_tire.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/fm.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/fried_food.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/funky_trashcan_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/fuzzy_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/gabbakick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/gimme_a_hard_tone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/gimmie_a_tone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hard_electro_brush_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hard_electronic_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hard_hittin.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hardcore_a_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hardcore_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hardersnare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/heady_mix_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/heavy.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hed_chunk_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hi-pass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hi_pic.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hip-hop_fantasy_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hipster_joint_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hit_me_wooden_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hitthosesubs.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hot_morning_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/hot_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/i_luv_u_fat_noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/invisible_909_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/it's_like_that_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/just_the_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/kneel_and_buzz.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/large_hall_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/laughter_and_jellybeans_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/light_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/lo-fi_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/lo-fi_march.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/lo-fi_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/loudness_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/lovely_clean_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/lower_electro_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/mack_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/manipulate_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/many_frequencies.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/mello_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/mind_ya_heds.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/missing_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/missing_snare_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/more_basic_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/more_snap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/muted_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/n_hi.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/n_mid.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/neo808.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/neo808_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/noise_calling_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/noise_clip.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/nosie_calling_kick_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/odd_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/original_tone_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ot_12.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ot_34.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ot_sine.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/overdriver_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/pleasure_factory_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/pop_1_off_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/power_out.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/psychoacoutic_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/punchy_clean_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/puppy_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/q'ey_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/q_kick_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/questoin_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/r+b_fantasy_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/reverb_please_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rimmy_noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rimshot_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rimshot_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ring_fray_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ring_mod_drone_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rm.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rubber_'82.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/rubbery_deep_house_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/serious_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/short_909.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/simon's_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/simple-h.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/simple-k.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/simple_click_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/skiwlz_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/slepper_n_the_wilderness.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/sloppy_electric.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/smooth_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/snappy_809.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/softsnare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/sounding_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/sounds_like_a_low_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/special_man_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/splatter.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/sticky_q_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/stiffy_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/sweet_tight_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/tchak_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/terror_n_yr_hood_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/test.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/think_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/think_sn_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/think_sn_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/this_snare_spells_electronic.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/tomita_clip.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/tone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/tone_deg.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/tone_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/transient_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/trashyovertones.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/type_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/ultra_electro_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/usgae_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/verby_soundin_808.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/very_basic_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/verylong.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/warm_deep_house_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/warm_digi_808_click.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/whoa_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/wobble_wobble.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/wobbly_thumb_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/yet_another_electric_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/yr_808_hummer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc/zoom#4.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_bass/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/a_day_in_the_noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/bumble_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/depth_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/dirty_a.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/filter_idea_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/jarre_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/jungle_laser.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/low_end_hum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/melodictone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/metal_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/more_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/more_bass_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/rubber.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/smooth_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/solid.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/synthbass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/the_funk.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_bass/warm_bass.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_claps/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/big_beat_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/bright_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/clap2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/clap_layer.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/classic_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/electro_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/filter_clappy.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/pitch_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/pitch_clap_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/shutter_clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_claps/u_don't_kno.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_electro/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/'lectro_spliff.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/a_round_thing.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/applied_engineering.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/atmosphere_of_space.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/bottle_bill_fx.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/casio_poppin.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/category.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/cheap_fx.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/chrip_q.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/clean_rock_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/cold_shot.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/confusion.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/cymbal_madness.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/depth_fx.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/dialed.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/doom_bump.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electric_triangle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_perc_long.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_perc_short.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_rim_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_rim_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/electro_squeek.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/fuzzy_q_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/g_question.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/general_obscurity.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/hard_bork.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/hello_q.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/just_the_tweet.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/lo-fi_house_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/lo-fi_metal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/lo-finess.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/long_q_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/long_q_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/long_q_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/long_quack.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/low_bit_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/metal_noise_shot.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/open_reso.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/paging_the_jetsons.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/pan.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/pleasant_combo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/q-ziq_for_the_masses.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/rich_bd.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/ring.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/ringing_sn.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/rockin_electro_bass_drum.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/shocking_kiss.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/siren_sing.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/slide_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/space_dynamic.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/spaceness.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/startling_one.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/tone_percussion.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/tweet.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/wee_dog.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/what_to_do_at_220.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/who_hears_all_sound.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/why_hit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/yr_tv_will_be_next.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_electro/zappy_bells.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_fx/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/2-bit_zone_drone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/2_bit_click.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/a_blast.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/across_the_universe.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/alarm_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/alarming_buzz.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/alarming_buzz_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/alien_curiousity.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/ambient_backgroud.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/click.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/coo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/detonate.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/dirty_transform.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/dirty_transform_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/distorion_oscilator.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/electric_intro_to_a.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/electric_waves_out_my_window.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/elekperc1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/elekperc2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/end_of_broadcast_day.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/entre.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/experiment_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/experiment_2_-_turn_off_the_tv.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/experiment_3_-_the_transform.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/experiment_4_-_clean.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/f#m7_space_signal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/feedback.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/flashy_wind.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/flipper.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/formant_techno.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/frequency_revolution.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/fried_food_for_dinner.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/funky_stab.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/future.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/gmaj_lo-fi_chord.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/gmaj_lo-fi_chord_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/halt_variety.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/hip-hop_stop.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/hip-hop_stop_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/hollow.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/howdy_oil_barrel.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/jaggies.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/laser_gun_&_ricochet.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/machine_drone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/metal_twist.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/modular.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/modular_fm_counterpoint.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/multi-ping.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/my_atari_memory.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/new_sweep.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/noise_filtering.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/not_trying_too_hard.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/numb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/obligatory_ufo_liftoff.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/obligatory_ufo_liftoff_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/oom_paa.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/oom_pulse.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/owwww.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/playing_in_water.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/plot_thickens_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/punch_flange.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/punch_flange_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/q_zone_drone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/recption.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/sci-fi.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/sci-fi_door_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/sickly_wineglass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/sign_off.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/slow_moving_traffic.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/synthetic_dive.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/synthetic_dive_crust.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/teeth.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/the_plot_thickens.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/the_tweek.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/transportive.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/ufo_buzz.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/ufo_buzz_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/what_time_is_it.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/wipeout.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/wooo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/yeah_hit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/yeah_hit_dry.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_fx/zipper.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_hats/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/amen_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/band_pass_cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/basic_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/bright_808_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/bright_808_hat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/bright_808_hat_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/bring_me_out.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/clicky_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/close_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/default_hi-hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/drama_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/drama_hat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/dusty_simple_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/dusty_simple_oh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/electro_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/electrometallic_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/errie_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/fedora_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/feelin'_high_hat_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/feelin'_high_hat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/feelin'_high_hat_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/feelin'_open_high_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/flat_cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/get_out.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/hardhat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/hardhat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/hardly_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/heavy_electrihat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/hip_overtone_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/large_open_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/lighthat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/little_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/live_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/live_sound_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/live_sound_oh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/loaded_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/loaded_open_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/oh_so_high_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/oil_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/pedal_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/q_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/q_ride_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/sandy_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/scratchy_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/shaker_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/shaker_ride_long.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/simple_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/sleepy_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/sleepy_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/sleepy_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/sleepy_ride_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/slick_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/slick_hat_compressd_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/slick_hat_half_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/slick_hat_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/slide_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/softie_lo-fi_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/softie_lo-fi_open_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/softie_lo-fi_open_hat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/squeeze_me_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/squeeze_me_open_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/stack_hhh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/starry_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/starry_short_oh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/static_tone_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/tarp_hh.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/the_sting_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/the_sting_hat_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/the_sting_open_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/threshold_noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/threshold_noise_open.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_hats/touch_me_hat.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_perc/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/ambient_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/bell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/bell_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/clav.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/clav_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/deep_cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/dist_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/dist_tom_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/door_knock.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/electric_clav.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/feel_me_clinky.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/fidelity_faction_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/funk_box_perc_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/funk_box_perc_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/funkay_timbale.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/give_it_to_me.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/hammond_cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/hollow_wood.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/hollow_wood_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/it's_the_simple_things.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/layered_sleigh_bell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/light_tamb_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/light_tamb_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/light_tamb_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/like_a_tabla_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/like_a_tabla_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/like_a_tabla_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/limited_shaker.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/lo-fi_tamb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/low_key_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/low_ping.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/mellow_shake.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/metallic_node.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/mild_tamb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/ol'_skool_shake.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/poppy.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/q_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/resonant_knock.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/ringmod_rim.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/ringmod_rim_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/shaaka.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/shaaka_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/short_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/short_tom_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/short_tom_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/sickly_cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/slinky_tamb.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/super_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/sweetness_shaker.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/timbale_sound.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tom_tone.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tommy.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tone_tom.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/torn_tweeter.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tweety_cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/tweety_cowbell_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/type_noise.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/very_high_clav.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/video_game_clip.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/weird_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_perc/wood_and_metal.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/misc_synth/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/average_rock.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/c_maj_chord.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/casio_piano_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/chorded_perc.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/consumer_fm.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/dark_and_sweet_fm.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/dist_high_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/eno's_lift.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/eno's_pad.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/eno's_ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/flat_square_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/fm_c_bass_burst.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/fur_strings.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/fur_strings_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/it's_the_music_tom_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/layered_bass_synth_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/my_red_hot_guitar.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/raver_organ.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/strong_c_dub_bass.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/sync_drift.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/sync_man.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/that_house_chord_cm.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/vibrato_pad.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/who_loves_ya,_baby.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/misc_synth/wowmelodictone.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/r_n_b/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/Hat_O.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/S_hollow.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/clapfilt.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/hat_rattle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/k_hard.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/k_muffle.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/k_soft.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/old_kik.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/popclap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/popsnare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/s_pitch.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/s_spit.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/snare&hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/r_n_b/x_backwd.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/tr606/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Cymbal.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Hat_C.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Hat_O.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Tom_H.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr606/TR606_Tom_L.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/tr77/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_cui1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_cui2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_cym.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_hat.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_tom1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr77/Tr77_tom2.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/tr808/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Clave.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Cowbell.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Handclap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Hat_c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Hat_o.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Kickhard.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Kicklong.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Ride.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Rimshot.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Snr_snap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Tom_hi.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Tom_lo.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr808/Tom_mid.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/drumsynth/tr909/
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Hat-c.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Hat-c2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Hat-o.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Hat-o2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Kick.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Kick_1.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Kick_2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Kick_3.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Snare.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/Snare2.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/TR909_Clap.ds
+-rw-r--r--	root/root	usr/share/lmms/samples/drumsynth/tr909/TR909_Kick.ds
+drwxr-xr-x	root/root	usr/share/lmms/samples/effects/
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/chroma_sound_effect01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/explode01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/filter_sweep01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/scratch01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/start01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/start02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/stop01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/warp01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/warp02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/effects/wind_chimes01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/instruments/
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/bassslap01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/bassslap02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/cello01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/church_organ01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/church_organ02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/church_organ03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/church_organ04.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/e_organ01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/e_piano_accord01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/e_piano_accord02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/flute01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/harpsichord01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/piano01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/piano02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/steel_guitar01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/steel_guitar_heavy_distorted01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/steel_guitar_medium_distorted01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/steel_guitar_slight_distorted01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/trumpet01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/violin_double_stop01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/violin_fingered01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/instruments/violin_pizzicato01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/latin/
+-rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_brass01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_guitar01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_guitar02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/latin/latin_guitar03.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/misc/
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/applause01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/bass!.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/breath01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/buzz!.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/dong01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/dong02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/dong03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/electric_ping01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/hit01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/hit02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/metalish_dong01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/metronome01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/raving_crowd01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/snaph01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/misc/undefined01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/samples/shapes/
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/additive.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/additive2.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist2.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist3.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist4.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist5.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist6.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist7.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist8.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/bunglist9.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/harmonics.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/low_sine.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/micro.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/moog.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/roundbass.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/roundsaw.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/saw+sine.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/sine_dist.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/smooth_inv_saw.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/smooth_inv_saw2.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/smooth_inv_saw_dist.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technobass.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth1.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth2.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth3.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth4.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth5.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/technosynth6.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/vowel_a.wav
+-rw-r--r--	root/root	usr/share/lmms/samples/shapes/vowel_u.wav
+drwxr-xr-x	root/root	usr/share/lmms/samples/stringsnpads/
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/bell_choir01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/bell_choir02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/chorus01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/chorus02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/heaven_strings01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/juno_pad01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/korg_poly6_drone01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/nord_ambient01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/orion_string01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/rave_choir01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/space_strings01.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/space_strings02.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/space_strings03.ogg
+-rw-r--r--	root/root	usr/share/lmms/samples/stringsnpads/strings01.ogg
+drwxr-xr-x	root/root	usr/share/lmms/themes/
+drwxr-xr-x	root/root	usr/share/lmms/themes/default/
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add_automation.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add_bb_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add_controller.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/add_sample_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/analysis.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/apply.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_down.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_free.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_random.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_sort.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_sync.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_up.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/arp_up_and_down.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/automation.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/automation_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/autoscroll_off.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/autoscroll_on.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/back_to_start.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/back_to_zero.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/background_artwork.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/bb_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/black_key.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/black_key_pressed.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/cancel.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/clock.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/colorize.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/combobox_arrow.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/combobox_arrow_selected.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/combobox_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/computer.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/controller.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/controller_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/cpuload_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/cpuload_leds.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/dont_know.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/drum.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_copy.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_cut.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_draw.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_erase.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_move.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_paste.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_redo.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_rename.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_select.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/edit_undo.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/effect_plugin.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/envelope_graph.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/error.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/exit.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/exp_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/exp_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/factory_files.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/fader_background.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/fader_knob.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/fader_leds.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_2lp.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_ap.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_bp.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_hp.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_lp.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/filter_notch.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/folder.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/folder_locked.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/folder_opened.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/freeze.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/frozen.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/fx_mixer.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/hand.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/help.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/hint.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/home.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/hq_mode.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/icon.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/instrument_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/keep_stop_position.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/knob01.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/knob02.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/knob03.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/knob04.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lcd_19green.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lcd_19red.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lcd_21pink.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/led_green.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/led_off.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/led_red.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/led_yellow.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_controller_artwork.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_d100_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_d100_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_graph.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_x100_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_x100_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_x1_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/lfo_x1_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/loop_point.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/loop_points_off.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/loop_points_on.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/main_toolbar_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/master_pitch.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/master_volume.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/midi_file.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/moog_saw_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/moog_saw_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/muted.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_double_whole.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_eighth.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_half.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_none.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_quarter.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_sixteenth.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_thirtysecond.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_tripleteighth.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_triplethalf.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_tripletquarter.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_tripletsixteenth.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_tripletthirtysecond.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/note_whole.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/output_graph.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pause.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/piano.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/play.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/playpos_marker.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/plugins.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/ports.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_black_key.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_black_key_pressed.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_big.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_big_pressed.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_small.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/pr_white_key_small_pressed.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/preset_file.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_export.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_file.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_import.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_new.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_new_from_template.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_notes.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_open.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_open_down.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_open_recent.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_save.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/project_saveas.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/quantize.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/record.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/record_accompany.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/reload.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/round_square_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/round_square_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/sample_file.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/sample_track.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/saw_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/saw_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/setup_audio.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/setup_directories.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/setup_general.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/setup_midi.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/setup_performance.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/sin_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/sin_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/songeditor.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/splash.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/square_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/square_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_add.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_off.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_off_light.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_on.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_on_100.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_on_yellow.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/step_btn_remove.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/stop.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/style.css
+-rw-r--r--	root/root	usr/share/lmms/themes/default/tempo_sync.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_block.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_bold.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_center.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_italic.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_left.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_right.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/text_under.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/timeline.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/toolbar_bg.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/track_op_grip.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/track_op_menu.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/triangle_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/triangle_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/uhoh.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/unavailable_sound.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/unfreeze.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/unknown_file.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/usr_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/usr_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/whatsthis.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/white_key.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/white_key_pressed.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/white_noise_wave_active.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/white_noise_wave_inactive.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/zoom.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/zoom_x.png
+-rw-r--r--	root/root	usr/share/lmms/themes/default/zoom_y.png
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-r--r--r--	root/root	usr/share/man/man1/lmms.1.gz
+drwxr-xr-x	root/root	usr/share/menu/
+-rw-r--r--	root/root	usr/share/menu/lmms
+drwxr-xr-x	root/root	usr/share/mime/
+drwxr-xr-x	root/root	usr/share/mime/packages/
+-rw-r--r--	root/root	usr/share/mime/packages/lmms.xml
