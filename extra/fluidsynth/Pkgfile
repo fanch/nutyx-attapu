@@ -3,7 +3,7 @@
 # URL:http://www.fluidsynth.org/
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: glib, jack, ladspa
+# Depends on: glib, jack-audio-connection-kit, ladspa
 
 name=fluidsynth
 version=1.1.1
