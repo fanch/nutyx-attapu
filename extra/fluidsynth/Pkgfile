@@ -1,0 +1,25 @@
+ 
+# Description: un synthétiseur basé sur "SoundFont" 
+# URL:http://www.fluidsynth.org/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: glib, jack, ladspa
+
+name=fluidsynth
+version=1.1.1
+release=1
+source=(http://savannah.nongnu.org/download/fluid/$name-$version.tar.gz
+        fluidsynth.conf fluidsynthd)
+
+
+build() {
+  cd $SRC/$name-$version
+  ./configure --prefix=/usr \
+    --enable-ladspa 
+  make
+  make prefix=$PKG/usr install
+  install -Dm644 $SRC/fluidsynth.conf \
+    $PKG/etc/conf.d/fluidsynth
+  install -Dm755 $SRC/fluidsynthd \
+    $PKG/etc/rc.d/fluidsynth
+}

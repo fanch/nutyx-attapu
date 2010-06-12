@@ -1,0 +1,16 @@
+
+# Description: module python d'encodage automatique
+# URL:http://chardet.feedparser.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: python
+
+name=python2-chardet
+version=2.0.1
+release=1
+source=(http://chardet.feedparser.org/download/$name-$version.tgz)
+
+build() {
+cd $SRC/$name-$version
+	python setup.py build install --root=$PKG --optimize=1
+}

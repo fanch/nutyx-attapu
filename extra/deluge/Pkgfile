@@ -1,0 +1,21 @@
+# Description: un client bitorrent en c++ comme alternative aux autres client.
+# URL:http://deluge-torrent.org/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: python,pyxdg,setuptools,twisted,twistedweb2,pyopenssl,xdg-utils,gettext,boost,openssl,zlib,libtorrent-rasterbar,python-chardet
+
+
+name=deluge
+version=1.3.0_rc1
+release=1
+source=(http://download.deluge-torrent.org/source/$name-$version.tar.bz2)
+
+build() {
+  cd $SRC/$name-$version
+
+  python setup.py build 
+  python setup.py install --prefix=/usr --root=$PKG --optimize=1 
+
+  install -d -m755 $PKG/srv/deluge 
+  install -D -m644 deluge/data/pixmaps/deluge.svg $PKG/usr/share/pixmaps/deluge.svg 
+}

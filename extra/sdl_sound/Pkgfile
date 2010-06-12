@@ -1,0 +1,24 @@
+ 
+# Description: librairie pour décoder les plus populaires fichiers au format .WAV et .MP3
+# URL:http://icculus.org/SDL_sound/
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: sdl, libmikmod, libvorbis, flac, speex, smpeg
+
+name=sdl_sound
+version=1.0.3
+release=1
+source=(http://icculus.org/SDL_sound/downloads/SDL_sound-$version.tar.gz 
+        flac.patch)
+
+build() {
+  cd $SRC/SDL_sound-$version
+
+  CFLAGS="$CFLAGS -I/usr/include/smpeg" \
+  CXXFLAGS="$CXXFLAGS -I/usr/include/smpeg" \
+  ./configure --prefix=/usr
+
+  make 
+  make DESTDIR=$PKG install
+
+}
