@@ -5,7 +5,7 @@
 # Depends on: kdebase
 
 name=kde-l10n-nl
-version=4.4.80
+version=4.4.85
 release=1
 source=(http://mirrors.dotsrc.org/kde/unstable/$version/src/kde-l10n/$name-$version.tar.bz2)
 build() {

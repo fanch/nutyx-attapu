@@ -189,8 +189,8 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 lrwxrwxrwx	root/root	usr/lib/liblancelot-datamodels.so -> liblancelot-datamodels.so.0
 lrwxrwxrwx	root/root	usr/lib/liblancelot-datamodels.so.0 -> liblancelot-datamodels.so.1.7.0
 -rwxr-xr-x	root/root	usr/lib/liblancelot-datamodels.so.1.7.0
-lrwxrwxrwx	root/root	usr/lib/liblancelot.so -> liblancelot.so.0
-lrwxrwxrwx	root/root	usr/lib/liblancelot.so.0 -> liblancelot.so.1.9.0
+lrwxrwxrwx	root/root	usr/lib/liblancelot.so -> liblancelot.so.1
+lrwxrwxrwx	root/root	usr/lib/liblancelot.so.1 -> liblancelot.so.1.9.0
 -rwxr-xr-x	root/root	usr/lib/liblancelot.so.1.9.0
 lrwxrwxrwx	root/root	usr/lib/libplasmacomicprovidercore.so -> libplasmacomicprovidercore.so.1
 lrwxrwxrwx	root/root	usr/lib/libplasmacomicprovidercore.so.1 -> libplasmacomicprovidercore.so.1.0.0

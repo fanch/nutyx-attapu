@@ -124,6 +124,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/128x128/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/kformula.png
@@ -165,6 +166,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/128x128/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/okteta.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/oxygen.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/partitionmanager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/planner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/plasma.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/plasmagik.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/128x128/apps/preferences-contact-list.png
@@ -1209,6 +1211,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/16x16/apps/kformula.png
@@ -2362,6 +2365,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kformula.png
@@ -2981,6 +2985,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kbruch.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kchart.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kde-windows.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/kformula.png
@@ -2998,6 +3003,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/256x256/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/multimedia-volume-control.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/oxygen.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/partitionmanager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/planner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/preferences-desktop-locale.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/preferences-desktop-screensaver.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/256x256/apps/qelectrotech.png
@@ -3781,6 +3787,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kformula.png
@@ -4893,6 +4900,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/48x48/apps/kformula.png
@@ -5563,6 +5571,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kcolorchooser.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kde-windows.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kde.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kdevelop.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kexi.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kformula.png
@@ -5602,6 +5611,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/okteta.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/oxygen.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/partitionmanager.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/planner.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/plasma.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/plasmagik.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/preferences-contact-list.png

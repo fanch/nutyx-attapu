@@ -188,11 +188,11 @@ drwxr-xr-x	root/root	usr/include/taskmanager/
 -rw-r--r--	root/root	usr/include/taskmanager/taskmanager_export.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/cmake/
-drwxr-xr-x	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceConfig.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceConfigVersion.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
--rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.80/KDE4WorkspaceLibraryTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/KDE4Workspace-4.4.85/
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.85/KDE4WorkspaceConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.85/KDE4WorkspaceConfigVersion.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.85/KDE4WorkspaceLibraryTargets-relwithdebinfo.cmake
+-rw-r--r--	root/root	usr/lib/cmake/KDE4Workspace-4.4.85/KDE4WorkspaceLibraryTargets.cmake
 drwxr-xr-x	root/root	usr/lib/kconf_update_bin/
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/krdb_clearlibrarypath
 -rwxr-xr-x	root/root	usr/lib/kconf_update_bin/kwin_update_default_rules
@@ -1118,6 +1118,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Black/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black/cursors/e-resize
@@ -1194,6 +1195,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Black_Big/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Black_Big/cursors/e-resize
@@ -1270,6 +1272,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Blue/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue/cursors/e-resize
@@ -1346,6 +1349,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Blue_Big/cursors/e-resize
@@ -1422,6 +1426,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_White/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White/cursors/e-resize
@@ -1498,6 +1503,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_White_Big/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_White_Big/cursors/e-resize
@@ -1574,6 +1580,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Yellow/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow/cursors/e-resize
@@ -1650,6 +1657,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Yellow_Big/cursors/e-resize
@@ -1726,6 +1734,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Zion/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion/cursors/e-resize
@@ -1802,6 +1811,7 @@ drwxr-xr-x	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/d9ce0ab605698f320427677b458ad60b
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/dnd-copy
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/dnd-link
+-rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/dnd-move
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/dnd-no-drop
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/dnd-none
 -rw-r--r--	root/root	usr/share/icons/Oxygen_Zion_Big/cursors/e-resize
@@ -2196,7 +2206,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kwin/
 -rw-r--r--	root/root	usr/share/kde4/services/settings-permissions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-personal-information.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-removable-devices.desktop
--rw-r--r--	root/root	usr/share/kde4/services/settings-security.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-sharing.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-shortcuts-and-gestures.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/settings-startup-and-shutdown.desktop
@@ -2229,12 +2238,6 @@ drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/systemsettingscategory.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/systemsettingsexternalapp.desktop
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/systemsettingsview.desktop
-drwxr-xr-x	root/root	usr/share/polkit-1/
-drwxr-xr-x	root/root	usr/share/polkit-1/actions/
--rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.fontinst.policy
--rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kcontrol.kcmclock.policy
--rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.kcontrol.kcmkdm.policy
--rw-r--r--	root/root	usr/share/polkit-1/actions/org.kde.ksysguard.processlisthelper.policy
 drwxr-xr-x	root/root	usr/share/sounds/
 -rw-r--r--	root/root	usr/share/sounds/pop.wav
 drwxr-xr-x	root/root	usr/share/wallpapers/

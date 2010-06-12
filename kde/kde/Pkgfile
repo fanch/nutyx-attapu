@@ -2,10 +2,10 @@
 # URL: http://www.kde.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: jdk, curl, xorg, kdelibs, kdepimlibs, kdeadmin, kdegraphics, kdenetwork, kdemultimedia, kdeutils, kde-l10n-fr, kdebase, kdebase-runtime, kdebase-workspace, kdeplasma-addons, kdegames, kdeartwork, phonon, desktop-file-utils, shared-mime-info, nas, atk, xine-lib, taglib, qimageblitz, pilot-link, gnokii, libical, akonadi, gpgme, boost, lcms, oxygen-icons, soprano, strigi, eigen, eigen, libspectre, ede1
+# Depends on: jdk, curl, xorg, kdelibs, kdepimlibs, kdeadmin, kdegraphics, kdenetwork, kdemultimedia, kdeutils, kde-l10n-fr, kdebase, kdebase-runtime, kdebase-workspace, kdeplasma-addons, kdegames, kdeartwork, phonon, desktop-file-utils, shared-mime-info, nas, atk, xine-lib, taglib, qimageblitz, pilot-link, gnokii, libical, akonadi, gpgme, boost, lcms, oxygen-icons, soprano, strigi, eigen, eigen, libspectre, ede1, wicd
 
 name=kde
-version=4.4.81svn1131245
+version=4.4.85
 release=1
 source=()
 
