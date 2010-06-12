@@ -5,9 +5,9 @@
 # Depends on: kdelibs, kdebase-runtime, libxslt, libxml2, boost, subversion
 
 name=kdesdk
-version=4.4.3
+version=4.4.85
 release=1
-source=(ftp://ftp.kde.org/pub/kde/stable/$version/src/$name-$version.tar.bz2)
+source=(ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
 build() {
 	cd $name-$version
 	mkdir build
