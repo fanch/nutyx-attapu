@@ -21,6 +21,7 @@ drwxr-xr-x	root/root	usr/lib/gnupg2/
 -rwxr-xr-x	root/root	usr/lib/gnupg2/gpg2keys_curl
 -rwxr-xr-x	root/root	usr/lib/gnupg2/gpg2keys_finger
 -rwxr-xr-x	root/root	usr/lib/gnupg2/gpg2keys_hkp
+-rwxr-xr-x	root/root	usr/lib/gnupg2/gpg2keys_ldap
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/addgnupghome
 -rwxr-xr-x	root/root	usr/sbin/applygnupgdefaults
