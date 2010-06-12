@@ -10,6 +10,8 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gnome-menus/
 -rw-r--r--	root/root	usr/include/gnome-menus/gmenu-tree.h
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/girepository-1.0/
+-rw-r--r--	root/root	usr/lib/girepository-1.0/GMenu-2.0.typelib
 -rw-r--r--	root/root	usr/lib/libgnome-menu.a
 -rwxr-xr-x	root/root	usr/lib/libgnome-menu.la
 lrwxrwxrwx	root/root	usr/lib/libgnome-menu.so -> libgnome-menu.so.2.4.6
@@ -65,6 +67,8 @@ drwxr-xr-x	root/root	usr/share/desktop-directories/
 -rw-r--r--	root/root	usr/share/desktop-directories/X-GNOME-Menu-Applications.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/X-GNOME-Menu-System.directory
 -rw-r--r--	root/root	usr/share/desktop-directories/X-GNOME-Other.directory
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/GMenu-2.0.gir
 drwxr-xr-x	root/root	usr/share/gnome-menus/
 drwxr-xr-x	root/root	usr/share/gnome-menus/examples/
 -rw-r--r--	root/root	usr/share/gnome-menus/examples/gnome-menus-ls.py

@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: glib, p5-xml-parser, python, gamin, intltool, desktop-file-utils
+# Depends on: glib, p5-xml-parser, python, gamin, intltool, desktop-file-utils, gobject-introspection
 
 name=gnome-menus
 version=2.30.0
