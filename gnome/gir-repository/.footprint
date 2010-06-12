@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/AvahiCore-0.6.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Babl-0.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/DBus-1.0.typelib
+-rw-r--r--	root/root	usr/lib/girepository-1.0/DBusGLib-1.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GConf-2.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/GMenu-2.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Gdk-2.0.typelib
@@ -39,6 +40,7 @@ drwxr-xr-x	root/root	usr/share/gir-1.0/
 -rw-r--r--	root/root	usr/share/gir-1.0/AvahiCore-0.6.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/Babl-0.0.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/DBus-1.0.gir
+-rw-r--r--	root/root	usr/share/gir-1.0/DBusGLib-1.0.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/GConf-2.0.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/GMenu-2.0.gir
 -rw-r--r--	root/root	usr/share/gir-1.0/Gdk-2.0.gir
