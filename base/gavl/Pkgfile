@@ -4,14 +4,15 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=gavl
-version=1.1.1
-release=1
+version=1.1.2
+release=2
 source=(http://heanet.dl.sourceforge.net/sourceforge/gmerlin/$name-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr\
-		--without-doxygen
+	./configure --prefix=/usr \
+	        --without-doxygen \
+	        --with-cpuflags=none
 	make
 	make DESTDIR=$PKG install
 }

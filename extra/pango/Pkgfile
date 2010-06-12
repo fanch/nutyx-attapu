@@ -2,7 +2,7 @@
 # URL: http://gnome.org
 # Maintainer: NuTyX core teamm
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: cairo, glib, libthai, freetype
+# Depends on: cairo, glib, libthai, freetype, xorg-libxft, gobject-introspection
 
 name=pango
 version=1.28.0
@@ -21,7 +21,5 @@ build() {
 	make DESTDIR=$PKG install
         rm -rf $PKG/usr/share/gtk-doc
 	install -m644 ../pango.modules $PKG/etc/pango/
-#	rm -rf $PKG/usr/lib/girepository-1.0
-#	rm -rf $PKG/usr/share/gir-1.0/	
 
 }
