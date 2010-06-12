@@ -7,11 +7,9 @@
 name=redland
 version=1.0.10
 release=3
-source=(http://download.librdf.org/source/$name-$version.tar.gz \
-	librdf_storage_register_factory.patch)
+source=(http://download.librdf.org/source/$name-$version.tar.gz)
 build() {
 	cd $name-$version
-	patch -p1 -i $SRC/librdf_storage_register_factory.patch
 	sed -i -e '/SHAVE/d' configure.ac
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
