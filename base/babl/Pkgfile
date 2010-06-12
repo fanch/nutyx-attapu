@@ -6,7 +6,7 @@
 
 
 name=babl
-version=0.1.2
+version=0.0.22
 release=1
 source=(ftp://ftp.gimp.org/pub/$name/0.0/$name-$version.tar.bz2)
 

@@ -1,30 +1,30 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
-drwxr-xr-x	root/root	usr/include/babl-0.1/
-drwxr-xr-x	root/root	usr/include/babl-0.1/babl/
--rw-r--r--	root/root	usr/include/babl-0.1/babl/babl-macros.h
--rw-r--r--	root/root	usr/include/babl-0.1/babl/babl-types.h
--rw-r--r--	root/root	usr/include/babl-0.1/babl/babl-version.h
--rw-r--r--	root/root	usr/include/babl-0.1/babl/babl.h
+drwxr-xr-x	root/root	usr/include/babl-0.0/
+drwxr-xr-x	root/root	usr/include/babl-0.0/babl/
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-component.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-conversion.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-extension.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-fish.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-format.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-image.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-model.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-sampling.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-type.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl-version.h
+-rw-r--r--	root/root	usr/include/babl-0.0/babl/babl.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/babl-0.1/
--rwxr-xr-x	root/root	usr/lib/babl-0.1/CIE.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/CIE.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gegl-fixups.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gegl-fixups.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gggl-lies.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gggl-lies.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gggl.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gggl.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gimp-8bit.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/gimp-8bit.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/naive-CMYK.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/naive-CMYK.so
--rwxr-xr-x	root/root	usr/lib/babl-0.1/sse-fixups.la
--rwxr-xr-x	root/root	usr/lib/babl-0.1/sse-fixups.so
--rwxr-xr-x	root/root	usr/lib/libbabl-0.1.la
-lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so -> libbabl-0.1.so.0.101.1
-lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so.0 -> libbabl-0.1.so.0.101.1
--rwxr-xr-x	root/root	usr/lib/libbabl-0.1.so.0.101.1
+drwxr-xr-x	root/root	usr/lib/babl-0.0/
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/CIE-Lab.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/gegl-fixups.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/gggl-lies.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/gggl.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/gimp-8bit.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/naive-CMYK.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.0/sse-fixups.so
+-rwxr-xr-x	root/root	usr/lib/libbabl-0.0.la
+lrwxrwxrwx	root/root	usr/lib/libbabl-0.0.so -> libbabl-0.0.so.0.22.0
+lrwxrwxrwx	root/root	usr/lib/libbabl-0.0.so.0 -> libbabl-0.0.so.0.22.0
+-rwxr-xr-x	root/root	usr/lib/libbabl-0.0.so.0.22.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/babl.pc
