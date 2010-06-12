@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	usr/lib/gnupg/
 -rwxr-xr-x	root/root	usr/lib/gnupg/gpgkeys_curl
 -rwxr-xr-x	root/root	usr/lib/gnupg/gpgkeys_finger
 -rwxr-xr-x	root/root	usr/lib/gnupg/gpgkeys_hkp
+-rwxr-xr-x	root/root	usr/lib/gnupg/gpgkeys_ldap
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gnupg/
 -rw-r--r--	root/root	usr/share/gnupg/FAQ
