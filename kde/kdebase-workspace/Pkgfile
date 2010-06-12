@@ -5,10 +5,9 @@
 # Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, kdepimlibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury
 
 name=kdebase-workspace
-version=4.4.81svn1131245
+version=4.4.85
 release=1
-#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2 \
-source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/$name-4.4.81svn1131245.tar.bz2 \
+source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2 \
         kdm \
 	lxde.desktop ede.desktop Xsession.kde4 \
 	http://kiao.no-ip.info/NuTyX/files/kdm-nutyx2009-2.tar.gz\
