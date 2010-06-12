@@ -66,7 +66,8 @@ haldaemon:x:19:19:HAL Daemon User:/dev/null:/bin/false
 named:x:20:20:BIND Owner:/home/named:/bin/false
 gdm:x:21:21:GDM Daemon User:/dev/null:/bin/bash
 fcron:x:22:22:Fcron User:/dev/null:/bin/false
-apache:x:25:25:Apache Server:/dev/null:/bin/false
+kdm:x:23:23:KDM Daemon User:/dev/null:/bin/bash
+fpache:x:25:25:Apache Server:/dev/null:/bin/false
 smmsp:x:26:26:Sendmail Daemon:/dev/null:/bin/false
 polkituser:x:27:27:Policy Kit Daemon User:/dev/null:/bin/false
 mysql:x:40:40:MySQL Server:/dev/null/:bin/false
@@ -103,6 +104,7 @@ haldaemon:x:19:
 named:x:20:
 gdm:x:21:
 fcron:x:22:
+kdm:x:23:kdm
 apache:x:25:
 smmsp:x:26:
 polkituser:x:27:
