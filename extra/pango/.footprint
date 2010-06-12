@@ -44,11 +44,6 @@ drwxr-xr-x	root/root	usr/include/pango-1.0/pango/
 -rw-r--r--	root/root	usr/include/pango-1.0/pango/pangoxft-render.h
 -rw-r--r--	root/root	usr/include/pango-1.0/pango/pangoxft.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/girepository-1.0/
--rw-r--r--	root/root	usr/lib/girepository-1.0/Pango-1.0.typelib
--rw-r--r--	root/root	usr/lib/girepository-1.0/PangoCairo-1.0.typelib
--rw-r--r--	root/root	usr/lib/girepository-1.0/PangoFT2-1.0.typelib
--rw-r--r--	root/root	usr/lib/girepository-1.0/PangoXft-1.0.typelib
 -rwxr-xr-x	root/root	usr/lib/libpango-1.0.la
 lrwxrwxrwx	root/root	usr/lib/libpango-1.0.so -> libpango-1.0.so.0.2800.0
 lrwxrwxrwx	root/root	usr/lib/libpango-1.0.so.0 -> libpango-1.0.so.0.2800.0
@@ -105,11 +100,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/pangox.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/pangoxft.pc
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/gir-1.0/
--rw-r--r--	root/root	usr/share/gir-1.0/Pango-1.0.gir
--rw-r--r--	root/root	usr/share/gir-1.0/PangoCairo-1.0.gir
--rw-r--r--	root/root	usr/share/gir-1.0/PangoFT2-1.0.gir
--rw-r--r--	root/root	usr/share/gir-1.0/PangoXft-1.0.gir
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/pango-querymodules.1.gz
