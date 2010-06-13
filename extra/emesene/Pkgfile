@@ -1,0 +1,34 @@
+# Description: Client pour le protocole MSN / Live
+# URL: http://www.emesene.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: hicolor-icon-theme, pygtk, python, xdg-utils, gst-python
+name=emesene
+version=1.6.2
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz \
+        emesene.run setup.patch)
+build() {
+cd $SRC/$name-$version
+
+  # enable installing in setup.py
+  patch -Np0 -i $SRC/setup.patch 
+
+  # install license files
+  install -Dm644 COPYING $PKG/usr/share/licenses/emesene/COPYING
+  install -Dm644 PSF $PKG/usr/share/licenses/emesene/PSF
+
+  # install files
+  python setup.py install --prefix=$PKG/usr
+
+  # use /usr/share/emesene instead of /usr/lib/python2.5/site-packages
+  mv -f $PKG/usr/lib/python2.6/site-packages $PKG/usr/share/emesene
+  rm -rf $PKG/usr/lib
+  
+  # remove old executable and use our own because we use /usr/share/emesene
+  rm $PKG/usr/bin/emesene
+  install -Dm755 $SRC/emesene.run $PKG/usr/bin/emesene
+
+}
+
+ 
