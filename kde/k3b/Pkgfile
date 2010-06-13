@@ -5,16 +5,16 @@
 # Depends on: kdelibs, kdemultimedia, oxygen-icons, libsamplerate, dvd+rw-tools, vcdimager, libmad, ffmpeg, taglib, libmpcdec, libdvdread, polkit-qt, automoc4, cmake, cdrkit, cdrdao
 
 name=k3b
-version=1.69.0alpha4
+version=1.92.0rc3
 release=1
-source=(http://switch.dl.sourceforge.net/sourceforge/k3b/k3b-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/sourceforge/k3b/$name-1.92.0rc3.tar.bz2)
 
 build() {
-cd k3b-*
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release \
+cd $name-1.92.0
+cmake -DCMAKE_INSTALL_PREFIX=$KDE_PREFIX -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_SKIP_RPATH=ON -DCMAKE_{SHARED,MODULE,EXE}_LINKER_FLAGS='-Wl,--no-undefined -Wl,--as-needed' \
  -DBUILD_doc=OFF
-	
+
 make
 make DESTDIR=$PKG install
-}
+} 
