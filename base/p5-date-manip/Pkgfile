@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=p5-date-manip
-version=6.07
+version=5.56
 release=1
 source=(http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/Date-Manip-$version.tar.gz)
 
