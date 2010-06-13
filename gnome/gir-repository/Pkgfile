@@ -1,4 +1,5 @@
-# URL: http://
+# Description: Permet de rendre la platforme gnome plus facilement connnectable (binding)
+# URL: http://live.gnome.org/GObjectIntrospection
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
 # Depends on: avahi, gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck, babl, startup-notification
@@ -7,16 +8,19 @@
 
 name=gir-repository
 version=0.6.5
-release=4
+release=3
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2 \
 	gir-repository-0.6.5-dbus-glib-2.patch)
 
 build() {
 	cd $name-$version
 	patch -Np1 -i ../gir-repository-0.6.5-dbus-glib-2.patch
-	./configure --prefix=$GNOME_PREFIX 
+	./configure --prefix=/usr --disable-static \
+	--with-skipped-gir-modules=Pango,Atk,Gtk,PangoXft,Babl,Unique,GMenu,Wnck
 	make
 	make DESTDIR=$PKG install
-#	rm $PKG/usr/lib/girepository-1.0/GMenu-2.0.typelib
-#	rm $PKG/usr/share/gir-1.0/GMenu-2.0.gir
+	for i in Atk GMenu Gtk Gdk Pango
+	do
+		find $PKG -name "*$i*" -exec rm -v {} \;
+	done
 }
