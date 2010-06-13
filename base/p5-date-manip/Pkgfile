@@ -1,0 +1,31 @@
+# Description: Perl date manip
+# URL: http://search.cpan.org/~sbeck/Date-Manip-5.48/Manip.pod 
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=p5-date-manip
+version=6.07
+release=1
+source=(http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/Date-Manip-$version.tar.gz)
+
+
+build() {
+	   cd Date-Manip-$version
+
+   perl Makefile.PL
+   make OPTIMIZE="$CFLAGS"
+   make install DESTDIR=$PKG
+
+   # Remove perlcrap
+   find $PKG \
+      -name .packlist -or \
+      -name '*.bs' -or \
+      -name autosplit.ix -or \
+      -name perllocal.pod | xargs rm
+
+   # Remove empty directories
+   find $PKG -depth -empty -exec rm -rf {} \;
+
+	chown -R root:root $PKG
+       
+}
