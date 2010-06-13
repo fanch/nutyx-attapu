@@ -1,0 +1,107 @@
+# Description: Logiciel d'animation, de modélisation et de rendu 3D
+# URL:http://blender3d.org
+# Maintainer: NuTyX core team
+# Packager: fanch
+# Depends on: libjpeg, libpng, openexr, sdl, python, desktop-file-utils, gettext, libxi, libxmu, mesa3d, freetype2, openal
+
+
+name=blender
+version=2.49a
+release=1
+source=(http://download.blender.org/source/$name-$version.tar.gz
+	$name.desktop $name.svg)
+
+build() {
+  if [ $cvs = true ]; then
+    cd $SRC
+    #cvs -d:pserver:anonymous@cvs.blender.org:/cvsroot/bf-blender login
+    cvs -z3 -d:pserver:anonymous@cvs.blender.org:/cvsroot/bf-blender checkout $name 
+    _cvsrel=$name-$(echo $version | sed 's/\./-/')-release
+    cvs -d:pserver:anonymous@cvs.blender.org:/cvsroot/bf-blender update -r $_cvsrel 
+    find $name/{bin,release/scripts} -name 'CVS' -exec rm -rf {} \; 2> /dev/null
+    cd $name
+  else
+    cd $SRC/$name-$version
+  fi
+
+ rm -f user-def.mk
+
+ ##########################################################################
+ # tweak the makefiles to prepare build for ArchLinux
+   # disable static binaries and enable blenderplayer binary
+  sed -i "s|^.*\(BINTARGETS += blenderstatic\)|    #\1|g" source/Makefile
+  sed -i "s|^#\(.*BINTARGETS += blenderplayer\)|\1|g" source/Makefile
+  # link freetype and openal dynamically
+  sed -i 's|LOPTS)|LOPTS) -lfreetype -lopenal|g' source/Makefile
+  sed -i 's|COMLIB.*libfreetype\.a|#\0|g' source/Makefile
+  sed -i 's|NAN_SND_LIBS.*libopenal\.a|#\0|g' source/Makefile
+   # make ode (alternative physics engine)
+   # does not work for Arch64
+   #[ "$CARCH" = "i686" ] && sed -i 's|^\(DIRS.*\)$|\1 ode|' extern/Makefile
+   # make the nan_makefiles happy
+  export NAN_PYTHON_VERSION=2.6
+  export INTERNATIONAL=true
+  export WITH_FREETYPE2=true
+  export NAN_FREETYPE=/usr
+  export WITH_ICONV=true
+
+  export NAN_NO_PLUGIN=true
+
+  export NAN_OPENAL=/usr
+  export NAN_FMOD=/usr
+  export NAN_JPEG=/usr
+  export NAN_PNG=/usr
+  export WITH_OPENEXR=true
+  export NAN_OPENEXR=/usr
+  export NAN_ODE=/usr
+  export NAN_OPENEXR_LIBS=$(pkg-config --libs-only-l OpenEXR)
+
+  export NAN_SDL=/usr
+  export NAN_ZLIB=/usr
+  export NAN_MESA=/usr
+
+  export NAN_USE_BULLET=true
+  export NAN_USE_FFMPEG_CONFIG=true
+  export WITH_BF_VERSE=true
+  export WITH_VERSE=true
+  export WITH_BF_OPENMP=true
+  # there is an issue with a file
+  export NAN_DEBUG=-O
+ ###########################################################################
+ # build
+  make 
+ ###########################################################################
+#  mkdir -p $PKG/usr/share/
+  cd obj/linux-glibc2*/bin
+
+# common part
+
+ mkdir -p $PKG/usr/share/
+
+ # install binaries
+ install -Dm755 blender $PKG/usr/bin/blender
+ install -Dm755 blenderplayer $PKG/usr/bin/blenderplayer
+
+ # install internationalization support
+ cd ../../../bin/.blender
+ install -D -m644 .Blanguages \
+   $PKG/usr/share/$name/.Blanguages
+ install -D -m644 .bfont.ttf \
+   $PKG/usr/share/$name/.bfont.ttf
+
+ cp -R locale $PKG/usr/share/
+
+ # install scripts
+ cd ../../release/
+ cp -R scripts $PKG/usr/share/$name/
+
+ # install all additional stuff
+ # install a freedesktop.org compliant menu entry
+ install -Dm644 $SRC/$name.desktop $PKG/usr/share/applications/$name.desktop
+ # install some freedesktop.org compatibility
+ install -D -m644 $SRC/$name.svg $PKG/usr/share/pixmaps/$name.svg
+ # finally we render a png as fallback for not svg aware menu applications
+ # Attention: always make sure you check the dimensions of the source-svg,
+ # you can read the dimensions via inkscapes export funktion
+ rsvg -w 64 -h 64 -f png $PKG/usr/share/pixmaps/$name.svg $PKG/usr/share/pixmaps/$name.png
+}

@@ -2,24 +2,17 @@
 # URL: http://connect.creativelabs.com/openal
 # Maintainer: Danny Rawlins, monster dot romster at gmail dot com
 # Packager: Matt Housh, jaeger at crux dot nu
-# Depends on: alsa-lib, cmake
+# Depends on: alsa-lib, cmake, sdl, pkgconfig
 
 name=openal
-version=1.10.622
+version=1.12.854
 release=1
-source=(http://connect.creativelabs.com/openal/Downloads/openal-soft-$version.bz2)
+source=(http://kcat.strangesoft.net/openal-releases/openal-soft-$version.tar.bz2)
 
 build() {
-	tar -xjf openal-soft-$version.bz2
-	cd openal-soft-$version/build
-
-	cmake ../ \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DOSS=OFF \
-		-DEXAMPLES=OFF \
-		-DCMAKE_BUILD_TYPE=Release #-DCMAKE_VERBOSE_MAKEFILE=true
-
-	make
-	make DESTDIR=$PKG install
+	  cd $SRC/$name-soft-$version/build
+  cmake -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release .. 
+  make 
+  make DESTDIR=$PKG/ install  
 }
 
