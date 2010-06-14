@@ -2,7 +2,7 @@
 # URL: http://xmlsoft.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: python, zlib, readline, ncurses
+# Depends on: python
 
 name=libxml2
 version=2.7.7
