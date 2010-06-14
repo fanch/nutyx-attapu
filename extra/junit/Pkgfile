@@ -2,7 +2,7 @@
 # URL: http://www.junit.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: unzip
+# Depends on:
 
 name=junit
 version=4.5
