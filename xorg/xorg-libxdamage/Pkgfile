@@ -1,8 +1,8 @@
 # Description: X Damage extension client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
-# Depends on: xorg-libx11, xorg-fixesproto, xorg-libxfixes, xorg-xextproto, xorg-damageproto
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11, xorg-libxfixes
 
 name=xorg-libxdamage
 version=1.1.2

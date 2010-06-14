@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-xproto, xorg-libx11, xorg-libxt, xorg-xextproto, xorg-libxext
+# Depends on: xorg-libx11, xorg-libxt, xorg-libxext
 
 name=xorg-libxpm
 version=3.5.8

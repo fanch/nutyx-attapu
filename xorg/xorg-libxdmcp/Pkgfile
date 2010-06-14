@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Packager: tilman at crux dot nu
-# Depends on: xorg-xproto
+# Depends on:
 
 name=xorg-libxdmcp
 version=1.0.3

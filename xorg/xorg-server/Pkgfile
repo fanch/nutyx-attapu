@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-xf86driproto, xorg-dri2proto, xorg-libxkbui, xorg-xcmiscproto, xorg-scrnsaverproto, xorg-bigreqsproto, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman, xorg-libpciaccess, xorg-libxscrnsaver
+# Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-libxkbui, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman, xorg-libpciaccess, xorg-libxscrnsaver
 
 name=xorg-server
 version=1.8.1

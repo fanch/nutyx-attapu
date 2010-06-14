@@ -1,8 +1,8 @@
 # Description: xorg lib libfontenc
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
-# Depends on: xorg-xproto
+# Packager: thierryn1 at hispeed dot ch
+# Depends on:
 
 name=xorg-libfontenc
 version=1.0.5

@@ -1,8 +1,8 @@
 # Description: xorg lib libxkbfile
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
-# Depends on: xorg-libx11, xorg-kbproto
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11
 
 name=xorg-libxkbfile
 version=1.0.6

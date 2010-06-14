@@ -1,7 +1,8 @@
 # Description: X Render extension client library
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-libx11, xorg-renderproto
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11
 
 name=xorg-libxrender
 version=0.9.5
