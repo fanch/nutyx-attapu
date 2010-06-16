@@ -9,7 +9,7 @@ f6b42961b3c2bd3b2e0bf0082d80d216  X.sh
 ad457024fe7ad91b8e9e0b4aad87df1f  extrapaths.sh
 0286a09ca5d7515c29ad5ff8f88fb9f3  fstab
 57ddbea584220ac4e74d0504a03721f4  hosts
-9099d0e8faf5da80580c1652c919859a  inittab
+00ead57ee36e532fa3e88a0a99e2de3b  inittab
 2ca09cd10bcc4f6adb0c5b1521bfdb7e  inputrc
 5d7c952bd09d718298dd60d3b976c349  lfs-bootscripts-01.patch
 5a8b2aacde330663828176064c77b72d  lfs-bootscripts-20100124.tar.bz2
