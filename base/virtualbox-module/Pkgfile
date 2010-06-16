@@ -8,7 +8,7 @@ version=3.2.4
 release=1
 _name=VirtualBox
 _kernel=`uname -r|sed "s/-NuTyX//"`
-_build=62431
+_build=62467
 source=(http://download.virtualbox.org/virtualbox/$version/${_name}-${version}-${_build}-Linux_x86.run)
 
 

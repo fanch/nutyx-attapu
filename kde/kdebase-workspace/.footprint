@@ -252,6 +252,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_standard_actions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_style.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_usb.so
+-rwxr-xr-x	root/root	usr/lib/kde4/kcm_view1394.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_workspaceoptions.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_xinerama.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kded_freespacenotifier.so
@@ -413,6 +414,7 @@ drwxr-xr-x	root/root	usr/lib/kde4/plugins/styles/
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_fakenet.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_hal_power.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_lirc.so
+-rwxr-xr-x	root/root	usr/lib/kde4/solid_networkmanager07.so
 -rwxr-xr-x	root/root	usr/lib/kde4/solid_wicd.so
 lrwxrwxrwx	root/root	usr/lib/libkdecorations.so -> libkdecorations.so.4
 lrwxrwxrwx	root/root	usr/lib/libkdecorations.so.4 -> libkdecorations.so.4.5.0
@@ -575,6 +577,8 @@ drwxr-xr-x	root/root	usr/share/apps/kcmsolidactions/
 -rw-r--r--	root/root	usr/share/apps/kcmsolidactions/solid-action-template.desktop
 drwxr-xr-x	root/root	usr/share/apps/kcmusb/
 -rw-r--r--	root/root	usr/share/apps/kcmusb/usb.ids
+drwxr-xr-x	root/root	usr/share/apps/kcmview1394/
+-rw-r--r--	root/root	usr/share/apps/kcmview1394/oui.db
 drwxr-xr-x	root/root	usr/share/apps/kconf_update/
 -rwxr-xr-x	root/root	usr/share/apps/kconf_update/convertShortcuts.pl
 -rw-r--r--	root/root	usr/share/apps/kconf_update/kaccel.upd
@@ -1907,6 +1911,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/
 drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kcmkwm.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/kfontview.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/22x22/apps/networkmanager.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/22x22/mimetypes/
 -rw-r--r--	root/root	usr/share/icons/oxygen/22x22/mimetypes/fonts-package.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/
@@ -1914,6 +1919,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kcmkwm.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kfontview.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/kwin.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/32x32/apps/networkmanager.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/32x32/mimetypes/
 -rw-r--r--	root/root	usr/share/icons/oxygen/32x32/mimetypes/fonts-package.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/48x48/
@@ -1927,6 +1933,7 @@ drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/
 drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kcmkwm.png
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/kfontview.png
+-rw-r--r--	root/root	usr/share/icons/oxygen/64x64/apps/networkmanager.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/64x64/mimetypes/
 -rw-r--r--	root/root	usr/share/icons/oxygen/64x64/mimetypes/fonts-package.png
 drwxr-xr-x	root/root	usr/share/icons/oxygen/scalable/
@@ -1975,6 +1982,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/kcmlaunch.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmsmserver.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmusb.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/kcmview1394.desktop
 drwxr-xr-x	root/root	usr/share/kde4/services/kded/
 -rw-r--r--	root/root	usr/share/kde4/services/kded/freespacenotifier.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kded/kephal.desktop
@@ -2218,6 +2226,7 @@ drwxr-xr-x	root/root	usr/share/kde4/services/solidbackends/
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_fakenet.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_hal_power.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_lirc.desktop
+-rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_networkmanager07.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/solidbackends/solid_wicd.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/standard_actions.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/style.desktop
