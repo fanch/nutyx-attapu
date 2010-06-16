@@ -1,0 +1,19 @@
+# Decription: Interface simple pour scanner 
+# URL: https://launchpad.net/simple-scan/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: gudev, sane
+
+name=simple-scan
+version=2.31.1
+release=1
+
+source=( http://people.ubuntu.com/~robert-ancell/$name/$name-$version.tar.gz )
+
+build() {
+	cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+}
+
