@@ -1,0 +1,33 @@
+# Description: Le compilateur gcc version 3
+# URL: http://gnu.org
+# Maintainer: NuTyX core team 
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: gcc3-libs
+
+name=gcc3
+version=3.3.6
+release=1
+group=dev
+source=( http://ftp.gnu.org/gnu/gcc/gcc-$version/gcc-$version.tar.bz2\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/gcc-3.3.6-no_fixincludes-1.patch\
+	 http://www.linuxfromscratch.org/patches/blfs/svn/gcc-3.3.6-linkonce-1.patch)
+
+
+build() {
+	mkdir -p $PKG/usr/lib
+	cd gcc-$version
+	patch -Np1 -i ../gcc-3.3.6-no_fixincludes-1.patch
+	patch -Np1 -i ../gcc-3.3.6-linkonce-1.patch
+	mkdir ../gcc-build
+	cd ../gcc-build
+	../gcc-$version/configure --prefix=/opt/gcc-$version \
+		--enable-shared \
+		--enable-languages=c,c++ \
+		--enable-threads=posix
+	make bootstrap
+#	make -k check
+	make DESTDIR=$PKG install
+	mv -v $PKG/opt/gcc-3.3.6/lib/libstdc++.so.5* \
+	$PKG/usr/lib
+	rm -r $PKG/usr
+}
