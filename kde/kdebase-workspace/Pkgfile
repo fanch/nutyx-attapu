@@ -2,7 +2,8 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, kdepimlibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury
+# Depends on: kdebase-runtime, xorg-libxscrnsaver, shared-mime-info, kdelibs, kdepimlibs, hal, libvorbis, libogg, audiofile, alsa-utils, qimageblitz, lm_sensors, libxklavier, libcaptury, consolekit, xmms, networkmanager, libraw1394
+
 
 name=kdebase-workspace
 version=4.4.85
