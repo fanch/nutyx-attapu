@@ -1,11 +1,11 @@
 # Description: Interface independante de configuration des applications de Xfce
 # URL: http://wiki.xfce.org/releng/4.6/general-info
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: dbus-glib, exo, libglade, libnotify, libxfce4util, libxfcegui4, xfconf, libwnck
 
 name=xfce4-settings
-version=4.6.4
+version=4.6.5
 release=1
 source=(http://archive.xfce.org/src/xfce/xfce4-settings/4.6/$name-$version.tar.bz2)
 build() {
