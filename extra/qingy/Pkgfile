@@ -15,7 +15,9 @@ build() {
 		--sysconfdir=/etc \
 		--infodir=/usr/share/info \
 		--enable-x-support=no \
-		--enable-pam=no
+		--enable-pam=no \
+		--enable-static-build
+		
 	make
 	make DESTDIR=$PKG install
 	if [ -f $PKG/usr/share/info/dir ]; then
