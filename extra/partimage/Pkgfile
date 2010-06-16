@@ -1,0 +1,22 @@
+# Description: Programmes  pour générer le fichier Makefile utilisé par autoconf
+# URL:http://www.gnu.org/software/automake/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: newt
+
+name=partimage
+version=0.6.8
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
+	partimage-0.6.8-gcc44.patch)
+
+build() {
+cd $name-$version
+patch -Np1 -i ../partimage-0.6.8-gcc44.patch
+./configure --prefix=/usr --sysconfdir=/etc
+make
+make prefix=$PKG/usr install
+if [ -f $PKG/usr/share/info/dir ]; then
+	rm $PKG/usr/share/info/dir
+fi
+}
