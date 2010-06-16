@@ -1,0 +1,24 @@
+# Description: Remplace getty en mode Frame buffer
+# URL: http://qingy.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: directfb
+
+name=qingy
+version=0.9.9
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+build() {
+	cd  $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--sysconfdir=/etc \
+		--infodir=/usr/share/info \
+		--enable-x-support=no \
+		--enable-pam=no
+	make
+	make DESTDIR=$PKG install
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm  $PKG/usr/share/info/dir
+	fi
+}
