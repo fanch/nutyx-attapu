@@ -2,7 +2,6 @@
 # URL: http://qingy.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: directfb
 
 name=qingy
 version=0.9.9
@@ -13,6 +12,7 @@ build() {
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--sysconfdir=/etc \
+		--enable-static=qingy-DirectFB \
 		--infodir=/usr/share/info \
 		--enable-x-support=no \
 		--enable-pam=no \
