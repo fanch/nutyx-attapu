@@ -2,7 +2,7 @@
 # URL: http://www.directfb.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libjpeg , libpng, freetype, xorg-libx11, mesa3d, libvncserver
+# Depends on: libjpeg , libpng, freetype, xorg-libx11, mesa3d
 
 name=directfb
 version=1.4.3
@@ -15,7 +15,7 @@ build() {
 	patch -Np1 -i  ../libpng-1.4.patch
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
-		--enable-zlib \
+		--enable-zlib --disable-vnc \
 		--infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
