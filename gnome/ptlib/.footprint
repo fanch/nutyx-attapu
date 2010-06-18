@@ -164,17 +164,17 @@ drwxr-xr-x	root/root	usr/include/ptlib/unix/ptlib/
 -r--r--r--	root/root	usr/include/ptlib/videoio.h
 -r--r--r--	root/root	usr/include/ptlib/videoio1394dc.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libpt.so -> libpt.so.2.6.5
--r--r--r--	root/root	usr/lib/libpt.so.2.6.5
+lrwxrwxrwx	root/root	usr/lib/libpt.so -> libpt.so.2.6.7
+-r--r--r--	root/root	usr/lib/libpt.so.2.6.7
 -r--r--r--	root/root	usr/lib/libpt_s.a
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ptlib.pc
-drwxr-xr-x	root/root	usr/lib/ptlib-2.6.5/
-drwxr-xr-x	root/root	usr/lib/ptlib-2.6.5/devices/
-drwxr-xr-x	root/root	usr/lib/ptlib-2.6.5/devices/sound/
--r--r--r--	root/root	usr/lib/ptlib-2.6.5/devices/sound/alsa_pwplugin.so
-drwxr-xr-x	root/root	usr/lib/ptlib-2.6.5/devices/videoinput/
--r--r--r--	root/root	usr/lib/ptlib-2.6.5/devices/videoinput/v4l2_pwplugin.so
+drwxr-xr-x	root/root	usr/lib/ptlib-2.6.7/
+drwxr-xr-x	root/root	usr/lib/ptlib-2.6.7/devices/
+drwxr-xr-x	root/root	usr/lib/ptlib-2.6.7/devices/sound/
+-r--r--r--	root/root	usr/lib/ptlib-2.6.7/devices/sound/alsa_pwplugin.so
+drwxr-xr-x	root/root	usr/lib/ptlib-2.6.7/devices/videoinput/
+-r--r--r--	root/root	usr/lib/ptlib-2.6.7/devices/videoinput/v4l2_pwplugin.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/ptlib/
 drwxr-xr-x	root/root	usr/share/ptlib/make/
