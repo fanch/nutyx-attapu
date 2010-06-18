@@ -5,7 +5,7 @@
 # Depends on: libtheora, x264, ffmpeg, ptlib
 
 name=opal
-version=3.6.6
+version=3.6.8
 release=1
 source=(ftp://ftp.gnome.org/pub/gnome/sources/opal/3.6/$name-$version.tar.bz2)
         ftp://ftp.gnome.org/pub/gnome/sources/opal/3.6/opal-3.6.6.tar.bz2
