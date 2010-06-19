@@ -30,5 +30,5 @@ make DESTDIR=$PKG install-nfs-server
 install -m 754 ../nfs-server.sh $PKG/etc/rc.d/init.d/nfs-server
 mkdir -p $PKG/etc/sysconfig
 install -m 644 ../nfs-server $PKG/etc/sysconfig/
-rm -r $PKG/{sbin,usr/share/man/man5}
+rm -r $PKG/{sbin,usr/{sbin,share/man/man5}}
 }
