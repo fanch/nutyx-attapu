@@ -5,10 +5,10 @@
 # Depends on:
 
 name=module-init-tools
-version=3.11.1
+version=3.12
 release=1
 source=(http://www.kernel.org/pub/linux/utils/kernel/$name/$name-$version.tar.bz2\
-	modprobe.conf blacklist-fb)
+	modprobe.conf blacklist-fb.conf)
 
 build() {
 cd $name-$version
@@ -25,5 +25,5 @@ install -d $PKG/etc/{modprobe.d,depmod.d}
 make DESTDIR=$PKG mandir=/usr/share/man install
 rm -f $PKG/sbin/generate-modprobe.conf
 install -m 644 ../modprobe.conf $PKG/etc/modprobe.d/modprobe.conf
-install -m 644 ../blacklist-fb $PKG/etc/modprobe.d/
+install -m 644 ../blacklist-fb.conf $PKG/etc/modprobe.d/
 }
