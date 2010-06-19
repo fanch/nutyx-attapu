@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/about/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtksourceview, gnome-python, libgnomeui, startup-notification, gnome-doc-utils, totem, nautilus-cd-burner, brasero
+# Depends on: gnome-applets, libgtop, libgnomeprintui, gtksourceview, metacity, evolution, evince, libgnomeui, gnome-python, startup-notification, gnome-doc-utils, totem, nautilus-cd-burner, brasero
 
 name=gnome-python-desktop
 version=2.30.0
