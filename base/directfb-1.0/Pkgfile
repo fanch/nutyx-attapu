@@ -1,0 +1,23 @@
+# Description: Librairie graphique pour le mode Frame buffer
+# URL: http://www.directfb.org
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: libjpeg , libpng, freetype
+
+name=directfb-1.0
+version=1.0.1
+release=1
+source=(http://www.directfb.org/downloads/Core/DirectFB-1.0/DirectFB-$version.tar.gz \
+libpng-1.4.patch)
+# To build with multicore add --enable-multi
+build() {
+	cd  DirectFB-$version
+	patch -Np1 -i  ../libpng-1.4.patch
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-zlib --disable-vnc \
+		--infodir=/usr/share/info \
+		--enable-x11=no
+	make
+	make DESTDIR=$PKG install
+}
