@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-desktop, libwnck, gnome-menus, libgweather, librsvg, libsoup, evolution-data-server
+# Depends on: gnome-desktop, libwnck, gnome-menus, libgweather, librsvg, libsoup, evolution-data-server, libcanberra
 
 name=gnome-panel
 version=2.30.0
