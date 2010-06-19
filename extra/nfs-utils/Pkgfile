@@ -19,5 +19,5 @@ sed -i 's/getkversion//' tools/Makefile.in
         --disable-gss
 make
 make DESTDIR=$PKG install
-rm -r $PKG/{var,usr/{sbin,share/man/man{7,8}}}
+rm -r $PKG/{var,usr/share/man/man{7,8}}
 }

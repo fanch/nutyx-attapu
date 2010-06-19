@@ -4,6 +4,16 @@ lrwxrwxrwx	root/root	sbin/mount.nfs4 -> mount.nfs
 lrwxrwxrwx	root/root	sbin/umount.nfs -> mount.nfs
 lrwxrwxrwx	root/root	sbin/umount.nfs4 -> mount.nfs
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/exportfs
+-rwxr-xr-x	root/root	usr/sbin/nfsstat
+-rwxr-xr-x	root/root	usr/sbin/rpc.mountd
+-rwxr-xr-x	root/root	usr/sbin/rpc.nfsd
+-rwxr-xr-x	root/root	usr/sbin/rpc.statd
+-rwxr-xr-x	root/root	usr/sbin/rpcdebug
+-rwxr-xr-x	root/root	usr/sbin/showmount
+-rwxr-xr-x	root/root	usr/sbin/sm-notify
+-rwxr-xr-x	root/root	usr/sbin/start-statd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man5/
