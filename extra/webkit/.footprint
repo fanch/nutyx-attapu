@@ -41,9 +41,9 @@ drwxr-xr-x	root/root	usr/include/webkit-1.0/webkit/
 -rw-r--r--	root/root	usr/include/webkit-1.0/webkit/webkitwebwindowfeatures.h
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.la
-lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so -> libwebkit-1.0.so.2.17.2
-lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so.2 -> libwebkit-1.0.so.2.17.2
--rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.so.2.17.2
+lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so -> libwebkit-1.0.so.2.17.3
+lrwxrwxrwx	root/root	usr/lib/libwebkit-1.0.so.2 -> libwebkit-1.0.so.2.17.3
+-rwxr-xr-x	root/root	usr/lib/libwebkit-1.0.so.2.17.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/webkit-1.0.pc
 drwxr-xr-x	root/root	usr/share/
