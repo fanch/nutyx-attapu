@@ -2,7 +2,7 @@
 # URL: http://www.personal.psu.edu/users/k/f/kfv101/procman/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libgnomeui, libgtop, libwnck, libgnomesu, gtkmm, glibmm
+# Depends on: libgnomeui, libgtop, libwnck, libgnomesu, gtkmm, glibmm, librsvg, gnome-icon-theme
 
 
 name=gnome-system-monitor
