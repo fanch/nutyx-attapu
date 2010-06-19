@@ -9,12 +9,3 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/exports.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/nfs.5.gz
-drwxr-xr-x	root/root	var/
-drwxr-xr-x	root/root	var/lib/
-drwxr-xr-x	root/root	var/lib/nfs/
--rw-r--r--	root/root	var/lib/nfs/etab (EMPTY)
--rw-r--r--	root/root	var/lib/nfs/rmtab (EMPTY)
-drwx------	nobody/root	var/lib/nfs/sm.bak/
-drwx------	nobody/root	var/lib/nfs/sm/
--rw-------	nobody/root	var/lib/nfs/state (EMPTY)
--rw-r--r--	root/root	var/lib/nfs/xtab (EMPTY)
