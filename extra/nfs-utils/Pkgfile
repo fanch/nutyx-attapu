@@ -2,19 +2,13 @@
 # URL: http://nfs.sourceforge.net
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: portmap
+# Depends: portmap
 
 name=nfs-utils
 version=1.2.0
-release=1
-source=(http://ftp.kernel.org/pub/linux/utils/nfs/$name-$version.tar.gz\
-        nfs-server nfs-server.sh)
+release=2
+source=(http://ftp.kernel.org/pub/linux/utils/nfs/$name-$version.tar.gz)
 build() {
-source  /etc/blfs-bootscripts
-wget \
-http://www.linuxfromscratch.org/blfs/downloads/svn/$scripts-$scriptsversion.tar.bz2
-tar xvf $scripts-$scriptsversion.tar.bz2 
-	# build package
 cd $name-$version
 sed -i 's/getkversion//' tools/Makefile.in
 ./configure --prefix=/usr\
@@ -25,9 +19,5 @@ sed -i 's/getkversion//' tools/Makefile.in
         --disable-gss
 make
 make DESTDIR=$PKG install
-cd ../$scripts-$scriptsversion
-make DESTDIR=$PKG install-nfs-server
-install -m 754 ../nfs-server.sh $PKG/etc/rc.d/init.d/nfs-server
-mkdir -p $PKG/etc/sysconfig
-install -m 644 ../nfs-server $PKG/etc/sysconfig/    
+rm -r $PKG/usr/{sbin,share/man/man{7,8}}
 }
