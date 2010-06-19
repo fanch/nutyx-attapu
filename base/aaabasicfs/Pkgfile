@@ -6,7 +6,7 @@
 name=aaabasicfs
 version=2010
 release=rc2
-scriptsversion=lfs-bootscripts-20100124
+scriptsversion=lfs-bootscripts-20100529
 BLFSscriptsversion=20090302
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
 	http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-$BLFSscriptsversion.tar.bz2
