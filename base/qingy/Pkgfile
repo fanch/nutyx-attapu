@@ -6,7 +6,8 @@
 name=qingy
 version=0.9.9
 release=1
-source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2)
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
+	nutyx-attapu.jpg)
 build() {
 	cd  $name-$version
 	./configure --prefix=/usr \
@@ -23,4 +24,6 @@ build() {
 	if [ -f $PKG/usr/share/info/dir ]; then
 		rm  $PKG/usr/share/info/dir
 	fi
+	echo "root Soyez prudent, vous avez tous les droits..." \
+	$PKG/etc/qingy/welcomes
 }
