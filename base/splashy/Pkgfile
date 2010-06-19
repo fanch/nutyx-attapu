@@ -1,0 +1,31 @@
+# Description: Utilitaires pour produire des images lors du boot
+# URL: http://splashy.alioth.debian.org/wiki/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=splashy
+version=0.3.13
+release=1
+source=(http://alioth.debian.org/frs/download.php/2691/$name-$version.tar.gz\
+	splashy nutyx-attapu.jpg)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr \
+	--sbindir=/sbin --libdir=/usr/lib \
+	--includedir=/usr/include \
+	--datarootdir=/usr/share \
+	--sysconfdir=/etc
+	make
+	make DESTDIR=$PKG install
+	mkdir -p $PKG/etc/rc.d{,/rcsysinit.d}
+	mv $PKG/etc/{init.d,rc.d/}
+	cp ../splashy $PKG/etc/rc.d/init.d/
+	chmod 754 $PKG/etc/rc.d/init.d/splashy
+	ln -s ../init.d/splashy $PKG/etc/rc.d/rcsysinit.d/S00splashy
+	rm $PKG/etc/lsb-base-logging.sh
+	cp ../nutyx-attapu.jpg \
+	$PKG/usr/share/splashy/themes/default/background.jpg
+	sed -i "s/background.png/background.jpg/g" \
+	$PKG/usr/share/splashy/themes/default/theme.xml
+}

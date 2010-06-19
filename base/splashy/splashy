@@ -1,0 +1,157 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          splashy
+# Required-Start:    mountkernfs
+# Required-Stop:     $all
+# Default-Start:     S
+# Default-Stop:      0 6
+# Short-Description: A script to calculate the progress percentage for init scripts
+# Description:       This calculates the progress percentage 
+#                    for the scripts in /etc/rcS.d and 
+#                    /etc/rc$CURRENT_RUNLEVEL.d.
+### END INIT INFO
+
+# Author: Tim Dijkstra <newsuser@famdijkstra.org>, 
+#         Luis Mondesi <lemsx1@gmail.com> 
+#         Luca Capello <luca@pca.it>
+#
+# If called in the rc[06].d runlevels with the stop target it will start 
+# splashy in 'shutdown' mode. In the rcS.d runlevel it will try 
+# to start splashy if it didn't start yet from initramfs.
+#
+# When it decides to start splashy it will first calculate the 
+# progress percentage which will be used by the calls to splashy_update 
+# in the log_end_msg functions.
+# This is really simple. We just count them and put them
+# in alpha-numeric order. Their percentage is then just
+# int( their number on the list * ( 100 / total number on list) )
+#
+# Of course not all packages use log_end_msg yet, but that
+# doesn't matter. The packages that do, will trigger the update
+# anyway. This may result in big jumps in the percentage.
+# The more scripts start using it, the more granular it will become.
+#
+#
+# This script also needs to detect if Splashy is running and if not
+# start it. It's assumed that this will only be run while halt/reboot
+# and at RUNLEVEL S.
+#
+
+PATH="/sbin:/bin:/usr/sbin:/usr/bin"
+NAME="splashy"
+DESC="Boot splash manager"
+STEPS_DIR="/lib/init/rw/$NAME"
+DEBUG=0
+
+[ -r "/etc/default/$NAME" ] && . "/etc/default/$NAME"
+
+# Define LSB log_* functions.
+# Depend on lsb-base (>= 3.0-6) to ensure that this file is present.
+# if [ -r "/lib/lsb/init-functions" ]; then
+#    . "/lib/lsb/init-functions"
+# else
+#    echo "Could not read file /lib/lsb/init-functions. Please install lsb-base"
+#    exit 1
+# fi
+. /etc/sysconfig/rc
+. ${rc_functions}
+
+set -e
+
+
+[ "$ENABLE" = "1" ] && log_warning_msg "To enable $NAME add 'splash' to the kernel command line. Use of ENABLE in /etc/default/$NAME is deprecated.";
+
+check_to_enable () {
+	ENABLE=0
+	SINGLE=false
+	SPLASH=false
+	FBMODESET=false
+
+	for x in $(cat /proc/cmdline); do
+	    case $x in
+		single)
+		    SINGLE="true"
+		;;
+		splash)
+		    SPLASH="true"
+		;;
+		nosplash)
+		    SPLASH="false"
+		;;
+		vga=*|video=*)
+		    FBMODESET="true"
+		;;
+	    esac
+	done
+	[ "$SPLASH" = "true" -a "$FBMODESET" = "true" ] && ENABLE=1
+	[ "$SINGLE" = "true" ] && ENABLE=0
+
+	if [ "$ENABLE" = "0" ]; then
+	    log_warning_msg "To enable $NAME on multiuser runlevel add 'splash' and a valid framebuffer videomode to the kernel command line"
+	    exit 0
+	fi
+}
+
+calculate_steps () {
+        boot_mesg "(Re)generating splash steps"
+	echo_ok
+	[ -f /etc/inittab ] &&	RLVL=`sed -n 's/id:\([2345]\):initdefault:/\1/ p' /etc/inittab`
+
+        [ ! -d $STEPS_DIR ] && mkdir -p $STEPS_DIR
+	#
+	# Mount a tmpfs on $STEPS_DIR
+	#
+	# on Ubuntu our Steps dir gets umounted if using /dev/shm/splashy
+	# we will always use /lib/init/rw/splashy and mount a tmpfs there
+	SHM_OPT=
+	[ "${SHM_SIZE:=$TMPFS_SIZE}" ] && SHM_OPT="-osize=$SHM_SIZE"
+	mount -n -t tmpfs shmfs $STEPS_DIR
+
+        TMP=`mktemp -p $STEPS_DIR`
+
+        # While booting rcS will also be executed
+        # we only care about the scripts that actually call log_end_msg
+        # if not we could end up never completing our progressbar!
+        grep -l "Usage" ${rc_base}/rcsysinit.d/S* > $TMP 2> /dev/null || true
+
+        for ILVL in ${RLVL:=2} 0 3 4 5 6; do
+            # in debian rc.local runs log_end_msg conditionally. we simply skip that
+            grep -l "Usage" ${rc_base}/rc$ILVL.d/[KS]* 2> /dev/null | grep -v rc.local >> $TMP  || true
+            
+            NR=`sed -n -e '$=' $TMP`
+	    I=1
+	    for SCR in `cat $TMP`; do
+		echo "$SCR $(($I*100/$NR))"
+		I=$(($I+1))
+	    done > "$STEPS_DIR/$ILVL-progress"
+
+            # Truncate $TMP file
+            echo -n > $TMP
+        done
+
+        # In the first stage of booting RUNLEVEL will be S
+        ln -sf "$STEPS_DIR/${RLVL:=2}-progress" "$STEPS_DIR/sysinit-progress"
+        rm -f $TMP
+
+}
+
+# Bug #400598,#401999
+if [ -z "${RUNLEVEL:-}" ]; then
+    # we need only the current level
+    RUNLEVEL=`runlevel | sed 's/^. //'`
+fi
+
+case "$1" in
+    start)
+        calculate_steps $RUNLEVEL
+        ;;
+
+    *)
+        N=/etc/init.d/$NAME
+        echo "Usage: $N {restart}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0
+
