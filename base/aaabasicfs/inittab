@@ -42,7 +42,7 @@ su:S016:once:/sbin/sulogin
 
 30:5:respawn:/usr/bin/kdm
 
-sp:2345:once:[ -f /sbin/splashy_update ] && /sbin/splashy_update "exit"
+sp:2345:once:/sbin/splashy_update "exit"
 
 
 # End /etc/inittab
