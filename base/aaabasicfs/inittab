@@ -4,7 +4,7 @@
 # Pour le lancement de gdm:  id:4
 # Pour le lancement de kdm:  id:5
 
-id:4:initdefault:
+id:3:initdefault:
 
 si::sysinit:/etc/rc.d/init.d/rc sysinit
 
@@ -20,11 +20,29 @@ ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -h now
 
 su:S016:once:/sbin/sulogin
 
-1:2345:respawn:/usr/sbin/qingy tty1
-2:2345:respawn:/usr/sbin/qingy tty2
-3:2345:respawn:/usr/sbin/qingy tty3
-4:2345:respawn:/usr/sbin/qingy tty4
-5:2345:respawn:/usr/sbin/qingy tty5
-6:2345:respawn:/usr/sbin/qingy tty6
+1:2:respawn:/sbin/agetty tty1 9600
+2:2:respawn:/sbin/agetty tty2 9600
+3:2:respawn:/sbin/agetty tty3 9600
+4:2:respawn:/sbin/agetty tty4 9600
+5:2:respawn:/sbin/agetty tty5 9600
+6:2:respawn:/sbin/agetty tty6 9600
+
+
+
+7:3:respawn:/usr/sbin/qingy tty1
+8:3:respawn:/usr/sbin/qingy tty2
+9:3:respawn:/usr/sbin/qingy tty3
+10:3:respawn:/usr/sbin/qingy tty4
+11:3:respawn:/usr/sbin/qingy tty5
+12:3:respawn:/usr/sbin/qingy tty6
+
+
+
+20:4:respawn:/usr/bin/gdm
+
+30:5:respawn:/usr/bin/kdm
+
+sp:2345:once:[ -f /sbin/splashy_update ] && /sbin/splashy_update "exit"
+
 
 # End /etc/inittab

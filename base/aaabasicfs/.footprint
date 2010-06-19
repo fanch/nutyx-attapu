@@ -90,7 +90,7 @@ lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S80mountfs -> ../init.d/mountfs
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S90localnet -> ../init.d/localnet
 lrwxrwxrwx	root/root	etc/rc.d/rc6.d/S99reboot -> ../init.d/reboot
 drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
-lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S00mountkernfs -> ../init.d/mountkernfs
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S01mountkernfs -> ../init.d/mountkernfs
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S02consolelog -> ../init.d/consolelog
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S05modules -> ../init.d/modules
 lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S10udev -> ../init.d/udev
