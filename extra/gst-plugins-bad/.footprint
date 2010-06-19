@@ -106,6 +106,8 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-0.10/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstmxf.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstnassink.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstnassink.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstneonhttpsrc.la
+-rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstneonhttpsrc.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstnsf.la
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstnsf.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-0.10/libgstnuvdemux.la
