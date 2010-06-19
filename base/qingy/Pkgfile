@@ -24,6 +24,7 @@ build() {
 	if [ -f $PKG/usr/share/info/dir ]; then
 		rm  $PKG/usr/share/info/dir
 	fi
-	echo "root Soyez prudent, vous avez tous les droits..." \
+	cp ../nutyx-attapu.jpg $PKG/usr/share/qingy/themes/default/background.jpg
+	echo "root Soyez prudent, vous avez tous les droits..." >\
 	$PKG/etc/qingy/welcomes
 }
