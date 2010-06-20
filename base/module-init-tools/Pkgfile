@@ -5,8 +5,8 @@
 # Depends on:
 
 name=module-init-tools
-version=3.12
-release=1
+version=3.11.1
+release=2
 source=(http://www.kernel.org/pub/linux/utils/kernel/$name/$name-$version.tar.bz2\
 	modprobe.conf blacklist-fb.conf)
 
