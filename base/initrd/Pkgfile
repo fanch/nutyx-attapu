@@ -5,8 +5,8 @@
 
 name=initrd
 version=2.6.34
-release=1
-_tools=03062010
+release=2
+_tools=20062010
 _baseversion=2.6.34
 SCRIPT_VERSION="attapu"
 source=()
