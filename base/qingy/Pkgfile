@@ -7,7 +7,7 @@ name=qingy
 version=0.9.9
 release=1
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
-	nutyx-attapu.jpg theme)
+	nutyx-attapu.jpg theme ChatIrssi NaviLinks MidnightCommander)
 build() {
 	cd  $name-$version
 	./configure --prefix=/usr \
@@ -28,4 +28,9 @@ build() {
 	cp ../nutyx-attapu.jpg $PKG/usr/share/qingy/themes/default/background.jpg
 	echo "root Soyez prudent, vous avez tous les droits..." >\
 	$PKG/etc/qingy/welcomes
+	for i  in ChatIrssi NaviLinks MidnightCommander
+	do
+		install -m755 ../$i \
+		$PKG/etc/qingy/sessions/$i
+	done
 }
