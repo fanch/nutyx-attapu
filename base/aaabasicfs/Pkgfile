@@ -10,7 +10,7 @@ scriptsversion=lfs-bootscripts-20100529
 BLFSscriptsversion=20090302
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
 	http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-$BLFSscriptsversion.tar.bz2
- hosts console fstab inittab message inputrc network rc \
+ hosts fstab inittab message inputrc network rc \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
  nu readline.sh unmask.sh X.sh bashrc )
 
@@ -163,8 +163,6 @@ EOF
 	mv $PKG/etc/bashrc.etc $PKG/etc/bashrc
 	cp -v {dircolors.sh,extrapaths.sh,readline.sh,unmask.sh,X.sh}\
 	$PKG/etc/profile.d/
-	cp -v console $PKG/etc/sysconfig/
-	echo "HOSTNAME=NuTyX" > $PKG/etc/sysconfig/network
 	cp -v bash_profile $PKG/etc/skel/.bash_profile
 	cp -v bashrc $PKG/etc/skel/.bashrc
 	ln -s /etc/slim.xinitrc $PKG/etc/skel/.xinitrc
@@ -179,9 +177,10 @@ EOF
 	echo "scriptsversion=$BLFSscriptsversion" >> $PKG/var/lib/pkg/blfs-bootscripts
 	ln -s /var/lib/pkg/blfs-bootscripts $PKG/etc/blfs-bootscripts
 	cp -v message $PKG/boot/
-	# Install Random Number Generation
+	# Install Random Number Generation and Mouse
 	cd $SRC/blfs-bootscripts-$BLFSscriptsversion
 	make DESTDIR=$PKG install-random
+	make DESTDIR=$PKG install-gpm
 
 	cat > $PKG/etc/skel/.dmrc << "EOF"
 [Desktop]
