@@ -2,7 +2,7 @@
 # URL: http://gstreamer.freedesktop.org/modules/gst-plugins-base.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gstreamer, gst-plugins-base, faad2, libsndfile, libmpcdec, libdc1394, faac, xvid, librsvg, amrwb, libmusicbrainz, libexif, directfb, esound, libdvdnav, sdl
+# Depends on: gstreamer, gst-plugins-base, faad2, libsndfile, libmpcdec, libdc1394, faac, xvid, librsvg, amrwb, libmusicbrainz, libexif, esound, libdvdnav, sdl
 
 name=gst-plugins-bad
 version=0.10.18

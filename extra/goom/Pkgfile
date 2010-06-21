@@ -2,7 +2,7 @@
 # URL: http://pkgsrc.se/audio/goom
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xmms, directfb, sdl
+# Depends on: xmms, sdl
 
 name=goom
 version=2k4

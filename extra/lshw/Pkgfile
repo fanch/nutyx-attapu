@@ -1,11 +1,11 @@
 # Description: Liste votre materiel et ses specificites
 # URL: http://ezix.org/project/wiki/HardwareLiSter
 # Maintainer: NuTyX core team
-# Packager: fred.galusik at gmail dot com
-# Depends on: atk, directfb, expat, fontconfig, freetype, glib, gtk, libpng, pango
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: atk, expat, fontconfig, freetype, glib, gtk, libpng, pango
 
 name=lshw
-version=B.02.13
+version=B.02.14
 release=1
 source=(http://ezix.org/software/files/$name-$version.tar.gz \
 lshw.png \
