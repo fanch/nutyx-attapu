@@ -6,19 +6,19 @@
 
 name=libgnome
 version=2.30.0
-release=3
+release=4
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2\
-	nutyx2009_2.jpg)
+	nutyx2010_0.jpg)
 
 build() {
 	cd $name-$version
-		./configure --prefix=$GNOME_PREFIX \
+		./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--localstatedir=/var/lib \
-		--mandir=$GNOME_PREFIX/share/man
+		--mandir=/usr/share/man
 	make
 	make DESTDIR=$PKG install
-	cp ../nutyx2009_2.jpg \
-	$PKG/$GNOME_PREFIX/share/pixmaps/backgrounds/gnome/background-default.jpg
-	rm -r $PKG/$GNOME_PREFIX/share/gtk-doc
+	cp ../nutyx2010_0.jpg \
+	$PKG/usr/share/pixmaps/backgrounds/gnome/background-default.jpg
+	rm -r $PKG/usr/share/gtk-doc
 }
