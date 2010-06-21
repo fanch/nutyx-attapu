@@ -5,9 +5,9 @@
 # Depends on: libpng, pcre
 
 name=slang
-version=2.1.4
+version=2.2.2
 release=1
-source=( ftp://space.mit.edu/pub/davis/$name/v2.1/$name-$version.tar.bz2)
+source=( ftp://space.mit.edu/pub/davis/$name/v2.2/$name-$version.tar.bz2)
 
 
 build() {
@@ -18,6 +18,7 @@ build() {
 		--infodir=/usr/share/info
 	make
 	make DESTDIR=$PKG install
-	chmod -v 755 $PKG/usr/lib/libslang.so.2.1.4 \
+	chmod -v 755 $PKG/usr/lib/libslang.so.$version \
              $PKG/usr/lib/slang/v2/modules/*.so
+	rm -r $PKG/usr/share/doc
 }

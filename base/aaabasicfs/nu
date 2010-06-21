@@ -6,7 +6,7 @@
 ######################################
 
 user_groups=""
-default_groups=(users disk network floppy fuse video lp audio cdrom halusers scanner)
+default_groups=(users disk network floppy fuse video lp tty audio cdrom halusers scanner)
 
 # Avoid spaces troubles :)
 OLD_IFS=$IFS

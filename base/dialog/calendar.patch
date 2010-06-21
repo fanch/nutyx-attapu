@@ -1,0 +1,72 @@
+--- dialog-1.1-20080819/calendar.c	2008-06-21 12:36:41.000000000 +0000
++++ /usr/ports/base/dialog/calendar.c	2010-06-19 18:37:55.000000000 +0000
+@@ -149,13 +149,13 @@
+ #else
+     static const char *const of_week[] =
+     {
+-	"Sunday",
+-	"Monday",
+-	"Tuesday",
+-	"Wednesday",
+-	"Thursday",
+-	"Friday",
+-	"Saturday"
++	"Dimanche",
++	"Lundi",
++	"Mardi",
++	"Mercredi",
++	"Jeudi",
++	"Vendredi",
++	"Samedi"
+     };
+ #endif
+     int cell_wide = MON_WIDE;
+@@ -251,18 +251,18 @@
+ #else
+     static const char *const months[] =
+     {
+-	"January",
+-	"February",
+-	"March",
+-	"April",
+-	"May",
+-	"June",
+-	"July",
+-	"August",
+-	"September",
+-	"October",
+-	"November",
+-	"December"
++	"Janvier",
++	"Fevrier",
++	"Mars",
++	"Avril",
++	"Mai",
++	"Juin",
++	"Juillet",
++	"Aout",
++	"Septembre",
++	"Octobre",
++	"Novembre",
++	"Decembre"
+     };
+ #endif
+     int month;
+@@ -270,7 +270,7 @@
+     month = current->tm_mon + 1;
+ 
+     wattrset(data->parent, dialog_attr);	/* Headline "Month" */
+-    (void) mvwprintw(data->parent, data->y - 2, data->x - 1, _("Month"));
++    (void) mvwprintw(data->parent, data->y - 2, data->x - 1, _("Mois"));
+     dlg_draw_box(data->parent,
+ 		 data->y - 1, data->x - 1,
+ 		 data->height + 2, data->width + 2,
+@@ -290,7 +290,7 @@
+     int year = current->tm_year + 1900;
+ 
+     wattrset(data->parent, dialog_attr);	/* Headline "Year" */
+-    (void) mvwprintw(data->parent, data->y - 2, data->x - 1, _("Year"));
++    (void) mvwprintw(data->parent, data->y - 2, data->x - 1, _("Année"));
+     dlg_draw_box(data->parent,
+ 		 data->y - 1, data->x - 1,
+ 		 data->height + 2, data->width + 2,

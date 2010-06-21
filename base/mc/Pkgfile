@@ -2,17 +2,15 @@
 # URL: http://www.ibiblio.org/mc/
 # Maintainer: NuTyX coreteam
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: p7zip, e2fsprogs, glib2, pcre, gpm, slang, glib
+# Depends on: p7zip, e2fsprogs, pcre, gpm, slang, glib
 
 name=mc
-version=4.7.0.2
+version=4.7.2
 release=1
-source=(http://www.midnight-commander.org/downloads/$name-$version.tar.bz2 \
-	mc-4.7.0.2_hotlist_syntax.patch)
+source=(http://www.midnight-commander.org/downloads/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	patch -p1 < ../mc-4.7.0.2_hotlist_syntax.patch
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
@@ -35,10 +33,7 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-	# Fix FS#15177
         sed -i 's|op_has_zipinfo = 0|op_has_zipinfo = 1|' \
-            $PKG/usr/share/mc/extfs/uzip
-
-        # Fix FS#18312
-        rm $PKG/usr/share/mc/extfs/u7z
+            $PKG/usr/lib/mc/extfs.d/uzip
+        rm $PKG/usr/lib/mc/extfs.d/u7z
 }

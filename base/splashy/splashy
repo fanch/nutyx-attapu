@@ -93,8 +93,6 @@ check_to_enable () {
 }
 
 calculate_steps () {
-        boot_mesg "(Re)generating splash steps"
-	echo_ok
 	[ -f /etc/inittab ] &&	RLVL=`sed -n 's/id:\([2345]\):initdefault:/\1/ p' /etc/inittab`
 
         [ ! -d $STEPS_DIR ] && mkdir -p $STEPS_DIR

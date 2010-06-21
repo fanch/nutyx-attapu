@@ -2,7 +2,7 @@
 # URL: http://www.libsdl.org/
 # Maintainer: NuTyX
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: alsa-lib, esound, nas, directfb, mesa3d
+# Depends on: alsa-lib, esound, nas, mesa3d
 
 name=sdl
 version=1.2.13
