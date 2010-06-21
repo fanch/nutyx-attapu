@@ -73,6 +73,14 @@ drwxr-xr-x	root/root	usr/include/apr-1/
 -rw-r--r--	root/root	usr/include/apr-1/apu_want.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/apr-util-1/
+-rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_odbc-1.so
+-rw-r--r--	root/root	usr/lib/apr-util-1/apr_dbd_odbc.a
+-rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_odbc.la
+lrwxrwxrwx	root/root	usr/lib/apr-util-1/apr_dbd_odbc.so -> apr_dbd_odbc-1.so
+-rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_pgsql-1.so
+-rw-r--r--	root/root	usr/lib/apr-util-1/apr_dbd_pgsql.a
+-rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_pgsql.la
+lrwxrwxrwx	root/root	usr/lib/apr-util-1/apr_dbd_pgsql.so -> apr_dbd_pgsql-1.so
 -rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_sqlite3-1.so
 -rw-r--r--	root/root	usr/lib/apr-util-1/apr_dbd_sqlite3.a
 -rwxr-xr-x	root/root	usr/lib/apr-util-1/apr_dbd_sqlite3.la

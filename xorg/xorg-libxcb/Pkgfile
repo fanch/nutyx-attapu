@@ -2,7 +2,7 @@
 # URL: http://xcb.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Packagger: thierryn1 at hispeed dot ch
-# Depends on: xorg-libxdmcp, xorg-libxau, libxslt, libpthread-stubs
+# Depends on: xorg-libxdmcp, xorg-libxau, libxslt, libpthread-stubs, xorg-xcb-proto
 
 name=xorg-libxcb
 version=1.4
