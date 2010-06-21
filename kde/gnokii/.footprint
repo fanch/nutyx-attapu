@@ -38,9 +38,6 @@ drwxr-xr-x	root/root	usr/lib/smsd/
 -rw-r--r--	root/root	usr/lib/smsd/libsmsd_mysql.a
 -rwxr-xr-x	root/root	usr/lib/smsd/libsmsd_mysql.la
 -rwxr-xr-x	root/root	usr/lib/smsd/libsmsd_mysql.so
--rw-r--r--	root/root	usr/lib/smsd/libsmsd_pq.a
--rwxr-xr-x	root/root	usr/lib/smsd/libsmsd_pq.la
--rwxr-xr-x	root/root	usr/lib/smsd/libsmsd_pq.so
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/mgnokiidev
 drwxr-xr-x	root/root	usr/share/
