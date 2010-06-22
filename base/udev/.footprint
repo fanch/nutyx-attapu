@@ -28,7 +28,6 @@ lrwxrwxrwx	root/root	lib/udev/devices/stdout -> /proc/self/fd/1
 -rw-r--r--	root/root	lib/udev/rule_generator.functions
 drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/30-kernel-compat.rules
--rw-r--r--	root/root	lib/udev/rules.d/40-pilot-links.rules
 -rw-r--r--	root/root	lib/udev/rules.d/50-firmware.rules
 -rw-r--r--	root/root	lib/udev/rules.d/50-udev-default.rules
 -rw-r--r--	root/root	lib/udev/rules.d/60-cdrom_id.rules
