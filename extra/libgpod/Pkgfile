@@ -2,10 +2,10 @@
 # URL: http://www.gtkpod.org/libgpod.html
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: mutagen
+# Depends on: mutagen, libplist
 
 name=libgpod
-version=0.7.2
+version=0.7.93
 release=1
 source=(http://downloads.sourceforge.net/sourceforge/gtkpod/$name-$version.tar.gz)
 
