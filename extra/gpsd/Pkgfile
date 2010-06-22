@@ -10,9 +10,9 @@ release=1
 source=(http://download.berlios.de/$name/$name-$version.tar.gz)
 
 build() {
-		cd $name-$version
-                ./configure --prefix=/usr
-		make -j3
-		make DESTDIR=$PKG install
+	cd $name-$version
+        ./configure --prefix=/usr
+	make -j3
+	make DESTDIR=$PKG install
 }
 
