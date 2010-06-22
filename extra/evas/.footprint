@@ -66,6 +66,10 @@ drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/png/
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/png/linux-gnu-i686-ver-svn-06/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/png/linux-gnu-i686-ver-svn-06/module.la
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/png/linux-gnu-i686-ver-svn-06/module.so
+drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/svg/
+drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/svg/linux-gnu-i686-ver-svn-06/
+-rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/svg/linux-gnu-i686-ver-svn-06/module.la
+-rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/svg/linux-gnu-i686-ver-svn-06/module.so
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/tga/
 drwxr-xr-x	root/root	usr/lib/evas/modules/loaders/tga/linux-gnu-i686-ver-svn-06/
 -rwxr-xr-x	root/root	usr/lib/evas/modules/loaders/tga/linux-gnu-i686-ver-svn-06/module.la
