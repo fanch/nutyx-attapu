@@ -1,96 +1,79 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/ecore_config
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/Ecore.h
 -rw-r--r--	root/root	usr/include/Ecore_Con.h
--rw-r--r--	root/root	usr/include/Ecore_Config.h
--rw-r--r--	root/root	usr/include/Ecore_Data.h
 -rw-r--r--	root/root	usr/include/Ecore_Evas.h
 -rw-r--r--	root/root	usr/include/Ecore_File.h
 -rw-r--r--	root/root	usr/include/Ecore_Getopt.h
 -rw-r--r--	root/root	usr/include/Ecore_IMF.h
 -rw-r--r--	root/root	usr/include/Ecore_IMF_Evas.h
 -rw-r--r--	root/root	usr/include/Ecore_Input.h
+-rw-r--r--	root/root	usr/include/Ecore_Input_Evas.h
 -rw-r--r--	root/root	usr/include/Ecore_Ipc.h
--rw-r--r--	root/root	usr/include/Ecore_Job.h
--rw-r--r--	root/root	usr/include/Ecore_Str.h
--rw-r--r--	root/root	usr/include/Ecore_Txt.h
 -rw-r--r--	root/root	usr/include/Ecore_X.h
 -rw-r--r--	root/root	usr/include/Ecore_X_Atoms.h
 -rw-r--r--	root/root	usr/include/Ecore_X_Cursor.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libecore-ver-svn-05.so.0 -> libecore-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore-ver-svn-06.so.0 -> libecore-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore.a
 -rwxr-xr-x	root/root	usr/lib/libecore.la
-lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_con-ver-svn-05.so.0 -> libecore_con-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_con-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore.so -> libecore-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_con-ver-svn-06.so.0 -> libecore_con-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_con-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_con.a
 -rwxr-xr-x	root/root	usr/lib/libecore_con.la
-lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_config-ver-svn-05.so.0 -> libecore_config-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_config-ver-svn-05.so.0.9.9
--rw-r--r--	root/root	usr/lib/libecore_config.a
--rwxr-xr-x	root/root	usr/lib/libecore_config.la
-lrwxrwxrwx	root/root	usr/lib/libecore_config.so -> libecore_config-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_evas-ver-svn-05.so.0 -> libecore_evas-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_evas-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_con.so -> libecore_con-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_evas-ver-svn-06.so.0 -> libecore_evas-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_evas-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_evas.a
 -rwxr-xr-x	root/root	usr/lib/libecore_evas.la
-lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_file-ver-svn-05.so.0 -> libecore_file-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_file-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_evas.so -> libecore_evas-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_file-ver-svn-06.so.0 -> libecore_file-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_file-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_file.a
 -rwxr-xr-x	root/root	usr/lib/libecore_file.la
-lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_imf-ver-svn-05.so.0 -> libecore_imf-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_imf-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_file.so -> libecore_file-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_imf-ver-svn-06.so.0 -> libecore_imf-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_imf-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_imf.a
 -rwxr-xr-x	root/root	usr/lib/libecore_imf.la
-lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas-ver-svn-05.so.0 -> libecore_imf_evas-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_imf_evas-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_imf.so -> libecore_imf-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas-ver-svn-06.so.0 -> libecore_imf_evas-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_imf_evas-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_imf_evas.a
 -rwxr-xr-x	root/root	usr/lib/libecore_imf_evas.la
-lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_input-ver-svn-05.so.0 -> libecore_input-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_input-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_imf_evas.so -> libecore_imf_evas-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_input-ver-svn-06.so.0 -> libecore_input-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_input-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_input.a
 -rwxr-xr-x	root/root	usr/lib/libecore_input.la
-lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc-ver-svn-05.so.0 -> libecore_ipc-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_ipc-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_input.so -> libecore_input-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas-ver-svn-06.so.0 -> libecore_input_evas-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_input_evas-ver-svn-06.so.0.9.9
+-rw-r--r--	root/root	usr/lib/libecore_input_evas.a
+-rwxr-xr-x	root/root	usr/lib/libecore_input_evas.la
+lrwxrwxrwx	root/root	usr/lib/libecore_input_evas.so -> libecore_input_evas-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc-ver-svn-06.so.0 -> libecore_ipc-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_ipc-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_ipc.a
 -rwxr-xr-x	root/root	usr/lib/libecore_ipc.la
-lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_job-ver-svn-05.so.0 -> libecore_job-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_job-ver-svn-05.so.0.9.9
--rw-r--r--	root/root	usr/lib/libecore_job.a
--rwxr-xr-x	root/root	usr/lib/libecore_job.la
-lrwxrwxrwx	root/root	usr/lib/libecore_job.so -> libecore_job-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_txt-ver-svn-05.so.0 -> libecore_txt-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_txt-ver-svn-05.so.0.9.9
--rw-r--r--	root/root	usr/lib/libecore_txt.a
--rwxr-xr-x	root/root	usr/lib/libecore_txt.la
-lrwxrwxrwx	root/root	usr/lib/libecore_txt.so -> libecore_txt-ver-svn-05.so.0.9.9
-lrwxrwxrwx	root/root	usr/lib/libecore_x-ver-svn-05.so.0 -> libecore_x-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libecore_x-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_ipc.so -> libecore_ipc-ver-svn-06.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_x-ver-svn-06.so.0 -> libecore_x-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libecore_x-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libecore_x.a
 -rwxr-xr-x	root/root	usr/lib/libecore_x.la
-lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libecore_x.so -> libecore_x-ver-svn-06.so.0.9.9
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-con.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/ecore-config.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-evas.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-file.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-imf-evas.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-imf.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/ecore-input-evas.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-input.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-ipc.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/ecore-job.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/ecore-txt.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore-x.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ecore.pc
 drwxr-xr-x	root/root	usr/share/
