@@ -18,21 +18,23 @@ drwxr-xr-x	root/root	usr/include/efreet/
 -rw-r--r--	root/root	usr/include/efreet/efreet_uri.h
 -rw-r--r--	root/root	usr/include/efreet/efreet_utils.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libefreet-ver-svn-05.so.0 -> libefreet-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libefreet-ver-svn-05.so.0.5.0
+drwxr-xr-x	root/root	usr/lib/efreet/
+-rwxr-xr-x	root/root	usr/lib/efreet/efreet_desktop_cache_create
+lrwxrwxrwx	root/root	usr/lib/libefreet-ver-svn-06.so.0 -> libefreet-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libefreet.a
 -rwxr-xr-x	root/root	usr/lib/libefreet.la
-lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet-ver-svn-05.so.0.5.0
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime-ver-svn-05.so.0 -> libefreet_mime-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libefreet_mime-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet.so -> libefreet-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime-ver-svn-06.so.0 -> libefreet_mime-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_mime-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libefreet_mime.a
 -rwxr-xr-x	root/root	usr/lib/libefreet_mime.la
-lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime-ver-svn-05.so.0.5.0
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash-ver-svn-05.so.0 -> libefreet_trash-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libefreet_trash-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_mime.so -> libefreet_mime-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash-ver-svn-06.so.0 -> libefreet_trash-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libefreet_trash-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libefreet_trash.a
 -rwxr-xr-x	root/root	usr/lib/libefreet_trash.la
-lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libefreet_trash.so -> libefreet_trash-ver-svn-06.so.0.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/efreet-mime.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/efreet-trash.pc
