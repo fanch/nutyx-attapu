@@ -5,7 +5,7 @@
 
 name=qingy
 version=0.9.9
-release=1
+release=2
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
 	nutyx-attapu.jpg theme ChatIrssi NaviLinks MidnightCommander)
 build() {
@@ -24,6 +24,7 @@ build() {
 	if [ -f $PKG/usr/share/info/dir ]; then
 		rm  $PKG/usr/share/info/dir
 	fi
+	sed -i "s|/usr/X11R6/bin|/usr/bin|" $PKG/etc/qingy/settings
 	cp ../theme $PKG/usr/share/qingy/themes/default/
 	cp ../nutyx-attapu.jpg $PKG/usr/share/qingy/themes/default/background.jpg
 	echo "root Soyez prudent, vous avez tous les droits..." >\
