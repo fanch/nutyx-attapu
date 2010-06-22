@@ -7,11 +7,16 @@
 
 name=lxde
 version=0.5.0
-release=1
-source=(lxde.desktop)
+release=2
+source=(lxde.desktop LXDE.xinitrc)
 
 build() {
-    mkdir -p $PKG/usr
      install -D -m644 lxde.desktop \
 $PKG/usr/share/xsessions/lxde.desktop
+install -D -m644 LXDE.xinitrc \
+$PKG/etc/X11/dm/LXDE.xinitrc
+mkdir -p $PKG/etc/qingy/sessions
+echo "userclientrc=/etc/X11/dm/LXDE.xinitrc /usr/bin/startx.qingy" > \
+$PKG/etc/qingy/sessions/LXDE
+chmod 755 $PKG/etc/qingy/sessions/LXDE
 }
