@@ -1,33 +1,64 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/e-notify-send
--rwxr-xr-x	root/root	usr/bin/e_dbus_hal
+-rwxr-xr-x	root/root	usr/bin/e_dbus_bluez_test
+-rwxr-xr-x	root/root	usr/bin/e_dbus_connman_test
 -rwxr-xr-x	root/root	usr/bin/e_dbus_notification_daemon
 -rwxr-xr-x	root/root	usr/bin/e_dbus_notify
+-rwxr-xr-x	root/root	usr/bin/e_dbus_ofono_test
 -rwxr-xr-x	root/root	usr/bin/e_dbus_test
 -rwxr-xr-x	root/root	usr/bin/e_dbus_test_client
+-rwxr-xr-x	root/root	usr/bin/e_dbus_ukit_test
 drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/E_Bluez.h
+-rw-r--r--	root/root	usr/include/E_Connman.h
 -rw-r--r--	root/root	usr/include/E_DBus.h
 -rw-r--r--	root/root	usr/include/E_Hal.h
 -rw-r--r--	root/root	usr/include/E_Notification_Daemon.h
 -rw-r--r--	root/root	usr/include/E_Notify.h
+-rw-r--r--	root/root	usr/include/E_Ofono.h
+-rw-r--r--	root/root	usr/include/E_Ukit.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libedbus-ver-svn-05.so.0 -> libedbus-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libedbus-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libebluez-ver-svn-06.so.0 -> libebluez-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libebluez-ver-svn-06.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libebluez.a
+-rwxr-xr-x	root/root	usr/lib/libebluez.la
+lrwxrwxrwx	root/root	usr/lib/libebluez.so -> libebluez-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libeconnman-ver-svn-06.so.0 -> libeconnman-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libeconnman-ver-svn-06.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libeconnman.a
+-rwxr-xr-x	root/root	usr/lib/libeconnman.la
+lrwxrwxrwx	root/root	usr/lib/libeconnman.so -> libeconnman-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libedbus-ver-svn-06.so.0 -> libedbus-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libedbus-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libedbus.a
 -rwxr-xr-x	root/root	usr/lib/libedbus.la
-lrwxrwxrwx	root/root	usr/lib/libedbus.so -> libedbus-ver-svn-05.so.0.5.0
-lrwxrwxrwx	root/root	usr/lib/libehal-ver-svn-05.so.0 -> libehal-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libehal-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libedbus.so -> libedbus-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libehal-ver-svn-06.so.0 -> libehal-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libehal-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libehal.a
 -rwxr-xr-x	root/root	usr/lib/libehal.la
-lrwxrwxrwx	root/root	usr/lib/libehal.so -> libehal-ver-svn-05.so.0.5.0
-lrwxrwxrwx	root/root	usr/lib/libenotify-ver-svn-05.so.0 -> libenotify-ver-svn-05.so.0.5.0
--rwxr-xr-x	root/root	usr/lib/libenotify-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libehal.so -> libehal-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libenotify-ver-svn-06.so.0 -> libenotify-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libenotify-ver-svn-06.so.0.5.0
 -rw-r--r--	root/root	usr/lib/libenotify.a
 -rwxr-xr-x	root/root	usr/lib/libenotify.la
-lrwxrwxrwx	root/root	usr/lib/libenotify.so -> libenotify-ver-svn-05.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libenotify.so -> libenotify-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libeofono-ver-svn-06.so.0 -> libeofono-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libeofono-ver-svn-06.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libeofono.a
+-rwxr-xr-x	root/root	usr/lib/libeofono.la
+lrwxrwxrwx	root/root	usr/lib/libeofono.so -> libeofono-ver-svn-06.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib/libeukit-ver-svn-06.so.0 -> libeukit-ver-svn-06.so.0.5.0
+-rwxr-xr-x	root/root	usr/lib/libeukit-ver-svn-06.so.0.5.0
+-rw-r--r--	root/root	usr/lib/libeukit.a
+-rwxr-xr-x	root/root	usr/lib/libeukit.la
+lrwxrwxrwx	root/root	usr/lib/libeukit.so -> libeukit-ver-svn-06.so.0.5.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/ebluez.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/econnman.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/edbus.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ehal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/enotify.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/eofono.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/eukit.pc
