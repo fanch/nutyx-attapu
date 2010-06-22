@@ -5,11 +5,12 @@
 # Depends on: kdelibs, gpsd, qt, cmake
 
 name=marble
-version=0.8.0
+version=0.9.2
 release=1
-source=(http://developer.kde.org/~tackat/marble/marble-${version}_rev1005857.tar.gz)
+#source=(http://developer.kde.org/~tackat/marble/marble-${version}_rev1005857.tar.gz)
 
 build() {
+	svn co svn://anonsvn.kde.org/home/kde/trunk/KDE/kdeedu/marble
         cd $name
         cmake ../$name -DCMAKE_INSTALL_PREFIX=/usr
         make
