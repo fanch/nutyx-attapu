@@ -25,6 +25,7 @@ build() {
 		rm  $PKG/usr/share/info/dir
 	fi
 	sed -i "s|/usr/X11R6/bin|/usr/bin|" $PKG/etc/qingy/settings
+	sed -i "s|/etc/X11/Sessions|/usr/share/xsessions|" $PKG/etc/qingy/settings 
 	cp ../theme $PKG/usr/share/qingy/themes/default/
 	cp ../nutyx-attapu.jpg $PKG/usr/share/qingy/themes/default/background.jpg
 	echo "root Soyez prudent, vous avez tous les droits..." >\
