@@ -5,7 +5,7 @@
 # Depends on: dbus, libpthread-stubs, lesstif, python
 
 name=gpsd
-version=2.38
+version=2.94
 release=1
 source=(http://download.berlios.de/$name/$name-$version.tar.gz)
 
