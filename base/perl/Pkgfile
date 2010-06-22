@@ -4,7 +4,7 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=perl
-version=5.12.0
+version=5.12.1
 release=1
 source=(ftp://ftp.funet.fi/pub/CPAN/src/$name-$version.tar.gz)
 
@@ -21,6 +21,12 @@ sed -i -e "s|BUILD_ZLIB\s*= True|BUILD_ZLIB = False|"           \
 	-e "s|LIB\s*= ./zlib-src|LIB        = /usr/lib|"         \
 	cpan/Compress-Raw-Zlib/config.in
 sh Configure -des  -Dusethreads \
+	-Dprivlib=/usr/share/perl5/base \
+	-Darchlib=/usr/share/perl5/base \
+	-Dvendorlib=/usr/share/perl5/vendor \
+	-Dvendorarch=/usr/lib/perl5/vendor \
+	-Dsitelib=/usr/share/perl5/site \
+	-Dsitearch=/usr/lib/perl5/site \
 	-Dprefix=/usr \
 	-Dman1dir=/usr/share/man/man1 \
 	-Dman3dir=/usr/share/man/man3 \

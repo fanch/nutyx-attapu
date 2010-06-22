@@ -6,15 +6,16 @@
 # Depends on: gtk, menu-cache, alsa-lib
 
 name=lxpanel
-version=0.5.4.1
+version=0.5.5
 release=1
 
 source=(http://downloads.sourceforge.net/lxde/files/$name-$version.tar.gz\
-	volume.png)
+	lxpanel-0.5.5-batt-01.patch volume.png)
 
 
 build() {
 cd $name-$version
+patch -Np1 -i ../lxpanel-0.5.5-batt-01.patch
 ./configure --prefix=/usr
 make
 make DESTDIR=$PKG install

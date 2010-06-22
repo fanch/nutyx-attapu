@@ -2,10 +2,10 @@
 # URL: http://webkitgtk.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: curl, dbus, gconf, gnome-vfs, gperf, gstreamer, gst-plugins-base, gtk, gtk-doc, icu, libpng, orbit2, pango, enchant, libsoup
+# Depends on: curl, dbus, gconf, gnome-vfs, gperf, gstreamer, gst-plugins-base, gtk, gtk-doc, icu, libpng, orbit2, pango, enchant, libsoup, gir-repository
 
 name=webkit
-version=1.2.0
+version=1.2.1
 release=1
 source=(http://webkitgtk.org/$name-$version.tar.gz)
 

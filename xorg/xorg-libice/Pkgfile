@@ -1,8 +1,8 @@
 # Description: xorg lib libICE
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Packager: tilman at crux dot nu
-# Depends on: xorg-xproto, xorg-xtrans
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-xtrans
 
 name=xorg-libice
 version=1.0.6

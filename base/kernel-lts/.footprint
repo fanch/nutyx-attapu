@@ -4062,13 +4062,13 @@ drwxrwxr-x	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/
 -rw-rw-r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso.S
 -rw-rw-r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso.lds.S
 -rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-int80-syms.lds
--rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-int80.so
+-rwxr-xr-x	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-int80.so
 -rwxr-xr-x	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-int80.so.dbg
 -rw-rw-r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-setup.c
 -rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-setup.o
 -rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-syms.lds
 -rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-sysenter-syms.lds
--rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-sysenter.so
+-rwxr-xr-x	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-sysenter.so
 -rwxr-xr-x	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32-sysenter.so.dbg
 -rw-rw-r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32.S
 -rw-r--r--	root/root	usr/src/linux-2.6.30.10/arch/x86/vdso/vdso32.o

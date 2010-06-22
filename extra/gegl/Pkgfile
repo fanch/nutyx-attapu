@@ -2,7 +2,7 @@
 # URL: http://gegl.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: babl,gtk, librsvg
+# Depends on: babl,gtk, librsvg, libpng, ruby, lua, ffmpeg, librsvg
 
 name=gegl
 version=0.0.22
@@ -11,9 +11,10 @@ source=(ftp://ftp.gimp.org/pub/$name/0.0/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+		    --with-sdl --with-openexr --with-librsvg \
+    		    --with-libavformat --disable-docs
 	make
 	make DESTDIR=$PKG install
-	rm -r $PKG/usr/share
 }
 

@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libxcursor, libpng12
+# Depends on: xorg-libxcursor, libpng
 
 name=xorg-xcursorgen
 version=1.0.3

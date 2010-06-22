@@ -2,7 +2,7 @@
 # URL: ftp://ftp.gnu.org/gnu/screen/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
+# Depends on: libelf
 
 name=screen
 version=4.0.3

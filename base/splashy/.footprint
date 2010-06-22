@@ -1,0 +1,72 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/console-tools/
+drwxr-xr-x	root/root	etc/console-tools/config.d/
+-rw-r--r--	root/root	etc/console-tools/config.d/splashy
+drwxr-xr-x	root/root	etc/default/
+-rw-r--r--	root/root	etc/default/splashy
+drwxr-xr-x	root/root	etc/rc.d/
+drwxr-xr-x	root/root	etc/rc.d/init.d/
+-rwxr-xr--	root/root	etc/rc.d/init.d/splashy
+drwxr-xr-x	root/root	etc/rc.d/rcsysinit.d/
+lrwxrwxrwx	root/root	etc/rc.d/rcsysinit.d/S00splashy -> ../init.d/splashy
+drwxr-xr-x	root/root	etc/splashy/
+-rw-r--r--	root/root	etc/splashy/config.xml
+lrwxrwxrwx	root/root	etc/splashy/themes -> /usr/share/splashy/themes
+drwxr-xr-x	root/root	sbin/
+-rwxr-xr-x	root/root	sbin/splashy
+lrwxrwxrwx	root/root	sbin/splashy_chvt -> splashy
+-rwxr-xr-x	root/root	sbin/splashy_config
+-rwxr-xr-x	root/root	sbin/splashy_update
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/splashy.h
+-rw-r--r--	root/root	usr/include/splashycnf.h
+drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/libsplashy.la
+lrwxrwxrwx	root/root	usr/lib/libsplashy.so -> libsplashy.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsplashy.so.1 -> libsplashy.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsplashy.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsplashycnf.la
+lrwxrwxrwx	root/root	usr/lib/libsplashycnf.so -> libsplashycnf.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libsplashycnf.so.1 -> libsplashycnf.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libsplashycnf.so.1.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/splashy.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/initramfs-tools/
+drwxr-xr-x	root/root	usr/share/initramfs-tools/hooks/
+-rw-r--r--	root/root	usr/share/initramfs-tools/hooks/libsplashy
+-rw-r--r--	root/root	usr/share/initramfs-tools/hooks/splashy
+drwxr-xr-x	root/root	usr/share/initramfs-tools/modules.d/
+-rw-r--r--	root/root	usr/share/initramfs-tools/modules.d/splashy
+drwxr-xr-x	root/root	usr/share/initramfs-tools/scripts/
+drwxr-xr-x	root/root	usr/share/initramfs-tools/scripts/init-bottom/
+-rw-r--r--	root/root	usr/share/initramfs-tools/scripts/init-bottom/splashy
+drwxr-xr-x	root/root	usr/share/initramfs-tools/scripts/local-premount/
+-rw-r--r--	root/root	usr/share/initramfs-tools/scripts/local-premount/libsplashy
+-rw-r--r--	root/root	usr/share/initramfs-tools/scripts/local-premount/splashy
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/fr/
+drwxr-xr-x	root/root	usr/share/locale/fr/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/fr/LC_MESSAGES/splashy.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/splashy.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/splashy_config.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/splashy_update.1.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/splashy-config.xml.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/splashy-theme.xml.5.gz
+drwxr-xr-x	root/root	usr/share/splashy/
+drwxr-xr-x	root/root	usr/share/splashy/schemas/
+-rw-r--r--	root/root	usr/share/splashy/schemas/config.xsd
+-rw-r--r--	root/root	usr/share/splashy/schemas/theme.xsd
+-rw-r--r--	root/root	usr/share/splashy/schemas/theme.xsl
+drwxr-xr-x	root/root	usr/share/splashy/themes/
+drwxr-xr-x	root/root	usr/share/splashy/themes/default/
+-rw-r--r--	root/root	usr/share/splashy/themes/default/FreeSans.ttf
+-rw-r--r--	root/root	usr/share/splashy/themes/default/background.jpg
+-rw-r--r--	root/root	usr/share/splashy/themes/default/background.png
+-rw-r--r--	root/root	usr/share/splashy/themes/default/error.png
+-rw-r--r--	root/root	usr/share/splashy/themes/default/suspend.png
+-rw-r--r--	root/root	usr/share/splashy/themes/default/theme.xml

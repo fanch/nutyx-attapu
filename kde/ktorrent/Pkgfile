@@ -2,10 +2,10 @@
 # URL: http://ktorrent.org/
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: qca, xorg-libxft, kdebase-runtime, kdebase-workspace, taglib, hicolor-icon-theme, kdepimlibs
+# Depends on: libktorrent
 
 name=ktorrent
-version=3.3.4
+version=4.0.1
 
 release=1
 source=(http://ktorrent.org/downloads/$version/$name-$version.tar.bz2 \

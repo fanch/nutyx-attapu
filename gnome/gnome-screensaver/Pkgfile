@@ -1,7 +1,7 @@
 # Description: Remplacement de  xscreensaver conçu pour être intégré dans GNOME
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gtk, libgnomeui, dbus
+# Depends on: gtk, libgnomeui, dbus, gnome-desktop
 
 
 name=gnome-screensaver

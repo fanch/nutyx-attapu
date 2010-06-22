@@ -202,8 +202,6 @@ drwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_serialmouse.so
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_sonypi.la
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_sonypi.so
--rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_vncinput.la
--rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_vncinput.so
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_wm97xx_ts.la
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_wm97xx_ts.so
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/inputdrivers/libdirectfb_zytronic.la
@@ -235,8 +233,6 @@ drwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_devmem.so
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_fbdev.la
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_fbdev.so
--rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_vnc.la
--rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_vnc.so
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_x11.la
 -rwxr-xr-x	root/root	usr/lib/directfb-1.4-0/systems/libdirectfb_x11.so
 drwxr-xr-x	root/root	usr/lib/directfb-1.4-0/wm/

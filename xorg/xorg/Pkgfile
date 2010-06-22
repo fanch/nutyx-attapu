@@ -2,10 +2,10 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-server, xorg-xf86-input-mouse, xorg-xf86-input-keyboard, xorg-xf86-input-evdev, xorg-xf86-video-vesa, dejavu-ttf, xorg-xinit, xorg-xauth, xorg-rgb, xkeyboard-config, xorg-twm, xorg-xclock, xorg-xterm
+# Depends on: xorg-server, xorg-xf86-input-mouse, xorg-xf86-input-keyboard, xorg-xf86-input-evdev, xorg-xf86-video-vesa, xorg-xf86-video-ati, xorg-xf86-video-nv, xorg-xf86-video-intel, dejavu-ttf, xorg-xinit, xorg-xauth, xorg-rgb, xkeyboard-config, xorg-twm, xorg-xclock, xorg-xterm
 
 name=xorg
-version=7.5.3
+version=7.5
 release=1
 source=()
 

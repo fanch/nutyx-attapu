@@ -2,16 +2,17 @@
 # URL: http://www.nutyx.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=aaabasicfs
 version=2010
-release=beta-4
-scriptsversion=lfs-bootscripts-20100124
+release=rc2
+scriptsversion=lfs-bootscripts-20100529
+BLFSscriptsversion=20090302
 source=(  http://www.linuxfromscratch.org/lfs/downloads/development/$scriptsversion.tar.bz2\
- hosts console fstab inittab message inputrc network \
+	http://www.linuxfromscratch.org/blfs/downloads/svn/blfs-bootscripts-$BLFSscriptsversion.tar.bz2
+ hosts fstab inittab message inputrc network rc \
  profile dircolors.sh extrapaths.sh bash_profile bashrc bashrc.etc lfs-bootscripts-01.patch \
- blfs-bootscripts nu readline.sh unmask.sh X.sh bashrc )
+ nu readline.sh unmask.sh X.sh bashrc )
 
 
 build() {
@@ -64,7 +65,8 @@ haldaemon:x:19:19:HAL Daemon User:/dev/null:/bin/false
 named:x:20:20:BIND Owner:/home/named:/bin/false
 gdm:x:21:21:GDM Daemon User:/dev/null:/bin/bash
 fcron:x:22:22:Fcron User:/dev/null:/bin/false
-apache:x:25:25:Apache Server:/dev/null:/bin/false
+kdm:x:23:23:KDM Daemon User:/dev/null:/bin/bash
+fpache:x:25:25:Apache Server:/dev/null:/bin/false
 smmsp:x:26:26:Sendmail Daemon:/dev/null:/bin/false
 polkituser:x:27:27:Policy Kit Daemon User:/dev/null:/bin/false
 mysql:x:40:40:MySQL Server:/dev/null/:bin/false
@@ -101,6 +103,7 @@ haldaemon:x:19:
 named:x:20:
 gdm:x:21:
 fcron:x:22:
+kdm:x:23:kdm
 apache:x:25:
 smmsp:x:26:
 polkituser:x:27:
@@ -148,6 +151,7 @@ EOF
 	# Rename network script
 	mv $PKG/etc/rc.d/init.d/{network,iplink}
 	cp $SRC/network $PKG/etc/rc.d/init.d/
+	cp $SRC/rc $PKG/etc/rc.d/init.d/
 	# We want to start the network when init 2
 	mv $PKG/etc/rc.d/rc2.d/{K80,S20}network
 	cd ..	
@@ -159,8 +163,6 @@ EOF
 	mv $PKG/etc/bashrc.etc $PKG/etc/bashrc
 	cp -v {dircolors.sh,extrapaths.sh,readline.sh,unmask.sh,X.sh}\
 	$PKG/etc/profile.d/
-	cp -v console $PKG/etc/sysconfig/
-	echo "HOSTNAME=nutyx" > $PKG/etc/sysconfig/network
 	cp -v bash_profile $PKG/etc/skel/.bash_profile
 	cp -v bashrc $PKG/etc/skel/.bashrc
 	ln -s /etc/slim.xinitrc $PKG/etc/skel/.xinitrc
@@ -169,9 +171,16 @@ EOF
 	mkdir -p $PKG/root/bin
 	cp -v nu $PKG/root/bin
        # Customise startup scripts
-	cp blfs-bootscripts $PKG/var/lib/pkg/
+	cat > $PKG/var/lib/pkg/blfs-bootscripts << "EOF"
+scripts=blfs-bootscripts
+EOF
+	echo "scriptsversion=$BLFSscriptsversion" >> $PKG/var/lib/pkg/blfs-bootscripts
 	ln -s /var/lib/pkg/blfs-bootscripts $PKG/etc/blfs-bootscripts
 	cp -v message $PKG/boot/
+	# Install Random Number Generation and Mouse
+	cd $SRC/blfs-bootscripts-$BLFSscriptsversion
+	make DESTDIR=$PKG install-random
+	make DESTDIR=$PKG install-gpm
 
 	cat > $PKG/etc/skel/.dmrc << "EOF"
 [Desktop]
@@ -214,6 +223,7 @@ EOF
 			mv $PKG/etc/rc.d/$i/S{70,80}mountfs
 	done
 	ln -s ../init.d/setclock $PKG/etc/rc.d/rcsysinit.d/S15setclock
+	mv $PKG/etc/rc.d/rcsysinit.d/S{00,01}mountkernfs
 	mv $PKG/etc/rc.d/rcsysinit.d/S{20,40}swap
 	mv $PKG/etc/rc.d/rcsysinit.d/S{30,20}checkfs
 	mv $PKG/etc/rc.d/rcsysinit.d/S{40,30}mountfs

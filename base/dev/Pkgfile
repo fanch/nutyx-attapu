@@ -1,0 +1,15 @@
+# Description: Installe tous les paquets nécessaires pour le développement de paquets
+# URL: http://www.nutyx.org/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: ant, autoconf, automake, bison, cvs, diffutils, texinfo, guile, less, libarchive, m4, make, cmake, nasm, neon, patch, pkg-config, python, ruby, tcl, tk, yasm, automoc4, docbook-xml, docbook-xsl, ctags, xorg-bigreqsproto, xorg-compositeproto, xorg-damageproto, xorg-dmxproto, xorg-dri2proto, xorg-fixesproto, xorg-fontsproto, xorg-glproto, xorg-inputproto, xorg-kbproto, xorg-printproto, xorg-randrproto, xorg-recordproto, xorg-renderproto, xorg-resourceproto, xorg-scrnsaverproto, xorg-trapproto, xorg-videoproto, xorg-xcmiscproto, xorg-xextproto, xorg-xf86bigfontproto, xorg-xf86dgaproto, xorg-xf86driproto, xorg-xf86miscproto, xorg-xf86rushproto, xorg-xf86vidmodeproto, xorg-xineramaproto, xorg-xcb-proto, xorg-xproto, git, subversion
+
+name=dev
+version=2010
+release=2
+source=()
+
+build() {
+	mkdir $PKG/usr
+}
+	

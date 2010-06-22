@@ -2,7 +2,7 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: gnome-icon-theme, gnome-panel, libgtop, gucharmap, libgweather, gst-plugins-base, hal, libgnomekbd, gucharmap, system-tools-backends, libnotify, gnome-python-desktop
+# Depends on: gnome-icon-theme, gnome-panel, libgtop, libgweather, gst-plugins-base, hal, libgnomekbd, gucharmap, system-tools-backends, libnotify
 
 name=gnome-applets
 version=2.30.0

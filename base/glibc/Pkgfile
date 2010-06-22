@@ -4,11 +4,12 @@
 # Packager:thierryn1 at hispeed dot ch
 
 name=glibc
-version=2.11.1
+version=2.11.2
 release=1
-kernelversion=2.6.33.2
+kernelversion=2.6.34
 source=( http://ftp.gnu.org/gnu/glibc/$name-$version.tar.bz2 \
-	gcc-4.5.0-glibc-01.patch \
+	gcc-4.5.0-glibc-01.patch 
+	http://www.linuxfromscratch.org/patches/lfs/development/glibc-2.11.2-gcc_fix-1.patch \
 	http://www.kernel.org/pub/linux/kernel/v2.6/linux-${kernelversion}.tar.bz2
          nsswitch.conf ld.so.conf SUPPORTED) 
 
@@ -24,20 +25,20 @@ build() {
         cd ..
         # install glibc
         cd $name-$version
-	patch -Np1 -i ../gcc-4.5.0-glibc-01.patch
+	# patch -Np1 -i ../gcc-4.5.0-glibc-01.patch
         DL=$(readelf -l /bin/sh | sed -n 's@.*interpret.*/tools\(.*\)]$@\1@p')
 sed -i "s|libs -o|libs -L/usr/lib -Wl,-dynamic-linker=$DL -o|" \
         scripts/test-installation.pl
 unset DL
 
 sed -i 's|@BASH@|/bin/bash|' elf/ldd.bash.in
+patch -Np1 -i ../glibc-2.11.2-gcc_fix-1.patch
+# sed -i s/utf8/UTF-8/ libio/tst-fgetwc.c
+# sed -i '/tst-fgetws-ENV/ a\
+# tst-fgetwc-ENV = LOCPATH=$(common-objpfx)localedata' libio/Makefile
 
-sed -i s/utf8/UTF-8/ libio/tst-fgetwc.c
-sed -i '/tst-fgetws-ENV/ a\
-tst-fgetwc-ENV = LOCPATH=$(common-objpfx)localedata' libio/Makefile
-
-sed -i -e 's/FUTEX_WAIT\( | FUTEX_CLOCK_REALTIME, reg\)/FUTEX_WAIT_BITSET\1/' \
-        nptl/sysdeps/unix/sysv/linux/i386/i486/lowlevellock.S
+# sed -i -e 's/FUTEX_WAIT\( | FUTEX_CLOCK_REALTIME, reg\)/FUTEX_WAIT_BITSET\1/' \
+#         nptl/sysdeps/unix/sysv/linux/i386/i486/lowlevellock.S
 
 	mv ../SUPPORTED localedata/
 

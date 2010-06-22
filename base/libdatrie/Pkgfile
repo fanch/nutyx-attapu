@@ -3,7 +3,7 @@
 # Maintainer: thierryn1 at hispeed dot ch
 
 name=libdatrie
-version=0.2.2
+version=0.2.3
 release=1
 source=( http://linux.thai.net/pub/thailinux/software/libthai/$name-$version.tar.gz)
 

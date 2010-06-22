@@ -1,8 +1,8 @@
-# Description: Boîte à outils pour GUI
+# Description: Boît à  outils pour GUI
 # URL: http://www.tcl.tk
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: tcl, xorg-libx11
+# Depends on: tcl
 
 name=tk
 version=8.5.8

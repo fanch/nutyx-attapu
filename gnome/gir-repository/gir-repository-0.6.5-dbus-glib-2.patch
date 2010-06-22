@@ -1,0 +1,92 @@
+Submitted By: Wayne Blaszczyk
+Date: 2010-06-07
+Initial Package Version: 0.6.5
+Origin: http://git.gnome.org/browse/gir-repository/log/
+Upstream Status: commited
+Description: Fixed various DBusGLib-1.0.gir issues.
+
+diff -Naur gir-repository-0.6.5/gir/DBusGLib-1.0.gir gir-repository-0.6.5-patched/gir/DBusGLib-1.0.gir
+--- gir-repository-0.6.5/gir/DBusGLib-1.0.gir	2009-07-10 03:31:54.000000000 +1000
++++ gir-repository-0.6.5-patched/gir/DBusGLib-1.0.gir	2010-06-07 19:17:14.000000000 +1000
+@@ -2,8 +2,9 @@
+ <repository version="1.0"
+             xmlns="http://www.gtk.org/introspection/core/1.0"
+             xmlns:c="http://www.gtk.org/introspection/c/1.0"
+-	    xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+-  <include name="GObject"/>
++            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
++  <include name="GObject" version="2.0"/>
++  <package name="dbus-glib-1"/>
+   <namespace name="DBusGLib" version="1.0" shared-library="dbus-glib-1">
+     <record name="Connection" c:type="DBusGConnection"/>
+     <record name="MethodInvocation" c:type="DBusGMethodInvocation"/>
+@@ -11,16 +12,14 @@
+       glib:type-name="DBusGProxy" glib:get-type="dbus_g_proxy_get_type">
+     </class>
+     <record name="ProxyClass" c:type="DBusGProxyClass"/>
+-
+-    <function name="connection_open" c:identifier="dbus_g_connection_open"
+-     throws="1">
++    <function name="connection_open" c:identifier="dbus_g_connection_open" throws="1">
+       <return-value transfer-ownership="full">
+         <type name="Connection" c:type="DBusGConnection*"/>
+       </return-value>
+       <parameters>
+-        <parameter name="address">
+-	  <type name="utf8" c:type="char*"/>
+-	</parameter>
++        <parameter name="address" transfer-ownership="none">
++          <type name="utf8" c:type="char*"/>
++        </parameter>
+       </parameters>
+     </function>
+   </namespace>
+diff -Naur gir-repository-0.6.5/gir/Makefile.am gir-repository-0.6.5-patched/gir/Makefile.am
+--- gir-repository-0.6.5/gir/Makefile.am	2009-08-29 11:42:39.000000000 +1000
++++ gir-repository-0.6.5-patched/gir/Makefile.am	2010-06-07 19:17:14.000000000 +1000
+@@ -12,8 +12,7 @@
+ endif
+ EXTRA_DIST += $(AVAHI_GIRSOURCES)
+ 
+-MISSIONCONTROL_GIRSOURCES = DBusGLib-1.0.gir \
+-			    TelepathyGLib.gir \
++MISSIONCONTROL_GIRSOURCES = TelepathyGLib.gir \
+ 			    LibTelepathy.gir
+ if BUILD_MISSIONCONTROL
+ CUSTOM_GIRSOURCES += $(MISSIONCONTROL_GIRSOURCES)
+@@ -29,6 +28,8 @@
+ EXTRA_DIST += $(srcdir)/dbus.c $(srcdir)/dbus.h
+ 
+ if BUILD_DBUS
++CUSTOM_GIRSOURCES += DBusGLib-1.0.gir
++
+ DBus-1.0.gir: libgirepo-DBus-custom.la
+ 	$(INTROSPECTION_SCANNER) -v --namespace DBus --nsversion=1.0 \
+ 	    --add-include-path=$(srcdir) --add-include-path=. \
+diff -Naur gir-repository-0.6.5/gir/Makefile.in gir-repository-0.6.5-patched/gir/Makefile.in
+--- gir-repository-0.6.5/gir/Makefile.in	2009-09-10 05:31:46.000000000 +1000
++++ gir-repository-0.6.5-patched/gir/Makefile.in	2010-06-07 20:02:51.000000000 +1000
+@@ -37,6 +37,7 @@
+ host_triplet = @host@
+ @BUILD_AVAHI_TRUE@am__append_1 = $(AVAHI_GIRSOURCES)
+ @BUILD_MISSIONCONTROL_TRUE@am__append_2 = $(MISSIONCONTROL_GIRSOURCES)
++@BUILD_DBUS_TRUE@am__append_41 = DBusGLib-1.0.gir
+ @BUILD_DBUS_TRUE@am__append_3 = DBus-1.0.gir
+ @BUILD_DBUS_TRUE@am__append_4 = libgirepo-DBus-custom.la
+ @BUILD_GCONF_TRUE@am__append_5 = GConf-2.0.gir
+@@ -396,12 +397,12 @@
+ 	$(am__append_33) $(am__append_34) $(am__append_35) \
+ 	$(am__append_36) $(am__append_37) $(am__append_38) \
+ 	$(am__append_39) $(am__append_40)
+-CUSTOM_GIRSOURCES = $(am__append_1) $(am__append_2) $(am__append_17)
++CUSTOM_GIRSOURCES = $(am__append_1) $(am__append_2) $(am__append_17) \
++	$(am__append_41)
+ XPATH_TESTS = $(am__append_14) $(am__append_18) $(am__append_24)
+ COMMON_CUSTOM_LDFLAGS = -avoid-version -rdynamic
+ AVAHI_GIRSOURCES = AvahiCore-0.6.gir
+-MISSIONCONTROL_GIRSOURCES = DBusGLib-1.0.gir \
+-			    TelepathyGLib.gir \
++MISSIONCONTROL_GIRSOURCES = TelepathyGLib.gir \
+ 			    LibTelepathy.gir
+ 
+ libgirepo_DBus_custom_la_CPPFLAGS = $(DBUS_CFLAGS)

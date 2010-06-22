@@ -2,10 +2,10 @@
 # URL: http://www.transmissionbt.com/
 # Packager: fred.galusik at gmail dot com
 # Maintainer: Blankoworld <blankoworld at wanadoo dot fr>
-# Depends on: gtk, openssl, curl, xorg-xcb-util
+# Depends on: gtk, openssl, curl, xorg-xcb-util, libevent
 
 name=transmission
-version=2.00b2
+version=2.00
 release=1
 source=( http://download.m0k.org/$name/files/$name-$version.tar.bz2 \
 $name.desktop)

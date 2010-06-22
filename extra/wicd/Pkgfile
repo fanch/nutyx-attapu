@@ -6,7 +6,7 @@
 
 name=wicd
 version=1.7.0
-release=5
+release=6
 source=(http://downloads.sourceforge.net/$name/wicd-$version.tar.gz \
 	wicd_in_usr.patch wicd-locale.patch wicd.desktop )
 
@@ -26,4 +26,5 @@ build() {
 	rm -rf  $PKG/usr/share/autostart
 	chmod 755 $PKG/usr/share/wicd/daemon/wicd-daemon.py
 	chown -R 0:0 $PKG/
+	rm $PKG/var/log/wicd/.empty_on_purpose
 }

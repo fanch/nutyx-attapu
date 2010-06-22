@@ -20,6 +20,7 @@ lrwxrwxrwx	root/root	sbin/lvextend -> lvm
 lrwxrwxrwx	root/root	sbin/lvm -> lvm.static
 -r-xr-xr-x	root/root	sbin/lvm.static
 lrwxrwxrwx	root/root	sbin/lvmchange -> lvm
+-r-xr-xr-x	root/root	sbin/lvmconf
 lrwxrwxrwx	root/root	sbin/lvmdiskscan -> lvm
 -r-xr-xr-x	root/root	sbin/lvmdump
 lrwxrwxrwx	root/root	sbin/lvmsadc -> lvm

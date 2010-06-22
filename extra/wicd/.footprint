@@ -239,4 +239,3 @@ drwxr-xr-x	root/root	var/lib/wicd/configurations/
 -rw-r--r--	root/root	var/lib/wicd/configurations/.empty_on_purpose
 drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	root/root	var/log/wicd/
--rw-r--r--	root/root	var/log/wicd/.empty_on_purpose

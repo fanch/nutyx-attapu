@@ -37,8 +37,6 @@ drwxr-xr-x	root/root	usr/share/gnome-media/
 drwxr-xr-x	root/root	usr/share/gnome-media/pixmaps/
 -rw-r--r--	root/root	usr/share/gnome-media/pixmaps/chain-broken.png
 -rw-r--r--	root/root	usr/share/gnome-media/pixmaps/chain.png
-drwxr-xr-x	root/root	usr/share/gnome-media/sounds/
--rw-r--r--	root/root	usr/share/gnome-media/sounds/gnome-sounds-default.xml
 drwxr-xr-x	root/root	usr/share/gnome-sound-recorder/
 drwxr-xr-x	root/root	usr/share/gnome-sound-recorder/ui/
 -rw-r--r--	root/root	usr/share/gnome-sound-recorder/ui/ui.xml
@@ -354,11 +352,3 @@ drwxr-xr-x	root/root	usr/share/omf/gstreamer-properties/
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-th.omf
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-uk.omf
 -rw-r--r--	root/root	usr/share/omf/gstreamer-properties/gstreamer-properties-zh_CN.omf
-drwxr-xr-x	root/root	usr/share/sounds/
-drwxr-xr-x	root/root	usr/share/sounds/gnome/
-drwxr-xr-x	root/root	usr/share/sounds/gnome/default/
-drwxr-xr-x	root/root	usr/share/sounds/gnome/default/alerts/
--rw-r--r--	root/root	usr/share/sounds/gnome/default/alerts/bark.ogg
--rw-r--r--	root/root	usr/share/sounds/gnome/default/alerts/drip.ogg
--rw-r--r--	root/root	usr/share/sounds/gnome/default/alerts/glass.ogg
--rw-r--r--	root/root	usr/share/sounds/gnome/default/alerts/sonar.ogg

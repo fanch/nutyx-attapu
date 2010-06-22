@@ -5,7 +5,7 @@
 # Depends on: cairo, pango, atk, libtiff, glib, jasper, libjpeg, shared-mime-info, libcups, kerberos
 
 name=gtk
-version=2.20.0
+version=2.20.1
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/gtk+/${version%.*}/gtk+-$version.tar.bz2)
 
@@ -14,7 +14,7 @@ cd gtk+-$version
 	./configure --prefix=/usr \
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
-                --sysconfdir=/etc
+                --sysconfdir=/etc 
 	make
 	make DESTDIR=$PKG install
         mkdir -p $PKG/etc/gtk-2.0

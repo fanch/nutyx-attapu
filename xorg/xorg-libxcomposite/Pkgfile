@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-libx11, xorg-fixesproto, xorg-libxfixes xorg-libxext, xorg-compositeproto
+# Depends on: xorg-libx11, xorg-libxfixes xorg-libxext
 
 name=xorg-libxcomposite
 version=0.4.1

@@ -2,8 +2,7 @@
 # URL: http://www.gnome.org/projects/gnome-power-manager/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: dbus, hal, libgnomeui, libglade, libnotify, notification-daemon, gnome-panel, policykit-gnome, libcanberra, devicekit, devicekit-power
-# Group: gnome/desktop
+# Depends on: dbus, hal, libgnomeui, libglade, libnotify, notification-daemon, gnome-panel, policykit-gnome, libcanberra, devicekit, devicekit-power, libunique
 
 name=gnome-power-manager
 version=2.30.0

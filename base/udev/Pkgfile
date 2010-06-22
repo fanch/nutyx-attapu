@@ -4,8 +4,8 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=udev
-version=151
-release=3
+version=156
+release=1
 _lfs_release=20100128
 source=(ftp://ftp.kernel.org/pub/linux/utils/kernel/hotplug/$name-$version.tar.bz2 \
 http://www.linuxfromscratch.org/lfs/downloads/development/udev-config-${_lfs_release}.tar.bz2)
@@ -30,15 +30,13 @@ ln -s /proc/kcore $PKG/lib/udev/devices/core
 make 
 
 make install DESTDIR=$PKG mandir="/usr/share/man"
-install -m644 -v rules/packages/64-*.rules \
-	$PKG/lib/udev/rules.d/
 install -m644 -v rules/packages/40-pilot-links.rules \
-	$PKG/lib/udev/rules.d/
-install -m644 -v rules/packages/40-isdn.rules \
 	$PKG/lib/udev/rules.d/
 install -m644 -v rules/gentoo/30-kernel-compat.rules \
 	$PKG/lib/udev/rules.d/
 cd ../udev-config-${_lfs_release}
 make DESTDIR=$PKG install
 make DESTDIR=$PKG install-doc
+rm -r $PKG/usr/share/gtk-doc
+rm -r $PKG/usr/share/doc/udev-$version
 }

@@ -1,0 +1,36 @@
+# Description: Remplace getty en mode Frame buffer
+# URL: http://qingy.sourceforge.net/
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+
+name=qingy
+version=0.9.9
+release=1
+source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
+	nutyx-attapu.jpg theme ChatIrssi NaviLinks MidnightCommander)
+build() {
+	cd  $name-$version
+	./configure --prefix=/usr \
+		--mandir=/usr/share/man \
+		--sysconfdir=/etc \
+		--enable-static=qingy-DirectFB \
+		--infodir=/usr/share/info \
+		--enable-x-support=no \
+		--enable-pam=no \
+		--enable-static-build
+		
+	make
+	make DESTDIR=$PKG install
+	if [ -f $PKG/usr/share/info/dir ]; then
+		rm  $PKG/usr/share/info/dir
+	fi
+	cp ../theme $PKG/usr/share/qingy/themes/default/
+	cp ../nutyx-attapu.jpg $PKG/usr/share/qingy/themes/default/background.jpg
+	echo "root Soyez prudent, vous avez tous les droits..." >\
+	$PKG/etc/qingy/welcomes
+	for i  in ChatIrssi NaviLinks MidnightCommander
+	do
+		install -m755 ../$i \
+		$PKG/etc/qingy/sessions/$i
+	done
+}

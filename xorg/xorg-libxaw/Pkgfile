@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-xproto, xorg-libx11, xorg-xextproto, xorg-libxext, xorg-libxt, xorg-libxmu, xorg-libxpm, xorg-libxau
+# Depends on: xorg-libx11, xorg-libxext, xorg-libxt, xorg-libxmu, xorg-libxpm, xorg-libxau
 
 name=xorg-libxaw
 version=1.0.6

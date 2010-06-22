@@ -1,0 +1,20 @@
+# Description: Librairie pourClient Bittorrent sur KDE4
+# URL: http://ktorrent.org/
+# Maintainer: NuTyX packager team
+# Packager: lesibel at free dot fr
+# Depends on: qca, xorg-libxft, kdebase-runtime, kdebase-workspace, taglib, hicolor-icon-theme, kdepimlibs
+
+name=libktorrent
+version=1.0.1
+versionktorrent=4.0.1
+release=1
+source=(http://ktorrent.org/downloads/$versionktorrent/$name-$version.tar.bz2)
+http://ktorrent.org/downloads/4.0.1/libktorrent-1.0.1.tar.bz2
+build() {
+	cd $name-$version
+	cmake . -DCMAKE_BUILD_TYPE=Release \
+                -DCMAKE_INSTALL_PREFIX=/usr \
+                -DCMAKE_SKIP_RPATH=ON 
+        make
+        make DESTDIR=$PKG install
+}

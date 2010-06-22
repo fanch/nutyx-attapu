@@ -2,15 +2,16 @@
 # URL: http://hightek.org/dialog/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: 
 
 name=dialog
 version=1.1-20080819
 release=1
-source=(ftp://dickey.his.com/dialog/$name-$version.tgz)
+source=(ftp://dickey.his.com/dialog/$name-$version.tgz\
+	calendar.patch)
 
 build() {
 	cd $name-$version
+	patch -Np1 -i ../calendar.patch
 	./configure --prefix=/usr \
 	--with-ncursesw \
 	--mandir=/usr/share/man

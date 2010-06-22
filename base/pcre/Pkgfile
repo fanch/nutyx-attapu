@@ -5,7 +5,7 @@
 # Depends on:
 
 name=pcre
-version=7.9
+version=8.02
 release=1
 source=( http://downloads.sourceforge.net/$name/$name-$version.tar.bz2 )
 

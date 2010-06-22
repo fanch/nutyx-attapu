@@ -1,0 +1,39 @@
+# Description: Gestionnaire de fichiers en ligne de commande comme Norton commander
+# URL: http://www.ibiblio.org/mc/
+# Maintainer: NuTyX coreteam
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: p7zip, e2fsprogs, pcre, gpm, slang, glib
+
+name=mc
+version=4.7.2
+release=1
+source=(http://www.midnight-commander.org/downloads/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--mandir=/usr/share/man \
+		--enable-background \
+		--enable-charset \
+		--enable-largefile \
+		--with-edit \
+		--with-gpm-mouse \
+		--with-mmap \
+		--with-samba \
+		--with-screen=slang \
+		--with-subshell \
+		--with-vfs \
+		--with-x \
+		--without-debug \
+		--without-gnome \
+		--without-included-gettext \
+		--libexecdir=/usr/lib
+
+	make
+	make DESTDIR=$PKG install
+        sed -i 's|op_has_zipinfo = 0|op_has_zipinfo = 1|' \
+            $PKG/usr/lib/mc/extfs.d/uzip
+        rm $PKG/usr/lib/mc/extfs.d/u7z
+}

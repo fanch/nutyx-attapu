@@ -2,8 +2,7 @@
 # URL: http://mail.gnome.org/mailman/listinfo/gnome-accessibility-devel
 # Maintainer: Matt Housh, jaeger at morpheus dot net
 # Packager: jaeger at morpheus dot net
-# Depends on: libbonobo
-# Group: gnome/desktop
+# Depends on: libbonobo, jdk
 
 name=gnome-speech
 version=0.4.22

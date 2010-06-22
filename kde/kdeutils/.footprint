@@ -6,13 +6,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/kdf
 -rwxr-xr-x	root/root	usr/bin/kfloppy
 -rwxr-xr-x	root/root	usr/bin/kgpg
--rwxr-xr-x	root/root	usr/bin/krcdnotifieritem
 -rwxr-xr-x	root/root	usr/bin/ktimer
 -rwxr-xr-x	root/root	usr/bin/kwalletmanager
 -rwxr-xr-x	root/root	usr/bin/kwikdisk
 -rwxr-xr-x	root/root	usr/bin/okteta
 lrwxrwxrwx	root/root	usr/bin/printer-applet -> /usr/share/apps/printer-applet/printer-applet.py
--rwxr-xr-x	root/root	usr/bin/superkaramba
 -rwxr-xr-x	root/root	usr/bin/sweeper
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/KDE/
@@ -387,8 +385,6 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/arkpart.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kdf.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kcm_kwallet.so
--rwxr-xr-x	root/root	usr/lib/kde4/kcm_remotecontrol.so
--rwxr-xr-x	root/root	usr/lib/kde4/kded_kremotecontroldaemon.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_cli7z.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_clirar.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_clizip.so
@@ -396,12 +392,8 @@ drwxr-xr-x	root/root	usr/lib/kde4/
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libbz2.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libgz.so
 -rwxr-xr-x	root/root	usr/lib/kde4/kerfuffle_libxz.so
--rwxr-xr-x	root/root	usr/lib/kde4/libextracthere.so
 -rwxr-xr-x	root/root	usr/lib/kde4/libkbytearrayedit.so
 -rwxr-xr-x	root/root	usr/lib/kde4/oktetapart.so
--rwxr-xr-x	root/root	usr/lib/kde4/plasma_engine_kremoteconrol.so
--rwxr-xr-x	root/root	usr/lib/kde4/plasma_package_superkaramba.so
--rwxr-xr-x	root/root	usr/lib/kde4/plasma_scriptengine_superkaramba.so
 drwxr-xr-x	root/root	usr/lib/kde4/plugins/
 drwxr-xr-x	root/root	usr/lib/kde4/plugins/designer/
 -rwxr-xr-x	root/root	usr/lib/kde4/plugins/designer/oktetadesignerplugin.so
@@ -418,9 +410,6 @@ lrwxrwxrwx	root/root	usr/lib/libkastengui.so.4 -> libkastengui.so.4.5.0
 lrwxrwxrwx	root/root	usr/lib/libkerfuffle.so -> libkerfuffle.so.4
 lrwxrwxrwx	root/root	usr/lib/libkerfuffle.so.4 -> libkerfuffle.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/libkerfuffle.so.4.5.0
-lrwxrwxrwx	root/root	usr/lib/liblibkremotecontrol.so -> liblibkremotecontrol.so.1
-lrwxrwxrwx	root/root	usr/lib/liblibkremotecontrol.so.1 -> liblibkremotecontrol.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/liblibkremotecontrol.so.1.0.0
 lrwxrwxrwx	root/root	usr/lib/liboktetacore.so -> liboktetacore.so.4
 lrwxrwxrwx	root/root	usr/lib/liboktetacore.so.4 -> liboktetacore.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/liboktetacore.so.4.5.0
@@ -436,9 +425,6 @@ lrwxrwxrwx	root/root	usr/lib/liboktetakastencore.so.4 -> liboktetakastencore.so.
 lrwxrwxrwx	root/root	usr/lib/liboktetakastengui.so -> liboktetakastengui.so.4
 lrwxrwxrwx	root/root	usr/lib/liboktetakastengui.so.4 -> liboktetakastengui.so.4.5.0
 -rwxr-xr-x	root/root	usr/lib/liboktetakastengui.so.4.5.0
-lrwxrwxrwx	root/root	usr/lib/libsuperkaramba.so -> libsuperkaramba.so.4
-lrwxrwxrwx	root/root	usr/lib/libsuperkaramba.so.4 -> libsuperkaramba.so.4.5.0
--rwxr-xr-x	root/root	usr/lib/libsuperkaramba.so.4.5.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 drwxr-xr-x	root/root	usr/share/applications/kde4/
@@ -448,13 +434,11 @@ drwxr-xr-x	root/root	usr/share/applications/kde4/
 -rw-r--r--	root/root	usr/share/applications/kde4/kcalc.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kdf.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kgpg.desktop
--rw-r--r--	root/root	usr/share/applications/kde4/krcdnotifieritem.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/ktimer.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kwalletmanager-kwalletd.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kwalletmanager.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/kwikdisk.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/okteta.desktop
--rw-r--r--	root/root	usr/share/applications/kde4/superkaramba.desktop
 -rw-r--r--	root/root	usr/share/applications/kde4/sweeper.desktop
 drwxr-xr-x	root/root	usr/share/apps/
 drwxr-xr-x	root/root	usr/share/apps/ark/
@@ -524,20 +508,6 @@ drwxr-xr-x	root/root	usr/share/apps/kgpg/icons/oxygen/scalable/status/
 -rw-r--r--	root/root	usr/share/apps/kgpg/keysmanager.rc
 -rw-r--r--	root/root	usr/share/apps/kgpg/kgpgeditor.rc
 -rw-r--r--	root/root	usr/share/apps/kgpg/tips
-drwxr-xr-x	root/root	usr/share/apps/kremotecontrol/
-drwxr-xr-x	root/root	usr/share/apps/kremotecontrol/profiles/
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/amarok.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/dragonplayer.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/klauncher.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/kmix.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/konqueror.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/kscd.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/okular.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/powermanagement.profile.xml
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/profile.xsd
--rw-r--r--	root/root	usr/share/apps/kremotecontrol/profiles/vlc.profile.xml
-drwxr-xr-x	root/root	usr/share/apps/kremotecontroldaemon/
--rw-r--r--	root/root	usr/share/apps/kremotecontroldaemon/kremotecontroldaemon.notifyrc
 drwxr-xr-x	root/root	usr/share/apps/kwalletmanager/
 drwxr-xr-x	root/root	usr/share/apps/kwalletmanager/icons/
 drwxr-xr-x	root/root	usr/share/apps/kwalletmanager/icons/oxygen/
@@ -570,8 +540,6 @@ drwxr-xr-x	root/root	usr/share/apps/printer-applet/
 -rw-r--r--	root/root	usr/share/apps/printer-applet/printer-applet.ui
 -rw-r--r--	root/root	usr/share/apps/printer-applet/printer-appletui.rc
 -rw-r--r--	root/root	usr/share/apps/printer-applet/statereason.py
-drwxr-xr-x	root/root	usr/share/apps/superkaramba/
--rw-r--r--	root/root	usr/share/apps/superkaramba/superkarambaui.rc
 drwxr-xr-x	root/root	usr/share/apps/sweeper/
 -rw-r--r--	root/root	usr/share/apps/sweeper/sweeperui.rc
 drwxr-xr-x	root/root	usr/share/autostart/
@@ -583,11 +551,9 @@ drwxr-xr-x	root/root	usr/share/config.kcfg/
 -rw-r--r--	root/root	usr/share/config.kcfg/kgpg.kcfg
 drwxr-xr-x	root/root	usr/share/config/
 -rw-r--r--	root/root	usr/share/config/okteta-structures.knsrc
--rw-r--r--	root/root	usr/share/config/superkaramba.knsrc
 drwxr-xr-x	root/root	usr/share/dbus-1/
 drwxr-xr-x	root/root	usr/share/dbus-1/interfaces/
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.kgpg.Key.xml
--rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.superkaramba.xml
 -rw-r--r--	root/root	usr/share/dbus-1/interfaces/org.kde.sweeper.xml
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
@@ -599,9 +565,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/kwalletmanager.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/kwalletmanager2.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/kwikdisk.png
--rw-r--r--	root/root	usr/share/icons/hicolor/128x128/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/128x128/devices/infrared-remote.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kdf.png
@@ -612,23 +575,13 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kwalletmanager2.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/kwikdisk.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/okteta.png
--rw-r--r--	root/root	usr/share/icons/hicolor/16x16/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/16x16/devices/infrared-remote.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/actions/
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/actions/krcd_flash.png
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/actions/krcd_off.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kdf.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kfloppy.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kgpg.png
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/krcd.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kwalletmanager.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/kwikdisk.png
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/22x22/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/22x22/devices/infrared-remote.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kdf.png
@@ -639,12 +592,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kwalletmanager2.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/kwikdisk.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/okteta.png
--rw-r--r--	root/root	usr/share/icons/hicolor/32x32/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/32x32/devices/infrared-remote.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/42x42/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/42x42/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/42x42/devices/infrared-remote.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kdf.png
@@ -655,9 +602,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kwalletmanager2.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/kwikdisk.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/okteta.png
--rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/48x48/devices/infrared-remote.png
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/kdf.png
@@ -665,21 +609,6 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/kwalletmanager.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/kwalletmanager2.png
 -rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/kwikdisk.png
--rw-r--r--	root/root	usr/share/icons/hicolor/64x64/apps/superkaramba.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/64x64/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/64x64/devices/infrared-remote.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/8x8/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/8x8/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/8x8/devices/infrared-remote.png
-drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
-drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/actions/
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/krcd_flash.svgz
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/krcd_off.svgz
-drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/krcd.svgz
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/superkaramba.svgz
-drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/devices/
--rw-r--r--	root/root	usr/share/icons/hicolor/scalable/devices/infrared-remote.svgz
 drwxr-xr-x	root/root	usr/share/icons/oxygen/
 drwxr-xr-x	root/root	usr/share/icons/oxygen/16x16/
 drwxr-xr-x	root/root	usr/share/icons/oxygen/16x16/apps/
@@ -698,13 +627,9 @@ drwxr-xr-x	root/root	usr/share/kde4/services/ServiceMenus/
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/encryptfile.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/encryptfolder.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ServiceMenus/viewdecrypted.desktop
--rw-r--r--	root/root	usr/share/kde4/services/ark_dndextract.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/ark_part.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kbytearrayedit.desktop
--rw-r--r--	root/root	usr/share/kde4/services/kcm_remotecontrol.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kcmdf.desktop
-drwxr-xr-x	root/root	usr/share/kde4/services/kded/
--rw-r--r--	root/root	usr/share/kde4/services/kded/kremotecontroldaemon.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kerfuffle_cli7z.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kerfuffle_clirar.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kerfuffle_clizip.desktop
@@ -715,9 +640,6 @@ drwxr-xr-x	root/root	usr/share/kde4/services/kded/
 -rw-r--r--	root/root	usr/share/kde4/services/kwalletconfig.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/kwalletmanager_show.desktop
 -rw-r--r--	root/root	usr/share/kde4/services/oktetapart.desktop
--rw-r--r--	root/root	usr/share/kde4/services/plasma-engine-kremotecontrol.desktop
--rw-r--r--	root/root	usr/share/kde4/services/plasma-package-superkaramba.desktop
--rw-r--r--	root/root	usr/share/kde4/services/plasma-scriptengine-superkaramba.desktop
 drwxr-xr-x	root/root	usr/share/kde4/servicetypes/
 -rw-r--r--	root/root	usr/share/kde4/servicetypes/kerfufflePlugin.desktop
 drwxr-xr-x	root/root	usr/share/mime/

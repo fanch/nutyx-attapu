@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX packager team
 # Packager: lesibel at free dot fr
-# Depends on: qt, boost, automoc4, mysql, shared-mime-info, soprano
+# Depends on: qt, boost, automoc4, shared-mime-info, soprano
 
 name=akonadi
 version=1.3.80

@@ -1,7 +1,8 @@
 # Description: xorg lib libXxf86misc
 # URL: http://xorg.freedesktop.org
-# Maintainer: Tilman Sauerbeck, tilman at crux dot nu
-# Depends on: xorg-xproto, xorg-libx11, xorg-libxext, xorg-xf86miscproto
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: xorg-libx11, xorg-libxext
 
 name=xorg-libxxf86misc
 version=1.0.2

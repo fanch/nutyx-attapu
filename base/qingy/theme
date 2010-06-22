@@ -1,0 +1,279 @@
+theme
+{	
+	background = "background.jpg"
+	font = "decker.ttf"
+
+# opacity values, from 0 (transparent) to 255 (opaque)
+	button_opacity          = 255
+	window_opacity          = 128
+	selected_window_opacity = 255
+
+# Colors can be given in a hex quadruplet (values from 00 to ff)
+# or via comma-separated decimals (0 to 255). Format is RGBA
+#	mask_text_color   = [ 28b428ff ]
+#	cursor_text_color = [ 145a14dd ]
+#	other_text_color  = [ 404040ff ]
+	default_text_color   =  40, 180, 40, 255
+	default_cursor_color =  20,  90, 20, 221
+	other_text_color     = 255, 255,  0, 255
+
+# wether we should clear background image during dialogs
+# (default is no, unless you set it differently in qingy config file)...
+	clear_background = yes
+
+# this is the native resolution of the theme, i.e. the resolution the theme
+# was designed for. If qingy detects a running resolution different than this
+# one, it will (try to) scale things so that they will look the same across
+# all resolutions. If this is omitted, qingy will default to 800x600 to
+# maintain compatibility with older themes...
+	native_resolution = 1024x768
+
+	#mouse_cursor = yes
+	mouse_cursor =
+	{
+		"Arrow.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+
+# how many seconds should we wait when displaying the 'system will XXX in YYY seconds...'?
+	countdown_timeout = 5
+
+# how many seconds should we wait when displaying informative messages ('login failed', ...)?
+	info_message_timeout = 2
+
+# how many seconds should we wait when displaying welcome message in case of successful login?
+	welcome_message_timeout = 1
+
+# these are the various messages that qingy may show up in its GUI
+# you are free to change them. If you do not define these variables
+# default (English) messages will be shown
+	shutdown_timeout_message = "system shutdown in <INS_TIMEOUT_HERE> seconds"
+	restart_timeout_message = "system restart in <INS_TIMEOUT_HERE> seconds"
+	sleep_timeout_message = "system will fall asleep in <INS_TIMEOUT_HERE> seconds"
+	sleep_forbidden_message = "Putting this machine in sleep mode is not allowed!"
+	shutdown_forbidden_message = "Shutting down this machine is not allowed!"
+	sleep_password_message = "You must enter root password to put this machine to sleep!"
+	shutdown_password_message = "You must enter root password to shut down this machine!"
+	shutdown_message = "shutting down system..."
+	restart_message = "rebooting system..."
+	login_message = "Logging in"
+	login_failed_message = "Login failed!"
+	abort_message = "Press ESC key to abort"
+	caps_message = "CAPS LOCK is pressed"
+	sleep_cmd_message = "You must define sleep command in settings file!"
+	crypto_error_message = "Crypto error - regenerate your keys!"
+	welcome_message = "Starting selected session..."
+}
+
+window
+{
+	# window geometry
+	x      = 0
+	y      = 96
+	width  = 1024
+	height = 64
+
+	# text size: chose between 'small', 'medium' and 'large'
+	# default is 'large'
+	#text_size        = large
+	
+	# text alignment: 'left', 'center', 'right'. Default is 'left'
+	text_orientation = center
+
+	#colors: if not defined, theme defaults will be used
+	#text_color   = 180, 40, 40, 255
+	#cursor_color =  90, 20, 20, 221
+
+	# update time, 0 means do not update, which is default
+	# this setting has meaning only if window type is "label"
+	# time = 0
+
+	# window type, allowed values are:
+	# "label", "button", "login", "password", "combo"
+	type    = "label"
+	content = "Bienvenue sur <INS_CMD_HERE>"
+	# The <INS_CMD_HERE> above is substituted with the output of 'command'
+	command = "hostname"
+}
+
+window
+{
+	x      = 0
+	y      = 746
+	width  = 1024
+	height = 38
+
+	text_orientation = center
+	text_size        = small
+
+	text_color   = 200, 200, 40, 255
+	time = 1
+
+	type    = "label"
+	content = "<INS_CMD_HERE>"
+	command = "echo `date +%a,` `date +%d` `date +%b` `date +%Y,` `uptime`"
+}
+
+window
+{
+	x                = 128
+	y                = 281
+	width            = 153
+	height           = 64
+	text_orientation = right
+	type             = "label"
+	content          = "login:"
+	linkto           = "login"
+}
+
+window
+{
+	x            = 307
+	y            = 281
+	width        = 716
+	height       = 64
+	text_color   = 200, 200, 40, 255
+	cursor_color =  90,  90, 20, 221
+	type         = "login"
+
+	mouse_cursor =
+	{
+		"IBeam.png",  # image path
+		6,            # hotspot: x offset
+		16            # hotspot: y offset
+	}
+}
+
+window
+{
+	x                = 128
+	y                = 377
+	width            = 153
+	height           = 64
+	text_orientation = right
+	type             = "label"
+	content          = "passwd:"
+	linkto           = "password"
+}
+
+window
+{
+	x            = 307
+	y            = 377
+	width        = 716
+	height       = 64
+	text_color   = 180, 40, 40, 255
+	cursor_color =  90, 20, 20, 221
+	type         = "password"
+
+	mouse_cursor =
+	{
+		"IBeam.png",  # image path
+		6,            # hotspot: x offset
+		16            # hotspot: y offset
+	}
+}
+
+window
+{
+	x                = 128
+	y                = 473
+	width            = 153
+	height           = 64
+	text_orientation = right
+	type             = "label"
+	content          = "session:"
+	linkto           = "session"
+}
+
+window
+{
+	x          = 307
+	y          = 473
+	width      = 716
+	height     = 64
+	text_color = 200, 200, 40, 255
+	type       = "combo"
+
+	# So far, the only combobox allowed is "sessions"
+	command = "sessions"
+
+	mouse_cursor =
+	{
+		"Hand.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+}
+
+window
+{
+	# window geometry
+	x    = 966
+	y    = 719
+	type = "button"
+
+	# Allowed commands:
+	# "halt", "reboot", "sleep", "screensaver"
+	command = "halt"
+
+	# Image prefix: will be converted to
+	# "<name>_normal.png" and "<name>_mouseover.png"
+	content = "power"
+
+	mouse_cursor =
+	{
+		"Hand.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+}
+
+window
+{
+	x       = 966
+	y       = 659
+	type    = "button"
+	command = "reboot"
+	content = "reset"
+
+	mouse_cursor =
+	{
+		"Hand.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+}
+
+window
+{
+	x       = 966
+	y       = 601
+	type    = "button"
+	command = "screensaver"
+	content = "screensaver"
+
+	mouse_cursor =
+	{
+		"Hand.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+}
+
+window
+{
+	x       = 966
+	y       = 544
+	type    = "button"
+	command = "sleep"
+	content = "sleep"
+
+	mouse_cursor =
+	{
+		"Hand.png",  # image path
+		0,            # hotspot: x offset
+		0             # hotspot: y offset
+	}
+}

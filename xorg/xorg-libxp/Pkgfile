@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org 
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: xorg-printproto, xorg-libx11, xorg-libxext
+# Depends on: xorg-libx11, xorg-libxext
 
 name=xorg-libxp
 version=1.0.0

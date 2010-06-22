@@ -86,8 +86,6 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.0/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/dst.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/exclusion.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/exclusion.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.0/exr-load.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.0/exr-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/ff-load.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/ff-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.0/fractal-explorer.la

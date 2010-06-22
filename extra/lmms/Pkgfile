@@ -1,9 +1,8 @@
- 
 # Description: linux multimedia studio
 # URL:http://lmms.sourceforge.net/
 # Maintainer: NuTyX core team
 # Packager: fanch
-# Depends on: sdl, glib, fluidsynth, libpng, libvorbis, libxft, qt, sdl_sound, libsamplerate
+# Depends on: cmake, sdl, glib, fluidsynth, libpng, libvorbis, xorg-libxft, qt, sdl_sound, libsamplerate
 
 name=lmms
 version=0.4.6

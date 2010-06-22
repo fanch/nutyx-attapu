@@ -1,0 +1,21 @@
+--- blfs-bootscripts-20090302/blfs/init.d/postgresql.original	2010-01-20 20:34:28.000000000 +0000
++++ blfs-bootscripts-20090302/blfs/init.d/postgresql	2010-01-20 20:37:49.000000000 +0000
+@@ -10,6 +10,18 @@
+ . /etc/sysconfig/rc
+ . $rc_functions
+ 
++newgroup=postgres
++newuser=postgres
++newid=40
++
++# check for mysql group or add one
++getent group $newgroup > /dev/null || /usr/sbin/groupadd -g $newid $newgroup
++
++# check for mysql user or add one
++getent passwd $newuser > /dev/null || /usr/sbin/useradd -g $newgroup \
++-u $newid -d /dev/null \
++-s /bin/false -c "PostgreSQL Server" $newuser
++
+ case "$1" in
+ 	start)
+ 		boot_mesg "Starting PostgreSQL daemon..."

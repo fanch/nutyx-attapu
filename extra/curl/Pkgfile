@@ -1,7 +1,7 @@
 # Description: Permet le transfer de fichiers en ligne de commande, protocoles: http, https, ftp, telnet, etc
 # URL: http://curl.haxx.se/
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libidn
+# Depends on: libidn, libldap
 
 name=curl
 version=7.20.0

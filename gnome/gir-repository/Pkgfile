@@ -1,16 +1,26 @@
-# Description: Dépot de fichiers d'interface GIR
-# URL: http://
+# Description: Permet de rendre la platforme gnome plus facilement connnectable (binding)
+# URL: http://live.gnome.org/GObjectIntrospection
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: avahi, gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck, babl
+# Depends on: avahi, gobject-introspection, gtk, libsoup, gconf, gnome-menus, gnome-keyring, gtksourceview, libnotify, pango, poppler-glib, vte, libwnck, babl, startup-notification
+
+#gstreamer, gnupng, cairo
 
 name=gir-repository
 version=0.6.5
-release=1
-source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
+release=3
+source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2 \
+	gir-repository-0.6.5-dbus-glib-2.patch)
+
 build() {
 	cd $name-$version
-	./configure --prefix=$GNOME_PREFIX
+	patch -Np1 -i ../gir-repository-0.6.5-dbus-glib-2.patch
+	./configure --prefix=/usr --disable-static \
+	--with-skipped-gir-modules=Pango,Atk,Gtk,PangoXft,Babl,Unique,GMenu,Wnck
 	make
 	make DESTDIR=$PKG install
+	for i in Atk GMenu Gtk Gdk Pango
+	do
+		find $PKG -name "*$i*" -exec rm -v {} \;
+	done
 }

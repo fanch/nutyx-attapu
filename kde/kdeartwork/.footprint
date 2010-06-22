@@ -259,6 +259,8 @@ drwxr-xr-x	root/root	usr/share/apps/desktoptheme/slim-glow/dialogs/
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/slim-glow/dialogs/background.svgz
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/slim-glow/dialogs/krunner.svgz
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/slim-glow/dialogs/shutdowndialog.svgz
+drwxr-xr-x	root/root	usr/share/apps/desktoptheme/slim-glow/icons/
+-rw-r--r--	root/root	usr/share/apps/desktoptheme/slim-glow/icons/notification.svgz
 -rw-r--r--	root/root	usr/share/apps/desktoptheme/slim-glow/metadata.desktop
 drwxr-xr-x	root/root	usr/share/apps/desktoptheme/slim-glow/opaque/
 drwxr-xr-x	root/root	usr/share/apps/desktoptheme/slim-glow/opaque/dialogs/
@@ -4649,14 +4651,6 @@ drwxr-xr-x	root/root	usr/share/wallpapers/Green_Concentration/contents/images/
 -rw-r--r--	root/root	usr/share/wallpapers/Green_Concentration/contents/images/1920x1200.jpg
 -rw-r--r--	root/root	usr/share/wallpapers/Green_Concentration/contents/screenshot.png
 -rw-r--r--	root/root	usr/share/wallpapers/Green_Concentration/metadata.desktop
-drwxr-xr-x	root/root	usr/share/wallpapers/Hail/
-drwxr-xr-x	root/root	usr/share/wallpapers/Hail/contents/
-drwxr-xr-x	root/root	usr/share/wallpapers/Hail/contents/images/
--rw-r--r--	root/root	usr/share/wallpapers/Hail/contents/images/1280x1024.jpg
--rw-r--r--	root/root	usr/share/wallpapers/Hail/contents/images/1600x1200.jpg
--rw-r--r--	root/root	usr/share/wallpapers/Hail/contents/images/1920x1200.jpg
--rw-r--r--	root/root	usr/share/wallpapers/Hail/contents/screenshot.png
--rw-r--r--	root/root	usr/share/wallpapers/Hail/metadata.desktop
 drwxr-xr-x	root/root	usr/share/wallpapers/HighTide/
 drwxr-xr-x	root/root	usr/share/wallpapers/HighTide/contents/
 drwxr-xr-x	root/root	usr/share/wallpapers/HighTide/contents/images/

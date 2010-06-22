@@ -173,20 +173,16 @@ lrwxrwxrwx	root/root	usr/lib/libMagickWand.so -> libMagickWand.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libMagickWand.so.3 -> libMagickWand.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libMagickWand.so.3.0.0
 drwxr-xr-x	root/root	usr/lib/perl5/
-drwxr-xr-x	root/root	usr/lib/perl5/5.12.0/
-drwxr-xr-x	root/root	usr/lib/perl5/5.12.0/i686-linux-thread-multi/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Image/
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/Image/Magick.pm
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/Magick/
--rw-r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/Magick/.packlist
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/Magick/Magick.bs (EMPTY)
--r-xr-xr-x	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/Magick/Magick.so
--r--r--r--	root/root	usr/lib/perl5/site_perl/5.12.0/i686-linux-thread-multi/auto/Image/Magick/autosplit.ix
+drwxr-xr-x	root/root	usr/lib/perl5/site/
+drwxr-xr-x	root/root	usr/lib/perl5/site/Image/
+-r--r--r--	root/root	usr/lib/perl5/site/Image/Magick.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site/auto/
+drwxr-xr-x	root/root	usr/lib/perl5/site/auto/Image/
+drwxr-xr-x	root/root	usr/lib/perl5/site/auto/Image/Magick/
+-rw-r--r--	root/root	usr/lib/perl5/site/auto/Image/Magick/.packlist
+-r--r--r--	root/root	usr/lib/perl5/site/auto/Image/Magick/Magick.bs (EMPTY)
+-r-xr-xr-x	root/root	usr/lib/perl5/site/auto/Image/Magick/Magick.so
+-r--r--r--	root/root	usr/lib/perl5/site/auto/Image/Magick/autosplit.ix
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/ImageMagick++.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/ImageMagick.pc
@@ -228,3 +224,5 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/stream.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::Magick.3.gz
+drwxr-xr-x	root/root	usr/share/perl5/
+drwxr-xr-x	root/root	usr/share/perl5/base/

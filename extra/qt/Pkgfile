@@ -2,10 +2,10 @@
 # URL: http://qt.nokia.com/products/
 # Maintainer: NuTyX core team
 # Packager: sibelle at free dot fr
-# Depends on: libpng, libjpeg, libmng, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk, unixodbc
+# Depends on: libpng, libjpeg, libmng, mesa3d, fontconfig, dbus, sqlite3, gst-plugins-base, libmysql, gtk, unixodbc, libpostgresql
 
 name=qt
-version=4.6.2
+version=4.6.3
 release=1
 _name=qt-everywhere-opensource-src-${version}
 
@@ -27,7 +27,7 @@ build() {
 		-examplesdir /usr/share/doc/qt/examples \
 		-demosdir /usr/share/doc/qt/demos \
 		-largefile \
-		-plugin-sql-{mysql,sqlite} \
+		-plugin-sql-{psql,mysql,sqlite} \
 		-system-sqlite \
 		-xmlpatterns \
 		-no-phonon \

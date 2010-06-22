@@ -4,16 +4,16 @@
 # Packager: thierryn1 at hispeed dot ch
 
 name=coreutils
-version=8.4
+version=8.5
 release=1
 source=(http://ftp.gnu.org/pub/gnu/$name/$name-$version.tar.gz \
 	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-i18n-1.patch\
-	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-uname-1.patch)
+	http://www.linuxfromscratch.org/patches/lfs/development/coreutils-$version-uname-2.patch)
 build() {
 	cd $name-$version
 
 case `uname -m` in
- i?86 | x86_64) patch -Np1 -i ../coreutils-$version-uname-1.patch ;;
+ i?86 | x86_64) patch -Np1 -i ../coreutils-$version-uname-2.patch ;;
 esac 
 patch -Np1 -i ../$name-$version-i18n-1.patch
 

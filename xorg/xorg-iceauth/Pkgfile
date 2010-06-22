@@ -2,7 +2,7 @@
 # URL: http://xorg.freedesktop.org
 # Maintainer: Tilman Sauerbeck, tilman at crux dot nu
 # Packager: tilman at crux dot nu
-# Depends on: xorg-server, xorg-xproto, xorg-libice
+# Depends on: xorg-server, xorg-libice
 
 name=xorg-iceauth
 version=1.0.2

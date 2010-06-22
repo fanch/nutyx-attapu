@@ -2,7 +2,7 @@
 # URL: http://www.realistanew.com/projects/alacarte
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: intltool, pygtk, gnome-menus, nautilus
+# Depends on: intltool, pygtk, gnome-menus, nautilus, libcanberra
 
 name=brasero
 version=2.30.0

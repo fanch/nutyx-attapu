@@ -5,11 +5,10 @@
 # Depends on: kdelibs, boost, libical, gpgme, akonadi, cyrus-sasl, libldap
 
 name=kdepimlibs
-version=4.4.81svn1131245
+version=4.4.85
 release=1
 
-#source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
-source=(ftp://ftp.kde.org/pub/kde/unstable/4.4.81/src/$name-4.4.81svn1131245.tar.bz2)
+source=( ftp://ftp.kde.org/pub/kde/unstable/$version/src/$name-$version.tar.bz2)
 
 build() {
 	cd $name-$version

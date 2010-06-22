@@ -1,0 +1,11 @@
+# EFLTK INI Version 2.000300
+
+  [Desktop Entry]
+    X=32
+    Exec=/usr/bin/midori
+    Icon=/usr/share/icons/hicolor/22x22/apps/midori.png
+    Name[fr_CH]=Navigateur
+    Name=Navigateur
+    Y=208
+
+

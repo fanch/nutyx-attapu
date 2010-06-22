@@ -2,7 +2,7 @@
 # URL: http://developer.berlios.de/projects/ktsuss
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: atk, directfb, expat, fontconfig, freetype, glib, gtk, libpng, pango, xorg-libxcb
+# Depends on: atk, expat, fontconfig, freetype, glib, gtk, libpng, pango, xorg-libxcb
 
 name=ktsuss
 version=1.4

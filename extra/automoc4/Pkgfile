@@ -2,7 +2,7 @@
 # URL: http://www.kde.org
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: qt, cmake
+# Depends on: cmake
 
 name=automoc4
 version=0.9.88
