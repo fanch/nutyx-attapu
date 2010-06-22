@@ -61,9 +61,9 @@ drwxr-xr-x	root/root	usr/lib/libglade/2.0/
 -rwxr-xr-x	root/root	usr/lib/libglade/2.0/libgnome.so
 -rw-r--r--	root/root	usr/lib/libgnomeui-2.a
 -rwxr-xr-x	root/root	usr/lib/libgnomeui-2.la
-lrwxrwxrwx	root/root	usr/lib/libgnomeui-2.so -> libgnomeui-2.so.0.2400.2
-lrwxrwxrwx	root/root	usr/lib/libgnomeui-2.so.0 -> libgnomeui-2.so.0.2400.2
--rwxr-xr-x	root/root	usr/lib/libgnomeui-2.so.0.2400.2
+lrwxrwxrwx	root/root	usr/lib/libgnomeui-2.so -> libgnomeui-2.so.0.2400.3
+lrwxrwxrwx	root/root	usr/lib/libgnomeui-2.so.0 -> libgnomeui-2.so.0.2400.3
+-rwxr-xr-x	root/root	usr/lib/libgnomeui-2.so.0.2400.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgnomeui-2.0.pc
 drwxr-xr-x	root/root	usr/share/
