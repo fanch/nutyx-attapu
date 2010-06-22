@@ -8,6 +8,8 @@ drwxr-xr-x	root/root	etc/qingy/sessions/
 -rw-r--r--	root/root	etc/qingy/settings
 -rw-r--r--	root/root	etc/qingy/welcomes
 drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/startx.qingy
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/qingy/
 drwxr-xr-x	root/root	usr/lib/qingy/screensavers/

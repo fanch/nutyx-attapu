@@ -5,9 +5,9 @@
 
 name=qingy
 version=0.9.9
-release=2
+release=3
 source=(http://downloads.sourceforge.net/$name/$name-$version.tar.bz2\
-	nutyx-attapu.jpg theme ChatIrssi NaviLinks MidnightCommander)
+	startx nutyx-attapu.jpg theme ChatIrssi NaviLinks MidnightCommander)
 build() {
 	cd  $name-$version
 	./configure --prefix=/usr \
@@ -35,4 +35,7 @@ build() {
 		install -m755 ../$i \
 		$PKG/etc/qingy/sessions/$i
 	done
+	mkdir $PKG/usr/bin
+	install -m755 ../startx \
+	$PKG/usr/bin/startx.qingy
 }
