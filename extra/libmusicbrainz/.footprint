@@ -18,4 +18,4 @@ drwxr-xr-x	root/root	usr/lib/python2.6/
 drwxr-xr-x	root/root	usr/lib/python2.6/site-packages/
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/musicbrainz.py
 -rw-r--r--	root/root	usr/lib/python2.6/site-packages/musicbrainz.pyc
--rw-r--r--	root/root	usr/lib/python2.6/site-packages/python_musicbrainz-2.1.5-py2.6.egg-info
+-rw-r--r--	root/root	usr/lib/python2.6/site-packages/python_musicbrainz-0.0.0-py2.6.egg-info
