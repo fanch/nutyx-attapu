@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	etc/depmod.d/
 drwxr-xr-x	root/root	etc/modprobe.d/
 -rw-r--r--	root/root	etc/modprobe.d/blacklist-fb.conf
 -rw-r--r--	root/root	etc/modprobe.d/modprobe.conf
+-rw-r--r--	root/root	etc/modprobe.d/usb.conf
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/depmod
 -rwxr-xr-x	root/root	sbin/insmod

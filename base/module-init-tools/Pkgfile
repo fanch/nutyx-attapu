@@ -2,21 +2,21 @@
 # URL: http://www.kernel.org/pub/linux/kernel/people/rusty/modules
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on:
 
 name=module-init-tools
-version=3.11.1
-release=2
+version=3.12
+release=1
 source=(http://www.kernel.org/pub/linux/utils/kernel/$name/$name-$version.tar.bz2\
-	modprobe.conf blacklist-fb.conf)
+	modprobe.conf blacklist-fb.conf usb.conf)
 
 build() {
 cd $name-$version
+echo '.so man5/modprobe.conf.5' > modprobe.d.5
 ./configure
 make check
 make clean
 
-./configure --prefix=/  --enable-zlib \
+./configure --prefix=/  --enable-zlib-dynamic \
 	--mandir=/usr/share/man
 
 make
@@ -24,6 +24,8 @@ install -d $PKG/usr/share/man
 install -d $PKG/etc/{modprobe.d,depmod.d}
 make DESTDIR=$PKG mandir=/usr/share/man install
 rm -f $PKG/sbin/generate-modprobe.conf
-install -m 644 ../modprobe.conf $PKG/etc/modprobe.d/modprobe.conf
-install -m 644 ../blacklist-fb.conf $PKG/etc/modprobe.d/
+for i in  modprobe.conf blacklist-fb.conf usb.conf
+do
+	install -m 644 ../$i $PKG/etc/modprobe.d/$i
+done
 }
