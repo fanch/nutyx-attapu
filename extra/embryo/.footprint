@@ -4,11 +4,11 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/Embryo.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libembryo-ver-svn-05.so.0 -> libembryo-ver-svn-05.so.0.9.9
--rwxr-xr-x	root/root	usr/lib/libembryo-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libembryo-ver-svn-06.so.0 -> libembryo-ver-svn-06.so.0.9.9
+-rwxr-xr-x	root/root	usr/lib/libembryo-ver-svn-06.so.0.9.9
 -rw-r--r--	root/root	usr/lib/libembryo.a
 -rwxr-xr-x	root/root	usr/lib/libembryo.la
-lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo-ver-svn-05.so.0.9.9
+lrwxrwxrwx	root/root	usr/lib/libembryo.so -> libembryo-ver-svn-06.so.0.9.9
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/embryo.pc
 drwxr-xr-x	root/root	usr/share/
