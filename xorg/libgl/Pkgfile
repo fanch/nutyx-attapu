@@ -1,0 +1,25 @@
+# Description: Librairie libre 3D de Mesa
+# URL: http://mesa3d.sourceforge.net
+# Maintainer: NuTyX core team
+# Packager: thierryn1 at hispeed dot ch
+# Depends on: expat, libdrm, xorg-makedepend, xorg-libx11, xorg-libxext, xorg-libxxf86vm, xorg-libxt, xorg-libxdamage
+name=libgl
+version=7.8.2
+release=1
+source=(ftp://ftp.freedesktop.org/pub/mesa/$version/MesaLib-$version.tar.bz2)
+build()
+{
+	cd Mesa-$version
+	./configure --prefix=/usr \
+	--with-driver=xlib \
+	--disable-egl \
+	--disable-gallium \
+	--disable-glu \
+	--disable-glw \
+	--without-demos
+	make
+	bin/minstall lib/libGL.so* /usr/lib/
+	install -m755 -d $PKG/usr/lib{,/xorg/modules/extensions}
+	ln -s libglx.xorg \
+	$PKG/usr/lib/xorg/modules/extensions/libglx.so
+}
