@@ -5,7 +5,7 @@
 # Depends on: mesa3d, xorg-bdftopcf, xorg-mkfontdir, xorg-mkfontscale, xorg-libxkbui, xorg-libxtst, xorg-libdmx, xorg-libxxf86misc, xorg-libxaw, xorg-libxvmc, xorg-libxi, xorg-libxres, xorg-libxcomposite, xorg-libxinerama, xorg-libxrandr, xorg-libxft, xorg-libxcursor, xorg-libxxf86dga, xorg-libpixman, xorg-libpciaccess, xorg-libxscrnsaver
 
 name=xorg-server
-version=1.8.1
+version=1.8.99.903
 release=1
 source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2)
 
@@ -21,4 +21,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	rmdir $PKG/var/log
+	mv $PKG/usr/lib/xorg/modules/extensions/libglx.{so,xorg}
 }

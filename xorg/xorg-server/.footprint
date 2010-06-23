@@ -31,6 +31,7 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/bstore.h
 -rw-r--r--	root/root	usr/include/xorg/bstorestr.h
 -rw-r--r--	root/root	usr/include/xorg/bt829.h
+-rw-r--r--	root/root	usr/include/xorg/callback.h
 -rw-r--r--	root/root	usr/include/xorg/cfb8_16.h
 -rw-r--r--	root/root	usr/include/xorg/closestr.h
 -rw-r--r--	root/root	usr/include/xorg/closure.h
@@ -80,7 +81,6 @@ drwxr-xr-x	root/root	usr/include/xorg/
 -rw-r--r--	root/root	usr/include/xorg/inputstr.h
 -rw-r--r--	root/root	usr/include/xorg/list.h
 -rw-r--r--	root/root	usr/include/xorg/mi.h
--rw-r--r--	root/root	usr/include/xorg/mibank.h
 -rw-r--r--	root/root	usr/include/xorg/mibstore.h
 -rw-r--r--	root/root	usr/include/xorg/micmap.h
 -rw-r--r--	root/root	usr/include/xorg/micoord.h
@@ -203,13 +203,15 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libextmod.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libextmod.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/libglx.xorg
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/librecord.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/librecord.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libexa.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libfb.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libfb.so
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libfbdevhw.la
+-rwxr-xr-x	root/root	usr/lib/xorg/modules/libfbdevhw.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libint10.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libshadow.la
@@ -226,9 +228,6 @@ drwxr-xr-x	root/root	usr/lib/xorg/modules/extensions/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxaa.so
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_16bpp.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/libxf8_16bpp.so
-drwxr-xr-x	root/root	usr/lib/xorg/modules/linux/
--rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libfbdevhw.la
--rwxr-xr-x	root/root	usr/lib/xorg/modules/linux/libfbdevhw.so
 drwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/bt829_drv.la
 -rwxr-xr-x	root/root	usr/lib/xorg/modules/multimedia/bt829_drv.so
