@@ -5,10 +5,10 @@
 
 name=madwifi
 
-version=0.9.4.4128
+version=0.9.4.4119
 
 _version=trunk
-snapshot=r4128-20100325
+snapshot=r4132-20100620
 _kernver=`uname -r`
 release=1
 
