@@ -154,6 +154,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/components/
 -rw-r--r--	root/root	usr/lib/firefox/components/nsFormAutoComplete.js
 -rw-r--r--	root/root	usr/lib/firefox/components/nsHandlerService.js
 -rw-r--r--	root/root	usr/lib/firefox/components/nsHelperAppDlg.js
+-rw-r--r--	root/root	usr/lib/firefox/components/nsINIProcessor.js
 -rw-r--r--	root/root	usr/lib/firefox/components/nsLivemarkService.js
 -rw-r--r--	root/root	usr/lib/firefox/components/nsLoginInfo.js
 -rw-r--r--	root/root	usr/lib/firefox/components/nsLoginManager.js
@@ -308,6 +309,7 @@ drwxr-xr-x	root/root	usr/lib/firefox/modules/
 -rwxr-xr-x	root/root	usr/lib/firefox/mozilla-xremote-client
 -rwxr-xr-x	root/root	usr/lib/firefox/nsinstall
 -rw-r--r--	root/root	usr/lib/firefox/platform.ini
+-rwxr-xr-x	root/root	usr/lib/firefox/plugin-container
 drwxr-xr-x	root/root	usr/lib/firefox/plugins/
 -rwxr-xr-x	root/root	usr/lib/firefox/plugins/libnullplugin.so
 -rwxr-xr-x	root/root	usr/lib/firefox/plugins/libunixprintplugin.so

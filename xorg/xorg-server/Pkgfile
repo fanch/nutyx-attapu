@@ -6,7 +6,7 @@
 
 name=xorg-server
 version=1.8.1
-release=1
+release=2
 source=(http://xorg.freedesktop.org/releases/individual/xserver/$name-$version.tar.bz2)
 
 build() {
@@ -21,4 +21,5 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	rmdir $PKG/var/log
+	mv $PKG/usr/lib/xorg/modules/extensions/libglx.{so,xorg}
 }

@@ -2,23 +2,27 @@
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
 # Packager: geantbrun at gmail dot com
-# Depends on: eina, evas, ecore, e_dbus, embryo, eet, efreet, edje, curl, gdm, alsa-lib
+# Depends on: eina, evas, ecore, e_dbus, embryo, eet, efreet, edje, curl, alsa-lib
 
 name=e17
-version=0.16.999.063
-release=1
+version=0.16.999.49539
+release=2
 source=(http://download.enlightenment.org/snapshots/LATEST/enlightenment-$version.tar.bz2 \ 
-	e17.desktop)
+	e17.desktop E17.xinitrc)
 
 build()
 {
+	install -D -m644 E17.xinitrc $PKG/etc/X11/dm/E17.xinitrc
 	install -D -m644 e17.desktop $PKG/usr/share/xsessions/e17.desktop
         install -D -m644 e17.desktop $PKG/usr/share/apps/kdm/sessions/e17.desktop
- 
 	cd enlightenment-$version
 
 	./configure --prefix=/usr
 	make
 	make DESTDIR=$PKG install
-
+	echo "/etc/X11/dm/E17.xinitrc /usr/bin/startx.qingy"
+	mkdir -p $PKG/etc/qingy/sessions
+	echo "userclientrc=/etc/X11/dm/E17.xinitrc /usr/bin/startx.qingy" >\
+	$PKG/etc/qingy/sessions/Enlightenment
+	chmod 755 $PKG/etc/qingy/sessions/Enlightenment
 }

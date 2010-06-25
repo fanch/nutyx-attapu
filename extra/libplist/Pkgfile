@@ -1,0 +1,21 @@
+# Description: Librairie pour materiel Apple
+# URL: http://libimobiledevice.org/
+# Maintainer: NuTyX core team
+# Packager: lesibel at free dot fr
+# Depends on: libxml2, glib
+
+name=libplist
+version=1.3
+release=1
+source=(http://cloud.github.com/downloads/JonathanBeck/$name/$name-$version.tar.bz2)
+
+build() {
+  	cd $SRC
+  	mkdir build
+  	cd build
+  	cmake ../$name-$version \
+		-DCMAKE_SKIP_RPATH=ON \
+      		-DCMAKE_INSTALL_PREFIX:PATH=/usr
+  make
+  make DESTDIR=$PKG install
+}

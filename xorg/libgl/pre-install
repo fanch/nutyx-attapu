@@ -1,0 +1,7 @@
+if ( pkginfo -i | grep nvidia > /dev/null ) ; then
+	pkgrm nvidia
+fi
+if ( pkginfo -i | grep nvidia-96xx > /dev/null ) ; then
+        pkgrm nvidia-96xx
+fi
+

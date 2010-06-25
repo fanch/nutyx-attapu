@@ -1,3 +1,4 @@
 7eac77556a1edc257b128e257f9aae57  blacklist-fb.conf
 9b4b6f3a50e9d352bba107488c053cd2  modprobe.conf
-28dfcb9e24cdbeb12b99ac1eb8af7dea  module-init-tools-3.11.1.tar.bz2
+8b2257ce9abef74c4a44d825d23140f3  module-init-tools-3.12.tar.bz2
+2249d7af8f86efc097c30b788667a4bd  usb.conf

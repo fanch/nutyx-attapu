@@ -1,11 +1,11 @@
 # Description: Enlightenment implémentation de plusieures spécifications de freedesktop.org 
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
-# Packager: A DEFINIR
+# Packager: geantbrun at gmail dot com
 # Depends on: ecore
 
 name=efreet
-version=0.5.0.063
+version=0.5.0.49539
 release=1
 source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz2)
 

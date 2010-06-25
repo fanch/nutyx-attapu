@@ -1,11 +1,11 @@
 # Description: Librairie fournissant une fonctionnalitée d'archivage pour E17
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
-# Packager: A DEFINIR
+# Packager: thierryn1 at hispeed dot ch
 # Depends on: xorg-libxext xorg-libsm libpng libtiff freetype eina 
 
 name=eet
-version=1.2.3
+version=1.3.0
 release=1
 source=(http://download.enlightenment.org/releases/$name-$version.tar.bz2)
 

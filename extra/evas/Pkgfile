@@ -1,11 +1,11 @@
 # Description: Multi-platform Canvas Library
 # URL: http://www.enlightenment.org/
 # Maintainer: NuTyX core team
-# Packager: A DEFINIR
+# Packager: geantbrun at gmail dot com
 # Depends on: eet xorg-libxrender fontconfig dejavu-ttf giflib
 
 name=evas
-version=0.9.9.063
+version=0.9.9.49539
 release=1
 source=(http://download.enlightenment.org/snapshots/LATEST/$name-$version.tar.bz2)
 

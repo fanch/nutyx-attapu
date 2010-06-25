@@ -2,10 +2,10 @@
 # URL: http://www.gnome.org/
 # Maintainer: NuTyX core team
 # Packager: thierryn1 at hispeed dot ch
-# Depends on: libbonoboui, gnome-keyring
+# Depends on: libgnome-keyring , libbonoboui, libpng12
 
 name=libgnomeui
-version=2.24.2
+version=2.24.3
 release=1
 source=(http://ftp.gnome.org/pub/gnome/sources/$name/${version%.*}/$name-$version.tar.bz2)
 build() {

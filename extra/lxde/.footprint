@@ -1,3 +1,10 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/X11/
+drwxr-xr-x	root/root	etc/X11/dm/
+-rw-r--r--	root/root	etc/X11/dm/LXDE.xinitrc
+drwxr-xr-x	root/root	etc/qingy/
+drwxr-xr-x	root/root	etc/qingy/sessions/
+-rwxr-xr-x	root/root	etc/qingy/sessions/LXDE
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/xsessions/

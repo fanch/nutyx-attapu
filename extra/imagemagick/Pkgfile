@@ -5,9 +5,9 @@
 # Depends on: freetype, ghostscript, lcms, libgsf, giflib, libxml2, openexr
 
 name=imagemagick
-version=6.6.1.10
+version=6.6.2.6
 release=1
-_version=6.6.1-10
+_version=6.6.2-6
 source=(ftp://gd.tuwien.ac.at/pub/graphics/ImageMagick/ImageMagick-${_version}.tar.bz2)
 
 build () {
