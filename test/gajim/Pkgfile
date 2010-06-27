@@ -5,7 +5,7 @@
 # Depends on: libglade, pygtk, gtkspell, desktop-file-utils, pyopenssl, dbus-python
 
 name=gajim
-version=0.13.2
+version=0.13.4
 release=1
 source=(http://www.gajim.org/downloads/0.13/$name-$version.tar.bz2)
 
