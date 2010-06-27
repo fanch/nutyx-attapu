@@ -5,8 +5,8 @@
 # Depends on: glib, gtk
 
 name=gob
-version=2.0.16
-release=2
+version=2.0.17
+release=1
 source=(http://ftp.5z.com/pub/$name/gob2-$version.tar.gz)
 
 build() {
